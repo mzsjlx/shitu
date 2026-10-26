@@ -1,0 +1,48 @@
+import {build} from 'esbuild';
+import {cp,mkdir,readFile,writeFile} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {buildPlacePages} from './build-place-pages.mjs';
+import {buildCreatorGuides} from './build-creator-guides.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+await mkdir(path.join(root,'dist'),{recursive:true});
+await build({entryPoints:[path.join(root,'src/main.js')],bundle:true,minify:true,format:'iife',target:'es2022',outfile:path.join(root,'dist/app.js'),legalComments:'linked'});
+await build({entryPoints:[path.join(root,'node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs')],bundle:true,minify:true,format:'iife',target:'es2022',outfile:path.join(root,'dist/map-worker.cjs'),legalComments:'linked'});
+await cp(path.join(root,'src/index.html'),path.join(root,'dist/index.html'));
+await build({entryPoints:[path.join(root,'src/content-review.js')],bundle:true,minify:true,format:'iife',target:'es2022',outfile:path.join(root,'dist/review-app.js'),legalComments:'linked'});
+await cp(path.join(root,'src/content-review.html'),path.join(root,'dist/content-review.html'));
+await cp(path.join(root,'config'),path.join(root,'dist/config'),{recursive:true});
+await cp(path.join(root,'data'),path.join(root,'dist/data'),{recursive:true});
+await mkdir(path.join(root,'dist/assets'),{recursive:true});
+await cp(path.join(root,'../design/concepts/food-thumbnails-v2.jpg'),path.join(root,'dist/assets/food-concepts.jpg'));
+await buildPlacePages(root);
+await buildCreatorGuides(root);
+await cp(path.join(root,'node_modules/maplibre-gl/LICENSE.txt'),path.join(root,'dist/MAPLIBRE-LICENSE.txt'));
+await cp(path.join(root,'licenses/PMTILES-LICENSE.txt'),path.join(root,'dist/PMTILES-LICENSE.txt'));
+await cp(path.join(root,'node_modules/fflate/LICENSE'),path.join(root,'dist/FFLATE-LICENSE.txt'));
+const notice='MapLibre GL JS 6.15.0: BSD-3-Clause, see MAPLIBRE-LICENSE.txt.\nPMTiles 4.5.0: BSD-3-Clause, https://github.com/protomaps/PMTiles/blob/main/LICENSE\nfflate: MIT, https://github.com/101arrowz/fflate/blob/master/LICENSE\nMap data: OpenStreetMap contributors, ODbL 1.0; Protomaps Produced Work; Natural Earth.\nTerrain data: Mapzen / Tilezen; see data/terrain-manifest.json and linked source attribution.\nNo Amap/Google Maps tiles, imagery, keys, fonts or POI databases are bundled.\n';
+await writeFile(path.join(root,'dist/DATA-NOTICE.txt'),notice);
+// A convenience artifact for local review. Production keeps PMTiles Range loading.
+const config=JSON.parse(await readFile(path.join(root,'config/cities.json'),'utf8')),city=config.cities[config.activeCity];
+const json={'config/cities.json':config};
+for(const file of Object.values(city.dataFiles))json[file]=JSON.parse(await readFile(path.join(root,file),'utf8'));
+if(city.streetDetail)for(const file of [city.streetDetail.data,city.streetDetail.manifest])json[file]=JSON.parse(await readFile(path.join(root,file),'utf8'));
+if(city.foodContent)json[city.foodContent.records]=JSON.parse(await readFile(path.join(root,city.foodContent.records),'utf8'));
+if(city.walkNetwork)json[city.walkNetwork]=JSON.parse(await readFile(path.join(root,city.walkNetwork),'utf8'));
+const terrain={};
+for(const tile of json[city.dataFiles.terrainManifest].tiles){
+  const relative=city.demTiles.replace('{z}',tile.z).replace('{x}',tile.x).replace('{y}',tile.y);
+  terrain[relative]='data:image/png;base64,'+(await readFile(path.join(root,relative))).toString('base64');
+}
+const assets={};
+if(city.foodContent)assets[city.foodContent.sprite]='data:image/jpeg;base64,'+(await readFile(path.join(root,'dist',city.foodContent.sprite))).toString('base64');
+const bundle={json,terrain,assets,archive:(await readFile(path.join(root,city.tiles))).toString('base64'),worker:await readFile(path.join(root,'dist/map-worker.cjs'),'utf8')};
+let html=await readFile(path.join(root,'src/index.html'),'utf8');
+const css=await readFile(path.join(root,'dist/app.css'),'utf8'),js=await readFile(path.join(root,'dist/app.js'),'utf8');
+const license=(await Promise.all(['node_modules/maplibre-gl/LICENSE.txt','licenses/PMTILES-LICENSE.txt','node_modules/fflate/LICENSE'].map(file=>readFile(path.join(root,file),'utf8')))).join('\n\n');
+html=html.replace('<link rel="stylesheet" href="./app.css">',()=>'<style>'+css+'</style>');
+html=html.replace('<script defer src="./app.js"></script>',()=>'<script>window.__FOOD_CITY_BUNDLE__='+JSON.stringify(bundle).replaceAll('<','\\u003c')+';</script><script>'+js.replace(/<\/script/gi,'<\\/script')+'</script>');
+html=html.replace('<head>',()=>'<head><!--\n'+license.replaceAll('-->','-- >')+'\n-->');
+await writeFile(path.join(root,'preview.html'),html);
+await writeFile(path.join(root,'dist/preview.html'),html);
+console.log('Built real map base: dist/ plus standalone preview.html ('+Buffer.byteLength(html)+' bytes).');

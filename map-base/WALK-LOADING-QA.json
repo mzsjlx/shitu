@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-22",
+  "scope": "Local route-trial loading, camera intent and exact embedded HTML. No navigation or real-world access validation.",
+  "checks": [
+    {
+      "name": "Reset while road data loads preserves city view",
+      "passed": true,
+      "expected": {
+        "base": {
+          "ready": true,
+          "center": [
+            106.57400000000001,
+            29.562799999999996
+          ],
+          "zoom": 15.8,
+          "pitch": 54,
+          "terrain": true,
+          "elevationMetres": 273.8302895982524,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 316,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        },
+        "walk": {
+          "phase": "loading",
+          "active": false,
+          "pedestrianOnly": false,
+          "hasRoute": false,
+          "distanceMetres": null,
+          "segments": 0,
+          "assumedAccessWays": 0,
+          "entrancesConnected": false,
+          "error": null
+        },
+        "panelHidden": true,
+        "option": false
+      },
+      "after": {
+        "base": {
+          "ready": true,
+          "center": [
+            106.57400000000001,
+            29.562799999999996
+          ],
+          "zoom": 15.8,
+          "pitch": 54,
+          "terrain": true,
+          "elevationMetres": 273.8302895982524,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 316,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        },
+        "walk": {
+          "phase": "loaded",
+          "active": false,
+          "pedestrianOnly": false,
+          "hasRoute": false,
+          "distanceMetres": null,
+          "segments": 0,
+          "assumedAccessWays": 0,
+          "entrancesConnected": false,
+          "error": null
+        },
+        "panelHidden": true,
+        "option": false
+      }
+    },
+    {
+      "name": "2D while road data loads preserves flat view",
+      "passed": true,
+      "expected": {
+        "base": {
+          "ready": true,
+          "center": [
+            106.57400000000001,
+            29.56280000000045
+          ],
+          "zoom": 15.8,
+          "pitch": 0,
+          "terrain": true,
+          "elevationMetres": 273.8302895828375,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 178,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        },
+        "walk": {
+          "phase": "loading",
+          "active": false,
+          "pedestrianOnly": false,
+          "hasRoute": false,
+          "distanceMetres": null,
+          "segments": 0,
+          "assumedAccessWays": 0,
+          "entrancesConnected": false,
+          "error": null
+        },
+        "panelHidden": true,
+        "option": false
+      },
+      "after": {
+        "base": {
+          "ready": true,
+          "center": [
+            106.57400000000001,
+            29.56280000000045
+          ],
+          "zoom": 15.8,
+          "pitch": 0,
+          "terrain": true,
+          "elevationMetres": 273.8302895828375,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 274,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        },
+        "walk": {
+          "phase": "loaded",
+          "active": false,
+          "pedestrianOnly": false,
+          "hasRoute": false,
+          "distanceMetres": null,
+          "segments": 0,
+          "assumedAccessWays": 0,
+          "entrancesConnected": false,
+          "error": null
+        },
+        "panelHidden": true,
+        "option": false
+      }
+    },
+    {
+      "name": "12-second optional-road timeout leaves base usable and retry recovers",
+      "passed": true,
+      "before": {
+        "base": true,
+        "walk": {
+          "phase": "error",
+          "active": false,
+          "pedestrianOnly": false,
+          "hasRoute": false,
+          "distanceMetres": null,
+          "segments": 0,
+          "assumedAccessWays": 0,
+          "entrancesConnected": false,
+          "error": "道路试算资料读取超时"
+        },
+        "retryVisible": true,
+        "option": false,
+        "mapErrorHidden": true
+      },
+      "after": {
+        "base": {
+          "ready": true,
+          "center": [
+            106.58008161132534,
+            29.561599290322746
+          ],
+          "zoom": 15.355157987564507,
+          "pitch": 40,
+          "terrain": true,
+          "elevationMetres": 264.46247784646965,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 274,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        },
+        "walk": {
+          "phase": "loaded",
+          "active": true,
+          "pedestrianOnly": false,
+          "hasRoute": true,
+          "distanceMetres": 1070.978428183064,
+          "segments": 50,
+          "assumedAccessWays": 10,
+          "entrancesConnected": false,
+          "error": null
+        },
+        "panelHidden": false,
+        "option": true
+      }
+    },
+    {
+      "name": "Exact standalone HTML renders actual source path with no additional HTTP",
+      "passed": true,
+      "walk": {
+        "stats": {
+          "phase": "loaded",
+          "active": true,
+          "pedestrianOnly": false,
+          "hasRoute": true,
+          "distanceMetres": 1070.978428183064,
+          "segments": 50,
+          "assumedAccessWays": 10,
+          "entrancesConnected": false,
+          "error": null
+        },
+        "rendered": 3,
+        "endpoints": 2
+      },
+      "additionalHTTP": [],
+      "errors": []
+    }
+  ],
+  "issues": [],
+  "passed": true
+}

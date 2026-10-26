@@ -1,0 +1,350 @@
+{
+  "date": "2026-10-23",
+  "scope": "Content workbench browser simulation using synthetic draft labels only; no real field verification, no public map changes.",
+  "checks": [
+    {
+      "name": "Initial workbench has two separate candidates and 64/22/0 audit counts",
+      "passed": true
+    },
+    {
+      "name": "Audit dialog lists all 64 food source objects and labels non-matches",
+      "passed": true
+    },
+    {
+      "name": "Branch edits autosave without changing entrance or connection conclusions",
+      "passed": true
+    },
+    {
+      "name": "Editing one candidate does not edit the other",
+      "passed": true
+    },
+    {
+      "name": "Branch draft survives browser reload and public status remains candidate",
+      "passed": true
+    },
+    {
+      "name": "Adding evidence stores its exact text without interpreting HTML",
+      "passed": true,
+      "details": {
+        "id": "material-35538d10-0812-49fe-aeb6-9afabd9ca11f",
+        "kind": "other",
+        "title": "合成QA材料 <img src=x onerror=\"window.__contentQAInjected=true\">",
+        "url": "",
+        "reference": "合成QA本地说明.txt · 非门店证据",
+        "observedOn": "2026-10-23",
+        "publishedOn": "",
+        "note": "合成材料，仅验证界面保存、引用和导出。"
+      }
+    },
+    {
+      "name": "An added material can be cited independently by one check",
+      "passed": true
+    },
+    {
+      "name": "Actual downloaded export is valid draft JSON and carries no public authority flags",
+      "passed": true,
+      "details": {
+        "filename": "foodcity-content-draft-2026-10-23.json",
+        "publicFlags": []
+      }
+    },
+    {
+      "name": "Malformed import preserves the exact existing stored draft",
+      "passed": true
+    },
+    {
+      "name": "Import refuses a synthetic public-status flag without replacing the draft",
+      "passed": true
+    },
+    {
+      "name": "Valid import opens replacement preview before mutation",
+      "passed": true
+    },
+    {
+      "name": "Cancelling import preview leaves the existing draft",
+      "passed": true
+    },
+    {
+      "name": "Confirming valid import replaces the workbench draft and exposes undo",
+      "passed": true
+    },
+    {
+      "name": "Undo restores the exact pre-import draft",
+      "passed": true
+    },
+    {
+      "name": "An old base version remains blocked and visibly requests recheck",
+      "passed": true
+    },
+    {
+      "name": "Reset clears only its own workbench key and preserves wants and other keys",
+      "passed": true,
+      "details": {
+        "draft": null,
+        "wants": "[\"synthetic-want-untouched\"]",
+        "unrelated": "synthetic-untouched"
+      }
+    },
+    {
+      "name": "Reset can also be undone before editing",
+      "passed": true
+    },
+    {
+      "name": "No overall horizontal overflow at 320",
+      "passed": true,
+      "details": {
+        "viewport": [
+          320,
+          680
+        ],
+        "scrollWidth": 320,
+        "dialogs": [],
+        "outside": []
+      }
+    },
+    {
+      "name": "Evidence dialog stays inside 320 viewport without own horizontal overflow",
+      "passed": true,
+      "details": [
+        {
+          "id": "evidence-dialog",
+          "left": 12,
+          "top": 15,
+          "right": 308,
+          "bottom": 665,
+          "width": 296,
+          "height": 650,
+          "scrollWidth": 294,
+          "clientWidth": 294
+        }
+      ]
+    },
+    {
+      "name": "Audit dialog bounds fit 320 while table scrolls inside",
+      "passed": true,
+      "details": [
+        {
+          "id": "audit-dialog",
+          "left": 12,
+          "top": 15,
+          "right": 308,
+          "bottom": 665,
+          "width": 296,
+          "height": 650,
+          "scrollWidth": 294,
+          "clientWidth": 294
+        }
+      ]
+    },
+    {
+      "name": "Replacement preview fits 320",
+      "passed": true,
+      "details": [
+        {
+          "id": "replace-dialog",
+          "left": 12,
+          "top": 175.609375,
+          "right": 308,
+          "bottom": 504.390625,
+          "width": 296,
+          "height": 328.78125,
+          "scrollWidth": 294,
+          "clientWidth": 294
+        }
+      ]
+    },
+    {
+      "name": "No overall horizontal overflow at 390",
+      "passed": true,
+      "details": {
+        "viewport": [
+          390,
+          844
+        ],
+        "scrollWidth": 390,
+        "dialogs": [],
+        "outside": []
+      }
+    },
+    {
+      "name": "Evidence dialog stays inside 390 viewport without own horizontal overflow",
+      "passed": true,
+      "details": [
+        {
+          "id": "evidence-dialog",
+          "left": 12,
+          "top": 47.765625,
+          "right": 378,
+          "bottom": 796.234375,
+          "width": 366,
+          "height": 748.46875,
+          "scrollWidth": 364,
+          "clientWidth": 364
+        }
+      ]
+    },
+    {
+      "name": "Audit dialog bounds fit 390 while table scrolls inside",
+      "passed": true,
+      "details": [
+        {
+          "id": "audit-dialog",
+          "left": 12,
+          "top": 15,
+          "right": 378,
+          "bottom": 829,
+          "width": 366,
+          "height": 814,
+          "scrollWidth": 364,
+          "clientWidth": 364
+        }
+      ]
+    },
+    {
+      "name": "Replacement preview fits 390",
+      "passed": true,
+      "details": [
+        {
+          "id": "replace-dialog",
+          "left": 12,
+          "top": 274.40625,
+          "right": 378,
+          "bottom": 569.59375,
+          "width": 366,
+          "height": 295.1875,
+          "scrollWidth": 364,
+          "clientWidth": 364
+        }
+      ]
+    },
+    {
+      "name": "No overall horizontal overflow at 1440",
+      "passed": true,
+      "details": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "scrollWidth": 1440,
+        "dialogs": [],
+        "outside": []
+      }
+    },
+    {
+      "name": "Evidence dialog stays inside 1440 viewport without own horizontal overflow",
+      "passed": true,
+      "details": [
+        {
+          "id": "evidence-dialog",
+          "left": 455,
+          "top": 101.65625,
+          "right": 985,
+          "bottom": 858.328125,
+          "width": 530,
+          "height": 756.671875,
+          "scrollWidth": 528,
+          "clientWidth": 528
+        }
+      ]
+    },
+    {
+      "name": "Audit dialog bounds fit 1440 while table scrolls inside",
+      "passed": true,
+      "details": [
+        {
+          "id": "audit-dialog",
+          "left": 340,
+          "top": 15,
+          "right": 1100,
+          "bottom": 945,
+          "width": 760,
+          "height": 930,
+          "scrollWidth": 758,
+          "clientWidth": 758
+        }
+      ]
+    },
+    {
+      "name": "Replacement preview fits 1440",
+      "passed": true,
+      "details": [
+        {
+          "id": "replace-dialog",
+          "left": 455,
+          "top": 349.203125,
+          "right": 985,
+          "bottom": 610.796875,
+          "width": 530,
+          "height": 261.59375,
+          "scrollWidth": 528,
+          "clientWidth": 528
+        }
+      ]
+    },
+    {
+      "name": "Browser page emits no runtime errors",
+      "passed": true,
+      "details": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    },
+    {
+      "name": "Complete synthetic draft can reach review-ready but public status stays unchanged",
+      "passed": true
+    },
+    {
+      "name": "An old base version blocks even an otherwise complete draft and visibly requests recheck",
+      "passed": true
+    },
+    {
+      "name": "Targeted complete-draft check restores prior synthetic baseline",
+      "passed": true
+    }
+  ],
+  "issues": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "viewports": [
+    {
+      "viewport": [
+        320,
+        680
+      ],
+      "scrollWidth": 320,
+      "dialogs": [],
+      "outside": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "scrollWidth": 390,
+      "dialogs": [],
+      "outside": []
+    },
+    {
+      "viewport": [
+        1440,
+        960
+      ],
+      "scrollWidth": 1440,
+      "dialogs": [],
+      "outside": []
+    }
+  ],
+  "passed": true,
+  "runs": [
+    {
+      "scope": "Main functionality and responsive dialogs",
+      "checks": 30,
+      "passed": true
+    },
+    {
+      "scope": "Otherwise-complete synthetic draft with old base version",
+      "checks": 3,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "checkedOn": "2026-10-23",
+  "scope": "Independent pure-model checks; synthetic completeness fixtures are not real evidence. No browser or public data edits.",
+  "model": "src/content-review-model.js",
+  "baseVersion": "182c8dec629440ea2b19c3c1e8b696e38f55191558c8d76582a44209877e1e9f",
+  "publicDataSHA256": "405eaffaec45447bc8644bb7a3ad9b0773b9fcf7f245e4defe018c1859339069",
+  "total": 85,
+  "passed": 85,
+  "failed": 0,
+  "results": [
+    {
+      "name": "catalog contains only source candidates with no current route eligibility",
+      "pass": true
+    },
+    {
+      "name": "seed draft validates and both candidates remain incomplete",
+      "pass": true
+    },
+    {
+      "name": "seed is independent from catalog objects",
+      "pass": true
+    },
+    {
+      "name": "complete synthetic declarations yield only review-ready",
+      "pass": true
+    },
+    {
+      "name": "validation returns a deep copy",
+      "pass": true
+    },
+    {
+      "name": "draft JSON round-trip preserves all draft fields",
+      "pass": true
+    },
+    {
+      "name": "old base version is retained but blocks completeness",
+      "pass": true
+    },
+    {
+      "name": "conflict takes precedence over missing material and stale base",
+      "pass": true
+    },
+    {
+      "name": "source cannot use not-used to skip review",
+      "pass": true
+    },
+    {
+      "name": "branch cannot use not-used to skip review",
+      "pass": true
+    },
+    {
+      "name": "entrance cannot use not-used to skip review",
+      "pass": true
+    },
+    {
+      "name": "connection cannot use not-used to skip review",
+      "pass": true
+    },
+    {
+      "name": "all supported declarations without references remain incomplete",
+      "pass": true
+    },
+    {
+      "name": "supported assertion requires a written reason",
+      "pass": true
+    },
+    {
+      "name": "supported evidence requires an observation date",
+      "pass": true
+    },
+    {
+      "name": "supported evidence requires title and a source locator",
+      "pass": true
+    },
+    {
+      "name": "branch requires independent address field",
+      "pass": true
+    },
+    {
+      "name": "branch requires match explanation",
+      "pass": true
+    },
+    {
+      "name": "empty entrance never falls back to catalog POI coordinates",
+      "pass": true
+    },
+    {
+      "name": "entrance outside longitude blocks readiness",
+      "pass": true
+    },
+    {
+      "name": "entrance outside latitude blocks readiness",
+      "pass": true
+    },
+    {
+      "name": "entrance nonfinite blocks readiness",
+      "pass": true
+    },
+    {
+      "name": "entrance not numeric blocks readiness",
+      "pass": true
+    },
+    {
+      "name": "entrance whitespace blocks readiness",
+      "pass": true
+    },
+    {
+      "name": "entrance floor/level relationship is separately required",
+      "pass": true
+    },
+    {
+      "name": "entrance correspondence is separately required",
+      "pass": true
+    },
+    {
+      "name": "non-WGS84 entrance import is rejected",
+      "pass": true
+    },
+    {
+      "name": "unknown road node blocks connection",
+      "pass": true
+    },
+    {
+      "name": "POI id cannot substitute a source road node",
+      "pass": true
+    },
+    {
+      "name": "connection needs passage level and crossing explanation",
+      "pass": true
+    },
+    {
+      "name": "own-photo without author remains incomplete",
+      "pass": true
+    },
+    {
+      "name": "own-photo without scope remains incomplete",
+      "pass": true
+    },
+    {
+      "name": "licensed-photo without author remains incomplete",
+      "pass": true
+    },
+    {
+      "name": "licensed-photo without scope remains incomplete",
+      "pass": true
+    },
+    {
+      "name": "image not-used cannot conceal active illustration",
+      "pass": true
+    },
+    {
+      "name": "video not-used cannot conceal active link",
+      "pass": true
+    },
+    {
+      "name": "actually unused image and video can be omitted without blocking other dimensions",
+      "pass": true
+    },
+    {
+      "name": "embedded video branch unmatched blocks readiness",
+      "pass": true
+    },
+    {
+      "name": "embedded video playback untested blocks readiness",
+      "pass": true
+    },
+    {
+      "name": "embedded video embed basis empty blocks readiness",
+      "pass": true
+    },
+    {
+      "name": "embed fixture with distinct paired playback and basis is only review-ready",
+      "pass": true
+    },
+    {
+      "name": "unknown field is rejected at root",
+      "pass": true
+    },
+    {
+      "name": "unknown field is rejected at record",
+      "pass": true
+    },
+    {
+      "name": "unknown field is rejected at evidence",
+      "pass": true
+    },
+    {
+      "name": "unknown field is rejected at check",
+      "pass": true
+    },
+    {
+      "name": "unknown field is rejected at entrance",
+      "pass": true
+    },
+    {
+      "name": "authority/prototype key verificationStatus is rejected even nested",
+      "pass": true
+    },
+    {
+      "name": "authority/prototype key routeEligible is rejected even nested",
+      "pass": true
+    },
+    {
+      "name": "authority/prototype key verified is rejected even nested",
+      "pass": true
+    },
+    {
+      "name": "authority/prototype key approved is rejected even nested",
+      "pass": true
+    },
+    {
+      "name": "authority/prototype key passed is rejected even nested",
+      "pass": true
+    },
+    {
+      "name": "authority/prototype key __proto__ is rejected even nested",
+      "pass": true
+    },
+    {
+      "name": "authority/prototype key constructor is rejected even nested",
+      "pass": true
+    },
+    {
+      "name": "authority/prototype key prototype is rejected even nested",
+      "pass": true
+    },
+    {
+      "name": "unsafe source URL rejected: javascript:alert(1)",
+      "pass": true
+    },
+    {
+      "name": "unsafe source URL rejected: data:text/html,<script>1</script>",
+      "pass": true
+    },
+    {
+      "name": "unsafe source URL rejected: file:///D:/secret",
+      "pass": true
+    },
+    {
+      "name": "unsafe source URL rejected: blob:https://example.com/id",
+      "pass": true
+    },
+    {
+      "name": "unsafe source URL rejected: http://example.com",
+      "pass": true
+    },
+    {
+      "name": "unsafe source URL rejected: https://u:p@example.com",
+      "pass": true
+    },
+    {
+      "name": "unsafe source URL rejected: https://u@example.com",
+      "pass": true
+    },
+    {
+      "name": "unsafe source URL rejected: //example.com",
+      "pass": true
+    },
+    {
+      "name": "unsafe source URL rejected: not a URL",
+      "pass": true
+    },
+    {
+      "name": "HTTPS source URL stays valid",
+      "pass": true
+    },
+    {
+      "name": "invalid evidence calendar date rejected: 2026-02-30",
+      "pass": true
+    },
+    {
+      "name": "invalid evidence calendar date rejected: 2026-13-01",
+      "pass": true
+    },
+    {
+      "name": "invalid evidence calendar date rejected: 2026-00-01",
+      "pass": true
+    },
+    {
+      "name": "invalid evidence calendar date rejected: not-date",
+      "pass": true
+    },
+    {
+      "name": "invalid evidence calendar date rejected: 2026-1-1",
+      "pass": true
+    },
+    {
+      "name": "valid leap day date accepted",
+      "pass": true
+    },
+    {
+      "name": "invalid/non-ISO updatedAt rejected: not-a-date",
+      "pass": true
+    },
+    {
+      "name": "invalid/non-ISO updatedAt rejected: 2026-02-30T00:00:00.000Z",
+      "pass": true
+    },
+    {
+      "name": "invalid/non-ISO updatedAt rejected: 0",
+      "pass": true
+    },
+    {
+      "name": "duplicate candidate id rejected",
+      "pass": true
+    },
+    {
+      "name": "unknown candidate rejected",
+      "pass": true
+    },
+    {
+      "name": "duplicate evidence id rejected",
+      "pass": true
+    },
+    {
+      "name": "missing evidence reference rejected",
+      "pass": true
+    },
+    {
+      "name": "duplicate evidence reference rejected",
+      "pass": true
+    },
+    {
+      "name": "unsupported conclusion rejected",
+      "pass": true
+    },
+    {
+      "name": "unsupported image use rejected",
+      "pass": true
+    },
+    {
+      "name": "invalid schema and kind rejected",
+      "pass": true
+    },
+    {
+      "name": "overlong note and excessive records rejected",
+      "pass": true
+    },
+    {
+      "name": "HTML-looking evidence title is ordinary preserved string",
+      "pass": true
+    },
+    {
+      "name": "public candidate data unchanged by draft operations",
+      "pass": true
+    },
+    {
+      "name": "public file bytes remain unchanged",
+      "pass": true
+    }
+  ]
+}

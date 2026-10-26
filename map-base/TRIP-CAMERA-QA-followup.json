@@ -1,0 +1,879 @@
+{
+  "date": "2026-10-23",
+  "scope": "After bottom-padding cap changed to 48 percent: only 320×680 3D/2D and 736×414 2D rechecked. Other expanded cards also tested against both source-point and visible-pin rectangles.",
+  "checks": [
+    {
+      "name": "Both real source points and visible pins stay in the map and clear controls at 320×680",
+      "passed": true,
+      "details": {
+        "viewport": [
+          320,
+          680
+        ],
+        "pitch": 54,
+        "padding": {
+          "top": 223.20000000000002,
+          "bottom": 260,
+          "left": 51.2,
+          "right": 51.2
+        },
+        "points": [
+          {
+            "id": "osm-node-13649952401",
+            "projected": {
+              "left": 150.97169605263983,
+              "top": 365.7028272900365,
+              "right": 164.97169605263983,
+              "bottom": 379.7028272900365
+            },
+            "pin": {
+              "left": 152,
+              "top": 367,
+              "right": 164,
+              "bottom": 379
+            },
+            "collapsed": true,
+            "projectedInside": true,
+            "pinInside": true,
+            "projectedCovered": [],
+            "pinCovered": [],
+            "coveredByOtherCards": [
+              {
+                "id": "osm-node-4460519589",
+                "left": 79,
+                "top": 208.359375,
+                "right": 245,
+                "bottom": 410
+              }
+            ]
+          },
+          {
+            "id": "osm-node-4460519589",
+            "projected": {
+              "left": 155.18045195224192,
+              "top": 406.65622724490646,
+              "right": 169.18045195224192,
+              "bottom": 420.65622724490646
+            },
+            "pin": {
+              "left": 157,
+              "top": 409,
+              "right": 167,
+              "bottom": 419
+            },
+            "collapsed": false,
+            "projectedInside": true,
+            "pinInside": true,
+            "projectedCovered": [],
+            "pinCovered": [],
+            "coveredByOtherCards": []
+          }
+        ],
+        "controls": [
+          {
+            "id": "",
+            "className": "maplibregl-ctrl-top-right ",
+            "left": 260,
+            "top": 134,
+            "right": 312,
+            "bottom": 276
+          },
+          {
+            "id": "",
+            "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 10,
+            "top": 620,
+            "right": 302,
+            "bottom": 664
+          },
+          {
+            "id": "",
+            "className": "walk-tools",
+            "left": 13,
+            "top": 134,
+            "right": 113.265625,
+            "bottom": 182
+          },
+          {
+            "id": "",
+            "className": "view-dock paper",
+            "left": 13,
+            "top": 448,
+            "right": 219.46875,
+            "bottom": 502
+          },
+          {
+            "id": "trip-dock",
+            "className": "trip-dock paper",
+            "left": 13,
+            "top": 521.25,
+            "right": 307,
+            "bottom": 620
+          }
+        ],
+        "cards": [
+          {
+            "id": "osm-node-4460519589",
+            "left": 79,
+            "top": 208.359375,
+            "right": 245,
+            "bottom": 410
+          }
+        ],
+        "cardCovered": []
+      }
+    },
+    {
+      "name": "No other expanded card hides a source point or visible pin in 3D at 320×680",
+      "passed": false,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "projected": {
+            "left": 150.97169605263983,
+            "top": 365.7028272900365,
+            "right": 164.97169605263983,
+            "bottom": 379.7028272900365
+          },
+          "pin": {
+            "left": 152,
+            "top": 367,
+            "right": 164,
+            "bottom": 379
+          },
+          "collapsed": true,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": [
+            {
+              "id": "osm-node-4460519589",
+              "left": 79,
+              "top": 208.359375,
+              "right": 245,
+              "bottom": 410
+            }
+          ]
+        },
+        {
+          "id": "osm-node-4460519589",
+          "projected": {
+            "left": 155.18045195224192,
+            "top": 406.65622724490646,
+            "right": 169.18045195224192,
+            "bottom": 420.65622724490646
+          },
+          "pin": {
+            "left": 157,
+            "top": 409,
+            "right": 167,
+            "bottom": 419
+          },
+          "collapsed": false,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": []
+        }
+      ]
+    },
+    {
+      "name": "Expanded cards avoid controls in 3D at 320×680",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "2D overview preserves pitch zero and both source positions at 320×680",
+      "passed": true,
+      "details": {
+        "viewport": [
+          320,
+          680
+        ],
+        "pitch": 0,
+        "padding": {
+          "top": 223.20000000000002,
+          "bottom": 260,
+          "left": 51.2,
+          "right": 51.2
+        },
+        "points": [
+          {
+            "id": "osm-node-13649952401",
+            "projected": {
+              "left": 150.86633768931569,
+              "top": 338.4382586228692,
+              "right": 164.86633768931569,
+              "bottom": 352.4382586228692
+            },
+            "pin": {
+              "left": 152,
+              "top": 339,
+              "right": 164,
+              "bottom": 351
+            },
+            "collapsed": true,
+            "projectedInside": true,
+            "pinInside": true,
+            "projectedCovered": [],
+            "pinCovered": [],
+            "coveredByOtherCards": [
+              {
+                "id": "osm-node-4460519589",
+                "left": 79,
+                "top": 214.359375,
+                "right": 245,
+                "bottom": 416
+              }
+            ]
+          },
+          {
+            "id": "osm-node-4460519589",
+            "projected": {
+              "left": 155.13880102088808,
+              "top": 412.96443669894927,
+              "right": 169.13880102088808,
+              "bottom": 426.96443669894927
+            },
+            "pin": {
+              "left": 157,
+              "top": 415,
+              "right": 167,
+              "bottom": 425
+            },
+            "collapsed": false,
+            "projectedInside": true,
+            "pinInside": true,
+            "projectedCovered": [],
+            "pinCovered": [],
+            "coveredByOtherCards": []
+          }
+        ],
+        "controls": [
+          {
+            "id": "",
+            "className": "maplibregl-ctrl-top-right ",
+            "left": 260,
+            "top": 134,
+            "right": 312,
+            "bottom": 276
+          },
+          {
+            "id": "",
+            "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 10,
+            "top": 620,
+            "right": 302,
+            "bottom": 664
+          },
+          {
+            "id": "",
+            "className": "walk-tools",
+            "left": 13,
+            "top": 134,
+            "right": 113.265625,
+            "bottom": 182
+          },
+          {
+            "id": "",
+            "className": "view-dock paper",
+            "left": 13,
+            "top": 448,
+            "right": 219.46875,
+            "bottom": 502
+          },
+          {
+            "id": "trip-dock",
+            "className": "trip-dock paper",
+            "left": 13,
+            "top": 521.25,
+            "right": 307,
+            "bottom": 620
+          }
+        ],
+        "cards": [
+          {
+            "id": "osm-node-4460519589",
+            "left": 79,
+            "top": 214.359375,
+            "right": 245,
+            "bottom": 416
+          }
+        ],
+        "cardCovered": []
+      }
+    },
+    {
+      "name": "No other expanded card hides a source point or visible pin in 2D at 320×680",
+      "passed": false,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "projected": {
+            "left": 150.86633768931569,
+            "top": 338.4382586228692,
+            "right": 164.86633768931569,
+            "bottom": 352.4382586228692
+          },
+          "pin": {
+            "left": 152,
+            "top": 339,
+            "right": 164,
+            "bottom": 351
+          },
+          "collapsed": true,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": [
+            {
+              "id": "osm-node-4460519589",
+              "left": 79,
+              "top": 214.359375,
+              "right": 245,
+              "bottom": 416
+            }
+          ]
+        },
+        {
+          "id": "osm-node-4460519589",
+          "projected": {
+            "left": 155.13880102088808,
+            "top": 412.96443669894927,
+            "right": 169.13880102088808,
+            "bottom": 426.96443669894927
+          },
+          "pin": {
+            "left": 157,
+            "top": 415,
+            "right": 167,
+            "bottom": 425
+          },
+          "collapsed": false,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": []
+        }
+      ]
+    },
+    {
+      "name": "Expanded cards avoid controls in 2D at 320×680",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "2D overview preserves pitch zero and both source positions at 736×414",
+      "passed": true,
+      "details": {
+        "viewport": [
+          736,
+          414
+        ],
+        "pitch": 0,
+        "padding": {
+          "top": 141.6,
+          "bottom": 169.92,
+          "left": 117.76,
+          "right": 117.76
+        },
+        "points": [
+          {
+            "id": "osm-node-13649952401",
+            "projected": {
+              "left": 359.22730061544604,
+              "top": 178.43305423979348,
+              "right": 373.22730061544604,
+              "bottom": 192.43305423979348
+            },
+            "pin": {
+              "left": 360,
+              "top": 179,
+              "right": 372,
+              "bottom": 191
+            },
+            "collapsed": true,
+            "projectedInside": true,
+            "pinInside": true,
+            "projectedCovered": [],
+            "pinCovered": [],
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "projected": {
+              "left": 362.77829470474444,
+              "top": 240.3459421678881,
+              "right": 376.77829470474444,
+              "bottom": 254.3459421678881
+            },
+            "pin": {
+              "left": 364,
+              "top": 241,
+              "right": 376,
+              "bottom": 253
+            },
+            "collapsed": true,
+            "projectedInside": true,
+            "pinInside": true,
+            "projectedCovered": [],
+            "pinCovered": [],
+            "coveredByOtherCards": []
+          }
+        ],
+        "controls": [
+          {
+            "id": "",
+            "className": "maplibregl-ctrl-top-right ",
+            "left": 663,
+            "top": 82,
+            "right": 716,
+            "bottom": 221
+          },
+          {
+            "id": "",
+            "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 369.078125,
+            "top": 374,
+            "right": 718,
+            "bottom": 398
+          },
+          {
+            "id": "",
+            "className": "walk-tools",
+            "left": 20,
+            "top": 80,
+            "right": 125.5625,
+            "bottom": 126
+          },
+          {
+            "id": "",
+            "className": "view-dock paper",
+            "left": 15,
+            "top": 232,
+            "right": 231.75,
+            "bottom": 286
+          },
+          {
+            "id": "trip-dock",
+            "className": "trip-dock paper",
+            "left": 15,
+            "top": 296,
+            "right": 721,
+            "bottom": 360
+          }
+        ],
+        "cards": [],
+        "cardCovered": []
+      }
+    },
+    {
+      "name": "No other expanded card hides a source point or visible pin in 2D at 736×414",
+      "passed": true,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "projected": {
+            "left": 359.22730061544604,
+            "top": 178.43305423979348,
+            "right": 373.22730061544604,
+            "bottom": 192.43305423979348
+          },
+          "pin": {
+            "left": 360,
+            "top": 179,
+            "right": 372,
+            "bottom": 191
+          },
+          "collapsed": true,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "projected": {
+            "left": 362.77829470474444,
+            "top": 240.3459421678881,
+            "right": 376.77829470474444,
+            "bottom": 254.3459421678881
+          },
+          "pin": {
+            "left": 364,
+            "top": 241,
+            "right": 376,
+            "bottom": 253
+          },
+          "collapsed": true,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": []
+        }
+      ]
+    },
+    {
+      "name": "Expanded cards avoid controls in 2D at 736×414",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Targeted camera run has no browser runtime errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "issues": [
+    "No other expanded card hides a source point or visible pin in 3D at 320×680",
+    "No other expanded card hides a source point or visible pin in 2D at 320×680"
+  ],
+  "views": [
+    {
+      "threeD": true,
+      "viewport": [
+        320,
+        680
+      ],
+      "pitch": 54,
+      "padding": {
+        "top": 223.20000000000002,
+        "bottom": 260,
+        "left": 51.2,
+        "right": 51.2
+      },
+      "points": [
+        {
+          "id": "osm-node-13649952401",
+          "projected": {
+            "left": 150.97169605263983,
+            "top": 365.7028272900365,
+            "right": 164.97169605263983,
+            "bottom": 379.7028272900365
+          },
+          "pin": {
+            "left": 152,
+            "top": 367,
+            "right": 164,
+            "bottom": 379
+          },
+          "collapsed": true,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": [
+            {
+              "id": "osm-node-4460519589",
+              "left": 79,
+              "top": 208.359375,
+              "right": 245,
+              "bottom": 410
+            }
+          ]
+        },
+        {
+          "id": "osm-node-4460519589",
+          "projected": {
+            "left": 155.18045195224192,
+            "top": 406.65622724490646,
+            "right": 169.18045195224192,
+            "bottom": 420.65622724490646
+          },
+          "pin": {
+            "left": 157,
+            "top": 409,
+            "right": 167,
+            "bottom": 419
+          },
+          "collapsed": false,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "",
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 260,
+          "top": 134,
+          "right": 312,
+          "bottom": 276
+        },
+        {
+          "id": "",
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 10,
+          "top": 620,
+          "right": 302,
+          "bottom": 664
+        },
+        {
+          "id": "",
+          "className": "walk-tools",
+          "left": 13,
+          "top": 134,
+          "right": 113.265625,
+          "bottom": 182
+        },
+        {
+          "id": "",
+          "className": "view-dock paper",
+          "left": 13,
+          "top": 448,
+          "right": 219.46875,
+          "bottom": 502
+        },
+        {
+          "id": "trip-dock",
+          "className": "trip-dock paper",
+          "left": 13,
+          "top": 521.25,
+          "right": 307,
+          "bottom": 620
+        }
+      ],
+      "cards": [
+        {
+          "id": "osm-node-4460519589",
+          "left": 79,
+          "top": 208.359375,
+          "right": 245,
+          "bottom": 410
+        }
+      ],
+      "cardCovered": []
+    },
+    {
+      "threeD": false,
+      "viewport": [
+        320,
+        680
+      ],
+      "pitch": 0,
+      "padding": {
+        "top": 223.20000000000002,
+        "bottom": 260,
+        "left": 51.2,
+        "right": 51.2
+      },
+      "points": [
+        {
+          "id": "osm-node-13649952401",
+          "projected": {
+            "left": 150.86633768931569,
+            "top": 338.4382586228692,
+            "right": 164.86633768931569,
+            "bottom": 352.4382586228692
+          },
+          "pin": {
+            "left": 152,
+            "top": 339,
+            "right": 164,
+            "bottom": 351
+          },
+          "collapsed": true,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": [
+            {
+              "id": "osm-node-4460519589",
+              "left": 79,
+              "top": 214.359375,
+              "right": 245,
+              "bottom": 416
+            }
+          ]
+        },
+        {
+          "id": "osm-node-4460519589",
+          "projected": {
+            "left": 155.13880102088808,
+            "top": 412.96443669894927,
+            "right": 169.13880102088808,
+            "bottom": 426.96443669894927
+          },
+          "pin": {
+            "left": 157,
+            "top": 415,
+            "right": 167,
+            "bottom": 425
+          },
+          "collapsed": false,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "",
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 260,
+          "top": 134,
+          "right": 312,
+          "bottom": 276
+        },
+        {
+          "id": "",
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 10,
+          "top": 620,
+          "right": 302,
+          "bottom": 664
+        },
+        {
+          "id": "",
+          "className": "walk-tools",
+          "left": 13,
+          "top": 134,
+          "right": 113.265625,
+          "bottom": 182
+        },
+        {
+          "id": "",
+          "className": "view-dock paper",
+          "left": 13,
+          "top": 448,
+          "right": 219.46875,
+          "bottom": 502
+        },
+        {
+          "id": "trip-dock",
+          "className": "trip-dock paper",
+          "left": 13,
+          "top": 521.25,
+          "right": 307,
+          "bottom": 620
+        }
+      ],
+      "cards": [
+        {
+          "id": "osm-node-4460519589",
+          "left": 79,
+          "top": 214.359375,
+          "right": 245,
+          "bottom": 416
+        }
+      ],
+      "cardCovered": []
+    },
+    {
+      "threeD": false,
+      "viewport": [
+        736,
+        414
+      ],
+      "pitch": 0,
+      "padding": {
+        "top": 141.6,
+        "bottom": 169.92,
+        "left": 117.76,
+        "right": 117.76
+      },
+      "points": [
+        {
+          "id": "osm-node-13649952401",
+          "projected": {
+            "left": 359.22730061544604,
+            "top": 178.43305423979348,
+            "right": 373.22730061544604,
+            "bottom": 192.43305423979348
+          },
+          "pin": {
+            "left": 360,
+            "top": 179,
+            "right": 372,
+            "bottom": 191
+          },
+          "collapsed": true,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "projected": {
+            "left": 362.77829470474444,
+            "top": 240.3459421678881,
+            "right": 376.77829470474444,
+            "bottom": 254.3459421678881
+          },
+          "pin": {
+            "left": 364,
+            "top": 241,
+            "right": 376,
+            "bottom": 253
+          },
+          "collapsed": true,
+          "projectedInside": true,
+          "pinInside": true,
+          "projectedCovered": [],
+          "pinCovered": [],
+          "coveredByOtherCards": []
+        }
+      ],
+      "controls": [
+        {
+          "id": "",
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 663,
+          "top": 82,
+          "right": 716,
+          "bottom": 221
+        },
+        {
+          "id": "",
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 369.078125,
+          "top": 374,
+          "right": 718,
+          "bottom": 398
+        },
+        {
+          "id": "",
+          "className": "walk-tools",
+          "left": 20,
+          "top": 80,
+          "right": 125.5625,
+          "bottom": 126
+        },
+        {
+          "id": "",
+          "className": "view-dock paper",
+          "left": 15,
+          "top": 232,
+          "right": 231.75,
+          "bottom": 286
+        },
+        {
+          "id": "trip-dock",
+          "className": "trip-dock paper",
+          "left": 15,
+          "top": 296,
+          "right": 721,
+          "bottom": 360
+        }
+      ],
+      "cards": [],
+      "cardCovered": []
+    }
+  ],
+  "pageErrors": [],
+  "passed": false
+}

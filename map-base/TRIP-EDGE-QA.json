@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-23",
+  "scope": "Isolated browser contexts for itinerary loading, storage and exact standalone HTTP; no real entrance verification.",
+  "checks": [
+    {
+      "name": "Default city map does not fetch food or open the itinerary",
+      "passed": true,
+      "details": {
+        "hidden": true,
+        "food": {
+          "phase": "unloaded",
+          "active": false,
+          "selected": null,
+          "saved": [],
+          "records": 0,
+          "error": null,
+          "saveError": false
+        },
+        "dialogs": 0
+      }
+    },
+    {
+      "name": "Food completing after a 2D switch leaves dock closed and saved order intact",
+      "passed": true,
+      "details": {
+        "active": false,
+        "dockHidden": true,
+        "pitch": 0,
+        "saved": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ]
+      }
+    },
+    {
+      "name": "HTTP error keeps old wants and retry restores ordered stops",
+      "passed": true,
+      "details": {
+        "before": {
+          "saved": [
+            "osm-node-13649952401",
+            "osm-node-4460519589"
+          ],
+          "dockHidden": true,
+          "base": true
+        },
+        "after": {
+          "saved": [
+            "osm-node-13649952401",
+            "osm-node-4460519589"
+          ],
+          "chips": 2
+        }
+      }
+    },
+    {
+      "name": "Quota failure retains the stop and clearly reports unsaved changes",
+      "passed": true,
+      "details": {
+        "saved": [
+          "osm-node-13649952401"
+        ],
+        "error": true,
+        "caption": "本次调整暂未保存",
+        "note": "本次调整暂未保存到浏览器。刷新前可再次调整以重试。",
+        "noteVisible": true,
+        "rows": 1
+      }
+    },
+    {
+      "name": "Malformed old wants does not crash or get silently overwritten on load",
+      "passed": true,
+      "details": {
+        "raw": "not-valid-json",
+        "count": 0,
+        "title": "留住想吃的这一口"
+      }
+    },
+    {
+      "name": "Exact standalone supports adding and reordering without subsidiary HTTP",
+      "passed": true,
+      "details": {
+        "order": [
+          "osm-node-4460519589",
+          "osm-node-13649952401"
+        ],
+        "chips": 2,
+        "routeEligible": [
+          false,
+          false
+        ],
+        "image": true,
+        "extra": [],
+        "errors": []
+      }
+    }
+  ],
+  "issues": [],
+  "passed": true
+}

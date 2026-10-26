@@ -1,0 +1,1280 @@
+{
+  "date": "2026-10-22",
+  "scope": "Local food candidate experience, browser simulation; no publication, no verified-shop or route claim.",
+  "checks": [
+    {
+      "name": "Default map does not request food records or show cards",
+      "passed": true
+    },
+    {
+      "name": "Two WGS84 source records are visibly marked as unverified candidates",
+      "passed": true,
+      "details": {
+        "base": {
+          "ready": true,
+          "center": [
+            106.57947863549464,
+            29.563105344660045
+          ],
+          "zoom": 15.38391758429,
+          "pitch": 48,
+          "terrain": true,
+          "elevationMetres": 250.79339819803857,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 402,
+          "selectedRoad": null,
+          "foodCards": 2,
+          "failures": []
+        },
+        "food": {
+          "phase": "loaded",
+          "active": true,
+          "selected": null,
+          "saved": [],
+          "records": 2,
+          "error": null
+        },
+        "records": [
+          {
+            "id": "osm-node-13649952401",
+            "status": "source-record",
+            "entrance": "unverified",
+            "coords": [
+              106.5795981,
+              29.5661577
+            ],
+            "system": "WGS84",
+            "osm": 13649952401
+          },
+          {
+            "id": "osm-node-4460519589",
+            "status": "source-record",
+            "entrance": "unverified",
+            "coords": [
+              106.5800949,
+              29.5586155
+            ],
+            "system": "WGS84",
+            "osm": 4460519589
+          }
+        ],
+        "labels": [
+          "店址待核实",
+          "店址待核实"
+        ]
+      }
+    },
+    {
+      "name": "Both independent desktop cards fit the map",
+      "passed": true,
+      "details": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "scroll": [
+          1440,
+          960
+        ],
+        "header": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 76,
+          "width": 1440,
+          "height": 76
+        },
+        "controls": [
+          {
+            "name": "重新展开食途地图",
+            "box": {
+              "left": 32,
+              "top": 20.604167938232422,
+              "right": 105.13542175292969,
+              "bottom": 55.395835876464844,
+              "width": 73.13542175292969,
+              "height": 34.79166793823242
+            }
+          },
+          {
+            "name": "重庆 · 中心城区",
+            "box": {
+              "left": 130.1354217529297,
+              "top": 18.25,
+              "right": 254.95834350585938,
+              "bottom": 57.75,
+              "width": 124.82292175292969,
+              "height": 39.5
+            }
+          },
+          {
+            "name": "美食探索",
+            "box": {
+              "left": 1105,
+              "top": 16,
+              "right": 1203,
+              "bottom": 60,
+              "width": 98,
+              "height": 44
+            }
+          },
+          {
+            "name": "查看想去清单，0家",
+            "box": {
+              "left": 1228,
+              "top": 16,
+              "right": 1272,
+              "bottom": 60,
+              "width": 44,
+              "height": 44
+            }
+          },
+          {
+            "name": "地图图层",
+            "box": {
+              "left": 1297,
+              "top": 16,
+              "right": 1408,
+              "bottom": 60,
+              "width": 111,
+              "height": 44
+            }
+          }
+        ],
+        "cards": [
+          {
+            "id": "osm-node-13649952401",
+            "collapsed": false,
+            "box": {
+              "left": 705,
+              "top": 189.65625,
+              "right": 903,
+              "bottom": 410,
+              "width": 198,
+              "height": 220.34375
+            }
+          },
+          {
+            "id": "osm-node-4460519589",
+            "collapsed": false,
+            "box": {
+              "left": 509,
+              "top": 539.65625,
+              "right": 707,
+              "bottom": 760,
+              "width": 198,
+              "height": 220.34375
+            }
+          }
+        ],
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Local concept image decodes and both cards disclose illustration",
+      "passed": true,
+      "details": {
+        "width": 2172,
+        "height": 724,
+        "disclosures": [
+          "菜品示意",
+          "菜品示意"
+        ]
+      }
+    },
+    {
+      "name": "Both geographic dots retain anchors after pan, rotation and zoom",
+      "passed": true,
+      "details": {
+        "before": [
+          {
+            "id": "osm-node-13649952401",
+            "projected": [
+              803.699794313045,
+              338.42008734947916
+            ],
+            "actual": [
+              804,
+              338
+            ],
+            "error": 0.516330161497997
+          },
+          {
+            "id": "osm-node-4460519589",
+            "projected": [
+              607.7757449956965,
+              687.9629448487979
+            ],
+            "actual": [
+              608,
+              688
+            ],
+            "error": 0.22729582307152918
+          }
+        ],
+        "after": [
+          {
+            "id": "osm-node-13649952401",
+            "projected": [
+              728.8773754416113,
+              308.76723939192493
+            ],
+            "actual": [
+              729,
+              309
+            ],
+            "error": 0.26308607525198713
+          },
+          {
+            "id": "osm-node-4460519589",
+            "projected": [
+              651.9144311689201,
+              700.16029512647
+            ],
+            "actual": [
+              652,
+              700
+            ],
+            "error": 0.18170457457757155
+          }
+        ]
+      }
+    },
+    {
+      "name": "Noodle details use one historical original-platform link without embedded playback",
+      "passed": true,
+      "details": {
+        "open": true,
+        "text": "\n    ×\n    菜品示意 · 非门店实拍\n    \n      小面超级李板凳面\n      朝千路41号（2020年视频地址线索，分店待核）先看一段原作者的板凳面探店，再决定要不要把这一站放进想去清单。视频中的分店与当前地图点位仍待核对。\n      加入想去 ＋\n      相关视频 · 分店待核重庆板凳面探店（2020）馋大叔 · 原平台观看 · 分店待核对\n      地点与图片说明地图位置来自 2026-10-19 的开放地图节点，当前店址、营业及入口仍待核实。图片是通用菜品的 AI 生成示意，不代表这家店的实际菜品。候选地点尚未进入可执行路线。查看原始地图记录\n    \n  ",
+        "videos": [
+          {
+            "url": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+            "target": "_blank",
+            "rel": "noopener noreferrer",
+            "text": "重庆板凳面探店（2020）馋大叔 · 原平台观看 · 分店待核对"
+          }
+        ],
+        "iframes": 0
+      }
+    },
+    {
+      "name": "Clicking food card does not trigger underlying road selection",
+      "passed": true
+    },
+    {
+      "name": "Location and image evidence disclose unverified current address and AI illustration",
+      "passed": true,
+      "details": "地点与图片说明\n\n地图位置来自 2026-10-19 的开放地图节点，当前店址、营业及入口仍待核实。\n\n图片是通用菜品的 AI 生成示意，不代表这家店的实际菜品。候选地点尚未进入可执行路线。\n\n查看原始地图记录"
+    },
+    {
+      "name": "Esc closes details and returns focus to the originating card",
+      "passed": true,
+      "details": {
+        "initiallyFailed": true,
+        "fixedBy": "Explicit dialog close focus restoration",
+        "retested": true,
+        "evidence": "FOOD-FOCUS-QA.json, Esc and button close on desktop and mobile"
+      }
+    },
+    {
+      "name": "Hotpot detail has no unrelated video link",
+      "passed": true
+    },
+    {
+      "name": "Two wants are ordered and distinct",
+      "passed": true
+    },
+    {
+      "name": "Wants survive page reload in this browser",
+      "passed": true
+    },
+    {
+      "name": "Removing a want updates list, count and stored IDs",
+      "passed": true
+    },
+    {
+      "name": "Want reopens its own details",
+      "passed": true
+    },
+    {
+      "name": "Verified-card API still rejects source records and GCJ02 without changing visible cards",
+      "passed": true,
+      "details": [
+        {
+          "error": "只接入已核实的 WGS84 门店坐标",
+          "count": 2
+        },
+        {
+          "error": "只接入 WGS84 门店坐标",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Header and page fit 390x844",
+      "passed": true,
+      "details": {
+        "viewport": [
+          390,
+          844
+        ],
+        "scroll": [
+          390,
+          844
+        ],
+        "header": {
+          "left": 0,
+          "top": 0,
+          "right": 390,
+          "bottom": 122,
+          "width": 390,
+          "height": 122
+        },
+        "controls": [
+          {
+            "name": "重新展开食途地图",
+            "box": {
+              "left": 17,
+              "top": 19.89583396911621,
+              "right": 84.02083587646484,
+              "bottom": 51.09375190734863,
+              "width": 67.02083587646484,
+              "height": 31.197917938232422
+            }
+          },
+          {
+            "name": "重庆 · 中心城区",
+            "box": {
+              "left": 92.02083587646484,
+              "top": 18.5,
+              "right": 138.02083587646484,
+              "bottom": 52.5,
+              "width": 46,
+              "height": 34
+            }
+          },
+          {
+            "name": "美食探索",
+            "box": {
+              "left": 237,
+              "top": 13.5,
+              "right": 277,
+              "bottom": 57.5,
+              "width": 40,
+              "height": 44
+            }
+          },
+          {
+            "name": "查看想去清单，1家",
+            "box": {
+              "left": 285,
+              "top": 13.5,
+              "right": 325,
+              "bottom": 57.5,
+              "width": 40,
+              "height": 44
+            }
+          },
+          {
+            "name": "地图图层",
+            "box": {
+              "left": 333,
+              "top": 13.5,
+              "right": 373,
+              "bottom": 57.5,
+              "width": 40,
+              "height": 44
+            }
+          }
+        ],
+        "cards": [
+          {
+            "id": "osm-node-13649952401",
+            "collapsed": false,
+            "box": {
+              "left": 174,
+              "top": 205.3541717529297,
+              "right": 340,
+              "bottom": 407.00001525878906,
+              "width": 166,
+              "height": 201.64584350585938
+            }
+          },
+          {
+            "id": "osm-node-4460519589",
+            "collapsed": false,
+            "box": {
+              "left": 31,
+              "top": 462.35418701171875,
+              "right": 197,
+              "bottom": 664.0000305175781,
+              "width": 166,
+              "height": 201.64584350585938
+            }
+          }
+        ],
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Header buttons do not overlap 390x844",
+      "passed": true,
+      "details": [
+        {
+          "name": "重新展开食途地图",
+          "box": {
+            "left": 17,
+            "top": 19.89583396911621,
+            "right": 84.02083587646484,
+            "bottom": 51.09375190734863,
+            "width": 67.02083587646484,
+            "height": 31.197917938232422
+          }
+        },
+        {
+          "name": "重庆 · 中心城区",
+          "box": {
+            "left": 92.02083587646484,
+            "top": 18.5,
+            "right": 138.02083587646484,
+            "bottom": 52.5,
+            "width": 46,
+            "height": 34
+          }
+        },
+        {
+          "name": "美食探索",
+          "box": {
+            "left": 237,
+            "top": 13.5,
+            "right": 277,
+            "bottom": 57.5,
+            "width": 40,
+            "height": 44
+          }
+        },
+        {
+          "name": "查看想去清单，1家",
+          "box": {
+            "left": 285,
+            "top": 13.5,
+            "right": 325,
+            "bottom": 57.5,
+            "width": 40,
+            "height": 44
+          }
+        },
+        {
+          "name": "地图图层",
+          "box": {
+            "left": 333,
+            "top": 13.5,
+            "right": 373,
+            "bottom": 57.5,
+            "width": 40,
+            "height": 44
+          }
+        }
+      ]
+    },
+    {
+      "name": "Expanded cards do not overlap 390x844",
+      "passed": true,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "collapsed": false,
+          "box": {
+            "left": 174,
+            "top": 205.3541717529297,
+            "right": 340,
+            "bottom": 407.00001525878906,
+            "width": 166,
+            "height": 201.64584350585938
+          }
+        },
+        {
+          "id": "osm-node-4460519589",
+          "collapsed": false,
+          "box": {
+            "left": 31,
+            "top": 462.35418701171875,
+            "right": 197,
+            "bottom": 664.0000305175781,
+            "width": 166,
+            "height": 201.64584350585938
+          }
+        }
+      ]
+    },
+    {
+      "name": "Food dialog fits and scrolls inside 390x844",
+      "passed": true,
+      "details": [
+        {
+          "left": 14,
+          "top": 109.08333587646484,
+          "right": 376,
+          "bottom": 734.9062728881836,
+          "width": 362,
+          "height": 625.8229370117188
+        }
+      ]
+    },
+    {
+      "name": "Header and page fit 320x680",
+      "passed": true,
+      "details": {
+        "viewport": [
+          320,
+          680
+        ],
+        "scroll": [
+          320,
+          680
+        ],
+        "header": {
+          "left": 0,
+          "top": 0,
+          "right": 320,
+          "bottom": 122,
+          "width": 320,
+          "height": 122
+        },
+        "controls": [
+          {
+            "name": "重新展开食途地图",
+            "box": {
+              "left": 17,
+              "top": 21.104167938232422,
+              "right": 79.9375,
+              "bottom": 49.895835876464844,
+              "width": 62.9375,
+              "height": 28.791667938232422
+            }
+          },
+          {
+            "name": "重庆 · 中心城区",
+            "box": {
+              "left": 85.9375,
+              "top": 18.5,
+              "right": 127.9375,
+              "bottom": 52.5,
+              "width": 42,
+              "height": 34
+            }
+          },
+          {
+            "name": "美食探索",
+            "box": {
+              "left": 183,
+              "top": 13.5,
+              "right": 219,
+              "bottom": 57.5,
+              "width": 36,
+              "height": 44
+            }
+          },
+          {
+            "name": "查看想去清单，1家",
+            "box": {
+              "left": 225,
+              "top": 13.5,
+              "right": 261,
+              "bottom": 57.5,
+              "width": 36,
+              "height": 44
+            }
+          },
+          {
+            "name": "地图图层",
+            "box": {
+              "left": 267,
+              "top": 13.5,
+              "right": 303,
+              "bottom": 57.5,
+              "width": 36,
+              "height": 44
+            }
+          }
+        ],
+        "cards": [
+          {
+            "id": "osm-node-13649952401",
+            "collapsed": true,
+            "box": {
+              "left": 188,
+              "top": 359,
+              "right": 216,
+              "bottom": 387,
+              "width": 28,
+              "height": 28
+            }
+          },
+          {
+            "id": "osm-node-4460519589",
+            "collapsed": false,
+            "box": {
+              "left": 25,
+              "top": 340.35418701171875,
+              "right": 191,
+              "bottom": 542.0000305175781,
+              "width": 166,
+              "height": 201.64584350585938
+            }
+          }
+        ],
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Header buttons do not overlap 320x680",
+      "passed": true,
+      "details": [
+        {
+          "name": "重新展开食途地图",
+          "box": {
+            "left": 17,
+            "top": 21.104167938232422,
+            "right": 79.9375,
+            "bottom": 49.895835876464844,
+            "width": 62.9375,
+            "height": 28.791667938232422
+          }
+        },
+        {
+          "name": "重庆 · 中心城区",
+          "box": {
+            "left": 85.9375,
+            "top": 18.5,
+            "right": 127.9375,
+            "bottom": 52.5,
+            "width": 42,
+            "height": 34
+          }
+        },
+        {
+          "name": "美食探索",
+          "box": {
+            "left": 183,
+            "top": 13.5,
+            "right": 219,
+            "bottom": 57.5,
+            "width": 36,
+            "height": 44
+          }
+        },
+        {
+          "name": "查看想去清单，1家",
+          "box": {
+            "left": 225,
+            "top": 13.5,
+            "right": 261,
+            "bottom": 57.5,
+            "width": 36,
+            "height": 44
+          }
+        },
+        {
+          "name": "地图图层",
+          "box": {
+            "left": 267,
+            "top": 13.5,
+            "right": 303,
+            "bottom": 57.5,
+            "width": 36,
+            "height": 44
+          }
+        }
+      ]
+    },
+    {
+      "name": "Expanded cards do not overlap 320x680",
+      "passed": true,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "collapsed": true,
+          "box": {
+            "left": 188,
+            "top": 359,
+            "right": 216,
+            "bottom": 387,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "id": "osm-node-4460519589",
+          "collapsed": false,
+          "box": {
+            "left": 25,
+            "top": 340.35418701171875,
+            "right": 191,
+            "bottom": 542.0000305175781,
+            "width": 166,
+            "height": 201.64584350585938
+          }
+        }
+      ]
+    },
+    {
+      "name": "Food dialog fits and scrolls inside 320x680",
+      "passed": true,
+      "details": [
+        {
+          "left": 14,
+          "top": 19.885417938232422,
+          "right": 306,
+          "bottom": 660.1041679382324,
+          "width": 292,
+          "height": 640.21875
+        }
+      ]
+    },
+    {
+      "name": "Header and page fit 736x414",
+      "passed": true,
+      "details": {
+        "viewport": [
+          736,
+          414
+        ],
+        "scroll": [
+          736,
+          414
+        ],
+        "header": {
+          "left": 0,
+          "top": 0,
+          "right": 736,
+          "bottom": 60,
+          "width": 736,
+          "height": 60
+        },
+        "controls": [
+          {
+            "name": "重新展开食途地图",
+            "box": {
+              "left": 20,
+              "top": 12.604166984558105,
+              "right": 93.13542175292969,
+              "bottom": 47.39583492279053,
+              "width": 73.13542175292969,
+              "height": 34.79166793823242
+            }
+          },
+          {
+            "name": "重庆 · 中心城区",
+            "box": {
+              "left": 105.13542175292969,
+              "top": 10.25,
+              "right": 159.1354217529297,
+              "bottom": 49.75,
+              "width": 54,
+              "height": 39.5
+            }
+          },
+          {
+            "name": "美食探索",
+            "box": {
+              "left": 453,
+              "top": 8,
+              "right": 545,
+              "bottom": 52,
+              "width": 92,
+              "height": 44
+            }
+          },
+          {
+            "name": "查看想去清单，1家",
+            "box": {
+              "left": 557,
+              "top": 8,
+              "right": 601,
+              "bottom": 52,
+              "width": 44,
+              "height": 44
+            }
+          },
+          {
+            "name": "地图图层",
+            "box": {
+              "left": 613,
+              "top": 8,
+              "right": 716,
+              "bottom": 52,
+              "width": 103,
+              "height": 44
+            }
+          }
+        ],
+        "cards": [
+          {
+            "id": "osm-node-13649952401",
+            "collapsed": true,
+            "box": {
+              "left": 381,
+              "top": 205,
+              "right": 409,
+              "bottom": 233,
+              "width": 28,
+              "height": 28
+            }
+          },
+          {
+            "id": "osm-node-4460519589",
+            "collapsed": true,
+            "box": {
+              "left": 321,
+              "top": 315,
+              "right": 349,
+              "bottom": 343,
+              "width": 28,
+              "height": 28
+            }
+          }
+        ],
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Header buttons do not overlap 736x414",
+      "passed": true,
+      "details": [
+        {
+          "name": "重新展开食途地图",
+          "box": {
+            "left": 20,
+            "top": 12.604166984558105,
+            "right": 93.13542175292969,
+            "bottom": 47.39583492279053,
+            "width": 73.13542175292969,
+            "height": 34.79166793823242
+          }
+        },
+        {
+          "name": "重庆 · 中心城区",
+          "box": {
+            "left": 105.13542175292969,
+            "top": 10.25,
+            "right": 159.1354217529297,
+            "bottom": 49.75,
+            "width": 54,
+            "height": 39.5
+          }
+        },
+        {
+          "name": "美食探索",
+          "box": {
+            "left": 453,
+            "top": 8,
+            "right": 545,
+            "bottom": 52,
+            "width": 92,
+            "height": 44
+          }
+        },
+        {
+          "name": "查看想去清单，1家",
+          "box": {
+            "left": 557,
+            "top": 8,
+            "right": 601,
+            "bottom": 52,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "name": "地图图层",
+          "box": {
+            "left": 613,
+            "top": 8,
+            "right": 716,
+            "bottom": 52,
+            "width": 103,
+            "height": 44
+          }
+        }
+      ]
+    },
+    {
+      "name": "Expanded cards do not overlap 736x414",
+      "passed": true,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "collapsed": true,
+          "box": {
+            "left": 381,
+            "top": 205,
+            "right": 409,
+            "bottom": 233,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "id": "osm-node-4460519589",
+          "collapsed": true,
+          "box": {
+            "left": 321,
+            "top": 315,
+            "right": 349,
+            "bottom": 343,
+            "width": 28,
+            "height": 28
+          }
+        }
+      ]
+    },
+    {
+      "name": "Food dialog fits and scrolls inside 736x414",
+      "passed": true,
+      "details": [
+        {
+          "left": 158,
+          "top": 16,
+          "right": 578,
+          "bottom": 398,
+          "width": 420,
+          "height": 382
+        }
+      ]
+    },
+    {
+      "name": "Food toggle clears only food overlays and retains the base map",
+      "passed": true
+    },
+    {
+      "name": "Self-hosted runtime has no external fetches, failed HTTP or browser errors",
+      "passed": true,
+      "details": {
+        "external": [],
+        "failed": []
+      }
+    }
+  ],
+  "issues": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "viewports": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "scroll": [
+        390,
+        844
+      ],
+      "header": {
+        "left": 0,
+        "top": 0,
+        "right": 390,
+        "bottom": 122,
+        "width": 390,
+        "height": 122
+      },
+      "controls": [
+        {
+          "name": "重新展开食途地图",
+          "box": {
+            "left": 17,
+            "top": 19.89583396911621,
+            "right": 84.02083587646484,
+            "bottom": 51.09375190734863,
+            "width": 67.02083587646484,
+            "height": 31.197917938232422
+          }
+        },
+        {
+          "name": "重庆 · 中心城区",
+          "box": {
+            "left": 92.02083587646484,
+            "top": 18.5,
+            "right": 138.02083587646484,
+            "bottom": 52.5,
+            "width": 46,
+            "height": 34
+          }
+        },
+        {
+          "name": "美食探索",
+          "box": {
+            "left": 237,
+            "top": 13.5,
+            "right": 277,
+            "bottom": 57.5,
+            "width": 40,
+            "height": 44
+          }
+        },
+        {
+          "name": "查看想去清单，1家",
+          "box": {
+            "left": 285,
+            "top": 13.5,
+            "right": 325,
+            "bottom": 57.5,
+            "width": 40,
+            "height": 44
+          }
+        },
+        {
+          "name": "地图图层",
+          "box": {
+            "left": 333,
+            "top": 13.5,
+            "right": 373,
+            "bottom": 57.5,
+            "width": 40,
+            "height": 44
+          }
+        }
+      ],
+      "cards": [
+        {
+          "id": "osm-node-13649952401",
+          "collapsed": false,
+          "box": {
+            "left": 174,
+            "top": 205.3541717529297,
+            "right": 340,
+            "bottom": 407.00001525878906,
+            "width": 166,
+            "height": 201.64584350585938
+          }
+        },
+        {
+          "id": "osm-node-4460519589",
+          "collapsed": false,
+          "box": {
+            "left": 31,
+            "top": 462.35418701171875,
+            "right": 197,
+            "bottom": 664.0000305175781,
+            "width": 166,
+            "height": 201.64584350585938
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "viewport": [
+        320,
+        680
+      ],
+      "scroll": [
+        320,
+        680
+      ],
+      "header": {
+        "left": 0,
+        "top": 0,
+        "right": 320,
+        "bottom": 122,
+        "width": 320,
+        "height": 122
+      },
+      "controls": [
+        {
+          "name": "重新展开食途地图",
+          "box": {
+            "left": 17,
+            "top": 21.104167938232422,
+            "right": 79.9375,
+            "bottom": 49.895835876464844,
+            "width": 62.9375,
+            "height": 28.791667938232422
+          }
+        },
+        {
+          "name": "重庆 · 中心城区",
+          "box": {
+            "left": 85.9375,
+            "top": 18.5,
+            "right": 127.9375,
+            "bottom": 52.5,
+            "width": 42,
+            "height": 34
+          }
+        },
+        {
+          "name": "美食探索",
+          "box": {
+            "left": 183,
+            "top": 13.5,
+            "right": 219,
+            "bottom": 57.5,
+            "width": 36,
+            "height": 44
+          }
+        },
+        {
+          "name": "查看想去清单，1家",
+          "box": {
+            "left": 225,
+            "top": 13.5,
+            "right": 261,
+            "bottom": 57.5,
+            "width": 36,
+            "height": 44
+          }
+        },
+        {
+          "name": "地图图层",
+          "box": {
+            "left": 267,
+            "top": 13.5,
+            "right": 303,
+            "bottom": 57.5,
+            "width": 36,
+            "height": 44
+          }
+        }
+      ],
+      "cards": [
+        {
+          "id": "osm-node-13649952401",
+          "collapsed": true,
+          "box": {
+            "left": 188,
+            "top": 359,
+            "right": 216,
+            "bottom": 387,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "id": "osm-node-4460519589",
+          "collapsed": false,
+          "box": {
+            "left": 25,
+            "top": 340.35418701171875,
+            "right": 191,
+            "bottom": 542.0000305175781,
+            "width": 166,
+            "height": 201.64584350585938
+          }
+        }
+      ],
+      "dialogs": []
+    },
+    {
+      "viewport": [
+        736,
+        414
+      ],
+      "scroll": [
+        736,
+        414
+      ],
+      "header": {
+        "left": 0,
+        "top": 0,
+        "right": 736,
+        "bottom": 60,
+        "width": 736,
+        "height": 60
+      },
+      "controls": [
+        {
+          "name": "重新展开食途地图",
+          "box": {
+            "left": 20,
+            "top": 12.604166984558105,
+            "right": 93.13542175292969,
+            "bottom": 47.39583492279053,
+            "width": 73.13542175292969,
+            "height": 34.79166793823242
+          }
+        },
+        {
+          "name": "重庆 · 中心城区",
+          "box": {
+            "left": 105.13542175292969,
+            "top": 10.25,
+            "right": 159.1354217529297,
+            "bottom": 49.75,
+            "width": 54,
+            "height": 39.5
+          }
+        },
+        {
+          "name": "美食探索",
+          "box": {
+            "left": 453,
+            "top": 8,
+            "right": 545,
+            "bottom": 52,
+            "width": 92,
+            "height": 44
+          }
+        },
+        {
+          "name": "查看想去清单，1家",
+          "box": {
+            "left": 557,
+            "top": 8,
+            "right": 601,
+            "bottom": 52,
+            "width": 44,
+            "height": 44
+          }
+        },
+        {
+          "name": "地图图层",
+          "box": {
+            "left": 613,
+            "top": 8,
+            "right": 716,
+            "bottom": 52,
+            "width": 103,
+            "height": 44
+          }
+        }
+      ],
+      "cards": [
+        {
+          "id": "osm-node-13649952401",
+          "collapsed": true,
+          "box": {
+            "left": 381,
+            "top": 205,
+            "right": 409,
+            "bottom": 233,
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          "id": "osm-node-4460519589",
+          "collapsed": true,
+          "box": {
+            "left": 321,
+            "top": 315,
+            "right": 349,
+            "bottom": 343,
+            "width": 28,
+            "height": 28
+          }
+        }
+      ],
+      "dialogs": []
+    }
+  ],
+  "network": {
+    "external": [],
+    "failed": []
+  },
+  "passed": true,
+  "initialRunIssues": [
+    "Esc closes details and returns focus to the originating card"
+  ],
+  "regressionReport": "FOOD-FOCUS-QA.json",
+  "validationNote": "Initial run passed 28 of 29 checks. The one focus failure was fixed; 8 final regression checks pass, including mobile control avoidance and final standalone HTML."
+}

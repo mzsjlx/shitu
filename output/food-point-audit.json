@@ -1,0 +1,351 @@
+{
+  "inspectedOn": "2026-10-22",
+  "sourceRetrievedAt": "2026-10-19T19:02:34.280426+08:00",
+  "sourceEndpoint": "https://api.openstreetmap.org/api/0.6/map?bbox=106.566,29.558,106.584,29.573",
+  "sourceXMLHash": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10",
+  "existingValidationCandidates": {
+    "flowerNoodle": "No exact local POI match",
+    "zaiyuliHotpot": "No exact local POI match"
+  },
+  "records": [
+    {
+      "osmType": "node",
+      "osmId": 4139951895,
+      "name": "火锅米线飞",
+      "branch": null,
+      "coordinates": [
+        106.5759284,
+        29.561847
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": null,
+        "housenumber": null,
+        "housename": null
+      },
+      "floor": null,
+      "sourceCheckDate": null,
+      "sourceURL": "https://www.openstreetmap.org/node/4139951895",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "hotpot",
+        "name": "火锅米线飞"
+      }
+    },
+    {
+      "osmType": "node",
+      "osmId": 4139951983,
+      "name": "丘二馆",
+      "branch": null,
+      "coordinates": [
+        106.5740459,
+        29.5585258
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": null,
+        "housenumber": null,
+        "housename": null
+      },
+      "floor": null,
+      "sourceCheckDate": null,
+      "sourceURL": "https://www.openstreetmap.org/node/4139951983",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "amenity": "restaurant",
+        "name": "丘二馆"
+      }
+    },
+    {
+      "osmType": "node",
+      "osmId": 4460519589,
+      "name": "赵二火锅总店",
+      "branch": null,
+      "coordinates": [
+        106.5800949,
+        29.5586155
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": null,
+        "housenumber": null,
+        "housename": null
+      },
+      "floor": null,
+      "sourceCheckDate": null,
+      "sourceURL": "https://www.openstreetmap.org/node/4460519589",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese;regional",
+        "name": "赵二火锅总店",
+        "name:en": "Zhao Er Huo Guo Zong Dian"
+      }
+    },
+    {
+      "osmType": "node",
+      "osmId": 5458158321,
+      "name": "齊齊鱔魚火鍋",
+      "branch": null,
+      "coordinates": [
+        106.568129,
+        29.5631724
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": null,
+        "housenumber": null,
+        "housename": null
+      },
+      "floor": null,
+      "sourceCheckDate": null,
+      "sourceURL": "https://www.openstreetmap.org/node/5458158321",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "amenity": "restaurant",
+        "name": "齊齊鱔魚火鍋",
+        "phone": "+86 23 6372 2578"
+      }
+    },
+    {
+      "osmType": "node",
+      "osmId": 8441264117,
+      "name": "夜福火锅",
+      "branch": null,
+      "coordinates": [
+        106.5677518,
+        29.563061
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": null,
+        "housenumber": null,
+        "housename": null
+      },
+      "floor": null,
+      "sourceCheckDate": null,
+      "sourceURL": "https://www.openstreetmap.org/node/8441264117",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "夜福火锅",
+        "name:en": "Fuye Hot Pot"
+      }
+    },
+    {
+      "osmType": "node",
+      "osmId": 11727734305,
+      "name": "一只酸奶牛",
+      "branch": null,
+      "coordinates": [
+        106.5745672,
+        29.5644775
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": null,
+        "housenumber": null,
+        "housename": null
+      },
+      "floor": null,
+      "sourceCheckDate": null,
+      "sourceURL": "https://www.openstreetmap.org/node/11727734305",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "name": "一只酸奶牛"
+      }
+    },
+    {
+      "osmType": "node",
+      "osmId": 12250851023,
+      "name": "唐不甜老火锅",
+      "branch": null,
+      "coordinates": [
+        106.5781036,
+        29.5634874
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": null,
+        "housenumber": null,
+        "housename": null
+      },
+      "floor": "3",
+      "sourceCheckDate": null,
+      "sourceURL": "https://www.openstreetmap.org/node/12250851023",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "amenity": "restaurant",
+        "level": "3",
+        "name": "唐不甜老火锅"
+      }
+    },
+    {
+      "osmType": "node",
+      "osmId": 12730545125,
+      "name": "星巴克",
+      "branch": "解放碑鲁祖庙店",
+      "coordinates": [
+        106.5690311,
+        29.5596276
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": null,
+        "housenumber": null,
+        "housename": null
+      },
+      "floor": null,
+      "sourceCheckDate": null,
+      "sourceURL": "https://www.openstreetmap.org/node/12730545125",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "amenity": "cafe",
+        "branch": "解放碑鲁祖庙店",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "osmType": "node",
+      "osmId": 13649542901,
+      "name": "欢迎再米",
+      "branch": null,
+      "coordinates": [
+        106.5821114,
+        29.5635465
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": "曹家巷",
+        "housenumber": "1",
+        "housename": null
+      },
+      "floor": null,
+      "sourceCheckDate": "2026-03-15",
+      "sourceURL": "https://www.openstreetmap.org/node/13649542901",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:street": "曹家巷",
+        "amenity": "fast_food",
+        "check_date": "2026-03-15",
+        "check_date:opening_hours": "2026-03-15",
+        "cuisine": "chinese",
+        "drive_through": "no",
+        "name": "欢迎再米",
+        "name:en": "Huan Ying Zai Lai Liangcaifan",
+        "opening_hours": "Mo-Sa 10:00-16:00",
+        "outdoor_seating": "yes",
+        "self_service": "no"
+      }
+    },
+    {
+      "osmType": "node",
+      "osmId": 13649952401,
+      "name": "超级李板凳面（总店)",
+      "branch": null,
+      "coordinates": [
+        106.5795981,
+        29.5661577
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": null,
+        "housenumber": null,
+        "housename": null
+      },
+      "floor": null,
+      "sourceCheckDate": "2026-03-15",
+      "sourceURL": "https://www.openstreetmap.org/node/13649952401",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2026-03-15",
+        "cuisine": "chinese;noodles",
+        "name": "超级李板凳面（总店)",
+        "name:en": "Super Li Bandeng Mian"
+      }
+    },
+    {
+      "osmType": "node",
+      "osmId": 13975058789,
+      "name": "入饮甜汤",
+      "branch": null,
+      "coordinates": [
+        106.5690585,
+        29.5590754
+      ],
+      "coordinateSystem": "WGS84",
+      "originalXMLPointMatches": true,
+      "addressFields": {
+        "street": null,
+        "housenumber": null,
+        "housename": null
+      },
+      "floor": null,
+      "sourceCheckDate": null,
+      "sourceURL": "https://www.openstreetmap.org/node/13975058789",
+      "verificationStatus": "source-record-only",
+      "entranceStatus": "unverified",
+      "tags": {
+        "name": "入饮甜汤",
+        "name:zh": "入饮甜汤",
+        "shop": "pastry"
+      }
+    }
+  ],
+  "media": {
+    "file": "design/concepts/food-thumbnails-v2.jpg",
+    "actualDimensions": [
+      2172,
+      724
+    ],
+    "columns": [
+      "generic Chongqing noodles",
+      "generic hotpot",
+      "generic bingfen"
+    ],
+    "provenance": "Generated with image_gen; GENERATION-NOTES.md",
+    "useStatus": "Generic concept image only, not restaurant photography",
+    "cropSuggestion": "CSS background-size:300% 100%; positions 0%,50%,100%"
+  },
+  "caveats": [
+    "These are original OSM POI nodes, not verified entrances.",
+    "No source POI here establishes current operation, branch-video match or recommendation.",
+    "Do not infer a street address from nearest road or reuse previous Amap candidate coordinates.",
+    "Tangbutian source records level=3; do not treat it as a ground-level entrance."
+  ]
+}

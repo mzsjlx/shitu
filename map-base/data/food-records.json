@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "city": "chongqing",
+  "reviewedOn": "2026-10-25",
+  "status": "local-content-candidates",
+  "imageDisclosure": "AI生成的通用菜品示意，非任何门店实拍或实际菜单证明",
+  "records": [
+    {
+      "id": "osm-node-13649952401",
+      "name": "超级李板凳面",
+      "sourceName": "超级李板凳面（总店)",
+      "category": "小面",
+      "spriteIndex": 0,
+      "coordinates": [
+        106.5795981,
+        29.5661577
+      ],
+      "coordinateSystem": "WGS84",
+      "verificationStatus": "source-record",
+      "entranceStatus": "unverified",
+      "routeEligible": false,
+      "address": "朝千路41号（2026年作者简介地址线索，分店及入口待核）",
+      "summary": "先看一段原作者的板凳面探店，再决定要不要把这一站放进想去清单。视频中的分店与当前地图点位仍待核对。",
+      "coordinateEvidence": {
+        "kind": "osm-node",
+        "id": 13649952401,
+        "url": "https://www.openstreetmap.org/node/13649952401",
+        "sourceDate": "2026-10-19",
+        "sourceCheckDate": "2026-03-15"
+      },
+      "addressEvidence": [
+        {
+          "kind": "creator-description",
+          "publishedOn": "2026-06-06",
+          "addressText": "重庆市渝中区朝千路41号",
+          "branchMatch": "unconfirmed",
+          "entranceMatch": "unconfirmed",
+          "url": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+          "observedOn": "2026-10-25"
+        }
+      ],
+      "sources": [
+        {
+          "label": "2026年作者简介地址线索",
+          "url": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474"
+        }
+      ],
+      "videos": [
+        {
+          "title": "重庆你是真离谱！日本女孩挑战“异世界”激辣美食：辣子鸡发源地＋排队100桌小龙虾！🌶️🤯",
+          "author": "杉田千紘_CHIICHAN",
+          "publishedOn": "2026-06-06",
+          "observedOn": "2026-10-25",
+          "url": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+          "chapterText": "0:40",
+          "chapterSeconds": 40,
+          "branchMatch": "unconfirmed",
+          "playbackStatus": "not-tested"
+        },
+        {
+          "title": "重庆板凳面探店（2020）",
+          "author": "馋大叔",
+          "publishedOn": "2020-04-20",
+          "url": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+          "branchMatch": "unconfirmed",
+          "playbackStatus": "not-tested"
+        }
+      ]
+    },
+    {
+      "id": "osm-node-4460519589",
+      "name": "赵二火锅",
+      "sourceName": "赵二火锅总店",
+      "category": "火锅",
+      "spriteIndex": 1,
+      "coordinates": [
+        106.5800949,
+        29.5586155
+      ],
+      "coordinateSystem": "WGS84",
+      "verificationStatus": "source-record",
+      "entranceStatus": "unverified",
+      "routeEligible": false,
+      "address": "具体门牌待核实；地图原记录名为“赵二火锅总店”。",
+      "summary": "开放地图收录的火锅店候选。可以先放进想去清单，出发前再核对具体店址和营业状况。",
+      "coordinateEvidence": {
+        "kind": "osm-node",
+        "id": 4460519589,
+        "url": "https://www.openstreetmap.org/node/4460519589",
+        "sourceDate": "2026-10-19"
+      },
+      "sources": [],
+      "videos": []
+    }
+  ]
+}

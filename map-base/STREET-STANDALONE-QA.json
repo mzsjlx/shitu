@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-22",
+  "transport": "HTTP serving exact embedded HTML",
+  "stats": {
+    "base": {
+      "ready": true,
+      "center": [
+        106.58012704999999,
+        29.562860625000013
+      ],
+      "zoom": 18.55,
+      "pitch": 40,
+      "terrain": true,
+      "elevationMetres": 248.1549001012463,
+      "roadNameGroups": 1041,
+      "renderedRoadFragments": 24,
+      "selectedRoad": null,
+      "foodCards": 0,
+      "failures": []
+    },
+    "street": {
+      "phase": "loaded",
+      "enabled": true,
+      "active": true,
+      "error": null,
+      "sourceFeatures": 745,
+      "visibleSourceFeatures": 542,
+      "illustratedRoads": 32,
+      "separators": 89,
+      "counts": {
+        "raw-road": 215,
+        "footpath": 182,
+        "pedestrian": 12,
+        "steps": 91,
+        "sidewalk": 29,
+        "crossing": 13
+      },
+      "renderedFeatures": 40
+    }
+  },
+  "additionalHTTP": [],
+  "errors": [],
+  "passed": true
+}

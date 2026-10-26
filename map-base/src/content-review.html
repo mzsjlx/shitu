@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf7f0"><meta name="robots" content="noindex,nofollow"><title>食途 · 内容工作台</title><link rel="icon" href="data:,"><link rel="stylesheet" href="./review-app.css"></head>
+<body>
+  <header class="review-header"><a class="review-brand" href="./?view=food" target="_blank" rel="noopener noreferrer">食途<span>内容工作台</span></a><span class="local-badge">本地草稿</span><a class="map-link" href="./?view=food" target="_blank" rel="noopener noreferrer">查看地图 ↗</a></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">从一条线索，到一家具名的店</p><h1>让每一站，都有据可查。</h1><p>把材料和判断分别留下。草稿完整后仍需复核，不会自动更新公众地图。</p></div><div class="toolbar"><button id="import-open" disabled>导入草稿</button><button id="export-draft" class="primary" disabled>导出备份 ↗</button><input id="import-file" type="file" accept=".json,application/json" hidden></div></section>
+    <div class="save-row"><span id="save-status" role="status">正在读取候选资料…</span><button id="undo-replace" hidden>撤销上次替换</button><button id="reset-open" disabled>重置工作台草稿</button></div>
+    <p id="review-feedback" class="feedback" role="alert" hidden></p>
+    <div id="review-loading" class="loading-card"><strong id="review-load-state">正在准备两家候选的材料…</strong><button onclick="location.reload()">重新读取</button></div>
+    <section id="workbench" class="workbench" hidden>
+      <nav class="candidate-panel panel" aria-label="候选门店"><div class="panel-title"><strong>待核候选</strong><span id="candidate-count"></span></div><div id="candidate-list"></div><section class="audit-callout"><span class="eyebrow">先看已有资料</span><h2>入口还缺哪一环？</h2><p id="audit-summary"></p><button id="audit-open">查看缓存线索 ↗</button></section></nav>
+      <section class="editor-panel">
+        <div class="identity panel"><span id="candidate-category" class="eyebrow"></span><h2 id="candidate-title"></h2><p id="candidate-origin"></p><dl><div><dt>来源点</dt><dd id="candidate-coordinates"></dd></div><div><dt>公众状态</dt><dd>来源候选 · 入口待核 · 未用于到店路线</dd></div></dl><a id="candidate-source" target="_blank" rel="noopener noreferrer">查看原始地点记录 ↗</a></div>
+        <div class="editor-tabs" role="tablist" aria-label="资料页面"><button id="tab-checks" role="tab" aria-selected="true" aria-controls="checks-view">核实项目</button><button id="tab-evidence" role="tab" aria-selected="false" aria-controls="evidence-view">材料库 <span id="evidence-count"></span></button><button id="tab-preview" role="tab" aria-selected="false" aria-controls="preview-view">复核预览</button></div>
+        <div id="checks-view" role="tabpanel" aria-labelledby="tab-checks"><div id="check-sections"></div><label class="panel general-notes"><span>留给下一次核对的备注</span><textarea id="general-notes" rows="3" maxlength="3000" placeholder="例如：还需要哪一张门牌资料、哪一个过街连接依据。"></textarea></label></div>
+        <section id="evidence-view" class="panel evidence-view" role="tabpanel" aria-labelledby="tab-evidence" hidden><div class="panel-title evidence-toolbar"><strong>把看到的材料留下</strong><div class="intake-toolbar-actions"><button id="intake-open" type="button">整理视频简介</button><button id="add-evidence" class="primary">＋ 添加材料</button></div></div><p class="help">只保存来源和定位说明，不会自动抓取网页、图片或视频。添加材料后，回到核实项目中引用它。</p><div id="evidence-list"></div></section>
+        <section id="preview-view" class="panel preview-view" role="tabpanel" aria-labelledby="tab-preview" hidden><span class="eyebrow">提交复核前，再对照一次</span><h3 id="preview-title"></h3><p>这里展示填写结果与结构缺项。材料中的事实、分店对应、入口通行与使用许可仍需人工复核。</p><div id="preview-summary"></div><details><summary>查看本条草稿 JSON</summary><pre id="draft-json"></pre></details></section>
+      </section>
+      <aside class="review-state panel"><span class="eyebrow">当前草稿</span><strong id="record-state" class="state-badge"></strong><p class="help">“可提交复核”只表示所需材料字段齐全，不等于已核实、可发布或可导航。</p><div id="dimension-state"></div><div class="missing-section"><h3>下一步补什么</h3><ul id="missing-list"></ul></div><p id="base-version" class="version-note"></p></aside>
+    </section>
+    <footer>资料引用：© OpenStreetMap contributors · ODbL。当前仅作本地内容整理；草稿不会上传，也不包含地图的想去清单。</footer>
+  </main>
+  <dialog id="intake-dialog" class="intake-dialog" aria-labelledby="intake-title" aria-describedby="intake-help">
+    <button id="intake-close" type="button" class="close" aria-label="关闭视频简介整理">×</button>
+    <span class="eyebrow">先整理文字，再确认引用</span>
+    <h2 id="intake-title">从视频简介，整理线索</h2>
+    <p id="intake-help" class="help intake-help">粘贴公开的视频简介文字。程序按文字提取地址与章节，不下载媒体，不判断分店对应或使用授权。</p>
+    <form id="intake-form" class="intake-form">
+      <label for="intake-title-input">来源标题<input id="intake-title-input" maxlength="180" required placeholder="例如：作者的视频标题"></label>
+      <label for="intake-url">HTTPS 原页链接<input id="intake-url" type="url" maxlength="2000" required placeholder="https://…"></label>
+      <label for="intake-author">作者（可选）<input id="intake-author" maxlength="100" placeholder="原作者的公开署名"></label>
+      <div class="intake-date-row">
+        <label for="intake-observed">读取日期<input id="intake-observed" type="date" required></label>
+        <label for="intake-published">资料发布日期（可选）<input id="intake-published" type="date"></label>
+      </div>
+      <label for="intake-text">公开的视频简介文字<textarea id="intake-text" rows="7" maxlength="12000" required placeholder="粘贴作者简介中的店名、地址、章节。"></textarea></label>
+      <p id="intake-error" class="form-error" role="alert" hidden></p>
+      <button id="intake-analyze" type="submit" class="intake-analyze">预览文字线索</button>
+    </form>
+    <section id="intake-preview" class="intake-preview" aria-label="文字整理预览" hidden>
+      <span class="eyebrow">逐条确认本次引用</span>
+      <p id="intake-summary" class="intake-summary" role="status"></p>
+      <ul id="intake-lines" class="intake-lines"></ul>
+      <p class="help intake-help">提取仅为文字线索，请手动确认引用哪些内容。</p>
+      <label for="intake-candidate">归入哪家现有候选<select id="intake-candidate"></select></label>
+      <button id="intake-save" type="button" class="primary intake-save">保存为一份材料</button>
+    </section>
+  </dialog>
+  <dialog id="evidence-dialog"><button id="evidence-close" class="close" aria-label="关闭材料编辑">×</button><span class="eyebrow">材料与判断分开保存</span><h2 id="evidence-dialog-title">添加一份材料</h2><form id="evidence-form"><input id="evidence-id" type="hidden"><label>材料类型<select id="evidence-kind"><option value="map-record">地图原记录</option><option value="creator-page">原作者内容页</option><option value="onsite-note">入口 / 现场资料说明</option><option value="photo-rights">图片用途 / 权利依据</option><option value="project-asset">已有项目素材记录</option><option value="other">其他公开资料</option></select></label><label>材料标题<input id="evidence-title" maxlength="180" required placeholder="能看出这份材料是什么"></label><label>HTTPS 原页链接<input id="evidence-url" type="url" maxlength="2000" placeholder="https://…"></label><label>本地材料位置（可替代链接，仅作文本记录）<input id="evidence-reference" maxlength="500" placeholder="例如：已保存资料的文件名或项目相对位置"></label><div class="date-row"><label>读取日期<input id="evidence-observed" type="date" required></label><label>资料发布日期（未知可留空）<input id="evidence-published" type="date"></label></div><label>摘录 / 章节 / 定位说明<textarea id="evidence-note" rows="3" maxlength="2000" placeholder="用简短说明指出材料具体支持什么，不粘贴整篇内容。"></textarea></label><p id="evidence-error" class="form-error" role="alert" hidden></p><button type="submit" class="primary form-submit">保存这份材料</button></form></dialog>
+  <dialog id="replace-dialog"><button id="replace-close" class="close" aria-label="关闭草稿替换预览">×</button><span class="eyebrow">先确认要替换的内容</span><h2 id="replace-title"></h2><p id="replace-summary"></p><p class="help">只替换本工作台草稿，不会改动地图上的地点或收藏。替换后可撤销；开始新编辑后将结束该次撤销。</p><button id="replace-confirm" class="primary form-submit"></button></dialog>
+  <dialog id="audit-dialog"><button id="audit-close" class="close" aria-label="关闭入口线索审查">×</button><span class="eyebrow">2026-10-19 来源缓存 · 2026-10-23 审查</span><h2>地点，还不是门口。</h2><p id="audit-details"></p><p class="help">下面是来源线索目录，不是新增推荐门店。门牌、楼层和入口对应没有材料时保持空白，不按距离或同建筑猜配。</p><div class="table-scroll"><table><thead><tr><th>来源地点</th><th>源门牌</th><th>源楼层</th><th>对应入口</th></tr></thead><tbody id="audit-foods"></tbody></table></div></dialog>
+  <script>(()=>{let ready=false;const fail=()=>{if(ready)return;document.getElementById('review-load-state').textContent='工作台资料暂未读取，请重新读取。';};const timer=setTimeout(fail,15000);window.__CONTENT_REVIEW_BOOT__={ready(){ready=true;clearTimeout(timer);}};addEventListener('error',e=>{if(e.target===window||e.target?.tagName==='SCRIPT')fail();},true);})();</script>
+  <script defer src="./review-app.js"></script>
+</body></html>

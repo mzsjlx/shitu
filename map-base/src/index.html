@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#faf7f0">
+  <meta name="description" content="食途重庆真实道路三维地图底座，基于本地开放地图瓦片，支持道路查找与独立美食卡片图层。">
+  <title>食途 · 重庆地图</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <main id="app">
+    <header class="topbar">
+      <a class="brand" href="" aria-label="重新展开食途地图">食途<span class="brand-dot"></span></a>
+      <span class="city-chip">重庆<span> · 中心城区</span></span>
+      <form id="road-search" class="search" role="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <input id="search-input" aria-label="搜索重庆道路" autocomplete="off" placeholder="找一条路，开始逛重庆">
+        <button id="clear-search" type="button" aria-label="清除搜索" hidden>×</button>
+        <div id="search-results" class="search-results" hidden></div>
+      </form>
+      <button id="food-entry" class="food-entry" aria-pressed="false" aria-label="美食探索"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v7m4-7v7M3 3v7c0 3 7 3 7 0M6.5 13v8M17 3v18m0-18c-4 3-4 9 0 9"/></svg><span>美食探索</span></button>
+      <button id="wants-open" class="wants-open" aria-label="查看想去清单，0家" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4Z"/></svg><span id="wants-count">0</span></button>
+      <button id="layers-toggle" class="layer-button" aria-label="地图图层" aria-expanded="false" aria-controls="layers-panel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Zm0 5 9 5 9-5M3 18l9 5 9-5"/></svg><span>地图图层</span>
+      </button>
+    </header>
+    <section class="map-shell" aria-label="重庆真实道路三维地图">
+      <div id="map"></div>
+      <div class="street-tools"><button id="street-entry">看看街道细节 ↗</button><button id="street-info" aria-label="查看街道样板说明">ⓘ</button></div>
+      <div class="walk-tools"><button id="walk-entry">沿路看看 ↗</button></div>
+      <div id="food-pick-tools" class="food-pick-tools" hidden><button id="food-pick-open" class="food-pick-open" type="button" aria-haspopup="dialog" aria-controls="food-pick-dialog"><span id="food-pick-label">今天想吃什么</span><span aria-hidden="true">⌄</span></button></div>
+      <p id="street-note" class="street-note" role="status" hidden></p>
+      <p id="food-load-note" class="food-load-note" role="status" hidden></p>
+      <p id="walk-load-note" class="food-load-note" role="status" hidden>道路样板暂未展开。<button id="walk-retry">点击重试</button></p>
+      <div id="loading" class="loading" role="status"><span></span>正在展开重庆…</div>
+      <div id="map-error" class="error-card" role="alert" hidden><strong>地图暂时没有展开</strong><p id="map-error-text">请确认本地地图文件已准备完成。</p><p id="local-file-hint" hidden>直接打开 HTML 可能受到浏览器限制。请双击 map-base 文件夹里的“打开地图.cmd”，通过本地预览打开。</p><button onclick="location.reload()">重新加载</button><details><summary>查看加载详情</summary><pre id="map-error-detail"></pre></details></div>
+      <section id="layers-panel" class="layers-panel paper" aria-label="地图图层" hidden>
+        <div class="panel-head"><strong>让地图刚刚好</strong><button id="layers-close" class="close" aria-label="关闭图层设置">×</button></div>
+        <label><span>道路名称<small>保留真实道路的方向与名称</small></span><input id="labels-option" type="checkbox" checked></label>
+        <label><span>立体建筑<small>按已有轮廓与高度记录展示</small></span><input id="buildings-option" type="checkbox" checked></label>
+        <label><span>山地地形<small>查看重庆的山势起伏</small></span><input id="terrain-option" type="checkbox" checked></label>
+        <label><span>街道近景<small>解放碑样板区，放大时逐渐展开</small></span><input id="street-option" type="checkbox" checked></label>
+        <label><span>美食卡片<small>两家待核候选，查看图片与原始来源</small></span><input id="food-option" type="checkbox"></label>
+        <label><span>道路试算<small>朝千路到解放东路，未接门店入口</small></span><input id="walk-option" type="checkbox"></label>
+        <button id="source-open" class="text-button">地图从哪里来 <span>↗</span></button>
+      </section>
+      <section id="road-info" class="road-info paper" aria-live="polite" hidden>
+        <button id="road-close" class="close" aria-label="关闭道路信息">×</button>
+        <span class="eyebrow">沿着这条路逛逛</span>
+        <h1 id="road-title"></h1>
+        <p id="road-meta"></p>
+        <span class="road-source">道路资料：OpenStreetMap / Protomaps</span>
+      </section>
+      <nav class="view-dock paper" aria-label="地图视角">
+        <button id="view-3d" aria-pressed="true" class="active">3D 漫游</button>
+        <button id="view-2d" aria-pressed="false">2D 看路</button>
+        <span></span><button id="reset-view" aria-label="回到重庆初始视角">↺</button>
+      </nav>
+      <section id="trip-dock" class="trip-dock paper" aria-label="想去行程" hidden>
+        <button id="trip-open" class="trip-open" type="button" aria-haspopup="dialog" aria-controls="wants-dialog"><small>我的想去</small><strong id="trip-dock-title">留住想吃的这一口</strong><span id="trip-dock-caption">点开美食卡片，加入想去</span></button>
+        <nav id="trip-stops" class="trip-stops" aria-label="想去门店顺序"></nav>
+        <button id="trip-overview" class="trip-overview" type="button" hidden>一起看 ↗</button>
+        <button id="trip-manage" class="trip-manage" type="button" aria-haspopup="dialog" aria-controls="wants-dialog" hidden>安排顺序</button>
+      </section>
+      <section id="walk-panel" class="walk-panel paper" aria-label="道路试算结果" aria-live="polite" hidden>
+        <div class="walk-summary"><small id="walk-caption">道路试算 · 未接门店入口</small><strong id="walk-title">朝千路 → 解放东路</strong></div>
+        <span id="walk-distance" class="walk-distance"></span>
+        <div class="walk-actions"><button id="walk-flat" aria-label="切换道路试算的俯瞰与立体视角">俯瞰</button><button id="walk-info" aria-label="查看道路试算说明">ⓘ</button><button id="walk-close" aria-label="关闭道路试算">×</button></div>
+      </section>
+      <button id="about-map" class="about-map" aria-label="查看地图数据与范围">重庆中心城区 · 自建底图 <span>ⓘ</span></button>
+      <div id="status" class="sr-only" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+  <dialog id="source-dialog">
+    <button id="source-close" class="close" aria-label="关闭地图说明">×</button>
+    <span class="eyebrow">真实地理，自由呈现</span>
+    <h2>这张地图的底色</h2>
+    <p>道路、路名、河流与建筑轮廓来自开放地图数据，视觉样式由食途设计。地图包保存在本地，页面不调用高德底图。</p>
+    <dl><div><dt>当前范围</dt><dd id="coverage-description">重庆中心城区局部，约 16 × 18 公里</dd></div><div><dt>道路数据版本</dt><dd id="source-date">正在读取…</dd></div><div><dt>地图坐标</dt><dd>WGS84 · 按实际位置投影</dd></div></dl>
+    <p id="source-stats"></p>
+    <p class="subtle">部分建筑缺少高度记录，以 9 米低楼体示意。地形来自粗分辨率高程数据；桥隧、楼层连通与实时路况尚未核实。此版本用于本地底座验证。</p>
+    <div class="source-links"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OSM · ODbL</a><a href="https://docs.protomaps.com/basemaps/downloads" target="_blank" rel="noreferrer">Protomaps</a><a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noreferrer">地形来源</a><a id="place-directory-link" href="./places.html" target="_blank" rel="noopener noreferrer" hidden>查看门店资料目录 ↗</a><a id="creator-guides-link" href="./videos.html" target="_blank" rel="noopener noreferrer" hidden>阅读探店视频资料 ↗</a></div>
+  </dialog>
+  <dialog id="street-dialog">
+    <button id="street-close" class="close" aria-label="关闭街道样板说明">×</button>
+    <span class="eyebrow">再靠近一点，看清街道</span>
+    <h2>从城市，走到街口</h2>
+    <p>放大解放碑附近的样板区，已有资料中的人行道、台阶与过街通道会逐渐出现。线形保留原始坐标，尚未现场核实，不代表已验证通行。</p>
+    <ul class="street-key"><li><i class="walk-key"></i>步行道 / 人行道</li><li><i class="step-key"></i>台阶通道，横纹为分类符号</li><li><i class="cross-key"></i>过街通道，虚线不表示斑马线</li></ul>
+    <p id="street-source-summary"></p>
+    <p class="subtle">路宽与车道分隔线根据有车道数记录的单向道路绘制，采用每车道 3.2 米的视觉示意；未还原真实路缘、停止线或转向箭头。仅在明确记录 zebra 时使用斑马线符号。近景楼体会压低，方便看路。桥隧、地下通道和受限道路未混入地面详细层。</p>
+    <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors · ODbL</a>
+  </dialog>
+  <dialog id="food-pick-dialog" class="food-pick-dialog" aria-labelledby="food-pick-title" aria-describedby="food-pick-intro">
+    <button id="food-pick-close" class="close" aria-label="关闭美食挑选">×</button><span class="eyebrow">今天的第一口</span>
+    <h2 id="food-pick-title">今天想吃什么？</h2><p id="food-pick-intro" class="food-pick-intro">从想吃的开始，把想去慢慢排好。</p>
+    <fieldset class="food-pick-fieldset"><legend>想吃哪一类</legend><div id="food-pick-categories" class="food-pick-categories"></div></fieldset>
+    <div class="food-pick-result-head"><strong id="food-pick-count" role="status"></strong><span>店址待核实</span></div>
+    <ul id="food-pick-results" class="food-pick-results"></ul>
+    <div class="food-pick-footer"><button id="food-pick-map" class="food-pick-map" type="button">在地图上看</button><button id="food-pick-add" class="food-pick-add" type="button">加入想去</button></div>
+    <p class="food-pick-note">配图为菜品示意。想去顺序可再调整，到店路线待核实。</p>
+    <a id="food-pick-guides" class="food-page-link" href="./videos.html" target="_blank" rel="noopener noreferrer" hidden>先读作者的探店视频资料 ↗</a>
+  </dialog>
+  <dialog id="food-dialog" class="food-dialog" aria-labelledby="food-title">
+    <button id="food-close" class="close" aria-label="关闭美食详情">×</button>
+    <div id="food-hero" class="food-hero food-sprite" role="img" aria-label="AI生成的通用菜品示意，非门店实拍"><small class="photo-note">菜品示意 · 非门店实拍</small></div>
+    <div class="food-dialog-body">
+      <span id="food-category" class="eyebrow"></span><h2 id="food-title"></h2>
+      <p id="food-address" class="food-address"></p><p id="food-intro"></p>
+      <button id="food-save" class="food-save" aria-pressed="false">加入想去 ＋</button>
+      <section id="food-video-section" class="food-video-section" hidden><h3>相关视频 · 分店待核</h3><div id="food-videos"></div></section>
+      <details class="food-evidence"><summary>地点与图片说明</summary><p id="food-location-note"></p><p>图片是通用菜品的 AI 生成示意，不代表这家店的实际菜品。候选地点尚未进入可执行路线。</p><div id="food-sources" class="food-sources"></div></details>
+      <a id="food-page-link" class="food-page-link" target="_blank" rel="noopener noreferrer" hidden>打开独立资料页 ↗</a>
+    </div>
+  </dialog>
+  <dialog id="wants-dialog" class="wants-dialog" aria-labelledby="wants-title">
+    <button id="wants-close" class="close" aria-label="关闭想去行程">×</button><span class="eyebrow">先留住想吃的这一口</span>
+    <h2 id="wants-title">我的想去行程</h2><p class="trip-intro">先排好想吃的顺序，再看看它们在哪里。</p>
+    <p id="wants-empty">还没有想去的店。点开地图上的美食卡片，留下你感兴趣的一站。</p><ol id="wants-list"></ol>
+    <button id="trip-map-all" class="trip-map-all" type="button" hidden>在地图上一起看</button>
+    <p id="trip-order-note">这是想去顺序，尚未生成到店路线。</p>
+    <p id="trip-save-note" role="status" hidden></p>
+    <p class="trip-location-note">门口位置与通行条件待确认，暂不提供到店导航。</p>
+  </dialog>
+  <dialog id="walk-dialog" class="walk-dialog">
+    <button id="walk-dialog-close" class="close" aria-label="关闭道路试算说明">×</button><span class="eyebrow">从城市走到街口</span><h2>先看道路怎样相连</h2>
+    <p>起点是朝千路上的道路节点，终点是解放东路上的道路节点。两者都不是已核实的门店入口。</p>
+    <p id="walk-result-note"></p>
+    <label class="walk-strict"><span>仅使用步行类资料<small>排除未标明步行许可的普通道路</small></span><input id="walk-strict" type="checkbox"></label>
+    <ol id="walk-legs" class="walk-legs"></ol>
+    <p id="walk-data-date" class="subtle"></p><p class="subtle">保留原道路节点顺序，未根据平面交叉或邻近位置自动连路；当前排除桥隧、室内和已知受限路段。局部资料可能不完整，未核实人行道、过街点和现场封路，不提供到店导航。</p>
+  </dialog>
+  <noscript>地图需要 JavaScript 与 WebGL。地图数据使用 OpenStreetMap，许可为 ODbL 1.0。</noscript>
+  <script>
+    // Keep the recovery UI independent of the map bundle and its Worker.
+    (() => {
+      let done=false, stage='启动地图程序';
+      const errors=[];
+      const boot=window.__FOOD_MAP_BOOT__={
+        errors,
+        stage(value){stage=value;},
+        ready(){done=true;clearTimeout(timer);document.getElementById('loading').hidden=true;document.getElementById('map-error').hidden=true;},
+        fail(message,detail=''){
+          if(done)return;
+          clearTimeout(timer);
+          document.getElementById('loading').hidden=true;
+          document.getElementById('map-error').hidden=false;
+          document.getElementById('map-error-text').textContent=message;
+          document.getElementById('local-file-hint').hidden=location.protocol!=='file:';
+          if(detail&&!errors.includes(String(detail)))errors.push(String(detail));
+          document.getElementById('map-error-detail').textContent=['加载阶段：'+stage,'打开方式：'+location.protocol,...errors].join('\n');
+        }
+      };
+      const timer=setTimeout(()=>boot.fail('地图加载超时。请重新加载；若是直接打开 HTML，请使用“打开地图.cmd”。','20 秒内未能渲染真实道路。'),20000);
+      addEventListener('error',event=>{
+        const detail=event.message||('资源加载失败：'+(event.target?.src||event.target?.href||'未知资源'));
+        if(event.target===window||event.target?.tagName==='SCRIPT')boot.fail('地图程序未能启动，请查看加载详情或使用本地预览。',detail);
+      },true);
+      addEventListener('unhandledrejection',event=>boot.fail('地图加载遇到错误，请查看加载详情。',event.reason?.message||String(event.reason)));
+    })();
+  </script>
+  <script defer src="./app.js"></script>
+</body>
+</html>

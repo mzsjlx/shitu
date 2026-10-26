@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "city": "chongqing",
+  "coordinateSystem": "WGS84",
+  "generatedBy": "scripts/prepare-street-detail.mjs",
+  "source": {
+    "endpoint": "https://api.openstreetmap.org/api/0.6/map?bbox=106.566,29.558,106.584,29.573",
+    "retrievedAt": "2026-10-19T11:02:34.280426+00:00",
+    "cacheJSON": "design/prototype-3d/data/osm-raw.json",
+    "cacheJSONSHA256": "329fa70db6dfbc1f763934bb4bd491c6d440d21794adad0fb54041e8f4b4660c",
+    "cacheXML": "design/prototype-3d/data/osm-raw.xml",
+    "cacheXMLSHA256": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10",
+    "declaredXMLSHA256": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10",
+    "jsonNodeRecords": 406,
+    "recoveredOriginalXMLNodes": 12148,
+    "totalRetainedNodes": 12554,
+    "sourceQueryBounds": [
+      106.566,
+      29.558,
+      106.584,
+      29.573
+    ],
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0",
+    "licenseUrl": "https://www.openstreetmap.org/copyright"
+  },
+  "cityBounds": [
+    106.49,
+    29.49,
+    106.65,
+    29.65
+  ],
+  "geometryBounds": [
+    106.5403088,
+    29.5511534,
+    106.5913114,
+    29.5783586
+  ],
+  "counts": {
+    "inputHighwayWays": 752,
+    "retainedFeatures": 745,
+    "typeCounts": {
+      "raw-road": 322,
+      "footpath": 235,
+      "pedestrian": 17,
+      "steps": 118,
+      "sidewalk": 37,
+      "crossing": 16
+    },
+    "tagPresence": {
+      "lanes": 95,
+      "lanes:forward": 2,
+      "lanes:backward": 2,
+      "width": 0,
+      "sidewalk": 2,
+      "footway": 53,
+      "crossing": 10,
+      "crossing:markings": 2,
+      "crossing_ref": 0,
+      "turn:lanes": 8,
+      "surface": 28
+    },
+    "validLaneCounts": 95,
+    "restricted": 42,
+    "elevated": 92,
+    "underground": 94,
+    "explicitlyZebra": 1,
+    "skipped": {
+      "unsupportedHighway": 7,
+      "tooFewNodes": 0,
+      "incompleteGeometry": 0,
+      "outsideCityBounds": 0,
+      "degenerateGeometry": 0
+    }
+  },
+  "recommendedView": {
+    "osmId": 923828995,
+    "center": [
+      106.58012705000002,
+      29.562860625
+    ],
+    "score": 26,
+    "nearbyCounts": {
+      "sidewalk": 3,
+      "crossing": 2,
+      "steps": 4,
+      "footpath": 8,
+      "pedestrian": 0
+    },
+    "laneRoads": [
+      {
+        "osmId": 176283804,
+        "name": "新华路",
+        "lanes": 2
+      },
+      {
+        "osmId": 830761788,
+        "name": "新华路",
+        "lanes": 2
+      },
+      {
+        "osmId": 1526703962,
+        "name": "新华路",
+        "lanes": 2
+      }
+    ],
+    "bounds": [
+      106.57832705000001,
+      29.561460625,
+      106.58192705000002,
+      29.564260625
+    ],
+    "zoom": 18.55,
+    "pitch": 40,
+    "bearing": -18
+  },
+  "crossingCandidates": [
+    {
+      "osmId": 1416554074,
+      "center": [
+        106.57328796666667,
+        29.5727354
+      ],
+      "score": 59,
+      "nearbyCounts": {
+        "sidewalk": 8,
+        "crossing": 7,
+        "steps": 6,
+        "footpath": 11,
+        "pedestrian": 0
+      },
+      "laneRoads": [
+        {
+          "osmId": 230585722,
+          "name": "金沙门路",
+          "lanes": 2
+        },
+        {
+          "osmId": 345984420,
+          "name": "江北城南大街",
+          "lanes": 3
+        },
+        {
+          "osmId": 345984426,
+          "name": "江北城南大街",
+          "lanes": 3
+        },
+        {
+          "osmId": 464522015,
+          "name": "金沙门路",
+          "lanes": 2
+        }
+      ]
+    },
+    {
+      "osmId": 1416554077,
+      "center": [
+        106.57300990000002,
+        29.572589333333333
+      ],
+      "score": 59,
+      "nearbyCounts": {
+        "sidewalk": 8,
+        "crossing": 7,
+        "steps": 7,
+        "footpath": 11,
+        "pedestrian": 0
+      },
+      "laneRoads": [
+        {
+          "osmId": 230585722,
+          "name": "金沙门路",
+          "lanes": 2
+        },
+        {
+          "osmId": 345984420,
+          "name": "江北城南大街",
+          "lanes": 3
+        },
+        {
+          "osmId": 345984426,
+          "name": "江北城南大街",
+          "lanes": 3
+        },
+        {
+          "osmId": 464522015,
+          "name": "金沙门路",
+          "lanes": 2
+        }
+      ]
+    },
+    {
+      "osmId": 1501194649,
+      "center": [
+        106.58193493333334,
+        29.566741466666667
+      ],
+      "score": 56,
+      "nearbyCounts": {
+        "sidewalk": 12,
+        "crossing": 1,
+        "steps": 4,
+        "footpath": 9,
+        "pedestrian": 2
+      },
+      "laneRoads": [
+        {
+          "osmId": 1526703962,
+          "name": "新华路",
+          "lanes": 2
+        }
+      ]
+    },
+    {
+      "osmId": 1416968854,
+      "center": [
+        106.57217779999999,
+        29.571996499999997
+      ],
+      "score": 49,
+      "nearbyCounts": {
+        "sidewalk": 7,
+        "crossing": 4,
+        "steps": 10,
+        "footpath": 18,
+        "pedestrian": 0
+      },
+      "laneRoads": [
+        {
+          "osmId": 230585722,
+          "name": "金沙门路",
+          "lanes": 2
+        },
+        {
+          "osmId": 345984420,
+          "name": "江北城南大街",
+          "lanes": 3
+        },
+        {
+          "osmId": 345984426,
+          "name": "江北城南大街",
+          "lanes": 3
+        },
+        {
+          "osmId": 464522015,
+          "name": "金沙门路",
+          "lanes": 2
+        }
+      ]
+    },
+    {
+      "osmId": 1499776093,
+      "center": [
+        106.57435079999999,
+        29.572835400000002
+      ],
+      "score": 49,
+      "nearbyCounts": {
+        "sidewalk": 6,
+        "crossing": 6,
+        "steps": 6,
+        "footpath": 10,
+        "pedestrian": 0
+      },
+      "laneRoads": [
+        {
+          "osmId": 230585722,
+          "name": "金沙门路",
+          "lanes": 2
+        },
+        {
+          "osmId": 345984420,
+          "name": "江北城南大街",
+          "lanes": 3
+        },
+        {
+          "osmId": 345984426,
+          "name": "江北城南大街",
+          "lanes": 3
+        },
+        {
+          "osmId": 464522015,
+          "name": "金沙门路",
+          "lanes": 2
+        }
+      ]
+    },
+    {
+      "osmId": 1416554071,
+      "center": [
+        106.57436706666667,
+        29.572959666666662
+      ],
+      "score": 45,
+      "nearbyCounts": {
+        "sidewalk": 6,
+        "crossing": 4,
+        "steps": 5,
+        "footpath": 10,
+        "pedestrian": 0
+      },
+      "laneRoads": [
+        {
+          "osmId": 230585722,
+          "name": "金沙门路",
+          "lanes": 2
+        },
+        {
+          "osmId": 345984420,
+          "name": "江北城南大街",
+          "lanes": 3
+        },
+        {
+          "osmId": 345984426,
+          "name": "江北城南大街",
+          "lanes": 3
+        },
+        {
+          "osmId": 464522015,
+          "name": "金沙门路",
+          "lanes": 2
+        }
+      ]
+    },
+    {
+      "osmId": 923828994,
+      "center": [
+        106.57987055,
+        29.562762749999997
+      ],
+      "score": 26,
+      "nearbyCounts": {
+        "sidewalk": 3,
+        "crossing": 2,
+        "steps": 4,
+        "footpath": 8,
+        "pedestrian": 1
+      },
+      "laneRoads": [
+        {
+          "osmId": 176283804,
+          "name": "新华路",
+          "lanes": 2
+        },
+        {
+          "osmId": 830761788,
+          "name": "新华路",
+          "lanes": 2
+        },
+        {
+          "osmId": 1526703962,
+          "name": "新华路",
+          "lanes": 2
+        }
+      ]
+    },
+    {
+      "osmId": 923828995,
+      "center": [
+        106.58012705000002,
+        29.562860625
+      ],
+      "score": 26,
+      "nearbyCounts": {
+        "sidewalk": 3,
+        "crossing": 2,
+        "steps": 4,
+        "footpath": 8,
+        "pedestrian": 0
+      },
+      "laneRoads": [
+        {
+          "osmId": 176283804,
+          "name": "新华路",
+          "lanes": 2
+        },
+        {
+          "osmId": 830761788,
+          "name": "新华路",
+          "lanes": 2
+        },
+        {
+          "osmId": 1526703962,
+          "name": "新华路",
+          "lanes": 2
+        }
+      ],
+      "bounds": [
+        106.57832705000001,
+        29.561460625,
+        106.58192705000002,
+        29.564260625
+      ],
+      "zoom": 18.55,
+      "pitch": 40,
+      "bearing": -18
+    },
+    {
+      "osmId": 1416968836,
+      "center": [
+        106.58238657500002,
+        29.568726475000002
+      ],
+      "score": 26,
+      "nearbyCounts": {
+        "sidewalk": 5,
+        "crossing": 2,
+        "steps": 2,
+        "footpath": 17,
+        "pedestrian": 0
+      },
+      "laneRoads": []
+    },
+    {
+      "osmId": 1417570353,
+      "center": [
+        106.5659555,
+        29.564093866666667
+      ],
+      "score": 26,
+      "nearbyCounts": {
+        "sidewalk": 4,
+        "crossing": 1,
+        "steps": 0,
+        "footpath": 1,
+        "pedestrian": 0
+      },
+      "laneRoads": [
+        {
+          "osmId": 551304474,
+          "name": "嘉陵江滨江路",
+          "lanes": 2
+        },
+        {
+          "osmId": 818780569,
+          "name": "北区路",
+          "lanes": 2
+        },
+        {
+          "osmId": 1283609381,
+          "name": "北区路",
+          "lanes": 2
+        },
+        {
+          "osmId": 1564776522,
+          "name": "嘉陵江滨江路",
+          "lanes": 2
+        }
+      ]
+    },
+    {
+      "osmId": 1019420501,
+      "center": [
+        106.582596225,
+        29.564886674999997
+      ],
+      "score": 21,
+      "nearbyCounts": {
+        "sidewalk": 3,
+        "crossing": 1,
+        "steps": 7,
+        "footpath": 7,
+        "pedestrian": 1
+      },
+      "laneRoads": [
+        {
+          "osmId": 1526703962,
+          "name": "新华路",
+          "lanes": 2
+        }
+      ]
+    },
+    {
+      "osmId": 1328811296,
+      "center": [
+        106.58318510000001,
+        29.559019475
+      ],
+      "score": 7,
+      "nearbyCounts": {
+        "sidewalk": 0,
+        "crossing": 1,
+        "steps": 8,
+        "footpath": 7,
+        "pedestrian": 0
+      },
+      "laneRoads": []
+    },
+    {
+      "osmId": 1466666178,
+      "center": [
+        106.56979190000001,
+        29.564575166666664
+      ],
+      "score": 6,
+      "nearbyCounts": {
+        "sidewalk": 0,
+        "crossing": 1,
+        "steps": 0,
+        "footpath": 15,
+        "pedestrian": 1
+      },
+      "laneRoads": [
+        {
+          "osmId": 672167671,
+          "name": "嘉陵江滨江路",
+          "lanes": 2
+        },
+        {
+          "osmId": 831047039,
+          "name": "嘉陵江滨江路",
+          "lanes": 2
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Source records have not been independently surveyed; source-record-only is not a verified walking permission.",
+    "The old modeling JSON omitted untagged nodes; original node coordinates are recovered from its hash-verified source XML response, without new sampling or interpolation.",
+    "Incomplete ways are excluded in full; no line is drawn across a missing source node.",
+    "Source way centre lines are retained, not inferred carriageway or sidewalk boundaries.",
+    "Lanes attributes do not establish lane widths, lane marking geometry or junction topology.",
+    "Crossing lines do not imply zebra markings. Only explicitlyZebra is based on an explicit source marking tag.",
+    "Elevated, underground, restricted and indoor ways need distinct display treatment and cannot be connected merely by 2D proximity.",
+    "The OSM query rectangle is a retrieval scope, not a completeness or positional accuracy guarantee."
+  ]
+}

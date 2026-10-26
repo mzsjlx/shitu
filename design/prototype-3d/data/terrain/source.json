@@ -1,0 +1,27 @@
+{
+  "retrievedAt": "2026-10-19T11:02:20.135487+00:00",
+  "registry": "https://registry.opendata.aws/terrain-tiles/",
+  "attribution": "Terrain Tiles: Mapzen / Tilezen; SRTM and GMTED2010 courtesy of USGS, ETOPO1 NOAA",
+  "licenseAndSources": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "encoding": "R*256+G+B/256-32768 meters",
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13041/6782.png",
+      "file": "14-13041-6782.png",
+      "sha256": "b8ba5f9a869ae626ffa7c5558392c756f6f0ed4f05a65c185b06c3ab1dcbdbcf",
+      "bytes": 103012,
+      "z": 14,
+      "x": 13041,
+      "y": 6782
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/14/13042/6782.png",
+      "file": "14-13042-6782.png",
+      "sha256": "02fadd3f180e76b7ae42a8df5a326648e79959abd41ff9f09e0a207b3c5d224e",
+      "bytes": 101533,
+      "z": 14,
+      "x": 13042,
+      "y": 6782
+    }
+  ]
+}

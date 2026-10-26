@@ -1,0 +1,33 @@
+# Installed dependencies and local runtimes
+**/node_modules/
+**/.python-packages/
+**/__pycache__/
+*.py[cod]
+
+# Rebuildable output from the main application and older prototype
+**/dist/
+/map-base/preview.html
+
+# Local preview processes, browser sessions, and incomplete downloads
+**/.local/
+**/.playwright-cli/
+*.log
+*.partial.pmtiles
+
+# Local credentials and environment configuration; keep example templates
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+
+# Editor and operating-system state
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Keep output/ source audits, research snapshots, and reviewed screenshots.
+# Some data verification/preparation scripts depend on those project files.

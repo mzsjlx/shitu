@@ -1,0 +1,5512 @@
+{
+  "inspectedOn": "2026-10-23",
+  "scope": "One pass over existing cached XML/JSON plus current walk graph; no network and no inferred nearest-neighbour connections.",
+  "source": {
+    "xml": "design/prototype-3d/data/osm-raw.xml",
+    "json": "design/prototype-3d/data/osm-raw.json",
+    "retrievedAt": "2026-10-19T11:02:34.280426+00:00",
+    "sha256": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10",
+    "hashMatchesSource": true,
+    "hashMatchesWalkGraph": true,
+    "coordinateSystem": "WGS84"
+  },
+  "selection": {
+    "foodAmenities": [
+      "restaurant",
+      "cafe",
+      "fast_food",
+      "food_court",
+      "ice_cream",
+      "bar",
+      "pub",
+      "biergarten"
+    ],
+    "foodShops": [
+      "bakery",
+      "pastry",
+      "confectionery",
+      "deli",
+      "cheese",
+      "coffee",
+      "tea"
+    ],
+    "entranceKinds": [
+      "entrance=*",
+      "door=*",
+      "amenity=parking_entrance",
+      "railway=subway_entrance",
+      "building=entrance"
+    ],
+    "groceryRetailExcluded": true
+  },
+  "counts": {
+    "originalXMLNodes": 12554,
+    "originalXMLWays": 1377,
+    "originalXMLRelations": 142,
+    "foodObjects": 64,
+    "foodNodes": 64,
+    "explicitEntranceNodes": 22,
+    "entranceLikeNodes": 53,
+    "foodObjectsWithHouseNumber": 2,
+    "foodNodesWithEntranceTag": 0,
+    "foodNodesInAcceptedRoadGraph": 0,
+    "explicitEntranceNodesInAcceptedRoadGraph": 8,
+    "explicitFoodEntranceRelations": 0,
+    "directlySharedFoodEntranceWays": 0,
+    "completeFoodEntranceCandidates": 0
+  },
+  "graph": {
+    "default": {
+      "nodes": 2773,
+      "ways": 521,
+      "segments": 2960,
+      "excluded": {
+        "unsupported-highway": 74,
+        "grade-separated": 111,
+        "foot-not-permitted": 30,
+        "indoor-or-area": 6,
+        "access-restricted": 10
+      }
+    },
+    "pedestrianOnly": {
+      "nodes": 1623,
+      "ways": 332,
+      "segments": 1630,
+      "excluded": {
+        "unsupported-highway": 74,
+        "ordinary-road-excluded": 189,
+        "grade-separated": 111,
+        "foot-not-permitted": 30,
+        "indoor-or-area": 6,
+        "access-restricted": 10
+      }
+    },
+    "trialStartNodeID": 4592547287
+  },
+  "foods": [
+    {
+      "osmType": "node",
+      "id": 2392272773,
+      "name": "星巴克",
+      "coordinates": [
+        106.5752645,
+        29.5628926
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "addr:city": "Chongqing",
+        "addr:postcode": "400000",
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "zh:星巴克",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/2392272773",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 2392272774,
+      "name": "肯德基",
+      "coordinates": [
+        106.573267,
+        29.5596606
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "addr:city": "Chongqing",
+        "addr:postcode": "400000",
+        "addr:street": "民族路 Minzu Road",
+        "amenity": "fast_food",
+        "brand": "肯德基",
+        "brand:en": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "zh:肯德基",
+        "brand:zh": "肯德基",
+        "cuisine": "chicken",
+        "name": "肯德基",
+        "name:en": "KFC",
+        "name:zh": "肯德基",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/2392272774",
+      "explicitStreet": "民族路 Minzu Road",
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 2392272776,
+      "name": "乡村基",
+      "coordinates": [
+        106.5728469,
+        29.56179
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "addr:city": "Chongqing",
+        "addr:postcode": "400000",
+        "amenity": "fast_food",
+        "brand": "乡村基",
+        "brand:en": "CSC",
+        "brand:wikidata": "Q16510256",
+        "brand:zh": "乡村基",
+        "cuisine": "chicken",
+        "name": "乡村基",
+        "name:en": "CSC",
+        "name:zh": "乡村基",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/2392272776",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 2392272778,
+      "name": "星巴克",
+      "coordinates": [
+        106.570922,
+        29.5595365
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "addr:district": "渝中区",
+        "addr:postcode": "400000",
+        "addr:province": "重庆市",
+        "addr:street": "中华路",
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "zh:星巴克",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/2392272778",
+      "explicitStreet": "中华路",
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 2392272779,
+      "name": "星巴克",
+      "coordinates": [
+        106.5748846,
+        29.5647644
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "addr:city": "Chongqing",
+        "addr:housename": "Hongyadong",
+        "addr:postcode": "400000",
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "zh:星巴克",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/2392272779",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 2392272780,
+      "name": "赛百味",
+      "coordinates": [
+        106.5749241,
+        29.5649363
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "addr:city": "Chongqing",
+        "addr:housename": "Hongyadong",
+        "addr:postcode": "400000",
+        "amenity": "fast_food",
+        "brand": "赛百味",
+        "brand:en": "Subway",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "zh:赛百味",
+        "brand:zh": "赛百味",
+        "cuisine": "sandwich",
+        "name": "赛百味",
+        "name:en": "Subway",
+        "name:zh": "赛百味",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/2392272780",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 4135242190,
+      "name": "太平洋咖啡",
+      "coordinates": [
+        106.5726563,
+        29.5585357
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "brand": "太平洋咖啡",
+        "brand:en": "Pacific Coffee",
+        "brand:wikidata": "Q7122398",
+        "brand:wikipedia": "en:Pacific Coffee",
+        "brand:zh": "太平洋咖啡",
+        "cuisine": "coffee_shop",
+        "name": "太平洋咖啡",
+        "name:en": "Pacific Coffee",
+        "name:zh": "太平洋咖啡",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/4135242190",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 4139951895,
+      "name": "火锅米线飞",
+      "coordinates": [
+        106.5759284,
+        29.561847
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "hotpot",
+        "name": "火锅米线飞"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/4139951895",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 4139951954,
+      "name": "必胜客",
+      "coordinates": [
+        106.5753025,
+        29.562156
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "必胜客",
+        "brand:en": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:wikipedia": "en:Pizza Hut",
+        "brand:zh": "必胜客",
+        "cuisine": "pizza",
+        "name": "必胜客",
+        "name:en": "Pizza Hut",
+        "name:zh": "必胜客"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/4139951954",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 4139951983,
+      "name": "丘二馆",
+      "coordinates": [
+        106.5740459,
+        29.5585258
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "name": "丘二馆"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/4139951983",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 4150419392,
+      "name": "星巴克",
+      "coordinates": [
+        106.5727097,
+        29.5607251
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "zh:星巴克",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/4150419392",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 4150438789,
+      "name": "汉堡王",
+      "coordinates": [
+        106.572282,
+        29.5605566
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "汉堡王",
+        "brand:en": "Burger King",
+        "brand:wikidata": "Q177054",
+        "brand:wikipedia": "zh:漢堡王",
+        "brand:zh": "汉堡王",
+        "cuisine": "burger",
+        "description": "Located in basement below Apple Store",
+        "level": "-1",
+        "name": "汉堡王",
+        "name:en": "Burger King",
+        "name:zh": "汉堡王",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/4150438789",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": "-1",
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 4458674693,
+      "name": "好利来",
+      "coordinates": [
+        106.5768172,
+        29.5609476
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "brand": "好利来",
+        "brand:en": "Holiland",
+        "brand:wikidata": "Q97862657",
+        "brand:zh": "好利来",
+        "name": "好利来",
+        "name:en": "Holiland",
+        "name:zh": "好利来",
+        "shop": "bakery"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/4458674693",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 4460519589,
+      "name": "赵二火锅总店",
+      "coordinates": [
+        106.5800949,
+        29.5586155
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese;regional",
+        "name": "赵二火锅总店",
+        "name:en": "Zhao Er Huo Guo Zong Dian"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/4460519589",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 4813319823,
+      "name": "Baixianglin Western-Style Desserts",
+      "coordinates": [
+        106.5699856,
+        29.5606537
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "addr:street": "大同路 Datong Road",
+        "name:en": "Baixianglin Western-Style Desserts",
+        "phone": "+86 138 4004 0039",
+        "shop": "bakery",
+        "website": "https://www.baixianglinxidian.com"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/4813319823",
+      "explicitStreet": "大同路 Datong Road",
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 5458158321,
+      "name": "齊齊鱔魚火鍋",
+      "coordinates": [
+        106.568129,
+        29.5631724
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "name": "齊齊鱔魚火鍋",
+        "phone": "+86 23 6372 2578"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/5458158321",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 5706998844,
+      "name": null,
+      "coordinates": [
+        106.5718355,
+        29.5629843
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "shop": "bakery"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/5706998844",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 5915047285,
+      "name": "赛百味",
+      "coordinates": [
+        106.5742639,
+        29.5630822
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "赛百味",
+        "brand:en": "Subway",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "zh:赛百味",
+        "brand:zh": "赛百味",
+        "cuisine": "sandwich",
+        "name": "赛百味",
+        "name:de": "Subway",
+        "name:en": "Subway",
+        "name:es": "Subway",
+        "name:fr": "Subway",
+        "name:zh": "赛百味",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/5915047285",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 6874569387,
+      "name": "麦当劳",
+      "coordinates": [
+        106.5751398,
+        29.5610483
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "麦当劳",
+        "brand:en": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:zh": "麦当劳",
+        "cuisine": "burger",
+        "name": "麦当劳",
+        "name:en": "McDonald's",
+        "name:zh": "麦当劳",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/6874569387",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 7570757992,
+      "name": null,
+      "coordinates": [
+        106.5734875,
+        29.5651882
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7570757992",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 7578168406,
+      "name": "必胜客",
+      "coordinates": [
+        106.5747251,
+        29.562419
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "必胜客",
+        "brand:en": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:wikipedia": "en:Pizza Hut",
+        "brand:zh": "必胜客",
+        "cuisine": "pizza",
+        "name": "必胜客",
+        "name:en": "Pizza Hut",
+        "name:zh": "必胜客"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7578168406",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 7578188764,
+      "name": "好利来",
+      "coordinates": [
+        106.5749445,
+        29.5630823
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "brand": "好利来",
+        "brand:en": "Holiland",
+        "brand:wikidata": "Q97862657",
+        "brand:zh": "好利来",
+        "name": "好利来",
+        "name:en": "Holiland",
+        "name:zh": "好利来",
+        "shop": "bakery"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7578188764",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 7578200726,
+      "name": "星巴克",
+      "coordinates": [
+        106.5731594,
+        29.5612845
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "zh:星巴克",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7578200726",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 7578235325,
+      "name": "喜茶",
+      "coordinates": [
+        106.5726636,
+        29.5612961
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "brand": "喜茶",
+        "brand:en": "Heytea",
+        "brand:wikidata": "Q60875376",
+        "brand:wikipedia": "zh:喜茶",
+        "brand:zh": "喜茶",
+        "cuisine": "bubble_tea",
+        "name": "喜茶",
+        "name:en": "Heytea",
+        "name:zh": "喜茶",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7578235325",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 7578235326,
+      "name": "哈根达斯",
+      "coordinates": [
+        106.5726257,
+        29.5611914
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "ice_cream",
+        "brand": "哈根达斯",
+        "brand:wikidata": "Q1143333",
+        "brand:wikipedia": "en:Häagen-Dazs",
+        "name": "哈根达斯",
+        "name:en": "Häagen-Dazs",
+        "name:zh": "哈根达斯"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7578235326",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 8441264117,
+      "name": "夜福火锅",
+      "coordinates": [
+        106.5677518,
+        29.563061
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "夜福火锅",
+        "name:en": "Fuye Hot Pot"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/8441264117",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 11727734305,
+      "name": "一只酸奶牛",
+      "coordinates": [
+        106.5745672,
+        29.5644775
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "name": "一只酸奶牛"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/11727734305",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 12250851023,
+      "name": "唐不甜老火锅",
+      "coordinates": [
+        106.5781036,
+        29.5634874
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "level": "3",
+        "name": "唐不甜老火锅"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/12250851023",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": "3",
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 12605650409,
+      "name": "ARTEASG",
+      "coordinates": [
+        106.5755179,
+        29.5623548
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "name": "ARTEASG"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/12605650409",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 12730545125,
+      "name": "星巴克",
+      "coordinates": [
+        106.5690311,
+        29.5596276
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "branch": "解放碑鲁祖庙店",
+        "brand": "星巴克",
+        "brand:en": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:zh": "星巴克",
+        "cuisine": "coffee_shop",
+        "name": "星巴克",
+        "name:en": "Starbucks",
+        "name:zh": "星巴克",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/12730545125",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13147494405,
+      "name": null,
+      "coordinates": [
+        106.5668678,
+        29.5588877
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "porridge"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13147494405",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13273833642,
+      "name": null,
+      "coordinates": [
+        106.5715473,
+        29.5631012
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13273833642",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13273874328,
+      "name": "霸王茶姬",
+      "coordinates": [
+        106.5769291,
+        29.5616429
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "brand": "霸王茶姬",
+        "brand:en": "Chagee",
+        "brand:wikidata": "Q125052867",
+        "brand:zh": "霸王茶姬",
+        "cuisine": "bubble_tea",
+        "name": "霸王茶姬",
+        "name:en": "Chagee",
+        "name:zh": "霸王茶姬",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13273874328",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13286392201,
+      "name": "麦当劳",
+      "coordinates": [
+        106.5738632,
+        29.5600341
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "麦当劳",
+        "brand:en": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:zh": "麦当劳",
+        "cuisine": "burger",
+        "name": "麦当劳",
+        "name:en": "McDonald's",
+        "name:zh": "麦当劳",
+        "opening_hours": "Mo-Su 07:00-00:00",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13286392201",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13288458501,
+      "name": "麦当劳",
+      "coordinates": [
+        106.5749801,
+        29.5625113
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "麦当劳",
+        "brand:en": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:zh": "麦当劳",
+        "cuisine": "burger",
+        "name": "麦当劳",
+        "name:en": "McDonald's",
+        "name:zh": "麦当劳",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13288458501",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13446342349,
+      "name": null,
+      "coordinates": [
+        106.5753162,
+        29.558903
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "local"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13446342349",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13449332601,
+      "name": null,
+      "coordinates": [
+        106.5759912,
+        29.5637214
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13449332601",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13450464801,
+      "name": "Noodles",
+      "coordinates": [
+        106.5703533,
+        29.5610615
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "name": "Noodles"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13450464801",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13452805401,
+      "name": null,
+      "coordinates": [
+        106.578907,
+        29.5652308
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13452805401",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13649542901,
+      "name": "欢迎再米",
+      "coordinates": [
+        106.5821114,
+        29.5635465
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:street": "曹家巷",
+        "amenity": "fast_food",
+        "check_date": "2026-03-15",
+        "check_date:opening_hours": "2026-03-15",
+        "cuisine": "chinese",
+        "drive_through": "no",
+        "name": "欢迎再米",
+        "name:en": "Huan Ying Zai Lai Liangcaifan",
+        "opening_hours": "Mo-Sa 10:00-16:00",
+        "outdoor_seating": "yes",
+        "self_service": "no"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13649542901",
+      "explicitStreet": "曹家巷",
+      "explicitHouseNumber": "1",
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13649952401,
+      "name": "超级李板凳面（总店)",
+      "coordinates": [
+        106.5795981,
+        29.5661577
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2026-03-15",
+        "cuisine": "chinese;noodles",
+        "name": "超级李板凳面（总店)",
+        "name:en": "Super Li Bandeng Mian"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13649952401",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13758446201,
+      "name": "瑞幸咖啡",
+      "coordinates": [
+        106.5763127,
+        29.5627432
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "brand": "瑞幸咖啡",
+        "brand:en": "Luckin Coffee",
+        "brand:wikidata": "Q56811344",
+        "brand:zh": "瑞幸咖啡",
+        "cuisine": "coffee_shop",
+        "name": "瑞幸咖啡",
+        "name:en": "Luckin Coffee",
+        "name:zh": "瑞幸咖啡",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13758446201",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13790344701,
+      "name": "Story Bar",
+      "coordinates": [
+        106.5778156,
+        29.5645275
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "bar",
+        "name": "Story Bar"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13790344701",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13797493801,
+      "name": "M Stand",
+      "coordinates": [
+        106.5734966,
+        29.5614726
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "brand": "M Stand",
+        "brand:wikidata": "Q116056845",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "M Stand",
+        "name:en": "M Stand",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13797493801",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13904433701,
+      "name": "素素素素食自助餐厅",
+      "coordinates": [
+        106.5731901,
+        29.5595513
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "name": "素素素素食自助餐厅",
+        "name:en": "Sususu Vegetarian Buffet and Restaurant",
+        "outdoor_seating": "no",
+        "self_service": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13904433701",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13920702130,
+      "name": "瓦顶顶",
+      "coordinates": [
+        106.5775578,
+        29.5633814
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "name": "瓦顶顶",
+        "name:en": "Wadingding Cafe"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13920702130",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058760,
+      "name": "燕喜酒家",
+      "coordinates": [
+        106.5692791,
+        29.5588877
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "燕喜酒家",
+        "name:zh": "燕喜酒家"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058760",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058761,
+      "name": "四囍茶馆",
+      "coordinates": [
+        106.5691483,
+        29.5589474
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "tea",
+        "name": "四囍茶馆",
+        "name:zh": "四囍茶馆",
+        "outdoor_seating": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058761",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058788,
+      "name": "北平机器PeipingMachine",
+      "coordinates": [
+        106.5693918,
+        29.5591741
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "bar",
+        "name": "北平机器PeipingMachine"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058788",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058789,
+      "name": "入饮甜汤",
+      "coordinates": [
+        106.5690585,
+        29.5590754
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "name": "入饮甜汤",
+        "name:zh": "入饮甜汤",
+        "shop": "pastry"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058789",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058799,
+      "name": "Orka Cafe",
+      "coordinates": [
+        106.5689421,
+        29.5590525
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Orka Cafe"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058799",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058800,
+      "name": "表叔uncle",
+      "coordinates": [
+        106.5688021,
+        29.5589694
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "表叔uncle"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058800",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058804,
+      "name": "FORLONG",
+      "coordinates": [
+        106.5687919,
+        29.5590512
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "name": "FORLONG",
+        "shop": "pastry"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058804",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058805,
+      "name": "Topia",
+      "coordinates": [
+        106.5688898,
+        29.559287
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Topia"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058805",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058811,
+      "name": "少椿食",
+      "coordinates": [
+        106.5690252,
+        29.5593208
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "ramen",
+        "name": "少椿食"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058811",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058824,
+      "name": "瑞幸咖啡",
+      "coordinates": [
+        106.5690612,
+        29.5594495
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "brand": "瑞幸咖啡",
+        "brand:en": "Luckin Coffee",
+        "brand:wikidata": "Q56811344",
+        "brand:zh": "瑞幸咖啡",
+        "cuisine": "coffee_shop",
+        "name": "瑞幸咖啡",
+        "name:en": "Luckin Coffee",
+        "name:zh": "瑞幸咖啡",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058824",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058835,
+      "name": "奈雪的茶",
+      "coordinates": [
+        106.5692121,
+        29.5594552
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "brand": "奈雪的茶",
+        "brand:en": "NaiSnow",
+        "brand:wikidata": "Q107351710",
+        "brand:zh": "奈雪的茶",
+        "cuisine": "bubble_tea",
+        "name": "奈雪的茶",
+        "name:en": "NaiSnow",
+        "name:zh": "奈雪的茶",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058835",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058836,
+      "name": "TWEB黑汉堡",
+      "coordinates": [
+        106.5693192,
+        29.5593249
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "name": "TWEB黑汉堡"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058836",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058837,
+      "name": "大柠制茶",
+      "coordinates": [
+        106.5692652,
+        29.5593902
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "name": "大柠制茶",
+        "name:zh": "大柠制茶"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058837",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058838,
+      "name": "弓奇品味",
+      "coordinates": [
+        106.5693831,
+        29.5592461
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "name": "弓奇品味",
+        "shop": "pastry"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058838",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 13975058839,
+      "name": "茶颜悦色",
+      "coordinates": [
+        106.5695236,
+        29.5590822
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "cafe",
+        "brand": "茶颜悦色",
+        "brand:en": "Sexytea",
+        "brand:wikidata": "Q60992994",
+        "brand:zh": "茶颜悦色",
+        "cuisine": "bubble_tea",
+        "name": "茶颜悦色",
+        "name:en": "Sexytea",
+        "name:zh": "茶颜悦色",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13975058839",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 14055623144,
+      "name": "Dakotea (麒麟大口茶)",
+      "coordinates": [
+        106.5723819,
+        29.5610733
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "name": "Dakotea (麒麟大口茶)",
+        "shop": "tea"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/14055623144",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 14131324702,
+      "name": "El Nido",
+      "coordinates": [
+        106.5694381,
+        29.5590264
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "addr:housenumber": "105",
+        "addr:street": "民生路",
+        "amenity": "bar",
+        "name": "El Nido"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/14131324702",
+      "explicitStreet": "民生路",
+      "explicitHouseNumber": "105",
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    },
+    {
+      "osmType": "node",
+      "id": 14201262200,
+      "name": "肯德基",
+      "coordinates": [
+        106.5777468,
+        29.5597521
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "肯德基",
+        "brand:en": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "zh:肯德基",
+        "brand:zh": "肯德基",
+        "check_date": "2026-09-20",
+        "check_date:opening_hours": "2026-09-20",
+        "cuisine": "chicken",
+        "name": "肯德基",
+        "name:en": "KFC",
+        "name:zh": "肯德基",
+        "opening_hours": "Mo-Su 06:00-23:00",
+        "takeaway": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/14201262200",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "entranceIdentityEstablished": false
+    }
+  ],
+  "entrances": [
+    {
+      "osmType": "node",
+      "id": 733200972,
+      "name": null,
+      "coordinates": [
+        106.5694072,
+        29.5630732
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "parking_entrance"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/733200972",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 831047035,
+          "name": null,
+          "highway": "unclassified",
+          "building": null,
+          "walkExclusion": "grade-separated",
+          "tags": {
+            "bridge": "yes",
+            "highway": "unclassified",
+            "layer": "1"
+          }
+        },
+        {
+          "id": 831047037,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {}
+        },
+        {
+          "id": 1504446988,
+          "name": null,
+          "highway": null,
+          "building": "yes",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        831047035
+      ],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "parking-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 1872567916,
+      "name": null,
+      "coordinates": [
+        106.5783728,
+        29.5606102
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "5A",
+        "wheelchair": "no"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/1872567916",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1417502002,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps"
+          }
+        },
+        {
+          "id": 1430319063,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1417502002,
+        1430319063
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1417502002,
+        1430319063
+      ],
+      "sourceRelations": [
+        {
+          "id": 2334600,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "name:zh": "小什字",
+            "name:zh-Latn-pinyin": "Xiǎoshízì",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/06",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        },
+        {
+          "id": 8091742,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "1/02",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 1872567918,
+      "name": null,
+      "coordinates": [
+        106.5789978,
+        29.5610516
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "5B",
+        "wheelchair": "no"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/1872567918",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1417502003,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1417502003
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [
+        1417502003
+      ],
+      "sourceRelations": [
+        {
+          "id": 2334600,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "name:zh": "小什字",
+            "name:zh-Latn-pinyin": "Xiǎoshízì",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/06",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        },
+        {
+          "id": 8091742,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "1/02",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 3370461497,
+      "name": null,
+      "coordinates": [
+        106.5804916,
+        29.5623386
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "7",
+        "wheelchair": "limited"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/3370461497",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [
+        {
+          "id": 2334600,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "name:zh": "小什字",
+            "name:zh-Latn-pinyin": "Xiǎoshízì",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/06",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 5585946435,
+      "name": null,
+      "coordinates": [
+        106.5800611,
+        29.5633736
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "2"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/5585946435",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [
+        {
+          "id": 2334600,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "name:zh": "小什字",
+            "name:zh-Latn-pinyin": "Xiǎoshízì",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/06",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 5585946436,
+      "name": null,
+      "coordinates": [
+        106.5802455,
+        29.5633071
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "3"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/5585946436",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [
+        {
+          "id": 2334600,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "name:zh": "小什字",
+            "name:zh-Latn-pinyin": "Xiǎoshízì",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/06",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 5585946437,
+      "name": null,
+      "coordinates": [
+        106.5797188,
+        29.5627338
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "4A",
+        "wheelchair": "no"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/5585946437",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1417501995,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps",
+            "incline": "up"
+          }
+        },
+        {
+          "id": 1417501997,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1417501995,
+        1417501997
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1417501995,
+        1417501997
+      ],
+      "sourceRelations": [
+        {
+          "id": 8091742,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "1/02",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 5585946438,
+      "name": null,
+      "coordinates": [
+        106.5798838,
+        29.5625626
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "4B",
+        "wheelchair": "no"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/5585946438",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1417501998,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        },
+        {
+          "id": 1417501999,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps",
+            "incline": "down"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1417501998,
+        1417501999
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1417501998,
+        1417501999
+      ],
+      "sourceRelations": [
+        {
+          "id": 8091742,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "1/02",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 5585946439,
+      "name": null,
+      "coordinates": [
+        106.578397,
+        29.5632709
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "6"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/5585946439",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1417501990,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        },
+        {
+          "id": 1417501994,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps",
+            "incline": "down"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1417501990,
+        1417501994
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1417501990,
+        1417501994
+      ],
+      "sourceRelations": [
+        {
+          "id": 2334600,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "name:zh": "小什字",
+            "name:zh-Latn-pinyin": "Xiǎoshízì",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/06",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 5585964074,
+      "name": null,
+      "coordinates": [
+        106.5789816,
+        29.5608904
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "access": "yes",
+        "entrance": "main"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/5585964074",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "main",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 584370214,
+          "name": "新华路",
+          "highway": null,
+          "building": "transportation",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "aerialway": "station",
+            "building": "transportation",
+            "name": "新华路",
+            "name:en": "Xinhua Road",
+            "name:zh": "新华路",
+            "public_transport": "station",
+            "wheelchair": "no"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 6874556565,
+      "name": null,
+      "coordinates": [
+        106.5656391,
+        29.558706
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "main"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/6874556565",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "main",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 734031555,
+          "name": "大韩民国临时政府旧址",
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {
+            "boundary": "protected_area",
+            "heritage": "4",
+            "historic": "building",
+            "name": "大韩民国临时政府旧址",
+            "name:ko": "대한민국 임시정부 유적지",
+            "protect_class": "22",
+            "wikidata": "Q55735173",
+            "wikipedia": "zh:重慶大韓民國臨時政府舊址"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 7051571231,
+      "name": null,
+      "coordinates": [
+        106.5820815,
+        29.5682758
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "parking_entrance"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7051571231",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1307164454,
+          "name": "重庆来福士广场",
+          "highway": null,
+          "building": "commercial",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building": "commercial",
+            "check_date": "2024-08-12",
+            "layer": "-1",
+            "name": "重庆来福士广场",
+            "name:en": "Raffles City Chongqing",
+            "shop": "mall",
+            "wikidata": "Q55908607",
+            "wikipedia": "zh:重庆来福士广场"
+          }
+        },
+        {
+          "id": 1430569087,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {}
+        },
+        {
+          "id": 1430647090,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {
+            "barrier": "wall"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "parking-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 7706069680,
+      "name": null,
+      "coordinates": [
+        106.5817208,
+        29.5627751
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "8",
+        "wheelchair": "no"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7706069680",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [
+        {
+          "id": 2334600,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "name:zh": "小什字",
+            "name:zh-Latn-pinyin": "Xiǎoshízì",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/06",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 7706069681,
+      "name": null,
+      "coordinates": [
+        106.5787746,
+        29.5616785
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "1",
+        "wheelchair": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7706069681",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1417502004,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": "grade-separated",
+          "tags": {
+            "highway": "footway",
+            "layer": "-1",
+            "tunnel": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1417502004
+      ],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [
+        {
+          "id": 8091742,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "1/02",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 7759689094,
+      "name": null,
+      "coordinates": [
+        106.5832921,
+        29.5691238
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7759689094",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 230583762,
+          "name": "朝天门广场",
+          "highway": null,
+          "building": "yes",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "alt_name:en": "Chaotian Gate Square",
+            "building": "yes",
+            "building:levels": "1",
+            "layer": "-1",
+            "name": "朝天门广场",
+            "name:en": "Chaotianmen Square",
+            "place": "square"
+          }
+        },
+        {
+          "id": 831047011,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": "grade-separated",
+          "tags": {
+            "bridge": "yes",
+            "highway": "footway",
+            "layer": "1"
+          }
+        },
+        {
+          "id": 1307164454,
+          "name": "重庆来福士广场",
+          "highway": null,
+          "building": "commercial",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building": "commercial",
+            "check_date": "2024-08-12",
+            "layer": "-1",
+            "name": "重庆来福士广场",
+            "name:en": "Raffles City Chongqing",
+            "shop": "mall",
+            "wikidata": "Q55908607",
+            "wikipedia": "zh:重庆来福士广场"
+          }
+        },
+        {
+          "id": 1430569087,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {}
+        },
+        {
+          "id": 1430569088,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": "access-restricted",
+          "tags": {
+            "access": "private",
+            "highway": "footway",
+            "note": "On 2025-09 only 'members of staff' were allowed to enter those walkways."
+          }
+        },
+        {
+          "id": 1430647090,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {
+            "barrier": "wall"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        831047011,
+        1430569088
+      ],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 7759689096,
+      "name": "Gate 9",
+      "coordinates": [
+        106.5840938,
+        29.5689452
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes",
+        "name": "Gate 9"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7759689096",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 230583762,
+          "name": "朝天门广场",
+          "highway": null,
+          "building": "yes",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "alt_name:en": "Chaotian Gate Square",
+            "building": "yes",
+            "building:levels": "1",
+            "layer": "-1",
+            "name": "朝天门广场",
+            "name:en": "Chaotianmen Square",
+            "place": "square"
+          }
+        },
+        {
+          "id": 1307164454,
+          "name": "重庆来福士广场",
+          "highway": null,
+          "building": "commercial",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building": "commercial",
+            "check_date": "2024-08-12",
+            "layer": "-1",
+            "name": "重庆来福士广场",
+            "name:en": "Raffles City Chongqing",
+            "shop": "mall",
+            "wikidata": "Q55908607",
+            "wikipedia": "zh:重庆来福士广场"
+          }
+        },
+        {
+          "id": 1430569087,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {}
+        },
+        {
+          "id": 1430647090,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {
+            "barrier": "wall"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 7759689306,
+      "name": null,
+      "coordinates": [
+        106.5693655,
+        29.5628932
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "parking_entrance"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/7759689306",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 831047036,
+          "name": null,
+          "highway": "unclassified",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "unclassified"
+          }
+        },
+        {
+          "id": 831047037,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {}
+        },
+        {
+          "id": 1504446988,
+          "name": null,
+          "highway": null,
+          "building": "yes",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        831047036
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [
+        831047036
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "parking-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 11175887054,
+      "name": null,
+      "coordinates": [
+        106.5703719,
+        29.5588114
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "parking_entrance"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/11175887054",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1206032885,
+          "name": null,
+          "highway": "service",
+          "building": null,
+          "walkExclusion": "grade-separated",
+          "tags": {
+            "highway": "service",
+            "layer": "-4",
+            "service": "parking_aisle",
+            "tunnel": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1206032885
+      ],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "parking-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 11727734270,
+      "name": null,
+      "coordinates": [
+        106.5701446,
+        29.5625648
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes",
+        "ref": "A2"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/11727734270",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1358370839,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        },
+        {
+          "id": 1361165861,
+          "name": null,
+          "highway": "corridor",
+          "building": null,
+          "walkExclusion": "unsupported-highway",
+          "tags": {
+            "highway": "corridor",
+            "indoor": "yes",
+            "layer": "-1",
+            "tunnel": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1358370839,
+        1361165861
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1358370839
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 11727734282,
+      "name": null,
+      "coordinates": [
+        106.5698521,
+        29.5642298
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/11727734282",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 809713490,
+          "name": "高盛创富展示中心",
+          "highway": null,
+          "building": "commercial",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building": "commercial",
+            "name": "高盛创富展示中心"
+          }
+        },
+        {
+          "id": 1358370844,
+          "name": null,
+          "highway": "corridor",
+          "building": null,
+          "walkExclusion": "unsupported-highway",
+          "tags": {
+            "highway": "corridor",
+            "indoor": "yes"
+          }
+        },
+        {
+          "id": 1358370845,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1358370844,
+        1358370845
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1358370845
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 11736160281,
+      "name": null,
+      "coordinates": [
+        106.5743642,
+        29.5739414
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "main"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/11736160281",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "main",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 486221621,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {}
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 11736160301,
+      "name": null,
+      "coordinates": [
+        106.5733163,
+        29.5731057
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes",
+        "ref": "6"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/11736160301",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 486221621,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {}
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 11736160303,
+      "name": null,
+      "coordinates": [
+        106.5734386,
+        29.5734182
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes",
+        "ref": "5"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/11736160303",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 486221621,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {}
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 11805114940,
+      "name": null,
+      "coordinates": [
+        106.5686806,
+        29.5724414
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "parking_entrance"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/11805114940",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 486221625,
+          "name": null,
+          "highway": null,
+          "building": "yes",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "parking-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 12105524192,
+      "name": "Gate 6",
+      "coordinates": [
+        106.5842407,
+        29.5672011
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes",
+        "name": "Gate 6"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/12105524192",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1307164454,
+          "name": "重庆来福士广场",
+          "highway": null,
+          "building": "commercial",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building": "commercial",
+            "check_date": "2024-08-12",
+            "layer": "-1",
+            "name": "重庆来福士广场",
+            "name:en": "Raffles City Chongqing",
+            "shop": "mall",
+            "wikidata": "Q55908607",
+            "wikipedia": "zh:重庆来福士广场"
+          }
+        },
+        {
+          "id": 1430569087,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {}
+        },
+        {
+          "id": 1430647090,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {
+            "barrier": "wall"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 12293982270,
+      "name": null,
+      "coordinates": [
+        106.583706,
+        29.5692341
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/12293982270",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 831047013,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        831047013
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [
+        831047013
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13017490797,
+      "name": null,
+      "coordinates": [
+        106.5731833,
+        29.5722764
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "1"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13017490797",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1416554049,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        },
+        {
+          "id": 1416554050,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1416554049,
+        1416554050
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [
+        1416554049,
+        1416554050
+      ],
+      "sourceRelations": [
+        {
+          "id": 4582960,
+          "tags": {
+            "name": "大剧院",
+            "name:en": "Grand Theater",
+            "name:zh": "大剧院",
+            "name:zh-Latn-pinyin": "Dàjùyuàn",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/07",
+            "type": "public_transport",
+            "wikidata": "Q28415038"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13017509916,
+      "name": null,
+      "coordinates": [
+        106.5735799,
+        29.5714308
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "5"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13017509916",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1416554051,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps",
+            "incline": "up"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1416554051
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [
+        1416554051
+      ],
+      "sourceRelations": [
+        {
+          "id": 4582960,
+          "tags": {
+            "name": "大剧院",
+            "name:en": "Grand Theater",
+            "name:zh": "大剧院",
+            "name:zh-Latn-pinyin": "Dàjùyuàn",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/07",
+            "type": "public_transport",
+            "wikidata": "Q28415038"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13017509918,
+      "name": null,
+      "coordinates": [
+        106.5734642,
+        29.5723723
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "2"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13017509918",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1416554053,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        },
+        {
+          "id": 1416554062,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1416554053,
+        1416554062
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [
+        1416554053,
+        1416554062
+      ],
+      "sourceRelations": [
+        {
+          "id": 4582960,
+          "tags": {
+            "name": "大剧院",
+            "name:en": "Grand Theater",
+            "name:zh": "大剧院",
+            "name:zh-Latn-pinyin": "Dàjùyuàn",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/07",
+            "type": "public_transport",
+            "wikidata": "Q28415038"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13017509933,
+      "name": null,
+      "coordinates": [
+        106.5734343,
+        29.5723996
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "3-1"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13017509933",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1416554055,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": "grade-separated",
+          "tags": {
+            "bridge": "yes",
+            "highway": "footway",
+            "layer": "2"
+          }
+        },
+        {
+          "id": 1416554064,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": "grade-separated",
+          "tags": {
+            "highway": "steps",
+            "incline": "down",
+            "layer": "1"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1416554055,
+        1416554064
+      ],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [
+        {
+          "id": 4582960,
+          "tags": {
+            "name": "大剧院",
+            "name:en": "Grand Theater",
+            "name:zh": "大剧院",
+            "name:zh-Latn-pinyin": "Dàjùyuàn",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/07",
+            "type": "public_transport",
+            "wikidata": "Q28415038"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13017509934,
+      "name": null,
+      "coordinates": [
+        106.57277,
+        29.5729141
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "4"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13017509934",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1416554057,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps",
+            "incline": "down"
+          }
+        },
+        {
+          "id": 1416554065,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1416554057,
+        1416554065
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [
+        1416554057,
+        1416554065
+      ],
+      "sourceRelations": [
+        {
+          "id": 4582960,
+          "tags": {
+            "name": "大剧院",
+            "name:en": "Grand Theater",
+            "name:zh": "大剧院",
+            "name:zh-Latn-pinyin": "Dàjùyuàn",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/07",
+            "type": "public_transport",
+            "wikidata": "Q28415038"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13017509946,
+      "name": null,
+      "coordinates": [
+        106.5731623,
+        29.57305
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "3"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13017509946",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1416554059,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps",
+            "incline": "up"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1416554059
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [
+        1416554059
+      ],
+      "sourceRelations": [
+        {
+          "id": 4582960,
+          "tags": {
+            "name": "大剧院",
+            "name:en": "Grand Theater",
+            "name:zh": "大剧院",
+            "name:zh-Latn-pinyin": "Dàjùyuàn",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/07",
+            "type": "public_transport",
+            "wikidata": "Q28415038"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13020906261,
+      "name": null,
+      "coordinates": [
+        106.5741547,
+        29.5650231
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "parking_entrance"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13020906261",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1416968843,
+          "name": null,
+          "highway": "service",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "service"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1416968843
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1416968843
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "parking-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13026257034,
+      "name": null,
+      "coordinates": [
+        106.5774415,
+        29.5621229
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "exit"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13026257034",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "exit",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 412612157,
+          "name": "罗汉寺",
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {
+            "alt_name": "Arhat Temple",
+            "amenity": "place_of_worship",
+            "name": "罗汉寺",
+            "name:en": "Luohan Temple",
+            "name:es": "Templo Luohan",
+            "name:zh": "罗汉寺",
+            "religion": "buddhist",
+            "wikipedia": "en:Luohan_Temple_(Chongqing)"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13026257035,
+      "name": null,
+      "coordinates": [
+        106.5783183,
+        29.563035
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13026257035",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 412612157,
+          "name": "罗汉寺",
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {
+            "alt_name": "Arhat Temple",
+            "amenity": "place_of_worship",
+            "name": "罗汉寺",
+            "name:en": "Luohan Temple",
+            "name:es": "Templo Luohan",
+            "name:zh": "罗汉寺",
+            "religion": "buddhist",
+            "wikipedia": "en:Luohan_Temple_(Chongqing)"
+          }
+        },
+        {
+          "id": 1417501981,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1417501981
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1417501981
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13026257036,
+      "name": null,
+      "coordinates": [
+        106.5777605,
+        29.5629332
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13026257036",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 412612157,
+          "name": "罗汉寺",
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {
+            "alt_name": "Arhat Temple",
+            "amenity": "place_of_worship",
+            "name": "罗汉寺",
+            "name:en": "Luohan Temple",
+            "name:es": "Templo Luohan",
+            "name:zh": "罗汉寺",
+            "religion": "buddhist",
+            "wikipedia": "en:Luohan_Temple_(Chongqing)"
+          }
+        },
+        {
+          "id": 1417501983,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1417501983
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1417501983
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13026257057,
+      "name": null,
+      "coordinates": [
+        106.5819238,
+        29.5633527
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13026257057",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1417501985,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": "grade-separated",
+          "tags": {
+            "bridge": "yes",
+            "highway": "steps",
+            "layer": "1"
+          }
+        },
+        {
+          "id": 1417501986,
+          "name": null,
+          "highway": null,
+          "building": "yes",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1417501985
+      ],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13026257060,
+      "name": null,
+      "coordinates": [
+        106.5827858,
+        29.5662203
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "1"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13026257060",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [
+        {
+          "id": 13305712,
+          "tags": {
+            "name": "朝天门",
+            "name:en": "Chaotianmen",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "type": "public_transport",
+            "wikidata": "Q10566667"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13150282306,
+      "name": null,
+      "coordinates": [
+        106.5831052,
+        29.5674813
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "parking_entrance"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13150282306",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1430647091,
+          "name": null,
+          "highway": "service",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "service"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1430647091
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1430647091
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "parking-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13274352441,
+      "name": null,
+      "coordinates": [
+        106.5722698,
+        29.5608807
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13274352441",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1446756663,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building:material": "glass",
+            "building:part": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13446342348,
+      "name": null,
+      "coordinates": [
+        106.5782564,
+        29.5641346
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13446342348",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 705733973,
+          "name": null,
+          "highway": null,
+          "building": null,
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building:levels": "23",
+            "building:part": "yes"
+          }
+        },
+        {
+          "id": 748940004,
+          "name": null,
+          "highway": null,
+          "building": "yes",
+          "walkExclusion": "not-highway",
+          "tags": {
+            "building": "yes",
+            "building:levels": "6"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13448014923,
+      "name": "A",
+      "coordinates": [
+        106.5837985,
+        29.5615618
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes",
+        "name": "A"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13448014923",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1466213498,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        },
+        {
+          "id": 1466213512,
+          "name": null,
+          "highway": "steps",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "steps"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1466213498,
+        1466213512
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [
+        1466213498,
+        1466213512
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13449490271,
+      "name": null,
+      "coordinates": [
+        106.5710698,
+        29.5603459
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "3"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13449490271",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [
+        {
+          "id": 2343008,
+          "tags": {
+            "name": "临江门",
+            "name:en": "Linjiangmen",
+            "name:zh": "临江门",
+            "name:zh-Latn-pinyin": "Línjiāngmén",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "2/02",
+            "type": "public_transport",
+            "wikidata": "Q10877127"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13449490297,
+      "name": null,
+      "coordinates": [
+        106.5729427,
+        29.5613119
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "1"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13449490297",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [
+        {
+          "id": 2343008,
+          "tags": {
+            "name": "临江门",
+            "name:en": "Linjiangmen",
+            "name:zh": "临江门",
+            "name:zh-Latn-pinyin": "Línjiāngmén",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "2/02",
+            "type": "public_transport",
+            "wikidata": "Q10877127"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13450833366,
+      "name": null,
+      "coordinates": [
+        106.5703322,
+        29.5614003
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes",
+        "ref": "B7"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13450833366",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1537352118,
+          "name": null,
+          "highway": "corridor",
+          "building": null,
+          "walkExclusion": "unsupported-highway",
+          "tags": {
+            "highway": "corridor",
+            "indoor": "yes",
+            "layer": "-1",
+            "tunnel": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1537352118
+      ],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13450833393,
+      "name": null,
+      "coordinates": [
+        106.5706411,
+        29.5620819
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "2"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13450833393",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1466531390,
+          "name": null,
+          "highway": "corridor",
+          "building": null,
+          "walkExclusion": "unsupported-highway",
+          "tags": {
+            "highway": "corridor",
+            "indoor": "yes",
+            "layer": "-1",
+            "tunnel": "yes"
+          }
+        },
+        {
+          "id": 1537352121,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1466531390,
+        1537352121
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1537352121
+      ],
+      "sourceRelations": [
+        {
+          "id": 2343008,
+          "tags": {
+            "name": "临江门",
+            "name:en": "Linjiangmen",
+            "name:zh": "临江门",
+            "name:zh-Latn-pinyin": "Línjiāngmén",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "2/02",
+            "type": "public_transport",
+            "wikidata": "Q10877127"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13451837099,
+      "name": null,
+      "coordinates": [
+        106.57071,
+        29.5615473
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes",
+        "ref": "B1"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13451837099",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1537352119,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        },
+        {
+          "id": 1537352121,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1537352119,
+        1537352121
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1537352119,
+        1537352121
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13451837100,
+      "name": null,
+      "coordinates": [
+        106.5701963,
+        29.5608561
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes",
+        "ref": "B6"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13451837100",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1537352122,
+          "name": null,
+          "highway": "corridor",
+          "building": null,
+          "walkExclusion": "unsupported-highway",
+          "tags": {
+            "highway": "corridor",
+            "indoor": "yes",
+            "layer": "-1",
+            "tunnel": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1537352122
+      ],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13451889407,
+      "name": null,
+      "coordinates": [
+        106.5706199,
+        29.5611271
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "entrance": "yes",
+        "ref": "B8"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13451889407",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": "yes",
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1537352120,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        },
+        {
+          "id": 1537352122,
+          "name": null,
+          "highway": "corridor",
+          "building": null,
+          "walkExclusion": "unsupported-highway",
+          "tags": {
+            "highway": "corridor",
+            "indoor": "yes",
+            "layer": "-1",
+            "tunnel": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1537352120,
+        1537352122
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1537352120
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "explicit-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13456375026,
+      "name": null,
+      "coordinates": [
+        106.5827503,
+        29.5666106
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "2"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13456375026",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [],
+      "sourceHighwayWayIDs": [],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [
+        {
+          "id": 13305712,
+          "tags": {
+            "name": "朝天门",
+            "name:en": "Chaotianmen",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "type": "public_transport",
+            "wikidata": "Q10566667"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 13612252685,
+      "name": null,
+      "coordinates": [
+        106.5786307,
+        29.5636233
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "railway": "subway_entrance",
+        "ref": "9"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/13612252685",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1417501991,
+          "name": null,
+          "highway": "footway",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "footway"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1417501991
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": true,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1417501991
+      ],
+      "sourceRelations": [
+        {
+          "id": 2334600,
+          "tags": {
+            "name": "小什字",
+            "name:en": "Xiaoshizi",
+            "name:zh": "小什字",
+            "name:zh-Latn-pinyin": "Xiǎoshízì",
+            "network": "重庆轨道交通",
+            "network:en": "Chongqing Rail Transit",
+            "network:short": "CRT",
+            "network:wikidata": "Q1190894",
+            "network:zh": "重庆轨道交通",
+            "operator": "重庆轨道交通运营",
+            "operator:wikidata": "Q136485962",
+            "public_transport": "stop_area",
+            "public_transport:version": "2",
+            "ref": "6/06",
+            "type": "public_transport"
+          },
+          "matchingRoles": [
+            ""
+          ]
+        }
+      ],
+      "sameNodeHasFoodTags": false,
+      "kind": "subway-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 14214636323,
+      "name": null,
+      "coordinates": [
+        106.5814887,
+        29.5673791
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "access": "yes",
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/14214636323",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1562233435,
+          "name": null,
+          "highway": "service",
+          "building": null,
+          "walkExclusion": null,
+          "tags": {
+            "highway": "service",
+            "oneway": "yes"
+          }
+        },
+        {
+          "id": 1562233439,
+          "name": null,
+          "highway": "service",
+          "building": null,
+          "walkExclusion": "grade-separated",
+          "tags": {
+            "highway": "service",
+            "layer": "-2",
+            "oneway": "yes",
+            "tunnel": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1562233435,
+        1562233439
+      ],
+      "sameNodeInRoadGraph": true,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": true,
+      "graphAcceptedWayIDs": [
+        1562233435
+      ],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "parking-entrance"
+    },
+    {
+      "osmType": "node",
+      "id": 14214636381,
+      "name": null,
+      "coordinates": [
+        106.5845994,
+        29.5661687
+      ],
+      "coordinateSystem": "WGS84",
+      "tags": {
+        "amenity": "parking_entrance",
+        "parking": "underground"
+      },
+      "sourceURL": "https://www.openstreetmap.org/node/14214636381",
+      "explicitStreet": null,
+      "explicitHouseNumber": null,
+      "explicitFloor": null,
+      "explicitEntrance": null,
+      "explicitDoor": null,
+      "rawJSONCoordinateMatch": true,
+      "sourceWays": [
+        {
+          "id": 1562233447,
+          "name": null,
+          "highway": "service",
+          "building": null,
+          "walkExclusion": "grade-separated",
+          "tags": {
+            "highway": "service",
+            "layer": "-2",
+            "oneway": "yes",
+            "tunnel": "yes"
+          }
+        }
+      ],
+      "sourceHighwayWayIDs": [
+        1562233447
+      ],
+      "sameNodeInRoadGraph": false,
+      "sameNodeInPedestrianOnlyGraph": false,
+      "canReachTrialStartBySourceNodes": false,
+      "graphAcceptedWayIDs": [],
+      "sourceRelations": [],
+      "sameNodeHasFoodTags": false,
+      "kind": "parking-entrance"
+    }
+  ],
+  "explicitFoodEntranceRelations": [],
+  "directlySharedFoodEntranceWays": [],
+  "eligibleFoodEntranceNodeIDs": [],
+  "conclusions": [
+    "No geographic distance, nearest road, same-name shop or shared building was used to establish an entrance.",
+    "Graph membership and source-node connectivity are machine-checkable source facts, not confirmation of public foot access or current business operation.",
+    "An explicit entrance node connected to the graph cannot be assigned to a restaurant unless the source explicitly establishes that identity."
+  ],
+  "requiredExternalEvidence": [
+    "Current specific branch name and complete address with a dated source.",
+    "Explicit entrance coordinates in a known coordinate system and store-to-entrance identity, with supporting door-level evidence.",
+    "Walkable entrance-to-road connection, including level/stairs/access/indoor conditions, supported by an actual source line or checked field evidence.",
+    "Any onsite publication photo/video permission and branch match handled separately from source geometry."
+  ]
+}

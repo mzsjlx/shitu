@@ -1,0 +1,1027 @@
+{
+  "scope": "Local browser QA of real-map base; no publication or real merchant claim.",
+  "viewport": [
+    1440,
+    960
+  ],
+  "checks": [
+    {
+      "name": "initializes with real roads and nonzero terrain",
+      "passed": true,
+      "details": {
+        "ready": true,
+        "center": [
+          106.574,
+          29.5628
+        ],
+        "zoom": 15.8,
+        "pitch": 54,
+        "terrain": true,
+        "elevationMetres": 273.8302895982524,
+        "roadNameGroups": 1041,
+        "renderedRoadFragments": 383,
+        "selectedRoad": null,
+        "foodCards": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "search and highlight 沧白路",
+      "passed": true,
+      "details": {
+        "selected": "沧白路",
+        "title": "沧白路",
+        "filter": [
+          "==",
+          [
+            "coalesce",
+            [
+              "get",
+              "name:zh-Hans"
+            ],
+            [
+              "get",
+              "name"
+            ],
+            ""
+          ],
+          "沧白路"
+        ],
+        "renderedHighlights": 2,
+        "center": [
+          106.57534483595867,
+          29.564175240111922
+        ]
+      }
+    },
+    {
+      "name": "search and highlight 千厮门大桥",
+      "passed": true,
+      "details": {
+        "selected": "千厮门大桥",
+        "title": "千厮门大桥",
+        "filter": [
+          "==",
+          [
+            "coalesce",
+            [
+              "get",
+              "name:zh-Hans"
+            ],
+            [
+              "get",
+              "name"
+            ],
+            ""
+          ],
+          "千厮门大桥"
+        ],
+        "renderedHighlights": 3,
+        "center": [
+          106.57354901160926,
+          29.568329048518677
+        ]
+      }
+    },
+    {
+      "name": "2D view changes camera and hides extrusions",
+      "passed": true,
+      "details": {
+        "pitch": 0.008457778734516808,
+        "buildingVisibility": "none",
+        "pressed": "true"
+      }
+    },
+    {
+      "name": "3D view restores pitch",
+      "passed": true,
+      "details": 53.99499871650174
+    },
+    {
+      "name": "labels-option disables corresponding layer",
+      "passed": true
+    },
+    {
+      "name": "buildings-option disables corresponding layer",
+      "passed": true
+    },
+    {
+      "name": "terrain-option disables corresponding layer",
+      "passed": true
+    },
+    {
+      "name": "zoom control changes geographic scale",
+      "passed": true,
+      "details": {
+        "beforeZoom": 15.8,
+        "afterZoom": 16.8
+      }
+    },
+    {
+      "name": "pointer rotation changes map bearing",
+      "passed": true,
+      "details": {
+        "beforeBearing": -24,
+        "afterBearing": 156.99999999999997
+      }
+    },
+    {
+      "name": "source dialog closes with Esc and restores focus",
+      "passed": true,
+      "details": {
+        "dialogOpen": true,
+        "dialogClosed": true,
+        "focusReturned": true
+      }
+    },
+    {
+      "name": "WGS84 card anchor survives pan/zoom, opens and clears",
+      "passed": true,
+      "details": {
+        "before": {
+          "input": [
+            106.574,
+            29.5628
+          ],
+          "count": 1,
+          "anchor": {
+            "input": [
+              106.574,
+              29.5628
+            ],
+            "projectedPixel": [
+              719.9999999969658,
+              442.0000000010142
+            ],
+            "domAnchorPixel": [
+              720,
+              442.0000114440918
+            ],
+            "pixelError": 1.1443077998860575E-05,
+            "unprojectedCoordinates": [
+              106.57400000031618,
+              29.562799999389767
+            ],
+            "count": 1
+          }
+        },
+        "after": {
+          "input": [
+            106.574,
+            29.5628
+          ],
+          "projectedPixel": [
+            641.3611375656175,
+            466.3358498296665
+          ],
+          "domAnchorPixel": [
+            641,
+            466.0000114440918
+          ],
+          "pixelError": 0.493160990474222,
+          "unprojectedCoordinates": [
+            106.57399157276973,
+            29.562814802119703
+          ],
+          "count": 1
+        },
+        "sameAnchor": true,
+        "clicked": true,
+        "cleared": true
+      }
+    },
+    {
+      "name": "unverified and GCJ02 cards are rejected without display",
+      "passed": true,
+      "details": [
+        {
+          "label": "unverified",
+          "error": "只接入已核实的 WGS84 门店坐标",
+          "count": 0,
+          "invalidDOM": 0
+        },
+        {
+          "label": "GCJ02",
+          "error": "只接入已核实的 WGS84 门店坐标",
+          "count": 0,
+          "invalidDOM": 0
+        }
+      ]
+    },
+    {
+      "name": "viewport and layers fit 390x844",
+      "passed": true,
+      "details": {
+        "viewport": [
+          390,
+          844
+        ],
+        "scroll": [
+          390,
+          844
+        ],
+        "mapScroll": [
+          0,
+          0
+        ],
+        "dock": {
+          "left": 97.5,
+          "top": 712.6666870117188,
+          "right": 292.5,
+          "bottom": 782.0000228881836,
+          "width": 195,
+          "height": 69.33333587646484
+        },
+        "floating": [
+          {
+            "id": "layers-panel",
+            "box": {
+              "left": 13,
+              "top": 134,
+              "right": 313,
+              "bottom": 465.8333435058594,
+              "width": 300,
+              "height": 331.8333435058594
+            }
+          },
+          {
+            "id": "road-info",
+            "box": {
+              "left": 13,
+              "top": 551.46875,
+              "right": 313,
+              "bottom": 711,
+              "width": 300,
+              "height": 159.53125
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "source dialog fits 390x844",
+      "passed": true,
+      "details": {
+        "viewport": [
+          390,
+          844
+        ],
+        "scroll": [
+          390,
+          844
+        ],
+        "mapScroll": [
+          0,
+          0
+        ],
+        "dock": {
+          "left": 97.5,
+          "top": 712.6666870117188,
+          "right": 292.5,
+          "bottom": 782.0000228881836,
+          "width": 195,
+          "height": 69.33333587646484
+        },
+        "floating": [
+          {
+            "id": "road-info",
+            "box": {
+              "left": 13,
+              "top": 551.46875,
+              "right": 313,
+              "bottom": 711,
+              "width": 300,
+              "height": 159.53125
+            }
+          },
+          {
+            "id": "source-dialog",
+            "box": {
+              "left": 14,
+              "top": 182.21875,
+              "right": 376,
+              "bottom": 661.7708435058594,
+              "width": 362,
+              "height": 479.5520935058594
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "viewport and layers fit 320x680",
+      "passed": true,
+      "details": {
+        "viewport": [
+          320,
+          680
+        ],
+        "scroll": [
+          320,
+          680
+        ],
+        "mapScroll": [
+          0,
+          0
+        ],
+        "dock": {
+          "left": 75.14583587646484,
+          "top": 548.6666870117188,
+          "right": 244.85417938232422,
+          "bottom": 618.0000228881836,
+          "width": 169.70834350585938,
+          "height": 69.33333587646484
+        },
+        "floating": [
+          {
+            "id": "layers-panel",
+            "box": {
+              "left": 13,
+              "top": 134,
+              "right": 252,
+              "bottom": 465.8333435058594,
+              "width": 239,
+              "height": 331.8333435058594
+            }
+          },
+          {
+            "id": "road-info",
+            "box": {
+              "left": 13,
+              "top": 356.2708435058594,
+              "right": 253,
+              "bottom": 547.0000152587891,
+              "width": 240,
+              "height": 190.7291717529297
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "source dialog fits 320x680",
+      "passed": true,
+      "details": {
+        "viewport": [
+          320,
+          680
+        ],
+        "scroll": [
+          320,
+          680
+        ],
+        "mapScroll": [
+          0,
+          0
+        ],
+        "dock": {
+          "left": 75.14583587646484,
+          "top": 548.6666870117188,
+          "right": 244.85417938232422,
+          "bottom": 618.0000228881836,
+          "width": 169.70834350585938,
+          "height": 69.33333587646484
+        },
+        "floating": [
+          {
+            "id": "road-info",
+            "box": {
+              "left": 13,
+              "top": 356.2708435058594,
+              "right": 253,
+              "bottom": 547.0000152587891,
+              "width": 240,
+              "height": 190.7291717529297
+            }
+          },
+          {
+            "id": "source-dialog",
+            "box": {
+              "left": 14,
+              "top": 91.96875,
+              "right": 306,
+              "bottom": 588.0208435058594,
+              "width": 292,
+              "height": 496.0520935058594
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "viewport and layers fit 736x414",
+      "passed": true,
+      "details": {
+        "viewport": [
+          736,
+          414
+        ],
+        "scroll": [
+          736,
+          414
+        ],
+        "mapScroll": [
+          0,
+          0
+        ],
+        "dock": {
+          "left": 231.45834350585938,
+          "top": 327.66668701171875,
+          "right": 504.54168701171875,
+          "bottom": 389.0000228881836,
+          "width": 273.0833435058594,
+          "height": 61.333335876464844
+        },
+        "floating": [
+          {
+            "id": "layers-panel",
+            "box": {
+              "left": 364,
+              "top": 79,
+              "right": 664,
+              "bottom": 406.8333435058594,
+              "width": 300,
+              "height": 327.8333435058594
+            }
+          },
+          {
+            "id": "road-info",
+            "box": {
+              "left": 15,
+              "top": 185.4791717529297,
+              "right": 255,
+              "bottom": 386.00001525878906,
+              "width": 240,
+              "height": 200.52084350585938
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "source dialog fits 736x414",
+      "passed": true,
+      "details": {
+        "viewport": [
+          736,
+          414
+        ],
+        "scroll": [
+          736,
+          414
+        ],
+        "mapScroll": [
+          0,
+          0
+        ],
+        "dock": {
+          "left": 231.45834350585938,
+          "top": 327.66668701171875,
+          "right": 504.54168701171875,
+          "bottom": 389.0000228881836,
+          "width": 273.0833435058594,
+          "height": 61.333335876464844
+        },
+        "floating": [
+          {
+            "id": "road-info",
+            "box": {
+              "left": 15,
+              "top": 185.4791717529297,
+              "right": 255,
+              "bottom": 386.00001525878906,
+              "width": 240,
+              "height": 200.52084350585938
+            }
+          },
+          {
+            "id": "source-dialog",
+            "box": {
+              "left": 138,
+              "top": 16,
+              "right": 598,
+              "bottom": 398,
+              "width": 460,
+              "height": 382
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "touch and reduced-motion view controls work",
+      "passed": true,
+      "details": {
+        "coarse": true,
+        "reduced": true,
+        "close": [
+          44,
+          44
+        ],
+        "scroll": [
+          320,
+          680
+        ],
+        "pitch": 54
+      }
+    },
+    {
+      "name": "runtime uses only self-hosted resources",
+      "passed": true,
+      "details": {
+        "external": []
+      }
+    },
+    {
+      "name": "PMTiles HTTP Range returns 206",
+      "passed": true,
+      "details": [
+        206
+      ]
+    },
+    {
+      "name": "DEM requests complete without missing tiles",
+      "passed": true,
+      "details": {
+        "demResponses": 74,
+        "failures": []
+      }
+    },
+    {
+      "name": "no page errors, console errors or failed HTTP",
+      "passed": true,
+      "details": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedHTTP": []
+      }
+    },
+    {
+      "name": "final build reload initializes without map failures",
+      "passed": true,
+      "details": {
+        "ready": true,
+        "center": [
+          106.574,
+          29.5628
+        ],
+        "zoom": 15.8,
+        "pitch": 54,
+        "terrain": true,
+        "elevationMetres": 273.8302895982524,
+        "roadNameGroups": 1041,
+        "renderedRoadFragments": 383,
+        "selectedRoad": null,
+        "foodCards": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "food-card click does not select the underlying road",
+      "passed": true,
+      "details": {
+        "callback": 1,
+        "baseMapClicks": 0,
+        "selectedRoad": null
+      }
+    },
+    {
+      "name": "320px view controls stay on one line and inside viewport",
+      "passed": true,
+      "details": {
+        "viewport": [
+          320,
+          680
+        ],
+        "scroll": [
+          320,
+          680
+        ],
+        "dock": [
+          47.60416793823242,
+          560.6666870117188,
+          272.3958396911621,
+          618.0000228881836
+        ],
+        "labels": [
+          {
+            "text": "3D 漫游",
+            "lineBoxes": 1
+          },
+          {
+            "text": "2D 看路",
+            "lineBoxes": 1
+          },
+          {
+            "text": "↺",
+            "lineBoxes": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "final build reload has no page/console errors or external requests",
+      "passed": true,
+      "details": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "externalRequests": []
+      }
+    }
+  ],
+  "issues": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "initial": {
+    "ready": true,
+    "center": [
+      106.574,
+      29.5628
+    ],
+    "zoom": 15.8,
+    "pitch": 54,
+    "terrain": true,
+    "elevationMetres": 273.8302895982524,
+    "roadNameGroups": 1041,
+    "renderedRoadFragments": 383,
+    "selectedRoad": null,
+    "foodCards": 0,
+    "failures": []
+  },
+  "search": [
+    {
+      "name": "沧白路",
+      "selected": "沧白路",
+      "title": "沧白路",
+      "filter": [
+        "==",
+        [
+          "coalesce",
+          [
+            "get",
+            "name:zh-Hans"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          ""
+        ],
+        "沧白路"
+      ],
+      "renderedHighlights": 2,
+      "center": [
+        106.57534483595867,
+        29.564175240111922
+      ]
+    },
+    {
+      "name": "千厮门大桥",
+      "selected": "千厮门大桥",
+      "title": "千厮门大桥",
+      "filter": [
+        "==",
+        [
+          "coalesce",
+          [
+            "get",
+            "name:zh-Hans"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          ""
+        ],
+        "千厮门大桥"
+      ],
+      "renderedHighlights": 3,
+      "center": [
+        106.57354901160926,
+        29.568329048518677
+      ]
+    }
+  ],
+  "toggles": [
+    {
+      "id": "labels-option",
+      "offApplied": true
+    },
+    {
+      "id": "buildings-option",
+      "offApplied": true
+    },
+    {
+      "id": "terrain-option",
+      "offApplied": true
+    }
+  ],
+  "sizes": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "scroll": [
+        390,
+        844
+      ],
+      "mapScroll": [
+        0,
+        0
+      ],
+      "dock": {
+        "left": 97.5,
+        "top": 712.6666870117188,
+        "right": 292.5,
+        "bottom": 782.0000228881836,
+        "width": 195,
+        "height": 69.33333587646484
+      },
+      "floating": [
+        {
+          "id": "road-info",
+          "box": {
+            "left": 13,
+            "top": 551.46875,
+            "right": 313,
+            "bottom": 711,
+            "width": 300,
+            "height": 159.53125
+          }
+        },
+        {
+          "id": "source-dialog",
+          "box": {
+            "left": 14,
+            "top": 182.21875,
+            "right": 376,
+            "bottom": 661.7708435058594,
+            "width": 362,
+            "height": 479.5520935058594
+          }
+        }
+      ]
+    },
+    {
+      "viewport": [
+        320,
+        680
+      ],
+      "scroll": [
+        320,
+        680
+      ],
+      "mapScroll": [
+        0,
+        0
+      ],
+      "dock": {
+        "left": 75.14583587646484,
+        "top": 548.6666870117188,
+        "right": 244.85417938232422,
+        "bottom": 618.0000228881836,
+        "width": 169.70834350585938,
+        "height": 69.33333587646484
+      },
+      "floating": [
+        {
+          "id": "road-info",
+          "box": {
+            "left": 13,
+            "top": 356.2708435058594,
+            "right": 253,
+            "bottom": 547.0000152587891,
+            "width": 240,
+            "height": 190.7291717529297
+          }
+        },
+        {
+          "id": "source-dialog",
+          "box": {
+            "left": 14,
+            "top": 91.96875,
+            "right": 306,
+            "bottom": 588.0208435058594,
+            "width": 292,
+            "height": 496.0520935058594
+          }
+        }
+      ]
+    },
+    {
+      "viewport": [
+        736,
+        414
+      ],
+      "scroll": [
+        736,
+        414
+      ],
+      "mapScroll": [
+        0,
+        0
+      ],
+      "dock": {
+        "left": 231.45834350585938,
+        "top": 327.66668701171875,
+        "right": 504.54168701171875,
+        "bottom": 389.0000228881836,
+        "width": 273.0833435058594,
+        "height": 61.333335876464844
+      },
+      "floating": [
+        {
+          "id": "road-info",
+          "box": {
+            "left": 15,
+            "top": 185.4791717529297,
+            "right": 255,
+            "bottom": 386.00001525878906,
+            "width": 240,
+            "height": 200.52084350585938
+          }
+        },
+        {
+          "id": "source-dialog",
+          "box": {
+            "left": 138,
+            "top": 16,
+            "right": 598,
+            "bottom": 398,
+            "width": 460,
+            "height": 382
+          }
+        }
+      ]
+    }
+  ],
+  "touch": {
+    "coarse": true,
+    "reduced": true,
+    "close": [
+      44,
+      44
+    ],
+    "scroll": [
+      320,
+      680
+    ],
+    "pitch": 54
+  },
+  "network": {
+    "requests": 203,
+    "uniqueURLs": [
+      "http://127.0.0.1:8791/",
+      "http://127.0.0.1:8791/app.css",
+      "http://127.0.0.1:8791/app.js",
+      "http://127.0.0.1:8791/config/cities.json",
+      "http://127.0.0.1:8791/data/roads-index.json",
+      "http://127.0.0.1:8791/data/source-manifest.json",
+      "http://127.0.0.1:8791/data/data-audit.json",
+      "http://127.0.0.1:8791/map-worker.js",
+      "http://127.0.0.1:8791/data/chongqing.pmtiles",
+      "http://127.0.0.1:8791/data/terrain/13/6521/3391.png",
+      "http://127.0.0.1:8791/data/terrain/13/6520/3391.png",
+      "http://127.0.0.1:8791/data/terrain/13/6521/3390.png",
+      "http://127.0.0.1:8791/data/terrain/13/6520/3390.png",
+      "http://127.0.0.1:8791/data/terrain/12/3260/1695.png",
+      "http://127.0.0.1:8791/data/terrain/11/1630/847.png",
+      "http://127.0.0.1:8791/data/terrain/12/3261/1695.png",
+      "http://127.0.0.1:8791/data/terrain/13/6522/3391.png",
+      "http://127.0.0.1:8791/data/terrain/13/6522/3390.png",
+      "http://127.0.0.1:8791/data/terrain/12/3260/1694.png",
+      "http://127.0.0.1:8791/data/terrain/13/6521/3389.png",
+      "http://127.0.0.1:8791/data/terrain/13/6520/3389.png",
+      "http://127.0.0.1:8791/data/terrain/12/3261/1694.png",
+      "http://127.0.0.1:8791/data/terrain/12/3259/1694.png",
+      "http://127.0.0.1:8791/data/terrain/11/1629/847.png",
+      "http://127.0.0.1:8791/data/terrain/12/3259/1695.png",
+      "http://127.0.0.1:8791/data/terrain/13/6519/3390.png",
+      "http://127.0.0.1:8791/data/terrain/13/6521/3388.png",
+      "http://127.0.0.1:8791/data/terrain/13/6518/3390.png",
+      "http://127.0.0.1:8791/data/terrain/13/6519/3391.png",
+      "http://127.0.0.1:8791/data/terrain/13/6518/3391.png",
+      "http://127.0.0.1:8791/data/terrain/11/1629/848.png",
+      "http://127.0.0.1:8791/data/terrain/13/6518/3392.png",
+      "http://127.0.0.1:8791/data/terrain/13/6519/3392.png",
+      "http://127.0.0.1:8791/data/terrain/13/6520/3392.png",
+      "http://127.0.0.1:8791/data/terrain/12/3260/1696.png",
+      "http://127.0.0.1:8791/data/terrain/11/1630/848.png",
+      "http://127.0.0.1:8791/data/terrain/13/6519/3393.png",
+      "http://127.0.0.1:8791/data/terrain/13/6520/3393.png",
+      "http://127.0.0.1:8791/data/terrain/13/6521/3392.png",
+      "http://127.0.0.1:8791/data/terrain/13/6521/3393.png",
+      "http://127.0.0.1:8791/data/terrain/12/3261/1696.png",
+      "http://127.0.0.1:8791/data/terrain/13/6522/3393.png",
+      "http://127.0.0.1:8791/data/terrain/13/6522/3392.png"
+    ],
+    "external": [],
+    "failedHTTP": [],
+    "pmtilesStatuses": [
+      206
+    ],
+    "pmtilesResponses": 111,
+    "demResponses": 74,
+    "demFailures": []
+  },
+  "passed": true,
+  "finalBuildRegressions": {
+    "kind": "final-regressions",
+    "checks": [
+      {
+        "name": "final build reload initializes without map failures",
+        "passed": true,
+        "details": {
+          "ready": true,
+          "center": [
+            106.574,
+            29.5628
+          ],
+          "zoom": 15.8,
+          "pitch": 54,
+          "terrain": true,
+          "elevationMetres": 273.8302895982524,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 383,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        }
+      },
+      {
+        "name": "food-card click does not select the underlying road",
+        "passed": true,
+        "details": {
+          "callback": 1,
+          "baseMapClicks": 0,
+          "selectedRoad": null
+        }
+      },
+      {
+        "name": "320px view controls stay on one line and inside viewport",
+        "passed": true,
+        "details": {
+          "viewport": [
+            320,
+            680
+          ],
+          "scroll": [
+            320,
+            680
+          ],
+          "dock": [
+            47.60416793823242,
+            560.6666870117188,
+            272.3958396911621,
+            618.0000228881836
+          ],
+          "labels": [
+            {
+              "text": "3D 漫游",
+              "lineBoxes": 1
+            },
+            {
+              "text": "2D 看路",
+              "lineBoxes": 1
+            },
+            {
+              "text": "↺",
+              "lineBoxes": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "final build reload has no page/console errors or external requests",
+        "passed": true,
+        "details": {
+          "pageErrors": [],
+          "consoleErrors": [],
+          "externalRequests": []
+        }
+      }
+    ],
+    "issues": [],
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": [],
+    "stats": {
+      "ready": true,
+      "center": [
+        106.574,
+        29.5628
+      ],
+      "zoom": 15.8,
+      "pitch": 54,
+      "terrain": true,
+      "elevationMetres": 273.8302895982524,
+      "roadNameGroups": 1041,
+      "renderedRoadFragments": 383,
+      "selectedRoad": null,
+      "foodCards": 0,
+      "failures": []
+    },
+    "passed": true
+  }
+}

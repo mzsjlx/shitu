@@ -1,0 +1,20 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+import {buildWalkGraph} from '../src/walk-graph.js';
+const load=async p=>JSON.parse(await readFile(new URL(p,import.meta.url),'utf8'));
+const foods=await load('../data/food-records.json'),network=await load('../data/walk-network.json'),audit=await load('../../output/entrance-candidate-audit.json');
+assert.equal(audit.counts.completeFoodEntranceCandidates,0);assert.equal(audit.source.xmlSHA256||audit.source.sha256,network.source.xmlSHA256);
+const graph=buildWalkGraph(network),baseVersion=createHash('sha256').update(JSON.stringify({foods,networkSource:network.source,counts:audit.counts})).digest('hex');
+const evidence=(id,kind,title,url,reference,note,publishedOn='',observedOn=kind==='map-record'?'2026-10-19':kind==='creator-page'?'2026-10-22':'2026-10-23')=>({id,kind,title,url,reference,observedOn,publishedOn,note});
+const candidates=foods.records.map(f=>{
+  const list=[evidence('osm','map-record','开放地图原始地点记录',f.coordinateEvidence.url,'','2026-10-19源缓存；本地核对原始坐标，不代表重新读取了当前原页。当前分店与门口仍待核。'),evidence('concept','project-asset','已有AI通用菜品概念图','','design/concepts/GENERATION-NOTES.md','2026-10-19生成的通用菜品示意；当前整理本地素材记录，非本店实拍，不证明本店实际菜单。')];
+  for(const [i,a]of (f.addressEvidence||[]).entries())list.push(evidence('address-'+i,'creator-page','作者简介中的文字地址',a.url,'','只支持资料中出现该文字地址；未确认地图点、入口或营业。',a.publishedOn,a.observedOn||'2026-10-22'));
+  for(const [i,v]of f.videos.entries())list.push(evidence('video-'+i,'creator-page',v.title,v.url,'',v.chapterText?'作者简介标注章节'+v.chapterText+'；未核对画面、分店或播放/嵌入。':'历史相关原页，分店对应与播放/嵌入未验证。',v.publishedOn,v.observedOn||'2026-10-22'));
+  const check=(conclusion,evidenceIds=[],note='')=>({conclusion,evidenceIds,note});
+  const seed={candidateId:f.id,evidence:list,checks:{source:check('supported',['osm'],'保留原名、OSM节点与WGS84坐标；此为来源记录核对。'),branch:check('needs-evidence',(f.addressEvidence||[]).map((_,i)=>'address-'+i),'文字地址线索尚不能确认具体分店及入口。'),entrance:check('needs-evidence'),image:check('supported',['concept'],'只用于明确标示的AI菜品示意。'),video:f.videos.length?check('supported',['video-0'],'仅作相关原页链接，分店待核，不声明站内播放。'):check('not-used'),connection:check('needs-evidence')},branch:{address:'',matchNote:''},entrance:{longitude:'',latitude:'',coordinateSystem:'WGS84',level:'',matchNote:''},connection:{roadNodeId:'',passageNote:''},media:{imageUse:'illustration',videoUse:f.videos.length?'outbound-link':'none',imageAuthor:'',imageScope:'',videoScope:'related-unmatched',playback:'not-tested',embedNote:''},notes:''};
+  return {id:f.id,name:f.name,category:f.category,sourceName:f.sourceName,coordinates:f.coordinates,coordinateSystem:f.coordinateSystem,sourceURL:f.coordinateEvidence.url,sourceDate:f.coordinateEvidence.sourceDate,publicStatus:{verificationStatus:f.verificationStatus,entranceStatus:f.entranceStatus,routeEligible:f.routeEligible},seed};
+});
+const catalog={schemaVersion:1,city:'chongqing',baseVersion,preparedOn:foods.reviewedOn,bounds:[106.49,29.49,106.65,29.65],roadNodeIds:[...graph.adj.keys()].sort((a,b)=>a-b),candidates,audit:{sourceDate:network.source.date,sourceXMLSHA256:network.source.xmlSHA256,counts:audit.counts,foods:audit.foods.map(f=>({id:f.id,name:f.name,category:f.tags.amenity||f.tags.shop||'',address:[f.explicitStreet,f.explicitHouseNumber].filter(Boolean).join(' '),level:f.explicitFloor||'',sourceURL:f.sourceURL,entranceMatched:f.entranceIdentityEstablished}))}};
+await writeFile(new URL('../data/content-review-catalog.json',import.meta.url),JSON.stringify(catalog)+'\n');
+console.log(JSON.stringify({candidates:candidates.length,clues:catalog.audit.foods.length,completeEntrances:catalog.audit.counts.completeFoodEntranceCandidates,baseVersion}));

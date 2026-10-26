@@ -1,0 +1,204 @@
+{
+  "verifiedOn": "2026-10-22",
+  "scope": "Original-XML topology and synthetic graph verification only; no current pedestrian permission, shop entrance, physical walkability or global shortest-path claim.",
+  "sourceXMLSHA256": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10",
+  "checks": [
+    {
+      "name": "Original XML hash matches source manifest and network provenance",
+      "passed": true,
+      "details": {
+        "hashMatches": true,
+        "date": "2026-10-19"
+      }
+    },
+    {
+      "name": "Every network node preserves XML ID, coordinates and node tags",
+      "passed": true,
+      "details": {
+        "nodesChecked": 3812,
+        "originalXMLNodes": 12554
+      }
+    },
+    {
+      "name": "Every network way preserves full XML node order and tags",
+      "passed": true,
+      "details": {
+        "waysChecked": 752,
+        "sourceHighwayWays": 752
+      }
+    },
+    {
+      "name": "Sample uses original road nodes, leaves POIs unconnected and ineligible",
+      "passed": true,
+      "details": {
+        "endpoints": [
+          4592547287,
+          13912494389
+        ],
+        "entrancesConnected": false,
+        "candidatePOINodes": [
+          13649952401,
+          4460519589
+        ]
+      }
+    },
+    {
+      "name": "Every sample edge follows adjacent original way nodes and exact XML coordinates",
+      "passed": true,
+      "details": {
+        "edgesChecked": 50,
+        "originalCoordinatesChecked": 51,
+        "sourceWays": [
+          59146768,
+          59146659,
+          831047016,
+          705733971,
+          832123489,
+          830761788,
+          589450440,
+          1102254579,
+          870022310,
+          1537651392,
+          1526449546
+        ]
+      }
+    },
+    {
+      "name": "Sample edge and total distances match independent Haversine oracle",
+      "passed": true,
+      "details": {
+        "runtimeMetres": 1070.978428183064,
+        "independentMetres": 1070.9799074814737,
+        "absoluteDifferenceMetres": 0.0014792984097766748,
+        "maxEdgeDifferenceMetres": 0.00011330921942942496,
+        "oracleEarthRadiusMetres": 6371008.8
+      }
+    },
+    {
+      "name": "Sample source ways have no bridge, tunnel, nonzero layer, steps or explicit foot prohibition",
+      "passed": true,
+      "details": {
+        "hasSteps": false,
+        "ordinarySourceWaysWithoutExplicitFootPermission": 10,
+        "permissionStillUnverified": true
+      }
+    },
+    {
+      "name": "Geometric intersection alone does not connect; a shared original node does",
+      "passed": true
+    },
+    {
+      "name": "Missing source nodes break connectivity while complete remaining segments survive",
+      "passed": true
+    },
+    {
+      "name": "Motor-vehicle one-way does not constrain walking; oneway:foot does",
+      "passed": true
+    },
+    {
+      "name": "Way foot prohibition wins; explicit foot permission overrides general restricted access",
+      "passed": true,
+      "details": {
+        "permissionCases": [
+          {
+            "tags": {
+              "foot": "no",
+              "access": "yes"
+            },
+            "allowed": false
+          },
+          {
+            "tags": {
+              "foot": "private"
+            },
+            "allowed": false
+          },
+          {
+            "tags": {
+              "access": "private"
+            },
+            "allowed": false
+          },
+          {
+            "tags": {
+              "access": "no",
+              "foot": "yes"
+            },
+            "allowed": true
+          },
+          {
+            "tags": {
+              "access": "private",
+              "foot": "designated"
+            },
+            "allowed": true
+          },
+          {
+            "tags": {
+              "access": "customers",
+              "foot": "permissive"
+            },
+            "allowed": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Directional private foot access excludes only that direction",
+      "passed": true
+    },
+    {
+      "name": "Ground-only model excludes bridges, tunnels and nonzero layers",
+      "passed": true
+    },
+    {
+      "name": "Barrier nodes block gates without permission and honor explicit foot permission/prohibition",
+      "passed": true
+    },
+    {
+      "name": "Unreachable and unknown endpoints return null",
+      "passed": true
+    },
+    {
+      "name": "Shortest path chooses the shorter connected alternative rather than an arbitrary detour",
+      "passed": true
+    },
+    {
+      "name": "Explicit foot-restriction exclusion list is enforced",
+      "passed": true
+    },
+    {
+      "name": "Pedestrian-only and avoid-steps options exclude their distinct road classes",
+      "passed": true
+    }
+  ],
+  "issues": [],
+  "graphStats": {
+    "nodes": 2773,
+    "ways": 521,
+    "segments": 2960,
+    "excluded": {
+      "unsupported-highway": 74,
+      "grade-separated": 111,
+      "foot-not-permitted": 30,
+      "indoor-or-area": 6,
+      "access-restricted": 10
+    }
+  },
+  "sample": {
+    "start": 4592547287,
+    "end": 13912494389,
+    "sourceNodeCount": 51,
+    "sourceEdges": 50,
+    "sourceWayCount": 11,
+    "distanceMetres": 1070.978428183064,
+    "entrancesConnected": false,
+    "status": "road-topology-trial"
+  },
+  "limitations": [
+    "Tests establish consistency with retained source records and graph rules, not current real-world permission or physical access.",
+    "The retrieval rectangle does not guarantee complete surrounding connectivity or a global shortest route.",
+    "Sample endpoints are road nodes; candidate POI entrances remain unverified and disconnected."
+  ],
+  "passed": true
+}

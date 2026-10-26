@@ -1,0 +1,53 @@
+{
+  "checkedOn": "2026-10-24",
+  "scope": "Independent build boundary checks with isolated synthetic files. No merchant or entrance verification.",
+  "checks": [
+    {
+      "name": "Valid source candidates produce only the expected directory and two detail paths",
+      "passed": true,
+      "details": {
+        "files": [
+          "places.html",
+          "places/osm-node-13649952401.html",
+          "places/osm-node-4460519589.html"
+        ]
+      }
+    },
+    {
+      "name": "Source names remain escaped text in headings and metadata",
+      "passed": true
+    },
+    {
+      "name": "Traversal-like source ID is rejected before replacing existing pages",
+      "passed": true,
+      "details": {
+        "rejectedWith": "门店资料页需要唯一来源ID与独立整理说明"
+      }
+    },
+    {
+      "name": "Duplicate source IDs are rejected before replacing existing pages",
+      "passed": true,
+      "details": {
+        "rejectedWith": "门店资料页需要唯一来源ID与独立整理说明"
+      }
+    },
+    {
+      "name": "Changed route eligibility requires editorial review before page generation",
+      "passed": true,
+      "details": {
+        "rejectedWith": "候选资料页的来源状态已改变，请先重审页面文案"
+      }
+    },
+    {
+      "name": "Stale cleanup removes only generator-owned numeric pages",
+      "passed": true
+    },
+    {
+      "name": "Build checks leave actual public food data unchanged",
+      "passed": true
+    }
+  ],
+  "issues": [],
+  "publicDataSHA256": "405eaffaec45447bc8644bb7a3ad9b0773b9fcf7f245e4defe018c1859339069",
+  "passed": true
+}

@@ -1,0 +1,15 @@
+{
+  "endpoint": "https://api.openstreetmap.org/api/0.6/map?bbox=106.566,29.558,106.584,29.573",
+  "retrievedAt": "2026-10-19T11:02:34.280426+00:00",
+  "bboxSouthWestNorthEast": [
+    29.558,
+    106.566,
+    29.573,
+    106.584
+  ],
+  "sha256": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL 1.0",
+  "licenseUrl": "https://www.openstreetmap.org/copyright",
+  "note": "One-time cached local modeling excerpt. Overpass endpoints returned 502/406 and 500; used documented read-only OSM bbox API."
+}

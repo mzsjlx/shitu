@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-25",
+  "passed": true,
+  "scope": "Original public-page text/metadata and isolated static build checks; no video watching, business, branch, entrance or media-use approval.",
+  "checks": [
+    {
+      "name": "Frozen creator HTML SHA256 agrees with retrieval manifest",
+      "passed": true
+    },
+    {
+      "name": "Video identity, author and full title agree with original JSON without executing page code",
+      "passed": true
+    },
+    {
+      "name": "Publication date comes from source timestamp and differs from observed/prepared date",
+      "passed": true
+    },
+    {
+      "name": "All six exact Chinese names, addresses and chapters occur in original description",
+      "passed": true
+    },
+    {
+      "name": "Exactly one related existing candidate and five unlocated clues contain no invented coordinates",
+      "passed": true
+    },
+    {
+      "name": "Existing two source points and non-route qualifications remain unchanged",
+      "passed": true
+    },
+    {
+      "name": "Latest noodles link agrees with guide; historical 2020 link remains",
+      "passed": true
+    },
+    {
+      "name": "Workbench seed uses individual 25 October/22 October source reading dates",
+      "passed": true
+    },
+    {
+      "name": "Old workbench base stays stale and cannot become review-ready after content update",
+      "passed": true
+    },
+    {
+      "name": "Static output has one related map link, five pending markers and no scripts, iframe or seek parameter",
+      "passed": true
+    },
+    {
+      "name": "Unsafe source protocols and credential URLs reject before overwriting output",
+      "passed": true
+    },
+    {
+      "name": "Wrong candidate name, missing candidate or elevated map eligibility reject before output changes",
+      "passed": true
+    },
+    {
+      "name": "Duplicate IDs, mismatched chapter seconds and invalid source dates reject before output changes",
+      "passed": true
+    },
+    {
+      "name": "Changed playback status requires wording review instead of silently claiming playback tested",
+      "passed": true
+    },
+    {
+      "name": "Source title HTML is escaped in generated page",
+      "passed": true
+    }
+  ],
+  "sourceHTMLSHA256": "ea49ed89251bfe203530c098177a4ec6feaabc04441918c202eda39acf658030",
+  "publicFoodSHA256": "899a01a8d0fb65ff17afaa7dbf37c30204215202d50095800d053469a0b5ed99"
+}

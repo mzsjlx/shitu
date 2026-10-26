@@ -1,0 +1,84 @@
+import assert from 'node:assert/strict';
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {createDraft,validateDraft,assessRecord,sourceURL,DIMENSIONS} from '../src/content-review-model.js';
+
+const read=async p=>JSON.parse(await readFile(new URL(p,import.meta.url),'utf8'));
+const catalog=await read('../data/content-review-catalog.json');
+const publicURL=new URL('../data/food-records.json',import.meta.url);
+const publicBefore=await readFile(publicURL),publicHash=createHash('sha256').update(publicBefore).digest('hex');
+const results=[],clone=x=>JSON.parse(JSON.stringify(x));
+const test=(name,fn)=>{try{fn();results.push({name,pass:true});}catch(e){results.push({name,pass:false,detail:e.message});}};
+const seed=()=>createDraft(catalog,'2026-10-23T08:00:00.000Z');
+const reject=(mutate)=>{const d=seed();mutate(d);assert.throws(()=>validateDraft(d,catalog));};
+const assess=(r,base=catalog.baseVersion)=>assessRecord(r,catalog,base);
+// Synthetic completeness fixture only: none of these notes are new real-world evidence.
+const filled=()=>{const d=seed(),r=d.records[0];
+  r.evidence.push({id:'synthetic-onsite',kind:'onsite-note',title:'QA synthetic entrance material',url:'',reference:'QA synthetic only; never publish',observedOn:'2026-10-23',publishedOn:'',note:'Synthetic completeness fixture, not actual inspection.'});
+  for(const key of Object.keys(DIMENSIONS))r.checks[key]={conclusion:'supported',evidenceIds:['synthetic-onsite'],note:'QA synthetic support declaration; not real evidence.'};
+  r.branch={address:'QA synthetic address',matchNote:'QA synthetic branch correspondence'};
+  r.entrance={longitude:'106.5794',latitude:'29.5662',coordinateSystem:'WGS84',level:'ground; QA synthetic',matchNote:'QA synthetic door correspondence'};
+  r.connection={roadNodeId:String(catalog.roadNodeIds[0]),passageNote:'QA synthetic level and crossing description'};
+  r.media={imageUse:'illustration',videoUse:'outbound-link',imageAuthor:'',imageScope:'',videoScope:'related-unmatched',playback:'not-tested',embedNote:''};
+  return d;
+};
+const incompleteAfter=(name,mutate,key)=>test(name,()=>{const d=filled();mutate(d.records[0]);validateDraft(d,catalog);const a=assess(d.records[0]);assert.equal(a.status,'incomplete');if(key)assert.equal(a.dimensions[key].complete,false);});
+
+test('catalog contains only source candidates with no current route eligibility',()=>{assert.equal(catalog.candidates.length,2);assert.equal(catalog.audit.counts.completeFoodEntranceCandidates,0);for(const c of catalog.candidates){assert.equal(c.publicStatus.verificationStatus,'source-record');assert.equal(c.publicStatus.routeEligible,false);}});
+test('seed draft validates and both candidates remain incomplete',()=>{const d=seed();validateDraft(d,catalog);for(const r of d.records){const a=assess(r);assert.equal(a.status,'incomplete');for(const key of ['branch','entrance','connection'])assert.equal(a.dimensions[key].complete,false);}});
+test('seed is independent from catalog objects',()=>{const d=seed();d.records[0].notes='changed';assert.equal(catalog.candidates[0].seed.notes,'');});
+test('complete synthetic declarations yield only review-ready',()=>{const d=filled(),r=validateDraft(d,catalog).records[0],a=assess(r);assert.equal(a.status,'review-ready');assert.equal(a.label,'可提交复核');assert.equal(a.completed,6);assert.equal(a.missing.length,0);for(const key of ['verified','verificationStatus','routeEligible','approved','passed'])assert.equal(JSON.stringify(d).includes('"'+key+'"'),false);});
+test('validation returns a deep copy',()=>{const d=seed(),copy=validateDraft(d,catalog);copy.records[0].evidence[0].note='copy only';assert.notEqual(d.records[0].evidence[0].note,'copy only');});
+test('draft JSON round-trip preserves all draft fields',()=>{const d=filled();assert.deepEqual(validateDraft(JSON.parse(JSON.stringify(d)),catalog),d);});
+test('old base version is retained but blocks completeness',()=>{const d=filled();d.baseVersion='old-base';validateDraft(d,catalog);const a=assess(d.records[0],d.baseVersion);assert.equal(a.status,'incomplete');assert.equal(a.stale,true);assert(a.missing.some(s=>s.includes('旧版')));});
+test('conflict takes precedence over missing material and stale base',()=>{const d=seed();d.records[0].checks.image.conclusion='conflicting';assert.equal(assess(d.records[0],'old').status,'conflict');});
+for(const key of ['source','branch','entrance','connection'])test(key+' cannot use not-used to skip review',()=>reject(d=>d.records[0].checks[key].conclusion='not-used'));
+incompleteAfter('all supported declarations without references remain incomplete',r=>{for(const c of Object.values(r.checks))c.evidenceIds=[];});
+incompleteAfter('supported assertion requires a written reason',r=>{r.checks.branch.note=' ';},'branch');
+incompleteAfter('supported evidence requires an observation date',r=>{r.evidence.find(e=>e.id==='synthetic-onsite').observedOn='';});
+incompleteAfter('supported evidence requires title and a source locator',r=>{const e=r.evidence.find(e=>e.id==='synthetic-onsite');e.title=' ';e.reference='';e.url='';});
+incompleteAfter('branch requires independent address field',r=>{r.branch.address=' ';},'branch');
+incompleteAfter('branch requires match explanation',r=>{r.branch.matchNote=' ';},'branch');
+incompleteAfter('empty entrance never falls back to catalog POI coordinates',r=>{r.entrance.longitude='';r.entrance.latitude='';},'entrance');
+for(const [name,lon,lat]of [['outside longitude','116.4','29.56'],['outside latitude','106.58','39.9'],['nonfinite','Infinity','29.56'],['not numeric','not-a-number','29.56'],['whitespace',' ','29.56']])incompleteAfter('entrance '+name+' blocks readiness',r=>{r.entrance.longitude=lon;r.entrance.latitude=lat;},'entrance');
+incompleteAfter('entrance floor/level relationship is separately required',r=>{r.entrance.level='';},'entrance');
+incompleteAfter('entrance correspondence is separately required',r=>{r.entrance.matchNote='';},'entrance');
+test('non-WGS84 entrance import is rejected',()=>reject(d=>d.records[0].entrance.coordinateSystem='GCJ-02'));
+incompleteAfter('unknown road node blocks connection',r=>{r.connection.roadNodeId='999999999999';},'connection');
+incompleteAfter('POI id cannot substitute a source road node',r=>{r.connection.roadNodeId=String(catalog.candidates[0].id.replace('osm-node-',''));},'connection');
+incompleteAfter('connection needs passage level and crossing explanation',r=>{r.connection.passageNote='';},'connection');
+for(const use of ['own-photo','licensed-photo']){
+  incompleteAfter(use+' without author remains incomplete',r=>{r.media.imageUse=use;r.media.imageAuthor='';r.media.imageScope='QA claimed scope';},'image');
+  incompleteAfter(use+' without scope remains incomplete',r=>{r.media.imageUse=use;r.media.imageAuthor='QA author';r.media.imageScope='';},'image');
+}
+incompleteAfter('image not-used cannot conceal active illustration',r=>{r.checks.image.conclusion='not-used';},'image');
+incompleteAfter('video not-used cannot conceal active link',r=>{r.checks.video.conclusion='not-used';},'video');
+test('actually unused image and video can be omitted without blocking other dimensions',()=>{const d=filled(),r=d.records[0];for(const key of ['image','video']){r.checks[key]={conclusion:'not-used',evidenceIds:[],note:''};r.media[key+'Use']='none';}validateDraft(d,catalog);assert.equal(assess(r).status,'review-ready');});
+for(const [name,mutate]of [['branch unmatched',r=>r.media.videoScope='related-unmatched'],['playback untested',r=>r.media.playback='not-tested'],['embed basis empty',r=>r.media.embedNote=' ']])incompleteAfter('embedded video '+name+' blocks readiness',r=>{r.media.videoUse='embed';r.media.videoScope='branch-matched';r.media.playback='tested';r.media.embedNote='QA synthetic embed basis';mutate(r);},'video');
+test('embed fixture with distinct paired playback and basis is only review-ready',()=>{const d=filled(),r=d.records[0];r.media.videoUse='embed';r.media.videoScope='branch-matched';r.media.playback='tested';r.media.embedNote='QA synthetic only';assert.equal(assess(r).status,'review-ready');assert.equal(r.routeEligible,undefined);});
+
+for(const [where,mutate]of [['root',d=>d.unknown=true],['record',d=>d.records[0].unknown=true],['evidence',d=>d.records[0].evidence[0].unknown=true],['check',d=>d.records[0].checks.source.unknown=true],['entrance',d=>d.records[0].entrance.unknown=true]])test('unknown field is rejected at '+where,()=>reject(mutate));
+for(const key of ['verificationStatus','routeEligible','verified','approved','passed','__proto__','constructor','prototype'])test('authority/prototype key '+key+' is rejected even nested',()=>reject(d=>{Object.defineProperty(d.records[0].evidence[0],key,{value:true,enumerable:true});}));
+for(const url of ['javascript:alert(1)','data:text/html,<script>1</script>','file:///D:/secret','blob:https://example.com/id','http://example.com','https://u:p@example.com','https://u@example.com','//example.com','not a URL'])test('unsafe source URL rejected: '+url,()=>{assert.equal(sourceURL(url),null);reject(d=>d.records[0].evidence[0].url=url);});
+test('HTTPS source URL stays valid',()=>{assert.equal(sourceURL('https://example.com/path?q=1'),'https://example.com/path?q=1');});
+for(const date of ['2026-02-30','2026-13-01','2026-00-01','not-date','2026-1-1'])test('invalid evidence calendar date rejected: '+date,()=>reject(d=>d.records[0].evidence[0].observedOn=date));
+test('valid leap day date accepted',()=>{const d=seed();d.records[0].evidence[0].observedOn='2024-02-29';validateDraft(d,catalog);});
+for(const date of ['not-a-date','2026-02-30T00:00:00.000Z','0'])test('invalid/non-ISO updatedAt rejected: '+date,()=>reject(d=>d.updatedAt=date));
+test('duplicate candidate id rejected',()=>reject(d=>d.records.push(clone(d.records[0]))));
+test('unknown candidate rejected',()=>reject(d=>d.records[0].candidateId='osm-node-unknown'));
+test('duplicate evidence id rejected',()=>reject(d=>d.records[0].evidence.push(clone(d.records[0].evidence[0]))));
+test('missing evidence reference rejected',()=>reject(d=>d.records[0].checks.source.evidenceIds=['missing-id']));
+test('duplicate evidence reference rejected',()=>reject(d=>d.records[0].checks.source.evidenceIds=['osm','osm']));
+test('unsupported conclusion rejected',()=>reject(d=>d.records[0].checks.source.conclusion='approved'));
+test('unsupported image use rejected',()=>reject(d=>d.records[0].media.imageUse='stolen-thumbnail'));
+test('invalid schema and kind rejected',()=>{reject(d=>d.schemaVersion=2);reject(d=>d.kind='public-release');});
+test('overlong note and excessive records rejected',()=>{reject(d=>d.records[0].notes='x'.repeat(3001));reject(d=>{d.records=new Array(101).fill(d.records[0]);});});
+test('HTML-looking evidence title is ordinary preserved string',()=>{const d=seed(),title='<img src=x onerror="globalThis.BAD=true">';d.records[0].evidence[0].title=title;const copy=validateDraft(d,catalog);assert.equal(copy.records[0].evidence[0].title,title);assert.equal(globalThis.BAD,undefined);});
+test('public candidate data unchanged by draft operations',()=>{const now=createHash('sha256').update(publicBefore).digest('hex');assert.equal(now,publicHash);for(const c of catalog.candidates){assert.equal(c.publicStatus.routeEligible,false);assert.equal(c.publicStatus.verificationStatus,'source-record');}});
+const publicAfterHash=createHash('sha256').update(await readFile(publicURL)).digest('hex');
+test('public file bytes remain unchanged',()=>assert.equal(publicAfterHash,publicHash));
+
+const report={checkedOn:'2026-10-23',scope:'Independent pure-model checks; synthetic completeness fixtures are not real evidence. No browser or public data edits.',model:'src/content-review-model.js',baseVersion:catalog.baseVersion,publicDataSHA256:publicHash,total:results.length,passed:results.filter(x=>x.pass).length,failed:results.filter(x=>!x.pass).length,results};
+await writeFile(new URL('../CONTENT-MODEL-QA.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify({total:report.total,passed:report.passed,failed:report.failed,failures:results.filter(x=>!x.pass)}));
+if(report.failed)process.exitCode=1;

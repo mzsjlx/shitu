@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "purpose": "One-time original OSM bbox check for a video-address lead; not a restaurant geocoder or entrance confirmation",
+  "url": "https://api.openstreetmap.org/api/0.6/map?bbox=106.575,29.561,106.581,29.567",
+  "observedOn": "2026-10-25",
+  "observerTimezone": "Asia/Shanghai",
+  "httpStatus": 200,
+  "file": "osm-minzu-2026-10-25.xml",
+  "storedEncoding": "UTF-8 without BOM; decoded HTTP response XML",
+  "sha256": "11d51830758159b0b058a1bfb004722fef866890349308c12c2bb08f92ba3247",
+  "byteLength": 889772,
+  "bounds": [106.575,29.561,106.581,29.567],
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL 1.0",
+  "licenseURL": "https://www.openstreetmap.org/copyright",
+  "result": "No named 抄姐/潮姐/Chaojie restaurant object found in this small returned region. Hotpot-named bus stops are not restaurants. No new food coordinates adopted."
+}

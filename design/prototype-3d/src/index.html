@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#faf6ef">
+  <title>食途 · 洪崖洞三维小样</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="city-app">
+    <header class="topbar">
+      <span class="brand">食途</span>
+      <span class="city-chip">重庆 <span>· 洪崖洞</span></span>
+      <span class="study-tag">三维小样</span>
+      <button id="food-toggle" class="pill" aria-pressed="true">美食卡片</button>
+    </header>
+    <section id="scene" aria-label="洪崖洞与千厮门大桥可交互三维模型">
+      <canvas id="city-canvas" aria-label="三维城市场景，可拖动旋转、滚轮缩放。也可使用下方视角按钮。"></canvas>
+      <div class="load-status" id="load-status" role="status"><span class="loader-dot"></span>正在展开山城…</div>
+      <div id="pins" aria-label="菜品概念卡片"></div>
+      <nav class="view-dock" aria-label="调整三维视角">
+        <button id="view-river" class="view-button is-active" aria-pressed="true">江岸视角</button>
+        <button id="view-top" class="view-button" aria-pressed="false">俯瞰街区</button>
+        <span class="dock-rule"></span>
+        <button id="rotate-left" class="round-button" aria-label="向左旋转视角">↶</button>
+        <button id="rotate-right" class="round-button" aria-label="向右旋转视角">↷</button>
+        <button id="zoom-in" class="round-button" aria-label="放大">＋</button>
+        <button id="zoom-out" class="round-button" aria-label="缩小">−</button>
+      </nav>
+      <div class="map-footer">
+        <span class="gesture-hint">拖动旋转 · 滚轮缩放</span>
+        <span class="map-credit"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap</a> · <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noreferrer">Mapzen / USGS</a><button id="source-open" aria-label="查看模型与数据说明">模型说明</button></span>
+      </div>
+      <section id="food-detail" class="floating-panel food-detail" role="dialog" aria-modal="false" aria-labelledby="food-detail-title" hidden>
+        <button class="close" data-close="food-detail" aria-label="关闭美食卡片">×</button>
+        <div id="food-detail-photo" class="food-photo"></div>
+        <div class="detail-body"><h2 id="food-detail-title"></h2><p>菜品概念展示 · 尚未绑定具体门店</p><button class="primary" id="detail-close">继续看城</button></div>
+      </section>
+      <section id="source-panel" class="floating-panel source-panel" role="dialog" aria-modal="false" aria-labelledby="source-title" hidden>
+        <button class="close" data-close="source-panel" aria-label="关闭模型说明">×</button>
+        <span class="eyebrow">关于这块三维小样</span>
+        <h2 id="source-title">真实位置，定制画面。</h2>
+        <p>道路、岸线和建筑轮廓来自 OpenStreetMap，地形来自公开高程数据。</p>
+        <p id="data-coverage"></p>
+        <p>洪崖洞屋檐、桥塔、窗户和树木为风格化建模，细部与部分高度经过估算。这里用于检查画面与三维交互，尚不能导航。</p>
+        <button class="primary" data-close="source-panel">回到城市</button>
+      </section>
+      <div id="notice" class="notice" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

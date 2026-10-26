@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-24",
+  "scope": "Synthetic renderer video-link inputs in an isolated browser context; no external navigation or real content verification.",
+  "checks": [
+    {
+      "name": "Invalid protocols, credentials and malformed URLs do not render an original-video link",
+      "passed": true,
+      "details": [
+        {
+          "url": "javascript:alert(1)",
+          "links": 0
+        },
+        {
+          "url": "http://example.com/video",
+          "links": 0
+        },
+        {
+          "url": "data:text/plain,video",
+          "links": 0
+        },
+        {
+          "url": "file:///C:/clip.mp4",
+          "links": 0
+        },
+        {
+          "url": "https://user:password@example.com/watch",
+          "links": 0
+        },
+        {
+          "url": "not-a-url",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "name": "Absent or malformed video lists do not throw or render links",
+      "passed": true,
+      "details": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "First valid HTTPS video after invalid entries keeps caveat and no private save callback",
+      "passed": true,
+      "details": {
+        "href": "https://example.com/related-video",
+        "title": "Synthetic related source · 2020-01-01 · 相关视频，分店待核 · 原平台观看",
+        "label": "合成链接检查 · 非实际门店核实的2020-01-01 · 相关视频，分店待核 · 原平台观看",
+        "quickSaves": 0
+      }
+    },
+    {
+      "name": "Clearing cards removes both main and action controls without external prefetch",
+      "passed": true,
+      "details": {
+        "remaining": 0,
+        "external": []
+      }
+    }
+  ],
+  "issues": [],
+  "passed": true
+}

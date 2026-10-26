@@ -1,0 +1,311 @@
+{
+  "date": "2026-10-22",
+  "scope": "Independent local browser QA of source-road topology trial. Condensed from CLI run result; not real-world walkability or shop navigation verification.",
+  "checkCount": 22,
+  "checks": [
+    {
+      "name": "Default food view does not request walk network",
+      "passed": true
+    },
+    {
+      "name": "Road trial renders 50 segments, about 1.07 km and two road endpoints",
+      "passed": true,
+      "details": {
+        "segments": 50,
+        "distanceMetres": 1070.978428183064,
+        "endpointMarkers": 2,
+        "renderedLineFragments": 3,
+        "assumedAccessWays": 10,
+        "entrancesConnected": false
+      }
+    },
+    {
+      "name": "Food candidates stay collapsed and ineligible for routing",
+      "passed": true,
+      "details": {
+        "collapsed": [
+          true,
+          true
+        ],
+        "routeEligible": [
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "name": "Info shows eleven OSM way sources and clear entrance and length limits",
+      "passed": true,
+      "details": {
+        "sourceWayIDs": [
+          59146768,
+          59146659,
+          831047016,
+          705733971,
+          832123489,
+          830761788,
+          589450440,
+          1102254579,
+          870022310,
+          1537651392,
+          1526449546
+        ]
+      }
+    },
+    {
+      "name": "Pedestrian-only mode has no path and no fake fallback",
+      "passed": true,
+      "details": {
+        "pedestrianOnly": true,
+        "hasRoute": false,
+        "segments": 0,
+        "renderedLineFragments": 0,
+        "legs": 0,
+        "distanceLabel": "暂未连通"
+      }
+    },
+    {
+      "name": "Closing and reopening retains strict mode with no line",
+      "passed": true
+    },
+    {
+      "name": "Overview switches to flat map while retaining trial",
+      "passed": true,
+      "details": {
+        "pitch": 0,
+        "buttonLabel": "立体",
+        "renderedLineFragments": 2
+      }
+    },
+    {
+      "name": "3D restores pitch and retains trial",
+      "passed": true,
+      "details": {
+        "pitch": 54,
+        "buttonLabel": "俯瞰"
+      }
+    },
+    {
+      "name": "Page and road panel fit 390x844",
+      "passed": true
+    },
+    {
+      "name": "Both endpoints remain on screen and clear of bottom panel 390x844",
+      "passed": true
+    },
+    {
+      "name": "Road info dialog fits 390x844",
+      "passed": true
+    },
+    {
+      "name": "Page and road panel fit 320x680",
+      "passed": true
+    },
+    {
+      "name": "Both endpoints remain on screen and clear of bottom panel 320x680",
+      "passed": true
+    },
+    {
+      "name": "Road info dialog fits 320x680",
+      "passed": true
+    },
+    {
+      "name": "Page and road panel fit 736x414",
+      "passed": true
+    },
+    {
+      "name": "Both endpoints remain on screen and clear of bottom panel 736x414",
+      "passed": true
+    },
+    {
+      "name": "Road info dialog fits 736x414",
+      "passed": true
+    },
+    {
+      "name": "Page and road panel fit 1440x960",
+      "passed": true
+    },
+    {
+      "name": "Both endpoints remain on screen and clear of bottom panel 1440x960",
+      "passed": true
+    },
+    {
+      "name": "Road info dialog fits 1440x960",
+      "passed": true
+    },
+    {
+      "name": "Close removes endpoints and restores food card layout",
+      "passed": true,
+      "details": {
+        "active": false,
+        "endpointMarkers": 0,
+        "panelHidden": true,
+        "lineVisibility": "none",
+        "compact": false,
+        "expandedFoodCards": 1,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "Normal runtime has no external requests, failed HTTP or browser errors",
+      "passed": true
+    }
+  ],
+  "issues": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "network": {
+    "external": [],
+    "failed": [],
+    "walkRequests": [
+      "http://127.0.0.1:8791/data/walk-network.json"
+    ]
+  },
+  "viewports": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "scroll": [
+        390,
+        844
+      ],
+      "panel": {
+        "left": 13,
+        "top": 647.609375,
+        "right": 377,
+        "bottom": 781
+      },
+      "endpointBoxes": [
+        [
+          229.5,
+          279.5,
+          262.5,
+          312.5
+        ],
+        [
+          112.5,
+          580.5,
+          145.5,
+          613.5
+        ]
+      ],
+      "dialog": [
+        14,
+        16,
+        376,
+        828
+      ]
+    },
+    {
+      "viewport": [
+        320,
+        680
+      ],
+      "scroll": [
+        320,
+        680
+      ],
+      "panel": {
+        "left": 13,
+        "top": 483.609375,
+        "right": 307,
+        "bottom": 617
+      },
+      "endpointBoxes": [
+        [
+          177.5,
+          242.5,
+          210.5,
+          275.5
+        ],
+        [
+          100.5,
+          440.5,
+          133.5,
+          473.5
+        ]
+      ],
+      "dialog": [
+        14,
+        16,
+        306,
+        664
+      ]
+    },
+    {
+      "viewport": [
+        736,
+        414
+      ],
+      "scroll": [
+        736,
+        414
+      ],
+      "panel": {
+        "left": 137.4609375,
+        "top": 315.90625,
+        "right": 598.5390625,
+        "bottom": 386
+      },
+      "endpointBoxes": [
+        [
+          372.5,
+          132.5,
+          405.5,
+          165.5
+        ],
+        [
+          324.5,
+          255.5,
+          357.5,
+          288.5
+        ]
+      ],
+      "dialog": [
+        138,
+        16,
+        598,
+        398
+      ]
+    },
+    {
+      "viewport": [
+        1440,
+        960
+      ],
+      "scroll": [
+        1440,
+        960
+      ],
+      "panel": {
+        "left": 452.5546875,
+        "top": 837.8125,
+        "right": 987.4453125,
+        "bottom": 927
+      },
+      "endpointBoxes": [
+        [
+          779.5,
+          274.5,
+          812.5,
+          307.5
+        ],
+        [
+          597.5,
+          761.5,
+          630.5,
+          794.5
+        ]
+      ],
+      "dialog": [
+        490,
+        16,
+        950,
+        944
+      ]
+    }
+  ],
+  "passed": true
+}

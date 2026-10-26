@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-25",
+  "scope": "Pure model checks use synthetic description text. They do not supply real branch, entry, rights or playback evidence.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Literal lines retain original CRLF/blank-line indices, text and separate clue kinds",
+      "passed": true
+    },
+    {
+      "name": "An unknown restaurant timecode does not create candidate matches",
+      "passed": true
+    },
+    {
+      "name": "A street-number clue without a known name remains an unassigned address",
+      "passed": true
+    },
+    {
+      "name": "Ordinary text, incomplete addresses and invalid seconds are not invented as clues",
+      "passed": true
+    },
+    {
+      "name": "Valid hour/minute timecodes and full-width colon are recognized literally",
+      "passed": true
+    },
+    {
+      "name": "Empty and oversized descriptions are rejected",
+      "passed": true
+    },
+    {
+      "name": "A recognized source line longer than 400 characters is rejected rather than clipped",
+      "passed": true
+    },
+    {
+      "name": "More than 40 clue lines are rejected for segmented review",
+      "passed": true
+    },
+    {
+      "name": "Only explicitly selected clues are saved and source order wins over click order",
+      "passed": true
+    },
+    {
+      "name": "Manual candidate choice is retained even when another known name occurs",
+      "passed": true
+    },
+    {
+      "name": "Observed and published dates remain distinct and valid leap-day dates survive",
+      "passed": true
+    },
+    {
+      "name": "No selection is rejected",
+      "passed": true
+    },
+    {
+      "name": "Unknown and duplicate selections are rejected",
+      "passed": true
+    },
+    {
+      "name": "Only current candidate IDs can receive material",
+      "passed": true
+    },
+    {
+      "name": "HTTPS source URLs reject credentials and executable or local schemes",
+      "passed": true
+    },
+    {
+      "name": "Titles and authors obey material limits",
+      "passed": true
+    },
+    {
+      "name": "Invalid observed or published calendar dates are rejected",
+      "passed": true
+    },
+    {
+      "name": "An unknown publication date can remain empty",
+      "passed": true
+    },
+    {
+      "name": "Oversized selected excerpts are rejected before creating a material",
+      "passed": true
+    },
+    {
+      "name": "Markup remains literal material text without HTML interpretation",
+      "passed": true
+    },
+    {
+      "name": "Saving a material does not change checks, branch, entrance, media or route prerequisites",
+      "passed": true
+    },
+    {
+      "name": "Existing 50-material cap still rejects the proposed 51st material on a copy",
+      "passed": true
+    },
+    {
+      "name": "Catalog and public candidate file stay unchanged",
+      "passed": true
+    }
+  ],
+  "publicFoodSHA256": "405eaffaec45447bc8644bb7a3ad9b0773b9fcf7f245e4defe018c1859339069"
+}

@@ -1,0 +1,641 @@
+{
+  "date": "2026-10-22",
+  "scope": "HTTP browser street-detail QA; no real-world walkability claim",
+  "checks": [
+    {
+      "name": "city view leaves street data unloaded",
+      "passed": true,
+      "details": {
+        "phase": "unloaded",
+        "enabled": true,
+        "active": false,
+        "error": null,
+        "renderedFeatures": 0
+      }
+    },
+    {
+      "name": "street entry loads once and activates real source records",
+      "passed": true,
+      "details": {
+        "base": {
+          "ready": true,
+          "center": [
+            106.58012704999999,
+            29.562860625000013
+          ],
+          "zoom": 18.55,
+          "pitch": 40,
+          "terrain": true,
+          "elevationMetres": 248.1549001012463,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 24,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        },
+        "street": {
+          "phase": "loaded",
+          "enabled": true,
+          "active": true,
+          "error": null,
+          "sourceFeatures": 745,
+          "visibleSourceFeatures": 542,
+          "illustratedRoads": 32,
+          "separators": 89,
+          "counts": {
+            "raw-road": 215,
+            "footpath": 182,
+            "pedestrian": 12,
+            "steps": 91,
+            "sidewalk": 29,
+            "crossing": 13
+          },
+          "renderedFeatures": 40
+        },
+        "layers": {
+          "street-road-surface": 11,
+          "street-lanes": 7,
+          "street-walk": 27,
+          "street-steps": 5,
+          "street-crossing": 2,
+          "street-zebra": 0
+        },
+        "height": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          16.9,
+          [
+            "case",
+            [
+              ">",
+              [
+                "coalesce",
+                [
+                  "get",
+                  "height"
+                ],
+                0
+              ],
+              0
+            ],
+            [
+              "min",
+              500,
+              [
+                "get",
+                "height"
+              ]
+            ],
+            [
+              "+",
+              9,
+              [
+                "coalesce",
+                [
+                  "get",
+                  "min_height"
+                ],
+                0
+              ]
+            ]
+          ],
+          18.1,
+          [
+            "min",
+            22,
+            [
+              "*",
+              [
+                "case",
+                [
+                  ">",
+                  [
+                    "coalesce",
+                    [
+                      "get",
+                      "height"
+                    ],
+                    0
+                  ],
+                  0
+                ],
+                [
+                  "min",
+                  500,
+                  [
+                    "get",
+                    "height"
+                  ]
+                ],
+                [
+                  "+",
+                  9,
+                  [
+                    "coalesce",
+                    [
+                      "get",
+                      "min_height"
+                    ],
+                    0
+                  ]
+                ]
+              ],
+              0.13
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "name": "street camera renders road illustration and walking detail",
+      "passed": true,
+      "details": {
+        "street-road-surface": 11,
+        "street-lanes": 7,
+        "street-walk": 27,
+        "street-steps": 5,
+        "street-crossing": 2,
+        "street-zebra": 0
+      }
+    },
+    {
+      "name": "restricted and grade-separated source records are excluded",
+      "passed": true,
+      "details": {
+        "sourceCount": 542,
+        "unsafeCount": 0,
+        "unknownZebras": 0,
+        "zebraFilter": [
+          "all",
+          [
+            "in",
+            [
+              "get",
+              "type"
+            ],
+            [
+              "literal",
+              [
+                "crossing"
+              ]
+            ]
+          ],
+          [
+            "==",
+            [
+              "get",
+              "explicitlyZebra"
+            ],
+            true
+          ]
+        ],
+        "types": {
+          "raw-road": 215,
+          "footpath": 182,
+          "pedestrian": 12,
+          "steps": 91,
+          "sidewalk": 29,
+          "crossing": 13
+        }
+      }
+    },
+    {
+      "name": "zebra layer requires explicit source marking",
+      "passed": true,
+      "details": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "type"
+          ],
+          [
+            "literal",
+            [
+              "crossing"
+            ]
+          ]
+        ],
+        [
+          "==",
+          [
+            "get",
+            "explicitlyZebra"
+          ],
+          true
+        ]
+      ]
+    },
+    {
+      "name": "clicking walking detail exposes original OSM way provenance",
+      "passed": true,
+      "details": {
+        "screenPoint": {
+          "x": 348,
+          "y": 186
+        },
+        "card": "×\n沿着这条路逛逛\n人行道\n\n人行道 · 开放资料中的地面线形\n\nOpenStreetMap · way/1417501988 · 尚未现场核实"
+      }
+    },
+    {
+      "name": "road-name toggle also hides street names",
+      "passed": true
+    },
+    {
+      "name": "street toggle disables detail",
+      "passed": true
+    },
+    {
+      "name": "reenabling detail preserves disabled street labels",
+      "passed": true
+    },
+    {
+      "name": "street explanation closes with Escape",
+      "passed": true
+    },
+    {
+      "name": "reset exits detail and restores source building height expression",
+      "passed": true,
+      "details": {
+        "street": {
+          "phase": "loaded",
+          "enabled": true,
+          "active": false,
+          "error": null,
+          "sourceFeatures": 745,
+          "visibleSourceFeatures": 542,
+          "illustratedRoads": 32,
+          "separators": 89,
+          "counts": {
+            "raw-road": 215,
+            "footpath": 182,
+            "pedestrian": 12,
+            "steps": 91,
+            "sidewalk": 29,
+            "crossing": 13
+          },
+          "renderedFeatures": 0
+        },
+        "height": [
+          "case",
+          [
+            ">",
+            [
+              "coalesce",
+              [
+                "get",
+                "height"
+              ],
+              0
+            ],
+            0
+          ],
+          [
+            "min",
+            500,
+            [
+              "get",
+              "height"
+            ]
+          ],
+          [
+            "+",
+            9,
+            [
+              "coalesce",
+              [
+                "get",
+                "min_height"
+              ],
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "name": "390px near view remains within viewport",
+      "passed": true,
+      "details": {
+        "viewport": [
+          390,
+          844
+        ],
+        "scroll": [
+          390,
+          844
+        ],
+        "tools": [
+          13,
+          134,
+          146.59375,
+          181.33333587646484
+        ],
+        "note": [
+          14,
+          182,
+          199.98959350585938,
+          205.5
+        ],
+        "dock": [
+          82.60417175292969,
+          724.6666870117188,
+          307.3958435058594,
+          782.0000228881836
+        ],
+        "dialog": null
+      }
+    },
+    {
+      "name": "390px explanation fits viewport",
+      "passed": true,
+      "details": [
+        14,
+        155.05209350585938,
+        376,
+        688.9479675292969
+      ]
+    },
+    {
+      "name": "320px near view remains within viewport",
+      "passed": true,
+      "details": {
+        "viewport": [
+          320,
+          680
+        ],
+        "scroll": [
+          320,
+          680
+        ],
+        "tools": [
+          13,
+          134,
+          146.59375,
+          181.33333587646484
+        ],
+        "note": [
+          14,
+          182,
+          199.98959350585938,
+          205.5
+        ],
+        "dock": [
+          47.60416793823242,
+          560.6666870117188,
+          272.3958396911621,
+          618.0000228881836
+        ],
+        "dialog": null
+      }
+    },
+    {
+      "name": "320px explanation fits viewport",
+      "passed": true,
+      "details": [
+        14,
+        51.60416793823242,
+        306,
+        628.3958549499512
+      ]
+    },
+    {
+      "name": "repeated near entry reuses loaded data",
+      "passed": true,
+      "details": {
+        "streetRequests": 1
+      }
+    },
+    {
+      "name": "street data failure preserves base and provides retry",
+      "passed": true,
+      "details": {
+        "base": true,
+        "loadingHidden": true,
+        "errorHidden": true,
+        "entry": "重试街道近景 ↗",
+        "note": "街道样板暂未载入，城市地图仍可使用。"
+      }
+    },
+    {
+      "name": "retry succeeds and concurrent requests share one load",
+      "passed": true,
+      "details": {
+        "failedRequests": 1,
+        "pendingRequests": 1
+      }
+    },
+    {
+      "name": "normal street interactions emit no page or console errors",
+      "passed": true,
+      "details": {
+        "pageErrors": [],
+        "consoleErrors": []
+      }
+    }
+  ],
+  "issues": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "initial": {
+    "base": {
+      "ready": true,
+      "center": [
+        106.574,
+        29.5628
+      ],
+      "zoom": 15.8,
+      "pitch": 54,
+      "terrain": true,
+      "elevationMetres": 273.8302895982524,
+      "roadNameGroups": 1041,
+      "renderedRoadFragments": 383,
+      "selectedRoad": null,
+      "foodCards": 0,
+      "failures": []
+    },
+    "street": {
+      "phase": "unloaded",
+      "enabled": true,
+      "active": false,
+      "error": null,
+      "renderedFeatures": 0
+    },
+    "height": [
+      "case",
+      [
+        ">",
+        [
+          "coalesce",
+          [
+            "get",
+            "height"
+          ],
+          0
+        ],
+        0
+      ],
+      [
+        "min",
+        500,
+        [
+          "get",
+          "height"
+        ]
+      ],
+      [
+        "+",
+        9,
+        [
+          "coalesce",
+          [
+            "get",
+            "min_height"
+          ],
+          0
+        ]
+      ]
+    ]
+  },
+  "near": {
+    "base": {
+      "ready": true,
+      "center": [
+        106.58012704999999,
+        29.562860625000013
+      ],
+      "zoom": 18.55,
+      "pitch": 40,
+      "terrain": true,
+      "elevationMetres": 248.1549001012463,
+      "roadNameGroups": 1041,
+      "renderedRoadFragments": 24,
+      "selectedRoad": null,
+      "foodCards": 0,
+      "failures": []
+    },
+    "street": {
+      "phase": "loaded",
+      "enabled": true,
+      "active": true,
+      "error": null,
+      "sourceFeatures": 745,
+      "visibleSourceFeatures": 542,
+      "illustratedRoads": 32,
+      "separators": 89,
+      "counts": {
+        "raw-road": 215,
+        "footpath": 182,
+        "pedestrian": 12,
+        "steps": 91,
+        "sidewalk": 29,
+        "crossing": 13
+      },
+      "renderedFeatures": 40
+    },
+    "layers": {
+      "street-road-surface": 11,
+      "street-lanes": 7,
+      "street-walk": 27,
+      "street-steps": 5,
+      "street-crossing": 2,
+      "street-zebra": 0
+    },
+    "height": [
+      "interpolate",
+      [
+        "linear"
+      ],
+      [
+        "zoom"
+      ],
+      16.9,
+      [
+        "case",
+        [
+          ">",
+          [
+            "coalesce",
+            [
+              "get",
+              "height"
+            ],
+            0
+          ],
+          0
+        ],
+        [
+          "min",
+          500,
+          [
+            "get",
+            "height"
+          ]
+        ],
+        [
+          "+",
+          9,
+          [
+            "coalesce",
+            [
+              "get",
+              "min_height"
+            ],
+            0
+          ]
+        ]
+      ],
+      18.1,
+      [
+        "min",
+        22,
+        [
+          "*",
+          [
+            "case",
+            [
+              ">",
+              [
+                "coalesce",
+                [
+                  "get",
+                  "height"
+                ],
+                0
+              ],
+              0
+            ],
+            [
+              "min",
+              500,
+              [
+                "get",
+                "height"
+              ]
+            ],
+            [
+              "+",
+              9,
+              [
+                "coalesce",
+                [
+                  "get",
+                  "min_height"
+                ],
+                0
+              ]
+            ]
+          ],
+          0.13
+        ]
+      ]
+    ]
+  },
+  "passed": true
+}

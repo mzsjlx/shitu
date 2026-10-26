@@ -1,0 +1,1073 @@
+{
+  "date": "2026-10-25",
+  "scope": "Independent Chromium contexts for the public creator library, actual local navigation, newest Li video links, embedded standalone and current/legacy workbench drafts. External navigation is fulfilled by a local synthetic response; no original-platform playback, live business, entrance or route validation is claimed. No real user browser storage is accessed.",
+  "checks": [
+    {
+      "name": "Library is a readable Chinese semantic page with JavaScript disabled",
+      "passed": true,
+      "details": {
+        "status": 200,
+        "title": "重庆探店视频 · 食途",
+        "lang": "zh-CN"
+      }
+    },
+    {
+      "name": "Library presents one author guide and exactly six source restaurant rows",
+      "passed": true,
+      "details": {
+        "articles": 1,
+        "rows": 6
+      }
+    },
+    {
+      "name": "All source names are preserved exactly including 抄姐, 轻松空间 and 牛莫王",
+      "passed": true,
+      "details": [
+        "超级李板凳面",
+        "老甘家小龙虾江湖菜",
+        "林中乐辣子鸡",
+        "抄姐老火锅",
+        "轻松空间･虾蟹馆专注十年",
+        "牛莫王串串王"
+      ]
+    },
+    {
+      "name": "Every row retains the exact source category, address and chapter",
+      "passed": true,
+      "details": [
+        {
+          "id": "li-bandeng",
+          "name": "超级李板凳面",
+          "category": "小面",
+          "address": "重庆市渝中区朝千路41号",
+          "chapter": "0:40",
+          "anchors": [
+            "http://127.0.0.1:8791/?view=food&place=osm-node-13649952401"
+          ],
+          "pending": false
+        },
+        {
+          "id": "laoganjia",
+          "name": "老甘家小龙虾江湖菜",
+          "category": "小龙虾",
+          "address": "重庆市两江新区洋河中路91号",
+          "chapter": "10:44",
+          "anchors": [],
+          "pending": true
+        },
+        {
+          "id": "linzhongle",
+          "name": "林中乐辣子鸡",
+          "category": "辣子鸡",
+          "address": "重庆市沙坪坝区欧家湾社199号",
+          "chapter": "18:26",
+          "anchors": [],
+          "pending": true
+        },
+        {
+          "id": "chaojie",
+          "name": "抄姐老火锅",
+          "category": "火锅",
+          "address": "重庆市渝中区解放碑街道民族路114号",
+          "chapter": "30:18",
+          "anchors": [],
+          "pending": true
+        },
+        {
+          "id": "qingsong-kongjian",
+          "name": "轻松空间･虾蟹馆专注十年",
+          "category": "虾蟹",
+          "address": "重庆市两江新区洋河中路70号",
+          "chapter": "38:48",
+          "anchors": [],
+          "pending": true
+        },
+        {
+          "id": "niumowang",
+          "name": "牛莫王串串王",
+          "category": "串串",
+          "address": "重庆市两江新区洋河路69-2号",
+          "chapter": "46:22",
+          "anchors": [],
+          "pending": true
+        }
+      ]
+    },
+    {
+      "name": "Published, observed and prepared dates remain distinguishable",
+      "passed": true,
+      "details": [
+        {
+          "text": "2026-06-06",
+          "date": "2026-06-06"
+        },
+        {
+          "text": "2026-10-25",
+          "date": "2026-10-25"
+        },
+        {
+          "text": "2026-10-25",
+          "date": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "name": "Exactly one related map candidate is linked and five unknown locations remain unlinked",
+      "passed": true,
+      "details": [
+        {
+          "name": "超级李板凳面",
+          "anchors": [
+            "http://127.0.0.1:8791/?view=food&place=osm-node-13649952401"
+          ],
+          "pending": false
+        },
+        {
+          "name": "老甘家小龙虾江湖菜",
+          "anchors": [],
+          "pending": true
+        },
+        {
+          "name": "林中乐辣子鸡",
+          "anchors": [],
+          "pending": true
+        },
+        {
+          "name": "抄姐老火锅",
+          "anchors": [],
+          "pending": true
+        },
+        {
+          "name": "轻松空间･虾蟹馆专注十年",
+          "anchors": [],
+          "pending": true
+        },
+        {
+          "name": "牛莫王串串王",
+          "anchors": [],
+          "pending": true
+        }
+      ]
+    },
+    {
+      "name": "Library source data contains no invented coordinates, pins or route authority",
+      "passed": true,
+      "details": {
+        "invented": [],
+        "relations": [
+          "osm-node-13649952401",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": "External source anchors use safe HTTPS new windows",
+      "passed": true,
+      "details": [
+        {
+          "text": "去B站看原视频 ↗",
+          "href": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "杉田千紘_CHIICHAN · 原视频与简介 ↗",
+          "href": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "text": "相关地图候选 © OpenStreetMap contributors · ODbL ↗",
+          "href": "https://www.openstreetmap.org/copyright",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ]
+    },
+    {
+      "name": "Chapter labels never fabricate timestamp deep links or playback promises",
+      "passed": true,
+      "details": {
+        "original": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+        "chapterNote": "↳ 章节是作者简介中的时间标注；原链接打开视频原页，尚未验证播放或站内嵌入。"
+      }
+    },
+    {
+      "name": "Static library has no scripts, embedded players, external preloads or speculative prefetch",
+      "passed": true,
+      "details": {
+        "scripts": 0,
+        "embeddedMedia": 0
+      }
+    },
+    {
+      "name": "Every generated internal library link resolves over local HTTP",
+      "passed": true,
+      "details": [
+        {
+          "url": "http://127.0.0.1:8791/videos.html",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8791/?view=food",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8791/places.html",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8791/?view=food&place=osm-node-13649952401",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "name": "Local hero illustration decodes and preserves its AI/non-photo label",
+      "passed": true,
+      "details": {
+        "url": "http://127.0.0.1:8791/assets/food-concepts.jpg",
+        "width": 2172,
+        "height": 724,
+        "label": "AI生成的通用重庆小面菜品示意，非视频门店或实际菜品实拍"
+      }
+    },
+    {
+      "name": "Readable rows and source/map/footer actions fit and remain reachable at 1440×960",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "outside": [],
+        "actionRects": [
+          {
+            "selector": ".video-cta",
+            "x": 1117.46875,
+            "y": 706.5,
+            "width": 163.53125,
+            "height": 50
+          },
+          {
+            "selector": ".candidate-link",
+            "x": 1219.03125,
+            "y": 472.625,
+            "width": 92.96875,
+            "height": 14
+          },
+          {
+            "selector": ".reading-note .quiet-link",
+            "x": 733.703125,
+            "y": 714.125,
+            "width": 147,
+            "height": 23.5
+          },
+          {
+            "selector": ".footer-top>a:last-child",
+            "x": 1237.328125,
+            "y": 829.25,
+            "width": 74.671875,
+            "height": 15.75
+          }
+        ]
+      }
+    },
+    {
+      "name": "Readable rows and source/map/footer actions fit and remain reachable at 390×844",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "scrollWidth": 390,
+        "outside": [],
+        "actionRects": [
+          {
+            "selector": ".video-cta",
+            "x": 42,
+            "y": 399.59375,
+            "width": 138.90625,
+            "height": 45
+          },
+          {
+            "selector": ".candidate-link",
+            "x": 293.625,
+            "y": 628.875,
+            "width": 74.375,
+            "height": 14.390625
+          },
+          {
+            "selector": ".reading-note .quiet-link",
+            "x": 22,
+            "y": 604.4375,
+            "width": 143,
+            "height": 23.5
+          },
+          {
+            "selector": ".footer-top>a:last-child",
+            "x": 22,
+            "y": 736.125,
+            "width": 346,
+            "height": 14
+          }
+        ]
+      }
+    },
+    {
+      "name": "Readable rows and source/map/footer actions fit and remain reachable at 320×680",
+      "passed": true,
+      "details": {
+        "width": 320,
+        "scrollWidth": 320,
+        "outside": [],
+        "actionRects": [
+          {
+            "selector": ".video-cta",
+            "x": 34,
+            "y": 317.328125,
+            "width": 138.90625,
+            "height": 45
+          },
+          {
+            "selector": ".candidate-link",
+            "x": 237.921875,
+            "y": 544.15625,
+            "width": 65.078125,
+            "height": 12.59375
+          },
+          {
+            "selector": ".reading-note .quiet-link",
+            "x": 17,
+            "y": 440.59375,
+            "width": 143,
+            "height": 23.5
+          },
+          {
+            "selector": ".footer-top>a:last-child",
+            "x": 17,
+            "y": 572.28125,
+            "width": 286,
+            "height": 14
+          }
+        ]
+      }
+    },
+    {
+      "name": "Readable rows and source/map/footer actions fit and remain reachable at 736×414",
+      "passed": true,
+      "details": {
+        "width": 736,
+        "scrollWidth": 736,
+        "outside": [],
+        "actionRects": [
+          {
+            "selector": ".video-cta",
+            "x": 548.09375,
+            "y": 182.109375,
+            "width": 135.90625,
+            "height": 50
+          },
+          {
+            "selector": ".candidate-link",
+            "x": 615.03125,
+            "y": 200.484375,
+            "width": 92.96875,
+            "height": 14
+          },
+          {
+            "selector": ".reading-note .quiet-link",
+            "x": 367.515625,
+            "y": 195.015625,
+            "width": 147,
+            "height": 23.5
+          },
+          {
+            "selector": ".footer-top>a:last-child",
+            "x": 633.328125,
+            "y": 310.140625,
+            "width": 74.671875,
+            "height": 15.75
+          }
+        ]
+      }
+    },
+    {
+      "name": "Actual library original-video action reaches the exact author URL through local interception",
+      "passed": true,
+      "details": {
+        "url": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+        "title": "Isolated QA external navigation"
+      }
+    },
+    {
+      "name": "Ordinary map does not fetch creator library or optional candidate data",
+      "passed": true,
+      "details": {
+        "state": {
+          "phase": "unloaded",
+          "open": false
+        },
+        "optionalRequests": []
+      }
+    },
+    {
+      "name": "Actual library map action opens Li detail while preserving two source candidates and saved wants",
+      "passed": true,
+      "details": {
+        "selected": "osm-node-13649952401",
+        "title": "超级李板凳面",
+        "records": [
+          {
+            "id": "osm-node-13649952401",
+            "eligible": false,
+            "status": "source-record"
+          },
+          {
+            "id": "osm-node-4460519589",
+            "eligible": false,
+            "status": "source-record"
+          }
+        ],
+        "stored": "[\"osm-node-4460519589\"]"
+      }
+    },
+    {
+      "name": "Li detail lists newest 2026 video before the retained 2020 original with dates and chapter",
+      "passed": true,
+      "details": {
+        "videos": [
+          {
+            "text": "重庆你是真离谱！日本女孩挑战“异世界”激辣美食：辣子鸡发源地＋排队100桌小龙虾！🌶️🤯杉田千紘_CHIICHAN · 2026-06-06 · 作者标注 0:40 · 原平台观看 · 分店待核对",
+            "href": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          {
+            "text": "重庆板凳面探店（2020）馋大叔 · 2020-04-20 · 原平台观看 · 分店待核对",
+            "href": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          }
+        ],
+        "text": "相关视频 · 分店待核重庆你是真离谱！日本女孩挑战“异世界”激辣美食：辣子鸡发源地＋排队100桌小龙虾！🌶️🤯杉田千紘_CHIICHAN · 2026-06-06 · 作者标注 0:40 · 原平台观看 · 分店待核对重庆板凳面探店（2020）馋大叔 · 2020-04-20 · 原平台观看 · 分店待核对"
+      }
+    },
+    {
+      "name": "Actual Li quick-original action selects the newest safe URL and preserves chapter context",
+      "passed": true,
+      "details": {
+        "quickState": {
+          "href": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+          "title": "重庆你是真离谱！日本女孩挑战“异世界”激辣美食：辣子鸡发源地＋排队100桌小龙虾！🌶️🤯 · 2026-06-06 · 作者标注 0:40 · 相关视频，分店待核 · 原平台观看",
+          "label": "超级李板凳面的2026-06-06 · 作者标注 0:40 · 相关视频，分店待核 · 原平台观看",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        "quickClick": {
+          "url": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+          "title": "Isolated QA external navigation"
+        }
+      }
+    },
+    {
+      "name": "New picker-library action and existing category actions remain reachable in mobile/short landscape dialogs",
+      "passed": true,
+      "details": [
+        {
+          "width": 390,
+          "height": 844,
+          "geometry": {
+            "left": 14,
+            "right": 376,
+            "top": 120.5625,
+            "bottom": 723.4375,
+            "scrollWidth": 360,
+            "clientWidth": 360
+          },
+          "actions": [
+            {
+              "selector": "#food-pick-guides",
+              "x": 38,
+              "y": 667.9375,
+              "width": 135.265625,
+              "height": 32.5
+            },
+            {
+              "selector": "#food-pick-close",
+              "x": 317,
+              "y": 135.5625,
+              "width": 44,
+              "height": 44
+            },
+            {
+              "selector": "#food-pick-map",
+              "x": 38,
+              "y": 573.75,
+              "width": 132.890625,
+              "height": 46
+            },
+            {
+              "selector": "#food-pick-add",
+              "x": 178.890625,
+              "y": 573.75,
+              "width": 173.109375,
+              "height": 46
+            }
+          ],
+          "fits": true
+        },
+        {
+          "width": 320,
+          "height": 680,
+          "geometry": {
+            "left": 14,
+            "right": 306,
+            "top": 39.859375,
+            "bottom": 640.140625,
+            "scrollWidth": 290,
+            "clientWidth": 290
+          },
+          "actions": [
+            {
+              "selector": "#food-pick-guides",
+              "x": 35,
+              "y": 584.640625,
+              "width": 135.265625,
+              "height": 32.5
+            },
+            {
+              "selector": "#food-pick-close",
+              "x": 247,
+              "y": 54.859375,
+              "width": 44,
+              "height": 44
+            },
+            {
+              "selector": "#food-pick-map",
+              "x": 35,
+              "y": 490.453125,
+              "width": 105.65625,
+              "height": 46
+            },
+            {
+              "selector": "#food-pick-add",
+              "x": 148.65625,
+              "y": 490.453125,
+              "width": 136.34375,
+              "height": 46
+            }
+          ],
+          "fits": true
+        },
+        {
+          "width": 736,
+          "height": 414,
+          "geometry": {
+            "left": 98,
+            "right": 638,
+            "top": 10,
+            "bottom": 404,
+            "scrollWidth": 538,
+            "clientWidth": 538
+          },
+          "actions": [
+            {
+              "selector": "#food-pick-guides",
+              "x": 131,
+              "y": 349.1875,
+              "width": 135.265625,
+              "height": 32.5
+            },
+            {
+              "selector": "#food-pick-close",
+              "x": 579,
+              "y": 25,
+              "width": 44,
+              "height": 44
+            },
+            {
+              "selector": "#food-pick-map",
+              "x": 131,
+              "y": 251.1875,
+              "width": 201.921875,
+              "height": 48
+            },
+            {
+              "selector": "#food-pick-add",
+              "x": 342.921875,
+              "y": 251.1875,
+              "width": 262.078125,
+              "height": 48
+            }
+          ],
+          "fits": true
+        }
+      ]
+    },
+    {
+      "name": "Actual food-picker entry opens the public video library",
+      "passed": true,
+      "details": {
+        "url": "http://127.0.0.1:8791/videos.html"
+      }
+    },
+    {
+      "name": "Actual map-source dialog entry opens the same public library",
+      "passed": true,
+      "details": {
+        "url": "http://127.0.0.1:8791/videos.html"
+      }
+    },
+    {
+      "name": "Actual directory and both place-footer entries reach all six library rows",
+      "passed": true,
+      "details": [
+        {
+          "file": "places.html",
+          "url": "http://127.0.0.1:8791/videos.html",
+          "rows": 6
+        },
+        {
+          "file": "places/osm-node-13649952401.html",
+          "url": "http://127.0.0.1:8791/videos.html",
+          "rows": 6
+        },
+        {
+          "file": "places/osm-node-4460519589.html",
+          "url": "http://127.0.0.1:8791/videos.html",
+          "rows": 6
+        }
+      ]
+    },
+    {
+      "name": "Li static page retains both videos, chapter and independent 25/22 source-reading dates",
+      "passed": true,
+      "details": {
+        "videos": [
+          {
+            "text": "重庆你是真离谱！日本女孩挑战“异世界”激辣美食：辣子鸡发源地＋排队100桌小龙虾！🌶️🤯 ↗",
+            "href": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          {
+            "text": "重庆板凳面探店（2020） ↗",
+            "href": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          }
+        ],
+        "sourceText": "每条线索，都留有出处来源与日期开放地图原始地点记录 ↗原记录名：超级李板凳面（总店) · 地点缓存 2026-10-19杉田千紘_CHIICHAN的文字地址线索 ↗资料发布 2026-06-06 · 原页文字读取 2026-10-25；仅作文字地址线索，入口及分店对应仍待核杉田千紘_CHIICHAN · 相关探店原页 ↗资料发布 2026-06-06 · 原页文字读取 2026-10-25；未验证播放或分店对应馋大叔 · 相关探店原页 ↗资料发布 2020-04-20 · 原页文字读取 2026-10-22；未验证播放或分店对应页面整理于 2026-10-25，整理日期仅记录本页编辑时间。地点缓存与作者原页的读取日期见上方；具体分店、门口与当前营业情况仍待确认。"
+      }
+    },
+    {
+      "name": "Exact standalone has newest and historical video links with zero subsidiary HTTP requests",
+      "passed": true,
+      "details": {
+        "requests": [
+          "http://127.0.0.1:8791/preview.html?view=food&place=osm-node-13649952401"
+        ],
+        "videos": [
+          {
+            "text": "重庆你是真离谱！日本女孩挑战“异世界”激辣美食：辣子鸡发源地＋排队100桌小龙虾！🌶️🤯杉田千紘_CHIICHAN · 2026-06-06 · 作者标注 0:40 · 原平台观看 · 分店待核对",
+            "href": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          },
+          {
+            "text": "重庆板凳面探店（2020）馋大叔 · 2020-04-20 · 原平台观看 · 分店待核对",
+            "href": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Standalone source entry resolves to the local readable library",
+      "passed": true,
+      "details": {
+        "url": "http://127.0.0.1:8791/videos.html"
+      }
+    },
+    {
+      "name": "Current workbench loads five separate Li materials and both existing candidates",
+      "passed": true,
+      "details": {
+        "count": 5,
+        "candidates": 2,
+        "baseVersion": "f9bfb17bf3c1500ebd1bf23abb05f8807f557bc9b2886a64e013d830f78a6d5b"
+      }
+    },
+    {
+      "name": "Workbench distinguishes new 25 October video/address reads from retained 22 October historical video read",
+      "passed": true,
+      "details": {
+        "newVideo": {
+          "id": "video-0",
+          "kind": "creator-page",
+          "title": "重庆你是真离谱！日本女孩挑战“异世界”激辣美食：辣子鸡发源地＋排队100桌小龙虾！🌶️🤯",
+          "url": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+          "reference": "",
+          "observedOn": "2026-10-25",
+          "publishedOn": "2026-06-06",
+          "note": "作者简介标注章节0:40；未核对画面、分店或播放/嵌入。"
+        },
+        "oldVideo": {
+          "id": "video-1",
+          "kind": "creator-page",
+          "title": "重庆板凳面探店（2020）",
+          "url": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+          "reference": "",
+          "observedOn": "2026-10-22",
+          "publishedOn": "2020-04-20",
+          "note": "历史相关原页，分店对应与播放/嵌入未验证。"
+        }
+      }
+    },
+    {
+      "name": "Current source seed remains incomplete with entrance/branch/connection unchecked and public status unchanged",
+      "passed": true,
+      "details": {
+        "state": "资料待补",
+        "checks": {
+          "source": {
+            "conclusion": "supported",
+            "evidenceIds": [
+              "osm"
+            ],
+            "note": "保留原名、OSM节点与WGS84坐标；此为来源记录核对。"
+          },
+          "branch": {
+            "conclusion": "needs-evidence",
+            "evidenceIds": [
+              "address-0"
+            ],
+            "note": "文字地址线索尚不能确认具体分店及入口。"
+          },
+          "entrance": {
+            "conclusion": "needs-evidence",
+            "evidenceIds": [],
+            "note": ""
+          },
+          "image": {
+            "conclusion": "supported",
+            "evidenceIds": [
+              "concept"
+            ],
+            "note": "只用于明确标示的AI菜品示意。"
+          },
+          "video": {
+            "conclusion": "supported",
+            "evidenceIds": [
+              "video-0"
+            ],
+            "note": "仅作相关原页链接，分店待核，不声明站内播放。"
+          },
+          "connection": {
+            "conclusion": "needs-evidence",
+            "evidenceIds": [],
+            "note": ""
+          }
+        }
+      }
+    },
+    {
+      "name": "Legacy base draft remains stale/incomplete without auto-inserting or replacing its retained materials",
+      "passed": true,
+      "details": {
+        "baseVersion": "182c8dec629440ea2b19c3c1e8b696e38f55191558c8d76582a44209877e1e9f",
+        "state": "资料待补",
+        "materialTitles": [
+          "开放地图原始地点记录",
+          "已有AI通用菜品概念图",
+          "作者简介中的文字地址",
+          "重庆板凳面探店（2020）"
+        ],
+        "unchanged": true
+      }
+    },
+    {
+      "name": "Legacy draft review preserves saved wants and unrelated local state",
+      "passed": true,
+      "details": {
+        "wants": "[\"osm-node-4460519589\"]",
+        "unrelated": "isolated-preserve"
+      }
+    },
+    {
+      "name": "All library, map, standalone and workbench scenarios have no page errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Pages make no external prefetch or automatic media requests",
+      "passed": true,
+      "details": {
+        "externalPrefetch": [],
+        "interceptedExternalClicks": [
+          "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+          "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474"
+        ]
+      }
+    }
+  ],
+  "issues": [],
+  "pageErrors": [],
+  "externalPrefetch": [],
+  "interceptedExternalClicks": [
+    "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+    "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474"
+  ],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 960,
+      "scrollWidth": 1440,
+      "outside": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "outside": []
+    },
+    {
+      "width": 320,
+      "height": 680,
+      "scrollWidth": 320,
+      "outside": []
+    },
+    {
+      "width": 736,
+      "height": 414,
+      "scrollWidth": 736,
+      "outside": []
+    }
+  ],
+  "library": {
+    "title": "重庆探店视频 · 食途",
+    "lang": "zh-CN",
+    "h1": 1,
+    "main": true,
+    "articles": 1,
+    "scripts": 0,
+    "frames": 0,
+    "links": [
+      {
+        "text": "跳到正文",
+        "href": "http://127.0.0.1:8791/videos.html#main",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "食途·",
+        "href": "http://127.0.0.1:8791/?view=food",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "资料目录",
+        "href": "http://127.0.0.1:8791/places.html",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "回地图 ↗",
+        "href": "http://127.0.0.1:8791/?view=food",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "去B站看原视频 ↗",
+        "href": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "查看相关地图候选 ↗",
+        "href": "http://127.0.0.1:8791/?view=food&place=osm-node-13649952401",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "回地图，留住想去的一站 ↗",
+        "href": "http://127.0.0.1:8791/?view=food",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "食途·",
+        "href": "http://127.0.0.1:8791/?view=food",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "继续读地点资料 ↗",
+        "href": "http://127.0.0.1:8791/places.html",
+        "target": "",
+        "rel": ""
+      },
+      {
+        "text": "杉田千紘_CHIICHAN · 原视频与简介 ↗",
+        "href": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      {
+        "text": "相关地图候选 © OpenStreetMap contributors · ODbL ↗",
+        "href": "https://www.openstreetmap.org/copyright",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    ],
+    "times": [
+      {
+        "text": "2026-06-06",
+        "date": "2026-06-06"
+      },
+      {
+        "text": "2026-10-25",
+        "date": "2026-10-25"
+      },
+      {
+        "text": "2026-10-25",
+        "date": "2026-10-25"
+      }
+    ],
+    "rowData": [
+      {
+        "id": "li-bandeng",
+        "name": "超级李板凳面",
+        "category": "小面",
+        "address": "重庆市渝中区朝千路41号",
+        "chapter": "0:40",
+        "anchors": [
+          "http://127.0.0.1:8791/?view=food&place=osm-node-13649952401"
+        ],
+        "pending": false
+      },
+      {
+        "id": "laoganjia",
+        "name": "老甘家小龙虾江湖菜",
+        "category": "小龙虾",
+        "address": "重庆市两江新区洋河中路91号",
+        "chapter": "10:44",
+        "anchors": [],
+        "pending": true
+      },
+      {
+        "id": "linzhongle",
+        "name": "林中乐辣子鸡",
+        "category": "辣子鸡",
+        "address": "重庆市沙坪坝区欧家湾社199号",
+        "chapter": "18:26",
+        "anchors": [],
+        "pending": true
+      },
+      {
+        "id": "chaojie",
+        "name": "抄姐老火锅",
+        "category": "火锅",
+        "address": "重庆市渝中区解放碑街道民族路114号",
+        "chapter": "30:18",
+        "anchors": [],
+        "pending": true
+      },
+      {
+        "id": "qingsong-kongjian",
+        "name": "轻松空间･虾蟹馆专注十年",
+        "category": "虾蟹",
+        "address": "重庆市两江新区洋河中路70号",
+        "chapter": "38:48",
+        "anchors": [],
+        "pending": true
+      },
+      {
+        "id": "niumowang",
+        "name": "牛莫王串串王",
+        "category": "串串",
+        "address": "重庆市两江新区洋河路69-2号",
+        "chapter": "46:22",
+        "anchors": [],
+        "pending": true
+      }
+    ]
+  },
+  "workbench": {
+    "baseVersion": "f9bfb17bf3c1500ebd1bf23abb05f8807f557bc9b2886a64e013d830f78a6d5b",
+    "evidence": [
+      {
+        "id": "osm",
+        "kind": "map-record",
+        "title": "开放地图原始地点记录",
+        "url": "https://www.openstreetmap.org/node/13649952401",
+        "reference": "",
+        "observedOn": "2026-10-19",
+        "publishedOn": "",
+        "note": "2026-10-19源缓存；本地核对原始坐标，不代表重新读取了当前原页。当前分店与门口仍待核。"
+      },
+      {
+        "id": "concept",
+        "kind": "project-asset",
+        "title": "已有AI通用菜品概念图",
+        "url": "",
+        "reference": "design/concepts/GENERATION-NOTES.md",
+        "observedOn": "2026-10-23",
+        "publishedOn": "",
+        "note": "2026-10-19生成的通用菜品示意；当前整理本地素材记录，非本店实拍，不证明本店实际菜单。"
+      },
+      {
+        "id": "address-0",
+        "kind": "creator-page",
+        "title": "作者简介中的文字地址",
+        "url": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+        "reference": "",
+        "observedOn": "2026-10-25",
+        "publishedOn": "2026-06-06",
+        "note": "只支持资料中出现该文字地址；未确认地图点、入口或营业。"
+      },
+      {
+        "id": "video-0",
+        "kind": "creator-page",
+        "title": "重庆你是真离谱！日本女孩挑战“异世界”激辣美食：辣子鸡发源地＋排队100桌小龙虾！🌶️🤯",
+        "url": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+        "reference": "",
+        "observedOn": "2026-10-25",
+        "publishedOn": "2026-06-06",
+        "note": "作者简介标注章节0:40；未核对画面、分店或播放/嵌入。"
+      },
+      {
+        "id": "video-1",
+        "kind": "creator-page",
+        "title": "重庆板凳面探店（2020）",
+        "url": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+        "reference": "",
+        "observedOn": "2026-10-22",
+        "publishedOn": "2020-04-20",
+        "note": "历史相关原页，分店对应与播放/嵌入未验证。"
+      }
+    ]
+  },
+  "passed": true,
+  "visualReview": {
+    "reviewed": true,
+    "screenshots": [
+      "D:/codex/美食网站/output/playwright/creator-guides-1440.png",
+      "D:/codex/美食网站/output/playwright/creator-guides-390.png",
+      "D:/codex/美食网站/output/playwright/creator-guides-source-390.png",
+      "D:/codex/美食网站/output/playwright/creator-guides-rows-390.png",
+      "D:/codex/美食网站/output/playwright/creator-guides-picker-390.png",
+      "D:/codex/美食网站/output/playwright/creator-guides-picker-320.png",
+      "D:/codex/美食网站/output/playwright/creator-guides-li-detail-1440.png"
+    ],
+    "findings": [
+      "Full original title wraps inside its desktop and mobile source card without cropping.",
+      "All six source rows retain visible address and chapter groupings on mobile; long source restaurant name wraps within its row.",
+      "New picker guide link is visible and reachable at 390 and 320 wide; dialog and existing actions fit.",
+      "Li detail displays new video first with chapter and historical video second."
+    ],
+    "issues": []
+  }
+}

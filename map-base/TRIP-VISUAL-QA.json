@@ -1,0 +1,202 @@
+{
+  "date": "2026-10-23",
+  "scope": "Final visual regression only: 818/1440 overview renders real source 3D buildings below the old zoom-15 gate; 2D visibility; exact HTTP-served standalone preview.html with no auxiliary HTTP requests. No interaction suite repeated.",
+  "checks": [
+    {
+      "name": "Final 818 overview renders source 3D buildings with positive pitch and two wants",
+      "passed": true,
+      "details": {
+        "viewport": [
+          818,
+          871
+        ],
+        "zoom": 14.631457953081908,
+        "pitch": 48,
+        "threeDVisibility": "visible",
+        "flatVisibility": "none",
+        "threeDMinzoom": 13,
+        "flatMinzoom": 13,
+        "rendered3D": 123,
+        "renderedFlat": 0,
+        "wants": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ]
+      }
+    },
+    {
+      "name": "Final 818 3D building layer begins at zoom 13 like the flat layer",
+      "passed": true,
+      "details": {
+        "threeD": 13,
+        "flat": 13
+      }
+    },
+    {
+      "name": "Final 1440 overview renders source 3D buildings with positive pitch and two wants",
+      "passed": true,
+      "details": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "zoom": 15.245791482870656,
+        "pitch": 48,
+        "threeDVisibility": "visible",
+        "flatVisibility": "none",
+        "threeDMinzoom": 13,
+        "flatMinzoom": 13,
+        "rendered3D": 577,
+        "renderedFlat": 0,
+        "wants": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ]
+      }
+    },
+    {
+      "name": "Final 1440 3D building layer begins at zoom 13 like the flat layer",
+      "passed": true,
+      "details": {
+        "threeD": 13,
+        "flat": 13
+      }
+    },
+    {
+      "name": "2D button hides extrusion and renders the flat building layer",
+      "passed": true,
+      "details": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "zoom": 15.245791482870656,
+        "pitch": 0,
+        "threeDVisibility": "none",
+        "flatVisibility": "visible",
+        "threeDMinzoom": 13,
+        "flatMinzoom": 13,
+        "rendered3D": 0,
+        "renderedFlat": 547,
+        "wants": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ]
+      }
+    },
+    {
+      "name": "Exact HTTP standalone food overview also renders source 3D buildings",
+      "passed": true,
+      "details": {
+        "viewport": [
+          818,
+          871
+        ],
+        "zoom": 14.631457953081908,
+        "pitch": 48,
+        "threeDVisibility": "visible",
+        "flatVisibility": "none",
+        "threeDMinzoom": 13,
+        "flatMinzoom": 13,
+        "rendered3D": 123,
+        "renderedFlat": 0,
+        "wants": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ]
+      }
+    },
+    {
+      "name": "Standalone makes no auxiliary HTTP requests beyond the original HTML",
+      "passed": true,
+      "details": [
+        "http://127.0.0.1:8791/preview.html?view=food"
+      ]
+    },
+    {
+      "name": "Final ordinary and standalone visual checks emit no page errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "issues": [],
+  "views": [
+    {
+      "viewport": [
+        818,
+        871
+      ],
+      "zoom": 14.631457953081908,
+      "pitch": 48,
+      "threeDVisibility": "visible",
+      "flatVisibility": "none",
+      "threeDMinzoom": 13,
+      "flatMinzoom": 13,
+      "rendered3D": 123,
+      "renderedFlat": 0,
+      "wants": [
+        "osm-node-13649952401",
+        "osm-node-4460519589"
+      ]
+    },
+    {
+      "viewport": [
+        1440,
+        960
+      ],
+      "zoom": 15.245791482870656,
+      "pitch": 48,
+      "threeDVisibility": "visible",
+      "flatVisibility": "none",
+      "threeDMinzoom": 13,
+      "flatMinzoom": 13,
+      "rendered3D": 577,
+      "renderedFlat": 0,
+      "wants": [
+        "osm-node-13649952401",
+        "osm-node-4460519589"
+      ]
+    },
+    {
+      "viewport": [
+        1440,
+        960
+      ],
+      "zoom": 15.245791482870656,
+      "pitch": 0,
+      "threeDVisibility": "none",
+      "flatVisibility": "visible",
+      "threeDMinzoom": 13,
+      "flatMinzoom": 13,
+      "rendered3D": 0,
+      "renderedFlat": 547,
+      "wants": [
+        "osm-node-13649952401",
+        "osm-node-4460519589"
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "standaloneRequests": [
+    "http://127.0.0.1:8791/preview.html?view=food"
+  ],
+  "standaloneView": {
+    "viewport": [
+      818,
+      871
+    ],
+    "zoom": 14.631457953081908,
+    "pitch": 48,
+    "threeDVisibility": "visible",
+    "flatVisibility": "none",
+    "threeDMinzoom": 13,
+    "flatMinzoom": 13,
+    "rendered3D": 123,
+    "renderedFlat": 0,
+    "wants": [
+      "osm-node-13649952401",
+      "osm-node-4460519589"
+    ]
+  },
+  "passed": true
+}

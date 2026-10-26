@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-22",
+  "scope": "HTTP street loading intent and timeout regression; reduced-motion browser setting; no real-world walkability claim",
+  "script": "scripts/review-street-race.js",
+  "checks": [
+    {
+      "name": "reset during delayed street load keeps city camera",
+      "passed": true,
+      "after": {"center": [106.574, 29.5628], "zoom": 15.8, "pitch": 54, "streetActive": false, "baseReady": true}
+    },
+    {
+      "name": "disabling street during delayed load prevents late focus",
+      "passed": true,
+      "after": {"center": [106.574, 29.5628], "zoom": 15.8, "streetActive": false, "streetEnabled": false, "baseReady": true}
+    },
+    {
+      "name": "switching to 2D during delayed load preserves flat view",
+      "passed": true,
+      "after": {"zoom": 15.8, "pitch": 0, "bearing": 0, "baseReady": true}
+    },
+    {
+      "name": "road search during delayed load keeps searched road camera",
+      "passed": true,
+      "after": {"selectedRoad": "沧白路", "zoom": 16.867016384110666, "pitch": 44, "baseReady": true}
+    },
+    {
+      "name": "ordinary delayed focus still opens street once data arrives",
+      "passed": true,
+      "after": {"center": [106.58012705, 29.562860625], "zoom": 18.55, "pitch": 40, "streetActive": true, "renderedFeatures": 32, "dataRequests": 1, "baseReady": true}
+    },
+    {
+      "name": "12 second timeout preserves base and retry recovers cleanly",
+      "passed": true,
+      "timeout": {"clockFastForwardMs": 12500, "phase": "error", "error": "街道资料加载超时，请重试。", "entry": "重试街道近景 ↗", "baseReady": true, "baseSpinnerHidden": true, "baseErrorHidden": true},
+      "afterRetry": {"phase": "loaded", "streetActive": true, "renderedFeatures": 32, "baseReady": true}
+    }
+  ],
+  "issues": [],
+  "passed": true
+}

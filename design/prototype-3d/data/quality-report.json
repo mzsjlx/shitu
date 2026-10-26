@@ -1,0 +1,44 @@
+{
+  "originLonLat": [
+    106.5752,
+    29.5652
+  ],
+  "coordinateSystem": "WGS84 -> local metres, X east, Y up, Z south",
+  "bounds": [
+    -890.79,
+    -868.29,
+    852.06,
+    801.5
+  ],
+  "waterDatumMetres": 163.2,
+  "waterDatumNote": "Median DEM samples >65m inside mapped river, fixed visual datum; not current river level.",
+  "buildings": 400,
+  "heightBasis": {
+    "height": 25,
+    "levels": 69,
+    "estimated": 306
+  },
+  "roadSegments": 652,
+  "trees": 6200,
+  "terrainVertices": 9505,
+  "terrainTriangles": 18048,
+  "waterSourceIds": [
+    "way/809716650",
+    "way/964676428",
+    "way/1430569083",
+    "relation/9087399",
+    "relation/12982622"
+  ],
+  "limitations": [
+    "OSM completeness and timestamps vary; not surveying data.",
+    "Unmapped building heights are deterministic style estimates; estimated feature IDs are preserved.",
+    "The Hongyadong and Qiansimen superstructures are custom approximate models, not scans.",
+    "Tree placements and windows are decorative, not inventory data.",
+    "River level and bridge deck heights are visual estimates; not current hydrology or bridge survey.",
+    "No navigation or real restaurant attribution is implied.",
+    "The coarse DEM is lowered within the Hongyadong oriented bounding rectangle in the renderer to fit the terraced landmark; this is a visual correction, not a terrain survey.",
+    "Decorative lower facade windows continue across visible foundation walls; they do not verify real basement floors.",
+    "Bridge and footpath levels are incomplete; drawn surfaces are not a routable pedestrian graph.",
+    "Landscaping density, shrubs, lamps, vehicles and boats are decorative styling, not real-time or surveyed features."
+  ]
+}

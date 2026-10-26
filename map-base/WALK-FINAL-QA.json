@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-23",
+  "checks": [
+    {
+      "name": "Trial hides candidate pins and renders only the two road endpoints",
+      "passed": true,
+      "details": {
+        "walk": {
+          "phase": "loaded",
+          "active": true,
+          "pedestrianOnly": false,
+          "hasRoute": true,
+          "distanceMetres": 1070.978428183064,
+          "segments": 50,
+          "assumedAccessWays": 10,
+          "entrancesConnected": false,
+          "error": null
+        },
+        "visibleFood": 0,
+        "endpoints": 2,
+        "rendered": 3
+      }
+    },
+    {
+      "name": "Closing restores candidate visibility",
+      "passed": true
+    },
+    {
+      "name": "Final 320 layout fits and panel leaves both road endpoints clear",
+      "passed": true,
+      "details": {
+        "viewport": [
+          320,
+          680
+        ],
+        "scroll": [
+          320,
+          680
+        ],
+        "panel": [
+          13,
+          483.609375,
+          307,
+          617
+        ],
+        "points": [
+          [
+            177.5,
+            242.5,
+            210.5,
+            275.5
+          ],
+          [
+            100.5,
+            440.5,
+            133.5,
+            473.5
+          ]
+        ],
+        "clear": true
+      }
+    },
+    {
+      "name": "Final view has no browser exceptions",
+      "passed": true,
+      "details": {
+        "errors": []
+      }
+    }
+  ],
+  "issues": [],
+  "passed": true
+}

@@ -1,0 +1,1060 @@
+{
+  "date": "2026-10-23",
+  "scope": "Targeted follow-up: actual detail remove/re-add plus four dock/dialog layouts in an independent browser context.",
+  "checks": [
+    {
+      "name": "Actual detail save toggle removes an existing stop and updates dock",
+      "passed": true
+    },
+    {
+      "name": "Actual detail save toggle can re-add the removed last stop",
+      "passed": true
+    },
+    {
+      "name": "Map and dock fit 1440×960 without overflowing viewport",
+      "passed": true,
+      "details": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "scroll": [
+          1440,
+          960
+        ],
+        "dock": {
+          "left": 877.4375,
+          "top": 833.15625,
+          "right": 1418,
+          "bottom": 917,
+          "width": 540.5625,
+          "height": 83.84375,
+          "scrollWidth": 539,
+          "clientWidth": 539
+        },
+        "dockVisible": true,
+        "controls": [
+          {
+            "className": "maplibregl-ctrl-top-right ",
+            "left": 1367,
+            "top": 98,
+            "right": 1420,
+            "bottom": 237,
+            "width": 53,
+            "height": 139,
+            "scrollWidth": 53,
+            "clientWidth": 53
+          },
+          {
+            "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 1073.078125,
+            "top": 920,
+            "right": 1422,
+            "bottom": 944,
+            "width": 348.921875,
+            "height": 24,
+            "scrollWidth": 349,
+            "clientWidth": 349
+          },
+          {
+            "className": "view-dock paper",
+            "left": 20,
+            "top": 855,
+            "right": 293.75,
+            "bottom": 917,
+            "width": 273.75,
+            "height": 62,
+            "scrollWidth": 272,
+            "clientWidth": 272
+          },
+          {
+            "className": "about-map",
+            "left": 20,
+            "top": 917,
+            "right": 166.296875,
+            "bottom": 946,
+            "width": 146.296875,
+            "height": 29,
+            "scrollWidth": 146,
+            "clientWidth": 146
+          }
+        ],
+        "controlOverlap": [],
+        "expandedCards": [
+          {
+            "id": "osm-node-13649952401",
+            "left": 609,
+            "top": 186.65625,
+            "right": 807,
+            "bottom": 407,
+            "width": 198,
+            "height": 220.34375,
+            "scrollWidth": 186,
+            "clientWidth": 186
+          },
+          {
+            "id": "osm-node-4460519589",
+            "left": 636,
+            "top": 499.65625,
+            "right": 834,
+            "bottom": 720,
+            "width": 198,
+            "height": 220.34375,
+            "scrollWidth": 186,
+            "clientWidth": 186
+          }
+        ],
+        "cardOverlap": [],
+        "dialogs": [],
+        "outsideControls": []
+      }
+    },
+    {
+      "name": "Dock avoids view/attribution controls and expanded cards at 1440×960",
+      "passed": true,
+      "details": {
+        "controls": [],
+        "cards": []
+      }
+    },
+    {
+      "name": "Sorting dialog stays within 1440×960 with no horizontal content overflow",
+      "passed": true,
+      "details": [
+        {
+          "id": "wants-dialog",
+          "left": 415,
+          "top": 216.53125,
+          "right": 1025,
+          "bottom": 743.46875,
+          "width": 610,
+          "height": 526.9375,
+          "scrollWidth": 608,
+          "clientWidth": 608
+        }
+      ]
+    },
+    {
+      "name": "Map and dock fit 390×844 without overflowing viewport",
+      "passed": true,
+      "details": {
+        "viewport": [
+          390,
+          844
+        ],
+        "scroll": [
+          390,
+          844
+        ],
+        "dock": {
+          "left": 13,
+          "top": 685.25,
+          "right": 377,
+          "bottom": 784,
+          "width": 364,
+          "height": 98.75,
+          "scrollWidth": 362,
+          "clientWidth": 362
+        },
+        "dockVisible": true,
+        "controls": [
+          {
+            "className": "maplibregl-ctrl-top-right ",
+            "left": 330,
+            "top": 134,
+            "right": 382,
+            "bottom": 276,
+            "width": 52,
+            "height": 142,
+            "scrollWidth": 52,
+            "clientWidth": 52
+          },
+          {
+            "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 54.359375,
+            "top": 804,
+            "right": 372,
+            "bottom": 828,
+            "width": 317.640625,
+            "height": 24,
+            "scrollWidth": 318,
+            "clientWidth": 318
+          },
+          {
+            "className": "view-dock paper",
+            "left": 13,
+            "top": 612,
+            "right": 219.46875,
+            "bottom": 666,
+            "width": 206.46875,
+            "height": 54,
+            "scrollWidth": 204,
+            "clientWidth": 204
+          }
+        ],
+        "controlOverlap": [],
+        "expandedCards": [
+          {
+            "id": "osm-node-13649952401",
+            "left": 104,
+            "top": 215.359375,
+            "right": 270,
+            "bottom": 417,
+            "width": 166,
+            "height": 201.640625,
+            "scrollWidth": 154,
+            "clientWidth": 154
+          }
+        ],
+        "cardOverlap": [],
+        "dialogs": [],
+        "outsideControls": []
+      }
+    },
+    {
+      "name": "Dock avoids view/attribution controls and expanded cards at 390×844",
+      "passed": true,
+      "details": {
+        "controls": [],
+        "cards": []
+      }
+    },
+    {
+      "name": "Sorting dialog stays within 390×844 with no horizontal content overflow",
+      "passed": true,
+      "details": [
+        {
+          "id": "wants-dialog",
+          "left": 14,
+          "top": 121.234375,
+          "right": 376,
+          "bottom": 722.765625,
+          "width": 362,
+          "height": 601.53125,
+          "scrollWidth": 360,
+          "clientWidth": 360
+        }
+      ]
+    },
+    {
+      "name": "Map and dock fit 320×680 without overflowing viewport",
+      "passed": true,
+      "details": {
+        "viewport": [
+          320,
+          680
+        ],
+        "scroll": [
+          320,
+          680
+        ],
+        "dock": {
+          "left": 13,
+          "top": 521.25,
+          "right": 307,
+          "bottom": 620,
+          "width": 294,
+          "height": 98.75,
+          "scrollWidth": 292,
+          "clientWidth": 292
+        },
+        "dockVisible": true,
+        "controls": [
+          {
+            "className": "maplibregl-ctrl-top-right ",
+            "left": 260,
+            "top": 134,
+            "right": 312,
+            "bottom": 276,
+            "width": 52,
+            "height": 142,
+            "scrollWidth": 52,
+            "clientWidth": 52
+          },
+          {
+            "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 10,
+            "top": 620,
+            "right": 302,
+            "bottom": 664,
+            "width": 292,
+            "height": 44,
+            "scrollWidth": 292,
+            "clientWidth": 292
+          },
+          {
+            "className": "view-dock paper",
+            "left": 13,
+            "top": 448,
+            "right": 219.46875,
+            "bottom": 502,
+            "width": 206.46875,
+            "height": 54,
+            "scrollWidth": 204,
+            "clientWidth": 204
+          }
+        ],
+        "controlOverlap": [],
+        "expandedCards": [],
+        "cardOverlap": [],
+        "dialogs": [],
+        "outsideControls": []
+      }
+    },
+    {
+      "name": "Dock avoids view/attribution controls and expanded cards at 320×680",
+      "passed": true,
+      "details": {
+        "controls": [],
+        "cards": []
+      }
+    },
+    {
+      "name": "Sorting dialog stays within 320×680 with no horizontal content overflow",
+      "passed": true,
+      "details": [
+        {
+          "id": "wants-dialog",
+          "left": 14,
+          "top": 39.234375,
+          "right": 306,
+          "bottom": 640.765625,
+          "width": 292,
+          "height": 601.53125,
+          "scrollWidth": 290,
+          "clientWidth": 290
+        }
+      ]
+    },
+    {
+      "name": "Map and dock fit 736×414 without overflowing viewport",
+      "passed": true,
+      "details": {
+        "viewport": [
+          736,
+          414
+        ],
+        "scroll": [
+          736,
+          414
+        ],
+        "dock": {
+          "left": 15,
+          "top": 296,
+          "right": 721,
+          "bottom": 360,
+          "width": 706,
+          "height": 64,
+          "scrollWidth": 704,
+          "clientWidth": 704
+        },
+        "dockVisible": true,
+        "controls": [
+          {
+            "className": "maplibregl-ctrl-top-right ",
+            "left": 663,
+            "top": 82,
+            "right": 716,
+            "bottom": 221,
+            "width": 53,
+            "height": 139,
+            "scrollWidth": 53,
+            "clientWidth": 53
+          },
+          {
+            "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 369.078125,
+            "top": 374,
+            "right": 718,
+            "bottom": 398,
+            "width": 348.921875,
+            "height": 24,
+            "scrollWidth": 349,
+            "clientWidth": 349
+          },
+          {
+            "className": "view-dock paper",
+            "left": 15,
+            "top": 232,
+            "right": 231.75,
+            "bottom": 286,
+            "width": 216.75,
+            "height": 54,
+            "scrollWidth": 215,
+            "clientWidth": 215
+          }
+        ],
+        "controlOverlap": [],
+        "expandedCards": [],
+        "cardOverlap": [],
+        "dialogs": [],
+        "outsideControls": []
+      }
+    },
+    {
+      "name": "Dock avoids view/attribution controls and expanded cards at 736×414",
+      "passed": true,
+      "details": {
+        "controls": [],
+        "cards": []
+      }
+    },
+    {
+      "name": "Sorting dialog stays within 736×414 with no horizontal content overflow",
+      "passed": true,
+      "details": [
+        {
+          "id": "wants-dialog",
+          "left": 63,
+          "top": 10,
+          "right": 673,
+          "bottom": 404,
+          "width": 610,
+          "height": 394,
+          "scrollWidth": 608,
+          "clientWidth": 608
+        }
+      ]
+    }
+  ],
+  "issues": [],
+  "viewports": [
+    {
+      "kind": "map",
+      "viewport": [
+        1440,
+        960
+      ],
+      "scroll": [
+        1440,
+        960
+      ],
+      "dock": {
+        "left": 877.4375,
+        "top": 833.15625,
+        "right": 1418,
+        "bottom": 917,
+        "width": 540.5625,
+        "height": 83.84375,
+        "scrollWidth": 539,
+        "clientWidth": 539
+      },
+      "dockVisible": true,
+      "controls": [
+        {
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 1367,
+          "top": 98,
+          "right": 1420,
+          "bottom": 237,
+          "width": 53,
+          "height": 139,
+          "scrollWidth": 53,
+          "clientWidth": 53
+        },
+        {
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 1073.078125,
+          "top": 920,
+          "right": 1422,
+          "bottom": 944,
+          "width": 348.921875,
+          "height": 24,
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "className": "view-dock paper",
+          "left": 20,
+          "top": 855,
+          "right": 293.75,
+          "bottom": 917,
+          "width": 273.75,
+          "height": 62,
+          "scrollWidth": 272,
+          "clientWidth": 272
+        },
+        {
+          "className": "about-map",
+          "left": 20,
+          "top": 917,
+          "right": 166.296875,
+          "bottom": 946,
+          "width": 146.296875,
+          "height": 29,
+          "scrollWidth": 146,
+          "clientWidth": 146
+        }
+      ],
+      "controlOverlap": [],
+      "expandedCards": [
+        {
+          "id": "osm-node-13649952401",
+          "left": 609,
+          "top": 186.65625,
+          "right": 807,
+          "bottom": 407,
+          "width": 198,
+          "height": 220.34375,
+          "scrollWidth": 186,
+          "clientWidth": 186
+        },
+        {
+          "id": "osm-node-4460519589",
+          "left": 636,
+          "top": 499.65625,
+          "right": 834,
+          "bottom": 720,
+          "width": 198,
+          "height": 220.34375,
+          "scrollWidth": 186,
+          "clientWidth": 186
+        }
+      ],
+      "cardOverlap": [],
+      "dialogs": [],
+      "outsideControls": []
+    },
+    {
+      "kind": "dialog",
+      "viewport": [
+        1440,
+        960
+      ],
+      "scroll": [
+        1440,
+        960
+      ],
+      "dock": {
+        "left": 877.4375,
+        "top": 833.15625,
+        "right": 1418,
+        "bottom": 917,
+        "width": 540.5625,
+        "height": 83.84375,
+        "scrollWidth": 539,
+        "clientWidth": 539
+      },
+      "dockVisible": true,
+      "controls": [
+        {
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 1367,
+          "top": 98,
+          "right": 1420,
+          "bottom": 237,
+          "width": 53,
+          "height": 139,
+          "scrollWidth": 53,
+          "clientWidth": 53
+        },
+        {
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 1073.078125,
+          "top": 920,
+          "right": 1422,
+          "bottom": 944,
+          "width": 348.921875,
+          "height": 24,
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "className": "view-dock paper",
+          "left": 20,
+          "top": 855,
+          "right": 293.75,
+          "bottom": 917,
+          "width": 273.75,
+          "height": 62,
+          "scrollWidth": 272,
+          "clientWidth": 272
+        },
+        {
+          "className": "about-map",
+          "left": 20,
+          "top": 917,
+          "right": 166.296875,
+          "bottom": 946,
+          "width": 146.296875,
+          "height": 29,
+          "scrollWidth": 146,
+          "clientWidth": 146
+        }
+      ],
+      "controlOverlap": [],
+      "expandedCards": [
+        {
+          "id": "osm-node-13649952401",
+          "left": 609,
+          "top": 186.65625,
+          "right": 807,
+          "bottom": 407,
+          "width": 198,
+          "height": 220.34375,
+          "scrollWidth": 186,
+          "clientWidth": 186
+        },
+        {
+          "id": "osm-node-4460519589",
+          "left": 636,
+          "top": 499.65625,
+          "right": 834,
+          "bottom": 720,
+          "width": 198,
+          "height": 220.34375,
+          "scrollWidth": 186,
+          "clientWidth": 186
+        }
+      ],
+      "cardOverlap": [],
+      "dialogs": [
+        {
+          "id": "wants-dialog",
+          "left": 415,
+          "top": 216.53125,
+          "right": 1025,
+          "bottom": 743.46875,
+          "width": 610,
+          "height": 526.9375,
+          "scrollWidth": 608,
+          "clientWidth": 608
+        }
+      ],
+      "outsideControls": []
+    },
+    {
+      "kind": "map",
+      "viewport": [
+        390,
+        844
+      ],
+      "scroll": [
+        390,
+        844
+      ],
+      "dock": {
+        "left": 13,
+        "top": 685.25,
+        "right": 377,
+        "bottom": 784,
+        "width": 364,
+        "height": 98.75,
+        "scrollWidth": 362,
+        "clientWidth": 362
+      },
+      "dockVisible": true,
+      "controls": [
+        {
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 330,
+          "top": 134,
+          "right": 382,
+          "bottom": 276,
+          "width": 52,
+          "height": 142,
+          "scrollWidth": 52,
+          "clientWidth": 52
+        },
+        {
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 54.359375,
+          "top": 804,
+          "right": 372,
+          "bottom": 828,
+          "width": 317.640625,
+          "height": 24,
+          "scrollWidth": 318,
+          "clientWidth": 318
+        },
+        {
+          "className": "view-dock paper",
+          "left": 13,
+          "top": 612,
+          "right": 219.46875,
+          "bottom": 666,
+          "width": 206.46875,
+          "height": 54,
+          "scrollWidth": 204,
+          "clientWidth": 204
+        }
+      ],
+      "controlOverlap": [],
+      "expandedCards": [
+        {
+          "id": "osm-node-13649952401",
+          "left": 104,
+          "top": 215.359375,
+          "right": 270,
+          "bottom": 417,
+          "width": 166,
+          "height": 201.640625,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        }
+      ],
+      "cardOverlap": [],
+      "dialogs": [],
+      "outsideControls": []
+    },
+    {
+      "kind": "dialog",
+      "viewport": [
+        390,
+        844
+      ],
+      "scroll": [
+        390,
+        844
+      ],
+      "dock": {
+        "left": 13,
+        "top": 685.25,
+        "right": 377,
+        "bottom": 784,
+        "width": 364,
+        "height": 98.75,
+        "scrollWidth": 362,
+        "clientWidth": 362
+      },
+      "dockVisible": true,
+      "controls": [
+        {
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 330,
+          "top": 134,
+          "right": 382,
+          "bottom": 276,
+          "width": 52,
+          "height": 142,
+          "scrollWidth": 52,
+          "clientWidth": 52
+        },
+        {
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 54.359375,
+          "top": 804,
+          "right": 372,
+          "bottom": 828,
+          "width": 317.640625,
+          "height": 24,
+          "scrollWidth": 318,
+          "clientWidth": 318
+        },
+        {
+          "className": "view-dock paper",
+          "left": 13,
+          "top": 612,
+          "right": 219.46875,
+          "bottom": 666,
+          "width": 206.46875,
+          "height": 54,
+          "scrollWidth": 204,
+          "clientWidth": 204
+        }
+      ],
+      "controlOverlap": [],
+      "expandedCards": [
+        {
+          "id": "osm-node-13649952401",
+          "left": 104,
+          "top": 215.359375,
+          "right": 270,
+          "bottom": 417,
+          "width": 166,
+          "height": 201.640625,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        }
+      ],
+      "cardOverlap": [],
+      "dialogs": [
+        {
+          "id": "wants-dialog",
+          "left": 14,
+          "top": 121.234375,
+          "right": 376,
+          "bottom": 722.765625,
+          "width": 362,
+          "height": 601.53125,
+          "scrollWidth": 360,
+          "clientWidth": 360
+        }
+      ],
+      "outsideControls": []
+    },
+    {
+      "kind": "map",
+      "viewport": [
+        320,
+        680
+      ],
+      "scroll": [
+        320,
+        680
+      ],
+      "dock": {
+        "left": 13,
+        "top": 521.25,
+        "right": 307,
+        "bottom": 620,
+        "width": 294,
+        "height": 98.75,
+        "scrollWidth": 292,
+        "clientWidth": 292
+      },
+      "dockVisible": true,
+      "controls": [
+        {
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 260,
+          "top": 134,
+          "right": 312,
+          "bottom": 276,
+          "width": 52,
+          "height": 142,
+          "scrollWidth": 52,
+          "clientWidth": 52
+        },
+        {
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 10,
+          "top": 620,
+          "right": 302,
+          "bottom": 664,
+          "width": 292,
+          "height": 44,
+          "scrollWidth": 292,
+          "clientWidth": 292
+        },
+        {
+          "className": "view-dock paper",
+          "left": 13,
+          "top": 448,
+          "right": 219.46875,
+          "bottom": 502,
+          "width": 206.46875,
+          "height": 54,
+          "scrollWidth": 204,
+          "clientWidth": 204
+        }
+      ],
+      "controlOverlap": [],
+      "expandedCards": [],
+      "cardOverlap": [],
+      "dialogs": [],
+      "outsideControls": []
+    },
+    {
+      "kind": "dialog",
+      "viewport": [
+        320,
+        680
+      ],
+      "scroll": [
+        320,
+        680
+      ],
+      "dock": {
+        "left": 13,
+        "top": 521.25,
+        "right": 307,
+        "bottom": 620,
+        "width": 294,
+        "height": 98.75,
+        "scrollWidth": 292,
+        "clientWidth": 292
+      },
+      "dockVisible": true,
+      "controls": [
+        {
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 260,
+          "top": 134,
+          "right": 312,
+          "bottom": 276,
+          "width": 52,
+          "height": 142,
+          "scrollWidth": 52,
+          "clientWidth": 52
+        },
+        {
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 10,
+          "top": 620,
+          "right": 302,
+          "bottom": 664,
+          "width": 292,
+          "height": 44,
+          "scrollWidth": 292,
+          "clientWidth": 292
+        },
+        {
+          "className": "view-dock paper",
+          "left": 13,
+          "top": 448,
+          "right": 219.46875,
+          "bottom": 502,
+          "width": 206.46875,
+          "height": 54,
+          "scrollWidth": 204,
+          "clientWidth": 204
+        }
+      ],
+      "controlOverlap": [],
+      "expandedCards": [],
+      "cardOverlap": [],
+      "dialogs": [
+        {
+          "id": "wants-dialog",
+          "left": 14,
+          "top": 39.234375,
+          "right": 306,
+          "bottom": 640.765625,
+          "width": 292,
+          "height": 601.53125,
+          "scrollWidth": 290,
+          "clientWidth": 290
+        }
+      ],
+      "outsideControls": []
+    },
+    {
+      "kind": "map",
+      "viewport": [
+        736,
+        414
+      ],
+      "scroll": [
+        736,
+        414
+      ],
+      "dock": {
+        "left": 15,
+        "top": 296,
+        "right": 721,
+        "bottom": 360,
+        "width": 706,
+        "height": 64,
+        "scrollWidth": 704,
+        "clientWidth": 704
+      },
+      "dockVisible": true,
+      "controls": [
+        {
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 663,
+          "top": 82,
+          "right": 716,
+          "bottom": 221,
+          "width": 53,
+          "height": 139,
+          "scrollWidth": 53,
+          "clientWidth": 53
+        },
+        {
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 369.078125,
+          "top": 374,
+          "right": 718,
+          "bottom": 398,
+          "width": 348.921875,
+          "height": 24,
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "className": "view-dock paper",
+          "left": 15,
+          "top": 232,
+          "right": 231.75,
+          "bottom": 286,
+          "width": 216.75,
+          "height": 54,
+          "scrollWidth": 215,
+          "clientWidth": 215
+        }
+      ],
+      "controlOverlap": [],
+      "expandedCards": [],
+      "cardOverlap": [],
+      "dialogs": [],
+      "outsideControls": []
+    },
+    {
+      "kind": "dialog",
+      "viewport": [
+        736,
+        414
+      ],
+      "scroll": [
+        736,
+        414
+      ],
+      "dock": {
+        "left": 15,
+        "top": 296,
+        "right": 721,
+        "bottom": 360,
+        "width": 706,
+        "height": 64,
+        "scrollWidth": 704,
+        "clientWidth": 704
+      },
+      "dockVisible": true,
+      "controls": [
+        {
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 663,
+          "top": 82,
+          "right": 716,
+          "bottom": 221,
+          "width": 53,
+          "height": 139,
+          "scrollWidth": 53,
+          "clientWidth": 53
+        },
+        {
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 369.078125,
+          "top": 374,
+          "right": 718,
+          "bottom": 398,
+          "width": 348.921875,
+          "height": 24,
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "className": "view-dock paper",
+          "left": 15,
+          "top": 232,
+          "right": 231.75,
+          "bottom": 286,
+          "width": 216.75,
+          "height": 54,
+          "scrollWidth": 215,
+          "clientWidth": 215
+        }
+      ],
+      "controlOverlap": [],
+      "expandedCards": [],
+      "cardOverlap": [],
+      "dialogs": [
+        {
+          "id": "wants-dialog",
+          "left": 63,
+          "top": 10,
+          "right": 673,
+          "bottom": 404,
+          "width": 610,
+          "height": 394,
+          "scrollWidth": 608,
+          "clientWidth": 608
+        }
+      ],
+      "outsideControls": []
+    }
+  ],
+  "passed": true
+}

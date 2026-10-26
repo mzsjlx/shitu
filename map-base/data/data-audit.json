@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "city": "chongqing",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "Configured central-urban cutout, not the whole Chongqing municipality",
+  "bounds": [
+    106.49,
+    29.49,
+    106.65,
+    29.65
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 5639870,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      106.49,
+      29.49,
+      106.65,
+      29.65
+    ]
+  },
+  "osmReplicationTime": "2026-10-20T04:00:00Z",
+  "counters": {
+    "requestedTiles": 288,
+    "presentTiles": 288,
+    "roadLineFragments": 5889,
+    "namedRoadLineFragments": 3151,
+    "unnamedRoadLineFragments": 2738,
+    "nonRoadTransportFragmentsExcluded": 751,
+    "buildingPolygonFragments": 6616,
+    "buildingFragmentsWithPositiveHeight": 1106,
+    "buildingFragmentsWithoutPositiveHeight": 5510,
+    "namedRoadGroups": 1041
+  },
+  "roadClassCounts": {
+    "major_road": 3363,
+    "minor_road": 1372,
+    "path": 954,
+    "highway": 200
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    "嘉滨路": {
+      "exact": {
+        "id": "road:嘉滨路",
+        "class": "major_road",
+        "detail": "primary",
+        "name": "嘉滨路",
+        "bounds": [
+          106.49,
+          29.5533885,
+          106.5164664,
+          29.5584328
+        ],
+        "center": [
+          106.506384,
+          29.5564928
+        ],
+        "bridge": true,
+        "tunnel": false,
+        "bridgeFragments": 2,
+        "tunnelFragments": 0,
+        "segments": 7
+      },
+      "related": [
+        "嘉滨路",
+        "嘉陵江滨江路"
+      ]
+    },
+    "沧白路": {
+      "exact": {
+        "id": "road:沧白路",
+        "class": "major_road",
+        "detail": "secondary",
+        "name": "沧白路",
+        "bounds": [
+          106.5740964,
+          29.5636169,
+          106.5776986,
+          29.5652127
+        ],
+        "center": [
+          106.5763508,
+          29.5649666
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 2
+      },
+      "related": [
+        "沧白路"
+      ]
+    },
+    "千厮门大桥": {
+      "exact": {
+        "id": "road:千厮门大桥",
+        "class": "path",
+        "detail": "sidewalk",
+        "name": "千厮门大桥",
+        "bounds": [
+          106.5731442,
+          29.565215,
+          106.5766954,
+          29.5726313
+        ],
+        "center": [
+          106.5751867,
+          29.5680507
+        ],
+        "bridge": true,
+        "tunnel": false,
+        "bridgeFragments": 3,
+        "tunnelFragments": 0,
+        "segments": 3
+      },
+      "related": [
+        "千厮门大桥"
+      ]
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}

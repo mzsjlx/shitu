@@ -1,0 +1,245 @@
+{
+  "date": "2026-10-24",
+  "scope": "Independent browser contexts for static candidate information pages and one-time map deep links. No external sources opened, no real merchant/entrance/playback verification, and no user storage changed.",
+  "script": "scripts/review-place-pages.js",
+  "evidence": "Compact assertion summary from the completed Playwright run, which returned passed:true, issues:[], pageErrors:[], externalRequests:[]. Screenshots were inspected separately. The script returns full details on rerun.",
+  "total": 57,
+  "checks": [
+    {
+      "name": "places.html has readable semantic content with JavaScript disabled",
+      "passed": true
+    },
+    {
+      "name": "places.html preserves candidate and illustration/date distinctions",
+      "passed": true
+    },
+    {
+      "name": "places.html has no runtime scripts, embedded players, fake business schema or localhost canonical",
+      "passed": true
+    },
+    {
+      "name": "places.html external source anchors are safe HTTPS new tabs",
+      "passed": true
+    },
+    {
+      "name": "places.html all generated internal anchors resolve",
+      "passed": true
+    },
+    {
+      "name": "places.html local food illustrations decode",
+      "passed": true
+    },
+    {
+      "name": "places.html remains within 1440 viewport",
+      "passed": true
+    },
+    {
+      "name": "places.html remains within 390 viewport",
+      "passed": true
+    },
+    {
+      "name": "places.html remains within 320 viewport",
+      "passed": true
+    },
+    {
+      "name": "Directory links to both exact candidate pages",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-13649952401.html has readable semantic content with JavaScript disabled",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-13649952401.html preserves candidate and illustration/date distinctions",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-13649952401.html has no runtime scripts, embedded players, fake business schema or localhost canonical",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-13649952401.html external source anchors are safe HTTPS new tabs",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-13649952401.html all generated internal anchors resolve",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-13649952401.html local food illustrations decode",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-13649952401.html remains within 1440 viewport",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-13649952401.html remains within 390 viewport",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-13649952401.html remains within 320 viewport",
+      "passed": true
+    },
+    {
+      "name": "超级李板凳面 static page links to its exact map candidate",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-4460519589.html has readable semantic content with JavaScript disabled",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-4460519589.html preserves candidate and illustration/date distinctions",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-4460519589.html has no runtime scripts, embedded players, fake business schema or localhost canonical",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-4460519589.html external source anchors are safe HTTPS new tabs",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-4460519589.html all generated internal anchors resolve",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-4460519589.html local food illustrations decode",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-4460519589.html remains within 1440 viewport",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-4460519589.html remains within 390 viewport",
+      "passed": true
+    },
+    {
+      "name": "places/osm-node-4460519589.html remains within 320 viewport",
+      "passed": true
+    },
+    {
+      "name": "赵二火锅 static page links to its exact map candidate",
+      "passed": true
+    },
+    {
+      "name": "Default map still does not fetch food or open a candidate",
+      "passed": true
+    },
+    {
+      "name": "Deep link ?view=food&place=osm-node-13649952401 opens only the exact source candidate without changing saved wants",
+      "passed": true
+    },
+    {
+      "name": "Deep link ?view=food&place=osm-node-13649952401 exposes the matching independent page safely",
+      "passed": true
+    },
+    {
+      "name": "Actual detail-page action opens the correct readable static page",
+      "passed": true
+    },
+    {
+      "name": "Actual static-page map link returns to the same candidate detail",
+      "passed": true
+    },
+    {
+      "name": "Deep link ?view=food&place=osm-node-13649952401 is consumed once and does not reopen on later exploration",
+      "passed": true
+    },
+    {
+      "name": "Deep link ?view=food&place=osm-node-4460519589 opens only the exact source candidate without changing saved wants",
+      "passed": true
+    },
+    {
+      "name": "Deep link ?view=food&place=osm-node-4460519589 exposes the matching independent page safely",
+      "passed": true
+    },
+    {
+      "name": "Deep link ?view=food&place=osm-node-4460519589 is consumed once and does not reopen on later exploration",
+      "passed": true
+    },
+    {
+      "name": "Deep link ?place=osm-node-13649952401 opens only the exact source candidate without changing saved wants",
+      "passed": true
+    },
+    {
+      "name": "Deep link ?place=osm-node-13649952401 exposes the matching independent page safely",
+      "passed": true
+    },
+    {
+      "name": "Deep link ?place=osm-node-13649952401 is consumed once and does not reopen on later exploration",
+      "passed": true
+    },
+    {
+      "name": "Unknown/XSS-looking place ID never creates a shop, script or modal",
+      "passed": true
+    },
+    {
+      "name": "2D during loading cancels the deep-link modal and preserves the new camera",
+      "passed": true
+    },
+    {
+      "name": "2D cancellation remains consumed when food exploration is reopened",
+      "passed": true
+    },
+    {
+      "name": "reset during loading cancels the deep-link modal and preserves the new camera",
+      "passed": true
+    },
+    {
+      "name": "reset cancellation remains consumed when food exploration is reopened",
+      "passed": true
+    },
+    {
+      "name": "drag during loading cancels the deep-link modal and preserves the new camera",
+      "passed": true
+    },
+    {
+      "name": "drag cancellation remains consumed when food exploration is reopened",
+      "passed": true
+    },
+    {
+      "name": "Optional fetch error does not open a blank place dialog",
+      "passed": true
+    },
+    {
+      "name": "Explicit food retry opens the originally requested valid place",
+      "passed": true
+    },
+    {
+      "name": "Road-trial deep link does not get replaced by a shop dialog",
+      "passed": true
+    },
+    {
+      "name": "Exact standalone opens the same candidate without subsidiary HTTP",
+      "passed": true
+    },
+    {
+      "name": "Map source dialog exposes the local information directory",
+      "passed": true
+    },
+    {
+      "name": "Actual directory action reaches the generated directory",
+      "passed": true
+    },
+    {
+      "name": "All page and deep-link scenarios emit no page errors",
+      "passed": true
+    },
+    {
+      "name": "Pages do not prefetch external sources or media",
+      "passed": true
+    }
+  ],
+  "issues": [],
+  "pageErrors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "../output/playwright/place-page-1440.png",
+    "../output/playwright/place-page-390.png"
+  ],
+  "passed": true
+}

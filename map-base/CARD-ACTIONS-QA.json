@@ -1,0 +1,1336 @@
+{
+  "date": "2026-10-24",
+  "scope": "Targeted independent-context browser QA for direct candidate-card save and original-video actions. The original video popup is intercepted locally; no platform playback or branch identity is claimed. Public renderer checks use an explicitly synthetic browser-only record.",
+  "checks": [
+    {
+      "name": "Card marker roots contain separate main and direct-action controls without nested interactions",
+      "passed": true
+    },
+    {
+      "name": "Direct save adds a stop without opening detail, bubbling to map, or moving camera",
+      "passed": true,
+      "details": {
+        "before": {
+          "center": [
+            106.57951841807045,
+            29.563027624134165
+          ],
+          "zoom": 15.339902729426688,
+          "pitch": 48,
+          "bearing": -24,
+          "mapClicks": 0
+        },
+        "after": {
+          "center": [
+            106.57951841807045,
+            29.563027624134165
+          ],
+          "zoom": 15.339902729426688,
+          "pitch": 48,
+          "bearing": -24,
+          "mapClicks": 0
+        }
+      }
+    },
+    {
+      "name": "Main card detail reflects its direct-save state",
+      "passed": true
+    },
+    {
+      "name": "Removing in detail updates the direct-save action and trip dock",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Enter activates direct save",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Space toggles direct save without opening detail",
+      "passed": true
+    },
+    {
+      "name": "Both direct saves and pressed states survive reload in original order",
+      "passed": true
+    },
+    {
+      "name": "Only noodles has the HTTPS original link with safe new-tab attributes and branch caveat",
+      "passed": true,
+      "details": {
+        "href": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "title": "重庆板凳面探店（2020） · 2020-04-20 · 相关视频，分店待核 · 原平台观看",
+        "label": "超级李板凳面的2020-04-20 · 相关视频，分店待核 · 原平台观看",
+        "text": "原视频 ↗"
+      }
+    },
+    {
+      "name": "Opening the map and saving cards never prefetches external video pages",
+      "passed": true,
+      "details": [
+        "https://www.bilibili.com/video/BV1wC4y1x7Wc/"
+      ]
+    },
+    {
+      "name": "Actual original-link click opens the exact URL through local interception only",
+      "passed": true,
+      "details": {
+        "url": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+        "interceptions": [
+          "https://www.bilibili.com/video/BV1wC4y1x7Wc/"
+        ]
+      }
+    },
+    {
+      "name": "Direct save in 2D preserves camera and pitch zero",
+      "passed": true
+    },
+    {
+      "name": "Focused direct action returns to its main button when its card collapses",
+      "passed": true,
+      "details": {
+        "collapsed": true,
+        "focusMain": true,
+        "mainVisible": true,
+        "actionHidden": true
+      }
+    },
+    {
+      "name": "Collapsed main point opens detail and Escape restores its main-button focus",
+      "passed": true
+    },
+    {
+      "name": "Road-trial mode hides every card root and action",
+      "passed": true
+    },
+    {
+      "name": "Closing road trial restores candidate main controls",
+      "passed": true
+    },
+    {
+      "name": "Card actions layout fits and avoids controls/other anchors at 1440×960",
+      "passed": true,
+      "details": {
+        "scroll": [
+          1440,
+          960
+        ],
+        "coveredControls": [],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "x": 707.5312272494731,
+            "y": 392.275745262669,
+            "pin": {
+              "left": 703,
+              "top": 387,
+              "right": 713,
+              "bottom": 397,
+              "width": 10,
+              "height": 10,
+              "scrollWidth": 6,
+              "clientWidth": 6
+            },
+            "error": 0.5438596707984029,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "x": 735.9344520605678,
+            "y": 774.1794755315898,
+            "pin": {
+              "left": 731,
+              "top": 769,
+              "right": 741,
+              "bottom": 779,
+              "width": 10,
+              "height": 10,
+              "scrollWidth": 6,
+              "clientWidth": 6
+            },
+            "error": 0.19107066442352888,
+            "coveredByOtherCards": []
+          }
+        ],
+        "nestedInteractive": 0
+      }
+    },
+    {
+      "name": "Both pin centers stay anchored within 1.5 pixels at 1440×960",
+      "passed": true,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "x": 707.5312272494731,
+          "y": 392.275745262669,
+          "pin": {
+            "left": 703,
+            "top": 387,
+            "right": 713,
+            "bottom": 397,
+            "width": 10,
+            "height": 10,
+            "scrollWidth": 6,
+            "clientWidth": 6
+          },
+          "error": 0.5438596707984029,
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "x": 735.9344520605678,
+          "y": 774.1794755315898,
+          "pin": {
+            "left": 731,
+            "top": 769,
+            "right": 741,
+            "bottom": 779,
+            "width": 10,
+            "height": 10,
+            "scrollWidth": 6,
+            "clientWidth": 6
+          },
+          "error": 0.19107066442352888,
+          "coveredByOtherCards": []
+        }
+      ]
+    },
+    {
+      "name": "Card detail modal stays within 1440×960",
+      "passed": true,
+      "details": [
+        {
+          "id": "food-dialog",
+          "left": 510,
+          "top": 145.46875,
+          "right": 930,
+          "bottom": 814.53125,
+          "width": 420,
+          "height": 669.0625,
+          "scrollWidth": 418,
+          "clientWidth": 418
+        }
+      ]
+    },
+    {
+      "name": "Card actions layout fits and avoids controls/other anchors at 818×871",
+      "passed": true,
+      "details": {
+        "scroll": [
+          818,
+          871
+        ],
+        "coveredControls": [],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "x": 400.7541682117183,
+            "y": 376.86154181331597,
+            "pin": {
+              "left": 396,
+              "top": 372,
+              "right": 406,
+              "bottom": 382,
+              "width": 10,
+              "height": 10,
+              "scrollWidth": 6,
+              "clientWidth": 6
+            },
+            "error": 0.28214169771518177,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "x": 418.8157221611995,
+            "y": 615.2443297084166,
+            "pin": {
+              "left": 413,
+              "top": 609,
+              "right": 425,
+              "bottom": 621,
+              "width": 12,
+              "height": 12,
+              "scrollWidth": 12,
+              "clientWidth": 12
+            },
+            "error": 0.30603158054014135,
+            "coveredByOtherCards": []
+          }
+        ],
+        "nestedInteractive": 0
+      }
+    },
+    {
+      "name": "Both pin centers stay anchored within 1.5 pixels at 818×871",
+      "passed": true,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "x": 400.7541682117183,
+          "y": 376.86154181331597,
+          "pin": {
+            "left": 396,
+            "top": 372,
+            "right": 406,
+            "bottom": 382,
+            "width": 10,
+            "height": 10,
+            "scrollWidth": 6,
+            "clientWidth": 6
+          },
+          "error": 0.28214169771518177,
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "x": 418.8157221611995,
+          "y": 615.2443297084166,
+          "pin": {
+            "left": 413,
+            "top": 609,
+            "right": 425,
+            "bottom": 621,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.30603158054014135,
+          "coveredByOtherCards": []
+        }
+      ]
+    },
+    {
+      "name": "Card detail modal stays within 818×871",
+      "passed": true,
+      "details": [
+        {
+          "id": "food-dialog",
+          "left": 199,
+          "top": 100.96875,
+          "right": 619,
+          "bottom": 770.03125,
+          "width": 420,
+          "height": 669.0625,
+          "scrollWidth": 418,
+          "clientWidth": 418
+        }
+      ]
+    },
+    {
+      "name": "Card actions layout fits and avoids controls/other anchors at 390×844",
+      "passed": true,
+      "details": {
+        "scroll": [
+          390,
+          844
+        ],
+        "coveredControls": [],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "x": 188.8811381316128,
+            "y": 397.6570906153862,
+            "pin": {
+              "left": 184,
+              "top": 393,
+              "right": 194,
+              "bottom": 403,
+              "width": 10,
+              "height": 10,
+              "scrollWidth": 6,
+              "clientWidth": 6
+            },
+            "error": 0.36292559817778663,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "x": 202.03868571054196,
+            "y": 568.9613869664556,
+            "pin": {
+              "left": 196,
+              "top": 563,
+              "right": 208,
+              "bottom": 575,
+              "width": 12,
+              "height": 12,
+              "scrollWidth": 12,
+              "clientWidth": 12
+            },
+            "error": 0.05465849027951024,
+            "coveredByOtherCards": []
+          }
+        ],
+        "nestedInteractive": 0
+      }
+    },
+    {
+      "name": "Both pin centers stay anchored within 1.5 pixels at 390×844",
+      "passed": true,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "x": 188.8811381316128,
+          "y": 397.6570906153862,
+          "pin": {
+            "left": 184,
+            "top": 393,
+            "right": 194,
+            "bottom": 403,
+            "width": 10,
+            "height": 10,
+            "scrollWidth": 6,
+            "clientWidth": 6
+          },
+          "error": 0.36292559817778663,
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "x": 202.03868571054196,
+          "y": 568.9613869664556,
+          "pin": {
+            "left": 196,
+            "top": 563,
+            "right": 208,
+            "bottom": 575,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.05465849027951024,
+          "coveredByOtherCards": []
+        }
+      ]
+    },
+    {
+      "name": "Card detail modal stays within 390×844",
+      "passed": true,
+      "details": [
+        {
+          "id": "food-dialog",
+          "left": 14,
+          "top": 97.171875,
+          "right": 376,
+          "bottom": 746.8125,
+          "width": 362,
+          "height": 649.640625,
+          "scrollWidth": 360,
+          "clientWidth": 360
+        }
+      ]
+    },
+    {
+      "name": "Card actions layout fits and avoids controls/other anchors at 320×680",
+      "passed": true,
+      "details": {
+        "scroll": [
+          320,
+          680
+        ],
+        "coveredControls": [],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "x": 157.95169186456164,
+            "y": 362.3452478166785,
+            "pin": {
+              "left": 152,
+              "top": 356,
+              "right": 164,
+              "bottom": 368,
+              "width": 12,
+              "height": 12,
+              "scrollWidth": 12,
+              "clientWidth": 12
+            },
+            "error": 0.34861114564915713,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "x": 162.1713758960473,
+            "y": 416.7712282510632,
+            "pin": {
+              "left": 156,
+              "top": 411,
+              "right": 168,
+              "bottom": 423,
+              "width": 12,
+              "height": 12,
+              "scrollWidth": 12,
+              "clientWidth": 12
+            },
+            "error": 0.2858429828728097,
+            "coveredByOtherCards": []
+          }
+        ],
+        "nestedInteractive": 0
+      }
+    },
+    {
+      "name": "Both pin centers stay anchored within 1.5 pixels at 320×680",
+      "passed": true,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "x": 157.95169186456164,
+          "y": 362.3452478166785,
+          "pin": {
+            "left": 152,
+            "top": 356,
+            "right": 164,
+            "bottom": 368,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.34861114564915713,
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "x": 162.1713758960473,
+          "y": 416.7712282510632,
+          "pin": {
+            "left": 156,
+            "top": 411,
+            "right": 168,
+            "bottom": 423,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.2858429828728097,
+          "coveredByOtherCards": []
+        }
+      ]
+    },
+    {
+      "name": "Card detail modal stays within 320×680",
+      "passed": true,
+      "details": [
+        {
+          "id": "food-dialog",
+          "left": 14,
+          "top": 19.078125,
+          "right": 306,
+          "bottom": 660.90625,
+          "width": 292,
+          "height": 641.828125,
+          "scrollWidth": 290,
+          "clientWidth": 290
+        }
+      ]
+    },
+    {
+      "name": "Card actions layout fits and avoids controls/other anchors at 736×414",
+      "passed": true,
+      "details": {
+        "scroll": [
+          736,
+          414
+        ],
+        "coveredControls": [],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "x": 366.32963716262975,
+            "y": 201.36826501518738,
+            "pin": {
+              "left": 360,
+              "top": 195,
+              "right": 372,
+              "bottom": 207,
+              "width": 12,
+              "height": 12,
+              "scrollWidth": 12,
+              "clientWidth": 12
+            },
+            "error": 0.4942466797031128,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "x": 369.8016186435851,
+            "y": 245.653288902603,
+            "pin": {
+              "left": 364,
+              "top": 240,
+              "right": 376,
+              "bottom": 252,
+              "width": 12,
+              "height": 12,
+              "scrollWidth": 12,
+              "clientWidth": 12
+            },
+            "error": 0.3994543123202604,
+            "coveredByOtherCards": []
+          }
+        ],
+        "nestedInteractive": 0
+      }
+    },
+    {
+      "name": "Both pin centers stay anchored within 1.5 pixels at 736×414",
+      "passed": true,
+      "details": [
+        {
+          "id": "osm-node-13649952401",
+          "x": 366.32963716262975,
+          "y": 201.36826501518738,
+          "pin": {
+            "left": 360,
+            "top": 195,
+            "right": 372,
+            "bottom": 207,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.4942466797031128,
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "x": 369.8016186435851,
+          "y": 245.653288902603,
+          "pin": {
+            "left": 364,
+            "top": 240,
+            "right": 376,
+            "bottom": 252,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.3994543123202604,
+          "coveredByOtherCards": []
+        }
+      ]
+    },
+    {
+      "name": "Card detail modal stays within 736×414",
+      "passed": true,
+      "details": [
+        {
+          "id": "food-dialog",
+          "left": 158,
+          "top": 16,
+          "right": 578,
+          "bottom": 398,
+          "width": 420,
+          "height": 382,
+          "scrollWidth": 418,
+          "clientWidth": 418
+        }
+      ]
+    },
+    {
+      "name": "Two-argument public renderer remains clickable without private quick-save actions",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "quickActions": 0
+      }
+    },
+    {
+      "name": "Public renderer also accepts omitted callback without adding quick saves",
+      "passed": true
+    },
+    {
+      "name": "Public renderer still rejects unverified and non-WGS84 records",
+      "passed": true,
+      "details": {
+        "unverified": "只接入已核实的 WGS84 门店坐标",
+        "nonWGS84": "只接入 WGS84 门店坐标"
+      }
+    },
+    {
+      "name": "Original HTTP standalone contains the same separate direct-save/video actions",
+      "passed": true
+    },
+    {
+      "name": "Standalone direct-save action works without auxiliary HTTP requests",
+      "passed": true,
+      "details": [
+        "http://127.0.0.1:8791/preview.html?view=food"
+      ]
+    },
+    {
+      "name": "Targeted card-actions flow emits no page errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "issues": [],
+  "pageErrors": [],
+  "externalRequests": [
+    "https://www.bilibili.com/video/BV1wC4y1x7Wc/"
+  ],
+  "interceptedVideoRequests": [
+    "https://www.bilibili.com/video/BV1wC4y1x7Wc/"
+  ],
+  "viewports": [
+    {
+      "viewport": [
+        1440,
+        960
+      ],
+      "scroll": [
+        1440,
+        960
+      ],
+      "anchors": [
+        {
+          "id": "osm-node-13649952401",
+          "x": 707.5312272494731,
+          "y": 392.275745262669,
+          "pin": {
+            "left": 703,
+            "top": 387,
+            "right": 713,
+            "bottom": 397,
+            "width": 10,
+            "height": 10,
+            "scrollWidth": 6,
+            "clientWidth": 6
+          },
+          "error": 0.5438596707984029,
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "x": 735.9344520605678,
+          "y": 774.1794755315898,
+          "pin": {
+            "left": 731,
+            "top": 769,
+            "right": 741,
+            "bottom": 779,
+            "width": 10,
+            "height": 10,
+            "scrollWidth": 6,
+            "clientWidth": 6
+          },
+          "error": 0.19107066442352888,
+          "coveredByOtherCards": []
+        }
+      ],
+      "cards": [
+        {
+          "id": "osm-node-13649952401",
+          "left": 609,
+          "top": 145.65625,
+          "right": 807,
+          "bottom": 388,
+          "width": 198,
+          "height": 242.34375,
+          "scrollWidth": 186,
+          "clientWidth": 186
+        },
+        {
+          "id": "osm-node-4460519589",
+          "left": 637,
+          "top": 527.65625,
+          "right": 835,
+          "bottom": 770,
+          "width": 198,
+          "height": 242.34375,
+          "scrollWidth": 186,
+          "clientWidth": 186
+        }
+      ],
+      "controls": [
+        {
+          "id": "",
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 1367,
+          "top": 98,
+          "right": 1420,
+          "bottom": 237,
+          "width": 53,
+          "height": 139,
+          "scrollWidth": 53,
+          "clientWidth": 53
+        },
+        {
+          "id": "",
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 1073.078125,
+          "top": 920,
+          "right": 1422,
+          "bottom": 944,
+          "width": 348.921875,
+          "height": 24,
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "id": "",
+          "className": "walk-tools",
+          "left": 20,
+          "top": 96,
+          "right": 125.5625,
+          "bottom": 142,
+          "width": 105.5625,
+          "height": 46,
+          "scrollWidth": 104,
+          "clientWidth": 104
+        },
+        {
+          "id": "",
+          "className": "view-dock paper",
+          "left": 20,
+          "top": 855,
+          "right": 293.75,
+          "bottom": 917,
+          "width": 273.75,
+          "height": 62,
+          "scrollWidth": 272,
+          "clientWidth": 272
+        },
+        {
+          "id": "trip-dock",
+          "className": "trip-dock paper",
+          "left": 877.4375,
+          "top": 833.15625,
+          "right": 1418,
+          "bottom": 917,
+          "width": 540.5625,
+          "height": 83.84375,
+          "scrollWidth": 539,
+          "clientWidth": 539
+        },
+        {
+          "id": "about-map",
+          "className": "about-map",
+          "left": 20,
+          "top": 917,
+          "right": 166.296875,
+          "bottom": 946,
+          "width": 146.296875,
+          "height": 29,
+          "scrollWidth": 146,
+          "clientWidth": 146
+        }
+      ],
+      "coveredControls": [],
+      "dialogs": [],
+      "nestedInteractive": 0
+    },
+    {
+      "viewport": [
+        818,
+        871
+      ],
+      "scroll": [
+        818,
+        871
+      ],
+      "anchors": [
+        {
+          "id": "osm-node-13649952401",
+          "x": 400.7541682117183,
+          "y": 376.86154181331597,
+          "pin": {
+            "left": 396,
+            "top": 372,
+            "right": 406,
+            "bottom": 382,
+            "width": 10,
+            "height": 10,
+            "scrollWidth": 6,
+            "clientWidth": 6
+          },
+          "error": 0.28214169771518177,
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "x": 418.8157221611995,
+          "y": 615.2443297084166,
+          "pin": {
+            "left": 413,
+            "top": 609,
+            "right": 425,
+            "bottom": 621,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.30603158054014135,
+          "coveredByOtherCards": []
+        }
+      ],
+      "cards": [
+        {
+          "id": "osm-node-13649952401",
+          "left": 302,
+          "top": 130.65625,
+          "right": 500,
+          "bottom": 373,
+          "width": 198,
+          "height": 242.34375,
+          "scrollWidth": 186,
+          "clientWidth": 186
+        }
+      ],
+      "controls": [
+        {
+          "id": "",
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 745,
+          "top": 98,
+          "right": 798,
+          "bottom": 237,
+          "width": 53,
+          "height": 139,
+          "scrollWidth": 53,
+          "clientWidth": 53
+        },
+        {
+          "id": "",
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 451.078125,
+          "top": 831,
+          "right": 800,
+          "bottom": 855,
+          "width": 348.921875,
+          "height": 24,
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "id": "",
+          "className": "walk-tools",
+          "left": 20,
+          "top": 96,
+          "right": 125.5625,
+          "bottom": 142,
+          "width": 105.5625,
+          "height": 46,
+          "scrollWidth": 104,
+          "clientWidth": 104
+        },
+        {
+          "id": "",
+          "className": "view-dock paper",
+          "left": 20,
+          "top": 667,
+          "right": 293.75,
+          "bottom": 729,
+          "width": 273.75,
+          "height": 62,
+          "scrollWidth": 272,
+          "clientWidth": 272
+        },
+        {
+          "id": "trip-dock",
+          "className": "trip-dock paper",
+          "left": 20,
+          "top": 744.15625,
+          "right": 798,
+          "bottom": 828,
+          "width": 778,
+          "height": 83.84375,
+          "scrollWidth": 776,
+          "clientWidth": 776
+        }
+      ],
+      "coveredControls": [],
+      "dialogs": [],
+      "nestedInteractive": 0
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "scroll": [
+        390,
+        844
+      ],
+      "anchors": [
+        {
+          "id": "osm-node-13649952401",
+          "x": 188.8811381316128,
+          "y": 397.6570906153862,
+          "pin": {
+            "left": 184,
+            "top": 393,
+            "right": 194,
+            "bottom": 403,
+            "width": 10,
+            "height": 10,
+            "scrollWidth": 6,
+            "clientWidth": 6
+          },
+          "error": 0.36292559817778663,
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "x": 202.03868571054196,
+          "y": 568.9613869664556,
+          "pin": {
+            "left": 196,
+            "top": 563,
+            "right": 208,
+            "bottom": 575,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.05465849027951024,
+          "coveredByOtherCards": []
+        }
+      ],
+      "cards": [
+        {
+          "id": "osm-node-13649952401",
+          "left": 106,
+          "top": 190.359375,
+          "right": 272,
+          "bottom": 394,
+          "width": 166,
+          "height": 203.640625,
+          "scrollWidth": 154,
+          "clientWidth": 154
+        }
+      ],
+      "controls": [
+        {
+          "id": "",
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 330,
+          "top": 134,
+          "right": 382,
+          "bottom": 276,
+          "width": 52,
+          "height": 142,
+          "scrollWidth": 52,
+          "clientWidth": 52
+        },
+        {
+          "id": "",
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 54.359375,
+          "top": 804,
+          "right": 372,
+          "bottom": 828,
+          "width": 317.640625,
+          "height": 24,
+          "scrollWidth": 318,
+          "clientWidth": 318
+        },
+        {
+          "id": "",
+          "className": "walk-tools",
+          "left": 13,
+          "top": 134,
+          "right": 113.265625,
+          "bottom": 182,
+          "width": 100.265625,
+          "height": 48,
+          "scrollWidth": 98,
+          "clientWidth": 98
+        },
+        {
+          "id": "",
+          "className": "view-dock paper",
+          "left": 13,
+          "top": 612,
+          "right": 219.46875,
+          "bottom": 666,
+          "width": 206.46875,
+          "height": 54,
+          "scrollWidth": 204,
+          "clientWidth": 204
+        },
+        {
+          "id": "trip-dock",
+          "className": "trip-dock paper",
+          "left": 13,
+          "top": 685.25,
+          "right": 377,
+          "bottom": 784,
+          "width": 364,
+          "height": 98.75,
+          "scrollWidth": 362,
+          "clientWidth": 362
+        }
+      ],
+      "coveredControls": [],
+      "dialogs": [],
+      "nestedInteractive": 0
+    },
+    {
+      "viewport": [
+        320,
+        680
+      ],
+      "scroll": [
+        320,
+        680
+      ],
+      "anchors": [
+        {
+          "id": "osm-node-13649952401",
+          "x": 157.95169186456164,
+          "y": 362.3452478166785,
+          "pin": {
+            "left": 152,
+            "top": 356,
+            "right": 164,
+            "bottom": 368,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.34861114564915713,
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "x": 162.1713758960473,
+          "y": 416.7712282510632,
+          "pin": {
+            "left": 156,
+            "top": 411,
+            "right": 168,
+            "bottom": 423,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.2858429828728097,
+          "coveredByOtherCards": []
+        }
+      ],
+      "cards": [],
+      "controls": [
+        {
+          "id": "",
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 260,
+          "top": 134,
+          "right": 312,
+          "bottom": 276,
+          "width": 52,
+          "height": 142,
+          "scrollWidth": 52,
+          "clientWidth": 52
+        },
+        {
+          "id": "",
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 10,
+          "top": 620,
+          "right": 302,
+          "bottom": 664,
+          "width": 292,
+          "height": 44,
+          "scrollWidth": 292,
+          "clientWidth": 292
+        },
+        {
+          "id": "",
+          "className": "walk-tools",
+          "left": 13,
+          "top": 134,
+          "right": 113.265625,
+          "bottom": 182,
+          "width": 100.265625,
+          "height": 48,
+          "scrollWidth": 98,
+          "clientWidth": 98
+        },
+        {
+          "id": "",
+          "className": "view-dock paper",
+          "left": 13,
+          "top": 448,
+          "right": 219.46875,
+          "bottom": 502,
+          "width": 206.46875,
+          "height": 54,
+          "scrollWidth": 204,
+          "clientWidth": 204
+        },
+        {
+          "id": "trip-dock",
+          "className": "trip-dock paper",
+          "left": 13,
+          "top": 521.25,
+          "right": 307,
+          "bottom": 620,
+          "width": 294,
+          "height": 98.75,
+          "scrollWidth": 292,
+          "clientWidth": 292
+        }
+      ],
+      "coveredControls": [],
+      "dialogs": [],
+      "nestedInteractive": 0
+    },
+    {
+      "viewport": [
+        736,
+        414
+      ],
+      "scroll": [
+        736,
+        414
+      ],
+      "anchors": [
+        {
+          "id": "osm-node-13649952401",
+          "x": 366.32963716262975,
+          "y": 201.36826501518738,
+          "pin": {
+            "left": 360,
+            "top": 195,
+            "right": 372,
+            "bottom": 207,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.4942466797031128,
+          "coveredByOtherCards": []
+        },
+        {
+          "id": "osm-node-4460519589",
+          "x": 369.8016186435851,
+          "y": 245.653288902603,
+          "pin": {
+            "left": 364,
+            "top": 240,
+            "right": 376,
+            "bottom": 252,
+            "width": 12,
+            "height": 12,
+            "scrollWidth": 12,
+            "clientWidth": 12
+          },
+          "error": 0.3994543123202604,
+          "coveredByOtherCards": []
+        }
+      ],
+      "cards": [],
+      "controls": [
+        {
+          "id": "",
+          "className": "maplibregl-ctrl-top-right ",
+          "left": 663,
+          "top": 82,
+          "right": 716,
+          "bottom": 221,
+          "width": 53,
+          "height": 139,
+          "scrollWidth": 53,
+          "clientWidth": 53
+        },
+        {
+          "id": "",
+          "className": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+          "left": 369.078125,
+          "top": 374,
+          "right": 718,
+          "bottom": 398,
+          "width": 348.921875,
+          "height": 24,
+          "scrollWidth": 349,
+          "clientWidth": 349
+        },
+        {
+          "id": "",
+          "className": "walk-tools",
+          "left": 20,
+          "top": 80,
+          "right": 125.5625,
+          "bottom": 126,
+          "width": 105.5625,
+          "height": 46,
+          "scrollWidth": 104,
+          "clientWidth": 104
+        },
+        {
+          "id": "",
+          "className": "view-dock paper",
+          "left": 15,
+          "top": 232,
+          "right": 231.75,
+          "bottom": 286,
+          "width": 216.75,
+          "height": 54,
+          "scrollWidth": 215,
+          "clientWidth": 215
+        },
+        {
+          "id": "trip-dock",
+          "className": "trip-dock paper",
+          "left": 15,
+          "top": 296,
+          "right": 721,
+          "bottom": 360,
+          "width": 706,
+          "height": 64,
+          "scrollWidth": 704,
+          "clientWidth": 704
+        }
+      ],
+      "coveredControls": [],
+      "dialogs": [],
+      "nestedInteractive": 0
+    }
+  ],
+  "records": [
+    {
+      "id": "osm-node-13649952401",
+      "name": "超级李板凳面",
+      "category": "小面",
+      "videos": [
+        {
+          "title": "重庆板凳面探店（2020）",
+          "author": "馋大叔",
+          "publishedOn": "2020-04-20",
+          "url": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+          "branchMatch": "unconfirmed",
+          "playbackStatus": "not-tested"
+        }
+      ]
+    },
+    {
+      "id": "osm-node-4460519589",
+      "name": "赵二火锅",
+      "category": "火锅",
+      "videos": []
+    }
+  ],
+  "videoLink": {
+    "href": "https://www.bilibili.com/video/BV1wC4y1x7Wc/",
+    "target": "_blank",
+    "rel": "noopener noreferrer",
+    "title": "重庆板凳面探店（2020） · 2020-04-20 · 相关视频，分店待核 · 原平台观看",
+    "label": "超级李板凳面的2020-04-20 · 相关视频，分店待核 · 原平台观看",
+    "text": "原视频 ↗"
+  },
+  "standaloneRequests": [
+    "http://127.0.0.1:8791/preview.html?view=food"
+  ],
+  "passed": true
+}

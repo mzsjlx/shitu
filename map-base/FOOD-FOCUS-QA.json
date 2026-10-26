@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-22",
+  "scope": "Regression after explicit dialog focus restoration; current build and exact standalone HTML.",
+  "checks": [
+    {
+      "name": "Esc restores focus to originating food card",
+      "passed": true
+    },
+    {
+      "name": "Close button restores focus to originating food card",
+      "passed": true
+    },
+    {
+      "name": "Closing wants restores focus to wants entry",
+      "passed": true
+    },
+    {
+      "name": "Mobile focus restores without page overflow 390",
+      "passed": true,
+      "details": {
+        "scroll": [
+          390,
+          844
+        ],
+        "cards": [
+          {
+            "left": 243,
+            "right": 271,
+            "top": 397,
+            "bottom": 425,
+            "collapsed": true
+          },
+          {
+            "left": 31,
+            "right": 197,
+            "top": 462.35418701171875,
+            "bottom": 664.0000305175781,
+            "collapsed": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mobile photo cards leave map controls clear 390",
+      "passed": true,
+      "details": {
+        "collisions": []
+      }
+    },
+    {
+      "name": "Mobile focus restores without page overflow 320",
+      "passed": true,
+      "details": {
+        "scroll": [
+          320,
+          680
+        ],
+        "cards": [
+          {
+            "left": 188,
+            "right": 216,
+            "top": 359,
+            "bottom": 387,
+            "collapsed": true
+          },
+          {
+            "left": 25,
+            "right": 191,
+            "top": 340.35418701171875,
+            "bottom": 542.0000305175781,
+            "collapsed": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mobile photo cards leave map controls clear 320",
+      "passed": true,
+      "details": {
+        "collisions": []
+      }
+    },
+    {
+      "name": "Final standalone HTML embeds food, disclosure data and decodable image",
+      "passed": true,
+      "details": {
+        "cards": 2,
+        "routeEligible": [
+          false,
+          false
+        ],
+        "imageWidth": 2172,
+        "additionalHTTP": [],
+        "errors": []
+      }
+    }
+  ],
+  "issues": [],
+  "passed": true
+}

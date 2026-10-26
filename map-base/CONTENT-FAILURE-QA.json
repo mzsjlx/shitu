@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-23",
+  "scope": "Local content-tool failure paths, not real merchant verification.",
+  "checks": [
+    {
+      "name": "Catalog HTTP failure shows recovery and leaves draft untouched",
+      "passed": true,
+      "state": {
+        "message": "工作台暂未准备好：候选资料读取失败",
+        "hidden": true,
+        "exportDisabled": true,
+        "stored": "retained-test-value"
+      }
+    },
+    {
+      "name": "Missing script does not leave endless preparation text",
+      "passed": true,
+      "message": "工作台资料暂未读取，请重新读取。"
+    },
+    {
+      "name": "Storage quota failure keeps typed text and reports not saved",
+      "passed": true,
+      "state": {
+        "message": "尚未保存到浏览器，可先导出备份",
+        "feedback": "本地保存未成功，填写内容仍在本页，可导出备份。",
+        "value": "QA 合成门牌，非真实核实"
+      }
+    },
+    {
+      "name": "Corrupt previous draft is not silently overwritten by new edits",
+      "passed": true,
+      "state": {
+        "stored": "{invalid-draft",
+        "message": "尚未保存到浏览器，可先导出备份",
+        "feedback": "上次草稿或本地存储暂不可读取。当前显示初始材料；填写内容可导出备份，重置工作台后可重新尝试保存。",
+        "value": "QA 内存草稿"
+      }
+    }
+  ],
+  "issues": [],
+  "passed": true
+}

@@ -1,0 +1,1975 @@
+{
+  "date": "2026-10-22",
+  "scope": "Read-only retained source graph audit, not a verified walking route or current merchant entrance.",
+  "source": {
+    "endpoint": "https://api.openstreetmap.org/api/0.6/map?bbox=106.566,29.558,106.584,29.573",
+    "retrievedAt": "2026-10-19T11:02:34.280426+00:00",
+    "bboxSouthWestNorthEast": [
+      29.558,
+      106.566,
+      29.573,
+      106.584
+    ],
+    "sha256": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0",
+    "licenseUrl": "https://www.openstreetmap.org/copyright",
+    "note": "One-time cached local modeling excerpt. Overpass endpoints returned 502/406 and 500; used documented read-only OSM bbox API.",
+    "hashMatches": true,
+    "totalNodes": 12554,
+    "JSONTaggedNodes": 406,
+    "relations": 142
+  },
+  "counts": {
+    "inputWays": 752,
+    "missingNodes": 0,
+    "incompleteWays": 0,
+    "footForbidden": 32,
+    "accessForbidden": 10,
+    "indoorOrLevel": 13,
+    "conditional": 0,
+    "unsupported": 1,
+    "gradeSeparated": 146
+  },
+  "barriers": {
+    "total": 2,
+    "explicitlyBlocked": 0,
+    "nearby": [
+      {
+        "id": 11805114939,
+        "tags": {
+          "barrier": "gate"
+        },
+        "coordinates": [
+          106.5698888,
+          29.571037
+        ]
+      },
+      {
+        "id": 13149297130,
+        "tags": {
+          "barrier": "bollard"
+        },
+        "coordinates": [
+          106.5717187,
+          29.5635539
+        ]
+      }
+    ]
+  },
+  "restrictionRelations": [
+    {
+      "type": "relation",
+      "id": 17600728,
+      "tags": {
+        "restriction": "no_left_turn",
+        "type": "restriction"
+      },
+      "members": [
+        {
+          "type": "way",
+          "ref": 818780569,
+          "role": "from",
+          "geometry": [
+            {
+              "lat": 29.562234,
+              "lon": 106.570453
+            },
+            {
+              "lat": 29.5622728,
+              "lon": 106.5704327
+            },
+            {
+              "lat": 29.5623048,
+              "lon": 106.5703974
+            },
+            {
+              "lat": 29.5623319,
+              "lon": 106.5703479
+            },
+            {
+              "lat": 29.562352,
+              "lon": 106.5702755
+            },
+            {
+              "lat": 29.5623631,
+              "lon": 106.5701919
+            },
+            {
+              "lat": 29.562361,
+              "lon": 106.5700781
+            },
+            {
+              "lat": 29.5623131,
+              "lon": 106.569307
+            },
+            {
+              "lat": 29.5623091,
+              "lon": 106.5692428
+            },
+            {
+              "lat": 29.5623167,
+              "lon": 106.5691658
+            },
+            {
+              "lat": 29.5623363,
+              "lon": 106.5691101
+            },
+            {
+              "lat": 29.5623677,
+              "lon": 106.5690721
+            },
+            {
+              "lat": 29.5624229,
+              "lon": 106.5690376
+            },
+            {
+              "lat": 29.5628683,
+              "lon": 106.5688725
+            },
+            {
+              "lat": 29.562931,
+              "lon": 106.5688435
+            },
+            {
+              "lat": 29.5629866,
+              "lon": 106.5688091
+            },
+            {
+              "lat": 29.5630375,
+              "lon": 106.5687571
+            },
+            {
+              "lat": 29.5630838,
+              "lon": 106.5686939
+            },
+            {
+              "lat": 29.5633125,
+              "lon": 106.5682363
+            },
+            {
+              "lat": 29.5633368,
+              "lon": 106.5681877
+            },
+            {
+              "lat": 29.5633688,
+              "lon": 106.5681102
+            },
+            {
+              "lat": 29.5633928,
+              "lon": 106.5680129
+            },
+            {
+              "lat": 29.5633963,
+              "lon": 106.5679129
+            },
+            {
+              "lat": 29.5633829,
+              "lon": 106.5678173
+            },
+            {
+              "lat": 29.5633583,
+              "lon": 106.5677487
+            },
+            {
+              "lat": 29.5633253,
+              "lon": 106.5676968
+            },
+            {
+              "lat": 29.5632805,
+              "lon": 106.5676436
+            },
+            {
+              "lat": 29.5632188,
+              "lon": 106.5675834
+            },
+            {
+              "lat": 29.5628435,
+              "lon": 106.5672666
+            },
+            {
+              "lat": 29.5618684,
+              "lon": 106.5662916
+            },
+            {
+              "lat": 29.5617269,
+              "lon": 106.5661555
+            },
+            {
+              "lat": 29.5616795,
+              "lon": 106.5661114
+            },
+            {
+              "lat": 29.5616316,
+              "lon": 106.5660389
+            },
+            {
+              "lat": 29.5616124,
+              "lon": 106.5659702
+            },
+            {
+              "lat": 29.5616006,
+              "lon": 106.5658814
+            },
+            {
+              "lat": 29.5616181,
+              "lon": 106.5657822
+            },
+            {
+              "lat": 29.5616598,
+              "lon": 106.5656915
+            },
+            {
+              "lat": 29.5617049,
+              "lon": 106.5656422
+            },
+            {
+              "lat": 29.5617759,
+              "lon": 106.5655942
+            },
+            {
+              "lat": 29.5618751,
+              "lon": 106.5655871
+            },
+            {
+              "lat": 29.5619476,
+              "lon": 106.5656166
+            },
+            {
+              "lat": 29.5620212,
+              "lon": 106.5656776
+            },
+            {
+              "lat": 29.5621001,
+              "lon": 106.5657684
+            },
+            {
+              "lat": 29.5622413,
+              "lon": 106.5659467
+            },
+            {
+              "lat": 29.5623576,
+              "lon": 106.5660326
+            },
+            {
+              "lat": 29.562485,
+              "lon": 106.5660851
+            },
+            {
+              "lat": 29.5626581,
+              "lon": 106.5661154
+            },
+            {
+              "lat": 29.5627848,
+              "lon": 106.566107
+            },
+            {
+              "lat": 29.5637271,
+              "lon": 106.566032
+            },
+            {
+              "lat": 29.5638183,
+              "lon": 106.5660167
+            },
+            {
+              "lat": 29.5639017,
+              "lon": 106.5659898
+            },
+            {
+              "lat": 29.5639718,
+              "lon": 106.5659452
+            },
+            {
+              "lat": 29.5640462,
+              "lon": 106.5658742
+            }
+          ]
+        },
+        {
+          "type": "way",
+          "ref": 458579958,
+          "role": "via"
+        },
+        {
+          "type": "way",
+          "ref": 458579980,
+          "role": "to"
+        }
+      ]
+    }
+  ],
+  "models": {
+    "groundAndOrdinary": {
+      "acceptedWays": 550,
+      "graphNodes": 3036,
+      "segments": 3259,
+      "weakComponents": 16,
+      "largestComponentNodes": [
+        1948,
+        829,
+        90,
+        55,
+        43,
+        20,
+        10,
+        9,
+        9,
+        8
+      ],
+      "foods": [
+        {
+          "food": "超级李板凳面",
+          "sourceNode": 13649952401,
+          "point": [
+            106.5795981,
+            29.5661577
+          ],
+          "attachedToGraph": false,
+          "nearest": [
+            {
+              "distanceMetres": 14.926272291974874,
+              "way": 59146768,
+              "name": "朝千路",
+              "highway": "tertiary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 8796311499,
+              "b": 4592547287,
+              "t": 0.7950369133928958,
+              "projection": [
+                106.57953535468549,
+                29.5662801749636
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "tertiary",
+                "name": "朝千路"
+              }
+            },
+            {
+              "distanceMetres": 24.000351527576306,
+              "way": 1499726159,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13733301313,
+              "b": 13733301314,
+              "t": 0.3440388576533856,
+              "projection": [
+                106.57949865853388,
+                29.566355187327005
+              ],
+              "component": 0,
+              "sourceTags": {
+                "footway": "sidewalk",
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 29.310222195803398,
+              "way": 1430569098,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 14003750605,
+              "b": 14003750606,
+              "t": 1,
+              "projection": [
+                106.5793961,
+                29.5663538
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 43.03758682571673,
+              "way": 847288628,
+              "name": "",
+              "highway": "service",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13733301310,
+              "b": 7527836166,
+              "t": 1,
+              "projection": [
+                106.5792261,
+                29.565946100000005
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "service"
+              }
+            },
+            {
+              "distanceMetres": 60.95678677850223,
+              "way": 59146659,
+              "name": "棉花街",
+              "highway": "tertiary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 7759689108,
+              "b": 733200793,
+              "t": 1,
+              "projection": [
+                106.5794255,
+                29.5656311
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "tertiary",
+                "name": "棉花街",
+                "name:en": "Mianhua Street",
+                "name:zh": "棉花街"
+              }
+            },
+            {
+              "distanceMetres": 86.9367241210783,
+              "way": 1501194650,
+              "name": "朝千路",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13733878334,
+              "b": 733200870,
+              "t": 0.43465490424685044,
+              "projection": [
+                106.58015177578083,
+                29.565542901034657
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential",
+                "name": "朝千路"
+              }
+            },
+            {
+              "distanceMetres": 91.42858032869523,
+              "way": 1430569101,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13149646834,
+              "b": 14003750608,
+              "t": 1,
+              "projection": [
+                106.579361,
+                29.5669527
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 98.35514856038829,
+              "way": 176330523,
+              "name": "千厮门行街",
+              "highway": "tertiary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13743572568,
+              "b": 733200870,
+              "t": 1,
+              "projection": [
+                106.5797778,
+                29.5652881
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "tertiary",
+                "name": "千厮门行街"
+              }
+            }
+          ]
+        },
+        {
+          "food": "赵二火锅",
+          "sourceNode": 4460519589,
+          "point": [
+            106.5800949,
+            29.5586155
+          ],
+          "attachedToGraph": false,
+          "nearest": [
+            {
+              "distanceMetres": 10.801708162262768,
+              "way": 1526449546,
+              "name": "解放东路",
+              "highway": "secondary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13912494388,
+              "b": 13912494389,
+              "t": 0.5094784446991847,
+              "projection": [
+                106.58018928107202,
+                29.558563767576064
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "解放东路",
+                "name:en": "East Jiefang Road",
+                "name:zh": "解放东路",
+                "oneway": "yes"
+              }
+            },
+            {
+              "distanceMetres": 16.964949771480033,
+              "way": 831047003,
+              "name": "解放东路",
+              "highway": "secondary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13912494362,
+              "b": 13912494361,
+              "t": 0.491190632256376,
+              "projection": [
+                106.58024149001966,
+                29.55853202531184
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "解放东路",
+                "name:en": "East Jiefang Road",
+                "name:zh": "解放东路",
+                "oneway": "yes"
+              }
+            },
+            {
+              "distanceMetres": 37.41968471608114,
+              "way": 809271234,
+              "name": "",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 12992452474,
+              "b": 7566943278,
+              "t": 1,
+              "projection": [
+                106.57972460000002,
+                29.5587117
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential"
+              }
+            },
+            {
+              "distanceMetres": 37.41968471608114,
+              "way": 1499990180,
+              "name": "",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 733201127,
+              "b": 7566943278,
+              "t": 1,
+              "projection": [
+                106.57972460000002,
+                29.5587117
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential"
+              }
+            },
+            {
+              "distanceMetres": 56.27216757294499,
+              "way": 59146666,
+              "name": "中大街",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13912494391,
+              "b": 733201127,
+              "t": 0.2962901597102369,
+              "projection": [
+                106.57975245470475,
+                29.558207075968095
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential",
+                "name": "中大街"
+              }
+            },
+            {
+              "distanceMetres": 73.36622272259002,
+              "way": 59146779,
+              "name": "白象街",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 733201160,
+              "b": 6598279931,
+              "t": 1,
+              "projection": [
+                106.5807685,
+                29.5583137
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential",
+                "name": "白象街"
+              }
+            },
+            {
+              "distanceMetres": 73.36622272259002,
+              "way": 702617710,
+              "name": "",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 6598279931,
+              "b": 8072629486,
+              "t": 0,
+              "projection": [
+                106.5807685,
+                29.5583137
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential"
+              }
+            },
+            {
+              "distanceMetres": 97.09768616693464,
+              "way": 809271238,
+              "name": "",
+              "highway": "service",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 7566943283,
+              "b": 7566943282,
+              "t": 1,
+              "projection": [
+                106.57925979999999,
+                29.5581326
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "service",
+                "service": "parking_aisle"
+              }
+            }
+          ]
+        }
+      ],
+      "nearestRoadNodeRoute": {
+        "graphDistanceMetres": 1072.1737311651138,
+        "distanceMethod": "Equirectangular metres, local latitude 29.565; no elevation/entrance distance",
+        "haversineGraphMetres": 1070.9799074814737,
+        "edges": 50,
+        "nodeIDs": [
+          4592547287,
+          7759689089,
+          6294449393,
+          7527836166,
+          6294449394,
+          733200793,
+          7759689108,
+          8796311463,
+          6631214613,
+          7906501883,
+          6631214628,
+          6631214627,
+          7906501773,
+          7759689107,
+          733200674,
+          7759689106,
+          733201015,
+          13026257029,
+          7756815889,
+          7756803357,
+          7759689056,
+          7759689058,
+          8575594511,
+          10086004992,
+          13612252686,
+          10086004996,
+          7759689057,
+          8575594499,
+          8106187175,
+          8106187173,
+          13968729988,
+          8106187166,
+          13912494374,
+          13912494428,
+          13912494429,
+          13912494430,
+          13912494427,
+          13912494431,
+          13912494375,
+          13912494376,
+          13912494377,
+          13912494378,
+          13912494379,
+          13912494380,
+          13912494381,
+          13912494382,
+          13912494386,
+          13912494383,
+          13912494384,
+          13912494388,
+          13912494389
+        ],
+        "endpointCoordinates": [
+          [
+            106.5794059,
+            29.56623
+          ],
+          [
+            106.5801262,
+            29.5584767
+          ]
+        ],
+        "pathBounds": [
+          106.5791217,
+          29.5584767,
+          106.5815488,
+          29.56623
+        ],
+        "sourceWays": [
+          {
+            "id": 59146768,
+            "tags": {
+              "highway": "tertiary",
+              "name": "朝千路"
+            }
+          },
+          {
+            "id": 59146659,
+            "tags": {
+              "highway": "tertiary",
+              "name": "棉花街",
+              "name:en": "Mianhua Street",
+              "name:zh": "棉花街"
+            }
+          },
+          {
+            "id": 831047016,
+            "tags": {
+              "highway": "residential",
+              "name": "水巷子"
+            }
+          },
+          {
+            "id": 705733971,
+            "tags": {
+              "highway": "footway",
+              "name": "水巷子"
+            }
+          },
+          {
+            "id": 832123489,
+            "tags": {
+              "highway": "secondary",
+              "motor_vehicle": "designated",
+              "name": "新华路",
+              "name:en": "Xinhua Road",
+              "name:zh": "新华路",
+              "name:zh-Latn-pinyin": "Xīnhuá Lù",
+              "oneway": "yes",
+              "source": "bing"
+            }
+          },
+          {
+            "id": 830761788,
+            "tags": {
+              "highway": "secondary",
+              "lanes": "2",
+              "maxspeed": "60",
+              "name": "新华路",
+              "name:en": "Xinhua Road",
+              "name:zh": "新华路",
+              "name:zh-Latn-pinyin": "Xīnhuá Lù",
+              "noref": "yes",
+              "oneway": "yes",
+              "source": "bing"
+            }
+          },
+          {
+            "id": 589450440,
+            "tags": {
+              "highway": "secondary",
+              "name": "民族路",
+              "name:en": "Minzu Road",
+              "name:zh": "民族路",
+              "oneway": "yes"
+            }
+          },
+          {
+            "id": 1102254579,
+            "tags": {
+              "highway": "secondary",
+              "name": "打铜街",
+              "oneway": "yes"
+            }
+          },
+          {
+            "id": 870022310,
+            "tags": {
+              "highway": "secondary",
+              "name": "道门口",
+              "oneway": "yes"
+            }
+          },
+          {
+            "id": 1537651392,
+            "tags": {
+              "highway": "secondary",
+              "name": "道门口",
+              "oneway": "yes"
+            }
+          },
+          {
+            "id": 1526449546,
+            "tags": {
+              "highway": "secondary",
+              "lanes": "2",
+              "name": "解放东路",
+              "name:en": "East Jiefang Road",
+              "name:zh": "解放东路",
+              "oneway": "yes"
+            }
+          }
+        ],
+        "warnings": {
+          "usesSteps": false,
+          "usesGradeSeparated": false,
+          "assumesFootAccessOnOrdinaryRoads": 10
+        }
+      }
+    },
+    "allGradeAndOrdinary": {
+      "acceptedWays": 696,
+      "graphNodes": 3524,
+      "segments": 3794,
+      "weakComponents": 22,
+      "largestComponentNodes": [
+        3323,
+        90,
+        21,
+        17,
+        13,
+        10,
+        10,
+        6,
+        5,
+        4
+      ],
+      "foods": [
+        {
+          "food": "超级李板凳面",
+          "sourceNode": 13649952401,
+          "point": [
+            106.5795981,
+            29.5661577
+          ],
+          "attachedToGraph": false,
+          "nearest": [
+            {
+              "distanceMetres": 14.926272291974874,
+              "way": 59146768,
+              "name": "朝千路",
+              "highway": "tertiary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 8796311499,
+              "b": 4592547287,
+              "t": 0.7950369133928958,
+              "projection": [
+                106.57953535468549,
+                29.5662801749636
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "tertiary",
+                "name": "朝千路"
+              }
+            },
+            {
+              "distanceMetres": 24.000351527576306,
+              "way": 1499726159,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13733301313,
+              "b": 13733301314,
+              "t": 0.3440388576533856,
+              "projection": [
+                106.57949865853388,
+                29.566355187327005
+              ],
+              "component": 0,
+              "sourceTags": {
+                "footway": "sidewalk",
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 29.310222195803398,
+              "way": 1430569098,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 14003750605,
+              "b": 14003750606,
+              "t": 1,
+              "projection": [
+                106.5793961,
+                29.5663538
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 43.03758682571673,
+              "way": 847288628,
+              "name": "",
+              "highway": "service",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13733301310,
+              "b": 7527836166,
+              "t": 1,
+              "projection": [
+                106.5792261,
+                29.565946100000005
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "service"
+              }
+            },
+            {
+              "distanceMetres": 49.30399265285926,
+              "way": 59146740,
+              "name": "朝天门隧道",
+              "highway": "primary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": "yes",
+              "layer": "-1",
+              "a": 733200878,
+              "b": 733201339,
+              "t": 0.8739805494540122,
+              "projection": [
+                106.5792556051253,
+                29.56582995253719
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "primary",
+                "lanes": "2",
+                "layer": "-1",
+                "name": "朝天门隧道",
+                "oneway": "yes",
+                "tunnel": "yes"
+              }
+            },
+            {
+              "distanceMetres": 56.99387207225666,
+              "way": 176330524,
+              "name": "嘉陵江滨江路",
+              "highway": "primary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": "yes",
+              "tunnel": null,
+              "layer": "2",
+              "a": 733201339,
+              "b": 14246880227,
+              "t": 0,
+              "projection": [
+                106.57903710000001,
+                29.5660027
+              ],
+              "component": 0,
+              "sourceTags": {
+                "bridge": "yes",
+                "highway": "primary",
+                "lanes": "2",
+                "layer": "2",
+                "name": "嘉陵江滨江路",
+                "oneway": "yes"
+              }
+            },
+            {
+              "distanceMetres": 60.95678677850223,
+              "way": 59146659,
+              "name": "棉花街",
+              "highway": "tertiary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 7759689108,
+              "b": 733200793,
+              "t": 1,
+              "projection": [
+                106.5794255,
+                29.5656311
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "tertiary",
+                "name": "棉花街",
+                "name:en": "Mianhua Street",
+                "name:zh": "棉花街"
+              }
+            },
+            {
+              "distanceMetres": 62.919697029278915,
+              "way": 176330527,
+              "name": "朝天门隧道",
+              "highway": "primary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": "yes",
+              "layer": "-1",
+              "a": 1868690850,
+              "b": 733201280,
+              "t": 0.09754587448965425,
+              "projection": [
+                106.5791361196336,
+                29.565760206410584
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "primary",
+                "lanes": "2",
+                "layer": "-1",
+                "name": "朝天门隧道",
+                "oneway": "yes",
+                "tunnel": "yes"
+              }
+            }
+          ]
+        },
+        {
+          "food": "赵二火锅",
+          "sourceNode": 4460519589,
+          "point": [
+            106.5800949,
+            29.5586155
+          ],
+          "attachedToGraph": false,
+          "nearest": [
+            {
+              "distanceMetres": 10.801708162262768,
+              "way": 1526449546,
+              "name": "解放东路",
+              "highway": "secondary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13912494388,
+              "b": 13912494389,
+              "t": 0.5094784446991847,
+              "projection": [
+                106.58018928107202,
+                29.558563767576064
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "解放东路",
+                "name:en": "East Jiefang Road",
+                "name:zh": "解放东路",
+                "oneway": "yes"
+              }
+            },
+            {
+              "distanceMetres": 16.964949771480033,
+              "way": 831047003,
+              "name": "解放东路",
+              "highway": "secondary",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13912494362,
+              "b": 13912494361,
+              "t": 0.491190632256376,
+              "projection": [
+                106.58024149001966,
+                29.55853202531184
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "secondary",
+                "lanes": "2",
+                "name": "解放东路",
+                "name:en": "East Jiefang Road",
+                "name:zh": "解放东路",
+                "oneway": "yes"
+              }
+            },
+            {
+              "distanceMetres": 37.41968471608114,
+              "way": 809271234,
+              "name": "",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 12992452474,
+              "b": 7566943278,
+              "t": 1,
+              "projection": [
+                106.57972460000002,
+                29.5587117
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential"
+              }
+            },
+            {
+              "distanceMetres": 37.41968471608114,
+              "way": 1499990180,
+              "name": "",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 733201127,
+              "b": 7566943278,
+              "t": 1,
+              "projection": [
+                106.57972460000002,
+                29.5587117
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential"
+              }
+            },
+            {
+              "distanceMetres": 56.27216757294499,
+              "way": 59146666,
+              "name": "中大街",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13912494391,
+              "b": 733201127,
+              "t": 0.2962901597102369,
+              "projection": [
+                106.57975245470475,
+                29.558207075968095
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential",
+                "name": "中大街"
+              }
+            },
+            {
+              "distanceMetres": 73.36622272259002,
+              "way": 59146779,
+              "name": "白象街",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 733201160,
+              "b": 6598279931,
+              "t": 1,
+              "projection": [
+                106.5807685,
+                29.5583137
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential",
+                "name": "白象街"
+              }
+            },
+            {
+              "distanceMetres": 73.36622272259002,
+              "way": 702617710,
+              "name": "",
+              "highway": "residential",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 6598279931,
+              "b": 8072629486,
+              "t": 0,
+              "projection": [
+                106.5807685,
+                29.5583137
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "residential"
+              }
+            },
+            {
+              "distanceMetres": 97.09768616693464,
+              "way": 809271238,
+              "name": "",
+              "highway": "service",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 7566943283,
+              "b": 7566943282,
+              "t": 1,
+              "projection": [
+                106.57925979999999,
+                29.5581326
+              ],
+              "component": 0,
+              "sourceTags": {
+                "highway": "service",
+                "service": "parking_aisle"
+              }
+            }
+          ]
+        }
+      ],
+      "nearestRoadNodeRoute": {
+        "graphDistanceMetres": 1072.1737311651138,
+        "distanceMethod": "Equirectangular metres, local latitude 29.565; no elevation/entrance distance",
+        "haversineGraphMetres": 1070.9799074814737,
+        "edges": 50,
+        "nodeIDs": [
+          4592547287,
+          7759689089,
+          6294449393,
+          7527836166,
+          6294449394,
+          733200793,
+          7759689108,
+          8796311463,
+          6631214613,
+          7906501883,
+          6631214628,
+          6631214627,
+          7906501773,
+          7759689107,
+          733200674,
+          7759689106,
+          733201015,
+          13026257029,
+          7756815889,
+          7756803357,
+          7759689056,
+          7759689058,
+          8575594511,
+          10086004992,
+          13612252686,
+          10086004996,
+          7759689057,
+          8575594499,
+          8106187175,
+          8106187173,
+          13968729988,
+          8106187166,
+          13912494374,
+          13912494428,
+          13912494429,
+          13912494430,
+          13912494427,
+          13912494431,
+          13912494375,
+          13912494376,
+          13912494377,
+          13912494378,
+          13912494379,
+          13912494380,
+          13912494381,
+          13912494382,
+          13912494386,
+          13912494383,
+          13912494384,
+          13912494388,
+          13912494389
+        ],
+        "endpointCoordinates": [
+          [
+            106.5794059,
+            29.56623
+          ],
+          [
+            106.5801262,
+            29.5584767
+          ]
+        ],
+        "pathBounds": [
+          106.5791217,
+          29.5584767,
+          106.5815488,
+          29.56623
+        ],
+        "sourceWays": [
+          {
+            "id": 59146768,
+            "tags": {
+              "highway": "tertiary",
+              "name": "朝千路"
+            }
+          },
+          {
+            "id": 59146659,
+            "tags": {
+              "highway": "tertiary",
+              "name": "棉花街",
+              "name:en": "Mianhua Street",
+              "name:zh": "棉花街"
+            }
+          },
+          {
+            "id": 831047016,
+            "tags": {
+              "highway": "residential",
+              "name": "水巷子"
+            }
+          },
+          {
+            "id": 705733971,
+            "tags": {
+              "highway": "footway",
+              "name": "水巷子"
+            }
+          },
+          {
+            "id": 832123489,
+            "tags": {
+              "highway": "secondary",
+              "motor_vehicle": "designated",
+              "name": "新华路",
+              "name:en": "Xinhua Road",
+              "name:zh": "新华路",
+              "name:zh-Latn-pinyin": "Xīnhuá Lù",
+              "oneway": "yes",
+              "source": "bing"
+            }
+          },
+          {
+            "id": 830761788,
+            "tags": {
+              "highway": "secondary",
+              "lanes": "2",
+              "maxspeed": "60",
+              "name": "新华路",
+              "name:en": "Xinhua Road",
+              "name:zh": "新华路",
+              "name:zh-Latn-pinyin": "Xīnhuá Lù",
+              "noref": "yes",
+              "oneway": "yes",
+              "source": "bing"
+            }
+          },
+          {
+            "id": 589450440,
+            "tags": {
+              "highway": "secondary",
+              "name": "民族路",
+              "name:en": "Minzu Road",
+              "name:zh": "民族路",
+              "oneway": "yes"
+            }
+          },
+          {
+            "id": 1102254579,
+            "tags": {
+              "highway": "secondary",
+              "name": "打铜街",
+              "oneway": "yes"
+            }
+          },
+          {
+            "id": 870022310,
+            "tags": {
+              "highway": "secondary",
+              "name": "道门口",
+              "oneway": "yes"
+            }
+          },
+          {
+            "id": 1537651392,
+            "tags": {
+              "highway": "secondary",
+              "name": "道门口",
+              "oneway": "yes"
+            }
+          },
+          {
+            "id": 1526449546,
+            "tags": {
+              "highway": "secondary",
+              "lanes": "2",
+              "name": "解放东路",
+              "name:en": "East Jiefang Road",
+              "name:zh": "解放东路",
+              "oneway": "yes"
+            }
+          }
+        ],
+        "warnings": {
+          "usesSteps": false,
+          "usesGradeSeparated": false,
+          "assumesFootAccessOnOrdinaryRoads": 10
+        }
+      }
+    },
+    "explicitPedestrianOnly": {
+      "acceptedWays": 407,
+      "graphNodes": 1809,
+      "segments": 1870,
+      "weakComponents": 34,
+      "largestComponentNodes": [
+        971,
+        203,
+        127,
+        118,
+        90,
+        62,
+        38,
+        28,
+        27,
+        20
+      ],
+      "foods": [
+        {
+          "food": "超级李板凳面",
+          "sourceNode": 13649952401,
+          "point": [
+            106.5795981,
+            29.5661577
+          ],
+          "attachedToGraph": false,
+          "nearest": [
+            {
+              "distanceMetres": 24.000351527576306,
+              "way": 1499726159,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13733301313,
+              "b": 13733301314,
+              "t": 0.3440388576533856,
+              "projection": [
+                106.57949865853388,
+                29.566355187327005
+              ],
+              "component": 1,
+              "sourceTags": {
+                "footway": "sidewalk",
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 29.310222195803398,
+              "way": 1430569098,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 14003750605,
+              "b": 14003750606,
+              "t": 1,
+              "projection": [
+                106.5793961,
+                29.5663538
+              ],
+              "component": 1,
+              "sourceTags": {
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 72.4258492483672,
+              "way": 1416968845,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": "yes",
+              "tunnel": null,
+              "layer": "1",
+              "a": 13020906275,
+              "b": 13020906274,
+              "t": 0.5639484716852152,
+              "projection": [
+                106.57930991187712,
+                29.566758083015777
+              ],
+              "component": 1,
+              "sourceTags": {
+                "bridge": "yes",
+                "footway": "sidewalk",
+                "highway": "footway",
+                "layer": "1"
+              }
+            },
+            {
+              "distanceMetres": 86.98475989831903,
+              "way": 1416968869,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": "yes",
+              "tunnel": null,
+              "layer": "1",
+              "a": 13020963714,
+              "b": 13020963713,
+              "t": 0.2159414923843813,
+              "projection": [
+                106.57925415900766,
+                29.566879558981686
+              ],
+              "component": 1,
+              "sourceTags": {
+                "bridge": "yes",
+                "footway": "sidewalk",
+                "highway": "footway",
+                "layer": "1"
+              }
+            },
+            {
+              "distanceMetres": 91.42858032869523,
+              "way": 1430569101,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13149646834,
+              "b": 14003750608,
+              "t": 1,
+              "projection": [
+                106.579361,
+                29.5669527
+              ],
+              "component": 1,
+              "sourceTags": {
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 108.71785719187949,
+              "way": 1562233438,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 733200722,
+              "b": 14214636324,
+              "t": 0,
+              "projection": [
+                106.58052819999999,
+                29.5667048
+              ],
+              "component": 1,
+              "sourceTags": {
+                "footway": "sidewalk",
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 108.98108309161708,
+              "way": 624066152,
+              "name": "",
+              "highway": "steps",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 14214636324,
+              "b": 733200995,
+              "t": 0,
+              "projection": [
+                106.5805526,
+                29.5666765
+              ],
+              "component": 1,
+              "sourceTags": {
+                "highway": "steps"
+              }
+            },
+            {
+              "distanceMetres": 108.98108309161708,
+              "way": 1562233437,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 8796412189,
+              "b": 14214636324,
+              "t": 1,
+              "projection": [
+                106.5805526,
+                29.5666765
+              ],
+              "component": 1,
+              "sourceTags": {
+                "footway": "sidewalk",
+                "highway": "footway"
+              }
+            }
+          ]
+        },
+        {
+          "food": "赵二火锅",
+          "sourceNode": 4460519589,
+          "point": [
+            106.5800949,
+            29.5586155
+          ],
+          "attachedToGraph": false,
+          "nearest": [
+            {
+              "distanceMetres": 106.40522902720947,
+              "way": 831056317,
+              "name": "",
+              "highway": "steps",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 7759667982,
+              "b": 6598279932,
+              "t": 0,
+              "projection": [
+                106.5811007,
+                29.558230400000003
+              ],
+              "component": 16,
+              "sourceTags": {
+                "highway": "steps"
+              }
+            },
+            {
+              "distanceMetres": 109.85131233207325,
+              "way": 1413835650,
+              "name": "二府衙",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 7566943274,
+              "b": 12992452467,
+              "t": 0.4802257412799457,
+              "projection": [
+                106.57924284517453,
+                29.559267064948795
+              ],
+              "component": 20,
+              "sourceTags": {
+                "highway": "footway",
+                "name": "二府衙"
+              }
+            },
+            {
+              "distanceMetres": 110.04973881151926,
+              "way": 870022289,
+              "name": "",
+              "highway": "steps",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 8106181662,
+              "b": 7566943274,
+              "t": 1,
+              "projection": [
+                106.5791978,
+                29.5592225
+              ],
+              "component": 20,
+              "sourceTags": {
+                "highway": "steps"
+              }
+            },
+            {
+              "distanceMetres": 128.00186792455952,
+              "way": 1316609943,
+              "name": "",
+              "highway": "steps",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 12185628879,
+              "b": 12992452478,
+              "t": 0,
+              "projection": [
+                106.5810074,
+                29.5594475
+              ],
+              "component": 23,
+              "sourceTags": {
+                "highway": "steps"
+              }
+            },
+            {
+              "distanceMetres": 146.40761956477087,
+              "way": 1466531387,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13450833363,
+              "b": 13450833375,
+              "t": 0,
+              "projection": [
+                106.5815376,
+                29.558221700000004
+              ],
+              "component": 28,
+              "sourceTags": {
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 170.94624799974798,
+              "way": 1466531381,
+              "name": "",
+              "highway": "steps",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13450833375,
+              "b": 13450833390,
+              "t": 0,
+              "projection": [
+                106.58174729999999,
+                29.5580747
+              ],
+              "component": 28,
+              "sourceTags": {
+                "highway": "steps"
+              }
+            },
+            {
+              "distanceMetres": 173.933197188259,
+              "way": 1466531384,
+              "name": "",
+              "highway": "footway",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13450833390,
+              "b": 13450833367,
+              "t": 0,
+              "projection": [
+                106.5818042,
+                29.558135
+              ],
+              "component": 28,
+              "sourceTags": {
+                "highway": "footway"
+              }
+            },
+            {
+              "distanceMetres": 184.44526305175415,
+              "way": 1466531383,
+              "name": "",
+              "highway": "steps",
+              "foot": null,
+              "access": null,
+              "sidewalk": null,
+              "bridge": null,
+              "tunnel": null,
+              "layer": null,
+              "a": 13450833367,
+              "b": 13450833355,
+              "t": 0,
+              "projection": [
+                106.5819664,
+                29.5583065
+              ],
+              "component": 28,
+              "sourceTags": {
+                "highway": "steps"
+              }
+            }
+          ]
+        }
+      ],
+      "nearestRoadNodeRoute": null
+    }
+  },
+  "recommendation": "Can support a local source-derived road-connectivity research preview. Do not draw an entrance connection or claim navigable shop-to-shop walking directions until branch/entrance/access checks pass. Use original node IDs, retain foot direction/access semantics, and preserve bridge/tunnel layers; do not connect based on projected 2D proximity.",
+  "notes": [
+    "Both POI nodes are absent from the walking road graph. Nearest segment projection is a geometric observation, not an entrance connector.",
+    "Do not join 2D line intersections or points with nearby XY coordinates unless original node IDs provide topology.",
+    "Source bbox is a retrieval scope, not a completeness guarantee. Near-boundary shortest paths may be distorted by unreturned links; no country-wide shortest-path claim.",
+    "Street rendering features and visual lane separators are not routing topology. Use raw ways, node IDs and permission/direction tags.",
+    "The path below is a local node-to-node trial with unverified foot access on ordinary road centre lines; no walking ETA or door-to-door distance."
+  ]
+}

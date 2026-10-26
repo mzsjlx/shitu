@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-22",
+  "scope": "Local optional food-loading and exact standalone HTML over HTTP; no file protocol claim.",
+  "checks": [
+    {
+      "name": "Reset during food loading keeps city camera",
+      "passed": true
+    },
+    {
+      "name": "2D during food loading keeps flat camera",
+      "passed": true
+    },
+    {
+      "name": "12-second timeout preserves map and retry recovers",
+      "passed": true,
+      "details": {
+        "observedError": "美食资料读取超时",
+        "baseReady": true,
+        "globalErrorHidden": true,
+        "retryFoodCards": 2,
+        "retryError": null
+      }
+    },
+    {
+      "name": "Exact standalone HTML serves both food cards without additional HTTP",
+      "passed": true,
+      "details": {
+        "url": "http://127.0.0.1:8791/preview.html?view=food",
+        "foodCards": 2,
+        "spriteEmbedded": true,
+        "additionalHTTP": [],
+        "pageErrors": []
+      }
+    }
+  ],
+  "passed": true
+}

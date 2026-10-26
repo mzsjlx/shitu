@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Public original-page cache for source verification; not product media or production bundle",
+  "requestedUrl": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+  "retrievedUrl": "https://www.bilibili.com/list/3546942135077690?bvid=BV1AJ7S6sE8y&oid=116701391753474",
+  "retrievalStartedAt": "2026-10-25T09:45:51.4718022Z",
+  "retrievedAt": "2026-10-25T09:45:51.9016854Z",
+  "observedDate": "2026-10-25",
+  "observerTimezone": "Asia/Shanghai",
+  "httpStatus": 200,
+  "contentType": [
+    "text/html; charset=utf-8"
+  ],
+  "htmlFile": "chiichan-2026-10-25.html",
+  "storedEncoding": "UTF-8 without BOM; decoded HTTP response HTML",
+  "sha256": "ea49ed89251bfe203530c098177a4ec6feaabc04441918c202eda39acf658030",
+  "byteLength": 168568,
+  "extraction": {
+    "method": "Read visible Chinese HTML title and description plus embedded videoData metadata; no playback",
+    "title": "重庆你是真离谱！日本女孩挑战“异世界”激辣美食：辣子鸡发源地＋排队100桌小龙虾！🌶️🤯",
+    "videoId": "BV1AJ7S6sE8y",
+    "aid": 116701391753474,
+    "canonicalVideoUrl": "https://www.bilibili.com/video/BV1AJ7S6sE8y/",
+    "owner": {
+      "mid": 3546942135077690,
+      "name": "杉田千紘_CHIICHAN"
+    },
+    "publishedDisplay": "2026-06-06 18:00:00",
+    "publishedUnix": 1780740000,
+    "publishedAt": "2026-06-06T18:00:00+08:00",
+    "platformCopyrightField": 1,
+    "restaurants": [
+      {
+        "name": "老甘家小龙虾江湖菜",
+        "addressText": "重庆市两江新区洋河中路91号",
+        "chapterText": "10:44 老甘家小龙虾江湖菜",
+        "chapterSeconds": 644,
+        "creatorLocationLink": "https://j.map.baidu.com/e7/H-c",
+        "creatorLocationLinkRole": "reference-only; not a coordinate source",
+        "verificationStatus": "source-record",
+        "coordinateStatus": "unverified",
+        "bboxCoverageStatus": "not-assessed",
+        "routingEligible": false
+      },
+      {
+        "name": "林中乐辣子鸡",
+        "addressText": "重庆市沙坪坝区欧家湾社199号",
+        "chapterText": "18:26 林中乐辣子鸡",
+        "chapterSeconds": 1106,
+        "creatorLocationLink": "https://j.map.baidu.com/d3/7Dc",
+        "creatorLocationLinkRole": "reference-only; not a coordinate source",
+        "verificationStatus": "source-record",
+        "coordinateStatus": "unverified",
+        "bboxCoverageStatus": "not-assessed",
+        "routingEligible": false
+      },
+      {
+        "name": "超级李板凳面",
+        "addressText": "重庆市渝中区朝千路41号",
+        "chapterText": "0:40 超级李板凳面",
+        "chapterSeconds": 40,
+        "creatorLocationLink": "https://j.map.baidu.com/4e/IMw",
+        "creatorLocationLinkRole": "reference-only; not a coordinate source",
+        "verificationStatus": "source-record",
+        "coordinateStatus": "unverified",
+        "bboxCoverageStatus": "not-assessed",
+        "routingEligible": false
+      },
+      {
+        "name": "抄姐老火锅",
+        "addressText": "重庆市渝中区解放碑街道民族路114号",
+        "chapterText": "30:18 抄姐老火锅",
+        "chapterSeconds": 1818,
+        "creatorLocationLink": "https://j.map.baidu.com/e0/9E8",
+        "creatorLocationLinkRole": "reference-only; not a coordinate source",
+        "verificationStatus": "source-record",
+        "coordinateStatus": "unverified",
+        "bboxCoverageStatus": "not-assessed",
+        "routingEligible": false
+      },
+      {
+        "name": "轻松空间･虾蟹馆专注十年",
+        "addressText": "重庆市两江新区洋河中路70号",
+        "chapterText": "38:48 轻松空间･虾蟹馆专注十年",
+        "chapterSeconds": 2328,
+        "creatorLocationLink": "https://j.map.baidu.com/bd/chu",
+        "creatorLocationLinkRole": "reference-only; not a coordinate source",
+        "verificationStatus": "source-record",
+        "coordinateStatus": "unverified",
+        "bboxCoverageStatus": "not-assessed",
+        "routingEligible": false
+      },
+      {
+        "name": "牛莫王串串王",
+        "addressText": "重庆市两江新区洋河路69-2号",
+        "chapterText": "46:22 牛莫王串串王",
+        "chapterSeconds": 2782,
+        "creatorLocationLink": "https://j.map.baidu.com/65/kNnK",
+        "creatorLocationLinkRole": "reference-only; not a coordinate source",
+        "verificationStatus": "source-record",
+        "coordinateStatus": "unverified",
+        "bboxCoverageStatus": "not-assessed",
+        "routingEligible": false
+      }
+    ],
+    "verificationStatus": "source-record",
+    "coordinateStatus": "unverified",
+    "routingEligible": false,
+    "videoWatched": false,
+    "restaurantExtractionMethod": "HTML-decode cached desc-info-text; parse six consecutive name/address/reference triples between RESTAURANT and SIGHTSEEING headings; exact-name match to author chapter lines; no eval and no new fetch",
+    "expandedAt": "2026-10-25T09:48:17.9873908Z",
+    "bboxCoverageStatus": "not-assessed"
+  }
+}

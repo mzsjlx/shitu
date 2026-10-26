@@ -1,0 +1,28 @@
+{
+  "verifiedOn": "2026-10-25",
+  "scope": "Source-record consistency only; not business, entrance, current address, video playback or photo authenticity verification. New creator metadata also checked separately against frozen original-page HTML.",
+  "sourceXMLSHA256": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10",
+  "records": [
+    {
+      "id": "osm-node-13649952401",
+      "sourceNode": 13649952401,
+      "coordinatesMatchOriginalXML": true,
+      "sourceNamePreserved": true,
+      "routeEligible": false,
+      "videoLinks": 2
+    },
+    {
+      "id": "osm-node-4460519589",
+      "sourceNode": 4460519589,
+      "coordinatesMatchOriginalXML": true,
+      "sourceNamePreserved": true,
+      "routeEligible": false,
+      "videoLinks": 0
+    }
+  ],
+  "image": {
+    "origin": "Existing image_gen concept illustration, not merchant photography",
+    "sha256": "4ff74cd39048cbe240af3c7c0c63c510ab51e42831c7c7fe2424a3d211a62f54"
+  },
+  "passed": true
+}

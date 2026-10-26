@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "activeCity": "chongqing",
+  "cities": {
+    "chongqing": {
+      "name": "重庆",
+      "regionLabel": "中心城区",
+      "coverageLabel": "重庆中心城区局部，约 16 × 18 公里",
+      "bounds": [106.49, 29.49, 106.65, 29.65],
+      "center": [106.574, 29.5628],
+      "zoom": 15.8,
+      "pitch": 54,
+      "bearing": -24,
+      "minZoom": 12.3,
+      "maxZoom": 19,
+      "tiles": "data/chongqing.pmtiles",
+      "demTiles": "data/terrain/{z}/{x}/{y}.png",
+      "demMinZoom": 11,
+      "demMaxZoom": 13,
+      "foodContent": {"records":"data/food-records.json","sprite":"assets/food-concepts.jpg"},
+      "walkNetwork": "data/walk-network.json",
+      "streetDetail": {
+        "bounds": [106.566,29.558,106.584,29.573],
+        "data": "data/street-detail.geojson",
+        "manifest": "data/street-detail-manifest.json"
+      },
+      "dataFiles": {
+        "index": "data/roads-index.json",
+        "audit": "data/data-audit.json",
+        "manifest": "data/source-manifest.json",
+        "tileMetadata": "data/tile-metadata.json",
+        "terrainManifest": "data/terrain-manifest.json"
+      },
+      "status": "local-validation-only"
+    }
+  }
+}

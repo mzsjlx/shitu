@@ -1,0 +1,304 @@
+{
+  "date": "2026-10-21",
+  "scope": "HTTP loading and intentional failure regression; no file-protocol test.",
+  "checks": [
+    {
+      "name": "normal page renders real roads and terrain with classic worker",
+      "passed": true,
+      "state": {
+        "loadingVisible": false,
+        "errorVisible": false,
+        "errorText": "请确认本地地图文件已准备完成。",
+        "detail": "",
+        "stats": {
+          "ready": true,
+          "center": [
+            106.574,
+            29.5628
+          ],
+          "zoom": 15.8,
+          "pitch": 54,
+          "terrain": true,
+          "elevationMetres": 273.8302895982524,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 383,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        },
+        "terrainOption": {
+          "checked": true,
+          "disabled": false
+        }
+      },
+      "events": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "workers": [
+          "http://127.0.0.1:8791/map-worker.cjs"
+        ]
+      }
+    },
+    {
+      "name": "blocked DEM degrades to usable roads and search",
+      "passed": true,
+      "state": {
+        "loadingVisible": false,
+        "errorVisible": false,
+        "errorText": "请确认本地地图文件已准备完成。",
+        "detail": "",
+        "stats": {
+          "ready": true,
+          "center": [
+            106.57534483595867,
+            29.564175240111922
+          ],
+          "zoom": 17,
+          "pitch": 44,
+          "terrain": false,
+          "elevationMetres": null,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 94,
+          "selectedRoad": "沧白路",
+          "foodCards": 0,
+          "failures": [
+            "AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6521/3391.png",
+            "AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6520/3391.png",
+            "AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6521/3390.png",
+            "AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6520/3390.png",
+            "AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/12/3260/1695.png",
+            "AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/11/1630/847.png",
+            "AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6521/3391.png",
+            "AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6520/3391.png",
+            "AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6521/3390.png",
+            "AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6520/3390.png"
+          ]
+        },
+        "terrainOption": {
+          "checked": false,
+          "disabled": true
+        }
+      },
+      "events": {
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6521/3391.png",
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6520/3391.png",
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6521/3390.png",
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6520/3390.png",
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/12/3260/1695.png",
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/11/1630/847.png",
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6521/3391.png",
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6520/3391.png",
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6521/3390.png",
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] AJAXError: Failed to fetch (0): http://127.0.0.1:8791/data/terrain/13/6520/3390.png",
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/13/6521/3391.png",
+            "error": "net::ERR_FAILED"
+          },
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/13/6520/3391.png",
+            "error": "net::ERR_FAILED"
+          },
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/13/6521/3390.png",
+            "error": "net::ERR_FAILED"
+          },
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/13/6520/3390.png",
+            "error": "net::ERR_FAILED"
+          },
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/12/3260/1695.png",
+            "error": "net::ERR_FAILED"
+          },
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/11/1630/847.png",
+            "error": "net::ERR_FAILED"
+          },
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/13/6521/3391.png",
+            "error": "net::ERR_FAILED"
+          },
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/13/6520/3391.png",
+            "error": "net::ERR_FAILED"
+          },
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/13/6521/3390.png",
+            "error": "net::ERR_FAILED"
+          },
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/13/6520/3390.png",
+            "error": "net::ERR_FAILED"
+          },
+          {
+            "url": "http://127.0.0.1:8791/data/terrain/12/3260/1695.png",
+            "error": "net::ERR_FAILED"
+          }
+        ],
+        "workers": [
+          "http://127.0.0.1:8791/map-worker.cjs"
+        ]
+      }
+    },
+    {
+      "name": "blocked city archive shows a visible error instead of endless loading",
+      "passed": true,
+      "state": {
+        "loadingVisible": false,
+        "errorVisible": true,
+        "errorText": "地图文件未能完整加载。请查看加载详情，或通过“打开地图.cmd”启动本地预览。",
+        "detail": "加载阶段：绘制重庆真实道路\n打开方式：http:\nFailed to fetch",
+        "stats": {
+          "ready": false,
+          "center": [
+            106.574,
+            29.5628
+          ],
+          "zoom": 15.8,
+          "pitch": 54,
+          "terrain": true,
+          "elevationMetres": 0,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 0,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": [
+            "Failed to fetch"
+          ]
+        },
+        "terrainOption": {
+          "checked": true,
+          "disabled": false
+        }
+      },
+      "events": {
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED",
+          "[map] Failed to fetch"
+        ],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:8791/data/chongqing.pmtiles",
+            "error": "net::ERR_FAILED"
+          }
+        ],
+        "workers": [
+          "http://127.0.0.1:8791/map-worker.cjs"
+        ]
+      }
+    },
+    {
+      "name": "blocked app bundle is reported by independent bootstrap",
+      "passed": true,
+      "state": {
+        "loadingVisible": false,
+        "errorVisible": true,
+        "errorText": "地图程序未能启动，请查看加载详情或使用本地预览。",
+        "detail": "加载阶段：启动地图程序\n打开方式：http:\n资源加载失败：http://127.0.0.1:8791/app.js",
+        "terrainOption": {
+          "checked": true,
+          "disabled": false
+        }
+      },
+      "events": {
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: net::ERR_FAILED"
+        ],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:8791/app.js",
+            "error": "net::ERR_FAILED"
+          }
+        ],
+        "workers": []
+      }
+    },
+    {
+      "name": "silent worker reaches bounded 20 second timeout",
+      "passed": true,
+      "workerResponses": 1,
+      "before": {
+        "loadingVisible": true,
+        "errorVisible": false,
+        "errorText": "请确认本地地图文件已准备完成。",
+        "detail": "",
+        "stats": {
+          "ready": false,
+          "center": [
+            106.574,
+            29.5628
+          ],
+          "zoom": 15.8,
+          "pitch": 54,
+          "terrain": true,
+          "elevationMetres": 0,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 0,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        },
+        "terrainOption": {
+          "checked": true,
+          "disabled": false
+        }
+      },
+      "after": {
+        "loadingVisible": false,
+        "errorVisible": true,
+        "errorText": "地图加载超时。请重新加载；若是直接打开 HTML，请使用“打开地图.cmd”。",
+        "detail": "加载阶段：绘制重庆真实道路\n打开方式：http:\n20 秒内未能渲染真实道路。",
+        "stats": {
+          "ready": false,
+          "center": [
+            106.574,
+            29.5628
+          ],
+          "zoom": 15.8,
+          "pitch": 54,
+          "terrain": true,
+          "elevationMetres": 0,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 0,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        },
+        "terrainOption": {
+          "checked": true,
+          "disabled": false
+        }
+      },
+      "events": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "workers": [
+          "http://127.0.0.1:8791/map-worker.cjs"
+        ]
+      }
+    }
+  ],
+  "issues": [],
+  "passed": true,
+  "intentionalFailures": true,
+  "note": "Blocked DEM/archive/script requests and associated console errors are intentional failure injections; normal-page errors are empty. No file-protocol attempt."
+}
