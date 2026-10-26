@@ -84,5 +84,14 @@
     "minimumMapZoom": 15.2,
     "archiveSha256": "0407807dd8bd9e400359d03b0bdd3e126bdcbff3f08f2b6b3ce6891a1101467c",
     "basis": "The bundled Protomaps z15 building at the centroid matches the source OSM footprint with tile quantization and simplification. Lower source zooms merge buildings and do not retain this ID; show the model only above map zoom 15.2. Suppress this exact feature ID only while the authored model renders; restore the original filter in 2D, street detail, low zoom or model failure. Revalidate the ID when replacing the city archive."
+  },
+  "groundFit": {
+    "revision": 2,
+    "authoredFrontPlatformHeightMetres": 9.6,
+    "platformClearanceMetres": 0.65,
+    "foundationEmbedMetres": 0.4,
+    "sampleLonLat": [[106.5745498603, 29.5650955583], [106.5752283149, 29.5653127615], [106.5759067695, 29.5655299647]],
+    "anchorPolicy": "Highest river-front sample minus the authored 9.6m entry platform, plus 0.65m visual clearance. Extend only original stone bottom vertices down to the DEM minus 0.4m; do not cut terrain, move XY, raise roof vertices locally or infer surveyed building elevation.",
+    "flatPolicy": "Anchor 0m and restore original stone vertices exactly. Platform heights and clearance remain authored art, not measured storeys or entrances."
   }
 }

@@ -16,25 +16,25 @@ async page=>{
   await run('Landmark and mode transitions',async p=>{
     await p.goto(base+'/?view=landmark');await ready(p);await settle(p);
     let s=await stats(p);report.initial=s;
-    check('Real map and shared-depth landmark render together',s.map.ready&&s.map.renderedRoadFragments>0&&s.landmark.prepared&&s.landmark.rendered&&s.landmark.lastRender.calls===8&&!s.landmark.error,s);
+    check('Real map and landmark/planting render within ten material batches',s.map.ready&&s.map.renderedRoadFragments>0&&s.landmark.prepared&&s.landmark.rendered&&s.landmark.lastRender.calls===10&&!s.landmark.error,s);
     check('Source position and authored orientation remain fixed',Math.abs(s.landmark.origin[0]-106.57533890406658)<1e-12&&Math.abs(s.landmark.origin[1]-29.565051423897692)<1e-12&&Math.abs(s.landmark.model.orientationRadians-.35267948549534883)<1e-12,s.landmark.origin);
-    check('River-front DEM samples anchor the model without modifying terrain',s.map.terrain&&s.landmark.groundSampleElevations.length===3&&s.landmark.groundSampleElevations.every(Number.isFinite)&&Math.abs(s.landmark.elevationMetres-Math.min(...s.landmark.groundSampleElevations)-.5)<1e-8,s.landmark);
+    check('Entry platform clears every river-front DEM sample',s.map.terrain&&s.landmark.groundSampleElevations.length===3&&s.landmark.groundSampleElevations.every(Number.isFinite)&&Math.abs(s.landmark.elevationMetres+9.6-Math.max(...s.landmark.groundSampleElevations)-.65)<1e-8,s.landmark);
     check('Only the matched source building is replaced while model is visible',s.landmark.replacingSourceBuilding&&JSON.stringify(s.buildingFilter).includes('35185311667126'),s.buildingFilter);
     check('Landmark focus preserves user street preference but restores full city buildings',s.suppressed&&!s.street.active&&s.street.enabled&&s.focus&&s.note,s.street);
     await p.evaluate(()=>new Promise(r=>{const m=window.foodCityMap.map;m.once('idle',r);m.triggerRepaint();}));
     const before=(await stats(p)).landmark.draws;await p.waitForTimeout(1100);const after=(await stats(p)).landmark.draws;
     check('Static model does not keep repainting while idle',after-before<=2,{before,after});
-    await p.screenshot({path:artifact+'hongyadong-1440.png'});
+    await p.screenshot({path:artifact+'hongyadong-site-regression-1440.png'});
     await p.locator('#view-2d').click();await settle(p);s=await stats(p);
     check('2D hides custom model and restores original building filter',s.map.pitch===0&&!s.landmark.allowed&&!s.landmark.replacingSourceBuilding&&!s.focus&&!s.suppressed&&!JSON.stringify(s.buildingFilter).includes('35185311667126'),s);
-    await p.screenshot({path:artifact+'hongyadong-2d.png'});
+    await p.screenshot({path:artifact+'hongyadong-site-regression-2d.png'});
     await focus(p);await p.locator('#layers-toggle').click();await p.locator('#buildings-option').uncheck();await settle(p);s=await stats(p);
     check('Building toggle hides landmark and restores exact original filter',!s.landmark.allowed&&!s.landmark.replacingSourceBuilding&&!JSON.stringify(s.buildingFilter).includes('35185311667126'),s.landmark);
     await p.locator('#buildings-option').check();await settle(p);s=await stats(p);
     check('Building toggle shows existing model without rebuilding geometry',s.landmark.allowed&&s.landmark.replacingSourceBuilding&&s.landmark.model.generationMs===report.initial.landmark.model.generationMs,s.landmark);
     await p.locator('#terrain-option').uncheck();await settle(p);s=await stats(p);
     check('Flat terrain puts local model on ground zero without changing XY',!s.map.terrain&&s.landmark.elevationMetres===0&&s.landmark.rendered&&s.landmark.origin.toString()===report.initial.landmark.origin.toString(),s.landmark);
-    await p.locator('#layers-close').click();await p.screenshot({path:artifact+'hongyadong-flat.png'});
+    await p.locator('#layers-close').click();await p.screenshot({path:artifact+'hongyadong-site-regression-flat.png'});
     await p.locator('#layers-toggle').click();await p.locator('#terrain-option').check();await p.locator('#layers-close').click();await settle(p);
     await p.locator('#reset-view').click();await settle(p);s=await stats(p);
     check('Reset restores city camera, street behavior and removes focus note',!s.focus&&!s.note&&!s.suppressed&&Math.abs(s.map.zoom-15.8)<1e-8&&s.map.center.every((n,i)=>Math.abs(n-[106.574,29.5628][i])<1e-8),s);
@@ -42,7 +42,7 @@ async page=>{
     check('Landmark never turns a disabled street preference back on',!(await stats(p)).street.enabled&&!await p.locator('#street-option').isChecked());
     await p.locator('#street-entry').click();await settle(p);await p.waitForFunction(()=>window.foodCityMap.street.active);s=await stats(p);
     check('Street focus exits landmark mode and restores street layer/compression',!s.focus&&!s.suppressed&&s.street.active&&!s.landmark.allowed&&!s.landmark.replacingSourceBuilding&&s.street.renderedFeatures>0,s);
-    await p.screenshot({path:artifact+'hongyadong-street-regression.png'});
+    await p.screenshot({path:artifact+'hongyadong-site-regression-street.png'});
     await focus(p);await p.evaluate(()=>window.foodCityMap.focusRoad('沧白路'));await settle(p);s=await stats(p);
     check('Road selection exits landmark focus without losing road highlighting',!s.focus&&!s.suppressed&&s.map.selectedRoad==='沧白路',s.map);
     await focus(p);await p.locator('#food-entry').click();await p.waitForFunction(()=>window.foodCityMap.food.active);await settle(p);s=await stats(p);
@@ -50,7 +50,7 @@ async page=>{
     await p.locator('.food-card').first().locator('.food-open').click();
     await p.locator('#food-save').click();await p.locator('#food-close').click();
     check('Food detail and wants still work after landmark transitions',await p.locator('#wants-count').textContent()==='1',await p.locator('#trip-dock-title').textContent());
-    await focus(p);await p.screenshot({path:artifact+'hongyadong-food-1440.png'});
+    await focus(p);await p.screenshot({path:artifact+'hongyadong-site-regression-food-1440.png'});
     await p.locator('#layers-toggle').click();await p.locator('#walk-option').check();await p.waitForFunction(()=>window.foodCityMap.walk.active);await settle(p);s=await stats(p);
     check('Road trial exits landmark focus and clears street suppression',!s.focus&&!s.suppressed&&await p.locator('#walk-panel').isVisible(),s.map);
   });
@@ -61,7 +61,7 @@ async page=>{
       check('Landmark UI fits '+width+'×'+height,s.landmark.rendered&&geometry.scrollWidth===width&&geometry.rects.every(r=>r.x>=0&&r.y>=0&&r.x+r.width<=width+1&&r.y+r.height<=height+1),geometry);
       await p.locator('#layers-toggle').click();await p.locator('#landmark-entry').scrollIntoViewIfNeeded();
       const entry=await p.locator('#landmark-entry').boundingBox();check('Landmark action remains reachable at '+width+'×'+height,entry.y>=0&&entry.y+entry.height<=height,{entry});
-      await p.locator('#landmark-entry').click();await settle(p);if(width===390)await p.screenshot({path:artifact+'hongyadong-390.png'});
+      await p.locator('#landmark-entry').click();await settle(p);if(width===390)await p.screenshot({path:artifact+'hongyadong-site-regression-390.png'});
     }
   });
   await run('Optional model failure',async p=>{
@@ -80,7 +80,7 @@ async page=>{
   await run('HTTP standalone',async p=>{
     const requests=[];p.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});
     await p.goto(base+'/preview.html?view=landmark');await ready(p);await settle(p);const s=await stats(p);
-    check('Standalone contains identical model without auxiliary HTTP requests',requests.length===1&&s.landmark.rendered&&s.landmark.model.triangles===report.initial.landmark.model.triangles&&s.landmark.lastRender.calls===8,{requests,landmark:s.landmark});
+    check('Standalone contains identical model and planting without auxiliary HTTP requests',requests.length===1&&s.landmark.rendered&&s.landmark.model.triangles===report.initial.landmark.model.triangles&&s.landmark.lastRender.calls===10,{requests,landmark:s.landmark});
   });
   check('No uncaught page errors or third-party requests',report.errors.length===0&&report.externalRequests.length===0,{errors:report.errors,external:report.externalRequests});
   report.summary={passed:report.checks.filter(x=>x.passed).length,total:report.checks.length,failed:report.issues.length};

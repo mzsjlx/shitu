@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "id": "hongyadong-surroundings",
+  "coordinateReferenceSystem": "EPSG:4326",
+  "preparedOn": "2026-10-26",
+  "source": {
+    "file": "design/prototype-3d/data/osm-raw.xml",
+    "manifestFile": "design/prototype-3d/data/osm-source.json",
+    "xmlSha256": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10",
+    "sourceDate": "2026-10-19",
+    "endpoint": "https://api.openstreetmap.org/api/0.6/map?bbox=106.566,29.558,106.584,29.573",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0",
+    "licenseUrl": "https://www.openstreetmap.org/copyright"
+  },
+  "park": {
+    "osmType": "way",
+    "osmId": 1418261449,
+    "url": "https://www.openstreetmap.org/way/1418261449",
+    "tags": {
+      "leisure": "park"
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.5714745,
+            29.5644288
+          ],
+          [
+            106.5714973,
+            29.5641687
+          ],
+          [
+            106.5734097,
+            29.5645005
+          ],
+          [
+            106.5733802,
+            29.5646434
+          ],
+          [
+            106.5731911,
+            29.5646207
+          ],
+          [
+            106.5731536,
+            29.5647811
+          ],
+          [
+            106.573015,
+            29.564751
+          ],
+          [
+            106.5714745,
+            29.5644288
+          ]
+        ]
+      ]
+    }
+  },
+  "decorativeTrees": [
+    {
+      "id": "hongyadong-park-ornamental-01",
+      "coordinates": [
+        106.5724470965,
+        29.5644854853
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-02",
+      "coordinates": [
+        106.5733146388,
+        29.5645483673
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-03",
+      "coordinates": [
+        106.5717241446,
+        29.5643597211
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-04",
+      "coordinates": [
+        106.5728808677,
+        29.5644854853
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-05",
+      "coordinates": [
+        106.5720856206,
+        29.5644226032
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-06",
+      "coordinates": [
+        106.5726639821,
+        29.5646112494
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-07",
+      "coordinates": [
+        106.573025458,
+        29.5646741315
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-08",
+      "coordinates": [
+        106.5726639821,
+        29.5644226032
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-09",
+      "coordinates": [
+        106.5730977532,
+        29.5644854853
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-10",
+      "coordinates": [
+        106.5723025061,
+        29.5643597211
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-11",
+      "coordinates": [
+        106.571868735,
+        29.5644226032
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-12",
+      "coordinates": [
+        106.5720133254,
+        29.5642968391
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-13",
+      "coordinates": [
+        106.572230211,
+        29.5644854853
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-14",
+      "coordinates": [
+        106.5728085725,
+        29.5646112494
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-15",
+      "coordinates": [
+        106.5719410302,
+        29.5644854853
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-16",
+      "coordinates": [
+        106.5719410302,
+        29.5643597211
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-17",
+      "coordinates": [
+        106.5723025061,
+        29.5645483673
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-18",
+      "coordinates": [
+        106.5725193917,
+        29.5645483673
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-19",
+      "coordinates": [
+        106.5725193917,
+        29.5644226032
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-20",
+      "coordinates": [
+        106.5727362773,
+        29.5645483673
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-21",
+      "coordinates": [
+        106.573025458,
+        29.5645483673
+      ]
+    },
+    {
+      "id": "hongyadong-park-ornamental-22",
+      "coordinates": [
+        106.5730977532,
+        29.5646112494
+      ]
+    }
+  ],
+  "plantingBasis": "Authored decorative planting positions, not OSM individual tree records, tree inventory or surveyed locations. Only the park boundary and exclusion geometries come from the source XML. Runtime chooses artistic tree dimensions and reads ground elevation; no tree height or ground elevation is asserted here.",
+  "placementRules": {
+    "maxTrees": 24,
+    "gridSpacingMetres": 7,
+    "minTreeSpacingMetres": 8.5,
+    "parkBoundaryClearanceMetres": 4,
+    "buildingClearanceMetres": 5,
+    "ordinaryHighwayClearanceMetres": 6,
+    "walkingHighwayClearanceMetres": 2.5,
+    "method": "Fixed 7m local-metre grid, then deterministic farthest-point sampling with stable X/Z order tie-breaks. Start near park bounds centre. No random number generator.",
+    "projection": {
+      "originLonLat": [
+        106.57533890406658,
+        29.565051423897692
+      ],
+      "earthRadiusMetres": 6378137,
+      "axes": "X east, Z south",
+      "formula": "x=(lon-lon0)*PI*R/180*cos(lat0); z=(lat0-lat)*PI*R/180"
+    },
+    "exclusions": "All source highway centre lines, including bridge/tunnel and area boundaries, are conservatively buffered. Closed building polygons and available relation member outlines are reserved; open member outlines use their bounding rectangles. These are visual avoidance margins, not surveyed widths, access or walking guarantees."
+  },
+  "audit": {
+    "testedGridPoints": 270,
+    "eligibleGridPoints": 44,
+    "selectedTrees": 22,
+    "nearbyBuildingOutlines": 6,
+    "nearbyHighwayLines": 34,
+    "conservativeBuildingBounds": [],
+    "minimumParkBoundaryClearanceMetres": 4.214907,
+    "minimumBuildingClearanceMetres": 11.415721,
+    "minimumHighwayMarginBeyondRequiredMetres": 0.213351,
+    "minimumTreeSpacingMetres": 9.899483,
+    "sourceBuildingIds": [
+      "way/809713509",
+      "way/809713524",
+      "way/809713537",
+      "relation/11154723/way/809713438",
+      "relation/11154723/way/809713536",
+      "relation/11154726/way/809713536"
+    ],
+    "sourceHighwayIds": [
+      {
+        "id": "way/672167671",
+        "kind": "primary",
+        "clearanceMetres": 6
+      },
+      {
+        "id": "way/809713442",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/809713498",
+        "kind": "pedestrian",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/809713511",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/815777211",
+        "kind": "secondary_link",
+        "clearanceMetres": 6
+      },
+      {
+        "id": "way/815777212",
+        "kind": "secondary_link",
+        "clearanceMetres": 6
+      },
+      {
+        "id": "way/831047039",
+        "kind": "primary",
+        "clearanceMetres": 6
+      },
+      {
+        "id": "way/1416968844",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1416968870",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261450",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261451",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261452",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261453",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261454",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261455",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261456",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261457",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261458",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261459",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261460",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261461",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261462",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261463",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261464",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261465",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261466",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261467",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261468",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261469",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1418261470",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1466385302",
+        "kind": "steps",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1466666176",
+        "kind": "footway",
+        "clearanceMetres": 2.5
+      },
+      {
+        "id": "way/1499800763",
+        "kind": "secondary_link",
+        "clearanceMetres": 6
+      },
+      {
+        "id": "way/1499800764",
+        "kind": "secondary_link",
+        "clearanceMetres": 6
+      }
+    ],
+    "perTree": [
+      {
+        "id": "hongyadong-park-ornamental-01",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 15.881874,
+        "buildingClearanceMetres": 25.77271,
+        "ordinaryHighwayClearanceMetres": 22.599054,
+        "walkingHighwayClearanceMetres": 5.056289,
+        "highwayMarginBeyondRequiredMetres": 2.556289
+      },
+      {
+        "id": "hongyadong-park-ornamental-02",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 7.026144,
+        "buildingClearanceMetres": 12.389849,
+        "ordinaryHighwayClearanceMetres": 37.444306,
+        "walkingHighwayClearanceMetres": 4.014266,
+        "highwayMarginBeyondRequiredMetres": 1.514266
+      },
+      {
+        "id": "hongyadong-park-ornamental-03",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 13.12804,
+        "buildingClearanceMetres": 38.028105,
+        "ordinaryHighwayClearanceMetres": 7.117094,
+        "walkingHighwayClearanceMetres": 5.631732,
+        "highwayMarginBeyondRequiredMetres": 1.117094
+      },
+      {
+        "id": "hongyadong-park-ornamental-04",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 8.377323,
+        "buildingClearanceMetres": 20.095693,
+        "ordinaryHighwayClearanceMetres": 32.740418,
+        "walkingHighwayClearanceMetres": 2.994974,
+        "highwayMarginBeyondRequiredMetres": 0.494974
+      },
+      {
+        "id": "hongyadong-park-ornamental-05",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 14.504958,
+        "buildingClearanceMetres": 33.162749,
+        "ordinaryHighwayClearanceMetres": 21.934556,
+        "walkingHighwayClearanceMetres": 7.41969,
+        "highwayMarginBeyondRequiredMetres": 4.91969
+      },
+      {
+        "id": "hongyadong-park-ornamental-06",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 7.179636,
+        "buildingClearanceMetres": 38.566525,
+        "ordinaryHighwayClearanceMetres": 13.671532,
+        "walkingHighwayClearanceMetres": 6.671682,
+        "highwayMarginBeyondRequiredMetres": 4.171682
+      },
+      {
+        "id": "hongyadong-park-ornamental-07",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 8.556552,
+        "buildingClearanceMetres": 16.648482,
+        "ordinaryHighwayClearanceMetres": 16.347141,
+        "walkingHighwayClearanceMetres": 5.931436,
+        "highwayMarginBeyondRequiredMetres": 3.431436
+      },
+      {
+        "id": "hongyadong-park-ornamental-08",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 5.620525,
+        "buildingClearanceMetres": 18.13407,
+        "ordinaryHighwayClearanceMetres": 34.135365,
+        "walkingHighwayClearanceMetres": 3.402035,
+        "highwayMarginBeyondRequiredMetres": 0.902035
+      },
+      {
+        "id": "hongyadong-park-ornamental-09",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 4.269357,
+        "buildingClearanceMetres": 16.470612,
+        "ordinaryHighwayClearanceMetres": 38.459753,
+        "walkingHighwayClearanceMetres": 2.713351,
+        "highwayMarginBeyondRequiredMetres": 0.213351
+      },
+      {
+        "id": "hongyadong-park-ornamental-10",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 5.602373,
+        "buildingClearanceMetres": 16.129881,
+        "ordinaryHighwayClearanceMetres": 33.098264,
+        "walkingHighwayClearanceMetres": 4.811316,
+        "highwayMarginBeyondRequiredMetres": 2.311316
+      },
+      {
+        "id": "hongyadong-park-ornamental-11",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 9.595207,
+        "buildingClearanceMetres": 38.128425,
+        "ordinaryHighwayClearanceMetres": 17.890314,
+        "walkingHighwayClearanceMetres": 3.538682,
+        "highwayMarginBeyondRequiredMetres": 1.038682
+      },
+      {
+        "id": "hongyadong-park-ornamental-12",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 4.214907,
+        "buildingClearanceMetres": 20.937345,
+        "ordinaryHighwayClearanceMetres": 34.501355,
+        "walkingHighwayClearanceMetres": 4.272206,
+        "highwayMarginBeyondRequiredMetres": 1.772206
+      },
+      {
+        "id": "hongyadong-park-ornamental-13",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 10.972125,
+        "buildingClearanceMetres": 31.655656,
+        "ordinaryHighwayClearanceMetres": 17.884027,
+        "walkingHighwayClearanceMetres": 5.420069,
+        "highwayMarginBeyondRequiredMetres": 2.920069
+      },
+      {
+        "id": "hongyadong-park-ornamental-14",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 10.452803,
+        "buildingClearanceMetres": 35.333726,
+        "ordinaryHighwayClearanceMetres": 17.363198,
+        "walkingHighwayClearanceMetres": 6.859312,
+        "highwayMarginBeyondRequiredMetres": 4.359312
+      },
+      {
+        "id": "hongyadong-park-ornamental-15",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 4.425791,
+        "buildingClearanceMetres": 43.0393,
+        "ordinaryHighwayClearanceMetres": 12.60313,
+        "walkingHighwayClearanceMetres": 4.797427,
+        "highwayMarginBeyondRequiredMetres": 2.297427
+      },
+      {
+        "id": "hongyadong-park-ornamental-16",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 12.448984,
+        "buildingClearanceMetres": 29.53288,
+        "ordinaryHighwayClearanceMetres": 26.389149,
+        "walkingHighwayClearanceMetres": 4.310189,
+        "highwayMarginBeyondRequiredMetres": 1.810189
+      },
+      {
+        "id": "hongyadong-park-ornamental-17",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 5.802717,
+        "buildingClearanceMetres": 35.265,
+        "ordinaryHighwayClearanceMetres": 12.634431,
+        "walkingHighwayClearanceMetres": 4.00684,
+        "highwayMarginBeyondRequiredMetres": 1.50684
+      },
+      {
+        "id": "hongyadong-park-ornamental-18",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 10.712468,
+        "buildingClearanceMetres": 32.382493,
+        "ordinaryHighwayClearanceMetres": 17.34946,
+        "walkingHighwayClearanceMetres": 9.937738,
+        "highwayMarginBeyondRequiredMetres": 7.437738
+      },
+      {
+        "id": "hongyadong-park-ornamental-19",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 8.359171,
+        "buildingClearanceMetres": 18.435796,
+        "ordinaryHighwayClearanceMetres": 30.992012,
+        "walkingHighwayClearanceMetres": 3.526116,
+        "highwayMarginBeyondRequiredMetres": 1.026116
+      },
+      {
+        "id": "hongyadong-park-ornamental-20",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 15.62222,
+        "buildingClearanceMetres": 30.139303,
+        "ordinaryHighwayClearanceMetres": 22.192144,
+        "walkingHighwayClearanceMetres": 4.517177,
+        "highwayMarginBeyondRequiredMetres": 2.017177
+      },
+      {
+        "id": "hongyadong-park-ornamental-21",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 12.503434,
+        "buildingClearanceMetres": 20.700104,
+        "ordinaryHighwayClearanceMetres": 29.817926,
+        "walkingHighwayClearanceMetres": 3.218735,
+        "highwayMarginBeyondRequiredMetres": 0.718735
+      },
+      {
+        "id": "hongyadong-park-ornamental-22",
+        "insidePark": true,
+        "parkBoundaryClearanceMetres": 9.066698,
+        "buildingClearanceMetres": 11.415721,
+        "ordinaryHighwayClearanceMetres": 24.98898,
+        "walkingHighwayClearanceMetres": 3.311406,
+        "highwayMarginBeyondRequiredMetres": 0.811406
+      }
+    ]
+  }
+}

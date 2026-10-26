@@ -1,0 +1,352 @@
+{
+  "date": "2026-10-26",
+  "scope": "Targeted final-source followup: merged source zoom, actual synthetic WebGL loss/restoration, model reattach failure and food coexistence. Isolated browser only.",
+  "checks": [
+    {
+      "name": "Merged lower source zoom restores original building and hides detailed model",
+      "passed": true,
+      "details": {
+        "l": {
+          "id": "hongyadong-model",
+          "allowed": true,
+          "prepared": true,
+          "rendered": false,
+          "error": null,
+          "draws": 28,
+          "replacingSourceBuilding": false,
+          "origin": [
+            106.57533890406658,
+            29.565051423897692
+          ],
+          "elevationMetres": 194.14531044075264,
+          "groundSampleElevations": [
+            185.14844561701597,
+            203.09531044075263,
+            186.71907957031016
+          ],
+          "groundBasis": "Highest river-front sample minus the authored 9.6m entry platform, plus 0.65m visual clearance. Extend only original stone bottom vertices down to the DEM minus 0.4m; do not cut terrain, move XY, raise roof vertices locally or infer surveyed building elevation.",
+          "siteFit": {
+            "frontPlatformHeightMetres": 9.6,
+            "clearanceMetres": 0.65,
+            "foundationVertices": 54,
+            "lowestFoundationMetres": -8.26209394665653
+          },
+          "planting": {
+            "decorativeParkTrees": 22,
+            "authoredTerracePlanters": 7,
+            "drawCalls": 2,
+            "pendingTerrain": 0,
+            "updates": 2,
+            "basis": "Decorative planting inside sourced park; authored terrace boxes. No surveyed tree positions/heights."
+          },
+          "sourceWay": 939578294,
+          "artisticApproximation": true,
+          "model": {
+            "triangles": 102832,
+            "vertices": 308496,
+            "drawCalls": 8,
+            "materials": 8,
+            "geometryBytes": 7403904,
+            "pavilions": 12,
+            "mainWings": 11,
+            "roofs": 39,
+            "windows": 748,
+            "lanterns": 81,
+            "boxes": 4417,
+            "finite": true,
+            "maxVertexDistance": 105.34265353836396,
+            "minGround": 0,
+            "bounds": {
+              "min": [
+                -99.73681640625,
+                0,
+                -62.67200469970703
+              ],
+              "max": [
+                96.22787475585938,
+                73.85660552978516,
+                61.440181732177734
+              ],
+              "size": [
+                195.96469116210938,
+                73.85660552978516,
+                124.11218643188477
+              ]
+            },
+            "coordinateSystem": "X east, Y up, Z south; metres",
+            "orientationRadians": 0.35267948549534883,
+            "generationMs": 74
+          },
+          "lastRender": {
+            "calls": 10,
+            "triangles": 113044
+          }
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            [
+              "geometry-type"
+            ],
+            "Polygon"
+          ],
+          [
+            "in",
+            [
+              "get",
+              "kind"
+            ],
+            [
+              "literal",
+              [
+                "building",
+                "building_part"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Shared WebGL context restores roads, model and planting with safe flat-terrain recovery",
+      "passed": true,
+      "details": {
+        "supported": true,
+        "map": {
+          "ready": true,
+          "center": [
+            106.5753389040666,
+            29.5650514238977
+          ],
+          "zoom": 17.65,
+          "pitch": 64,
+          "terrain": false,
+          "elevationMetres": null,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 159,
+          "selectedRoad": null,
+          "foodCards": 0,
+          "failures": []
+        },
+        "l": {
+          "id": "hongyadong-model",
+          "allowed": true,
+          "prepared": true,
+          "rendered": true,
+          "error": null,
+          "draws": 102,
+          "replacingSourceBuilding": true,
+          "origin": [
+            106.57533890406658,
+            29.565051423897692
+          ],
+          "elevationMetres": 0,
+          "groundSampleElevations": [],
+          "groundBasis": "Highest river-front sample minus the authored 9.6m entry platform, plus 0.65m visual clearance. Extend only original stone bottom vertices down to the DEM minus 0.4m; do not cut terrain, move XY, raise roof vertices locally or infer surveyed building elevation.",
+          "siteFit": {
+            "frontPlatformHeightMetres": 9.6,
+            "clearanceMetres": 0.65,
+            "foundationVertices": 54,
+            "lowestFoundationMetres": 0
+          },
+          "planting": {
+            "decorativeParkTrees": 22,
+            "authoredTerracePlanters": 7,
+            "drawCalls": 2,
+            "pendingTerrain": 0,
+            "updates": 1,
+            "basis": "Decorative planting inside sourced park; authored terrace boxes. No surveyed tree positions/heights."
+          },
+          "sourceWay": 939578294,
+          "artisticApproximation": true,
+          "model": {
+            "triangles": 102832,
+            "vertices": 308496,
+            "drawCalls": 8,
+            "materials": 8,
+            "geometryBytes": 7403904,
+            "pavilions": 12,
+            "mainWings": 11,
+            "roofs": 39,
+            "windows": 748,
+            "lanterns": 81,
+            "boxes": 4417,
+            "finite": true,
+            "maxVertexDistance": 105.34265353836396,
+            "minGround": 0,
+            "bounds": {
+              "min": [
+                -99.73681640625,
+                0,
+                -62.67200469970703
+              ],
+              "max": [
+                96.22787475585938,
+                73.85660552978516,
+                61.440181732177734
+              ],
+              "size": [
+                195.96469116210938,
+                73.85660552978516,
+                124.11218643188477
+              ]
+            },
+            "coordinateSystem": "X east, Y up, Z south; metres",
+            "orientationRadians": 0.35267948549534883,
+            "generationMs": 57.399999998509884
+          },
+          "lastRender": {
+            "calls": 10,
+            "triangles": 113044
+          }
+        }
+      }
+    },
+    {
+      "name": "Food cards and real city landmark coexist after GL restoration",
+      "passed": true,
+      "details": {
+        "ready": true,
+        "center": [
+          106.57951841807039,
+          29.56302762413422
+        ],
+        "zoom": 15.339902729418244,
+        "pitch": 48,
+        "terrain": false,
+        "elevationMetres": null,
+        "roadNameGroups": 1041,
+        "renderedRoadFragments": 429,
+        "selectedRoad": null,
+        "foodCards": 2,
+        "failures": []
+      }
+    },
+    {
+      "name": "Reattached model preparation failure leaves base map and cards intact",
+      "passed": true,
+      "details": {
+        "map": {
+          "ready": true,
+          "center": [
+            106.57951841807039,
+            29.56302762413422
+          ],
+          "zoom": 15.339902729418244,
+          "pitch": 48,
+          "terrain": false,
+          "elevationMetres": null,
+          "roadNameGroups": 1041,
+          "renderedRoadFragments": 429,
+          "selectedRoad": null,
+          "foodCards": 2,
+          "failures": []
+        },
+        "l": {
+          "id": "hongyadong-model",
+          "allowed": true,
+          "prepared": false,
+          "rendered": false,
+          "error": "Synthetic isolated first-prepare failure on reattach",
+          "draws": 186,
+          "replacingSourceBuilding": false,
+          "origin": [
+            106.57533890406658,
+            29.565051423897692
+          ],
+          "elevationMetres": 0,
+          "groundSampleElevations": [],
+          "groundBasis": "Highest river-front sample minus the authored 9.6m entry platform, plus 0.65m visual clearance. Extend only original stone bottom vertices down to the DEM minus 0.4m; do not cut terrain, move XY, raise roof vertices locally or infer surveyed building elevation.",
+          "siteFit": {
+            "frontPlatformHeightMetres": 9.6,
+            "clearanceMetres": 0.65,
+            "foundationVertices": 0,
+            "lowestFoundationMetres": 0
+          },
+          "sourceWay": 939578294,
+          "artisticApproximation": true,
+          "model": {
+            "triangles": 102832,
+            "vertices": 308496,
+            "drawCalls": 8,
+            "materials": 8,
+            "geometryBytes": 7403904,
+            "pavilions": 12,
+            "mainWings": 11,
+            "roofs": 39,
+            "windows": 748,
+            "lanterns": 81,
+            "boxes": 4417,
+            "finite": true,
+            "maxVertexDistance": 105.34265353836396,
+            "minGround": 0,
+            "bounds": {
+              "min": [
+                -99.73681640625,
+                0,
+                -62.67200469970703
+              ],
+              "max": [
+                96.22787475585938,
+                73.85660552978516,
+                61.440181732177734
+              ],
+              "size": [
+                195.96469116210938,
+                73.85660552978516,
+                124.11218643188477
+              ]
+            },
+            "coordinateSystem": "X east, Y up, Z south; metres",
+            "orientationRadians": 0.35267948549534883,
+            "generationMs": 57.399999998509884
+          },
+          "lastRender": {
+            "calls": 10,
+            "triangles": 113044
+          }
+        },
+        "filter": [
+          "all",
+          [
+            "==",
+            [
+              "geometry-type"
+            ],
+            "Polygon"
+          ],
+          [
+            "in",
+            [
+              "get",
+              "kind"
+            ],
+            [
+              "literal",
+              [
+                "building",
+                "building_part"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "name": "No uncaught errors or external requests in boundary checks",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "external": []
+      }
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "summary": {
+    "passed": 5,
+    "total": 5,
+    "failed": 0
+  }
+}

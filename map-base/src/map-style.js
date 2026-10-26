@@ -40,10 +40,10 @@ export function makeStyle(city, tilesURL) {
     {id:'bridge-edges',type:'line',source:'city','source-layer':'roads',minzoom:12,filter:['all',line,['==',['get','is_bridge'],true],['in',kind,['literal',['major_road','minor_road','highway']]]],layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#a9a998','line-width':width([12,1.4,15,5,18,16,20,32])}},
     {id:'bridge-roads',type:'line',source:'city','source-layer':'roads',minzoom:12,filter:['all',line,['==',['get','is_bridge'],true],['in',kind,['literal',['major_road','minor_road','highway']]]],layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#f5ecdc','line-width':width([12,.8,15,3.5,18,12,20,27])}},
     {id:'buildings-3d',type:'fill-extrusion',source:'city','source-layer':'buildings',minzoom:13,filter:['all',['==',['geometry-type'],'Polygon'],['in',kind,['literal',['building','building_part']]]],paint:{
-      'fill-extrusion-color':['case',['>', ['coalesce',['get','height'],0],0],'#e7dfd0','#dcd5c6'],
+      'fill-extrusion-color':['step',['coalesce',['get','height'],9],'#dddcd2',18,'#e8e5dc',55,'#f0ede6',140,'#f5f1e8'],
       'fill-extrusion-height':['case',['>', ['coalesce',['get','height'],0],0],['min',500,['get','height']],['+',9,['coalesce',['get','min_height'],0]]],
       'fill-extrusion-base':['max',0,['coalesce',['get','min_height'],0]],
-      'fill-extrusion-opacity':.96,
+      'fill-extrusion-opacity':1,
       'fill-extrusion-vertical-gradient':true
     }},
     {id:'selected-road-edge',type:'line',source:'city','source-layer':'roads',filter:['==',roadName,'__none__'],layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#fffaf2','line-width':width([12,5,16,11,19,25]),'line-opacity':.95}},
@@ -63,7 +63,7 @@ export function makeStyle(city, tilesURL) {
       dem:demSource,
       'dem-shade':{...demSource,attribution:''}
     },
-    light:{anchor:'viewport',color:'#fff6e3',intensity:.4,position:[1.3,210,36]},
+    light:{anchor:'map',color:'#fff6e6',intensity:.34,position:[1.3,315,45]},
     layers
   };
 }

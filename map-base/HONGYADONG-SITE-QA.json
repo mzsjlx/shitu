@@ -1,0 +1,1491 @@
+{
+  "date": "2026-10-26",
+  "scope": "Isolated site-fit and decorative planting checks. No new surveyed tree, floor or entrance claim. Source geography and public food files are verified separately.",
+  "checks": [
+    {
+      "name": "Entry platform clears highest front DEM by 0.65m",
+      "passed": true,
+      "details": {
+        "frontPlatformHeightMetres": 9.6,
+        "clearanceMetres": 0.65,
+        "foundationVertices": 54,
+        "lowestFoundationMetres": -8.26209394665653
+      }
+    },
+    {
+      "name": "Foundation only extends original stone bottom vertices downward",
+      "passed": true,
+      "details": {
+        "changed": 9,
+        "illegal": 0,
+        "upward": 0,
+        "minimum": -8.26209394665653
+      }
+    },
+    {
+      "name": "Twenty-two park trees retain precise WGS84 XY and terrain contact",
+      "passed": true,
+      "details": [
+        {
+          "id": "hongyadong-park-ornamental-01",
+          "mode": "terrain",
+          "point": [
+            106.5724470965,
+            29.5644854853
+          ],
+          "roundtrip": [
+            106.57244709650001,
+            29.564485485299997
+          ],
+          "base": 51.41184375899954,
+          "dem": 245.55715419975218,
+          "radius": 3.5
+        },
+        {
+          "id": "hongyadong-park-ornamental-02",
+          "mode": "terrain",
+          "point": [
+            106.5733146388,
+            29.5645483673
+          ],
+          "roundtrip": [
+            106.57331463880001,
+            29.564548367299977
+          ],
+          "base": 62.468898835533054,
+          "dem": 256.6142092762857,
+          "radius": 3.75
+        },
+        {
+          "id": "hongyadong-park-ornamental-03",
+          "mode": "terrain",
+          "point": [
+            106.5717241446,
+            29.5643597211
+          ],
+          "roundtrip": [
+            106.57172414460001,
+            29.56435972109999
+          ],
+          "base": 59.078682958628946,
+          "dem": 253.22399339938158,
+          "radius": 4
+        },
+        {
+          "id": "hongyadong-park-ornamental-04",
+          "mode": "terrain",
+          "point": [
+            106.5728808677,
+            29.5644854853
+          ],
+          "roundtrip": [
+            106.57288086770001,
+            29.564485485299997
+          ],
+          "base": 60.4604756136425,
+          "dem": 254.60578605439514,
+          "radius": 3.5
+        },
+        {
+          "id": "hongyadong-park-ornamental-05",
+          "mode": "terrain",
+          "point": [
+            106.5720856206,
+            29.5644226032
+          ],
+          "roundtrip": [
+            106.57208562059998,
+            29.5644226032
+          ],
+          "base": 59.70402181712245,
+          "dem": 253.8493322578751,
+          "radius": 3.75
+        },
+        {
+          "id": "hongyadong-park-ornamental-06",
+          "mode": "terrain",
+          "point": [
+            106.5726639821,
+            29.5646112494
+          ],
+          "roundtrip": [
+            106.57266398209998,
+            29.564611249400002
+          ],
+          "base": 40.804661422040255,
+          "dem": 234.94997186523906,
+          "radius": 4
+        },
+        {
+          "id": "hongyadong-park-ornamental-07",
+          "mode": "terrain",
+          "point": [
+            106.573025458,
+            29.5646741315
+          ],
+          "roundtrip": [
+            106.57302545800002,
+            29.564674131500013
+          ],
+          "base": 36.119005170116935,
+          "dem": 230.26431561086957,
+          "radius": 3.5
+        },
+        {
+          "id": "hongyadong-park-ornamental-08",
+          "mode": "terrain",
+          "point": [
+            106.5726639821,
+            29.5644226032
+          ],
+          "roundtrip": [
+            106.57266398209998,
+            29.5644226032
+          ],
+          "base": 64.49586815744985,
+          "dem": 258.64117859958986,
+          "radius": 3.75
+        },
+        {
+          "id": "hongyadong-park-ornamental-09",
+          "mode": "terrain",
+          "point": [
+            106.5730977532,
+            29.5644854853
+          ],
+          "roundtrip": [
+            106.57309775319999,
+            29.564485485299997
+          ],
+          "base": 59.03610328459149,
+          "dem": 253.18141372534413,
+          "radius": 4
+        },
+        {
+          "id": "hongyadong-park-ornamental-10",
+          "mode": "terrain",
+          "point": [
+            106.5723025061,
+            29.5643597211
+          ],
+          "roundtrip": [
+            106.57230250610002,
+            29.56435972109999
+          ],
+          "base": 69.10310518968876,
+          "dem": 263.2484156330983,
+          "radius": 3.5
+        },
+        {
+          "id": "hongyadong-park-ornamental-11",
+          "mode": "terrain",
+          "point": [
+            106.571868735,
+            29.5644226032
+          ],
+          "roundtrip": [
+            106.57186873500001,
+            29.5644226032
+          ],
+          "base": 51.19601364457742,
+          "dem": 245.34132408810004,
+          "radius": 3.75
+        },
+        {
+          "id": "hongyadong-park-ornamental-12",
+          "mode": "terrain",
+          "point": [
+            106.5720133254,
+            29.5642968391
+          ],
+          "roundtrip": [
+            106.57201332540001,
+            29.564296839099995
+          ],
+          "base": 64.91169394295727,
+          "dem": 259.0570043837099,
+          "radius": 4
+        },
+        {
+          "id": "hongyadong-park-ornamental-13",
+          "mode": "terrain",
+          "point": [
+            106.572230211,
+            29.5644854853
+          ],
+          "roundtrip": [
+            106.57223021100003,
+            29.564485485299997
+          ],
+          "base": 54.92903090459296,
+          "dem": 249.0743413453456,
+          "radius": 3.5
+        },
+        {
+          "id": "hongyadong-park-ornamental-14",
+          "mode": "terrain",
+          "point": [
+            106.5728085725,
+            29.5646112494
+          ],
+          "roundtrip": [
+            106.57280857249998,
+            29.564611249400002
+          ],
+          "base": 48.12546710267699,
+          "dem": 242.27077754342963,
+          "radius": 3.75
+        },
+        {
+          "id": "hongyadong-park-ornamental-15",
+          "mode": "terrain",
+          "point": [
+            106.5719410302,
+            29.5644854853
+          ],
+          "roundtrip": [
+            106.57194103019998,
+            29.564485485299997
+          ],
+          "base": 39.57106789764052,
+          "dem": 233.7163783358861,
+          "radius": 4
+        },
+        {
+          "id": "hongyadong-park-ornamental-16",
+          "mode": "terrain",
+          "point": [
+            106.5719410302,
+            29.5643597211
+          ],
+          "roundtrip": [
+            106.57194103019998,
+            29.56435972109999
+          ],
+          "base": 55.830432767356115,
+          "dem": 249.97574320591755,
+          "radius": 3.5
+        },
+        {
+          "id": "hongyadong-park-ornamental-17",
+          "mode": "terrain",
+          "point": [
+            106.5723025061,
+            29.5645483673
+          ],
+          "roundtrip": [
+            106.57230250610002,
+            29.564548367299977
+          ],
+          "base": 44.80612281508084,
+          "dem": 238.9514332575434,
+          "radius": 3.75
+        },
+        {
+          "id": "hongyadong-park-ornamental-18",
+          "mode": "terrain",
+          "point": [
+            106.5725193917,
+            29.5645483673
+          ],
+          "roundtrip": [
+            106.57251939169998,
+            29.564548367299977
+          ],
+          "base": 44.32306536745034,
+          "dem": 238.46837580820298,
+          "radius": 4
+        },
+        {
+          "id": "hongyadong-park-ornamental-19",
+          "mode": "terrain",
+          "point": [
+            106.5725193917,
+            29.5644226032
+          ],
+          "roundtrip": [
+            106.57251939169998,
+            29.5644226032
+          ],
+          "base": 61.773926948061586,
+          "dem": 255.91923738881422,
+          "radius": 3.5
+        },
+        {
+          "id": "hongyadong-park-ornamental-20",
+          "mode": "terrain",
+          "point": [
+            106.5727362773,
+            29.5645483673
+          ],
+          "roundtrip": [
+            106.57273627730001,
+            29.564548367299977
+          ],
+          "base": 54.279701556259596,
+          "dem": 248.42501199701223,
+          "radius": 3.75
+        },
+        {
+          "id": "hongyadong-park-ornamental-21",
+          "mode": "terrain",
+          "point": [
+            106.573025458,
+            29.5645483673
+          ],
+          "roundtrip": [
+            106.57302545800002,
+            29.564548367299977
+          ],
+          "base": 52.331474365064196,
+          "dem": 246.47678480581683,
+          "radius": 4
+        },
+        {
+          "id": "hongyadong-park-ornamental-22",
+          "mode": "terrain",
+          "point": [
+            106.5730977532,
+            29.5646112494
+          ],
+          "roundtrip": [
+            106.57309775319999,
+            29.564611249400002
+          ],
+          "base": 44.59152605115432,
+          "dem": 238.73683649190696,
+          "radius": 3.5
+        }
+      ]
+    },
+    {
+      "name": "Seven small terrace boxes stay at authored platform height",
+      "passed": true,
+      "details": [
+        {
+          "id": "authored-terrace-box-0",
+          "mode": "platform",
+          "roundtrip": null,
+          "base": 9.6,
+          "dem": null,
+          "radius": 0.9,
+          "platform": 9.6
+        },
+        {
+          "id": "authored-terrace-box-1",
+          "mode": "platform",
+          "roundtrip": null,
+          "base": 9.6,
+          "dem": null,
+          "radius": 0.9,
+          "platform": 9.6
+        },
+        {
+          "id": "authored-terrace-box-2",
+          "mode": "platform",
+          "roundtrip": null,
+          "base": 9.6,
+          "dem": null,
+          "radius": 0.9,
+          "platform": 9.6
+        },
+        {
+          "id": "authored-terrace-box-3",
+          "mode": "platform",
+          "roundtrip": null,
+          "base": 9.6,
+          "dem": null,
+          "radius": 0.9,
+          "platform": 9.6
+        },
+        {
+          "id": "authored-terrace-box-4",
+          "mode": "platform",
+          "roundtrip": null,
+          "base": 9.6,
+          "dem": null,
+          "radius": 0.9,
+          "platform": 9.6
+        },
+        {
+          "id": "authored-terrace-box-5",
+          "mode": "platform",
+          "roundtrip": null,
+          "base": 9.6,
+          "dem": null,
+          "radius": 0.9,
+          "platform": 9.6
+        },
+        {
+          "id": "authored-terrace-box-6",
+          "mode": "platform",
+          "roundtrip": null,
+          "base": 9.6,
+          "dem": null,
+          "radius": 0.9,
+          "platform": 9.6
+        }
+      ]
+    },
+    {
+      "name": "Vegetation adds two batches within geometry budget",
+      "passed": true,
+      "details": {
+        "calls": 10,
+        "triangles": 113044
+      }
+    },
+    {
+      "name": "Opaque city geometry and masonry shaders compile without errors",
+      "passed": true,
+      "details": {
+        "programs": [
+          {
+            "runnable": true
+          },
+          {
+            "runnable": true
+          },
+          {
+            "runnable": true
+          }
+        ],
+        "memory": {
+          "geometries": 10,
+          "textures": 1
+        }
+      }
+    },
+    {
+      "name": "Landmark focus removes duplicate POI and neighbourhood labels",
+      "passed": true,
+      "details": [
+        {
+          "id": "landmarks",
+          "visibility": "none"
+        },
+        {
+          "id": "places",
+          "visibility": "none"
+        }
+      ]
+    },
+    {
+      "name": "Grounding and planting do not animate an idle map",
+      "passed": true
+    },
+    {
+      "name": "Flat mode restores every original stone vertex exactly",
+      "passed": true,
+      "details": {
+        "changed": 0,
+        "site": {
+          "frontPlatformHeightMetres": 9.6,
+          "clearanceMetres": 0.65,
+          "foundationVertices": 54,
+          "lowestFoundationMetres": 0
+        }
+      }
+    },
+    {
+      "name": "Flat mode grounds park trees while preserving terrace offsets",
+      "passed": true,
+      "details": [
+        {
+          "id": "hongyadong-park-ornamental-01",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-02",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-03",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-04",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-05",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-06",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-07",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-08",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-09",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-10",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-11",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-12",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-13",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-14",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-15",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-16",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-17",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-18",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-19",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-20",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-21",
+          "base": 0
+        },
+        {
+          "id": "hongyadong-park-ornamental-22",
+          "base": 0
+        },
+        {
+          "id": "authored-terrace-box-0",
+          "base": 9.6
+        },
+        {
+          "id": "authored-terrace-box-1",
+          "base": 9.6
+        },
+        {
+          "id": "authored-terrace-box-2",
+          "base": 9.6
+        },
+        {
+          "id": "authored-terrace-box-3",
+          "base": 9.6
+        },
+        {
+          "id": "authored-terrace-box-4",
+          "base": 9.6
+        },
+        {
+          "id": "authored-terrace-box-5",
+          "base": 9.6
+        },
+        {
+          "id": "authored-terrace-box-6",
+          "base": 9.6
+        }
+      ]
+    },
+    {
+      "name": "Roof and timber vertices do not deform when fitting terrain",
+      "passed": true,
+      "details": [
+        {
+          "name": "Hongyadong · tile",
+          "hash": 2692009952
+        },
+        {
+          "name": "Hongyadong · wood",
+          "hash": 2645175672
+        },
+        {
+          "name": "Hongyadong · wall",
+          "hash": 2194124823
+        },
+        {
+          "name": "Hongyadong · woodLight",
+          "hash": 2972721690
+        },
+        {
+          "name": "Hongyadong · warmWindow",
+          "hash": 1867778617
+        },
+        {
+          "name": "Hongyadong · lantern",
+          "hash": 3210042073
+        },
+        {
+          "name": "Hongyadong · tileRidge",
+          "hash": 1068914146
+        }
+      ]
+    },
+    {
+      "name": "Re-enabling terrain restores the same foundation geometry",
+      "passed": true,
+      "details": {
+        "before": 2687256155,
+        "after": 2687256155
+      }
+    },
+    {
+      "name": "Fitted model and vegetation remain usable at 390×844",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "scroll": 390,
+        "stats": {
+          "id": "hongyadong-model",
+          "allowed": true,
+          "prepared": true,
+          "rendered": true,
+          "error": null,
+          "draws": 225,
+          "replacingSourceBuilding": true,
+          "origin": [
+            106.57533890406658,
+            29.565051423897692
+          ],
+          "elevationMetres": 194.14531044075264,
+          "groundSampleElevations": [
+            185.14844561701597,
+            203.09531044075263,
+            186.71907957031016
+          ],
+          "groundBasis": "Highest river-front sample minus the authored 9.6m entry platform, plus 0.65m visual clearance. Extend only original stone bottom vertices down to the DEM minus 0.4m; do not cut terrain, move XY, raise roof vertices locally or infer surveyed building elevation.",
+          "siteFit": {
+            "frontPlatformHeightMetres": 9.6,
+            "clearanceMetres": 0.65,
+            "foundationVertices": 54,
+            "lowestFoundationMetres": -8.26209394665653
+          },
+          "planting": {
+            "decorativeParkTrees": 22,
+            "authoredTerracePlanters": 7,
+            "drawCalls": 2,
+            "pendingTerrain": 0,
+            "updates": 5,
+            "basis": "Decorative planting inside sourced park; authored terrace boxes. No surveyed tree positions/heights."
+          },
+          "sourceWay": 939578294,
+          "artisticApproximation": true,
+          "model": {
+            "triangles": 102832,
+            "vertices": 308496,
+            "drawCalls": 8,
+            "materials": 8,
+            "geometryBytes": 7403904,
+            "pavilions": 12,
+            "mainWings": 11,
+            "roofs": 39,
+            "windows": 748,
+            "lanterns": 81,
+            "boxes": 4417,
+            "finite": true,
+            "maxVertexDistance": 105.34265353836396,
+            "minGround": 0,
+            "bounds": {
+              "min": [
+                -99.73681640625,
+                0,
+                -62.67200469970703
+              ],
+              "max": [
+                96.22787475585938,
+                73.85660552978516,
+                61.440181732177734
+              ],
+              "size": [
+                195.96469116210938,
+                73.85660552978516,
+                124.11218643188477
+              ]
+            },
+            "coordinateSystem": "X east, Y up, Z south; metres",
+            "orientationRadians": 0.35267948549534883,
+            "generationMs": 75.19999999925494
+          },
+          "lastRender": {
+            "calls": 10,
+            "triangles": 113044
+          }
+        },
+        "note": {
+          "x": 13,
+          "y": 135,
+          "width": 215.734375,
+          "height": 53.390625,
+          "top": 135,
+          "right": 228.734375,
+          "bottom": 188.390625,
+          "left": 13
+        }
+      }
+    },
+    {
+      "name": "Fitted model and vegetation remain usable at 320×680",
+      "passed": true,
+      "details": {
+        "width": 320,
+        "scroll": 320,
+        "stats": {
+          "id": "hongyadong-model",
+          "allowed": true,
+          "prepared": true,
+          "rendered": true,
+          "error": null,
+          "draws": 287,
+          "replacingSourceBuilding": true,
+          "origin": [
+            106.57533890406658,
+            29.565051423897692
+          ],
+          "elevationMetres": 194.14531044075264,
+          "groundSampleElevations": [
+            185.14844561701597,
+            203.09531044075263,
+            186.71907957031016
+          ],
+          "groundBasis": "Highest river-front sample minus the authored 9.6m entry platform, plus 0.65m visual clearance. Extend only original stone bottom vertices down to the DEM minus 0.4m; do not cut terrain, move XY, raise roof vertices locally or infer surveyed building elevation.",
+          "siteFit": {
+            "frontPlatformHeightMetres": 9.6,
+            "clearanceMetres": 0.65,
+            "foundationVertices": 54,
+            "lowestFoundationMetres": -8.26209394665653
+          },
+          "planting": {
+            "decorativeParkTrees": 22,
+            "authoredTerracePlanters": 7,
+            "drawCalls": 2,
+            "pendingTerrain": 0,
+            "updates": 5,
+            "basis": "Decorative planting inside sourced park; authored terrace boxes. No surveyed tree positions/heights."
+          },
+          "sourceWay": 939578294,
+          "artisticApproximation": true,
+          "model": {
+            "triangles": 102832,
+            "vertices": 308496,
+            "drawCalls": 8,
+            "materials": 8,
+            "geometryBytes": 7403904,
+            "pavilions": 12,
+            "mainWings": 11,
+            "roofs": 39,
+            "windows": 748,
+            "lanterns": 81,
+            "boxes": 4417,
+            "finite": true,
+            "maxVertexDistance": 105.34265353836396,
+            "minGround": 0,
+            "bounds": {
+              "min": [
+                -99.73681640625,
+                0,
+                -62.67200469970703
+              ],
+              "max": [
+                96.22787475585938,
+                73.85660552978516,
+                61.440181732177734
+              ],
+              "size": [
+                195.96469116210938,
+                73.85660552978516,
+                124.11218643188477
+              ]
+            },
+            "coordinateSystem": "X east, Y up, Z south; metres",
+            "orientationRadians": 0.35267948549534883,
+            "generationMs": 75.19999999925494
+          },
+          "lastRender": {
+            "calls": 10,
+            "triangles": 113044
+          }
+        },
+        "note": {
+          "x": 13,
+          "y": 135,
+          "width": 215.734375,
+          "height": 53.390625,
+          "top": 135,
+          "right": 228.734375,
+          "bottom": 188.390625,
+          "left": 13
+        }
+      }
+    },
+    {
+      "name": "Fitted model and vegetation remain usable at 736×414",
+      "passed": true,
+      "details": {
+        "width": 736,
+        "scroll": 736,
+        "stats": {
+          "id": "hongyadong-model",
+          "allowed": true,
+          "prepared": true,
+          "rendered": true,
+          "error": null,
+          "draws": 355,
+          "replacingSourceBuilding": true,
+          "origin": [
+            106.57533890406658,
+            29.565051423897692
+          ],
+          "elevationMetres": 194.14531044075264,
+          "groundSampleElevations": [
+            185.14844561701597,
+            203.09531044075263,
+            186.71907957031016
+          ],
+          "groundBasis": "Highest river-front sample minus the authored 9.6m entry platform, plus 0.65m visual clearance. Extend only original stone bottom vertices down to the DEM minus 0.4m; do not cut terrain, move XY, raise roof vertices locally or infer surveyed building elevation.",
+          "siteFit": {
+            "frontPlatformHeightMetres": 9.6,
+            "clearanceMetres": 0.65,
+            "foundationVertices": 54,
+            "lowestFoundationMetres": -8.26209394665653
+          },
+          "planting": {
+            "decorativeParkTrees": 22,
+            "authoredTerracePlanters": 7,
+            "drawCalls": 2,
+            "pendingTerrain": 0,
+            "updates": 5,
+            "basis": "Decorative planting inside sourced park; authored terrace boxes. No surveyed tree positions/heights."
+          },
+          "sourceWay": 939578294,
+          "artisticApproximation": true,
+          "model": {
+            "triangles": 102832,
+            "vertices": 308496,
+            "drawCalls": 8,
+            "materials": 8,
+            "geometryBytes": 7403904,
+            "pavilions": 12,
+            "mainWings": 11,
+            "roofs": 39,
+            "windows": 748,
+            "lanterns": 81,
+            "boxes": 4417,
+            "finite": true,
+            "maxVertexDistance": 105.34265353836396,
+            "minGround": 0,
+            "bounds": {
+              "min": [
+                -99.73681640625,
+                0,
+                -62.67200469970703
+              ],
+              "max": [
+                96.22787475585938,
+                73.85660552978516,
+                61.440181732177734
+              ],
+              "size": [
+                195.96469116210938,
+                73.85660552978516,
+                124.11218643188477
+              ]
+            },
+            "coordinateSystem": "X east, Y up, Z south; metres",
+            "orientationRadians": 0.35267948549534883,
+            "generationMs": 75.19999999925494
+          },
+          "lastRender": {
+            "calls": 10,
+            "triangles": 113044
+          }
+        },
+        "note": {
+          "x": 20,
+          "y": 80,
+          "width": 250.734375,
+          "height": 59.59375,
+          "top": 80,
+          "right": 270.734375,
+          "bottom": 139.59375,
+          "left": 20
+        }
+      }
+    },
+    {
+      "name": "City reset restores source labels",
+      "passed": true
+    },
+    {
+      "name": "No shader errors, uncaught exceptions or external requests",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "console": [],
+        "external": []
+      }
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "external": [],
+  "initial": {
+    "stats": {
+      "id": "hongyadong-model",
+      "allowed": true,
+      "prepared": true,
+      "rendered": true,
+      "error": null,
+      "draws": 29,
+      "replacingSourceBuilding": true,
+      "origin": [
+        106.57533890406658,
+        29.565051423897692
+      ],
+      "elevationMetres": 194.14531044075264,
+      "groundSampleElevations": [
+        185.14844561701597,
+        203.09531044075263,
+        186.71907957031016
+      ],
+      "groundBasis": "Highest river-front sample minus the authored 9.6m entry platform, plus 0.65m visual clearance. Extend only original stone bottom vertices down to the DEM minus 0.4m; do not cut terrain, move XY, raise roof vertices locally or infer surveyed building elevation.",
+      "siteFit": {
+        "frontPlatformHeightMetres": 9.6,
+        "clearanceMetres": 0.65,
+        "foundationVertices": 54,
+        "lowestFoundationMetres": -8.26209394665653
+      },
+      "planting": {
+        "decorativeParkTrees": 22,
+        "authoredTerracePlanters": 7,
+        "drawCalls": 2,
+        "pendingTerrain": 0,
+        "updates": 2,
+        "basis": "Decorative planting inside sourced park; authored terrace boxes. No surveyed tree positions/heights."
+      },
+      "sourceWay": 939578294,
+      "artisticApproximation": true,
+      "model": {
+        "triangles": 102832,
+        "vertices": 308496,
+        "drawCalls": 8,
+        "materials": 8,
+        "geometryBytes": 7403904,
+        "pavilions": 12,
+        "mainWings": 11,
+        "roofs": 39,
+        "windows": 748,
+        "lanterns": 81,
+        "boxes": 4417,
+        "finite": true,
+        "maxVertexDistance": 105.34265353836396,
+        "minGround": 0,
+        "bounds": {
+          "min": [
+            -99.73681640625,
+            0,
+            -62.67200469970703
+          ],
+          "max": [
+            96.22787475585938,
+            73.85660552978516,
+            61.440181732177734
+          ],
+          "size": [
+            195.96469116210938,
+            73.85660552978516,
+            124.11218643188477
+          ]
+        },
+        "coordinateSystem": "X east, Y up, Z south; metres",
+        "orientationRadians": 0.35267948549534883,
+        "generationMs": 75.19999999925494
+      },
+      "lastRender": {
+        "calls": 10,
+        "triangles": 113044
+      }
+    },
+    "changed": 9,
+    "illegal": 0,
+    "upward": 0,
+    "nonfinite": 0,
+    "stoneHash": 2687256155,
+    "otherMeshes": [
+      {
+        "name": "Hongyadong · tile",
+        "hash": 2692009952
+      },
+      {
+        "name": "Hongyadong · wood",
+        "hash": 2645175672
+      },
+      {
+        "name": "Hongyadong · wall",
+        "hash": 2194124823
+      },
+      {
+        "name": "Hongyadong · woodLight",
+        "hash": 2972721690
+      },
+      {
+        "name": "Hongyadong · warmWindow",
+        "hash": 1867778617
+      },
+      {
+        "name": "Hongyadong · lantern",
+        "hash": 3210042073
+      },
+      {
+        "name": "Hongyadong · tileRidge",
+        "hash": 1068914146
+      }
+    ],
+    "planting": [
+      {
+        "id": "hongyadong-park-ornamental-01",
+        "mode": "terrain",
+        "point": [
+          106.5724470965,
+          29.5644854853
+        ],
+        "roundtrip": [
+          106.57244709650001,
+          29.564485485299997
+        ],
+        "base": 51.41184375899954,
+        "dem": 245.55715419975218,
+        "radius": 3.5
+      },
+      {
+        "id": "hongyadong-park-ornamental-02",
+        "mode": "terrain",
+        "point": [
+          106.5733146388,
+          29.5645483673
+        ],
+        "roundtrip": [
+          106.57331463880001,
+          29.564548367299977
+        ],
+        "base": 62.468898835533054,
+        "dem": 256.6142092762857,
+        "radius": 3.75
+      },
+      {
+        "id": "hongyadong-park-ornamental-03",
+        "mode": "terrain",
+        "point": [
+          106.5717241446,
+          29.5643597211
+        ],
+        "roundtrip": [
+          106.57172414460001,
+          29.56435972109999
+        ],
+        "base": 59.078682958628946,
+        "dem": 253.22399339938158,
+        "radius": 4
+      },
+      {
+        "id": "hongyadong-park-ornamental-04",
+        "mode": "terrain",
+        "point": [
+          106.5728808677,
+          29.5644854853
+        ],
+        "roundtrip": [
+          106.57288086770001,
+          29.564485485299997
+        ],
+        "base": 60.4604756136425,
+        "dem": 254.60578605439514,
+        "radius": 3.5
+      },
+      {
+        "id": "hongyadong-park-ornamental-05",
+        "mode": "terrain",
+        "point": [
+          106.5720856206,
+          29.5644226032
+        ],
+        "roundtrip": [
+          106.57208562059998,
+          29.5644226032
+        ],
+        "base": 59.70402181712245,
+        "dem": 253.8493322578751,
+        "radius": 3.75
+      },
+      {
+        "id": "hongyadong-park-ornamental-06",
+        "mode": "terrain",
+        "point": [
+          106.5726639821,
+          29.5646112494
+        ],
+        "roundtrip": [
+          106.57266398209998,
+          29.564611249400002
+        ],
+        "base": 40.804661422040255,
+        "dem": 234.94997186523906,
+        "radius": 4
+      },
+      {
+        "id": "hongyadong-park-ornamental-07",
+        "mode": "terrain",
+        "point": [
+          106.573025458,
+          29.5646741315
+        ],
+        "roundtrip": [
+          106.57302545800002,
+          29.564674131500013
+        ],
+        "base": 36.119005170116935,
+        "dem": 230.26431561086957,
+        "radius": 3.5
+      },
+      {
+        "id": "hongyadong-park-ornamental-08",
+        "mode": "terrain",
+        "point": [
+          106.5726639821,
+          29.5644226032
+        ],
+        "roundtrip": [
+          106.57266398209998,
+          29.5644226032
+        ],
+        "base": 64.49586815744985,
+        "dem": 258.64117859958986,
+        "radius": 3.75
+      },
+      {
+        "id": "hongyadong-park-ornamental-09",
+        "mode": "terrain",
+        "point": [
+          106.5730977532,
+          29.5644854853
+        ],
+        "roundtrip": [
+          106.57309775319999,
+          29.564485485299997
+        ],
+        "base": 59.03610328459149,
+        "dem": 253.18141372534413,
+        "radius": 4
+      },
+      {
+        "id": "hongyadong-park-ornamental-10",
+        "mode": "terrain",
+        "point": [
+          106.5723025061,
+          29.5643597211
+        ],
+        "roundtrip": [
+          106.57230250610002,
+          29.56435972109999
+        ],
+        "base": 69.10310518968876,
+        "dem": 263.2484156330983,
+        "radius": 3.5
+      },
+      {
+        "id": "hongyadong-park-ornamental-11",
+        "mode": "terrain",
+        "point": [
+          106.571868735,
+          29.5644226032
+        ],
+        "roundtrip": [
+          106.57186873500001,
+          29.5644226032
+        ],
+        "base": 51.19601364457742,
+        "dem": 245.34132408810004,
+        "radius": 3.75
+      },
+      {
+        "id": "hongyadong-park-ornamental-12",
+        "mode": "terrain",
+        "point": [
+          106.5720133254,
+          29.5642968391
+        ],
+        "roundtrip": [
+          106.57201332540001,
+          29.564296839099995
+        ],
+        "base": 64.91169394295727,
+        "dem": 259.0570043837099,
+        "radius": 4
+      },
+      {
+        "id": "hongyadong-park-ornamental-13",
+        "mode": "terrain",
+        "point": [
+          106.572230211,
+          29.5644854853
+        ],
+        "roundtrip": [
+          106.57223021100003,
+          29.564485485299997
+        ],
+        "base": 54.92903090459296,
+        "dem": 249.0743413453456,
+        "radius": 3.5
+      },
+      {
+        "id": "hongyadong-park-ornamental-14",
+        "mode": "terrain",
+        "point": [
+          106.5728085725,
+          29.5646112494
+        ],
+        "roundtrip": [
+          106.57280857249998,
+          29.564611249400002
+        ],
+        "base": 48.12546710267699,
+        "dem": 242.27077754342963,
+        "radius": 3.75
+      },
+      {
+        "id": "hongyadong-park-ornamental-15",
+        "mode": "terrain",
+        "point": [
+          106.5719410302,
+          29.5644854853
+        ],
+        "roundtrip": [
+          106.57194103019998,
+          29.564485485299997
+        ],
+        "base": 39.57106789764052,
+        "dem": 233.7163783358861,
+        "radius": 4
+      },
+      {
+        "id": "hongyadong-park-ornamental-16",
+        "mode": "terrain",
+        "point": [
+          106.5719410302,
+          29.5643597211
+        ],
+        "roundtrip": [
+          106.57194103019998,
+          29.56435972109999
+        ],
+        "base": 55.830432767356115,
+        "dem": 249.97574320591755,
+        "radius": 3.5
+      },
+      {
+        "id": "hongyadong-park-ornamental-17",
+        "mode": "terrain",
+        "point": [
+          106.5723025061,
+          29.5645483673
+        ],
+        "roundtrip": [
+          106.57230250610002,
+          29.564548367299977
+        ],
+        "base": 44.80612281508084,
+        "dem": 238.9514332575434,
+        "radius": 3.75
+      },
+      {
+        "id": "hongyadong-park-ornamental-18",
+        "mode": "terrain",
+        "point": [
+          106.5725193917,
+          29.5645483673
+        ],
+        "roundtrip": [
+          106.57251939169998,
+          29.564548367299977
+        ],
+        "base": 44.32306536745034,
+        "dem": 238.46837580820298,
+        "radius": 4
+      },
+      {
+        "id": "hongyadong-park-ornamental-19",
+        "mode": "terrain",
+        "point": [
+          106.5725193917,
+          29.5644226032
+        ],
+        "roundtrip": [
+          106.57251939169998,
+          29.5644226032
+        ],
+        "base": 61.773926948061586,
+        "dem": 255.91923738881422,
+        "radius": 3.5
+      },
+      {
+        "id": "hongyadong-park-ornamental-20",
+        "mode": "terrain",
+        "point": [
+          106.5727362773,
+          29.5645483673
+        ],
+        "roundtrip": [
+          106.57273627730001,
+          29.564548367299977
+        ],
+        "base": 54.279701556259596,
+        "dem": 248.42501199701223,
+        "radius": 3.75
+      },
+      {
+        "id": "hongyadong-park-ornamental-21",
+        "mode": "terrain",
+        "point": [
+          106.573025458,
+          29.5645483673
+        ],
+        "roundtrip": [
+          106.57302545800002,
+          29.564548367299977
+        ],
+        "base": 52.331474365064196,
+        "dem": 246.47678480581683,
+        "radius": 4
+      },
+      {
+        "id": "hongyadong-park-ornamental-22",
+        "mode": "terrain",
+        "point": [
+          106.5730977532,
+          29.5646112494
+        ],
+        "roundtrip": [
+          106.57309775319999,
+          29.564611249400002
+        ],
+        "base": 44.59152605115432,
+        "dem": 238.73683649190696,
+        "radius": 3.5
+      },
+      {
+        "id": "authored-terrace-box-0",
+        "mode": "platform",
+        "roundtrip": null,
+        "base": 9.6,
+        "dem": null,
+        "radius": 0.9,
+        "platform": 9.6
+      },
+      {
+        "id": "authored-terrace-box-1",
+        "mode": "platform",
+        "roundtrip": null,
+        "base": 9.6,
+        "dem": null,
+        "radius": 0.9,
+        "platform": 9.6
+      },
+      {
+        "id": "authored-terrace-box-2",
+        "mode": "platform",
+        "roundtrip": null,
+        "base": 9.6,
+        "dem": null,
+        "radius": 0.9,
+        "platform": 9.6
+      },
+      {
+        "id": "authored-terrace-box-3",
+        "mode": "platform",
+        "roundtrip": null,
+        "base": 9.6,
+        "dem": null,
+        "radius": 0.9,
+        "platform": 9.6
+      },
+      {
+        "id": "authored-terrace-box-4",
+        "mode": "platform",
+        "roundtrip": null,
+        "base": 9.6,
+        "dem": null,
+        "radius": 0.9,
+        "platform": 9.6
+      },
+      {
+        "id": "authored-terrace-box-5",
+        "mode": "platform",
+        "roundtrip": null,
+        "base": 9.6,
+        "dem": null,
+        "radius": 0.9,
+        "platform": 9.6
+      },
+      {
+        "id": "authored-terrace-box-6",
+        "mode": "platform",
+        "roundtrip": null,
+        "base": 9.6,
+        "dem": null,
+        "radius": 0.9,
+        "platform": 9.6
+      }
+    ],
+    "memory": {
+      "geometries": 10,
+      "textures": 1
+    },
+    "programs": [
+      {
+        "runnable": true
+      },
+      {
+        "runnable": true
+      },
+      {
+        "runnable": true
+      }
+    ],
+    "labels": [
+      {
+        "id": "landmarks",
+        "visibility": "none"
+      },
+      {
+        "id": "places",
+        "visibility": "none"
+      }
+    ]
+  },
+  "summary": {
+    "passed": 17,
+    "total": 17,
+    "failed": 0
+  }
+}

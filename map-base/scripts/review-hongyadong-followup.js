@@ -17,10 +17,10 @@ async page=>{
     });
     if(supported){await p.waitForFunction(()=>window.__qaGLRestored&&window.foodCityMap.map.areTilesLoaded()&&window.foodCityMap.landmark.rendered&&window.foodCityMap.getStats().renderedRoadFragments>0,undefined,{timeout:30000});}
     s=await p.evaluate(()=>({map:window.foodCityMap.getStats(),l:window.foodCityMap.landmark.getStats()}));
-    check('Shared WebGL context restores roads and model with safe flat-terrain recovery',supported&&s.map.ready&&!s.map.terrain&&s.map.renderedRoadFragments>0&&s.l.rendered&&!s.l.error&&s.l.elevationMetres===0&&s.l.lastRender.calls===8,{supported,...s});
-    await p.screenshot({path:'D:/codex/美食网站/output/playwright/hongyadong-context-restored.png'});
+    check('Shared WebGL context restores roads, model and planting with safe flat-terrain recovery',supported&&s.map.ready&&!s.map.terrain&&s.map.renderedRoadFragments>0&&s.l.rendered&&!s.l.error&&s.l.elevationMetres===0&&s.l.lastRender.calls===10&&s.l.planting.decorativeParkTrees===22,{supported,...s});
+    await p.screenshot({path:'D:/codex/美食网站/output/playwright/hongyadong-site-context-restored.png'});
     await p.locator('#food-entry').click();await p.waitForFunction(()=>window.foodCityMap.food.active);await settle();
-    await p.screenshot({path:'D:/codex/美食网站/output/playwright/hongyadong-food-overview.png'});
+    await p.screenshot({path:'D:/codex/美食网站/output/playwright/hongyadong-site-food-overview.png'});
     check('Food cards and real city landmark coexist after GL restoration',await p.locator('.food-card').count()===2&&await p.evaluate(()=>window.foodCityMap.landmark.rendered),await p.evaluate(()=>window.foodCityMap.getStats()));
     await p.evaluate(()=>{const f=window.foodCityMap,l=f.landmark;f.map.removeLayer(l.id);l.prepare=()=>{throw new Error('Synthetic isolated first-prepare failure on reattach');};l.error=null;f.map.addLayer(l,'selected-road-edge');f.map.triggerRepaint();});
     await p.waitForFunction(()=>!!window.foodCityMap.landmark.error);await settle();

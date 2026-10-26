@@ -38,6 +38,7 @@ function layersVisible() {
   streets?.setLabels(state.labels);
   map.setLayoutProperty('buildings-3d','visibility',state.threeD&&state.buildings?'visible':'none');
   map.setLayoutProperty('buildings-flat','visibility',state.threeD&&state.buildings?'none':'visible');
+  for(const id of ['landmarks','places'])map.setLayoutProperty(id,'visibility',landmarkFocus?'none':'visible');
   landmark?.setAppearance(state.threeD&&state.buildings&&!streets?.active);
 }
 function endLandmarkFocus() {
@@ -45,6 +46,7 @@ function endLandmarkFocus() {
   landmarkFocus=false;$('landmark-note').hidden=true;
   document.querySelector('.map-shell').classList.remove('landmark-mode');
   streets?.setSuppressed(false);
+  layersVisible();
   overlay?.scheduleLayout();
 }
 function focusLandmark() {

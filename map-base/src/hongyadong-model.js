@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
+import {addStoneCoursing} from './landmark-stone.js';
 
 // Extracted from curvedRoof()/hongyadong() in design/prototype-3d/src/main.js.
 // This is the original hand-authored landmark only, not the old city/terrain GLB.
@@ -222,6 +223,7 @@ export function createHongyadongModel() {
       ...(name==='warmWindow'?{emissive:palette.warmWindow,emissiveIntensity:.16}:{}),
       ...(name==='lantern'?{emissive:palette.lantern,emissiveIntensity:.12}:{})
     });
+    if(name==='stone')addStoneCoursing(material,HONGYADONG_ORIENTATION);
     const mesh=new THREE.Mesh(geometry,material);mesh.name=`Hongyadong · ${name}`;
     mesh.castShadow=true;mesh.receiveShadow=true;group.add(mesh);
     const positions=geometry.attributes.position;
