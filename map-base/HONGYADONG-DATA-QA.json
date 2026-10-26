@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-26",
+  "scope": "Independent retained OSM XML and PMTiles footprint comparison plus geometry budget. Geographic source does not certify the authored rooflines/storeys or coarse DEM fit.",
+  "checks": [
+    {
+      "name": "Original OSM XML hash and identity match landmark provenance",
+      "passed": true,
+      "details": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10"
+    },
+    {
+      "name": "All 22 closed WGS84 positions equal original XML node coordinates",
+      "passed": true,
+      "details": {
+        "positions": 22
+      }
+    },
+    {
+      "name": "Footprint bounds and centroid derive from original polygon",
+      "passed": true,
+      "details": {
+        "centroidDeltaMetres": 5.556024364116011e-10,
+        "bounds": [
+          106.5742671,
+          29.5645217,
+          106.5763244,
+          29.5656251
+        ]
+      }
+    },
+    {
+      "name": "Three river-front grounding points stay inside real footprint",
+      "passed": true,
+      "details": [
+        [
+          106.5745498603,
+          29.5650955583
+        ],
+        [
+          106.5752283149,
+          29.5653127615
+        ],
+        [
+          106.5759067695,
+          29.5655299647
+        ]
+      ]
+    },
+    {
+      "name": "Authored geometry has finite vertices, ground zero and bounded GPU budget",
+      "passed": true,
+      "details": {
+        "triangles": 102832,
+        "vertices": 308496,
+        "drawCalls": 8,
+        "materials": 8,
+        "geometryBytes": 7403904,
+        "pavilions": 12,
+        "mainWings": 11,
+        "roofs": 39,
+        "windows": 748,
+        "lanterns": 81,
+        "boxes": 4417,
+        "finite": true,
+        "maxVertexDistance": 105.34265353836396,
+        "minGround": 0,
+        "bounds": {
+          "min": [
+            -99.73681640625,
+            0,
+            -62.67200469970703
+          ],
+          "max": [
+            96.22787475585938,
+            73.85660552978516,
+            61.440181732177734
+          ],
+          "size": [
+            195.96469116210938,
+            73.85660552978516,
+            124.11218643188477
+          ]
+        },
+        "coordinateSystem": "X east, Y up, Z south; metres",
+        "orientationRadians": 0.35267948549534883,
+        "generationMs": 80.3275
+      }
+    },
+    {
+      "name": "Orientation is baked once and resource ownership stays local",
+      "passed": true,
+      "details": {
+        "geometries": 8,
+        "materials": 8,
+        "textures": 0
+      }
+    },
+    {
+      "name": "Replacement feature ID is pinned to the retained city archive hash",
+      "passed": true,
+      "details": "0407807dd8bd9e400359d03b0bdd3e126bdcbff3f08f2b6b3ce6891a1101467c"
+    },
+    {
+      "name": "Merged source zoom has no exact replacement; model is kept above z15",
+      "passed": true,
+      "details": {
+        "z": 14,
+        "exactIdPresent": false,
+        "modelMinZoom": 15.2
+      }
+    },
+    {
+      "name": "Exact replacement ID matches the original footprint at source zoom 15",
+      "passed": true,
+      "details": {
+        "z": 15,
+        "x": 26084,
+        "y": 13564,
+        "id": 35185311667126,
+        "vertices": 19,
+        "maxEdgeDistanceMetres": 0.13019743278536108
+      }
+    },
+    {
+      "name": "Public food source bytes remain unchanged",
+      "passed": true,
+      "details": "899a01a8d0fb65ff17afaa7dbf37c30204215202d50095800d053469a0b5ed99"
+    }
+  ],
+  "issues": [],
+  "renderTiles": [
+    {
+      "z": 15,
+      "x": 26084,
+      "y": 13564,
+      "id": 35185311667126,
+      "vertices": 19,
+      "maxEdgeDistanceMetres": 0.13019743278536108
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "total": 10,
+    "failed": 0
+  }
+}

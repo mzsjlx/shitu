@@ -20,8 +20,9 @@ await buildCreatorGuides(root);
 await cp(path.join(root,'node_modules/maplibre-gl/LICENSE.txt'),path.join(root,'dist/MAPLIBRE-LICENSE.txt'));
 await cp(path.join(root,'licenses/PMTILES-LICENSE.txt'),path.join(root,'dist/PMTILES-LICENSE.txt'));
 await cp(path.join(root,'node_modules/fflate/LICENSE'),path.join(root,'dist/FFLATE-LICENSE.txt'));
+await cp(path.join(root,'node_modules/three/LICENSE'),path.join(root,'dist/THREE-LICENSE.txt'));
 const notice='MapLibre GL JS 6.15.0: BSD-3-Clause, see MAPLIBRE-LICENSE.txt.\nPMTiles 4.5.0: BSD-3-Clause, https://github.com/protomaps/PMTiles/blob/main/LICENSE\nfflate: MIT, https://github.com/101arrowz/fflate/blob/master/LICENSE\nMap data: OpenStreetMap contributors, ODbL 1.0; Protomaps Produced Work; Natural Earth.\nTerrain data: Mapzen / Tilezen; see data/terrain-manifest.json and linked source attribution.\nNo Amap/Google Maps tiles, imagery, keys, fonts or POI databases are bundled.\n';
-await writeFile(path.join(root,'dist/DATA-NOTICE.txt'),notice);
+await writeFile(path.join(root,'dist/DATA-NOTICE.txt'),notice+'Three.js 0.186.1: MIT, see THREE-LICENSE.txt.\nHongyadong: authored artistic model anchored to OSM way/939578294; see data/hongyadong-landmark.json.\n');
 // A convenience artifact for local review. Production keeps PMTiles Range loading.
 const config=JSON.parse(await readFile(path.join(root,'config/cities.json'),'utf8')),city=config.cities[config.activeCity];
 const json={'config/cities.json':config};
@@ -39,7 +40,7 @@ if(city.foodContent)assets[city.foodContent.sprite]='data:image/jpeg;base64,'+(a
 const bundle={json,terrain,assets,archive:(await readFile(path.join(root,city.tiles))).toString('base64'),worker:await readFile(path.join(root,'dist/map-worker.cjs'),'utf8')};
 let html=await readFile(path.join(root,'src/index.html'),'utf8');
 const css=await readFile(path.join(root,'dist/app.css'),'utf8'),js=await readFile(path.join(root,'dist/app.js'),'utf8');
-const license=(await Promise.all(['node_modules/maplibre-gl/LICENSE.txt','licenses/PMTILES-LICENSE.txt','node_modules/fflate/LICENSE'].map(file=>readFile(path.join(root,file),'utf8')))).join('\n\n');
+const license=(await Promise.all(['node_modules/maplibre-gl/LICENSE.txt','licenses/PMTILES-LICENSE.txt','node_modules/fflate/LICENSE','node_modules/three/LICENSE'].map(file=>readFile(path.join(root,file),'utf8')))).join('\n\n');
 html=html.replace('<link rel="stylesheet" href="./app.css">',()=>'<style>'+css+'</style>');
 html=html.replace('<script defer src="./app.js"></script>',()=>'<script>window.__FOOD_CITY_BUNDLE__='+JSON.stringify(bundle).replaceAll('<','\\u003c')+';</script><script>'+js.replace(/<\/script/gi,'<\\/script')+'</script>');
 html=html.replace('<head>',()=>'<head><!--\n'+license.replaceAll('-->','-- >')+'\n-->');

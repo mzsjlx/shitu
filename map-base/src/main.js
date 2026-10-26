@@ -2,18 +2,20 @@ import * as maplibregl from 'maplibre-gl';
 import {Protocol,PMTiles} from 'pmtiles';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import './styles.css';
+import './landmark.css';
 import {makeStyle,roadName,roadHitLayers,labelLayers} from './map-style.js';
 import {FoodOverlay} from './food-overlay.js';
 import {StreetDetail} from './street-detail.js';
 import {FoodExperience} from './food-experience.js';
 import {WalkPreview} from './walk-preview.js';
+import {HongyadongLayer} from './hongyadong-layer.js';
 
 const $=(id)=>document.getElementById(id);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const state={threeD:true,labels:true,buildings:true,terrain:true,ready:false};
 const failures=[];
 const boot=window.__FOOD_MAP_BOOT__;
-let map,city,roads=[],overlay,selectedRoad=null,streets,food,walk;
+let map,city,roads=[],overlay,selectedRoad=null,streets,food,walk,landmark,landmarkFocus=false;
 const duration=()=>reduced.matches?0:800;
 const protocol=new Protocol();
 const bundle=window.__FOOD_CITY_BUNDLE__;
@@ -36,12 +38,32 @@ function layersVisible() {
   streets?.setLabels(state.labels);
   map.setLayoutProperty('buildings-3d','visibility',state.threeD&&state.buildings?'visible':'none');
   map.setLayoutProperty('buildings-flat','visibility',state.threeD&&state.buildings?'none':'visible');
+  landmark?.setAppearance(state.threeD&&state.buildings&&!streets?.active);
+}
+function endLandmarkFocus() {
+  if(!landmarkFocus)return;
+  landmarkFocus=false;$('landmark-note').hidden=true;
+  document.querySelector('.map-shell').classList.remove('landmark-mode');
+  streets?.setSuppressed(false);
+  overlay?.scheduleLayout();
+}
+function focusLandmark() {
+  streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();
+  landmarkFocus=true;state.threeD=true;state.buildings=true;
+  $('buildings-option').checked=true;
+  $('view-3d').classList.add('active');$('view-2d').classList.remove('active');
+  $('view-3d').setAttribute('aria-pressed','true');$('view-2d').setAttribute('aria-pressed','false');
+  document.querySelector('.map-shell').classList.add('landmark-mode');$('landmark-note').hidden=false;
+  streets?.setSuppressed(true);layersVisible();
+  map.easeTo({center:landmark.origin,zoom:innerWidth<600?16.75+Math.log2(innerWidth/390):17.65,pitch:64,bearing:142,duration:duration()});
+  $('status').textContent='洪崖洞：按真实轮廓定位的美术模型';
 }
 function terrainVisible() {
   map.setTerrain(state.terrain?{source:'dem',exaggeration:1}:null);
   map.setLayoutProperty('hill-shade','visibility',state.terrain?'visible':'none');
 }
 function view(threeD) {
+  endLandmarkFocus();
   streets?.cancelFocus();
   food?.cancelFocus();
   walk?.cancelFocus();
@@ -65,6 +87,7 @@ function roadDescription(road) {
   return tags.join(' · ');
 }
 function selectRoad(road,move=true) {
+  endLandmarkFocus();
   streets?.cancelFocus();
   food?.cancelFocus();
   walk?.hide();
@@ -125,12 +148,14 @@ function wire() {
   $('view-3d').addEventListener('click',()=>view(true));
   $('view-2d').addEventListener('click',()=>view(false));
   $('reset-view').addEventListener('click',()=>{
+    endLandmarkFocus();
     streets?.cancelFocus();
     food?.cancelFocus();
     walk?.hide();
     clearRoad();map.easeTo({center:city.center,zoom:city.zoom,pitch:state.threeD?city.pitch:0,bearing:state.threeD?city.bearing:0,duration:duration()});
   });
   $('labels-option').addEventListener('change',e=>{state.labels=e.target.checked;layersVisible();});
+  $('landmark-entry').addEventListener('click',focusLandmark);
   $('buildings-option').addEventListener('change',e=>{state.buildings=e.target.checked;layersVisible();});
   $('terrain-option').addEventListener('change',e=>{state.terrain=e.target.checked;terrainVisible();});
   $('layers-toggle').addEventListener('click',()=>{
@@ -223,9 +248,32 @@ async function init() {
     }
     if(!state.ready)fail('地图文件未能完整加载。请查看加载详情，或通过“打开地图.cmd”启动本地预览。');
   });
+  map.on('webglcontextrestored',()=>{
+    const restore=()=>{
+      // The restored DEM render cache can expose stale textures on some GPUs.
+      // Recover the city on flat ground; the user can explicitly retry terrain.
+      state.terrain=false;$('terrain-option').checked=false;
+      $('terrain-option').title='绘图恢复后暂以平面地形显示，可重新开启山地地形';
+      // Custom layers cannot be serialized into MapLibre's recovery style.
+      if(landmark&&!map.getLayer(landmark.id)){
+        try{map.addLayer(landmark,'selected-road-edge');}
+        catch(error){landmark.error=error.message;landmark.onError(error);}
+      }
+      terrainVisible();layersVisible();overlay?.scheduleLayout();
+      $('status').textContent='地图绘图已恢复，暂以平面地形显示。';
+    };
+    if(map.isStyleLoaded())restore();else map.once('style.load',restore);
+  });
   map.once('style.load',()=>{
     boot.stage('绘制重庆真实道路');
     terrainVisible();layersVisible();wire();
+    landmark=new HongyadongLayer(maplibregl.MercatorCoordinate,{onError:error=>{
+      console.error('[landmark]',error.message);
+      $('landmark-note').hidden=false;$('landmark-note').textContent='洪崖洞细节暂未载入，真实地图仍可使用。';
+      $('landmark-entry').disabled=true;
+    }});
+    try{map.addLayer(landmark,'selected-road-edge');layersVisible();}
+    catch(error){landmark.error=error.message;landmark.onError(error);}
     overlay=new FoodOverlay(map,maplibregl.Marker,city.bounds);
     if(city.streetDetail){
       const originalHeight=map.getPaintProperty('buildings-3d','fill-extrusion-height');
@@ -233,6 +281,7 @@ async function init() {
       streets=new StreetDetail(map,{
         config:city.streetDetail,readJSON,
         onFocus:()=>{
+          endLandmarkFocus();
           food?.cancelFocus();
           walk?.hide();
           clearRoad();closeLayers();state.threeD=true;
@@ -257,18 +306,21 @@ async function init() {
     if(city.foodContent)food=new FoodExperience(map,overlay,{
       config:city.foodContent,readJSON,assetURL:path=>bundle?.assets?.[path]||new URL(path,location.href).href,
       onFocus:()=>{
+        endLandmarkFocus();
         walk?.hide();
         streets?.cancelFocus();clearRoad();closeLayers();state.threeD=true;
         $('view-3d').classList.add('active');$('view-2d').classList.remove('active');
         $('view-3d').setAttribute('aria-pressed','true');$('view-2d').setAttribute('aria-pressed','false');layersVisible();
       },
       onExplore:()=>{
+        endLandmarkFocus();
         walk?.hide();streets?.cancelFocus();clearRoad();closeLayers();
       }
     });
     if(city.walkNetwork)walk=new WalkPreview(map,maplibregl.Marker,{
       path:city.walkNetwork,readJSON,onView:view,onAppearance:active=>overlay.setCompact(active),
       onFocus:()=>{
+        endLandmarkFocus();
         streets?.cancelFocus();food?.cancelFocus();clearRoad();closeLayers();state.threeD=true;
         $('view-3d').classList.add('active');$('view-2d').classList.remove('active');
         $('view-3d').setAttribute('aria-pressed','true');$('view-2d').setAttribute('aria-pressed','false');layersVisible();
@@ -284,6 +336,7 @@ async function init() {
       if(initialView==='street'||location.hash==='#street')void streets?.focus();
       if(initialView==='food'||(!initialView&&query.has('place')))void food?.activate();
       if(initialView==='walk')void walk?.show();
+      if(initialView==='landmark')focusLandmark();
     }
   }
   map.on('render',checkReady);
@@ -296,6 +349,7 @@ async function init() {
     get street(){return streets;},
     get food(){return food;},
     get walk(){return walk;},
+    get landmark(){return landmark;},
     getStats:()=>({ready:state.ready,center:map.getCenter().toArray(),zoom:map.getZoom(),pitch:map.getPitch(),terrain:!!map.getTerrain(),elevationMetres:map.queryTerrainElevation(map.getCenter()),roadNameGroups:roads.length,renderedRoadFragments:map.getLayer(roadHitLayers[0])?map.queryRenderedFeatures({layers:roadHitLayers}).length:0,selectedRoad:selectedRoad?.name||null,foodCards:overlay?.markers.length||0,failures:[...failures]}),
     findRoad:name=>roads.find(r=>r.name===name),
     focusRoad:name=>{const road=roads.find(r=>r.name===name);if(!road)throw new Error('道路未找到');selectRoad(road);},
