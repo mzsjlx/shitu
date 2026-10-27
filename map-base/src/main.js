@@ -8,6 +8,7 @@ import {FoodOverlay} from './food-overlay.js';
 import {StreetDetail} from './street-detail.js';
 import {FoodExperience} from './food-experience.js';
 import {VideoLibrary} from './video-library.js';
+import {VideoMapContext} from './video-map-context.js';
 import {WalkPreview} from './walk-preview.js';
 import {HongyadongLayer} from './hongyadong-layer.js';
 
@@ -16,7 +17,7 @@ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const state={threeD:true,labels:true,buildings:true,terrain:true,ready:false};
 const failures=[];
 const boot=window.__FOOD_MAP_BOOT__;
-let map,city,roads=[],overlay,selectedRoad=null,streets,food,walk,landmark,landmarkFocus=false;
+let map,city,roads=[],overlay,selectedRoad=null,streets,food,walk,landmark,videoMapContext,landmarkFocus=false;
 const duration=()=>reduced.matches?0:800;
 const protocol=new Protocol();
 const bundle=window.__FOOD_CITY_BUNDLE__;
@@ -51,6 +52,7 @@ function endLandmarkFocus() {
   overlay?.scheduleLayout();
 }
 function focusLandmark() {
+  videoMapContext?.clear();
   streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();
   landmarkFocus=true;state.threeD=true;state.buildings=true;
   $('buildings-option').checked=true;
@@ -66,6 +68,7 @@ function terrainVisible() {
   map.setLayoutProperty('hill-shade','visibility',state.terrain?'visible':'none');
 }
 function view(threeD) {
+  videoMapContext?.clear();
   endLandmarkFocus();
   streets?.cancelFocus();
   food?.cancelFocus();
@@ -90,6 +93,7 @@ function roadDescription(road) {
   return tags.join(' · ');
 }
 function selectRoad(road,move=true) {
+  videoMapContext?.clear();
   endLandmarkFocus();
   streets?.cancelFocus();
   food?.cancelFocus();
@@ -151,6 +155,7 @@ function wire() {
   $('view-3d').addEventListener('click',()=>view(true));
   $('view-2d').addEventListener('click',()=>view(false));
   $('reset-view').addEventListener('click',()=>{
+    videoMapContext?.clear();
     endLandmarkFocus();
     streets?.cancelFocus();
     food?.cancelFocus();
@@ -278,12 +283,14 @@ async function init() {
     try{map.addLayer(landmark,'selected-road-edge');layersVisible();}
     catch(error){landmark.error=error.message;landmark.onError(error);}
     overlay=new FoodOverlay(map,maplibregl.Marker,city.bounds);
+    videoMapContext=new VideoMapContext(map,{onBack:(id,opener)=>videoLibrary.open(opener,id),onLayout:()=>overlay.scheduleLayout()});
     if(city.streetDetail){
       const originalHeight=map.getPaintProperty('buildings-3d','fill-extrusion-height');
       const originalBase=map.getPaintProperty('buildings-3d','fill-extrusion-base');
       streets=new StreetDetail(map,{
         config:city.streetDetail,readJSON,
         onFocus:()=>{
+          videoMapContext?.clear();
           endLandmarkFocus();
           food?.cancelFocus();
           walk?.hide();
@@ -309,6 +316,7 @@ async function init() {
     if(city.foodContent)food=new FoodExperience(map,overlay,{
       config:city.foodContent,readJSON,assetURL:path=>bundle?.assets?.[path]||new URL(path,location.href).href,
       onFocus:()=>{
+        videoMapContext?.clear();
         endLandmarkFocus();
         walk?.hide();
         streets?.cancelFocus();clearRoad();closeLayers();state.threeD=true;
@@ -316,6 +324,7 @@ async function init() {
         $('view-3d').setAttribute('aria-pressed','true');$('view-2d').setAttribute('aria-pressed','false');layersVisible();
       },
       onExplore:()=>{
+        videoMapContext?.clear();
         endLandmarkFocus();
         walk?.hide();streets?.cancelFocus();clearRoad();closeLayers();
       }
@@ -323,6 +332,7 @@ async function init() {
     if(city.walkNetwork)walk=new WalkPreview(map,maplibregl.Marker,{
       path:city.walkNetwork,readJSON,onView:view,onAppearance:active=>overlay.setCompact(active),
       onFocus:()=>{
+        videoMapContext?.clear();
         endLandmarkFocus();
         streets?.cancelFocus();food?.cancelFocus();clearRoad();closeLayers();state.threeD=true;
         $('view-3d').classList.add('active');$('view-2d').classList.remove('active');
@@ -353,6 +363,7 @@ async function init() {
     get food(){return food;},
     get walk(){return walk;},
     get landmark(){return landmark;},
+    get videoContext(){return videoMapContext;},
     getStats:()=>({ready:state.ready,center:map.getCenter().toArray(),zoom:map.getZoom(),pitch:map.getPitch(),terrain:!!map.getTerrain(),elevationMetres:map.queryTerrainElevation(map.getCenter()),roadNameGroups:roads.length,renderedRoadFragments:map.getLayer(roadHitLayers[0])?map.queryRenderedFeatures({layers:roadHitLayers}).length:0,selectedRoad:selectedRoad?.name||null,foodCards:overlay?.markers.length||0,failures:[...failures]}),
     findRoad:name=>roads.find(r=>r.name===name),
     focusRoad:name=>{const road=roads.find(r=>r.name===name);if(!road)throw new Error('道路未找到');selectRoad(road);},
@@ -361,5 +372,10 @@ async function init() {
     setView:view
   };
 }
-new VideoLibrary();
+const videoLibrary=new VideoLibrary({onMapContext:(context,segment)=>{
+  if(!state.ready||!videoMapContext)throw new Error('地图还在展开，稍后再试。');
+  endLandmarkFocus();streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();
+  if($('food-pick-dialog').open)$('food-pick-dialog').close();
+  return videoMapContext.show(context,segment,{threeD:state.threeD,bearing:city.bearing,duration:duration()});
+}});
 init().catch(error=>{console.error(error);fail('本地数据未准备完整：'+error.message);});

@@ -1,0 +1,334 @@
+{
+  "date": "2026-10-27",
+  "scope": "Isolated Chromium; video-to-reference-area navigation, media shutdown, source attribution, known location boundaries, responsive layout, mode changes and nested dialogs. Landmark reference only; no shop coordinates verified.",
+  "checks": [
+    {
+      "name": "Deep link selects the requested clip without loading another shop video",
+      "passed": true,
+      "details": [
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "http://127.0.0.1:8791/media/videos/nangua/nangua-jeju-1ef5bd6c4a2ea586.mp4"
+      ]
+    },
+    {
+      "name": "Review keeps the original address and a clearly named nearby action",
+      "passed": true
+    },
+    {
+      "name": "Address review exposes unresolved alternatives and their sources",
+      "passed": true
+    },
+    {
+      "name": "Review sources have safe explicit outbound links",
+      "passed": true
+    },
+    {
+      "name": "Map navigation stops and unloads the playing clip",
+      "passed": true
+    },
+    {
+      "name": "Nearby view exposes no open modal and gives keyboard focus to return",
+      "passed": true
+    },
+    {
+      "name": "Map highlights a polygon with reference-only flags and keeps two original shop pins",
+      "passed": true,
+      "details": {
+        "active": {
+          "id": "luohan-temple-reference",
+          "segmentId": "nangua-sanyangzi",
+          "sourceId": 412612157,
+          "shopLocated": false
+        },
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "id": "luohan-temple-reference",
+              "name": "罗汉寺",
+              "referenceOnly": true,
+              "shopLocated": false
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    106.5777657,
+                    29.5630906
+                  ],
+                  [
+                    106.5777986,
+                    29.5629749
+                  ],
+                  [
+                    106.5777605,
+                    29.5629332
+                  ],
+                  [
+                    106.5775391,
+                    29.5626801
+                  ],
+                  [
+                    106.5775692,
+                    29.5624526
+                  ],
+                  [
+                    106.5773614,
+                    29.5621862
+                  ],
+                  [
+                    106.5774415,
+                    29.5621229
+                  ],
+                  [
+                    106.577672,
+                    29.5619333
+                  ],
+                  [
+                    106.578155,
+                    29.5620826
+                  ],
+                  [
+                    106.5781088,
+                    29.562266
+                  ],
+                  [
+                    106.5781353,
+                    29.562431
+                  ],
+                  [
+                    106.578121,
+                    29.5628704
+                  ],
+                  [
+                    106.5783335,
+                    29.5630068
+                  ],
+                  [
+                    106.5783183,
+                    29.563035
+                  ],
+                  [
+                    106.5783034,
+                    29.5630625
+                  ],
+                  [
+                    106.5781329,
+                    29.5629655
+                  ],
+                  [
+                    106.5780077,
+                    29.5631934
+                  ],
+                  [
+                    106.5777657,
+                    29.5630906
+                  ]
+                ]
+              ]
+            }
+          }
+        ],
+        "food": 2,
+        "note": "×\n先看看这一带\n罗汉寺附近\n\n浅色轮廓为罗汉寺 · 分店位置待核\n\n回到三样子片段 ▷\n参考地标来源 ↗"
+      }
+    },
+    {
+      "name": "Map note names the real reference landmark and keeps branch status pending",
+      "passed": true
+    },
+    {
+      "name": "Reference note and actions fit 1440×960",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "height": 960,
+        "scroll": 1440,
+        "left": 20,
+        "right": 320,
+        "top": 96,
+        "bottom": 316.984375
+      }
+    },
+    {
+      "name": "Nearby camera stays around the named landmark at 1440",
+      "passed": true,
+      "details": {
+        "center": [
+          106.5773001293494,
+          29.562380727902465
+        ],
+        "zoom": 16.8,
+        "pitch": 32
+      }
+    },
+    {
+      "name": "Return reopens the same store clip at 1440",
+      "passed": true
+    },
+    {
+      "name": "Returned clip decodes without autoplay at 1440",
+      "passed": true
+    },
+    {
+      "name": "Reference note and actions fit 390×844",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "height": 844,
+        "scroll": 390,
+        "left": 13,
+        "right": 313,
+        "top": 134,
+        "bottom": 335.5
+      }
+    },
+    {
+      "name": "Nearby camera stays around the named landmark at 390",
+      "passed": true,
+      "details": {
+        "center": [
+          106.5778786800567,
+          29.562634117749838
+        ],
+        "zoom": 16.8,
+        "pitch": 32
+      }
+    },
+    {
+      "name": "Return reopens the same store clip at 390",
+      "passed": true
+    },
+    {
+      "name": "Returned clip decodes without autoplay at 390",
+      "passed": true
+    },
+    {
+      "name": "Reference note and actions fit 320×680",
+      "passed": true,
+      "details": {
+        "width": 320,
+        "height": 680,
+        "scroll": 320,
+        "left": 13,
+        "right": 253,
+        "top": 134,
+        "bottom": 335.5
+      }
+    },
+    {
+      "name": "Nearby camera stays around the named landmark at 320",
+      "passed": true,
+      "details": {
+        "center": [
+          106.5778874097171,
+          29.562653898725642
+        ],
+        "zoom": 16.44438881754456,
+        "pitch": 32
+      }
+    },
+    {
+      "name": "Return reopens the same store clip at 320",
+      "passed": true
+    },
+    {
+      "name": "Returned clip decodes without autoplay at 320",
+      "passed": true
+    },
+    {
+      "name": "Reference note and actions fit 736×414",
+      "passed": true,
+      "details": {
+        "width": 736,
+        "height": 414,
+        "scroll": 736,
+        "left": 15,
+        "right": 280,
+        "top": 72,
+        "bottom": 265.1875
+      }
+    },
+    {
+      "name": "Nearby camera stays around the named landmark at 736",
+      "passed": true,
+      "details": {
+        "center": [
+          106.57705882706063,
+          29.56225794331614
+        ],
+        "zoom": 16.483559414800585,
+        "pitch": 32
+      }
+    },
+    {
+      "name": "Return reopens the same store clip at 736",
+      "passed": true
+    },
+    {
+      "name": "Returned clip decodes without autoplay at 736",
+      "passed": true
+    },
+    {
+      "name": "Close removes reference data, note and mode without changing shop pins",
+      "passed": true
+    },
+    {
+      "name": "Starting from the food picker closes both dialogs before showing map",
+      "passed": true
+    },
+    {
+      "name": "City reset clears the reference layer",
+      "passed": true
+    },
+    {
+      "name": "Unrelated or unresolved shop gets no borrowed nearby location",
+      "passed": true
+    },
+    {
+      "name": "Switching map mode clears stale reference",
+      "passed": true
+    },
+    {
+      "name": "Nearby view respects a selected 2D map",
+      "passed": true
+    },
+    {
+      "name": "Hongyadong focus clears the reference without stealing that view",
+      "passed": true
+    },
+    {
+      "name": "HTTP standalone supports the same reference with source attribution",
+      "passed": true
+    },
+    {
+      "name": "A map that is not ready leaves the clip open with an actionable message",
+      "passed": true
+    },
+    {
+      "name": "No uncaught page errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "No automatic third-party requests",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "passed": true
+}

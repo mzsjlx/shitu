@@ -2,8 +2,10 @@ import {readFile,writeFile,mkdir,cp} from 'node:fs/promises';
 import path from 'node:path';
 import {validateVideoLibrary} from '../src/video-library-model.js';
 import {digest,mediaKey,mediaNames} from './video-library-common.mjs';
+import {validateVideoMapContexts} from '../src/video-map-context-model.js';
 export async function buildVideoLibrary(root){
   const data=validateVideoLibrary(JSON.parse(await readFile(path.join(root,'data/video-library.json'),'utf8')));
+  validateVideoMapContexts(JSON.parse(await readFile(path.join(root,'data/video-map-contexts.json'),'utf8')),data);
   let report;try{report=JSON.parse(await readFile(path.join(root,'.local/video-clips/report.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
   const assets={schemaVersion:1,catalogSHA256:digest(await readFile(path.join(root,'data/video-library.json'))),segments:{}};
   for(const source of data.sources)for(const segment of source.segments){

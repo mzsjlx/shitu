@@ -93,7 +93,7 @@ export class FoodOverlay {
   layout(){
     const bounds=this.map.getContainer().getBoundingClientRect(),placed=[];
     const anchors=this.items.map(({item})=>{const p=this.map.project(item.coordinates);return {id:item.id,x:p.x+bounds.left,y:p.y+bounds.top};});
-    const controls=[...document.querySelectorAll('.maplibregl-ctrl-top-right,.view-dock,#trip-dock,.street-tools,.walk-tools,#food-pick-tools,#walk-panel,.street-note,#road-info,#landmark-note')].filter(e=>e.getClientRects().length).map(e=>e.getBoundingClientRect());
+    const controls=[...document.querySelectorAll('.maplibregl-ctrl-top-right,.view-dock,#trip-dock,.street-tools,.walk-tools,#food-pick-tools,#walk-panel,.street-note,#road-info,#landmark-note,#video-map-note')].filter(e=>e.getClientRects().length).map(e=>e.getBoundingClientRect());
     const ordered=[...this.items].sort((a,b)=>Number(b.item.id===this.selected)-Number(a.item.id===this.selected)||Number(this.wanted.has(b.item.id))-Number(this.wanted.has(a.item.id)));
     for(const entry of ordered){
       entry.element.classList.remove('is-collapsed');entry.marker.setOffset([0,-4]);
