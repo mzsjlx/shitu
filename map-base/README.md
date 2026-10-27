@@ -25,6 +25,8 @@ npm.cmd start
 
 ## 探店视频资料
 
+重庆 20 家视频门店已额外核对 OSM 原始数据与 Overture Places 样本；当前未获得可确认的同分店坐标，也没有新增视频图钉。可复用的本地核查工具和结果见 [OPEN-POI-AUDIT.md](OPEN-POI-AUDIT.md)，高德坐标使用范围的待发送咨询草稿见 [POI-DATA-INQUIRY.md](POI-DATA-INQUIRY.md)。
+
 菜篮子与嫩豆芽北环片段的“店址核对说明”已增加政府/品牌官网出处，原片门牌与原文相符；精确地图点位仍待补齐。现有288张z15瓦片及缓存XML未找到可直接采用的20家目标店点，本轮未新增图钉或路线。来源、离线扫描与14项数据/21项界面检查见 [VIDEO-ADDRESS-REVIEW.md](VIDEO-ADDRESS-REVIEW.md)。
 
 新增“三样子”片段与罗汉寺附近的地图往返：[打开该片段](http://127.0.0.1:8791/?view=food&videos=1&clip=nangua-sanyangzi)，点击标题旁“看看罗汉寺附近”。参考轮廓保留OSM原坐标，可返回同一片段；准确分店和门口仍待核，没有新增门店图钉或路线。来源与检查见 [VIDEO-MAP-CONTEXT.md](VIDEO-MAP-CONTEXT.md)。
