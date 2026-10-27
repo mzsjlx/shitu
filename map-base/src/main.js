@@ -7,6 +7,7 @@ import {makeStyle,roadName,roadHitLayers,labelLayers} from './map-style.js';
 import {FoodOverlay} from './food-overlay.js';
 import {StreetDetail} from './street-detail.js';
 import {FoodExperience} from './food-experience.js';
+import {VideoLibrary} from './video-library.js';
 import {WalkPreview} from './walk-preview.js';
 import {HongyadongLayer} from './hongyadong-layer.js';
 
@@ -360,4 +361,5 @@ async function init() {
     setView:view
   };
 }
+new VideoLibrary();
 init().catch(error=>{console.error(error);fail('本地数据未准备完整：'+error.message);});

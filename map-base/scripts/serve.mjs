@@ -4,7 +4,7 @@ import {stat} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../dist');
-const types={'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8','.cjs':'application/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.geojson':'application/geo+json; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.txt':'text/plain; charset=utf-8','.pmtiles':'application/vnd.pmtiles','.pbf':'application/x-protobuf'};
+const types={'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8','.cjs':'application/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.geojson':'application/geo+json; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.txt':'text/plain; charset=utf-8','.mp4':'video/mp4','.pmtiles':'application/vnd.pmtiles','.pbf':'application/x-protobuf'};
 const port=Number(process.argv[process.argv.indexOf('--port')+1])||8791;
 if(!Number.isInteger(port)||port<8791||port>8799)throw new Error('Invalid local preview port');
 const server=createServer(async(req,res)=>{

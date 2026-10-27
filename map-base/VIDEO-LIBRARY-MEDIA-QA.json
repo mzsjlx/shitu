@@ -1,0 +1,941 @@
+{
+  "date": "2026-10-27",
+  "method": "Local source and clip SHA256 checks, prepared ffprobe streams, isolated no-media build. Frames/subtitles and source end cards were inspected; not geographic validation or full listening review.",
+  "catalogSHA256": "33675124024f8df260db14a2d6595aa1750d4a190fd11314855aa98ce27f1e64",
+  "sources": [
+    {
+      "id": "nangua",
+      "url": "https://www.douyin.com/video/7699050477137231973",
+      "author": "南瓜小丸子呀🎃",
+      "status": "local-source",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "segments": 11
+    },
+    {
+      "id": "abang",
+      "url": "https://www.douyin.com/video/7696830954535675065",
+      "author": "阿棒馋了",
+      "status": "local-source",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "segments": 9
+    },
+    {
+      "id": "zhizhi",
+      "url": "https://www.douyin.com/video/7653075066175338725",
+      "author": "汁汁冰激凌",
+      "status": "source-needed",
+      "sourceSHA256": null,
+      "segments": 0
+    }
+  ],
+  "originalMediaUploaded": false,
+  "sourcePlaceSHA256": "899a01a8d0fb65ff17afaa7dbf37c30204215202d50095800d053469a0b5ed99",
+  "clipCount": 20,
+  "totalClipBytes": 174072873,
+  "totalPosterBytes": 1754678,
+  "standalone": {
+    "bytes": 16766203,
+    "sha256": "23cccc2049b6c85ae648d723019a5c0210a5d72fbc9988f7a3beed578007dc40"
+  },
+  "records": [
+    {
+      "id": "nangua-jiachang",
+      "sourceId": "nangua",
+      "mediaKey": "4a473ee8159599d6",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 17.233333,
+      "end": 48.1,
+      "posterSecond": 20,
+      "clip": "nangua-jiachang-4a473ee8159599d6.mp4",
+      "poster": "nangua-jiachang-4a473ee8159599d6.jpg",
+      "clipBytes": 9249374,
+      "posterBytes": 131992,
+      "clipSHA256": "c3ca2cce51661592aec4bbcb8e4a7d871acbebfa4200fb46c514bdd4e91db25a",
+      "posterSHA256": "ca066c46380b88ef6aebebf596d63472b0b3f524dcec43c8bc1404390da6b008",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "30.866667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "30.866009"
+          }
+        ],
+        "format": {
+          "duration": "30.866667"
+        }
+      }
+    },
+    {
+      "id": "nangua-jeju",
+      "sourceId": "nangua",
+      "mediaKey": "1ef5bd6c4a2ea586",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 48.1,
+      "end": 107.933333,
+      "posterSecond": 57,
+      "clip": "nangua-jeju-1ef5bd6c4a2ea586.mp4",
+      "poster": "nangua-jeju-1ef5bd6c4a2ea586.jpg",
+      "clipBytes": 16227621,
+      "posterBytes": 89517,
+      "clipSHA256": "828859ebfed29c586efd892d5140f01c996ee97829b33c3570a2d22c73f0ec04",
+      "posterSHA256": "3bb955fc30d70f2c5d79fc96d925e9a5a91ab9975b2d7d0f4e592821a5ec58e4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "59.833333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "59.832993"
+          }
+        ],
+        "format": {
+          "duration": "59.833333"
+        }
+      }
+    },
+    {
+      "id": "nangua-set-coffee",
+      "sourceId": "nangua",
+      "mediaKey": "90d0628472f7baf2",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 107.933333,
+      "end": 126.6,
+      "posterSecond": 116,
+      "clip": "nangua-set-coffee-90d0628472f7baf2.mp4",
+      "poster": "nangua-set-coffee-90d0628472f7baf2.jpg",
+      "clipBytes": 3512673,
+      "posterBytes": 57055,
+      "clipSHA256": "035cae40160b08998c05a7047379051378b99ac48661ea7695fa60bbb57041c2",
+      "posterSHA256": "f9d18b64d3c6cda718e083d616318bd3c0b7a947b7e2723f334851c24ab674cb",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "18.666667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "18.666009"
+          }
+        ],
+        "format": {
+          "duration": "18.666667"
+        }
+      }
+    },
+    {
+      "id": "nangua-nendouya",
+      "sourceId": "nangua",
+      "mediaKey": "6b75b812771af557",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 126.6,
+      "end": 206.4,
+      "posterSecond": 143,
+      "clip": "nangua-nendouya-6b75b812771af557.mp4",
+      "poster": "nangua-nendouya-6b75b812771af557.jpg",
+      "clipBytes": 45161486,
+      "posterBytes": 121510,
+      "clipSHA256": "1b95b4678186ad92b5dab4da0736e3fdcbddc70cf42eddaf3d5c666eab398c5d",
+      "posterSHA256": "fffc32c639032dbdd22d5b7b14802dda7f274a750ab0cb49ed6a017216a04697",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "79.800000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "79.800000"
+          }
+        ],
+        "format": {
+          "duration": "79.800000"
+        }
+      }
+    },
+    {
+      "id": "nangua-cailanzi",
+      "sourceId": "nangua",
+      "mediaKey": "4fc27dcba431b8f7",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 206.4,
+      "end": 227.866667,
+      "posterSecond": 212,
+      "clip": "nangua-cailanzi-4fc27dcba431b8f7.mp4",
+      "poster": "nangua-cailanzi-4fc27dcba431b8f7.jpg",
+      "clipBytes": 5243328,
+      "posterBytes": 67066,
+      "clipSHA256": "7166376a00d2fdf66745d3c32d2b02b3072db4316d8b632638a8dc019d4f0df5",
+      "posterSHA256": "0d23f7b6977f9687a52347f260181a2c9fe5518ec925567c2ec21d7923d833dd",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "21.466667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "21.466009"
+          }
+        ],
+        "format": {
+          "duration": "21.466667"
+        }
+      }
+    },
+    {
+      "id": "nangua-dayan",
+      "sourceId": "nangua",
+      "mediaKey": "a3c5da2b77347ce3",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 227.866667,
+      "end": 238.733333,
+      "posterSecond": 232,
+      "clip": "nangua-dayan-a3c5da2b77347ce3.mp4",
+      "poster": "nangua-dayan-a3c5da2b77347ce3.jpg",
+      "clipBytes": 3305056,
+      "posterBytes": 57365,
+      "clipSHA256": "ba931e81c01333e792c4343de6b232f63723af78db26112f97b4561ce9fa495c",
+      "posterSHA256": "6e77a5e71cfd23ca34a4008d27c4b0cf959dbf86442348183906e4aaa21ec9db",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "10.866667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "10.866009"
+          }
+        ],
+        "format": {
+          "duration": "10.866667"
+        }
+      }
+    },
+    {
+      "id": "nangua-daling",
+      "sourceId": "nangua",
+      "mediaKey": "5036dc0027940cc0",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 238.733333,
+      "end": 269.166667,
+      "posterSecond": 240,
+      "clip": "nangua-daling-5036dc0027940cc0.mp4",
+      "poster": "nangua-daling-5036dc0027940cc0.jpg",
+      "clipBytes": 10490374,
+      "posterBytes": 100565,
+      "clipSHA256": "f81efad2abccfc43ae6f4f2f94023a42948b27f089fa20e9bf72152740b815e7",
+      "posterSHA256": "6e94fb0af9a710f876a608241c43e1c8bef160ab7c8fc968110abe20e870f167",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "30.433333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "30.432993"
+          }
+        ],
+        "format": {
+          "duration": "30.433333"
+        }
+      }
+    },
+    {
+      "id": "nangua-sanyangzi",
+      "sourceId": "nangua",
+      "mediaKey": "79c9a90d66c995f6",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 269.166667,
+      "end": 283.133333,
+      "posterSecond": 276,
+      "clip": "nangua-sanyangzi-79c9a90d66c995f6.mp4",
+      "poster": "nangua-sanyangzi-79c9a90d66c995f6.jpg",
+      "clipBytes": 3028797,
+      "posterBytes": 69622,
+      "clipSHA256": "633b7c6cae3678d3aa3f8faf185590b85f16e39079d8892ed2157728b839f702",
+      "posterSHA256": "d5bd42c7ddb5dae9b737a25ff6fdb29cc38666873130086a0d581f9532e45121",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "13.966016"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "13.966009"
+          }
+        ],
+        "format": {
+          "duration": "13.966016"
+        }
+      }
+    },
+    {
+      "id": "nangua-huilaiwei",
+      "sourceId": "nangua",
+      "mediaKey": "3c5a73d6f5411c74",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 283.133333,
+      "end": 298,
+      "posterSecond": 288.5,
+      "clip": "nangua-huilaiwei-3c5a73d6f5411c74.mp4",
+      "poster": "nangua-huilaiwei-3c5a73d6f5411c74.jpg",
+      "clipBytes": 4870468,
+      "posterBytes": 90112,
+      "clipSHA256": "fa577ccaa8b6112f83c881cee06c58a2efa5593c3685bd54c578cee7d8839ee4",
+      "posterSHA256": "4d5e4746a2f26333ecd8f66e6893100cb4da71e6f9609215b379f7a9ddfd1463",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "14.866667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "14.866009"
+          }
+        ],
+        "format": {
+          "duration": "14.866667"
+        }
+      }
+    },
+    {
+      "id": "nangua-qianjiang",
+      "sourceId": "nangua",
+      "mediaKey": "077aa0ec9fdb90f1",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 298,
+      "end": 312.2,
+      "posterSecond": 302,
+      "clip": "nangua-qianjiang-077aa0ec9fdb90f1.mp4",
+      "poster": "nangua-qianjiang-077aa0ec9fdb90f1.jpg",
+      "clipBytes": 4801933,
+      "posterBytes": 82491,
+      "clipSHA256": "25d2be9624c695b55d1f5324efaa120495cdc0daebe9c2682f3dd469d2c42025",
+      "posterSHA256": "0fdc8858281f26994e9729db28294f8f7cb2f924055987290efa6e8118740360",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "14.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "14.200000"
+          }
+        ],
+        "format": {
+          "duration": "14.200000"
+        }
+      }
+    },
+    {
+      "id": "nangua-rongchang",
+      "sourceId": "nangua",
+      "mediaKey": "ec891f68437226a1",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 312.2,
+      "end": 319.366667,
+      "posterSecond": 316.3,
+      "clip": "nangua-rongchang-ec891f68437226a1.mp4",
+      "poster": "nangua-rongchang-ec891f68437226a1.jpg",
+      "clipBytes": 2022247,
+      "posterBytes": 96091,
+      "clipSHA256": "fd495fce73e7a3e3530910302178bcf0b67c79b72752ec86cead8d26ed24de86",
+      "posterSHA256": "e03b7cc30b76332d8fb97c5aa76733d9d260e9025b9c81cc35b8b632a8746719",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "7.166667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "7.166009"
+          }
+        ],
+        "format": {
+          "duration": "7.166667"
+        }
+      }
+    },
+    {
+      "id": "abang-babajian",
+      "sourceId": "abang",
+      "mediaKey": "a14df4ecee0cf370",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 22.966667,
+      "end": 49.033333,
+      "posterSecond": 24,
+      "clip": "abang-babajian-a14df4ecee0cf370.mp4",
+      "poster": "abang-babajian-a14df4ecee0cf370.jpg",
+      "clipBytes": 9565587,
+      "posterBytes": 141244,
+      "clipSHA256": "32a08e390d945a8793368aebe0088a43fa547326c8336631bf8e1ec2204fc452",
+      "posterSHA256": "65c453ac498253b566c1a38e9603e01f10373cdbe5d91515e3888528423a49e4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "26.066016"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "26.066009"
+          }
+        ],
+        "format": {
+          "duration": "26.066016"
+        }
+      }
+    },
+    {
+      "id": "abang-43",
+      "sourceId": "abang",
+      "mediaKey": "c7c29b69998763d6",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 49.033333,
+      "end": 67.266667,
+      "posterSecond": 56,
+      "clip": "abang-43-c7c29b69998763d6.mp4",
+      "poster": "abang-43-c7c29b69998763d6.jpg",
+      "clipBytes": 6840018,
+      "posterBytes": 92560,
+      "clipSHA256": "aa32792e61ca9b080fb85a2653a49cc3bc28564b885c3080dc963c479e4c81e2",
+      "posterSHA256": "02efe6c10586ac8e8a15f065efac2a4bb7fbd6a132bb9e779463f2fc0742f47f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "18.233333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "18.232993"
+          }
+        ],
+        "format": {
+          "duration": "18.233333"
+        }
+      }
+    },
+    {
+      "id": "abang-guijing",
+      "sourceId": "abang",
+      "mediaKey": "3f6e4615dff65f3e",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 67.266667,
+      "end": 97.633333,
+      "posterSecond": 76,
+      "clip": "abang-guijing-3f6e4615dff65f3e.mp4",
+      "poster": "abang-guijing-3f6e4615dff65f3e.jpg",
+      "clipBytes": 11323309,
+      "posterBytes": 73367,
+      "clipSHA256": "44d38a7359b869561d4d3b49f2c96a4d6a2aaa9f36c6f067f2523d48561ca22d",
+      "posterSHA256": "4480598f86b871e093d0671c7756b0d2151331c1f9fe04e40f865c1e2d6fad62",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "30.366667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "30.366009"
+          }
+        ],
+        "format": {
+          "duration": "30.366667"
+        }
+      }
+    },
+    {
+      "id": "abang-xidajiang",
+      "sourceId": "abang",
+      "mediaKey": "c116995d4742b2dc",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 97.633333,
+      "end": 135.133333,
+      "posterSecond": 104,
+      "clip": "abang-xidajiang-c116995d4742b2dc.mp4",
+      "poster": "abang-xidajiang-c116995d4742b2dc.jpg",
+      "clipBytes": 15773135,
+      "posterBytes": 135351,
+      "clipSHA256": "e5ad8c54c67e8ad0b072820ee5bf5935f041c77d6ed8d9ac4665a96053e83476",
+      "posterSHA256": "d86e164ac7c73943a4bcce3363dc3b6964893d13a98c81fb79669912413a0370",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "37.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "37.500000"
+          }
+        ],
+        "format": {
+          "duration": "37.500000"
+        }
+      }
+    },
+    {
+      "id": "abang-ganyitai",
+      "sourceId": "abang",
+      "mediaKey": "086f190b9531b964",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 135.133333,
+      "end": 148.7,
+      "posterSecond": 136,
+      "clip": "abang-ganyitai-086f190b9531b964.mp4",
+      "poster": "abang-ganyitai-086f190b9531b964.jpg",
+      "clipBytes": 4637545,
+      "posterBytes": 69016,
+      "clipSHA256": "ce1a65d3fd54b81e1179613b0c3b6a9949b0333f9ab2c1d90293405ebc072547",
+      "posterSHA256": "faa92dcda883f73a69fc46fea5ba63b9ce7157c466eee31f243a7d0db8bfaedd",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "13.566016"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "13.566009"
+          }
+        ],
+        "format": {
+          "duration": "13.566016"
+        }
+      }
+    },
+    {
+      "id": "abang-xiongfeng",
+      "sourceId": "abang",
+      "mediaKey": "891740bcdd985312",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 148.7,
+      "end": 160.466667,
+      "posterSecond": 156.4,
+      "clip": "abang-xiongfeng-891740bcdd985312.mp4",
+      "poster": "abang-xiongfeng-891740bcdd985312.jpg",
+      "clipBytes": 3492074,
+      "posterBytes": 53567,
+      "clipSHA256": "199dd8565a634497d60790c4332e507725608f42e38e374f221f345ecb1a0d10",
+      "posterSHA256": "d863c92363610b74721908b39a4aea9053ac73caf6286e2f0fd0d1cce2130615",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "11.766667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "11.766009"
+          }
+        ],
+        "format": {
+          "duration": "11.766667"
+        }
+      }
+    },
+    {
+      "id": "abang-shanlishu",
+      "sourceId": "abang",
+      "mediaKey": "b0f8289b7e134d6c",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 160.466667,
+      "end": 173.733333,
+      "posterSecond": 162.8,
+      "clip": "abang-shanlishu-b0f8289b7e134d6c.mp4",
+      "poster": "abang-shanlishu-b0f8289b7e134d6c.jpg",
+      "clipBytes": 3378525,
+      "posterBytes": 53537,
+      "clipSHA256": "133a46ba864721b893bf6f69423ea29f9ff24bbcc4ed2a3bdc6345a230f93b91",
+      "posterSHA256": "2cdd2c9ca66d8f07c3f6e4edf2e5f2b1c2f21ba3cd8d1203754b2f075691a7e2",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "13.266667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "13.266009"
+          }
+        ],
+        "format": {
+          "duration": "13.266667"
+        }
+      }
+    },
+    {
+      "id": "abang-wuduwudu",
+      "sourceId": "abang",
+      "mediaKey": "c47bd1cf2100cc4d",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 173.733333,
+      "end": 183.933333,
+      "posterSecond": 178.5,
+      "clip": "abang-wuduwudu-c47bd1cf2100cc4d.mp4",
+      "poster": "abang-wuduwudu-c47bd1cf2100cc4d.jpg",
+      "clipBytes": 3256663,
+      "posterBytes": 47281,
+      "clipSHA256": "5bd37b656306941c19016899387da8aaa899f9a92e3465a010e1d3de81dc55fc",
+      "posterSHA256": "63a1ffe84b76b9c6c52736ffa541f747b4691b948949cdd9c8ea2f2f1b55dce7",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "10.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "10.200000"
+          }
+        ],
+        "format": {
+          "duration": "10.200000"
+        }
+      }
+    },
+    {
+      "id": "abang-yabatu",
+      "sourceId": "abang",
+      "mediaKey": "9ff6a74f8f44190a",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 183.933333,
+      "end": 205.7,
+      "posterSecond": 196.7,
+      "clip": "abang-yabatu-9ff6a74f8f44190a.mp4",
+      "poster": "abang-yabatu-9ff6a74f8f44190a.jpg",
+      "clipBytes": 7892660,
+      "posterBytes": 125369,
+      "clipSHA256": "56298a7735341e2fe91f51983a687edc49b2b811a04fa7e13b406332ba9c4afa",
+      "posterSHA256": "b1757caa4db0cab68016d058d317819e5f9ddd5110de89af0ec2e1f4ac5657e3",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "21.766667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "21.766009"
+          }
+        ],
+        "format": {
+          "duration": "21.766667"
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "nangua source digest matches",
+      "passed": true
+    },
+    {
+      "name": "abang source digest matches",
+      "passed": true
+    },
+    {
+      "name": "nangua-jiachang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-jiachang has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-jeju matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-jeju has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-set-coffee matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-set-coffee has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-nendouya matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-nendouya has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-cailanzi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-cailanzi has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-dayan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-dayan has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-daling matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-daling has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-sanyangzi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-sanyangzi has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-huilaiwei matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-huilaiwei has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-qianjiang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-qianjiang has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-rongchang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-rongchang has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-babajian matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-babajian has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-43 matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-43 has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-guijing matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-guijing has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-xidajiang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-xidajiang has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-ganyitai matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-ganyitai has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-xiongfeng matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-xiongfeng has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-shanlishu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-shanlishu has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-wuduwudu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-wuduwudu has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-yabatu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-yabatu has valid audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "Build without original media completes with an empty availability manifest",
+      "passed": true
+    },
+    {
+      "name": "Existing source places are byte-identical",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

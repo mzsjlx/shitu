@@ -1,0 +1,2217 @@
+{
+  "date": "2026-10-25",
+  "scope": "Independent Chromium context, current real candidate data, category selection and saved itinerary integration. Failure and storage simulations stay in isolated browser contexts; no source record or user browser storage is modified.",
+  "checks": [
+    {
+      "name": "Picker entry appears only after real candidate loading",
+      "passed": true
+    },
+    {
+      "name": "Native category choices and counts derive exactly from real records",
+      "passed": true,
+      "details": [
+        {
+          "value": "",
+          "count": "2",
+          "label": "都看看",
+          "native": true
+        },
+        {
+          "value": "小面",
+          "count": "1",
+          "label": "小面",
+          "native": true
+        },
+        {
+          "value": "火锅",
+          "count": "1",
+          "label": "火锅",
+          "native": true
+        }
+      ]
+    },
+    {
+      "name": "All candidate results retain source IDs, names and AI/location caveats",
+      "passed": true
+    },
+    {
+      "name": "Changing draft changes only dialog results, with map, full records and saves unchanged",
+      "passed": true
+    },
+    {
+      "name": "Escape cancels draft without changing committed filter, camera or saves and restores opener focus",
+      "passed": true
+    },
+    {
+      "name": "Reopening starts from committed all-category state",
+      "passed": true
+    },
+    {
+      "name": "Native keyboard arrow navigation changes checked category and live count",
+      "passed": true
+    },
+    {
+      "name": "Applying one category filters marker IDs, retains all real records, 2D pitch and custom bearing",
+      "passed": true,
+      "details": {
+        "before": {
+          "category": null,
+          "draft": "小面",
+          "records": [
+            "osm-node-13649952401",
+            "osm-node-4460519589"
+          ],
+          "visible": [
+            "osm-node-13649952401",
+            "osm-node-4460519589"
+          ],
+          "saved": [],
+          "camera": {
+            "center": [
+              106.57951841806806,
+              29.563027624133554
+            ],
+            "zoom": 15.339902729426688,
+            "pitch": 0,
+            "bearing": 17.000000000000004
+          }
+        },
+        "after": {
+          "category": "小面",
+          "draft": "小面",
+          "records": [
+            "osm-node-13649952401",
+            "osm-node-4460519589"
+          ],
+          "visible": [
+            "osm-node-13649952401"
+          ],
+          "saved": [],
+          "camera": {
+            "center": [
+              106.5797764515915,
+              29.566665098936028
+            ],
+            "zoom": 16.3,
+            "pitch": 0,
+            "bearing": 17.000000000000004
+          }
+        }
+      }
+    },
+    {
+      "name": "Filter commit updates compact entry label and returns keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "Applying all restores every marker and keeps 2D pitch and bearing",
+      "passed": true,
+      "details": {
+        "category": null,
+        "draft": null,
+        "records": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ],
+        "visible": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ],
+        "saved": [],
+        "camera": {
+          "center": [
+            106.58009144721495,
+            29.56308355500505
+          ],
+          "zoom": 15.285196701824304,
+          "pitch": 0,
+          "bearing": 17.000000000000004
+        }
+      }
+    },
+    {
+      "name": "Result detail opens as a nested modal without committing draft or moving map",
+      "passed": true
+    },
+    {
+      "name": "Saving nested detail refreshes picker saved state and remaining-add count",
+      "passed": true
+    },
+    {
+      "name": "Closing nested detail focuses replacement result row",
+      "passed": true
+    },
+    {
+      "name": "Bulk add appends missing IDs once and preserves preexisting itinerary order",
+      "passed": true,
+      "details": {
+        "category": null,
+        "draft": null,
+        "records": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ],
+        "visible": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ],
+        "saved": [
+          "osm-node-4460519589",
+          "osm-node-13649952401"
+        ],
+        "camera": {
+          "center": [
+            106.58009144721495,
+            29.56308355500505
+          ],
+          "zoom": 15.285196701824304,
+          "pitch": 0,
+          "bearing": 17.000000000000004
+        }
+      }
+    },
+    {
+      "name": "Closing itinerary opened by bulk add restores picker entry focus",
+      "passed": true
+    },
+    {
+      "name": "Already-saved selection offers itinerary order with zero additions",
+      "passed": true
+    },
+    {
+      "name": "Repeated bulk add deduplicates without changing existing order",
+      "passed": true
+    },
+    {
+      "name": "Itinerary order control still works after bulk add",
+      "passed": true,
+      "details": {
+        "category": null,
+        "draft": null,
+        "records": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ],
+        "visible": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ],
+        "saved": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ],
+        "camera": {
+          "center": [
+            106.58009144721495,
+            29.56308355500505
+          ],
+          "zoom": 15.285196701824304,
+          "pitch": 0,
+          "bearing": 17.000000000000004
+        }
+      }
+    },
+    {
+      "name": "Locating a saved stop excluded by the filter automatically restores all markers",
+      "passed": true
+    },
+    {
+      "name": "Reload resets session-only category while preserving saved order",
+      "passed": true
+    },
+    {
+      "name": "Road trial hides picker and closing restores current category filter",
+      "passed": true
+    },
+    {
+      "name": "Picker dialog fits, keeps 44px category targets and reachable actions at 1440×960",
+      "passed": true,
+      "details": {
+        "dialog": {
+          "left": 450,
+          "top": 132.046875,
+          "right": 990,
+          "bottom": 827.9375,
+          "width": 540,
+          "height": 695.890625,
+          "scrollWidth": 538,
+          "clientWidth": 538
+        },
+        "radioTargets": [
+          {
+            "left": 483,
+            "top": 314.4375,
+            "right": 561.875,
+            "bottom": 358.4375,
+            "width": 78.875,
+            "height": 44,
+            "scrollWidth": 77,
+            "clientWidth": 77
+          },
+          {
+            "left": 569.875,
+            "top": 314.4375,
+            "right": 636.75,
+            "bottom": 358.4375,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          },
+          {
+            "left": 644.75,
+            "top": 314.4375,
+            "right": 711.625,
+            "bottom": 358.4375,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          }
+        ],
+        "actionRects": [
+          {
+            "selector": "#food-pick-close",
+            "x": 931,
+            "y": 147.046875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "selector": "#food-pick-map",
+            "x": 483,
+            "y": 610.4375,
+            "width": 201.921875,
+            "height": 48
+          },
+          {
+            "selector": "#food-pick-add",
+            "x": 694.921875,
+            "y": 610.4375,
+            "width": 262.078125,
+            "height": 48
+          }
+        ]
+      }
+    },
+    {
+      "name": "Map cards avoid controls and other real anchors, with pin errors below 1.5px at 1440×960",
+      "passed": true,
+      "details": {
+        "document": [
+          1440,
+          960
+        ],
+        "coveredControls": [],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.3058141427517606,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.5417974407031441,
+            "coveredByOtherCards": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "Picker dialog fits, keeps 44px category targets and reachable actions at 818×871",
+      "passed": true,
+      "details": {
+        "dialog": {
+          "left": 139,
+          "top": 87.546875,
+          "right": 679,
+          "bottom": 783.4375,
+          "width": 540,
+          "height": 695.890625,
+          "scrollWidth": 538,
+          "clientWidth": 538
+        },
+        "radioTargets": [
+          {
+            "left": 172,
+            "top": 269.9375,
+            "right": 250.875,
+            "bottom": 313.9375,
+            "width": 78.875,
+            "height": 44,
+            "scrollWidth": 77,
+            "clientWidth": 77
+          },
+          {
+            "left": 258.875,
+            "top": 269.9375,
+            "right": 325.75,
+            "bottom": 313.9375,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          },
+          {
+            "left": 333.75,
+            "top": 269.9375,
+            "right": 400.625,
+            "bottom": 313.9375,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          }
+        ],
+        "actionRects": [
+          {
+            "selector": "#food-pick-close",
+            "x": 620,
+            "y": 102.546875,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "selector": "#food-pick-map",
+            "x": 172,
+            "y": 565.9375,
+            "width": 201.921875,
+            "height": 48
+          },
+          {
+            "selector": "#food-pick-add",
+            "x": 383.921875,
+            "y": 565.9375,
+            "width": 262.078125,
+            "height": 48
+          }
+        ]
+      }
+    },
+    {
+      "name": "Map cards avoid controls and other real anchors, with pin errors below 1.5px at 818×871",
+      "passed": true,
+      "details": {
+        "document": [
+          818,
+          871
+        ],
+        "coveredControls": [],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.41693914342177657,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.4978235540560628,
+            "coveredByOtherCards": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "Picker dialog fits, keeps 44px category targets and reachable actions at 390×844",
+      "passed": true,
+      "details": {
+        "dialog": {
+          "left": 14,
+          "top": 90.0625,
+          "right": 376,
+          "bottom": 753.9375,
+          "width": 362,
+          "height": 663.875,
+          "scrollWidth": 360,
+          "clientWidth": 360
+        },
+        "radioTargets": [
+          {
+            "left": 38,
+            "top": 261.25,
+            "right": 108.875,
+            "bottom": 305.25,
+            "width": 70.875,
+            "height": 44,
+            "scrollWidth": 69,
+            "clientWidth": 69
+          },
+          {
+            "left": 115.875,
+            "top": 261.25,
+            "right": 175.75,
+            "bottom": 305.25,
+            "width": 59.875,
+            "height": 44,
+            "scrollWidth": 58,
+            "clientWidth": 58
+          },
+          {
+            "left": 182.75,
+            "top": 261.25,
+            "right": 242.625,
+            "bottom": 305.25,
+            "width": 59.875,
+            "height": 44,
+            "scrollWidth": 58,
+            "clientWidth": 58
+          }
+        ],
+        "actionRects": [
+          {
+            "selector": "#food-pick-close",
+            "x": 317,
+            "y": 105.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "selector": "#food-pick-map",
+            "x": 38,
+            "y": 543.25,
+            "width": 132.890625,
+            "height": 46
+          },
+          {
+            "selector": "#food-pick-add",
+            "x": 178.890625,
+            "y": 543.25,
+            "width": 173.109375,
+            "height": 46
+          }
+        ]
+      }
+    },
+    {
+      "name": "Map cards avoid controls and other real anchors, with pin errors below 1.5px at 390×844",
+      "passed": true,
+      "details": {
+        "document": [
+          390,
+          844
+        ],
+        "coveredControls": [],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.3279290101080861,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.1232984473435459,
+            "coveredByOtherCards": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "Picker dialog fits, keeps 44px category targets and reachable actions at 320×680",
+      "passed": true,
+      "details": {
+        "dialog": {
+          "left": 14,
+          "top": 12,
+          "right": 306,
+          "bottom": 668,
+          "width": 292,
+          "height": 656,
+          "scrollWidth": 290,
+          "clientWidth": 290
+        },
+        "radioTargets": [
+          {
+            "left": 35,
+            "top": 180.59375,
+            "right": 105.875,
+            "bottom": 224.59375,
+            "width": 70.875,
+            "height": 44,
+            "scrollWidth": 69,
+            "clientWidth": 69
+          },
+          {
+            "left": 112.875,
+            "top": 180.59375,
+            "right": 172.75,
+            "bottom": 224.59375,
+            "width": 59.875,
+            "height": 44,
+            "scrollWidth": 58,
+            "clientWidth": 58
+          },
+          {
+            "left": 179.75,
+            "top": 180.59375,
+            "right": 239.625,
+            "bottom": 224.59375,
+            "width": 59.875,
+            "height": 44,
+            "scrollWidth": 58,
+            "clientWidth": 58
+          }
+        ],
+        "actionRects": [
+          {
+            "selector": "#food-pick-close",
+            "x": 247,
+            "y": 27,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "selector": "#food-pick-map",
+            "x": 35,
+            "y": 462.59375,
+            "width": 105.65625,
+            "height": 46
+          },
+          {
+            "selector": "#food-pick-add",
+            "x": 148.65625,
+            "y": 462.59375,
+            "width": 136.34375,
+            "height": 46
+          }
+        ]
+      }
+    },
+    {
+      "name": "Map cards avoid controls and other real anchors, with pin errors below 1.5px at 320×680",
+      "passed": true,
+      "details": {
+        "document": [
+          320,
+          680
+        ],
+        "coveredControls": [],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.39556130373032977,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.5023318933965651,
+            "coveredByOtherCards": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "Picker dialog fits, keeps 44px category targets and reachable actions at 736×414",
+      "passed": true,
+      "details": {
+        "dialog": {
+          "left": 98,
+          "top": 10,
+          "right": 638,
+          "bottom": 404,
+          "width": 540,
+          "height": 394,
+          "scrollWidth": 538,
+          "clientWidth": 538
+        },
+        "radioTargets": [
+          {
+            "left": 131,
+            "top": 171.1875,
+            "right": 209.875,
+            "bottom": 215.1875,
+            "width": 78.875,
+            "height": 44,
+            "scrollWidth": 77,
+            "clientWidth": 77
+          },
+          {
+            "left": 217.875,
+            "top": 171.1875,
+            "right": 284.75,
+            "bottom": 215.1875,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          },
+          {
+            "left": 292.75,
+            "top": 171.1875,
+            "right": 359.625,
+            "bottom": 215.1875,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          }
+        ],
+        "actionRects": [
+          {
+            "selector": "#food-pick-close",
+            "x": 579,
+            "y": 25,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "selector": "#food-pick-map",
+            "x": 131,
+            "y": 190.1875,
+            "width": 201.921875,
+            "height": 48
+          },
+          {
+            "selector": "#food-pick-add",
+            "x": 342.921875,
+            "y": 190.1875,
+            "width": 262.078125,
+            "height": 48
+          }
+        ]
+      }
+    },
+    {
+      "name": "Map cards avoid controls and other real anchors, with pin errors below 1.5px at 736×414",
+      "passed": true,
+      "details": {
+        "document": [
+          736,
+          414
+        ],
+        "coveredControls": [],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.4414927710116729,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.4803036098964568,
+            "coveredByOtherCards": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "Single and all category framing also preserve custom 3D pitch and bearing",
+      "passed": true,
+      "details": {
+        "before": {
+          "center": [
+            106.56999999999994,
+            29.560120374022077
+          ],
+          "zoom": 12.62756238243473,
+          "pitch": 37,
+          "bearing": -31
+        },
+        "single": {
+          "center": [
+            106.57921975260086,
+            29.56670538205435
+          ],
+          "zoom": 16.3,
+          "pitch": 37,
+          "bearing": -31
+        },
+        "all": {
+          "center": [
+            106.5794533089126,
+            29.562955860826207
+          ],
+          "zoom": 15.419312363380739,
+          "pitch": 37,
+          "bearing": -31
+        }
+      }
+    },
+    {
+      "name": "Existing real place deep link opens matching detail and all candidate filter",
+      "passed": true
+    },
+    {
+      "name": "Candidate loader failure hides picker and food-entry retry restores real categories",
+      "passed": true
+    },
+    {
+      "name": "Quota failure retains session itinerary, shows unsaved message and performs no persistent write",
+      "passed": true,
+      "details": {
+        "saved": [
+          "osm-node-13649952401",
+          "osm-node-4460519589"
+        ],
+        "error": true,
+        "storage": null,
+        "note": "本次调整暂未保存到浏览器。刷新前可再次调整以重试。"
+      }
+    },
+    {
+      "name": "Original HTTP standalone supports equivalent category filtering without auxiliary HTTP",
+      "passed": true,
+      "details": [
+        "http://127.0.0.1:8791/preview.html?view=food"
+      ]
+    },
+    {
+      "name": "Picker flow sends no external requests or page errors",
+      "passed": true,
+      "details": {
+        "externalRequests": [],
+        "pageErrors": []
+      }
+    }
+  ],
+  "issues": [],
+  "pageErrors": [],
+  "externalRequests": [],
+  "viewports": [
+    {
+      "map": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "document": [
+          1440,
+          960
+        ],
+        "cards": [
+          {
+            "id": "osm-node-13649952401",
+            "left": 686,
+            "top": 147.65625,
+            "right": 884,
+            "bottom": 390,
+            "width": 198,
+            "height": 242.34375,
+            "scrollWidth": 186,
+            "clientWidth": 186
+          },
+          {
+            "id": "osm-node-4460519589",
+            "left": 538,
+            "top": 528.65625,
+            "right": 736,
+            "bottom": 771,
+            "width": 198,
+            "height": 242.34375,
+            "scrollWidth": 186,
+            "clientWidth": 186
+          }
+        ],
+        "controls": [
+          {
+            "id": "maplibregl-ctrl-top-right ",
+            "left": 1367,
+            "top": 98,
+            "right": 1420,
+            "bottom": 237,
+            "width": 53,
+            "height": 139,
+            "scrollWidth": 53,
+            "clientWidth": 53
+          },
+          {
+            "id": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 1073.078125,
+            "top": 920,
+            "right": 1422,
+            "bottom": 944,
+            "width": 348.921875,
+            "height": 24,
+            "scrollWidth": 349,
+            "clientWidth": 349
+          },
+          {
+            "id": "walk-tools",
+            "left": 20,
+            "top": 96,
+            "right": 125.5625,
+            "bottom": 142,
+            "width": 105.5625,
+            "height": 46,
+            "scrollWidth": 104,
+            "clientWidth": 104
+          },
+          {
+            "id": "food-pick-tools",
+            "left": 165,
+            "top": 96,
+            "right": 293,
+            "bottom": 142,
+            "width": 128,
+            "height": 46,
+            "scrollWidth": 128,
+            "clientWidth": 128
+          },
+          {
+            "id": "view-dock paper",
+            "left": 20,
+            "top": 855,
+            "right": 293.75,
+            "bottom": 917,
+            "width": 273.75,
+            "height": 62,
+            "scrollWidth": 272,
+            "clientWidth": 272
+          },
+          {
+            "id": "trip-dock",
+            "left": 877.4375,
+            "top": 833.15625,
+            "right": 1418,
+            "bottom": 917,
+            "width": 540.5625,
+            "height": 83.84375,
+            "scrollWidth": 539,
+            "clientWidth": 539
+          },
+          {
+            "id": "about-map",
+            "left": 20,
+            "top": 917,
+            "right": 166.296875,
+            "bottom": 946,
+            "width": 146.296875,
+            "height": 29,
+            "scrollWidth": 146,
+            "clientWidth": 146
+          }
+        ],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.3058141427517606,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.5417974407031441,
+            "coveredByOtherCards": []
+          }
+        ],
+        "coveredControls": [],
+        "dialog": null,
+        "radioTargets": [
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          },
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          },
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          }
+        ]
+      },
+      "modal": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "document": [
+          1440,
+          960
+        ],
+        "cards": [
+          {
+            "id": "osm-node-13649952401",
+            "left": 686,
+            "top": 147.65625,
+            "right": 884,
+            "bottom": 390,
+            "width": 198,
+            "height": 242.34375,
+            "scrollWidth": 186,
+            "clientWidth": 186
+          },
+          {
+            "id": "osm-node-4460519589",
+            "left": 538,
+            "top": 528.65625,
+            "right": 736,
+            "bottom": 771,
+            "width": 198,
+            "height": 242.34375,
+            "scrollWidth": 186,
+            "clientWidth": 186
+          }
+        ],
+        "controls": [
+          {
+            "id": "maplibregl-ctrl-top-right ",
+            "left": 1367,
+            "top": 98,
+            "right": 1420,
+            "bottom": 237,
+            "width": 53,
+            "height": 139,
+            "scrollWidth": 53,
+            "clientWidth": 53
+          },
+          {
+            "id": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 1073.078125,
+            "top": 920,
+            "right": 1422,
+            "bottom": 944,
+            "width": 348.921875,
+            "height": 24,
+            "scrollWidth": 349,
+            "clientWidth": 349
+          },
+          {
+            "id": "walk-tools",
+            "left": 20,
+            "top": 96,
+            "right": 125.5625,
+            "bottom": 142,
+            "width": 105.5625,
+            "height": 46,
+            "scrollWidth": 104,
+            "clientWidth": 104
+          },
+          {
+            "id": "food-pick-tools",
+            "left": 165,
+            "top": 96,
+            "right": 293,
+            "bottom": 142,
+            "width": 128,
+            "height": 46,
+            "scrollWidth": 128,
+            "clientWidth": 128
+          },
+          {
+            "id": "view-dock paper",
+            "left": 20,
+            "top": 855,
+            "right": 293.75,
+            "bottom": 917,
+            "width": 273.75,
+            "height": 62,
+            "scrollWidth": 272,
+            "clientWidth": 272
+          },
+          {
+            "id": "trip-dock",
+            "left": 877.4375,
+            "top": 833.15625,
+            "right": 1418,
+            "bottom": 917,
+            "width": 540.5625,
+            "height": 83.84375,
+            "scrollWidth": 539,
+            "clientWidth": 539
+          },
+          {
+            "id": "about-map",
+            "left": 20,
+            "top": 917,
+            "right": 166.296875,
+            "bottom": 946,
+            "width": 146.296875,
+            "height": 29,
+            "scrollWidth": 146,
+            "clientWidth": 146
+          }
+        ],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.3058141427517606,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.5417974407031441,
+            "coveredByOtherCards": []
+          }
+        ],
+        "coveredControls": [],
+        "dialog": {
+          "left": 450,
+          "top": 132.046875,
+          "right": 990,
+          "bottom": 827.9375,
+          "width": 540,
+          "height": 695.890625,
+          "scrollWidth": 538,
+          "clientWidth": 538
+        },
+        "radioTargets": [
+          {
+            "left": 483,
+            "top": 314.4375,
+            "right": 561.875,
+            "bottom": 358.4375,
+            "width": 78.875,
+            "height": 44,
+            "scrollWidth": 77,
+            "clientWidth": 77
+          },
+          {
+            "left": 569.875,
+            "top": 314.4375,
+            "right": 636.75,
+            "bottom": 358.4375,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          },
+          {
+            "left": 644.75,
+            "top": 314.4375,
+            "right": 711.625,
+            "bottom": 358.4375,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          }
+        ]
+      }
+    },
+    {
+      "map": {
+        "viewport": [
+          818,
+          871
+        ],
+        "document": [
+          818,
+          871
+        ],
+        "cards": [
+          {
+            "id": "osm-node-13649952401",
+            "left": 353,
+            "top": 131.65625,
+            "right": 551,
+            "bottom": 374,
+            "width": 198,
+            "height": 242.34375,
+            "scrollWidth": 186,
+            "clientWidth": 186
+          }
+        ],
+        "controls": [
+          {
+            "id": "maplibregl-ctrl-top-right ",
+            "left": 745,
+            "top": 98,
+            "right": 798,
+            "bottom": 237,
+            "width": 53,
+            "height": 139,
+            "scrollWidth": 53,
+            "clientWidth": 53
+          },
+          {
+            "id": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 451.078125,
+            "top": 831,
+            "right": 800,
+            "bottom": 855,
+            "width": 348.921875,
+            "height": 24,
+            "scrollWidth": 349,
+            "clientWidth": 349
+          },
+          {
+            "id": "walk-tools",
+            "left": 20,
+            "top": 96,
+            "right": 125.5625,
+            "bottom": 142,
+            "width": 105.5625,
+            "height": 46,
+            "scrollWidth": 104,
+            "clientWidth": 104
+          },
+          {
+            "id": "food-pick-tools",
+            "left": 165,
+            "top": 96,
+            "right": 293,
+            "bottom": 142,
+            "width": 128,
+            "height": 46,
+            "scrollWidth": 128,
+            "clientWidth": 128
+          },
+          {
+            "id": "view-dock paper",
+            "left": 20,
+            "top": 667,
+            "right": 293.75,
+            "bottom": 729,
+            "width": 273.75,
+            "height": 62,
+            "scrollWidth": 272,
+            "clientWidth": 272
+          },
+          {
+            "id": "trip-dock",
+            "left": 20,
+            "top": 744.15625,
+            "right": 798,
+            "bottom": 828,
+            "width": 778,
+            "height": 83.84375,
+            "scrollWidth": 776,
+            "clientWidth": 776
+          }
+        ],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.41693914342177657,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.4978235540560628,
+            "coveredByOtherCards": []
+          }
+        ],
+        "coveredControls": [],
+        "dialog": null,
+        "radioTargets": [
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          },
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          },
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          }
+        ]
+      },
+      "modal": {
+        "viewport": [
+          818,
+          871
+        ],
+        "document": [
+          818,
+          871
+        ],
+        "cards": [
+          {
+            "id": "osm-node-13649952401",
+            "left": 353,
+            "top": 131.65625,
+            "right": 551,
+            "bottom": 374,
+            "width": 198,
+            "height": 242.34375,
+            "scrollWidth": 186,
+            "clientWidth": 186
+          }
+        ],
+        "controls": [
+          {
+            "id": "maplibregl-ctrl-top-right ",
+            "left": 745,
+            "top": 98,
+            "right": 798,
+            "bottom": 237,
+            "width": 53,
+            "height": 139,
+            "scrollWidth": 53,
+            "clientWidth": 53
+          },
+          {
+            "id": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 451.078125,
+            "top": 831,
+            "right": 800,
+            "bottom": 855,
+            "width": 348.921875,
+            "height": 24,
+            "scrollWidth": 349,
+            "clientWidth": 349
+          },
+          {
+            "id": "walk-tools",
+            "left": 20,
+            "top": 96,
+            "right": 125.5625,
+            "bottom": 142,
+            "width": 105.5625,
+            "height": 46,
+            "scrollWidth": 104,
+            "clientWidth": 104
+          },
+          {
+            "id": "food-pick-tools",
+            "left": 165,
+            "top": 96,
+            "right": 293,
+            "bottom": 142,
+            "width": 128,
+            "height": 46,
+            "scrollWidth": 128,
+            "clientWidth": 128
+          },
+          {
+            "id": "view-dock paper",
+            "left": 20,
+            "top": 667,
+            "right": 293.75,
+            "bottom": 729,
+            "width": 273.75,
+            "height": 62,
+            "scrollWidth": 272,
+            "clientWidth": 272
+          },
+          {
+            "id": "trip-dock",
+            "left": 20,
+            "top": 744.15625,
+            "right": 798,
+            "bottom": 828,
+            "width": 778,
+            "height": 83.84375,
+            "scrollWidth": 776,
+            "clientWidth": 776
+          }
+        ],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.41693914342177657,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.4978235540560628,
+            "coveredByOtherCards": []
+          }
+        ],
+        "coveredControls": [],
+        "dialog": {
+          "left": 139,
+          "top": 87.546875,
+          "right": 679,
+          "bottom": 783.4375,
+          "width": 540,
+          "height": 695.890625,
+          "scrollWidth": 538,
+          "clientWidth": 538
+        },
+        "radioTargets": [
+          {
+            "left": 172,
+            "top": 269.9375,
+            "right": 250.875,
+            "bottom": 313.9375,
+            "width": 78.875,
+            "height": 44,
+            "scrollWidth": 77,
+            "clientWidth": 77
+          },
+          {
+            "left": 258.875,
+            "top": 269.9375,
+            "right": 325.75,
+            "bottom": 313.9375,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          },
+          {
+            "left": 333.75,
+            "top": 269.9375,
+            "right": 400.625,
+            "bottom": 313.9375,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          }
+        ]
+      }
+    },
+    {
+      "map": {
+        "viewport": [
+          390,
+          844
+        ],
+        "document": [
+          390,
+          844
+        ],
+        "cards": [
+          {
+            "id": "osm-node-13649952401",
+            "left": 144,
+            "top": 189.359375,
+            "right": 310,
+            "bottom": 393,
+            "width": 166,
+            "height": 203.640625,
+            "scrollWidth": 154,
+            "clientWidth": 154
+          }
+        ],
+        "controls": [
+          {
+            "id": "maplibregl-ctrl-top-right ",
+            "left": 330,
+            "top": 134,
+            "right": 382,
+            "bottom": 276,
+            "width": 52,
+            "height": 142,
+            "scrollWidth": 52,
+            "clientWidth": 52
+          },
+          {
+            "id": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 54.359375,
+            "top": 804,
+            "right": 372,
+            "bottom": 828,
+            "width": 317.640625,
+            "height": 24,
+            "scrollWidth": 318,
+            "clientWidth": 318
+          },
+          {
+            "id": "walk-tools",
+            "left": 13,
+            "top": 134,
+            "right": 113.265625,
+            "bottom": 182,
+            "width": 100.265625,
+            "height": 48,
+            "scrollWidth": 98,
+            "clientWidth": 98
+          },
+          {
+            "id": "food-pick-tools",
+            "left": 139,
+            "top": 134,
+            "right": 246,
+            "bottom": 180,
+            "width": 107,
+            "height": 46,
+            "scrollWidth": 107,
+            "clientWidth": 107
+          },
+          {
+            "id": "view-dock paper",
+            "left": 13,
+            "top": 612,
+            "right": 219.46875,
+            "bottom": 666,
+            "width": 206.46875,
+            "height": 54,
+            "scrollWidth": 204,
+            "clientWidth": 204
+          },
+          {
+            "id": "trip-dock",
+            "left": 13,
+            "top": 685.25,
+            "right": 377,
+            "bottom": 784,
+            "width": 364,
+            "height": 98.75,
+            "scrollWidth": 362,
+            "clientWidth": 362
+          }
+        ],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.3279290101080861,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.1232984473435459,
+            "coveredByOtherCards": []
+          }
+        ],
+        "coveredControls": [],
+        "dialog": null,
+        "radioTargets": [
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          },
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          },
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          }
+        ]
+      },
+      "modal": {
+        "viewport": [
+          390,
+          844
+        ],
+        "document": [
+          390,
+          844
+        ],
+        "cards": [
+          {
+            "id": "osm-node-13649952401",
+            "left": 144,
+            "top": 189.359375,
+            "right": 310,
+            "bottom": 393,
+            "width": 166,
+            "height": 203.640625,
+            "scrollWidth": 154,
+            "clientWidth": 154
+          }
+        ],
+        "controls": [
+          {
+            "id": "maplibregl-ctrl-top-right ",
+            "left": 330,
+            "top": 134,
+            "right": 382,
+            "bottom": 276,
+            "width": 52,
+            "height": 142,
+            "scrollWidth": 52,
+            "clientWidth": 52
+          },
+          {
+            "id": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 54.359375,
+            "top": 804,
+            "right": 372,
+            "bottom": 828,
+            "width": 317.640625,
+            "height": 24,
+            "scrollWidth": 318,
+            "clientWidth": 318
+          },
+          {
+            "id": "walk-tools",
+            "left": 13,
+            "top": 134,
+            "right": 113.265625,
+            "bottom": 182,
+            "width": 100.265625,
+            "height": 48,
+            "scrollWidth": 98,
+            "clientWidth": 98
+          },
+          {
+            "id": "food-pick-tools",
+            "left": 139,
+            "top": 134,
+            "right": 246,
+            "bottom": 180,
+            "width": 107,
+            "height": 46,
+            "scrollWidth": 107,
+            "clientWidth": 107
+          },
+          {
+            "id": "view-dock paper",
+            "left": 13,
+            "top": 612,
+            "right": 219.46875,
+            "bottom": 666,
+            "width": 206.46875,
+            "height": 54,
+            "scrollWidth": 204,
+            "clientWidth": 204
+          },
+          {
+            "id": "trip-dock",
+            "left": 13,
+            "top": 685.25,
+            "right": 377,
+            "bottom": 784,
+            "width": 364,
+            "height": 98.75,
+            "scrollWidth": 362,
+            "clientWidth": 362
+          }
+        ],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.3279290101080861,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.1232984473435459,
+            "coveredByOtherCards": []
+          }
+        ],
+        "coveredControls": [],
+        "dialog": {
+          "left": 14,
+          "top": 90.0625,
+          "right": 376,
+          "bottom": 753.9375,
+          "width": 362,
+          "height": 663.875,
+          "scrollWidth": 360,
+          "clientWidth": 360
+        },
+        "radioTargets": [
+          {
+            "left": 38,
+            "top": 261.25,
+            "right": 108.875,
+            "bottom": 305.25,
+            "width": 70.875,
+            "height": 44,
+            "scrollWidth": 69,
+            "clientWidth": 69
+          },
+          {
+            "left": 115.875,
+            "top": 261.25,
+            "right": 175.75,
+            "bottom": 305.25,
+            "width": 59.875,
+            "height": 44,
+            "scrollWidth": 58,
+            "clientWidth": 58
+          },
+          {
+            "left": 182.75,
+            "top": 261.25,
+            "right": 242.625,
+            "bottom": 305.25,
+            "width": 59.875,
+            "height": 44,
+            "scrollWidth": 58,
+            "clientWidth": 58
+          }
+        ]
+      }
+    },
+    {
+      "map": {
+        "viewport": [
+          320,
+          680
+        ],
+        "document": [
+          320,
+          680
+        ],
+        "cards": [],
+        "controls": [
+          {
+            "id": "maplibregl-ctrl-top-right ",
+            "left": 260,
+            "top": 134,
+            "right": 312,
+            "bottom": 276,
+            "width": 52,
+            "height": 142,
+            "scrollWidth": 52,
+            "clientWidth": 52
+          },
+          {
+            "id": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 10,
+            "top": 620,
+            "right": 302,
+            "bottom": 664,
+            "width": 292,
+            "height": 44,
+            "scrollWidth": 292,
+            "clientWidth": 292
+          },
+          {
+            "id": "walk-tools",
+            "left": 13,
+            "top": 134,
+            "right": 113.265625,
+            "bottom": 182,
+            "width": 100.265625,
+            "height": 48,
+            "scrollWidth": 98,
+            "clientWidth": 98
+          },
+          {
+            "id": "food-pick-tools",
+            "left": 139,
+            "top": 134,
+            "right": 240,
+            "bottom": 180,
+            "width": 101,
+            "height": 46,
+            "scrollWidth": 101,
+            "clientWidth": 101
+          },
+          {
+            "id": "view-dock paper",
+            "left": 13,
+            "top": 448,
+            "right": 219.46875,
+            "bottom": 502,
+            "width": 206.46875,
+            "height": 54,
+            "scrollWidth": 204,
+            "clientWidth": 204
+          },
+          {
+            "id": "trip-dock",
+            "left": 13,
+            "top": 521.25,
+            "right": 307,
+            "bottom": 620,
+            "width": 294,
+            "height": 98.75,
+            "scrollWidth": 292,
+            "clientWidth": 292
+          }
+        ],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.39556130373032977,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.5023318933965651,
+            "coveredByOtherCards": []
+          }
+        ],
+        "coveredControls": [],
+        "dialog": null,
+        "radioTargets": [
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          },
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          },
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          }
+        ]
+      },
+      "modal": {
+        "viewport": [
+          320,
+          680
+        ],
+        "document": [
+          320,
+          680
+        ],
+        "cards": [],
+        "controls": [
+          {
+            "id": "maplibregl-ctrl-top-right ",
+            "left": 260,
+            "top": 134,
+            "right": 312,
+            "bottom": 276,
+            "width": 52,
+            "height": 142,
+            "scrollWidth": 52,
+            "clientWidth": 52
+          },
+          {
+            "id": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 10,
+            "top": 620,
+            "right": 302,
+            "bottom": 664,
+            "width": 292,
+            "height": 44,
+            "scrollWidth": 292,
+            "clientWidth": 292
+          },
+          {
+            "id": "walk-tools",
+            "left": 13,
+            "top": 134,
+            "right": 113.265625,
+            "bottom": 182,
+            "width": 100.265625,
+            "height": 48,
+            "scrollWidth": 98,
+            "clientWidth": 98
+          },
+          {
+            "id": "food-pick-tools",
+            "left": 139,
+            "top": 134,
+            "right": 240,
+            "bottom": 180,
+            "width": 101,
+            "height": 46,
+            "scrollWidth": 101,
+            "clientWidth": 101
+          },
+          {
+            "id": "view-dock paper",
+            "left": 13,
+            "top": 448,
+            "right": 219.46875,
+            "bottom": 502,
+            "width": 206.46875,
+            "height": 54,
+            "scrollWidth": 204,
+            "clientWidth": 204
+          },
+          {
+            "id": "trip-dock",
+            "left": 13,
+            "top": 521.25,
+            "right": 307,
+            "bottom": 620,
+            "width": 294,
+            "height": 98.75,
+            "scrollWidth": 292,
+            "clientWidth": 292
+          }
+        ],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.39556130373032977,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.5023318933965651,
+            "coveredByOtherCards": []
+          }
+        ],
+        "coveredControls": [],
+        "dialog": {
+          "left": 14,
+          "top": 12,
+          "right": 306,
+          "bottom": 668,
+          "width": 292,
+          "height": 656,
+          "scrollWidth": 290,
+          "clientWidth": 290
+        },
+        "radioTargets": [
+          {
+            "left": 35,
+            "top": 180.59375,
+            "right": 105.875,
+            "bottom": 224.59375,
+            "width": 70.875,
+            "height": 44,
+            "scrollWidth": 69,
+            "clientWidth": 69
+          },
+          {
+            "left": 112.875,
+            "top": 180.59375,
+            "right": 172.75,
+            "bottom": 224.59375,
+            "width": 59.875,
+            "height": 44,
+            "scrollWidth": 58,
+            "clientWidth": 58
+          },
+          {
+            "left": 179.75,
+            "top": 180.59375,
+            "right": 239.625,
+            "bottom": 224.59375,
+            "width": 59.875,
+            "height": 44,
+            "scrollWidth": 58,
+            "clientWidth": 58
+          }
+        ]
+      }
+    },
+    {
+      "map": {
+        "viewport": [
+          736,
+          414
+        ],
+        "document": [
+          736,
+          414
+        ],
+        "cards": [],
+        "controls": [
+          {
+            "id": "maplibregl-ctrl-top-right ",
+            "left": 663,
+            "top": 82,
+            "right": 716,
+            "bottom": 221,
+            "width": 53,
+            "height": 139,
+            "scrollWidth": 53,
+            "clientWidth": 53
+          },
+          {
+            "id": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 369.078125,
+            "top": 374,
+            "right": 718,
+            "bottom": 398,
+            "width": 348.921875,
+            "height": 24,
+            "scrollWidth": 349,
+            "clientWidth": 349
+          },
+          {
+            "id": "walk-tools",
+            "left": 20,
+            "top": 80,
+            "right": 125.5625,
+            "bottom": 126,
+            "width": 105.5625,
+            "height": 46,
+            "scrollWidth": 104,
+            "clientWidth": 104
+          },
+          {
+            "id": "food-pick-tools",
+            "left": 165,
+            "top": 80,
+            "right": 293,
+            "bottom": 126,
+            "width": 128,
+            "height": 46,
+            "scrollWidth": 128,
+            "clientWidth": 128
+          },
+          {
+            "id": "view-dock paper",
+            "left": 15,
+            "top": 232,
+            "right": 231.75,
+            "bottom": 286,
+            "width": 216.75,
+            "height": 54,
+            "scrollWidth": 215,
+            "clientWidth": 215
+          },
+          {
+            "id": "trip-dock",
+            "left": 15,
+            "top": 296,
+            "right": 721,
+            "bottom": 360,
+            "width": 706,
+            "height": 64,
+            "scrollWidth": 704,
+            "clientWidth": 704
+          }
+        ],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.4414927710116729,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.4803036098964568,
+            "coveredByOtherCards": []
+          }
+        ],
+        "coveredControls": [],
+        "dialog": null,
+        "radioTargets": [
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          },
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          },
+          {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 0,
+            "height": 0,
+            "scrollWidth": 0,
+            "clientWidth": 0
+          }
+        ]
+      },
+      "modal": {
+        "viewport": [
+          736,
+          414
+        ],
+        "document": [
+          736,
+          414
+        ],
+        "cards": [],
+        "controls": [
+          {
+            "id": "maplibregl-ctrl-top-right ",
+            "left": 663,
+            "top": 82,
+            "right": 716,
+            "bottom": 221,
+            "width": 53,
+            "height": 139,
+            "scrollWidth": 53,
+            "clientWidth": 53
+          },
+          {
+            "id": "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show",
+            "left": 369.078125,
+            "top": 374,
+            "right": 718,
+            "bottom": 398,
+            "width": 348.921875,
+            "height": 24,
+            "scrollWidth": 349,
+            "clientWidth": 349
+          },
+          {
+            "id": "walk-tools",
+            "left": 20,
+            "top": 80,
+            "right": 125.5625,
+            "bottom": 126,
+            "width": 105.5625,
+            "height": 46,
+            "scrollWidth": 104,
+            "clientWidth": 104
+          },
+          {
+            "id": "food-pick-tools",
+            "left": 165,
+            "top": 80,
+            "right": 293,
+            "bottom": 126,
+            "width": 128,
+            "height": 46,
+            "scrollWidth": 128,
+            "clientWidth": 128
+          },
+          {
+            "id": "view-dock paper",
+            "left": 15,
+            "top": 232,
+            "right": 231.75,
+            "bottom": 286,
+            "width": 216.75,
+            "height": 54,
+            "scrollWidth": 215,
+            "clientWidth": 215
+          },
+          {
+            "id": "trip-dock",
+            "left": 15,
+            "top": 296,
+            "right": 721,
+            "bottom": 360,
+            "width": 706,
+            "height": 64,
+            "scrollWidth": 704,
+            "clientWidth": 704
+          }
+        ],
+        "anchors": [
+          {
+            "id": "osm-node-13649952401",
+            "error": 0.4414927710116729,
+            "coveredByOtherCards": []
+          },
+          {
+            "id": "osm-node-4460519589",
+            "error": 0.4803036098964568,
+            "coveredByOtherCards": []
+          }
+        ],
+        "coveredControls": [],
+        "dialog": {
+          "left": 98,
+          "top": 10,
+          "right": 638,
+          "bottom": 404,
+          "width": 540,
+          "height": 394,
+          "scrollWidth": 538,
+          "clientWidth": 538
+        },
+        "radioTargets": [
+          {
+            "left": 131,
+            "top": 171.1875,
+            "right": 209.875,
+            "bottom": 215.1875,
+            "width": 78.875,
+            "height": 44,
+            "scrollWidth": 77,
+            "clientWidth": 77
+          },
+          {
+            "left": 217.875,
+            "top": 171.1875,
+            "right": 284.75,
+            "bottom": 215.1875,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          },
+          {
+            "left": 292.75,
+            "top": 171.1875,
+            "right": 359.625,
+            "bottom": 215.1875,
+            "width": 66.875,
+            "height": 44,
+            "scrollWidth": 65,
+            "clientWidth": 65
+          }
+        ]
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "osm-node-13649952401",
+      "name": "超级李板凳面",
+      "category": "小面",
+      "coordinates": [
+        106.5795981,
+        29.5661577
+      ]
+    },
+    {
+      "id": "osm-node-4460519589",
+      "name": "赵二火锅",
+      "category": "火锅",
+      "coordinates": [
+        106.5800949,
+        29.5586155
+      ]
+    }
+  ],
+  "standaloneRequests": [
+    "http://127.0.0.1:8791/preview.html?view=food"
+  ],
+  "passed": true,
+  "executedOn": "2026-10-27"
+}
