@@ -15,7 +15,9 @@ const city=JSON.parse(await readFile(path.join(root,'config/cities.json'),'utf8'
 const contexts=[];
 for(const review of reviews.reviews){
  const segment=library.sources.flatMap(s=>s.segments).find(s=>s.id===review.segmentId);
- if(!segment||!segment.addressText?.includes(review.referencePlace)||segment.coordinates!==null||review.branchMatch!=='unconfirmed'||review.routeEligible!==false)throw new Error('参考地标必须对应原作者的地名线索，且不能升级分店或路线状态');
+ if(!segment||segment.coordinates!==null||review.branchMatch!=='unconfirmed'||review.routeEligible!==false)throw new Error('地址核对资料不能升级分店或路线状态');
+ if(review.referencePlace===undefined&&review.referenceOSMWayId===undefined)continue;
+ if(!segment.addressText?.includes(review.referencePlace)||!Number.isSafeInteger(review.referenceOSMWayId))throw new Error('参考地标必须对应原作者的地名线索');
  const match=[...xml.matchAll(/<way\b([^>]+)>([\s\S]*?)<\/way>/g)].find(m=>Number(attrs(m[1]).id)===review.referenceOSMWayId);
  if(!match)throw new Error('原始OSM资料没有参考地标');
  const a=attrs(match[1]),tags=Object.fromEntries([...match[2].matchAll(/<tag\b([^>]+)\/>/g)].map(m=>{const t=attrs(m[1]);return [t.k,t.v];}));

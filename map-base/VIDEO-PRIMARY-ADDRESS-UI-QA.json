@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-27",
+  "scope": "Isolated local Chromium; primary address evidence shown in existing store-clip details. No shop coordinate, route or live operating status is asserted.",
+  "checks": [
+    {
+      "name": "菜篮子 deep link opens the exact video",
+      "passed": true
+    },
+    {
+      "name": "菜篮子 clip still decodes",
+      "passed": true
+    },
+    {
+      "name": "菜篮子 has a truthful address-only status",
+      "passed": true
+    },
+    {
+      "name": "菜篮子 does not borrow a nearby-reference action or create new map points",
+      "passed": true
+    },
+    {
+      "name": "菜篮子 exposes the original source and the specific primary-page link",
+      "passed": true,
+      "details": [
+        {
+          "href": "https://www.douyin.com/video/7699050477137231973",
+          "hostname": "www.douyin.com",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
+          "text": "原视频片尾地址卡 ↗"
+        },
+        {
+          "href": "https://scjgj.cq.gov.cn/zz/jbq/zwgk/fdzdgknr_146781/xzxk_146787/xzspjg/202502/t20250212_14296418.html",
+          "hostname": "scjgj.cq.gov.cn",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
+          "text": "政府食品经营许可公示 ↗"
+        }
+      ]
+    },
+    {
+      "name": "菜篮子 primary address link remains reachable at 1440",
+      "passed": true,
+      "details": {
+        "rect": {
+          "x": 953,
+          "y": 795.96875,
+          "width": 313,
+          "height": 26.5
+        },
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "菜篮子 primary address link remains reachable at 390",
+      "passed": true,
+      "details": {
+        "rect": {
+          "x": 29,
+          "y": 499.65625,
+          "width": 332,
+          "height": 26.5
+        },
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "菜篮子 primary address link remains reachable at 320",
+      "passed": true,
+      "details": {
+        "rect": {
+          "x": 29,
+          "y": 533.859375,
+          "width": 262,
+          "height": 26.5
+        },
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "菜篮子 closes without leaving media active",
+      "passed": true
+    },
+    {
+      "name": "嫩豆芽老火锅 deep link opens the exact video",
+      "passed": true
+    },
+    {
+      "name": "嫩豆芽老火锅 clip still decodes",
+      "passed": true
+    },
+    {
+      "name": "嫩豆芽老火锅 has a truthful address-only status",
+      "passed": true
+    },
+    {
+      "name": "嫩豆芽老火锅 does not borrow a nearby-reference action or create new map points",
+      "passed": true
+    },
+    {
+      "name": "嫩豆芽老火锅 exposes the original source and the specific primary-page link",
+      "passed": true,
+      "details": [
+        {
+          "href": "https://www.douyin.com/video/7699050477137231973",
+          "hostname": "www.douyin.com",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
+          "text": "原视频片尾地址卡 ↗"
+        },
+        {
+          "href": "https://www.hjmthot.com/contact",
+          "hostname": "www.hjmthot.com",
+          "rel": "noopener noreferrer",
+          "target": "_blank",
+          "text": "品牌官网北环店地址 ↗"
+        }
+      ]
+    },
+    {
+      "name": "嫩豆芽老火锅 primary address link remains reachable at 1440",
+      "passed": true,
+      "details": {
+        "rect": {
+          "x": 953,
+          "y": 795.59375,
+          "width": 313,
+          "height": 26.5
+        },
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "嫩豆芽老火锅 primary address link remains reachable at 390",
+      "passed": true,
+      "details": {
+        "rect": {
+          "x": 29,
+          "y": 500.28125,
+          "width": 332,
+          "height": 26.5
+        },
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "嫩豆芽老火锅 primary address link remains reachable at 320",
+      "passed": true,
+      "details": {
+        "rect": {
+          "x": 29,
+          "y": 534.59375,
+          "width": 262,
+          "height": 26.5
+        },
+        "width": 320,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "嫩豆芽老火锅 closes without leaving media active",
+      "passed": true
+    },
+    {
+      "name": "Existing Luohan reference action remains limited to its own reviewed clip",
+      "passed": true
+    },
+    {
+      "name": "No uncaught page errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Primary pages and brand photo are not automatically requested",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "passed": true
+}

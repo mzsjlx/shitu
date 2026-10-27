@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-27",
+  "scope": "Existing cache only; vector-tile label features are not shop entrances or original OSM nodes.",
+  "source": {
+    "archive": "data/chongqing.pmtiles",
+    "sha256": "0407807dd8bd9e400359d03b0bdd3e126bdcbff3f08f2b6b3ce6891a1101467c",
+    "replicationTime": "2026-10-20T04:00:00Z",
+    "bounds": [
+      106.49,
+      29.49,
+      106.65,
+      29.65
+    ],
+    "sourceZoom": 15,
+    "attribution": "© OpenStreetMap contributors / Protomaps",
+    "license": "ODbL 1.0"
+  },
+  "targetCount": 20,
+  "counts": {
+    "requestedTiles": 288,
+    "presentTiles": 288,
+    "poiFragments": 9195,
+    "uniquePOIs": 8165,
+    "displayPointsInsideConfiguredBounds": 7084,
+    "displayPointsOutsideConfiguredBounds": 1081
+  },
+  "exactNameMatchCount": 0,
+  "adoptedShopCoordinates": 0,
+  "possibleNameMatches": [
+    {
+      "name": "蔡大厨黔江鸡杂",
+      "tileFeatureId": 17604648009504,
+      "exactTargetIds": [],
+      "inConfiguredCoverage": false,
+      "accepted": false
+    },
+    {
+      "name": "大堰车辆段",
+      "tileFeatureId": 35184923393310,
+      "exactTargetIds": [],
+      "inConfiguredCoverage": true,
+      "accepted": false
+    },
+    {
+      "name": "大堰村",
+      "tileFeatureId": 17599872515939,
+      "exactTargetIds": [],
+      "inConfiguredCoverage": true,
+      "accepted": false
+    },
+    {
+      "name": "大堰村",
+      "tileFeatureId": 17599872515944,
+      "exactTargetIds": [],
+      "inConfiguredCoverage": true,
+      "accepted": false
+    },
+    {
+      "name": "大堰村",
+      "tileFeatureId": 17601414530523,
+      "exactTargetIds": [],
+      "inConfiguredCoverage": true,
+      "accepted": false
+    },
+    {
+      "name": "大堰三村",
+      "tileFeatureId": 35185842133700,
+      "exactTargetIds": [],
+      "inConfiguredCoverage": false,
+      "accepted": false
+    },
+    {
+      "name": "大堰一村",
+      "tileFeatureId": 17606099975683,
+      "exactTargetIds": [],
+      "inConfiguredCoverage": true,
+      "accepted": false
+    },
+    {
+      "name": "大渡口区大堰小学",
+      "tileFeatureId": 35185898765941,
+      "exactTargetIds": [],
+      "inConfiguredCoverage": true,
+      "accepted": false
+    },
+    {
+      "name": "大堰小学",
+      "tileFeatureId": 17606099975575,
+      "exactTargetIds": [],
+      "inConfiguredCoverage": true,
+      "accepted": false
+    },
+    {
+      "name": "大堰一村",
+      "tileFeatureId": 17606099975593,
+      "exactTargetIds": [],
+      "inConfiguredCoverage": true,
+      "accepted": false
+    }
+  ],
+  "referenceOnlyNames": [
+    {
+      "name": "天邻风景",
+      "inConfiguredCoverage": false,
+      "acceptedAsShop": false
+    },
+    {
+      "name": "新南路立交",
+      "inConfiguredCoverage": true,
+      "acceptedAsShop": false
+    },
+    {
+      "name": "新南路立交",
+      "inConfiguredCoverage": true,
+      "acceptedAsShop": false
+    },
+    {
+      "name": "建新西路华新路口",
+      "inConfiguredCoverage": true,
+      "acceptedAsShop": false
+    },
+    {
+      "name": "劳动二村",
+      "inConfiguredCoverage": true,
+      "acceptedAsShop": false
+    }
+  ],
+  "xmlReports": [
+    {
+      "file": "design/prototype-3d/data/osm-raw.xml",
+      "sha256": "da9e7631a085ccc0782f84b9466c5aade68492505dff55dcb10f3672c917df10",
+      "matchedRecords": 0
+    },
+    {
+      "file": "output/research/osm-minzu-2026-10-25.xml",
+      "sha256": "11d51830758159b0b058a1bfb004722fef866890349308c12c2bb08f92ba3247",
+      "matchedRecords": 0
+    }
+  ],
+  "limitations": [
+    "No online queries or new downloads.",
+    "POI tile feature IDs are not assumed to be OSM node IDs.",
+    "Tile coordinates are display coordinates, not original node positions or verified entrances.",
+    "A reference name, street, district or generic house number is not a restaurant match."
+  ]
+}

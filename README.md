@@ -28,6 +28,7 @@ macOS / Linux 终端可使用相同命令，去掉 npm 后面的 `.cmd`。
 | 页面 | 路径 |
 | --- | --- |
 | 美食地图 | `/?view=food` |
+| 本地单店视频浮层 | `/?view=food&videos=1` |
 | 探店视频资料 | `/videos.html` |
 | 门店资料目录 | `/places.html` |
 | 本地内容核实工作台 | `/content-review.html` |
@@ -47,7 +48,7 @@ macOS / Linux 终端可使用相同命令，去掉 npm 后面的 `.cmd`。
 | `output/` | 来源核对、研究快照和检查截图；部分脚本需要这里的资料 |
 | `PROJECT-STATUS.md` | 按时间记录的续做状态，以顶部最新章节为准 |
 
-当前地图有两家入口待核的来源候选，视频资料页另外整理了一份作者简介的六条门店线索。没有把待定位线索生成地图坐标或可执行到店路线。具体实现与验证范围见 [主工程说明](map-base/README.md)、[验证记录](map-base/VERIFICATION.md) 和 [视频资料说明](map-base/CREATOR-GUIDES.md)。
+当前地图有两家入口待核的来源候选，视频资料页另外整理了一份作者简介的六条门店线索。用户提供的前两条抖音已整理为20个本地单店片段，保留作者、原页和时间；素材不随Git克隆同步，没有媒体时仍可构建并查看原页。菜篮子与嫩豆芽北环门牌已有政府/品牌原文对照，20条精确位置仍待补齐。没有把待定位线索生成地图坐标或可执行到店路线。具体实现与验证范围见 [主工程说明](map-base/README.md)、[验证记录](map-base/VERIFICATION.md)、[片段素材说明](map-base/VIDEO-LIBRARY.md) 和 [地址核对记录](map-base/VIDEO-ADDRESS-REVIEW.md)。
 
 ## 两人一起开发
 

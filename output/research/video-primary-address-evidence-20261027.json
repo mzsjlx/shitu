@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "observedOn": "2026-10-27",
+  "scope": "原片门牌与政府或品牌原页的文字交叉核对；不是精确位置、营业现状、分店入口或路线确认。",
+  "records": [
+    {
+      "segmentId": "nangua-cailanzi",
+      "sourceId": "cailanzi-government-permit",
+      "kind": "government-publication",
+      "label": "政府食品经营许可公示",
+      "title": "重庆市江北区市场监督管理局食品经营许可新办信息（2025年2月第一周）",
+      "url": "https://scjgj.cq.gov.cn/zz/jbq/zwgk/fdzdgknr_146781/xzxk_146787/xzspjg/202502/t20250212_14296418.html",
+      "publisher": "重庆市江北区市场监督管理局",
+      "publishedOn": "2025-02-12",
+      "readState": "article-body",
+      "operatorName": "江北区菜篮子面包店（个体工商户）",
+      "addressText": "重庆市江北区石马河街道福泉路22号附61号",
+      "nameMatchParts": ["菜篮子"],
+      "addressMatchParts": ["福泉路22号附61号"],
+      "summary": "门牌已与政府许可资料对照，具体地图点位仍待补齐。",
+      "detail": "2025年2月的政府许可公示列出“江北区菜篮子面包店”，门牌与原视频片尾地址卡一致。目前未取得可采用的对应门店坐标，暂不生成图钉或到店路线；许可公示不代表本次现场营业核验。"
+    },
+    {
+      "segmentId": "nangua-nendouya",
+      "sourceId": "nendouya-brand-contact",
+      "kind": "brand-contact-page",
+      "label": "品牌官网北环店地址",
+      "title": "黄家码头餐饮 · 联系我们",
+      "url": "https://www.hjmthot.com/contact",
+      "publisher": "重庆黄家码头餐饮管理有限公司",
+      "publishedOn": null,
+      "readState": "article-body",
+      "operatorName": "嫩豆芽北环",
+      "addressText": "两江新区新南路390号天邻风景南门，加油站对面",
+      "nameMatchParts": ["嫩豆芽"],
+      "addressMatchParts": ["新南路390号", "天邻风景南门"],
+      "summary": "门牌已与品牌官网对照，具体地图点位仍待补齐。",
+      "detail": "品牌官网列出的“嫩豆芽北环”与原视频的新南路390号、天邻风景南门线索相符。官网门头图片与原片外观一致，但未提供可用的精确定位；小区标签点不能代替店门口。原片的步行描述保留为作者线索。",
+      "imageInspection": {
+        "url": "https://www.hjmthot.com/Uploads/detail/huangjiamt/template/2026-03-26/5_ab1aa10ca3c038fb789308be12b8f417.jpg",
+        "use": "internal-visual-comparison-only",
+        "observedLabel": "嫩豆芽老火锅 北环店",
+        "comparisonFrameSeconds": 127,
+        "result": "signage-and-frontage-consistent",
+        "exifGPS": "absent",
+        "publishedInSite": false
+      }
+    }
+  ],
+  "coordinateDecision": {
+    "adoptedShopCoordinates": 0,
+    "existingPublicShopRecordCount": 2,
+    "foodRecordsSHA256": "899a01a8d0fb65ff17afaa7dbf37c30204215202d50095800d053469a0b5ed99",
+    "sourceMapSHA256": "0407807dd8bd9e400359d03b0bdd3e126bdcbff3f08f2b6b3ce6891a1101467c",
+    "notes": [
+      "本地z15的288张瓦片未找到20个片段目标的完整店名匹配；这不是这些店不存在的结论。",
+      "天邻风景是住宅标签点，且标签显示点落在配置范围之外，不能当嫩豆芽门口。",
+      "福泉路的已观察道路片段落在西边界之外，仍不能据此断言具体22号门牌的位置和是否覆盖。",
+      "用户本次确认手头暂无商家或作者定位链接。"
+    ]
+  }
+}

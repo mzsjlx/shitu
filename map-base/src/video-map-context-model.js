@@ -19,6 +19,10 @@ export function validateVideoMapContexts(data,library,bounds=[106.49,29.49,106.6
     if(!segments.has(review.segmentId)||reviewIds.has(review.segmentId)||review.decision!=='needs-branch-location-evidence'||review.branchMatch!=='unconfirmed'||review.entranceMatch!=='unconfirmed'||review.routeEligible!==false||typeof review.summary!=='string'||typeof review.detail!=='string'||!Array.isArray(review.sources))throw new Error('分店核对记录不能升级地点状态');
     reviewIds.add(review.segmentId);
     for(const source of review.sources){const u=new URL(source.url);if(u.protocol!=='https:'||u.username||u.password||typeof source.label!=='string')throw new Error('店址资料需要安全的HTTPS出处');}
+    if(review.addressMatch!==undefined){
+      const s=segments.get(review.segmentId),primary=review.sources.filter(source=>['government-publication','brand-contact-page'].includes(source.kind));
+      if(review.addressMatch!=='primary-source-crosschecked'||!s.addressText||primary.length!==1||primary[0].readState!=='article-body'||primary[0].conclusion!=='address-text-crosscheck-only')throw new Error('官方地址对照不能由搜索摘要或未知来源代替');
+    }
   }
   return data;
 }

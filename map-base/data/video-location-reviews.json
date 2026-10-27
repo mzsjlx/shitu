@@ -59,6 +59,76 @@
           "note": "华龙网原报道明确指向观音桥商场门店。未与本次罗汉寺原片合并，未引用旧营业时间、价格或图片。"
         }
       ]
+    },
+    {
+      "segmentId": "nangua-cailanzi",
+      "decision": "needs-branch-location-evidence",
+      "branchMatch": "unconfirmed",
+      "entranceMatch": "unconfirmed",
+      "routeEligible": false,
+      "addressMatch": "primary-source-crosschecked",
+      "summary": "门牌已与政府许可资料对照，具体地图点位仍待补齐。",
+      "detail": "2025年2月的政府许可公示列出“江北区菜篮子面包店”，门牌与原视频片尾地址卡一致。目前未取得可采用的对应门店坐标，暂不生成图钉或到店路线；许可公示不代表本次现场营业核验。",
+      "sources": [
+        {
+          "id": "creator-address-card",
+          "label": "原视频片尾地址卡",
+          "url": "https://www.douyin.com/video/7699050477137231973",
+          "publishedOn": "2026-10-21",
+          "observedOn": "2026-10-27",
+          "readState": "local-video-frame",
+          "frameSeconds": 320,
+          "addressText": "福泉路22号附61号",
+          "conclusion": "creator-address-lead"
+        },
+        {
+          "id": "cailanzi-government-permit",
+          "label": "政府食品经营许可公示",
+          "url": "https://scjgj.cq.gov.cn/zz/jbq/zwgk/fdzdgknr_146781/xzxk_146787/xzspjg/202502/t20250212_14296418.html",
+          "publishedOn": "2025-02-12",
+          "observedOn": "2026-10-27",
+          "readState": "article-body",
+          "kind": "government-publication",
+          "addressText": "重庆市江北区石马河街道福泉路22号附61号",
+          "operatorName": "江北区菜篮子面包店（个体工商户）",
+          "conclusion": "address-text-crosscheck-only"
+        }
+      ]
+    },
+    {
+      "segmentId": "nangua-nendouya",
+      "decision": "needs-branch-location-evidence",
+      "branchMatch": "unconfirmed",
+      "entranceMatch": "unconfirmed",
+      "routeEligible": false,
+      "addressMatch": "primary-source-crosschecked",
+      "summary": "门牌已与品牌官网对照，具体地图点位仍待补齐。",
+      "detail": "品牌官网列出的“嫩豆芽北环”与原视频的新南路390号、天邻风景南门线索相符。官网门头图片与原片外观一致，但未提供可用的精确定位；小区标签点不能代替店门口。原片的步行描述保留为作者线索。",
+      "sources": [
+        {
+          "id": "creator-address-card",
+          "label": "原视频片尾地址卡",
+          "url": "https://www.douyin.com/video/7699050477137231973",
+          "publishedOn": "2026-10-21",
+          "observedOn": "2026-10-27",
+          "readState": "local-video-frame",
+          "frameSeconds": 320,
+          "addressText": "新南路390号天邻风景南门西行60米路北，近体育公园地铁站1号口",
+          "conclusion": "creator-address-lead"
+        },
+        {
+          "id": "nendouya-brand-contact",
+          "label": "品牌官网北环店地址",
+          "url": "https://www.hjmthot.com/contact",
+          "publishedOn": null,
+          "observedOn": "2026-10-27",
+          "readState": "article-body",
+          "kind": "brand-contact-page",
+          "addressText": "两江新区新南路390号天邻风景南门，加油站对面",
+          "operatorName": "嫩豆芽北环",
+          "conclusion": "address-text-crosscheck-only"
+        }
+      ]
     }
   ]
 }
