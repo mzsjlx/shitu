@@ -16,7 +16,7 @@ if(sha(bytes)!==manifest.sha256)throw new Error('Archive checksum mismatch');
 const archive=new PMTiles({getKey:()=>config.tiles,getBytes:async(offset,length)=>{const b=bytes.subarray(offset,offset+length);return {data:b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength)};}});
 const xy=(lon,lat,z)=>{const n=2**z;return [Math.floor((lon+180)/360*n),Math.floor((1-Math.asinh(Math.tan(lat*Math.PI/180))/Math.PI)/2*n)];};
 const norm=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[\s·、（）()\-—_.,，。:：/]/g,'');
-const pattern=/家常蹄花|三样子|惠来味|嫩豆芽|菜篮子|菜蓝子|大堰|大玲|黔江鸡杂|荣昌鸡汤|jeju|set.?coffee|归井|喜大匠|甘怡|熊蜂|山梨树|呜嘟|哑巴兔|把把尖|43号/i;
+const pattern=/家常蹄花|三样子|惠来味|嫩豆芽|菜篮子|菜蓝子|大堰|大玲|黔江鸡杂|荣昌鸡汤|jeju|set.?coffee|归井|喜大匠|甘怡|熊蜂|山乘树|山梨树|呜嘟|哑巴兔|把把尖|43号/i;
 const areaPattern=/福泉路|新南路|天邻|玖玺|劳动二村|环湖路|洋河二村|大坪正街|嘉华路|华新路/;
 const unique=new Map(),counts={requestedTiles:0,presentTiles:0,poiFragments:0,uniquePOIs:0};
 const z=15,[left,top]=xy(config.bounds[0],config.bounds[3],z),[right,bottom]=xy(config.bounds[2],config.bounds[1],z);
