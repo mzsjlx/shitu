@@ -1,4 +1,4 @@
-import {validateVideoLibrary,clockText} from './video-library-model.js';
+import {validateVideoLibrary,clockText,amapSearchUrl} from './video-library-model.js';
 import './video-library.css';
 import mapContextData from '../data/video-map-contexts.json';
 import {validateVideoMapContexts} from './video-map-context-model.js';
@@ -80,8 +80,10 @@ export class VideoLibrary{
       const fallback=el('p','video-player-error','本机片段暂时无法播放，可以查看原视频。');fallback.hidden=true;video.addEventListener('error',()=>{if(video.getAttribute('src'))fallback.hidden=false;});this.player.append(video,fallback);
     }else this.player.append(el('p','video-player-empty','本机还没有这段视频文件，可先查看作者留下的店名与地址。'));
     const titleRow=el('div','video-place-title-row');titleRow.append(el('h3','',segment.name));
-    this.player.append(el('small','video-player-category',segment.category),titleRow,el('p','video-player-summary',segment.summary));
-    const address=el('div','video-player-address');address.append(el('small','','原作者地址线索'),el('p','',segment.addressText||'原片未提供详细地址，正在核对分店。'));if(segment.addressNote)address.append(el('p','video-address-note',segment.addressNote));this.player.append(address);
+    const mapLink=el('a','video-map-search','在高德地图搜索 ↗');mapLink.href=amapSearchUrl(segment.name);mapLink.target='_blank';mapLink.rel='noopener noreferrer';mapLink.setAttribute('aria-label','在高德地图搜索'+segment.name+'，新窗口打开');
+    this.player.append(el('small','video-player-category',segment.category),titleRow,mapLink,el('p','video-player-summary',segment.summary));
+    const address=el('div','video-player-address');address.append(el('small','','原作者地址线索'),el('p','',segment.addressText||'原片未提供详细地址，选择时留意具体分店。'));if(segment.addressNote)address.append(el('p','video-address-note',segment.addressNote));
+    this.player.append(address);
     this.player.append(el('p','video-location-note',review?.summary||'店址尚未对准地图，暂不加入到店路线。'));
     if(context&&typeof this.onMapContext==='function'){
       const button=el('button','video-nearby-button','看看'+context.label+' ↗');button.type='button';button.addEventListener('click',async()=>{

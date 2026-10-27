@@ -22,3 +22,8 @@ export function validateVideoLibrary(data){
   return data;
 }
 export function clockText(seconds){const n=Math.floor(seconds);return Math.floor(n/60)+':'+String(n%60).padStart(2,'0');}
+export function amapSearchUrl(name){
+  const url=new URL('https://uri.amap.com/search');
+  url.searchParams.set('keyword',name.trim());url.searchParams.set('city','500000');url.searchParams.set('view','list');url.searchParams.set('src','shitu');url.searchParams.set('callnative','0');
+  return url.href;
+}
