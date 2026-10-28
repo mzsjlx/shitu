@@ -30,7 +30,7 @@ for(let port=8791;port<=8799;port++){
   if(chosen)break;
 }
 if(!chosen)throw new Error('无法启动本地预览，请检查 8791–8799 端口。');
-const url='http://127.0.0.1:'+chosen+'/';
+const url='http://127.0.0.1:'+chosen+'/?view=food';
 console.log('食途地图已启动：'+url);
 if(!process.argv.includes('--no-open')){
   if(process.platform==='win32'){

@@ -57,3 +57,7 @@ macOS / Linux 终端可使用相同命令，去掉 npm 后面的 `.cmd`。
 仓库保留源码、必要数据、设计素材与来源记录；依赖目录、构建目录、本机缓存和环境配置由 `.gitignore` 排除。`map-base/dist/` 与 `map-base/preview.html` 在本地执行构建后生成，不需要手动上传。
 
 项目自有代码尚未选定开源许可证。现有第三方软件、地图数据、图片和视频各自的来源与用途说明仍需保留，见 `map-base/licenses/`、`MAP-PLATFORM-DECISION.md`、`FOOD-CONTENT-SOURCES.md` 和 `CREATOR-GUIDES-SOURCES.md`。
+
+## 两台电脑的素材同步
+
+代码中包含 20 张视频封面，首次安装构建即可显示地图与美食缩略图。完整原片与剪辑通过仓库 Release 素材包单独下载、校验导入。双方新增和上传素材都遵循 [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md)。

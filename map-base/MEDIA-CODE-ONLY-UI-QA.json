@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Code-only checkout shows 20 real food thumbnails",
+      "passed": true
+    },
+    {
+      "name": "Missing video packages do not fetch MP4 files",
+      "passed": true
+    },
+    {
+      "name": "Code-only popup retains matching food image",
+      "passed": true
+    },
+    {
+      "name": "Code-only popup explains missing video package",
+      "passed": true
+    },
+    {
+      "name": "Mobile code-only map remains usable",
+      "passed": true
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

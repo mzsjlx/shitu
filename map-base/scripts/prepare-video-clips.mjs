@@ -8,8 +8,11 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const data=validateVideoLibrary(JSON.parse(await readFile(path.join(root,'data/video-library.json'),'utf8')));
 const ffmpeg=process.env.FOODCITY_FFMPEG||'ffmpeg',ffprobe=process.env.FOODCITY_FFPROBE||'ffprobe';
 function run(command,args){return new Promise((resolve,reject)=>{const child=spawn(command,args,{windowsHide:true,stdio:['ignore','pipe','pipe']});let out='',err='';child.stdout.on('data',b=>out+=b);child.stderr.on('data',b=>err+=b);child.once('error',reject);child.once('exit',code=>code===0?resolve(out):reject(new Error(`${command} exited ${code}: ${err.slice(-2500)}`)));});}
-const report={schemaVersion:1,preparedAt:new Date().toISOString(),catalogSHA256:digest(await readFile(path.join(root,'data/video-library.json'))),mediaUploaded:false,records:[],missingSources:[]};
-for(const source of data.sources){
+const option=process.argv.indexOf('--source'),sourceId=option>=0?process.argv[option+1]:null;
+if(option>=0&&!data.sources.some(s=>s.id===sourceId))throw new Error('未找到这个来源ID');
+let existing={records:[]};try{existing=JSON.parse(await readFile(path.join(root,'.local/video-clips/report.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+const report={schemaVersion:1,preparedAt:new Date().toISOString(),catalogSHA256:digest(await readFile(path.join(root,'data/video-library.json'))),mediaUploaded:false,records:existing.records||[],missingSources:[]};
+for(const source of data.sources.filter(source=>!sourceId||source.id===sourceId)){
   if(!source.segments.length)continue;
   const input=path.join(root,'.local/video-intake',source.id,'source.mp4');
   let bytes;try{bytes=await readFile(input);}catch(error){if(error.code==='ENOENT'){report.missingSources.push(source.id);continue;}throw error;}
@@ -24,6 +27,7 @@ for(const source of data.sources){
     const duration=Number(probe.format.duration);
     if(!probe.streams.some(s=>s.codec_type==='video'&&s.codec_name==='h264')||!probe.streams.some(s=>s.codec_type==='audio'&&s.codec_name==='aac')||Math.abs(duration-(segment.end-segment.start))>.16)throw new Error(`片段音画或长度校验失败: ${segment.id}`);
     const clipBytes=await readFile(clip),posterBytes=await readFile(poster);
+    report.records=report.records.filter(record=>record.id!==segment.id);
     report.records.push({id:segment.id,sourceId:source.id,mediaKey:mediaKey(source,segment),sourceSHA256:source.sourceSHA256,start:segment.start,end:segment.end,posterSecond:segment.posterSecond,clip:names.clip,poster:names.poster,clipBytes:clipBytes.length,posterBytes:posterBytes.length,clipSHA256:digest(clipBytes),posterSHA256:digest(posterBytes),probe});
     console.log(`${segment.id}: ${duration.toFixed(3)}s, H.264 + AAC`);
     await writeFile(path.join(root,'.local/video-clips/report.json'),JSON.stringify(report,null,2)+'\n');

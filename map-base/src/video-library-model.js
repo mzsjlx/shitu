@@ -1,6 +1,6 @@
 const idPattern=/^[a-z][a-z0-9-]{0,79}$/;
 export function validateVideoLibrary(data){
-  if(data?.schemaVersion!==1||data.city!=='chongqing'||!Array.isArray(data.sources)||data.sources.length!==3||data.rights?.status!=='user-confirmed')throw new Error('视频资料格式不正确');
+  if(data?.schemaVersion!==1||data.city!=='chongqing'||!Array.isArray(data.sources)||data.sources.length<1||data.sources.length>200||data.rights?.status!=='user-confirmed')throw new Error('视频资料格式不正确');
   const ids=new Set();
   for(const source of data.sources){
     if(!idPattern.test(source.id)||ids.has(source.id))throw new Error('视频来源ID无效');
@@ -24,7 +24,11 @@ export function validateVideoLibrary(data){
   return data;
 }
 export function clockText(seconds){const n=Math.floor(seconds);return Math.floor(n/60)+':'+String(n%60).padStart(2,'0');}
-export function localVideoAsset(value,extension){return typeof value==='string'&&new RegExp('^\\./media/videos/[a-z][a-z0-9-]*/[a-z][a-z0-9-]*\\.'+extension+'$').test(value)?value:null;}
+export function localVideoAsset(value,extension){
+  if(typeof value!=='string'||!['mp4','jpg'].includes(extension))return null;
+  const folder=extension==='jpg'?'(?:media/videos|assets/video-posters)':'media/videos';
+  return new RegExp('^\\./'+folder+'/[a-z][a-z0-9-]*/[a-z][a-z0-9-]*\\.'+extension+'$').test(value)?value:null;
+}
 export function amapSearchUrl(name){
   const url=new URL('https://uri.amap.com/search');
   url.searchParams.set('keyword',name.trim());url.searchParams.set('city','500000');url.searchParams.set('view','list');url.searchParams.set('src','shitu');url.searchParams.set('callnative','0');

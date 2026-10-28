@@ -35,7 +35,7 @@ export class VideoLibrary{
       validateVideoLibrary(data);this.mapContexts=validateVideoMapContexts(mapContextData,data);if(assets.schemaVersion!==1||!assets.segments||Array.isArray(assets.segments))throw new Error('视频素材目录格式不正确。');
       if(generation!==this.generation||!this.dialog.open)return;
       this.data=data;this.assets=assets.segments;
-      const count=data.sources.flatMap(s=>s.segments).filter(s=>this.asset(s)).length;
+      const count=data.sources.flatMap(s=>s.segments).filter(s=>this.asset(s)?.clip).length;
       this.status.textContent=count?`${count} 个本地片段 · 已加入地图，位置大致`:'原片片段未导入本机 · 可查看来源与地址线索';
       this.sources.replaceChildren();
       for(const source of data.sources){const button=el('button','video-source-tab',source.author);button.type='button';button.dataset.source=source.id;button.append(el('span','',String(source.segments.length)));button.addEventListener('click',()=>this.renderSource(source.id));this.sources.append(button);}
@@ -43,7 +43,7 @@ export class VideoLibrary{
     }catch(error){if(generation!==this.generation)return;this.message.textContent=error.name==='AbortError'?'视频资料读取超时，可以重试。':error.message;document.getElementById('video-library-retry').hidden=false;}
     finally{clearTimeout(timer);}
   }
-  asset(segment){const a=this.assets?.[segment.id];return localVideoAsset(a?.clip,'mp4')&&localVideoAsset(a?.poster,'jpg')?a:null;}
+  asset(segment){const a=this.assets?.[segment.id];const poster=localVideoAsset(a?.poster,'jpg'),clip=localVideoAsset(a?.clip,'mp4');return poster?{...a,poster,clip}:null;}
   renderSource(id,clipId){
     this.stop();this.sourceId=id;this.selected=null;document.getElementById('video-library-search').value='';
     for(const button of this.sources.children)button.setAttribute('aria-pressed',String(button.dataset.source===id));
@@ -74,10 +74,10 @@ export class VideoLibrary{
     const context=this.mapContexts.contexts.find(c=>c.segmentIds.includes(segment.id)),review=this.mapContexts.reviews.find(r=>r.segmentId===segment.id);
     this.player.replaceChildren();
     this.player.append(el('span','video-player-kicker',source.author+' · 原片 '+clockText(segment.start)+'—'+clockText(segment.end)));
-    if(asset){
+    if(asset?.clip){
       const video=el('video','video-player-media');video.controls=true;video.playsInline=true;video.preload='metadata';video.poster=asset.poster;video.src=asset.clip;video.setAttribute('aria-label',segment.name+'的探店片段');
       const fallback=el('p','video-player-error','本机片段暂时无法播放，可以查看原视频。');fallback.hidden=true;video.addEventListener('error',()=>{if(video.getAttribute('src'))fallback.hidden=false;});this.player.append(video,fallback);
-    }else this.player.append(el('p','video-player-empty','本机还没有这段视频文件，可先查看作者留下的店名与地址。'));
+    }else{if(asset?.poster){const cover=el('img','video-player-media');cover.src=asset.poster;cover.alt=segment.name+' · 原视频画面';this.player.append(cover);}this.player.append(el('p','video-player-empty','视频素材待同步，可先查看封面、地址或原视频。'));}
     const titleRow=el('div','video-place-title-row');titleRow.append(el('h3','',segment.name));
     const mapLink=el('a','video-map-search','在高德地图搜索 ↗');mapLink.href=amapSearchUrl(segment.name);mapLink.target='_blank';mapLink.rel='noopener noreferrer';mapLink.setAttribute('aria-label','在高德地图搜索'+segment.name+'，新窗口打开');
     this.player.append(el('small','video-player-category',segment.category),titleRow,mapLink,el('p','video-player-summary',segment.summary));

@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import {mkdir,readFile,writeFile,cp,mkdtemp} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {zipSync,strToU8} from 'fflate';
+import {importBundle} from './media-bundles.mjs';
+import {buildVideoLibrary} from './build-video-library.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),checks=[];
+const check=(name,passed)=>{assert.ok(passed,name);checks.push({name,passed});};
+const tmp=await mkdtemp(path.join(root,'.local/media-collaboration-qa-'));
+await mkdir(path.join(tmp,'data'),{recursive:true});await mkdir(path.join(tmp,'dist/data'),{recursive:true});
+for(const name of ['video-library.json','video-map-contexts.json','video-posters.json','media-bundles.json'])await cp(path.join(root,'data',name),path.join(tmp,'data',name));
+await cp(path.join(root,'assets/video-posters'),path.join(tmp,'assets/video-posters'),{recursive:true});
+await buildVideoLibrary(tmp);
+let assets=JSON.parse(await readFile(path.join(tmp,'dist/data/video-library-assets.json'),'utf8'));
+check('Fresh checkout has 20 real posters and zero local videos',Object.keys(assets.segments).length===20&&Object.values(assets.segments).every(s=>s.poster&&!s.clip));
+for(const source of ['nangua','abang']){
+ const name=source==='nangua'?'shitu-media-nangua-d590027fc3ebc378.zip':'shitu-media-abang-33590fa9cfb07431.zip';
+ const result=await importBundle(tmp,path.join(root,'.local/media-bundles',name));check(source+' bundle imports matching clips',result.clips===(source==='nangua'?11:9));
+ check(source+' second import is idempotent',(await importBundle(tmp,path.join(root,'.local/media-bundles',name))).newFiles===0);
+}
+await buildVideoLibrary(tmp);assets=JSON.parse(await readFile(path.join(tmp,'dist/data/video-library-assets.json'),'utf8'));
+check('Both packages merge to 20 playable clips',Object.values(assets.segments).filter(s=>s.clip).length===20);
+const bad=path.join(tmp,'bad-path.zip');await writeFile(bad,zipSync({'../outside.mp4':strToU8('bad')}));
+await assert.rejects(()=>importBundle(tmp,bad));check('Rejects archive traversal',true);
+const target=path.join(tmp,'.local/video-intake/nangua/source.mp4');await writeFile(target,'existing different file');
+await assert.rejects(()=>importBundle(tmp,path.join(root,'.local/media-bundles/shitu-media-nangua-d590027fc3ebc378.zip')));
+check('Conflicting existing file remains unchanged',await readFile(target,'utf8')==='existing different file');
+const report={date:'2026-10-28',scope:'Isolated checkout without private media; real package import, repeat import, merging and conflicts.',checks,passed:true};
+await writeFile(path.join(root,'MEDIA-COLLABORATION-QA.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({passed:true,checks:checks.length}));

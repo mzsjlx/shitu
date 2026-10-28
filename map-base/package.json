@@ -6,9 +6,13 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "start": "node scripts/serve.mjs",
-    "preview": "node scripts/open-preview.mjs"
+    "preview": "node scripts/open-preview.mjs",
+    "media:posters": "node scripts/prepare-video-posters.mjs",
+    "media:pack": "node scripts/media-bundles.mjs pack",
+    "media:import": "node scripts/media-bundles.mjs import"
   },
   "dependencies": {
+    "fflate": "0.8.3",
     "maplibre-gl": "6.15.0",
     "pmtiles": "4.5.0",
     "three": "0.186.1"

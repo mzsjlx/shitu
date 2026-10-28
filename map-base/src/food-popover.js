@@ -59,7 +59,7 @@ export class FoodPopover{
           const iframe=el('iframe','food-popover-video');iframe.title=item.name+' · 相关视频，分店待核';iframe.allow='fullscreen; picture-in-picture';iframe.allowFullscreen=true;iframe.src=official.url;frame.append(iframe);
         }
       });frame.append(play);
-    }else frame.append(el('span','food-popover-missing','视频待添加'));
+    }else frame.append(el('span','food-popover-missing',item.verificationStatus==='video-location'?'视频待同步':'视频待添加'));
     const close=el('button','food-popover-close','×');close.type='button';close.setAttribute('aria-label','关闭'+item.name+'预览');close.addEventListener('click',()=>{this.close();entry.button.focus({preventScroll:true});});
     const copy=el('div','food-popover-copy'),heading=el('div','food-popover-heading');
     const title=el('strong','',item.name),credit=foodVideoCredit(item),detail=el('small','',credit||'视频待添加');detail.title=credit||'';heading.append(title,detail);copy.append(heading);

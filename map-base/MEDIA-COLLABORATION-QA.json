@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-28",
+  "scope": "Isolated checkout without private media; real package import, repeat import, merging and conflicts.",
+  "checks": [
+    {
+      "name": "Fresh checkout has 20 real posters and zero local videos",
+      "passed": true
+    },
+    {
+      "name": "nangua bundle imports matching clips",
+      "passed": true
+    },
+    {
+      "name": "nangua second import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "abang bundle imports matching clips",
+      "passed": true
+    },
+    {
+      "name": "abang second import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "Both packages merge to 20 playable clips",
+      "passed": true
+    },
+    {
+      "name": "Rejects archive traversal",
+      "passed": true
+    },
+    {
+      "name": "Conflicting existing file remains unchanged",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

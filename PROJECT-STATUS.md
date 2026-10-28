@@ -1,3 +1,7 @@
+## 2026-10-28 封面随代码、视频用 Release 素材包协作
+
+新增 MEDIA-COLLABORATION.md：双方先下载代码即可看 20 家门店与封面；视频原片、剪辑按来源打包，放入仓库 Release 后通过 media:import 校验导入。新增 media:posters / media:pack / media:import 命令，剪辑支持按来源处理并保留其他记录。封面来自已授权原片，保留作者与原链接；地图位置仍是大致规划参考。当前开发分支为 feat/hongyadong-map-layer。
+
 # 项目续做记录
 
 ## 2026-10-27 当前：先满足自己和朋友旅行时查店

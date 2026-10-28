@@ -7,9 +7,19 @@ export async function buildVideoLibrary(root){
   const data=validateVideoLibrary(JSON.parse(await readFile(path.join(root,'data/video-library.json'),'utf8')));
   validateVideoMapContexts(JSON.parse(await readFile(path.join(root,'data/video-map-contexts.json'),'utf8')),data);
   let report;try{report=JSON.parse(await readFile(path.join(root,'.local/video-clips/report.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+  let posters;try{posters=JSON.parse(await readFile(path.join(root,'data/video-posters.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
   const assets={schemaVersion:1,catalogSHA256:digest(await readFile(path.join(root,'data/video-library.json'))),segments:{}};
   for(const source of data.sources)for(const segment of source.segments){
-    const names=mediaNames(source,segment),record=report?.records?.find(r=>r.id===segment.id&&r.mediaKey===mediaKey(source,segment)&&r.sourceSHA256===source.sourceSHA256);
+    const names=mediaNames(source,segment),key=mediaKey(source,segment),publicPoster=posters?.segments?.[segment.id];
+    if(publicPoster?.mediaKey===key&&publicPoster.sourceSHA256===source.sourceSHA256){
+      const expected=`assets/video-posters/${source.id}/${names.poster}`;
+      if(publicPoster.path!==expected)throw new Error('封面路径不正确：'+segment.id);
+      const bytes=await readFile(path.join(root,expected));
+      if(digest(bytes)!==publicPoster.sha256)throw new Error('仓库封面校验失败：'+segment.id);
+      const out=path.join(root,'dist',expected);await mkdir(path.dirname(out),{recursive:true});await cp(path.join(root,expected),out);
+      assets.segments[segment.id]={poster:'./'+expected,durationSeconds:segment.end-segment.start};
+    }
+    const record=report?.records?.find(r=>r.id===segment.id&&r.mediaKey===key&&r.sourceSHA256===source.sourceSHA256);
     if(!record)continue;
     const folder=path.join(root,'.local/video-clips',source.id),clip=path.join(folder,names.clip),poster=path.join(folder,names.poster);
     let clipBytes,posterBytes;try{[clipBytes,posterBytes]=await Promise.all([readFile(clip),readFile(poster)]);}catch(error){if(error.code==='ENOENT')continue;throw error;}
@@ -19,5 +29,5 @@ export async function buildVideoLibrary(root){
     assets.segments[segment.id]={clip:`./media/videos/${source.id}/${names.clip}`,poster:`./media/videos/${source.id}/${names.poster}`,durationSeconds:Number(record.probe.format.duration)};
   }
   await writeFile(path.join(root,'dist/data/video-library-assets.json'),JSON.stringify(assets,null,2)+'\n');
-  console.log('Local video library: '+Object.keys(assets.segments).length+' clips copied; missing media falls back to original links.');
+  console.log('Video library: '+Object.values(assets.segments).filter(s=>s.clip).length+' local clips, '+Object.values(assets.segments).filter(s=>s.poster).length+' posters.');
 }
