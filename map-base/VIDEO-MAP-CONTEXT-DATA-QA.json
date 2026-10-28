@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-27",
+  "scope": "Reference landmark geometry compared point for point with retained original OSM XML; no shop, entrance or route confirmation.",
+  "checks": [
+    {
+      "name": "Context dataset validates and contains one landmark reference",
+      "passed": true
+    },
+    {
+      "name": "Original OSM XML digest matches the frozen source",
+      "passed": true,
+      "detail": {
+        "hash": "11d51830758159b0b058a1bfb004722fef866890349308c12c2bb08f92ba3247",
+        "source": "output/research/osm-minzu-2026-10-25.xml"
+      }
+    },
+    {
+      "name": "All 18 source node references and their order are retained",
+      "passed": true
+    },
+    {
+      "name": "Polygon preserves every original WGS84 coordinate",
+      "passed": true
+    },
+    {
+      "name": "Reference is explicitly the temple, with no restaurant or entrance geometry",
+      "passed": true
+    },
+    {
+      "name": "Reference links only to the creator address that names this landmark",
+      "passed": true
+    },
+    {
+      "name": "All twenty video shops have approximate coordinates and no navigation eligibility",
+      "passed": true
+    },
+    {
+      "name": "Branch and entrance remain unconfirmed despite matching address text",
+      "passed": true
+    },
+    {
+      "name": "Search-only lead is distinguished from read article bodies",
+      "passed": true
+    },
+    {
+      "name": "Historic Guanyinqiao report is kept separate from this branch",
+      "passed": true
+    },
+    {
+      "name": "Rejects point geometry in a landmark reference",
+      "passed": true
+    },
+    {
+      "name": "Rejects shop location claim in a landmark reference",
+      "passed": true
+    },
+    {
+      "name": "Rejects route claim in a landmark reference",
+      "passed": true
+    },
+    {
+      "name": "Rejects moved vertex in a landmark reference",
+      "passed": true
+    },
+    {
+      "name": "Retired sample places are absent",
+      "passed": true,
+      "detail": "90fdfb5128c375e209eccf6a035707ade4e83adbfff9e32b767aff9a51060833"
+    }
+  ],
+  "contextSHA256": "20141158255c56a2c8f549de67bc1dfc34596773f2ab035f3e15f0f1ee0be859",
+  "passed": true
+}

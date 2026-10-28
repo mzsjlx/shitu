@@ -1,0 +1,9 @@
+.landmark-entry{display:flex;align-items:center;justify-content:space-between;width:100%;padding:13px 15px;margin:15px 0 3px;border:1px solid #e1d7c6;border-radius:17px;text-align:left;background:#efe8db;font-size:14px}
+.landmark-entry>span:last-child{font-size:22px;color:#9b7151}
+.landmark-entry:hover{background:#e9dfce}
+.landmark-entry:disabled{opacity:.55;cursor:default}
+.landmark-note{position:absolute;left:20px;top:20px;z-index:3;display:flex;align-items:center;gap:15px;padding:12px 18px;border-radius:20px;pointer-events:none}
+.landmark-note strong{font:600 24px/1.4 SimSun,"Songti SC",serif;letter-spacing:2px}
+.landmark-note span{font-size:10px;color:#91816d}
+.landmark-mode .street-tools,.landmark-mode .walk-tools,.landmark-mode #food-pick-tools{display:none}
+@media(max-width:600px){.landmark-note{left:13px;top:13px;gap:9px;padding:11px 14px;max-width:calc(100% - 87px);border-radius:18px}.landmark-note strong{font-size:21px;flex:none}.landmark-note span{font-size:9px;max-width:112px}}

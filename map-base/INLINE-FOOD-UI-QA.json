@@ -1,0 +1,225 @@
+{
+  "scope": "Isolated browser; video coordinates used below are synthetic test fixtures only.",
+  "checks": [
+    {
+      "name": "Two real source candidates appear with no video store pins",
+      "passed": true
+    },
+    {
+      "name": "Map card credits the matching video creator and platform",
+      "passed": true
+    },
+    {
+      "name": "Hover opens a small map-adjacent preview with no external request",
+      "passed": true
+    },
+    {
+      "name": "Click adds the first stop without opening the large modal",
+      "passed": true
+    },
+    {
+      "name": "Video preview credits the source and flags the unconfirmed branch",
+      "passed": true
+    },
+    {
+      "name": "Preview media occupies at least two thirds of the popup",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "x": 908,
+          "y": 176.90625,
+          "width": 310,
+          "height": 301.5
+        },
+        "media": {
+          "x": 915,
+          "y": 183.90625,
+          "width": 296,
+          "height": 208
+        }
+      }
+    },
+    {
+      "name": "Related Bilibili player starts only after clicking play",
+      "passed": true
+    },
+    {
+      "name": "Choosing the second card closes the previous player and connects both stops",
+      "passed": true
+    },
+    {
+      "name": "Distance is labelled as a straight-line estimate",
+      "passed": true,
+      "detail": {
+        "metres": 840.0309135455884,
+        "caption": "直线约 840 米",
+        "source": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {},
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    106.5795981,
+                    29.5661577
+                  ],
+                  [
+                    106.5800949,
+                    29.5586155
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Nearby controls and search are simplified in food mode",
+      "passed": true
+    },
+    {
+      "name": "Removing one place clears the connection",
+      "passed": true
+    },
+    {
+      "name": "Leaving food mode closes the preview and hides the route",
+      "passed": true
+    },
+    {
+      "name": "Synthetic positioned segments create local video cards",
+      "passed": true
+    },
+    {
+      "name": "Video clip card credits Douyin and its creator",
+      "passed": true
+    },
+    {
+      "name": "The card uses the matching original video poster",
+      "passed": true
+    },
+    {
+      "name": "Video is not fetched before play",
+      "passed": true
+    },
+    {
+      "name": "The matching local video plays inside the map popup",
+      "passed": true,
+      "detail": {
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4",
+        "width": 576,
+        "height": 1024,
+        "paused": false,
+        "time": 0
+      }
+    },
+    {
+      "name": "Local video actually advances",
+      "passed": true
+    },
+    {
+      "name": "Switching cards stops and unloads the old video",
+      "passed": true
+    },
+    {
+      "name": "Adding two synthetic video stores draws a labelled connection",
+      "passed": true
+    },
+    {
+      "name": "No external platform is loaded by local video cards",
+      "passed": true
+    },
+    {
+      "name": "Popup stays visible and media remains dominant at 390",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "x": 12,
+          "y": 76,
+          "width": 260,
+          "height": 281
+        },
+        "shell": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 780
+        },
+        "media": {
+          "x": 19,
+          "y": 83,
+          "width": 246,
+          "height": 190
+        }
+      }
+    },
+    {
+      "name": "Popup stays visible and media remains dominant at 320",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "x": 12,
+          "y": 76,
+          "width": 260,
+          "height": 281
+        },
+        "shell": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 616
+        },
+        "media": {
+          "x": 19,
+          "y": 83,
+          "width": 246,
+          "height": 190
+        }
+      }
+    },
+    {
+      "name": "Popup stays visible and media remains dominant at 736",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "x": 223,
+          "y": 100,
+          "width": 310,
+          "height": 301.5
+        },
+        "shell": {
+          "x": 0,
+          "y": 60,
+          "width": 736,
+          "height": 354
+        },
+        "media": {
+          "x": 230,
+          "y": 107,
+          "width": 296,
+          "height": 208
+        }
+      }
+    },
+    {
+      "name": "Production video data still has no invented coordinates",
+      "passed": true
+    },
+    {
+      "name": "No unexpected external requests",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "No page errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "unexpectedExternal": [],
+  "passed": true
+}

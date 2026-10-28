@@ -1,25 +1,25 @@
 {
-  "acquiredAtUTC": "2026-10-21T04:48:37.166579+00:00",
-  "source": "https://build.protomaps.com/20261020.pmtiles",
+  "acquiredAtUTC": "2026-10-28T05:35:16.957354+00:00",
+  "source": "https://build.protomaps.com/20261027.pmtiles",
   "upstreamBuild": {
-    "key": "20261020.pmtiles",
-    "size": 139013292063,
-    "md5sum": "M2bSzCwq21BBwtj1j9Jvww==",
-    "b3sum": "20bfc9e95b124f526bbb1c05f964ccd7c8dba3e617056e0377f228ab6db03d44",
-    "uploaded": "2026-10-20T09:03:23.358Z",
+    "key": "20261027.pmtiles",
+    "size": 139197622108,
+    "md5sum": "pouqpSvFntcj7sDi6LHMng==",
+    "b3sum": "0c4f2064cef70e63664e43f545e161071cf0a4bd1cf937ccc08ee3f0e81c06d2",
+    "uploaded": "2026-10-27T09:08:19.461Z",
     "version": "4.15.2"
   },
   "bbox": [
-    106.49,
-    29.49,
+    106.47,
+    29.48,
     106.65,
     29.65
   ],
   "maxzoom": 15,
-  "bytes": 5639870,
-  "sha256": "0407807dd8bd9e400359d03b0bdd3e126bdcbff3f08f2b6b3ce6891a1101467c",
+  "bytes": 6141216,
+  "sha256": "b58643d9a707d24c20bade69acac67251b6bdb0b51779e4fe2bfb138ac298b96",
   "license": "ODbL 1.0 Produced Work",
   "attribution": "OpenStreetMap contributors, Protomaps, Natural Earth",
-  "scope": "Chongqing central urban extract; not all Chongqing municipality or all China",
+  "scope": "Chongqing central urban extract with western food-video neighbourhoods; not all Chongqing",
   "note": "Archive retained locally; browser does not hotlink the build server."
 }

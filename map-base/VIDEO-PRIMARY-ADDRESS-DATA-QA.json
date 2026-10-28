@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-27",
+  "scope": "Frozen primary-page address facts and existing-map-cache audit; no new shop coordinate, operating status, entrance or route is verified.",
+  "checks": [
+    {
+      "name": "Dataset validates without adding a shop geometry",
+      "passed": true
+    },
+    {
+      "name": "Exactly the two inspected primary-page address reviews are present",
+      "passed": true
+    },
+    {
+      "name": "Bakery evidence is the government publication with the exact shop-doorplate text",
+      "passed": true
+    },
+    {
+      "name": "Hotpot evidence preserves the branded Beihuan listing and an unknown publication date",
+      "passed": true
+    },
+    {
+      "name": "Reviews retain unresolved branch, entrance and routing status",
+      "passed": true
+    },
+    {
+      "name": "Brand photo was used only for internal appearance comparison and has no GPS",
+      "passed": true
+    },
+    {
+      "name": "All 288 retained z15 tiles were present in the scan",
+      "passed": true
+    },
+    {
+      "name": "Inside and outside display-feature counts balance without claiming physical shop counts",
+      "passed": true
+    },
+    {
+      "name": "No same-name target was adopted from a near-match or tile buffer",
+      "passed": true
+    },
+    {
+      "name": "Rejects search-snippet-only as a primary-page address crosscheck",
+      "passed": true
+    },
+    {
+      "name": "Rejects unknown-publication as a primary-page address crosscheck",
+      "passed": true
+    },
+    {
+      "name": "Every video store remains unlocated and ineligible for routing",
+      "passed": true
+    },
+    {
+      "name": "The two public map candidates remain byte-identical",
+      "passed": true,
+      "detail": "899a01a8d0fb65ff17afaa7dbf37c30204215202d50095800d053469a0b5ed99"
+    },
+    {
+      "name": "Map archive and coverage have not been silently changed",
+      "passed": true,
+      "detail": "0407807dd8bd9e400359d03b0bdd3e126bdcbff3f08f2b6b3ce6891a1101467c"
+    }
+  ],
+  "passed": true
+}

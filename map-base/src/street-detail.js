@@ -46,7 +46,7 @@ export class StreetDetail{
   }
   cancelFocus(){this.focusGeneration++;}
   update(){
-    const near=this.enabled&&this.inSample()&&this.map.getZoom()>=16.9;
+    const near=this.enabled&&!this.suppressed&&this.inSample()&&this.map.getZoom()>=16.9;
     if(near&&this.phase==='unloaded')void this.load();
     const active=near&&this.phase==='loaded';
     if(active!==this.active){
@@ -70,6 +70,7 @@ export class StreetDetail{
     this.onInspect({...p2,typeName:typeNames[p2.type]});return true;
   }
   clearSelection(){if(this.map.getLayer('street-selected'))this.map.setFilter('street-selected',['==',['get','osmId'],-1]);}
+  setSuppressed(value){this.suppressed=value;this.update();}
   setLabels(visible){if(this.map.getLayer('street-names'))this.map.setLayoutProperty('street-names','visibility',this.active&&visible?'visible':'none');}
   getStats(){return {phase:this.phase,enabled:this.enabled,active:this.active,error:this.error,...this.stats,renderedFeatures:this.active?this.map.queryRenderedFeatures({layers:streetHitLayers}).length:0};}
 }

@@ -28,6 +28,8 @@
     </header>
     <section class="map-shell" aria-label="重庆真实道路三维地图">
       <div id="map"></div>
+      <div id="landmark-note" class="landmark-note paper" hidden><strong>洪崖洞</strong><span>轮廓定位 · 细节为美术建模</span></div>
+      <section id="video-map-note" class="video-map-note paper" aria-label="视频相关街区" hidden><button id="video-map-close" class="close" aria-label="关闭视频周边参考">×</button><span class="eyebrow">先看看这一带</span><h2 id="video-map-title">罗汉寺附近</h2><p id="video-map-caption">参考地标轮廓 · 分店位置待核</p><button id="video-map-back" type="button">回到探店片段 ▷</button><a id="video-map-source" target="_blank" rel="noopener noreferrer">参考地标来源 ↗</a></section>
       <div class="street-tools"><button id="street-entry">看看街道细节 ↗</button><button id="street-info" aria-label="查看街道样板说明">ⓘ</button></div>
       <div class="walk-tools"><button id="walk-entry">沿路看看 ↗</button></div>
       <div id="food-pick-tools" class="food-pick-tools" hidden><button id="food-pick-open" class="food-pick-open" type="button" aria-haspopup="dialog" aria-controls="food-pick-dialog"><span id="food-pick-label">今天想吃什么</span><span aria-hidden="true">⌄</span></button></div>
@@ -38,6 +40,7 @@
       <div id="map-error" class="error-card" role="alert" hidden><strong>地图暂时没有展开</strong><p id="map-error-text">请确认本地地图文件已准备完成。</p><p id="local-file-hint" hidden>直接打开 HTML 可能受到浏览器限制。请双击 map-base 文件夹里的“打开地图.cmd”，通过本地预览打开。</p><button onclick="location.reload()">重新加载</button><details><summary>查看加载详情</summary><pre id="map-error-detail"></pre></details></div>
       <section id="layers-panel" class="layers-panel paper" aria-label="地图图层" hidden>
         <div class="panel-head"><strong>让地图刚刚好</strong><button id="layers-close" class="close" aria-label="关闭图层设置">×</button></div>
+        <button id="landmark-entry" class="landmark-entry" type="button"><span>看看洪崖洞<small>沿江木楼与层叠屋檐</small></span><span aria-hidden="true">↗</span></button>
         <label><span>道路名称<small>保留真实道路的方向与名称</small></span><input id="labels-option" type="checkbox" checked></label>
         <label><span>立体建筑<small>按已有轮廓与高度记录展示</small></span><input id="buildings-option" type="checkbox" checked></label>
         <label><span>山地地形<small>查看重庆的山势起伏</small></span><input id="terrain-option" type="checkbox" checked></label>
@@ -73,6 +76,11 @@
       <div id="status" class="sr-only" role="status" aria-live="polite"></div>
     </section>
   </main>
+  <dialog id="video-library-dialog" class="video-library-dialog" aria-labelledby="video-library-title">
+    <button id="video-library-close" class="close" aria-label="关闭探店片段">×</button>
+    <header class="video-library-head"><span class="eyebrow">重庆 · 跟着镜头找好吃的</span><h2 id="video-library-title">一段视频，一家小店。</h2><div class="video-library-status-row"><p id="video-library-status">原作者镜头与地址线索</p><button id="video-library-choose" class="video-library-choose" type="button">换一家店 ↓</button></div><nav id="video-library-sources" class="video-library-sources" aria-label="选择美食作者"></nav></header>
+    <div class="video-library-body"><section class="video-library-browse" aria-label="单店视频片段"><label class="video-library-search"><span class="sr-only">搜索片段的店名、类别或地址</span><input id="video-library-search" type="search" placeholder="找一家店，或想吃的那一口"></label><p id="video-library-message" class="video-library-message" role="status"></p><button id="video-library-retry" class="video-library-retry" hidden>重新读取</button><div id="video-library-grid" class="video-library-grid"></div></section><section id="video-library-player" class="video-library-player" aria-label="片段与门店资料"></section></div>
+  </dialog>
   <dialog id="source-dialog">
     <button id="source-close" class="close" aria-label="关闭地图说明">×</button>
     <span class="eyebrow">真实地理，自由呈现</span>
@@ -81,6 +89,7 @@
     <dl><div><dt>当前范围</dt><dd id="coverage-description">重庆中心城区局部，约 16 × 18 公里</dd></div><div><dt>道路数据版本</dt><dd id="source-date">正在读取…</dd></div><div><dt>地图坐标</dt><dd>WGS84 · 按实际位置投影</dd></div></dl>
     <p id="source-stats"></p>
     <p class="subtle">部分建筑缺少高度记录，以 9 米低楼体示意。地形来自粗分辨率高程数据；桥隧、楼层连通与实时路况尚未核实。此版本用于本地底座验证。</p>
+    <p class="subtle">洪崖洞模型按开放资料中的建筑足迹定位与校正朝向，木楼、屋檐和楼层细节为美术近似。临江平台避开粗地形、基座下沿贴合高程，尚非逐层实测。公园边界来自开放资料，树冠分布、树高与楼前花箱均为装饰示意。</p>
     <div class="source-links"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OSM · ODbL</a><a href="https://docs.protomaps.com/basemaps/downloads" target="_blank" rel="noreferrer">Protomaps</a><a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noreferrer">地形来源</a><a id="place-directory-link" href="./places.html" target="_blank" rel="noopener noreferrer" hidden>查看门店资料目录 ↗</a><a id="creator-guides-link" href="./videos.html" target="_blank" rel="noopener noreferrer" hidden>阅读探店视频资料 ↗</a></div>
   </dialog>
   <dialog id="street-dialog">
@@ -101,6 +110,7 @@
     <ul id="food-pick-results" class="food-pick-results"></ul>
     <div class="food-pick-footer"><button id="food-pick-map" class="food-pick-map" type="button">在地图上看</button><button id="food-pick-add" class="food-pick-add" type="button">加入想去</button></div>
     <p class="food-pick-note">配图为菜品示意。想去顺序可再调整，到店路线待核实。</p>
+    <button id="video-library-open" class="video-library-open" type="button" aria-haspopup="dialog" aria-controls="video-library-dialog">看看探店片段 ▷</button>
     <a id="food-pick-guides" class="food-page-link" href="./videos.html" target="_blank" rel="noopener noreferrer" hidden>先读作者的探店视频资料 ↗</a>
   </dialog>
   <dialog id="food-dialog" class="food-dialog" aria-labelledby="food-title">

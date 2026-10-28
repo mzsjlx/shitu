@@ -1,0 +1,30 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {validateVideoMapContexts} from '../src/video-map-context-model.js';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),hash=b=>createHash('sha256').update(b).digest('hex');
+const data=JSON.parse(await readFile(path.join(root,'data/video-map-contexts.json'),'utf8')),library=JSON.parse(await readFile(path.join(root,'data/video-library.json'),'utf8'));
+const context=data.contexts[0],source=await readFile(path.join(root,'..',context.source.sourceFile)),xml=source.toString('utf8');
+const report={date:'2026-10-27',scope:'Reference landmark geometry compared point for point with retained original OSM XML; no shop, entrance or route confirmation.',checks:[]};
+const check=(name,passed,detail)=>report.checks.push({name,passed:!!passed,detail});
+check('Context dataset validates and contains one landmark reference',validateVideoMapContexts(data,library)===data&&data.contexts.length===1);
+check('Original OSM XML digest matches the frozen source',hash(source)===context.source.sourceSHA256,{hash:hash(source),source:context.source.sourceFile});
+const body=xml.match(/<way\b[^>]*id="412612157"[^>]*>([\s\S]*?)<\/way>/)?.[1];
+const refs=[...body.matchAll(/<nd ref="(\d+)"\/>/g)].map(m=>Number(m[1]));
+check('All 18 source node references and their order are retained',JSON.stringify(refs)===JSON.stringify(context.source.nodeIds)&&refs.length===18);
+const rawPositions=refs.map(id=>{const rawNode=xml.match(new RegExp('<node\\b[^>]*id="'+id+'"[^>]*>'))?.[0];return [Number(rawNode?.match(/lon="([^"]+)"/)?.[1]),Number(rawNode?.match(/lat="([^"]+)"/)?.[1])];});
+check('Polygon preserves every original WGS84 coordinate',JSON.stringify(rawPositions)===JSON.stringify(context.geometry.coordinates[0]));
+check('Reference is explicitly the temple, with no restaurant or entrance geometry',context.name==='罗汉寺'&&context.source.tags.amenity==='place_of_worship'&&context.geometry.type==='Polygon'&&context.referenceOnly&&context.shopLocated===false&&context.routeEligible===false);
+check('Reference links only to the creator address that names this landmark',JSON.stringify(context.segmentIds)===JSON.stringify(['nangua-sanyangzi'])&&library.sources[0].segments.find(s=>s.id==='nangua-sanyangzi').addressText.includes('罗汉寺'));
+check('All twenty video shops have approximate coordinates and no navigation eligibility',library.sources.flatMap(s=>s.segments).length===20&&library.sources.flatMap(s=>s.segments).every(s=>Array.isArray(s.coordinates)&&s.planningLocation?.accuracy==='approximate'&&s.routeEligible===false));
+const review=data.reviews[0];
+check('Branch and entrance remain unconfirmed despite matching address text',review.branchMatch==='unconfirmed'&&review.entranceMatch==='unconfirmed'&&review.decision==='needs-branch-location-evidence');
+check('Search-only lead is distinguished from read article bodies',review.sources.find(s=>s.id==='smzdm-xinhua-lead').readState==='search-snippet-only'&&review.sources.find(s=>s.id==='sina-luohan-address').conclusion==='same-address-text-only');
+check('Historic Guanyinqiao report is kept separate from this branch',review.sources.find(s=>s.id==='cqnews-guanyinqiao-2021').conclusion==='different-address-not-adopted'&&review.sources.find(s=>s.id==='cqnews-guanyinqiao-2021').publishedOn==='2021-09-15');
+for(const [label,mutate]of [['point geometry',d=>d.contexts[0].geometry={type:'Point',coordinates:[106.5778,29.5625]}],['shop location claim',d=>d.contexts[0].shopLocated=true],['route claim',d=>d.contexts[0].routeEligible=true],['moved vertex',d=>d.contexts[0].geometry.coordinates[0][1][0]=107]]){
+ const invalid=structuredClone(data);mutate(invalid);let rejected=false;try{validateVideoMapContexts(invalid,library);}catch{rejected=true;}check('Rejects '+label+' in a landmark reference',rejected);
+}
+const foodHash=hash(await readFile(path.join(root,'data/food-records.json')));check('Retired sample places are absent',JSON.parse(await readFile(path.join(root,'data/food-records.json'),'utf8')).records.length===0,foodHash);
+report.contextSHA256=hash(await readFile(path.join(root,'data/video-map-contexts.json')));report.passed=report.checks.every(c=>c.passed);await writeFile(path.join(root,'VIDEO-MAP-CONTEXT-DATA-QA.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({passed:report.passed,total:report.checks.length,failed:report.checks.filter(c=>!c.passed)}));
+if(!report.passed)process.exitCode=1;

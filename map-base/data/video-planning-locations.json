@@ -1,0 +1,469 @@
+{
+  "schemaVersion": 1,
+  "city": "chongqing",
+  "reviewedOn": "2026-10-28",
+  "scope": "approximate travel planning references; no storefront or pedestrian navigation claim",
+  "coordinateSource": "OpenStreetMap, ODbL; raw extract SHA256 ea1bd60ca0a71231f6ec62bb5ff270594e56559c88d483e25c7e60bcc6fd20ba",
+  "reviews": [
+    {
+      "segmentId": "nangua-jiachang",
+      "name": "家常蹄花",
+      "coordinates": [
+        106.5142,
+        29.51564
+      ],
+      "accuracy": "approximate",
+      "label": "劳动二村附近",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片劳动二村27栋附17号；按社区范围放置，门牌差异保留。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1281884733,
+        "name": "劳动二村",
+        "url": "https://www.openstreetmap.org/way/1281884733",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E5%AE%B6%E5%B8%B8%E8%B9%84%E8%8A%B1%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "nangua-jeju",
+      "name": "jeju",
+      "coordinates": [
+        106.52508,
+        29.57554
+      ],
+      "accuracy": "approximate",
+      "label": "观音桥 · 启元光里",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片启元光里B区L1-02；以商场范围为参考。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1338279082,
+        "name": "香港置地·启元光里",
+        "url": "https://www.openstreetmap.org/way/1338279082",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=jeju%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "nangua-set-coffee",
+      "name": "set coffee",
+      "coordinates": [
+        106.54873,
+        29.52171
+      ],
+      "accuracy": "approximate",
+      "label": "南坪 · 环湖路",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片环湖路14号附14号；按这段真实道路大致放置。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 706245646,
+        "name": "环湖路",
+        "url": "https://www.openstreetmap.org/way/706245646",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=set%20coffee%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "nangua-nendouya",
+      "name": "嫩豆芽老火锅",
+      "coordinates": [
+        106.48863,
+        29.60384
+      ],
+      "accuracy": "approximate",
+      "label": "北环 · 天邻风景南门附近",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片新南路390号、天邻风景南门；使用小区南侧边界参考。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 247422127,
+        "name": "天邻风景",
+        "url": "https://www.openstreetmap.org/way/247422127",
+        "sourceDate": "2026-10-25",
+        "method": "south"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E5%AB%A9%E8%B1%86%E8%8A%BD%E8%80%81%E7%81%AB%E9%94%85%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "nangua-cailanzi",
+      "name": "菜篮子",
+      "coordinates": [
+        106.48149,
+        29.60123
+      ],
+      "accuracy": "approximate",
+      "label": "龙湖源著 · 福泉路",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片福泉路22号附61号；按真实道路放置，附号差异保留。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 534822747,
+        "name": "福泉路",
+        "url": "https://www.openstreetmap.org/way/534822747",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E8%8F%9C%E7%AF%AE%E5%AD%90%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "nangua-dayan",
+      "name": "大堰酸菜米线",
+      "coordinates": [
+        106.491,
+        29.49158
+      ],
+      "accuracy": "approximate",
+      "label": "大堰一村附近",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片大堰一村110号附3号；采用该街区的开放地名参考。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-node",
+        "id": 13913931177,
+        "name": "大堰一村",
+        "url": "https://www.openstreetmap.org/node/13913931177",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E5%A4%A7%E5%A0%B0%E9%85%B8%E8%8F%9C%E7%B1%B3%E7%BA%BF%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "nangua-daling",
+      "name": "大玲江湖菜",
+      "coordinates": [
+        106.52859,
+        29.58356
+      ],
+      "accuracy": "approximate",
+      "label": "观音桥 · 洋河二村附近",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片洋河二村18号；按相邻洋河西路街区估计。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 297743114,
+        "name": "洋河西路",
+        "url": "https://www.openstreetmap.org/way/297743114",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E5%A4%A7%E7%8E%B2%E6%B1%9F%E6%B9%96%E8%8F%9C%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "nangua-sanyangzi",
+      "name": "三样子",
+      "coordinates": [
+        106.5779,
+        29.56269
+      ],
+      "accuracy": "approximate",
+      "label": "解放碑 · 罗汉寺妙街附近",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片罗汉寺妙街L1-6；以罗汉寺街区为参考，不是寺内门店定位。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 412612157,
+        "name": "罗汉寺",
+        "url": "https://www.openstreetmap.org/way/412612157",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E4%B8%89%E6%A0%B7%E5%AD%90%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "nangua-huilaiwei",
+      "name": "惠来味金牌猪脚饭",
+      "coordinates": [
+        106.55649,
+        29.53826
+      ],
+      "accuracy": "approximate",
+      "label": "南坪 · 亚太路玖玺国际附近",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片玖玺国际9栋；以亚太路街区为参考，店名来/莱差异保留。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 278428700,
+        "name": "亚太路",
+        "url": "https://www.openstreetmap.org/way/278428700",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E6%83%A0%E6%9D%A5%E5%91%B3%E9%87%91%E7%89%8C%E7%8C%AA%E8%84%9A%E9%A5%AD%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "nangua-qianjiang",
+      "name": "黔江鸡杂",
+      "coordinates": [
+        106.51383,
+        29.54362
+      ],
+      "accuracy": "approximate",
+      "label": "大坪正街附近",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片大坪正街87号；按真实道路街区大致放置。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1534954368,
+        "name": "大坪正街",
+        "url": "https://www.openstreetmap.org/way/1534954368",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%BB%94%E6%B1%9F%E9%B8%A1%E6%9D%82%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "nangua-rongchang",
+      "name": "荣昌鸡汤铺盖面",
+      "coordinates": [
+        106.52951,
+        29.5721
+      ],
+      "accuracy": "approximate",
+      "label": "嘉华路与华新路附近",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片交叉口线索；采用两条道路共有节点为街区参考。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 87655116,
+        "name": "嘉华路",
+        "url": "https://www.openstreetmap.org/way/87655116",
+        "sourceDate": "2026-10-25",
+        "method": "intersection"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E8%8D%A3%E6%98%8C%E9%B8%A1%E6%B1%A4%E9%93%BA%E7%9B%96%E9%9D%A2%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "abang-babajian",
+      "name": "把把尖鲜活烧烤",
+      "coordinates": [
+        106.55791,
+        29.52904
+      ],
+      "accuracy": "approximate",
+      "label": "南坪 · 万寿路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "同名近似候选为万寿路22号附11号，鲜活/鲜货字样有差异；视频分店未确认。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 82769128,
+        "name": "万寿路",
+        "url": "https://www.openstreetmap.org/way/82769128",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E6%8A%8A%E6%8A%8A%E5%B0%96%E9%B2%9C%E6%B4%BB%E7%83%A7%E7%83%A4%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "abang-43",
+      "name": "43号面摊",
+      "coordinates": [
+        106.56748,
+        29.53911
+      ],
+      "accuracy": "approximate",
+      "label": "南坪 · 烟雨堡附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "同名面摊候选位于南坪烟雨堡43号；采用福红路街区参考，视频分店未确认。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 871948690,
+        "name": "福红路",
+        "url": "https://www.openstreetmap.org/way/871948690",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=43%E5%8F%B7%E9%9D%A2%E6%91%8A%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "abang-guijing",
+      "name": "归井老火锅",
+      "coordinates": [
+        106.50694,
+        29.50393
+      ],
+      "accuracy": "approximate",
+      "label": "重庆动物园周边",
+      "basis": "video-area",
+      "branchMatch": "unconfirmed",
+      "note": "原片仅写动物园旁边；采用动物园东侧边界作为周边参考，多家分店未确认。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 413053012,
+        "name": "重庆动物园",
+        "url": "https://www.openstreetmap.org/way/413053012",
+        "sourceDate": "2026-10-25",
+        "method": "east"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E5%BD%92%E4%BA%95%E8%80%81%E7%81%AB%E9%94%85%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "abang-xidajiang",
+      "name": "喜大匠老火锅",
+      "coordinates": [
+        106.52871,
+        29.57673
+      ],
+      "accuracy": "approximate",
+      "label": "观音桥 · 建新北路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "同名候选在建新北路18号2层；使用该街区道路参考，视频分店未确认。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 49773292,
+        "name": "建新北路",
+        "url": "https://www.openstreetmap.org/way/49773292",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E5%96%9C%E5%A4%A7%E5%8C%A0%E8%80%81%E7%81%AB%E9%94%85%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "abang-ganyitai",
+      "name": "甘怡屋糖水铺",
+      "coordinates": [
+        106.53805,
+        29.6028
+      ],
+      "accuracy": "approximate",
+      "label": "龙塔 · 力帆枫樾附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "相近名称甘饴屋糖水候选在新溉大道力帆枫樾；与原片怡/饴字样不同，视频分店未确认。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1021402854,
+        "name": "力帆枫樾",
+        "url": "https://www.openstreetmap.org/way/1021402854",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E7%94%98%E6%80%A1%E5%B1%8B%E7%B3%96%E6%B0%B4%E9%93%BA%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "abang-xiongfeng",
+      "name": "熊蜂面包",
+      "coordinates": [
+        106.53706,
+        29.58585
+      ],
+      "accuracy": "approximate",
+      "label": "观音桥 · 洋河中路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "同名面包店候选在洋河中路15号富力海洋广场；使用洋河中路参考，视频分店未确认。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 822086880,
+        "name": "洋河中路",
+        "url": "https://www.openstreetmap.org/way/822086880",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E7%86%8A%E8%9C%82%E9%9D%A2%E5%8C%85%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "abang-shanlishu",
+      "name": "山乘树",
+      "coordinates": [
+        106.48447,
+        29.59901
+      ],
+      "accuracy": "approximate",
+      "label": "体育公园 · 天竺路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "同名候选在天竺路418号；使用靠近体育公园的真实道路参考，视频分店未确认。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1537651400,
+        "name": "天竺路",
+        "url": "https://www.openstreetmap.org/way/1537651400",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E5%B1%B1%E4%B9%98%E6%A0%91%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "abang-wuduwudu",
+      "name": "呜嘟呜嘟",
+      "coordinates": [
+        106.49725,
+        29.59949
+      ],
+      "accuracy": "approximate",
+      "label": "冉家坝 · 龙山二路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "同名候选在龙山二路57号，采用道路街区参考；可能存在其他分店，视频分店未确认。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 152094299,
+        "name": "龙山二路",
+        "url": "https://www.openstreetmap.org/way/152094299",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E5%91%9C%E5%98%9F%E5%91%9C%E5%98%9F%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "abang-yabatu",
+      "name": "哑巴兔",
+      "coordinates": [
+        106.52763,
+        29.5821
+      ],
+      "accuracy": "approximate",
+      "label": "观音桥 · 洋河二村附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "同名候选包括江北店及两路店；本次以江北洋河二村周边作规划参考，未确认视频分店。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 152099421,
+        "name": "洋河一路",
+        "url": "https://www.openstreetmap.org/way/152099421",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E5%93%91%E5%B7%B4%E5%85%94%20%E9%87%8D%E5%BA%86"
+    }
+  ]
+}

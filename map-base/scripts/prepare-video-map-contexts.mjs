@@ -1,0 +1,32 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const manifest=JSON.parse(await readFile(path.join(root,'../output/research/osm-minzu-2026-10-25-manifest.json'),'utf8'));
+const raw=await readFile(path.join(root,'../output/research',manifest.file));
+if(hash(raw)!==manifest.sha256)throw new Error('参考地标的原始OSM资料哈希不一致');
+const xml=raw.toString('utf8'),attrs=text=>Object.fromEntries([...text.matchAll(/([\w:]+)="([^"]*)"/g)].map(m=>[m[1],m[2]]));
+const nodes=new Map([...xml.matchAll(/<node\b([^>]*?)(?:\/>|>)/g)].map(m=>{const a=attrs(m[1]);return [Number(a.id),[Number(a.lon),Number(a.lat)]];}));
+const reviews=JSON.parse(await readFile(path.join(root,'data/video-location-reviews.json'),'utf8'));
+const library=JSON.parse(await readFile(path.join(root,'data/video-library.json'),'utf8'));
+const city=JSON.parse(await readFile(path.join(root,'config/cities.json'),'utf8')).cities.chongqing;
+const contexts=[];
+for(const review of reviews.reviews){
+ const segment=library.sources.flatMap(s=>s.segments).find(s=>s.id===review.segmentId);
+ if(!segment||review.branchMatch!=='unconfirmed'||review.routeEligible!==false)throw new Error('地址核对资料不能升级分店或路线状态');
+ if(review.referencePlace===undefined&&review.referenceOSMWayId===undefined)continue;
+ if(!segment.addressText?.includes(review.referencePlace)||!Number.isSafeInteger(review.referenceOSMWayId))throw new Error('参考地标必须对应原作者的地名线索');
+ const match=[...xml.matchAll(/<way\b([^>]+)>([\s\S]*?)<\/way>/g)].find(m=>Number(attrs(m[1]).id)===review.referenceOSMWayId);
+ if(!match)throw new Error('原始OSM资料没有参考地标');
+ const a=attrs(match[1]),tags=Object.fromEntries([...match[2].matchAll(/<tag\b([^>]+)\/>/g)].map(m=>{const t=attrs(m[1]);return [t.k,t.v];}));
+ if(tags.name!==review.referencePlace||tags.amenity!=='place_of_worship')throw new Error('参考对象不是所需地标，不能当门店使用');
+ const nodeIds=[...match[2].matchAll(/<nd ref="(\d+)"\/>/g)].map(m=>Number(m[1]));
+ const ring=nodeIds.map(id=>nodes.get(id));
+ if(ring.length<4||nodeIds[0]!==nodeIds.at(-1)||ring.some(p=>!p||!p.every(Number.isFinite)||p[0]<city.bounds[0]||p[0]>city.bounds[2]||p[1]<city.bounds[1]||p[1]>city.bounds[3]))throw new Error('参考地标轮廓缺失、未闭合或超出当前城市');
+ contexts.push({id:'luohan-temple-reference',segmentIds:[segment.id],name:review.referencePlace,label:'罗汉寺附近',kind:'landmark-reference',coordinateSystem:'WGS84',referenceOnly:true,shopLocated:false,routeEligible:false,geometry:{type:'Polygon',coordinates:[ring]},bounds:[Math.min(...ring.map(p=>p[0])),Math.min(...ring.map(p=>p[1])),Math.max(...ring.map(p=>p[0])),Math.max(...ring.map(p=>p[1]))],source:{kind:'osm-way',id:Number(a.id),version:Number(a.version),timestamp:a.timestamp,url:'https://www.openstreetmap.org/way/'+a.id,nodeIds,tags,sourceDate:manifest.observedOn,sourceFile:'output/research/'+manifest.file,sourceSHA256:manifest.sha256,attribution:'© OpenStreetMap contributors',license:'ODbL 1.0',licenseURL:'https://www.openstreetmap.org/copyright'}});
+}
+const out={schemaVersion:1,city:'chongqing',preparedOn:reviews.reviewedOn,purpose:'从原作者地址查看相关地标周边；不是分店坐标、商业街边界或导航结果',contexts,reviews:reviews.reviews};
+await writeFile(path.join(root,'data/video-map-contexts.json'),JSON.stringify(out,null,2)+'\n');
+console.log(JSON.stringify(contexts.map(c=>({id:c.id,source:c.source.url,vertices:c.geometry.coordinates[0].length,bounds:c.bounds,shopLocated:c.shopLocated}))));

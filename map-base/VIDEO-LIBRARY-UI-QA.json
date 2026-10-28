@@ -1,0 +1,670 @@
+{
+  "date": "2026-10-27",
+  "scope": "Isolated local Chromium; real MP4 decoding, HTTP ranges, dialog media lifecycle, responsive layouts, missing assets and data failures. No real user storage, external platform playback or geographic verification.",
+  "checks": [
+    {
+      "name": "Deep link opens map-backed modal and 11 first-author cards",
+      "passed": true
+    },
+    {
+      "name": "Twenty clips are available and the new unlocated shops do not create pins",
+      "passed": true
+    },
+    {
+      "name": "nangua-jiachang decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 30.866667,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-jiachang-4a473ee8159599d6.mp4"
+      }
+    },
+    {
+      "name": "nangua-jeju decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 59.833333,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-jeju-1ef5bd6c4a2ea586.mp4"
+      }
+    },
+    {
+      "name": "nangua-set-coffee decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 18.666667,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-set-coffee-90d0628472f7baf2.mp4"
+      }
+    },
+    {
+      "name": "nangua-nendouya decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 79.8,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-nendouya-6b75b812771af557.mp4"
+      }
+    },
+    {
+      "name": "nangua-cailanzi decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 21.466667,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-cailanzi-4fc27dcba431b8f7.mp4"
+      }
+    },
+    {
+      "name": "nangua-dayan decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 10.866667,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-dayan-a3c5da2b77347ce3.mp4"
+      }
+    },
+    {
+      "name": "nangua-daling decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 30.433333,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-daling-5036dc0027940cc0.mp4"
+      }
+    },
+    {
+      "name": "nangua-sanyangzi decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 13.966016,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4"
+      }
+    },
+    {
+      "name": "nangua-huilaiwei decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 14.866667,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-huilaiwei-3c5a73d6f5411c74.mp4"
+      }
+    },
+    {
+      "name": "nangua-qianjiang decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 14.2,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-qianjiang-077aa0ec9fdb90f1.mp4"
+      }
+    },
+    {
+      "name": "nangua-rongchang decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 7.166667,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-rongchang-ec891f68437226a1.mp4"
+      }
+    },
+    {
+      "name": "abang-babajian decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 26.066016,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/abang/abang-babajian-a14df4ecee0cf370.mp4"
+      }
+    },
+    {
+      "name": "abang-43 decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 18.233333,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/abang/abang-43-c7c29b69998763d6.mp4"
+      }
+    },
+    {
+      "name": "abang-guijing decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 30.366667,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/abang/abang-guijing-3f6e4615dff65f3e.mp4"
+      }
+    },
+    {
+      "name": "abang-xidajiang decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 37.5,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/abang/abang-xidajiang-c116995d4742b2dc.mp4"
+      }
+    },
+    {
+      "name": "abang-ganyitai decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 13.566016,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/abang/abang-ganyitai-086f190b9531b964.mp4"
+      }
+    },
+    {
+      "name": "abang-xiongfeng decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 11.766667,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/abang/abang-xiongfeng-891740bcdd985312.mp4"
+      }
+    },
+    {
+      "name": "abang-shanlishu decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 13.266667,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/abang/abang-shanlishu-b0f8289b7e134d6c.mp4"
+      }
+    },
+    {
+      "name": "abang-wuduwudu decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 10.2,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/abang/abang-wuduwudu-c47bd1cf2100cc4d.mp4"
+      }
+    },
+    {
+      "name": "abang-yabatu decodes full portrait H.264/AAC media with expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 21.766667,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/abang/abang-yabatu-9ff6a74f8f44190a.mp4"
+      }
+    },
+    {
+      "name": "Selected video actually advances after play",
+      "passed": true
+    },
+    {
+      "name": "Changing author pauses and unloads the previous media",
+      "passed": true
+    },
+    {
+      "name": "Address search finds the correct single-store card",
+      "passed": true
+    },
+    {
+      "name": "Empty search has visible feedback",
+      "passed": true
+    },
+    {
+      "name": "Unavailable third source never creates fictitious clips or a player",
+      "passed": true
+    },
+    {
+      "name": "Third original link targets the exact user-supplied work",
+      "passed": true
+    },
+    {
+      "name": "Dialog fits 1440×960",
+      "passed": true,
+      "detail": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "dialog": {
+          "left": 150,
+          "right": 1290,
+          "top": 65,
+          "bottom": 895
+        },
+        "horizontalOverflow": false,
+        "bodyHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Player attribution remains reachable at 1440",
+      "passed": true,
+      "detail": {
+        "x": 953,
+        "y": 834.03125,
+        "width": 99.5625,
+        "height": 30
+      }
+    },
+    {
+      "name": "Last card remains selectable at 1440",
+      "passed": true
+    },
+    {
+      "name": "Dialog fits 390×844",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "pageWidth": 390,
+        "dialog": {
+          "left": 8,
+          "right": 382,
+          "top": 10,
+          "bottom": 834
+        },
+        "horizontalOverflow": false,
+        "bodyHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Mobile change-shop action reveals search and cards at 390",
+      "passed": true,
+      "detail": {
+        "x": 29,
+        "y": 212.71875,
+        "width": 332,
+        "height": 43.5
+      }
+    },
+    {
+      "name": "Player attribution remains reachable at 390",
+      "passed": true,
+      "detail": {
+        "x": 29,
+        "y": 497.71875,
+        "width": 99.5625,
+        "height": 30
+      }
+    },
+    {
+      "name": "Last card remains selectable at 390",
+      "passed": true
+    },
+    {
+      "name": "Dialog fits 320×680",
+      "passed": true,
+      "detail": {
+        "width": 320,
+        "pageWidth": 320,
+        "dialog": {
+          "left": 8,
+          "right": 312,
+          "top": 10,
+          "bottom": 670
+        },
+        "horizontalOverflow": false,
+        "bodyHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Mobile change-shop action reveals search and cards at 320",
+      "passed": true,
+      "detail": {
+        "x": 29,
+        "y": 246.4375,
+        "width": 262,
+        "height": 43.5
+      }
+    },
+    {
+      "name": "Player attribution remains reachable at 320",
+      "passed": true,
+      "detail": {
+        "x": 29,
+        "y": 433.4375,
+        "width": 99.5625,
+        "height": 30
+      }
+    },
+    {
+      "name": "Last card remains selectable at 320",
+      "passed": true
+    },
+    {
+      "name": "Dialog fits 736×414",
+      "passed": true,
+      "detail": {
+        "width": 736,
+        "pageWidth": 736,
+        "dialog": {
+          "left": 16,
+          "right": 720,
+          "top": 25,
+          "bottom": 389
+        },
+        "horizontalOverflow": false,
+        "bodyHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Player attribution remains reachable at 736",
+      "passed": true,
+      "detail": {
+        "x": 423,
+        "y": 328.046875,
+        "width": 99.5625,
+        "height": 30
+      }
+    },
+    {
+      "name": "Last card remains selectable at 736",
+      "passed": true
+    },
+    {
+      "name": "Escape closes modal and stops hidden audio",
+      "passed": true
+    },
+    {
+      "name": "Existing food picker opens the library",
+      "passed": true
+    },
+    {
+      "name": "Close returns focus to the map action",
+      "passed": true
+    },
+    {
+      "name": "Existing map and source-candidate count survive media operations",
+      "passed": true
+    },
+    {
+      "name": "MP4 range requests use correct MIME, length and partial content",
+      "passed": true,
+      "detail": {
+        "content-type": "video/mp4",
+        "accept-ranges": "bytes",
+        "etag": "\"8d225e-1a17aaefb57\"",
+        "cache-control": "no-cache",
+        "x-content-type-options": "nosniff",
+        "content-range": "bytes 0-1023/9249374",
+        "content-length": "1024",
+        "date": "Tue, 27 Oct 2026 04:30:14 GMT",
+        "connection": "keep-alive",
+        "keep-alive": "timeout=5"
+      }
+    },
+    {
+      "name": "Private acquisition records are not served",
+      "passed": true
+    },
+    {
+      "name": "Ordinary map does not request video metadata or media",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Missing local media still exposes source addresses without broken images or players",
+      "passed": true
+    },
+    {
+      "name": "Failed data fetch offers retry",
+      "passed": true
+    },
+    {
+      "name": "Retry restores the real card library",
+      "passed": true
+    },
+    {
+      "name": "All video shops remain explicitly unlocated and ineligible for routes",
+      "passed": true
+    },
+    {
+      "name": "No runtime page errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "No third-party prefetch or external requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "media": [
+    {
+      "id": "nangua-jiachang",
+      "duration": 30.866667,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-jiachang-4a473ee8159599d6.mp4"
+    },
+    {
+      "id": "nangua-jeju",
+      "duration": 59.833333,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-jeju-1ef5bd6c4a2ea586.mp4"
+    },
+    {
+      "id": "nangua-set-coffee",
+      "duration": 18.666667,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-set-coffee-90d0628472f7baf2.mp4"
+    },
+    {
+      "id": "nangua-nendouya",
+      "duration": 79.8,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-nendouya-6b75b812771af557.mp4"
+    },
+    {
+      "id": "nangua-cailanzi",
+      "duration": 21.466667,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-cailanzi-4fc27dcba431b8f7.mp4"
+    },
+    {
+      "id": "nangua-dayan",
+      "duration": 10.866667,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-dayan-a3c5da2b77347ce3.mp4"
+    },
+    {
+      "id": "nangua-daling",
+      "duration": 30.433333,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-daling-5036dc0027940cc0.mp4"
+    },
+    {
+      "id": "nangua-sanyangzi",
+      "duration": 13.966016,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-sanyangzi-79c9a90d66c995f6.mp4"
+    },
+    {
+      "id": "nangua-huilaiwei",
+      "duration": 14.866667,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-huilaiwei-3c5a73d6f5411c74.mp4"
+    },
+    {
+      "id": "nangua-qianjiang",
+      "duration": 14.2,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-qianjiang-077aa0ec9fdb90f1.mp4"
+    },
+    {
+      "id": "nangua-rongchang",
+      "duration": 7.166667,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/nangua/nangua-rongchang-ec891f68437226a1.mp4"
+    },
+    {
+      "id": "abang-babajian",
+      "duration": 26.066016,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/abang/abang-babajian-a14df4ecee0cf370.mp4"
+    },
+    {
+      "id": "abang-43",
+      "duration": 18.233333,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/abang/abang-43-c7c29b69998763d6.mp4"
+    },
+    {
+      "id": "abang-guijing",
+      "duration": 30.366667,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/abang/abang-guijing-3f6e4615dff65f3e.mp4"
+    },
+    {
+      "id": "abang-xidajiang",
+      "duration": 37.5,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/abang/abang-xidajiang-c116995d4742b2dc.mp4"
+    },
+    {
+      "id": "abang-ganyitai",
+      "duration": 13.566016,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/abang/abang-ganyitai-086f190b9531b964.mp4"
+    },
+    {
+      "id": "abang-xiongfeng",
+      "duration": 11.766667,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/abang/abang-xiongfeng-891740bcdd985312.mp4"
+    },
+    {
+      "id": "abang-shanlishu",
+      "duration": 13.266667,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/abang/abang-shanlishu-b0f8289b7e134d6c.mp4"
+    },
+    {
+      "id": "abang-wuduwudu",
+      "duration": 10.2,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/abang/abang-wuduwudu-c47bd1cf2100cc4d.mp4"
+    },
+    {
+      "id": "abang-yabatu",
+      "duration": 21.766667,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/abang/abang-yabatu-9ff6a74f8f44190a.mp4"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "city": "chongqing",
+  "preparedOn": "2026-10-27",
+  "purpose": "从原作者地址查看相关地标周边；不是分店坐标、商业街边界或导航结果",
+  "contexts": [
+    {
+      "id": "luohan-temple-reference",
+      "segmentIds": [
+        "nangua-sanyangzi"
+      ],
+      "name": "罗汉寺",
+      "label": "罗汉寺附近",
+      "kind": "landmark-reference",
+      "coordinateSystem": "WGS84",
+      "referenceOnly": true,
+      "shopLocated": false,
+      "routeEligible": false,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.5777657,
+              29.5630906
+            ],
+            [
+              106.5777986,
+              29.5629749
+            ],
+            [
+              106.5777605,
+              29.5629332
+            ],
+            [
+              106.5775391,
+              29.5626801
+            ],
+            [
+              106.5775692,
+              29.5624526
+            ],
+            [
+              106.5773614,
+              29.5621862
+            ],
+            [
+              106.5774415,
+              29.5621229
+            ],
+            [
+              106.577672,
+              29.5619333
+            ],
+            [
+              106.578155,
+              29.5620826
+            ],
+            [
+              106.5781088,
+              29.562266
+            ],
+            [
+              106.5781353,
+              29.562431
+            ],
+            [
+              106.578121,
+              29.5628704
+            ],
+            [
+              106.5783335,
+              29.5630068
+            ],
+            [
+              106.5783183,
+              29.563035
+            ],
+            [
+              106.5783034,
+              29.5630625
+            ],
+            [
+              106.5781329,
+              29.5629655
+            ],
+            [
+              106.5780077,
+              29.5631934
+            ],
+            [
+              106.5777657,
+              29.5630906
+            ]
+          ]
+        ]
+      },
+      "bounds": [
+        106.5773614,
+        29.5619333,
+        106.5783335,
+        29.5631934
+      ],
+      "source": {
+        "kind": "osm-way",
+        "id": 412612157,
+        "version": 11,
+        "timestamp": "2026-10-17T19:52:57Z",
+        "url": "https://www.openstreetmap.org/way/412612157",
+        "nodeIds": [
+          4139951957,
+          13026257039,
+          13026257036,
+          11175896944,
+          12125724892,
+          4139951958,
+          13026257034,
+          4139951959,
+          4139951960,
+          13026257040,
+          4139951961,
+          13026257076,
+          4139951962,
+          13026257035,
+          13026257046,
+          13026257047,
+          4139951963,
+          4139951957
+        ],
+        "tags": {
+          "alt_name": "Arhat Temple",
+          "amenity": "place_of_worship",
+          "name": "罗汉寺",
+          "name:en": "Luohan Temple",
+          "name:es": "Templo Luohan",
+          "name:zh": "罗汉寺",
+          "religion": "buddhist",
+          "wikipedia": "en:Luohan_Temple_(Chongqing)"
+        },
+        "sourceDate": "2026-10-25",
+        "sourceFile": "output/research/osm-minzu-2026-10-25.xml",
+        "sourceSHA256": "11d51830758159b0b058a1bfb004722fef866890349308c12c2bb08f92ba3247",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "ODbL 1.0",
+        "licenseURL": "https://www.openstreetmap.org/copyright"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "segmentId": "nangua-sanyangzi",
+      "decision": "needs-branch-location-evidence",
+      "branchMatch": "unconfirmed",
+      "entranceMatch": "unconfirmed",
+      "routeEligible": false,
+      "referencePlace": "罗汉寺",
+      "referenceOSMWayId": 412612157,
+      "summary": "先按原作者地址查看罗汉寺周边，具体分店和门口仍待核对。",
+      "detail": "原视频地址卡写罗汉寺妙街L1-6。公开资料中还出现新华路105号和观音桥同名门店，目前不能判断这些记录之间的分店或迁址关系。",
+      "sources": [
+        {
+          "id": "creator-address-card",
+          "label": "原视频片尾地址卡",
+          "url": "https://www.douyin.com/video/7699050477137231973",
+          "publishedOn": "2026-10-21",
+          "observedOn": "2026-10-27",
+          "readState": "local-video-frame",
+          "frameSeconds": 320,
+          "addressText": "解放碑罗汉寺妙街L1-6，近小什字地铁站6口",
+          "conclusion": "creator-address-lead"
+        },
+        {
+          "id": "sina-luohan-address",
+          "label": "罗汉寺妙街地址资料",
+          "url": "https://k.sina.com.cn/article_7879922979_1d5ae152301901qvme.html?from=food",
+          "publishedOn": "2026-04-16",
+          "observedOn": "2026-10-27",
+          "readState": "article-body",
+          "addressText": "渝中区解放碑罗汉寺妙街L1-6，近小什字地铁站6口",
+          "conclusion": "same-address-text-only",
+          "note": "原文可读。作者署名新浪文旅指南、标题提及小沫美食；独立采访或原片分店对应未核实，不提供门口坐标。未使用文章图片。"
+        },
+        {
+          "id": "smzdm-xinhua-lead",
+          "label": "新华路同名门店线索",
+          "url": "https://post.smzdm.com/p/akoe4qne/",
+          "publishedOn": "2025-09-01",
+          "observedOn": "2026-10-27",
+          "readState": "search-snippet-only",
+          "addressText": "新华路105号1-4，农业银行旁边上梯坎儿",
+          "conclusion": "alternate-address-unresolved",
+          "note": "搜索摘要可读，原页正文未成功读取。不可作为已核实地址或迁址证据。"
+        },
+        {
+          "id": "cqnews-guanyinqiao-2021",
+          "label": "观音桥门店旧报道",
+          "url": "https://life.cqnews.net/html/2021-09/15/content_51731034.html",
+          "publishedOn": "2021-09-15",
+          "observedOn": "2026-10-27",
+          "readState": "article-body",
+          "addressText": "江北区建新北路25号ibox商场2楼",
+          "conclusion": "different-address-not-adopted",
+          "note": "华龙网原报道明确指向观音桥商场门店。未与本次罗汉寺原片合并，未引用旧营业时间、价格或图片。"
+        }
+      ]
+    },
+    {
+      "segmentId": "nangua-cailanzi",
+      "decision": "needs-branch-location-evidence",
+      "branchMatch": "unconfirmed",
+      "entranceMatch": "unconfirmed",
+      "routeEligible": false,
+      "addressMatch": "primary-source-crosschecked",
+      "summary": "门牌已与政府许可资料对照，具体地图点位仍待补齐。",
+      "detail": "2025年2月的政府许可公示列出“江北区菜篮子面包店”，门牌与原视频片尾地址卡一致。目前未取得可采用的对应门店坐标，暂不生成图钉或到店路线；许可公示不代表本次现场营业核验。",
+      "sources": [
+        {
+          "id": "creator-address-card",
+          "label": "原视频片尾地址卡",
+          "url": "https://www.douyin.com/video/7699050477137231973",
+          "publishedOn": "2026-10-21",
+          "observedOn": "2026-10-27",
+          "readState": "local-video-frame",
+          "frameSeconds": 320,
+          "addressText": "福泉路22号附61号",
+          "conclusion": "creator-address-lead"
+        },
+        {
+          "id": "cailanzi-government-permit",
+          "label": "政府食品经营许可公示",
+          "url": "https://scjgj.cq.gov.cn/zz/jbq/zwgk/fdzdgknr_146781/xzxk_146787/xzspjg/202502/t20250212_14296418.html",
+          "publishedOn": "2025-02-12",
+          "observedOn": "2026-10-27",
+          "readState": "article-body",
+          "kind": "government-publication",
+          "addressText": "重庆市江北区石马河街道福泉路22号附61号",
+          "operatorName": "江北区菜篮子面包店（个体工商户）",
+          "conclusion": "address-text-crosscheck-only"
+        }
+      ]
+    },
+    {
+      "segmentId": "nangua-nendouya",
+      "decision": "needs-branch-location-evidence",
+      "branchMatch": "unconfirmed",
+      "entranceMatch": "unconfirmed",
+      "routeEligible": false,
+      "addressMatch": "primary-source-crosschecked",
+      "summary": "门牌已与品牌官网对照，具体地图点位仍待补齐。",
+      "detail": "品牌官网列出的“嫩豆芽北环”与原视频的新南路390号、天邻风景南门线索相符。官网门头图片与原片外观一致，但未提供可用的精确定位；小区标签点不能代替店门口。原片的步行描述保留为作者线索。",
+      "sources": [
+        {
+          "id": "creator-address-card",
+          "label": "原视频片尾地址卡",
+          "url": "https://www.douyin.com/video/7699050477137231973",
+          "publishedOn": "2026-10-21",
+          "observedOn": "2026-10-27",
+          "readState": "local-video-frame",
+          "frameSeconds": 320,
+          "addressText": "新南路390号天邻风景南门西行60米路北，近体育公园地铁站1号口",
+          "conclusion": "creator-address-lead"
+        },
+        {
+          "id": "nendouya-brand-contact",
+          "label": "品牌官网北环店地址",
+          "url": "https://www.hjmthot.com/contact",
+          "publishedOn": null,
+          "observedOn": "2026-10-27",
+          "readState": "article-body",
+          "kind": "brand-contact-page",
+          "addressText": "两江新区新南路390号天邻风景南门，加油站对面",
+          "operatorName": "嫩豆芽北环",
+          "conclusion": "address-text-crosscheck-only"
+        }
+      ]
+    }
+  ]
+}

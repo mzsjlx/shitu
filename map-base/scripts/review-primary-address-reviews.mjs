@@ -1,0 +1,25 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {validateVideoMapContexts} from '../src/video-map-context-model.js';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),load=async p=>JSON.parse(await readFile(path.join(root,p),'utf8'));
+const [facts,contexts,library,scan]=await Promise.all([load('../output/research/video-primary-address-evidence-20261027.json'),load('data/video-map-contexts.json'),load('data/video-library.json'),load('../output/research/video-poi-audit-20261027.json')]);
+const hash=b=>createHash('sha256').update(b).digest('hex'),report={date:'2026-10-27',scope:'Frozen primary-page address facts and existing-map-cache audit; no new shop coordinate, operating status, entrance or route is verified.',checks:[]},check=(name,passed,detail)=>report.checks.push({name,passed:!!passed,detail});
+check('Dataset validates without adding a shop geometry',validateVideoMapContexts(contexts,library)===contexts&&contexts.contexts.length===1&&contexts.contexts[0].segmentIds.join(',')==='nangua-sanyangzi');
+const primary=contexts.reviews.filter(r=>r.addressMatch==='primary-source-crosschecked');
+check('Exactly the two inspected primary-page address reviews are present',JSON.stringify(primary.map(r=>r.segmentId).sort())===JSON.stringify(['nangua-cailanzi','nangua-nendouya']));
+const cailanzi=primary.find(r=>r.segmentId==='nangua-cailanzi').sources.find(s=>s.kind==='government-publication');
+check('Bakery evidence is the government publication with the exact shop-doorplate text',new URL(cailanzi.url).hostname==='scjgj.cq.gov.cn'&&cailanzi.operatorName==='江北区菜篮子面包店（个体工商户）'&&cailanzi.addressText==='重庆市江北区石马河街道福泉路22号附61号'&&cailanzi.publishedOn==='2025-02-12');
+const hotpot=primary.find(r=>r.segmentId==='nangua-nendouya').sources.find(s=>s.kind==='brand-contact-page');
+check('Hotpot evidence preserves the branded Beihuan listing and an unknown publication date',hotpot.url==='https://www.hjmthot.com/contact'&&hotpot.operatorName==='嫩豆芽北环'&&hotpot.addressText.includes('新南路390号天邻风景南门')&&hotpot.publishedOn===null);
+check('Reviews retain unresolved branch, entrance and routing status',primary.every(r=>r.branchMatch==='unconfirmed'&&r.entranceMatch==='unconfirmed'&&r.routeEligible===false&&r.sources.some(s=>s.readState==='local-video-frame')&&r.sources.some(s=>s.readState==='article-body')));
+check('Brand photo was used only for internal appearance comparison and has no GPS',facts.records.find(r=>r.segmentId==='nangua-nendouya').imageInspection.publishedInSite===false&&facts.records.find(r=>r.segmentId==='nangua-nendouya').imageInspection.exifGPS==='absent');
+check('All 288 retained z15 tiles were present in the scan',scan.counts.requestedTiles===288&&scan.counts.presentTiles===288);
+check('Inside and outside display-feature counts balance without claiming physical shop counts',scan.counts.displayPointsInsideConfiguredBounds+scan.counts.displayPointsOutsideConfiguredBounds===scan.counts.uniquePOIs&&scan.counts.poiFragments===9195&&scan.counts.uniquePOIs===8165);
+check('No same-name target was adopted from a near-match or tile buffer',scan.targetCount===20&&scan.exactNameMatchCount===0&&scan.adoptedShopCoordinates===0&&scan.possibleNameMatches.every(r=>r.accepted===false)&&scan.referenceOnlyNames.every(r=>r.acceptedAsShop===false));
+for(const label of ['search-snippet-only','unknown-publication']){const bad=structuredClone(contexts),r=bad.reviews.find(r=>r.addressMatch),s=r.sources.find(s=>s.kind==='government-publication');if(label==='search-snippet-only')s.readState='search-snippet-only';else s.kind='unknown-publication';let rejected=false;try{validateVideoMapContexts(bad,library);}catch{rejected=true;}check('Rejects '+label+' as a primary-page address crosscheck',rejected);}
+check('Every video store remains unlocated and ineligible for routing',library.sources.flatMap(s=>s.segments).length===20&&library.sources.flatMap(s=>s.segments).every(s=>s.coordinates===null&&s.routeEligible===false));
+const foodHash=hash(await readFile(path.join(root,'data/food-records.json')));check('The two public map candidates remain byte-identical',foodHash===facts.coordinateDecision.foodRecordsSHA256,foodHash);
+const archiveHash=hash(await readFile(path.join(root,'data/chongqing.pmtiles')));check('Map archive and coverage have not been silently changed',archiveHash===scan.source.sha256&&archiveHash===facts.coordinateDecision.sourceMapSHA256,archiveHash);
+report.passed=report.checks.every(r=>r.passed);await writeFile(path.join(root,'VIDEO-PRIMARY-ADDRESS-DATA-QA.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({passed:report.passed,total:report.checks.length,failed:report.checks.filter(r=>!r.passed)}));if(!report.passed)process.exitCode=1;
