@@ -4,8 +4,10 @@
 
 ## 建议工作流程
 
+**按城市分工：** 完整要求和当前接入缺口见 [CITY-AGENT-HANDBOOK.md](CITY-AGENT-HANDBOOK.md)，转发指令见 [CITY-AGENT-STARTER.md](CITY-AGENT-STARTER.md)。各城资料用独立目录和来源ID；城市上下文、校验器、存储、构建及全局索引由双方约定的一方集中集成。不能用另一城市目录覆盖重庆，JSON冲突按ID合并保留双方新增记录。工作分支/PR便于审阅；用户已授权合并时按其要求处理，不额外要求重复批准。
+
 1. 切回 `main`，拉取最新内容：`git switch main`、`git pull --ff-only`。
-2. 为当前工作创建分支，例如 `git switch -c feat/food-search`；分支名按本次工作自行选择。
+2. 为当前工作创建分支，例如 `git switch -c codex/city-chengdu-intake`；城市和任务按实际情况填写，示例不代表成都已经接入。
 3. 修改源码，在本地构建并检查实际页面；数据修改还需核对来源。
 4. 用 `git status` 和 `git diff` 查看本次变更，只提交与当前工作有关的文件。
 5. 推送自己的分支并创建 Pull Request，写清改了什么、怎么验证，以及仍未解决的问题。
