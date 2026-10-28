@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-28",
+  "scope": "Catalog integrity, same-store grouping, mistaken-merge rejection, independent approximate anchors and original publication dates; not entrance or current-business verification.",
+  "sources": 11,
+  "clips": 38,
+  "distinctEntries": 36,
+  "mapPlaces": 31,
+  "checks": [
+    {
+      "name": "All eight supplied source URLs and authorization records are preserved",
+      "passed": true
+    },
+    {
+      "name": "tiedan-gangzi keeps both creators at a single stop",
+      "passed": true
+    },
+    {
+      "name": "jiankang-zhuer keeps both creators at a single stop",
+      "passed": true
+    },
+    {
+      "name": "Reject mistaken shop merge: missing-place",
+      "passed": true
+    },
+    {
+      "name": "Reject mistaken shop merge: different-name",
+      "passed": true
+    },
+    {
+      "name": "Reject mistaken shop merge: different-position",
+      "passed": true
+    },
+    {
+      "name": "Reject mistaken shop merge: chained-merge",
+      "passed": true
+    },
+    {
+      "name": "Unidentified venues retain clips and stay unlocated",
+      "passed": true
+    },
+    {
+      "name": "Old footage has its original publication date and operating-status note",
+      "passed": true
+    },
+    {
+      "name": "Located clips have independent open-map anchors and coverage",
+      "passed": true
+    },
+    {
+      "name": "New Shapingba area contains actual retained road and building features",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

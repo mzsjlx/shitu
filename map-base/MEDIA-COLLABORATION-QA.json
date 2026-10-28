@@ -3,7 +3,7 @@
   "scope": "Isolated checkout without private media; real package import, repeat import, merging and conflicts.",
   "checks": [
     {
-      "name": "Fresh checkout has 20 real posters and zero local videos",
+      "name": "Fresh checkout has every real poster and zero local videos",
       "passed": true
     },
     {
@@ -23,7 +23,71 @@
       "passed": true
     },
     {
-      "name": "Both packages merge to 20 playable clips",
+      "name": "tiedan bundle imports matching clips",
+      "passed": true
+    },
+    {
+      "name": "tiedan second import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "yumo bundle imports matching clips",
+      "passed": true
+    },
+    {
+      "name": "yumo second import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "wulala bundle imports matching clips",
+      "passed": true
+    },
+    {
+      "name": "wulala second import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "jiankang bundle imports matching clips",
+      "passed": true
+    },
+    {
+      "name": "jiankang second import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "bailong bundle imports matching clips",
+      "passed": true
+    },
+    {
+      "name": "bailong second import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "mizijun bundle imports matching clips",
+      "passed": true
+    },
+    {
+      "name": "mizijun second import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "zhangxixi bundle imports matching clips",
+      "passed": true
+    },
+    {
+      "name": "zhangxixi second import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "manbei bundle imports matching clips",
+      "passed": true
+    },
+    {
+      "name": "manbei second import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "All packages merge without dropping clips from other creators",
       "passed": true
     },
     {

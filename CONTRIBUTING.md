@@ -1,6 +1,6 @@
 # 一起开发食途
 
-主工程在 `map-base/`。开始前先读根目录 `README.md` 与 `PROJECT-STATUS.md` 顶部的最新记录。两台电脑的视频、封面和上传流程统一见 [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md)。当前地图成果在 `feat/hongyadong-map-layer` 分支，尚未合入主分支时请从最新开发分支开始。
+主工程在 `map-base/`。开始前先读根目录 `README.md` 与 `PROJECT-STATUS.md` 顶部的最新记录。两台电脑的视频、封面和上传流程统一见 [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md)。上一批地图成果已合并 `main`，新增8条视频版本在 `codex/chongqing-video-batch2`；合并前从该分支取得本批门店和素材清单，再建立自己的 `codex/` 分支。
 
 ## 建议工作流程
 

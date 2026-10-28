@@ -36,7 +36,8 @@ export class VideoLibrary{
       if(generation!==this.generation||!this.dialog.open)return;
       this.data=data;this.assets=assets.segments;
       const count=data.sources.flatMap(s=>s.segments).filter(s=>this.asset(s)?.clip).length;
-      this.status.textContent=count?`${count} 个本地片段 · 已加入地图，位置大致`:'原片片段未导入本机 · 可查看来源与地址线索';
+      const located=data.sources.flatMap(s=>s.segments).filter(s=>s.coordinates).length,pending=data.sources.flatMap(s=>s.segments).length-located;
+      this.status.textContent=count?`${count} 个本地片段 · ${pending?pending+' 段位置待补':'位置大致'}`:'原片片段未导入本机 · 可查看来源与地址线索';
       this.sources.replaceChildren();
       for(const source of data.sources){const button=el('button','video-source-tab',source.author);button.type='button';button.dataset.source=source.id;button.append(el('span','',String(source.segments.length)));button.addEventListener('click',()=>this.renderSource(source.id));this.sources.append(button);}
       const source=data.sources.find(s=>s.segments.some(segment=>segment.id===this.preferredClip))||data.sources[0];this.renderSource(source.id,this.preferredClip);
@@ -73,7 +74,8 @@ export class VideoLibrary{
     this.stop();this.selected=segment.id;const source=this.data.sources.find(s=>s.id===this.sourceId),asset=this.asset(segment);
     const context=this.mapContexts.contexts.find(c=>c.segmentIds.includes(segment.id)),review=this.mapContexts.reviews.find(r=>r.segmentId===segment.id);
     this.player.replaceChildren();
-    this.player.append(el('span','video-player-kicker',source.author+' · 原片 '+clockText(segment.start)+'—'+clockText(segment.end)));
+    this.player.append(el('span','video-player-kicker',source.author+(source.publishedOn?' · 发布于 '+source.publishedOn:'')+' · 原片 '+clockText(segment.start)+'—'+clockText(segment.end)));
+    if(segment.footageNote)this.player.append(el('p','video-location-note',segment.footageNote));
     if(asset?.clip){
       const video=el('video','video-player-media');video.controls=true;video.playsInline=true;video.preload='metadata';video.poster=asset.poster;video.src=asset.clip;video.setAttribute('aria-label',segment.name+'的探店片段');
       const fallback=el('p','video-player-error','本机片段暂时无法播放，可以查看原视频。');fallback.hidden=true;video.addEventListener('error',()=>{if(video.getAttribute('src'))fallback.hidden=false;});this.player.append(video,fallback);
@@ -81,7 +83,7 @@ export class VideoLibrary{
     const titleRow=el('div','video-place-title-row');titleRow.append(el('h3','',segment.name));
     const mapLink=el('a','video-map-search','在高德地图搜索 ↗');mapLink.href=amapSearchUrl(segment.name);mapLink.target='_blank';mapLink.rel='noopener noreferrer';mapLink.setAttribute('aria-label','在高德地图搜索'+segment.name+'，新窗口打开');
     this.player.append(el('small','video-player-category',segment.category),titleRow,mapLink,el('p','video-player-summary',segment.summary));
-    const address=el('div','video-player-address');address.append(el('small','','原作者地址线索'),el('p','',segment.addressText||'原片未提供详细地址，选择时留意具体分店。'));if(segment.addressNote)address.append(el('p','video-address-note',segment.addressNote));
+    const address=el('div','video-player-address');address.append(el('small','',segment.addressOrigin==='name-address-crosscheck'?'店名与地址对照':'原作者地址线索'),el('p','',segment.addressText||'原片未提供详细地址，选择时留意具体分店。'));if(segment.addressNote)address.append(el('p','video-address-note',segment.addressNote));
     this.player.append(address);
     this.player.append(el('p','video-location-note',segment.planningLocation?('位置大致 · '+segment.planningLocation.note):(review?.summary||'位置待补')));
     if(Array.isArray(segment.coordinates)&&typeof this.onMapPlace==='function'){

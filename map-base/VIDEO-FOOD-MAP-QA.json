@@ -1,15 +1,15 @@
 {
   "checks": [
     {
-      "name": "20 supplied video places and no old samples",
+      "name": "Supplied video places are unique and contain no old samples",
       "passed": true
     },
     {
-      "name": "All 20 matching posters, clips and creators available",
+      "name": "Every map place has its matching cover, clip and creator",
       "passed": true
     },
     {
-      "name": "20 markers exist",
+      "name": "One marker exists per distinct located place",
       "passed": true
     },
     {

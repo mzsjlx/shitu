@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-28",
+  "checks": [
+    {
+      "name": "Code-only checkout displays every located shop with a real thumbnail",
+      "passed": true
+    },
+    {
+      "name": "No MP4 is requested without imported packages",
+      "passed": true
+    },
+    {
+      "name": "Popup retains a decodable food cover and missing-package note",
+      "passed": true
+    },
+    {
+      "name": "Code-only same-shop switch displays the other creator’s real cover",
+      "passed": true
+    },
+    {
+      "name": "Mobile code-only map still opens its inline popup",
+      "passed": true
+    },
+    {
+      "name": "No browser errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

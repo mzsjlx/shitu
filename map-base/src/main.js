@@ -374,9 +374,9 @@ async function init() {
 }
 const videoLibrary=new VideoLibrary({onMapPlace:async segment=>{
   if(!state.ready||!food)throw new Error('地图还在展开，稍后再试。');
-  await food.activate();const item=food.records.find(item=>item.id==='video-'+segment.id);
+  await food.activate();const item=food.records.find(item=>item.id==='video-'+(segment.placeId||segment.id));
   if(!item)throw new Error('这家店暂不在当前地图范围。');
-  food.focusStops(item.id);food.overlay.showPopover(item,true);
+  food.focusStops(item.id);food.overlay.showPopover(item,true,segment.id);
 },onMapContext:(context,segment)=>{
   if(!state.ready||!videoMapContext)throw new Error('地图还在展开，稍后再试。');
   endLandmarkFocus();streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();

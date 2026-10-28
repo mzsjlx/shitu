@@ -4,18 +4,18 @@
   "source": "Protomaps / OpenStreetMap",
   "scope": "Configured central-urban cutout, not the whole Chongqing municipality",
   "bounds": [
-    106.47,
+    106.43,
     29.48,
     106.65,
     29.65
   ],
   "sourceZoom": 15,
-  "archiveBytes": 6141216,
+  "archiveBytes": 6866529,
   "archiveHeader": {
     "minZoom": 0,
     "maxZoom": 15,
     "bounds": [
-      106.47,
+      106.43,
       29.48,
       106.65,
       29.65
@@ -23,22 +23,22 @@
   },
   "osmReplicationTime": "2026-10-27T04:00:00Z",
   "counters": {
-    "requestedTiles": 323,
-    "presentTiles": 323,
-    "roadLineFragments": 6886,
-    "namedRoadLineFragments": 3674,
-    "unnamedRoadLineFragments": 3212,
-    "nonRoadTransportFragmentsExcluded": 824,
-    "buildingPolygonFragments": 7865,
-    "buildingFragmentsWithPositiveHeight": 1187,
-    "buildingFragmentsWithoutPositiveHeight": 6678,
-    "namedRoadGroups": 1216
+    "requestedTiles": 399,
+    "presentTiles": 399,
+    "roadLineFragments": 8344,
+    "namedRoadLineFragments": 4422,
+    "unnamedRoadLineFragments": 3922,
+    "nonRoadTransportFragmentsExcluded": 1094,
+    "buildingPolygonFragments": 9159,
+    "buildingFragmentsWithPositiveHeight": 1278,
+    "buildingFragmentsWithoutPositiveHeight": 7881,
+    "namedRoadGroups": 1440
   },
   "roadClassCounts": {
-    "major_road": 3959,
-    "highway": 221,
-    "minor_road": 1585,
-    "path": 1121
+    "minor_road": 1918,
+    "major_road": 4807,
+    "path": 1310,
+    "highway": 309
   },
   "checks": {
     "finiteAndClippedSearchBoundsAndAnchors": true,
@@ -71,6 +71,7 @@
       },
       "related": [
         "嘉滨路",
+        "嘉滨巷",
         "嘉陵江滨江路"
       ]
     },

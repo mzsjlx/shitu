@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-28",
+  "checks": [
+    {
+      "name": "Each of the two matched stores has one pin and two creator clips",
+      "passed": true,
+      "detail": [
+        {
+          "id": "video-tiedan-gangzi",
+          "clips": [
+            "tiedan-gangzi",
+            "bailong-gangzi"
+          ]
+        },
+        {
+          "id": "video-jiankang-zhuer",
+          "clips": [
+            "jiankang-zhuer",
+            "bailong-zhuer"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "An old per-clip deep link resolves to the shared shop with the requested creator",
+      "passed": true
+    },
+    {
+      "name": "Shared-store popup plays the specific linked clip",
+      "passed": true
+    },
+    {
+      "name": "Switching creator unloads previous audio and updates credit and original link",
+      "passed": true
+    },
+    {
+      "name": "Second creator plays the other clip at the same shop",
+      "passed": true
+    },
+    {
+      "name": "Adding a shared shop creates only one route stop",
+      "passed": true
+    },
+    {
+      "name": "Switching videos preserves the same saved stop",
+      "passed": true
+    },
+    {
+      "name": "Mobile multi-video popup fits and keeps at least two-thirds for media",
+      "passed": true,
+      "detail": {
+        "box": {
+          "x": 12,
+          "y": 76,
+          "width": 260,
+          "height": 394
+        },
+        "media": {
+          "x": 19,
+          "y": 83,
+          "width": 246,
+          "height": 270
+        }
+      }
+    },
+    {
+      "name": "The 2024 source keeps its date and operating-status note",
+      "passed": true
+    },
+    {
+      "name": "Landscape source plays at its original aspect ratio",
+      "passed": true
+    },
+    {
+      "name": "The Shapingba card sits in the newly expanded western area",
+      "passed": true
+    },
+    {
+      "name": "Unidentified shop remains playable and does not get a made-up map point",
+      "passed": true
+    },
+    {
+      "name": "Old street-food footage is labeled 2021 in the library",
+      "passed": true
+    },
+    {
+      "name": "Directory groups matched clips and unlocated pages offer no false map link",
+      "passed": true
+    },
+    {
+      "name": "No runtime page errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passed": true
+}
