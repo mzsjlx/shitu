@@ -1,3 +1,4 @@
+import {foodVideoCredit} from './food-video-credit.js';
 import './food-popover.css';
 const el=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 
@@ -60,14 +61,14 @@ export class FoodPopover{
     }else frame.append(el('span','food-popover-missing','视频待添加'));
     const close=el('button','food-popover-close','×');close.type='button';close.setAttribute('aria-label','关闭'+item.name+'预览');close.addEventListener('click',()=>{this.close();entry.button.focus({preventScroll:true});});
     const copy=el('div','food-popover-copy'),heading=el('div','food-popover-heading');
-    const title=el('strong','',item.name),detail=el('small','',local?(item.clipAuthor||'探店片段'):official?'相关视频 · 分店待核':'店址待核');heading.append(title,detail);copy.append(heading);
+    const title=el('strong','',item.name),credit=foodVideoCredit(item),detail=el('small','',credit||'视频待添加');detail.title=credit||'';heading.append(title,detail);copy.append(heading);
     if(typeof this.onToggle==='function'){
       this.saveButton=el('button','food-popover-save');this.saveButton.type='button';this.saveButton.addEventListener('click',()=>this.onToggle(item));copy.append(this.saveButton);
     }
     this.errorNote=el('p','food-popover-error');this.errorNote.setAttribute('role','status');
     const links=el('div','food-popover-links');
     const originalURL=official?.original||item.originalVideoURL;
-    if(originalURL){const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);}
+    if(originalURL){const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));}
     this.element.replaceChildren(frame,close,copy,this.errorNote,links);this.element.hidden=false;this.element.classList.remove('is-shown');
     this.updateSave();this.position();requestAnimationFrame(()=>{if(this.current?.id===item.id)this.element.classList.add('is-shown');});
   }

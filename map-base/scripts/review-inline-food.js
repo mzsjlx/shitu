@@ -25,10 +25,12 @@ async page=>{
   await run('Existing locations and route',async(p,context,external)=>{
     await ready(p);
     check('Two real source candidates appear with no video store pins',await p.locator('.food-card').count()===2&&await p.evaluate(()=>window.foodCityMap.food.records.length)===2);
+    check('Map card credits the matching video creator and platform', (await p.locator('.food-open').first().textContent()).includes('来源：B站 · 杉田千紘_CHIICHAN'));
     await p.locator('.food-open').first().hover();await p.locator('.food-inline-popover').waitFor({state:'visible'});
     check('Hover opens a small map-adjacent preview with no external request',await p.locator('.food-inline-popover').isVisible()&&external.length===0&&!await p.locator('#food-dialog').evaluate(d=>d.open));
     await p.locator('.food-open').first().click({timeout:5000});
     check('Click adds the first stop without opening the large modal',await p.evaluate(()=>window.foodCityMap.food.saved.length)===1&&!await p.locator('#food-dialog').evaluate(d=>d.open));
+    check('Video preview credits the source and flags the unconfirmed branch', (await p.locator('.food-popover-heading').textContent()).includes('来源：B站 · 杉田千紘_CHIICHAN') && (await p.locator('.food-popover-links').textContent()).includes('分店待核'));
     const popup=await p.locator('.food-inline-popover').boundingBox(),media=await p.locator('.food-popover-media').boundingBox();
     check('Preview media occupies at least two thirds of the popup',media.height/popup.height>=2/3,{popup,media});
     await p.locator('.food-popover-play').click({timeout:5000});const frame=p.locator('.food-popover-media iframe');await frame.waitFor();
@@ -48,6 +50,7 @@ async page=>{
     await ready(p);
     check('Synthetic positioned segments create local video cards',await p.locator('.food-card').count()===4);
     const card=p.locator('[data-food-id="video-nangua-sanyangzi"] .food-open');await card.click({timeout:5000});
+    check('Video clip card credits Douyin and its creator', (await card.textContent()).includes('来源：抖音 · 南瓜小丸子呀🎃'));
     check('The card uses the matching original video poster',await card.locator('img').getAttribute('src').then(src=>src.includes('nangua-sanyangzi')));
     check('Video is not fetched before play',!(await p.evaluate(()=>performance.getEntriesByType('resource').some(entry=>entry.name.includes('nangua-sanyangzi')&&entry.name.endsWith('.mp4')))));
     await p.locator('.food-popover-play').click({timeout:5000});const video=p.locator('.food-popover-media video');await video.waitFor();

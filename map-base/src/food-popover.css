@@ -27,3 +27,8 @@ body.food-active .topbar .search,body.food-active .topbar .wants-open,.food-mode
 
 .food-popover-image-note{left:auto;right:9px}
 @media(max-width:600px){body.food-active .topbar{height:64px;padding:10px 17px}}
+
+.food-card .food-video-credit{display:block;padding:1px 7px 0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;color:#927c6a}
+.food-popover-heading small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+.food-popover-branch-note{margin-left:8px;font-size:10px;color:#9c8977}

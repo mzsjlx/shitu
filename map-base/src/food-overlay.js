@@ -1,3 +1,4 @@
+import {foodVideoCredit} from './food-video-credit.js';
 import {FoodPopover} from './food-popover.js';
 // This independent overlay consumes our content records, never a map provider's POI API.
 const originalVideo=item=>{
@@ -62,6 +63,7 @@ export class FoodOverlay {
       if(item.verificationStatus==='source-record'||item.verificationStatus==='video-location'){
         const state=document.createElement('small');state.className='food-record-state';state.textContent=(item.category?item.category+' · ':'')+'店址待核实';button.append(state);
       }else if(item.category){const category=document.createElement('small');category.className='food-category';category.textContent=item.category;button.append(category);}
+      const credit=foodVideoCredit(item);if(credit){const source=document.createElement('small');source.className='food-video-credit';source.textContent=credit;source.title=credit;button.append(source);}
       button.addEventListener('click',event=>{event.stopPropagation();onOpen(item);});
       element.append(button);
       const actions=document.createElement('div');actions.className='food-actions';let saveButton=null;

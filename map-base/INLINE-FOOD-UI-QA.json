@@ -6,6 +6,10 @@
       "passed": true
     },
     {
+      "name": "Map card credits the matching video creator and platform",
+      "passed": true
+    },
+    {
       "name": "Hover opens a small map-adjacent preview with no external request",
       "passed": true
     },
@@ -14,18 +18,22 @@
       "passed": true
     },
     {
+      "name": "Video preview credits the source and flags the unconfirmed branch",
+      "passed": true
+    },
+    {
       "name": "Preview media occupies at least two thirds of the popup",
       "passed": true,
       "detail": {
         "popup": {
           "x": 908,
-          "y": 200.90625,
+          "y": 176.90625,
           "width": 310,
           "height": 301.5
         },
         "media": {
           "x": 915,
-          "y": 207.90625,
+          "y": 183.90625,
           "width": 296,
           "height": 208
         }
@@ -83,6 +91,10 @@
     },
     {
       "name": "Synthetic positioned segments create local video cards",
+      "passed": true
+    },
+    {
+      "name": "Video clip card credits Douyin and its creator",
       "passed": true
     },
     {
