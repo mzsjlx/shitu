@@ -208,7 +208,22 @@ function wire() {
 async function init() {
   boot.stage('读取城市配置');
   const config=await readJSON('config/cities.json');
-  const requestedCity = new URLSearchParams(location.search).get('city');
+  let requestedCity = null;
+  try {
+    const rawSearch = decodeURIComponent(location.search);
+    const params = new URLSearchParams(rawSearch.startsWith('?') ? rawSearch : '?' + rawSearch);
+    requestedCity = params.get('city');
+    if (!requestedCity) {
+      for (const [k] of params.entries()) {
+        if (k.startsWith('city=')) {
+          requestedCity = k.split('=')[1];
+          break;
+        }
+      }
+    }
+  } catch (_) {
+    requestedCity = new URLSearchParams(location.search).get('city');
+  }
   const currentCityKey = (requestedCity && config.cities[requestedCity]) ? requestedCity : config.activeCity;
   city=config.cities[currentCityKey];
   if(!city)throw new Error('当前城市尚未配置');
@@ -250,6 +265,9 @@ async function init() {
         cityBtn.setAttribute('aria-expanded', 'false');
         if (c !== currentCityKey) {
           const params = new URLSearchParams(location.search);
+          for (const key of Array.from(params.keys())) {
+            if (key.includes('city')) params.delete(key);
+          }
           params.set('city', c);
           location.search = '?' + params.toString();
         }

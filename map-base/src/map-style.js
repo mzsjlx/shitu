@@ -78,11 +78,7 @@ export function makeStyle(city, tilesURL) {
     version:8,
     name:'食途 · 山城暖白',
     metadata:{owner:'FoodCity',geographicData:'Protomaps / OpenStreetMap',mapType:'self-hosted local validation'},
-    sources:{
-      city:{type:'vector',url:'pmtiles://'+tilesURL,attribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · <a href="https://protomaps.com/" target="_blank" rel="noreferrer">Protomaps</a>'},
-      dem:demSource,
-      'dem-shade':{...demSource,attribution:''}
-    },
+    sources,
     light:{anchor:'map',color:'#fff6e6',intensity:.34,position:[1.3,315,45]},
     layers
   };
