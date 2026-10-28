@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "method": "Local source and clip SHA256 checks, prepared ffprobe streams, isolated no-media build. Frames/subtitles and source end cards were inspected; not geographic validation or full listening review.",
-  "catalogSHA256": "f5bef71f92f05197c1b505f2581407deb140b81ddbdf4df79b7ba127b061aad1",
+  "catalogSHA256": "85899471867096d8caf9514272ffddbfca264b743bf8bcfcc976099e70590f21",
   "sources": [
     {
       "id": "nangua",
@@ -29,13 +29,13 @@
     }
   ],
   "originalMediaUploaded": false,
-  "sourcePlaceSHA256": "899a01a8d0fb65ff17afaa7dbf37c30204215202d50095800d053469a0b5ed99",
+  "sourcePlaceSHA256": "90fdfb5128c375e209eccf6a035707ade4e83adbfff9e32b767aff9a51060833",
   "clipCount": 20,
   "totalClipBytes": 174072873,
   "totalPosterBytes": 1754678,
   "standalone": {
-    "bytes": 16825766,
-    "sha256": "69ab4fb0cb7f206d9b310a20bfa262cfef3dd37c65b6cb2847f4e788ea5fbb66"
+    "bytes": 17963094,
+    "sha256": "521e6ee6ac5c447801e1a6e6010c8585ab7f20d2bf8191799b387cff47f591d8"
   },
   "records": [
     {
@@ -933,7 +933,7 @@
       "passed": true
     },
     {
-      "name": "Existing source places are byte-identical",
+      "name": "Retired example places are absent",
       "passed": true
     }
   ],

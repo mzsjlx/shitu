@@ -43,6 +43,7 @@ export class FoodPopover{
     this.stop();this.current=item;this.entry=entry;this.pinned=pinned;this.saveButton=null;
     const frame=el('div','food-popover-media');
     if(item.photoURL){const img=el('img');img.src=item.photoURL;img.alt=item.name+' · 原视频画面';frame.append(img);}
+    else if(item.verificationStatus==='video-location'){frame.append(el('span','food-cover-pending','本机素材待导入'));}
     else if(item.spriteURL){const picture=el('div','food-popover-picture food-sprite');picture.style.backgroundImage='url('+JSON.stringify(item.spriteURL)+')';picture.style.backgroundPositionX=(item.spriteIndex*50)+'%';picture.setAttribute('role','img');picture.setAttribute('aria-label','通用菜品示意，非本店实拍');frame.append(picture,el('span','food-popover-image-note','菜品示意'));}
     const official=bilibiliPlayer(item),local=item.localClip&&item.localPoster?{clip:item.localClip,poster:item.localPoster}:null;
     const source=local||official;
@@ -68,7 +69,7 @@ export class FoodPopover{
     this.errorNote=el('p','food-popover-error');this.errorNote.setAttribute('role','status');
     const links=el('div','food-popover-links');
     const originalURL=official?.original||item.originalVideoURL;
-    if(originalURL){const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));}
+    if(originalURL){const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));if(item.verificationStatus==='video-location'){const note=el('small','food-popover-branch-note','位置大致 · 分店待核');note.title=item.planningLocation?.note||'按地址街区估计';links.append(note);}}
     this.element.replaceChildren(frame,close,copy,this.errorNote,links);this.element.hidden=false;this.element.classList.remove('is-shown');
     this.updateSave();this.position();requestAnimationFrame(()=>{if(this.current?.id===item.id)this.element.classList.add('is-shown');});
   }

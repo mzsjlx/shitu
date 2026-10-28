@@ -17,7 +17,7 @@ const rawPositions=refs.map(id=>{const rawNode=xml.match(new RegExp('<node\\b[^>
 check('Polygon preserves every original WGS84 coordinate',JSON.stringify(rawPositions)===JSON.stringify(context.geometry.coordinates[0]));
 check('Reference is explicitly the temple, with no restaurant or entrance geometry',context.name==='罗汉寺'&&context.source.tags.amenity==='place_of_worship'&&context.geometry.type==='Polygon'&&context.referenceOnly&&context.shopLocated===false&&context.routeEligible===false);
 check('Reference links only to the creator address that names this landmark',JSON.stringify(context.segmentIds)===JSON.stringify(['nangua-sanyangzi'])&&library.sources[0].segments.find(s=>s.id==='nangua-sanyangzi').addressText.includes('罗汉寺'));
-check('All twenty video shops still have no adopted coordinates or route eligibility',library.sources.flatMap(s=>s.segments).length===20&&library.sources.flatMap(s=>s.segments).every(s=>s.coordinates===null&&s.routeEligible===false));
+check('All twenty video shops have approximate coordinates and no navigation eligibility',library.sources.flatMap(s=>s.segments).length===20&&library.sources.flatMap(s=>s.segments).every(s=>Array.isArray(s.coordinates)&&s.planningLocation?.accuracy==='approximate'&&s.routeEligible===false));
 const review=data.reviews[0];
 check('Branch and entrance remain unconfirmed despite matching address text',review.branchMatch==='unconfirmed'&&review.entranceMatch==='unconfirmed'&&review.decision==='needs-branch-location-evidence');
 check('Search-only lead is distinguished from read article bodies',review.sources.find(s=>s.id==='smzdm-xinhua-lead').readState==='search-snippet-only'&&review.sources.find(s=>s.id==='sina-luohan-address').conclusion==='same-address-text-only');
@@ -25,6 +25,6 @@ check('Historic Guanyinqiao report is kept separate from this branch',review.sou
 for(const [label,mutate]of [['point geometry',d=>d.contexts[0].geometry={type:'Point',coordinates:[106.5778,29.5625]}],['shop location claim',d=>d.contexts[0].shopLocated=true],['route claim',d=>d.contexts[0].routeEligible=true],['moved vertex',d=>d.contexts[0].geometry.coordinates[0][1][0]=107]]){
  const invalid=structuredClone(data);mutate(invalid);let rejected=false;try{validateVideoMapContexts(invalid,library);}catch{rejected=true;}check('Rejects '+label+' in a landmark reference',rejected);
 }
-const foodHash=hash(await readFile(path.join(root,'data/food-records.json')));check('Existing public candidate records remain byte-identical',foodHash==='899a01a8d0fb65ff17afaa7dbf37c30204215202d50095800d053469a0b5ed99',foodHash);
+const foodHash=hash(await readFile(path.join(root,'data/food-records.json')));check('Retired sample places are absent',JSON.parse(await readFile(path.join(root,'data/food-records.json'),'utf8')).records.length===0,foodHash);
 report.contextSHA256=hash(await readFile(path.join(root,'data/video-map-contexts.json')));report.passed=report.checks.every(c=>c.passed);await writeFile(path.join(root,'VIDEO-MAP-CONTEXT-DATA-QA.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({passed:report.passed,total:report.checks.length,failed:report.checks.filter(c=>!c.passed)}));
 if(!report.passed)process.exitCode=1;

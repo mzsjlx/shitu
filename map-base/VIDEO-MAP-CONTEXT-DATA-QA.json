@@ -31,7 +31,7 @@
       "passed": true
     },
     {
-      "name": "All twenty video shops still have no adopted coordinates or route eligibility",
+      "name": "All twenty video shops have approximate coordinates and no navigation eligibility",
       "passed": true
     },
     {
@@ -63,9 +63,9 @@
       "passed": true
     },
     {
-      "name": "Existing public candidate records remain byte-identical",
+      "name": "Retired sample places are absent",
       "passed": true,
-      "detail": "899a01a8d0fb65ff17afaa7dbf37c30204215202d50095800d053469a0b5ed99"
+      "detail": "90fdfb5128c375e209eccf6a035707ade4e83adbfff9e32b767aff9a51060833"
     }
   ],
   "contextSHA256": "20141158255c56a2c8f549de67bc1dfc34596773f2ab035f3e15f0f1ee0be859",

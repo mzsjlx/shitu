@@ -4,8 +4,8 @@ import mapContextData from '../data/video-map-contexts.json';
 import {validateVideoMapContexts} from './video-map-context-model.js';
 const el=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 export class VideoLibrary{
-  constructor({onMapContext}={}){
-    this.onMapContext=onMapContext;
+  constructor({onMapContext,onMapPlace}={}){
+    this.onMapContext=onMapContext;this.onMapPlace=onMapPlace;
     this.dialog=document.getElementById('video-library-dialog');this.grid=document.getElementById('video-library-grid');this.player=document.getElementById('video-library-player');this.sources=document.getElementById('video-library-sources');this.message=document.getElementById('video-library-message');this.status=document.getElementById('video-library-status');this.generation=0;
     document.getElementById('video-library-open').addEventListener('click',event=>this.open(event.currentTarget));
     document.getElementById('video-library-close').addEventListener('click',()=>this.dialog.close());
@@ -36,7 +36,7 @@ export class VideoLibrary{
       if(generation!==this.generation||!this.dialog.open)return;
       this.data=data;this.assets=assets.segments;
       const count=data.sources.flatMap(s=>s.segments).filter(s=>this.asset(s)).length;
-      this.status.textContent=count?`${count} 个本地片段 · 分店位置待核对`:'原片片段未导入本机 · 可查看来源与地址线索';
+      this.status.textContent=count?`${count} 个本地片段 · 已加入地图，位置大致`:'原片片段未导入本机 · 可查看来源与地址线索';
       this.sources.replaceChildren();
       for(const source of data.sources){const button=el('button','video-source-tab',source.author);button.type='button';button.dataset.source=source.id;button.append(el('span','',String(source.segments.length)));button.addEventListener('click',()=>this.renderSource(source.id));this.sources.append(button);}
       const source=data.sources.find(s=>s.segments.some(segment=>segment.id===this.preferredClip))||data.sources[0];this.renderSource(source.id,this.preferredClip);
@@ -83,7 +83,12 @@ export class VideoLibrary{
     this.player.append(el('small','video-player-category',segment.category),titleRow,mapLink,el('p','video-player-summary',segment.summary));
     const address=el('div','video-player-address');address.append(el('small','','原作者地址线索'),el('p','',segment.addressText||'原片未提供详细地址，选择时留意具体分店。'));if(segment.addressNote)address.append(el('p','video-address-note',segment.addressNote));
     this.player.append(address);
-    this.player.append(el('p','video-location-note',review?.summary||'店址尚未对准地图，暂不加入到店路线。'));
+    this.player.append(el('p','video-location-note',segment.planningLocation?('位置大致 · '+segment.planningLocation.note):(review?.summary||'位置待补')));
+    if(Array.isArray(segment.coordinates)&&typeof this.onMapPlace==='function'){
+      const button=el('button','video-nearby-button','在地图看这家 ↗');button.type='button';button.addEventListener('click',async()=>{
+        button.disabled=true;try{await this.onMapPlace(segment);this.stop();this.closeMode='map';this.dialog.close();}catch(error){this.status.textContent=error.message;}finally{button.disabled=false;}
+      });titleRow.append(button);
+    }
     if(context&&typeof this.onMapContext==='function'){
       const button=el('button','video-nearby-button','看看'+context.label+' ↗');button.type='button';button.addEventListener('click',async()=>{
         const generation=this.generation;button.disabled=true;button.setAttribute('aria-busy','true');

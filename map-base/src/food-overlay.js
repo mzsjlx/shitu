@@ -53,6 +53,7 @@ export class FoodOverlay {
       if(item.photoURL){
         const photo=document.createElement('span');photo.className='food-photo';
         const image=document.createElement('img');image.src=item.photoURL;image.alt=item.name+' · 原视频画面';image.loading='lazy';photo.append(image);button.append(photo);
+      }else if(item.verificationStatus==='video-location'){const photo=document.createElement('span');photo.className='food-photo food-cover-pending';photo.textContent='封面待导入';button.append(photo);
       }else if(item.spriteURL&&Number.isInteger(item.spriteIndex)&&item.spriteIndex>=0&&item.spriteIndex<3){
         const photo=document.createElement('span');photo.className='food-photo food-sprite';
         photo.style.backgroundImage='url('+JSON.stringify(item.spriteURL)+')';photo.style.backgroundPositionX=(item.spriteIndex*50)+'%';
@@ -61,7 +62,7 @@ export class FoodOverlay {
       }
       const name=document.createElement('strong');name.textContent=item.name;button.append(name);
       if(item.verificationStatus==='source-record'||item.verificationStatus==='video-location'){
-        const state=document.createElement('small');state.className='food-record-state';state.textContent=(item.category?item.category+' · ':'')+'店址待核实';button.append(state);
+        const state=document.createElement('small');state.className='food-record-state';state.textContent=(item.category?item.category+' · ':'')+(item.verificationStatus==='video-location'?'位置大致':'店址待核实');button.append(state);
       }else if(item.category){const category=document.createElement('small');category.className='food-category';category.textContent=item.category;button.append(category);}
       const credit=foodVideoCredit(item);if(credit){const source=document.createElement('small');source.className='food-video-credit';source.textContent=credit;source.title=credit;button.append(source);}
       button.addEventListener('click',event=>{event.stopPropagation();onOpen(item);});
@@ -111,8 +112,9 @@ export class FoodOverlay {
       const overlaps=placed.some(p=>r.left<p.right+12&&r.right>p.left-12&&r.top<p.bottom+12&&r.bottom>p.top-12);
       const coversControl=controls.some(p=>r.left<p.right+8&&r.right>p.left-8&&r.top<p.bottom+8&&r.bottom>p.top-8);
       const coversOtherPoint=anchors.some(p=>p.id!==entry.item.id&&r.left<p.x+16&&r.right>p.x-16&&r.top<p.y+16&&r.bottom>p.y-16);
+      const cardLimit=innerWidth<600?1:3;
       const cropped=r.left<bounds.left+12||r.right>bounds.right-12||r.top<bounds.top+10||r.bottom>bounds.bottom-105;
-      if(this.compact||cropped||coversControl||coversOtherPoint||(overlaps&&entry.item.id!==this.selected)){
+      if(this.compact||cropped||coversControl||coversOtherPoint||(placed.length>=cardLimit&&entry.item.id!==this.selected)||(overlaps&&entry.item.id!==this.selected)){
         const focusedAction=entry.element.contains(document.activeElement)&&document.activeElement!==entry.button;
         entry.element.classList.add('is-collapsed');entry.marker.setOffset([0,14]);
         if(focusedAction&&getComputedStyle(entry.element).visibility!=='hidden')entry.button.focus({preventScroll:true});

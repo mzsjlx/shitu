@@ -6,6 +6,7 @@ const allowedURL=value=>{try{const u=new URL(value);return u.protocol==='https:'
 const thumbFor=(item,cls)=>{
   const thumb=document.createElement('span');thumb.className=cls;
   if(item.photoURL){thumb.style.backgroundImage='url('+JSON.stringify(item.photoURL)+')';thumb.style.backgroundSize='cover';thumb.style.backgroundPosition='center';thumb.setAttribute('aria-label',item.name+' · 原视频画面');}
+  else if(item.verificationStatus==='video-location'){thumb.classList.add('food-cover-pending');thumb.textContent='封面待导入';}
   else{thumb.classList.add('food-sprite');thumb.style.backgroundImage='url('+JSON.stringify(item.spriteURL)+')';thumb.style.backgroundPositionX=(item.spriteIndex*50)+'%';thumb.setAttribute('aria-label','AI菜品示意，非门店实拍');const note=document.createElement('small');note.textContent='示意';thumb.append(note);}
   thumb.setAttribute('role','img');return thumb;
 };
@@ -62,14 +63,14 @@ export class FoodExperience{
     this.phase='loading';this.error=null;
     const controller=new AbortController(),timer=setTimeout(()=>controller.abort(new Error('美食资料读取超时')),12000);
     this.pending=Promise.all([this.readJSON(this.config.records,{signal:controller.signal}),this.readJSON('data/video-library.json',{signal:controller.signal}).catch(()=>bundledVideoLibrary)]).then(async([data,catalog])=>{
-      if(data.city!=='chongqing'||!Array.isArray(data.records)||data.records.length<1)throw new Error('美食资料尚未准备好');
+      if(data.city!=='chongqing'||!Array.isArray(data.records))throw new Error('美食资料尚未准备好');
       const records=data.records.map(item=>({...item,spriteURL:this.assetURL(this.config.sprite)}));
       validateVideoLibrary(catalog);
       const b=this.overlay.bounds,positioned=catalog.sources.flatMap(source=>source.segments.map(segment=>({source,segment}))).filter(({segment})=>Array.isArray(segment.coordinates)&&segment.coordinates[0]>=b[0]&&segment.coordinates[0]<=b[2]&&segment.coordinates[1]>=b[1]&&segment.coordinates[1]<=b[3]);
       let assets={};if(positioned.length){try{assets=(await this.readJSON('data/video-library-assets.json',{signal:controller.signal})).segments||{};}catch{}}
       for(const {source,segment}of positioned){
         const asset=assets[segment.id],clip=localVideoAsset(asset?.clip,'mp4'),poster=localVideoAsset(asset?.poster,'jpg');
-        records.push({id:'video-'+segment.id,name:segment.name,category:segment.category,coordinates:segment.coordinates,coordinateSystem:'WGS84',verificationStatus:'video-location',coordinateEvidence:{kind:'video-coordinate',url:source.url},entranceStatus:'unverified',routeEligible:false,address:segment.addressText||'原片未提供详细地址',summary:segment.summary,spriteURL:this.assetURL(this.config.sprite),spriteIndex:0,photoURL:clip&&poster?poster:null,localClip:clip&&poster?clip:null,localPoster:clip&&poster?poster:null,clipAuthor:source.author,originalVideoURL:source.url,videos:[{title:source.title,author:source.author,url:source.url}]});
+        records.push({id:'video-'+segment.id,name:segment.name,category:segment.category,coordinates:segment.coordinates,coordinateSystem:'WGS84',verificationStatus:'video-location',coordinateEvidence:{kind:'video-coordinate',url:source.url},entranceStatus:'unverified',routeEligible:false,address:segment.addressText||segment.planningLocation?.label||'原片未提供详细地址',summary:segment.summary,spriteURL:this.assetURL(this.config.sprite),spriteIndex:0,photoURL:poster||null,localClip:clip&&poster?clip:null,localPoster:clip&&poster?poster:null,planningLocation:segment.planningLocation||null,clipAuthor:source.author,originalVideoURL:source.url,videos:[{title:source.title,author:source.author,url:source.url}]});
       }
       this.overlay.validate(records,true);
       this.records=records;this.phase='loaded';this.saved=this.saved.filter(id=>records.some(record=>record.id===id));this.refreshSaved();
@@ -89,7 +90,7 @@ export class FoodExperience{
     this.renderDock();
     this.map.resize();
     const requested=this.records.find(item=>item.id===requestedPlaceId);
-    if(requested){this.focusStops(requested.id);this.open(requested);return;}
+    if(requested){this.focusStops(requested.id);this.overlay.showPopover(requested,true);return;}
     if(requestedPlaceId)byId('status').textContent='这个地点暂不在当前资料中，已展开现有美食候选。';
     const points=this.visibleRecords().map(r=>r.coordinates),xs=points.map(p=>p[0]),ys=points.map(p=>p[1]);
     const padding=this.fitPadding();
@@ -107,7 +108,7 @@ export class FoodExperience{
     const records=this.visibleRecords();
     this.overlay.replaceCandidates(records,item=>this.openMapCard(item),{onToggleSave:item=>this.toggleSave(item.id)});
     this.overlay.setState(this.selected?.id,this.saved);
-    byId('food-pick-label').textContent=this.category===null?'今天想吃什么':this.category+' · '+records.length+'家';
+    byId('food-pick-label').textContent=this.category===null?'今天想吃什么 · '+records.length+'家':this.category+' · '+records.length+'家';
     byId('food-pick-open').setAttribute('aria-label',this.category===null?'挑选想吃的美食类别':'当前只看'+this.category+'，'+records.length+'家；更换类别或查看全部');
   }
   openPicker(){
@@ -166,13 +167,13 @@ export class FoodExperience{
   open(item){
     this.overlay.popover.close();
     this.selected=item;this.overlay.setState(item.id,this.saved);
-    const pageLink=byId('food-page-link');pageLink.hidden=item.verificationStatus==='video-location'||!['http:','https:'].includes(location.protocol);
+    const pageLink=byId('food-page-link');pageLink.hidden=!['http:','https:'].includes(location.protocol);
     if(!pageLink.hidden)pageLink.href=new URL('./places/'+encodeURIComponent(item.id)+'.html',location.href).href;
     byId('food-title').textContent=item.name;byId('food-category').textContent=item.category;
     byId('food-address').textContent=item.address||'公开地图记录尚未提供完整门牌。';
     byId('food-intro').textContent=item.summary;
     const hero=byId('food-hero');hero.style.backgroundImage='url('+JSON.stringify(item.photoURL||item.spriteURL)+')';hero.style.backgroundSize=item.photoURL?'cover':'';hero.style.backgroundPosition=item.photoURL?'center':(item.spriteIndex*50)+'% center';hero.setAttribute('aria-label',item.photoURL?item.name+' · 原视频画面':'AI生成的通用菜品示意，非门店实拍');hero.querySelector('.photo-note').textContent=item.photoURL?'原视频画面':'菜品示意 · 非门店实拍';
-    byId('food-location-note').textContent=item.verificationStatus==='video-location'?'视频门店位置已录入，分店及入口仍需核对。':'地图位置来自 '+item.coordinateEvidence.sourceDate+' 的开放地图节点，当前店址、营业及入口仍待核实。';
+    byId('food-location-note').textContent=item.verificationStatus==='video-location'?('位置大致 · '+(item.planningLocation?.note||'按原片地址与周边街区估计，出发前可在高德确认。')):'地图位置来自 '+item.coordinateEvidence.sourceDate+' 的开放地图节点，当前店址、营业及入口仍待核实。';
     const sources=byId('food-sources');sources.replaceChildren();
     for(const source of [{label:item.verificationStatus==='video-location'?'查看原视频':'查看原始地图记录',url:item.coordinateEvidence.url},...(item.sources||[])]){
       const url=allowedURL(source.url);if(!url)continue;
@@ -290,7 +291,7 @@ export class FoodExperience{
       const thumb=thumbFor(item,'trip-thumb');
       const copy=document.createElement('span');copy.className='trip-item-copy';
       const title=document.createElement('strong');title.textContent=item.name;
-      const note=document.createElement('small');note.textContent=item.category+' · 店址待核实';copy.append(title,note);open.append(thumb,copy);
+      const note=document.createElement('small');note.textContent=item.category+' · 位置大致';copy.append(title,note);open.append(thumb,copy);
       open.addEventListener('click',()=>this.open(item));
       const actions=document.createElement('div');actions.className='trip-row-actions';
       const locate=document.createElement('button');locate.className='trip-locate';locate.type='button';locate.textContent='看位置';locate.setAttribute('aria-label','在地图上查看'+item.name+'的位置');locate.addEventListener('click',()=>{byId('wants-dialog').close();this.focusStops(id);});actions.append(locate);

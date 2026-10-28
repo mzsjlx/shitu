@@ -32,3 +32,11 @@ body.food-active .topbar .search,body.food-active .topbar .wants-open,.food-mode
 .food-popover-heading small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 .food-popover-branch-note{margin-left:8px;font-size:10px;color:#9c8977}
+
+.food-cover-pending{display:grid;place-items:center;background:#eee7dc;color:#95816b;font-size:11px}
+.food-card.is-collapsed{width:48px;height:48px;min-width:48px;border-width:3px;box-shadow:0 4px 15px #372b2533}
+.food-card.is-collapsed>.food-open>.food-photo{display:block;width:42px;height:42px;border-radius:50%;overflow:hidden}
+.food-card.is-collapsed>.food-open>.food-photo img{border-radius:50%}
+.food-card.is-collapsed>.food-open>.food-photo .photo-note,.food-card.is-collapsed>.food-pin{display:none}
+.food-card.is-collapsed.is-wanted{border-color:#f56848}
+.food-card.is-collapsed .food-cover-pending{font-size:8px}

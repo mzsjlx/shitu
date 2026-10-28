@@ -17,6 +17,7 @@ export function validateVideoLibrary(data){
       if(![segment.start,segment.end,segment.posterSecond].every(Number.isFinite)||segment.start<previous||segment.end<=segment.start||segment.end>source.durationSeconds||segment.posterSecond<segment.start||segment.posterSecond>=segment.end)throw new Error('视频分段时间无效或重叠');
       previous=segment.end;
       if(segment.coordinates!==null&&(!Array.isArray(segment.coordinates)||segment.coordinates.length!==2||!segment.coordinates.every(Number.isFinite)||Math.abs(segment.coordinates[0])>180||Math.abs(segment.coordinates[1])>90||(segment.coordinateSystem&&segment.coordinateSystem!=='WGS84')))throw new Error('视频门店位置应为 WGS84 经度、纬度');
+      if(segment.planningLocation&&(segment.planningLocation.accuracy!=='approximate'||typeof segment.planningLocation.label!=='string'||!segment.planningLocation.label||!segment.coordinates))throw new Error('规划位置需要大致位置标签与坐标');
       if(segment.routeEligible!==false)throw new Error('视频店址尚未核对，不能生成到店导航');
     }
   }

@@ -155,7 +155,8 @@ function wire(){
 }
 async function init(){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
-  try{const response=await fetch('./data/content-review-catalog.json',{signal:controller.signal});if(!response.ok)throw new Error('候选资料读取失败');catalog=await response.json();if(catalog.schemaVersion!==1||!catalog.candidates?.length)throw new Error('候选资料格式不完整');}finally{clearTimeout(timer);}
+  try{const response=await fetch('./data/content-review-catalog.json',{signal:controller.signal});if(!response.ok)throw new Error('候选资料读取失败');catalog=await response.json();if(catalog.schemaVersion!==1||!Array.isArray(catalog.candidates))throw new Error('候选资料格式不完整');}finally{clearTimeout(timer);}
+  if(!catalog.candidates.length){$('review-load-state').textContent='旧示例已移除，视频门店可在地图中查看。';$('save-status').textContent='原有本地草稿已保留';window.__CONTENT_REVIEW_BOOT__.ready();return;}
   draft=createDraft(catalog);validateDraft(draft,catalog);selected=catalog.candidates[0].id;
   try{const raw=localStorage.getItem(STORAGE_KEY);if(raw){draft=normalize(validateDraft(JSON.parse(raw),catalog));savedStatus(true);}else $('save-status').textContent='初始材料已载入，填写后自动保存到当前浏览器';}catch{storageBlocked=true;savedStatus(false);feedback('上次草稿或本地存储暂不可读取。当前显示初始材料；填写内容可导出备份，重置工作台后可重新尝试保存。');}
   wire();renderRecord();renderAudit();$('workbench').hidden=false;$('review-loading').hidden=true;for(const id of ['import-open','export-draft','reset-open'])$(id).disabled=false;window.__CONTENT_REVIEW_BOOT__.ready();

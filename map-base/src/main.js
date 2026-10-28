@@ -372,7 +372,12 @@ async function init() {
     setView:view
   };
 }
-const videoLibrary=new VideoLibrary({onMapContext:(context,segment)=>{
+const videoLibrary=new VideoLibrary({onMapPlace:async segment=>{
+  if(!state.ready||!food)throw new Error('地图还在展开，稍后再试。');
+  await food.activate();const item=food.records.find(item=>item.id==='video-'+segment.id);
+  if(!item)throw new Error('这家店暂不在当前地图范围。');
+  food.focusStops(item.id);food.overlay.showPopover(item,true);
+},onMapContext:(context,segment)=>{
   if(!state.ready||!videoMapContext)throw new Error('地图还在展开，稍后再试。');
   endLandmarkFocus();streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();
   if($('food-pick-dialog').open)$('food-pick-dialog').close();
