@@ -28,6 +28,7 @@ await writeFile(path.join(root,'dist/DATA-NOTICE.txt'),notice+'Three.js 0.186.1:
 // A convenience artifact for local review. Production keeps PMTiles Range loading.
 const config=JSON.parse(await readFile(path.join(root,'config/cities.json'),'utf8')),city=config.cities[config.activeCity];
 const json={'config/cities.json':config};
+for(const file of ['data/video-library.json','data/video-library-assets.json'])json[file]=JSON.parse(await readFile(path.join(root,'dist',file),'utf8'));
 for(const file of Object.values(city.dataFiles))json[file]=JSON.parse(await readFile(path.join(root,file),'utf8'));
 if(city.streetDetail)for(const file of [city.streetDetail.data,city.streetDetail.manifest])json[file]=JSON.parse(await readFile(path.join(root,file),'utf8'));
 if(city.foodContent)json[city.foodContent.records]=JSON.parse(await readFile(path.join(root,city.foodContent.records),'utf8'));

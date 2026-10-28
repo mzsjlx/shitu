@@ -7,7 +7,7 @@ export function validateVideoMapContexts(data,library,bounds=[106.49,29.49,106.6
     if(!safeId(context.id)||contextIds.has(context.id)||context.kind!=='landmark-reference'||context.referenceOnly!==true||context.shopLocated!==false||context.routeEligible!==false||context.coordinateSystem!=='WGS84')throw new Error('周边参考不能被当作分店位置或到店路线');
     contextIds.add(context.id);
     if(typeof context.name!=='string'||!context.name||typeof context.label!=='string'||!Array.isArray(context.segmentIds)||!context.segmentIds.length)throw new Error('视频周边参考缺少地名或片段关系');
-    for(const id of context.segmentIds){const s=segments.get(id);if(!s||s.coordinates!==null||s.routeEligible!==false||!s.addressText?.includes(context.name))throw new Error('周边地标与原作者地址线索不匹配');}
+    for(const id of context.segmentIds){const s=segments.get(id);if(!s||s.routeEligible!==false||!s.addressText?.includes(context.name))throw new Error('周边地标与原作者地址线索不匹配');}
     const source=context.source;
     if(source?.kind!=='osm-way'||!Number.isSafeInteger(source.id)||source.id<=0||source.url!==`https://www.openstreetmap.org/way/${source.id}`||source.tags?.name!==context.name||source.tags?.amenity!=='place_of_worship'||!/^[a-f0-9]{64}$/.test(source.sourceSHA256||''))throw new Error('周边地标缺少可追溯的原始轮廓来源');
     const rings=context.geometry?.coordinates,ring=rings?.[0];

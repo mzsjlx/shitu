@@ -1,9 +1,8 @@
-import {validateVideoLibrary,clockText,amapSearchUrl} from './video-library-model.js';
+import {validateVideoLibrary,clockText,amapSearchUrl,localVideoAsset} from './video-library-model.js';
 import './video-library.css';
 import mapContextData from '../data/video-map-contexts.json';
 import {validateVideoMapContexts} from './video-map-context-model.js';
 const el=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
-const localAsset=(value,extension)=>typeof value==='string'&&new RegExp('^\\./media/videos/[a-z][a-z0-9-]*/[a-z][a-z0-9-]*\\.'+extension+'$').test(value)?value:null;
 export class VideoLibrary{
   constructor({onMapContext}={}){
     this.onMapContext=onMapContext;
@@ -44,7 +43,7 @@ export class VideoLibrary{
     }catch(error){if(generation!==this.generation)return;this.message.textContent=error.name==='AbortError'?'视频资料读取超时，可以重试。':error.message;document.getElementById('video-library-retry').hidden=false;}
     finally{clearTimeout(timer);}
   }
-  asset(segment){const a=this.assets?.[segment.id];return localAsset(a?.clip,'mp4')&&localAsset(a?.poster,'jpg')?a:null;}
+  asset(segment){const a=this.assets?.[segment.id];return localVideoAsset(a?.clip,'mp4')&&localVideoAsset(a?.poster,'jpg')?a:null;}
   renderSource(id,clipId){
     this.stop();this.sourceId=id;this.selected=null;document.getElementById('video-library-search').value='';
     for(const button of this.sources.children)button.setAttribute('aria-pressed',String(button.dataset.source===id));

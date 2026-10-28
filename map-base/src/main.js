@@ -330,7 +330,7 @@ async function init() {
       }
     });
     if(city.walkNetwork)walk=new WalkPreview(map,maplibregl.Marker,{
-      path:city.walkNetwork,readJSON,onView:view,onAppearance:active=>overlay.setCompact(active),
+      path:city.walkNetwork,readJSON,onView:view,onAppearance:active=>{overlay.setCompact(active);food?.setRouteSuppressed(active);},
       onFocus:()=>{
         videoMapContext?.clear();
         endLandmarkFocus();

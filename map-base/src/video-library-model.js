@@ -16,12 +16,14 @@ export function validateVideoLibrary(data){
       if(typeof segment.name!=='string'||!segment.name.trim()||typeof segment.category!=='string'||typeof segment.summary!=='string'||(segment.addressText!==null&&typeof segment.addressText!=='string'))throw new Error('门店片段缺少信息');
       if(![segment.start,segment.end,segment.posterSecond].every(Number.isFinite)||segment.start<previous||segment.end<=segment.start||segment.end>source.durationSeconds||segment.posterSecond<segment.start||segment.posterSecond>=segment.end)throw new Error('视频分段时间无效或重叠');
       previous=segment.end;
-      if(segment.coordinates!==null||segment.routeEligible!==false)throw new Error('这一批视频店址尚未核对，不可附加地图位置或路线资格');
+      if(segment.coordinates!==null&&(!Array.isArray(segment.coordinates)||segment.coordinates.length!==2||!segment.coordinates.every(Number.isFinite)||Math.abs(segment.coordinates[0])>180||Math.abs(segment.coordinates[1])>90||(segment.coordinateSystem&&segment.coordinateSystem!=='WGS84')))throw new Error('视频门店位置应为 WGS84 经度、纬度');
+      if(segment.routeEligible!==false)throw new Error('视频店址尚未核对，不能生成到店导航');
     }
   }
   return data;
 }
 export function clockText(seconds){const n=Math.floor(seconds);return Math.floor(n/60)+':'+String(n%60).padStart(2,'0');}
+export function localVideoAsset(value,extension){return typeof value==='string'&&new RegExp('^\\./media/videos/[a-z][a-z0-9-]*/[a-z][a-z0-9-]*\\.'+extension+'$').test(value)?value:null;}
 export function amapSearchUrl(name){
   const url=new URL('https://uri.amap.com/search');
   url.searchParams.set('keyword',name.trim());url.searchParams.set('city','500000');url.searchParams.set('view','list');url.searchParams.set('src','shitu');url.searchParams.set('callnative','0');
