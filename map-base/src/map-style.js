@@ -8,9 +8,29 @@ const namedRoad = ['all', line, ['!=', roadName, '']];
 const font = ['sans-serif'];
 
 export function makeStyle(city, tilesURL) {
-  const demURL=new URL(city.demTiles,location.href).href.replaceAll('%7B','{').replaceAll('%7D','}');
-  const b=city.bounds;
-  const demSource={type:'raster-dem',tiles:[demURL],tileSize:256,minzoom:city.demMinZoom,maxzoom:city.demMaxZoom,encoding:'terrarium',bounds:[b[0]-.03,b[1]-.03,b[2]+.03,b[3]+.03],attribution:'Terrain: <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noreferrer">Mapzen / Tilezen</a>'};
+  const sources = {
+    city: {
+      type: 'vector',
+      url: 'pmtiles://' + tilesURL,
+      attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · <a href="https://protomaps.com/" target="_blank" rel="noreferrer">Protomaps</a>'
+    }
+  };
+  if (city.demTiles) {
+    const demURL = new URL(city.demTiles, location.href).href.replaceAll('%7B', '{').replaceAll('%7D', '}');
+    const b = city.bounds;
+    const demSource = {
+      type: 'raster-dem',
+      tiles: [demURL],
+      tileSize: 256,
+      minzoom: city.demMinZoom,
+      maxzoom: city.demMaxZoom,
+      encoding: 'terrarium',
+      bounds: [b[0] - .03, b[1] - .03, b[2] + .03, b[3] + .03],
+      attribution: 'Terrain: <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noreferrer">Mapzen / Tilezen</a>'
+    };
+    sources.dem = demSource;
+    sources['dem-shade'] = { ...demSource, attribution: '' };
+  }
   const layers = [
     {id:'canvas',type:'background',paint:{'background-color':'#e8e5db'}},
     {id:'land',type:'fill',source:'city','source-layer':'earth',paint:{'fill-color':'#e8e5db','fill-antialias':false}},
@@ -18,7 +38,7 @@ export function makeStyle(city, tilesURL) {
     {id:'civic-grounds',type:'fill',source:'city','source-layer':'landuse',filter:['in',kind,['literal',['school','university','hospital','pedestrian']]],paint:{'fill-color':['match',kind,'pedestrian','#ded8c9','#dedfd2'],'fill-opacity':.7}},
     {id:'water',type:'fill',source:'city','source-layer':'water',filter:['==',['geometry-type'],'Polygon'],paint:{'fill-color':'#91b9b3','fill-antialias':true}},
     {id:'water-lines',type:'line',source:'city','source-layer':'water',filter:line,paint:{'line-color':'#91b9b3','line-width':width([11,.5,16,3,19,10])}},
-    {id:'hill-shade',type:'hillshade',source:'dem-shade',paint:{'hillshade-exaggeration':.18,'hillshade-shadow-color':'#7b846e','hillshade-highlight-color':'#fff8e9','hillshade-accent-color':'#a5ac93','hillshade-illumination-direction':310}},
+    ...(city.demTiles ? [{id:'hill-shade',type:'hillshade',source:'dem-shade',paint:{'hillshade-exaggeration':.18,'hillshade-shadow-color':'#7b846e','hillshade-highlight-color':'#fff8e9','hillshade-accent-color':'#a5ac93','hillshade-illumination-direction':310}}] : []),
     {id:'buildings-flat',type:'fill',source:'city','source-layer':'buildings',minzoom:13,filter:['==',['geometry-type'],'Polygon'],paint:{'fill-color':'#d5cebf','fill-outline-color':'#c6beaf','fill-opacity':.72}},
   ];
   const classes = [

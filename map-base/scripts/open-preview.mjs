@@ -8,7 +8,7 @@ async function probe(port){
   try{
     const r=await fetch('http://127.0.0.1:'+port+'/__foodcity_health',{signal:AbortSignal.timeout(600)});
     const data=await r.json();
-    return data.app==='foodcity-map-base'&&data.version==='0.3.1'&&path.resolve(data.root)===path.join(root,'dist')?'ours':'occupied';
+    return data.app==='foodcity-map-base'&&data.version==='0.3.1'&&path.resolve(data.root).toLowerCase()===path.join(root,'dist').toLowerCase()?'ours':'occupied';
   }catch(error){return error.cause?.code==='ECONNREFUSED'?'free':'occupied';}
 }
 let chosen;

@@ -48,6 +48,34 @@
         "terrainManifest": "data/terrain-manifest.json"
       },
       "status": "local-validation-only"
+    },
+    "liuzhou": {
+      "name": "柳州",
+      "regionLabel": "中心城区 · 城中半岛",
+      "coverageLabel": "青云民生市场、五星街、风情港、窑埠古镇至胜利烧烤城",
+      "bounds": [
+        109.35,
+        24.26,
+        109.47,
+        24.38
+      ],
+      "center": [
+        109.412,
+        24.318
+      ],
+      "zoom": 15.6,
+      "pitch": 52,
+      "bearing": -18,
+      "minZoom": 12.0,
+      "maxZoom": 19,
+      "tiles": "data/liuzhou.pmtiles",
+      "dataFiles": {
+        "index": "data/liuzhou-roads-index.json",
+        "audit": "data/liuzhou-data-audit.json",
+        "manifest": "data/liuzhou-source-manifest.json",
+        "tileMetadata": "data/liuzhou-tile-metadata.json"
+      },
+      "status": "local-validation-only"
     }
   }
 }

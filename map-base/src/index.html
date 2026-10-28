@@ -13,7 +13,16 @@
   <main id="app">
     <header class="topbar">
       <a class="brand" href="" aria-label="重新展开食途地图">食途<span class="brand-dot"></span></a>
-      <span class="city-chip">重庆<span> · 中心城区</span></span>
+      <div class="city-selector-wrap">
+        <button id="city-chip" class="city-chip city-select-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="切换城市">
+          <span id="current-city-name">重庆</span><span id="current-city-region"> · 中心城区</span>
+          <span class="city-caret" aria-hidden="true">▾</span>
+        </button>
+        <div id="city-dropdown" class="city-dropdown paper" role="listbox" hidden>
+          <button type="button" class="city-option" data-city="chongqing" role="option">🌶️ 重庆 · 中心城区</button>
+          <button type="button" class="city-option" data-city="liuzhou" role="option">🍜 柳州 · 城中半岛</button>
+        </div>
+      </div>
       <form id="road-search" class="search" role="search">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
         <input id="search-input" aria-label="搜索重庆道路" autocomplete="off" placeholder="找一条路，开始逛重庆">

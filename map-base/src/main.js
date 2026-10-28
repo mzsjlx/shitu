@@ -64,8 +64,14 @@ function focusLandmark() {
   $('status').textContent='洪崖洞：按真实轮廓定位的美术模型';
 }
 function terrainVisible() {
-  map.setTerrain(state.terrain?{source:'dem',exaggeration:1}:null);
-  map.setLayoutProperty('hill-shade','visibility',state.terrain?'visible':'none');
+  if (city?.demTiles && state.terrain) {
+    map.setTerrain({source:'dem',exaggeration:1});
+  } else {
+    map.setTerrain(null);
+  }
+  if (map.getLayer('hill-shade')) {
+    map.setLayoutProperty('hill-shade','visibility',state.terrain?'visible':'none');
+  }
 }
 function view(threeD) {
   videoMapContext?.clear();
@@ -202,18 +208,54 @@ function wire() {
 async function init() {
   boot.stage('读取城市配置');
   const config=await readJSON('config/cities.json');
-  city=config.cities[config.activeCity];
+  const requestedCity = new URLSearchParams(location.search).get('city');
+  const currentCityKey = (requestedCity && config.cities[requestedCity]) ? requestedCity : config.activeCity;
+  city=config.cities[currentCityKey];
   if(!city)throw new Error('当前城市尚未配置');
   const [index,manifest,audit]=await Promise.all([
     readJSON(city.dataFiles.index),readJSON(city.dataFiles.manifest),readJSON(city.dataFiles.audit)
   ]);
-  if(index.city!==config.activeCity)throw new Error('城市索引与当前地图不一致');
+  if(index.city!==currentCityKey)throw new Error('城市索引与当前地图不一致');
   roads=index.roads;
+  if (!city.demTiles) state.terrain = false;
   document.title='食途 · '+city.name+'地图';
   $('search-input').setAttribute('aria-label','搜索'+city.name+'道路');
+  $('search-input').setAttribute('placeholder','找一条路，开始逛'+city.name);
   $('coverage-description').textContent=city.coverageLabel;
-  document.querySelector('.city-chip').replaceChildren(document.createTextNode(city.name));
-  const region=document.createElement('span');region.textContent=' · '+city.regionLabel;document.querySelector('.city-chip').append(region);
+  if ($('current-city-name')) $('current-city-name').textContent = city.name;
+  if ($('current-city-region')) $('current-city-region').textContent = ' · ' + city.regionLabel;
+  $('about-map').replaceChildren(document.createTextNode(city.name + ' · 自建底图 '), Object.assign(document.createElement('span'), {textContent: 'ⓘ'}));
+  $('loading').replaceChildren(document.createElement('span'), document.createTextNode('正在展开'+city.name+'…'));
+  if ($('reset-view')) $('reset-view').setAttribute('aria-label', '回到'+city.name+'初始视角');
+
+  const cityBtn = $('city-chip'), cityMenu = $('city-dropdown');
+  if (cityBtn && cityMenu) {
+    cityBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      const open = cityMenu.hidden;
+      cityMenu.hidden = !open;
+      cityBtn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', e => {
+      if (!cityMenu.hidden && !cityBtn.contains(e.target) && !cityMenu.contains(e.target)) {
+        cityMenu.hidden = true;
+        cityBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    cityMenu.querySelectorAll('.city-option').forEach(opt => {
+      const c = opt.dataset.city;
+      if (c === currentCityKey) opt.classList.add('active');
+      opt.addEventListener('click', () => {
+        cityMenu.hidden = true;
+        cityBtn.setAttribute('aria-expanded', 'false');
+        if (c !== currentCityKey) {
+          const params = new URLSearchParams(location.search);
+          params.set('city', c);
+          location.search = '?' + params.toString();
+        }
+      });
+    });
+  }
   const tileURL=new URL(city.tiles,location.href).href;
   boot.stage('准备地图数据与后台绘图程序');
   if(bundle){
@@ -273,15 +315,27 @@ async function init() {
     if(map.isStyleLoaded())restore();else map.once('style.load',restore);
   });
   map.once('style.load',()=>{
-    boot.stage('绘制重庆真实道路');
+    boot.stage('绘制'+city.name+'真实道路');
     terrainVisible();layersVisible();wire();
-    landmark=new HongyadongLayer(maplibregl.MercatorCoordinate,{onError:error=>{
-      console.error('[landmark]',error.message);
-      $('landmark-note').hidden=false;$('landmark-note').textContent='洪崖洞细节暂未载入，真实地图仍可使用。';
-      $('landmark-entry').disabled=true;
-    }});
-    try{map.addLayer(landmark,'selected-road-edge');layersVisible();}
-    catch(error){landmark.error=error.message;landmark.onError(error);}
+    if (currentCityKey === 'chongqing') {
+      landmark=new HongyadongLayer(maplibregl.MercatorCoordinate,{onError:error=>{
+        console.error('[landmark]',error.message);
+        $('landmark-note').hidden=false;$('landmark-note').textContent='洪崖洞细节暂未载入，真实地图仍可使用。';
+        $('landmark-entry').disabled=true;
+      }});
+      try{map.addLayer(landmark,'selected-road-edge');layersVisible();}
+      catch(error){landmark.error=error.message;landmark.onError(error);}
+    } else {
+      if ($('landmark-entry')) $('landmark-entry').hidden = true;
+      if ($('landmark-note')) $('landmark-note').hidden = true;
+      if ($('street-entry')) $('street-entry').hidden = true;
+      if ($('walk-entry')) $('walk-entry').hidden = true;
+      if ($('terrain-option')) {
+        $('terrain-option').checked = false;
+        $('terrain-option').disabled = true;
+        $('terrain-option').closest('label').style.display = 'none';
+      }
+    }
     overlay=new FoodOverlay(map,maplibregl.Marker,city.bounds);
     videoMapContext=new VideoMapContext(map,{onBack:(id,opener)=>videoLibrary.open(opener,id),onLayout:()=>overlay.scheduleLayout()});
     if(city.streetDetail){
