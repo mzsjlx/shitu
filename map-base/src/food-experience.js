@@ -1,6 +1,7 @@
 import {validateVideoLibrary,localVideoAsset} from './video-library-model.js';
 import {FoodRoutePreview,directDistanceText} from './food-route-preview.js';
 import bundledVideoLibrary from '../data/video-library.json';
+import {groupVideoPlaces} from './video-places.js';
 const byId=id=>document.getElementById(id);
 const allowedURL=value=>{try{const u=new URL(value);return u.protocol==='https:'?u.href:null;}catch{return null;}};
 const thumbFor=(item,cls)=>{
@@ -66,11 +67,12 @@ export class FoodExperience{
       if(data.city!=='chongqing'||!Array.isArray(data.records))throw new Error('美食资料尚未准备好');
       const records=data.records.map(item=>({...item,spriteURL:this.assetURL(this.config.sprite)}));
       validateVideoLibrary(catalog);
-      const b=this.overlay.bounds,positioned=catalog.sources.flatMap(source=>source.segments.map(segment=>({source,segment}))).filter(({segment})=>Array.isArray(segment.coordinates)&&segment.coordinates[0]>=b[0]&&segment.coordinates[0]<=b[2]&&segment.coordinates[1]>=b[1]&&segment.coordinates[1]<=b[3]);
+      const b=this.overlay.bounds,positioned=groupVideoPlaces(catalog).filter(({primary:{segment}})=>Array.isArray(segment.coordinates)&&segment.coordinates[0]>=b[0]&&segment.coordinates[0]<=b[2]&&segment.coordinates[1]>=b[1]&&segment.coordinates[1]<=b[3]);
       let assets={};if(positioned.length){try{assets=(await this.readJSON('data/video-library-assets.json',{signal:controller.signal})).segments||{};}catch{}}
-      for(const {source,segment}of positioned){
+      for(const {id,primary:{source,segment},clips:entries}of positioned){
         const asset=assets[segment.id],clip=localVideoAsset(asset?.clip,'mp4'),poster=localVideoAsset(asset?.poster,'jpg');
-        records.push({id:'video-'+segment.id,name:segment.name,category:segment.category,coordinates:segment.coordinates,coordinateSystem:'WGS84',verificationStatus:'video-location',coordinateEvidence:{kind:'video-coordinate',url:source.url},entranceStatus:'unverified',routeEligible:false,address:segment.addressText||segment.planningLocation?.label||'原片未提供详细地址',summary:segment.summary,spriteURL:this.assetURL(this.config.sprite),spriteIndex:0,photoURL:poster||null,localClip:clip&&poster?clip:null,localPoster:clip&&poster?poster:null,planningLocation:segment.planningLocation||null,clipAuthor:source.author,originalVideoURL:source.url,videos:[{title:source.title,author:source.author,url:source.url}]});
+        const clips=entries.map(({source:s,segment:t})=>({id:t.id,title:s.title,author:s.author,url:s.url,publishedOn:s.publishedOn,footageNote:t.footageNote||null,clip:localVideoAsset(assets[t.id]?.clip,'mp4'),poster:localVideoAsset(assets[t.id]?.poster,'jpg')}));
+        records.push({id,name:segment.name,category:segment.category,coordinates:segment.coordinates,coordinateSystem:'WGS84',verificationStatus:'video-location',coordinateEvidence:{kind:'video-coordinate',url:source.url},entranceStatus:'unverified',routeEligible:false,address:segment.addressText||segment.planningLocation?.label||'原片未提供详细地址',summary:segment.summary,spriteURL:this.assetURL(this.config.sprite),spriteIndex:0,photoURL:poster||null,localClip:clip&&poster?clip:null,localPoster:clip&&poster?poster:null,planningLocation:segment.planningLocation||null,clipAuthor:source.author,clipFootageNote:segment.footageNote||null,originalVideoURL:source.url,clips,videos:clips.map(({title,author,url,publishedOn})=>({title,author,url,publishedOn}))});
       }
       this.overlay.validate(records,true);
       this.records=records;this.phase='loaded';this.saved=this.saved.filter(id=>records.some(record=>record.id===id));this.refreshSaved();
@@ -89,8 +91,8 @@ export class FoodExperience{
     this.renderCandidates();
     this.renderDock();
     this.map.resize();
-    const requested=this.records.find(item=>item.id===requestedPlaceId);
-    if(requested){this.focusStops(requested.id);this.overlay.showPopover(requested,true);return;}
+    const requested=this.records.find(item=>item.id===requestedPlaceId||item.clips?.some(clip=>'video-'+clip.id===requestedPlaceId));
+    if(requested){this.focusStops(requested.id);this.overlay.showPopover(requested,true,requestedPlaceId?.slice(6));return;}
     if(requestedPlaceId)byId('status').textContent='这个地点暂不在当前资料中，已展开现有美食候选。';
     const points=this.visibleRecords().map(r=>r.coordinates),xs=points.map(p=>p[0]),ys=points.map(p=>p[1]);
     const padding=this.fitPadding();

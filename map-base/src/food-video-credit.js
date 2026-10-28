@@ -12,5 +12,5 @@ export function foodVideoCredit(item){
     else platform=host;
   }catch{}
   const author=item.clipAuthor||video?.author;
-  return '来源：'+platform+(author?' · '+author:'');
+  return '来源：'+platform+(author?' · '+author:'')+(item.clipFootageNote?' · '+item.clipFootageNote.split(' · ')[0]:'');
 }

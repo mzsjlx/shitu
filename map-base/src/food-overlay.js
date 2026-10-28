@@ -89,7 +89,7 @@ export class FoodOverlay {
     return this.markers.length;
   }
   setState(selected,wanted){this.selected=selected;this.wanted=new Set(wanted);this.popover.setWanted(wanted);this.updateActions();this.scheduleLayout();}
-  showPopover(item,pinned=true){const entry=this.items.find(value=>value.item.id===item.id);if(entry)this.popover.show(entry.item,entry,{pinned});}
+  showPopover(item,pinned=true,clipId=null){const entry=this.items.find(value=>value.item.id===item.id);if(entry)this.popover.show(entry.item,entry,{pinned,clipId});}
   updateActions(){
     for(const {item,saveButton}of this.items){
       if(!saveButton)continue;const saved=this.wanted.has(item.id);

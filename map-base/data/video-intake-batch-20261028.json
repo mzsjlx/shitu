@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "id": "douyin-20261028-batch2",
+  "reviewedOn": "2026-10-28",
+  "rights": {
+    "status": "user-confirmed",
+    "confirmedOn": "2026-10-28",
+    "scope": "这次新增8条视频可剪辑并用于网站；用户在项目会话中确认。"
+  },
+  "sources": [
+    {
+      "id": "tiedan",
+      "url": "https://www.douyin.com/video/7606643552034049280",
+      "shareURL": "https://v.douyin.com/LZ4N0R-q6WY/",
+      "author": "吃货老外铁蛋儿",
+      "publishedOn": "2026-02-23",
+      "sourceSHA256": "e344a8cc4b61606f59e9963529d4a1ff475fe5b15b0e7666eefe61acb7d4460a",
+      "durationSeconds": 236.666667,
+      "segments": [
+        {
+          "id": "tiedan-gangzi",
+          "name": "刚子蹄花（总店）",
+          "start": 13,
+          "end": 231,
+          "posterSecond": 60,
+          "evidenceNote": "21秒总店门头；13—231秒单店用餐。",
+          "mapPlaceId": "video-tiedan-gangzi",
+          "locationStatus": "approximate-planning"
+        }
+      ]
+    },
+    {
+      "id": "yumo",
+      "url": "https://www.douyin.com/video/7667449122551432070",
+      "shareURL": "https://v.douyin.com/DgHkwyRi39M/",
+      "author": "隔壁的鱼某",
+      "publishedOn": "2026-07-28",
+      "sourceSHA256": "b0415616dbb3fbbd5008f6c90aeb8e0647db0557855157572ad4b0de6fc65ec4",
+      "durationSeconds": 132.333008,
+      "segments": [
+        {
+          "id": "yumo-hotpot",
+          "name": "居民楼火锅（鱼某探店，店名待补）",
+          "start": 16,
+          "end": 132.2,
+          "posterSecond": 28,
+          "evidenceNote": "18—20秒街景、21—35秒备菜、后段用餐；尚不能确认门店。",
+          "mapPlaceId": null,
+          "locationStatus": "needs-location"
+        }
+      ]
+    },
+    {
+      "id": "wulala",
+      "url": "https://www.douyin.com/video/7692456047637794048",
+      "shareURL": "https://v.douyin.com/DmP7v7OViWQ/",
+      "author": "特别乌啦啦",
+      "publishedOn": "2026-10-04",
+      "sourceSHA256": "7aca5b04333086b6422216cac6349e586f9f2b603d8aec52358de22f85203058",
+      "durationSeconds": 338.046009,
+      "segments": [
+        {
+          "id": "wulala-wangshifu",
+          "name": "王师傅炒菜馆",
+          "start": 11,
+          "end": 331,
+          "posterSecond": 20,
+          "evidenceNote": "24秒店招；全片同一炒菜馆，未按菜品拆成多家。",
+          "mapPlaceId": "video-wulala-wangshifu",
+          "locationStatus": "approximate-planning"
+        }
+      ]
+    },
+    {
+      "id": "jiankang",
+      "url": "https://www.douyin.com/video/7641930063063818937",
+      "shareURL": "https://v.douyin.com/dObiaMddyY0/",
+      "author": "健康哥哥",
+      "publishedOn": "2026-05-20",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "durationSeconds": 326.263991,
+      "segments": [
+        {
+          "id": "jiankang-linhua",
+          "name": "临华老面馆",
+          "start": 8.9,
+          "end": 34,
+          "posterSecond": 15,
+          "evidenceNote": "12秒临华老面馆门头；34秒进入下一店。",
+          "mapPlaceId": "video-jiankang-linhua",
+          "locationStatus": "approximate-planning"
+        },
+        {
+          "id": "jiankang-chunyang",
+          "name": "纯阳酒家",
+          "start": 34,
+          "end": 67.6,
+          "posterSecond": 45,
+          "evidenceNote": "34秒转场写纯阳酒家；35秒店面。",
+          "mapPlaceId": "video-jiankang-chunyang",
+          "locationStatus": "approximate-planning"
+        },
+        {
+          "id": "jiankang-shaotiao",
+          "name": "街边烤苕皮（摊名待补）",
+          "start": 67.6,
+          "end": 82.85,
+          "posterSecond": 71,
+          "evidenceNote": "68—82秒独立烧烤段，没有可读摊名和地址。",
+          "mapPlaceId": null,
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "jiankang-liuyouchi",
+          "name": "刘友池老火锅",
+          "start": 82.9,
+          "end": 161.8,
+          "posterSecond": 90,
+          "evidenceNote": "83—86秒可读刘友池门头；具体分店仍是候选。",
+          "mapPlaceId": "video-jiankang-liuyouchi",
+          "locationStatus": "approximate-planning"
+        },
+        {
+          "id": "jiankang-zhuer",
+          "name": "朱儿面庄（洋河店）",
+          "start": 161.9,
+          "end": 216.8,
+          "posterSecond": 173,
+          "evidenceNote": "162秒朱儿面庄门头及隔壁亿客招牌，用于与白龙视频去重。",
+          "mapPlaceId": "video-jiankang-zhuer",
+          "locationStatus": "approximate-planning"
+        },
+        {
+          "id": "jiankang-beicheng",
+          "name": "北城老妈蹄花",
+          "start": 216.9,
+          "end": 243.7,
+          "posterSecond": 223,
+          "evidenceNote": "217秒北城老妈蹄花落地招牌；街边庭院分店。",
+          "mapPlaceId": "video-jiankang-beicheng",
+          "locationStatus": "approximate-planning"
+        },
+        {
+          "id": "jiankang-mixian",
+          "name": "泡椒四鲜米线（店名待补）",
+          "start": 244,
+          "end": 272.8,
+          "posterSecond": 248,
+          "evidenceNote": "244秒经过铁锅哥招牌，但不能据此把旁边招牌当成米线店名。",
+          "mapPlaceId": null,
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "jiankang-zhibaoyu",
+          "name": "纸包鱼（店名待补）",
+          "start": 273,
+          "end": 296.5,
+          "posterSecond": 280,
+          "evidenceNote": "273—296秒独立纸包鱼用餐段，未读到完整门头。",
+          "mapPlaceId": null,
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "jiankang-liruotao",
+          "name": "李若桃手作酸奶铺（分店待核）",
+          "start": 297,
+          "end": 326,
+          "posterSecond": 304,
+          "evidenceNote": "301秒品牌字幕及杯身；原片未写分店。",
+          "mapPlaceId": "video-jiankang-liruotao",
+          "locationStatus": "approximate-planning"
+        }
+      ]
+    },
+    {
+      "id": "bailong",
+      "url": "https://www.douyin.com/video/7518816084745522458",
+      "shareURL": "https://v.douyin.com/qmn-Wf14Rjs/",
+      "author": "白龙吃了又饿了",
+      "publishedOn": "2025-06-23",
+      "sourceSHA256": "6546e5867fb6dbfeb3af8a51c4532b884afe574c6d1ac1dbbde18308e4f42dd4",
+      "durationSeconds": 376.266667,
+      "segments": [
+        {
+          "id": "bailong-zhuer",
+          "name": "朱儿面庄（洋河店）",
+          "start": 15,
+          "end": 89,
+          "posterSecond": 35,
+          "evidenceNote": "15—16秒亿客刀削面相邻招牌与健康哥哥162秒门头对应。",
+          "mapPlaceId": "video-jiankang-zhuer",
+          "locationStatus": "approximate-planning"
+        },
+        {
+          "id": "bailong-gangzi",
+          "name": "刚子蹄花（总店）",
+          "start": 89,
+          "end": 168,
+          "posterSecond": 120,
+          "evidenceNote": "89—98秒低层住宅、绿色棚顶与铁蛋儿13—22秒街景对应。",
+          "mapPlaceId": "video-tiedan-gangzi",
+          "locationStatus": "approximate-planning"
+        },
+        {
+          "id": "bailong-chunhong",
+          "name": "春红火锅（洪崖洞店）",
+          "start": 168,
+          "end": 374,
+          "posterSecond": 215,
+          "evidenceNote": "185—188秒木楼梯、191秒春红火锅门头。",
+          "mapPlaceId": "video-bailong-chunhong",
+          "locationStatus": "approximate-planning"
+        }
+      ]
+    },
+    {
+      "id": "mizijun",
+      "url": "https://www.douyin.com/video/7660441058194541859",
+      "shareURL": "https://v.douyin.com/KYvPNo67Ltc/",
+      "author": "密子君",
+      "publishedOn": "2026-07-09",
+      "sourceSHA256": "87118728a995472788dc1e91ab9c51043bb77eeef1365c9dcbb8024bae89fd1c",
+      "durationSeconds": 635.88,
+      "segments": [
+        {
+          "id": "mizijun-tianbang",
+          "name": "天棒老火锅（分店待核）",
+          "start": 12,
+          "end": 627,
+          "posterSecond": 300,
+          "evidenceNote": "18秒说“他们家的烤猪蹄”；85秒围裙可见天棒字样；各菜段环境连续；原页店名线索一致。",
+          "mapPlaceId": "video-mizijun-tianbang",
+          "locationStatus": "approximate-planning"
+        }
+      ]
+    },
+    {
+      "id": "zhangxixi",
+      "url": "https://www.douyin.com/video/6946497010522508552",
+      "shareURL": "https://v.douyin.com/2ydGZe-_WWk/",
+      "author": "张喜喜",
+      "publishedOn": "2021-04-02",
+      "sourceSHA256": "754bcd857f8762989e5d8307091c9002fe1c227a7b299c46af4dd192c72529a9",
+      "durationSeconds": 293.466016,
+      "segments": [
+        {
+          "id": "zhangxixi-haochijie",
+          "name": "重庆好吃街小吃合集（街区待核）",
+          "start": 16,
+          "end": 289,
+          "posterSecond": 43,
+          "evidenceNote": "21秒仅说重庆好吃街；45秒可见何记兴员工服，尚未确认是哪条好吃街。2021年旧视频。",
+          "mapPlaceId": null,
+          "locationStatus": "needs-location"
+        }
+      ]
+    },
+    {
+      "id": "manbei",
+      "url": "https://www.douyin.com/video/7388810835478547712",
+      "shareURL": "https://v.douyin.com/TBV_LthJ8PQ/",
+      "author": "满杯小白",
+      "publishedOn": "2024-07-07",
+      "sourceSHA256": "3a04c3c7fe8dfbe7222a1785327852541d7496aae0f021d1c3b6b5c739f87572",
+      "durationSeconds": 107.948005,
+      "segments": [
+        {
+          "id": "manbei-hongjiuge",
+          "name": "红九格老火锅（三峡广场店）",
+          "start": 8,
+          "end": 107.5,
+          "posterSecond": 50,
+          "evidenceNote": "原作者评论明确回复“三峡广场的红九格”；11秒高铁站街景、17秒火锅。",
+          "mapPlaceId": "video-manbei-hongjiuge",
+          "locationStatus": "approximate-planning"
+        }
+      ]
+    }
+  ],
+  "deduplication": [
+    {
+      "placeId": "tiedan-gangzi",
+      "segmentIds": [
+        "tiedan-gangzi",
+        "bailong-gangzi"
+      ],
+      "basis": "同名总店，低层住宅与绿色棚顶街景对应；地址对照万丰路。"
+    },
+    {
+      "placeId": "jiankang-zhuer",
+      "segmentIds": [
+        "jiankang-zhuer",
+        "bailong-zhuer"
+      ],
+      "basis": "朱儿门头与相邻亿客刀削面招牌、楼房外立面对应；地址对照洋河店。"
+    }
+  ],
+  "locationMethod": "高德仅手动对照店名、门牌和周边地名；持久化WGS84街区坐标独立取自本地OpenStreetMap原始道路，不是高德POI坐标。无店名或街区线索的片段暂留视频库。"
+}

@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "scope": "Isolated local Chromium; real MP4 decoding, HTTP ranges, dialog media lifecycle, responsive layouts, missing assets and data failures. No real user storage, external platform playback or geographic verification.",
   "checks": [
     {
@@ -7,11 +7,15 @@
       "passed": true
     },
     {
-      "name": "Twenty clips are available and the new unlocated shops do not create pins",
+      "name": "All clips and distinct approximate map places are available",
       "passed": true
     },
     {
-      "name": "nangua-jiachang decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-jiachang has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-jiachang decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 30.866667,
@@ -23,7 +27,11 @@
       }
     },
     {
-      "name": "nangua-jeju decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-jeju has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-jeju decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 59.833333,
@@ -35,7 +43,11 @@
       }
     },
     {
-      "name": "nangua-set-coffee decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-set-coffee has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-set-coffee decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 18.666667,
@@ -47,7 +59,11 @@
       }
     },
     {
-      "name": "nangua-nendouya decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-nendouya has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-nendouya decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 79.8,
@@ -59,7 +75,11 @@
       }
     },
     {
-      "name": "nangua-cailanzi decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-cailanzi has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-cailanzi decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 21.466667,
@@ -71,7 +91,11 @@
       }
     },
     {
-      "name": "nangua-dayan decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-dayan has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-dayan decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 10.866667,
@@ -83,7 +107,11 @@
       }
     },
     {
-      "name": "nangua-daling decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-daling has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-daling decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 30.433333,
@@ -95,7 +123,11 @@
       }
     },
     {
-      "name": "nangua-sanyangzi decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-sanyangzi has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-sanyangzi decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 13.966016,
@@ -107,7 +139,11 @@
       }
     },
     {
-      "name": "nangua-huilaiwei decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-huilaiwei has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-huilaiwei decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 14.866667,
@@ -119,7 +155,11 @@
       }
     },
     {
-      "name": "nangua-qianjiang decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-qianjiang has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-qianjiang decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 14.2,
@@ -131,7 +171,11 @@
       }
     },
     {
-      "name": "nangua-rongchang decodes full portrait H.264/AAC media with expected duration",
+      "name": "nangua-rongchang has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "nangua-rongchang decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 7.166667,
@@ -143,7 +187,11 @@
       }
     },
     {
-      "name": "abang-babajian decodes full portrait H.264/AAC media with expected duration",
+      "name": "abang-babajian has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "abang-babajian decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 26.066016,
@@ -155,7 +203,11 @@
       }
     },
     {
-      "name": "abang-43 decodes full portrait H.264/AAC media with expected duration",
+      "name": "abang-43 has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "abang-43 decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 18.233333,
@@ -167,7 +219,11 @@
       }
     },
     {
-      "name": "abang-guijing decodes full portrait H.264/AAC media with expected duration",
+      "name": "abang-guijing has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "abang-guijing decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 30.366667,
@@ -179,7 +235,11 @@
       }
     },
     {
-      "name": "abang-xidajiang decodes full portrait H.264/AAC media with expected duration",
+      "name": "abang-xidajiang has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "abang-xidajiang decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 37.5,
@@ -191,7 +251,11 @@
       }
     },
     {
-      "name": "abang-ganyitai decodes full portrait H.264/AAC media with expected duration",
+      "name": "abang-ganyitai has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "abang-ganyitai decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 13.566016,
@@ -203,7 +267,11 @@
       }
     },
     {
-      "name": "abang-xiongfeng decodes full portrait H.264/AAC media with expected duration",
+      "name": "abang-xiongfeng has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "abang-xiongfeng decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 11.766667,
@@ -215,7 +283,11 @@
       }
     },
     {
-      "name": "abang-shanlishu decodes full portrait H.264/AAC media with expected duration",
+      "name": "abang-shanlishu has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "abang-shanlishu decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 13.266667,
@@ -227,7 +299,11 @@
       }
     },
     {
-      "name": "abang-wuduwudu decodes full portrait H.264/AAC media with expected duration",
+      "name": "abang-wuduwudu has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "abang-wuduwudu decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 10.2,
@@ -239,7 +315,11 @@
       }
     },
     {
-      "name": "abang-yabatu decodes full portrait H.264/AAC media with expected duration",
+      "name": "abang-yabatu has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "abang-yabatu decodes its source orientation and expected duration",
       "passed": true,
       "detail": {
         "duration": 21.766667,
@@ -248,6 +328,294 @@
         "muted": false,
         "error": null,
         "src": "http://127.0.0.1:8791/media/videos/abang/abang-yabatu-9ff6a74f8f44190a.mp4"
+      }
+    },
+    {
+      "name": "tiedan-gangzi has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "tiedan-gangzi decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 218,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/tiedan/tiedan-gangzi-33b2df818fad2add.mp4"
+      }
+    },
+    {
+      "name": "yumo-hotpot has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "yumo-hotpot decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 116.2,
+        "width": 720,
+        "height": 1280,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/yumo/yumo-hotpot-3e6477fa0e921941.mp4"
+      }
+    },
+    {
+      "name": "wulala-wangshifu has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "wulala-wangshifu decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 320,
+        "width": 1280,
+        "height": 720,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/wulala/wulala-wangshifu-dfb26b5aed0da213.mp4"
+      }
+    },
+    {
+      "name": "jiankang-linhua has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "jiankang-linhua decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 25.1,
+        "width": 720,
+        "height": 1280,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-linhua-42e597826ab91ba1.mp4"
+      }
+    },
+    {
+      "name": "jiankang-chunyang has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "jiankang-chunyang decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 33.6,
+        "width": 720,
+        "height": 1280,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-chunyang-5df14dd81a05b72c.mp4"
+      }
+    },
+    {
+      "name": "jiankang-shaotiao has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "jiankang-shaotiao decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 15.266016,
+        "width": 720,
+        "height": 1280,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-shaotiao-240c5f37f5afee1b.mp4"
+      }
+    },
+    {
+      "name": "jiankang-liuyouchi has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "jiankang-liuyouchi decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 78.9,
+        "width": 720,
+        "height": 1280,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-liuyouchi-9e4d5a5885b9ad35.mp4"
+      }
+    },
+    {
+      "name": "jiankang-zhuer has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "jiankang-zhuer decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 54.9,
+        "width": 720,
+        "height": 1280,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-zhuer-3d9c59e40652c8b6.mp4"
+      }
+    },
+    {
+      "name": "jiankang-beicheng has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "jiankang-beicheng decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 26.8,
+        "width": 720,
+        "height": 1280,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-beicheng-42f2bc791b97161c.mp4"
+      }
+    },
+    {
+      "name": "jiankang-mixian has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "jiankang-mixian decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 28.8,
+        "width": 720,
+        "height": 1280,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-mixian-b918791eca877d7a.mp4"
+      }
+    },
+    {
+      "name": "jiankang-zhibaoyu has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "jiankang-zhibaoyu decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 23.5,
+        "width": 720,
+        "height": 1280,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-zhibaoyu-454d69c2f730ba6b.mp4"
+      }
+    },
+    {
+      "name": "jiankang-liruotao has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "jiankang-liruotao decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 29,
+        "width": 720,
+        "height": 1280,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-liruotao-1d73026a280fdbd0.mp4"
+      }
+    },
+    {
+      "name": "bailong-zhuer has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "bailong-zhuer decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 74,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/bailong/bailong-zhuer-8e085aef1908ef4b.mp4"
+      }
+    },
+    {
+      "name": "bailong-gangzi has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "bailong-gangzi decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 79,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/bailong/bailong-gangzi-8cca6e94834763ed.mp4"
+      }
+    },
+    {
+      "name": "bailong-chunhong has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "bailong-chunhong decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 206,
+        "width": 576,
+        "height": 1024,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/bailong/bailong-chunhong-2c5abb947a264625.mp4"
+      }
+    },
+    {
+      "name": "mizijun-tianbang has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "mizijun-tianbang decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 615.015015,
+        "width": 1280,
+        "height": 720,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/mizijun/mizijun-tianbang-a180de420a8729bf.mp4"
+      }
+    },
+    {
+      "name": "zhangxixi-haochijie has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "zhangxixi-haochijie decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 273,
+        "width": 1280,
+        "height": 720,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/zhangxixi/zhangxixi-haochijie-45900081ea1fa18c.mp4"
+      }
+    },
+    {
+      "name": "manbei-hongjiuge has a user-initiated city-limited map search for this store",
+      "passed": true
+    },
+    {
+      "name": "manbei-hongjiuge decodes its source orientation and expected duration",
+      "passed": true,
+      "detail": {
+        "duration": 99.5,
+        "width": 1280,
+        "height": 720,
+        "muted": false,
+        "error": null,
+        "src": "http://127.0.0.1:8791/media/videos/manbei/manbei-hongjiuge-8169cce11b229573.mp4"
       }
     },
     {
@@ -291,11 +659,21 @@
       }
     },
     {
+      "name": "Map search remains reachable at 1440",
+      "passed": true,
+      "detail": {
+        "x": 953,
+        "y": 779.578125,
+        "width": 129.5625,
+        "height": 42
+      }
+    },
+    {
       "name": "Player attribution remains reachable at 1440",
       "passed": true,
       "detail": {
         "x": 953,
-        "y": 834.03125,
+        "y": 834.734375,
         "width": 99.5625,
         "height": 30
       }
@@ -325,9 +703,19 @@
       "passed": true,
       "detail": {
         "x": 29,
-        "y": 212.71875,
+        "y": 213.21875,
         "width": 332,
         "height": 43.5
+      }
+    },
+    {
+      "name": "Map search remains reachable at 390",
+      "passed": true,
+      "detail": {
+        "x": 29,
+        "y": 729.0625,
+        "width": 129.5625,
+        "height": 42
       }
     },
     {
@@ -335,7 +723,7 @@
       "passed": true,
       "detail": {
         "x": 29,
-        "y": 497.71875,
+        "y": 498.21875,
         "width": 99.5625,
         "height": 30
       }
@@ -365,9 +753,19 @@
       "passed": true,
       "detail": {
         "x": 29,
-        "y": 246.4375,
+        "y": 246.734375,
         "width": 262,
         "height": 43.5
+      }
+    },
+    {
+      "name": "Map search remains reachable at 320",
+      "passed": true,
+      "detail": {
+        "x": 29,
+        "y": 426.578125,
+        "width": 129.5625,
+        "height": 42
       }
     },
     {
@@ -375,7 +773,7 @@
       "passed": true,
       "detail": {
         "x": 29,
-        "y": 433.4375,
+        "y": 432.734375,
         "width": 99.5625,
         "height": 30
       }
@@ -401,11 +799,21 @@
       }
     },
     {
+      "name": "Map search remains reachable at 736",
+      "passed": true,
+      "detail": {
+        "x": 423,
+        "y": 288.1875,
+        "width": 129.5625,
+        "height": 42
+      }
+    },
+    {
       "name": "Player attribution remains reachable at 736",
       "passed": true,
       "detail": {
         "x": 423,
-        "y": 328.046875,
+        "y": 328.34375,
         "width": 99.5625,
         "height": 30
       }
@@ -427,7 +835,7 @@
       "passed": true
     },
     {
-      "name": "Existing map and source-candidate count survive media operations",
+      "name": "Existing map and distinct-place count survive media operations",
       "passed": true
     },
     {
@@ -441,7 +849,7 @@
         "x-content-type-options": "nosniff",
         "content-range": "bytes 0-1023/9249374",
         "content-length": "1024",
-        "date": "Tue, 27 Oct 2026 04:30:14 GMT",
+        "date": "Wed, 28 Oct 2026 11:28:32 GMT",
         "connection": "keep-alive",
         "keep-alive": "timeout=5"
       }
@@ -468,7 +876,7 @@
       "passed": true
     },
     {
-      "name": "All video shops remain explicitly unlocated and ineligible for routes",
+      "name": "Located clips are approximate and unidentified venues remain unlocated; no navigation claims",
       "passed": true
     },
     {
@@ -664,6 +1072,168 @@
       "muted": false,
       "error": null,
       "src": "http://127.0.0.1:8791/media/videos/abang/abang-yabatu-9ff6a74f8f44190a.mp4"
+    },
+    {
+      "id": "tiedan-gangzi",
+      "duration": 218,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/tiedan/tiedan-gangzi-33b2df818fad2add.mp4"
+    },
+    {
+      "id": "yumo-hotpot",
+      "duration": 116.2,
+      "width": 720,
+      "height": 1280,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/yumo/yumo-hotpot-3e6477fa0e921941.mp4"
+    },
+    {
+      "id": "wulala-wangshifu",
+      "duration": 320,
+      "width": 1280,
+      "height": 720,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/wulala/wulala-wangshifu-dfb26b5aed0da213.mp4"
+    },
+    {
+      "id": "jiankang-linhua",
+      "duration": 25.1,
+      "width": 720,
+      "height": 1280,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-linhua-42e597826ab91ba1.mp4"
+    },
+    {
+      "id": "jiankang-chunyang",
+      "duration": 33.6,
+      "width": 720,
+      "height": 1280,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-chunyang-5df14dd81a05b72c.mp4"
+    },
+    {
+      "id": "jiankang-shaotiao",
+      "duration": 15.266016,
+      "width": 720,
+      "height": 1280,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-shaotiao-240c5f37f5afee1b.mp4"
+    },
+    {
+      "id": "jiankang-liuyouchi",
+      "duration": 78.9,
+      "width": 720,
+      "height": 1280,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-liuyouchi-9e4d5a5885b9ad35.mp4"
+    },
+    {
+      "id": "jiankang-zhuer",
+      "duration": 54.9,
+      "width": 720,
+      "height": 1280,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-zhuer-3d9c59e40652c8b6.mp4"
+    },
+    {
+      "id": "jiankang-beicheng",
+      "duration": 26.8,
+      "width": 720,
+      "height": 1280,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-beicheng-42f2bc791b97161c.mp4"
+    },
+    {
+      "id": "jiankang-mixian",
+      "duration": 28.8,
+      "width": 720,
+      "height": 1280,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-mixian-b918791eca877d7a.mp4"
+    },
+    {
+      "id": "jiankang-zhibaoyu",
+      "duration": 23.5,
+      "width": 720,
+      "height": 1280,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-zhibaoyu-454d69c2f730ba6b.mp4"
+    },
+    {
+      "id": "jiankang-liruotao",
+      "duration": 29,
+      "width": 720,
+      "height": 1280,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-liruotao-1d73026a280fdbd0.mp4"
+    },
+    {
+      "id": "bailong-zhuer",
+      "duration": 74,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/bailong/bailong-zhuer-8e085aef1908ef4b.mp4"
+    },
+    {
+      "id": "bailong-gangzi",
+      "duration": 79,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/bailong/bailong-gangzi-8cca6e94834763ed.mp4"
+    },
+    {
+      "id": "bailong-chunhong",
+      "duration": 206,
+      "width": 576,
+      "height": 1024,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/bailong/bailong-chunhong-2c5abb947a264625.mp4"
+    },
+    {
+      "id": "mizijun-tianbang",
+      "duration": 615.015015,
+      "width": 1280,
+      "height": 720,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/mizijun/mizijun-tianbang-a180de420a8729bf.mp4"
+    },
+    {
+      "id": "zhangxixi-haochijie",
+      "duration": 273,
+      "width": 1280,
+      "height": 720,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/zhangxixi/zhangxixi-haochijie-45900081ea1fa18c.mp4"
+    },
+    {
+      "id": "manbei-hongjiuge",
+      "duration": 99.5,
+      "width": 1280,
+      "height": 720,
+      "muted": false,
+      "error": null,
+      "src": "http://127.0.0.1:8791/media/videos/manbei/manbei-hongjiuge-8169cce11b229573.mp4"
     }
   ],
   "passed": true

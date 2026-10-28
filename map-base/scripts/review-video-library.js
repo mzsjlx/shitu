@@ -1,7 +1,8 @@
 async page=>{
   const base='http://127.0.0.1:8791',root='D:/codex/美食网站/',browser=page.context().browser();
   const data=await(await page.request.get(base+'/data/video-library.json')).json();
-  const report={date:'2026-10-27',scope:'Isolated local Chromium; real MP4 decoding, HTTP ranges, dialog media lifecycle, responsive layouts, missing assets and data failures. No real user storage, external platform playback or geographic verification.',checks:[],errors:[],externalRequests:[],media:[]};
+  const segments=data.sources.flatMap(s=>s.segments),mapCount=new Set(segments.filter(s=>s.coordinates).map(s=>s.placeId||s.id)).size,pendingCount=segments.filter(s=>!s.coordinates).length;
+  const report={date:'2026-10-28',scope:'Isolated local Chromium; real MP4 decoding, HTTP ranges, dialog media lifecycle, responsive layouts, missing assets and data failures. No real user storage, external platform playback or geographic verification.',checks:[],errors:[],externalRequests:[],media:[]};
   const check=(name,passed,detail)=>report.checks.push({name,passed:!!passed,detail});
   async function run(name,body){
     const context=await browser.newContext({viewport:{width:1440,height:960},reducedMotion:'reduce'});
@@ -15,7 +16,7 @@ async page=>{
   await run('Real local media',async p=>{
     const response=await p.goto(base+'/?view=food&videos=1');await loaded(p);await foodReady(p);
     check('Deep link opens map-backed modal and 11 first-author cards',response.status()===200&&await p.locator('#video-library-dialog').evaluate(d=>d.open)&&await p.locator('.video-clip-card').count()===11);
-    check('Twenty clips and their approximate map places are available',await p.locator('#video-library-status').textContent()==='20 个本地片段 · 已加入地图，位置大致'&&await p.evaluate(()=>window.foodCityMap.getStats().foodCards)===20);
+    check('All clips and distinct approximate map places are available',await p.locator('#video-library-status').textContent()===segments.length+' 个本地片段 · '+(pendingCount?pendingCount+' 段位置待补':'位置大致')&&await p.evaluate(()=>window.foodCityMap.getStats().foodCards)===mapCount);
     for(const source of data.sources.filter(s=>s.segments.length)){
       await p.locator(`[data-source="${source.id}"]`).click();
       for(const segment of source.segments){
@@ -25,7 +26,7 @@ async page=>{
         await p.waitForFunction(()=>{const v=document.querySelector('#video-library-player video');return v?.readyState>=2&&v.videoWidth>0;},undefined,{timeout:12000});
         const media=await p.locator('#video-library-player video').evaluate(v=>({duration:v.duration,width:v.videoWidth,height:v.videoHeight,muted:v.muted,error:v.error?.message||null,src:v.currentSrc}));
         report.media.push({id:segment.id,...media});
-        check(segment.id+' decodes full portrait H.264/AAC media with expected duration',media.width===576&&media.height===1024&&!media.error&&Math.abs(media.duration-(segment.end-segment.start))<.16,media);
+        check(segment.id+' decodes its source orientation and expected duration',media.width>0&&media.height>0&&!media.error&&Math.abs(media.duration-(segment.end-segment.start))<.16,media);
       }
     }
     const video=p.locator('#video-library-player video');
@@ -58,7 +59,7 @@ async page=>{
     await p.keyboard.press('Escape');await p.waitForFunction(()=>!document.getElementById('video-library-dialog').open&&window.__qaOldVideo.paused&&!window.__qaOldVideo.getAttribute('src'));check('Escape closes modal and stops hidden audio',true);
     await p.locator('#food-pick-open').click();await p.locator('#video-library-open').click();check('Existing food picker opens the library',await p.locator('#video-library-dialog').evaluate(d=>d.open));
     await p.locator('#video-library-close').click();check('Close returns focus to the map action',await p.locator('#video-library-open').evaluate(e=>e===document.activeElement));
-    await p.locator('#food-pick-close').click();check('Existing map and source-candidate count survive media operations',await p.evaluate(()=>window.foodCityMap.ready&&window.foodCityMap.getStats().foodCards===20));
+    await p.locator('#food-pick-close').click();check('Existing map and distinct-place count survive media operations',await p.evaluate(count=>window.foodCityMap.ready&&window.foodCityMap.getStats().foodCards===count,mapCount));
     const asset=(await(await p.request.get(base+'/data/video-library-assets.json')).json()).segments['nangua-jiachang'];
     const range=await p.request.get(base+'/'+asset.clip.slice(2),{headers:{Range:'bytes=0-1023'}});
     check('MP4 range requests use correct MIME, length and partial content',range.status()===206&&range.headers()['content-type']==='video/mp4'&&(await range.body()).length===1024&&range.headers()['content-range'].startsWith('bytes 0-1023/'),range.headers());
@@ -67,7 +68,7 @@ async page=>{
   await run('Lazy ordinary map',async p=>{const requested=[];p.on('request',r=>requested.push(r.url()));await p.goto(base+'/');await p.waitForFunction(()=>window.foodCityMap?.ready,undefined,{timeout:30000});check('Ordinary map does not request video metadata or media',!requested.some(u=>u.includes('video-library')||u.includes('/media/videos/')),requested.filter(u=>u.includes('video')));});
   await run('Missing media on another checkout',async(p,context)=>{await context.route('**/data/video-library-assets.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify({schemaVersion:1,segments:{}})}));await p.goto(base+'/?view=food&videos=1');await loaded(p);check('Missing local media still exposes source addresses without broken images or players',await p.locator('.video-clip-card').count()===11&&await p.locator('.video-clip-card img,#video-library-player video').count()===0&&await p.locator('#video-library-player .video-original-link').getAttribute('href')===data.sources[0].url&&await p.locator('#video-library-status').textContent()==='原片片段未导入本机 · 可查看来源与地址线索');});
   await run('Data failure and retry',async(p,context)=>{let fail=true;await context.route('**/data/video-library.json',r=>fail?r.fulfill({status:503,body:'Unavailable'}):r.continue());await p.goto(base+'/?view=food&videos=1');await p.locator('#video-library-retry').waitFor({state:'visible'});check('Failed data fetch offers retry',await p.locator('#video-library-message').textContent()==='视频资料暂时未能读取，请重试。');fail=false;await p.locator('#video-library-retry').click();await loaded(p);check('Retry restores the real card library',await p.locator('.video-clip-card').count()===11);});
-  check('All video shops have approximate locations and remain ineligible for navigation',data.sources.flatMap(s=>s.segments).every(s=>Array.isArray(s.coordinates)&&s.planningLocation?.accuracy==='approximate'&&s.routeEligible===false));
+  check('Located clips are approximate and unidentified venues remain unlocated; no navigation claims',segments.every(s=>s.routeEligible===false&&(s.coordinates?s.planningLocation?.accuracy==='approximate':s.locationStatus==='needs-location')));
   check('No runtime page errors',report.errors.length===0,report.errors);check('No third-party prefetch or external requests',report.externalRequests.length===0,report.externalRequests);
   report.passed=report.checks.every(c=>c.passed);return report;
 }

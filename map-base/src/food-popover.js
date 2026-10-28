@@ -36,10 +36,13 @@ export class FoodPopover{
     this.saveButton.setAttribute('aria-pressed',String(saved));
     this.saveButton.setAttribute('aria-label',(saved?'从想去移除':'将')+this.current.name+(saved?'':'加入想去'));
   }
-  show(item,entry,{pinned=false}={}){
+  show(item,entry,{pinned=false,clipId=null}={}){
     clearTimeout(this.leaveTimer);clearTimeout(this.hoverTimer);
     if(this.pinned&&!pinned&&this.current?.id!==item.id)return;
-    if(this.current?.id===item.id){if(pinned)this.pinned=true;this.entry=entry;this.position();return;}
+    if(this.current?.id===item.id&&(!clipId||clipId===this.clipId)){if(pinned)this.pinned=true;this.entry=entry;this.position();return;}
+    const active=item.clips?.find(clip=>clip.id===clipId)||item.clips?.[0];
+    this.clipId=active?.id||null;
+    if(active)item={...item,photoURL:active.poster,localClip:active.clip,localPoster:active.poster,clipAuthor:active.author,clipFootageNote:active.footageNote,originalVideoURL:active.url,videos:[active]};
     this.stop();this.current=item;this.entry=entry;this.pinned=pinned;this.saveButton=null;
     const frame=el('div','food-popover-media');
     if(item.photoURL){const img=el('img');img.src=item.photoURL;img.alt=item.name+' · 原视频画面';frame.append(img);}
@@ -68,9 +71,16 @@ export class FoodPopover{
     }
     this.errorNote=el('p','food-popover-error');this.errorNote.setAttribute('role','status');
     const links=el('div','food-popover-links');
+    const choices=el('div','food-popover-clips');
+    if(item.clips?.length>1)for(const clip of item.clips){
+      const button=el('button','food-popover-clip',clip.author);button.type='button';button.dataset.clipId=clip.id;button.setAttribute('aria-pressed',String(clip.id===this.clipId));button.setAttribute('aria-label','切换到'+clip.author+'的'+item.name+'视频');
+      button.addEventListener('click',()=>{this.show(item,entry,{pinned:true,clipId:clip.id});this.element.querySelector('[data-clip-id="'+clip.id+'"]')?.focus({preventScroll:true});});choices.append(button);
+    }
     const originalURL=official?.original||item.originalVideoURL;
     if(originalURL){const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));if(item.verificationStatus==='video-location'){const note=el('small','food-popover-branch-note','位置大致 · 分店待核');note.title=item.planningLocation?.note||'按地址街区估计';links.append(note);}}
-    this.element.replaceChildren(frame,close,copy,this.errorNote,links);this.element.hidden=false;this.element.classList.remove('is-shown');
+    if(item.clipFootageNote){const note=el('small','food-popover-branch-note',item.clipFootageNote);links.append(note);}
+    this.element.classList.toggle('has-clip-choices',choices.childElementCount>0);this.element.classList.toggle('has-footage-note',!!item.clipFootageNote);
+    this.element.replaceChildren(frame,close,copy,choices,this.errorNote,links);this.element.hidden=false;this.element.classList.remove('is-shown');
     this.updateSave();this.position();requestAnimationFrame(()=>{if(this.current?.id===item.id)this.element.classList.add('is-shown');});
   }
   position(){

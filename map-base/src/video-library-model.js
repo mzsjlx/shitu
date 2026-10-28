@@ -1,7 +1,7 @@
 const idPattern=/^[a-z][a-z0-9-]{0,79}$/;
 export function validateVideoLibrary(data){
   if(data?.schemaVersion!==1||data.city!=='chongqing'||!Array.isArray(data.sources)||data.sources.length<1||data.sources.length>200||data.rights?.status!=='user-confirmed')throw new Error('视频资料格式不正确');
-  const ids=new Set();
+  const ids=new Set(),segmentsById=new Map();
   for(const source of data.sources){
     if(!idPattern.test(source.id)||ids.has(source.id))throw new Error('视频来源ID无效');
     ids.add(source.id);
@@ -13,6 +13,8 @@ export function validateVideoLibrary(data){
     for(const segment of source.segments){
       if(!idPattern.test(segment.id)||ids.has(segment.id))throw new Error('片段ID无效或重复');
       ids.add(segment.id);
+      segmentsById.set(segment.id,segment);
+      if(segment.placeId!==undefined&&!idPattern.test(segment.placeId))throw new Error('门店归并ID无效');
       if(typeof segment.name!=='string'||!segment.name.trim()||typeof segment.category!=='string'||typeof segment.summary!=='string'||(segment.addressText!==null&&typeof segment.addressText!=='string'))throw new Error('门店片段缺少信息');
       if(![segment.start,segment.end,segment.posterSecond].every(Number.isFinite)||segment.start<previous||segment.end<=segment.start||segment.end>source.durationSeconds||segment.posterSecond<segment.start||segment.posterSecond>=segment.end)throw new Error('视频分段时间无效或重叠');
       previous=segment.end;
@@ -20,6 +22,10 @@ export function validateVideoLibrary(data){
       if(segment.planningLocation&&(segment.planningLocation.accuracy!=='approximate'||typeof segment.planningLocation.label!=='string'||!segment.planningLocation.label||!segment.coordinates))throw new Error('规划位置需要大致位置标签与坐标');
       if(segment.routeEligible!==false)throw new Error('视频店址尚未核对，不能生成到店导航');
     }
+  }
+  for(const segment of segmentsById.values())if(segment.placeId){
+    const primary=segmentsById.get(segment.placeId);
+    if(!primary||(primary.placeId&&primary.placeId!==primary.id)||!primary.coordinates||!segment.coordinates||primary.name!==segment.name||primary.category!==segment.category||primary.coordinates.some((n,i)=>Math.abs(n-segment.coordinates[i])>1e-6))throw new Error('归并门店必须指向相同名称、类别和位置的主片段');
   }
   return data;
 }

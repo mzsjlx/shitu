@@ -464,6 +464,305 @@
         "method": "area-or-road-average"
       },
       "addressCheckURL": "https://www.amap.com/search?query=%E5%93%91%E5%B7%B4%E5%85%94%20%E9%87%8D%E5%BA%86"
+    },
+    {
+      "segmentId": "tiedan-gangzi",
+      "name": "刚子蹄花（总店）",
+      "coordinates": [
+        106.552235,
+        29.584486
+      ],
+      "accuracy": "approximate",
+      "label": "五里店 · 万丰路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "铁蛋儿21秒可见总店招牌；白龙89秒起同一低层房屋与绿色棚顶线索。高德只核对名称与地址，地图使用万丰路开放道路坐标大致放置。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 354218098,
+        "name": "万丰路",
+        "url": "https://www.openstreetmap.org/way/354218098",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%88%9A%E5%AD%90%E8%B9%84%E8%8A%B1%20%E6%80%BB%E5%BA%97"
+    },
+    {
+      "segmentId": "wulala-wangshifu",
+      "name": "王师傅炒菜馆",
+      "coordinates": [
+        106.558426,
+        29.558325
+      ],
+      "accuracy": "approximate",
+      "label": "七星岗 · 中山一路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "原片24秒可见王师傅炒菜馆门头、市场旁小巷；高德同名候选为申新大厦店。按中山一路街区估计，门口待核。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 831047020,
+        "name": "中山一路",
+        "url": "https://www.openstreetmap.org/way/831047020",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%8E%8B%E5%B8%88%E5%82%85%E7%82%92%E8%8F%9C%E9%A6%86"
+    },
+    {
+      "segmentId": "jiankang-linhua",
+      "name": "临华老面馆",
+      "coordinates": [
+        106.557534,
+        29.559025
+      ],
+      "accuracy": "approximate",
+      "label": "大溪沟 · 临华路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "原片12秒门头为临华老面馆（字幕曾写林华）；高德同名候选临华路55号。采用临华路街区参考。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 831047023,
+        "name": "临华路",
+        "url": "https://www.openstreetmap.org/way/831047023",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E4%B8%B4%E5%8D%8E%E8%80%81%E9%9D%A2%E9%A6%86"
+    },
+    {
+      "segmentId": "jiankang-chunyang",
+      "name": "纯阳酒家",
+      "coordinates": [
+        106.558169,
+        29.557379
+      ],
+      "accuracy": "approximate",
+      "label": "七星岗 · 中山一支路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "原片34秒转场字幕与35秒店面可辨纯阳酒家；采用中山一支路街区参考，未核实入口。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 59161405,
+        "name": "中山一支路",
+        "url": "https://www.openstreetmap.org/way/59161405",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%BA%AF%E9%98%B3%E9%85%92%E5%AE%B6"
+    },
+    {
+      "segmentId": "jiankang-liuyouchi",
+      "name": "刘友池老火锅",
+      "coordinates": [
+        106.563167,
+        29.562201
+      ],
+      "accuracy": "approximate",
+      "label": "大溪沟 · 华一路候选店",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "原片83—86秒可见刘友池老火锅门头与居民楼；同名老店候选在华一路，另有七星岗等分店。这里是候选街区，不确认原片具体分店。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 458579980,
+        "name": "华一路",
+        "url": "https://www.openstreetmap.org/way/458579980",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%88%98%E5%8F%8B%E6%B1%A0%E8%80%81%E7%81%AB%E9%94%85"
+    },
+    {
+      "segmentId": "jiankang-zhuer",
+      "name": "朱儿面庄（洋河店）",
+      "coordinates": [
+        106.528504,
+        29.586892
+      ],
+      "accuracy": "approximate",
+      "label": "观音桥 · 洋河三路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "健康哥哥162秒门头与白龙15—16秒相邻的亿客刀削面招牌、居民楼外立面相符，按同一洋河店合并。高德仅比对名称地址；采用洋河三路开放道路坐标。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 297743112,
+        "name": "洋河三路",
+        "url": "https://www.openstreetmap.org/way/297743112",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%9C%B1%E5%84%BF%E9%9D%A2%E5%BA%84%20%E6%B4%8B%E6%B2%B3%E4%B8%89%E8%B7%AF"
+    },
+    {
+      "segmentId": "jiankang-beicheng",
+      "name": "北城老妈蹄花",
+      "coordinates": [
+        106.528586,
+        29.583561
+      ],
+      "accuracy": "approximate",
+      "label": "观音桥 · 洋河附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "原片217秒可见北城老妈蹄花街边庭院，与好吃街楼上分店不同；高德洋河店候选在建北三支路。采用邻近洋河西路街区参考。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 297743114,
+        "name": "洋河西路",
+        "url": "https://www.openstreetmap.org/way/297743114",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%8C%97%E5%9F%8E%E8%80%81%E5%A6%88%E8%B9%84%E8%8A%B1"
+    },
+    {
+      "segmentId": "jiankang-liruotao",
+      "name": "李若桃手作酸奶铺（分店待核）",
+      "coordinates": [
+        106.537062,
+        29.585854
+      ],
+      "accuracy": "approximate",
+      "label": "观音桥 · 九街高屋候选店",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "原片301秒字幕与杯身确认李若桃品牌，未露出分店。高德同品牌九街高屋店作候选；使用相邻洋河中路开放道路位置，不能认为视频就在这家拍摄。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 822086880,
+        "name": "洋河中路",
+        "url": "https://www.openstreetmap.org/way/822086880",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%9D%8E%E8%8B%A5%E6%A1%83%20%E5%8C%97%E5%9F%8E%E5%A4%A9%E8%A1%97"
+    },
+    {
+      "segmentId": "bailong-zhuer",
+      "name": "朱儿面庄（洋河店）",
+      "coordinates": [
+        106.528504,
+        29.586892
+      ],
+      "accuracy": "approximate",
+      "label": "观音桥 · 洋河三路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "健康哥哥162秒门头与白龙15—16秒相邻的亿客刀削面招牌、居民楼外立面相符，按同一洋河店合并。高德仅比对名称地址；采用洋河三路开放道路坐标。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 297743112,
+        "name": "洋河三路",
+        "url": "https://www.openstreetmap.org/way/297743112",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%9C%B1%E5%84%BF%E9%9D%A2%E5%BA%84%20%E6%B4%8B%E6%B2%B3%E4%B8%89%E8%B7%AF"
+    },
+    {
+      "segmentId": "bailong-gangzi",
+      "name": "刚子蹄花（总店）",
+      "coordinates": [
+        106.552235,
+        29.584486
+      ],
+      "accuracy": "approximate",
+      "label": "五里店 · 万丰路附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "铁蛋儿21秒可见总店招牌；白龙89秒起同一低层房屋与绿色棚顶线索。高德只核对名称与地址，地图使用万丰路开放道路坐标大致放置。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 354218098,
+        "name": "万丰路",
+        "url": "https://www.openstreetmap.org/way/354218098",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%88%9A%E5%AD%90%E8%B9%84%E8%8A%B1%20%E6%80%BB%E5%BA%97"
+    },
+    {
+      "segmentId": "bailong-chunhong",
+      "name": "春红火锅（洪崖洞店）",
+      "coordinates": [
+        106.572899,
+        29.563889
+      ],
+      "accuracy": "approximate",
+      "label": "洪崖洞 · 戴家巷附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "原片185—191秒沿洪崖洞旁木楼梯上行并出现春红火锅门头；高德同名洪崖洞店临江路28号。采用戴家巷街区参考。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 59146709,
+        "name": "戴家巷",
+        "url": "https://www.openstreetmap.org/way/59146709",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%98%A5%E7%BA%A2%E7%81%AB%E9%94%85%20%E6%B4%AA%E5%B4%96%E6%B4%9E"
+    },
+    {
+      "segmentId": "mizijun-tianbang",
+      "name": "天棒老火锅（分店待核）",
+      "coordinates": [
+        106.573832,
+        29.556092
+      ],
+      "accuracy": "approximate",
+      "label": "解放碑 · 新华路得意世界附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "原页天棒老火锅线索，片中门前桌椅与店内同一用餐段连续；老店候选在磨房巷，另有得意世界二层总店。地图仅为新华路街区参考。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1300942275,
+        "name": "新华路",
+        "url": "https://www.openstreetmap.org/way/1300942275",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%A4%A9%E6%A3%92%E8%80%81%E7%81%AB%E9%94%85%20%E8%A7%A3%E6%94%BE%E7%A2%91"
+    },
+    {
+      "segmentId": "manbei-hongjiuge",
+      "name": "红九格老火锅（三峡广场店）",
+      "coordinates": [
+        106.455385,
+        29.560549
+      ],
+      "accuracy": "approximate",
+      "label": "沙坪坝 · 三峡广场附近",
+      "basis": "candidate-branch",
+      "branchMatch": "unconfirmed",
+      "note": "原作者在此视频评论明确回复“三峡广场的红九格”；高德同名分店地址与烧白炒饭菜品相符。采用渝碚路街区参考。2024年视频，现时营业情况待确认。",
+      "reviewedOn": "2026-10-28",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1550708473,
+        "name": "渝碚路",
+        "url": "https://www.openstreetmap.org/way/1550708473",
+        "sourceDate": "2026-10-25",
+        "method": "area-or-road-average"
+      },
+      "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%BA%A2%E4%B9%9D%E6%A0%BC%20%E4%B8%89%E5%B3%A1%E5%B9%BF%E5%9C%BA"
     }
   ]
 }

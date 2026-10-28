@@ -1,5 +1,6 @@
 {
-  "acquiredAtUTC": "2026-10-28T05:35:16.957354+00:00",
+  "city": "chongqing",
+  "acquiredAtUTC": "2026-10-28T11:03:17.682142+00:00",
   "source": "https://build.protomaps.com/20261027.pmtiles",
   "upstreamBuild": {
     "key": "20261027.pmtiles",
@@ -10,16 +11,16 @@
     "version": "4.15.2"
   },
   "bbox": [
-    106.47,
+    106.43,
     29.48,
     106.65,
     29.65
   ],
   "maxzoom": 15,
-  "bytes": 6141216,
-  "sha256": "b58643d9a707d24c20bade69acac67251b6bdb0b51779e4fe2bfb138ac298b96",
+  "bytes": 6866529,
+  "sha256": "3b1e8c2c0932a829926b7a639dbd43cd06e5388600c0b80924be71872f22a73b",
   "license": "ODbL 1.0 Produced Work",
   "attribution": "OpenStreetMap contributors, Protomaps, Natural Earth",
-  "scope": "Chongqing central urban extract with western food-video neighbourhoods; not all Chongqing",
+  "scope": "重庆中心城区局部，约 22 × 19 公里，含沙坪坝三峡广场",
   "note": "Archive retained locally; browser does not hotlink the build server."
 }
