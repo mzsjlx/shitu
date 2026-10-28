@@ -23,6 +23,7 @@ const protocol=new Protocol();
 const bundle=window.__FOOD_CITY_BUNDLE__;
 // The .cjs suffix tells MapLibre to create a classic Worker, including for Blob URLs.
 const workerURL=bundle?URL.createObjectURL(new Blob([bundle.worker],{type:'application/javascript'}))+'#map-worker.cjs':new URL('map-worker.cjs',location.href).href;
+const roadWorkerURL=bundle?URL.createObjectURL(new Blob([bundle.roadWorker],{type:'application/javascript'}))+'#food-road-worker.cjs':new URL('food-road-worker.cjs',location.href).href;
 maplibregl.setWorkerUrl(workerURL);
 maplibregl.addProtocol('pmtiles',protocol.tile);
 
@@ -314,7 +315,7 @@ async function init() {
       });
     }
     if(city.foodContent)food=new FoodExperience(map,overlay,{
-      config:city.foodContent,readJSON,assetURL:path=>bundle?.assets?.[path]||new URL(path,location.href).href,
+      config:city.foodContent,readJSON,roadWorkerURL,assetURL:path=>bundle?.assets?.[path]||new URL(path,location.href).href,
       onFocus:()=>{
         videoMapContext?.clear();
         endLandmarkFocus();

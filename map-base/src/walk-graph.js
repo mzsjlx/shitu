@@ -5,14 +5,14 @@ const absentOrNo=value=>!value||['no','false','0'].includes(value);
 const pedestrian=new Set(['footway','path','pedestrian','steps']);
 const ordinary=new Set(['residential','living_street','service','unclassified','tertiary','secondary','tertiary_link','secondary_link']);
 const conditional=tags=>Object.keys(tags).some(k=>k.includes('conditional')&&(k.startsWith('access')||k.startsWith('foot')||k.startsWith('oneway')));
-export function wayExclusion(tags,{pedestrianOnly=false,avoidSteps=false}={}){
+export function wayExclusion(tags,{pedestrianOnly=false,avoidSteps=false,planningRoads=false}={}){
   const h=tags.highway,explicit=yes(tags.foot);
-  if(!pedestrian.has(h)&&!ordinary.has(h)&&!(explicit&&['primary','primary_link','cycleway','bridleway'].includes(h)))return 'unsupported-highway';
+  if(!pedestrian.has(h)&&!ordinary.has(h)&&!(planningRoads&&['primary','primary_link'].includes(h))&&!(explicit&&['primary','primary_link','cycleway','bridleway'].includes(h)))return 'unsupported-highway';
   if(tags.foot&&!explicit)return 'foot-not-permitted';
   if(no(tags.access)&&!explicit)return 'access-restricted';
   if(tags.access&&!no(tags.access)&&!yes(tags.access)&&!explicit)return 'unknown-access';
   if(conditional(tags))return 'conditional-access';
-  if(!absentOrNo(tags.bridge)||!absentOrNo(tags.tunnel)||!absentOrNo(tags.layer))return 'grade-separated';
+  if(!planningRoads&&(!absentOrNo(tags.bridge)||!absentOrNo(tags.tunnel)||!absentOrNo(tags.layer)))return 'grade-separated';
   if(tags.area==='yes'||!absentOrNo(tags.indoor)||!absentOrNo(tags.level))return 'indoor-or-area';
   if(['construction','proposed','disused','abandoned'].some(k=>!absentOrNo(tags[k])))return 'inactive';
   if(pedestrianOnly&&!pedestrian.has(h)&&!explicit)return 'ordinary-road-excluded';

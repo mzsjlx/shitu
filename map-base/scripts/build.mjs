@@ -7,6 +7,7 @@ import {buildVideoLibrary} from './build-video-library.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 await mkdir(path.join(root,'dist'),{recursive:true});
 await build({entryPoints:[path.join(root,'src/main.js')],bundle:true,minify:true,format:'iife',target:'es2022',outfile:path.join(root,'dist/app.js'),legalComments:'linked'});
+await build({entryPoints:[path.join(root,'src/food-road-worker.js')],bundle:true,minify:true,format:'iife',target:'es2022',outfile:path.join(root,'dist/food-road-worker.cjs')});
 await build({entryPoints:[path.join(root,'node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs')],bundle:true,minify:true,format:'iife',target:'es2022',outfile:path.join(root,'dist/map-worker.cjs'),legalComments:'linked'});
 await cp(path.join(root,'src/index.html'),path.join(root,'dist/index.html'));
 await build({entryPoints:[path.join(root,'src/content-review.js')],bundle:true,minify:true,format:'iife',target:'es2022',outfile:path.join(root,'dist/review-app.js'),legalComments:'linked'});
@@ -30,6 +31,7 @@ for(const file of ['data/video-library.json','data/video-library-assets.json'])j
 for(const file of Object.values(city.dataFiles))json[file]=JSON.parse(await readFile(path.join(root,file),'utf8'));
 if(city.streetDetail)for(const file of [city.streetDetail.data,city.streetDetail.manifest])json[file]=JSON.parse(await readFile(path.join(root,file),'utf8'));
 if(city.foodContent)json[city.foodContent.records]=JSON.parse(await readFile(path.join(root,city.foodContent.records),'utf8'));
+if(city.foodContent?.roadNetwork)json[city.foodContent.roadNetwork]=JSON.parse(await readFile(path.join(root,city.foodContent.roadNetwork),'utf8'));
 if(city.walkNetwork)json[city.walkNetwork]=JSON.parse(await readFile(path.join(root,city.walkNetwork),'utf8'));
 const terrain={};
 for(const tile of json[city.dataFiles.terrainManifest].tiles){
@@ -38,7 +40,7 @@ for(const tile of json[city.dataFiles.terrainManifest].tiles){
 }
 const assets={};
 if(city.foodContent)assets[city.foodContent.sprite]='data:image/jpeg;base64,'+(await readFile(path.join(root,'dist',city.foodContent.sprite))).toString('base64');
-const bundle={json,terrain,assets,archive:(await readFile(path.join(root,city.tiles))).toString('base64'),worker:await readFile(path.join(root,'dist/map-worker.cjs'),'utf8')};
+const bundle={json,terrain,assets,archive:(await readFile(path.join(root,city.tiles))).toString('base64'),worker:await readFile(path.join(root,'dist/map-worker.cjs'),'utf8'),roadWorker:await readFile(path.join(root,'dist/food-road-worker.cjs'),'utf8')};
 let html=await readFile(path.join(root,'src/index.html'),'utf8');
 const css=await readFile(path.join(root,'dist/app.css'),'utf8'),js=await readFile(path.join(root,'dist/app.js'),'utf8');
 const license=(await Promise.all(['node_modules/maplibre-gl/LICENSE.txt','licenses/PMTILES-LICENSE.txt','node_modules/fflate/LICENSE','node_modules/three/LICENSE'].map(file=>readFile(path.join(root,file),'utf8')))).join('\n\n');
