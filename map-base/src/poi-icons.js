@@ -1,13 +1,13 @@
 // Off-screen canvas icon generators for MapLibre symbol layers.
 // Renders crisp circular badge icons with category-specific glyphs.
 
-function createBadgeCanvas(bgColor, drawGlyph) {
+function createBadgeImageData(bgColor, drawGlyph) {
   const size = 48;
   const canvas = document.createElement('canvas');
   canvas.width = size;
   canvas.height = size;
   const ctx = canvas.getContext('2d');
-  if (!ctx) return canvas;
+  if (!ctx) return null;
 
   // Outer soft halo / border
   ctx.beginPath();
@@ -34,7 +34,7 @@ function createBadgeCanvas(bgColor, drawGlyph) {
   ctx.lineJoin = 'round';
 
   drawGlyph(ctx, size / 2, size / 2);
-  return canvas;
+  return ctx.getImageData(0, 0, size, size);
 }
 
 function drawShop(ctx, cx, cy) {
@@ -143,8 +143,10 @@ export function registerPoiIcons(map) {
 
   for (const { id, color, draw } of badgeDefs) {
     if (!map.hasImage(id)) {
-      const canvas = createBadgeCanvas(color, draw);
-      map.addImage(id, canvas, { pixelRatio: 2 });
+      const imgData = createBadgeImageData(color, draw);
+      if (imgData) {
+        map.addImage(id, imgData, { pixelRatio: 2 });
+      }
     }
   }
 }

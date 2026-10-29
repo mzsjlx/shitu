@@ -350,14 +350,28 @@ async function init() {
       try{map.addLayer(landmark,'selected-road-edge');layersVisible();}
       catch(error){landmark.error=error.message;landmark.onError(error);}
     } else {
-      if ($('landmark-entry')) $('landmark-entry').hidden = true;
+      if ($('landmark-entry')) {
+        $('landmark-entry').hidden = true;
+        $('landmark-entry').style.display = 'none';
+      }
       if ($('landmark-note')) $('landmark-note').hidden = true;
       const streetTools = document.querySelector('.street-tools');
-      if (streetTools) streetTools.hidden = true;
+      if (streetTools) {
+        streetTools.hidden = true;
+        streetTools.style.display = 'none';
+      }
+      const walkTools = document.querySelector('.walk-tools');
+      if (walkTools) {
+        walkTools.hidden = true;
+        walkTools.style.display = 'none';
+      }
       const streetOption = $('street-option')?.closest('label');
       if (streetOption) streetOption.style.display = 'none';
       const walkOption = $('walk-option')?.closest('label');
       if (walkOption) walkOption.style.display = 'none';
+      const foodOption = $('food-option')?.closest('label');
+      if (!city.foodContent && foodOption) foodOption.style.display = 'none';
+      if (!city.foodContent && $('food-entry')) $('food-entry').style.display = 'none';
       if ($('terrain-option')) {
         $('terrain-option').checked = false;
         $('terrain-option').disabled = true;
