@@ -209,6 +209,107 @@ function wire() {
   });
 }
 
+function enableSpatialControls(map) {
+  const container = map.getCanvasContainer();
+
+  // Prevent default context menu so right-click 3D orbit drag works smoothly
+  container.addEventListener('contextmenu', e => e.preventDefault());
+
+  // Middle-click (wheel button) drag rotation and pitch
+  let isMiddleDragging = false;
+  let startX = 0, startY = 0;
+  let startBearing = 0, startPitch = 0;
+
+  container.addEventListener('mousedown', e => {
+    if (e.button === 1) {
+      e.preventDefault();
+      isMiddleDragging = true;
+      startX = e.clientX;
+      startY = e.clientY;
+      startBearing = map.getBearing();
+      startPitch = map.getPitch();
+      container.style.cursor = 'grabbing';
+    }
+  });
+
+  window.addEventListener('mousemove', e => {
+    if (!isMiddleDragging) return;
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+    const bearing = startBearing + dx * 0.4;
+    const pitch = Math.max(0, Math.min(85, startPitch - dy * 0.4));
+    map.setBearing(bearing);
+    map.setPitch(pitch);
+  });
+
+  window.addEventListener('mouseup', e => {
+    if (isMiddleDragging && e.button === 1) {
+      isMiddleDragging = false;
+      container.style.cursor = '';
+    }
+  });
+
+  // Keyboard spatial street navigation (WASD, Q/E, R/F, Arrows)
+  window.addEventListener('keydown', e => {
+    const active = document.activeElement;
+    if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable)) {
+      return;
+    }
+    const key = e.key.toLowerCase();
+    const panStep = 65;
+    const rotateStep = 6;
+    const pitchStep = 5;
+
+    switch (key) {
+      case 'w':
+      case 'arrowup':
+        e.preventDefault();
+        map.panBy([0, -panStep], { duration: 120 });
+        break;
+      case 's':
+      case 'arrowdown':
+        e.preventDefault();
+        map.panBy([0, panStep], { duration: 120 });
+        break;
+      case 'a':
+      case 'arrowleft':
+        e.preventDefault();
+        map.panBy([-panStep, 0], { duration: 120 });
+        break;
+      case 'd':
+      case 'arrowright':
+        e.preventDefault();
+        map.panBy([panStep, 0], { duration: 120 });
+        break;
+      case 'q':
+        e.preventDefault();
+        map.easeTo({ bearing: map.getBearing() - rotateStep, duration: 120 });
+        break;
+      case 'e':
+        e.preventDefault();
+        map.easeTo({ bearing: map.getBearing() + rotateStep, duration: 120 });
+        break;
+      case 'r':
+        e.preventDefault();
+        map.easeTo({ pitch: Math.min(85, map.getPitch() + pitchStep), duration: 120 });
+        break;
+      case 'f':
+        e.preventDefault();
+        map.easeTo({ pitch: Math.max(0, map.getPitch() - pitchStep), duration: 120 });
+        break;
+    }
+  });
+
+  // Spatial hint dismissal
+  const hint = $('spatial-hint');
+  const closeBtn = $('spatial-hint-close');
+  if (hint && closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      hint.hidden = true;
+    });
+  }
+}
+
 async function init() {
   boot.stage('读取城市配置');
   const config=await readJSON('config/cities.json');
@@ -287,7 +388,7 @@ async function init() {
   }
   map=new maplibregl.Map({
     container:'map',style:makeStyle(city,tileURL),center:city.center,zoom:city.zoom,
-    pitch:city.pitch,bearing:city.bearing,minZoom:city.minZoom,maxZoom:city.maxZoom,maxPitch:68,
+    pitch:city.pitch,bearing:city.bearing,minZoom:city.minZoom,maxZoom:city.maxZoom,maxPitch:85,
     maxBounds:[[city.bounds[0],city.bounds[1]],[city.bounds[2],city.bounds[3]]],
     canvasContextAttributes:{antialias:true},
     transformRequest:bundle?url=>{
@@ -300,6 +401,7 @@ async function init() {
     attributionControl:{compact:true},fadeDuration:180,refreshExpiredTiles:false,
     renderWorldCopies:false
   });
+  enableSpatialControls(map);
   map.addControl(new maplibregl.NavigationControl({visualizePitch:true}),'top-right');
   map.addControl(new maplibregl.ScaleControl({maxWidth:110,unit:'metric'}),'bottom-left');
   function disableTerrain(message) {
