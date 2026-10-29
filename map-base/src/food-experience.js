@@ -12,10 +12,11 @@ const thumbFor=(item,cls)=>{
   thumb.setAttribute('role','img');return thumb;
 };
 export class FoodExperience{
-  constructor(map,overlay,{config,readJSON,assetURL,onFocus,onExplore=onFocus}){
+  constructor(map,overlay,{config,readJSON,assetURL,roadWorkerURL,onFocus,onExplore=onFocus}){
     this.map=map;this.overlay=overlay;this.config=config;this.readJSON=readJSON;this.assetURL=assetURL;this.onFocus=onFocus;this.onExplore=onExplore;
     this.records=[];this.phase='unloaded';this.active=false;this.selected=null;this.generation=0;this.saved=[];this.category=null;this.draftCategory=null;this.routeSuppressed=false;
-    this.routePreview=new FoodRoutePreview(map,overlay.Marker);
+    this.routeMode='direct';try{const mode=localStorage.getItem('foodcity:distance-mode:chongqing:v1');if(['direct','road'].includes(mode))this.routeMode=mode;}catch{}
+    this.routePreview=new FoodRoutePreview(map,overlay.Marker,{loadNetwork:signal=>readJSON(config.roadNetwork,{signal}),workerURL:roadWorkerURL,onChange:()=>this.renderRouteStatus()});
     const query=new URLSearchParams(location.search),place=query.get('place');
     this.initialPlaceId=(!query.get('view')||query.get('view')==='food')&&place&&place.length<=100?place:null;
     byId('place-directory-link').hidden=!['http:','https:'].includes(location.protocol);
@@ -25,6 +26,7 @@ export class FoodExperience{
     byId('food-option').addEventListener('change',event=>event.target.checked?this.activate():this.deactivate());
     for(const id of ['wants-open','trip-open','trip-manage'])byId(id).addEventListener('click',event=>this.openWants(event.currentTarget));
     byId('trip-overview').addEventListener('click',()=>this.focusStops());
+    for(const button of byId('trip-distance-modes').querySelectorAll('button'))button.addEventListener('click',()=>this.setRouteMode(button.dataset.routeMode));
     byId('trip-map-all').addEventListener('click',()=>{byId('wants-dialog').close();this.focusStops();});
     byId('food-pick-open').addEventListener('click',()=>this.openPicker());
     byId('food-pick-close').addEventListener('click',()=>byId('food-pick-dialog').close());
@@ -55,7 +57,7 @@ export class FoodExperience{
     });
     byId('food-save').addEventListener('click',()=>{if(this.selected)this.toggleSave(this.selected.id);});
     map.on('movestart',event=>{if(event.originalEvent)this.cancelFocus();});
-    this.dockObserver=new ResizeObserver(()=>this.overlay.scheduleLayout());this.dockObserver.observe(byId('trip-dock'));
+    this.dockObserver=new ResizeObserver(()=>{this.map.getContainer().parentElement.style.setProperty('--food-trip-dock-height',byId('trip-dock').offsetHeight+'px');this.overlay.scheduleLayout();});this.dockObserver.observe(byId('trip-dock'));
   }
   cancelFocus(){this.generation++;this.initialPlaceId=null;}
   async load(){
@@ -164,7 +166,7 @@ export class FoodExperience{
     this.selected=item;
     if(!this.saved.includes(item.id)){this.saved.push(item.id);this.persistSaved();}
     this.refreshSaved();this.overlay.showPopover(item,true);
-    byId('status').textContent=item.name+'已加入想去，选两家可查看直线距离。';
+    byId('status').textContent=item.name+'已加入想去，选两家可切换直线或沿路距离。';
   }
   open(item){
     this.overlay.popover.close();
@@ -238,8 +240,8 @@ export class FoodExperience{
     byId('trip-dock-title').textContent=count?count+' 站想去':'留住想吃的这一口';
     const routeRecords=this.saved.map(id=>this.records.find(item=>item.id===id)).filter(Boolean),visible=new Set(this.visibleRecords().map(item=>item.id));
     const showRoute=this.active&&!this.routeSuppressed&&routeRecords.length>1&&routeRecords.every(item=>visible.has(item.id));
-    this.routePreview.update(routeRecords,showRoute);
-    byId('trip-dock-caption').textContent=this.saveError?'本次调整暂未保存':showRoute?'直线约 '+directDistanceText(this.routePreview.total):count?'按你的顺序，慢慢逛':'点选美食卡片开始';
+    byId('trip-distance-modes').hidden=!showRoute;
+    this.routePreview.update(routeRecords,showRoute,this.routeMode);this.renderRouteStatus();
     byId('trip-open').setAttribute('aria-label',count?'安排想去行程，'+count+'站':'打开想去清单');
     byId('trip-overview').hidden=count===0;byId('trip-manage').hidden=count===0;
     const stops=byId('trip-stops');stops.replaceChildren();stops.hidden=count===0;
@@ -251,6 +253,24 @@ export class FoodExperience{
       const name=document.createElement('span');name.textContent=item.category;button.append(number,name);
       button.addEventListener('click',()=>this.focusStops(id));stops.append(button);
     }
+    this.overlay.scheduleLayout();
+  }
+  setRouteMode(mode){
+    if(!['direct','road'].includes(mode))return;
+    if(mode===this.routeMode&&this.routePreview.phase==='error')this.routePreview.retry();
+    this.routeMode=mode;try{localStorage.setItem('foodcity:distance-mode:chongqing:v1',mode);}catch{}
+    this.renderDock();
+  }
+  renderRouteStatus(){
+    const route=this.routePreview,count=this.saved.length,caption=byId('trip-dock-caption');
+    for(const button of byId('trip-distance-modes').querySelectorAll('button')){button.setAttribute('aria-pressed',String(button.dataset.routeMode===this.routeMode));if(button.dataset.routeMode==='road')button.setAttribute('aria-busy',String(route.phase==='loading'));}
+    let text=count?'按你的顺序，慢慢逛':'点选美食卡片开始';
+    if(route.phase==='loading')text='正在计算沿路距离…';
+    else if(route.phase==='error')text='沿路暂不可用 · 点沿路重试';
+    else if(route.phase==='partial')text=route.missing+' 段道路暂未连通';
+    else if(route.phase==='ready')text=(this.routeMode==='road'?'沿路约 ':'直线约 ')+directDistanceText(route.total);
+    caption.textContent=this.saveError?'本次调整暂未保存':text;caption.title=this.routeMode==='road'?'按街区位置估算步行道路长度，短虚线为位置连接，不计入沿路距离。':'相邻想去地点的直线距离之和。';
+    byId('trip-order-note').textContent=this.routeMode==='road'?'沿路按街区位置估算，短虚线是位置连接；店门与楼层请到达后确认。':'按你的想去顺序连接，可在地图底部切换直线或沿路距离。';
     this.overlay.scheduleLayout();
   }
   setRouteSuppressed(value){this.routeSuppressed=value;this.renderDock();if(value)this.overlay.popover.close();}
@@ -277,6 +297,7 @@ export class FoodExperience{
       this.map.easeTo({center:records[0].coordinates,zoom:Math.max(16.3,Math.min(this.map.getZoom(),17.5)),offset:[0,Math.min(70,innerHeight*.08)],duration});
     }else{
       const points=records.map(item=>item.coordinates);
+      if(this.routeMode==='road'&&records.length===this.saved.length&&records.every(item=>this.saved.includes(item.id)))points.push(...this.routePreview.roadPoints||[]);
       this.map.fitBounds([[Math.min(...points.map(p=>p[0])),Math.min(...points.map(p=>p[1]))],[Math.max(...points.map(p=>p[0])),Math.max(...points.map(p=>p[1]))]],{padding:this.fitPadding(),maxZoom:16.3,pitch:this.map.getPitch(),bearing:this.map.getBearing(),duration});
     }
   }
@@ -305,5 +326,5 @@ export class FoodExperience{
       row.append(number,open,actions);list.append(row);
     }
   }
-  getStats(){return {phase:this.phase,active:this.active,selected:this.selected?.id||null,saved:[...this.saved],records:this.records.length,visibleRecords:this.visibleRecords().length,category:this.category,error:this.error||null,saveError:!!this.saveError};}
+  getStats(){return {phase:this.phase,active:this.active,selected:this.selected?.id||null,saved:[...this.saved],records:this.records.length,visibleRecords:this.visibleRecords().length,category:this.category,error:this.error||null,saveError:!!this.saveError,route:this.routePreview.getStats()};}
 }

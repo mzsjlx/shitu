@@ -27,7 +27,8 @@
       "demMaxZoom": 13,
       "foodContent": {
         "records": "data/food-records.json",
-        "sprite": "assets/food-concepts.jpg"
+        "sprite": "assets/food-concepts.jpg",
+        "roadNetwork": "data/food-road-network.json"
       },
       "walkNetwork": "data/walk-network.json",
       "streetDetail": {

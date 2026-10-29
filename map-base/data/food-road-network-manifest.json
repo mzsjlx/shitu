@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "chongqing",
+  "bounds": [
+    106.43,
+    29.48,
+    106.65,
+    29.65
+  ],
+  "source": {
+    "date": "2026-10-25",
+    "sha256": "ea1bd60ca0a71231f6ec62bb5ff270594e56559c88d483e25c7e60bcc6fd20ba",
+    "url": "https://download.geofabrik.de/asia/china/chongqing.html",
+    "fileName": "chongqing-261025.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "networkSHA256": "eb4a2960f5b80c5fb6bbc5d0b5d7337eace1da8d8a9f65448fe25148017fe02b",
+  "bytes": 8704237,
+  "nodes": 131412,
+  "ways": 22252,
+  "footRestrictionWays": 2,
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
+}

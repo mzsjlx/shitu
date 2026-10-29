@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "name": "Supplied video places are unique and contain no old samples",
+      "passed": true
+    },
+    {
+      "name": "Every map place has its matching cover, clip and creator",
+      "passed": true
+    },
+    {
+      "name": "One marker exists per distinct located place",
+      "passed": true
+    },
+    {
+      "name": "Card opens inline popup, not modal",
+      "passed": true
+    },
+    {
+      "name": "Creator and approximate position disclosed",
+      "passed": true
+    },
+    {
+      "name": "Correct original clip plays in popup",
+      "passed": true
+    },
+    {
+      "name": "Selecting a second stop stops previous video",
+      "passed": true
+    },
+    {
+      "name": "Two places connect with approximate straight line",
+      "passed": true
+    },
+    {
+      "name": "/places.html has the supplied video content",
+      "passed": true
+    },
+    {
+      "name": "/videos.html has the supplied video content",
+      "passed": true
+    },
+    {
+      "name": "/places/video-nangua-sanyangzi.html has the supplied video content",
+      "passed": true
+    },
+    {
+      "name": "Obsolete sample pages removed",
+      "passed": true
+    },
+    {
+      "name": "Mobile popup fits and video dominates",
+      "passed": true,
+      "detail": {
+        "box": {
+          "x": 12,
+          "y": 76,
+          "width": 260,
+          "height": 281
+        },
+        "media": {
+          "x": 19,
+          "y": 83,
+          "width": 246,
+          "height": 190
+        }
+      }
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passed": true
+}
