@@ -72,7 +72,56 @@ export function makeStyle(city, tilesURL) {
     {id:'road-labels-minor',type:'symbol',source:'city','source-layer':'roads',minzoom:16.2,filter:['all',namedRoad,['in',kind,['literal',['minor_road','path']]]],layout:{'symbol-placement':'line','symbol-spacing':240,'text-field':roadName,'text-font':font,'text-size':11,'text-padding':10,'text-max-angle':35},paint:{'text-color':'#8b8274','text-halo-color':'#fffaf0','text-halo-width':1.5}},
     {id:'water-labels',type:'symbol',source:'city','source-layer':'water',minzoom:11,filter:['all',['has','name'],['==',['geometry-type'],'Polygon']],layout:{'text-field':roadName,'text-font':font,'text-size':width([11,12,15,17,18,21]),'text-letter-spacing':.32,'text-padding':18},paint:{'text-color':'#557d78','text-halo-color':'#a8cac4','text-halo-width':1}},
     {id:'places',type:'symbol',source:'city','source-layer':'places',minzoom:11,filter:['in',kind,['literal',['neighbourhood','macrohood']]],layout:{'text-field':roadName,'text-font':font,'text-size':width([11,12,16,16]),'text-padding':20,'text-letter-spacing':.12},paint:{'text-color':'#8b816d','text-halo-color':'#f5f0e5','text-halo-width':2}},
-    {id:'landmarks',type:'symbol',source:'city','source-layer':'pois',minzoom:15,filter:['in',kind,['literal',['attraction','landmark','station']]],layout:{'text-field':roadName,'text-font':font,'text-size':11.5,'text-padding':10,'text-offset':[0,.7]},paint:{'text-color':'#81755e','text-halo-color':'#fffaf0','text-halo-width':1.7}}
+    {
+      id: 'poi-landmarks',
+      type: 'symbol',
+      source: 'city',
+      'source-layer': 'pois',
+      minzoom: 13,
+      filter: [
+        'all',
+        ['has', 'name'],
+        ['in', kind, ['literal', [
+          'park', 'garden', 'attraction', 'viewpoint', 'theme_park',
+          'mall', 'supermarket', 'marketplace', 'commercial', 'retail', 'clothes', 'wholesale',
+          'restaurant', 'cafe', 'fast_food', 'food', 'bakery',
+          'hospital', 'clinic', 'pharmacy',
+          'building', 'hotel', 'museum', 'theatre', 'gallery', 'arts_centre', 'station', 'bus_station', 'sports_centre'
+        ]]]
+      ],
+      layout: {
+        'visibility': 'none',
+        'icon-image': [
+          'match', kind,
+          ['park', 'garden', 'attraction', 'viewpoint', 'theme_park'], 'poi-park',
+          ['restaurant', 'cafe', 'fast_food', 'food', 'bakery'], 'poi-food',
+          ['hospital', 'clinic', 'pharmacy'], 'poi-hospital',
+          ['mall', 'supermarket', 'marketplace', 'retail', 'clothes', 'wholesale'], 'poi-shop',
+          'poi-building'
+        ],
+        'icon-size': 0.7,
+        'icon-anchor': 'left',
+        'text-field': roadName,
+        'text-font': font,
+        'text-size': ['interpolate', ['linear'], ['zoom'], 13, 11, 16, 12.5, 18, 14],
+        'text-anchor': 'left',
+        'text-offset': [1.35, 0],
+        'text-letter-spacing': 0.05,
+        'text-max-width': 10,
+        'text-optional': false,
+        'icon-optional': false,
+        'icon-allow-overlap': false,
+        'text-allow-overlap': false,
+        'icon-padding': 4,
+        'text-padding': 4
+      },
+      paint: {
+        'text-color': '#3e362c',
+        'text-halo-color': '#fffbf2',
+        'text-halo-width': 2,
+        'text-halo-blur': 0.6
+      }
+    }
   );
   return {
     version:8,

@@ -11,10 +11,11 @@ import {VideoLibrary} from './video-library.js';
 import {VideoMapContext} from './video-map-context.js';
 import {WalkPreview} from './walk-preview.js';
 import {HongyadongLayer} from './hongyadong-layer.js';
+import {registerPoiIcons} from './poi-icons.js';
 
 const $=(id)=>document.getElementById(id);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-const state={threeD:true,labels:true,buildings:true,terrain:true,ready:false};
+const state={threeD:true,labels:true,buildings:true,terrain:true,pois:false,ready:false};
 const failures=[];
 const boot=window.__FOOD_MAP_BOOT__;
 let map,city,roads=[],overlay,selectedRoad=null,streets,food,walk,landmark,videoMapContext,landmarkFocus=false;
@@ -40,7 +41,8 @@ function layersVisible() {
   streets?.setLabels(state.labels);
   map.setLayoutProperty('buildings-3d','visibility',state.threeD&&state.buildings?'visible':'none');
   map.setLayoutProperty('buildings-flat','visibility',state.threeD&&state.buildings?'none':'visible');
-  for(const id of ['landmarks','places'])map.setLayoutProperty(id,'visibility',landmarkFocus?'none':'visible');
+  if(map.getLayer('places'))map.setLayoutProperty('places','visibility',landmarkFocus?'none':'visible');
+  if(map.getLayer('poi-landmarks'))map.setLayoutProperty('poi-landmarks','visibility',state.pois&&!landmarkFocus?'visible':'none');
   landmark?.setAppearance(state.threeD&&state.buildings&&!streets?.active);
 }
 function endLandmarkFocus() {
@@ -169,6 +171,7 @@ function wire() {
     clearRoad();map.easeTo({center:city.center,zoom:city.zoom,pitch:state.threeD?city.pitch:0,bearing:state.threeD?city.bearing:0,duration:duration()});
   });
   $('labels-option').addEventListener('change',e=>{state.labels=e.target.checked;layersVisible();});
+  $('pois-option')?.addEventListener('change',e=>{state.pois=e.target.checked;layersVisible();});
   $('landmark-entry').addEventListener('click',focusLandmark);
   $('buildings-option').addEventListener('change',e=>{state.buildings=e.target.checked;layersVisible();});
   $('terrain-option').addEventListener('change',e=>{state.terrain=e.target.checked;terrainVisible();});
@@ -327,6 +330,7 @@ async function init() {
         try{map.addLayer(landmark,'selected-road-edge');}
         catch(error){landmark.error=error.message;landmark.onError(error);}
       }
+      registerPoiIcons(map);
       terrainVisible();layersVisible();overlay?.scheduleLayout();
       $('status').textContent='地图绘图已恢复，暂以平面地形显示。';
     };
@@ -334,6 +338,7 @@ async function init() {
   });
   map.once('style.load',()=>{
     boot.stage('绘制'+city.name+'真实道路');
+    registerPoiIcons(map);
     terrainVisible();layersVisible();wire();
     if (currentCityKey === 'chongqing') {
       landmark=new HongyadongLayer(maplibregl.MercatorCoordinate,{onError:error=>{
