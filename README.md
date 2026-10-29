@@ -54,6 +54,8 @@ macOS / Linux 终端可使用相同命令，去掉 npm 后面的 `.cmd`。
 
 ## 两人一起开发
 
+目前分工：本会话继续重庆，同学正在制作柳州（城市ID `liuzhou`）。双方可在独立分支推进完整城市功能，公共改动单独提交并统一集成；柳州无需停工等待。后续地图目标为连续拖动与城市快速跳转并存，当前仍只有重庆局部地图接通。
+
 分别建设不同城市时，先读 [城市 Agent 完整交接手册](CITY-AGENT-HANDBOOK.md)。它包含已确定的设计要求、重庆硬编码清单、视频到地图的完整步骤、实际踩坑、验收及媒体交付。直接转发给另一台电脑的指令在 [CITY-AGENT-STARTER.md](CITY-AGENT-STARTER.md)；仓库 Agent 入口为 [AGENTS.md](AGENTS.md)。当前尚未完成全链路多城市，不能只替换重庆数据或修改 `activeCity` 来接入新城。
 
 协作约定见 [CONTRIBUTING.md](CONTRIBUTING.md)。建议每项修改使用独立分支，通过 Pull Request 说明改动与验证，再合并到 `main`。
