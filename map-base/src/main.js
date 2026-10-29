@@ -352,8 +352,12 @@ async function init() {
     } else {
       if ($('landmark-entry')) $('landmark-entry').hidden = true;
       if ($('landmark-note')) $('landmark-note').hidden = true;
-      if ($('street-entry')) $('street-entry').hidden = true;
-      if ($('walk-entry')) $('walk-entry').hidden = true;
+      const streetTools = document.querySelector('.street-tools');
+      if (streetTools) streetTools.hidden = true;
+      const streetOption = $('street-option')?.closest('label');
+      if (streetOption) streetOption.style.display = 'none';
+      const walkOption = $('walk-option')?.closest('label');
+      if (walkOption) walkOption.style.display = 'none';
       if ($('terrain-option')) {
         $('terrain-option').checked = false;
         $('terrain-option').disabled = true;
@@ -418,11 +422,17 @@ async function init() {
       }
     });
   });
+  let readyInterval;
   function checkReady() {
-    if(state.ready||!overlay||!map.getLayer(roadHitLayers[0]))return;
-    // Road rendering is the base readiness signal. Optional DEM must not hide it.
-    if(map.isSourceLoaded('city')&&map.queryRenderedFeatures({layers:roadHitLayers}).length>0){
-      state.ready=true;boot.ready();$('status').textContent=city.name+'地图已展开';
+    if(state.ready||!overlay)return;
+    const availableRoadLayers = roadHitLayers.filter(id => map.getLayer(id));
+    if(availableRoadLayers.length === 0)return;
+    const renderedRoadCount = map.queryRenderedFeatures({layers: availableRoadLayers}).length;
+    // Road rendering is the base readiness signal. Once road features are rendered on screen, map is ready.
+    if(renderedRoadCount > 0 || (map.isSourceLoaded('city') && map.queryRenderedFeatures().length > 0)){
+      state.ready=true;
+      if (readyInterval) clearInterval(readyInterval);
+      boot.ready();$('status').textContent=city.name+'地图已展开';
       const query=new URLSearchParams(location.search),initialView=query.get('view');
       if(initialView==='street'||location.hash==='#street')void streets?.focus();
       if(initialView==='food'||(!initialView&&query.has('place')))void food?.activate();
@@ -430,8 +440,10 @@ async function init() {
       if(initialView==='landmark')focusLandmark();
     }
   }
+  readyInterval = setInterval(checkReady, 200);
   map.on('render',checkReady);
   map.on('idle',checkReady);
+  map.on('sourcedata',checkReady);
   $('source-date').textContent=manifest.upstreamBuild.key.replace('.pmtiles','').replace(/^(\d{4})(\d{2})(\d{2})$/,'$1-$2-$3');
   $('source-stats').textContent='当前可搜索 '+roads.length.toLocaleString()+' 组源道路名称。按源名称合并的道路可能包含多段路面、桥梁或隧道。';
   window.foodCityMap={
