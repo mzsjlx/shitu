@@ -67,7 +67,7 @@
         <span class="road-source">道路资料：OpenStreetMap / Protomaps</span>
       </section>
       <div id="spatial-hint" class="spatial-hint paper" role="note" aria-label="全方位空间视角操作提示">
-        <span>🖱️ <strong>右键/滚轮拖动</strong> 360°全向俯仰</span>
+        <span id="spatial-hint-text">🔄 开启<strong>自由旋转</strong>或<strong>滚轮拖动</strong> 360°俯仰</span>
         <span class="hint-sep">·</span>
         <span>⌨️ <strong>WASD</strong> 漫游街巷</span>
         <span class="hint-sep">·</span>
@@ -77,6 +77,7 @@
       <nav class="view-dock paper" aria-label="地图视角">
         <button id="view-3d" aria-pressed="true" class="active">3D 漫游</button>
         <button id="view-2d" aria-pressed="false">2D 看路</button>
+        <button id="view-orbit" aria-pressed="false" title="开启后直接按住鼠标左键即可 360° 旋转与俯仰">🔄 自由旋转</button>
         <span></span><button id="reset-view" aria-label="回到重庆初始视角">↺</button>
       </nav>
       <section id="trip-dock" class="trip-dock paper" aria-label="想去行程" hidden>

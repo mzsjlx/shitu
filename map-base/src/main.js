@@ -15,7 +15,8 @@ import {registerPoiIcons} from './poi-icons.js';
 
 const $=(id)=>document.getElementById(id);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-const state={threeD:true,labels:true,buildings:true,terrain:true,pois:false,ready:false};
+const state={threeD:true,labels:true,buildings:true,terrain:true,pois:false,ready:false,orbitMode:false};
+let orbitMoved=false;
 const failures=[];
 const boot=window.__FOOD_MAP_BOOT__;
 let map,city,roads=[],overlay,selectedRoad=null,streets,food,walk,landmark,videoMapContext,landmarkFocus=false;
@@ -76,12 +77,50 @@ function terrainVisible() {
     map.setLayoutProperty('hill-shade','visibility',state.terrain?'visible':'none');
   }
 }
+function toggleOrbitMode(enable) {
+  const target = typeof enable === 'boolean' ? enable : !state.orbitMode;
+  state.orbitMode = target;
+  const btn = $('view-orbit');
+  const container = map?.getCanvasContainer();
+  const hintText = $('spatial-hint-text');
+  const hint = $('spatial-hint');
+  if (state.orbitMode) {
+    if (!state.threeD || map.getPitch() < 10) {
+      state.threeD = true;
+      $('view-3d').classList.add('active');
+      $('view-2d').classList.remove('active');
+      $('view-3d').setAttribute('aria-pressed', 'true');
+      $('view-2d').setAttribute('aria-pressed', 'false');
+      layersVisible();
+      map.easeTo({ pitch: 45, duration: 400 });
+    }
+    map.dragPan.disable();
+    if (btn) {
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+    }
+    if (container) container.style.cursor = 'grab';
+    if (hintText) hintText.innerHTML = '🔄 <strong>自由旋转已开启</strong>：按住<strong>鼠标左键</strong>拖动即可 360° 旋转与俯仰';
+    if (hint) hint.hidden = false;
+    $('status').textContent = '已开启自由旋转模式，直接按住鼠标左键即可 360° 旋转与俯仰';
+  } else {
+    map.dragPan.enable();
+    if (btn) {
+      btn.classList.remove('active');
+      btn.setAttribute('aria-pressed', 'false');
+    }
+    if (container) container.style.cursor = '';
+    if (hintText) hintText.innerHTML = '🔄 开启<strong>自由旋转</strong>或<strong>滚轮拖动</strong> 360°俯仰';
+    $('status').textContent = '已退出自由旋转模式';
+  }
+}
 function view(threeD) {
   videoMapContext?.clear();
   endLandmarkFocus();
   streets?.cancelFocus();
   food?.cancelFocus();
   walk?.cancelFocus();
+  toggleOrbitMode(false);
   state.threeD=threeD;
   $('view-3d').classList.toggle('active',threeD);$('view-2d').classList.toggle('active',!threeD);
   $('view-3d').setAttribute('aria-pressed',String(threeD));$('view-2d').setAttribute('aria-pressed',String(!threeD));
@@ -163,12 +202,14 @@ function search() {
 function wire() {
   $('view-3d').addEventListener('click',()=>view(true));
   $('view-2d').addEventListener('click',()=>view(false));
+  $('view-orbit')?.addEventListener('click',()=>toggleOrbitMode());
   $('reset-view').addEventListener('click',()=>{
     videoMapContext?.clear();
     endLandmarkFocus();
     streets?.cancelFocus();
     food?.cancelFocus();
     walk?.hide();
+    toggleOrbitMode(false);
     clearRoad();map.easeTo({center:city.center,zoom:city.zoom,pitch:state.threeD?city.pitch:0,bearing:state.threeD?city.bearing:0,duration:duration()});
   });
   $('labels-option').addEventListener('change',e=>{state.labels=e.target.checked;layersVisible();});
@@ -194,8 +235,9 @@ function wire() {
   $('clear-search').addEventListener('click',()=>{$('search-input').value='';search();$('search-input').focus({preventScroll:true});});
   $('road-search').addEventListener('submit',e=>{e.preventDefault();const first=matchingRoads($('search-input').value)[0];if(first)selectRoad(first);else search();});
   document.addEventListener('pointerdown',e=>{if(!$('road-search').contains(e.target))$('search-results').hidden=true;});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLayers();$('search-results').hidden=true;}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLayers();$('search-results').hidden=true;if(state.orbitMode)toggleOrbitMode(false);}});
   map.on('click',event=>{
+    if(orbitMoved)return;
     closeLayers();
     if(walk?.inspect(event.point))return;
     if(streets?.inspect(event.point))return;
@@ -215,13 +257,22 @@ function enableSpatialControls(map) {
   // Prevent default context menu so right-click 3D orbit drag works smoothly
   container.addEventListener('contextmenu', e => e.preventDefault());
 
-  // Middle-click (wheel button) drag rotation and pitch
+  let isOrbitDragging = false;
   let isMiddleDragging = false;
   let startX = 0, startY = 0;
   let startBearing = 0, startPitch = 0;
 
-  container.addEventListener('mousedown', e => {
-    if (e.button === 1) {
+  container.addEventListener('pointerdown', e => {
+    if (e.button === 0 && state.orbitMode) {
+      isOrbitDragging = true;
+      orbitMoved = false;
+      startX = e.clientX;
+      startY = e.clientY;
+      startBearing = map.getBearing();
+      startPitch = map.getPitch();
+      container.style.cursor = 'grabbing';
+      try { container.setPointerCapture(e.pointerId); } catch (_) {}
+    } else if (e.button === 1) {
       e.preventDefault();
       isMiddleDragging = true;
       startX = e.clientX;
@@ -229,24 +280,41 @@ function enableSpatialControls(map) {
       startBearing = map.getBearing();
       startPitch = map.getPitch();
       container.style.cursor = 'grabbing';
+      try { container.setPointerCapture(e.pointerId); } catch (_) {}
     }
   });
 
-  window.addEventListener('mousemove', e => {
-    if (!isMiddleDragging) return;
+  window.addEventListener('pointermove', e => {
+    if (!isOrbitDragging && !isMiddleDragging) return;
     const dx = e.clientX - startX;
     const dy = e.clientY - startY;
-    const bearing = startBearing + dx * 0.4;
-    const pitch = Math.max(0, Math.min(85, startPitch - dy * 0.4));
+    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+      orbitMoved = true;
+    }
+    const bearing = startBearing + dx * 0.45;
+    const pitch = Math.max(0, Math.min(85, startPitch - dy * 0.45));
     map.setBearing(bearing);
     map.setPitch(pitch);
   });
 
-  window.addEventListener('mouseup', e => {
+  window.addEventListener('pointerup', e => {
+    if (isOrbitDragging && e.button === 0) {
+      isOrbitDragging = false;
+      if (state.orbitMode) container.style.cursor = 'grab';
+      setTimeout(() => { orbitMoved = false; }, 80);
+    }
     if (isMiddleDragging && e.button === 1) {
       isMiddleDragging = false;
-      container.style.cursor = '';
+      container.style.cursor = state.orbitMode ? 'grab' : '';
+      setTimeout(() => { orbitMoved = false; }, 80);
     }
+  });
+
+  window.addEventListener('pointercancel', () => {
+    isOrbitDragging = false;
+    isMiddleDragging = false;
+    container.style.cursor = state.orbitMode ? 'grab' : '';
+    setTimeout(() => { orbitMoved = false; }, 80);
   });
 
   // Keyboard spatial street navigation (WASD, Q/E, R/F, Arrows)
@@ -565,6 +633,8 @@ async function init() {
   window.foodCityMap={
     map,city,manifest,audit,
     get ready(){return state.ready;},
+    get orbitMode(){return state.orbitMode;},
+    toggleOrbitMode,
     get street(){return streets;},
     get food(){return food;},
     get walk(){return walk;},
