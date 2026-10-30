@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "preparedOn": "2026-10-30",
+  "coordinateSystem": "WGS84",
+  "source": {
+    "url": "https://download.geofabrik.de/asia/china/chongqing.html",
+    "date": "2026-10-25",
+    "sha256": "ea1bd60ca0a71231f6ec62bb5ff270594e56559c88d483e25c7e60bcc6fd20ba",
+    "license": "ODbL 1.0",
+    "attribution": "© OpenStreetMap contributors"
+  },
+  "note": "Approximate neighborhood reference nodes, not verified stalls.",
+  "anchors": [
+    {
+      "type": "node",
+      "id": 13013024531,
+      "name": "融景城‧景城胃肠医院",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "融景城‧景城胃肠医院",
+        "name:zh": "融景城‧景城胃肠医院",
+        "public_transport": "platform"
+      },
+      "coordinates": [
+        106.5486933,
+        29.577929
+      ]
+    },
+    {
+      "type": "node",
+      "id": 10743557892,
+      "name": "大礼堂",
+      "tags": {
+        "name": "大礼堂",
+        "name:en": "Chongqing People’s Auditorium",
+        "name:zh": "大礼堂",
+        "network": "重庆轨道交通",
+        "network:en": "Chongqing Rail Transit",
+        "network:short": "CRT",
+        "network:wikidata": "Q1190894",
+        "network:zh": "重庆轨道交通",
+        "operator": "重庆轨道交通运营",
+        "operator:wikidata": "Q136485962",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "10/07",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q116258903"
+      },
+      "coordinates": [
+        106.5522592,
+        29.56436
+      ]
+    },
+    {
+      "type": "node",
+      "id": 14312937597,
+      "name": "欣阳广场",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "欣阳广场",
+        "name:zh": "欣阳广场",
+        "public_transport": "platform"
+      },
+      "coordinates": [
+        106.4585287,
+        29.5662812
+      ]
+    },
+    {
+      "type": "node",
+      "id": 1856531417,
+      "name": "狮子坪",
+      "tags": {
+        "monorail": "yes",
+        "name": "狮子坪",
+        "name:en": "Shiziping",
+        "name:zh": "狮子坪",
+        "name:zh-Latn-pinyin": "Shīzǐpíng",
+        "network": "重庆轨道交通",
+        "network:en": "Chongqing Rail Transit",
+        "network:short": "CRT",
+        "network:wikidata": "Q1190894",
+        "network:zh": "重庆轨道交通",
+        "operator": "重庆轨道交通运营",
+        "operator:wikidata": "Q136485962",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "monorail",
+        "wikidata": "Q16259587"
+      },
+      "coordinates": [
+        106.5454051,
+        29.6040944
+      ]
+    },
+    {
+      "type": "node",
+      "id": 11193836266,
+      "name": "万寿路",
+      "tags": {
+        "name": "万寿路",
+        "name:en": "Wanshou Road",
+        "name:zh": "万寿路",
+        "network": "重庆轨道交通",
+        "network:en": "Chongqing Rail Transit",
+        "network:short": "CRT",
+        "network:wikidata": "Q1190894",
+        "network:zh": "重庆轨道交通",
+        "operator": "重庆轨道交通运营",
+        "operator:wikidata": "Q136485962",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q123582361"
+      },
+      "coordinates": [
+        106.5584256,
+        29.5260929
+      ]
+    },
+    {
+      "type": "node",
+      "id": 14020631199,
+      "name": "国际社区",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "国际社区",
+        "name:zh": "国际社区",
+        "public_transport": "platform"
+      },
+      "coordinates": [
+        106.5929987,
+        29.5988813
+      ]
+    },
+    {
+      "type": "node",
+      "id": 2154566014,
+      "name": "花卉园",
+      "tags": {
+        "name": "花卉园",
+        "name:en": "Huahuiyuan",
+        "name:zh": "花卉园",
+        "name:zh-Latn-pinyin": "Huāhuìyuán",
+        "network": "重庆轨道交通",
+        "network:en": "Chongqing Rail Transit",
+        "network:short": "CRT",
+        "network:wikidata": "Q1190894",
+        "network:zh": "重庆轨道交通",
+        "operator": "重庆轨道交通运营",
+        "operator:wikidata": "Q136485962",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "613",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q16259150",
+        "wikipedia": "zh:花卉园站"
+      },
+      "coordinates": [
+        106.5091675,
+        29.5859303
+      ]
+    },
+    {
+      "type": "node",
+      "id": 1684513179,
+      "name": "沙中路",
+      "tags": {
+        "bus": "yes",
+        "name": "沙中路",
+        "name:zh": "沙中路",
+        "public_transport": "stop_position"
+      },
+      "coordinates": [
+        106.4606588,
+        29.5644209
+      ]
+    },
+    {
+      "type": "node",
+      "id": 2154566028,
+      "name": "黄泥塝",
+      "tags": {
+        "name": "黄泥塝",
+        "name:en": "Huangnibang",
+        "name:zh": "黄泥塝",
+        "name:zh-Latn-pinyin": "Huángníbàng",
+        "network": "重庆轨道交通",
+        "network:en": "Chongqing Rail Transit",
+        "network:short": "CRT",
+        "network:wikidata": "Q1190894",
+        "network:zh": "重庆轨道交通",
+        "operator": "重庆轨道交通运营",
+        "operator:wikidata": "Q136485962",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "subway": "yes",
+        "wikidata": "Q16259252"
+      },
+      "coordinates": [
+        106.5342538,
+        29.5912927
+      ]
+    },
+    {
+      "type": "node",
+      "id": 6586946648,
+      "name": "红旗河沟",
+      "tags": {
+        "monorail": "yes",
+        "name": "红旗河沟",
+        "name:en": "Hongqihegou",
+        "name:zh": "红旗河沟",
+        "name:zh-Latn-pinyin": "Hóngqíhégōu",
+        "network": "重庆轨道交通",
+        "network:en": "Chongqing Rail Transit",
+        "network:short": "CRT",
+        "network:wikidata": "Q1190894",
+        "network:zh": "重庆轨道交通",
+        "operator": "重庆轨道交通运营",
+        "operator:wikidata": "Q136485962",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway;monorail",
+        "subway": "yes",
+        "wikidata": "Q11315074"
+      },
+      "coordinates": [
+        106.5224772,
+        29.5880216
+      ]
+    },
+    {
+      "type": "node",
+      "id": 14024458731,
+      "name": "武陵路",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "武陵路",
+        "name:zh": "武陵路",
+        "public_transport": "platform"
+      },
+      "coordinates": [
+        106.5167963,
+        29.5890978
+      ]
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # 两台电脑共用地图与视频素材
 
+**2026-10-30第四批：** 对应代码 `codex/chongqing-video-batch4`，新增4个来源、24段视频；四个素材包及校验摘要已上传并核对远端哈希，下载入口为 [第四批素材 Release](https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch4)，以页面实际发布状态为准。已有前3批14包的电脑只需追加本批4包，取得对应代码后继续使用 `media:import` 命令。下文旧日期数字是当时记录。
+
 **2026-10-30：第三批代码在 `codex/chongqing-video-batch3`，尚未合入 `main`。** 当前该分支包含14份已取得原片、15个来源记录、93个片段与93张原片封面；64个有坐标片段归并为60个地图点，29段未定位。地图只整理用户提供的链接，位置允许按有依据的街区大致放置；朱儿面庄共3位博主、一口汤饺共2位博主，蔡记未强行归并，PP的2025年原片年份保留。
 
 第三批4个来源包共约2.0 GB，均已上传并通过远端SHA256校验；下载入口为 [第三批视频素材 Release](https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch3)，具体附件与发布状态以该页面为准。精确包名、大小和哈希记录在 `map-base/data/media-bundles.json`。

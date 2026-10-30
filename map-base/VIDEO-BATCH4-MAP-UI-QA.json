@@ -1,0 +1,185 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "Isolated Chromium, new map points, popup playback and viewport geometry; approximate positions not verified as storefronts.",
+  "checks": [
+    {
+      "name": "79 distinct located map records",
+      "passed": true,
+      "detail": {
+        "records": 79,
+        "cards": 79,
+        "saved": 0
+      }
+    },
+    {
+      "name": "same-area stalls are independently clickable without changing coordinates",
+      "passed": true,
+      "detail": [
+        {
+          "id": "video-cq-suisui-7640793670463833265-guobaorou",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "left": 592,
+          "right": 640,
+          "clickable": true
+        },
+        {
+          "id": "video-cq-suisui-7640793670463833265-dayoubian",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "left": 644,
+          "right": 692,
+          "clickable": true
+        },
+        {
+          "id": "video-cq-suisui-7640793670463833265-zhurouchuan",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "left": 696,
+          "right": 744,
+          "clickable": true
+        },
+        {
+          "id": "video-cq-suisui-7640793670463833265-xiangjiaofeibing",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "left": 748,
+          "right": 796,
+          "clickable": true
+        },
+        {
+          "id": "video-cq-suisui-7640793670463833265-luchuanchuan",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "left": 800,
+          "right": 848,
+          "clickable": true
+        }
+      ]
+    },
+    {
+      "name": "popup layout 1440x960",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "top": 545,
+          "bottom": 888.5,
+          "left": 782,
+          "right": 1092,
+          "height": 343.5
+        },
+        "media": {
+          "top": 552,
+          "bottom": 802,
+          "left": 789,
+          "right": 1085,
+          "height": 250
+        },
+        "width": 1440,
+        "height": 960,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "popup close stops audio 1440",
+      "passed": true
+    },
+    {
+      "name": "popup layout 390x844",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "top": 108,
+          "bottom": 470,
+          "left": 12,
+          "right": 272,
+          "height": 362
+        },
+        "media": {
+          "top": 115,
+          "bottom": 365,
+          "left": 19,
+          "right": 265,
+          "height": 250
+        },
+        "width": 390,
+        "height": 844,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "popup close stops audio 390",
+      "passed": true
+    },
+    {
+      "name": "popup layout 320x680",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "top": 76,
+          "bottom": 438,
+          "left": 12,
+          "right": 272,
+          "height": 362
+        },
+        "media": {
+          "top": 83,
+          "bottom": 333,
+          "left": 19,
+          "right": 265,
+          "height": 250
+        },
+        "width": 320,
+        "height": 680,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "popup close stops audio 320",
+      "passed": true
+    },
+    {
+      "name": "popup layout 736x414",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "top": 100,
+          "bottom": 401.5,
+          "left": 300,
+          "right": 610,
+          "height": 301.5
+        },
+        "media": {
+          "top": 107,
+          "bottom": 315,
+          "left": 307,
+          "right": 603,
+          "height": 208
+        },
+        "width": 736,
+        "height": 414,
+        "scroll": 736
+      }
+    },
+    {
+      "name": "popup close stops audio 736",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "../output/playwright/video-batch4-coincident-points.png",
+    "../output/playwright/video-batch4-popup-1440.png",
+    "../output/playwright/video-batch4-popup-390.png"
+  ],
+  "passed": true
+}

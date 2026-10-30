@@ -1,0 +1,40 @@
+{
+  "executedOn": "2026-10-30",
+  "passed": true,
+  "checks": [
+    {
+      "name": "4 distinct works, duplicate ignored, authorization retained",
+      "passed": true
+    },
+    {
+      "name": "Existing sources and 93 clips remain unchanged",
+      "passed": true
+    },
+    {
+      "name": "Video count and unlocated content",
+      "passed": true
+    },
+    {
+      "name": "Approximate nodes agree with original OpenStreetMap records",
+      "passed": true
+    },
+    {
+      "name": "2025 footage keeps year and current-status qualifier",
+      "passed": true
+    },
+    {
+      "name": "No name-only merge across different stalls",
+      "passed": true
+    },
+    {
+      "name": "Every new segment has matching encoded media and poster record",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "sources": 4,
+    "segments": 24,
+    "located": 19,
+    "unlocated": 5
+  }
+}
