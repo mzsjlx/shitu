@@ -5,7 +5,7 @@
   "rights": {
     "status": "user-confirmed",
     "confirmedOn": "2026-10-29",
-    "scope": "此前视频与2026-10-30新增4条均由用户分别确认已获作者允许剪辑并用于网站；每个来源保留自己的确认日期。",
+    "scope": "此前批次及2026-10-30新增作品均由用户分别确认已获作者允许剪辑并用于网站；每个来源保留自己的确认日期。",
     "evidence": "本项目会话中的用户确认；未独立审查授权文件。"
   },
   "sources": [
@@ -3850,6 +3850,251 @@
               "method": "point"
             }
           },
+          "footageNote": "2025年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-mei-7529179722208546106",
+      "author": "莓有吃饱",
+      "title": "50元在重庆路边摊能吃这么多",
+      "url": "https://www.douyin.com/video/7529179722208546106",
+      "shareURL": "https://v.douyin.com/Epji3vN1tzM/",
+      "publishedOn": "2025-07-20",
+      "durationSeconds": 53.366,
+      "sourceSHA256": "21adcd936634df108e5229b94b61a1e9c38875d5833da8f0fd05209a466980f5",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "按原片画面和字幕识别与分段；流动摊位和当下营业情况待核实。",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-30",
+        "scope": "用户确认本批3个作品已获作者允许剪辑并用于网站。"
+      },
+      "segments": [
+        {
+          "id": "cq-mei-7529179722208546106-nuomifan",
+          "name": "红苕糯米饭",
+          "category": "糯米饭",
+          "addressText": "重庆；具体位置待核",
+          "start": 3.6,
+          "end": 11.233,
+          "posterSecond": 6,
+          "summary": "红苕糯米饭的原片片段；街边摊可能流动，营业情况待核。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 3.6–11.233 秒；原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "addressNote": "原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-mei-7529179722208546106-malachuan",
+          "name": "小学附近麻辣串",
+          "category": "麻辣串",
+          "addressText": "重庆；具体位置待核",
+          "start": 11.233,
+          "end": 20.433,
+          "posterSecond": 15,
+          "summary": "小学附近麻辣串的原片片段；街边摊可能流动，营业情况待核。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 11.233–20.433 秒；原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "addressNote": "原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-mei-7529179722208546106-hefan",
+          "name": "朝天门盒饭",
+          "category": "盒饭",
+          "addressText": "朝天门附近",
+          "start": 20.433,
+          "end": 32.267,
+          "posterSecond": 27,
+          "summary": "朝天门盒饭的原片片段；街边摊可能流动，营业情况待核。",
+          "coordinates": [
+            106.5824925,
+            29.5672922
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 20.433–32.267 秒；原片字幕称朝天门盒饭；按开放地图朝天门站表示大致街区，摊位位置未核。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "朝天门附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片字幕称朝天门盒饭；按开放地图朝天门站表示大致街区，摊位位置未核。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 6898635501,
+              "name": "朝天门",
+              "url": "https://www.openstreetmap.org/node/6898635501",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          },
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-mei-7529179722208546106-liangmian",
+          "name": "路边凉面",
+          "category": "凉面",
+          "addressText": "重庆；具体位置待核",
+          "start": 32.267,
+          "end": 38.767,
+          "posterSecond": 35,
+          "summary": "路边凉面的原片片段；街边摊可能流动，营业情况待核。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 32.267–38.767 秒；原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "addressNote": "原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-mei-7529179722208546106-ciba",
+          "name": "包心糍粑",
+          "category": "糍粑",
+          "addressText": "重庆；具体位置待核",
+          "start": 38.767,
+          "end": 42.4,
+          "posterSecond": 40,
+          "summary": "包心糍粑的原片片段；街边摊可能流动，营业情况待核。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 38.767–42.4 秒；原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "addressNote": "原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-mei-7529179722208546106-yangyu",
+          "name": "牛角沱锅巴洋芋",
+          "category": "锅巴洋芋",
+          "addressText": "牛角沱附近",
+          "start": 42.4,
+          "end": 46.367,
+          "posterSecond": 44,
+          "summary": "牛角沱锅巴洋芋的原片片段；街边摊可能流动，营业情况待核。",
+          "coordinates": [
+            106.5388502,
+            29.5634801
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 42.4–46.367 秒；原片字幕称在牛角沱；按开放地图牛角沱站表示大致街区，摊位位置未核。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "牛角沱附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片字幕称在牛角沱；按开放地图牛角沱站表示大致街区，摊位位置未核。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 6475285730,
+              "name": "牛角沱",
+              "url": "https://www.openstreetmap.org/node/6475285730",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          },
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-mei-7529179722208546106-kuanfen",
+          "name": "路边冒宽粉",
+          "category": "冒宽粉",
+          "addressText": "重庆；具体位置待核",
+          "start": 46.367,
+          "end": 53.2,
+          "posterSecond": 50,
+          "summary": "路边冒宽粉的原片片段；街边摊可能流动，营业情况待核。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 46.367–53.2 秒；原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "addressNote": "原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-wenzi-7642999598881033417",
+      "author": "富婆雯仔（100道路边摊）",
+      "title": "重庆街头土豆泥麻辣串",
+      "url": "https://www.douyin.com/video/7642999598881033417",
+      "shareURL": "https://v.douyin.com/sC6Vf3VLbpw/",
+      "publishedOn": "2026-05-23",
+      "durationSeconds": 63.166,
+      "sourceSHA256": "09ab8a768de22d3686b1ef1481232a69bc61757834ad316f13ed0e54d832fa39",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "按原片画面和字幕识别与分段；流动摊位和当下营业情况待核实。",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-30",
+        "scope": "用户确认本批3个作品已获作者允许剪辑并用于网站。"
+      },
+      "segments": [
+        {
+          "id": "cq-wenzi-7642999598881033417-malachuan",
+          "name": "土豆泥麻辣串",
+          "category": "麻辣串",
+          "addressText": "重庆；具体位置待核",
+          "start": 0,
+          "end": 63,
+          "posterSecond": 43,
+          "summary": "土豆泥麻辣串的原片片段；街边摊可能流动，营业情况待核。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 0–63 秒；原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "addressNote": "原片没有足够可靠的街区位置线索；暂不放置地图点。"
+        }
+      ]
+    },
+    {
+      "id": "cq-xianxian-7563133332981484858",
+      "author": "🌶️麻辣河仙仙",
+      "title": "重庆街边10元盒饭，21个菜随便吃",
+      "url": "https://www.douyin.com/video/7563133332981484858",
+      "shareURL": "https://v.douyin.com/sn61fP4JdSY/",
+      "publishedOn": "2025-10-20",
+      "durationSeconds": 69.2,
+      "sourceSHA256": "767174e5a64ccac46258971d965d6c0e863011dc3eab9f14ebd01519a050ca45",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "按原片画面和字幕识别与分段；流动摊位和当下营业情况待核实。",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-30",
+        "scope": "用户确认本批3个作品已获作者允许剪辑并用于网站。"
+      },
+      "segments": [
+        {
+          "id": "cq-xianxian-7563133332981484858-hefan",
+          "name": "街边自助盒饭",
+          "category": "盒饭",
+          "addressText": "重庆；具体位置待核",
+          "start": 0,
+          "end": 69,
+          "posterSecond": 25,
+          "summary": "街边自助盒饭的原片片段；街边摊可能流动，营业情况待核。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 0–69 秒；原片没有足够可靠的街区位置线索；暂不放置地图点。",
+          "addressNote": "原片没有足够可靠的街区位置线索；暂不放置地图点。",
           "footageNote": "2025年视频 · 营业情况待确认"
         }
       ]

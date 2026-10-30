@@ -1,0 +1,128 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "Isolated Chromium, map points and popup playback at desktop and simulated mobile sizes; no claim of precise storefront location.",
+  "checks": [
+    {
+      "name": "81 distinct located map records",
+      "passed": true,
+      "detail": {
+        "records": 81,
+        "cards": 81,
+        "saved": 0
+      }
+    },
+    {
+      "name": "popup layout 1440x960",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "top": 332.90625,
+          "bottom": 676.40625,
+          "left": 827,
+          "right": 1137,
+          "height": 343.5
+        },
+        "media": {
+          "top": 339.90625,
+          "bottom": 589.90625,
+          "left": 834,
+          "right": 1130,
+          "height": 250
+        },
+        "width": 1440,
+        "height": 960,
+        "scroll": 1440
+      }
+    },
+    {
+      "name": "popup close stops audio 1440",
+      "passed": true
+    },
+    {
+      "name": "popup layout 390x844",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "top": 470,
+          "bottom": 832,
+          "left": 118,
+          "right": 378,
+          "height": 362
+        },
+        "media": {
+          "top": 477,
+          "bottom": 727,
+          "left": 125,
+          "right": 371,
+          "height": 250
+        },
+        "width": 390,
+        "height": 844,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "popup close stops audio 390",
+      "passed": true
+    },
+    {
+      "name": "popup layout 320x680",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "top": 76,
+          "bottom": 438,
+          "left": 12,
+          "right": 272,
+          "height": 362
+        },
+        "media": {
+          "top": 83,
+          "bottom": 333,
+          "left": 19,
+          "right": 265,
+          "height": 250
+        },
+        "width": 320,
+        "height": 680,
+        "scroll": 320
+      }
+    },
+    {
+      "name": "popup close stops audio 320",
+      "passed": true
+    },
+    {
+      "name": "popup layout 736x414",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "top": 72,
+          "bottom": 402,
+          "left": 404,
+          "right": 714,
+          "height": 330
+        },
+        "media": {
+          "top": 79,
+          "bottom": 299,
+          "left": 411,
+          "right": 707,
+          "height": 220
+        },
+        "width": 736,
+        "height": 414,
+        "scroll": 736
+      }
+    },
+    {
+      "name": "popup close stops audio 736",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "D:/codex/美食网站/output/playwright/video-batch5-popup-1440.png",
+    "D:/codex/美食网站/output/playwright/video-batch5-popup-390.png"
+  ],
+  "passed": true
+}
