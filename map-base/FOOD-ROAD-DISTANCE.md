@@ -1,5 +1,7 @@
 # 美食卡片的直线与沿路距离
 
+**2026-10-30第三批状态：** 下文扩展后的北碚范围属于 `codex/chongqing-video-batch3`，尚未合入 `main`。取得该分支并构建后可用，代码与素材的同步状态见 [MEDIA-COLLABORATION.md](../MEDIA-COLLABORATION.md)。道路JSON随代码分发，不依赖视频包是否导入。
+
 在 `/?view=food` 中加入至少两家「想去」，底部显示「直线 / 沿路」。切换同时更新地图连线、每段标签及总距离；多家按清单顺序连接，调整顺序后重算。模式保存在独立浏览器键 `foodcity:distance-mode:chongqing:v1`，不会改写原清单。
 
 - **直线**：两处规划点之间的球面距离，橙色虚线。
@@ -10,13 +12,13 @@
 
 ## 数据与构建
 
-`data/food-road-network.json` 来自已保存的 Geofabrik 重庆 OSM 提取，源日期 **2026-10-25**。范围 `[106.43,29.48,106.65,29.65]`，保留 131,412 个原始节点、22,252 条 highway way；规划图有 126,384 个可用源线段。当前 31 个店点到最近可用道路的偏移均小于 66 米。
+`data/food-road-network.json` 来自已保存的 Geofabrik 重庆 OSM 提取，源日期 **2026-10-25**。2026-10-30输出范围为 `[106.36,29.48,106.65,29.87]`，扩到北碚，保留236,091个原始节点、36,131条highway way；规划图有223,898个可用源线段。当前60个地图店点到最近可用道路的最大偏移约84.4米，仍低于250米上限。这是街区点到源道路的连接距离，不是已核实的店门位置。
 
 源 PBF SHA256 为 `ea1bd60ca0a71231f6ec62bb5ff270594e56559c88d483e25c7e60bcc6fd20ba`；输出大小、SHA256 与范围见 `data/food-road-network-manifest.json`。只按连续原始节点 ID 连接，缺节点就断开，几何交叉不创造路口。没有请求、转换或保存商业地图坐标。
 
 来源：[Geofabrik 重庆下载页](https://download.geofabrik.de/asia/china/chongqing.html)，© OpenStreetMap contributors，按 [ODbL 1.0](https://www.openstreetmap.org/copyright) 提供该派生道路数据库。原始 PBF 放在本机忽略目录；生成的道路 JSON 随代码分发，朋友无需额外下载或注册地图账户。
 
-普通 HTTP 页首次切到沿路模式才读取约 8.7 MB 道路 JSON，在独立 Worker 建图、计算并复用。取消、切模式、换店会使旧任务失效。单文件 `preview.html` 内嵌相同网络和 Worker，构建后约 28.4 MB；推荐本地 HTTP 预览。更换城市时应按城市范围准备独立提取，不将全国路网一次发送给浏览器。
+普通HTTP页首次切到沿路模式才读取15,259,633字节（约15.26 MB）的道路JSON，在独立Worker建图、计算并复用。取消、切模式、换店会使旧任务失效。单文件 `preview.html` 内嵌相同网络和Worker，体积以本次构建输出为准；推荐本地HTTP预览。更换城市时应按城市范围准备独立提取，不将全国路网一次发送给浏览器。
 
 维护数据时需要 Python 3、`osmium` 和已核对的 PBF；普通协作者只需常规构建，无需重跑 Python：
 
@@ -29,7 +31,16 @@ npm.cmd run build
 
 Python 路径按自己电脑调整，`--pbf` 指定原始提取路径。替换快照时还应核对、显式指定新日期和 SHA256，保留来源清单。
 
-## 验证
+## 2026-10-30验证与范围
+
+- [FOOD-ROAD-BATCH3-DATA-QA.json](FOOD-ROAD-BATCH3-DATA-QA.json)：21项通过，覆盖扩展后的图、原始节点拓扑、道路规则、店点吸附及源边长度等检查。
+- [FOOD-ROAD-SOURCE-BATCH3-QA.json](FOOD-ROAD-SOURCE-BATCH3-QA.json)：扩展道路数据与冻结原始PBF的独立核对；具体节点、way数量及执行范围见报告。
+- [VIDEO-BATCH3-BEIBEI-UI-QA.json](VIDEO-BATCH3-BEIBEI-UI-QA.json)：6项北碚界面检查通过；视频地图层9项、实际播放交互378项见对应第三批报告。手机为隔离浏览器模拟。
+- 地点参照另核对19个源对象、225个原节点，见 [VIDEO-BATCH3-ANCHOR-SOURCE-QA.json](VIDEO-BATCH3-ANCHOR-SOURCE-QA.json)。这项地点参照检查与整份道路网络验证分别记录。
+
+沿路界面回归与完整验证结论以 [VERIFICATION.md](VERIFICATION.md) 最新章节为准；下列2026-10-28记录保留历史样本，不将其数字冒充本轮执行。
+
+## 2026-10-28验证（历史）
 
 - `FOOD-ROAD-SOURCE-QA.json`：独立读取冻结原始 PBF，全部 131,412 个节点、22,252 条 way 的 ID、坐标、节点顺序与保留标签相符。
 - `FOOD-ROAD-DATA-QA.json`：21 项，包含 U 形绕路、投影端点、步行单向、原节点连接/缺口、桥隧、通行限制、31 个点吸附距离，以及 6 对实际路线的源边邻接与独立距离求和。

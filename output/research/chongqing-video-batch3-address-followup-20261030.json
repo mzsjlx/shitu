@@ -1,0 +1,494 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-30",
+  "sourceVideoPublishedOn": "2025-12-13",
+  "scope": "有界补充PP已确认北碚店的街道/地址依据。2轮、8次聚焦web查询后停止，不下载新视频、不复制商业坐标、不修改原切点/封面或正式目录。",
+  "searchRounds": [
+    [
+      "重庆 北碚 曙光食店 地址",
+      "重庆 北碚 拿碗刨饭 地址",
+      "重庆 北碚 鱼庆年 酸汤乌鱼馆 曾彬自贡兔 地址",
+      "重庆 北碚 记东串串 典匠世家 耙牛肉 地址"
+    ],
+    [
+      "重庆 北碚 李抄手 总店 地址",
+      "\"拿碗刨饭\" 北碚",
+      "重庆 北碚 记东串串 总店 地址",
+      "重庆 北碚 曾彬 自贡兔 双元大道"
+    ]
+  ],
+  "sources": [
+    {
+      "id": "official-dianjiang-2024",
+      "url": "https://whlyw.cq.gov.cn/zwxx_221/bmdt/tzgg/202409/P020240905415808843475.pdf",
+      "title": "关于重庆美食“渝味360碗”2024年体验店、示范店、旗舰店、美食街区认定结果的公告",
+      "host": "重庆市文化和旅游发展委员会网站",
+      "issuer": "重庆美食文化发展研究会、重庆市文化和旅游协会",
+      "documentDate": "2024-09-04",
+      "readOn": "2026-10-30",
+      "status": "downloaded-and-rendered-read",
+      "method": "网页读取超时后使用普通HTTPS下载；PDF为19页扫描，pypdf未读到文本，以PyMuPDF渲染并查看第5页第39行。",
+      "relevantText": "典匠世家耙牛肉；重庆市北碚区双柏支路43号。",
+      "page": 5,
+      "row": 39,
+      "localPDF": "map-base/.local/batch3-review/pp-address-sources/cq-culture-food-202409.pdf",
+      "sha256": "1019d8bf6ac35d8a1575bf82e6347031b25b0a61e9382405004395629b4ab86b",
+      "render": "map-base/.local/batch3-review/pp-address-sources/official-page5.png",
+      "limit": "2024体验店名单不是2026实时营业核实，亦不单独证明视频确为该分店。"
+    },
+    {
+      "id": "trip-dianjiang",
+      "url": "https://tw.trip.com/restaurant/china/chongqing/detail/shijiaba-beef-11587853/",
+      "title": "典匠世家耙牛肉（北碚总店）",
+      "readOn": "2026-10-30",
+      "status": "read-body",
+      "type": "secondary-restaurant-directory",
+      "relevantText": "双柏支路43号，雨台花园后门斜对面。",
+      "limit": "候选地址交叉，未采用网页营业时间、价格或商业坐标。"
+    },
+    {
+      "id": "trip-qingyunian",
+      "url": "https://hk.trip.com/restaurant/china/chongqing/detail/restaurant-127701053/",
+      "title": "庆鱼年酸汤乌鱼馆（城南北晨丽景店）",
+      "readOn": "2026-10-30",
+      "status": "read-body",
+      "type": "secondary-restaurant-directory",
+      "relevantText": "北温泉街道城南双元大道214号。",
+      "identityLimit": "原片字幕为鱼庆年，目录为庆鱼年；字序不同作为候选别名保留。页面评论提到鱼锅外圈烤肉，与原片同店烤肉内容吻合，但未独立核实视频分店门头。"
+    },
+    {
+      "id": "shuguang-2025",
+      "url": "https://www.sohu.com/a/891586636_121106884",
+      "title": "五一美食打卡！北碚这7家神级餐馆，本地人排队也要吃！",
+      "publishedOn": "2025-05-03",
+      "readOn": "2026-10-30",
+      "publisher": "川渝本地消息",
+      "status": "read-body",
+      "type": "secondary-local-article",
+      "relevantText": "曙光食店：重庆市北碚区金华路313号附41号。",
+      "limit": "作者身份未确认为政府/商家；页面小布措辞不作为官方身份依据。"
+    },
+    {
+      "id": "shuguang-old-snippet",
+      "url": "https://www.sohu.com/a/134625577_349099",
+      "title": "榜单丨坐不住了，原来北碚有这么多好吃不贵的美食",
+      "publishedYear": 2017,
+      "readOn": "2026-10-30",
+      "status": "search-snippet-only",
+      "relevantText": "曙光食店：北泉路与金刚碑路交口、莱特酒店大门斜对面。",
+      "limit": "旧年份且本次未打开正文，仅保留可能迁址/同名差异，不用它覆写2025候选。"
+    },
+    {
+      "id": "jidong-directory-snippet",
+      "url": "https://poi.mapbar.com/chongqing/MAPIFPSRXNJESRHBJETOC",
+      "title": "记东串串香",
+      "readOn": "2026-10-30",
+      "status": "search-snippet-only-body-403",
+      "relevantText": "北碚区双柏路142号。",
+      "limit": "正文403，不能称已核读；另2019旧稿搜索摘要为双柏路144号，仅支持双柏路片区，不定精确门牌。"
+    },
+    {
+      "id": "jidong-old-snippet",
+      "url": "https://ishare.ifeng.com/c/s/7o7Lt4ShaA5",
+      "title": "重庆最吃皮的33家串串香，少吃一家都不得行！",
+      "publishedYear": 2019,
+      "readOn": "2026-10-30",
+      "status": "search-snippet-only-body-timeout",
+      "relevantText": "记东串串香：北碚区双柏路144号。",
+      "limit": "旧文且正文读取超时；不作为当前门牌确认。"
+    }
+  ],
+  "records": [
+    {
+      "segmentId": "cq-pp-7583215165723266354-shuguang",
+      "name": "曙光食店",
+      "result": "street-candidate-found",
+      "candidateAddress": "重庆市北碚区金华路313号附41号",
+      "candidateStreet": "金华路",
+      "basis": [
+        "原片799秒门头/字幕曙光食店",
+        "2025年5月3日文章实际正文的同名北碚候选地址"
+      ],
+      "sourceIds": [
+        "shuguang-2025",
+        "shuguang-old-snippet"
+      ],
+      "branchStatus": "candidate-unconfirmed",
+      "osmAnchorCandidates": [
+        {
+          "kind": "osm-way",
+          "id": 238750777,
+          "name": "金华路",
+          "url": "https://www.openstreetmap.org/way/238750777",
+          "coordinates": [
+            106.39645076666667,
+            29.81686958095239
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 404107008,
+          "name": "金华路",
+          "url": "https://www.openstreetmap.org/way/404107008",
+          "coordinates": [
+            106.41770937407406,
+            29.83105252222222
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 533137410,
+          "name": "金华路",
+          "url": "https://www.openstreetmap.org/way/533137410",
+          "coordinates": [
+            106.41708723750001,
+            29.83052731666667
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 533137478,
+          "name": "金华路",
+          "url": "https://www.openstreetmap.org/way/533137478",
+          "coordinates": [
+            106.39730768095238,
+            29.817248428571425
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 1287406316,
+          "name": "金华路",
+          "url": "https://www.openstreetmap.org/way/1287406316",
+          "coordinates": [
+            106.3865938,
+            29.8103474
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 1287406317,
+          "name": "金华路",
+          "url": "https://www.openstreetmap.org/way/1287406317",
+          "coordinates": [
+            106.38756285,
+            29.8113482
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 1287406318,
+          "name": "金华路",
+          "url": "https://www.openstreetmap.org/way/1287406318",
+          "coordinates": [
+            106.386296275,
+            29.810201874999997
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 1287406319,
+          "name": "金华路",
+          "url": "https://www.openstreetmap.org/way/1287406319",
+          "coordinates": [
+            106.3874505,
+            29.81141955
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        }
+      ],
+      "note": "金华路有多条源way，保留候选集合，由主agent选街区参照；不按门牌数值线性猜点。2017另址可能迁址/同名，不能写成已证明迁店。"
+    },
+    {
+      "segmentId": "cq-pp-7583215165723266354-nawan",
+      "name": "拿碗刨饭",
+      "result": "no-usable-address-found-stop",
+      "queries": [
+        "重庆 北碚 拿碗刨饭 地址",
+        "\"拿碗刨饭\" 北碚"
+      ],
+      "originalEvidence": "829—832秒原字幕/菜单NA WAN PAO FAN，可确认店名；本次两轮未返回可用北碚地址。",
+      "note": "保留原有视频及名称，不造城市中心点，不将本次无结果说成店不存在。"
+    },
+    {
+      "segmentId": "cq-pp-7583215165723266354-yuqingnian",
+      "name": "鱼庆年酸汤乌鱼馆",
+      "result": "street-candidate-found",
+      "candidateVenueName": "庆鱼年酸汤乌鱼馆（城南北晨丽景店）",
+      "candidateAddress": "北温泉街道城南双元大道214号",
+      "candidateStreet": "双元大道",
+      "sourceIds": [
+        "trip-qingyunian"
+      ],
+      "branchStatus": "candidate-unconfirmed",
+      "nameDifference": "原片字幕鱼庆年，目录庆鱼年，不静默改名。",
+      "basis": [
+        "原片855秒说明店名",
+        "原片同店可吃烤肉；目录该馆评论也提鱼锅外圈烤肉",
+        "实际打开目录双元大道214号"
+      ],
+      "osmAnchorCandidates": [
+        {
+          "kind": "osm-way",
+          "id": 200962433,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/200962433",
+          "coordinates": [
+            106.38835864000002,
+            29.797403950000007
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 501494216,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/501494216",
+          "coordinates": [
+            106.38796208500003,
+            29.797151585
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 533137463,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/533137463",
+          "coordinates": [
+            106.39686713333333,
+            29.80892092857143
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 710449557,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/710449557",
+          "coordinates": [
+            106.3969341857143,
+            29.80885041428572
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 1552242025,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/1552242025",
+          "coordinates": [
+            106.40167182,
+            29.812155639999997
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 1552242026,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/1552242026",
+          "coordinates": [
+            106.40170803999999,
+            29.81208118
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        }
+      ],
+      "note": "原片未见完整正门，字序与分店仍候选；可按有说明的双元大道街区规划点，不认定精确214号店门。"
+    },
+    {
+      "segmentId": "cq-pp-7583215165723266354-zengbin",
+      "name": "曾彬自贡兔",
+      "result": "neighbor-street-candidate-found",
+      "candidateAddress": "双元大道214号对面附近（依鱼馆候选及原片对面关系）",
+      "candidateStreet": "双元大道",
+      "directOwnAddressFound": false,
+      "basis": [
+        "原片891—894秒直接说他们家对面还有曾彬自贡兔，并有独立门店画面",
+        "庆鱼年候选地址在双元大道214号"
+      ],
+      "sourceIds": [
+        "trip-qingyunian"
+      ],
+      "branchStatus": "candidate-via-neighbor",
+      "osmAnchorCandidates": [
+        {
+          "kind": "osm-way",
+          "id": 200962433,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/200962433",
+          "coordinates": [
+            106.38835864000002,
+            29.797403950000007
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 501494216,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/501494216",
+          "coordinates": [
+            106.38796208500003,
+            29.797151585
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 533137463,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/533137463",
+          "coordinates": [
+            106.39686713333333,
+            29.80892092857143
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 710449557,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/710449557",
+          "coordinates": [
+            106.3969341857143,
+            29.80885041428572
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 1552242025,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/1552242025",
+          "coordinates": [
+            106.40167182,
+            29.812155639999997
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        },
+        {
+          "kind": "osm-way",
+          "id": 1552242026,
+          "name": "双元大道",
+          "url": "https://www.openstreetmap.org/way/1552242026",
+          "coordinates": [
+            106.40170803999999,
+            29.81208118
+          ],
+          "method": "retained-source-road-reference",
+          "sourceFile": "map-base/.local/batch3-review/road-network-open-anchors.json"
+        }
+      ],
+      "note": "不把鱼馆214号门牌给兔馆；保持独立片段/地图点，不与鱼馆归并。候选依赖鱼馆分店匹配，原片品牌字形由PP复核者处理。"
+    },
+    {
+      "segmentId": "cq-pp-7583215165723266354-lichaoshou",
+      "name": "李抄手（总店）",
+      "result": "no-usable-address-found-stop",
+      "queries": [
+        "重庆 北碚 李抄手 总店 地址"
+      ],
+      "originalEvidence": "915秒正门明确李抄手总店；本轮结果未给出可用北碚分店地址。",
+      "rejected": "源著店、冉家坝/龙溪等异区同名结果不采用。",
+      "note": "不按总店二字猜分店地址，继续留视频库或已有街区证据由主agent决定。"
+    },
+    {
+      "segmentId": "cq-pp-7583215165723266354-jidong",
+      "name": "记东串串（总店）",
+      "result": "neighbor-street-candidate-open-anchor-needed",
+      "candidateAddress": "北碚区双柏路／双柏支路附近（记东总店候选）",
+      "candidateStreets": [
+        "双柏路",
+        "双柏支路"
+      ],
+      "basis": [
+        "原片931秒完整招牌记东串串总店",
+        "原片958秒说旁边是典匠世家耙牛肉",
+        "典匠2024名单原页及实际餐馆目录为双柏支路43号",
+        "串串目录/2019稿搜索摘要分别是双柏路142/144号，正文未取得，仅作为街区辅助"
+      ],
+      "sourceIds": [
+        "official-dianjiang-2024",
+        "trip-dianjiang",
+        "jidong-directory-snippet",
+        "jidong-old-snippet"
+      ],
+      "branchStatus": "candidate-via-neighbor",
+      "osmAnchorCandidates": [],
+      "needsAdditionalOpenReference": [
+        "双柏路",
+        "双柏支路",
+        "双柏树街区或同名公共参照"
+      ],
+      "note": "主agent在现有两份anchor与沿路网络未找到双柏路/支路，正在扫源PBF；找到有依据的开放街区参照再落点，不用猜坐标。"
+    },
+    {
+      "segmentId": "cq-pp-7583215165723266354-dianjiang",
+      "name": "典匠世家耙牛肉",
+      "result": "official-address-found-open-anchor-needed",
+      "candidateAddress": "重庆市北碚区双柏支路43号",
+      "candidateStreet": "双柏支路",
+      "basis": [
+        "原片958秒门头典匠世家耙牛肉",
+        "重庆文旅网站2024名单第5页第39行已实际渲染核读",
+        "实际打开Trip.com同名北碚总店目录同地址"
+      ],
+      "sourceIds": [
+        "official-dianjiang-2024",
+        "trip-dianjiang"
+      ],
+      "branchStatus": "source-address-candidate-not-current-business-verification",
+      "osmAnchorCandidates": [],
+      "needsAdditionalOpenReference": [
+        "双柏支路",
+        "双柏树街区或同名公共参照"
+      ],
+      "note": "2024名单早于2025原视频，为地址核对材料，不代表2026营业状态；待主agent补相应OSM参照，门店POI不是前置条件。"
+    }
+  ],
+  "summary": {
+    "venues": 7,
+    "streetOrNeighborCandidates": 5,
+    "noUsableAddress": 2,
+    "officialPDFAddressRead": 1,
+    "stillNeedsOpenReference": [
+      "双柏路",
+      "双柏支路",
+      "双柏树"
+    ],
+    "searchComplete": true
+  },
+  "limitations": [
+    "有街道依据即可按开放源街区作近似规划点，不以精确店门为门槛。",
+    "没有相应开放地理参照时只保留文字候选，不捏造经纬度；记录里的coordinates全部仅来自已有OSM源way集合，且仅是参照集合。",
+    "原页价格、评分、时段和其他视频不作为网站新增素材；来源年份与观测日分别记录。"
+  ]
+}

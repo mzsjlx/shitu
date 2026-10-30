@@ -6,7 +6,10 @@ import {buildWalkGraph,findWalkRoute,distanceMetres} from '../src/walk-graph.js'
 import {groupVideoPlaces} from '../src/video-places.js';
 
 const load=async name=>JSON.parse(await readFile(new URL('../'+name,import.meta.url),'utf8'));
-const report={verifiedOn:'2026-10-28',scope:'Source road topology and approximate walking-reference distances; no entrance, live access or navigation validation.',checks:[]};
+const reportOption=process.argv.indexOf('--report');
+const reportName=reportOption>=0?process.argv[reportOption+1]:'FOOD-ROAD-DATA-QA.json';
+if(!/^[A-Za-z0-9_-]+\.json$/.test(reportName))throw new Error('Invalid report filename');
+const report={verifiedOn:new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Shanghai'}),scope:'Source road topology and approximate walking-reference distances; no entrance, live access or navigation validation.',checks:[]};
 const check=(name,body)=>{try{const details=body();report.checks.push({name,passed:true,...(details?{details}:{})});}catch(error){report.checks.push({name,passed:false,error:error.message});}};
 const way=(id,nodes,tags={})=>({id,nodes,tags:{highway:'residential',...tags}});
 const fixture=(nodes,ways,extra={})=>({schemaVersion:1,kind:'food-road-planning-network',coordinateSystem:'WGS84',nodes,ways,...extra});
@@ -73,4 +76,4 @@ for(const [from,to]of pairs)check('Real route: '+from+' → '+to,()=>{
   for(const e of route.sourceEdges){const w=sourceWays.get(e.way);assert(w);if(e.from<0||e.to<0)continue;assert(w.nodes.some((n,i)=>i&&((n===e.from&&w.nodes[i-1]===e.to)||(n===e.to&&w.nodes[i-1]===e.from))));assert(router.graph.adj.get(e.from).some(edge=>edge.to===e.to&&edge.way===e.way));}
   assert(Math.abs(route.sourceEdges.reduce((t,e)=>t+e.length,0)-route.distanceMetres)<.001);return {distanceMetres:route.distanceMetres,geometryPoints:route.coordinates.length,originalWays:route.wayIds.length,offsetsMetres:route.snaps.map(s=>s.offsetMetres),independentDifferenceMetres:Math.abs(independent-route.distanceMetres)};
 });
-report.passed=report.checks.every(c=>c.passed);await writeFile(new URL('../FOOD-ROAD-DATA-QA.json',import.meta.url),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({checks:report.checks.length,passed:report.passed,failures:report.checks.filter(c=>!c.passed)}));if(!report.passed)process.exitCode=1;
+report.passed=report.checks.every(c=>c.passed);await writeFile(new URL('../'+reportName,import.meta.url),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({checks:report.checks.length,passed:report.passed,failures:report.checks.filter(c=>!c.passed)}));if(!report.passed)process.exitCode=1;

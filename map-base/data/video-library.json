@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "chongqing",
-  "preparedOn": "2026-10-28",
+  "preparedOn": "2026-10-30",
   "rights": {
     "status": "user-confirmed",
-    "confirmedOn": "2026-10-28",
-    "scope": "首批3条于2026-10-27及新增8条于2026-10-28分别经用户确认已获作者允许剪辑并在网站使用；新增来源记录各自确认日期。",
+    "confirmedOn": "2026-10-29",
+    "scope": "首批3条、第二批8条及2026-10-29新增4条分别经用户确认已获作者允许剪辑并在网站使用；各来源保留自己的授权确认日期。",
     "evidence": "本项目会话中的用户确认；未独立审查授权文件。"
   },
   "sources": [
@@ -1434,6 +1434,1614 @@
             "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%BA%A2%E4%B9%9D%E6%A0%BC%20%E4%B8%89%E5%B3%A1%E5%B9%BF%E5%9C%BA"
           },
           "footageNote": "2024年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-xiaoyang-7602232743804036730",
+      "author": "小洋嘎嘣脆",
+      "title": "极限24小时吃重庆特色美食，一天五顿看看都吃了什么吧",
+      "url": "https://www.douyin.com/video/7602232743804036730",
+      "shareURL": "https://v.douyin.com/u4_FgnFX7-I/",
+      "publishedOn": "2026-02-02",
+      "durationSeconds": 367.733008,
+      "sourceSHA256": "ecdaf3e004a1f81df63240c44b9892d8fb43649dc40348bbe301801656d28867",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-29",
+        "scope": "用户确认本次4条已获作者允许剪辑并用于网站。"
+      },
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "逐店核读原片门头、字幕、菜单和转场，保存来源哈希及切点。保留未知店名、候选分店与旧年份说明；抽帧复核不等于逐句听校。",
+      "segments": [
+        {
+          "id": "xiaoyang-wanza",
+          "name": "豌杂面与抄手（店名待补）",
+          "category": "小面 / 抄手",
+          "summary": "早餐豌杂面与红油抄手，保留原作者的用餐画面。",
+          "addressText": null,
+          "start": 8.233333,
+          "end": 73.033333,
+          "posterSecond": 12,
+          "coordinates": null,
+          "evidenceNote": "8.233333秒由开场拼贴进入早餐；9秒字幕介绍豌杂面，后段同店抄手；73.033333秒进入下一家街景。原帧未见可确认的完整店名或地址。",
+          "addressNote": "仅确认重庆原片中的早餐一站，店名及具体街区待补。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "xiaoyang-linmeimei",
+          "name": "林妹妹沾水米线（分店待核）",
+          "category": "米线",
+          "summary": "药膳汤底的豪华沾水米线，原片展示煎蛋、肉片与独立蘸水。",
+          "addressText": "中山三路139号希尔顿酒店旁（同品牌候选）",
+          "start": 73.033333,
+          "end": 139.133333,
+          "posterSecond": 78,
+          "coordinates": [
+            106.544784,
+            29.56099
+          ],
+          "evidenceNote": "75秒门招可读林妹妹沾水米线，78秒上桌米线、后段持续同店用餐。门头未见可直接采用的分店门牌。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "两路口 · 中山三路候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原片75秒确认林妹妹品牌；此前名称地址对照提供两路口同品牌候选，原片未确认分店。这里只标候选街区。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 59161373,
+              "name": "中山三路",
+              "url": "https://www.openstreetmap.org/way/59161373",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%9E%97%E5%A6%B9%E5%A6%B9%E6%B2%BE%E6%B0%B4%E7%B1%B3%E7%BA%BF%EF%BC%88%E5%88%86%E5%BA%97%E5%BE%85%E6%A0%B8%EF%BC%89"
+          }
+        },
+        {
+          "id": "xiaoyang-xiangyuan",
+          "name": "香源老火锅（店招首字待核）",
+          "category": "火锅",
+          "summary": "老火锅用餐一站，原片包括锅底、配菜和蛋炒饭。",
+          "addressText": null,
+          "start": 139.133333,
+          "end": 208.733333,
+          "posterSecond": 150,
+          "coordinates": null,
+          "evidenceNote": "140—140.2秒完整门头可读〔首字待核〕香源老火锅；首字草书不可把榆/渝猜读写成最终结论。208.733333秒切甜品桌；209秒字幕明确说吃完火锅接着又去吃甜品，因此甜品另成一段。",
+          "addressNote": "可读部分门招，首字与具体分店仍需复核。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "xiaoyang-tianpin",
+          "name": "双皮奶与冰豆花（店名待补）",
+          "category": "糖水 / 甜点",
+          "summary": "火锅后另去的一站，原片展示双皮奶与冰豆花。",
+          "addressText": null,
+          "start": 208.733333,
+          "end": 235.5,
+          "posterSecond": 209,
+          "coordinates": null,
+          "evidenceNote": "209秒字幕明确“吃完火锅接着我又去吃甜品了”，235.5秒才进入豆花牛肉门头；不可误并为上一家火锅的菜品。未见可读完整店名或地址。",
+          "addressNote": "独立甜品店一站，店名及具体街区待补。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "xiaoyang-douhuaniurou",
+          "name": "豆花牛肉（店名待补）",
+          "category": "豆花牛肉",
+          "summary": "豆花牛肉、粉蒸肥肠与牛肉用餐画面。",
+          "addressText": null,
+          "start": 235.5,
+          "end": 292.366667,
+          "posterSecond": 250,
+          "coordinates": null,
+          "evidenceNote": "236秒门招清楚显示豆花牛肉，未见完整冠名；240秒粉蒸肥肠、245秒牛肉。292.366667秒转到夜宵店。上一轮“新壹牛肉/新民街46号附4号”只是名称地址候选，未找到原片对应依据，不自动采用。",
+          "addressNote": "已确认豆花牛肉一站，完整店名及街区待补。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "xiaoyang-shaokao",
+          "name": "烧烤与烤脑花（店名待补）",
+          "category": "烧烤",
+          "summary": "夜宵烧烤一站，原片保留选串与用餐画面。",
+          "addressText": null,
+          "start": 292.366667,
+          "end": 367.733008,
+          "posterSecond": 296,
+          "coordinates": null,
+          "evidenceNote": "293秒通用横幅为去吃烤脑花，不能据此当正式店名；294—296秒选串，后段同店吃烧烤，延续到片尾。未见店名及门牌。",
+          "addressNote": "夜宵店名及具体街区待补。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "needs-location"
+        }
+      ]
+    },
+    {
+      "id": "cq-lanmei-7692311805913784713",
+      "author": "一颗蓝莓",
+      "title": "重庆观音桥你真的太好吃啦！！！",
+      "url": "https://www.douyin.com/video/7692311805913784713",
+      "shareURL": "https://v.douyin.com/BE32oPZreOA/",
+      "publishedOn": "2026-10-03",
+      "durationSeconds": 91.788005,
+      "sourceSHA256": "d9f2ce7bbd310db48467e55d1d91bcd8b09598b405713811073e010d557ce997",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-29",
+        "scope": "用户确认本次4条已获作者允许剪辑并用于网站。"
+      },
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "逐店核读原片门头、字幕、菜单和转场，保存来源哈希及切点。保留未知店名、候选分店与旧年份说明；抽帧复核不等于逐句听校。",
+      "segments": [
+        {
+          "id": "lanmei-wanza",
+          "name": "豌杂面（店名待补）",
+          "category": "小面",
+          "summary": "观音桥社区豌杂面一站，原片展示煮面、拌料及干溜豌杂。",
+          "addressText": null,
+          "start": 11.666667,
+          "end": 21.733333,
+          "posterSecond": 20,
+          "coordinates": null,
+          "evidenceNote": "11.666667秒由开场合集进入第一家；12秒字幕是豌杂面的介绍句，并不是店名，不能把缩略图错读为晓安面栋等不存在的名称。原片未见完整店招。",
+          "addressNote": "原片标题限定观音桥，未确认该店具体街区及店名。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "lanmei-shaomai",
+          "name": "烧麦（店名待补）",
+          "category": "烧麦",
+          "summary": "现包现蒸烧麦，原片展示蘸红油、咸菜与稀饭。",
+          "addressText": null,
+          "start": 21.733333,
+          "end": 31.85,
+          "posterSecond": 29,
+          "coordinates": null,
+          "evidenceNote": "22秒字幕是“第二家进门就能看见”，不是店名；随后展示手包与烧麦。未见清楚品牌门头，不能仅按洋河烧麦候选直接归并其他作者。",
+          "addressNote": "原片标题限定观音桥，烧麦店名和分店待补。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "lanmei-xidajiang",
+          "name": "喜大匠老火锅（分店待核）",
+          "category": "火锅",
+          "summary": "明档老火锅一站，片中包含蒸包、卤菜与芒果绵绵冰。",
+          "addressText": null,
+          "start": 31.85,
+          "end": 58.833333,
+          "posterSecond": 48,
+          "coordinates": null,
+          "evidenceNote": "33秒灰围裙完整可读喜大匠老火锅；32—58秒为该同一火锅店，蒸包和甜品不另造店。旧abang-xidajiang品牌相同，双方均有灰围裙、橙衣和相似餐食，但尚无唯一门牌或外立面对应，不仅按同名设置placeId。",
+          "addressNote": "品牌已认出，观音桥同名候选分店仍待对应。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "lanmei-zhengcai",
+          "name": "竹笼粉蒸菜（店名待补）",
+          "category": "蒸菜",
+          "summary": "竹笼粉蒸菜，原片展示粉蒸肥肠与配汤。",
+          "addressText": null,
+          "start": 58.833333,
+          "end": 68.333333,
+          "posterSecond": 66,
+          "coordinates": null,
+          "evidenceNote": "59秒开始第四家蒸菜；66秒粉蒸肥肠餐盘可见分散品牌字样，疑似管格格但本轮未完整辨定，不按外部相似菜单认店。68.333333秒进入下一家手包汤饺。",
+          "addressNote": "原片标题限定观音桥，蒸菜店名及街区待核。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "needs-location"
+        },
+        {
+          "id": "lanmei-yikou",
+          "name": "一口汤饺",
+          "category": "饺子",
+          "summary": "手工现包汤饺与川北凉粉，保留原片用餐镜头。",
+          "addressText": "洋河四路10号附7号（原片门牌）",
+          "start": 68.333333,
+          "end": 78.8,
+          "posterSecond": 70.5,
+          "coordinates": [
+            106.532203,
+            29.58904
+          ],
+          "evidenceNote": "69秒围裙黄字可读一口汤饺；70.5秒菜单边缘直接印“一口汤饺（洋河四…）”。旧聊天观察的洋河四路10号附7号与外部餐馆页面相符，但门牌尾部未在本轮原帧完整读定。凯子同店待与其门头核对后再归并。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "placeId": "cq-kaizi-yikoutangjiao",
+          "addressOrigin": "original-storefront-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "观音桥 · 洋河体育场附近",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "凯子28.1秒蓝门牌明确洋河四路10号附7号，蓝莓70.5秒菜单同名同街道。开放图未单列洋河四路，采用洋河体育场周边洋河北路源路段作街区参考，未定位精确门口。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。 蓝莓70.5秒菜单同品牌同街道，采用同一分店地图点并保留独立片段。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1526677118,
+              "name": "洋河北路",
+              "url": "https://www.openstreetmap.org/way/1526677118",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E4%B8%80%E5%8F%A3%E6%B1%A4%E9%A5%BA"
+          }
+        },
+        {
+          "id": "lanmei-yuanma",
+          "name": "袁妈红豆汤（重庆总店）",
+          "category": "糖水",
+          "summary": "社区糖水店的红豆汤与稀饭，原片保留门头及糖水镜头。",
+          "addressText": null,
+          "start": 78.8,
+          "end": 89.933333,
+          "posterSecond": 81,
+          "coordinates": null,
+          "evidenceNote": "79秒完整门头直接写袁妈红豆汤、重庆总店；81—89秒糖水桌面。89.933333秒转回其他店蒸包画面的结尾合集，故不纳入此单店片段。原片没有露出可直接读出的门牌。",
+          "addressNote": "店招含重庆总店，原片标题为观音桥；具体门牌与开放街区参照仍需对应。",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "needs-location"
+        }
+      ]
+    },
+    {
+      "id": "cq-kaizi-7666393424492268852",
+      "author": "一支凯子",
+      "title": "极限48小时挑战逛吃重庆，两天炫了13家店填满我的广东胃",
+      "url": "https://www.douyin.com/video/7666393424492268852",
+      "shareURL": "https://v.douyin.com/44X7Xhj7LFY/",
+      "publishedOn": "2026-07-25",
+      "durationSeconds": 267.099002,
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-29",
+        "scope": "用户确认本次4条已获作者允许剪辑并用于网站。"
+      },
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "逐店核读原片门头、字幕、菜单和转场，保存来源哈希及切点。保留未知店名、候选分店与旧年份说明；抽帧复核不等于逐句听校。",
+      "segments": [
+        {
+          "id": "cq-kaizi-hulake",
+          "name": "胡辣壳泡椒鸡杂面",
+          "category": "面食",
+          "summary": "鸡杂浇头、面条与试吃，保留原片字幕和原声。",
+          "addressText": "洋河四路10号附8号（同名候选）",
+          "start": 11.866667,
+          "end": 27.433333,
+          "posterSecond": 14.5,
+          "coordinates": [
+            106.532203,
+            29.58904
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "evidenceNote": "12.5秒门头清楚可读胡辣壳泡椒鸡杂面，14秒为鸡杂浇头近景；27.433333秒转入一口汤饺。",
+          "coordinateSystem": "WGS84",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "观音桥 · 洋河体育场附近",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原片确认胡辣壳泡椒鸡杂面，旧名称地址观察为力帆体育城/洋河四路附8号候选；与下一站一口汤饺在同一街区。采用体育场周边源道路，未确认具体门口。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1526677118,
+              "name": "洋河北路",
+              "url": "https://www.openstreetmap.org/way/1526677118",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E8%83%A1%E8%BE%A3%E5%A3%B3%E6%B3%A1%E6%A4%92%E9%B8%A1%E6%9D%82%E9%9D%A2"
+          }
+        },
+        {
+          "id": "cq-kaizi-yikoutangjiao",
+          "name": "一口汤饺",
+          "category": "饺子",
+          "summary": "蒸饺双拼、蘸水与试吃，保留本店完整段落。",
+          "addressText": "洋河四路10号附7号（原片门牌）",
+          "start": 27.433333,
+          "end": 45.2,
+          "posterSecond": 29.5,
+          "coordinates": [
+            106.532203,
+            29.58904
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "evidenceNote": "28.1秒一口汤饺招牌，29秒蒸笼饺子；45.2秒转入隔壁烧麦。 原4K门牌裁切yikou-address-28.1.jpg可读洋河四路10号附7号；蓝莓70.5秒菜单同名同街道。",
+          "addressOrigin": "original-video-and-open-map",
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "观音桥 · 洋河体育场附近",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "凯子28.1秒蓝门牌明确洋河四路10号附7号，蓝莓70.5秒菜单同名同街道。开放图未单列洋河四路，采用洋河体育场周边洋河北路源路段作街区参考，未定位精确门口。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1526677118,
+              "name": "洋河北路",
+              "url": "https://www.openstreetmap.org/way/1526677118",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E4%B8%80%E5%8F%A3%E6%B1%A4%E9%A5%BA"
+          }
+        },
+        {
+          "id": "cq-kaizi-yangheshaomai",
+          "name": "原醴洋河烧麦（分店待核）",
+          "category": "烧麦",
+          "summary": "现蒸烧麦、蘸水与试吃，保留原始画幅和声音。",
+          "addressText": "一口汤饺洋河四路店隔壁（原片邻近关系）",
+          "start": 45.2,
+          "end": 62.3,
+          "posterSecond": 48.2,
+          "coordinates": [
+            106.532203,
+            29.58904
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "evidenceNote": "46.2秒高分辨门头品牌为原醴，字幕称第三站是隔壁的洋河烧麦。",
+          "coordinateSystem": "WGS84",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "观音桥 · 洋河四路附近",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "原片46.2秒确认洋河烧麦门头，并说第三站在第二站隔壁；第二站有原片洋河四路门牌。采用相同街区参照，不采用另一个大坪同品牌搜索结果。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1526677118,
+              "name": "洋河北路",
+              "url": "https://www.openstreetmap.org/way/1526677118",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%8E%9F%E9%86%B4%E6%B4%8B%E6%B2%B3%E7%83%A7%E9%BA%A6%EF%BC%88%E5%88%86%E5%BA%97%E5%BE%85%E6%A0%B8%EF%BC%89"
+          }
+        },
+        {
+          "id": "cq-kaizi-xinyiniurou",
+          "name": "新壹牛肉",
+          "category": "江湖菜",
+          "summary": "椒麻双脆、牛肉类菜品与香辣土豆丝的同店探店段。",
+          "addressText": "新民街46号附4号（同名候选）",
+          "start": 62.3,
+          "end": 107.1,
+          "posterSecond": 65,
+          "coordinates": [
+            106.567468,
+            29.55782
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "evidenceNote": "63.5秒招牌和字幕均为新壹牛肉；65秒椒麻双脆近景，直至107.1秒才转入朱儿面庄。",
+          "coordinateSystem": "WGS84",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "七星岗 · 新民街候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原片63.5秒门头确认新壹牛肉；此前限定重庆的名称地址对照为新民街46号附4号。使用开放新民街代表位置，分店仍为候选。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 175962016,
+              "name": "新民街",
+              "url": "https://www.openstreetmap.org/way/175962016",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%96%B0%E5%A3%B9%E7%89%9B%E8%82%89"
+          }
+        },
+        {
+          "id": "cq-kaizi-zhuer",
+          "name": "朱儿面庄（洋河店）",
+          "category": "面食",
+          "summary": "豌杂面制作、豌豆浇头与拌面试吃，对应已有洋河店。",
+          "addressText": "洋河三路洋河二村3号附8号（店名地址对照）",
+          "start": 107.1,
+          "end": 121.633333,
+          "posterSecond": 110.5,
+          "coordinates": [
+            106.528504,
+            29.586892
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "108.3秒绿雨棚电话15683014148与健康哥哥full-162相同，伸缩棚、米色方砖、防盗窗及店面立柱结构一致；门头横幅变化不改变外立面对照。",
+          "placeId": "jiankang-zhuer",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "观音桥 · 洋河三路附近",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "健康哥哥162秒门头与白龙15—16秒相邻的亿客刀削面招牌、居民楼外立面相符，按同一洋河店合并。高德仅比对名称地址；采用洋河三路开放道路坐标。 凯子108.3秒雨棚电话15683014148、棚架和楼体与健康哥哥162秒相同，新增同店第三位博主。",
+            "reviewedOn": "2026-10-29",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 297743112,
+              "name": "洋河三路",
+              "url": "https://www.openstreetmap.org/way/297743112",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%9C%B1%E5%84%BF%E9%9D%A2%E5%BA%84%20%E6%B4%8B%E6%B2%B3%E4%B8%89%E8%B7%AF"
+          },
+          "addressOrigin": "original-storefront-crosscheck",
+          "addressNote": "可并入jiankang-zhuer同一地图点，新增第三位博主片段。沿用既有洋河三路街区位置及未核实门口说明。"
+        },
+        {
+          "id": "cq-kaizi-xiangyaju",
+          "name": "香鸭居（后堡候选）",
+          "category": "鸭煲",
+          "summary": "香鸭煲、面条与蘸水试吃，保留一个门店段。",
+          "addressText": "后堡街区（原片横幅）",
+          "start": 121.633333,
+          "end": 140.583333,
+          "posterSecond": 124.1,
+          "coordinates": [
+            106.565419,
+            29.541064
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "evidenceNote": "122.5秒香鸭居门头，123—124秒香鸭锅近景，140.583333秒切至山顶日落。 10月30日补充复核：上方横幅直接写后堡人都知道，纠正此前未收窄分店的状态。",
+          "coordinateSystem": "WGS84",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "南坪 · 后堡附近",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "原片122.5秒门头横幅写后堡人都知道，路名未读清。采用开放后堡节点对应街区，不采用观音岩等同品牌分店。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 8169006376,
+              "name": "后堡",
+              "url": "https://www.openstreetmap.org/node/8169006376",
+              "sourceDate": "2026-10-25",
+              "method": "original-source-node"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E9%A6%99%E9%B8%AD%E5%B1%85%EF%BC%88%E5%90%8E%E5%A0%A1%E5%80%99%E9%80%89%EF%BC%89"
+          }
+        },
+        {
+          "id": "cq-kaizi-hill-bbq",
+          "name": "山顶烤肉店（日落片段，店名待补）",
+          "category": "烧烤",
+          "summary": "原片仅短暂展示山顶烤肉店的露天日落场景，店名待补。",
+          "addressText": null,
+          "start": 140.583333,
+          "end": 144.533333,
+          "posterSecond": 142.5,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "evidenceNote": "140.583333—144.533333秒为露天座位、吊灯及城市日落；字幕只称山顶的一家烤肉店，没有清楚店招或食品特写。",
+          "addressNote": "缺少可用店名、街区和地址线索；先留视频库，不猜南山或其他山顶门店。",
+          "coordinateSystem": "WGS84"
+        },
+        {
+          "id": "cq-kaizi-wuming-tihua",
+          "name": "无名蹄花（分店待核）",
+          "category": "蹄花",
+          "summary": "蹄花、蘸水及喝汤，保留同店多种吃法的一段。",
+          "addressText": null,
+          "start": 144.533333,
+          "end": 160.816667,
+          "posterSecond": 145.5,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "evidenceNote": "145—146秒字幕又点了一只无名蹄花，随后仍是同一白汤蹄花及蘸水；160.816667秒转场火锅门头。",
+          "addressNote": "无门头或地址卡；旧检索有观音岩、红旗河沟等多个分店，未用同名结果硬配。",
+          "coordinateSystem": "WGS84"
+        },
+        {
+          "id": "cq-kaizi-gumufeng",
+          "name": "古木枫老火锅（洪崖洞候选）",
+          "category": "火锅",
+          "summary": "火锅门头、锅底、毛肚及多种荤菜，同一门店保留为一段。",
+          "addressText": "临江支路66号泰安大厦B2层（洪崖洞候选）",
+          "start": 160.816667,
+          "end": 229.466667,
+          "posterSecond": 213.2,
+          "coordinates": [
+            106.574883,
+            29.563548
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "evidenceNote": "161.5秒古木枫老火锅木质招牌与下行台阶；该段原字幕称第十一站，后续食物与用餐环境持续同一店；229.466667秒才转至蔡记包子。",
+          "coordinateSystem": "WGS84",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "洪崖洞 · 临江支路候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原片有古木枫门头、木楼与下行台阶，旧限定重庆的名称地址观察给出临江支路洪崖洞候选；另有神仙口分店，位置仍为候选街区。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 59146648,
+              "name": "临江支路",
+              "url": "https://www.openstreetmap.org/way/59146648",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%8F%A4%E6%9C%A8%E6%9E%AB%E8%80%81%E7%81%AB%E9%94%85%EF%BC%88%E6%B4%AA%E5%B4%96%E6%B4%9E%E5%80%99%E9%80%89%EF%BC%89"
+          }
+        },
+        {
+          "id": "cq-kaizi-caijibaozi",
+          "name": "蔡记包子（分店待核）",
+          "category": "包子",
+          "summary": "现蒸包子、素馅包子和凉拌皮蛋，作为同店内容保留。",
+          "addressText": null,
+          "start": 229.466667,
+          "end": 250.716667,
+          "posterSecond": 231.3,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "evidenceNote": "230.2秒蔡记包子红牌白字清楚，左侧万州杂酱面、上层黄墙木框绿玻璃，店前紫伞和白盆植物；250.716667秒转至掰抄手。",
+          "addressNote": "与PP的蔡记均有黄泥磅街区线索，但原片正门未确认是同一分店；先保留独立视频，待补对应后归并地图点。",
+          "coordinateSystem": "WGS84"
+        },
+        {
+          "id": "cq-kaizi-bai-chaoshou",
+          "name": "掰抄手（临江门店）",
+          "category": "抄手",
+          "summary": "现包抄手、清汤与红油蘸水试吃，保留原声与比例。",
+          "addressText": "临江路96号（临江门店候选）",
+          "start": 250.716667,
+          "end": 267.09,
+          "posterSecond": 254.6,
+          "coordinates": [
+            106.572901,
+            29.563284
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "evidenceNote": "251.5秒红招牌明确临江门店、30多年专业抄手，店名字为足与拜组成的异体，常用写法掰抄手；254.6秒为清汤抄手近景。",
+          "coordinateSystem": "WGS84",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "临江门 · 临江路附近",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "原片251.5秒门招直接标临江门店，旧名称地址观察提供临江路96号候选；采用临江路开放路段代表位置。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 59146744,
+              "name": "临江路",
+              "url": "https://www.openstreetmap.org/way/59146744",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%8E%B0%E6%8A%84%E6%89%8B%EF%BC%88%E4%B8%B4%E6%B1%9F%E9%97%A8%E5%BA%97%EF%BC%89"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cq-pp-7583215165723266354",
+      "author": "PP超能炫",
+      "title": "一个人逛吃重庆美食～从黄泥磅吃到北碚，超长17分钟",
+      "url": "https://www.douyin.com/video/7583215165723266354",
+      "shareURL": "https://v.douyin.com/Ib6HBdMCbUo/",
+      "publishedOn": "2025-12-13",
+      "durationSeconds": 1008.766667,
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-29",
+        "scope": "用户确认本次4条已获作者允许剪辑并用于网站。"
+      },
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "逐店核读原片门头、字幕、菜单和转场，保存来源哈希及切点。保留未知店名、候选分店与旧年份说明；抽帧复核不等于逐句听校。",
+      "segments": [
+        {
+          "id": "cq-pp-7583215165723266354-caiji",
+          "name": "蔡记包子",
+          "category": "包子 / 早餐",
+          "summary": "包子搭配面条的早餐，保留原片包子与用餐画面。",
+          "addressText": "东和港湾茶楼紫福路店北门旁（上轮高德名称地址候选）",
+          "start": 12,
+          "end": 86.5,
+          "posterSecond": 13,
+          "coordinates": [
+            106.531423,
+            29.595717
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "85.5秒原字幕直接称蔡记包子；86—87秒说对面有周氏牛肉面，132秒将前三家归为黄泥磅附近。未见蔡记独立正门。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "紫福路附近候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "黄泥磅字幕与蔡记店名对应，上轮有食鲜味蔡记同名地址。缺少独立正门，不与凯子来源仅按同名硬归并。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 152098908,
+              "name": "紫福路",
+              "url": "https://www.openstreetmap.org/way/152098908",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E8%94%A1%E8%AE%B0%E5%8C%85%E5%AD%90"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-zhoushi",
+          "name": "周氏牛肉面",
+          "category": "小面 / 面食",
+          "summary": "红汤牛肉面，保留牛肉与面条的原片画面。",
+          "addressText": "周氏牛肉面在蔡记包子对面或旁边（原片相邻线索）",
+          "start": 86.5,
+          "end": 107.8,
+          "posterSecond": 89,
+          "coordinates": [
+            106.531423,
+            29.595717
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "86—87秒门头为周氏牛肉面，作者说在蔡记包子对面。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "黄泥磅 · 紫福路附近",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "原片字幕给出黄泥磅，周氏牛肉面在蔡记对面、包面西施在旁边；紫福路来自同街区名称地址候选。三店共用该街区参照，不假定门口或道路哪一侧。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 152098908,
+              "name": "紫福路",
+              "url": "https://www.openstreetmap.org/way/152098908",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%91%A8%E6%B0%8F%E7%89%9B%E8%82%89%E9%9D%A2"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-baomian",
+          "name": "包面西施",
+          "category": "抄手 / 面食",
+          "summary": "包面与粉蒸排骨，保留同店连续用餐。",
+          "addressText": "包面西施在蔡记包子对面或旁边（原片相邻线索）",
+          "start": 107.8,
+          "end": 132.9,
+          "posterSecond": 114,
+          "coordinates": [
+            106.531423,
+            29.595717
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "108—109秒原字幕说旁边包面西施，109秒有清楚门头；132秒作者总结黄泥磅附近早餐。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "黄泥磅 · 紫福路附近",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "原片字幕给出黄泥磅，周氏牛肉面在蔡记对面、包面西施在旁边；紫福路来自同街区名称地址候选。三店共用该街区参照，不假定门口或道路哪一侧。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 152098908,
+              "name": "紫福路",
+              "url": "https://www.openstreetmap.org/way/152098908",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%8C%85%E9%9D%A2%E8%A5%BF%E6%96%BD"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-konger",
+          "name": "孔二火锅（总店）",
+          "category": "火锅",
+          "summary": "居民楼下吃火锅，保留毛肚、鸭肠、鲜切腰花等原片内容。",
+          "addressText": "紫康路112号（上轮高德总店文字候选）",
+          "start": 132.9,
+          "end": 254.7,
+          "posterSecond": 155,
+          "coordinates": [
+            106.531757,
+            29.592708
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "135秒完整正门明确孔二火锅、总店；133—135秒原字幕黄泥磅居民楼底下。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "黄泥磅 · 紫康路附近",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "135秒正门明确总店，原字幕黄泥磅，与上轮同名总店紫康路候选相符；街区近似，不是精确入口。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 152098907,
+              "name": "紫康路",
+              "url": "https://www.openstreetmap.org/way/152098907",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%AD%94%E4%BA%8C%E7%81%AB%E9%94%85%EF%BC%88%E6%80%BB%E5%BA%97%EF%BC%89"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-limixian",
+          "name": "李米线",
+          "category": "米线",
+          "summary": "泡椒口味米线的连续用餐片段。",
+          "addressText": null,
+          "start": 254.7,
+          "end": 293.7,
+          "posterSecond": 258,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "255秒原门头与原字幕都明确李米线。具体分店未在画面确认。",
+          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-liaoji",
+          "name": "廖记仙乐饼",
+          "category": "饼 / 小吃",
+          "summary": "肉饼和土豆春卷，保留原片外带小吃画面。",
+          "addressText": "原片明确黄泥磅地铁口",
+          "start": 293.7,
+          "end": 301.9,
+          "posterSecond": 300,
+          "coordinates": [
+            106.533714,
+            29.591387
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "294—296秒原字幕黄泥磅地铁口、很火爆的廖记；295秒摊位文字廖记仙乐食品有限公司，袋身有廖记仙乐饼。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "黄泥磅地铁口附近",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "294—296秒直接街区字幕；可用开放地铁站点作近似参照。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13970164713,
+              "name": "轨道黄泥塝站",
+              "url": "https://www.openstreetmap.org/node/13970164713",
+              "sourceDate": "2026-10-25",
+              "method": "original-source-node"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E5%BB%96%E8%AE%B0%E4%BB%99%E4%B9%90%E9%A5%BC"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-qixing-hotpot",
+          "name": "居民楼老火锅（七星岗，店名待核）",
+          "category": "火锅",
+          "summary": "七星岗居民楼中的老火锅，保留鸭血、酥肉与炒饭等同店内容。",
+          "addressText": null,
+          "start": 301.9,
+          "end": 439.8,
+          "posterSecond": 313,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "302—303秒莲花池社区石碑，原字幕七星岗；304—316秒进入居民楼巷道老火锅。未独立确认完整门头，不直接采用旧搜索中的渝香源候选。",
+          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-bingdouhua",
+          "name": "冰豆花小摊（七星岗，摊名待补）",
+          "category": "冰品 / 甜点",
+          "summary": "火锅后在旁边小摊买冰豆花的短片段。",
+          "addressText": null,
+          "start": 439.8,
+          "end": 443.9,
+          "posterSecond": 442,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "440—443秒原字幕临走在旁边这些小摊买了冰豆花；没有完整摊名。",
+          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-huangjia",
+          "name": "黄家烧烤",
+          "category": "烧烤",
+          "summary": "北碚黄家烧烤的小串、豆腐与年糕。",
+          "addressText": "冯时行路286号附10号（上轮高德同名候选）",
+          "start": 443.9,
+          "end": 470.7,
+          "posterSecond": 450,
+          "coordinates": [
+            106.394456,
+            29.796453
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "444秒店招黄家烧烤，450秒原字幕第一家是黄家烧烤；471秒开始介绍另一家。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 冯时行路候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原片北碚黄家烧烤门头；上轮唯一同名候选中央美苑店，分店仍待核。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 238750782,
+              "name": "冯时行路",
+              "url": "https://www.openstreetmap.org/way/238750782",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E9%BB%84%E5%AE%B6%E7%83%A7%E7%83%A4"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-renyi",
+          "name": "仁义兄弟烧烤",
+          "category": "烧烤",
+          "summary": "串烤、生蚝与泡椒口味面条，保留同店连续内容。",
+          "addressText": "安礼路3号（上轮高德名称地址对照）",
+          "start": 470.7,
+          "end": 505.3,
+          "posterSecond": 474,
+          "coordinates": [
+            106.382975,
+            29.79935
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "471—472秒原字幕还有一家是仁义兄弟烧烤；503—504秒台面包装板可见仁义兄弟烧烤。不是黄家同店内容。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 安礼路候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原字幕与包装均仁义兄弟烧烤，同名名称地址对照为安礼路，街区近似。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1155433033,
+              "name": "安礼路",
+              "url": "https://www.openstreetmap.org/way/1155433033",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E4%BB%81%E4%B9%89%E5%85%84%E5%BC%9F%E7%83%A7%E7%83%A4"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-miaoshifu",
+          "name": "苗师傅大饼",
+          "category": "饼 / 小吃",
+          "summary": "北碚买饼的早餐短片段。",
+          "addressText": "中山路93号（上轮高德候选）",
+          "start": 505.3,
+          "end": 512.1,
+          "posterSecond": 506,
+          "coordinates": [
+            106.433814,
+            29.828179
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "506—507秒原字幕苗师傅大饼，包装与烤饼对应。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 中山路附近",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原字幕与包装苗师傅大饼，上轮同名中山路店距北碚地铁站近；分店未独立核实。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 940326946,
+              "name": "中山路",
+              "url": "https://www.openstreetmap.org/way/940326946",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E8%8B%97%E5%B8%88%E5%82%85%E5%A4%A7%E9%A5%BC"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-luoerwa",
+          "name": "罗二娃面庄",
+          "category": "小面 / 面食",
+          "summary": "杂酱面搭配煎蛋，保留原片同店用餐。",
+          "addressText": "辽宁路52号（同名候选，另有奔月路店）",
+          "start": 512.1,
+          "end": 532.6,
+          "posterSecond": 516,
+          "coordinates": [
+            106.432391,
+            29.830435
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "516秒前后原字幕非常火爆的罗二娃面庄，画面为杂酱面；具体分店待核。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 辽宁路候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "源字幕罗二娃面庄，随后步行到老城早餐店；辽宁路为候选，不能当已确认原片分店。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 710422444,
+              "name": "辽宁路",
+              "url": "https://www.openstreetmap.org/way/710422444",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%BD%97%E4%BA%8C%E5%A8%83%E9%9D%A2%E5%BA%84"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-yangshi",
+          "name": "杨氏土鸡米线",
+          "category": "米线",
+          "summary": "清汤土鸡米线，保留作者对汤和米线的原片描述。",
+          "addressText": "南京路41号（朝阳路店候选）",
+          "start": 532.6,
+          "end": 557.5,
+          "posterSecond": 538,
+          "coordinates": [
+            106.437759,
+            29.83306
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "533秒正门为杨氏土鸡米线；原字幕吃完继续往前走。下一站羊粉人家门牌为上海路39。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 南京路候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原片确认杨氏土鸡米线，随后继续步行至上海路早餐店。旧名称地址观察含南京路41号候选，采用相邻南京路源街区，另有其他同品牌分店。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 709838377,
+              "name": "南京路",
+              "url": "https://www.openstreetmap.org/way/709838377",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%9D%A8%E6%B0%8F%E5%9C%9F%E9%B8%A1%E7%B1%B3%E7%BA%BF"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-yangfen",
+          "name": "羊粉人家",
+          "category": "米线 / 米粉",
+          "summary": "红汤羊肉粉的连续用餐片段。",
+          "addressText": "上海路39号（原片门牌）",
+          "start": 557.5,
+          "end": 582.7,
+          "posterSecond": 561,
+          "coordinates": [
+            106.437052,
+            29.833234
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "558秒高分辨正门招牌羊粉人家，蓝门牌上海路39（SHANGHAI LU）；559秒字幕还有一个羊粉人家。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 上海路早餐街区",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "558秒蓝门牌清楚写上海路39号。 不据“附近”推断精确店门或实测店间距离。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 709838378,
+              "name": "上海路",
+              "url": "https://www.openstreetmap.org/way/709838378",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%BE%8A%E7%B2%89%E4%BA%BA%E5%AE%B6"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-tangyuan",
+          "name": "手工汤圆（唐粉葛招牌，字样待核）",
+          "category": "汤圆 / 甜点",
+          "summary": "手工黑芝麻汤圆，保留原片汤圆与馅料画面。",
+          "addressText": "上海路早餐街区附近（原片顺路线索）",
+          "start": 582.7,
+          "end": 597.7,
+          "posterSecond": 584,
+          "coordinates": [
+            106.437052,
+            29.833234
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "583秒菜单竖排红字可辨唐粉葛手工，主栏黑芝麻大汤圆；字样仍保留待核，未将其猜成唐粉哥。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 上海路早餐街区",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "吃完上海路羊粉人家后，原片说去前面的手工汤圆店；招牌字样仍待核。 不据“附近”推断精确店门或实测店间距离。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 709838378,
+              "name": "上海路",
+              "url": "https://www.openstreetmap.org/way/709838378",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%89%8B%E5%B7%A5%E6%B1%A4%E5%9C%86%EF%BC%88%E5%94%90%E7%B2%89%E8%91%9B%E6%8B%9B%E7%89%8C%EF%BC%8C%E5%AD%97%E6%A0%B7%E5%BE%85%E6%A0%B8%EF%BC%89"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-xinzhu",
+          "name": "欣竹油茶",
+          "category": "油茶 / 早餐",
+          "summary": "油茶与小麻花的早餐片段。",
+          "addressText": "上海路早餐街区附近（原片附近线索）",
+          "start": 597.7,
+          "end": 612.2,
+          "posterSecond": 601,
+          "coordinates": [
+            106.437052,
+            29.833234
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "598秒门头清楚为欣竹油茶；原字幕自动写新竹，但以实际门头欣字为准。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 上海路早餐街区",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "598秒门头确认欣竹油茶，原作者说这附近还有一家；采用同一早餐街区参照，具体门牌未确认。 不据“附近”推断精确店门或实测店间距离。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 709838378,
+              "name": "上海路",
+              "url": "https://www.openstreetmap.org/way/709838378",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%AC%A3%E7%AB%B9%E6%B2%B9%E8%8C%B6"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-lidouhua",
+          "name": "李豆花",
+          "category": "豆花 / 家常菜",
+          "summary": "单人豆花饭与羊肉格格，同一店内容保留一段。",
+          "addressText": "欣竹油茶对面（原片邻近线索）",
+          "start": 612.2,
+          "end": 631.3,
+          "posterSecond": 615,
+          "coordinates": [
+            106.437052,
+            29.833234
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "612秒原字幕他们家对面还有一个李豆花；613—630秒菜单、豆花与羊肉格格连续。与640秒龙逸为不同店。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 上海路早餐街区",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "612秒原字幕明确是欣竹油茶对面的李豆花，采用同一早餐街区参照。 不据“附近”推断精确店门或实测店间距离。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 709838378,
+              "name": "上海路",
+              "url": "https://www.openstreetmap.org/way/709838378",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E6%9D%8E%E8%B1%86%E8%8A%B1"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-lvdousu",
+          "name": "现烤绿豆酥（店名待补）",
+          "category": "饼 / 小吃",
+          "summary": "现烤绿豆酥与红豆酥的小摊片段。",
+          "addressText": "李豆花附近（原片顺路线索）",
+          "start": 631.3,
+          "end": 639.8,
+          "posterSecond": 634,
+          "coordinates": [
+            106.437052,
+            29.833234
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "631—639秒原字幕吃完顺路买绿豆酥，632秒招牌只写绿豆酥现烤现卖，未见品牌。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 上海路早餐街区",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "吃完李豆花后原片顺路购买绿豆酥，未见完整店名，仅使用已知早餐街区作近似参照。 不据“附近”推断精确店门或实测店间距离。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 709838378,
+              "name": "上海路",
+              "url": "https://www.openstreetmap.org/way/709838378",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%8E%B0%E7%83%A4%E7%BB%BF%E8%B1%86%E9%85%A5%EF%BC%88%E5%BA%97%E5%90%8D%E5%BE%85%E8%A1%A5%EF%BC%89"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-longyi",
+          "name": "龙逸豆花庄",
+          "category": "豆花 / 家常菜",
+          "summary": "豆花、烧白和粉蒸肉等多人用餐内容。",
+          "addressText": null,
+          "start": 639.8,
+          "end": 683.5,
+          "posterSecond": 645,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "640—643秒正门与原字幕明确龙逸豆花庄；684秒切到郑发食店。",
+          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-zhengfa",
+          "name": "郑发食店",
+          "category": "鱼 / 家常菜",
+          "summary": "豆腐鱼与干煸肥肠，保留同店连续用餐。",
+          "addressText": null,
+          "start": 683.5,
+          "end": 713.5,
+          "posterSecond": 686,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "684秒门头北碚郑发食店，原字幕也明确郑发食店；685—713秒豆腐鱼与肥肠。蓝门牌疑似龙溪路319号附53，未读准门牌不作已核地址。",
+          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-ganguo",
+          "name": "西南大学附近干锅（店名待补）",
+          "category": "干锅 / 家常菜",
+          "summary": "西南大学附近的干锅用餐，保留原片菜品与评价。",
+          "addressText": null,
+          "start": 713.5,
+          "end": 744.3,
+          "posterSecond": 715,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "714秒原字幕下午去了西南大学附近；门头只拍到鲜啤等局部字，不能据此补完整店名。",
+          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-yuanji",
+          "name": "源吉煲饭",
+          "category": "煲饭 / 家常菜",
+          "summary": "三拼煲饭搭配鸡蛋，保留原片用餐。",
+          "addressText": null,
+          "start": 744.3,
+          "end": 759.5,
+          "posterSecond": 748,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "745—746秒原字幕这附近还有一个小店叫源吉煲饭；菜单与三拼饭对应。",
+          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-jinli",
+          "name": "金利双椒牛肉面（李园）",
+          "category": "小面 / 面食",
+          "summary": "西南大学李园的双椒牛肉面。",
+          "addressText": "西南大学李园小吃街（原片校内街区）",
+          "start": 759.5,
+          "end": 781.7,
+          "posterSecond": 765,
+          "coordinates": [
+            106.422358,
+            29.822353
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "760—763秒进入西南大学，原字幕在李园这里有两家我种草的面；765秒称金利双椒牛肉面。李园具体位置仍需开放参照核对。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "西南大学 · 李园小吃街附近",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "原片760—763秒直接说明西南大学校内李园，782秒百信面位于金利面店旁，797秒再次提到李园。独立开放图存在李园小吃街建筑足迹，采用该街区代表位置，不用全校中心替代。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 843421755,
+              "name": "李园小吃街",
+              "url": "https://www.openstreetmap.org/way/843421755",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E9%87%91%E5%88%A9%E5%8F%8C%E6%A4%92%E7%89%9B%E8%82%89%E9%9D%A2%EF%BC%88%E6%9D%8E%E5%9B%AD%EF%BC%89"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-baixin",
+          "name": "百信面（李园）",
+          "category": "小面 / 面食",
+          "summary": "西南大学李园另一家面店的原片用餐。",
+          "addressText": "西南大学李园小吃街（原片校内街区）",
+          "start": 781.7,
+          "end": 798.6,
+          "posterSecond": 786,
+          "coordinates": [
+            106.422358,
+            29.822353
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "782秒正门可见百信面，字幕说牛肉面旁边还有一个百信面；797秒再次明确今天在李园。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "original-video-and-open-map",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "西南大学 · 李园小吃街附近",
+            "basis": "original-street-clue",
+            "branchMatch": "unconfirmed",
+            "note": "原片760—763秒直接说明西南大学校内李园，782秒百信面位于金利面店旁，797秒再次提到李园。独立开放图存在李园小吃街建筑足迹，采用该街区代表位置，不用全校中心替代。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 843421755,
+              "name": "李园小吃街",
+              "url": "https://www.openstreetmap.org/way/843421755",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%99%BE%E4%BF%A1%E9%9D%A2%EF%BC%88%E6%9D%8E%E5%9B%AD%EF%BC%89"
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-shuguang",
+          "name": "曙光食店",
+          "category": "家常菜",
+          "summary": "北碚家常小馆的麻婆豆腐等原片内容。",
+          "addressText": "重庆市北碚区金华路313号附41号（资料候选，原片分店待核）",
+          "start": 798.6,
+          "end": 828.7,
+          "posterSecond": 817,
+          "coordinates": [
+            106.417709,
+            29.831053
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "799秒店招与原字幕曙光食店，后续炒菜同店连续。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "published-address-candidate",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 金华路候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头确认曙光食店；实际读到2025年5月文章金华路313附41号候选，2017旧文有不同地址，迁址或同名关系未确认。采用金华路源路段代表点，不按门牌数字插值。 街区近似规划点，不代表精确位置、入口或当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 404107008,
+              "name": "金华路",
+              "url": "https://www.openstreetmap.org/way/404107008",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            }
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-nawan",
+          "name": "拿碗刨饭",
+          "category": "家常菜",
+          "summary": "家常炒菜与腊味，保留菜单及实际点菜内容。",
+          "addressText": null,
+          "start": 828.7,
+          "end": 854.2,
+          "posterSecond": 834,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "829—832秒原字幕与菜单均为拿碗刨饭，菜单拼音NA WAN PAO FAN。自动字幕创饭为误写，不据此更名。",
+          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-yuqingnian",
+          "name": "鱼庆年酸汤乌鱼馆",
+          "category": "鱼 / 家常菜",
+          "summary": "酸汤乌鱼片与同店烤肉、包浆豆腐。",
+          "addressText": "北温泉街道城南双元大道214号（资料候选，原片分店待核）",
+          "start": 854.2,
+          "end": 891.4,
+          "posterSecond": 857,
+          "coordinates": [
+            106.401672,
+            29.812156
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "855秒原字幕鱼庆年酸汤乌鱼馆；883—890秒仍说他们家还可点烤肉，不拆成新店。891秒介绍对面自贡兔。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "published-address-candidate",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 双元大道候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原片字幕为鱼庆年，已读目录为庆鱼年城南店、双元大道214号，名称字序和分店仍候选。采用双元大道沿线开放路段代表位置，未确定214号对应的准确路段或店门。 街区近似规划点，不代表精确位置、入口或当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1552242025,
+              "name": "双元大道",
+              "url": "https://www.openstreetmap.org/way/1552242025",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            }
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-zengbin",
+          "name": "曾彬自贡兔",
+          "category": "兔 / 家常菜",
+          "summary": "北碚鲜锅兔的原片用餐内容。",
+          "addressText": "双元大道214号对面附近（依鱼馆候选及原片对面关系）（资料候选，原片分店待核）",
+          "start": 891.4,
+          "end": 914.8,
+          "posterSecond": 895,
+          "coordinates": [
+            106.401672,
+            29.812156
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "891—894秒原字幕他们家对面还有一个曾彬自贡兔并展示门店和兔锅菜单；完整品牌字形仍待与门头复核。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "published-address-candidate",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 双元大道候选街区",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "原片说明曾彬自贡兔在鱼馆对面，位置依赖鱼馆双元大道候选分店。两店共用街区代表点但不合并地点；不把214号当兔馆门牌，不用共用代表点推导真实店间距离。 街区近似规划点，不代表精确位置、入口或当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1552242025,
+              "name": "双元大道",
+              "url": "https://www.openstreetmap.org/way/1552242025",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            }
+          }
+        },
+        {
+          "id": "cq-pp-7583215165723266354-lichaoshou",
+          "name": "李抄手（总店）",
+          "category": "抄手 / 面食",
+          "summary": "藤椒虾仁抄手的原片用餐内容。",
+          "addressText": null,
+          "start": 914.8,
+          "end": 931,
+          "posterSecond": 918,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "915秒正门明确李抄手总店；917—918秒原字幕李抄手，919—922秒称藤椒虾仁抄手。",
+          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-jidong",
+          "name": "记东串串（总店）",
+          "category": "火锅",
+          "summary": "红汤串串和蛋炒饭，同一店用餐保留一段。",
+          "addressText": "北碚区双柏路／双柏支路附近（记东总店候选）（资料候选，原片分店待核）",
+          "start": 931,
+          "end": 957.7,
+          "posterSecond": 937,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "931秒完整招牌记东串串总店；934秒原字幕记东，935秒说去的是总店。",
+          "addressNote": "主agent在现有两份anchor与沿路网络未找到双柏路/支路，正在扫源PBF；找到有依据的开放街区参照再落点，不用猜坐标。 本片仍按候选资料处理，不代表已确认分店或当前营业。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-dianjiang",
+          "name": "典匠世家耙牛肉",
+          "category": "火锅",
+          "summary": "耙牛肉火锅与凉糕，同店内容保留一段。",
+          "addressText": "重庆市北碚区双柏支路43号（资料候选，原片分店待核）",
+          "start": 957.7,
+          "end": 984.2,
+          "posterSecond": 960,
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "958秒门头与959秒原字幕典匠世家耙牛肉；作者说在记东旁边，980—983秒凉糕仍在该店，不另造一店。",
+          "addressNote": "2024名单早于2025原视频，为地址核对材料，不代表2026营业状态；待主agent补相应OSM参照，门店POI不是前置条件。 本片仍按候选资料处理，不代表已确认分店或当前营业。",
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-pp-7583215165723266354-hongyu",
+          "name": "红雨少水粉",
+          "category": "米线 / 米粉",
+          "summary": "少水粉的原片用餐片段。",
+          "addressText": "原片菜单红雨少水粉",
+          "start": 984.2,
+          "end": 1008.5,
+          "posterSecond": 990,
+          "coordinates": [
+            106.43221,
+            29.828049
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "985秒橙色菜单清楚为红雨少水粉，与988秒后粉条用餐对应。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "addressOrigin": "name-address-crosscheck",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北碚 · 红雨少水粉来源记录候选",
+            "basis": "candidate-branch",
+            "branchMatch": "unconfirmed",
+            "note": "北碚片段橙色菜单品牌与本地开放OSM restaurant节点同名，采用来源记录位置作近似候选，不核实当前营业。 地图为开放道路/街区参照，不是实测店门；原片年份不代表当前营业。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 11939818344,
+              "name": "红雨少水粉",
+              "url": "https://www.openstreetmap.org/node/11939818344",
+              "sourceDate": "2026-10-25",
+              "method": "original-source-node"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%BA%A2%E9%9B%A8%E5%B0%91%E6%B0%B4%E7%B2%89"
+          }
         }
       ]
     }

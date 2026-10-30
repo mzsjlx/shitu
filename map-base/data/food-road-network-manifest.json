@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "city": "chongqing",
   "bounds": [
-    106.43,
+    106.36,
     29.48,
     106.65,
-    29.65
+    29.87
   ],
   "source": {
     "date": "2026-10-25",
@@ -15,10 +15,10 @@
     "attribution": "© OpenStreetMap contributors",
     "license": "ODbL 1.0"
   },
-  "networkSHA256": "eb4a2960f5b80c5fb6bbc5d0b5d7337eace1da8d8a9f65448fe25148017fe02b",
-  "bytes": 8704237,
-  "nodes": 131412,
-  "ways": 22252,
+  "networkSHA256": "5ef51155231b8b24ef39309b1e85dbff72fc08941e484cd3a23bfe05436829e1",
+  "bytes": 15259633,
+  "nodes": 236091,
+  "ways": 36131,
   "footRestrictionWays": 2,
   "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
   "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
