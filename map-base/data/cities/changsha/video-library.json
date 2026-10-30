@@ -4,7 +4,217 @@
   "preparedOn": "2026-10-30",
   "rights": {
     "status": "user-confirmed",
-    "note": "严格遵循用户实际提供的长沙视频链接，授权范围与确认时间按后续提供逐条记录。"
+    "confirmedOn": "2026-10-30",
+    "scope": "首批3条抖音探店链接经用户在会话中明确提供；视频剪辑与画面使用按用户提供范围记录，原片保留在 .local，小封面与公开元数据纳入仓库。",
+    "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
   },
-  "sources": []
+  "sources": [
+    {
+      "id": "cs-chilezaijian-7637507311833195429",
+      "author": "吃了再减",
+      "title": "长沙震撼美味好吃的肘子拌饭！！！🥹 从小爸妈就带我来吃～开了很多年的老店！！特别好吃！！#长沙美食#长沙湘菜#长沙#满级吃商通关赛 #长沙旅游",
+      "url": "https://www.douyin.com/video/7637507311833195429",
+      "shareURL": "https://v.douyin.com/o1c1KTUkaqE/",
+      "publishedOn": "2026-05-08",
+      "durationSeconds": 30.23023,
+      "sourceSHA256": "29f551c183fbbc127bcbf8b944700894e362f69ca030821e5d66977a9f21b435",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片门头招牌、字幕及实拍大肘子与酸菜拌饭，雨花区朝晖路都城康欣园2栋107号。",
+      "segments": [
+        {
+          "id": "cs-chilezaijian-laowenjia",
+          "name": "佬文家老地方私房菜",
+          "category": "湘菜 / 肘子拌饭",
+          "addressText": "长沙市雨花区朝晖路都城康欣园2栋107号",
+          "start": 0.0,
+          "end": 30.23023,
+          "posterSecond": 18.0,
+          "summary": "长沙开了多年的24小时营业私房菜老店，招牌大肘子肉质软烂黏糯，剁椒酸菜拌饭鲜辣过瘾。",
+          "coordinates": [
+            113.00762,
+            28.182334
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "雨花区 · 朝晖路都城康欣园",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头与都城康欣园2栋，按街区估算大致位置。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "朝晖路",
+              "url": "https://www.openstreetmap.org/search?query=%E6%9C%9D%E6%99%96%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-30",
+              "method": "block-centroid"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E4%BD%AC%E6%96%87%E5%AE%B6%E8%80%81%E5%9C%B0%E6%96%B9%E7%A7%81%E6%88%BF%E8%8F%9C%20%E9%95%BF%E6%B2%99"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-xiaoxuan-7637827182958702309",
+      "author": "小璇大炫",
+      "title": "长沙居然还有5毛一串的烧烤？果然安置小区出奇迹！#长沙美食 #烧烤 #夜宵吃什么 #人间烟火 #大口吃肉的感觉真好",
+      "url": "https://www.douyin.com/video/7637827182958702309",
+      "shareURL": "https://v.douyin.com/8t5f7tePBys/",
+      "publishedOn": "2026-05-09",
+      "durationSeconds": 146.133333,
+      "sourceSHA256": "e7d161818990c4f070bd716be8ef78f22049d4106c411997067d174b6e2f784f",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片门头杨大锤地摊烧烤、对街袁记云饺与可视采耳，岳麓区枫林三路859号附近涉外经济学院周边安置小区。",
+      "segments": [
+        {
+          "id": "cs-xiaoxuan-yangdachui",
+          "name": "杨大锤地摊烧烤",
+          "category": "烧烤 / 街区夜宵",
+          "addressText": "长沙市岳麓区枫林三路859号附近安置小区",
+          "start": 0.0,
+          "end": 146.133333,
+          "posterSecond": 36.0,
+          "summary": "安置小区里5毛一串的宝藏地摊烧烤，牛油、肉串与烤素菜品类齐全，烟火气拉满。",
+          "coordinates": [
+            112.874872,
+            28.215201
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "岳麓区 · 涉外经济学院周边街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "枫林三路安置小区沿街，对街可见袁记云饺，按街区估算大致位置。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "枫林三路",
+              "url": "https://www.openstreetmap.org/search?query=%E6%9E%AB%E6%9E%97%E4%B8%89%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-30",
+              "method": "block-centroid"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E6%9D%A8%E5%A4%A7%E9%94%A4%E5%9C%B0%E6%91%8A%E7%83%A7%E7%83%A4%20%E9%95%BF%E6%B2%99"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-daxiang-7671127597723438345",
+      "author": "大象吃花生",
+      "title": "避开网红店，一条视频带你吃透长沙人真正爱吃的私藏老店！ #长沙 #长沙美食 #长沙旅游 #人间烟火 #本地人爱吃的店",
+      "url": "https://www.douyin.com/video/7671127597723438345",
+      "shareURL": "https://v.douyin.com/In72Gx-xJ-4/",
+      "publishedOn": "2026-08-07",
+      "durationSeconds": 519.731995,
+      "sourceSHA256": "7213a458fca3fc06d3cea584a5c41625decdfee81167bfc7f50930d8c00099c6",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片赵记面粉老店招牌、南门口汪记生煎包招牌、百年老店德园大包子等，按各店镜头与转场精细拆分切点。",
+      "segments": [
+        {
+          "id": "cs-daxiang-zhaoji",
+          "name": "赵记面粉老店",
+          "category": "米粉 / 本地早餐",
+          "addressText": "长沙市天心区南门口老街区（赛婵水产旁小区巷内）",
+          "start": 19.0,
+          "end": 54.0,
+          "posterSecond": 26.0,
+          "summary": "1991年开在南门口老小区楼下的老牌粉店，招牌肉饼蛋粉入口鲜香化开，地道老长沙味道。",
+          "coordinates": [
+            112.9725,
+            28.1821
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "天心区 · 南门口老街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "南门口老小区楼下、赛婵水产旁巷内，按街区估算规划点。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "南门口",
+              "url": "https://www.openstreetmap.org/search?query=%E5%8D%97%E9%97%A8%E5%8F%A3%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-30",
+              "method": "block-centroid"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E8%B5%B5%E8%AE%B0%E9%9D%A2%E7%B2%89%E8%80%81%E5%BA%97%20%E9%95%BF%E6%B2%99"
+          }
+        },
+        {
+          "id": "cs-daxiang-wangji",
+          "name": "汪记生煎包",
+          "category": "小吃面点 / 生煎包",
+          "addressText": "长沙市天心区城南西路南门口菜市场",
+          "start": 55.0,
+          "end": 94.0,
+          "posterSecond": 60.0,
+          "summary": "始于1987年的老字号生煎，金黄焦脆底、皮薄汤汁丰盈，南门口菜市场必打卡的排队小吃。",
+          "coordinates": [
+            112.9745,
+            28.1818
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "天心区 · 南门口菜市场",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "城南西路南门口菜市场入口摊位，按菜市场位置规划落点。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "城南西路",
+              "url": "https://www.openstreetmap.org/search?query=%E5%9F%8E%E5%8D%97%E8%A5%BF%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-30",
+              "method": "block-centroid"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E6%B1%AA%E8%AE%B0%E7%94%9F%E7%85%8E%E5%8C%85%20%E9%95%BF%E6%B2%99"
+          }
+        },
+        {
+          "id": "cs-daxiang-deyuan",
+          "name": "德园包子",
+          "category": "面点点心 / 百年老店",
+          "addressText": "长沙市芙蓉区蔡锷北路老街",
+          "start": 275.0,
+          "end": 294.5,
+          "posterSecond": 278.0,
+          "summary": "长沙久负盛名的百年老字号包子铺，香菇鲜肉包与玫瑰五仁包香气四溢，搭配烧卖吃法独特。",
+          "coordinates": [
+            112.9782,
+            28.2045
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "芙蓉区 · 蔡锷北路百年德园",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "蔡锷北路百年老店德园街区，按老街估算规划落点。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "蔡锷北路",
+              "url": "https://www.openstreetmap.org/search?query=%E8%94%A1%E9%94%B7%E5%8C%97%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-30",
+              "method": "block-centroid"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E5%BE%B7%E5%9B%AD%E5%8C%85%E5%AD%90%20%E9%95%BF%E6%B2%99"
+          }
+        }
+      ]
+    }
+  ]
 }
