@@ -1,0 +1,161 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "Source road topology and approximate walking-reference distances; no entrance, live access or navigation validation.",
+  "checks": [
+    {
+      "name": "A U-shaped road follows all source corners instead of a direct line",
+      "passed": true
+    },
+    {
+      "name": "Projected endpoints count only the used part of a source segment",
+      "passed": true
+    },
+    {
+      "name": "Foot one-way forbids reverse travel even between projected endpoints",
+      "passed": true
+    },
+    {
+      "name": "An exact endpoint may leave through a different adjacent road",
+      "passed": true
+    },
+    {
+      "name": "Vehicle one-way does not block pedestrian reverse travel",
+      "passed": true
+    },
+    {
+      "name": "Crossing geometries remain disconnected without a shared source node ID",
+      "passed": true
+    },
+    {
+      "name": "Source-connected bridges and tunnels work only in the planning profile",
+      "passed": true
+    },
+    {
+      "name": "Foot/access prohibitions and conditional restrictions are excluded",
+      "passed": true
+    },
+    {
+      "name": "Blocked nodes, absent nodes and foot-restriction relations break connectivity",
+      "passed": true
+    },
+    {
+      "name": "Steps retain their source geometry and flag",
+      "passed": true
+    },
+    {
+      "name": "Out-of-coverage and invalid endpoints do not create connectors",
+      "passed": true
+    },
+    {
+      "name": "Empty and incompatible datasets fail explicitly",
+      "passed": true
+    },
+    {
+      "name": "Distance labels use the midpoint along road geometry",
+      "passed": true
+    },
+    {
+      "name": "Frozen network bytes and original extract provenance match the manifest",
+      "passed": true,
+      "details": {
+        "sourceDate": "2026-10-25",
+        "nodes": 236091,
+        "ways": 36131,
+        "segments": 223898
+      }
+    },
+    {
+      "name": "Every displayed food point snaps to a nearby source road",
+      "passed": true,
+      "details": {
+        "points": 60,
+        "maxOffsetMetres": 84.39957449287337
+      }
+    },
+    {
+      "name": "Real route: nangua-nendouya → nangua-cailanzi",
+      "passed": true,
+      "details": {
+        "distanceMetres": 965.4243539383515,
+        "geometryPoints": 10,
+        "originalWays": 3,
+        "offsetsMetres": [
+          15.787094512745101,
+          0.934765953658866
+        ],
+        "independentDifferenceMetres": 0.0013330222312788464
+      }
+    },
+    {
+      "name": "Real route: nangua-sanyangzi → bailong-chunhong",
+      "passed": true,
+      "details": {
+        "distanceMetres": 766.7114116287685,
+        "geometryPoints": 33,
+        "originalWays": 10,
+        "offsetsMetres": [
+          18.342531781330766,
+          0.11953608056754508
+        ],
+        "independentDifferenceMetres": 0.001058281056771193
+      }
+    },
+    {
+      "name": "Real route: tiedan-gangzi → jiankang-zhuer",
+      "passed": true,
+      "details": {
+        "distanceMetres": 2974.89732065943,
+        "geometryPoints": 51,
+        "originalWays": 9,
+        "offsetsMetres": [
+          12.474909733730936,
+          6.9591575253417846
+        ],
+        "independentDifferenceMetres": 0.0041138171823149605
+      }
+    },
+    {
+      "name": "Real route: nangua-jeju → manbei-hongjiuge",
+      "passed": true,
+      "details": {
+        "distanceMetres": 8627.134815104808,
+        "geometryPoints": 283,
+        "originalWays": 38,
+        "offsetsMetres": [
+          40.81799761044456,
+          1.7469472492286822
+        ],
+        "independentDifferenceMetres": 0.011920129354621167
+      }
+    },
+    {
+      "name": "Real route: nangua-set-coffee → nangua-sanyangzi",
+      "passed": true,
+      "details": {
+        "distanceMetres": 7682.850879741111,
+        "geometryPoints": 172,
+        "originalWays": 32,
+        "offsetsMetres": [
+          5.906264153981348,
+          18.342531781330766
+        ],
+        "independentDifferenceMetres": 0.010589869847535738
+      }
+    },
+    {
+      "name": "Real route: nangua-jiachang → nangua-daling",
+      "passed": true,
+      "details": {
+        "distanceMetres": 10941.095815545707,
+        "geometryPoints": 203,
+        "originalWays": 48,
+        "offsetsMetres": [
+          32.55957065954255,
+          8.877967950117474
+        ],
+        "independentDifferenceMetres": 0.015114436633666628
+      }
+    }
+  ],
+  "passed": true
+}

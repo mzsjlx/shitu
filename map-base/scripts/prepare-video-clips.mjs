@@ -10,7 +10,13 @@ const ffmpeg=process.env.FOODCITY_FFMPEG||'ffmpeg',ffprobe=process.env.FOODCITY_
 function run(command,args){return new Promise((resolve,reject)=>{const child=spawn(command,args,{windowsHide:true,stdio:['ignore','pipe','pipe']});let out='',err='';child.stdout.on('data',b=>out+=b);child.stderr.on('data',b=>err+=b);child.once('error',reject);child.once('exit',code=>code===0?resolve(out):reject(new Error(`${command} exited ${code}: ${err.slice(-2500)}`)));});}
 const option=process.argv.indexOf('--source'),sourceId=option>=0?process.argv[option+1]:null;
 if(option>=0&&!data.sources.some(s=>s.id===sourceId))throw new Error('未找到这个来源ID');
-let existing={records:[]};try{existing=JSON.parse(await readFile(path.join(root,'.local/video-clips/report.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+// A separate ledger permits independent sources to be encoded concurrently.
+// The caller merges these source-specific ledgers after all jobs have completed.
+const reportOption=process.argv.indexOf('--report');
+const reportPath=path.resolve(root,reportOption>=0?process.argv[reportOption+1]:'.local/video-clips/report.json');
+if(!reportPath.startsWith(path.join(root,'.local/video-clips')+path.sep))throw new Error('剪辑记录必须保存在 .local/video-clips 内');
+await mkdir(path.dirname(reportPath),{recursive:true});
+let existing={records:[]};try{existing=JSON.parse(await readFile(reportPath,'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
 const report={schemaVersion:1,preparedAt:new Date().toISOString(),catalogSHA256:digest(await readFile(path.join(root,'data/video-library.json'))),mediaUploaded:false,records:existing.records||[],missingSources:[]};
 for(const source of data.sources.filter(source=>!sourceId||source.id===sourceId)){
   if(!source.segments.length)continue;
@@ -20,6 +26,15 @@ for(const source of data.sources.filter(source=>!sourceId||source.id===sourceId)
   const out=path.join(root,'.local/video-clips',source.id);await mkdir(out,{recursive:true});
   for(const segment of source.segments){
     const names=mediaNames(source,segment),clip=path.join(out,names.clip),poster=path.join(out,names.poster),temporary=clip+'.tmp.mp4';
+    if(process.argv.includes('--resume')){
+      const previous=report.records.find(r=>r.id===segment.id&&r.mediaKey===mediaKey(source,segment)&&r.sourceSHA256===source.sourceSHA256);
+      if(previous){
+        try{
+          const [clipBytes,posterBytes]=await Promise.all([readFile(clip),readFile(poster)]);
+          if(digest(clipBytes)===previous.clipSHA256&&digest(posterBytes)===previous.posterSHA256){console.log(`${segment.id}: verified existing clip, skipped`);continue;}
+        }catch(error){if(error.code!=='ENOENT')throw error;}
+      }
+    }
     await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.start),'-i',input,'-t',String(segment.end-segment.start),'-map','0:v:0','-map','0:a:0','-c:v','libx264','-preset','fast','-crf','21','-pix_fmt','yuv420p','-threads','4','-c:a','aac','-b:a','128k','-map_metadata','-1','-movflags','+faststart',temporary]);
     await rename(temporary,clip);
     await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.posterSecond),'-i',input,'-frames:v','1','-q:v','3',poster]);
@@ -30,7 +45,7 @@ for(const source of data.sources.filter(source=>!sourceId||source.id===sourceId)
     report.records=report.records.filter(record=>record.id!==segment.id);
     report.records.push({id:segment.id,sourceId:source.id,mediaKey:mediaKey(source,segment),sourceSHA256:source.sourceSHA256,start:segment.start,end:segment.end,posterSecond:segment.posterSecond,clip:names.clip,poster:names.poster,clipBytes:clipBytes.length,posterBytes:posterBytes.length,clipSHA256:digest(clipBytes),posterSHA256:digest(posterBytes),probe});
     console.log(`${segment.id}: ${duration.toFixed(3)}s, H.264 + AAC`);
-    await writeFile(path.join(root,'.local/video-clips/report.json'),JSON.stringify(report,null,2)+'\n');
+    await writeFile(reportPath,JSON.stringify(report,null,2)+'\n');
   }
 }
 console.log(`已处理 ${report.records.length} 个单店片段；缺少原片 ${report.missingSources.length} 份。`);

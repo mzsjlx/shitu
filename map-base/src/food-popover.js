@@ -80,20 +80,29 @@ export class FoodPopover{
     if(originalURL){const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));if(item.verificationStatus==='video-location'){const note=el('small','food-popover-branch-note','位置大致 · 分店待核');note.title=item.planningLocation?.note||'按地址街区估计';links.append(note);}}
     if(item.clipFootageNote){const note=el('small','food-popover-branch-note',item.clipFootageNote);links.append(note);}
     this.element.classList.toggle('has-clip-choices',choices.childElementCount>0);this.element.classList.toggle('has-footage-note',!!item.clipFootageNote);
-    this.element.replaceChildren(frame,close,copy,choices,this.errorNote,links);this.element.hidden=false;this.element.classList.remove('is-shown');
+    const details=el('div','food-popover-details');details.append(copy,choices,this.errorNote,links);
+    this.element.replaceChildren(frame,close,details);this.element.hidden=false;this.element.classList.remove('is-shown');
     this.updateSave();this.position();requestAnimationFrame(()=>{if(this.current?.id===item.id)this.element.classList.add('is-shown');});
   }
   position(){
     if(!this.current||!this.entry||this.element.hidden)return;
-    const shell=this.shell.getBoundingClientRect(),card=this.entry.element.getBoundingClientRect(),w=this.element.offsetWidth,h=this.element.offsetHeight,gap=12;
+    const shell=this.shell.getBoundingClientRect(),card=this.entry.element.getBoundingClientRect(),gap=12;
+    // Size against the visible map area; a short landscape screen has less space below the toolbar.
+    const visibleTop=Math.max(0,shell.top),visibleBottom=Math.min(innerHeight,shell.bottom),availableHeight=Math.max(0,Math.floor(visibleBottom-visibleTop-gap*2));
+    this.element.classList.remove('is-height-limited');
+    this.element.style.setProperty('--food-popover-available-height',availableHeight+'px');
+    this.element.style.setProperty('--food-popover-media-height',(availableHeight*2/3)+'px');
+    this.element.classList.toggle('is-height-limited',this.element.offsetHeight>availableHeight);
+    const w=this.element.offsetWidth,h=this.element.offsetHeight;
     const obstacles=[...this.shell.querySelectorAll('.food-card,.food-distance-badge,#trip-dock,.view-dock,#food-pick-tools,.maplibregl-ctrl-top-right')]
       .filter(node=>node.getClientRects().length).map(node=>node.getBoundingClientRect());
-    const clamp=(value,max)=>Math.max(gap,Math.min(value,Math.max(gap,max-gap)));
+    const clamp=(value,max,min=gap)=>Math.max(min,Math.min(value,Math.max(min,max-gap)));
+    const topInset=visibleTop-shell.top+gap,bottomLimit=visibleBottom-shell.top;
     const dock=this.shell.querySelector('#trip-dock'),dockTop=dock?.getClientRects().length?dock.getBoundingClientRect().top-shell.top:shell.height;
     const xs=[card.right-shell.left+gap,card.left-shell.left-w-gap,(card.left+card.right)/2-shell.left-w/2],ys=[card.top-shell.top-8,card.top-shell.top-h-gap,card.bottom-shell.top+gap,dockTop-h-gap];
     const options=[];
     for(const x of xs)for(const y of ys){
-      const left=clamp(x,shell.width-w),top=clamp(y,shell.height-h),rect={left:shell.left+left,top:shell.top+top,right:shell.left+left+w,bottom:shell.top+top+h};
+      const left=clamp(x,shell.width-w),top=clamp(y,bottomLimit-h,topInset),rect={left:shell.left+left,top:shell.top+top,right:shell.left+left+w,bottom:shell.top+top+h};
       const overlap=obstacles.reduce((sum,r)=>sum+Math.max(0,Math.min(rect.right,r.right)-Math.max(rect.left,r.left))*Math.max(0,Math.min(rect.bottom,r.bottom)-Math.max(rect.top,r.top)),0);
       options.push({left,top,score:overlap*8+Math.abs(left-x)*4+Math.abs(top-(card.top-shell.top-8))});
     }

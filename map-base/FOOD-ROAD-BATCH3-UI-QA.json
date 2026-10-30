@@ -1,0 +1,184 @@
+{
+  "verifiedOn": "2026-10-30",
+  "checks": [
+    {
+      "name": "Ordinary map does not load the road network or worker",
+      "passed": true
+    },
+    {
+      "name": "Direct mode is lazy and retains one two-point dashed line",
+      "passed": true
+    },
+    {
+      "name": "Road mode follows many original road coordinates and changes the distance",
+      "passed": true,
+      "detail": {
+        "direct": {
+          "mode": "direct",
+          "phase": "ready",
+          "total": 501.72837851992483,
+          "count": 1,
+          "missing": 0
+        },
+        "road": {
+          "mode": "road",
+          "phase": "ready",
+          "total": 766.7114116287685,
+          "count": 1,
+          "missing": 0
+        }
+      }
+    },
+    {
+      "name": "Switch is accessible and retains stop order",
+      "passed": true
+    },
+    {
+      "name": "Switching back removes all road geometry and road badges",
+      "passed": true
+    },
+    {
+      "name": "Network and worker are reused",
+      "passed": true
+    },
+    {
+      "name": "Three stops produce two road legs and their sum",
+      "passed": true
+    },
+    {
+      "name": "Reordering recalculates consecutive road legs",
+      "passed": true
+    },
+    {
+      "name": "Mode preference survives reload without changing selected stops",
+      "passed": true
+    },
+    {
+      "name": "Controls fit 390×844",
+      "passed": true,
+      "detail": {
+        "dock": {
+          "x": 13,
+          "y": 682,
+          "width": 364,
+          "height": 102,
+          "right": 377,
+          "bottom": 784
+        },
+        "toggle": {
+          "x": 217,
+          "y": 692,
+          "width": 74,
+          "height": 39,
+          "right": 291,
+          "bottom": 731
+        },
+        "view": {
+          "x": 13,
+          "y": 610,
+          "width": 206.46875,
+          "height": 54,
+          "right": 219.46875,
+          "bottom": 664
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "Controls fit 320×740",
+      "passed": true,
+      "detail": {
+        "dock": {
+          "x": 13,
+          "y": 578,
+          "width": 294,
+          "height": 102,
+          "right": 307,
+          "bottom": 680
+        },
+        "toggle": {
+          "x": 147,
+          "y": 588,
+          "width": 74,
+          "height": 39,
+          "right": 221,
+          "bottom": 627
+        },
+        "view": {
+          "x": 13,
+          "y": 506,
+          "width": 206.46875,
+          "height": 54,
+          "right": 219.46875,
+          "bottom": 560
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "Controls fit 736×414",
+      "passed": true,
+      "detail": {
+        "dock": {
+          "x": 15,
+          "y": 296,
+          "width": 706,
+          "height": 64,
+          "right": 721,
+          "bottom": 360
+        },
+        "toggle": {
+          "x": 138,
+          "y": 307,
+          "width": 92,
+          "height": 42,
+          "right": 230,
+          "bottom": 349
+        },
+        "view": {
+          "x": 15,
+          "y": 232,
+          "width": 216.75,
+          "height": 54,
+          "right": 231.75,
+          "bottom": 286
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "A failed network clears routes and offers a retry",
+      "passed": true
+    },
+    {
+      "name": "Retry recovers without reloading the page",
+      "passed": true
+    },
+    {
+      "name": "Disconnected legs show a partial result without fabricated lines or full total",
+      "passed": true
+    },
+    {
+      "name": "Late network results cannot overwrite a newer direct-mode selection",
+      "passed": true
+    },
+    {
+      "name": "Fast selection changes use only the latest stops",
+      "passed": true
+    },
+    {
+      "name": "Leaving food mode clears all route lines",
+      "passed": true
+    },
+    {
+      "name": "Standalone preview computes with embedded network and worker",
+      "passed": true
+    },
+    {
+      "name": "No browser runtime errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passed": true
+}

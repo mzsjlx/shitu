@@ -1,0 +1,116 @@
+{
+  "verifiedOn": "2026-10-29",
+  "scope": "Retained map/terrain/search/topology coverage to Beibei, prior map preservation; not shop entrance or live-access verification.",
+  "checks": [
+    {
+      "name": "Expanded archive, configuration and actual bytes have matching provenance",
+      "passed": true,
+      "details": {
+        "bounds": [
+          106.36,
+          29.48,
+          106.65,
+          29.87
+        ],
+        "bytes": 10897305,
+        "sha256": "075cda9947c65b581ee8fdaa3276785df983606215383fe03e68777ffc1594f9"
+      }
+    },
+    {
+      "name": "Every requested z15 map tile exists in the expanded coverage",
+      "passed": true,
+      "details": {
+        "tiles": 1134
+      }
+    },
+    {
+      "name": "All prior central-city z15 tiles are preserved byte for byte",
+      "passed": true,
+      "details": {
+        "priorTiles": 399
+      }
+    },
+    {
+      "name": "北碚老城 contains retained road and building features",
+      "passed": true,
+      "details": {
+        "point": [
+          106.4339,
+          29.8282
+        ],
+        "tile": [
+          15,
+          26071,
+          13537
+        ],
+        "roads": 31,
+        "buildings": 307
+      }
+    },
+    {
+      "name": "北碚辽宁路片区 contains retained road and building features",
+      "passed": true,
+      "details": {
+        "point": [
+          106.4303,
+          29.8238
+        ],
+        "tile": [
+          15,
+          26071,
+          13537
+        ],
+        "roads": 31,
+        "buildings": 307
+      }
+    },
+    {
+      "name": "北碚西南大学片区 contains retained road and building features",
+      "passed": true,
+      "details": {
+        "point": [
+          106.4265,
+          29.8158
+        ],
+        "tile": [
+          15,
+          26071,
+          13538
+        ],
+        "roads": 13,
+        "buildings": 246
+      }
+    },
+    {
+      "name": "Terrain coverage includes every requested northern tile and preserves existing tiles",
+      "passed": true,
+      "details": {
+        "verifiedTiles": 189,
+        "preservedTiles": 110
+      }
+    },
+    {
+      "name": "Northern roads are included in searchable actual road geometry",
+      "passed": true,
+      "details": {
+        "roads": 2434,
+        "names": [
+          "天生路",
+          "辽宁路",
+          "南京路",
+          "碚峡路"
+        ]
+      }
+    },
+    {
+      "name": "Expanded walking network and its manifest use the same coverage and frozen source",
+      "passed": true,
+      "details": {
+        "nodes": 236091,
+        "ways": 36131,
+        "bytes": 15259633
+      }
+    }
+  ],
+  "passed": true
+}

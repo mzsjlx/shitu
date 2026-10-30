@@ -5,6 +5,9 @@ import {buildVideoLibrary} from './build-video-library.mjs';
 import {digest,mediaKey,mediaNames} from './video-library-common.mjs';
 import {spawnSync} from 'node:child_process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const reportOption=process.argv.indexOf('--report');
+const reportName=reportOption>=0?process.argv[reportOption+1]:'VIDEO-LIBRARY-MEDIA-QA.json';
+if(!/^[A-Za-z0-9_-]+\.json$/.test(reportName))throw new Error('Invalid report filename');
 const catalog=JSON.parse(await readFile(path.join(root,'data/video-library.json'),'utf8'));
 const generated=JSON.parse(await readFile(path.join(root,'.local/video-clips/report.json'),'utf8'));
 const checks=[],check=(name,passed)=>checks.push({name,passed});
@@ -28,6 +31,6 @@ const empty=JSON.parse(await readFile(path.join(isolated,'dist/data/video-librar
 check('Build without original media completes with an empty availability manifest',Object.keys(empty.segments).length===0);
 const foodHash=digest(await readFile(path.join(root,'data/food-records.json')));check('Retired example places are absent',JSON.parse(await readFile(path.join(root,'data/food-records.json'),'utf8')).records.length===0);
 const standalone=await readFile(path.join(root,'preview.html'));
-const report={date:'2026-10-28',method:'Local source and clip SHA256 checks, prepared ffprobe streams, isolated no-media build. Frames/subtitles and source end cards were inspected; not geographic validation or full listening review.',catalogSHA256:digest(await readFile(path.join(root,'data/video-library.json'))),sources:catalog.sources.map(s=>({id:s.id,url:s.url,author:s.author,status:s.acquisitionStatus,sourceSHA256:s.sourceSHA256,segments:s.segments.length})),mediaUploadedByThisCheck:false,sourcePlaceSHA256:foodHash,clipCount:generated.records.length,totalClipBytes:generated.records.reduce((sum,r)=>sum+r.clipBytes,0),totalPosterBytes:generated.records.reduce((sum,r)=>sum+r.posterBytes,0),standalone:{bytes:standalone.length,sha256:digest(standalone)},records:generated.records,checks,passed:checks.every(c=>c.passed)};
-await writeFile(path.join(root,'VIDEO-LIBRARY-MEDIA-QA.json'),JSON.stringify(report,null,2)+'\n');
+const report={date:new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Shanghai'}),method:'Local source and clip SHA256 checks, prepared ffprobe streams, isolated no-media build. Frames/subtitles and source end cards were inspected; not geographic validation or full listening review.',catalogSHA256:digest(await readFile(path.join(root,'data/video-library.json'))),sources:catalog.sources.map(s=>({id:s.id,url:s.url,author:s.author,status:s.acquisitionStatus,sourceSHA256:s.sourceSHA256,segments:s.segments.length})),mediaUploadedByThisCheck:false,sourcePlaceSHA256:foodHash,clipCount:generated.records.length,totalClipBytes:generated.records.reduce((sum,r)=>sum+r.clipBytes,0),totalPosterBytes:generated.records.reduce((sum,r)=>sum+r.posterBytes,0),standalone:{bytes:standalone.length,sha256:digest(standalone)},records:generated.records,checks,passed:checks.every(c=>c.passed)};
+await writeFile(path.join(root,reportName),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({passed:report.passed,checks:checks.length,clipCount:report.clipCount,bytes:report.totalClipBytes,standalone:report.standalone}));
