@@ -22,6 +22,19 @@ for(const source of data.sources.filter(source=>!sourceId||source.id===sourceId)
   const out=path.join(root,'.local/video-clips',source.id);await mkdir(out,{recursive:true});
   for(const segment of source.segments){
     const names=mediaNames(source,segment),clip=path.join(out,names.clip),poster=path.join(out,names.poster),temporary=clip+'.tmp.mp4';
+    const key=mediaKey(source,segment);
+    const existingRec=existing.records?.find(r=>r.id===segment.id&&r.mediaKey===key&&r.sourceSHA256===source.sourceSHA256);
+    if(existingRec){
+      try{
+        const [cBytes,pBytes]=await Promise.all([readFile(clip),readFile(poster)]);
+        if(digest(cBytes)===existingRec.clipSHA256&&digest(pBytes)===existingRec.posterSHA256){
+          console.log(`${segment.id}: cache hit, skipping re-encode`);
+          report.records=report.records.filter(record=>record.id!==segment.id);
+          report.records.push(existingRec);
+          continue;
+        }
+      }catch{}
+    }
     await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.start),'-i',input,'-t',String(segment.end-segment.start),'-map','0:v:0','-map','0:a:0','-c:v','libx264','-preset','fast','-crf','21','-pix_fmt','yuv420p','-threads','4','-c:a','aac','-b:a','128k','-map_metadata','-1','-movflags','+faststart',temporary]);
     await rename(temporary,clip);
     await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.posterSecond),'-i',input,'-frames:v','1','-q:v','3',poster]);
