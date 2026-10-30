@@ -146,9 +146,33 @@
       "sha256": "bb2bd284184467e701d5c357b057e0c6db0db14d2047dd5aa43716b24a30f367",
       "clips": 7,
       "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-10-30-batch4/shitu-media-cq-xiaoyang-yubei-7532432677610278170-1ac33ebabda4c5a7.zip"
+    },
+    {
+      "sourceId": "cq-mei-7529179722208546106",
+      "name": "shitu-media-cq-mei-7529179722208546106-947e00caa9635971.zip",
+      "bytes": 22141678,
+      "sha256": "4a70aa669ee4e471d3883c2a6bfcceb8633ef4488d2a38776310a373b239ea56",
+      "clips": 7,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-10-30-batch5/shitu-media-cq-mei-7529179722208546106-947e00caa9635971.zip"
+    },
+    {
+      "sourceId": "cq-wenzi-7642999598881033417",
+      "name": "shitu-media-cq-wenzi-7642999598881033417-3e0887aebe9095de.zip",
+      "bytes": 37314852,
+      "sha256": "d102b9f3f4389eac9198b8bf630f39a2c7a26f26acbdb32d19194b1f69eae31e",
+      "clips": 1,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-10-30-batch5/shitu-media-cq-wenzi-7642999598881033417-3e0887aebe9095de.zip"
+    },
+    {
+      "sourceId": "cq-xianxian-7563133332981484858",
+      "name": "shitu-media-cq-xianxian-7563133332981484858-10cee35cb602bbcc.zip",
+      "bytes": 60868070,
+      "sha256": "c659808df040e033aa6ba0ddeecd8cce05ae35d5880713e92daa4d91a58aacbf",
+      "clips": 1,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-10-30-batch5/shitu-media-cq-xianxian-7563133332981484858-10cee35cb602bbcc.zip"
     }
   ],
-  "latestRelease": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch4",
+  "latestRelease": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch5",
   "releases": [
     {
       "tag": "media-2026-10-28",
@@ -165,6 +189,10 @@
     {
       "tag": "media-2026-10-30-batch4",
       "url": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch4"
+    },
+    {
+      "tag": "media-2026-10-30-batch5",
+      "url": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch5"
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "Batch 5 catalog, source hashes, clip and poster ledger. Geographic anchors and browser playback checked separately.",
+  "checks": [
+    {
+      "name": "Valid catalog and previously recorded sources unchanged",
+      "passed": true
+    },
+    {
+      "name": "Three distinct authorized sources and nine non-overlapping segments",
+      "passed": true
+    },
+    {
+      "name": "Two approximate street references and seven unlocated clips",
+      "passed": true
+    },
+    {
+      "name": "Old footage carries year and current-status notes",
+      "passed": true
+    },
+    {
+      "name": "No unsupported identity merge of the two boxed meals",
+      "passed": true
+    },
+    {
+      "name": "Three original videos match their recorded SHA256",
+      "passed": true
+    },
+    {
+      "name": "Nine encoded clips and actual-frame posters match their ledger",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "sources": 3,
+    "segments": 9,
+    "located": 2,
+    "unlocated": 7
+  },
+  "passed": true
+}
