@@ -5,7 +5,7 @@
   "rights": {
     "status": "user-confirmed",
     "confirmedOn": "2026-10-29",
-    "scope": "首批3条、第二批8条及2026-10-29新增4条分别经用户确认已获作者允许剪辑并在网站使用；各来源保留自己的授权确认日期。",
+    "scope": "此前视频与2026-10-30新增4条均由用户分别确认已获作者允许剪辑并用于网站；每个来源保留自己的确认日期。",
     "evidence": "本项目会话中的用户确认；未独立审查授权文件。"
   },
   "sources": [
@@ -3042,6 +3042,815 @@
             },
             "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8D%E5%BA%86%20%E7%BA%A2%E9%9B%A8%E5%B0%91%E6%B0%B4%E7%B2%89"
           }
+        }
+      ]
+    },
+    {
+      "id": "cq-baozao-7676071047438803849",
+      "author": "暴躁扒拉",
+      "title": "重庆路边摊大合集：11家心头爱",
+      "url": "https://www.douyin.com/video/7676071047438803849",
+      "shareURL": "https://v.douyin.com/NsxjGq3e3iE/",
+      "publishedOn": "2026-08-20",
+      "durationSeconds": 181.81,
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-30",
+        "scope": "用户确认本批4个作品已获作者允许剪辑并用于网站。"
+      },
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "依据原片字幕、转场和音轨划分；未命名摊位以菜品及街区描述，位置为开放地图参照，流动摊位、分店和营业待确认。",
+      "segments": [
+        {
+          "id": "cq-baozao-7676071047438803849-rongjing-doufunao",
+          "name": "融景城豆腐脑",
+          "category": "豆腐脑",
+          "addressText": "融景城沁园外",
+          "start": 17.567,
+          "end": 33.667,
+          "posterSecond": 24,
+          "summary": "融景城豆腐脑的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5486933,
+            29.577929
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 17.567–33.667 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "融景城‧景城胃肠医院附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“融景城沁园外”；以融景城‧景城胃肠医院开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13013024531,
+              "name": "融景城‧景城胃肠医院",
+              "url": "https://www.openstreetmap.org/node/13013024531",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-dalitang-liangxia",
+          "name": "大礼堂眼镜凉虾",
+          "category": "凉虾 / 凉糕",
+          "addressText": "大礼堂站3号口外",
+          "start": 33.667,
+          "end": 50.033,
+          "posterSecond": 44,
+          "summary": "大礼堂眼镜凉虾的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5522592,
+            29.56436
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 33.667–50.033 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大礼堂附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“大礼堂站3号口外”；以大礼堂开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 10743557892,
+              "name": "大礼堂",
+              "url": "https://www.openstreetmap.org/node/10743557892",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-dadukou-roubing",
+          "name": "大渡口鸡蛋肉饼",
+          "category": "鸡蛋肉饼",
+          "addressText": "大渡口37中对面",
+          "start": 50.033,
+          "end": 64.5,
+          "posterSecond": 56,
+          "summary": "大渡口鸡蛋肉饼的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 50.033–64.5 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "addressNote": "原片地址已保留；当前底图或开放地图街区参照尚未覆盖，暂不放置地图点。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-rongchang-dougan",
+          "name": "荣昌豆干藕条",
+          "category": "豆干 / 藕条",
+          "addressText": "荣昌莲花广场临河边巷子里",
+          "start": 64.5,
+          "end": 78.133,
+          "posterSecond": 68,
+          "summary": "荣昌豆干藕条的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 64.5–78.133 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "addressNote": "原片地址已保留；当前底图或开放地图街区参照尚未覆盖，暂不放置地图点。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-tongliang-gao",
+          "name": "铜梁冲冲糕",
+          "category": "传统糕点",
+          "addressText": "铜梁乐销服装批发城门口",
+          "start": 78.133,
+          "end": 91.233,
+          "posterSecond": 84,
+          "summary": "铜梁冲冲糕的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 78.133–91.233 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "addressNote": "原片地址已保留；当前底图或开放地图街区参照尚未覆盖，暂不放置地图点。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-xinyang-guobaorou",
+          "name": "欣阳广场东北锅包肉",
+          "category": "东北菜 / 小吃",
+          "addressText": "沙坪坝欣阳广场夜市",
+          "start": 91.233,
+          "end": 108.967,
+          "posterSecond": 96,
+          "summary": "欣阳广场东北锅包肉的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.4585287,
+            29.5662812
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 91.233–108.967 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "欣阳广场附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“沙坪坝欣阳广场夜市”；以欣阳广场开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 14312937597,
+              "name": "欣阳广场",
+              "url": "https://www.openstreetmap.org/node/14312937597",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-yudong-chuanchuan",
+          "name": "鱼洞盐水鸭串串",
+          "category": "卤味 / 串串",
+          "addressText": "重庆银行鱼洞支行巷子里",
+          "start": 108.967,
+          "end": 123.667,
+          "posterSecond": 116,
+          "summary": "鱼洞盐水鸭串串的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 108.967–123.667 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "addressNote": "原片地址已保留；当前底图或开放地图街区参照尚未覆盖，暂不放置地图点。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-shiziping-tudou",
+          "name": "狮子坪土豆丝饼",
+          "category": "土豆丝饼",
+          "addressText": "狮子坪轻轨站",
+          "start": 123.667,
+          "end": 136.367,
+          "posterSecond": 128,
+          "summary": "狮子坪土豆丝饼的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5454051,
+            29.6040944
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 123.667–136.367 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "狮子坪附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“狮子坪轻轨站”；以狮子坪开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1856531417,
+              "name": "狮子坪",
+              "url": "https://www.openstreetmap.org/node/1856531417",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-nanping-ciba",
+          "name": "南坪包心糍粑",
+          "category": "糍粑",
+          "addressText": "南坪万寿路附近",
+          "start": 136.367,
+          "end": 144.333,
+          "posterSecond": 139,
+          "summary": "南坪包心糍粑的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5584256,
+            29.5260929
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 136.367–144.333 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "万寿路附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“南坪万寿路附近”；以万寿路开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 11193836266,
+              "name": "万寿路",
+              "url": "https://www.openstreetmap.org/node/11193836266",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-danzishi-huoguofen",
+          "name": "弹子石火锅粉",
+          "category": "火锅粉",
+          "addressText": "国际社区麻爪爪外街边",
+          "start": 144.333,
+          "end": 161.8,
+          "posterSecond": 152,
+          "summary": "弹子石火锅粉的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5929987,
+            29.5988813
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 144.333–161.8 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "国际社区附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“国际社区麻爪爪外街边”；以国际社区开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 14020631199,
+              "name": "国际社区",
+              "url": "https://www.openstreetmap.org/node/14020631199",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan",
+          "name": "花卉园巫山卷卷",
+          "category": "巫山卷卷",
+          "addressText": "花卉园轻轨站2b出口",
+          "start": 161.8,
+          "end": 179.033,
+          "posterSecond": 172,
+          "summary": "花卉园巫山卷卷的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5091675,
+            29.5859303
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 161.8–179.033 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "花卉园附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“花卉园轻轨站2b出口”；以花卉园开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 2154566014,
+              "name": "花卉园",
+              "url": "https://www.openstreetmap.org/node/2154566014",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cq-yangyu-7699016826356895027",
+      "author": "洋芋大王",
+      "title": "花20块钱跟着小学生吃一顿童年美食",
+      "url": "https://www.douyin.com/video/7699016826356895027",
+      "shareURL": "https://v.douyin.com/FbZdXFTRjSA/",
+      "publishedOn": "2026-10-21",
+      "durationSeconds": 156.595011,
+      "sourceSHA256": "73f1d80f451a9659844decb76c4dfda6ab346eb1f6c97330e38b5e4be1679ef5",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-30",
+        "scope": "用户确认本批4个作品已获作者允许剪辑并用于网站。"
+      },
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "依据原片字幕、转场和音轨划分；未命名摊位以菜品及街区描述，位置为开放地图参照，流动摊位、分店和营业待确认。",
+      "segments": [
+        {
+          "id": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi",
+          "name": "小学门口小吃摊合集",
+          "category": "街边小吃",
+          "addressText": "重庆某小学附近；学校及街区待核",
+          "start": 11.8,
+          "end": 45.4,
+          "posterSecond": 24,
+          "summary": "小学门口小吃摊合集的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 11.8–45.4 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "addressNote": "原片未注明学校或街区，暂不放置地图点。"
+        }
+      ]
+    },
+    {
+      "id": "cq-suisui-7640793670463833265",
+      "author": "岁岁念～",
+      "title": "花100块逛吃重庆沙坪坝重大夜市",
+      "url": "https://www.douyin.com/video/7640793670463833265",
+      "shareURL": "https://v.douyin.com/sCHLuycT8Qs/",
+      "publishedOn": "2026-05-17",
+      "durationSeconds": 101.666016,
+      "sourceSHA256": "2e5c50de1b32557eb8dc138e0914523ba7c66f6c2e6c34384e598d3a6c76728b",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-30",
+        "scope": "用户确认本批4个作品已获作者允许剪辑并用于网站。"
+      },
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "依据原片字幕、转场和音轨划分；未命名摊位以菜品及街区描述，位置为开放地图参照，流动摊位、分店和营业待确认。",
+      "segments": [
+        {
+          "id": "cq-suisui-7640793670463833265-guobaorou",
+          "name": "重大夜市东北锅包肉",
+          "category": "锅包肉",
+          "addressText": "沙坪坝重大夜市；具体摊位待核",
+          "start": 10.833,
+          "end": 31.267,
+          "posterSecond": 21,
+          "summary": "原片中的重大夜市摊位，保留原作者视频片段。",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "作者称重大夜市；沙中路为重大夜市候选街区，位置与摊位需再核对，不能由同名锅包肉认定同一摊。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "重大夜市候选 · 沙中路一带",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "作者称重大夜市；参考重大周边沙中路开放公交站，只代表可能的夜市街区，具体入口与摊位待核。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1684513179,
+              "name": "沙中路",
+              "url": "https://www.openstreetmap.org/node/1684513179",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        },
+        {
+          "id": "cq-suisui-7640793670463833265-dayoubian",
+          "name": "重大夜市烤大油边",
+          "category": "烧烤",
+          "addressText": "沙坪坝重大夜市；具体摊位待核",
+          "start": 31.267,
+          "end": 39.167,
+          "posterSecond": 33,
+          "summary": "原片中的重大夜市摊位，保留原作者视频片段。",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "作者称重大夜市；沙中路为重大夜市候选街区，位置与摊位需再核对，不能由同名锅包肉认定同一摊。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "重大夜市候选 · 沙中路一带",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "作者称重大夜市；参考重大周边沙中路开放公交站，只代表可能的夜市街区，具体入口与摊位待核。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1684513179,
+              "name": "沙中路",
+              "url": "https://www.openstreetmap.org/node/1684513179",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        },
+        {
+          "id": "cq-suisui-7640793670463833265-zhurouchuan",
+          "name": "重大夜市猪肉串",
+          "category": "烧烤",
+          "addressText": "沙坪坝重大夜市；具体摊位待核",
+          "start": 39.167,
+          "end": 49.567,
+          "posterSecond": 43,
+          "summary": "原片中的重大夜市摊位，保留原作者视频片段。",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "作者称重大夜市；沙中路为重大夜市候选街区，位置与摊位需再核对，不能由同名锅包肉认定同一摊。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "重大夜市候选 · 沙中路一带",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "作者称重大夜市；参考重大周边沙中路开放公交站，只代表可能的夜市街区，具体入口与摊位待核。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1684513179,
+              "name": "沙中路",
+              "url": "https://www.openstreetmap.org/node/1684513179",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        },
+        {
+          "id": "cq-suisui-7640793670463833265-xiangjiaofeibing",
+          "name": "重大夜市香蕉飞饼",
+          "category": "飞饼",
+          "addressText": "沙坪坝重大夜市；具体摊位待核",
+          "start": 49.567,
+          "end": 60.167,
+          "posterSecond": 53,
+          "summary": "原片中的重大夜市摊位，保留原作者视频片段。",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "作者称重大夜市；沙中路为重大夜市候选街区，位置与摊位需再核对，不能由同名锅包肉认定同一摊。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "重大夜市候选 · 沙中路一带",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "作者称重大夜市；参考重大周边沙中路开放公交站，只代表可能的夜市街区，具体入口与摊位待核。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1684513179,
+              "name": "沙中路",
+              "url": "https://www.openstreetmap.org/node/1684513179",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        },
+        {
+          "id": "cq-suisui-7640793670463833265-luchuanchuan",
+          "name": "重大夜市辣卤串串",
+          "category": "卤味 / 串串",
+          "addressText": "沙坪坝重大夜市；具体摊位待核",
+          "start": 60.167,
+          "end": 77.967,
+          "posterSecond": 66,
+          "summary": "原片中的重大夜市摊位，保留原作者视频片段。",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "作者称重大夜市；沙中路为重大夜市候选街区，位置与摊位需再核对，不能由同名锅包肉认定同一摊。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "重大夜市候选 · 沙中路一带",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "作者称重大夜市；参考重大周边沙中路开放公交站，只代表可能的夜市街区，具体入口与摊位待核。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1684513179,
+              "name": "沙中路",
+              "url": "https://www.openstreetmap.org/node/1684513179",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170",
+      "author": "小羊在重庆",
+      "title": "挑战50元在渝北区吃到撑",
+      "url": "https://www.douyin.com/video/7532432677610278170",
+      "shareURL": "https://v.douyin.com/2wJ-crlKCz8/",
+      "publishedOn": "2025-07-29",
+      "durationSeconds": 58.002993,
+      "sourceSHA256": "1aa2fc543173adfd0da944f9838bee43136217236b40740d6d4b37cc40423e4a",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-10-30",
+        "scope": "用户确认本批4个作品已获作者允许剪辑并用于网站。"
+      },
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "依据原片字幕、转场和音轨划分；未命名摊位以菜品及街区描述，位置为开放地图参照，流动摊位、分店和营业待确认。",
+      "segments": [
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing",
+          "name": "黄泥塝牛肉饼",
+          "category": "牛肉饼",
+          "addressText": "黄泥塝轻轨站3号口附近",
+          "start": 3.4,
+          "end": 10.233,
+          "posterSecond": 6,
+          "summary": "黄泥塝牛肉饼的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5342538,
+            29.5912927
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 3.4–10.233 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "黄泥塝附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“黄泥塝轻轨站3号口附近”；以黄泥塝开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 2154566028,
+              "name": "黄泥塝",
+              "url": "https://www.openstreetmap.org/node/2154566028",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          },
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing",
+          "name": "黄泥塝土豆饼",
+          "category": "土豆饼",
+          "addressText": "黄泥塝过天桥对面",
+          "start": 10.233,
+          "end": 17.633,
+          "posterSecond": 13,
+          "summary": "黄泥塝土豆饼的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5342538,
+            29.5912927
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 10.233–17.633 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "黄泥塝附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“黄泥塝过天桥对面”；以黄泥塝开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 2154566028,
+              "name": "黄泥塝",
+              "url": "https://www.openstreetmap.org/node/2154566028",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          },
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba",
+          "name": "红旗河沟热糍粑",
+          "category": "糍粑",
+          "addressText": "红旗河沟站1号口附近",
+          "start": 17.633,
+          "end": 24.467,
+          "posterSecond": 20,
+          "summary": "红旗河沟热糍粑的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5224772,
+            29.5880216
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 17.633–24.467 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "红旗河沟附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“红旗河沟站1号口附近”；以红旗河沟开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 6586946648,
+              "name": "红旗河沟",
+              "url": "https://www.openstreetmap.org/node/6586946648",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          },
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan",
+          "name": "红旗河沟麻辣串",
+          "category": "麻辣串",
+          "addressText": "红旗河沟站附近",
+          "start": 24.467,
+          "end": 31.533,
+          "posterSecond": 27,
+          "summary": "红旗河沟麻辣串的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5224772,
+            29.5880216
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 24.467–31.533 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "红旗河沟附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“红旗河沟站附近”；以红旗河沟开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 6586946648,
+              "name": "红旗河沟",
+              "url": "https://www.openstreetmap.org/node/6586946648",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          },
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian",
+          "name": "花卉园洋芋和凉面",
+          "category": "凉面 / 洋芋",
+          "addressText": "花卉园站3号口附近夜市",
+          "start": 31.533,
+          "end": 41.5,
+          "posterSecond": 35,
+          "summary": "花卉园洋芋和凉面的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5091675,
+            29.5859303
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 31.533–41.5 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "花卉园附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“花卉园站3号口附近夜市”；以花卉园开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 2154566014,
+              "name": "花卉园",
+              "url": "https://www.openstreetmap.org/node/2154566014",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          },
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi",
+          "name": "花卉园烤豆干苕皮",
+          "category": "豆干 / 苕皮",
+          "addressText": "花卉园武陵路附近",
+          "start": 41.5,
+          "end": 49.567,
+          "posterSecond": 44,
+          "summary": "花卉园烤豆干苕皮的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5167963,
+            29.5890978
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 41.5–49.567 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "武陵路附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“花卉园武陵路附近”；以武陵路开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 14024458731,
+              "name": "武陵路",
+              "url": "https://www.openstreetmap.org/node/14024458731",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          },
+          "footageNote": "2025年视频 · 营业情况待确认"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba",
+          "name": "花卉园包心糍粑",
+          "category": "糍粑",
+          "addressText": "花卉园武陵路附近",
+          "start": 49.567,
+          "end": 57.7,
+          "posterSecond": 53,
+          "summary": "花卉园包心糍粑的原片片段；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "coordinates": [
+            106.5167963,
+            29.5890978
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "evidenceNote": "原片 49.567–57.7 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "武陵路附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "视频写“花卉园武陵路附近”；以武陵路开放地图节点表示附近街区，不代表摊位或出口坐标。街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。",
+            "reviewedOn": "2026-10-30",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 14024458731,
+              "name": "武陵路",
+              "url": "https://www.openstreetmap.org/node/14024458731",
+              "sourceDate": "2026-10-25",
+              "method": "point"
+            }
+          },
+          "footageNote": "2025年视频 · 营业情况待确认"
         }
       ]
     }

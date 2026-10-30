@@ -1,0 +1,5401 @@
+{
+  "date": "2026-10-30",
+  "method": "Local source and clip SHA256 checks, prepared ffprobe streams, isolated no-media build. Frames/subtitles and source end cards were inspected; not geographic validation or full listening review.",
+  "catalogSHA256": "6ee01460b0270297c7bd200fb448dd855e631e2eadf902c070147f2549f041e7",
+  "sources": [
+    {
+      "id": "nangua",
+      "url": "https://www.douyin.com/video/7699050477137231973",
+      "author": "南瓜小丸子呀🎃",
+      "status": "local-source",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "segments": 11
+    },
+    {
+      "id": "abang",
+      "url": "https://www.douyin.com/video/7696830954535675065",
+      "author": "阿棒馋了",
+      "status": "local-source",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "segments": 9
+    },
+    {
+      "id": "zhizhi",
+      "url": "https://www.douyin.com/video/7653075066175338725",
+      "author": "汁汁冰激凌",
+      "status": "source-needed",
+      "sourceSHA256": null,
+      "segments": 0
+    },
+    {
+      "id": "tiedan",
+      "url": "https://www.douyin.com/video/7606643552034049280",
+      "author": "吃货老外铁蛋儿",
+      "status": "local-source",
+      "sourceSHA256": "e344a8cc4b61606f59e9963529d4a1ff475fe5b15b0e7666eefe61acb7d4460a",
+      "segments": 1
+    },
+    {
+      "id": "yumo",
+      "url": "https://www.douyin.com/video/7667449122551432070",
+      "author": "隔壁的鱼某",
+      "status": "local-source",
+      "sourceSHA256": "b0415616dbb3fbbd5008f6c90aeb8e0647db0557855157572ad4b0de6fc65ec4",
+      "segments": 1
+    },
+    {
+      "id": "wulala",
+      "url": "https://www.douyin.com/video/7692456047637794048",
+      "author": "特别乌啦啦",
+      "status": "local-source",
+      "sourceSHA256": "7aca5b04333086b6422216cac6349e586f9f2b603d8aec52358de22f85203058",
+      "segments": 1
+    },
+    {
+      "id": "jiankang",
+      "url": "https://www.douyin.com/video/7641930063063818937",
+      "author": "健康哥哥",
+      "status": "local-source",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "segments": 9
+    },
+    {
+      "id": "bailong",
+      "url": "https://www.douyin.com/video/7518816084745522458",
+      "author": "白龙吃了又饿了",
+      "status": "local-source",
+      "sourceSHA256": "6546e5867fb6dbfeb3af8a51c4532b884afe574c6d1ac1dbbde18308e4f42dd4",
+      "segments": 3
+    },
+    {
+      "id": "mizijun",
+      "url": "https://www.douyin.com/video/7660441058194541859",
+      "author": "密子君",
+      "status": "local-source",
+      "sourceSHA256": "87118728a995472788dc1e91ab9c51043bb77eeef1365c9dcbb8024bae89fd1c",
+      "segments": 1
+    },
+    {
+      "id": "zhangxixi",
+      "url": "https://www.douyin.com/video/6946497010522508552",
+      "author": "张喜喜",
+      "status": "local-source",
+      "sourceSHA256": "754bcd857f8762989e5d8307091c9002fe1c227a7b299c46af4dd192c72529a9",
+      "segments": 1
+    },
+    {
+      "id": "manbei",
+      "url": "https://www.douyin.com/video/7388810835478547712",
+      "author": "满杯小白",
+      "status": "local-source",
+      "sourceSHA256": "3a04c3c7fe8dfbe7222a1785327852541d7496aae0f021d1c3b6b5c739f87572",
+      "segments": 1
+    },
+    {
+      "id": "cq-xiaoyang-7602232743804036730",
+      "url": "https://www.douyin.com/video/7602232743804036730",
+      "author": "小洋嘎嘣脆",
+      "status": "local-source",
+      "sourceSHA256": "ecdaf3e004a1f81df63240c44b9892d8fb43649dc40348bbe301801656d28867",
+      "segments": 6
+    },
+    {
+      "id": "cq-lanmei-7692311805913784713",
+      "url": "https://www.douyin.com/video/7692311805913784713",
+      "author": "一颗蓝莓",
+      "status": "local-source",
+      "sourceSHA256": "d9f2ce7bbd310db48467e55d1d91bcd8b09598b405713811073e010d557ce997",
+      "segments": 6
+    },
+    {
+      "id": "cq-kaizi-7666393424492268852",
+      "url": "https://www.douyin.com/video/7666393424492268852",
+      "author": "一支凯子",
+      "status": "local-source",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "segments": 11
+    },
+    {
+      "id": "cq-pp-7583215165723266354",
+      "url": "https://www.douyin.com/video/7583215165723266354",
+      "author": "PP超能炫",
+      "status": "local-source",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "segments": 32
+    },
+    {
+      "id": "cq-baozao-7676071047438803849",
+      "url": "https://www.douyin.com/video/7676071047438803849",
+      "author": "暴躁扒拉",
+      "status": "local-source",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "segments": 11
+    },
+    {
+      "id": "cq-yangyu-7699016826356895027",
+      "url": "https://www.douyin.com/video/7699016826356895027",
+      "author": "洋芋大王",
+      "status": "local-source",
+      "sourceSHA256": "73f1d80f451a9659844decb76c4dfda6ab346eb1f6c97330e38b5e4be1679ef5",
+      "segments": 1
+    },
+    {
+      "id": "cq-suisui-7640793670463833265",
+      "url": "https://www.douyin.com/video/7640793670463833265",
+      "author": "岁岁念～",
+      "status": "local-source",
+      "sourceSHA256": "2e5c50de1b32557eb8dc138e0914523ba7c66f6c2e6c34384e598d3a6c76728b",
+      "segments": 5
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170",
+      "url": "https://www.douyin.com/video/7532432677610278170",
+      "author": "小羊在重庆",
+      "status": "local-source",
+      "sourceSHA256": "1aa2fc543173adfd0da944f9838bee43136217236b40740d6d4b37cc40423e4a",
+      "segments": 7
+    }
+  ],
+  "mediaUploadedByThisCheck": false,
+  "sourcePlaceSHA256": "90fdfb5128c375e209eccf6a035707ade4e83adbfff9e32b767aff9a51060833",
+  "clipCount": 117,
+  "totalClipBytes": 2839713121,
+  "totalPosterBytes": 20366008,
+  "standalone": {
+    "bytes": 45038977,
+    "sha256": "3997ae1ad032e13a2777e2c59e5bc252c9cf28e4a0575c51734ce3484e5c0fe9"
+  },
+  "records": [
+    {
+      "id": "nangua-jiachang",
+      "sourceId": "nangua",
+      "mediaKey": "4a473ee8159599d6",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 17.233333,
+      "end": 48.1,
+      "posterSecond": 20,
+      "clip": "nangua-jiachang-4a473ee8159599d6.mp4",
+      "poster": "nangua-jiachang-4a473ee8159599d6.jpg",
+      "clipBytes": 9249374,
+      "posterBytes": 131992,
+      "clipSHA256": "c3ca2cce51661592aec4bbcb8e4a7d871acbebfa4200fb46c514bdd4e91db25a",
+      "posterSHA256": "ca066c46380b88ef6aebebf596d63472b0b3f524dcec43c8bc1404390da6b008",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "30.866667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "30.866009"
+          }
+        ],
+        "format": {
+          "duration": "30.866667"
+        }
+      }
+    },
+    {
+      "id": "nangua-jeju",
+      "sourceId": "nangua",
+      "mediaKey": "1ef5bd6c4a2ea586",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 48.1,
+      "end": 107.933333,
+      "posterSecond": 57,
+      "clip": "nangua-jeju-1ef5bd6c4a2ea586.mp4",
+      "poster": "nangua-jeju-1ef5bd6c4a2ea586.jpg",
+      "clipBytes": 16227621,
+      "posterBytes": 89517,
+      "clipSHA256": "828859ebfed29c586efd892d5140f01c996ee97829b33c3570a2d22c73f0ec04",
+      "posterSHA256": "3bb955fc30d70f2c5d79fc96d925e9a5a91ab9975b2d7d0f4e592821a5ec58e4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "59.833333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "59.832993"
+          }
+        ],
+        "format": {
+          "duration": "59.833333"
+        }
+      }
+    },
+    {
+      "id": "nangua-set-coffee",
+      "sourceId": "nangua",
+      "mediaKey": "90d0628472f7baf2",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 107.933333,
+      "end": 126.6,
+      "posterSecond": 116,
+      "clip": "nangua-set-coffee-90d0628472f7baf2.mp4",
+      "poster": "nangua-set-coffee-90d0628472f7baf2.jpg",
+      "clipBytes": 3512673,
+      "posterBytes": 57055,
+      "clipSHA256": "035cae40160b08998c05a7047379051378b99ac48661ea7695fa60bbb57041c2",
+      "posterSHA256": "f9d18b64d3c6cda718e083d616318bd3c0b7a947b7e2723f334851c24ab674cb",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "18.666667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "18.666009"
+          }
+        ],
+        "format": {
+          "duration": "18.666667"
+        }
+      }
+    },
+    {
+      "id": "nangua-nendouya",
+      "sourceId": "nangua",
+      "mediaKey": "6b75b812771af557",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 126.6,
+      "end": 206.4,
+      "posterSecond": 143,
+      "clip": "nangua-nendouya-6b75b812771af557.mp4",
+      "poster": "nangua-nendouya-6b75b812771af557.jpg",
+      "clipBytes": 45161486,
+      "posterBytes": 121510,
+      "clipSHA256": "1b95b4678186ad92b5dab4da0736e3fdcbddc70cf42eddaf3d5c666eab398c5d",
+      "posterSHA256": "fffc32c639032dbdd22d5b7b14802dda7f274a750ab0cb49ed6a017216a04697",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "79.800000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "79.800000"
+          }
+        ],
+        "format": {
+          "duration": "79.800000"
+        }
+      }
+    },
+    {
+      "id": "nangua-cailanzi",
+      "sourceId": "nangua",
+      "mediaKey": "4fc27dcba431b8f7",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 206.4,
+      "end": 227.866667,
+      "posterSecond": 212,
+      "clip": "nangua-cailanzi-4fc27dcba431b8f7.mp4",
+      "poster": "nangua-cailanzi-4fc27dcba431b8f7.jpg",
+      "clipBytes": 5243328,
+      "posterBytes": 67066,
+      "clipSHA256": "7166376a00d2fdf66745d3c32d2b02b3072db4316d8b632638a8dc019d4f0df5",
+      "posterSHA256": "0d23f7b6977f9687a52347f260181a2c9fe5518ec925567c2ec21d7923d833dd",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "21.466667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "21.466009"
+          }
+        ],
+        "format": {
+          "duration": "21.466667"
+        }
+      }
+    },
+    {
+      "id": "nangua-dayan",
+      "sourceId": "nangua",
+      "mediaKey": "a3c5da2b77347ce3",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 227.866667,
+      "end": 238.733333,
+      "posterSecond": 232,
+      "clip": "nangua-dayan-a3c5da2b77347ce3.mp4",
+      "poster": "nangua-dayan-a3c5da2b77347ce3.jpg",
+      "clipBytes": 3305056,
+      "posterBytes": 57365,
+      "clipSHA256": "ba931e81c01333e792c4343de6b232f63723af78db26112f97b4561ce9fa495c",
+      "posterSHA256": "6e77a5e71cfd23ca34a4008d27c4b0cf959dbf86442348183906e4aaa21ec9db",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "10.866667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "10.866009"
+          }
+        ],
+        "format": {
+          "duration": "10.866667"
+        }
+      }
+    },
+    {
+      "id": "nangua-daling",
+      "sourceId": "nangua",
+      "mediaKey": "5036dc0027940cc0",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 238.733333,
+      "end": 269.166667,
+      "posterSecond": 240,
+      "clip": "nangua-daling-5036dc0027940cc0.mp4",
+      "poster": "nangua-daling-5036dc0027940cc0.jpg",
+      "clipBytes": 10490374,
+      "posterBytes": 100565,
+      "clipSHA256": "f81efad2abccfc43ae6f4f2f94023a42948b27f089fa20e9bf72152740b815e7",
+      "posterSHA256": "6e94fb0af9a710f876a608241c43e1c8bef160ab7c8fc968110abe20e870f167",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "30.433333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "30.432993"
+          }
+        ],
+        "format": {
+          "duration": "30.433333"
+        }
+      }
+    },
+    {
+      "id": "nangua-sanyangzi",
+      "sourceId": "nangua",
+      "mediaKey": "79c9a90d66c995f6",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 269.166667,
+      "end": 283.133333,
+      "posterSecond": 276,
+      "clip": "nangua-sanyangzi-79c9a90d66c995f6.mp4",
+      "poster": "nangua-sanyangzi-79c9a90d66c995f6.jpg",
+      "clipBytes": 3028797,
+      "posterBytes": 69622,
+      "clipSHA256": "633b7c6cae3678d3aa3f8faf185590b85f16e39079d8892ed2157728b839f702",
+      "posterSHA256": "d5bd42c7ddb5dae9b737a25ff6fdb29cc38666873130086a0d581f9532e45121",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "13.966016"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "13.966009"
+          }
+        ],
+        "format": {
+          "duration": "13.966016"
+        }
+      }
+    },
+    {
+      "id": "nangua-huilaiwei",
+      "sourceId": "nangua",
+      "mediaKey": "3c5a73d6f5411c74",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 283.133333,
+      "end": 298,
+      "posterSecond": 288.5,
+      "clip": "nangua-huilaiwei-3c5a73d6f5411c74.mp4",
+      "poster": "nangua-huilaiwei-3c5a73d6f5411c74.jpg",
+      "clipBytes": 4870468,
+      "posterBytes": 90112,
+      "clipSHA256": "fa577ccaa8b6112f83c881cee06c58a2efa5593c3685bd54c578cee7d8839ee4",
+      "posterSHA256": "4d5e4746a2f26333ecd8f66e6893100cb4da71e6f9609215b379f7a9ddfd1463",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "14.866667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "14.866009"
+          }
+        ],
+        "format": {
+          "duration": "14.866667"
+        }
+      }
+    },
+    {
+      "id": "nangua-qianjiang",
+      "sourceId": "nangua",
+      "mediaKey": "077aa0ec9fdb90f1",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 298,
+      "end": 312.2,
+      "posterSecond": 302,
+      "clip": "nangua-qianjiang-077aa0ec9fdb90f1.mp4",
+      "poster": "nangua-qianjiang-077aa0ec9fdb90f1.jpg",
+      "clipBytes": 4801933,
+      "posterBytes": 82491,
+      "clipSHA256": "25d2be9624c695b55d1f5324efaa120495cdc0daebe9c2682f3dd469d2c42025",
+      "posterSHA256": "0fdc8858281f26994e9729db28294f8f7cb2f924055987290efa6e8118740360",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "14.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "14.200000"
+          }
+        ],
+        "format": {
+          "duration": "14.200000"
+        }
+      }
+    },
+    {
+      "id": "nangua-rongchang",
+      "sourceId": "nangua",
+      "mediaKey": "ec891f68437226a1",
+      "sourceSHA256": "2ac91d660c012d579f336b69275b6f82a77003153afc7079e68c34fc96096c44",
+      "start": 312.2,
+      "end": 319.366667,
+      "posterSecond": 316.3,
+      "clip": "nangua-rongchang-ec891f68437226a1.mp4",
+      "poster": "nangua-rongchang-ec891f68437226a1.jpg",
+      "clipBytes": 2022247,
+      "posterBytes": 96091,
+      "clipSHA256": "fd495fce73e7a3e3530910302178bcf0b67c79b72752ec86cead8d26ed24de86",
+      "posterSHA256": "e03b7cc30b76332d8fb97c5aa76733d9d260e9025b9c81cc35b8b632a8746719",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "7.166667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "7.166009"
+          }
+        ],
+        "format": {
+          "duration": "7.166667"
+        }
+      }
+    },
+    {
+      "id": "abang-babajian",
+      "sourceId": "abang",
+      "mediaKey": "a14df4ecee0cf370",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 22.966667,
+      "end": 49.033333,
+      "posterSecond": 24,
+      "clip": "abang-babajian-a14df4ecee0cf370.mp4",
+      "poster": "abang-babajian-a14df4ecee0cf370.jpg",
+      "clipBytes": 9565587,
+      "posterBytes": 141244,
+      "clipSHA256": "32a08e390d945a8793368aebe0088a43fa547326c8336631bf8e1ec2204fc452",
+      "posterSHA256": "65c453ac498253b566c1a38e9603e01f10373cdbe5d91515e3888528423a49e4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "26.066016"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "26.066009"
+          }
+        ],
+        "format": {
+          "duration": "26.066016"
+        }
+      }
+    },
+    {
+      "id": "abang-43",
+      "sourceId": "abang",
+      "mediaKey": "c7c29b69998763d6",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 49.033333,
+      "end": 67.266667,
+      "posterSecond": 56,
+      "clip": "abang-43-c7c29b69998763d6.mp4",
+      "poster": "abang-43-c7c29b69998763d6.jpg",
+      "clipBytes": 6840018,
+      "posterBytes": 92560,
+      "clipSHA256": "aa32792e61ca9b080fb85a2653a49cc3bc28564b885c3080dc963c479e4c81e2",
+      "posterSHA256": "02efe6c10586ac8e8a15f065efac2a4bb7fbd6a132bb9e779463f2fc0742f47f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "18.233333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "18.232993"
+          }
+        ],
+        "format": {
+          "duration": "18.233333"
+        }
+      }
+    },
+    {
+      "id": "abang-guijing",
+      "sourceId": "abang",
+      "mediaKey": "3f6e4615dff65f3e",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 67.266667,
+      "end": 97.633333,
+      "posterSecond": 76,
+      "clip": "abang-guijing-3f6e4615dff65f3e.mp4",
+      "poster": "abang-guijing-3f6e4615dff65f3e.jpg",
+      "clipBytes": 11323309,
+      "posterBytes": 73367,
+      "clipSHA256": "44d38a7359b869561d4d3b49f2c96a4d6a2aaa9f36c6f067f2523d48561ca22d",
+      "posterSHA256": "4480598f86b871e093d0671c7756b0d2151331c1f9fe04e40f865c1e2d6fad62",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "30.366667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "30.366009"
+          }
+        ],
+        "format": {
+          "duration": "30.366667"
+        }
+      }
+    },
+    {
+      "id": "abang-xidajiang",
+      "sourceId": "abang",
+      "mediaKey": "c116995d4742b2dc",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 97.633333,
+      "end": 135.133333,
+      "posterSecond": 104,
+      "clip": "abang-xidajiang-c116995d4742b2dc.mp4",
+      "poster": "abang-xidajiang-c116995d4742b2dc.jpg",
+      "clipBytes": 15773135,
+      "posterBytes": 135351,
+      "clipSHA256": "e5ad8c54c67e8ad0b072820ee5bf5935f041c77d6ed8d9ac4665a96053e83476",
+      "posterSHA256": "d86e164ac7c73943a4bcce3363dc3b6964893d13a98c81fb79669912413a0370",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "37.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "37.500000"
+          }
+        ],
+        "format": {
+          "duration": "37.500000"
+        }
+      }
+    },
+    {
+      "id": "abang-ganyitai",
+      "sourceId": "abang",
+      "mediaKey": "086f190b9531b964",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 135.133333,
+      "end": 148.7,
+      "posterSecond": 136,
+      "clip": "abang-ganyitai-086f190b9531b964.mp4",
+      "poster": "abang-ganyitai-086f190b9531b964.jpg",
+      "clipBytes": 4637545,
+      "posterBytes": 69016,
+      "clipSHA256": "ce1a65d3fd54b81e1179613b0c3b6a9949b0333f9ab2c1d90293405ebc072547",
+      "posterSHA256": "faa92dcda883f73a69fc46fea5ba63b9ce7157c466eee31f243a7d0db8bfaedd",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "13.566016"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "13.566009"
+          }
+        ],
+        "format": {
+          "duration": "13.566016"
+        }
+      }
+    },
+    {
+      "id": "abang-xiongfeng",
+      "sourceId": "abang",
+      "mediaKey": "891740bcdd985312",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 148.7,
+      "end": 160.466667,
+      "posterSecond": 156.4,
+      "clip": "abang-xiongfeng-891740bcdd985312.mp4",
+      "poster": "abang-xiongfeng-891740bcdd985312.jpg",
+      "clipBytes": 3492074,
+      "posterBytes": 53567,
+      "clipSHA256": "199dd8565a634497d60790c4332e507725608f42e38e374f221f345ecb1a0d10",
+      "posterSHA256": "d863c92363610b74721908b39a4aea9053ac73caf6286e2f0fd0d1cce2130615",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "11.766667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "11.766009"
+          }
+        ],
+        "format": {
+          "duration": "11.766667"
+        }
+      }
+    },
+    {
+      "id": "abang-shanlishu",
+      "sourceId": "abang",
+      "mediaKey": "b0f8289b7e134d6c",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 160.466667,
+      "end": 173.733333,
+      "posterSecond": 162.8,
+      "clip": "abang-shanlishu-b0f8289b7e134d6c.mp4",
+      "poster": "abang-shanlishu-b0f8289b7e134d6c.jpg",
+      "clipBytes": 3378525,
+      "posterBytes": 53537,
+      "clipSHA256": "133a46ba864721b893bf6f69423ea29f9ff24bbcc4ed2a3bdc6345a230f93b91",
+      "posterSHA256": "2cdd2c9ca66d8f07c3f6e4edf2e5f2b1c2f21ba3cd8d1203754b2f075691a7e2",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "13.266667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "13.266009"
+          }
+        ],
+        "format": {
+          "duration": "13.266667"
+        }
+      }
+    },
+    {
+      "id": "abang-wuduwudu",
+      "sourceId": "abang",
+      "mediaKey": "c47bd1cf2100cc4d",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 173.733333,
+      "end": 183.933333,
+      "posterSecond": 178.5,
+      "clip": "abang-wuduwudu-c47bd1cf2100cc4d.mp4",
+      "poster": "abang-wuduwudu-c47bd1cf2100cc4d.jpg",
+      "clipBytes": 3256663,
+      "posterBytes": 47281,
+      "clipSHA256": "5bd37b656306941c19016899387da8aaa899f9a92e3465a010e1d3de81dc55fc",
+      "posterSHA256": "63a1ffe84b76b9c6c52736ffa541f747b4691b948949cdd9c8ea2f2f1b55dce7",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "10.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "10.200000"
+          }
+        ],
+        "format": {
+          "duration": "10.200000"
+        }
+      }
+    },
+    {
+      "id": "abang-yabatu",
+      "sourceId": "abang",
+      "mediaKey": "9ff6a74f8f44190a",
+      "sourceSHA256": "d7a128920bd450b0d150fe6f2e33e9a66774f7f2f0b24e785520bcc4cdb6e64c",
+      "start": 183.933333,
+      "end": 205.7,
+      "posterSecond": 196.7,
+      "clip": "abang-yabatu-9ff6a74f8f44190a.mp4",
+      "poster": "abang-yabatu-9ff6a74f8f44190a.jpg",
+      "clipBytes": 7892660,
+      "posterBytes": 125369,
+      "clipSHA256": "56298a7735341e2fe91f51983a687edc49b2b811a04fa7e13b406332ba9c4afa",
+      "posterSHA256": "b1757caa4db0cab68016d058d317819e5f9ddd5110de89af0ec2e1f4ac5657e3",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "21.766667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "21.766009"
+          }
+        ],
+        "format": {
+          "duration": "21.766667"
+        }
+      }
+    },
+    {
+      "id": "tiedan-gangzi",
+      "sourceId": "tiedan",
+      "mediaKey": "33b2df818fad2add",
+      "sourceSHA256": "e344a8cc4b61606f59e9963529d4a1ff475fe5b15b0e7666eefe61acb7d4460a",
+      "start": 13,
+      "end": 231,
+      "posterSecond": 60,
+      "clip": "tiedan-gangzi-33b2df818fad2add.mp4",
+      "poster": "tiedan-gangzi-33b2df818fad2add.jpg",
+      "clipBytes": 58254056,
+      "posterBytes": 88022,
+      "clipSHA256": "481e14c66a436a3dc8a1244292b1e8b731b88c6f7a52bac4df0f74aa985d23cd",
+      "posterSHA256": "94e36db9b716636552cc6356f5d0924c9c197b6a9a4d42ae96007a9fe4e89a03",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "218.000000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "218.000000"
+          }
+        ],
+        "format": {
+          "duration": "218.000000"
+        }
+      }
+    },
+    {
+      "id": "yumo-hotpot",
+      "sourceId": "yumo",
+      "mediaKey": "3e6477fa0e921941",
+      "sourceSHA256": "b0415616dbb3fbbd5008f6c90aeb8e0647db0557855157572ad4b0de6fc65ec4",
+      "start": 16,
+      "end": 132.2,
+      "posterSecond": 28,
+      "clip": "yumo-hotpot-3e6477fa0e921941.mp4",
+      "poster": "yumo-hotpot-3e6477fa0e921941.jpg",
+      "clipBytes": 57662406,
+      "posterBytes": 125384,
+      "clipSHA256": "c68b303d4d92bd126191b0204165f3db34184c73c473db5fb4c02cff4220e452",
+      "posterSHA256": "ec20f1f8b8186ce624cd7d4eebfe2ebbdaeb41987a53e035c62c0767254eb68c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "116.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "116.200000"
+          }
+        ],
+        "format": {
+          "duration": "116.200000"
+        }
+      }
+    },
+    {
+      "id": "wulala-wangshifu",
+      "sourceId": "wulala",
+      "mediaKey": "dfb26b5aed0da213",
+      "sourceSHA256": "7aca5b04333086b6422216cac6349e586f9f2b603d8aec52358de22f85203058",
+      "start": 11,
+      "end": 331,
+      "posterSecond": 20,
+      "clip": "wulala-wangshifu-dfb26b5aed0da213.mp4",
+      "poster": "wulala-wangshifu-dfb26b5aed0da213.jpg",
+      "clipBytes": 85312505,
+      "posterBytes": 94232,
+      "clipSHA256": "e5d04361a0df45847523a09c53de9eadfedeab62371733767d5dd8b418065aab",
+      "posterSHA256": "4167193f4bf3b5959f5ffb8253163a98e72ebf4bde15ae431bb9355f8f2049f8",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "duration": "320.000000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "320.000000"
+          }
+        ],
+        "format": {
+          "duration": "320.000000"
+        }
+      }
+    },
+    {
+      "id": "jiankang-linhua",
+      "sourceId": "jiankang",
+      "mediaKey": "42e597826ab91ba1",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "start": 8.9,
+      "end": 34,
+      "posterSecond": 15,
+      "clip": "jiankang-linhua-42e597826ab91ba1.mp4",
+      "poster": "jiankang-linhua-42e597826ab91ba1.jpg",
+      "clipBytes": 11474928,
+      "posterBytes": 93696,
+      "clipSHA256": "054243fcb51cc04aedee6958f7d66ec840cc06e87dda03f0b6c65fc0b1d5da69",
+      "posterSHA256": "7464cb05eacef3f194b20eb198983b518ed4317ac86eddbd897ad5bf7e48aad4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "25.100000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "25.100000"
+          }
+        ],
+        "format": {
+          "duration": "25.100000"
+        }
+      }
+    },
+    {
+      "id": "jiankang-chunyang",
+      "sourceId": "jiankang",
+      "mediaKey": "5df14dd81a05b72c",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "start": 34,
+      "end": 67.6,
+      "posterSecond": 45,
+      "clip": "jiankang-chunyang-5df14dd81a05b72c.mp4",
+      "poster": "jiankang-chunyang-5df14dd81a05b72c.jpg",
+      "clipBytes": 14456040,
+      "posterBytes": 87227,
+      "clipSHA256": "9944cc76a70b03bcfea8660c6f5397ccba61e280244850460de5284519f63e1e",
+      "posterSHA256": "3553147f75a1cbe9ff98710cc3798b08f54d974fadd306a6e0556071c1aed025",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "33.600000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "33.600000"
+          }
+        ],
+        "format": {
+          "duration": "33.600000"
+        }
+      }
+    },
+    {
+      "id": "jiankang-shaotiao",
+      "sourceId": "jiankang",
+      "mediaKey": "240c5f37f5afee1b",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "start": 67.6,
+      "end": 82.85,
+      "posterSecond": 71,
+      "clip": "jiankang-shaotiao-240c5f37f5afee1b.mp4",
+      "poster": "jiankang-shaotiao-240c5f37f5afee1b.jpg",
+      "clipBytes": 6491288,
+      "posterBytes": 136722,
+      "clipSHA256": "4615cce326d2e2f30e98145832c2f22927dc6b82454d4118be5a3e6211c0ce45",
+      "posterSHA256": "96676fc983fa26ecbb0f2d2e3d4cadf36246cdcb05f285179cae9399b7a1d86c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "15.266016"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "15.250000"
+          }
+        ],
+        "format": {
+          "duration": "15.266016"
+        }
+      }
+    },
+    {
+      "id": "jiankang-liuyouchi",
+      "sourceId": "jiankang",
+      "mediaKey": "9e4d5a5885b9ad35",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "start": 82.9,
+      "end": 161.8,
+      "posterSecond": 90,
+      "clip": "jiankang-liuyouchi-9e4d5a5885b9ad35.mp4",
+      "poster": "jiankang-liuyouchi-9e4d5a5885b9ad35.jpg",
+      "clipBytes": 44116089,
+      "posterBytes": 133378,
+      "clipSHA256": "c1f6a2c54c16ebb9cf6bdaadb894bb0e037301ac311831d56d259150d74f90cd",
+      "posterSHA256": "72b5e7e7db58597116b12b09259bf23652387e68c8778d96d08a5b516c7e598c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "78.900000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "78.900000"
+          }
+        ],
+        "format": {
+          "duration": "78.900000"
+        }
+      }
+    },
+    {
+      "id": "jiankang-zhuer",
+      "sourceId": "jiankang",
+      "mediaKey": "3d9c59e40652c8b6",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "start": 161.9,
+      "end": 216.8,
+      "posterSecond": 173,
+      "clip": "jiankang-zhuer-3d9c59e40652c8b6.mp4",
+      "poster": "jiankang-zhuer-3d9c59e40652c8b6.jpg",
+      "clipBytes": 22509782,
+      "posterBytes": 88570,
+      "clipSHA256": "a5726b7d859621df3a2f209c9e269d43fffa1dc03b64dad9532af47465371e38",
+      "posterSHA256": "6a4b71f23c88170f72b51e6df968d0c07498168719481e597ca2dc581e034490",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "54.900000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "54.900000"
+          }
+        ],
+        "format": {
+          "duration": "54.900000"
+        }
+      }
+    },
+    {
+      "id": "jiankang-beicheng",
+      "sourceId": "jiankang",
+      "mediaKey": "42f2bc791b97161c",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "start": 216.9,
+      "end": 243.7,
+      "posterSecond": 223,
+      "clip": "jiankang-beicheng-42f2bc791b97161c.mp4",
+      "poster": "jiankang-beicheng-42f2bc791b97161c.jpg",
+      "clipBytes": 10621641,
+      "posterBytes": 61147,
+      "clipSHA256": "61e2cb0995865cd965c1f1ee635e1ce80bee7643d2d5fc09a24d11e19a559cd9",
+      "posterSHA256": "b5d0af65d5f42fae3996a8be8182ef2cd19a0d576545f0ef0635d442ac760745",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "26.800000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "26.800000"
+          }
+        ],
+        "format": {
+          "duration": "26.800000"
+        }
+      }
+    },
+    {
+      "id": "jiankang-mixian",
+      "sourceId": "jiankang",
+      "mediaKey": "b918791eca877d7a",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "start": 244,
+      "end": 272.8,
+      "posterSecond": 248,
+      "clip": "jiankang-mixian-b918791eca877d7a.mp4",
+      "poster": "jiankang-mixian-b918791eca877d7a.jpg",
+      "clipBytes": 12722798,
+      "posterBytes": 96745,
+      "clipSHA256": "7fe6c1e4e15576c25ed44d2773117ae6bfa24da815c1e12e4b8e382c8bde1b93",
+      "posterSHA256": "9693aa2b57c80f249ce12de6aeee52dd7e5f90047c93195a0637f4079e9125d6",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "28.800000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "28.800000"
+          }
+        ],
+        "format": {
+          "duration": "28.800000"
+        }
+      }
+    },
+    {
+      "id": "jiankang-zhibaoyu",
+      "sourceId": "jiankang",
+      "mediaKey": "454d69c2f730ba6b",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "start": 273,
+      "end": 296.5,
+      "posterSecond": 280,
+      "clip": "jiankang-zhibaoyu-454d69c2f730ba6b.mp4",
+      "poster": "jiankang-zhibaoyu-454d69c2f730ba6b.jpg",
+      "clipBytes": 11031168,
+      "posterBytes": 128888,
+      "clipSHA256": "94b1c83b363f733dacf9f406cf53bd0d380347407fc296741d81ea45756cd3e9",
+      "posterSHA256": "0cb0d97bb2fadea1e7cb6f4bc06d7f7845848d4ec074d3639762cd9174207580",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "23.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "23.500000"
+          }
+        ],
+        "format": {
+          "duration": "23.500000"
+        }
+      }
+    },
+    {
+      "id": "jiankang-liruotao",
+      "sourceId": "jiankang",
+      "mediaKey": "1d73026a280fdbd0",
+      "sourceSHA256": "aebd9db2834406e1ac63f60dce53561effe982ef7716a7260260ca0bd9ccc08c",
+      "start": 297,
+      "end": 326,
+      "posterSecond": 304,
+      "clip": "jiankang-liruotao-1d73026a280fdbd0.mp4",
+      "poster": "jiankang-liruotao-1d73026a280fdbd0.jpg",
+      "clipBytes": 8247684,
+      "posterBytes": 59816,
+      "clipSHA256": "2b80e2209a49505e065c11a3fd56288f449414c8acb8a6f0043ef9855ad45aca",
+      "posterSHA256": "dea7492878d1a7e8c9c12cc29f06dc69e4178e10c101d23f31008bc249e5261d",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "28.966667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "29.000000"
+          }
+        ],
+        "format": {
+          "duration": "29.000000"
+        }
+      }
+    },
+    {
+      "id": "bailong-zhuer",
+      "sourceId": "bailong",
+      "mediaKey": "8e085aef1908ef4b",
+      "sourceSHA256": "6546e5867fb6dbfeb3af8a51c4532b884afe574c6d1ac1dbbde18308e4f42dd4",
+      "start": 15,
+      "end": 89,
+      "posterSecond": 35,
+      "clip": "bailong-zhuer-8e085aef1908ef4b.mp4",
+      "poster": "bailong-zhuer-8e085aef1908ef4b.jpg",
+      "clipBytes": 22013775,
+      "posterBytes": 62237,
+      "clipSHA256": "3c1e339b66cbf021b8c145f58dbc0e8a13f79070a7e0d98d3349782706807eab",
+      "posterSHA256": "920392c35644cb27ea72bc72c96d1f3604df9c1e08be37324f5589508c7bc759",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "74.000000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "74.000000"
+          }
+        ],
+        "format": {
+          "duration": "74.000000"
+        }
+      }
+    },
+    {
+      "id": "bailong-gangzi",
+      "sourceId": "bailong",
+      "mediaKey": "8cca6e94834763ed",
+      "sourceSHA256": "6546e5867fb6dbfeb3af8a51c4532b884afe574c6d1ac1dbbde18308e4f42dd4",
+      "start": 89,
+      "end": 168,
+      "posterSecond": 120,
+      "clip": "bailong-gangzi-8cca6e94834763ed.mp4",
+      "poster": "bailong-gangzi-8cca6e94834763ed.jpg",
+      "clipBytes": 20021814,
+      "posterBytes": 60312,
+      "clipSHA256": "264edb7cccaf122e757564c67dd5f9074122230bc3759e6452de7efec3abda50",
+      "posterSHA256": "d886fddb2176c532c48a0047e52ae96db65f53a514a3b94f5dbba11d1ac99819",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "79.000000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "79.000000"
+          }
+        ],
+        "format": {
+          "duration": "79.000000"
+        }
+      }
+    },
+    {
+      "id": "bailong-chunhong",
+      "sourceId": "bailong",
+      "mediaKey": "2c5abb947a264625",
+      "sourceSHA256": "6546e5867fb6dbfeb3af8a51c4532b884afe574c6d1ac1dbbde18308e4f42dd4",
+      "start": 168,
+      "end": 374,
+      "posterSecond": 215,
+      "clip": "bailong-chunhong-2c5abb947a264625.mp4",
+      "poster": "bailong-chunhong-2c5abb947a264625.jpg",
+      "clipBytes": 82154832,
+      "posterBytes": 88347,
+      "clipSHA256": "00e68da2abfa92fa6cf48673b59c1d51bd9fda0dbcb0c6554016bce9dad52ffd",
+      "posterSHA256": "0a1444024e11377f1760bc9c0b4138bfcd39279aeeffd263a65d2aaf2160fab3",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "206.000000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "206.000000"
+          }
+        ],
+        "format": {
+          "duration": "206.000000"
+        }
+      }
+    },
+    {
+      "id": "mizijun-tianbang",
+      "sourceId": "mizijun",
+      "mediaKey": "a180de420a8729bf",
+      "sourceSHA256": "87118728a995472788dc1e91ab9c51043bb77eeef1365c9dcbb8024bae89fd1c",
+      "start": 12,
+      "end": 627,
+      "posterSecond": 300,
+      "clip": "mizijun-tianbang-a180de420a8729bf.mp4",
+      "poster": "mizijun-tianbang-a180de420a8729bf.jpg",
+      "clipBytes": 258912022,
+      "posterBytes": 109110,
+      "clipSHA256": "7f3d5ee734bb56797bb5618a9d3ccca96b242786e6109f621b44f92f2a04a5be",
+      "posterSHA256": "dc0557c91f50a4a52ddee93f92810d2d388a60143051d5fa8481a3ea82baa749",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "duration": "615.015015"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "615.000000"
+          }
+        ],
+        "format": {
+          "duration": "615.015015"
+        }
+      }
+    },
+    {
+      "id": "zhangxixi-haochijie",
+      "sourceId": "zhangxixi",
+      "mediaKey": "45900081ea1fa18c",
+      "sourceSHA256": "754bcd857f8762989e5d8307091c9002fe1c227a7b299c46af4dd192c72529a9",
+      "start": 16,
+      "end": 289,
+      "posterSecond": 43,
+      "clip": "zhangxixi-haochijie-45900081ea1fa18c.mp4",
+      "poster": "zhangxixi-haochijie-45900081ea1fa18c.jpg",
+      "clipBytes": 90745761,
+      "posterBytes": 124304,
+      "clipSHA256": "62bfd6433b4fe2f64fbd7f52c4c76dcdbee590980915214352585fc643a74dcd",
+      "posterSHA256": "9f700d28a62d4b38a78e1541c18c5f5a3321ee5d511da2a7ce5041271c16bdc8",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "duration": "273.000000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "273.000000"
+          }
+        ],
+        "format": {
+          "duration": "273.000000"
+        }
+      }
+    },
+    {
+      "id": "manbei-hongjiuge",
+      "sourceId": "manbei",
+      "mediaKey": "8169cce11b229573",
+      "sourceSHA256": "3a04c3c7fe8dfbe7222a1785327852541d7496aae0f021d1c3b6b5c739f87572",
+      "start": 8,
+      "end": 107.5,
+      "posterSecond": 50,
+      "clip": "manbei-hongjiuge-8169cce11b229573.mp4",
+      "poster": "manbei-hongjiuge-8169cce11b229573.jpg",
+      "clipBytes": 27326870,
+      "posterBytes": 186864,
+      "clipSHA256": "3cf3f17e8cf874179d21e5d4b2cb739abcf5f80555648e0f20f9c6cd7bf778cd",
+      "posterSHA256": "76ddef10206be0367ad2291808b562344b4d0c657d251ea50cae62eb494df6d3",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "duration": "99.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "99.500000"
+          }
+        ],
+        "format": {
+          "duration": "99.500000"
+        }
+      }
+    },
+    {
+      "id": "xiaoyang-wanza",
+      "sourceId": "cq-xiaoyang-7602232743804036730",
+      "mediaKey": "b19a33ec08156aa7",
+      "sourceSHA256": "ecdaf3e004a1f81df63240c44b9892d8fb43649dc40348bbe301801656d28867",
+      "start": 8.233333,
+      "end": 73.033333,
+      "posterSecond": 12,
+      "clip": "xiaoyang-wanza-b19a33ec08156aa7.mp4",
+      "poster": "xiaoyang-wanza-b19a33ec08156aa7.jpg",
+      "clipBytes": 36797949,
+      "posterBytes": 127599,
+      "clipSHA256": "feb7fa6109509eea38722479b9db884fe773cdfd0bc0d0e297b34f3f1d8678ed",
+      "posterSHA256": "07829fab0819fc9e6cfbd4cd6c8aae758894c86ed9b32736fbd6aac3f5600344",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "64.800000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "64.800000"
+          }
+        ],
+        "format": {
+          "duration": "64.800000"
+        }
+      }
+    },
+    {
+      "id": "xiaoyang-linmeimei",
+      "sourceId": "cq-xiaoyang-7602232743804036730",
+      "mediaKey": "b567dab951d62235",
+      "sourceSHA256": "ecdaf3e004a1f81df63240c44b9892d8fb43649dc40348bbe301801656d28867",
+      "start": 73.033333,
+      "end": 139.133333,
+      "posterSecond": 78,
+      "clip": "xiaoyang-linmeimei-b567dab951d62235.mp4",
+      "poster": "xiaoyang-linmeimei-b567dab951d62235.jpg",
+      "clipBytes": 33143164,
+      "posterBytes": 140232,
+      "clipSHA256": "645751d96a95dc1e522e97d6c08d253102b41c5ae3daeeea5d974ab661ae64c7",
+      "posterSHA256": "ad346ec7908218efa3cfea9d16c75ee9cffc9c3812ac4ecb5e76d4fba3cafe3f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "66.100000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "66.100000"
+          }
+        ],
+        "format": {
+          "duration": "66.100000"
+        }
+      }
+    },
+    {
+      "id": "xiaoyang-xiangyuan",
+      "sourceId": "cq-xiaoyang-7602232743804036730",
+      "mediaKey": "d5d54b055cacbdfc",
+      "sourceSHA256": "ecdaf3e004a1f81df63240c44b9892d8fb43649dc40348bbe301801656d28867",
+      "start": 139.133333,
+      "end": 208.733333,
+      "posterSecond": 150,
+      "clip": "xiaoyang-xiangyuan-d5d54b055cacbdfc.mp4",
+      "poster": "xiaoyang-xiangyuan-d5d54b055cacbdfc.jpg",
+      "clipBytes": 32221744,
+      "posterBytes": 96649,
+      "clipSHA256": "d71e432ba12d044384ce8a5f6ff7222f3e000a888d3bbc4b7d16644f0e293105",
+      "posterSHA256": "14c44d7eeb24b6206319db7e706a7371da55e9b88984d595956926f4032aa554",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "69.600000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "69.600000"
+          }
+        ],
+        "format": {
+          "duration": "69.600000"
+        }
+      }
+    },
+    {
+      "id": "xiaoyang-tianpin",
+      "sourceId": "cq-xiaoyang-7602232743804036730",
+      "mediaKey": "09ac3511660ec441",
+      "sourceSHA256": "ecdaf3e004a1f81df63240c44b9892d8fb43649dc40348bbe301801656d28867",
+      "start": 208.733333,
+      "end": 235.5,
+      "posterSecond": 209,
+      "clip": "xiaoyang-tianpin-09ac3511660ec441.mp4",
+      "poster": "xiaoyang-tianpin-09ac3511660ec441.jpg",
+      "clipBytes": 10492983,
+      "posterBytes": 89505,
+      "clipSHA256": "b6ffff123a951855870faac95d6a182a6dbe8b9a8f81031e2038eea4ad839bb1",
+      "posterSHA256": "62663e08c51b360d7e1e6a96d499e2bb3e953a355e3bb9c0e82ff63e813f9310",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "26.766667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "26.766009"
+          }
+        ],
+        "format": {
+          "duration": "26.766667"
+        }
+      }
+    },
+    {
+      "id": "xiaoyang-douhuaniurou",
+      "sourceId": "cq-xiaoyang-7602232743804036730",
+      "mediaKey": "666e7e15a0d08bfd",
+      "sourceSHA256": "ecdaf3e004a1f81df63240c44b9892d8fb43649dc40348bbe301801656d28867",
+      "start": 235.5,
+      "end": 292.366667,
+      "posterSecond": 250,
+      "clip": "xiaoyang-douhuaniurou-666e7e15a0d08bfd.mp4",
+      "poster": "xiaoyang-douhuaniurou-666e7e15a0d08bfd.jpg",
+      "clipBytes": 28946583,
+      "posterBytes": 90661,
+      "clipSHA256": "66fbd6e6e3bd44a9d6d4db3c73209bb5d47524682ef4ee441c8a9cabd48c7124",
+      "posterSHA256": "42dc661d14c880cb97d1fba7b3312b527ca8baef2f879fbfe87cf6f85c4a1a2f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "56.866667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "56.866009"
+          }
+        ],
+        "format": {
+          "duration": "56.866667"
+        }
+      }
+    },
+    {
+      "id": "xiaoyang-shaokao",
+      "sourceId": "cq-xiaoyang-7602232743804036730",
+      "mediaKey": "3e71c9375b0f0a11",
+      "sourceSHA256": "ecdaf3e004a1f81df63240c44b9892d8fb43649dc40348bbe301801656d28867",
+      "start": 292.366667,
+      "end": 367.733008,
+      "posterSecond": 296,
+      "clip": "xiaoyang-shaokao-3e71c9375b0f0a11.mp4",
+      "poster": "xiaoyang-shaokao-3e71c9375b0f0a11.jpg",
+      "clipBytes": 30558234,
+      "posterBytes": 195077,
+      "clipSHA256": "ea5e7bba671284a3379c8dc7caf17e21e55d01d88ecb26c64b64f77bbcf7ef07",
+      "posterSHA256": "745577f6376765f22e8f7969695fa6b4e817bdbdb6d64859ec144a22baf40e2b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "duration": "75.366667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "75.343991"
+          }
+        ],
+        "format": {
+          "duration": "75.366667"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-hulake",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "835c5d676b1f45d2",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 11.866667,
+      "end": 27.433333,
+      "posterSecond": 14.5,
+      "clip": "cq-kaizi-hulake-835c5d676b1f45d2.mp4",
+      "poster": "cq-kaizi-hulake-835c5d676b1f45d2.jpg",
+      "clipBytes": 47546129,
+      "posterBytes": 564387,
+      "clipSHA256": "d5be60543aee904e1e795197e4fb2323f269135518bdd7595039aeeac35bf725",
+      "posterSHA256": "b9f6a38e5c3b61ab13bedf025eaf47189534a2aea3340317aa82620e72e6a7aa",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "15.566667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "15.566009"
+          }
+        ],
+        "format": {
+          "duration": "15.566667"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-yikoutangjiao",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "fb39bd32e22dd814",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 27.433333,
+      "end": 45.2,
+      "posterSecond": 29.5,
+      "clip": "cq-kaizi-yikoutangjiao-fb39bd32e22dd814.mp4",
+      "poster": "cq-kaizi-yikoutangjiao-fb39bd32e22dd814.jpg",
+      "clipBytes": 46676620,
+      "posterBytes": 573637,
+      "clipSHA256": "3481132d3475cf016fba788f0ee8a2cc2461dfd2e9e4db9b161c8df5242b60f1",
+      "posterSHA256": "3cb2c9f6cb9f0c0c8d704a862901b4a8c046bf1254c44cb56d5aac183410fab4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "17.766667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "17.766009"
+          }
+        ],
+        "format": {
+          "duration": "17.766667"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-yangheshaomai",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "ef7266d2193d789c",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 45.2,
+      "end": 62.3,
+      "posterSecond": 48.2,
+      "clip": "cq-kaizi-yangheshaomai-ef7266d2193d789c.mp4",
+      "poster": "cq-kaizi-yangheshaomai-ef7266d2193d789c.jpg",
+      "clipBytes": 52220987,
+      "posterBytes": 528134,
+      "clipSHA256": "795a5288d76c5ced483d91b4f70992f4d2cfadae43c9372a2b29d18836061699",
+      "posterSHA256": "c6c54bf7c7f061f788e7174fef4bef9f456140330a5d64d09909e8bf206d6005",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "17.100000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "17.100000"
+          }
+        ],
+        "format": {
+          "duration": "17.100000"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-xinyiniurou",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "6adb611ae7cc88ef",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 62.3,
+      "end": 107.1,
+      "posterSecond": 65,
+      "clip": "cq-kaizi-xinyiniurou-6adb611ae7cc88ef.mp4",
+      "poster": "cq-kaizi-xinyiniurou-6adb611ae7cc88ef.jpg",
+      "clipBytes": 128396762,
+      "posterBytes": 679818,
+      "clipSHA256": "b19b55cfb97e15d009a54b2b67ee9084a772974e7748597cd713712be648e58e",
+      "posterSHA256": "527eb17acf4c88eba8dddc1241ee974d0661f80aaf031a42ec45c28b4c1e3027",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "44.800000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "44.800000"
+          }
+        ],
+        "format": {
+          "duration": "44.800000"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-zhuer",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "a24b6c5829d3486f",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 107.1,
+      "end": 121.633333,
+      "posterSecond": 110.5,
+      "clip": "cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+      "poster": "cq-kaizi-zhuer-a24b6c5829d3486f.jpg",
+      "clipBytes": 50690509,
+      "posterBytes": 367115,
+      "clipSHA256": "b148e5ba5711c72b2ceca79c509fa7b8f4e54fa06571f64ff428c407fed4bb92",
+      "posterSHA256": "4fedb6feaecb1be6150205760566bda719351e9a5d23f77ec02fddb288e6077c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "14.533333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "14.532993"
+          }
+        ],
+        "format": {
+          "duration": "14.533333"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-xiangyaju",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "a34aa4023ec71379",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 121.633333,
+      "end": 140.583333,
+      "posterSecond": 124.1,
+      "clip": "cq-kaizi-xiangyaju-a34aa4023ec71379.mp4",
+      "poster": "cq-kaizi-xiangyaju-a34aa4023ec71379.jpg",
+      "clipBytes": 51090082,
+      "posterBytes": 452585,
+      "clipSHA256": "e87cb7a430eeefcb41c2c458ddba30ff32b569f026fe60357385431bc42dff89",
+      "posterSHA256": "5cb763531bfd903206aaf0b9e087a2ca0de50283e0bd75f65475545b2a938915",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "18.950000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "18.950000"
+          }
+        ],
+        "format": {
+          "duration": "18.950000"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-hill-bbq",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "765cc41c0c90a535",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 140.583333,
+      "end": 144.533333,
+      "posterSecond": 142.5,
+      "clip": "cq-kaizi-hill-bbq-765cc41c0c90a535.mp4",
+      "poster": "cq-kaizi-hill-bbq-765cc41c0c90a535.jpg",
+      "clipBytes": 13048789,
+      "posterBytes": 600556,
+      "clipSHA256": "8742af683c4d3cec2a697c89e3626b9d93e4d54c3f8499928535aec703fad7a5",
+      "posterSHA256": "4798917d9b3a465e903e49829c05ea7dc53f96382b0532abaed690dc8005761f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "3.950000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "3.950000"
+          }
+        ],
+        "format": {
+          "duration": "3.950000"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-wuming-tihua",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "3bf845eedba8c615",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 144.533333,
+      "end": 160.816667,
+      "posterSecond": 145.5,
+      "clip": "cq-kaizi-wuming-tihua-3bf845eedba8c615.mp4",
+      "poster": "cq-kaizi-wuming-tihua-3bf845eedba8c615.jpg",
+      "clipBytes": 49102733,
+      "posterBytes": 318579,
+      "clipSHA256": "3a898eaa2bf0069eebd0ab4f853923e8fad8e24f43a261fa52b24e6c67e8093a",
+      "posterSHA256": "66bf488bff35879b70d9000a6ec44bf9457e1e07ac76824c13d770d07567299a",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "16.283008"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "16.282993"
+          }
+        ],
+        "format": {
+          "duration": "16.283008"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-gumufeng",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "bc062006cf0a2506",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 160.816667,
+      "end": 229.466667,
+      "posterSecond": 213.2,
+      "clip": "cq-kaizi-gumufeng-bc062006cf0a2506.mp4",
+      "poster": "cq-kaizi-gumufeng-bc062006cf0a2506.jpg",
+      "clipBytes": 278076204,
+      "posterBytes": 397294,
+      "clipSHA256": "8a86a543fed402bd4be80ab10f317e8c41222b77b89502cf428f56c64888dab4",
+      "posterSHA256": "999a6a1c520e852da36daf89f6bf2e45be21b3ed2ddae59908030d0cefa3c2c9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "68.650000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "68.650000"
+          }
+        ],
+        "format": {
+          "duration": "68.650000"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-caijibaozi",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "c6a363829ed33193",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 229.466667,
+      "end": 250.716667,
+      "posterSecond": 231.3,
+      "clip": "cq-kaizi-caijibaozi-c6a363829ed33193.mp4",
+      "poster": "cq-kaizi-caijibaozi-c6a363829ed33193.jpg",
+      "clipBytes": 51529012,
+      "posterBytes": 765840,
+      "clipSHA256": "96879effb145847d898632ea7d3369af424ebd395d6ff28326f99a0d3e3d7a6e",
+      "posterSHA256": "56108e11878da0b2132b73e48a6bc7ba93a1a4c5389a97e09ca9dc964fdb241c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "21.250000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "21.250000"
+          }
+        ],
+        "format": {
+          "duration": "21.250000"
+        }
+      }
+    },
+    {
+      "id": "cq-kaizi-bai-chaoshou",
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "mediaKey": "2904df76a5df07a2",
+      "sourceSHA256": "a635153ca3f3ad607e40ab86894a547d94a06dce4da2659aaa1e65062da94485",
+      "start": 250.716667,
+      "end": 267.09,
+      "posterSecond": 254.6,
+      "clip": "cq-kaizi-bai-chaoshou-2904df76a5df07a2.mp4",
+      "poster": "cq-kaizi-bai-chaoshou-2904df76a5df07a2.jpg",
+      "clipBytes": 46028080,
+      "posterBytes": 367164,
+      "clipSHA256": "1e72fd8bdfc829adb5bf2eada8f06fb325b1cfe605fc6ea5f80fe833db8d5537",
+      "posterSHA256": "f78790da8b7f12a99f67420a8e70b1aab98be86fe4d424e3df1ad18a60204424",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "16.366667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "16.372993"
+          }
+        ],
+        "format": {
+          "duration": "16.372993"
+        }
+      }
+    },
+    {
+      "id": "lanmei-wanza",
+      "sourceId": "cq-lanmei-7692311805913784713",
+      "mediaKey": "9c647d1d89cb0bc3",
+      "sourceSHA256": "d9f2ce7bbd310db48467e55d1d91bcd8b09598b405713811073e010d557ce997",
+      "start": 11.666667,
+      "end": 21.733333,
+      "posterSecond": 20,
+      "clip": "lanmei-wanza-9c647d1d89cb0bc3.mp4",
+      "poster": "lanmei-wanza-9c647d1d89cb0bc3.jpg",
+      "clipBytes": 24569662,
+      "posterBytes": 460891,
+      "clipSHA256": "7a434f13eb8b7d7a2d472d54a4d0e254bab3f35795f2a43c10df202958093c91",
+      "posterSHA256": "9e7874e0b385ee02d0161a5cc424fd1a87110ed89d44643f0e4e77befc669962",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 3414,
+            "duration": "10.066667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "10.066009"
+          }
+        ],
+        "format": {
+          "duration": "10.066667"
+        }
+      }
+    },
+    {
+      "id": "lanmei-shaomai",
+      "sourceId": "cq-lanmei-7692311805913784713",
+      "mediaKey": "abdbead931a3cab8",
+      "sourceSHA256": "d9f2ce7bbd310db48467e55d1d91bcd8b09598b405713811073e010d557ce997",
+      "start": 21.733333,
+      "end": 31.85,
+      "posterSecond": 29,
+      "clip": "lanmei-shaomai-abdbead931a3cab8.mp4",
+      "poster": "lanmei-shaomai-abdbead931a3cab8.jpg",
+      "clipBytes": 21511378,
+      "posterBytes": 447760,
+      "clipSHA256": "2def764057a9c2de1d92acb0a88b576b16c00671fe401c120523a4f77dc0b646",
+      "posterSHA256": "1d7aa40b23151d02e00c7f2dcc4b7b90f6cb177ae37e523b22f4262acce25d80",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 3414,
+            "duration": "10.116667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "10.116009"
+          }
+        ],
+        "format": {
+          "duration": "10.116667"
+        }
+      }
+    },
+    {
+      "id": "lanmei-xidajiang",
+      "sourceId": "cq-lanmei-7692311805913784713",
+      "mediaKey": "0c8347b13835189b",
+      "sourceSHA256": "d9f2ce7bbd310db48467e55d1d91bcd8b09598b405713811073e010d557ce997",
+      "start": 31.85,
+      "end": 58.833333,
+      "posterSecond": 48,
+      "clip": "lanmei-xidajiang-0c8347b13835189b.mp4",
+      "poster": "lanmei-xidajiang-0c8347b13835189b.jpg",
+      "clipBytes": 67914508,
+      "posterBytes": 672668,
+      "clipSHA256": "0bdb46bdc8985c0c6e33f0909abba9480fb95fb3260333df8142327643cda2b6",
+      "posterSHA256": "2bdc9a87bddd8d42c5dc632938d4ca0ffc6bac2d83adccadbc6635d8f6475e8e",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 3414,
+            "duration": "26.983008"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "26.982993"
+          }
+        ],
+        "format": {
+          "duration": "26.983008"
+        }
+      }
+    },
+    {
+      "id": "lanmei-zhengcai",
+      "sourceId": "cq-lanmei-7692311805913784713",
+      "mediaKey": "56d60ba5d5b33b35",
+      "sourceSHA256": "d9f2ce7bbd310db48467e55d1d91bcd8b09598b405713811073e010d557ce997",
+      "start": 58.833333,
+      "end": 68.333333,
+      "posterSecond": 66,
+      "clip": "lanmei-zhengcai-56d60ba5d5b33b35.mp4",
+      "poster": "lanmei-zhengcai-56d60ba5d5b33b35.jpg",
+      "clipBytes": 20443219,
+      "posterBytes": 469679,
+      "clipSHA256": "57ed585ad4dcc0354757c56fc3038064c5e5ff2c70afda4a0592110e22f7af57",
+      "posterSHA256": "4bd7764271c1626ee1cac7fc2b4ff3e52511dcaee5b1be140e632b7996dde9ee",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 3414,
+            "duration": "9.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "9.500000"
+          }
+        ],
+        "format": {
+          "duration": "9.500000"
+        }
+      }
+    },
+    {
+      "id": "lanmei-yikou",
+      "sourceId": "cq-lanmei-7692311805913784713",
+      "mediaKey": "7adcfc4f3d476e73",
+      "sourceSHA256": "d9f2ce7bbd310db48467e55d1d91bcd8b09598b405713811073e010d557ce997",
+      "start": 68.333333,
+      "end": 78.8,
+      "posterSecond": 70.5,
+      "clip": "lanmei-yikou-7adcfc4f3d476e73.mp4",
+      "poster": "lanmei-yikou-7adcfc4f3d476e73.jpg",
+      "clipBytes": 18308804,
+      "posterBytes": 385776,
+      "clipSHA256": "6c1ad12a83b584f8ad4eee4b451b623595cd441a4bf94834bb8455632dd507ce",
+      "posterSHA256": "44cadc74ba10b9832009ea1bf4707b3674ab21350bb4794671bb16efb34f2919",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 3414,
+            "duration": "10.466667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "10.466009"
+          }
+        ],
+        "format": {
+          "duration": "10.466667"
+        }
+      }
+    },
+    {
+      "id": "lanmei-yuanma",
+      "sourceId": "cq-lanmei-7692311805913784713",
+      "mediaKey": "12056751f5ef9e71",
+      "sourceSHA256": "d9f2ce7bbd310db48467e55d1d91bcd8b09598b405713811073e010d557ce997",
+      "start": 78.8,
+      "end": 89.933333,
+      "posterSecond": 81,
+      "clip": "lanmei-yuanma-12056751f5ef9e71.mp4",
+      "poster": "lanmei-yuanma-12056751f5ef9e71.jpg",
+      "clipBytes": 26364808,
+      "posterBytes": 364325,
+      "clipSHA256": "27407b1eee3c0723e66dcc7d43edb7ac782f69e27f21dfd1f30caac60d019de7",
+      "posterSHA256": "eeed776d05466cc348d9cce657774f03f62b34e6d03b8bb474c88b9f1a62740d",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 3414,
+            "duration": "11.133333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "11.132993"
+          }
+        ],
+        "format": {
+          "duration": "11.133333"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-caiji",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "17f67d0d7aaaa4e7",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 12,
+      "end": 86.5,
+      "posterSecond": 13,
+      "clip": "cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+      "poster": "cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.jpg",
+      "clipBytes": 27252362,
+      "posterBytes": 126567,
+      "clipSHA256": "725ee1b4c7d62bbaaab116d046123cf01e277408d491bc070e9c5ee7241cca89",
+      "posterSHA256": "98938a56248bcd9dd3cafa39198db6a5df4380c5737b26482a8379499c82de78",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "74.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "74.500000"
+          }
+        ],
+        "format": {
+          "duration": "74.500000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-zhoushi",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "9ae04ce314e8ec17",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 86.5,
+      "end": 107.8,
+      "posterSecond": 89,
+      "clip": "cq-pp-7583215165723266354-zhoushi-9ae04ce314e8ec17.mp4",
+      "poster": "cq-pp-7583215165723266354-zhoushi-9ae04ce314e8ec17.jpg",
+      "clipBytes": 9510074,
+      "posterBytes": 141269,
+      "clipSHA256": "a03b70743f4bcb249e6664356d48dc8552421c16dc3d5f898fbddc0282f36606",
+      "posterSHA256": "4e280a9eca9a6cacad4f309405555997f916631640005d52958fb870bc357351",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "21.300000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "21.300000"
+          }
+        ],
+        "format": {
+          "duration": "21.300000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-baomian",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "84e979171fadd329",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 107.8,
+      "end": 132.9,
+      "posterSecond": 114,
+      "clip": "cq-pp-7583215165723266354-baomian-84e979171fadd329.mp4",
+      "poster": "cq-pp-7583215165723266354-baomian-84e979171fadd329.jpg",
+      "clipBytes": 10332677,
+      "posterBytes": 72472,
+      "clipSHA256": "e1b79500c3df9798e60d71e8823db16d54c104bdea9771555f0c0dae4072febc",
+      "posterSHA256": "20a5784429e5afb89c6a8874b1084c27b31a2e4af9ad928451384265c3333621",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "25.100000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "25.100000"
+          }
+        ],
+        "format": {
+          "duration": "25.100000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-konger",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "43817661f12a1e55",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 132.9,
+      "end": 254.7,
+      "posterSecond": 155,
+      "clip": "cq-pp-7583215165723266354-konger-43817661f12a1e55.mp4",
+      "poster": "cq-pp-7583215165723266354-konger-43817661f12a1e55.jpg",
+      "clipBytes": 56082343,
+      "posterBytes": 137716,
+      "clipSHA256": "e4f1f7abb0d9da98b29b955cdf8c7b26006e72c596e331eba886d6ea7697b38a",
+      "posterSHA256": "00b5c8ef096c0dd4fc5470bbf96a3b8f790a083e3417a83da093ca73d7656d1b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "121.800000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "121.800000"
+          }
+        ],
+        "format": {
+          "duration": "121.800000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-limixian",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "8b08613bb57e01f2",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 254.7,
+      "end": 293.7,
+      "posterSecond": 258,
+      "clip": "cq-pp-7583215165723266354-limixian-8b08613bb57e01f2.mp4",
+      "poster": "cq-pp-7583215165723266354-limixian-8b08613bb57e01f2.jpg",
+      "clipBytes": 13723274,
+      "posterBytes": 142614,
+      "clipSHA256": "ab8f4d33f7c3cf74ceedc5cdcd20981e4e5a4a111e71739888b43bca556e3301",
+      "posterSHA256": "47568b4d0361d42f84b5c73734a03932c4fcbba8180a23bd7bdea15667984801",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "39.000000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "39.000000"
+          }
+        ],
+        "format": {
+          "duration": "39.000000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-liaoji",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "f40977f7b6f7d001",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 293.7,
+      "end": 301.9,
+      "posterSecond": 300,
+      "clip": "cq-pp-7583215165723266354-liaoji-f40977f7b6f7d001.mp4",
+      "poster": "cq-pp-7583215165723266354-liaoji-f40977f7b6f7d001.jpg",
+      "clipBytes": 3415950,
+      "posterBytes": 80153,
+      "clipSHA256": "474648dd35590e8a2f29dcb4e36575f2542cf7bd02477cf6bb5299d03dd8c97e",
+      "posterSHA256": "d6f5a03ba3f7feeb3bc62633279ca0bd3257340775a6f38bf77fff3bcc84bda9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "8.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "8.200000"
+          }
+        ],
+        "format": {
+          "duration": "8.200000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-qixing-hotpot",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "456497262bf34cfe",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 301.9,
+      "end": 439.8,
+      "posterSecond": 313,
+      "clip": "cq-pp-7583215165723266354-qixing-hotpot-456497262bf34cfe.mp4",
+      "poster": "cq-pp-7583215165723266354-qixing-hotpot-456497262bf34cfe.jpg",
+      "clipBytes": 61044683,
+      "posterBytes": 116430,
+      "clipSHA256": "55d717a21fc13812b058dcc77c176a546a36f89ee8f5f84de7d61504c00044c5",
+      "posterSHA256": "fbd7b55db6cc9e316a5657f906dbb752f3b7432fbbf4db7a1e87a76ee68168b2",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "137.900000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "137.900000"
+          }
+        ],
+        "format": {
+          "duration": "137.900000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-bingdouhua",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "ab3e2df532db1f44",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 439.8,
+      "end": 443.9,
+      "posterSecond": 442,
+      "clip": "cq-pp-7583215165723266354-bingdouhua-ab3e2df532db1f44.mp4",
+      "poster": "cq-pp-7583215165723266354-bingdouhua-ab3e2df532db1f44.jpg",
+      "clipBytes": 1767412,
+      "posterBytes": 135273,
+      "clipSHA256": "dc41a255beb616671ce9bd28e0bd46a1793090839892c38bba2e055e827e3b06",
+      "posterSHA256": "dba4f97c647e9acdedd2a12fa92f30196542f7d12d69cfdef45aa683aef6acaf",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "4.100000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "4.100000"
+          }
+        ],
+        "format": {
+          "duration": "4.100000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-renyi",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "f69044e53a4887bf",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 470.7,
+      "end": 505.3,
+      "posterSecond": 474,
+      "clip": "cq-pp-7583215165723266354-renyi-f69044e53a4887bf.mp4",
+      "poster": "cq-pp-7583215165723266354-renyi-f69044e53a4887bf.jpg",
+      "clipBytes": 12704499,
+      "posterBytes": 128643,
+      "clipSHA256": "2ed67a671277146c7684da810a05ec8e4c0d37f63b8884ecc5a86d598adfb2ba",
+      "posterSHA256": "f6850cec36dd443df823e0c04de0aa0dc3c956566acd5aba40a5efd3d5dbceb2",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "34.600000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "34.600000"
+          }
+        ],
+        "format": {
+          "duration": "34.600000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-miaoshifu",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "dc059feded6461b3",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 505.3,
+      "end": 512.1,
+      "posterSecond": 506,
+      "clip": "cq-pp-7583215165723266354-miaoshifu-dc059feded6461b3.mp4",
+      "poster": "cq-pp-7583215165723266354-miaoshifu-dc059feded6461b3.jpg",
+      "clipBytes": 2287029,
+      "posterBytes": 110489,
+      "clipSHA256": "862a2836ddd06efe2940a0b6fe67a529676a69c8e8d6e071c75e19b3d03e1ada",
+      "posterSHA256": "61bd2eb0a763f81e996294f9d9f32d8d7d900df514ab1e695a5abbdda21d8ed4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "6.800000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "6.800000"
+          }
+        ],
+        "format": {
+          "duration": "6.800000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-luoerwa",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "756f11c50dfad787",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 512.1,
+      "end": 532.6,
+      "posterSecond": 516,
+      "clip": "cq-pp-7583215165723266354-luoerwa-756f11c50dfad787.mp4",
+      "poster": "cq-pp-7583215165723266354-luoerwa-756f11c50dfad787.jpg",
+      "clipBytes": 8662204,
+      "posterBytes": 154693,
+      "clipSHA256": "e254cca301d44226047aa94f517177c3b3becea2f67616cecd56a9fbe69257ca",
+      "posterSHA256": "c0001dc267d291fce816d33d588a99ff2438ed9eb051b04c57b71a13d1c8873b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "20.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "20.500000"
+          }
+        ],
+        "format": {
+          "duration": "20.500000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-yangshi",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "634edcab8d84b9dd",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 532.6,
+      "end": 557.5,
+      "posterSecond": 538,
+      "clip": "cq-pp-7583215165723266354-yangshi-634edcab8d84b9dd.mp4",
+      "poster": "cq-pp-7583215165723266354-yangshi-634edcab8d84b9dd.jpg",
+      "clipBytes": 8129367,
+      "posterBytes": 78568,
+      "clipSHA256": "d2ac9ae0b5e408e32362e804cc3d710768133fbdd14dada4f1cf382a1c19f26b",
+      "posterSHA256": "bbd7d30ef95e5a3ae2014dc4c23ce74cc3dbde896d1aef1f0e328982ad5fb7c6",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "24.900000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "24.900000"
+          }
+        ],
+        "format": {
+          "duration": "24.900000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-yangfen",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "d82a130398ff779b",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 557.5,
+      "end": 582.7,
+      "posterSecond": 561,
+      "clip": "cq-pp-7583215165723266354-yangfen-d82a130398ff779b.mp4",
+      "poster": "cq-pp-7583215165723266354-yangfen-d82a130398ff779b.jpg",
+      "clipBytes": 9518778,
+      "posterBytes": 127747,
+      "clipSHA256": "7b73c1e66b5c2b193c2f4d879de80b13a54f2f2ef5540a90c8a29e804a3271a6",
+      "posterSHA256": "700e95799c406de741f90f3d77563a09c9bddeb5b5e9c390fc03a5aa83131a2b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "25.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "25.200000"
+          }
+        ],
+        "format": {
+          "duration": "25.200000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-tangyuan",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "f99bd8421650747f",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 582.7,
+      "end": 597.7,
+      "posterSecond": 584,
+      "clip": "cq-pp-7583215165723266354-tangyuan-f99bd8421650747f.mp4",
+      "poster": "cq-pp-7583215165723266354-tangyuan-f99bd8421650747f.jpg",
+      "clipBytes": 4931060,
+      "posterBytes": 71754,
+      "clipSHA256": "c09077f4cd377eb1783ff50989a8e4dfdfb48f4f55305c79ff775b14c25d6c5b",
+      "posterSHA256": "0a4d2949303163e17247246d426f10b75d02c966698ca2397ad688d7201e7a4c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "15.000000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "15.000000"
+          }
+        ],
+        "format": {
+          "duration": "15.000000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-lidouhua",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "75116724f73f67fa",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 612.2,
+      "end": 631.3,
+      "posterSecond": 615,
+      "clip": "cq-pp-7583215165723266354-lidouhua-75116724f73f67fa.mp4",
+      "poster": "cq-pp-7583215165723266354-lidouhua-75116724f73f67fa.jpg",
+      "clipBytes": 6185192,
+      "posterBytes": 94494,
+      "clipSHA256": "e9e1b6a1a8232702d7dea94ae520f7319c3d02f11f57a96e8d702d42c374baed",
+      "posterSHA256": "0c39abe4782906737d1cc827ce30406e763f4779ec43a78ce0b317ea68f15de0",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "19.100000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "19.100000"
+          }
+        ],
+        "format": {
+          "duration": "19.100000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-lvdousu",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "ecfc40ab2df3b1fc",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 631.3,
+      "end": 639.8,
+      "posterSecond": 634,
+      "clip": "cq-pp-7583215165723266354-lvdousu-ecfc40ab2df3b1fc.mp4",
+      "poster": "cq-pp-7583215165723266354-lvdousu-ecfc40ab2df3b1fc.jpg",
+      "clipBytes": 3193316,
+      "posterBytes": 105061,
+      "clipSHA256": "7f1652b4456faaf60f2c3ea44c62438f1aace8a7cba64e0c21a8797185ea65f8",
+      "posterSHA256": "ff0633ada6cc5726141d54540ab77df965c2f362ea0e4c46a01cb85903ba2c16",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "8.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "8.500000"
+          }
+        ],
+        "format": {
+          "duration": "8.500000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-longyi",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "e1d560cbf055c428",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 639.8,
+      "end": 683.5,
+      "posterSecond": 645,
+      "clip": "cq-pp-7583215165723266354-longyi-e1d560cbf055c428.mp4",
+      "poster": "cq-pp-7583215165723266354-longyi-e1d560cbf055c428.jpg",
+      "clipBytes": 14463040,
+      "posterBytes": 78291,
+      "clipSHA256": "abc3f38f8e0d67b1f6f30f285679a55903d420ec4c9995740a28712e7015c185",
+      "posterSHA256": "e306645812e84070df045fd8efdb21fd2004fd2658c50cdeb3188e526222c546",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "43.700000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "43.700000"
+          }
+        ],
+        "format": {
+          "duration": "43.700000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-zhengfa",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "a32f1714ff46d33d",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 683.5,
+      "end": 713.5,
+      "posterSecond": 686,
+      "clip": "cq-pp-7583215165723266354-zhengfa-a32f1714ff46d33d.mp4",
+      "poster": "cq-pp-7583215165723266354-zhengfa-a32f1714ff46d33d.jpg",
+      "clipBytes": 10916328,
+      "posterBytes": 172250,
+      "clipSHA256": "449db81174718aa93712de6fe0bf513ba33849cdec026d8d0c376f64cae17fb2",
+      "posterSHA256": "6d8240b1922c93c5b2f559c5c6ddb3eb36814a127bf04bd6784032414e12a3d6",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "30.000000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "30.000000"
+          }
+        ],
+        "format": {
+          "duration": "30.000000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-ganguo",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "438d2d3405252765",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 713.5,
+      "end": 744.3,
+      "posterSecond": 715,
+      "clip": "cq-pp-7583215165723266354-ganguo-438d2d3405252765.mp4",
+      "poster": "cq-pp-7583215165723266354-ganguo-438d2d3405252765.jpg",
+      "clipBytes": 10757175,
+      "posterBytes": 113302,
+      "clipSHA256": "885e6b68ea9f5af3f134f59b9940e7b327b25078eed498e5e3dbb4288102341d",
+      "posterSHA256": "3f2860d822172798167762b2e75295b1ed0a6b19110a4d9d20bec75d239dd459",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "30.800000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "30.800000"
+          }
+        ],
+        "format": {
+          "duration": "30.800000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-yuanji",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "e301f230449d71e6",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 744.3,
+      "end": 759.5,
+      "posterSecond": 748,
+      "clip": "cq-pp-7583215165723266354-yuanji-e301f230449d71e6.mp4",
+      "poster": "cq-pp-7583215165723266354-yuanji-e301f230449d71e6.jpg",
+      "clipBytes": 4840771,
+      "posterBytes": 102004,
+      "clipSHA256": "e9b44b68578a88586da2ee5f86a8f8bbfc342291645854bef79f4bfd0b75dfe8",
+      "posterSHA256": "36b9faa6f31be8a6d5da75af9e7c3927656d38b5e129dc95b8e3d113d575fad9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "15.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "15.200000"
+          }
+        ],
+        "format": {
+          "duration": "15.200000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-jinli",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "52436205edcf996a",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 759.5,
+      "end": 781.7,
+      "posterSecond": 765,
+      "clip": "cq-pp-7583215165723266354-jinli-52436205edcf996a.mp4",
+      "poster": "cq-pp-7583215165723266354-jinli-52436205edcf996a.jpg",
+      "clipBytes": 8399021,
+      "posterBytes": 128468,
+      "clipSHA256": "345055ac3178b3eddf42b38b90299e5ba4a0dbc78f03759c002bcca59390a55c",
+      "posterSHA256": "60cb6f081c395a80e5e9d457b5f7f3ef0ad9198761ca3b539d24a270c4543f15",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "22.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "22.200000"
+          }
+        ],
+        "format": {
+          "duration": "22.200000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-shuguang",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "bc141c95e31c4569",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 798.6,
+      "end": 828.7,
+      "posterSecond": 817,
+      "clip": "cq-pp-7583215165723266354-shuguang-bc141c95e31c4569.mp4",
+      "poster": "cq-pp-7583215165723266354-shuguang-bc141c95e31c4569.jpg",
+      "clipBytes": 11823992,
+      "posterBytes": 137700,
+      "clipSHA256": "c50f55edeb7d84342de17d2864af6cc1319de6c5139c82c7fd39c95b5b8c0e71",
+      "posterSHA256": "4d0d8d8808302818721522f48312454a38795dd8474736d3d262188785304b5e",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "30.100000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "30.100000"
+          }
+        ],
+        "format": {
+          "duration": "30.100000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-yuqingnian",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "1019a8670273f8c8",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 854.2,
+      "end": 891.4,
+      "posterSecond": 857,
+      "clip": "cq-pp-7583215165723266354-yuqingnian-1019a8670273f8c8.mp4",
+      "poster": "cq-pp-7583215165723266354-yuqingnian-1019a8670273f8c8.jpg",
+      "clipBytes": 12132831,
+      "posterBytes": 71426,
+      "clipSHA256": "bca541cf6ba6879d653ad35feef85b5338f30744f9f304771cccce3c241518ec",
+      "posterSHA256": "879a58ec4d811cb4f5f0377c675d64c93b9171e5fa0c13ea25bd83376a315cca",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "37.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "37.200000"
+          }
+        ],
+        "format": {
+          "duration": "37.200000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-zengbin",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "b36ff59009446a48",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 891.4,
+      "end": 914.8,
+      "posterSecond": 895,
+      "clip": "cq-pp-7583215165723266354-zengbin-b36ff59009446a48.mp4",
+      "poster": "cq-pp-7583215165723266354-zengbin-b36ff59009446a48.jpg",
+      "clipBytes": 7887201,
+      "posterBytes": 114358,
+      "clipSHA256": "a9f34cce541c5b5ebf3ff6b1295a9536d6f0d2ae7f1c363bf5358ffa50fbd329",
+      "posterSHA256": "05f11df5dde7ab0f5bcc23545afa69a9e0edcac79a3c4a415571eeda317eb873",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "23.400000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "23.400000"
+          }
+        ],
+        "format": {
+          "duration": "23.400000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-lichaoshou",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "8ce44e8d193a6bb6",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 914.8,
+      "end": 931,
+      "posterSecond": 918,
+      "clip": "cq-pp-7583215165723266354-lichaoshou-8ce44e8d193a6bb6.mp4",
+      "poster": "cq-pp-7583215165723266354-lichaoshou-8ce44e8d193a6bb6.jpg",
+      "clipBytes": 4814937,
+      "posterBytes": 90506,
+      "clipSHA256": "f9859f2dcdd7494173cc3819afb3a9ad63e175b2f885241bea9d0c17142f4567",
+      "posterSHA256": "dde77945d2cea23a9aee12d0ce05bc3941b66f16835d70919ff87ad5a717cbc3",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "16.200000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "16.200000"
+          }
+        ],
+        "format": {
+          "duration": "16.200000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-jidong",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "eb0c33faf13f036f",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 931,
+      "end": 957.7,
+      "posterSecond": 937,
+      "clip": "cq-pp-7583215165723266354-jidong-eb0c33faf13f036f.mp4",
+      "poster": "cq-pp-7583215165723266354-jidong-eb0c33faf13f036f.jpg",
+      "clipBytes": 9862227,
+      "posterBytes": 100944,
+      "clipSHA256": "8c4a6c3d9888a66638be98fe7969d0489e39e7e2cca8354ee417623fcdc42cf8",
+      "posterSHA256": "487d3212631a510fdd7ae8b6b4aebf6a49584c9b798a98decf96633d9fcbc66d",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "26.700000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "26.700000"
+          }
+        ],
+        "format": {
+          "duration": "26.700000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-dianjiang",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "e56e9d3b9d5d4ffe",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 957.7,
+      "end": 984.2,
+      "posterSecond": 960,
+      "clip": "cq-pp-7583215165723266354-dianjiang-e56e9d3b9d5d4ffe.mp4",
+      "poster": "cq-pp-7583215165723266354-dianjiang-e56e9d3b9d5d4ffe.jpg",
+      "clipBytes": 9430187,
+      "posterBytes": 74176,
+      "clipSHA256": "9058d4408533d475fe6b3062b73d01077a11629f01408fd0803fff1bf7930f24",
+      "posterSHA256": "f27d6578db7da3dd32b53736650180a8e0db2c3a6f310df5b5d3e3b8daecb2da",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "26.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "26.500000"
+          }
+        ],
+        "format": {
+          "duration": "26.500000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-hongyu",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "ed221d12ac0abd1a",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 984.2,
+      "end": 1008.5,
+      "posterSecond": 990,
+      "clip": "cq-pp-7583215165723266354-hongyu-ed221d12ac0abd1a.mp4",
+      "poster": "cq-pp-7583215165723266354-hongyu-ed221d12ac0abd1a.jpg",
+      "clipBytes": 9603377,
+      "posterBytes": 112217,
+      "clipSHA256": "214938b6eb408f31e8933b6ca1578dbb14531f0520ded94646abd55b8e39db8b",
+      "posterSHA256": "e754e97bc33a8e48b8466ecd7dfc7af8b79e5fe87285d3bfee14e561d56e7372",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "24.300000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "24.300000"
+          }
+        ],
+        "format": {
+          "duration": "24.300000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-huangjia",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "0c9e190151d7c01e",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 443.9,
+      "end": 470.7,
+      "posterSecond": 450,
+      "clip": "cq-pp-7583215165723266354-huangjia-0c9e190151d7c01e.mp4",
+      "poster": "cq-pp-7583215165723266354-huangjia-0c9e190151d7c01e.jpg",
+      "clipBytes": 9277141,
+      "posterBytes": 127549,
+      "clipSHA256": "a25ba5508d4aba99dedb5b233c0ba72fe2d89ade6948668a1945a2b41d92e0be",
+      "posterSHA256": "652dc96611354b75833029695e2817f0b94998d49a02b1b725ebb1385b206258",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "26.800000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "26.800000"
+          }
+        ],
+        "format": {
+          "duration": "26.800000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-xinzhu",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "3a55c849f718fb44",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 597.7,
+      "end": 612.2,
+      "posterSecond": 601,
+      "clip": "cq-pp-7583215165723266354-xinzhu-3a55c849f718fb44.mp4",
+      "poster": "cq-pp-7583215165723266354-xinzhu-3a55c849f718fb44.jpg",
+      "clipBytes": 4483599,
+      "posterBytes": 67846,
+      "clipSHA256": "efacc80b34aca04c419dabc751b72966a2ffb6d612784d477f09789334d337a8",
+      "posterSHA256": "b74b341f36dcab5a519422eb83adb696a1919f3576cc46a226f86b0ad757f509",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "14.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "14.500000"
+          }
+        ],
+        "format": {
+          "duration": "14.500000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-baixin",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "256fc0c03bbb020d",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 781.7,
+      "end": 798.6,
+      "posterSecond": 786,
+      "clip": "cq-pp-7583215165723266354-baixin-256fc0c03bbb020d.mp4",
+      "poster": "cq-pp-7583215165723266354-baixin-256fc0c03bbb020d.jpg",
+      "clipBytes": 7458695,
+      "posterBytes": 113982,
+      "clipSHA256": "995758c2c18d2055646698afed6e8958cbf692e1ae00fbe5834639d8846104b9",
+      "posterSHA256": "0436b69f60bc97c497fa57705b59677b51d436e185f87f9155ede49ea1a4e93b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "16.900000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "16.900000"
+          }
+        ],
+        "format": {
+          "duration": "16.900000"
+        }
+      }
+    },
+    {
+      "id": "cq-pp-7583215165723266354-nawan",
+      "sourceId": "cq-pp-7583215165723266354",
+      "mediaKey": "e65fc98611f5cebf",
+      "sourceSHA256": "5f3eeaf8f9ed20f6a678ff53481125400e44e06cb8147ed948cc7ada85779abc",
+      "start": 828.7,
+      "end": 854.2,
+      "posterSecond": 834,
+      "clip": "cq-pp-7583215165723266354-nawan-e65fc98611f5cebf.mp4",
+      "poster": "cq-pp-7583215165723266354-nawan-e65fc98611f5cebf.jpg",
+      "clipBytes": 8953522,
+      "posterBytes": 149451,
+      "clipSHA256": "5a74b0435618b5b9ccb17a368da90b81d0b8a4716e2ed53db50f6597723b3270",
+      "posterSHA256": "fe09152012c8e59652f69e83fd300111c17c3eb722809c7f88e361d15aeb7893",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "25.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "25.500000"
+          }
+        ],
+        "format": {
+          "duration": "25.500000"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-rongjing-doufunao",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "4a9226b7df371e9c",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 17.567,
+      "end": 33.667,
+      "posterSecond": 24,
+      "clip": "cq-baozao-7676071047438803849-rongjing-doufunao-4a9226b7df371e9c.mp4",
+      "poster": "cq-baozao-7676071047438803849-rongjing-doufunao-4a9226b7df371e9c.jpg",
+      "clipBytes": 5747602,
+      "posterBytes": 75352,
+      "clipSHA256": "025536f6837e13dc598c0514a1cd713c4aa8999a622aef29272d495f1c2732d9",
+      "posterSHA256": "1f3ef5c91a433342c6082629da7cccebeab8a3108ac16cb76aae2a39b58e90d1",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "16.066667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "16.100000"
+          }
+        ],
+        "format": {
+          "duration": "16.100000"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-dalitang-liangxia",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "12486fb1ee3ba35d",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 33.667,
+      "end": 50.033,
+      "posterSecond": 44,
+      "clip": "cq-baozao-7676071047438803849-dalitang-liangxia-12486fb1ee3ba35d.mp4",
+      "poster": "cq-baozao-7676071047438803849-dalitang-liangxia-12486fb1ee3ba35d.jpg",
+      "clipBytes": 5711737,
+      "posterBytes": 67663,
+      "clipSHA256": "d5515bc4e80aa71ecde4f94f1c8540857d0552a1a750f9ebd7e92121be772864",
+      "posterSHA256": "f9ef5210dbb559899025a1e24c26cc0bbc796c512e49b5d88fe43799e51e2f7a",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "16.333333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "16.366009"
+          }
+        ],
+        "format": {
+          "duration": "16.366341"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-dadukou-roubing",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "0df3890fc723677e",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 50.033,
+      "end": 64.5,
+      "posterSecond": 56,
+      "clip": "cq-baozao-7676071047438803849-dadukou-roubing-0df3890fc723677e.mp4",
+      "poster": "cq-baozao-7676071047438803849-dadukou-roubing-0df3890fc723677e.jpg",
+      "clipBytes": 5504397,
+      "posterBytes": 99566,
+      "clipSHA256": "cd014c7f33e457e1f871ac566b61bf3d532a7659082cdc8bf120909e7e879b3a",
+      "posterSHA256": "800526354d13c9f65b538b300257b81bfd857a250f54892c8f6ca310534337a6",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "14.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "14.467007"
+          }
+        ],
+        "format": {
+          "duration": "14.500000"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-rongchang-dougan",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "97b8c6f8bef91a2f",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 64.5,
+      "end": 78.133,
+      "posterSecond": 68,
+      "clip": "cq-baozao-7676071047438803849-rongchang-dougan-97b8c6f8bef91a2f.mp4",
+      "poster": "cq-baozao-7676071047438803849-rongchang-dougan-97b8c6f8bef91a2f.jpg",
+      "clipBytes": 4669620,
+      "posterBytes": 148359,
+      "clipSHA256": "e904f4d916bcfa0e52260a65bf6e82535df3aab3baa78704bddea74c30e42570",
+      "posterSHA256": "4bd4ff8262c8672fff3470de7b68280bd23fd3eb7c49753c7c63744e40d65ec9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "13.633333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "13.632993"
+          }
+        ],
+        "format": {
+          "duration": "13.633333"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-tongliang-gao",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "4a682a0ad73dbdde",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 78.133,
+      "end": 91.233,
+      "posterSecond": 84,
+      "clip": "cq-baozao-7676071047438803849-tongliang-gao-4a682a0ad73dbdde.mp4",
+      "poster": "cq-baozao-7676071047438803849-tongliang-gao-4a682a0ad73dbdde.jpg",
+      "clipBytes": 3866079,
+      "posterBytes": 69793,
+      "clipSHA256": "8d1d250af18dbcbefdfe5f231bfa1d8abf2488a216fc3317ec67790464faf406",
+      "posterSHA256": "0ac79745c5775fc3960506c0bcbc497214df05e23fa3a003bea9fe3f38336e78",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "13.100000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "13.100000"
+          }
+        ],
+        "format": {
+          "duration": "13.100000"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-xinyang-guobaorou",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "db73422bc3674c6f",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 91.233,
+      "end": 108.967,
+      "posterSecond": 96,
+      "clip": "cq-baozao-7676071047438803849-xinyang-guobaorou-db73422bc3674c6f.mp4",
+      "poster": "cq-baozao-7676071047438803849-xinyang-guobaorou-db73422bc3674c6f.jpg",
+      "clipBytes": 6412797,
+      "posterBytes": 80329,
+      "clipSHA256": "ab8380e34601f773d8cb3759293dc8afff1c2badbfc6c410858158386bf9da6f",
+      "posterSHA256": "1c4ae983b8841df3b53631e8d328eaa49b0bdfd5fc16a18dcae09ed8b34ef535",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "17.766667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "17.733991"
+          }
+        ],
+        "format": {
+          "duration": "17.766667"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-yudong-chuanchuan",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "7c25af5a15e7aa21",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 108.967,
+      "end": 123.667,
+      "posterSecond": 116,
+      "clip": "cq-baozao-7676071047438803849-yudong-chuanchuan-7c25af5a15e7aa21.mp4",
+      "poster": "cq-baozao-7676071047438803849-yudong-chuanchuan-7c25af5a15e7aa21.jpg",
+      "clipBytes": 6060501,
+      "posterBytes": 95609,
+      "clipSHA256": "c81a9f46d75b3cf4167ea038389bf639401b3a593d2c71656a3bcc9e4c2e6047",
+      "posterSHA256": "71827a8db3ac864e2cc92814ab9d1b11b864e02361bc8decbf88e9d30cfdbb47",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "14.666667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "14.700000"
+          }
+        ],
+        "format": {
+          "duration": "14.700000"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-shiziping-tudou",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "602806a00fa14551",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 123.667,
+      "end": 136.367,
+      "posterSecond": 128,
+      "clip": "cq-baozao-7676071047438803849-shiziping-tudou-602806a00fa14551.mp4",
+      "poster": "cq-baozao-7676071047438803849-shiziping-tudou-602806a00fa14551.jpg",
+      "clipBytes": 3988187,
+      "posterBytes": 80483,
+      "clipSHA256": "ff1a0084735288a6c5ee6648f34f554b77527e7fae6b04b2deb1b1f6afad30c2",
+      "posterSHA256": "2b990d8971de37ed1737c512e132fd0ed350377827f6d67de41891a7e0b0da1f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "12.666667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "12.700000"
+          }
+        ],
+        "format": {
+          "duration": "12.700000"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-nanping-ciba",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "0574be6124b94851",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 136.367,
+      "end": 144.333,
+      "posterSecond": 139,
+      "clip": "cq-baozao-7676071047438803849-nanping-ciba-0574be6124b94851.mp4",
+      "poster": "cq-baozao-7676071047438803849-nanping-ciba-0574be6124b94851.jpg",
+      "clipBytes": 2098880,
+      "posterBytes": 81158,
+      "clipSHA256": "024b0b4000efca4dde491d89f7fef3a6b62557ca4c573a806fd5ef84b106355a",
+      "posterSHA256": "7cca72fde96ef13088aa6b24762faa0f6390986b4fa487baba09d60968c57d87",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "7.933333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "7.966009"
+          }
+        ],
+        "format": {
+          "duration": "7.966341"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-danzishi-huoguofen",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "e235e8d4d1fe8714",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 144.333,
+      "end": 161.8,
+      "posterSecond": 152,
+      "clip": "cq-baozao-7676071047438803849-danzishi-huoguofen-e235e8d4d1fe8714.mp4",
+      "poster": "cq-baozao-7676071047438803849-danzishi-huoguofen-e235e8d4d1fe8714.jpg",
+      "clipBytes": 7861162,
+      "posterBytes": 90244,
+      "clipSHA256": "6d79bf0a5cd8cd3e772823b37d09aadc7d892d70b0db53458fd1c1c8530d5ff9",
+      "posterSHA256": "d2e5c089b0a4f1a5f9a8081506697047a3686a57e6bc702f90923b5fc6aa20fb",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "17.500000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "17.467007"
+          }
+        ],
+        "format": {
+          "duration": "17.500000"
+        }
+      }
+    },
+    {
+      "id": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan",
+      "sourceId": "cq-baozao-7676071047438803849",
+      "mediaKey": "16c7ecc153bc7ac9",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "start": 161.8,
+      "end": 179.033,
+      "posterSecond": 172,
+      "clip": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan-16c7ecc153bc7ac9.mp4",
+      "poster": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan-16c7ecc153bc7ac9.jpg",
+      "clipBytes": 5333506,
+      "posterBytes": 90545,
+      "clipSHA256": "b7a49277b3d6ae074850cd5d9d6e5db3403ce196e83ffcb1637c8a9962b1f1d2",
+      "posterSHA256": "d08cfecbf0dd15c5c7d8aa8eb83553d270154fd92970995e963aa4cab2acfdf7",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "17.233333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "17.232993"
+          }
+        ],
+        "format": {
+          "duration": "17.233333"
+        }
+      }
+    },
+    {
+      "id": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi",
+      "sourceId": "cq-yangyu-7699016826356895027",
+      "mediaKey": "59179b5d1f6db4df",
+      "sourceSHA256": "73f1d80f451a9659844decb76c4dfda6ab346eb1f6c97330e38b5e4be1679ef5",
+      "start": 11.8,
+      "end": 45.4,
+      "posterSecond": 24,
+      "clip": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi-59179b5d1f6db4df.mp4",
+      "poster": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi-59179b5d1f6db4df.jpg",
+      "clipBytes": 117651398,
+      "posterBytes": 549380,
+      "clipSHA256": "1056e01159d2d4ce2395774e6a6ee7076f6619a0d0191d5d619e2663df732093",
+      "posterSHA256": "e0eba5ea8e5364d258b883f6f787123895713cedf76db650c7f895d9006c6d15",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 2160,
+            "height": 3840,
+            "duration": "33.600000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "33.600000"
+          }
+        ],
+        "format": {
+          "duration": "33.600000"
+        }
+      }
+    },
+    {
+      "id": "cq-suisui-7640793670463833265-guobaorou",
+      "sourceId": "cq-suisui-7640793670463833265",
+      "mediaKey": "f29c722174eeb5e4",
+      "sourceSHA256": "2e5c50de1b32557eb8dc138e0914523ba7c66f6c2e6c34384e598d3a6c76728b",
+      "start": 10.833,
+      "end": 31.267,
+      "posterSecond": 21,
+      "clip": "cq-suisui-7640793670463833265-guobaorou-f29c722174eeb5e4.mp4",
+      "poster": "cq-suisui-7640793670463833265-guobaorou-f29c722174eeb5e4.jpg",
+      "clipBytes": 8821110,
+      "posterBytes": 87764,
+      "clipSHA256": "8a6aa511d41b4fbcca68789e078d78304eaf85a50c18c0e26b55aa42d8907486",
+      "posterSHA256": "9035baa184b1b92ba34b96818d54ffd98d641613e38b438fcb4131f77d45919d",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "20.466667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "20.433991"
+          }
+        ],
+        "format": {
+          "duration": "20.466667"
+        }
+      }
+    },
+    {
+      "id": "cq-suisui-7640793670463833265-dayoubian",
+      "sourceId": "cq-suisui-7640793670463833265",
+      "mediaKey": "4978c7e08dd05706",
+      "sourceSHA256": "2e5c50de1b32557eb8dc138e0914523ba7c66f6c2e6c34384e598d3a6c76728b",
+      "start": 31.267,
+      "end": 39.167,
+      "posterSecond": 33,
+      "clip": "cq-suisui-7640793670463833265-dayoubian-4978c7e08dd05706.mp4",
+      "poster": "cq-suisui-7640793670463833265-dayoubian-4978c7e08dd05706.jpg",
+      "clipBytes": 3208039,
+      "posterBytes": 91131,
+      "clipSHA256": "47f34e96c74c614364f482bc22392b1ef03cb280290a6fb56dba1604e6163f62",
+      "posterSHA256": "d0d9ad03ab03d72533d678678d94697ba78ce8515d57dba4fd904b2c93182930",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "7.866667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "7.900000"
+          }
+        ],
+        "format": {
+          "duration": "7.900000"
+        }
+      }
+    },
+    {
+      "id": "cq-suisui-7640793670463833265-zhurouchuan",
+      "sourceId": "cq-suisui-7640793670463833265",
+      "mediaKey": "d1e06acf3120df52",
+      "sourceSHA256": "2e5c50de1b32557eb8dc138e0914523ba7c66f6c2e6c34384e598d3a6c76728b",
+      "start": 39.167,
+      "end": 49.567,
+      "posterSecond": 43,
+      "clip": "cq-suisui-7640793670463833265-zhurouchuan-d1e06acf3120df52.mp4",
+      "poster": "cq-suisui-7640793670463833265-zhurouchuan-d1e06acf3120df52.jpg",
+      "clipBytes": 4140151,
+      "posterBytes": 98552,
+      "clipSHA256": "1d38b60f0e2c96742cdc3fff74d1c99593a9bdcd555140b44ce3f99fee453638",
+      "posterSHA256": "a6d94f3e86a0ce341f776930ce320d08adb4cc60874fac5c893c1ae22a36f757",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "10.366667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "10.400000"
+          }
+        ],
+        "format": {
+          "duration": "10.400000"
+        }
+      }
+    },
+    {
+      "id": "cq-suisui-7640793670463833265-xiangjiaofeibing",
+      "sourceId": "cq-suisui-7640793670463833265",
+      "mediaKey": "2271fe25cf17af6c",
+      "sourceSHA256": "2e5c50de1b32557eb8dc138e0914523ba7c66f6c2e6c34384e598d3a6c76728b",
+      "start": 49.567,
+      "end": 60.167,
+      "posterSecond": 53,
+      "clip": "cq-suisui-7640793670463833265-xiangjiaofeibing-2271fe25cf17af6c.mp4",
+      "poster": "cq-suisui-7640793670463833265-xiangjiaofeibing-2271fe25cf17af6c.jpg",
+      "clipBytes": 3464577,
+      "posterBytes": 57290,
+      "clipSHA256": "a1855964be0d4e8e3a27cdf3a0980cee0b69aa0c68446451d4fd15ad0e1cd884",
+      "posterSHA256": "8f86b431ffa9b09277931c48e4377ec03a9e2485a65914de02a87d6dea2a111c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "10.566667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "10.600000"
+          }
+        ],
+        "format": {
+          "duration": "10.600000"
+        }
+      }
+    },
+    {
+      "id": "cq-suisui-7640793670463833265-luchuanchuan",
+      "sourceId": "cq-suisui-7640793670463833265",
+      "mediaKey": "e1ecb553be45629e",
+      "sourceSHA256": "2e5c50de1b32557eb8dc138e0914523ba7c66f6c2e6c34384e598d3a6c76728b",
+      "start": 60.167,
+      "end": 77.967,
+      "posterSecond": 66,
+      "clip": "cq-suisui-7640793670463833265-luchuanchuan-e1ecb553be45629e.mp4",
+      "poster": "cq-suisui-7640793670463833265-luchuanchuan-e1ecb553be45629e.jpg",
+      "clipBytes": 7067597,
+      "posterBytes": 114948,
+      "clipSHA256": "5e8723e93b9b20a319d623c1ea186cbdf3140881c4f7ed6096aa09d85ddfccaa",
+      "posterSHA256": "216ad53d0736c858c0063f8a727423bbfc99575c8e368a3fe92b107dba82200e",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 576,
+            "height": 1024,
+            "duration": "17.766667"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "17.800000"
+          }
+        ],
+        "format": {
+          "duration": "17.800000"
+        }
+      }
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing",
+      "sourceId": "cq-xiaoyang-yubei-7532432677610278170",
+      "mediaKey": "3e4706f6634996bb",
+      "sourceSHA256": "1aa2fc543173adfd0da944f9838bee43136217236b40740d6d4b37cc40423e4a",
+      "start": 3.4,
+      "end": 10.233,
+      "posterSecond": 6,
+      "clip": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing-3e4706f6634996bb.mp4",
+      "poster": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing-3e4706f6634996bb.jpg",
+      "clipBytes": 10040912,
+      "posterBytes": 229658,
+      "clipSHA256": "629596b98156e9f145b7df74f20fa818bac36eddf900741122706b21f07104bf",
+      "posterSHA256": "7ba087064fdcfbab16d5b561620a4c3a12a8e87e3f485e05e876cd63c625015f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1440,
+            "height": 1920,
+            "duration": "6.833333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "6.832993"
+          }
+        ],
+        "format": {
+          "duration": "6.833333"
+        }
+      }
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing",
+      "sourceId": "cq-xiaoyang-yubei-7532432677610278170",
+      "mediaKey": "c924f7f1e840bc1b",
+      "sourceSHA256": "1aa2fc543173adfd0da944f9838bee43136217236b40740d6d4b37cc40423e4a",
+      "start": 10.233,
+      "end": 17.633,
+      "posterSecond": 13,
+      "clip": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing-c924f7f1e840bc1b.mp4",
+      "poster": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing-c924f7f1e840bc1b.jpg",
+      "clipBytes": 9502419,
+      "posterBytes": 374393,
+      "clipSHA256": "977fc3dbb1c3a1282009a85059da62539e9ef4397186cdef9cc247b9d99dd0a5",
+      "posterSHA256": "386902da22c1a6279f6b6cdd5efba12a3247c80e9f5b4833c3356497d9275af3",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1440,
+            "height": 1920,
+            "duration": "7.400000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "7.400000"
+          }
+        ],
+        "format": {
+          "duration": "7.400000"
+        }
+      }
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba",
+      "sourceId": "cq-xiaoyang-yubei-7532432677610278170",
+      "mediaKey": "35a96a967d85c7a8",
+      "sourceSHA256": "1aa2fc543173adfd0da944f9838bee43136217236b40740d6d4b37cc40423e4a",
+      "start": 17.633,
+      "end": 24.467,
+      "posterSecond": 20,
+      "clip": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba-35a96a967d85c7a8.mp4",
+      "poster": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba-35a96a967d85c7a8.jpg",
+      "clipBytes": 8851152,
+      "posterBytes": 303829,
+      "clipSHA256": "da7ec127c4b5cd243b601987de578d9965f741984eb08c02204bc6197d82c008",
+      "posterSHA256": "f14d3e224326fc7e6699fd67ace2b54853945efd3cb7f634c1503b567ebac82d",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1440,
+            "height": 1920,
+            "duration": "6.866016"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "6.833991"
+          }
+        ],
+        "format": {
+          "duration": "6.866016"
+        }
+      }
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan",
+      "sourceId": "cq-xiaoyang-yubei-7532432677610278170",
+      "mediaKey": "ed3dae4d9a6e2e92",
+      "sourceSHA256": "1aa2fc543173adfd0da944f9838bee43136217236b40740d6d4b37cc40423e4a",
+      "start": 24.467,
+      "end": 31.533,
+      "posterSecond": 27,
+      "clip": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan-ed3dae4d9a6e2e92.mp4",
+      "poster": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan-ed3dae4d9a6e2e92.jpg",
+      "clipBytes": 9426847,
+      "posterBytes": 431156,
+      "clipSHA256": "156b5445346a0647db193c58cf682f69e96e2875974048034ae2b89e7d7e8426",
+      "posterSHA256": "9aa21e2ca1bff9fd596588acb807275c91735af2622e416febfb57b59480908d",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1440,
+            "height": 1920,
+            "duration": "7.033333"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "7.066009"
+          }
+        ],
+        "format": {
+          "duration": "7.066341"
+        }
+      }
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian",
+      "sourceId": "cq-xiaoyang-yubei-7532432677610278170",
+      "mediaKey": "6043dcf91f6eb2e2",
+      "sourceSHA256": "1aa2fc543173adfd0da944f9838bee43136217236b40740d6d4b37cc40423e4a",
+      "start": 31.533,
+      "end": 41.5,
+      "posterSecond": 35,
+      "clip": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian-6043dcf91f6eb2e2.mp4",
+      "poster": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian-6043dcf91f6eb2e2.jpg",
+      "clipBytes": 13400462,
+      "posterBytes": 222832,
+      "clipSHA256": "dd169a783373725ffbb674e75f9d0ec8d2917592e2742d1578939e14d644addb",
+      "posterSHA256": "4b61102d192a6d38f87f697091e4bc61085d873696220d0d7cb6567883b29ac4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1440,
+            "height": 1920,
+            "duration": "10.000000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "9.967007"
+          }
+        ],
+        "format": {
+          "duration": "10.000000"
+        }
+      }
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi",
+      "sourceId": "cq-xiaoyang-yubei-7532432677610278170",
+      "mediaKey": "c40006d49b18bd6d",
+      "sourceSHA256": "1aa2fc543173adfd0da944f9838bee43136217236b40740d6d4b37cc40423e4a",
+      "start": 41.5,
+      "end": 49.567,
+      "posterSecond": 44,
+      "clip": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi-c40006d49b18bd6d.mp4",
+      "poster": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi-c40006d49b18bd6d.jpg",
+      "clipBytes": 10860552,
+      "posterBytes": 287177,
+      "clipSHA256": "2fbd3e5d00dbf0a053361bb0405b878d748772a58fec53054d4ba78c4f46b82a",
+      "posterSHA256": "9a3c650a27bbfcdf8674a6e9b2224ac38c126803ad9e9f06abd8678b09427b6b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1440,
+            "height": 1920,
+            "duration": "8.100000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "8.067007"
+          }
+        ],
+        "format": {
+          "duration": "8.100000"
+        }
+      }
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba",
+      "sourceId": "cq-xiaoyang-yubei-7532432677610278170",
+      "mediaKey": "bae04af13d20694a",
+      "sourceSHA256": "1aa2fc543173adfd0da944f9838bee43136217236b40740d6d4b37cc40423e4a",
+      "start": 49.567,
+      "end": 57.7,
+      "posterSecond": 53,
+      "clip": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba-bae04af13d20694a.mp4",
+      "poster": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba-bae04af13d20694a.jpg",
+      "clipBytes": 8351898,
+      "posterBytes": 224774,
+      "clipSHA256": "bbbe636afac2c4ffda28112662f2af885eda3fb531cc2e007b44d6f4fe021b46",
+      "posterSHA256": "1b6a58530bfe1581105e15fe1cc0aceb9e782398d7bfdcd361733ac742209542",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1440,
+            "height": 1920,
+            "duration": "8.100000"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "duration": "8.132993"
+          }
+        ],
+        "format": {
+          "duration": "8.133008"
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "nangua source digest matches",
+      "passed": true
+    },
+    {
+      "name": "abang source digest matches",
+      "passed": true
+    },
+    {
+      "name": "tiedan source digest matches",
+      "passed": true
+    },
+    {
+      "name": "yumo source digest matches",
+      "passed": true
+    },
+    {
+      "name": "wulala source digest matches",
+      "passed": true
+    },
+    {
+      "name": "jiankang source digest matches",
+      "passed": true
+    },
+    {
+      "name": "bailong source digest matches",
+      "passed": true
+    },
+    {
+      "name": "mizijun source digest matches",
+      "passed": true
+    },
+    {
+      "name": "zhangxixi source digest matches",
+      "passed": true
+    },
+    {
+      "name": "manbei source digest matches",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-7602232743804036730 source digest matches",
+      "passed": true
+    },
+    {
+      "name": "cq-lanmei-7692311805913784713 source digest matches",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-7666393424492268852 source digest matches",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354 source digest matches",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849 source digest matches",
+      "passed": true
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027 source digest matches",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265 source digest matches",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170 source digest matches",
+      "passed": true
+    },
+    {
+      "name": "nangua-jiachang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-jiachang preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-jeju matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-jeju preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-set-coffee matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-set-coffee preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-nendouya matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-nendouya preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-cailanzi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-cailanzi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-dayan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-dayan preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-daling matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-daling preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-sanyangzi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-sanyangzi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-huilaiwei matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-huilaiwei preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-qianjiang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-qianjiang preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "nangua-rongchang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "nangua-rongchang preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-babajian matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-babajian preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-43 matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-43 preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-guijing matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-guijing preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-xidajiang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-xidajiang preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-ganyitai matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-ganyitai preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-xiongfeng matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-xiongfeng preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-shanlishu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-shanlishu preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-wuduwudu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-wuduwudu preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "abang-yabatu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "abang-yabatu preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "tiedan-gangzi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "tiedan-gangzi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "yumo-hotpot matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "yumo-hotpot preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "wulala-wangshifu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "wulala-wangshifu preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "jiankang-linhua matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "jiankang-linhua preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "jiankang-chunyang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "jiankang-chunyang preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "jiankang-shaotiao matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "jiankang-shaotiao preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "jiankang-liuyouchi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "jiankang-liuyouchi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "jiankang-zhuer matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "jiankang-zhuer preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "jiankang-beicheng matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "jiankang-beicheng preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "jiankang-mixian matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "jiankang-mixian preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "jiankang-zhibaoyu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "jiankang-zhibaoyu preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "jiankang-liruotao matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "jiankang-liruotao preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "bailong-zhuer matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "bailong-zhuer preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "bailong-gangzi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "bailong-gangzi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "bailong-chunhong matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "bailong-chunhong preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "mizijun-tianbang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "mizijun-tianbang preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "zhangxixi-haochijie matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "zhangxixi-haochijie preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "manbei-hongjiuge matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "manbei-hongjiuge preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-wanza matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-wanza preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-linmeimei matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-linmeimei preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-xiangyuan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-xiangyuan preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-tianpin matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-tianpin preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-douhuaniurou matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-douhuaniurou preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-shaokao matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-shaokao preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "lanmei-wanza matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "lanmei-wanza preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "lanmei-shaomai matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "lanmei-shaomai preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "lanmei-xidajiang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "lanmei-xidajiang preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "lanmei-zhengcai matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "lanmei-zhengcai preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yikou matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yikou preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yuanma matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yuanma preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hulake matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hulake preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-yangheshaomai matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-yangheshaomai preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-xinyiniurou matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-xinyiniurou preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-zhuer matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-zhuer preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-xiangyaju matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-xiangyaju preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hill-bbq matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hill-bbq preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-wuming-tihua matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-wuming-tihua preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-gumufeng matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-gumufeng preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-caijibaozi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-caijibaozi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-bai-chaoshou matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-bai-chaoshou preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhoushi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhoushi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baomian matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baomian preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-konger matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-konger preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-limixian matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-limixian preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-liaoji matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-liaoji preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-qixing-hotpot matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-qixing-hotpot preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-bingdouhua matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-bingdouhua preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-huangjia matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-huangjia preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-renyi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-renyi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-miaoshifu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-miaoshifu preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-luoerwa matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-luoerwa preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangshi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangshi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangfen matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangfen preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-tangyuan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-tangyuan preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-xinzhu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-xinzhu preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lidouhua matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lidouhua preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lvdousu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lvdousu preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-longyi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-longyi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhengfa matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhengfa preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-ganguo matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-ganguo preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuanji matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuanji preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jinli matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jinli preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baixin matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baixin preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-shuguang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-shuguang preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-nawan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-nawan preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuqingnian matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuqingnian preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zengbin matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zengbin preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lichaoshou matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lichaoshou preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jidong matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jidong preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-dianjiang matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-dianjiang preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-hongyu matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-hongyu preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongjing-doufunao matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongjing-doufunao preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dalitang-liangxia matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dalitang-liangxia preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dadukou-roubing matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dadukou-roubing preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongchang-dougan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongchang-dougan preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-tongliang-gao matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-tongliang-gao preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-xinyang-guobaorou matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-xinyang-guobaorou preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-yudong-chuanchuan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-yudong-chuanchuan preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-shiziping-tudou matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-shiziping-tudou preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-nanping-ciba matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-nanping-ciba preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-danzishi-huoguofen matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-danzishi-huoguofen preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-guobaorou matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-guobaorou preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-dayoubian matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-dayoubian preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-zhurouchuan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-zhurouchuan preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-xiangjiaofeibing matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-xiangjiaofeibing preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-luchuanchuan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-luchuanchuan preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba matches approved range, media identity and frozen files",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba preserves source dimensions, audio/video and measured length",
+      "passed": true
+    },
+    {
+      "name": "Build without original media completes with an empty availability manifest",
+      "passed": true
+    },
+    {
+      "name": "Retired example places are absent",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

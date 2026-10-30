@@ -1,0 +1,325 @@
+{
+  "reviewedOn": "2026-10-30",
+  "city": "chongqing",
+  "inputCount": 5,
+  "distinctWorks": 4,
+  "duplicate": "小羊在重庆的同一链接重复一次",
+  "rights": "用户确认新增4个作品已获作者允许剪辑并用于网站",
+  "notes": [
+    "街边摊可能流动，时间和营业须核对。",
+    "重大夜市摊位共用沙中路候选街区参照，不能以同名菜品判断为同一摊。",
+    "小学生视频中的学校及街区未确认；保留原片购买片段，不推测店名或位置。",
+    "荣昌、铜梁、巴南鱼洞及37中片段保留视频库，未把范围外地点夹到地图边界。"
+  ],
+  "sources": [
+    {
+      "id": "cq-baozao-7676071047438803849",
+      "author": "暴躁扒拉",
+      "url": "https://www.douyin.com/video/7676071047438803849",
+      "publishedOn": "2026-08-20",
+      "sourceSHA256": "e34a0652bcd3356622f183cc9225927e11f6e2270e9264d398ae9068fe0aed7e",
+      "segments": [
+        {
+          "id": "cq-baozao-7676071047438803849-rongjing-doufunao",
+          "name": "融景城豆腐脑",
+          "start": 17.567,
+          "end": 33.667,
+          "addressText": "融景城沁园外",
+          "coordinates": [
+            106.5486933,
+            29.577929
+          ],
+          "evidenceNote": "原片 17.567–33.667 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-dalitang-liangxia",
+          "name": "大礼堂眼镜凉虾",
+          "start": 33.667,
+          "end": 50.033,
+          "addressText": "大礼堂站3号口外",
+          "coordinates": [
+            106.5522592,
+            29.56436
+          ],
+          "evidenceNote": "原片 33.667–50.033 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-dadukou-roubing",
+          "name": "大渡口鸡蛋肉饼",
+          "start": 50.033,
+          "end": 64.5,
+          "addressText": "大渡口37中对面",
+          "coordinates": null,
+          "evidenceNote": "原片 50.033–64.5 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-rongchang-dougan",
+          "name": "荣昌豆干藕条",
+          "start": 64.5,
+          "end": 78.133,
+          "addressText": "荣昌莲花广场临河边巷子里",
+          "coordinates": null,
+          "evidenceNote": "原片 64.5–78.133 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-tongliang-gao",
+          "name": "铜梁冲冲糕",
+          "start": 78.133,
+          "end": 91.233,
+          "addressText": "铜梁乐销服装批发城门口",
+          "coordinates": null,
+          "evidenceNote": "原片 78.133–91.233 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-xinyang-guobaorou",
+          "name": "欣阳广场东北锅包肉",
+          "start": 91.233,
+          "end": 108.967,
+          "addressText": "沙坪坝欣阳广场夜市",
+          "coordinates": [
+            106.4585287,
+            29.5662812
+          ],
+          "evidenceNote": "原片 91.233–108.967 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-yudong-chuanchuan",
+          "name": "鱼洞盐水鸭串串",
+          "start": 108.967,
+          "end": 123.667,
+          "addressText": "重庆银行鱼洞支行巷子里",
+          "coordinates": null,
+          "evidenceNote": "原片 108.967–123.667 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-shiziping-tudou",
+          "name": "狮子坪土豆丝饼",
+          "start": 123.667,
+          "end": 136.367,
+          "addressText": "狮子坪轻轨站",
+          "coordinates": [
+            106.5454051,
+            29.6040944
+          ],
+          "evidenceNote": "原片 123.667–136.367 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-nanping-ciba",
+          "name": "南坪包心糍粑",
+          "start": 136.367,
+          "end": 144.333,
+          "addressText": "南坪万寿路附近",
+          "coordinates": [
+            106.5584256,
+            29.5260929
+          ],
+          "evidenceNote": "原片 136.367–144.333 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-danzishi-huoguofen",
+          "name": "弹子石火锅粉",
+          "start": 144.333,
+          "end": 161.8,
+          "addressText": "国际社区麻爪爪外街边",
+          "coordinates": [
+            106.5929987,
+            29.5988813
+          ],
+          "evidenceNote": "原片 144.333–161.8 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan",
+          "name": "花卉园巫山卷卷",
+          "start": 161.8,
+          "end": 179.033,
+          "addressText": "花卉园轻轨站2b出口",
+          "coordinates": [
+            106.5091675,
+            29.5859303
+          ],
+          "evidenceNote": "原片 161.8–179.033 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        }
+      ]
+    },
+    {
+      "id": "cq-yangyu-7699016826356895027",
+      "author": "洋芋大王",
+      "url": "https://www.douyin.com/video/7699016826356895027",
+      "publishedOn": "2026-10-21",
+      "sourceSHA256": "73f1d80f451a9659844decb76c4dfda6ab346eb1f6c97330e38b5e4be1679ef5",
+      "segments": [
+        {
+          "id": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi",
+          "name": "小学门口小吃摊合集",
+          "start": 11.8,
+          "end": 45.4,
+          "addressText": "重庆某小学附近；学校及街区待核",
+          "coordinates": null,
+          "evidenceNote": "原片 11.8–45.4 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        }
+      ]
+    },
+    {
+      "id": "cq-suisui-7640793670463833265",
+      "author": "岁岁念～",
+      "url": "https://www.douyin.com/video/7640793670463833265",
+      "publishedOn": "2026-05-17",
+      "sourceSHA256": "2e5c50de1b32557eb8dc138e0914523ba7c66f6c2e6c34384e598d3a6c76728b",
+      "segments": [
+        {
+          "id": "cq-suisui-7640793670463833265-guobaorou",
+          "name": "重大夜市东北锅包肉",
+          "start": 10.833,
+          "end": 31.267,
+          "addressText": "沙坪坝重大夜市；具体摊位待核",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "evidenceNote": "作者称重大夜市；沙中路为重大夜市候选街区，位置与摊位需再核对，不能由同名锅包肉认定同一摊。"
+        },
+        {
+          "id": "cq-suisui-7640793670463833265-dayoubian",
+          "name": "重大夜市烤大油边",
+          "start": 31.267,
+          "end": 39.167,
+          "addressText": "沙坪坝重大夜市；具体摊位待核",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "evidenceNote": "作者称重大夜市；沙中路为重大夜市候选街区，位置与摊位需再核对，不能由同名锅包肉认定同一摊。"
+        },
+        {
+          "id": "cq-suisui-7640793670463833265-zhurouchuan",
+          "name": "重大夜市猪肉串",
+          "start": 39.167,
+          "end": 49.567,
+          "addressText": "沙坪坝重大夜市；具体摊位待核",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "evidenceNote": "作者称重大夜市；沙中路为重大夜市候选街区，位置与摊位需再核对，不能由同名锅包肉认定同一摊。"
+        },
+        {
+          "id": "cq-suisui-7640793670463833265-xiangjiaofeibing",
+          "name": "重大夜市香蕉飞饼",
+          "start": 49.567,
+          "end": 60.167,
+          "addressText": "沙坪坝重大夜市；具体摊位待核",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "evidenceNote": "作者称重大夜市；沙中路为重大夜市候选街区，位置与摊位需再核对，不能由同名锅包肉认定同一摊。"
+        },
+        {
+          "id": "cq-suisui-7640793670463833265-luchuanchuan",
+          "name": "重大夜市辣卤串串",
+          "start": 60.167,
+          "end": 77.967,
+          "addressText": "沙坪坝重大夜市；具体摊位待核",
+          "coordinates": [
+            106.4606588,
+            29.5644209
+          ],
+          "evidenceNote": "作者称重大夜市；沙中路为重大夜市候选街区，位置与摊位需再核对，不能由同名锅包肉认定同一摊。"
+        }
+      ]
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170",
+      "author": "小羊在重庆",
+      "url": "https://www.douyin.com/video/7532432677610278170",
+      "publishedOn": "2025-07-29",
+      "sourceSHA256": "1aa2fc543173adfd0da944f9838bee43136217236b40740d6d4b37cc40423e4a",
+      "segments": [
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing",
+          "name": "黄泥塝牛肉饼",
+          "start": 3.4,
+          "end": 10.233,
+          "addressText": "黄泥塝轻轨站3号口附近",
+          "coordinates": [
+            106.5342538,
+            29.5912927
+          ],
+          "evidenceNote": "原片 3.4–10.233 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing",
+          "name": "黄泥塝土豆饼",
+          "start": 10.233,
+          "end": 17.633,
+          "addressText": "黄泥塝过天桥对面",
+          "coordinates": [
+            106.5342538,
+            29.5912927
+          ],
+          "evidenceNote": "原片 10.233–17.633 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba",
+          "name": "红旗河沟热糍粑",
+          "start": 17.633,
+          "end": 24.467,
+          "addressText": "红旗河沟站1号口附近",
+          "coordinates": [
+            106.5224772,
+            29.5880216
+          ],
+          "evidenceNote": "原片 17.633–24.467 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan",
+          "name": "红旗河沟麻辣串",
+          "start": 24.467,
+          "end": 31.533,
+          "addressText": "红旗河沟站附近",
+          "coordinates": [
+            106.5224772,
+            29.5880216
+          ],
+          "evidenceNote": "原片 24.467–31.533 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian",
+          "name": "花卉园洋芋和凉面",
+          "start": 31.533,
+          "end": 41.5,
+          "addressText": "花卉园站3号口附近夜市",
+          "coordinates": [
+            106.5091675,
+            29.5859303
+          ],
+          "evidenceNote": "原片 31.533–41.5 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi",
+          "name": "花卉园烤豆干苕皮",
+          "start": 41.5,
+          "end": 49.567,
+          "addressText": "花卉园武陵路附近",
+          "coordinates": [
+            106.5167963,
+            29.5890978
+          ],
+          "evidenceNote": "原片 41.5–49.567 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba",
+          "name": "花卉园包心糍粑",
+          "start": 49.567,
+          "end": 57.7,
+          "addressText": "花卉园武陵路附近",
+          "coordinates": [
+            106.5167963,
+            29.5890978
+          ],
+          "evidenceNote": "原片 49.567–57.7 秒及画面地址；街边摊可能流动，位置为街区参考，具体摊位和营业情况待确认。"
+        }
+      ]
+    }
+  ]
+}

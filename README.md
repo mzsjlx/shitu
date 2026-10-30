@@ -1,5 +1,7 @@
 # 食途 · 美食旅行地图
 
+> 2026-10-30 第四批在 `codex/chongqing-video-batch4`：累计117个视频片段、79个地图点和34段未定位。下方第三批的93段、60点为之前的历史基线；最新交接和验证见 [PROJECT-STATUS.md](PROJECT-STATUS.md)。
+
 食途是一个正在开发的美食旅行网站，以重庆为首个城市。主界面使用真实道路三维地图，叠加美食候选卡片、原作者视频资料和想去清单。
 
 项目仓库：[mzsjlx/shitu](https://github.com/mzsjlx/shitu)。

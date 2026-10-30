@@ -1,0 +1,339 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "Independent preservation audit against the frozen original PBF; not a shop-branch, entrance, operating-status or walking-access verification.",
+  "snapshot": "data/video-batch4-open-anchors.json",
+  "sourceFile": "chongqing-261025.osm.pbf",
+  "coordinateToleranceDegrees": 1e-09,
+  "checks": [
+    {
+      "name": "Snapshot schema and WGS84 declaration",
+      "passed": true
+    },
+    {
+      "name": "Unique original node/way identities",
+      "passed": true
+    },
+    {
+      "name": "Original PBF SHA256 matches the snapshot source",
+      "passed": true
+    },
+    {
+      "name": "ASCII temporary PBF copy has identical bytes",
+      "passed": true
+    },
+    {
+      "name": "Every anchor way exists in the frozen PBF",
+      "passed": true,
+      "detail": {
+        "requested": 0,
+        "found": 0
+      }
+    },
+    {
+      "name": "All standalone and way-referenced source nodes exist",
+      "passed": true,
+      "detail": {
+        "requested": 11,
+        "found": 11,
+        "missingNodeIds": []
+      }
+    },
+    {
+      "name": "Every retained anchor matches its independent original-source checks",
+      "passed": true
+    },
+    {
+      "name": "Snapshot unchanged during audit",
+      "passed": true
+    }
+  ],
+  "anchors": [
+    {
+      "type": "node",
+      "id": 13013024531,
+      "name": "融景城‧景城胃肠医院",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 10743557892,
+      "name": "大礼堂",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 14312937597,
+      "name": "欣阳广场",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 1856531417,
+      "name": "狮子坪",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 11193836266,
+      "name": "万寿路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 14020631199,
+      "name": "国际社区",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 2154566014,
+      "name": "花卉园",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 1684513179,
+      "name": "沙中路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 2154566028,
+      "name": "黄泥塝",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 6586946648,
+      "name": "红旗河沟",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 14024458731,
+      "name": "武陵路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    }
+  ],
+  "snapshotSHA256": "037ecdf2803bb3df826c84a6fd5a205719ad7fab2e08415367ad8fc6976fc4dd",
+  "sourceSHA256": "ea1bd60ca0a71231f6ec62bb5ff270594e56559c88d483e25c7e60bcc6fd20ba",
+  "sourceDate": "2026-10-25",
+  "counts": {
+    "anchors": 11,
+    "standaloneNodes": 11,
+    "ways": 0,
+    "originalSourceNodes": 11,
+    "waysWithSavedNodeIds": 0,
+    "geometryOnlyWays": 0
+  },
+  "passed": true
+}
