@@ -53,6 +53,7 @@ function endLandmarkFocus() {
   overlay?.scheduleLayout();
 }
 function focusLandmark() {
+  if(!landmark)return;
   videoMapContext?.clear();
   streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();
   landmarkFocus=true;state.threeD=true;state.buildings=true;
@@ -138,12 +139,12 @@ function search() {
   const matches=matchingRoads(text);
   if(!matches.length){
     const empty=document.createElement('p');empty.className='search-empty';
-    empty.textContent='当前城区地图中未找到这条路，试试“沧白路”。';results.append(empty);return;
+    empty.textContent='当前城区地图中未找到这条路。';results.append(empty);return;
   }
   for(const road of matches) {
     const button=document.createElement('button');button.type='button';
     const name=document.createElement('span');name.textContent=road.name;
-    const note=document.createElement('small');note.textContent='重庆 · '+roadDescription(road);
+    const note=document.createElement('small');note.textContent=(city?.name||'城市')+' · '+roadDescription(road);
     button.append(name,note);button.addEventListener('click',()=>selectRoad(road));
     button.addEventListener('keydown',event=>{
       const list=[...results.querySelectorAll('button')],at=list.indexOf(button);
@@ -203,12 +204,14 @@ function wire() {
 async function init() {
   boot.stage('读取城市配置');
   const config=await readJSON('config/cities.json');
-  city=config.cities[config.activeCity];
-  if(!city)throw new Error('当前城市尚未配置');
+  const query=new URLSearchParams(location.search);
+  const cityKey=query.get('city')||config.activeCity;
+  city=config.cities[cityKey];
+  if(!city)throw new Error('城市“'+cityKey+'”尚未配置');
   const [index,manifest,audit]=await Promise.all([
     readJSON(city.dataFiles.index),readJSON(city.dataFiles.manifest),readJSON(city.dataFiles.audit)
   ]);
-  if(index.city!==config.activeCity)throw new Error('城市索引与当前地图不一致');
+  if(index.city!==cityKey)throw new Error('城市索引与当前地图不一致');
   roads=index.roads;
   document.title='食途 · '+city.name+'地图';
   $('search-input').setAttribute('aria-label','搜索'+city.name+'道路');
@@ -274,15 +277,19 @@ async function init() {
     if(map.isStyleLoaded())restore();else map.once('style.load',restore);
   });
   map.once('style.load',()=>{
-    boot.stage('绘制重庆真实道路');
+    boot.stage('绘制'+(city.name||'')+'真实道路');
     terrainVisible();layersVisible();wire();
-    landmark=new HongyadongLayer(maplibregl.MercatorCoordinate,{onError:error=>{
-      console.error('[landmark]',error.message);
-      $('landmark-note').hidden=false;$('landmark-note').textContent='洪崖洞细节暂未载入，真实地图仍可使用。';
-      $('landmark-entry').disabled=true;
-    }});
-    try{map.addLayer(landmark,'selected-road-edge');layersVisible();}
-    catch(error){landmark.error=error.message;landmark.onError(error);}
+    if(city.landmarks?.includes('hongyadong')){
+      landmark=new HongyadongLayer(maplibregl.MercatorCoordinate,{onError:error=>{
+        console.error('[landmark]',error.message);
+        $('landmark-note').hidden=false;$('landmark-note').textContent='洪崖洞细节暂未载入，真实地图仍可使用。';
+        $('landmark-entry').disabled=true;
+      }});
+      try{map.addLayer(landmark,'selected-road-edge');layersVisible();}
+      catch(error){landmark.error=error.message;landmark.onError(error);}
+    }else{
+      $('landmark-entry').hidden=true;
+    }
     overlay=new FoodOverlay(map,maplibregl.Marker,city.bounds);
     videoMapContext=new VideoMapContext(map,{onBack:(id,opener)=>videoLibrary.open(opener,id),onLayout:()=>overlay.scheduleLayout()});
     if(city.streetDetail){
@@ -315,6 +322,7 @@ async function init() {
       });
     }
     if(city.foodContent)food=new FoodExperience(map,overlay,{
+      cityId:cityKey,cityName:city.name,amapCityCode:city.amapCityCode||'500000',
       config:city.foodContent,readJSON,roadWorkerURL,assetURL:path=>bundle?.assets?.[path]||new URL(path,location.href).href,
       onFocus:()=>{
         videoMapContext?.clear();
