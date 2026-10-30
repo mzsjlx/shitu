@@ -365,6 +365,17 @@ async function init() {
   map.on('idle',checkReady);
   $('source-date').textContent=manifest.upstreamBuild.key.replace('.pmtiles','').replace(/^(\d{4})(\d{2})(\d{2})$/,'$1-$2-$3');
   $('source-stats').textContent='当前可搜索 '+roads.length.toLocaleString()+' 组源道路名称。按源名称合并的道路可能包含多段路面、桥梁或隧道。';
+  videoLibrary=new VideoLibrary({cityId:cityKey,cityConfig:city,onMapPlace:async segment=>{
+    if(!state.ready||!food)throw new Error('地图还在展开，稍后再试。');
+    await food.activate();const item=food.records.find(item=>item.id==='video-'+(segment.placeId||segment.id));
+    if(!item)throw new Error('这家店暂不在当前地图范围。');
+    food.focusStops(item.id);food.overlay.showPopover(item,true,segment.id);
+  },onMapContext:(context,segment)=>{
+    if(!state.ready||!videoMapContext)throw new Error('地图还在展开，稍后再试。');
+    endLandmarkFocus();streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();
+    if($('food-pick-dialog').open)$('food-pick-dialog').close();
+    return videoMapContext.show(context,segment,{threeD:state.threeD,bearing:city.bearing,duration:duration()});
+  }});
   window.foodCityMap={
     map,city,manifest,audit,
     get ready(){return state.ready;},
@@ -373,6 +384,7 @@ async function init() {
     get walk(){return walk;},
     get landmark(){return landmark;},
     get videoContext(){return videoMapContext;},
+    get videoLibrary(){return videoLibrary;},
     getStats:()=>({ready:state.ready,center:map.getCenter().toArray(),zoom:map.getZoom(),pitch:map.getPitch(),terrain:!!map.getTerrain(),elevationMetres:map.queryTerrainElevation(map.getCenter()),roadNameGroups:roads.length,renderedRoadFragments:map.getLayer(roadHitLayers[0])?map.queryRenderedFeatures({layers:roadHitLayers}).length:0,selectedRoad:selectedRoad?.name||null,foodCards:overlay?.markers.length||0,failures:[...failures]}),
     findRoad:name=>roads.find(r=>r.name===name),
     focusRoad:name=>{const road=roads.find(r=>r.name===name);if(!road)throw new Error('道路未找到');selectRoad(road);},
@@ -381,15 +393,5 @@ async function init() {
     setView:view
   };
 }
-const videoLibrary=new VideoLibrary({onMapPlace:async segment=>{
-  if(!state.ready||!food)throw new Error('地图还在展开，稍后再试。');
-  await food.activate();const item=food.records.find(item=>item.id==='video-'+(segment.placeId||segment.id));
-  if(!item)throw new Error('这家店暂不在当前地图范围。');
-  food.focusStops(item.id);food.overlay.showPopover(item,true,segment.id);
-},onMapContext:(context,segment)=>{
-  if(!state.ready||!videoMapContext)throw new Error('地图还在展开，稍后再试。');
-  endLandmarkFocus();streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();
-  if($('food-pick-dialog').open)$('food-pick-dialog').close();
-  return videoMapContext.show(context,segment,{threeD:state.threeD,bearing:city.bearing,duration:duration()});
-}});
+let videoLibrary;
 init().catch(error=>{console.error(error);fail('本地数据未准备完整：'+error.message);});

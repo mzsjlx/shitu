@@ -1,11 +1,11 @@
 import {validateVideoLibrary,clockText,amapSearchUrl,localVideoAsset} from './video-library-model.js';
 import './video-library.css';
-import mapContextData from '../data/video-map-contexts.json';
 import {validateVideoMapContexts} from './video-map-context-model.js';
 const el=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 export class VideoLibrary{
-  constructor({onMapContext,onMapPlace}={}){
+  constructor({onMapContext,onMapPlace,cityId,cityConfig}={}){
     this.onMapContext=onMapContext;this.onMapPlace=onMapPlace;
+    this.cityId=cityId||'chongqing';this.cityConfig=cityConfig;
     this.dialog=document.getElementById('video-library-dialog');this.grid=document.getElementById('video-library-grid');this.player=document.getElementById('video-library-player');this.sources=document.getElementById('video-library-sources');this.message=document.getElementById('video-library-message');this.status=document.getElementById('video-library-status');this.generation=0;
     document.getElementById('video-library-open').addEventListener('click',event=>this.open(event.currentTarget));
     document.getElementById('video-library-close').addEventListener('click',()=>this.dialog.close());
@@ -21,6 +21,7 @@ export class VideoLibrary{
   async open(opener,clipId){
     const requested=clipId||this.selected;
     this.preferredClip=requested;
+    const eyebrow=document.querySelector('.video-library-head .eyebrow');if(eyebrow&&this.cityConfig?.name)eyebrow.textContent=this.cityConfig.name+' · 跟着镜头找好吃的';
     this.opener=opener;if(!this.dialog.open)this.dialog.showModal();
     if(this.data){const source=this.data.sources.find(s=>s.segments.some(segment=>segment.id===requested));this.renderSource(source?.id||this.sourceId,requested);}else await this.load();
   }
@@ -30,9 +31,17 @@ export class VideoLibrary{
     const timer=setTimeout(()=>this.controller.abort(),10000);
     try{
       if(!['http:','https:'].includes(location.protocol))throw new Error('请通过“打开地图.cmd”查看本地视频。');
-      const get=async name=>{const r=await fetch('./data/'+name,{signal:this.controller.signal});if(!r.ok)throw new Error('视频资料暂时未能读取，请重试。');return r.json();};
-      const [data,assets]=await Promise.all([get('video-library.json'),get('video-library-assets.json')]);
-      validateVideoLibrary(data);this.mapContexts=validateVideoMapContexts(mapContextData,data);if(assets.schemaVersion!==1||!assets.segments||Array.isArray(assets.segments))throw new Error('视频素材目录格式不正确。');
+      const get=async rel=>{const r=await fetch('./'+rel.replace(/^\.?\/?/,''),{signal:this.controller.signal});if(!r.ok)throw new Error('视频资料暂时未能读取，请重试。');return r.json();};
+      const catalogRel=this.cityConfig?.foodContent?.videoLibrary||(this.cityId==='chongqing'?'data/video-library.json':`data/cities/${this.cityId}/video-library.json`);
+      const contextsRel=(this.cityId==='chongqing')?'data/video-map-contexts.json':`data/cities/${this.cityId}/video-map-contexts.json`;
+      const [data,assets,contextsData]=await Promise.all([
+        get(catalogRel),
+        get('data/video-library-assets.json').catch(()=>({schemaVersion:1,segments:{}})),
+        get(contextsRel).catch(()=>({schemaVersion:1,city:this.cityId,contexts:[],reviews:[]}))
+      ]);
+      validateVideoLibrary(data,this.cityId);
+      this.mapContexts=validateVideoMapContexts(contextsData,data,this.cityConfig?.bounds,this.cityId);
+      if(assets.schemaVersion!==1||!assets.segments||Array.isArray(assets.segments))throw new Error('视频素材目录格式不正确。');
       if(generation!==this.generation||!this.dialog.open)return;
       this.data=data;this.assets=assets.segments;
       const count=data.sources.flatMap(s=>s.segments).filter(s=>this.asset(s)?.clip).length;
@@ -48,45 +57,37 @@ export class VideoLibrary{
   renderSource(id,clipId){
     this.stop();this.sourceId=id;this.selected=null;document.getElementById('video-library-search').value='';
     for(const button of this.sources.children)button.setAttribute('aria-pressed',String(button.dataset.source===id));
-    this.renderCards();
-    const source=this.data.sources.find(s=>s.id===id);
-    if(source.segments.length)this.select(source.segments.find(s=>s.id===clipId)||source.segments[0],false);else this.renderMissing(source);
+    this.renderCards(clipId);
   }
-  renderCards(){
-    if(!this.data)return;
-    const source=this.data.sources.find(s=>s.id===this.sourceId),term=document.getElementById('video-library-search').value.trim().toLocaleLowerCase();
+  renderCards(preferredClip){
+    const source=this.data.sources.find(s=>s.id===this.sourceId);if(!source)return;
+    const filter=document.getElementById('video-library-search').value.trim().toLowerCase();
+    const matches=source.segments.filter(segment=>!filter||segment.name.toLowerCase().includes(filter)||segment.category.toLowerCase().includes(filter)||segment.summary.toLowerCase().includes(filter)||segment.addressText?.toLowerCase().includes(filter));
     this.grid.replaceChildren();
-    const segments=source.segments.filter(s=>[s.name,s.category,s.addressText||''].join(' ').toLocaleLowerCase().includes(term));
-    this.message.hidden=segments.length>0;
-    if(!segments.length)this.message.textContent=source.segments.length?'还没找到这家店，试试店名或口味。':'这条原片尚未保存，先从原作者页面观看。';
-    for(const segment of segments){
-      const button=el('button','video-clip-card');button.type='button';button.dataset.clip=segment.id;button.setAttribute('aria-label','查看'+segment.name+'的视频片段');button.setAttribute('aria-pressed',String(this.selected===segment.id));
-      const cover=el('div','video-clip-cover'),asset=this.asset(segment);
-      if(asset){const image=el('img');image.src=asset.poster;image.alt=segment.name+' · 原视频画面';image.loading='lazy';image.addEventListener('error',()=>{image.hidden=true;},{once:true});cover.append(image);}
-      else cover.append(el('span','video-cover-missing','原片素材待导入'));
-      cover.append(el('span','video-clip-duration',Math.round(segment.end-segment.start)+' 秒'));
-      const copy=el('div','video-clip-copy');copy.append(el('small','',segment.category),el('strong','',segment.name),el('span','',segment.addressText||'作者未提供详细地址'));
-      button.append(cover,copy);button.addEventListener('click',()=>this.select(segment,true));this.grid.append(button);
+    for(const segment of matches){
+      const button=el('button','video-library-item');button.type='button';button.dataset.clip=segment.id;
+      const asset=this.asset(segment);
+      if(asset?.poster){const img=el('img','video-clip-thumb');img.src=asset.poster;img.alt=segment.name+' 视频画面';button.append(img);}
+      else button.append(el('span','food-cover-pending','待导入'));
+      const copy=el('div','video-clip-copy');copy.append(el('strong','',segment.name),el('span','',segment.category+' · '+clockText(segment.start)+'–'+clockText(segment.end)));button.append(copy);
+      button.addEventListener('click',()=>this.play(source,segment,true));this.grid.append(button);
     }
+    const target=matches.find(segment=>segment.id===(preferredClip||this.selected))||matches[0];
+    if(target)this.play(source,target,false);
+    else this.renderEmpty();
   }
-  sourceLink(source){const link=el('a','video-original-link','到抖音看原视频 ↗');link.href=source.url;link.target='_blank';link.rel='noopener noreferrer';return link;}
-  select(segment,scroll){
-    this.stop();this.selected=segment.id;const source=this.data.sources.find(s=>s.id===this.sourceId),asset=this.asset(segment);
-    const context=this.mapContexts.contexts.find(c=>c.segmentIds.includes(segment.id)),review=this.mapContexts.reviews.find(r=>r.segmentId===segment.id);
+  renderEmpty(){this.stop();this.player.replaceChildren(el('p','video-player-empty','这个作者没有匹配当前搜索的片段。'));}
+  play(source,segment,scroll=false){
+    this.stop();this.selected=segment.id;
+    const asset=this.asset(segment),review=this.mapContexts?.reviews?.find(r=>r.segmentId===segment.id),context=this.mapContexts?.contexts?.find(c=>c.segmentIds.includes(segment.id));
     this.player.replaceChildren();
-    this.player.append(el('span','video-player-kicker',source.author+(source.publishedOn?' · 发布于 '+source.publishedOn:'')+' · 原片 '+clockText(segment.start)+'—'+clockText(segment.end)));
-    if(segment.footageNote)this.player.append(el('p','video-location-note',segment.footageNote));
+    this.player.append(el('span','video-player-kicker',source.author+(source.publishedOn?' · '+source.publishedOn:'')+' · 原片 '+clockText(segment.start)+'–'+clockText(segment.end)));
     if(asset?.clip){
-      const video=el('video','video-player-media');video.controls=true;video.playsInline=true;video.preload='metadata';video.poster=asset.poster;video.src=asset.clip;video.setAttribute('aria-label',segment.name+'的探店片段');
-      const fallback=el('p','video-player-error','本机片段暂时无法播放，可以查看原视频。');fallback.hidden=true;video.addEventListener('error',()=>{if(video.getAttribute('src'))fallback.hidden=false;});this.player.append(video,fallback);
-    }else{if(asset?.poster){const cover=el('img','video-player-media');cover.src=asset.poster;cover.alt=segment.name+' · 原视频画面';this.player.append(cover);}this.player.append(el('p','video-player-empty','视频素材待同步，可先查看封面、地址或原视频。'));}
-    const titleRow=el('div','video-place-title-row');titleRow.append(el('h3','',segment.name));
-    const mapLink=el('a','video-map-search','在高德地图搜索 ↗');mapLink.href=amapSearchUrl(segment.name);mapLink.target='_blank';mapLink.rel='noopener noreferrer';mapLink.setAttribute('aria-label','在高德地图搜索'+segment.name+'，新窗口打开');
-    this.player.append(el('small','video-player-category',segment.category),titleRow,mapLink,el('p','video-player-summary',segment.summary));
-    const address=el('div','video-player-address');address.append(el('small','',segment.addressOrigin==='name-address-crosscheck'?'店名与地址对照':'原作者地址线索'),el('p','',segment.addressText||'原片未提供详细地址，选择时留意具体分店。'));if(segment.addressNote)address.append(el('p','video-address-note',segment.addressNote));
-    this.player.append(address);
-    this.player.append(el('p','video-location-note',segment.planningLocation?('位置大致 · '+segment.planningLocation.note):(review?.summary||'位置待补')));
-    if(Array.isArray(segment.coordinates)&&typeof this.onMapPlace==='function'){
+      const video=el('video','video-player-media');video.controls=true;video.playsInline=true;video.preload='metadata';video.poster=asset.poster;video.src=asset.clip;video.setAttribute('aria-label',segment.name+'探店片段');
+      const fallback=el('p','video-player-error','该片段暂时无法播放，可查看原视频。');fallback.hidden=true;video.addEventListener('error',()=>{if(video.getAttribute('src'))fallback.hidden=false;});this.player.append(video,fallback);
+    }else{if(asset?.poster){const cover=el('img','video-player-media');cover.src=asset.poster;cover.alt=segment.name+' · 原视频画面';this.player.append(cover);}this.player.append(el('p','video-player-empty','视频剪辑待同步，可先查看封面、地址与原视频。'));}
+    const titleRow=el('div','video-player-title-row');titleRow.append(el('h3','',segment.name));
+    if(segment.coordinates&&typeof this.onMapPlace==='function'){
       const button=el('button','video-nearby-button','在地图看这家 ↗');button.type='button';button.addEventListener('click',async()=>{
         button.disabled=true;try{await this.onMapPlace(segment);this.stop();this.closeMode='map';this.dialog.close();}catch(error){this.status.textContent=error.message;}finally{button.disabled=false;}
       });titleRow.append(button);
@@ -100,9 +101,13 @@ export class VideoLibrary{
       });titleRow.append(button);
     }
     if(review){const details=el('details','video-address-review');details.append(el('summary','','店址核对说明'),el('p','',review.detail));for(const evidence of review.sources){const link=el('a','',evidence.label+' ↗');link.href=evidence.url;link.target='_blank';link.rel='noopener noreferrer';details.append(link);}this.player.append(details);}
-    this.player.append(this.sourceLink(source));
+    this.player.append(el('small','video-player-category',segment.category),titleRow,el('p','video-player-summary',segment.summary));
+    const address=el('div','video-player-address');address.append(el('small','',segment.addressOrigin==='name-address-crosscheck'?'店址核对':'原作者地址线索'),el('p','',segment.addressText||'原片未提供详细地址，选址时以分店为准。'));if(segment.addressNote)address.append(el('p','video-address-note',segment.addressNote));
+    const searchUrl=amapSearchUrl(segment.name,this.cityConfig?.amapCityCode||'500000');
+    if(searchUrl){const external=el('a','external-address-search','在外部地图查看同名分店 ↗');external.href=searchUrl;external.target='_blank';external.rel='noopener noreferrer';address.append(external);}
+    this.player.append(address,this.sourceLink(source));
     for(const button of this.grid.children)button.setAttribute('aria-pressed',String(button.dataset.clip===segment.id));
     if(scroll&&matchMedia('(max-width:700px)').matches){this.player.parentElement.scrollTop=0;this.dialog.scrollTop=0;}
   }
-  renderMissing(source){this.player.replaceChildren(el('span','video-player-kicker',source.author),el('h3','','原片待补充'),el('p','video-player-empty','这条视频的网页可以播放，但目前未能保存完整原片。拿到原文件后，再逐家拆段和核对地址。'),this.sourceLink(source));}
+  sourceLink(source){const p=el('p','video-source-info','来源作品：');const a=el('a','',source.author+' · 《'+source.title+'》 ↗');a.href=source.url;a.target='_blank';a.rel='noopener noreferrer';p.append(a);return p;}
 }
