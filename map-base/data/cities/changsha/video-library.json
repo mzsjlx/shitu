@@ -5,7 +5,7 @@
   "rights": {
     "status": "user-confirmed",
     "confirmedOn": "2026-10-30",
-    "scope": "前五批共23条抖音探店链接经用户在会话中明确提供；视频剪辑与画面使用按用户提供范围记录，原片保留在.local，小封面与公开元数据纳入仓库。",
+    "scope": "前六批共27条抖音探店链接经用户在会话中明确提供；视频剪辑与画面使用按用户提供范围记录，原片保留在.local，小封面与公开元数据纳入仓库。",
     "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
   },
   "sources": [
@@ -2079,6 +2079,260 @@
       "acquisitionStatus": "local-source",
       "evidenceNote": "10秒市井夜宵短视频（砂锅豆浆油条、搪瓷缸面、烤排骨），原片未出现明确门头路牌口播，按规范保留已入库原片，门店点位待考证核对，不盲目造点。",
       "segments": []
+    },
+    {
+      "id": "cs-33dachihuo-7654870889092708090",
+      "author": "33大吃货",
+      "title": "个位数在大学城吃手工鸡蛋面码子份量超级多 #好吃的面推荐 #大学城美食 #长沙粉面 #早餐吃什么 #手工鸡蛋面",
+      "url": "https://www.douyin.com/video/7654870889092708090",
+      "shareURL": "https://v.douyin.com/8gmIXklax-U/",
+      "publishedOn": "2026-10-31",
+      "durationSeconds": 53.0,
+      "sourceSHA256": "d84045f65b81c514a711eca1300011ef0106e2151e9b1a6e569897237a421887",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片探访河西大学城宁乡宁手工鸡蛋面馆，大红招牌门头、师傅当天现压鸡蛋面与现炒码子。",
+      "segments": [
+        {
+          "id": "cs-33dachihuo-ningxiangning",
+          "placeId": "cs-33dachihuo-ningxiangning",
+          "name": "宁乡宁手工鸡蛋面 (大学城店)",
+          "category": "米粉面馆 / 手工鸡蛋面",
+          "addressText": "长沙市岳麓区大学城麓山南路商圈",
+          "start": 0.0,
+          "end": 53.0,
+          "posterSecond": 18.0,
+          "summary": "大学城个位数高性价比手工鸡蛋面，师傅当天现场压面，面条劲道爽滑免费续面续汤，招牌辣椒炒肉码子分量十足、卤香干入味。",
+          "coordinates": [
+            112.9465,
+            28.163
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "岳麓区 · 大学城麓山南路",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "原片大红招牌泞乡泞宁乡传承手工鸡蛋面，大学城高性价比面馆。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "麓山南路",
+              "url": "https://www.openstreetmap.org/search?query=%E9%BA%93%E5%B1%B1%E5%8D%97%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-yizhikaizi-7673783812815375643",
+      "author": "一支凯子",
+      "title": "第40集 | 极限3小时挑战200元逛吃长沙杨帆夜市，连着两条街炫了十几家填满我的小鸟胃，下一站广州！！",
+      "url": "https://www.douyin.com/video/7673783812815375643",
+      "shareURL": "https://v.douyin.com/F33YyoxCJrI/",
+      "publishedOn": "2026-10-31",
+      "durationSeconds": 192.0,
+      "sourceSHA256": "760ad7dbc36ea57f81fd61c8a74cfe5e075941f36cc009d104622f2d99e057a9",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片探访长沙东部著名扬帆夜市两条街，招牌扬帆麻糍铺与虎皮酱香饼等百摊烟火夜市。",
+      "segments": [
+        {
+          "id": "cs-yizhikaizi-yangfan",
+          "placeId": "cs-yizhikaizi-yangfan",
+          "name": "扬帆夜市 · 扬帆麻糍铺",
+          "category": "夜市小吃 / 手作水果麻糍",
+          "addressText": "长沙市芙蓉区东屯渡街道扬帆夜市",
+          "start": 16.0,
+          "end": 75.0,
+          "posterSecond": 55.0,
+          "summary": "长沙最火爆的双条街百摊烟火夜市，招牌扬帆麻糍铺皮薄馅大裹满两大块厚切芒果与杨枝甘露，以及5元酥脆爆汁的虎皮酱香饼。",
+          "coordinates": [
+            113.0315,
+            28.188
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "芙蓉区 · 东屯渡扬帆夜市",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "原片实拍扬帆夜市双街排档、扬帆麻糍铺与虎皮酱香饼。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-node",
+              "name": "扬帆小区",
+              "url": "https://www.openstreetmap.org/search?query=%E6%89%AC%E5%B8%86%E5%B0%8F%E5%8C%BA%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-wanziyou-7595885886282257551",
+      "author": "丸子游",
+      "title": "第21集 | 挑战花30块在长沙老市场吃出幸福感🥹 这里承载了老长沙人的市井记忆，物价也像被封印在了10年前，路过摊位前，老板会用长沙话吆喝\"妹陀恰点莫子咯\"？ 木桶红薯饭 串串麻辣烫 黄金炸里脊",
+      "url": "https://www.douyin.com/video/7595885886282257551",
+      "shareURL": "https://v.douyin.com/n1EQejY2Hi0/",
+      "publishedOn": "2026-10-31",
+      "durationSeconds": 53.2,
+      "sourceSHA256": "af8d2da46d2bbc2f2c93c505c6f5ca9cd5c682096dd4d940a57abb1b28cbe886",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片探访火车站旁金苹果大市场红牌坊，老长沙传统木桶红薯饭、5毛牛油串串麻辣烫与秘制炸里脊。",
+      "segments": [
+        {
+          "id": "cs-wanziyou-jinpingguo",
+          "placeId": "cs-wanziyou-jinpingguo",
+          "name": "金苹果大市场市井小吃",
+          "category": "市井小吃 / 老市场串串里脊",
+          "addressText": "长沙市芙蓉区朝阳路78号金苹果大市场",
+          "start": 0.0,
+          "end": 53.2,
+          "posterSecond": 30.0,
+          "summary": "开业于1994年的老长沙标志性金苹果大市场，承载几代人的市井记忆。热气腾腾的木桶红薯饭一荤四素随意选，5毛一串的老式牛油串串麻辣烫，以及爆汁香辣炸里脊。",
+          "coordinates": [
+            113.0118,
+            28.1905
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "芙蓉区 · 朝阳村金苹果大市场",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "原片大红牌楼金苹果大市场，火车站南侧老市场市井小吃街。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-node",
+              "name": "朝阳村",
+              "url": "https://www.openstreetmap.org/search?query=%E6%9C%9D%E9%98%B3%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-cuicuisha-7650444000676517562",
+      "author": "脆脆鲨🌰",
+      "title": "第1集 | 长沙大学城美食攻略！6家亲测全是大学生严选！！#长沙各种吃的 #麓山南路 #年轻人爱吃的小吃",
+      "url": "https://www.douyin.com/video/7650444000676517562",
+      "shareURL": "https://v.douyin.com/HjBXogD9Org/",
+      "publishedOn": "2026-10-31",
+      "durationSeconds": 119.0,
+      "sourceSHA256": "5889f87fdc3c00b11afe9af8b2dcd5aaaec79643cf0af6cb15566934a6b5758e",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片探访河西大学城麓山南路王记老潼关肉夹馍（同店归并）、周叔沙茶面、中国糖水等大学生高性价比美食。",
+      "segments": [
+        {
+          "id": "cs-cuicuisha-tangshui",
+          "placeId": "cs-cuicuisha-tangshui",
+          "name": "中国糖水 (大学城店)",
+          "category": "甜品冷饮 / 芒果绵绵冰",
+          "addressText": "长沙市岳麓区大学城麓山南路849号",
+          "start": 8.0,
+          "end": 22.0,
+          "posterSecond": 15.0,
+          "summary": "大学城高性价比甜品小店，15元超大份绵绵冰，铺满厚厚一层新鲜芒果果肉与西瓜果粒，两个人吃都分量扎实。",
+          "coordinates": [
+            112.9495,
+            28.1635
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "岳麓区 · 麓山南路大学城",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "原片红白招牌中国糖水，大学城平价绵绵冰小店。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "麓山南路",
+              "url": "https://www.openstreetmap.org/search?query=%E9%BA%93%E5%B1%B1%E5%8D%97%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        },
+        {
+          "id": "cs-cuicuisha-roujiamo",
+          "placeId": "cs-liubibi-roujiamo",
+          "name": "王记老潼关肉夹馍",
+          "category": "街头小吃 / 肉夹馍",
+          "addressText": "长沙市岳麓区麓山南路大学城小吃街",
+          "start": 22.0,
+          "end": 40.0,
+          "posterSecond": 30.0,
+          "summary": "被称为大学生的报恩肉夹馍，现烤千层旋风脆皮馍，8块钱裹满香酥卤肉、青椒与香脆火腿肠，还可加卤兰花干子吸饱肉汁。",
+          "coordinates": [
+            112.9488,
+            28.1629
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "岳麓区 · 麓山南路大学城",
+            "basis": "multi-blogger-merged",
+            "branchMatch": "confirmed",
+            "note": "2位博主合用点位（刘比比.、脆脆鲨🌰），大学城排队小吃老潼关肉夹馍。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "麓山南路",
+              "url": "https://www.openstreetmap.org/search?query=%E9%BA%93%E5%B1%B1%E5%8D%97%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        },
+        {
+          "id": "cs-cuicuisha-zhoushu",
+          "placeId": "cs-cuicuisha-zhoushu",
+          "name": "周叔沙茶面 (大学城店)",
+          "category": "特色风味 / 厦门沙茶面",
+          "addressText": "长沙市岳麓区阜埠河路与麓山南路交汇处",
+          "start": 58.0,
+          "end": 82.0,
+          "posterSecond": 66.0,
+          "summary": "大学城老街坊私藏的厦门特色小吃店，浓郁咸甜风味沙茶汤底，醇厚花生酱浓香四溢，搭配鲜虾、炸五香与龙口粉丝大口过瘾。",
+          "coordinates": [
+            112.9515,
+            28.1645
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "岳麓区 · 阜埠河路大学城",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "原片门头大红招牌周叔沙茶面，阜埠河路地道沙茶面小店。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "阜埠河路",
+              "url": "https://www.openstreetmap.org/search?query=%E9%98%9C%E5%9F%A0%E6%B2%B3%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        }
+      ]
     }
   ]
 }
