@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "changsha",
-  "preparedOn": "2026-10-30",
+  "preparedOn": "2026-10-31",
   "rights": {
     "status": "user-confirmed",
     "confirmedOn": "2026-10-30",
-    "scope": "前四批共18条抖音探店链接经用户在会话中明确提供；视频剪辑与画面使用按用户提供范围记录，原片保留在.local，小封面与公开元数据纳入仓库。",
+    "scope": "前五批共23条抖音探店链接经用户在会话中明确提供；视频剪辑与画面使用按用户提供范围记录，原片保留在.local，小封面与公开元数据纳入仓库。",
     "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
   },
   "sources": [
@@ -1746,6 +1746,339 @@
           }
         }
       ]
+    },
+    {
+      "id": "cs-changshadt-7393161654390787382",
+      "author": "长沙美食地图",
+      "title": "长沙小吃天花板 长沙人均只要10块的宝藏小吃店，本地老口子从小吃到大",
+      "url": "https://www.douyin.com/video/7393161654390787382",
+      "shareURL": "https://v.douyin.com/q4odo9kSzuc/",
+      "publishedOn": "2026-10-31",
+      "durationSeconds": 40.17,
+      "sourceSHA256": "e214b5c33899c94680ab79230ccb961f4583be20187a6a575898ac07699b7c0c",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片探访蔡锷北路老字号华南小吃，大门头招牌、葱花饼、绿豆沙、刮凉粉与肉汤珍珠丸子，3博主同店归并。",
+      "segments": [
+        {
+          "id": "cs-changshadt-huanan",
+          "placeId": "cs-chaolan-huanan",
+          "name": "华南小吃",
+          "category": "老字号小吃 / 刮凉粉",
+          "addressText": "长沙市开福区蔡锷北路553号",
+          "start": 0.0,
+          "end": 40.17,
+          "posterSecond": 24.0,
+          "summary": "本地老口子从小吃到大的宝藏小吃店，2块5的冰绿豆沙不甜不腻解暑一绝，刚出锅的鸡蛋葱花饼焦香软糯，酸辣开胃刮凉粉料足过瘾。",
+          "coordinates": [
+            112.97968,
+            28.20786
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "开福区 · 蔡锷北路局关祠",
+            "basis": "multi-blogger-merged",
+            "branchMatch": "confirmed",
+            "note": "3位博主合用点位（超懒的洋、小鱼咕咕、长沙美食地图），开福区蔡锷北路老字号。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "蔡锷北路",
+              "url": "https://www.openstreetmap.org/search?query=%E8%94%A1%E9%94%B7%E5%8C%97%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-zhizhi-7650474844718428389",
+      "author": "汁汁冰激凌",
+      "title": "一年半去了五次长沙吃了122家总结出19家极品小破店…",
+      "url": "https://www.douyin.com/video/7650474844718428389",
+      "shareURL": "https://v.douyin.com/mFWY-HmxNBc/",
+      "publishedOn": "2026-10-31",
+      "durationSeconds": 419.3,
+      "sourceSHA256": "b9337b80c0d99e8339e566a70c62a03ad3f87d228b2620180bb0be6771fa75d6",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片包含燕山街光头粉馆现炒码、天心区西施臭豆腐、南门口下碧湘街浪哥卤味捆鸡（同店归并）、藩后街彭记肉丸老汤锅等真实街巷老店。",
+      "segments": [
+        {
+          "id": "cs-zhizhi-guangtou",
+          "placeId": "cs-zhizhi-guangtou",
+          "name": "光头粉馆 (燕山街总店)",
+          "category": "米粉面馆 / 现炒码粉",
+          "addressText": "长沙市芙蓉区朝阳街道燕山街103号",
+          "start": 12.0,
+          "end": 33.0,
+          "posterSecond": 20.0,
+          "summary": "老长沙现炒码粉代表老店，大红价目表芹菜炒肉、韭黄炒肉与肉丝码现炒现出，大碗浇头锅气十足，中午十二点打烊。",
+          "coordinates": [
+            113.0035,
+            28.1945
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "芙蓉区 · 燕山街朝阳巷",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "原片门头燕山街大字炒码红招牌，朝阳街街道老牌粉馆。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "燕山街",
+              "url": "https://www.openstreetmap.org/search?query=%E7%87%95%E5%B1%B1%E8%A1%97%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        },
+        {
+          "id": "cs-zhizhi-xishi",
+          "placeId": "cs-zhizhi-xishi",
+          "name": "西施臭豆腐",
+          "category": "街头小吃 / 传统臭豆腐",
+          "addressText": "长沙市天心区学院街与黄兴南路交叉口旁",
+          "start": 33.0,
+          "end": 47.0,
+          "posterSecond": 39.0,
+          "summary": "天心区南门口学院街老字号臭豆腐，无论买几片都是现场现炸，每片亲自在秘制老汤汁浸润后浇上鲜蒜泥，外酥里嫩爆汁浓郁。",
+          "coordinates": [
+            112.9736,
+            28.1835
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "天心区 · 南门口学院街",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "原片大字招牌西施臭豆腐大份10元小份5元，南门口步行街旁。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "学院街",
+              "url": "https://www.openstreetmap.org/search?query=%E5%AD%A6%E9%99%A2%E8%A1%97%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        },
+        {
+          "id": "cs-zhizhi-langge",
+          "placeId": "cs-chaolan-langge",
+          "name": "浪哥捆鸡",
+          "category": "街头卤味 / 捆鸡",
+          "addressText": "长沙市天心区下碧湘街南门口街巷",
+          "start": 286.0,
+          "end": 296.0,
+          "posterSecond": 293.0,
+          "summary": "南门口下碧湘街浪哥卤味，招牌现切现拌特色卤味捆鸡，口感QQ弹弹嚼劲十足，老长沙经典下酒小吃。",
+          "coordinates": [
+            112.97445,
+            28.18182
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "天心区 · 南门口下碧湘街",
+            "basis": "multi-blogger-merged",
+            "branchMatch": "confirmed",
+            "note": "2位博主合用点位（超懒的洋、汁汁冰激凌），南门口下碧湘街街头卤味老铺。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "下碧湘街",
+              "url": "https://www.openstreetmap.org/search?query=%E4%B8%8B%E7%A2%A7%E6%B9%98%E8%A1%97%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        },
+        {
+          "id": "cs-zhizhi-pengji",
+          "placeId": "cs-zhizhi-pengji",
+          "name": "彭记肉丸店",
+          "category": "湘菜 / 肉丸老汤锅",
+          "addressText": "长沙市芙蓉区韭菜园街道藩后街",
+          "start": 296.0,
+          "end": 317.0,
+          "posterSecond": 305.0,
+          "summary": "市井老居民楼下的传统老字号，实打实的手工鲜肉丸子浓郁滚汤，配招牌烫包菜肉泥无敌下饭，清爽鲜美不油腻。",
+          "coordinates": [
+            112.9818,
+            28.194
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "芙蓉区 · 韭菜园藩后街",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "原片实拍藩后街老字号彭记肉丸汤锅与烫包菜肉泥。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "藩后街",
+              "url": "https://www.openstreetmap.org/search?query=%E8%97%A9%E5%90%8E%E8%A1%97%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-xiaoyugugu-7627385830349278843",
+      "author": "小鱼咕咕",
+      "title": "五一来长沙必吃榜！都是本地人扎堆的老店，吃了十几年绝对不踩雷",
+      "url": "https://www.douyin.com/video/7627385830349278843",
+      "shareURL": "https://v.douyin.com/TnX84ANDfnc/",
+      "publishedOn": "2026-10-31",
+      "durationSeconds": 128.3,
+      "sourceSHA256": "1c73e022424abcbe080c8399c604cfb57a5b2e0510dc3acac20e78a2dba8e03f",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片探访白沙路白沙饺子店、开福区老光脑壳家常菜馆等老长沙市井美食。",
+      "segments": [
+        {
+          "id": "cs-xiaoyu-baishajiaozi",
+          "placeId": "cs-xiaoyu-baishajiaozi",
+          "name": "白沙饺子店",
+          "category": "老字号小吃 / 手工蒸饺",
+          "addressText": "长沙市天心区白沙路160号",
+          "start": 21.0,
+          "end": 29.0,
+          "posterSecond": 25.0,
+          "summary": "开了十几年的老式蒸饺夫妻档，只做香菇猪肉馅手工蒸饺，皮薄多汁，蘸自制辣椒酱榨菜丝，是天心老街坊的心头好。",
+          "coordinates": [
+            112.9806,
+            28.1805
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "天心区 · 白沙路白沙井",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "原片大红招牌白沙饺子店，天心区白沙路老店。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "白沙路",
+              "url": "https://www.openstreetmap.org/search?query=%E7%99%BD%E6%B2%99%E8%B7%AF%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        },
+        {
+          "id": "cs-xiaoyu-guangnaoke",
+          "placeId": "cs-xiaoyu-guangnaoke",
+          "name": "光脑壳家常菜馆",
+          "category": "湘菜 / 街巷苍蝇馆子",
+          "addressText": "长沙市开福区春风街与轩辕殿巷交汇处",
+          "start": 29.0,
+          "end": 45.0,
+          "posterSecond": 39.0,
+          "summary": "开福区老巷子里名声在外的排队苍蝇馆子，明档看菜猛火急炒锅气十足，招牌酸萝卜炒牛百叶酸辣爽脆，家常基围虾与口味虾爪浓油赤酱下饭极佳。",
+          "coordinates": [
+            112.9785,
+            28.2045
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "开福区 · 春风街轩辕殿巷",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "原片大红招牌老光脑壳家常菜馆，春风街老巷苍蝇馆子。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-street",
+              "name": "春风街",
+              "url": "https://www.openstreetmap.org/search?query=%E6%98%A5%E9%A3%8E%E8%A1%97%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-yesheng-7644401714867017721",
+      "author": "野生尼克",
+      "title": "长沙五一广场！！我唯一能吃回本的自助。。五一广场！！69.9",
+      "url": "https://www.douyin.com/video/7644401714867017721",
+      "shareURL": "https://v.douyin.com/9ZEr7MNYA3c/",
+      "publishedOn": "2026-10-31",
+      "durationSeconds": 18.0,
+      "sourceSHA256": "4ddbafb0ebf1600239713905a699324488868ac9d01f0ab8fce4d29a22bd8e51",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "图文作品合成为平滑标准竖屏视频，五一广场商圈烤袋熊旋转自助烤肉，大盘原切牛肉、鲜虾、海鲜甜品传送畅吃。",
+      "segments": [
+        {
+          "id": "cs-yesheng-kaodaixiong",
+          "placeId": "cs-yesheng-kaodaixiong",
+          "name": "烤袋熊旋转自助烤肉",
+          "category": "烤肉自助 / 旋转烤肉",
+          "addressText": "长沙市天心区五一广场商圈",
+          "start": 0.0,
+          "end": 18.0,
+          "posterSecond": 8.0,
+          "summary": "五一广场商圈69.9元高性价比回转自助烤肉，百种新鲜食材、鲜切牛肉、海鲜小吃与甜品在轨道传送畅吃，年轻学生党聚餐优选。",
+          "coordinates": [
+            112.9772,
+            28.1963
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "天心区 · 五一广场商圈",
+            "basis": "video-sign",
+            "branchMatch": "confirmed",
+            "note": "图文原片品牌标志烤袋熊旋转自助烤肉与五一广场商圈地标。",
+            "reviewedOn": "2026-10-31",
+            "anchor": {
+              "kind": "osm-node",
+              "name": "五一广场",
+              "url": "https://www.openstreetmap.org/search?query=%E4%BA%94%E4%B8%80%E5%B9%BF%E5%9C%BA%20%E9%95%BF%E6%B2%99",
+              "sourceDate": "2026-10-31",
+              "method": "block-centroid"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cs-yezi-7586268117493173539",
+      "author": "椰子Ryan",
+      "title": "长沙我最害怕倒闭的小破店！藏在巷子里有点难找！但巨好吃！！",
+      "url": "https://www.douyin.com/video/7586268117493173539",
+      "shareURL": "https://v.douyin.com/R7v_7nsPVrU/",
+      "publishedOn": "2026-10-31",
+      "durationSeconds": 10.0,
+      "sourceSHA256": "5acfa8047056b74e4a22a88be6273cc78c3b9ebc03ed11aab282de2bc3849cbb",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "10秒市井夜宵短视频（砂锅豆浆油条、搪瓷缸面、烤排骨），原片未出现明确门头路牌口播，按规范保留已入库原片，门店点位待考证核对，不盲目造点。",
+      "segments": []
     }
   ]
 }
