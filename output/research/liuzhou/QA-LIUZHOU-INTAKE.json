@@ -1,0 +1,225 @@
+{
+  "verifiedOn": "2026-11-01T06:00:49.771Z",
+  "city": "liuzhou",
+  "source": "lz-wangzulan-7575112557141898601",
+  "checks": [
+    {
+      "name": "Liuzhou city identified correctly",
+      "passed": true,
+      "detail": {
+        "name": "柳州",
+        "center": [
+          109.40566135858666,
+          24.31443517812849
+        ],
+        "zoom": 16.3,
+        "cityKey": "liuzhou",
+        "recordCount": 3,
+        "records": [
+          {
+            "id": "video-lz-wangzulan-zhangji",
+            "name": "张记玉米汁",
+            "category": "饮品 / 甜品",
+            "coordinates": [
+              109.40585,
+              24.31438
+            ],
+            "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.mp4",
+            "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.jpg"
+          },
+          {
+            "id": "video-lz-wangzulan-zhuoheji",
+            "name": "卓和记猪肉脯",
+            "category": "特色小吃 / 伴手礼",
+            "coordinates": [
+              109.40583,
+              24.31415
+            ],
+            "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.mp4",
+            "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.jpg"
+          },
+          {
+            "id": "video-lz-wangzulan-panjie",
+            "name": "青云老牌潘姐小吃",
+            "category": "特色小吃 / 糯米饭",
+            "coordinates": [
+              109.40581,
+              24.3138
+            ],
+            "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.mp4",
+            "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "name": "3 food records loaded at Qingyun Market",
+      "passed": true,
+      "detail": [
+        {
+          "id": "video-lz-wangzulan-zhangji",
+          "name": "张记玉米汁",
+          "category": "饮品 / 甜品",
+          "coordinates": [
+            109.40585,
+            24.31438
+          ],
+          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.mp4",
+          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.jpg"
+        },
+        {
+          "id": "video-lz-wangzulan-zhuoheji",
+          "name": "卓和记猪肉脯",
+          "category": "特色小吃 / 伴手礼",
+          "coordinates": [
+            109.40583,
+            24.31415
+          ],
+          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.mp4",
+          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.jpg"
+        },
+        {
+          "id": "video-lz-wangzulan-panjie",
+          "name": "青云老牌潘姐小吃",
+          "category": "特色小吃 / 糯米饭",
+          "coordinates": [
+            109.40581,
+            24.3138
+          ],
+          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.mp4",
+          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.jpg"
+        }
+      ]
+    },
+    {
+      "name": "All 3 records have local MP4 clips and JPG posters",
+      "passed": true,
+      "detail": [
+        {
+          "id": "video-lz-wangzulan-zhangji",
+          "name": "张记玉米汁",
+          "category": "饮品 / 甜品",
+          "coordinates": [
+            109.40585,
+            24.31438
+          ],
+          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.mp4",
+          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.jpg"
+        },
+        {
+          "id": "video-lz-wangzulan-zhuoheji",
+          "name": "卓和记猪肉脯",
+          "category": "特色小吃 / 伴手礼",
+          "coordinates": [
+            109.40583,
+            24.31415
+          ],
+          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.mp4",
+          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.jpg"
+        },
+        {
+          "id": "video-lz-wangzulan-panjie",
+          "name": "青云老牌潘姐小吃",
+          "category": "特色小吃 / 糯米饭",
+          "coordinates": [
+            109.40581,
+            24.3138
+          ],
+          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.mp4",
+          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Popover opened and video is playing with advancing playback",
+      "passed": true,
+      "detail": {
+        "found": true,
+        "src": "http://127.0.0.1:8791/media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.mp4",
+        "currentTime": 0.767205,
+        "paused": false,
+        "duration": 6.5
+      }
+    },
+    {
+      "name": "Direct distance mode active with 3 saved stops",
+      "passed": true,
+      "detail": {
+        "routeMode": "direct",
+        "caption": "直线约 60 米",
+        "savedCount": 3,
+        "phase": "ready"
+      }
+    },
+    {
+      "name": "Road mode computed realistic route using Liuzhou road network",
+      "passed": true,
+      "detail": {
+        "routeMode": "road",
+        "phase": "ready",
+        "total": 49.7029529896614,
+        "caption": "沿路约 50 米",
+        "roadPointsCount": 6,
+        "localStorageMode": "road",
+        "localStorageWants": [
+          "video-lz-wangzulan-zhangji",
+          "video-lz-wangzulan-zhuoheji",
+          "video-lz-wangzulan-panjie"
+        ]
+      }
+    },
+    {
+      "name": "Local storage keys isolated to Liuzhou",
+      "passed": true,
+      "detail": {
+        "routeMode": "road",
+        "phase": "ready",
+        "total": 49.7029529896614,
+        "caption": "沿路约 50 米",
+        "roadPointsCount": 6,
+        "localStorageMode": "road",
+        "localStorageWants": [
+          "video-lz-wangzulan-zhangji",
+          "video-lz-wangzulan-zhuoheji",
+          "video-lz-wangzulan-panjie"
+        ]
+      }
+    },
+    {
+      "name": "Mobile layout renders cards and trip dock",
+      "passed": true,
+      "detail": {
+        "cardCount": 3,
+        "dockVisible": true
+      }
+    },
+    {
+      "name": "Chongqing city loads with correct city name",
+      "passed": true,
+      "detail": {
+        "name": "重庆",
+        "cityKey": "chongqing",
+        "recordCount": 60,
+        "hasLiuzhouRecord": false
+      }
+    },
+    {
+      "name": "Chongqing records are not polluted by Liuzhou records",
+      "passed": true,
+      "detail": {
+        "name": "重庆",
+        "cityKey": "chongqing",
+        "recordCount": 60,
+        "hasLiuzhouRecord": false
+      }
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-food-overview.png",
+    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-video-popover.png",
+    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-road-distance.png",
+    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-wants-dialog.png",
+    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-mobile.png"
+  ]
+}
