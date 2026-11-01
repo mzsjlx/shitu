@@ -49,6 +49,47 @@
         "terrainManifest": "data/terrain-manifest.json"
       },
       "status": "local-validation-only"
+    },
+    "nanjing": {
+      "name": "南京",
+      "regionLabel": "中心城区",
+      "coverageLabel": "南京核心城区，涵盖玄武湖、秦淮河、新街口、老门东及钟山周边商圈（约 17.1 × 15.6 公里）",
+      "bounds": [
+        118.70,
+        31.98,
+        118.88,
+        32.12
+      ],
+      "center": [
+        118.796,
+        32.058
+      ],
+      "zoom": 15.5,
+      "pitch": 52,
+      "bearing": -15,
+      "minZoom": 12.0,
+      "maxZoom": 19,
+      "tiles": "data/cities/nanjing/nanjing.pmtiles",
+      "demTiles": "data/cities/nanjing/terrain/{z}/{x}/{y}.png",
+      "demMinZoom": 11,
+      "demMaxZoom": 13,
+      "amapCityCode": "320100",
+      "landmarks": [],
+      "foodContent": {
+        "records": "data/cities/nanjing/food-records.json",
+        "videoLibrary": "data/cities/nanjing/video-library.json",
+        "videoPosters": "data/cities/nanjing/video-posters.json",
+        "sprite": "assets/food-concepts.jpg",
+        "roadNetwork": "data/cities/nanjing/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/nanjing/roads-index.json",
+        "audit": "data/cities/nanjing/data-audit.json",
+        "manifest": "data/cities/nanjing/source-manifest.json",
+        "tileMetadata": "data/cities/nanjing/tile-metadata.json",
+        "terrainManifest": "data/cities/nanjing/terrain-manifest.json"
+      },
+      "status": "in-preparation"
     }
   }
 }
