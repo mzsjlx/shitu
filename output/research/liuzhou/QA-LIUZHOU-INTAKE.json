@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-01T06:00:49.771Z",
+  "verifiedOn": "2026-11-01T10:01:07.549Z",
   "city": "liuzhou",
   "source": "lz-wangzulan-7575112557141898601",
   "checks": [
@@ -9,10 +9,10 @@
       "detail": {
         "name": "柳州",
         "center": [
-          109.40566135858666,
-          24.31443517812849
+          109.40575659456135,
+          24.31424024780982
         ],
-        "zoom": 16.3,
+        "zoom": 17.5,
         "cityKey": "liuzhou",
         "recordCount": 3,
         "records": [
@@ -131,12 +131,30 @@
       ]
     },
     {
+      "name": "All food markers default to collapsed circular icon badges",
+      "passed": true
+    },
+    {
+      "name": "Clicking circular badge expands ONLY that card into rectangle with \"×\" close button",
+      "passed": true,
+      "detail": {
+        "isExpanded": true,
+        "hasCloseButton": true,
+        "closeButtonVisible": true,
+        "otherCardsStayCollapsed": true
+      }
+    },
+    {
+      "name": "Clicking \"×\" close button collapses card back into circular icon badge",
+      "passed": true
+    },
+    {
       "name": "Popover opened and video is playing with advancing playback",
       "passed": true,
       "detail": {
         "found": true,
         "src": "http://127.0.0.1:8791/media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.mp4",
-        "currentTime": 0.767205,
+        "currentTime": 0.765086,
         "paused": false,
         "duration": 6.5
       }
@@ -217,6 +235,7 @@
   "errors": [],
   "screenshots": [
     "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-food-overview.png",
+    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-card-expanded.png",
     "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-video-popover.png",
     "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-road-distance.png",
     "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-wants-dialog.png",

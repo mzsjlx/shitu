@@ -58,6 +58,7 @@ export class FoodExperience{
     });
     byId('food-save').addEventListener('click',()=>{if(this.selected)this.toggleSave(this.selected.id);});
     map.on('movestart',event=>{if(event.originalEvent)this.cancelFocus();});
+    map.on('click',()=>{if(this.active&&this.selected)this.deselectCard();});
     this.dockObserver=new ResizeObserver(()=>{this.map.getContainer().parentElement.style.setProperty('--food-trip-dock-height',byId('trip-dock').offsetHeight+'px');this.overlay.scheduleLayout();});this.dockObserver.observe(byId('trip-dock'));
   }
   cancelFocus(){this.generation++;this.initialPlaceId=null;}
@@ -104,7 +105,7 @@ export class FoodExperience{
     if(requestedPlaceId)byId('status').textContent='这个地点暂不在当前资料中，已展开现有美食候选。';
     const points=this.visibleRecords().map(r=>r.coordinates),xs=points.map(p=>p[0]),ys=points.map(p=>p[1]);
     const padding=this.fitPadding();
-    this.map.fitBounds([[Math.min(...xs),Math.min(...ys)],[Math.max(...xs),Math.max(...ys)]],{padding,maxZoom:16.3,pitch:48,bearing:-24,duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:1050});
+    this.map.fitBounds([[Math.min(...xs),Math.min(...ys)],[Math.max(...xs),Math.max(...ys)]],{padding,maxZoom:17.5,pitch:48,bearing:-24,duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:1050});
   }
   deactivate(){
     this.cancelFocus();this.active=false;this.overlay.clear();byId('food-option').checked=false;document.body.classList.remove('food-active');
@@ -116,10 +117,20 @@ export class FoodExperience{
   visibleRecords(category=this.category){return category===null?this.records:this.records.filter(item=>item.category===category);}
   renderCandidates(){
     const records=this.visibleRecords();
-    this.overlay.replaceCandidates(records,item=>this.openMapCard(item),{onToggleSave:item=>this.toggleSave(item.id)});
+    this.overlay.replaceCandidates(records,item=>this.openMapCard(item),{
+      onToggleSave:item=>this.toggleSave(item.id),
+      onClose:item=>this.deselectCard(item)
+    });
     this.overlay.setState(this.selected?.id,this.saved);
     byId('food-pick-label').textContent=this.category===null?'今天想吃什么 · '+records.length+'家':this.category+' · '+records.length+'家';
     byId('food-pick-open').setAttribute('aria-label',this.category===null?'挑选想吃的美食类别':'当前只看'+this.category+'，'+records.length+'家；更换类别或查看全部');
+  }
+  deselectCard(item=null){
+    this.selected=null;
+    this.overlay.setState(null,this.saved);
+    this.overlay.popover.close();
+    this.renderDock();
+    byId('status').textContent='已收起卡片';
   }
   openPicker(){
     if(!this.active||this.phase!=='loaded')return;
@@ -304,7 +315,7 @@ export class FoodExperience{
     }else{
       const points=records.map(item=>item.coordinates);
       if(this.routeMode==='road'&&records.length===this.saved.length&&records.every(item=>this.saved.includes(item.id)))points.push(...this.routePreview.roadPoints||[]);
-      this.map.fitBounds([[Math.min(...points.map(p=>p[0])),Math.min(...points.map(p=>p[1]))],[Math.max(...points.map(p=>p[0])),Math.max(...points.map(p=>p[1]))]],{padding:this.fitPadding(),maxZoom:16.3,pitch:this.map.getPitch(),bearing:this.map.getBearing(),duration});
+      this.map.fitBounds([[Math.min(...points.map(p=>p[0])),Math.min(...points.map(p=>p[1]))],[Math.max(...points.map(p=>p[0])),Math.max(...points.map(p=>p[1]))]],{padding:this.fitPadding(),maxZoom:17.5,pitch:this.map.getPitch(),bearing:this.map.getBearing(),duration});
     }
   }
   renderWants(){

@@ -62,18 +62,69 @@ async function main() {
     check('3 food records loaded at Qingyun Market', cityInfo.recordCount === 3, cityInfo.records);
     check('All 3 records have local MP4 clips and JPG posters', cityInfo.records.every(r => r.localClip && r.localPoster), cityInfo.records);
 
+    const allCollapsedInitial = await p.evaluate(() => {
+      const cards = document.querySelectorAll('.food-card');
+      return cards.length === 3 && Array.from(cards).every(c => c.classList.contains('is-collapsed'));
+    });
+    check('All food markers default to collapsed circular icon badges', allCollapsedInitial);
+
     const shot1 = 'D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-food-overview.png';
     await p.screenshot({ path: shot1 });
     report.screenshots.push(shot1);
     console.log('Saved screenshot:', shot1);
 
     // -------------------------------------------------------------
-    // Test 2: Card Popover & Video Playback
+    // Test 2: Card Expansion, Close Button & Video Playback
     // -------------------------------------------------------------
-    console.log('\n--- 2. Testing Popover & Video Playback ---');
+    console.log('\n--- 2. Testing Card Expansion, Close Button & Video Playback ---');
     const firstShop = cityInfo.records[0];
     const cardSelector = `.food-card[data-food-id="${firstShop.id}"]`;
     await p.waitForSelector(cardSelector, { timeout: 10000 });
+
+    // Step 2a: Click circular badge to expand card
+    await p.locator(`${cardSelector} .food-open`).click();
+    await p.waitForFunction(sel => {
+      const card = document.querySelector(sel);
+      return card && !card.classList.contains('is-collapsed');
+    }, cardSelector, { timeout: 5000 });
+
+    const cardExpanded = await p.evaluate(sel => {
+      const card = document.querySelector(sel);
+      const closeBtn = card?.querySelector('.food-card-close');
+      const otherCards = Array.from(document.querySelectorAll('.food-card')).filter(c => c !== card);
+      return {
+        isExpanded: card && !card.classList.contains('is-collapsed'),
+        hasCloseButton: !!closeBtn,
+        closeButtonVisible: closeBtn && getComputedStyle(closeBtn).display !== 'none',
+        otherCardsStayCollapsed: otherCards.length === 2 && otherCards.every(c => c.classList.contains('is-collapsed'))
+      };
+    }, cardSelector);
+
+    check('Clicking circular badge expands ONLY that card into rectangle with "×" close button',
+      cardExpanded.isExpanded && cardExpanded.hasCloseButton && cardExpanded.closeButtonVisible && cardExpanded.otherCardsStayCollapsed,
+      cardExpanded
+    );
+
+    const shotExpanded = 'D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-card-expanded.png';
+    await p.screenshot({ path: shotExpanded });
+    report.screenshots.push(shotExpanded);
+    console.log('Saved screenshot of expanded card:', shotExpanded);
+
+    // Step 2b: Test closing card via "×" button
+    await p.locator(`${cardSelector} .food-card-close`).click();
+    await p.waitForFunction(sel => {
+      const card = document.querySelector(sel);
+      return card && card.classList.contains('is-collapsed');
+    }, cardSelector, { timeout: 5000 });
+
+    const cardCollapsedAgain = await p.evaluate(sel => {
+      const card = document.querySelector(sel);
+      return card && card.classList.contains('is-collapsed');
+    }, cardSelector);
+
+    check('Clicking "×" close button collapses card back into circular icon badge', cardCollapsedAgain);
+
+    // Step 2c: Click again to open card and video popover
     await p.locator(`${cardSelector} .food-open`).click();
     await p.waitForFunction(() => {
       const popover = document.querySelector('.food-inline-popover');
