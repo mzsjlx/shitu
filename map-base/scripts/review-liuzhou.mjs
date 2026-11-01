@@ -59,14 +59,14 @@ async function main() {
     }));
 
     check('Liuzhou city identified correctly', cityInfo.name === '柳州' && cityInfo.cityKey === 'liuzhou', cityInfo);
-    check('3 food records loaded at Qingyun Market', cityInfo.recordCount === 3, cityInfo.records);
-    check('All 3 records have local MP4 clips and JPG posters', cityInfo.records.every(r => r.localClip && r.localPoster), cityInfo.records);
+    check('5 food records loaded across Liuzhou', cityInfo.recordCount === 5, cityInfo.records);
+    check('All 5 records have local MP4 clips and JPG posters', cityInfo.records.every(r => r.localClip && r.localPoster), cityInfo.records);
 
     const allCollapsedInitial = await p.evaluate(() => {
       const cards = document.querySelectorAll('.food-card');
-      return cards.length === 3 && Array.from(cards).every(c => c.classList.contains('is-collapsed'));
+      return cards.length === 5 && Array.from(cards).every(c => c.classList.contains('is-collapsed'));
     });
-    check('All food markers default to collapsed circular icon badges', allCollapsedInitial);
+    check('All 5 food markers default to collapsed circular icon badges', allCollapsedInitial);
 
     const shot1 = 'D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-food-overview.png';
     await p.screenshot({ path: shot1 });
@@ -77,8 +77,8 @@ async function main() {
     // Test 2: Card Expansion, Close Button & Video Playback
     // -------------------------------------------------------------
     console.log('\n--- 2. Testing Card Expansion, Close Button & Video Playback ---');
-    const firstShop = cityInfo.records[0];
-    const cardSelector = `.food-card[data-food-id="${firstShop.id}"]`;
+    const testShop = cityInfo.records.find(r => r.id === 'video-lz-chenhe-aningmeng') || cityInfo.records[0];
+    const cardSelector = `.food-card[data-food-id="${testShop.id}"]`;
     await p.waitForSelector(cardSelector, { timeout: 10000 });
 
     // Step 2a: Click circular badge to expand card
@@ -96,7 +96,7 @@ async function main() {
         isExpanded: card && !card.classList.contains('is-collapsed'),
         hasCloseButton: !!closeBtn,
         closeButtonVisible: closeBtn && getComputedStyle(closeBtn).display !== 'none',
-        otherCardsStayCollapsed: otherCards.length === 2 && otherCards.every(c => c.classList.contains('is-collapsed'))
+        otherCardsStayCollapsed: otherCards.length === 4 && otherCards.every(c => c.classList.contains('is-collapsed'))
       };
     }, cardSelector);
 
@@ -178,7 +178,7 @@ async function main() {
         phase: food.routePreview.phase
       };
     });
-    check('Direct distance mode active with 3 saved stops', directStatus.savedCount === 3 && directStatus.caption.includes('直线约'), directStatus);
+    check('Direct distance mode active with 5 saved stops', directStatus.savedCount === 5 && directStatus.caption.includes('直线约'), directStatus);
 
     // Test distance badge zoom threshold (hidden when zoom < 16.5, visible when zoom >= 16.5)
     await p.evaluate(() => window.foodCityMap.map.setZoom(15));
@@ -197,15 +197,49 @@ async function main() {
     });
     check('Distance badge smoothly appears when zoomed in (>= 16.5) at street level', badgesVisibleZoomedIn);
 
-    console.log('Switching to road distance mode...');
+    console.log('Switching to road distance mode with 5 stops...');
     await p.evaluate(() => window.foodCityMap.food.setRouteMode('road'));
+    await p.waitForFunction(() => {
+      const preview = window.foodCityMap?.food?.routePreview;
+      return preview && (preview.phase === 'ready' || preview.phase === 'partial');
+    }, undefined, { timeout: 15000 });
+    await settle(p);
+
+    const roadStatus5 = await p.evaluate(() => {
+      const food = window.foodCityMap.food;
+      const preview = food.routePreview;
+      return {
+        routeMode: food.routeMode,
+        phase: preview.phase,
+        missing: preview.missing,
+        total: preview.total,
+        caption: document.getElementById('trip-dock-caption')?.textContent,
+        localStorageMode: localStorage.getItem('foodcity:distance-mode:liuzhou:v1'),
+        localStorageWants: JSON.parse(localStorage.getItem('foodcity:wants:liuzhou:v1') || '[]')
+      };
+    });
+
+    check('Road mode truthfully reports partial connectivity across distant districts',
+      roadStatus5.phase === 'partial' && roadStatus5.missing === 2 && roadStatus5.caption.includes('段道路暂未连通'),
+      roadStatus5
+    );
+    check('Local storage keys isolated to Liuzhou', roadStatus5.localStorageMode === 'road' && roadStatus5.localStorageWants.length === 5, roadStatus5);
+
+    // Now test road mode with 3 connected Qingyun Market stops
+    console.log('Testing road distance mode with 3 connected Qingyun Market stops...');
+    await p.evaluate(() => {
+      const food = window.foodCityMap.food;
+      food.saved = ['video-lz-wangzulan-zhangji', 'video-lz-wangzulan-zhuoheji', 'video-lz-wangzulan-panjie'];
+      food.persistSaved();
+      food.refreshSaved();
+    });
     await p.waitForFunction(() => {
       const preview = window.foodCityMap?.food?.routePreview;
       return preview && preview.phase === 'ready';
     }, undefined, { timeout: 15000 });
     await settle(p);
 
-    const roadStatus = await p.evaluate(() => {
+    const roadStatus3 = await p.evaluate(() => {
       const food = window.foodCityMap.food;
       const preview = food.routePreview;
       return {
@@ -213,14 +247,14 @@ async function main() {
         phase: preview.phase,
         total: preview.total,
         caption: document.getElementById('trip-dock-caption')?.textContent,
-        roadPointsCount: preview.roadPoints?.length || 0,
-        localStorageMode: localStorage.getItem('foodcity:distance-mode:liuzhou:v1'),
-        localStorageWants: JSON.parse(localStorage.getItem('foodcity:wants:liuzhou:v1') || '[]')
+        roadPointsCount: preview.roadPoints?.length || 0
       };
     });
 
-    check('Road mode computed realistic route using Liuzhou road network', roadStatus.phase === 'ready' && roadStatus.total < 200 && roadStatus.caption.includes('沿路约'), roadStatus);
-    check('Local storage keys isolated to Liuzhou', roadStatus.localStorageMode === 'road' && roadStatus.localStorageWants.length === 3, roadStatus);
+    check('Road mode computes fully connected route for Qingyun Market cluster',
+      roadStatus3.phase === 'ready' && roadStatus3.total > 0 && roadStatus3.total < 200 && roadStatus3.caption.includes('沿路约'),
+      roadStatus3
+    );
 
     const shot3 = 'D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-road-distance.png';
     await p.screenshot({ path: shot3 });
@@ -256,7 +290,7 @@ async function main() {
         dockVisible: dock && !dock.hidden
       };
     });
-    check('Mobile layout renders cards and trip dock', mobileCheck.cardCount === 3 && mobileCheck.dockVisible, mobileCheck);
+    check('Mobile layout renders cards and trip dock', mobileCheck.cardCount === 5 && mobileCheck.dockVisible, mobileCheck);
 
     const shotMobile = 'D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-mobile.png';
     await mp.screenshot({ path: shotMobile });

@@ -5,7 +5,7 @@
   "rights": {
     "status": "user-confirmed",
     "confirmedOn": "2026-11-01",
-    "scope": "经用户确认已获作者王祖蓝允许剪辑并在食途网站使用；保留原平台、原作者与原作品链接。",
+    "scope": "经用户确认已获作者王祖蓝、陈赫、达哥在上海允许剪辑并在食途网站使用；保留原平台、原作者与原作品链接。",
     "evidence": "本项目会话中的用户指令与确认；未独立审查授权文件。"
   },
   "sources": [
@@ -84,6 +84,78 @@
             "accuracy": "approximate",
             "label": "青云民生市场 · 小吃排档区",
             "basis": "青云老牌潘姐小吃摊位，位于青云民生市场樵家巷中段小吃区。"
+          },
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "lz-chenhe-7498339315727060264",
+      "author": "陈赫",
+      "title": "有人说不来柳州吃螺蛳粉相当于白来柳州？# 螺蛳粉 # 嗦粉 # 广西柳州 # 美食 # 真材实料",
+      "url": "https://www.douyin.com/video/7498339315727060264",
+      "shareURL": "https://v.douyin.com/BhR-6trUssQ/",
+      "publishedOn": "2025-04-28",
+      "durationSeconds": 134.84,
+      "sourceSHA256": "438d6f153a59a74c4528290d46b462ffc2f5066339315298bd8a4a818ee137d8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "陈赫在柳州打卡杨记阿柠檬螺蛳粉，现场招牌与菜单清晰可见，点单品尝虎皮猪脚、炸蛋与大盆卤肥肠螺蛳粉。",
+      "segments": [
+        {
+          "id": "lz-chenhe-aningmeng",
+          "name": "杨记阿柠檬螺蛳粉",
+          "category": "特色小吃 / 螺蛳粉",
+          "summary": "柳州开了二十多年的老牌夜宵螺蛳粉，以料足汤浓著称，陈赫打卡必点虎皮猪脚、炸蛋与大盆卤肥肠，酸爽过瘾。",
+          "addressText": "柳州市柳南区潭中西路北一巷8号（近壶西实验中学）",
+          "start": 58.0,
+          "end": 78.0,
+          "posterSecond": 65.0,
+          "coordinates": [
+            109.38986,
+            24.33934
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潭中西路北一巷 · 壶西实验中学旁",
+            "basis": "原片门店招牌为“杨记阿柠檬螺蛳粉”，位于柳南区潭中西路北一巷8号，临近壶西实验中学。"
+          },
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "lz-dage-7688278279576982090",
+      "author": "达哥在上海",
+      "title": "在广西柳州一老小区吃爆辣红油螺狮粉，居然一点也不臭...",
+      "url": "https://www.douyin.com/video/7688278279576982090",
+      "shareURL": "https://v.douyin.com/Rw7J-Zdbes8/",
+      "publishedOn": "2024-04-10",
+      "durationSeconds": 395.02,
+      "sourceSHA256": "e08f3b79cd5b066c06c9e4e533b5556d424d9a6c2f3b9feec36240c341a9cf68",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "达哥在上海探访柳锌小区老店曹妹螺蛳粉，现场点红油爆辣螺蛳粉加腊肠、炸蛋及木薯糖水，盛赞红油纯正鲜香不臭。",
+      "segments": [
+        {
+          "id": "lz-dage-caomei",
+          "name": "曹妹螺蛳粉",
+          "category": "特色小吃 / 螺蛳粉",
+          "summary": "藏在柳锌老小区里的市井烟火宝藏老店，红油浓郁醇厚，炸蛋蓬松饱吸汤汁，木薯糖水清甜解辣，达哥盛赞一点都不臭、真的香。",
+          "addressText": "柳州市柳北区白沙路5号柳锌小区10栋对面",
+          "start": 15.0,
+          "end": 35.0,
+          "posterSecond": 20.0,
+          "coordinates": [
+            109.42060,
+            24.33870
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "柳锌小区 · 白沙路5号老生活区",
+            "basis": "原片探访柳北区白沙路柳锌老小区内曹妹螺蛳粉（10栋对面），坐标落于柳锌小区生活区内部道路。"
           },
           "routeEligible": false
         }

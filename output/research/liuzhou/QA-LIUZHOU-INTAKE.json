@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-01T10:17:15.050Z",
+  "verifiedOn": "2026-11-01T12:19:07.409Z",
   "city": "liuzhou",
   "source": "lz-wangzulan-7575112557141898601",
   "checks": [
@@ -9,12 +9,12 @@
       "detail": {
         "name": "柳州",
         "center": [
-          109.40575659456135,
-          24.31424024780982
+          109.40726337611665,
+          24.32972053875494
         ],
-        "zoom": 17.5,
+        "zoom": 13.109949651617894,
         "cityKey": "liuzhou",
-        "recordCount": 3,
+        "recordCount": 5,
         "records": [
           {
             "id": "video-lz-wangzulan-zhangji",
@@ -48,12 +48,34 @@
             ],
             "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.mp4",
             "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.jpg"
+          },
+          {
+            "id": "video-lz-chenhe-aningmeng",
+            "name": "杨记阿柠檬螺蛳粉",
+            "category": "特色小吃 / 螺蛳粉",
+            "coordinates": [
+              109.38986,
+              24.33934
+            ],
+            "localClip": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
+            "localPoster": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.jpg"
+          },
+          {
+            "id": "video-lz-dage-caomei",
+            "name": "曹妹螺蛳粉",
+            "category": "特色小吃 / 螺蛳粉",
+            "coordinates": [
+              109.4206,
+              24.3387
+            ],
+            "localClip": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.mp4",
+            "localPoster": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.jpg"
           }
         ]
       }
     },
     {
-      "name": "3 food records loaded at Qingyun Market",
+      "name": "5 food records loaded across Liuzhou",
       "passed": true,
       "detail": [
         {
@@ -88,11 +110,33 @@
           ],
           "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.mp4",
           "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.jpg"
+        },
+        {
+          "id": "video-lz-chenhe-aningmeng",
+          "name": "杨记阿柠檬螺蛳粉",
+          "category": "特色小吃 / 螺蛳粉",
+          "coordinates": [
+            109.38986,
+            24.33934
+          ],
+          "localClip": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
+          "localPoster": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.jpg"
+        },
+        {
+          "id": "video-lz-dage-caomei",
+          "name": "曹妹螺蛳粉",
+          "category": "特色小吃 / 螺蛳粉",
+          "coordinates": [
+            109.4206,
+            24.3387
+          ],
+          "localClip": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.mp4",
+          "localPoster": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.jpg"
         }
       ]
     },
     {
-      "name": "All 3 records have local MP4 clips and JPG posters",
+      "name": "All 5 records have local MP4 clips and JPG posters",
       "passed": true,
       "detail": [
         {
@@ -127,11 +171,33 @@
           ],
           "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.mp4",
           "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.jpg"
+        },
+        {
+          "id": "video-lz-chenhe-aningmeng",
+          "name": "杨记阿柠檬螺蛳粉",
+          "category": "特色小吃 / 螺蛳粉",
+          "coordinates": [
+            109.38986,
+            24.33934
+          ],
+          "localClip": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
+          "localPoster": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.jpg"
+        },
+        {
+          "id": "video-lz-dage-caomei",
+          "name": "曹妹螺蛳粉",
+          "category": "特色小吃 / 螺蛳粉",
+          "coordinates": [
+            109.4206,
+            24.3387
+          ],
+          "localClip": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.mp4",
+          "localPoster": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.jpg"
         }
       ]
     },
     {
-      "name": "All food markers default to collapsed circular icon badges",
+      "name": "All 5 food markers default to collapsed circular icon badges",
       "passed": true
     },
     {
@@ -153,19 +219,19 @@
       "passed": true,
       "detail": {
         "found": true,
-        "src": "http://127.0.0.1:8791/media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.mp4",
-        "currentTime": 0.764795,
+        "src": "http://127.0.0.1:8791/media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
+        "currentTime": 0.762035,
         "paused": false,
-        "duration": 6.5
+        "duration": 20
       }
     },
     {
-      "name": "Direct distance mode active with 3 saved stops",
+      "name": "Direct distance mode active with 5 saved stops",
       "passed": true,
       "detail": {
         "routeMode": "direct",
-        "caption": "直线约 60 米",
-        "savedCount": 3,
+        "caption": "直线约 6.4 公里",
+        "savedCount": 5,
         "phase": "ready"
       }
     },
@@ -178,19 +244,21 @@
       "passed": true
     },
     {
-      "name": "Road mode computed realistic route using Liuzhou road network",
+      "name": "Road mode truthfully reports partial connectivity across distant districts",
       "passed": true,
       "detail": {
         "routeMode": "road",
-        "phase": "ready",
+        "phase": "partial",
+        "missing": 2,
         "total": 49.7029529896614,
-        "caption": "沿路约 50 米",
-        "roadPointsCount": 6,
+        "caption": "2 段道路暂未连通",
         "localStorageMode": "road",
         "localStorageWants": [
           "video-lz-wangzulan-zhangji",
           "video-lz-wangzulan-zhuoheji",
-          "video-lz-wangzulan-panjie"
+          "video-lz-wangzulan-panjie",
+          "video-lz-chenhe-aningmeng",
+          "video-lz-dage-caomei"
         ]
       }
     },
@@ -199,23 +267,36 @@
       "passed": true,
       "detail": {
         "routeMode": "road",
-        "phase": "ready",
+        "phase": "partial",
+        "missing": 2,
         "total": 49.7029529896614,
-        "caption": "沿路约 50 米",
-        "roadPointsCount": 6,
+        "caption": "2 段道路暂未连通",
         "localStorageMode": "road",
         "localStorageWants": [
           "video-lz-wangzulan-zhangji",
           "video-lz-wangzulan-zhuoheji",
-          "video-lz-wangzulan-panjie"
+          "video-lz-wangzulan-panjie",
+          "video-lz-chenhe-aningmeng",
+          "video-lz-dage-caomei"
         ]
+      }
+    },
+    {
+      "name": "Road mode computes fully connected route for Qingyun Market cluster",
+      "passed": true,
+      "detail": {
+        "routeMode": "road",
+        "phase": "ready",
+        "total": 49.7029529896614,
+        "caption": "沿路约 50 米",
+        "roadPointsCount": 6
       }
     },
     {
       "name": "Mobile layout renders cards and trip dock",
       "passed": true,
       "detail": {
-        "cardCount": 3,
+        "cardCount": 5,
         "dockVisible": true
       }
     },
