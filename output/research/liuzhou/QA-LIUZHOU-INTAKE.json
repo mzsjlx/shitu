@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-01T10:01:07.549Z",
+  "verifiedOn": "2026-11-01T10:17:15.050Z",
   "city": "liuzhou",
   "source": "lz-wangzulan-7575112557141898601",
   "checks": [
@@ -154,7 +154,7 @@
       "detail": {
         "found": true,
         "src": "http://127.0.0.1:8791/media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.mp4",
-        "currentTime": 0.765086,
+        "currentTime": 0.764795,
         "paused": false,
         "duration": 6.5
       }
@@ -168,6 +168,14 @@
         "savedCount": 3,
         "phase": "ready"
       }
+    },
+    {
+      "name": "Distance badge auto-hides when zoomed out (< 16.5) to avoid obstructing icons",
+      "passed": true
+    },
+    {
+      "name": "Distance badge smoothly appears when zoomed in (>= 16.5) at street level",
+      "passed": true
     },
     {
       "name": "Road mode computed realistic route using Liuzhou road network",

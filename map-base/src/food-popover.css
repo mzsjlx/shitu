@@ -27,7 +27,8 @@ body.food-active .topbar .search,body.food-active .topbar .wants-open,.food-mode
 .food-popover-save{flex:none;border:0;border-radius:12px;padding:8px 10px;min-height:36px;background:#fae0d1;color:#a65b3e;font-size:11px;white-space:nowrap;cursor:pointer}.food-popover-save[aria-pressed=true]{background:#eee8de;color:#725d4e}
 .food-popover-links{padding:0 6px 4px}.food-popover-links:empty,.food-popover-error:empty{display:none}.food-popover-links a{color:#9d6b50;font-size:10px;text-underline-offset:3px}.food-popover-error{margin:2px 6px;font-size:10px;color:#a2573d}
 .food-inline-popover button:focus-visible,.food-inline-popover a:focus-visible{outline:3px solid #b8774f;outline-offset:2px}
-.food-distance-badge{display:block;padding:7px 11px;border-radius:16px;background:#fffaf1ed;color:#4b3d34;box-shadow:0 5px 17px #50362720;font-size:11px;font-weight:600;white-space:nowrap;pointer-events:none}
+.food-distance-badge{display:block;padding:3px 8px;border-radius:12px;border:1px solid #ebdccb;background:#fffaf2f5;backdrop-filter:blur(6px);color:#5c4a3b;box-shadow:0 2px 10px #40302020;font-size:10px;font-weight:500;line-height:1.4;white-space:nowrap;pointer-events:none;opacity:1;transform:scale(1);transition:opacity .22s ease,transform .22s cubic-bezier(.2,.8,.2,1)}
+.food-distance-badge.is-zoom-hidden{opacity:0;transform:scale(0.85);pointer-events:none}
 @media(max-width:600px){.food-card{width:160px;max-width:160px}.food-card .food-photo{height:108px}.food-card strong{font-size:16px}.food-inline-popover{width:min(260px,calc(100% - 24px))}.food-popover-media{height:190px}.food-popover-heading strong{font-size:16px}.food-popover-save{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.food-inline-popover{transition:none}.food-popover-play:hover{transform:none}}
 

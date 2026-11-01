@@ -12,11 +12,17 @@ export class FoodRoutePreview{
   constructor(map,Marker,{loadNetwork,workerURL,onChange=()=>{}}={}){
     Object.assign(this,{map,Marker,onChange});this.labels=[];this.signature='';this.generation=0;this.phase='idle';this.mode='direct';this.total=0;this.count=0;this.missing=0;
     this.roadClient=new FoodRoadClient({loadNetwork,workerURL});
+    this.zoomThreshold=16.5;
+    map.on('zoom',()=>this.updateLabelVisibility());
   }
   clear(){
-    for(const label of this.labels)label.remove();this.labels=[];
+    for(const item of this.labels){(item.marker||item).remove();}this.labels=[];
     for(const id of ['food-direct-preview','food-road-preview'])this.map.getSource(id)?.setData({type:'FeatureCollection',features:[]});
     this.total=0;this.count=0;this.missing=0;this.roadPoints=[];
+  }
+  updateLabelVisibility(){
+    const hidden=this.map.getZoom()<this.zoomThreshold;
+    for(const {badge} of this.labels){if(badge)badge.classList.toggle('is-zoom-hidden',hidden);}
   }
   setLines(id,features,road=false){
     const data={type:'FeatureCollection',features};
@@ -31,7 +37,9 @@ export class FoodRoutePreview{
   addLabel(point,distance,road=false){
     const badge=document.createElement('span');badge.className='food-distance-badge';badge.textContent=(road?'沿路约 ':'直线约 ')+directDistanceText(distance);
     badge.setAttribute('aria-label',road?'沿道路约 '+directDistanceText(distance)+'，按步行参考估算，不含街区点到道路的短虚线连接':'两店直线距离约 '+directDistanceText(distance));
-    this.labels.push(new this.Marker({element:badge,anchor:'center',pitchAlignment:'viewport'}).setLngLat(point).addTo(this.map));
+    if(this.map.getZoom()<this.zoomThreshold)badge.classList.add('is-zoom-hidden');
+    const marker=new this.Marker({element:badge,anchor:'center',pitchAlignment:'viewport'}).setLngLat(point).addTo(this.map);
+    this.labels.push({badge,marker});
   }
   retry(){this.signature='';}
   update(records,enabled,mode='direct'){

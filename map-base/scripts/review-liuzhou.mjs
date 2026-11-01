@@ -180,6 +180,23 @@ async function main() {
     });
     check('Direct distance mode active with 3 saved stops', directStatus.savedCount === 3 && directStatus.caption.includes('直线约'), directStatus);
 
+    // Test distance badge zoom threshold (hidden when zoom < 16.5, visible when zoom >= 16.5)
+    await p.evaluate(() => window.foodCityMap.map.setZoom(15));
+    await p.waitForTimeout(300);
+    const badgesHiddenZoomedOut = await p.evaluate(() => {
+      const badges = Array.from(document.querySelectorAll('.food-distance-badge'));
+      return badges.length > 0 && badges.every(b => b.classList.contains('is-zoom-hidden'));
+    });
+    check('Distance badge auto-hides when zoomed out (< 16.5) to avoid obstructing icons', badgesHiddenZoomedOut);
+
+    await p.evaluate(() => window.foodCityMap.map.setZoom(17.5));
+    await p.waitForTimeout(300);
+    const badgesVisibleZoomedIn = await p.evaluate(() => {
+      const badges = Array.from(document.querySelectorAll('.food-distance-badge'));
+      return badges.length > 0 && badges.every(b => !b.classList.contains('is-zoom-hidden'));
+    });
+    check('Distance badge smoothly appears when zoomed in (>= 16.5) at street level', badgesVisibleZoomedIn);
+
     console.log('Switching to road distance mode...');
     await p.evaluate(() => window.foodCityMap.food.setRouteMode('road'));
     await p.waitForFunction(() => {
