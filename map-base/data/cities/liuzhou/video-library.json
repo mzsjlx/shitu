@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "city": "liuzhou",
+  "preparedOn": "2026-11-01",
+  "rights": {
+    "status": "user-confirmed",
+    "confirmedOn": "2026-11-01",
+    "scope": "经用户确认已获作者王祖蓝允许剪辑并在食途网站使用；保留原平台、原作者与原作品链接。",
+    "evidence": "本项目会话中的用户指令与确认；未独立审查授权文件。"
+  },
+  "sources": [
+    {
+      "id": "lz-wangzulan-7575112557141898601",
+      "author": "王祖蓝",
+      "title": "welcome to“柳”约！和我一起尝尝柳州的早市吧！",
+      "url": "https://www.douyin.com/video/7575112557141898601",
+      "shareURL": "https://v.douyin.com/HnEwoKc_E8M/",
+      "publishedOn": "2025-11-22",
+      "durationSeconds": 203.06,
+      "sourceSHA256": "0c2b283fea30e36d38eaa0005c9c3a75b180d51e4c3660a4c4a9cbd46c8549a1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "王祖蓝柳州青云民生市场探店视频，原片招牌清晰标注张记玉米汁（樵家巷9号）、现烤猪肉脯及老牌五色糯米饭。",
+      "segments": [
+        {
+          "id": "lz-wangzulan-zhangji",
+          "name": "张记玉米汁",
+          "category": "饮品 / 甜品",
+          "summary": "青云民生市场20年老字号现榨玉米汁，香浓顺滑、温热清甜，王祖蓝喝完直呼“太好喝了”。",
+          "addressText": "柳州市城中区中山西路樵家巷9号（青云民生市场内）",
+          "start": 48.0,
+          "end": 54.5,
+          "posterSecond": 49.5,
+          "coordinates": [
+            109.40585,
+            24.31438
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "青云民生市场 · 中山西路樵家巷入口",
+            "basis": "原片招牌文字标注‘中山西路樵家巷9号’，对应青云民生市场北侧樵家巷道入口。"
+          },
+          "routeEligible": false
+        },
+        {
+          "id": "lz-wangzulan-zhuoheji",
+          "name": "卓和记猪肉脯",
+          "category": "特色小吃 / 伴手礼",
+          "summary": "青云市场现烤厚切猪肉脯，现场炭火铁板烤制、香气浓郁，王祖蓝尝后连赞厚实好吃。",
+          "addressText": "柳州市城中区青云民生市场内（近中山西路入口通道）",
+          "start": 54.5,
+          "end": 65.5,
+          "posterSecond": 56.0,
+          "coordinates": [
+            109.40583,
+            24.31415
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "青云民生市场 · 樵家巷熟食区",
+            "basis": "紧邻玉米汁摊位南侧熟食通道，按原片步行顺序与青云市场现场商户布局确定。"
+          },
+          "routeEligible": false
+        },
+        {
+          "id": "lz-wangzulan-panjie",
+          "name": "青云老牌潘姐小吃",
+          "category": "特色小吃 / 糯米饭",
+          "summary": "青云市场招牌特色五色糯米饭，选用天然植物染色的彩色糯米，铺满腊肠、酸菜、肉松与炸腐竹等丰富配料，7元一大碗份量扎实。",
+          "addressText": "柳州市城中区青云民生市场内（樵家巷中段）",
+          "start": 93.0,
+          "end": 109.0,
+          "posterSecond": 94.0,
+          "coordinates": [
+            109.40581,
+            24.31380
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "青云民生市场 · 小吃排档区",
+            "basis": "青云老牌潘姐小吃摊位，位于青云民生市场樵家巷中段小吃区。"
+          },
+          "routeEligible": false
+        }
+      ]
+    }
+  ]
+}

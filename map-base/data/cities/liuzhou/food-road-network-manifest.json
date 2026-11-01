@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "liuzhou",
+  "bounds": [
+    109.35,
+    24.26,
+    109.47,
+    24.38
+  ],
+  "source": {
+    "date": "2026-10-28",
+    "sha256": "06fc19bffd1087a7395b2b7536c667312767df13157324bdf0e227b0c921e335",
+    "url": "https://build.protomaps.com/20261028.pmtiles",
+    "fileName": "liuzhou.pmtiles",
+    "attribution": "© OpenStreetMap contributors · Protomaps",
+    "license": "ODbL 1.0 Produced Work"
+  },
+  "networkSHA256": "2159332b556b72451f33d8020d47f66390eb186e3a0d6bc68b59a8fa1fef6153",
+  "bytes": 1219333,
+  "nodes": 22168,
+  "ways": 5032,
+  "footRestrictionWays": 0,
+  "topology": "Connected node topology extracted from local OSM/Protomaps archive.",
+  "profile": "Approximate walking reference: no motorways; connecting pedestrian and ordinary roads."
+}
