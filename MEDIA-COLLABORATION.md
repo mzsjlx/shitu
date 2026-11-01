@@ -4,6 +4,8 @@
 
 在 `map-base` 下，制作方可用 `npm.cmd run media:pack -- --city changsha --source 来源ID`；不带来源时打包所选城市已有原片的来源。接收方用 `npm.cmd run media:import -- 下载的ZIP路径` 自动识别来源所属城市，也可加 `--city changsha` 限定；错误城市会拒绝且不写文件。旧重庆包没有city字段，仍按来源身份和哈希识别。不同城的剪辑记录追加合并，重复同内容跳过、冲突保留。本次54包已在独立目录导入并验证，不改用户真实素材。
 
+## 历史素材批次（下列为当时状态，现有代码已合入main）
+
 **2026-10-30 第五批：** 3个来源、9段片段，需先取得第四批代码和素材，再取得第五批代码及 [第五批素材 Release](https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch5) 中3个来源包并按下文导入。具体包名、哈希和页面发布状态以 `map-base/data/media-bundles.json` 及 Release 页面为准。第五批依赖尚未合并的第四批，不应直接覆盖同学的增量。
 
 **2026-10-30第四批：** 对应代码 `codex/chongqing-video-batch4`，新增4个来源、24段视频；四个素材包及校验摘要已上传并核对远端哈希，下载入口为 [第四批素材 Release](https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch4)，以页面实际发布状态为准。已有前3批14包的电脑只需追加本批4包，取得对应代码后继续使用 `media:import` 命令。下文旧日期数字是当时记录。
@@ -14,9 +16,9 @@
 
 ## 第一次下载：先看到地图和美食图片
 
-**另一城市的 Agent 先读：** [完整交接手册](CITY-AGENT-HANDBOOK.md)和[开工指令](CITY-AGENT-STARTER.md)。本文命令目前针对已接通的全局重庆目录；新城市需先统一目录读取、校验、构建和城市隔离，不得直接把重庆清单替换成异城记录。原片/剪辑与小封面分开同步的原则继续适用。
+**另一城市的 Agent 先读：** [完整交接手册](CITY-AGENT-HANDBOOK.md)、[整合注意事项](CITY-INTEGRATION-NOTES.md)和[开工指令](CITY-AGENT-STARTER.md)。最新main已接通重庆与长沙；异城剪辑、封面、打包使用实际支持的 `--city`，导入自动识别来源城市。下文第三批等数字为历史批次，不得把重庆清单替换成异城记录。
 
-第三批合并前，先在维护者推送后取得 `codex/chongqing-video-batch3`；合并后再从 `main` 同步。已有工作区先提交或妥善保存自己的修改，不重置或覆盖同学的城市分支。本地还没有该分支时，在仓库根目录执行 `git fetch origin`、`git switch --track origin/codex/chongqing-video-batch3`；已有分支则切回并快进更新。随后进入 `map-base`，执行：
+新电脑取得最新main；已有城市工作区先保存修改，执行 `git fetch origin` 并在原分支合入最新 `origin/main`，不重置或覆盖同学的城市分支。随后进入 `map-base`，执行：
 
 ```powershell
 npm.cmd ci
@@ -24,7 +26,7 @@ npm.cmd run build
 npm.cmd run preview
 ```
 
-非 Windows 系统把 `npm.cmd` 换成 `npm`。预览默认打开美食地图。第三批分支带有扩展至北碚的底图、门店位置、来源、博主和93张原片封面；即使还没导入视频素材，也能看到地图上的美食缩略图。播放本地剪辑需要再完成下一步。只查看地图不需要 FFmpeg。
+非 Windows 系统把 `npm.cmd` 换成 `npm`。预览默认重庆，可在城市下拉切换长沙。代码带必要地图与两城小封面，未导入视频时仍可看缩略图、来源和地址；播放本地剪辑再完成下一步。只查看地图不需要FFmpeg。
 
 已克隆代码的电脑应先确认本批是否已合入 `main`，再快进更新对应分支并重新构建。不要为了同步覆盖本机尚未提交的新增素材目录或门店清单。
 
@@ -81,24 +83,24 @@ map-base/
 ## 你和同学新增视频时都用这个流程
 
 1. 先同步最新代码，在自己的 `codex/` 工作分支操作。添加前按原视频链接、来源 ID、店名、地址及分店检查是否重复。已有门店关联新片段，不再新建同一分店。
-2. 把授权使用的原片放入 `.local/video-intake/<来源ID>/source.mp4`，在 `data/video-library.json` 添加来源、作者、原链接、原片哈希、每店切点、封面时间及大致位置。来源 ID 保持唯一，已有 ID 不随意改名。
+2. 把授权原片放入 `.local/video-intake/<来源ID>/source.mp4`，在本城视频目录添加作者、原链接、原片哈希、切点、封面时间及位置：重庆保留 `data/video-library.json`，异城按配置使用 `data/cities/<cityId>/video-library.json`。来源ID全局唯一，已有ID不随意改名。
 
    同一分店已有地图点时，在新片段中设置 `placeId` 为已有主片段 ID（不带 `video-`）；主片段自身不变。店名、类别、坐标必须一致，校验器会拒绝错误归并。地图只显示一个点，浮窗提供不同博主的视频切换。未读到店名或街区的片段使用 `coordinates: null` 并填写 `addressNote`，先保留在视频库。记录真实 `publishedOn`；旧视频补充 `footageNote`，例如“2024年视频 · 营业情况待确认”。不要用现在的抓取日期代替视频发布日期。
 3. 剪辑新来源。FFmpeg、FFprobe 在 PATH 时直接运行以下命令；否则先设置 `FOODCITY_FFMPEG`、`FOODCITY_FFPROBE` 为本机程序路径。`--source` 后替换为目录中的实际来源 ID：
 
    ```powershell
-   node scripts/prepare-video-clips.mjs --source 你的来源ID
-   npm.cmd run media:posters
+   node scripts/prepare-video-clips.mjs --city 实际城市ID --source 你的来源ID
+   npm.cmd run media:posters -- --city 实际城市ID
    npm.cmd run build
    npm.cmd run preview
    ```
 
    按来源处理会保留其他来源的剪辑记录。检查视频、封面、博主、分店及大致位置是否对应；选两家检查连线。没有视频素材的电脑也要能显示封面。
-4. 提交代码、门店数据、`assets/video-posters/` 中的小封面和 `data/video-posters.json`，推送自己的分支并创建 PR。请在 PR 写清新增来源、门店、位置估算依据和验证情况。原片和 MP4 剪辑不提交到 Git 历史。
+4. 提交代码、门店数据、小封面和本城封面索引（重庆 `data/video-posters.json`，异城 `data/cities/<cityId>/video-posters.json`），推送分支并创建PR。写清来源、门店、位置依据及验证；原片和MP4不进Git。
 5. 为这次处理的来源打包：
 
    ```powershell
-   npm.cmd run media:pack -- --source 你的来源ID
+   npm.cmd run media:pack -- --city 实际城市ID --source 你的来源ID
    ```
 
    ZIP 和它的 `.zip.json` 校验摘要会生成在 `.local/media-bundles/`。包名包含来源 ID 和内容指纹，同一内容可重复识别。每个包只含该来源的原片、剪辑、封面和导入清单。
