@@ -3,11 +3,14 @@ import {spawn} from 'node:child_process';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {validateVideoLibrary} from '../src/video-library-model.js';
+import {loadCityCatalog} from './city-catalogs.mjs';
 import {digest,mediaKey,mediaNames} from './video-library-common.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const data=validateVideoLibrary(JSON.parse(await readFile(path.join(root,'data/video-library.json'),'utf8')));
+const cityOption=process.argv.indexOf('--city'),cityId=cityOption>=0?process.argv[cityOption+1]:null;
+const context=await loadCityCatalog(root,cityId||'chongqing'),catalogPath=path.join(root,context.relative);
+const data=context.catalog;
 const ffmpeg=process.env.FOODCITY_FFMPEG||'ffmpeg',ffprobe=process.env.FOODCITY_FFPROBE||'ffprobe';
-function run(command,args){return new Promise((resolve,reject)=>{const child=spawn(command,args,{windowsHide:true,stdio:['ignore','pipe','pipe']});let out='',err='';child.stdout.on('data',b=>out+=b);child.stderr.on('data',b=>err+=b);child.once('error',reject);child.once('exit',code=>code===0?resolve(out):reject(new Error(`${command} exited ${code}: ${err.slice(-2500)}`)));});}
+function run(command,args){return new Promise((resolve,reject)=>{const child=spawn(command,args,{windowsHide:true,stdio:['ignore','pipe','pipe']});let out='',err='';child.stdout.on('data',b=>out+=b);child.stderr.on('data',b=>err+=b);child.once('error',reject);child.once('close',code=>code===0?resolve(out):reject(new Error(`${command} exited ${code}: ${err.slice(-2500)}`)));});}
 const option=process.argv.indexOf('--source'),sourceId=option>=0?process.argv[option+1]:null;
 if(option>=0&&!data.sources.some(s=>s.id===sourceId))throw new Error('未找到这个来源ID');
 // A separate ledger permits independent sources to be encoded concurrently.
@@ -17,7 +20,7 @@ const reportPath=path.resolve(root,reportOption>=0?process.argv[reportOption+1]:
 if(!reportPath.startsWith(path.join(root,'.local/video-clips')+path.sep))throw new Error('剪辑记录必须保存在 .local/video-clips 内');
 await mkdir(path.dirname(reportPath),{recursive:true});
 let existing={records:[]};try{existing=JSON.parse(await readFile(reportPath,'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
-const report={schemaVersion:1,preparedAt:new Date().toISOString(),catalogSHA256:digest(await readFile(path.join(root,'data/video-library.json'))),mediaUploaded:false,records:existing.records||[],missingSources:[]};
+const report={schemaVersion:1,preparedAt:new Date().toISOString(),catalogSHA256:digest(await readFile(catalogPath)),mediaUploaded:false,records:existing.records||[],missingSources:[]};
 for(const source of data.sources.filter(source=>!sourceId||source.id===sourceId)){
   if(!source.segments.length)continue;
   const input=path.join(root,'.local/video-intake',source.id,'source.mp4');

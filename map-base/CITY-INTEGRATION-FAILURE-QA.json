@@ -1,0 +1,23 @@
+{
+  "verifiedOn": "2026-11-01",
+  "scope": "Isolated HTTP failure injection and audio lifecycle; no user data modified.",
+  "checks": [
+    {
+      "name": "Failed Changsha catalog stays an error without fallback to Chongqing",
+      "passed": true
+    },
+    {
+      "name": "Changing author pauses and unloads the old video",
+      "passed": true
+    },
+    {
+      "name": "A road network from another city is rejected",
+      "passed": true
+    },
+    {
+      "name": "Road failure can be retried with the correct city data",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
