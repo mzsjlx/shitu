@@ -1,0 +1,63 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "New-source identities, reviewed ranges, explicit same-store merges, original cover bytes and independently retained approximate open-map references; not full listening or current-business verification.",
+  "counts": {
+    "sources": 15,
+    "clips": 93,
+    "mapPoints": 60
+  },
+  "checks": [
+    {
+      "name": "The four supplied works preserve stable URLs, authorization dates and original hashes",
+      "passed": true
+    },
+    {
+      "name": "All pre-existing sources and their 38 segments are preserved without edits",
+      "passed": true
+    },
+    {
+      "name": "The registered single-venue ranges and cover seconds match the reviewed intake",
+      "passed": true,
+      "details": {
+        "newClips": 55
+      }
+    },
+    {
+      "name": "Matched dumpling shop has one point and two independent creator clips",
+      "passed": true
+    },
+    {
+      "name": "Zhu Er retains one point and all three creators",
+      "passed": true
+    },
+    {
+      "name": "Uncertain same-name Cai Ji and same-brand hotpot are not forced into one branch",
+      "passed": true
+    },
+    {
+      "name": "Every new placed clip uses a retained open object inside expanded coverage",
+      "passed": true,
+      "details": {
+        "placedClips": 31,
+        "retainedObjects": 19
+      }
+    },
+    {
+      "name": "Unlocated clips remain available as evidence rather than fabricated coordinates",
+      "passed": true
+    },
+    {
+      "name": "PP 2025 footage keeps the historical date and business-status caveat",
+      "passed": true
+    },
+    {
+      "name": "Every new cover is a present, frozen local original-video image",
+      "passed": true
+    },
+    {
+      "name": "Planning review IDs stay unique after incremental adoption",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

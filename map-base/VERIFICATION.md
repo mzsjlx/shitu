@@ -1,5 +1,29 @@
 # 真实地图底座验证
 
+## 2026-10-30 第三批4条视频、北碚地图及手机横屏
+
+本批实际裁切55段，连同旧38段共93段、93张原片封面、60个唯一地图点；新增24段及旧5段未定位，仍可在视频库播放。只处理四条用户提供且已确认授权的作品。原片和剪辑哈希、切点、音轨与原始横竖画幅保留；小洋甜品依209秒明确转店字幕单拆，凯子按实际保存版本11块处理，不按13家标题补造。PP2025年份保留。
+
+| 报告 | 本轮实际范围与结果 |
+| --- | --- |
+| `VIDEO-BATCH3-DATA-QA.json` | 11项：4作品身份/授权/切点、旧38段逐源不变、朱儿三博主与一口汤饺双博主归并、待补不造点、候选参照和封面文件哈希 |
+| `VIDEO-BATCH3-MEDIA-QA.json` | 202项：93段媒体身份/哈希、14份本机原片哈希与画幅、H.264/AAC及时长、隔离无素材构建 |
+| `VIDEO-BATCH3-UI-QA.json` | 378项：55段实际浏览器首帧解码、每新来源真实播放前进、旧音轨卸载、同店切换、四尺寸浮窗/比例、年份/资料页/深链接和无外站预取 |
+| `VIDEO-BATCH3-MAP-QA.json` | 10月29日9项：1134张z15覆盖、旧399张瓦片逐张字节保留、北碚道路与楼体、189张地形及旧110张哈希、搜索和网络同范围 |
+| `VIDEO-BATCH3-ANCHOR-SOURCE-QA.json` | 直接读冻结PBF，19个参照对象/225个原节点、完整标签/几何/节点顺序及代表坐标全部相符；另验证篡改几何与均值仍会被源核查拒绝 |
+| `FOOD-ROAD-SOURCE-BATCH3-QA.json` | 10月29日直接读PBF，全236091节点、36131条way的ID/坐标/顺序/保留标签相符 |
+| `FOOD-ROAD-BATCH3-DATA-QA.json` | 21项：拓扑/通行/缺节点/桥隧规则、60个点吸附、原6对实际路线独立求和；223898个可用源线段 |
+| `FOOD-ROAD-BATCH3-UI-QA.json` | 20项旧功能实际重跑：直线/沿路、重排/刷新、390/320/短横屏、失败重试/部分断路/过期任务、HTTP单文件 |
+| `VIDEO-BATCH3-BEIBEI-UI-QA.json` | 6项：北碚深链接、真实视频播放、直线265.9米/沿路461.4米、20个道路坐标与手机适配，无页面错误 |
+| `VIDEO-BATCH3-IMPORT-QA.json` | 7项：4个实际ZIP在隔离目录导入，共55段；包括988 MB包的体积预算、重复导入无写入、冲突被拒绝并保留原内容 |
+| `VIDEO-BATCH3-CODE-ONLY-QA.json` | 隔离目录无原片/MP4时，构建仍生成93张有效本地封面、0个可播放片段，未假装本机有视频 |
+
+首次UI报告的真实失败（裸选择器重复数到卡片和内部按钮、736×414浮窗越底）保存在本机 `.local/batch3-ui-initial.json`。修复后按真实 `.food-card` 与记录数同时检查一店一点；浮窗按可见地图高度约束，横屏330高，其中视频220高，详情与按钮可达。原始四尺寸和独立34项小回归均已实际执行并查看截图；最终全量报告以上表为准。截图位于 `output/playwright/video-batch3-*.png`，其中北碚道路与390手机、736横屏图已查看。测试使用新建浏览器上下文，未操作用户收藏。
+
+复现命令在 `map-base/` 中：`node scripts/review-video-batch3-data.mjs`、`node scripts/review-video-library-data.mjs --report VIDEO-BATCH3-MEDIA-QA.json`、`node scripts/review-food-road-network.mjs --report FOOD-ROAD-BATCH3-DATA-QA.json`。PBF参照检查用已有Python/osmium运行 `scripts/review-video-batch3-anchor-source.py --verified-on 2026-10-30`。浏览器使用Playwright CLI的 `run-code --filename scripts/review-video-batch3.js`；沿路回归沿用 `scripts/review-food-road-distance.js` 实际执行，仅在本机副本使用本轮日期和独立截图名。媒体/原始源检查需要本机对应素材，不将旧报告当新执行结果。
+
+限制：首帧解码、抽帧与短时播放前进不是整片逐句听校；模拟手机不是实机；候选街区不是确认分店/入口/当前营业。来源时点、候选地址、素材取得、实际剪辑、地图接入及公开发布分别记载。运行版本仍是重庆局部、本地预览，未发布网站或接通柳州。
+
 ## 2026-10-28 新增8条视频、同店切换与扩展底图
 
 本轮7份检查记录共273项通过：`VIDEO-BATCH2-DATA-QA.json`（11）、`VIDEO-LIBRARY-MEDIA-QA.json`（88）、`VIDEO-LIBRARY-UI-QA.json`（115）、`VIDEO-FOOD-MAP-QA.json`（14）、`VIDEO-BATCH2-UI-QA.json`（15）、`MEDIA-COLLABORATION-QA.json`（24）、`VIDEO-CODE-ONLY-UI-QA.json`（6）。涵盖38段本机解码、原片/成片哈希与音画画幅/时长、31个唯一地图点、同店双博主停止旧音轨、旧片年份、5段未知位置保留、手机浮窗媒体比例、隔离无媒体构建与两批10包真实导入/幂等/冲突保留。未修改用户浏览器的想去清单。

@@ -1,0 +1,50 @@
+{
+  "verifiedOn": "2026-10-30",
+  "checks": [
+    {
+      "name": "Northern deep link focuses the real expanded map",
+      "passed": true
+    },
+    {
+      "name": "Beibei original clip actually plays in the map popup",
+      "passed": true
+    },
+    {
+      "name": "Two Beibei stops compute an actual source-road route",
+      "passed": true,
+      "detail": {
+        "direct": {
+          "mode": "direct",
+          "phase": "ready",
+          "total": 265.8853446505888,
+          "count": 1,
+          "missing": 0
+        },
+        "road": {
+          "mode": "road",
+          "phase": "ready",
+          "total": 461.35766187175267,
+          "count": 1,
+          "missing": 0
+        }
+      }
+    },
+    {
+      "name": "Northern road geometry uses multiple source coordinates",
+      "passed": true,
+      "detail": [
+        20
+      ]
+    },
+    {
+      "name": "Northern route remains available on the mobile viewport",
+      "passed": true
+    },
+    {
+      "name": "No page runtime errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passed": true
+}

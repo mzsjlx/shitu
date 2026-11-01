@@ -4,41 +4,41 @@
   "source": "Protomaps / OpenStreetMap",
   "scope": "Configured central-urban cutout, not the whole Chongqing municipality",
   "bounds": [
-    106.43,
+    106.36,
     29.48,
     106.65,
-    29.65
+    29.87
   ],
   "sourceZoom": 15,
-  "archiveBytes": 6866529,
+  "archiveBytes": 10897305,
   "archiveHeader": {
     "minZoom": 0,
     "maxZoom": 15,
     "bounds": [
-      106.43,
+      106.36,
       29.48,
       106.65,
-      29.65
+      29.87
     ]
   },
   "osmReplicationTime": "2026-10-27T04:00:00Z",
   "counters": {
-    "requestedTiles": 399,
-    "presentTiles": 399,
-    "roadLineFragments": 8344,
-    "namedRoadLineFragments": 4422,
-    "unnamedRoadLineFragments": 3922,
-    "nonRoadTransportFragmentsExcluded": 1094,
-    "buildingPolygonFragments": 9159,
-    "buildingFragmentsWithPositiveHeight": 1278,
-    "buildingFragmentsWithoutPositiveHeight": 7881,
-    "namedRoadGroups": 1440
+    "requestedTiles": 1134,
+    "presentTiles": 1134,
+    "roadLineFragments": 15416,
+    "namedRoadLineFragments": 8008,
+    "unnamedRoadLineFragments": 7408,
+    "nonRoadTransportFragmentsExcluded": 2142,
+    "buildingPolygonFragments": 16086,
+    "buildingFragmentsWithPositiveHeight": 2279,
+    "buildingFragmentsWithoutPositiveHeight": 13807,
+    "namedRoadGroups": 2434
   },
   "roadClassCounts": {
-    "minor_road": 1918,
-    "major_road": 4807,
-    "path": 1310,
-    "highway": 309
+    "major_road": 9215,
+    "minor_road": 3655,
+    "path": 1871,
+    "highway": 675
   },
   "checks": {
     "finiteAndClippedSearchBoundsAndAnchors": true,

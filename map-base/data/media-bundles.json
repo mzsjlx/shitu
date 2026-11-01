@@ -82,9 +82,41 @@
       "sha256": "87f81f1c102ae177c12f02a763ef8e6431d64a3868ff2505270c20cbef691a0e",
       "clips": 1,
       "url": "https://github.com/mzsjlx/shitu/releases/download/untagged-c32b82be92bbbc8680d9/shitu-media-manbei-b51e48d04f520de9.zip"
+    },
+    {
+      "sourceId": "cq-xiaoyang-7602232743804036730",
+      "name": "shitu-media-cq-xiaoyang-7602232743804036730-627dbdf493734aac.zip",
+      "bytes": 232973708,
+      "sha256": "98fb3e56a53a591b8ed61c3878c557f839045db4e9a33e0715201a23b458c562",
+      "clips": 6,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-10-30-batch3/shitu-media-cq-xiaoyang-7602232743804036730-627dbdf493734aac.zip"
+    },
+    {
+      "sourceId": "cq-lanmei-7692311805913784713",
+      "name": "shitu-media-cq-lanmei-7692311805913784713-a89b00a4307a7887.zip",
+      "bytes": 234604053,
+      "sha256": "86c0543bbcfc9418cb5058643c0fe029b0377000d2cfc9739caa37c6cb759ff3",
+      "clips": 6,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-10-30-batch3/shitu-media-cq-lanmei-7692311805913784713-a89b00a4307a7887.zip"
+    },
+    {
+      "sourceId": "cq-kaizi-7666393424492268852",
+      "name": "shitu-media-cq-kaizi-7666393424492268852-7b6fd7df03068369.zip",
+      "bytes": 988009632,
+      "sha256": "b61b25f032ad6d6b0a216552eef100b28750027321ee7094e98f6fb5268e0eb6",
+      "clips": 11,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-10-30-batch3/shitu-media-cq-kaizi-7666393424492268852-7b6fd7df03068369.zip"
+    },
+    {
+      "sourceId": "cq-pp-7583215165723266354",
+      "name": "shitu-media-cq-pp-7583215165723266354-cd3f275e1811813e.zip",
+      "bytes": 541646892,
+      "sha256": "d1838108c4db5e28d555ad3fa2f6e7e71b317880de8cbd20e2ad6a800f223855",
+      "clips": 32,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-10-30-batch3/shitu-media-cq-pp-7583215165723266354-cd3f275e1811813e.zip"
     }
   ],
-  "latestRelease": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-28-batch2",
+  "latestRelease": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch3",
   "releases": [
     {
       "tag": "media-2026-10-28",
@@ -93,6 +125,10 @@
     {
       "tag": "media-2026-10-28-batch2",
       "url": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-28-batch2"
+    },
+    {
+      "tag": "media-2026-10-30-batch3",
+      "url": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch3"
     }
   ]
 }

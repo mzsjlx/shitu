@@ -1,0 +1,4284 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "Isolated local Chromium: every new clip decodes, one muted advancing playback per source, media cleanup, same-store creator switches, responsive geometry and generated pages. No external platform playback or geographic verification.",
+  "checks": [
+    {
+      "name": "All four supplied works are present with actual segments",
+      "passed": true,
+      "detail": [
+        {
+          "id": "cq-xiaoyang-7602232743804036730",
+          "author": "小洋嘎嘣脆",
+          "segments": 6
+        },
+        {
+          "id": "cq-lanmei-7692311805913784713",
+          "author": "一颗蓝莓",
+          "segments": 6
+        },
+        {
+          "id": "cq-kaizi-7666393424492268852",
+          "author": "一支凯子",
+          "segments": 11
+        },
+        {
+          "id": "cq-pp-7583215165723266354",
+          "author": "PP超能炫",
+          "segments": 32
+        }
+      ]
+    },
+    {
+      "name": "Every new segment has a built local clip and poster",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Library counts reflect the full current JSON",
+      "passed": true,
+      "detail": "93 个本地片段 · 29 段位置待补"
+    },
+    {
+      "name": "cq-xiaoyang-7602232743804036730 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-wanza selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "xiaoyang-wanza decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 64.8,
+        "width": 720,
+        "height": 1280,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-wanza-b19a33ec08156aa7.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 64.8
+      }
+    },
+    {
+      "name": "xiaoyang-wanza keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-7602232743804036730 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.127537,
+        "muted": true
+      }
+    },
+    {
+      "name": "xiaoyang-wanza stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-linmeimei selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "xiaoyang-linmeimei decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 66.1,
+        "width": 720,
+        "height": 1280,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-linmeimei-b567dab951d62235.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 66.1
+      }
+    },
+    {
+      "name": "xiaoyang-linmeimei keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-xiangyuan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "xiaoyang-xiangyuan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 69.6,
+        "width": 720,
+        "height": 1280,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-xiangyuan-d5d54b055cacbdfc.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 69.6
+      }
+    },
+    {
+      "name": "xiaoyang-xiangyuan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-xiangyuan stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-tianpin selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "xiaoyang-tianpin decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 26.766667,
+        "width": 720,
+        "height": 1280,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-tianpin-09ac3511660ec441.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 26.766667000000012
+      }
+    },
+    {
+      "name": "xiaoyang-tianpin keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-tianpin stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-douhuaniurou selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "xiaoyang-douhuaniurou decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 56.866667,
+        "width": 720,
+        "height": 1280,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-douhuaniurou-666e7e15a0d08bfd.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 56.86666700000001
+      }
+    },
+    {
+      "name": "xiaoyang-douhuaniurou keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-douhuaniurou stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-shaokao selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "xiaoyang-shaokao decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 75.366667,
+        "width": 720,
+        "height": 1280,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-shaokao-3e71c9375b0f0a11.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 75.36634099999998
+      }
+    },
+    {
+      "name": "xiaoyang-shaokao keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-shaokao stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "Changing to cq-lanmei-7692311805913784713 pauses and unloads the previous source",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-lanmei-7692311805913784713 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "lanmei-wanza selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "lanmei-wanza decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 10.066667,
+        "width": 1920,
+        "height": 3414,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-wanza-9c647d1d89cb0bc3.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 10.066665999999998
+      }
+    },
+    {
+      "name": "lanmei-wanza keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-lanmei-7692311805913784713 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.124001,
+        "muted": true
+      }
+    },
+    {
+      "name": "lanmei-wanza stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "lanmei-shaomai selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "lanmei-shaomai decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 10.116667,
+        "width": 1920,
+        "height": 3414,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-shaomai-abdbead931a3cab8.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 10.116667000000003
+      }
+    },
+    {
+      "name": "lanmei-shaomai keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "lanmei-shaomai stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "lanmei-xidajiang selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "lanmei-xidajiang decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 26.983008,
+        "width": 1920,
+        "height": 3414,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-xidajiang-0c8347b13835189b.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 26.983333000000002
+      }
+    },
+    {
+      "name": "lanmei-xidajiang keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "lanmei-xidajiang stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "lanmei-zhengcai selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "lanmei-zhengcai decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 9.5,
+        "width": 1920,
+        "height": 3414,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-zhengcai-56d60ba5d5b33b35.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 9.499999999999993
+      }
+    },
+    {
+      "name": "lanmei-zhengcai keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "lanmei-zhengcai stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yikou selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "lanmei-yikou decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 10.466667,
+        "width": 1920,
+        "height": 3414,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-yikou-7adcfc4f3d476e73.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 10.466667000000001
+      }
+    },
+    {
+      "name": "lanmei-yikou keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yuanma selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "lanmei-yuanma decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 11.133333,
+        "width": 1920,
+        "height": 3414,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-yuanma-12056751f5ef9e71.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 11.133333000000007
+      }
+    },
+    {
+      "name": "lanmei-yuanma keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yuanma stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "Changing to cq-kaizi-7666393424492268852 pauses and unloads the previous source",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-7666393424492268852 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hulake selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-hulake decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 15.566667,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-hulake-835c5d676b1f45d2.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 15.566666000000001
+      }
+    },
+    {
+      "name": "cq-kaizi-hulake keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-7666393424492268852 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.125803,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 17.766667,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-yikoutangjiao-fb39bd32e22dd814.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 17.766667
+      }
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-yangheshaomai selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-yangheshaomai decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 17.1,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-yangheshaomai-ef7266d2193d789c.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 17.099999999999994
+      }
+    },
+    {
+      "name": "cq-kaizi-yangheshaomai keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-xinyiniurou selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-xinyiniurou decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 44.8,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-xinyiniurou-6adb611ae7cc88ef.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 44.8
+      }
+    },
+    {
+      "name": "cq-kaizi-xinyiniurou keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-zhuer selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-zhuer decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 14.533333,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 14.533332999999999
+      }
+    },
+    {
+      "name": "cq-kaizi-zhuer keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-xiangyaju selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-xiangyaju decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 18.95,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-xiangyaju-a34aa4023ec71379.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 18.950000000000017
+      }
+    },
+    {
+      "name": "cq-kaizi-xiangyaju keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hill-bbq selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-hill-bbq decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 3.95,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-hill-bbq-765cc41c0c90a535.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 3.9499999999999886
+      }
+    },
+    {
+      "name": "cq-kaizi-hill-bbq keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hill-bbq stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-wuming-tihua selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-wuming-tihua decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 16.283008,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-wuming-tihua-3bf845eedba8c615.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 16.283333999999996
+      }
+    },
+    {
+      "name": "cq-kaizi-wuming-tihua keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-wuming-tihua stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-gumufeng selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-gumufeng decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 68.65,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-gumufeng-bc062006cf0a2506.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 68.65
+      }
+    },
+    {
+      "name": "cq-kaizi-gumufeng keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-caijibaozi selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-caijibaozi decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 21.25,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-caijibaozi-c6a363829ed33193.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 21.25
+      }
+    },
+    {
+      "name": "cq-kaizi-caijibaozi keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-caijibaozi stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-bai-chaoshou selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-bai-chaoshou decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 16.372993,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-bai-chaoshou-2904df76a5df07a2.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 16.373332999999974
+      }
+    },
+    {
+      "name": "cq-kaizi-bai-chaoshou keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "Changing to cq-pp-7583215165723266354 pauses and unloads the previous source",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 74.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 74.5
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.129931,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhoushi selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhoushi decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 21.3,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-zhoushi-9ae04ce314e8ec17.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 21.299999999999997
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhoushi keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhoushi preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baomian selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baomian decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 25.1,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-baomian-84e979171fadd329.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 25.10000000000001
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baomian keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baomian preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-konger selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-konger decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 121.8,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-konger-43817661f12a1e55.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 121.79999999999998
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-konger keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-konger preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-limixian selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-limixian decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 39,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-limixian-8b08613bb57e01f2.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 39
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-limixian keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-limixian stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-limixian preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-liaoji selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-liaoji decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 8.2,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-liaoji-f40977f7b6f7d001.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 8.199999999999989
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-liaoji keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-liaoji preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-qixing-hotpot selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-qixing-hotpot decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 137.9,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-qixing-hotpot-456497262bf34cfe.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 137.90000000000003
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-qixing-hotpot keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-qixing-hotpot stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-qixing-hotpot preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-bingdouhua selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-bingdouhua decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 4.1,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-bingdouhua-ab3e2df532db1f44.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 4.099999999999966
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-bingdouhua keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-bingdouhua stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-bingdouhua preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-huangjia selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-huangjia decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 26.8,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-huangjia-0c9e190151d7c01e.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 26.80000000000001
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-huangjia keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-huangjia preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-renyi selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-renyi decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 34.6,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-renyi-f69044e53a4887bf.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 34.60000000000002
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-renyi keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-renyi preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-miaoshifu selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-miaoshifu decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 6.8,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-miaoshifu-dc059feded6461b3.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 6.800000000000011
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-miaoshifu keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-miaoshifu preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-luoerwa selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-luoerwa decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 20.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-luoerwa-756f11c50dfad787.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 20.5
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-luoerwa keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-luoerwa preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangshi selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangshi decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 24.9,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-yangshi-634edcab8d84b9dd.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 24.899999999999977
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangshi keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangshi preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangfen selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangfen decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 25.2,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-yangfen-d82a130398ff779b.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 25.200000000000045
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangfen keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangfen preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-tangyuan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-tangyuan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 15,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-tangyuan-f99bd8421650747f.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 15
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-tangyuan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-tangyuan preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-xinzhu selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-xinzhu decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 14.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-xinzhu-3a55c849f718fb44.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 14.5
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-xinzhu keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-xinzhu preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lidouhua selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lidouhua decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 19.1,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-lidouhua-75116724f73f67fa.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 19.09999999999991
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lidouhua keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lidouhua preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lvdousu selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lvdousu decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 8.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-lvdousu-ecfc40ab2df3b1fc.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 8.5
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lvdousu keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lvdousu preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-longyi selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-longyi decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 43.7,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-longyi-e1d560cbf055c428.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 43.700000000000045
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-longyi keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-longyi stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-longyi preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhengfa selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhengfa decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 30,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-zhengfa-a32f1714ff46d33d.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 30
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhengfa keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhengfa stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhengfa preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-ganguo selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-ganguo decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 30.8,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-ganguo-438d2d3405252765.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 30.799999999999955
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-ganguo keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-ganguo stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-ganguo preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuanji selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuanji decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 15.2,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-yuanji-e301f230449d71e6.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 15.200000000000045
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuanji keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuanji stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuanji preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jinli selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jinli decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 22.2,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-jinli-52436205edcf996a.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 22.200000000000045
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jinli keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jinli preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baixin selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baixin decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 16.9,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-baixin-256fc0c03bbb020d.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 16.899999999999977
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baixin keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baixin preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-shuguang selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-shuguang decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 30.1,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-shuguang-bc141c95e31c4569.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 30.100000000000023
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-shuguang keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-shuguang preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-nawan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-nawan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 25.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-nawan-e65fc98611f5cebf.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 25.5
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-nawan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-nawan stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-nawan preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuqingnian selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuqingnian decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 37.2,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-yuqingnian-1019a8670273f8c8.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 37.19999999999993
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuqingnian keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuqingnian preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zengbin selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zengbin decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 23.4,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-zengbin-b36ff59009446a48.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 23.399999999999977
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zengbin keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zengbin preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lichaoshou selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lichaoshou decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 16.2,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-lichaoshou-8ce44e8d193a6bb6.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 16.200000000000045
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lichaoshou keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lichaoshou stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lichaoshou preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jidong selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jidong decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 26.7,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-jidong-eb0c33faf13f036f.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 26.700000000000045
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jidong keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jidong stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jidong preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-dianjiang selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-dianjiang decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 26.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-dianjiang-e56e9d3b9d5d4ffe.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 26.5
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-dianjiang keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-dianjiang stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-dianjiang preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-hongyu selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-hongyu decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 24.3,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-hongyu-ed221d12ac0abd1a.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 24.299999999999955
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-hongyu keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-hongyu preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-12-13",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "Library before close really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.125171,
+        "muted": true
+      }
+    },
+    {
+      "name": "Closing library unloads active video",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "Library is closed after the close control",
+      "passed": true
+    },
+    {
+      "name": "Distinct located places have one marker each",
+      "passed": true,
+      "detail": {
+        "expected": 60,
+        "actual": 60
+      }
+    },
+    {
+      "name": "New same-store creator matches were found dynamically",
+      "passed": true,
+      "detail": [
+        {
+          "id": "jiankang-zhuer",
+          "clips": [
+            "jiankang-zhuer",
+            "bailong-zhuer",
+            "cq-kaizi-zhuer"
+          ]
+        },
+        {
+          "id": "cq-kaizi-yikoutangjiao",
+          "clips": [
+            "lanmei-yikou",
+            "cq-kaizi-yikoutangjiao"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "jiankang-zhuer keeps all creator choices at one marker",
+      "passed": true,
+      "detail": {
+        "markerCount": 1,
+        "recordCount": 1,
+        "choiceCount": 3,
+        "expectedChoices": 3
+      }
+    },
+    {
+      "name": "cq-kaizi-zhuer decodes on shared popup",
+      "passed": true,
+      "detail": {
+        "duration": 14.533333,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 14.533332999999999
+      }
+    },
+    {
+      "name": "jiankang-zhuer first creator really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.127843,
+        "muted": true
+      }
+    },
+    {
+      "name": "jiankang-zhuer creator switch stops and unloads the prior audio",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "jiankang-zhuer switches attribution and original work with the clip",
+      "passed": true
+    },
+    {
+      "name": "jiankang-zhuer decodes on shared popup",
+      "passed": true,
+      "detail": {
+        "duration": 54.9,
+        "width": 720,
+        "height": 1280,
+        "readyState": 4,
+        "currentTime": 0.01127,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-zhuer-3d9c59e40652c8b6.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 54.900000000000006
+      }
+    },
+    {
+      "name": "jiankang-zhuer second creator really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.141859,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao keeps all creator choices at one marker",
+      "passed": true,
+      "detail": {
+        "markerCount": 1,
+        "recordCount": 1,
+        "choiceCount": 2,
+        "expectedChoices": 2
+      }
+    },
+    {
+      "name": "lanmei-yikou decodes on shared popup",
+      "passed": true,
+      "detail": {
+        "duration": 10.466667,
+        "width": 1920,
+        "height": 3414,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-yikou-7adcfc4f3d476e73.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 10.466667000000001
+      }
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao first creator really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.129456,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao creator switch stops and unloads the prior audio",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao switches attribution and original work with the clip",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao decodes on shared popup",
+      "passed": true,
+      "detail": {
+        "duration": 17.766667,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-yikoutangjiao-fb39bd32e22dd814.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 17.766667
+      }
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao second creator really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.12876,
+        "muted": true
+      }
+    },
+    {
+      "name": "At least one new located clip is available for popup checks",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-zhuer decodes on popup 1440",
+      "passed": true,
+      "detail": {
+        "duration": 14.533333,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 14.533332999999999
+      }
+    },
+    {
+      "name": "shared popup fits 1440x960",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 827,
+          "right": 1137,
+          "top": 356.90625,
+          "bottom": 753.40625,
+          "width": 310,
+          "height": 396.5
+        },
+        "media": {
+          "left": 834,
+          "right": 1130,
+          "top": 363.90625,
+          "bottom": 633.90625,
+          "width": 296,
+          "height": 270
+        },
+        "video": {
+          "left": 834,
+          "right": 1130,
+          "top": 363.90625,
+          "bottom": 633.90625,
+          "width": 296,
+          "height": 270
+        },
+        "pageWidth": 1440,
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        }
+      }
+    },
+    {
+      "name": "shared media occupies at least two-thirds at 1440x960",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 827,
+          "right": 1137,
+          "top": 356.90625,
+          "bottom": 753.40625,
+          "width": 310,
+          "height": 396.5
+        },
+        "media": {
+          "left": 834,
+          "right": 1130,
+          "top": 363.90625,
+          "bottom": 633.90625,
+          "width": 296,
+          "height": 270
+        },
+        "video": {
+          "left": 834,
+          "right": 1130,
+          "top": 363.90625,
+          "bottom": 633.90625,
+          "width": 296,
+          "height": 270
+        },
+        "pageWidth": 1440,
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "mediaHeightRatio": 0.6809583858764187
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji decodes on popup 1440",
+      "passed": true,
+      "detail": {
+        "duration": 74.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0.010459,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 74.5
+      }
+    },
+    {
+      "name": "pp-2025 popup fits 1440x960",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 756,
+          "right": 1066,
+          "top": 544,
+          "bottom": 887.5,
+          "width": 310,
+          "height": 343.5
+        },
+        "media": {
+          "left": 763,
+          "right": 1059,
+          "top": 551,
+          "bottom": 801,
+          "width": 296,
+          "height": 250
+        },
+        "video": {
+          "left": 763,
+          "right": 1059,
+          "top": 551,
+          "bottom": 801,
+          "width": 296,
+          "height": 250
+        },
+        "pageWidth": 1440,
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        }
+      }
+    },
+    {
+      "name": "pp-2025 media occupies at least two-thirds at 1440x960",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 756,
+          "right": 1066,
+          "top": 544,
+          "bottom": 887.5,
+          "width": 310,
+          "height": 343.5
+        },
+        "media": {
+          "left": 763,
+          "right": 1059,
+          "top": 551,
+          "bottom": 801,
+          "width": 296,
+          "height": 250
+        },
+        "video": {
+          "left": 763,
+          "right": 1059,
+          "top": 551,
+          "bottom": 801,
+          "width": 296,
+          "height": 250
+        },
+        "pageWidth": 1440,
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "mediaHeightRatio": 0.727802037845706
+      }
+    },
+    {
+      "name": "cq-kaizi-zhuer decodes on popup 390",
+      "passed": true,
+      "detail": {
+        "duration": 14.533333,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0.016482,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 14.533332999999999
+      }
+    },
+    {
+      "name": "shared popup fits 390x844",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 12,
+          "right": 272,
+          "top": 76,
+          "bottom": 470,
+          "width": 260,
+          "height": 394
+        },
+        "media": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 353,
+          "width": 246,
+          "height": 270
+        },
+        "video": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 353,
+          "width": 246,
+          "height": 270
+        },
+        "pageWidth": 390,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "name": "shared media occupies at least two-thirds at 390x844",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 12,
+          "right": 272,
+          "top": 76,
+          "bottom": 470,
+          "width": 260,
+          "height": 394
+        },
+        "media": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 353,
+          "width": 246,
+          "height": 270
+        },
+        "video": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 353,
+          "width": 246,
+          "height": 270
+        },
+        "pageWidth": 390,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "mediaHeightRatio": 0.6852791878172588
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji decodes on popup 390",
+      "passed": true,
+      "detail": {
+        "duration": 74.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0.003443,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 74.5
+      }
+    },
+    {
+      "name": "pp-2025 popup fits 390x844",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 12,
+          "right": 272,
+          "top": 112,
+          "bottom": 474,
+          "width": 260,
+          "height": 362
+        },
+        "media": {
+          "left": 19,
+          "right": 265,
+          "top": 119,
+          "bottom": 369,
+          "width": 246,
+          "height": 250
+        },
+        "video": {
+          "left": 19,
+          "right": 265,
+          "top": 119,
+          "bottom": 369,
+          "width": 246,
+          "height": 250
+        },
+        "pageWidth": 390,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "name": "pp-2025 media occupies at least two-thirds at 390x844",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 12,
+          "right": 272,
+          "top": 112,
+          "bottom": 474,
+          "width": 260,
+          "height": 362
+        },
+        "media": {
+          "left": 19,
+          "right": 265,
+          "top": 119,
+          "bottom": 369,
+          "width": 246,
+          "height": 250
+        },
+        "video": {
+          "left": 19,
+          "right": 265,
+          "top": 119,
+          "bottom": 369,
+          "width": 246,
+          "height": 250
+        },
+        "pageWidth": 390,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "mediaHeightRatio": 0.6906077348066298
+      }
+    },
+    {
+      "name": "cq-kaizi-zhuer decodes on popup 320",
+      "passed": true,
+      "detail": {
+        "duration": 14.533333,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 14.533332999999999
+      }
+    },
+    {
+      "name": "shared popup fits 320x680",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 12,
+          "right": 272,
+          "top": 76,
+          "bottom": 470,
+          "width": 260,
+          "height": 394
+        },
+        "media": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 353,
+          "width": 246,
+          "height": 270
+        },
+        "video": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 353,
+          "width": 246,
+          "height": 270
+        },
+        "pageWidth": 320,
+        "viewport": {
+          "width": 320,
+          "height": 680
+        }
+      }
+    },
+    {
+      "name": "shared media occupies at least two-thirds at 320x680",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 12,
+          "right": 272,
+          "top": 76,
+          "bottom": 470,
+          "width": 260,
+          "height": 394
+        },
+        "media": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 353,
+          "width": 246,
+          "height": 270
+        },
+        "video": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 353,
+          "width": 246,
+          "height": 270
+        },
+        "pageWidth": 320,
+        "viewport": {
+          "width": 320,
+          "height": 680
+        },
+        "mediaHeightRatio": 0.6852791878172588
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji decodes on popup 320",
+      "passed": true,
+      "detail": {
+        "duration": 74.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0.001631,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 74.5
+      }
+    },
+    {
+      "name": "pp-2025 popup fits 320x680",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 12,
+          "right": 272,
+          "top": 76,
+          "bottom": 438,
+          "width": 260,
+          "height": 362
+        },
+        "media": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 333,
+          "width": 246,
+          "height": 250
+        },
+        "video": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 333,
+          "width": 246,
+          "height": 250
+        },
+        "pageWidth": 320,
+        "viewport": {
+          "width": 320,
+          "height": 680
+        }
+      }
+    },
+    {
+      "name": "pp-2025 media occupies at least two-thirds at 320x680",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 12,
+          "right": 272,
+          "top": 76,
+          "bottom": 438,
+          "width": 260,
+          "height": 362
+        },
+        "media": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 333,
+          "width": 246,
+          "height": 250
+        },
+        "video": {
+          "left": 19,
+          "right": 265,
+          "top": 83,
+          "bottom": 333,
+          "width": 246,
+          "height": 250
+        },
+        "pageWidth": 320,
+        "viewport": {
+          "width": 320,
+          "height": 680
+        },
+        "mediaHeightRatio": 0.6906077348066298
+      }
+    },
+    {
+      "name": "cq-kaizi-zhuer decodes on popup 736",
+      "passed": true,
+      "detail": {
+        "duration": 14.533333,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0.009385,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 14.533332999999999
+      }
+    },
+    {
+      "name": "shared popup fits 736x414",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 404,
+          "right": 714,
+          "top": 72,
+          "bottom": 402,
+          "width": 310,
+          "height": 330
+        },
+        "media": {
+          "left": 411,
+          "right": 707,
+          "top": 79,
+          "bottom": 299,
+          "width": 296,
+          "height": 220
+        },
+        "video": {
+          "left": 411,
+          "right": 707,
+          "top": 79,
+          "bottom": 299,
+          "width": 296,
+          "height": 220
+        },
+        "pageWidth": 736,
+        "viewport": {
+          "width": 736,
+          "height": 414
+        }
+      }
+    },
+    {
+      "name": "shared media occupies at least two-thirds at 736x414",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 404,
+          "right": 714,
+          "top": 72,
+          "bottom": 402,
+          "width": 310,
+          "height": 330
+        },
+        "media": {
+          "left": 411,
+          "right": 707,
+          "top": 79,
+          "bottom": 299,
+          "width": 296,
+          "height": 220
+        },
+        "video": {
+          "left": 411,
+          "right": 707,
+          "top": 79,
+          "bottom": 299,
+          "width": 296,
+          "height": 220
+        },
+        "pageWidth": 736,
+        "viewport": {
+          "width": 736,
+          "height": 414
+        },
+        "mediaHeightRatio": 0.6666666666666666
+      }
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji decodes on popup 736",
+      "passed": true,
+      "detail": {
+        "duration": 74.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": false,
+        "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 74.5
+      }
+    },
+    {
+      "name": "pp-2025 popup fits 736x414",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 404,
+          "right": 714,
+          "top": 72,
+          "bottom": 402,
+          "width": 310,
+          "height": 330
+        },
+        "media": {
+          "left": 411,
+          "right": 707,
+          "top": 79,
+          "bottom": 299,
+          "width": 296,
+          "height": 220
+        },
+        "video": {
+          "left": 411,
+          "right": 707,
+          "top": 79,
+          "bottom": 299,
+          "width": 296,
+          "height": 220
+        },
+        "pageWidth": 736,
+        "viewport": {
+          "width": 736,
+          "height": 414
+        }
+      }
+    },
+    {
+      "name": "pp-2025 media occupies at least two-thirds at 736x414",
+      "passed": true,
+      "detail": {
+        "popup": {
+          "left": 404,
+          "right": 714,
+          "top": 72,
+          "bottom": 402,
+          "width": 310,
+          "height": 330
+        },
+        "media": {
+          "left": 411,
+          "right": 707,
+          "top": 79,
+          "bottom": 299,
+          "width": 296,
+          "height": 220
+        },
+        "video": {
+          "left": 411,
+          "right": 707,
+          "top": 79,
+          "bottom": 299,
+          "width": 296,
+          "height": 220
+        },
+        "pageWidth": 736,
+        "viewport": {
+          "width": 736,
+          "height": 414
+        },
+        "mediaHeightRatio": 0.6666666666666666
+      }
+    },
+    {
+      "name": "Changing map shop unloads the previous video",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "Closing popup unloads its video",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "Map popup is hidden after close",
+      "passed": true
+    },
+    {
+      "name": "Media checks never add favorites",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-wanza has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-wanza generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-linmeimei has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-xiangyuan has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-xiangyuan generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-tianpin has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-tianpin generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-douhuaniurou has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-douhuaniurou generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-shaokao has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-shaokao generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "lanmei-wanza has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "lanmei-wanza generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "lanmei-shaomai has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "lanmei-shaomai generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "lanmei-xidajiang has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "lanmei-xidajiang generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "lanmei-zhengcai has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "lanmei-zhengcai generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yikou has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yuanma has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yuanma generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hulake has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-yangheshaomai has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-xinyiniurou has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-zhuer has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-xiangyaju has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hill-bbq has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hill-bbq generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-wuming-tihua has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-wuming-tihua generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-gumufeng has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-caijibaozi has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-caijibaozi generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-bai-chaoshou has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhoushi has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baomian has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-konger has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-limixian has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-limixian generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-liaoji has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-qixing-hotpot has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-qixing-hotpot generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-bingdouhua has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-bingdouhua generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-huangjia has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-renyi has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-miaoshifu has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-luoerwa has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangshi has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangfen has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-tangyuan has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-xinzhu has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lidouhua has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lvdousu has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-longyi has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-longyi generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhengfa has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhengfa generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-ganguo has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-ganguo generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuanji has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuanji generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jinli has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baixin has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-shuguang has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-nawan has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-nawan generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuqingnian has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zengbin has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lichaoshou has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lichaoshou generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jidong has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jidong generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-dianjiang has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-dianjiang generated page has no made-up place link",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-hongyu has a generated source page",
+      "passed": true
+    },
+    {
+      "name": "Generated video directory credits all new sources",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-7602232743804036730 page visibly identifies its store and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-7602232743804036730 page offers a local map return",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-7602232743804036730 generated-page return really loads the map",
+      "passed": true
+    },
+    {
+      "name": "cq-lanmei-7692311805913784713 page visibly identifies its store and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-lanmei-7692311805913784713 page offers a local map return",
+      "passed": true
+    },
+    {
+      "name": "cq-lanmei-7692311805913784713 generated-page return really loads the map",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-7666393424492268852 page visibly identifies its store and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-7666393424492268852 page offers a local map return",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-7666393424492268852 generated-page return really loads the map",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354 page visibly identifies its store and creator",
+      "passed": true
+    },
+    {
+      "name": "PP generated page retains the 2025 footage date",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354 page offers a local map return",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354 generated-page return really loads the map",
+      "passed": true
+    },
+    {
+      "name": "No runtime or media verification errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "No external platform or third-party prefetch requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "media": [
+    {
+      "source": "cq-xiaoyang-7602232743804036730",
+      "id": "xiaoyang-wanza",
+      "surface": "library",
+      "duration": 64.8,
+      "width": 720,
+      "height": 1280,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-wanza-b19a33ec08156aa7.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-7602232743804036730",
+      "id": "xiaoyang-linmeimei",
+      "surface": "library",
+      "duration": 66.1,
+      "width": 720,
+      "height": 1280,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-linmeimei-b567dab951d62235.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-7602232743804036730",
+      "id": "xiaoyang-xiangyuan",
+      "surface": "library",
+      "duration": 69.6,
+      "width": 720,
+      "height": 1280,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-xiangyuan-d5d54b055cacbdfc.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-7602232743804036730",
+      "id": "xiaoyang-tianpin",
+      "surface": "library",
+      "duration": 26.766667,
+      "width": 720,
+      "height": 1280,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-tianpin-09ac3511660ec441.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-7602232743804036730",
+      "id": "xiaoyang-douhuaniurou",
+      "surface": "library",
+      "duration": 56.866667,
+      "width": 720,
+      "height": 1280,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-douhuaniurou-666e7e15a0d08bfd.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-7602232743804036730",
+      "id": "xiaoyang-shaokao",
+      "surface": "library",
+      "duration": 75.366667,
+      "width": 720,
+      "height": 1280,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-xiaoyang-7602232743804036730/xiaoyang-shaokao-3e71c9375b0f0a11.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-lanmei-7692311805913784713",
+      "id": "lanmei-wanza",
+      "surface": "library",
+      "duration": 10.066667,
+      "width": 1920,
+      "height": 3414,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-wanza-9c647d1d89cb0bc3.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-lanmei-7692311805913784713",
+      "id": "lanmei-shaomai",
+      "surface": "library",
+      "duration": 10.116667,
+      "width": 1920,
+      "height": 3414,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-shaomai-abdbead931a3cab8.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-lanmei-7692311805913784713",
+      "id": "lanmei-xidajiang",
+      "surface": "library",
+      "duration": 26.983008,
+      "width": 1920,
+      "height": 3414,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-xidajiang-0c8347b13835189b.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-lanmei-7692311805913784713",
+      "id": "lanmei-zhengcai",
+      "surface": "library",
+      "duration": 9.5,
+      "width": 1920,
+      "height": 3414,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-zhengcai-56d60ba5d5b33b35.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-lanmei-7692311805913784713",
+      "id": "lanmei-yikou",
+      "surface": "library",
+      "duration": 10.466667,
+      "width": 1920,
+      "height": 3414,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-yikou-7adcfc4f3d476e73.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-lanmei-7692311805913784713",
+      "id": "lanmei-yuanma",
+      "surface": "library",
+      "duration": 11.133333,
+      "width": 1920,
+      "height": 3414,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-yuanma-12056751f5ef9e71.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-hulake",
+      "surface": "library",
+      "duration": 15.566667,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-hulake-835c5d676b1f45d2.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-yikoutangjiao",
+      "surface": "library",
+      "duration": 17.766667,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-yikoutangjiao-fb39bd32e22dd814.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-yangheshaomai",
+      "surface": "library",
+      "duration": 17.1,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-yangheshaomai-ef7266d2193d789c.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-xinyiniurou",
+      "surface": "library",
+      "duration": 44.8,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-xinyiniurou-6adb611ae7cc88ef.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-zhuer",
+      "surface": "library",
+      "duration": 14.533333,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-xiangyaju",
+      "surface": "library",
+      "duration": 18.95,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-xiangyaju-a34aa4023ec71379.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-hill-bbq",
+      "surface": "library",
+      "duration": 3.95,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-hill-bbq-765cc41c0c90a535.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-wuming-tihua",
+      "surface": "library",
+      "duration": 16.283008,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-wuming-tihua-3bf845eedba8c615.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-gumufeng",
+      "surface": "library",
+      "duration": 68.65,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-gumufeng-bc062006cf0a2506.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-caijibaozi",
+      "surface": "library",
+      "duration": 21.25,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-caijibaozi-c6a363829ed33193.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-bai-chaoshou",
+      "surface": "library",
+      "duration": 16.372993,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-bai-chaoshou-2904df76a5df07a2.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-caiji",
+      "surface": "library",
+      "duration": 74.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-zhoushi",
+      "surface": "library",
+      "duration": 21.3,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-zhoushi-9ae04ce314e8ec17.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-baomian",
+      "surface": "library",
+      "duration": 25.1,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-baomian-84e979171fadd329.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-konger",
+      "surface": "library",
+      "duration": 121.8,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-konger-43817661f12a1e55.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-limixian",
+      "surface": "library",
+      "duration": 39,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-limixian-8b08613bb57e01f2.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-liaoji",
+      "surface": "library",
+      "duration": 8.2,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-liaoji-f40977f7b6f7d001.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-qixing-hotpot",
+      "surface": "library",
+      "duration": 137.9,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-qixing-hotpot-456497262bf34cfe.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-bingdouhua",
+      "surface": "library",
+      "duration": 4.1,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-bingdouhua-ab3e2df532db1f44.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-huangjia",
+      "surface": "library",
+      "duration": 26.8,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-huangjia-0c9e190151d7c01e.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-renyi",
+      "surface": "library",
+      "duration": 34.6,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-renyi-f69044e53a4887bf.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-miaoshifu",
+      "surface": "library",
+      "duration": 6.8,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-miaoshifu-dc059feded6461b3.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-luoerwa",
+      "surface": "library",
+      "duration": 20.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-luoerwa-756f11c50dfad787.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-yangshi",
+      "surface": "library",
+      "duration": 24.9,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-yangshi-634edcab8d84b9dd.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-yangfen",
+      "surface": "library",
+      "duration": 25.2,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-yangfen-d82a130398ff779b.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-tangyuan",
+      "surface": "library",
+      "duration": 15,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-tangyuan-f99bd8421650747f.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-xinzhu",
+      "surface": "library",
+      "duration": 14.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-xinzhu-3a55c849f718fb44.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-lidouhua",
+      "surface": "library",
+      "duration": 19.1,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-lidouhua-75116724f73f67fa.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-lvdousu",
+      "surface": "library",
+      "duration": 8.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-lvdousu-ecfc40ab2df3b1fc.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-longyi",
+      "surface": "library",
+      "duration": 43.7,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-longyi-e1d560cbf055c428.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-zhengfa",
+      "surface": "library",
+      "duration": 30,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-zhengfa-a32f1714ff46d33d.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-ganguo",
+      "surface": "library",
+      "duration": 30.8,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-ganguo-438d2d3405252765.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-yuanji",
+      "surface": "library",
+      "duration": 15.2,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-yuanji-e301f230449d71e6.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-jinli",
+      "surface": "library",
+      "duration": 22.2,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-jinli-52436205edcf996a.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-baixin",
+      "surface": "library",
+      "duration": 16.9,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-baixin-256fc0c03bbb020d.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-shuguang",
+      "surface": "library",
+      "duration": 30.1,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-shuguang-bc141c95e31c4569.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-nawan",
+      "surface": "library",
+      "duration": 25.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-nawan-e65fc98611f5cebf.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-yuqingnian",
+      "surface": "library",
+      "duration": 37.2,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-yuqingnian-1019a8670273f8c8.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-zengbin",
+      "surface": "library",
+      "duration": 23.4,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-zengbin-b36ff59009446a48.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-lichaoshou",
+      "surface": "library",
+      "duration": 16.2,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-lichaoshou-8ce44e8d193a6bb6.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-jidong",
+      "surface": "library",
+      "duration": 26.7,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-jidong-eb0c33faf13f036f.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-dianjiang",
+      "surface": "library",
+      "duration": 26.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-dianjiang-e56e9d3b9d5d4ffe.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-hongyu",
+      "surface": "library",
+      "duration": 24.3,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-hongyu-ed221d12ac0abd1a.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-zhuer",
+      "surface": "shared popup",
+      "duration": 14.533333,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "jiankang",
+      "id": "jiankang-zhuer",
+      "surface": "shared popup",
+      "duration": 54.9,
+      "width": 720,
+      "height": 1280,
+      "readyState": 4,
+      "currentTime": 0.01127,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/jiankang/jiankang-zhuer-3d9c59e40652c8b6.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-lanmei-7692311805913784713",
+      "id": "lanmei-yikou",
+      "surface": "shared popup",
+      "duration": 10.466667,
+      "width": 1920,
+      "height": 3414,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-lanmei-7692311805913784713/lanmei-yikou-7adcfc4f3d476e73.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-yikoutangjiao",
+      "surface": "shared popup",
+      "duration": 17.766667,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-yikoutangjiao-fb39bd32e22dd814.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-zhuer",
+      "surface": "popup 1440",
+      "duration": 14.533333,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-caiji",
+      "surface": "popup 1440",
+      "duration": 74.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0.010459,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-zhuer",
+      "surface": "popup 390",
+      "duration": 14.533333,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0.016482,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-caiji",
+      "surface": "popup 390",
+      "duration": 74.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0.003443,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-zhuer",
+      "surface": "popup 320",
+      "duration": 14.533333,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-caiji",
+      "surface": "popup 320",
+      "duration": 74.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0.001631,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-kaizi-7666393424492268852",
+      "id": "cq-kaizi-zhuer",
+      "surface": "popup 736",
+      "duration": 14.533333,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0.009385,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-kaizi-7666393424492268852/cq-kaizi-zhuer-a24b6c5829d3486f.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-pp-7583215165723266354",
+      "id": "cq-pp-7583215165723266354-caiji",
+      "surface": "popup 736",
+      "duration": 74.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": false,
+      "src": "http://127.0.0.1:8791/media/videos/cq-pp-7583215165723266354/cq-pp-7583215165723266354-caiji-17f67d0d7aaaa4e7.mp4",
+      "objectFit": "contain",
+      "error": null
+    }
+  ],
+  "externalRequests": [],
+  "screenshots": [
+    "D:/codex/美食网站/output/playwright/video-batch3-popup-shared-1440.png",
+    "D:/codex/美食网站/output/playwright/video-batch3-popup-pp-2025-1440.png",
+    "D:/codex/美食网站/output/playwright/video-batch3-popup-shared-390.png",
+    "D:/codex/美食网站/output/playwright/video-batch3-popup-pp-2025-390.png",
+    "D:/codex/美食网站/output/playwright/video-batch3-popup-shared-320.png",
+    "D:/codex/美食网站/output/playwright/video-batch3-popup-pp-2025-320.png",
+    "D:/codex/美食网站/output/playwright/video-batch3-popup-shared-736.png",
+    "D:/codex/美食网站/output/playwright/video-batch3-popup-pp-2025-736.png"
+  ],
+  "counts": {
+    "sources": 4,
+    "newSegments": 55,
+    "newUnlocatedSegments": 24,
+    "totalSegments": 93,
+    "totalUnlocatedSegments": 29,
+    "mapPlaces": 60
+  },
+  "sources": [
+    {
+      "id": "cq-xiaoyang-7602232743804036730",
+      "author": "小洋嘎嘣脆",
+      "segments": 6
+    },
+    {
+      "id": "cq-lanmei-7692311805913784713",
+      "author": "一颗蓝莓",
+      "segments": 6
+    },
+    {
+      "id": "cq-kaizi-7666393424492268852",
+      "author": "一支凯子",
+      "segments": 11
+    },
+    {
+      "id": "cq-pp-7583215165723266354",
+      "author": "PP超能炫",
+      "segments": 32
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,787 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "Independent preservation audit against the frozen original PBF; not a shop-branch, entrance, operating-status or walking-access verification.",
+  "snapshot": "data/video-batch3-open-anchors.json",
+  "sourceFile": "chongqing-261025.osm.pbf",
+  "coordinateToleranceDegrees": 1e-09,
+  "checks": [
+    {
+      "name": "Snapshot schema and WGS84 declaration",
+      "passed": true
+    },
+    {
+      "name": "Unique original node/way identities",
+      "passed": true
+    },
+    {
+      "name": "Original PBF SHA256 matches the snapshot source",
+      "passed": true
+    },
+    {
+      "name": "ASCII temporary PBF copy has identical bytes",
+      "passed": true
+    },
+    {
+      "name": "Every anchor way exists in the frozen PBF",
+      "passed": true,
+      "detail": {
+        "requested": 16,
+        "found": 16
+      }
+    },
+    {
+      "name": "All standalone and way-referenced source nodes exist",
+      "passed": true,
+      "detail": {
+        "requested": 225,
+        "found": 225,
+        "missingNodeIds": []
+      }
+    },
+    {
+      "name": "Every retained anchor matches its independent original-source checks",
+      "passed": true
+    },
+    {
+      "name": "Snapshot unchanged during audit",
+      "passed": true
+    }
+  ],
+  "anchors": [
+    {
+      "type": "way",
+      "id": 59161373,
+      "name": "中山三路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": false,
+      "representativeCoordinateFromPBF": [
+        106.5447839409091,
+        29.560989868181817
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 22,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 1526677118,
+      "name": "洋河北路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Saved nodeIds preserve complete original node order",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": true,
+      "representativeCoordinateFromPBF": [
+        106.5322027125,
+        29.589040075
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 8,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 175962016,
+      "name": "新民街",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Saved nodeIds preserve complete original node order",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": true,
+      "representativeCoordinateFromPBF": [
+        106.5674676,
+        29.55781967142857
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 7,
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 8169006376,
+      "name": "后堡",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 59146648,
+      "name": "临江支路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": false,
+      "representativeCoordinateFromPBF": [
+        106.57488289,
+        29.56354781
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 10,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 59146744,
+      "name": "临江路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": false,
+      "representativeCoordinateFromPBF": [
+        106.5729007090909,
+        29.5632843
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 11,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 152098908,
+      "name": "紫福路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": false,
+      "representativeCoordinateFromPBF": [
+        106.53142344,
+        29.5957171
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 10,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 152098907,
+      "name": "紫康路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": false,
+      "representativeCoordinateFromPBF": [
+        106.53175725999999,
+        29.5927077
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 5,
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 13970164713,
+      "name": "轨道黄泥塝站",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 238750782,
+      "name": "冯时行路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": false,
+      "representativeCoordinateFromPBF": [
+        106.39445587727273,
+        29.79645329090909
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 44,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 1155433033,
+      "name": "安礼路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": false,
+      "representativeCoordinateFromPBF": [
+        106.38297534545454,
+        29.799349577272725
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 22,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 940326946,
+      "name": "中山路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": false,
+      "representativeCoordinateFromPBF": [
+        106.43381406666667,
+        29.828178566666665
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 3,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 710422444,
+      "name": "辽宁路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": false,
+      "representativeCoordinateFromPBF": [
+        106.432390975,
+        29.83043461111111
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 36,
+      "passed": true
+    },
+    {
+      "type": "node",
+      "id": 11939818344,
+      "name": "红雨少水粉",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Node coordinate is the original source coordinate",
+          "passed": true
+        }
+      ],
+      "representativeMethod": "original-node-coordinate",
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 709838378,
+      "name": "上海路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Saved nodeIds preserve complete original node order",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": true,
+      "representativeCoordinateFromPBF": [
+        106.43705206666668,
+        29.833234083333334
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 6,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 843421755,
+      "name": "李园小吃街",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Saved nodeIds preserve complete original node order",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": true,
+      "representativeCoordinateFromPBF": [
+        106.42235785999999,
+        29.82235282
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 5,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 709838377,
+      "name": "南京路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": false,
+      "representativeCoordinateFromPBF": [
+        106.4377589,
+        29.83306005
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 4,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 404107008,
+      "name": "金华路",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Saved nodeIds preserve complete original node order",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": true,
+      "representativeCoordinateFromPBF": [
+        106.41770937407408,
+        29.831052522222222
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 27,
+      "passed": true
+    },
+    {
+      "type": "way",
+      "id": 1552242025,
+      "name": "双元大道",
+      "checks": [
+        {
+          "name": "Object exists in original PBF",
+          "passed": true
+        },
+        {
+          "name": "All retained tags exactly equal original tags",
+          "passed": true
+        },
+        {
+          "name": "Display name equals original name tag",
+          "passed": true
+        },
+        {
+          "name": "Complete original ordered node coordinates are available",
+          "passed": true
+        },
+        {
+          "name": "Saved nodeIds preserve complete original node order",
+          "passed": true
+        },
+        {
+          "name": "Complete geometry follows original node coordinates and order",
+          "passed": true
+        },
+        {
+          "name": "Representative coordinate equals original geometry arithmetic mean",
+          "passed": true
+        }
+      ],
+      "savedNodeIdsPresent": true,
+      "representativeCoordinateFromPBF": [
+        106.40167182,
+        29.812155639999997
+      ],
+      "representativeMethod": "mean-of-full-original-ordered-node-coordinates",
+      "originalNodeCount": 5,
+      "passed": true
+    }
+  ],
+  "snapshotSHA256": "2e7125d1942d907baf39b5e5d908bec92d6f0e457b626c66326cc409200226fd",
+  "sourceSHA256": "ea1bd60ca0a71231f6ec62bb5ff270594e56559c88d483e25c7e60bcc6fd20ba",
+  "sourceDate": "2026-10-25",
+  "counts": {
+    "anchors": 19,
+    "standaloneNodes": 3,
+    "ways": 16,
+    "originalSourceNodes": 225,
+    "waysWithSavedNodeIds": 6,
+    "geometryOnlyWays": 10
+  },
+  "passed": true
+}

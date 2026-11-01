@@ -1,0 +1,12 @@
+{
+  "verifiedOn": "2026-10-29",
+  "passed": true,
+  "sourceSHA256": "ea1bd60ca0a71231f6ec62bb5ff270594e56559c88d483e25c7e60bcc6fd20ba",
+  "nodesChecked": 236091,
+  "waysChecked": 36131,
+  "checks": [
+    "Every retained node ID exists in the frozen PBF, with identical coordinates and retained tags.",
+    "Every retained way ID exists in the frozen PBF, with identical full node order and retained tags."
+  ],
+  "scope": "Original-source preservation only; no current access or shop-entrance verification."
+}
