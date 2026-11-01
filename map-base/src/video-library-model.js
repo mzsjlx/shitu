@@ -1,6 +1,7 @@
 const idPattern=/^[a-z][a-z0-9-]{0,79}$/;
-export function validateVideoLibrary(data){
-  if(data?.schemaVersion!==1||data.city!=='chongqing'||!Array.isArray(data.sources)||data.sources.length<1||data.sources.length>200||data.rights?.status!=='user-confirmed')throw new Error('视频资料格式不正确');
+export function validateVideoLibrary(data, expectedCity = null){
+  if(data?.schemaVersion!==1||!['chongqing','liuzhou'].includes(data.city)||!Array.isArray(data.sources)||data.sources.length<1||data.sources.length>200||data.rights?.status!=='user-confirmed')throw new Error('视频资料格式不正确');
+  if(expectedCity && data.city !== expectedCity) throw new Error('视频资料城市与当前城市不一致');
   const ids=new Set(),segmentsById=new Map();
   for(const source of data.sources){
     if(!idPattern.test(source.id)||ids.has(source.id))throw new Error('视频来源ID无效');

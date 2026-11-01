@@ -32,6 +32,8 @@ for(const file of Object.values(city.dataFiles))json[file]=JSON.parse(await read
 if(city.streetDetail)for(const file of [city.streetDetail.data,city.streetDetail.manifest])json[file]=JSON.parse(await readFile(path.join(root,file),'utf8'));
 if(city.foodContent)json[city.foodContent.records]=JSON.parse(await readFile(path.join(root,city.foodContent.records),'utf8'));
 if(city.foodContent?.roadNetwork)json[city.foodContent.roadNetwork]=JSON.parse(await readFile(path.join(root,city.foodContent.roadNetwork),'utf8'));
+if(city.foodContent?.videoLibrary)json[city.foodContent.videoLibrary]=JSON.parse(await readFile(path.join(root,city.foodContent.videoLibrary),'utf8'));
+if(city.foodContent?.videoAssets)json[city.foodContent.videoAssets]=JSON.parse(await readFile(path.join(root,'dist',city.foodContent.videoAssets),'utf8'));
 if(city.walkNetwork)json[city.walkNetwork]=JSON.parse(await readFile(path.join(root,city.walkNetwork),'utf8'));
 const terrain={};
 if (city.demTiles && city.dataFiles?.terrainManifest && json[city.dataFiles.terrainManifest]) {

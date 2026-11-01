@@ -14,14 +14,15 @@ const thumbFor=(item,cls)=>{
 export class FoodExperience{
   constructor(map,overlay,{config,readJSON,assetURL,roadWorkerURL,onFocus,onExplore=onFocus}){
     this.map=map;this.overlay=overlay;this.config=config;this.readJSON=readJSON;this.assetURL=assetURL;this.onFocus=onFocus;this.onExplore=onExplore;
+    this.cityKey=this.config.city||'chongqing';
     this.records=[];this.phase='unloaded';this.active=false;this.selected=null;this.generation=0;this.saved=[];this.category=null;this.draftCategory=null;this.routeSuppressed=false;
-    this.routeMode='direct';try{const mode=localStorage.getItem('foodcity:distance-mode:chongqing:v1');if(['direct','road'].includes(mode))this.routeMode=mode;}catch{}
+    this.routeMode='direct';try{const mode=localStorage.getItem('foodcity:distance-mode:'+this.cityKey+':v1');if(['direct','road'].includes(mode))this.routeMode=mode;}catch{}
     this.routePreview=new FoodRoutePreview(map,overlay.Marker,{loadNetwork:signal=>readJSON(config.roadNetwork,{signal}),workerURL:roadWorkerURL,onChange:()=>this.renderRouteStatus()});
     const query=new URLSearchParams(location.search),place=query.get('place');
     this.initialPlaceId=(!query.get('view')||query.get('view')==='food')&&place&&place.length<=100?place:null;
     byId('place-directory-link').hidden=!['http:','https:'].includes(location.protocol);
     for(const id of ['creator-guides-link','food-pick-guides'])byId(id).hidden=!['http:','https:'].includes(location.protocol);
-    try{const saved=JSON.parse(localStorage.getItem('foodcity:wants:chongqing:v1')||'[]');if(Array.isArray(saved))this.saved=[...new Set(saved.filter(x=>typeof x==='string'&&x.length<=100))].slice(0,100);}catch{}
+    try{const saved=JSON.parse(localStorage.getItem('foodcity:wants:'+this.cityKey+':v1')||'[]');if(Array.isArray(saved))this.saved=[...new Set(saved.filter(x=>typeof x==='string'&&x.length<=100))].slice(0,100);}catch{}
     byId('food-entry').addEventListener('click',()=>this.active?this.deactivate():this.activate());
     byId('food-option').addEventListener('change',event=>event.target.checked?this.activate():this.deactivate());
     for(const id of ['wants-open','trip-open','trip-manage'])byId(id).addEventListener('click',event=>this.openWants(event.currentTarget));
@@ -65,16 +66,21 @@ export class FoodExperience{
     if(this.pending)return this.pending;
     this.phase='loading';this.error=null;
     const controller=new AbortController(),timer=setTimeout(()=>controller.abort(new Error('美食资料读取超时')),12000);
-    this.pending=Promise.all([this.readJSON(this.config.records,{signal:controller.signal}),this.readJSON('data/video-library.json',{signal:controller.signal}).catch(()=>bundledVideoLibrary)]).then(async([data,catalog])=>{
-      if(data.city!=='chongqing'||!Array.isArray(data.records))throw new Error('美食资料尚未准备好');
-      const records=data.records.map(item=>({...item,spriteURL:this.assetURL(this.config.sprite)}));
-      validateVideoLibrary(catalog);
+    const videoLibraryPath=this.config.videoLibrary||'data/video-library.json';
+    const videoAssetsPath=this.config.videoAssets||'data/video-library-assets.json';
+    this.pending=Promise.all([
+      this.readJSON(this.config.records,{signal:controller.signal}),
+      this.readJSON(videoLibraryPath,{signal:controller.signal}).catch(()=>this.cityKey==='chongqing'?bundledVideoLibrary:{sources:[]})
+    ]).then(async([data,catalog])=>{
+      if(data.city!==this.cityKey||!Array.isArray(data.records))throw new Error('美食资料尚未准备好');
+      const records=data.records.map(item=>({...item,spriteURL:this.config.sprite?this.assetURL(this.config.sprite):null}));
+      validateVideoLibrary(catalog,this.cityKey);
       const b=this.overlay.bounds,positioned=groupVideoPlaces(catalog).filter(({primary:{segment}})=>Array.isArray(segment.coordinates)&&segment.coordinates[0]>=b[0]&&segment.coordinates[0]<=b[2]&&segment.coordinates[1]>=b[1]&&segment.coordinates[1]<=b[3]);
-      let assets={};if(positioned.length){try{assets=(await this.readJSON('data/video-library-assets.json',{signal:controller.signal})).segments||{};}catch{}}
+      let assets={};if(positioned.length){try{assets=(await this.readJSON(videoAssetsPath,{signal:controller.signal})).segments||{};}catch{}}
       for(const {id,primary:{source,segment},clips:entries}of positioned){
         const asset=assets[segment.id],clip=localVideoAsset(asset?.clip,'mp4'),poster=localVideoAsset(asset?.poster,'jpg');
         const clips=entries.map(({source:s,segment:t})=>({id:t.id,title:s.title,author:s.author,url:s.url,publishedOn:s.publishedOn,footageNote:t.footageNote||null,clip:localVideoAsset(assets[t.id]?.clip,'mp4'),poster:localVideoAsset(assets[t.id]?.poster,'jpg')}));
-        records.push({id,name:segment.name,category:segment.category,coordinates:segment.coordinates,coordinateSystem:'WGS84',verificationStatus:'video-location',coordinateEvidence:{kind:'video-coordinate',url:source.url},entranceStatus:'unverified',routeEligible:false,address:segment.addressText||segment.planningLocation?.label||'原片未提供详细地址',summary:segment.summary,spriteURL:this.assetURL(this.config.sprite),spriteIndex:0,photoURL:poster||null,localClip:clip&&poster?clip:null,localPoster:clip&&poster?poster:null,planningLocation:segment.planningLocation||null,clipAuthor:source.author,clipFootageNote:segment.footageNote||null,originalVideoURL:source.url,clips,videos:clips.map(({title,author,url,publishedOn})=>({title,author,url,publishedOn}))});
+        records.push({id,name:segment.name,category:segment.category,coordinates:segment.coordinates,coordinateSystem:'WGS84',verificationStatus:'video-location',coordinateEvidence:{kind:'video-coordinate',url:source.url},entranceStatus:'unverified',routeEligible:false,address:segment.addressText||segment.planningLocation?.label||'原片未提供详细地址',summary:segment.summary,spriteURL:this.config.sprite?this.assetURL(this.config.sprite):null,spriteIndex:0,photoURL:poster||null,localClip:clip&&poster?clip:null,localPoster:clip&&poster?poster:null,planningLocation:segment.planningLocation||null,clipAuthor:source.author,clipFootageNote:segment.footageNote||null,originalVideoURL:source.url,clips,videos:clips.map(({title,author,url,publishedOn})=>({title,author,url,publishedOn}))});
       }
       this.overlay.validate(records,true);
       this.records=records;this.phase='loaded';this.saved=this.saved.filter(id=>records.some(record=>record.id===id));this.refreshSaved();
@@ -204,7 +210,7 @@ export class FoodExperience{
     }
   }
   persistSaved(){
-    try{localStorage.setItem('foodcity:wants:chongqing:v1',JSON.stringify(this.saved));this.saveError=false;}
+    try{localStorage.setItem('foodcity:wants:'+this.cityKey+':v1',JSON.stringify(this.saved));this.saveError=false;}
     catch{this.saveError=true;}
   }
   moveStop(id,direction){
@@ -258,7 +264,7 @@ export class FoodExperience{
   setRouteMode(mode){
     if(!['direct','road'].includes(mode))return;
     if(mode===this.routeMode&&this.routePreview.phase==='error')this.routePreview.retry();
-    this.routeMode=mode;try{localStorage.setItem('foodcity:distance-mode:chongqing:v1',mode);}catch{}
+    this.routeMode=mode;try{localStorage.setItem('foodcity:distance-mode:'+this.cityKey+':v1',mode);}catch{}
     this.renderDock();
   }
   renderRouteStatus(){

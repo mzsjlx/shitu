@@ -5,11 +5,16 @@ import {validateVideoLibrary} from '../src/video-library-model.js';
 import {digest,mediaKey,mediaNames} from './video-library-common.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const catalog=validateVideoLibrary(JSON.parse(await readFile(path.join(root,'data/video-library.json'),'utf8')));
+const cityOption=process.argv.indexOf('--city');
+const city=cityOption>=0?process.argv[cityOption+1]:'chongqing';
+const catalogOption=process.argv.indexOf('--catalog');
+const catalogRel=catalogOption>=0?process.argv[catalogOption+1]:(city==='chongqing'?'data/video-library.json':`data/cities/${city}/video-library.json`);
+const catalogFile=path.resolve(root,catalogRel);
+const catalog=validateVideoLibrary(JSON.parse(await readFile(catalogFile,'utf8')),city);
 const report=JSON.parse(await readFile(path.join(root,'.local/video-clips/report.json'),'utf8'));
 let previous={schemaVersion:1,segments:{}};
 try{previous=JSON.parse(await readFile(path.join(root,'data/video-posters.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
-const manifest={schemaVersion:1,segments:{}};
+const manifest={schemaVersion:1,segments:{...previous.segments}};
 for(const source of catalog.sources)for(const segment of source.segments){
   const key=mediaKey(source,segment),names=mediaNames(source,segment);
   const record=report.records.find(r=>r.id===segment.id&&r.mediaKey===key&&r.sourceSHA256===source.sourceSHA256);

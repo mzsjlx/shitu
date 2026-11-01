@@ -7,12 +7,30 @@ import {digest,mediaKey,mediaNames} from './video-library-common.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const readJSON=async file=>JSON.parse(await readFile(file,'utf8'));
-const catalogAt=async project=>validateVideoLibrary(await readJSON(path.join(project,'data/video-library.json')));
+const catalogAt=async (project,sourceId=null,city=null)=>{
+  if(city){
+    const rel=city==='chongqing'?'data/video-library.json':`data/cities/${city}/video-library.json`;
+    return validateVideoLibrary(await readJSON(path.join(project,rel)),city);
+  }
+  const cq=validateVideoLibrary(await readJSON(path.join(project,'data/video-library.json')),'chongqing');
+  if(!sourceId||cq.sources.some(s=>s.id===sourceId))return cq;
+  try{
+    const config=await readJSON(path.join(project,'config/cities.json'));
+    for(const [k,c] of Object.entries(config.cities||{})){
+      if(k==='chongqing'||!c.foodContent?.videoLibrary)continue;
+      try{
+        const cat=validateVideoLibrary(await readJSON(path.join(project,c.foodContent.videoLibrary)),k);
+        if(!sourceId||cat.sources.some(s=>s.id===sourceId))return cat;
+      }catch{}
+    }
+  }catch{}
+  return cq;
+};
 const safeRelative=value=>typeof value==='string'&&/^(?:video-intake|video-clips)\/[a-z][a-z0-9-]*\/[a-z][a-z0-9.-]*\.(?:mp4|jpg)$/.test(value)&&!value.includes('..');
 async function availableReport(project){try{return await readJSON(path.join(project,'.local/video-clips/report.json'));}catch(error){if(error.code==='ENOENT')return {schemaVersion:1,records:[]};throw error;}}
 
-export async function packSource(project,sourceId){
-  const catalog=await catalogAt(project),source=catalog.sources.find(s=>s.id===sourceId);
+export async function packSource(project,sourceId,city=null){
+  const catalog=await catalogAt(project,sourceId,city),source=catalog.sources.find(s=>s.id===sourceId);
   if(!source?.segments.length)throw new Error('这个来源还没有已剪片段：'+sourceId);
   const report=await availableReport(project),entries={},files=[],records=[];
   const add=async(relative,expected)=>{const bytes=await readFile(path.join(project,'.local',relative));if(digest(bytes)!==expected)throw new Error('素材哈希不符：'+relative);entries[relative]=new Uint8Array(bytes);files.push({path:relative,bytes:bytes.length,sha256:expected});};
@@ -64,7 +82,8 @@ export async function importBundle(project,archivePath){
 
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
   const [command,...args]=process.argv.slice(2);
-  if(command==='pack'){const option=args.indexOf('--source'),sources=option>=0?[args[option+1]]:(await catalogAt(root)).sources.filter(s=>s.segments.length).map(s=>s.id);for(const id of sources)console.log(JSON.stringify(await packSource(root,id)));}
+  const cityOpt=args.indexOf('--city'),city=cityOpt>=0?args[cityOpt+1]:null;
+  if(command==='pack'){const option=args.indexOf('--source'),sources=option>=0?[args[option+1]]:(await catalogAt(root,null,city)).sources.filter(s=>s.segments.length).map(s=>s.id);for(const id of sources)console.log(JSON.stringify(await packSource(root,id,city)));}
   else if(command==='import'){if(!args.length)throw new Error('请提供下载的 ZIP 文件路径。');for(const file of args)console.log(JSON.stringify(await importBundle(root,path.resolve(file))));console.log('导入完成。运行 npm run build，然后刷新地图。');}
   else throw new Error('用法：npm run media:pack -- --source 来源ID；npm run media:import -- 素材包.zip');
 }
