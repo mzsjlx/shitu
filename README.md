@@ -1,83 +1,79 @@
 # 食途 · 美食旅行地图
 
-> 2026-11-01 两城整合修复：默认重庆126段/81点，长沙95段/71点。首页通过城市下拉切换，或访问 `/?city=changsha&view=food`。长沙另10段待定位、3段范围外，视频保留；两城仍为局部底图，不支持跨城连续拖动。旧说明按日期理解，最新状态见 [PROJECT-STATUS.md](PROJECT-STATUS.md)。
+食途是“跟着探店视频安排旅行吃什么”的网站，以真实道路三维地图、美食图片、原作者视频和想去清单帮助规划逛吃行程。主工程为 **`map-base/`**，使用 MapLibre GL JS、本地 PMTiles 与 Terrarium 地形，自定义奶油暖色视觉，本地运行不需要高德显示密钥。
 
-长沙视频素材通过 [长沙素材预发布](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-01-changsha) 按来源下载；取得对应代码后运行 `npm.cmd run media:import -- 下载的素材包.zip`，再构建。旧重庆包继续兼容。构建会生成两城资料页及 `preview-chongqing.html`、`preview-changsha.html`；普通预览仍按下方方法启动。视频原片和MP4不在Git中，未导入素材时可看封面、来源和地址。
+仓库：[mzsjlx/shitu](https://github.com/mzsjlx/shitu)。2026-11-01重庆与长沙整合修复已通过 [PR #6](https://github.com/mzsjlx/shitu/pull/6) 合入main（`4b3c4e5`）。网站尚未公开部署，两城均为局部底图，可以快速切城，尚不能跨城连续拖动。
 
-> 2026-10-30 重庆第五批本地共126个视频片段、81个地图点和41段未定位；本批分支依赖尚未合并的第四批，详见 [PROJECT-STATUS.md](PROJECT-STATUS.md)。
+## 当前状态与协作入口
 
-> 2026-10-30 第四批在 `codex/chongqing-video-batch4`：累计117个视频片段、79个地图点和34段未定位。下方第三批的93段、60点为之前的历史基线；最新交接和验证见 [PROJECT-STATUS.md](PROJECT-STATUS.md)。
+| 城市 | 2026-11-01状态 |
+| --- | --- |
+| 重庆 | 126片段、81地图点、41段未定位；覆盖主城至北碚局部 |
+| 长沙 | 54来源、95片段、71地图点；另10段待定位、3段范围外，视频均保留 |
+| 南京 | ID `nanjing`，本机已有独立初始化分支，尚未接入 |
+| 柳州 | ID `liuzhou`，保留同学电脑上的独立成果，本次未确认接入 |
 
-食途是一个正在开发的美食旅行网站，以重庆为首个城市。主界面使用真实道路三维地图，叠加美食候选卡片、原作者视频资料和想去清单。
+数字为本次快照，后续以当前目录与 [PROJECT-STATUS.md](PROJECT-STATUS.md) 顶部为准。地图位置是有依据的街区近似点，不代表店门或实时营业核实。加入两家以上想去后，可切换直线/沿路；沿路使用真实道路源节点拓扑和长度，适合规划参考。
 
-项目仓库：[mzsjlx/shitu](https://github.com/mzsjlx/shitu)。
-
-当前主工程是 **`map-base/`**。地图采用 MapLibre GL JS 与本地 PMTiles 数据，自定义奶油色视觉；不需要高德显示密钥即可运行本地版本。2026-10-30 的本地版本已覆盖重庆中心城区、沙坪坝及北碚部分区域，尚未发布网站。
-
-**第三批成果目前在 `codex/chongqing-video-batch3` 分支，尚未合入 `main`。** 下文的93个片段、60个地图点和北碚范围指这个分支；接收方应在维护者推送后取得对应分支，合并后再从 `main` 同步。素材下载入口见 [素材协作说明](MEDIA-COLLABORATION.md)。
-
-地图加入两家以上想去后，可以在底部切换「直线 / 沿路」距离。沿路按本地真实道路计算步行参考长度，连线与总距离一起更新；店点仍为街区近似位置，适合旅行规划。道路资料随代码提供，详见 [距离功能与数据说明](map-base/FOOD-ROAD-DISTANCE.md)。
+仓库Agent入口为 [AGENTS.md](AGENTS.md)。新城市及交接先读 [完整城市手册](CITY-AGENT-HANDBOOK.md) 和 [城市整合注意事项](CITY-INTEGRATION-NOTES.md)，长沙续做/南京开工文字在 [CITY-AGENT-MESSAGES.md](CITY-AGENT-MESSAGES.md)，通用模板在 [CITY-AGENT-STARTER.md](CITY-AGENT-STARTER.md)。协作流程见 [CONTRIBUTING.md](CONTRIBUTING.md)，媒体同步见 [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md)。
 
 ## 在自己的电脑运行
 
-当前项目已在 Windows、Node.js 24 与 npm 下验证。先安装 Node.js 并确认终端能运行 `node --version` 和 `npm --version`，再进入克隆后的项目目录。
+新克隆取得最新main；已有城市工作区先检查并保存修改，执行 `git fetch origin`，在自己的原分支合入最新 `origin/main`，不硬重置或覆盖他人工作。无需再切回旧视频批次分支来启动。
 
-要查看尚未合并的第三批，先保存自己的修改。在分支已推送且本地还没有同名分支时，于仓库根目录运行 `git fetch origin`、`git switch --track origin/codex/chongqing-video-batch3`；已有本地分支则切回它并按需快进更新。不要覆盖另一位协作者的分支或未提交内容。取得对应代码后继续下面的安装、构建步骤。
-
-Windows PowerShell：
+当前在 Windows、Node.js 24 与 npm 下验证。安装Node.js后，在仓库的 `map-base/` 下执行：
 
 ```powershell
-cd map-base
 npm.cmd ci
 npm.cmd run build
 npm.cmd run preview
 ```
 
-macOS / Linux 终端可使用相同命令，去掉 npm 后面的 `.cmd`。
-
-启动器会显示本地网址，通常为 `http://127.0.0.1:8791/`；端口被占用时会使用 8792–8799。也可以在完成首次安装、构建后双击 `map-base/打开地图.cmd`。
-
-常用页面：
+macOS/Linux把 `npm.cmd` 换成 `npm`；地图提取工具另需检查平台兼容。启动器通常使用 `http://127.0.0.1:8791/`，占用时改用8792–8799，以实际输出为准。首次构建后也可双击 `map-base/打开地图.cmd`。只查看地图不需要FFmpeg。
 
 | 页面 | 路径 |
 | --- | --- |
-| 美食地图 | `/?view=food` |
-| 本地单店视频浮层 | `/?view=food&videos=1` |
-| 探店视频资料 | `/videos.html` |
-| 门店资料目录 | `/places.html` |
-| 本地内容核实工作台 | `/content-review.html` |
-| 道路节点试算 | `/?view=walk` |
+| 重庆美食地图 | `/?view=food` |
+| 长沙美食地图 | `/?city=changsha&view=food` |
+| 重庆资料目录 | `/videos.html`、`/places.html` |
+| 长沙资料目录 | `/videos-changsha.html`、`/places-changsha.html` |
+| 重庆内容核实工作台 | `/content-review.html` |
+| 单文件本地审阅 | `/preview-chongqing.html`、`/preview-changsha.html`；`/preview.html`为默认别名 |
+| 重庆旧道路节点试算 | `/?view=walk`，不代表其他城市已适配该样板 |
 
-本地预览仅监听本机。想去清单与核实草稿保存在各自浏览器中，不会随 Git 克隆同步；核实工作台可自行导出、导入草稿。
-
-## 目录与当前进度
-
-| 位置 | 用途 |
-| --- | --- |
-| `map-base/src/` | 当前网站源码与样式 |
-| `map-base/data/` | 地图、候选门店、视频资料和来源清单 |
-| `map-base/scripts/` | 构建、数据准备与检查脚本 |
-| `design/concepts/`、`design/references/` | 设计概念、参考及菜品示意素材 |
-| `design/prototype-3d/` | 早期三维地标研究与原始来源缓存 |
-| `output/` | 来源核对、研究快照和检查截图；部分脚本需要这里的资料 |
-| `PROJECT-STATUS.md` | 按时间记录的续做状态，以顶部最新章节为准 |
-
-2026-10-30 本地第三批新增小洋嘎嘣脆、一颗蓝莓、一支凯子、PP超能炫的4份原片，分别拆成6、6、11、32段，共新增55段。累计15个来源记录、14份已取得原片、93个片段和93张原片封面；64个有坐标片段归并为60个地图点，29段保留在视频库等待补充店名、分店或街区。朱儿面庄共3位博主，一口汤饺共2位博主，保留各自视频；蔡记包子未仅凭同名强行归并。PP保留2025年原视频年份，其余旧片同样保留真实发布日期与营业待确认说明。“汁汁冰激凌”仍缺完整原片。
-
-底图与沿路网络扩展到 `[106.36,29.48,106.65,29.87]`，含北碚；旧区域399张z15瓦片完整保留，新范围共1,134张z15瓦片、189张地形瓦片。地图点使用开放地图街区参照作大致规划，选两家可切换直线与沿路距离。两条早期示例地点及额外B站内容已移除，后续仅整理用户提供的链接。具体实现与实际验证范围见 [主工程说明](map-base/README.md)、[验证记录](map-base/VERIFICATION.md)、[片段素材说明](map-base/VIDEO-LIBRARY.md) 和 [距离功能与数据说明](map-base/FOOD-ROAD-DISTANCE.md)。
-
-## 两人一起开发
-
-目前分工：本会话继续重庆，同学正在制作柳州（城市ID `liuzhou`）。双方可在独立分支推进完整城市功能，公共改动单独提交并统一集成；柳州无需停工等待。后续地图目标为连续拖动与城市快速跳转并存，当前仍只有重庆局部地图接通。
-
-分别建设不同城市时，先读 [城市 Agent 完整交接手册](CITY-AGENT-HANDBOOK.md)。它包含已确定的设计要求、重庆硬编码清单、视频到地图的完整步骤、实际踩坑、验收及媒体交付。直接转发给另一台电脑的指令在 [CITY-AGENT-STARTER.md](CITY-AGENT-STARTER.md)；仓库 Agent 入口为 [AGENTS.md](AGENTS.md)。当前尚未完成全链路多城市，不能只替换重庆数据或修改 `activeCity` 来接入新城。
-
-协作约定见 [CONTRIBUTING.md](CONTRIBUTING.md)。建议每项修改使用独立分支，通过 Pull Request 说明改动与验证，再合并到 `main`。
-
-仓库保留源码、必要数据、设计素材与来源记录；依赖目录、构建目录、本机缓存和环境配置由 `.gitignore` 排除。`map-base/dist/` 与 `map-base/preview.html` 在本地执行构建后生成，不需要手动上传。
-
-项目自有代码尚未选定开源许可证。现有第三方软件、地图数据、图片和视频各自的来源与用途说明仍需保留，见 `map-base/licenses/`、`MAP-PLATFORM-DECISION.md`、`FOOD-CONTENT-SOURCES.md` 和 `CREATOR-GUIDES-SOURCES.md`。
+普通页面顶部可切城市。长沙核实工作台明确提示未开放，不读取重庆草稿。想去与距离模式按城保存在浏览器里，不随Git同步；重庆核实草稿可导出/导入。单文件也应通过HTTP验证，不能据此承诺所有浏览器的file协议均可用。
 
 ## 两台电脑的素材同步
 
-第三批分支的代码包含93张视频封面，安装构建即可显示地图与缩略图；完整原片和MP4另行导入。前两批有10个来源素材包，第三批新增4包约2.0 GB，已上传并核对远端哈希。已有旧10包的电脑只需追加4包；首次完整导入为旧10包加新4包。双方按 [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md) 同步。
+Git包含两城221张片段小封面、来源和必要地图；原片与MP4需单独导入。重庆按已有来源包增量同步；长沙54个来源包（含5份仅原片）已在 [长沙素材预发布](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-01-changsha) 发布并核对远端SHA256。按 `map-base/data/media-bundles.json` 选择所需ZIP，不必重下已有素材。
+
+先同步包含相应来源的代码，在 `map-base/` 执行：
+
+```powershell
+npm.cmd run media:import -- '下载目录/实际素材包.zip'
+npm.cmd run build
+npm.cmd run preview
+```
+
+无本机视频时仍可看地图、封面、来源和地址；导入后再验证实际播放。导入器自动识别城市、校验身份和哈希，旧重庆包兼容；重复同内容跳过，冲突保留本机文件。不要整包手动覆盖`.local`。制作方的按城剪辑/封面/打包及Release交付步骤见 [素材说明](MEDIA-COLLABORATION.md)。
+
+## 目录与进一步说明
+
+| 位置 | 用途 |
+| --- | --- |
+| `map-base/src/` | 当前网站源码和样式 |
+| `map-base/config/cities.json` | 已接入城市配置；准备态不会自动跳过缺资源项 |
+| `map-base/data/` | 重庆兼容数据、公共索引与必要地图 |
+| `map-base/data/cities/<cityId>/` | 新城市独立数据、地图与路网 |
+| `map-base/assets/video-posters/<sourceId>/` | 对应片段真实原片小封面 |
+| `map-base/scripts/` | 构建、素材、数据准备与检查脚本 |
+| `output/research/<cityId>/` | 按城来源核对和交接记录 |
+| `output/` | 研究与验证材料，部分脚本依赖，不能整体删除或忽略 |
+| `design/` | 设计参考和早期原型，非主工程 |
+| `PROJECT-STATUS.md` | 日期倒序状态，旧章节保留为历史 |
+
+各城在独立分支推进完整功能，公共改动单独提交并统一整合。不要用异城目录覆盖重庆，不只修改 `activeCity` 就宣称新城完成；已有分支继续保留。构建产物 `dist/`、`preview*.html` 以及依赖、本机媒体和环境按`.gitignore`处理，不手工维护。
+
+功能和数据说明见 [主工程说明](map-base/README.md)、[验证记录](map-base/VERIFICATION.md)、[片段素材说明](map-base/VIDEO-LIBRARY.md) 和 [道路距离说明](map-base/FOOD-ROAD-DISTANCE.md)。这些文档的旧日期数字以最新状态为准，不作为当前验收固定数量。
+
+项目自有代码尚未选定开源许可证。第三方软件、地图、图片和视频各自来源与用途说明保留，见 `map-base/licenses/`、`MAP-PLATFORM-DECISION.md`、`FOOD-CONTENT-SOURCES.md` 和 `CREATOR-GUIDES-SOURCES.md`。
