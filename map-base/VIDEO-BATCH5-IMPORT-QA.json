@@ -1,0 +1,66 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "Three actual new ZIPs, imported in an isolated directory; identity/checksums, repeat imports, conflict preservation. No real user media modified.",
+  "packages": [
+    {
+      "name": "shitu-media-cq-mei-7529179722208546106-947e00caa9635971.zip",
+      "bytes": 22141678,
+      "sha256": "4a70aa669ee4e471d3883c2a6bfcceb8633ef4488d2a38776310a373b239ea56",
+      "clips": 7
+    },
+    {
+      "name": "shitu-media-cq-wenzi-7642999598881033417-3e0887aebe9095de.zip",
+      "bytes": 37314852,
+      "sha256": "d102b9f3f4389eac9198b8bf630f39a2c7a26f26acbdb32d19194b1f69eae31e",
+      "clips": 1
+    },
+    {
+      "name": "shitu-media-cq-xianxian-7563133332981484858-10cee35cb602bbcc.zip",
+      "bytes": 60868070,
+      "sha256": "c659808df040e033aa6ba0ddeecd8cce05ae35d5880713e92daa4d91a58aacbf",
+      "clips": 1
+    }
+  ],
+  "checks": [
+    {
+      "name": "cq-mei-7529179722208546106 exact source package imports within size and safety budgets",
+      "passed": true,
+      "details": {
+        "sourceId": "cq-mei-7529179722208546106",
+        "clips": 7,
+        "newFiles": 15
+      }
+    },
+    {
+      "name": "cq-wenzi-7642999598881033417 exact source package imports within size and safety budgets",
+      "passed": true,
+      "details": {
+        "sourceId": "cq-wenzi-7642999598881033417",
+        "clips": 1,
+        "newFiles": 3
+      }
+    },
+    {
+      "name": "cq-xianxian-7563133332981484858 exact source package imports within size and safety budgets",
+      "passed": true,
+      "details": {
+        "sourceId": "cq-xianxian-7563133332981484858",
+        "clips": 1,
+        "newFiles": 3
+      }
+    },
+    {
+      "name": "All three imports preserve other sources and total 9 clips",
+      "passed": true
+    },
+    {
+      "name": "Reimport of identical bundle makes no writes",
+      "passed": true
+    },
+    {
+      "name": "Conflicting imported clip is rejected and retained without overwriting",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

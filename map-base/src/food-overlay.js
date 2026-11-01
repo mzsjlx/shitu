@@ -87,11 +87,13 @@ export class FoodOverlay {
       const entry={item,button,element,marker,saveButton,closeButton};this.items.push(entry);
       if(typeof onToggleSave==='function'){
         button.addEventListener('pointerenter',event=>{
-          if(element.classList.contains('is-collapsed'))return;
+          if(entry.element.classList.contains('is-collapsed')&&entry.item.id!==this.selected)return;
           if(event.pointerType==='mouse'&&matchMedia('(hover:hover)').matches)this.popover.scheduleHover(item,entry);
         });
         button.addEventListener('focus',()=>{
-          if(!element.classList.contains('is-collapsed')&&button.matches(':focus-visible'))this.popover.show(item,entry);
+          if(!entry.element.classList.contains('is-collapsed')||entry.item.id===this.selected){
+            if(button.matches(':focus-visible'))this.popover.show(item,entry);
+          }
         });
         element.addEventListener('pointerleave',()=>this.popover.scheduleClose());
       }
@@ -114,6 +116,10 @@ export class FoodOverlay {
   scheduleLayout(){if(!this.frame)this.frame=requestAnimationFrame(()=>{this.frame=null;this.layout();});}
   layout(){
     const bounds=this.map.getContainer().getBoundingClientRect(),placed=[];
+    // Fan out markers sharing one approximate anchor in screen pixels only.
+    // Their actual coordinates and route distances must remain unchanged.
+    const coincident=new Map();
+    for(const entry of this.items){const key=entry.item.coordinates.join(',');if(!coincident.has(key))coincident.set(key,[]);coincident.get(key).push(entry);}
     const ordered=[...this.items].sort((a,b)=>Number(b.item.id===this.selected)-Number(a.item.id===this.selected)||Number(this.wanted.has(b.item.id))-Number(this.wanted.has(a.item.id)));
     for(const entry of ordered){
       const isSelected=Boolean(this.selected&&entry.item.id===this.selected);
@@ -122,7 +128,10 @@ export class FoodOverlay {
       entry.element.style.zIndex=isSelected?'10':'';
       if(!isSelected||this.compact){
         const focusedAction=entry.element.contains(document.activeElement)&&document.activeElement!==entry.button;
-        entry.element.classList.add('is-collapsed');entry.marker.setOffset([0,14]);
+        entry.element.classList.add('is-collapsed');
+        const group=coincident.get(entry.item.coordinates.join(',')),index=group?group.indexOf(entry):0;
+        const xOffset=group?((index-(group.length-1)/2)*52):0;
+        entry.marker.setOffset([xOffset,14]);
         if(focusedAction&&getComputedStyle(entry.element).visibility!=='hidden')entry.button.focus({preventScroll:true});
       }else{
         entry.element.classList.remove('is-collapsed');entry.marker.setOffset([0,-4]);

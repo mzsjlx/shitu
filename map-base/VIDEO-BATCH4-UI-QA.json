@@ -1,0 +1,1264 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "Isolated branch on local port 8793: all 24 new clips decode; one advancing playback per source; source/segment switching and close unload audio; unlocated clips stay off map; attribution and 2025 note checked. Not full-clip listening.",
+  "checks": [
+    {
+      "name": "All four supplied works are present with actual segments",
+      "passed": true,
+      "detail": [
+        {
+          "id": "cq-baozao-7676071047438803849",
+          "author": "暴躁扒拉",
+          "segments": 11
+        },
+        {
+          "id": "cq-yangyu-7699016826356895027",
+          "author": "洋芋大王",
+          "segments": 1
+        },
+        {
+          "id": "cq-suisui-7640793670463833265",
+          "author": "岁岁念～",
+          "segments": 5
+        },
+        {
+          "id": "cq-xiaoyang-yubei-7532432677610278170",
+          "author": "小羊在重庆",
+          "segments": 7
+        }
+      ]
+    },
+    {
+      "name": "Every new segment has a built local clip and poster",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Library counts reflect the full current JSON",
+      "passed": true,
+      "detail": "117 个本地片段 · 34 段位置待补"
+    },
+    {
+      "name": "cq-baozao-7676071047438803849 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongjing-doufunao selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongjing-doufunao decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 16.1,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-rongjing-doufunao-4a9226b7df371e9c.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 16.1
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongjing-doufunao keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.127747,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dalitang-liangxia selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dalitang-liangxia decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 16.366341,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-dalitang-liangxia-12486fb1ee3ba35d.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 16.366
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dalitang-liangxia keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dadukou-roubing selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dadukou-roubing decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 14.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-dadukou-roubing-0df3890fc723677e.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 14.466999999999999
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dadukou-roubing keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dadukou-roubing stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongchang-dougan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongchang-dougan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 13.633333,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-rongchang-dougan-97b8c6f8bef91a2f.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 13.632999999999996
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongchang-dougan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongchang-dougan stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-tongliang-gao selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-tongliang-gao decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 13.1,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-tongliang-gao-4a682a0ad73dbdde.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 13.100000000000009
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-tongliang-gao keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-tongliang-gao stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-xinyang-guobaorou selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-xinyang-guobaorou decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 17.766667,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-xinyang-guobaorou-db73422bc3674c6f.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 17.733999999999995
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-xinyang-guobaorou keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-yudong-chuanchuan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-yudong-chuanchuan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 14.7,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-yudong-chuanchuan-7c25af5a15e7aa21.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 14.700000000000003
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-yudong-chuanchuan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-yudong-chuanchuan stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-shiziping-tudou selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-shiziping-tudou decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 12.7,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-shiziping-tudou-602806a00fa14551.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 12.699999999999989
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-shiziping-tudou keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-nanping-ciba selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-nanping-ciba decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 7.966341,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-nanping-ciba-0574be6124b94851.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 7.966000000000008
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-nanping-ciba keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-danzishi-huoguofen selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-danzishi-huoguofen decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 17.5,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-danzishi-huoguofen-e235e8d4d1fe8714.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 17.467000000000013
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-danzishi-huoguofen keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 17.233333,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-huahuiyuan-juanjuan-16c7ecc153bc7ac9.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 17.232999999999976
+      }
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "Changing to cq-yangyu-7699016826356895027 pauses and unloads the previous source",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 33.6,
+        "width": 2160,
+        "height": 3840,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-yangyu-7699016826356895027/cq-yangyu-7699016826356895027-xiaoxue-xiaochi-59179b5d1f6db4df.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 33.599999999999994
+      }
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.128954,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "Changing to cq-suisui-7640793670463833265 pauses and unloads the previous source",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-guobaorou selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-guobaorou decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 20.466667,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-suisui-7640793670463833265/cq-suisui-7640793670463833265-guobaorou-f29c722174eeb5e4.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 20.433999999999997
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-guobaorou keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.127119,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-dayoubian selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-dayoubian decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 7.9,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-suisui-7640793670463833265/cq-suisui-7640793670463833265-dayoubian-4978c7e08dd05706.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 7.900000000000002
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-dayoubian keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-zhurouchuan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-zhurouchuan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 10.4,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-suisui-7640793670463833265/cq-suisui-7640793670463833265-zhurouchuan-d1e06acf3120df52.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 10.399999999999999
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-zhurouchuan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-xiangjiaofeibing selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-xiangjiaofeibing decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 10.6,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-suisui-7640793670463833265/cq-suisui-7640793670463833265-xiangjiaofeibing-2271fe25cf17af6c.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 10.600000000000001
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-xiangjiaofeibing keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-luchuanchuan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-luchuanchuan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 17.8,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-suisui-7640793670463833265/cq-suisui-7640793670463833265-luchuanchuan-e1ecb553be45629e.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 17.799999999999997
+      }
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-luchuanchuan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "Changing to cq-xiaoyang-yubei-7532432677610278170 pauses and unloads the previous source",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 6.833333,
+        "width": 1440,
+        "height": 1920,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing-3e4706f6634996bb.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 6.833
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.126394,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-29",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 7.4,
+        "width": 1440,
+        "height": 1920,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing-c924f7f1e840bc1b.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 7.399999999999999
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-29",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 6.866016,
+        "width": 1440,
+        "height": 1920,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba-35a96a967d85c7a8.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 6.834
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-29",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 7.066341,
+        "width": 1440,
+        "height": 1920,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan-ed3dae4d9a6e2e92.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 7.0660000000000025
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-29",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 10,
+        "width": 1440,
+        "height": 1920,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian-6043dcf91f6eb2e2.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 9.966999999999999
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-29",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 8.1,
+        "width": 1440,
+        "height": 1920,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi-c40006d49b18bd6d.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 8.067
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-29",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 8.133008,
+        "width": 1440,
+        "height": 1920,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-huahui-ciba-bae04af13d20694a.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 8.133000000000003
+      }
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-29",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "Library before close really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.125819,
+        "muted": true
+      }
+    },
+    {
+      "name": "Closing library unloads active video",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "Library is closed after the close control",
+      "passed": true
+    },
+    {
+      "name": "No runtime or media verification errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "No external platform or third-party prefetch requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "media": [
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-rongjing-doufunao",
+      "surface": "library",
+      "duration": 16.1,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-rongjing-doufunao-4a9226b7df371e9c.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-dalitang-liangxia",
+      "surface": "library",
+      "duration": 16.366341,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-dalitang-liangxia-12486fb1ee3ba35d.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-dadukou-roubing",
+      "surface": "library",
+      "duration": 14.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-dadukou-roubing-0df3890fc723677e.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-rongchang-dougan",
+      "surface": "library",
+      "duration": 13.633333,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-rongchang-dougan-97b8c6f8bef91a2f.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-tongliang-gao",
+      "surface": "library",
+      "duration": 13.1,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-tongliang-gao-4a682a0ad73dbdde.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-xinyang-guobaorou",
+      "surface": "library",
+      "duration": 17.766667,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-xinyang-guobaorou-db73422bc3674c6f.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-yudong-chuanchuan",
+      "surface": "library",
+      "duration": 14.7,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-yudong-chuanchuan-7c25af5a15e7aa21.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-shiziping-tudou",
+      "surface": "library",
+      "duration": 12.7,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-shiziping-tudou-602806a00fa14551.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-nanping-ciba",
+      "surface": "library",
+      "duration": 7.966341,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-nanping-ciba-0574be6124b94851.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-danzishi-huoguofen",
+      "surface": "library",
+      "duration": 17.5,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-danzishi-huoguofen-e235e8d4d1fe8714.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-baozao-7676071047438803849",
+      "id": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan",
+      "surface": "library",
+      "duration": 17.233333,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-baozao-7676071047438803849/cq-baozao-7676071047438803849-huahuiyuan-juanjuan-16c7ecc153bc7ac9.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-yangyu-7699016826356895027",
+      "id": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi",
+      "surface": "library",
+      "duration": 33.6,
+      "width": 2160,
+      "height": 3840,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-yangyu-7699016826356895027/cq-yangyu-7699016826356895027-xiaoxue-xiaochi-59179b5d1f6db4df.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-suisui-7640793670463833265",
+      "id": "cq-suisui-7640793670463833265-guobaorou",
+      "surface": "library",
+      "duration": 20.466667,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-suisui-7640793670463833265/cq-suisui-7640793670463833265-guobaorou-f29c722174eeb5e4.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-suisui-7640793670463833265",
+      "id": "cq-suisui-7640793670463833265-dayoubian",
+      "surface": "library",
+      "duration": 7.9,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-suisui-7640793670463833265/cq-suisui-7640793670463833265-dayoubian-4978c7e08dd05706.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-suisui-7640793670463833265",
+      "id": "cq-suisui-7640793670463833265-zhurouchuan",
+      "surface": "library",
+      "duration": 10.4,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-suisui-7640793670463833265/cq-suisui-7640793670463833265-zhurouchuan-d1e06acf3120df52.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-suisui-7640793670463833265",
+      "id": "cq-suisui-7640793670463833265-xiangjiaofeibing",
+      "surface": "library",
+      "duration": 10.6,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-suisui-7640793670463833265/cq-suisui-7640793670463833265-xiangjiaofeibing-2271fe25cf17af6c.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-suisui-7640793670463833265",
+      "id": "cq-suisui-7640793670463833265-luchuanchuan",
+      "surface": "library",
+      "duration": 17.8,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-suisui-7640793670463833265/cq-suisui-7640793670463833265-luchuanchuan-e1ecb553be45629e.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-yubei-7532432677610278170",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing",
+      "surface": "library",
+      "duration": 6.833333,
+      "width": 1440,
+      "height": 1920,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing-3e4706f6634996bb.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-yubei-7532432677610278170",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing",
+      "surface": "library",
+      "duration": 7.4,
+      "width": 1440,
+      "height": 1920,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing-c924f7f1e840bc1b.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-yubei-7532432677610278170",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba",
+      "surface": "library",
+      "duration": 6.866016,
+      "width": 1440,
+      "height": 1920,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba-35a96a967d85c7a8.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-yubei-7532432677610278170",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan",
+      "surface": "library",
+      "duration": 7.066341,
+      "width": 1440,
+      "height": 1920,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan-ed3dae4d9a6e2e92.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-yubei-7532432677610278170",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian",
+      "surface": "library",
+      "duration": 10,
+      "width": 1440,
+      "height": 1920,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian-6043dcf91f6eb2e2.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-yubei-7532432677610278170",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi",
+      "surface": "library",
+      "duration": 8.1,
+      "width": 1440,
+      "height": 1920,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi-c40006d49b18bd6d.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xiaoyang-yubei-7532432677610278170",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba",
+      "surface": "library",
+      "duration": 8.133008,
+      "width": 1440,
+      "height": 1920,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8793/media/videos/cq-xiaoyang-yubei-7532432677610278170/cq-xiaoyang-yubei-7532432677610278170-huahui-ciba-bae04af13d20694a.mp4",
+      "objectFit": "contain",
+      "error": null
+    }
+  ],
+  "externalRequests": [],
+  "screenshots": [],
+  "counts": {
+    "sources": 4,
+    "newSegments": 24,
+    "newUnlocatedSegments": 5,
+    "totalSegments": 117,
+    "totalUnlocatedSegments": 34,
+    "mapPlaces": 79
+  },
+  "sources": [
+    {
+      "id": "cq-baozao-7676071047438803849",
+      "author": "暴躁扒拉",
+      "segments": 11
+    },
+    {
+      "id": "cq-yangyu-7699016826356895027",
+      "author": "洋芋大王",
+      "segments": 1
+    },
+    {
+      "id": "cq-suisui-7640793670463833265",
+      "author": "岁岁念～",
+      "segments": 5
+    },
+    {
+      "id": "cq-xiaoyang-yubei-7532432677610278170",
+      "author": "小羊在重庆",
+      "segments": 7
+    }
+  ],
+  "passed": true
+}

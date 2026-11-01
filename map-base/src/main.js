@@ -56,6 +56,7 @@ function endLandmarkFocus() {
   overlay?.scheduleLayout();
 }
 function focusLandmark() {
+  if(!landmark)return;
   videoMapContext?.clear();
   streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();
   landmarkFocus=true;state.threeD=true;state.buildings=true;
@@ -185,12 +186,12 @@ function search() {
   const matches=matchingRoads(text);
   if(!matches.length){
     const empty=document.createElement('p');empty.className='search-empty';
-    empty.textContent='当前城区地图中未找到这条路，试试“沧白路”。';results.append(empty);return;
+    empty.textContent='当前城区地图中未找到这条路。';results.append(empty);return;
   }
   for(const road of matches) {
     const button=document.createElement('button');button.type='button';
     const name=document.createElement('span');name.textContent=road.name;
-    const note=document.createElement('small');note.textContent='重庆 · '+roadDescription(road);
+    const note=document.createElement('small');note.textContent=(city?.name||'城市')+' · '+roadDescription(road);
     button.append(name,note);button.addEventListener('click',()=>selectRoad(road));
     button.addEventListener('keydown',event=>{
       const list=[...results.querySelectorAll('button')],at=list.indexOf(button);
@@ -381,71 +382,62 @@ function enableSpatialControls(map) {
 async function init() {
   boot.stage('读取城市配置');
   const config=await readJSON('config/cities.json');
-  let requestedCity = null;
+  let cityKey = null;
   try {
     const rawSearch = decodeURIComponent(location.search);
     const params = new URLSearchParams(rawSearch.startsWith('?') ? rawSearch : '?' + rawSearch);
-    requestedCity = params.get('city');
-    if (!requestedCity) {
+    cityKey = params.get('city');
+    if (!cityKey) {
       for (const [k] of params.entries()) {
         if (k.startsWith('city=')) {
-          requestedCity = k.split('=')[1];
+          cityKey = k.split('=')[1];
           break;
         }
       }
     }
   } catch (_) {
-    requestedCity = new URLSearchParams(location.search).get('city');
+    cityKey = new URLSearchParams(location.search).get('city');
   }
-  const currentCityKey = (requestedCity && config.cities[requestedCity]) ? requestedCity : config.activeCity;
-  city=config.cities[currentCityKey];
-  if(!city)throw new Error('当前城市尚未配置');
+  if (!cityKey) cityKey = config.activeCity;
+  city = config.cities[cityKey];
+  if (!city) throw new Error('城市“' + cityKey + '”尚未配置');
+  if (bundle?.cityId && bundle.cityId !== cityKey) {
+    location.replace(new URL('preview-' + cityKey + '.html' + location.search + location.hash, location.href));
+    return;
+  }
   const [index,manifest,audit]=await Promise.all([
     readJSON(city.dataFiles.index),readJSON(city.dataFiles.manifest),readJSON(city.dataFiles.audit)
   ]);
-  if(index.city!==currentCityKey)throw new Error('城市索引与当前地图不一致');
+  if(index.city!==cityKey)throw new Error('城市索引与当前地图不一致');
   roads=index.roads;
   if (!city.demTiles) state.terrain = false;
   document.title='食途 · '+city.name+'地图';
   $('search-input').setAttribute('aria-label','搜索'+city.name+'道路');
   $('search-input').setAttribute('placeholder','找一条路，开始逛'+city.name);
   $('coverage-description').textContent=city.coverageLabel;
-  if ($('current-city-name')) $('current-city-name').textContent = city.name;
-  if ($('current-city-region')) $('current-city-region').textContent = ' · ' + city.regionLabel;
-  $('about-map').replaceChildren(document.createTextNode(city.name + ' · 自建底图 '), Object.assign(document.createElement('span'), {textContent: 'ⓘ'}));
-  $('loading').replaceChildren(document.createElement('span'), document.createTextNode('正在展开'+city.name+'…'));
-  if ($('reset-view')) $('reset-view').setAttribute('aria-label', '回到'+city.name+'初始视角');
-
-  const cityBtn = $('city-chip'), cityMenu = $('city-dropdown');
-  if (cityBtn && cityMenu) {
-    cityBtn.addEventListener('click', e => {
-      e.stopPropagation();
-      const open = cityMenu.hidden;
-      cityMenu.hidden = !open;
-      cityBtn.setAttribute('aria-expanded', String(open));
-    });
-    document.addEventListener('click', e => {
-      if (!cityMenu.hidden && !cityBtn.contains(e.target) && !cityMenu.contains(e.target)) {
-        cityMenu.hidden = true;
-        cityBtn.setAttribute('aria-expanded', 'false');
+  const citySelect=document.createElement('select');citySelect.setAttribute('aria-label','切换城市');
+  for(const [id,value] of Object.entries(config.cities)){const option=document.createElement('option');option.value=id;option.textContent=value.name;citySelect.append(option);}citySelect.value=cityKey;
+  citySelect.addEventListener('change',()=>{videoLibrary?.stop();overlay?.popover.close();const url=new URL(location.href);url.searchParams.set('city',citySelect.value);for(const key of ['place','clip','videos'])url.searchParams.delete(key);url.hash='';location.assign(url);});
+  document.querySelector('.city-chip').replaceChildren(citySelect);
+  const region=document.createElement('span');region.textContent=' · '+city.regionLabel;document.querySelector('.city-chip').append(region);
+  $('search-input').placeholder='找一条路，开始逛'+city.name;
+  document.querySelector('.map-shell').setAttribute('aria-label',city.name+'真实道路三维地图');
+  $('loading').replaceChildren(document.createElement('span'),document.createTextNode('正在展开'+city.name+'…'));
+  $('reset-view').setAttribute('aria-label','回到'+city.name+'初始视角');
+  $('about-map').textContent=city.name+city.regionLabel+' · 自建底图 ⓘ';
+  if ($('terrain-option')) {
+    const terrainLabel = $('terrain-option').closest('label');
+    if (!city.demTiles) {
+      state.terrain = false;
+      $('terrain-option').checked = false;
+      $('terrain-option').disabled = true;
+      if (terrainLabel) terrainLabel.style.display = 'none';
+    } else {
+      if (terrainLabel) {
+        terrainLabel.style.display = '';
+        terrainLabel.querySelector('small').textContent = '查看' + city.name + '的地形起伏';
       }
-    });
-    cityMenu.querySelectorAll('.city-option').forEach(opt => {
-      const c = opt.dataset.city;
-      if (c === currentCityKey) opt.classList.add('active');
-      opt.addEventListener('click', () => {
-        cityMenu.hidden = true;
-        cityBtn.setAttribute('aria-expanded', 'false');
-        if (c !== currentCityKey) {
-          const params = new URLSearchParams(location.search);
-          for (const key of Array.from(params.keys())) {
-            if (key.includes('city')) params.delete(key);
-          }
-          params.set('city', c);
-          location.search = '?' + params.toString();
-        }
-      });
-    });
+    }
   }
   const tileURL=new URL(city.tiles,location.href).href;
   boot.stage('准备地图数据与后台绘图程序');
@@ -508,10 +500,10 @@ async function init() {
     if(map.isStyleLoaded())restore();else map.once('style.load',restore);
   });
   map.once('style.load',()=>{
-    boot.stage('绘制'+city.name+'真实道路');
+    boot.stage('绘制'+(city.name||'')+'真实道路');
     registerPoiIcons(map);
     terrainVisible();layersVisible();wire();
-    if (currentCityKey === 'chongqing') {
+    if(city.landmarks?.includes('hongyadong')){
       landmark=new HongyadongLayer(maplibregl.MercatorCoordinate,{onError:error=>{
         console.error('[landmark]',error.message);
         $('landmark-note').hidden=false;$('landmark-note').textContent='洪崖洞细节暂未载入，真实地图仍可使用。';
@@ -520,33 +512,25 @@ async function init() {
       try{map.addLayer(landmark,'selected-road-edge');layersVisible();}
       catch(error){landmark.error=error.message;landmark.onError(error);}
     } else {
-      if ($('landmark-entry')) {
-        $('landmark-entry').hidden = true;
-        $('landmark-entry').style.display = 'none';
-      }
-      if ($('landmark-note')) $('landmark-note').hidden = true;
+      if ($('landmark-entry')) $('landmark-entry').hidden=true;
+      if ($('landmark-note')) $('landmark-note').hidden=true;
+    }
+    if (!city.streetDetail) {
       const streetTools = document.querySelector('.street-tools');
-      if (streetTools) {
-        streetTools.hidden = true;
-        streetTools.style.display = 'none';
-      }
-      const walkTools = document.querySelector('.walk-tools');
-      if (walkTools) {
-        walkTools.hidden = true;
-        walkTools.style.display = 'none';
-      }
+      if (streetTools) streetTools.hidden = true;
       const streetOption = $('street-option')?.closest('label');
       if (streetOption) streetOption.style.display = 'none';
+    }
+    if (!city.walkNetwork) {
+      const walkTools = document.querySelector('.walk-tools');
+      if (walkTools) walkTools.hidden = true;
       const walkOption = $('walk-option')?.closest('label');
       if (walkOption) walkOption.style.display = 'none';
+    }
+    if (!city.foodContent) {
       const foodOption = $('food-option')?.closest('label');
-      if (!city.foodContent && foodOption) foodOption.style.display = 'none';
-      if (!city.foodContent && $('food-entry')) $('food-entry').style.display = 'none';
-      if ($('terrain-option')) {
-        $('terrain-option').checked = false;
-        $('terrain-option').disabled = true;
-        $('terrain-option').closest('label').style.display = 'none';
-      }
+      if (foodOption) foodOption.style.display = 'none';
+      if ($('food-entry')) $('food-entry').style.display = 'none';
     }
     overlay=new FoodOverlay(map,maplibregl.Marker,city.bounds);
     videoMapContext=new VideoMapContext(map,{onBack:(id,opener)=>videoLibrary.open(opener,id),onLayout:()=>overlay.scheduleLayout()});
@@ -580,6 +564,7 @@ async function init() {
       });
     }
     if(city.foodContent)food=new FoodExperience(map,overlay,{
+      cityId:cityKey,cityName:city.name,amapCityCode:city.amapCityCode||'500000',
       config:city.foodContent,readJSON,roadWorkerURL,assetURL:path=>bundle?.assets?.[path]||new URL(path,location.href).href,
       onFocus:()=>{
         videoMapContext?.clear();
@@ -630,6 +615,17 @@ async function init() {
   map.on('sourcedata',checkReady);
   $('source-date').textContent=manifest.upstreamBuild.key.replace('.pmtiles','').replace(/^(\d{4})(\d{2})(\d{2})$/,'$1-$2-$3');
   $('source-stats').textContent='当前可搜索 '+roads.length.toLocaleString()+' 组源道路名称。按源名称合并的道路可能包含多段路面、桥梁或隧道。';
+  videoLibrary=new VideoLibrary({cityId:cityKey,cityConfig:city,onMapPlace:async segment=>{
+    if(!state.ready||!food)throw new Error('地图还在展开，稍后再试。');
+    await food.activate();const item=food.records.find(item=>item.id==='video-'+(segment.placeId||segment.id));
+    if(!item)throw new Error('这家店暂不在当前地图范围。');
+    food.focusStops(item.id);food.overlay.showPopover(item,true,segment.id);
+  },onMapContext:(context,segment)=>{
+    if(!state.ready||!videoMapContext)throw new Error('地图还在展开，稍后再试。');
+    endLandmarkFocus();streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();
+    if($('food-pick-dialog').open)$('food-pick-dialog').close();
+    return videoMapContext.show(context,segment,{threeD:state.threeD,bearing:city.bearing,duration:duration()});
+  }});
   window.foodCityMap={
     map,city,manifest,audit,
     get ready(){return state.ready;},
@@ -640,6 +636,7 @@ async function init() {
     get walk(){return walk;},
     get landmark(){return landmark;},
     get videoContext(){return videoMapContext;},
+    get videoLibrary(){return videoLibrary;},
     getStats:()=>({ready:state.ready,center:map.getCenter().toArray(),zoom:map.getZoom(),pitch:map.getPitch(),terrain:!!map.getTerrain(),elevationMetres:map.queryTerrainElevation(map.getCenter()),roadNameGroups:roads.length,renderedRoadFragments:map.getLayer(roadHitLayers[0])?map.queryRenderedFeatures({layers:roadHitLayers}).length:0,selectedRoad:selectedRoad?.name||null,foodCards:overlay?.markers.length||0,failures:[...failures]}),
     findRoad:name=>roads.find(r=>r.name===name),
     focusRoad:name=>{const road=roads.find(r=>r.name===name);if(!road)throw new Error('道路未找到');selectRoad(road);},
@@ -648,15 +645,5 @@ async function init() {
     setView:view
   };
 }
-const videoLibrary=new VideoLibrary({onMapPlace:async segment=>{
-  if(!state.ready||!food)throw new Error('地图还在展开，稍后再试。');
-  await food.activate();const item=food.records.find(item=>item.id==='video-'+(segment.placeId||segment.id));
-  if(!item)throw new Error('这家店暂不在当前地图范围。');
-  food.focusStops(item.id);food.overlay.showPopover(item,true,segment.id);
-},onMapContext:(context,segment)=>{
-  if(!state.ready||!videoMapContext)throw new Error('地图还在展开，稍后再试。');
-  endLandmarkFocus();streets?.cancelFocus();food?.cancelFocus();walk?.hide();clearRoad();closeLayers();
-  if($('food-pick-dialog').open)$('food-pick-dialog').close();
-  return videoMapContext.show(context,segment,{threeD:state.threeD,bearing:city.bearing,duration:duration()});
-}});
+let videoLibrary;
 init().catch(error=>{console.error(error);fail('本地数据未准备完整：'+error.message);});

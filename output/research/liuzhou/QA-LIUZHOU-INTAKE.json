@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-01T14:26:10.063Z",
+  "verifiedOn": "2026-11-01T14:52:58.074Z",
   "city": "liuzhou",
   "source": "lz-wangzulan-7575112557141898601",
   "checks": [
@@ -9,10 +9,10 @@
       "detail": {
         "name": "柳州",
         "center": [
-          109.41000000000008,
-          24.32988392610001
+          109.40658613986398,
+          24.32981109286743
         ],
-        "zoom": 13.042599881714072,
+        "zoom": 13.12711365796577,
         "cityKey": "liuzhou",
         "recordCount": 9,
         "records": [
@@ -352,7 +352,7 @@
       "detail": {
         "found": true,
         "src": "http://127.0.0.1:8791/media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
-        "currentTime": 0.771959,
+        "currentTime": 0.761539,
         "paused": false,
         "duration": 20
       }
@@ -446,7 +446,7 @@
       "detail": {
         "name": "重庆",
         "cityKey": "chongqing",
-        "recordCount": 60,
+        "recordCount": 81,
         "hasLiuzhouRecord": false
       }
     },
@@ -456,7 +456,7 @@
       "detail": {
         "name": "重庆",
         "cityKey": "chongqing",
-        "recordCount": 60,
+        "recordCount": 81,
         "hasLiuzhouRecord": false
       }
     }

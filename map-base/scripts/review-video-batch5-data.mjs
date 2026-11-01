@@ -1,0 +1,20 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+import {validateVideoLibrary} from '../src/video-library-model.js';
+const load=async p=>JSON.parse(await readFile(p,'utf8'));
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const checks=[];async function check(name,fn){try{await fn();checks.push({name,passed:true});}catch(e){checks.push({name,passed:false,error:e.message});}}
+const data=await load('data/video-library.json'),old=JSON.parse(execFileSync('git',['show','46f6296:map-base/data/video-library.json'],{encoding:'utf8'}));
+const ids=['7529179722208546106','7642999598881033417','7563133332981484858'],sources=data.sources.filter(s=>ids.some(id=>s.id.endsWith(id))),segments=sources.flatMap(s=>s.segments);
+const ledger=await load('.local/video-clips/report.json'),posters=await load('data/video-posters.json');
+await check('Valid catalog and previously recorded sources unchanged',()=>{validateVideoLibrary(data);assert.deepEqual(data.sources.slice(0,old.sources.length),old.sources);});
+await check('Three distinct authorized sources and nine non-overlapping segments',()=>{assert.equal(sources.length,3);assert.equal(segments.length,9);assert.equal(new Set(sources.map(s=>s.url)).size,3);assert(sources.every(s=>s.rights?.status==='user-confirmed'));});
+await check('Two approximate street references and seven unlocated clips',()=>{assert.equal(segments.filter(s=>s.coordinates).length,2);assert.equal(segments.filter(s=>!s.coordinates).length,7);assert(segments.every(s=>s.routeEligible===false));});
+await check('Old footage carries year and current-status notes',()=>{assert(sources.filter(s=>s.publishedOn.startsWith('2025')).flatMap(s=>s.segments).every(s=>s.footageNote?.includes('2025年')&&s.footageNote.includes('营业情况待确认')));});
+await check('No unsupported identity merge of the two boxed meals',()=>{assert(sources.flatMap(s=>s.segments).filter(s=>s.category==='盒饭').every(s=>!s.placeId));});
+await check('Three original videos match their recorded SHA256',async()=>{for(const s of sources)assert.equal(hash(await readFile(`.local/video-intake/${s.id}/source.mp4`)),s.sourceSHA256);});
+await check('Nine encoded clips and actual-frame posters match their ledger',async()=>{for(const s of sources)for(const x of s.segments){const r=ledger.records.find(r=>r.id===x.id);assert(r);assert.equal(r.start,x.start);assert.equal(r.end,x.end);assert.equal(hash(await readFile(`.local/video-clips/${s.id}/${r.clip}`)),r.clipSHA256);assert.equal(hash(await readFile(`.local/video-clips/${s.id}/${r.poster}`)),r.posterSHA256);assert(r.probe.streams.some(v=>v.codec_type==='video'&&v.codec_name==='h264'));assert(r.probe.streams.some(v=>v.codec_type==='audio'&&v.codec_name==='aac'));}});
+const result={verifiedOn:'2026-10-30',scope:'Batch 5 catalog, source hashes, clip and poster ledger. Geographic anchors and browser playback checked separately.',checks,summary:{sources:sources.length,segments:segments.length,located:2,unlocated:7},passed:checks.every(c=>c.passed)};
+await writeFile('VIDEO-BATCH5-DATA-QA.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));if(!result.passed)process.exitCode=1;

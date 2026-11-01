@@ -1,0 +1,718 @@
+{
+  "reviewedOn": "2026-11-01",
+  "sourceDate": "2026-10-30",
+  "sourceSHA256": "332b53d9abfb33deb3093829cb38c6f016e775720edc5da39e11e00b9496c21d",
+  "scope": "原片地址所对应的开放街区参照；未核实店门或营业状态。",
+  "anchors": [
+    {
+      "kind": "osm-way",
+      "id": 1311929868,
+      "name": "朝晖路",
+      "url": "https://www.openstreetmap.org/way/1311929868",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 12143517883,
+      "coordinates": [
+        113.011444,
+        28.180217
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 59098367,
+      "name": "枫林三路",
+      "url": "https://www.openstreetmap.org/way/59098367",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 13615738861,
+      "coordinates": [
+        112.882208,
+        28.203289
+      ]
+    },
+    {
+      "kind": "osm-node",
+      "id": 13897940283,
+      "name": "南门口",
+      "url": "https://www.openstreetmap.org/node/13897940283",
+      "sourceDate": "2026-10-30",
+      "method": "point",
+      "coordinates": [
+        112.9705587,
+        28.1849031
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1524792756,
+      "name": "城南西路",
+      "url": "https://www.openstreetmap.org/way/1524792756",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 13921185769,
+      "coordinates": [
+        112.9747814,
+        28.1866975
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1527630151,
+      "name": "蔡锷北路",
+      "url": "https://www.openstreetmap.org/way/1527630151",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 13920959799,
+      "coordinates": [
+        112.9758468,
+        28.20456
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 185140711,
+      "name": "营盘路",
+      "url": "https://www.openstreetmap.org/way/185140711",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 13920972417,
+      "coordinates": [
+        112.9737942,
+        28.2078415
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 30612615,
+      "name": "三一大道",
+      "url": "https://www.openstreetmap.org/way/30612615",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 338485497,
+      "coordinates": [
+        113.0026259,
+        28.2351978
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 389412058,
+      "name": "靳江路",
+      "url": "https://www.openstreetmap.org/way/389412058",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 9466479446,
+      "coordinates": [
+        112.9361742,
+        28.1547354
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 87015316,
+      "name": "东风路",
+      "url": "https://www.openstreetmap.org/way/87015316",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 2785100701,
+      "coordinates": [
+        112.9860982,
+        28.2143961
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 395682956,
+      "name": "花侯路",
+      "url": "https://www.openstreetmap.org/way/395682956",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3985057777,
+      "coordinates": [
+        113.0467163,
+        28.1897884
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1526805982,
+      "name": "黄兴南路",
+      "url": "https://www.openstreetmap.org/way/1526805982",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 13915051309,
+      "coordinates": [
+        112.9706941,
+        28.1871
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1524792748,
+      "name": "蔡锷北路",
+      "url": "https://www.openstreetmap.org/way/1524792748",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 13920972428,
+      "coordinates": [
+        112.9760933,
+        28.2085941
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 542992630,
+      "name": "三兴街",
+      "url": "https://www.openstreetmap.org/way/542992630",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 13890968182,
+      "coordinates": [
+        112.9682532,
+        28.1950588
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1545181614,
+      "name": "湖南大学天马学生公寓四区",
+      "url": "https://www.openstreetmap.org/way/1545181614",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 14054577395,
+      "coordinates": [
+        112.9433132,
+        28.165746
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 308054423,
+      "name": "麓山南路",
+      "url": "https://www.openstreetmap.org/way/308054423",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 8686557149,
+      "coordinates": [
+        112.9368984,
+        28.1709603
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 308054423,
+      "name": "麓山南路",
+      "url": "https://www.openstreetmap.org/way/308054423",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 9441042961,
+      "coordinates": [
+        112.9367831,
+        28.1708416
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 308054423,
+      "name": "麓山南路",
+      "url": "https://www.openstreetmap.org/way/308054423",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 690140923,
+      "coordinates": [
+        112.9366714,
+        28.17074
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 365300528,
+      "name": "下碧湘街",
+      "url": "https://www.openstreetmap.org/way/365300528",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3693235594,
+      "coordinates": [
+        112.9672944,
+        28.1860467
+      ]
+    },
+    {
+      "kind": "osm-node",
+      "id": 8532516216,
+      "name": "四方坪街道",
+      "url": "https://www.openstreetmap.org/node/8532516216",
+      "sourceDate": "2026-10-30",
+      "method": "point",
+      "coordinates": [
+        113.0056619,
+        28.2306687
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1527630151,
+      "name": "蔡锷北路",
+      "url": "https://www.openstreetmap.org/way/1527630151",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3925535607,
+      "coordinates": [
+        112.9759455,
+        28.2066064
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1524403714,
+      "name": "县正街",
+      "url": "https://www.openstreetmap.org/way/1524403714",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 1955841399,
+      "coordinates": [
+        112.9754198,
+        28.1892032
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1334821135,
+      "name": "红墙巷",
+      "url": "https://www.openstreetmap.org/way/1334821135",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 12348683781,
+      "coordinates": [
+        112.9779709,
+        28.2047662
+      ]
+    },
+    {
+      "kind": "osm-node",
+      "id": 13912406419,
+      "name": "袁家岭南",
+      "url": "https://www.openstreetmap.org/node/13912406419",
+      "sourceDate": "2026-10-30",
+      "method": "point",
+      "coordinates": [
+        112.9912734,
+        28.1957754
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1524805322,
+      "name": "东风路",
+      "url": "https://www.openstreetmap.org/way/1524805322",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 1600975019,
+      "coordinates": [
+        112.9868697,
+        28.2231283
+      ]
+    },
+    {
+      "kind": "osm-node",
+      "id": 13897940243,
+      "name": "水风井",
+      "url": "https://www.openstreetmap.org/node/13897940243",
+      "sourceDate": "2026-10-30",
+      "method": "point",
+      "coordinates": [
+        112.9756764,
+        28.2040878
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1548111897,
+      "name": "营盘路",
+      "url": "https://www.openstreetmap.org/way/1548111897",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3139866134,
+      "coordinates": [
+        112.9803818,
+        28.2070025
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 185145104,
+      "name": "燕山街",
+      "url": "https://www.openstreetmap.org/way/185145104",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 1957171810,
+      "coordinates": [
+        112.9983932,
+        28.1998014
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 184960644,
+      "name": "学院街",
+      "url": "https://www.openstreetmap.org/way/184960644",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 4619022553,
+      "coordinates": [
+        112.9696097,
+        28.188502
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 543405237,
+      "name": "藩后街",
+      "url": "https://www.openstreetmap.org/way/543405237",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 5128509167,
+      "coordinates": [
+        112.9778707,
+        28.1965695
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 184964585,
+      "name": "白沙路",
+      "url": "https://www.openstreetmap.org/way/184964585",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 1955308119,
+      "coordinates": [
+        112.9756749,
+        28.183696
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 185145063,
+      "name": "春风街",
+      "url": "https://www.openstreetmap.org/way/185145063",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 9612223708,
+      "coordinates": [
+        112.9695374,
+        28.2006938
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 268748336,
+      "name": "五一广场",
+      "url": "https://www.openstreetmap.org/way/268748336",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 2740741662,
+      "coordinates": [
+        112.9725896,
+        28.1993209
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1311929833,
+      "name": "扬帆小区-E区",
+      "url": "https://www.openstreetmap.org/way/1311929833",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 12143517418,
+      "coordinates": [
+        113.0328856,
+        28.191185
+      ]
+    },
+    {
+      "kind": "osm-node",
+      "id": 13916453788,
+      "name": "朝阳村地铁站",
+      "url": "https://www.openstreetmap.org/node/13916453788",
+      "sourceDate": "2026-10-30",
+      "method": "point",
+      "coordinates": [
+        113.0052316,
+        28.1916053
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 308054423,
+      "name": "麓山南路",
+      "url": "https://www.openstreetmap.org/way/308054423",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 690140924,
+      "coordinates": [
+        112.9370671,
+        28.1711643
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 54818904,
+      "name": "阜埠河路",
+      "url": "https://www.openstreetmap.org/way/54818904",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 9441042993,
+      "coordinates": [
+        112.9484073,
+        28.1669592
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1034623963,
+      "name": "曲塘路",
+      "url": "https://www.openstreetmap.org/way/1034623963",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 12065371596,
+      "coordinates": [
+        113.0117248,
+        28.1465409
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 389383157,
+      "name": "曙光中路",
+      "url": "https://www.openstreetmap.org/way/389383157",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 4845046352,
+      "coordinates": [
+        112.9956506,
+        28.1764153
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1029410063,
+      "name": "后湖路",
+      "url": "https://www.openstreetmap.org/way/1029410063",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 9466479523,
+      "coordinates": [
+        112.9438755,
+        28.1680774
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1550060837,
+      "name": "黄兴南路",
+      "url": "https://www.openstreetmap.org/way/1550060837",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 13915051300,
+      "coordinates": [
+        112.9705739,
+        28.1871017
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 316397569,
+      "name": "府中路",
+      "url": "https://www.openstreetmap.org/way/316397569",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3225051930,
+      "coordinates": [
+        112.9343345,
+        28.23256
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 389264690,
+      "name": "含光路",
+      "url": "https://www.openstreetmap.org/way/389264690",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3926980950,
+      "coordinates": [
+        112.946123,
+        28.2404782
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 963432587,
+      "name": "银盆南路",
+      "url": "https://www.openstreetmap.org/way/963432587",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 11986117060,
+      "coordinates": [
+        112.948319,
+        28.2273023
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 184960645,
+      "name": "坡子街",
+      "url": "https://www.openstreetmap.org/way/184960645",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 13922610466,
+      "coordinates": [
+        112.9707312,
+        28.1933402
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 848038109,
+      "name": "远大二路",
+      "url": "https://www.openstreetmap.org/way/848038109",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3924256674,
+      "coordinates": [
+        113.0576019,
+        28.2033578
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 389264690,
+      "name": "含光路",
+      "url": "https://www.openstreetmap.org/way/389264690",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3926980934,
+      "coordinates": [
+        112.9465084,
+        28.2404996
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 527545456,
+      "name": "浏正街",
+      "url": "https://www.openstreetmap.org/way/527545456",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 12060625545,
+      "coordinates": [
+        112.9811329,
+        28.1942903
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 543973401,
+      "name": "东茅街",
+      "url": "https://www.openstreetmap.org/way/543973401",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 5258386738,
+      "coordinates": [
+        112.9768114,
+        28.1931653
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 308723466,
+      "name": "湘江中路",
+      "url": "https://www.openstreetmap.org/way/308723466",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3139866089,
+      "coordinates": [
+        112.9638312,
+        28.1891726
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 391471199,
+      "name": "万家丽北路",
+      "url": "https://www.openstreetmap.org/way/391471199",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3950069214,
+      "coordinates": [
+        113.0347586,
+        28.2429085
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 542992631,
+      "name": "西牌楼",
+      "url": "https://www.openstreetmap.org/way/542992631",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 4448731556,
+      "coordinates": [
+        112.9682926,
+        28.1971182
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 876602287,
+      "name": "湘府中路",
+      "url": "https://www.openstreetmap.org/way/876602287",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 8175504809,
+      "coordinates": [
+        113.0054168,
+        28.113726
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 789248911,
+      "name": "迎新路",
+      "url": "https://www.openstreetmap.org/way/789248911",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 4843444119,
+      "coordinates": [
+        113.0089671,
+        28.115576
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 1569033303,
+      "name": "荷花路",
+      "url": "https://www.openstreetmap.org/way/1569033303",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 6304586960,
+      "coordinates": [
+        113.0200834,
+        28.1949269
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 391471214,
+      "name": "万家丽北路",
+      "url": "https://www.openstreetmap.org/way/391471214",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 3946852016,
+      "coordinates": [
+        113.0354439,
+        28.247259
+      ]
+    }
+  ]
+}

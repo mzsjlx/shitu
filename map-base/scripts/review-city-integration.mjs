@@ -1,0 +1,21 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {execFileSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+import {allCityCatalogs} from './city-catalogs.mjs';
+import {groupVideoPlaces,withinMapBounds} from '../src/video-places.js';
+import {buildFoodRoadRouter,nearestRoadSnaps,findFoodRoadRoute} from '../src/food-road-router.js';
+import {mediaKey} from './video-library-common.mjs';
+const root=process.cwd(),checks=[];async function check(name,fn){try{await fn();checks.push({name,passed:true});}catch(e){checks.push({name,passed:false,error:e.message});}}
+const catalogs=await allCityCatalogs(root),cq=catalogs.find(c=>c.cityId==='chongqing'),cs=catalogs.find(c=>c.cityId==='changsha');
+const oldCQ=JSON.parse(execFileSync('git',['show','54a3a7b:map-base/data/video-library.json'],{encoding:'utf8'}));
+const oldCS=JSON.parse(execFileSync('git',['show','d0bae5d:map-base/data/cities/changsha/video-library.json'],{encoding:'utf8'}));
+await check('Current main Chongqing catalog and 126 clips retained',()=>{assert.deepEqual(cq.catalog,oldCQ);assert.equal(cq.catalog.sources.flatMap(s=>s.segments).length,126);});
+await check('All Changsha source URLs, hashes, clip cuts and media identities retained',()=>{assert.equal(cs.catalog.sources.length,54);for(const s of cs.catalog.sources){const old=oldCS.sources.find(o=>o.id===s.id);assert.equal(s.url,old.url);assert.equal(s.sourceSHA256,old.sourceSHA256);assert.equal(s.segments.length,old.segments.length);for(const x of s.segments)assert.equal(mediaKey(s,x),mediaKey(old,old.segments.find(t=>t.id===x.id)));}});
+const located=groupVideoPlaces(cs.catalog).filter(g=>withinMapBounds(g.primary.segment,cs.city.bounds));
+await check('71 map stops and ten explicitly unlocated Changsha clips',()=>{assert.equal(located.length,71);assert.equal(cs.catalog.sources.flatMap(s=>s.segments).filter(s=>!s.coordinates).length,10);});
+await check('Every adopted coordinate has a frozen open object and node reference',()=>{for(const s of cs.catalog.sources.flatMap(s=>s.segments).filter(s=>s.coordinates)){const a=s.planningLocation.anchor;assert(a.id&&a.url.startsWith('https://www.openstreetmap.org/'));assert.equal(s.coordinateSystem,'WGS84');assert.equal(s.routeEligible,false);}});
+const router=buildFoodRoadRouter(JSON.parse(await readFile('data/cities/changsha/food-road-network.json','utf8')));
+await check('All shown Changsha stops connect within the existing 250m limit',()=>{for(const g of located)assert(nearestRoadSnaps(router,g.primary.segment.coordinates,250).length,g.id);});
+await check('Cross-river route follows source edges',()=>{const from=located.find(g=>g.id==='video-cs-qiaolezizi-guolulu'),to=located.find(g=>g.id==='video-cs-chenniuniu-junyue');const route=findFoodRoadRoute(router,from.primary.segment.coordinates,to.primary.segment.coordinates,{audit:true});assert.equal(route.status,'ready');assert(route.distanceMetres>1000);assert(route.sourceEdges.length>10);});
+const report={verifiedOn:'2026-11-01',scope:'Merged catalog identity, open-reference metadata, all visible Changsha road snaps, and source-edge route; browser and raw-PBF verification recorded separately.',checks,passed:checks.every(c=>c.passed)};
+await writeFile('CITY-INTEGRATION-DATA-QA.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));if(!report.passed)process.exitCode=1;

@@ -4,18 +4,24 @@ import {validateVideoLibrary} from '../src/video-library-model.js';
 import {digest,mediaKey,mediaNames} from './video-library-common.mjs';
 import {validateVideoMapContexts} from '../src/video-map-context-model.js';
 
-export async function buildCityVideoLibrary(root, cityKey, catalogRel, outAssetsRel){
+export async function buildCityVideoLibrary(root, cityKey, catalogRel, outAssetsRel, cityConfig){
   const catalogPath=path.join(root,catalogRel);
   let catalogRaw;try{catalogRaw=await readFile(catalogPath,'utf8');}catch(error){if(error.code==='ENOENT')return;throw error;}
   const data=validateVideoLibrary(JSON.parse(catalogRaw),cityKey);
-  if(cityKey==='chongqing'){
-    try{
-      const contextsRaw=await readFile(path.join(root,'data/video-map-contexts.json'),'utf8');
-      validateVideoMapContexts(JSON.parse(contextsRaw),data);
-    }catch(error){if(error.code!=='ENOENT')throw error;}
-  }
+  const contextsRel=(cityKey==='chongqing')?'data/video-map-contexts.json':`data/cities/${cityKey}/video-map-contexts.json`;
+  try{
+    const contextsRaw=await readFile(path.join(root,contextsRel),'utf8');
+    validateVideoMapContexts(JSON.parse(contextsRaw),data,cityConfig?.bounds,cityKey);
+  }catch(error){if(error.code!=='ENOENT')throw error;}
   let report;try{report=JSON.parse(await readFile(path.join(root,'.local/video-clips/report.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
-  let posters;try{posters=JSON.parse(await readFile(path.join(root,'data/video-posters.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+  let posters;
+  const postersRel=(cityKey==='chongqing')?'data/video-posters.json':`data/cities/${cityKey}/video-posters.json`;
+  try{
+    posters=JSON.parse(await readFile(path.join(root,postersRel),'utf8'));
+  }catch(error){
+    if(error.code!=='ENOENT')throw error;
+    try{posters=JSON.parse(await readFile(path.join(root,'data/video-posters.json'),'utf8'));}catch{}
+  }
   const assets={schemaVersion:1,catalogSHA256:digest(await readFile(catalogPath)),segments:{}};
   for(const source of data.sources)for(const segment of source.segments){
     const names=mediaNames(source,segment),key=mediaKey(source,segment),publicPoster=posters?.segments?.[segment.id];
@@ -36,27 +42,33 @@ export async function buildCityVideoLibrary(root, cityKey, catalogRel, outAssets
     await Promise.all([cp(clip,path.join(out,names.clip)),cp(poster,path.join(out,names.poster))]);
     assets.segments[segment.id]={clip:`./media/videos/${source.id}/${names.clip}`,poster:`./media/videos/${source.id}/${names.poster}`,durationSeconds:Number(record.probe.format.duration)};
   }
-  const distOut=path.join(root,'dist',outAssetsRel);
-  await mkdir(path.dirname(distOut),{recursive:true});
-  await writeFile(distOut,JSON.stringify(assets,null,2)+'\n');
-  if(cityKey!=='chongqing'){
-    const srcOut=path.join(root,outAssetsRel);
-    await mkdir(path.dirname(srcOut),{recursive:true});
-    await writeFile(srcOut,JSON.stringify(assets,null,2)+'\n');
+  if(outAssetsRel){
+    const distOut=path.join(root,'dist',outAssetsRel);
+    await mkdir(path.dirname(distOut),{recursive:true});
+    await writeFile(distOut,JSON.stringify(assets,null,2)+'\n');
+    if(cityKey!=='chongqing'&&cityConfig?.foodContent?.videoAssets){
+      const srcOut=path.join(root,cityConfig.foodContent.videoAssets);
+      await mkdir(path.dirname(srcOut),{recursive:true});
+      await writeFile(srcOut,JSON.stringify(assets,null,2)+'\n');
+    }
   }
   console.log(`Video library (${cityKey}): ${Object.values(assets.segments).filter(s=>s.clip).length} local clips, ${Object.values(assets.segments).filter(s=>s.poster).length} posters.`);
+  return assets;
 }
 
 export async function buildVideoLibrary(root){
-  await buildCityVideoLibrary(root,'chongqing','data/video-library.json','data/video-library-assets.json');
-  try{
-    const config=JSON.parse(await readFile(path.join(root,'config/cities.json'),'utf8'));
-    for(const [key,city] of Object.entries(config.cities||{})){
-      if(key==='chongqing')continue;
-      if(city.foodContent?.videoLibrary){
-        const outAssets=city.foodContent.videoAssets||`data/cities/${key}/video-library-assets.json`;
-        await buildCityVideoLibrary(root,key,city.foodContent.videoLibrary,outAssets);
-      }
+  const citiesConfig=JSON.parse(await readFile(path.join(root,'config/cities.json'),'utf8'));
+  const allAssets={schemaVersion:1,segments:{}};
+  for(const [cityId,city] of Object.entries(citiesConfig.cities)){
+    const catalogRel=city.foodContent?.videoLibrary||(cityId==='chongqing'?'data/video-library.json':`data/cities/${cityId}/video-library.json`);
+    const outAssetsRel=city.foodContent?.videoAssets||(cityId==='chongqing'?'data/video-library-assets.json':`data/cities/${cityId}/video-library-assets.json`);
+    const cityAssets=await buildCityVideoLibrary(root,cityId,catalogRel,outAssetsRel,city);
+    if(cityAssets?.segments){
+      Object.assign(allAssets.segments,cityAssets.segments);
     }
-  }catch(error){if(error.code!=='ENOENT')throw error;}
+  }
+  const globalDist=path.join(root,'dist/data/video-library-assets.json');
+  await mkdir(path.dirname(globalDist),{recursive:true});
+  await writeFile(globalDist,JSON.stringify(allAssets,null,2)+'\n');
+  console.log('Video library (global): '+Object.values(allAssets.segments).filter(s=>s.clip).length+' local clips, '+Object.values(allAssets.segments).filter(s=>s.poster).length+' posters.');
 }

@@ -1,0 +1,31 @@
+{
+  "verifiedOn": "2026-11-01",
+  "scope": "Merged catalog identity, open-reference metadata, all visible Changsha road snaps, and source-edge route; browser and raw-PBF verification recorded separately.",
+  "checks": [
+    {
+      "name": "Current main Chongqing catalog and 126 clips retained",
+      "passed": true
+    },
+    {
+      "name": "All Changsha source URLs, hashes, clip cuts and media identities retained",
+      "passed": true
+    },
+    {
+      "name": "71 map stops and ten explicitly unlocated Changsha clips",
+      "passed": true
+    },
+    {
+      "name": "Every adopted coordinate has a frozen open object and node reference",
+      "passed": true
+    },
+    {
+      "name": "All shown Changsha stops connect within the existing 250m limit",
+      "passed": true
+    },
+    {
+      "name": "Cross-river route follows source edges",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
