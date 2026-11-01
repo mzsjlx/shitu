@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "changsha",
+  "bounds": [
+    112.86,
+    28.14,
+    113.05,
+    28.25
+  ],
+  "source": {
+    "date": "2026-10-30",
+    "sha256": "332b53d9abfb33deb3093829cb38c6f016e775720edc5da39e11e00b9496c21d",
+    "url": "https://download.geofabrik.de/asia/china/hunan.html",
+    "fileName": "hunan-latest.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "networkSHA256": "8cbb64e0d4ec48bfdfe7233a690b1bb73aba3609d788e9bf30bca9cefddf0132",
+  "bytes": 4993633,
+  "nodes": 77443,
+  "ways": 11512,
+  "footRestrictionWays": 0,
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
+}

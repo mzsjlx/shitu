@@ -1,5 +1,9 @@
 # 食途 · 美食旅行地图
 
+> 2026-11-01 两城整合修复：默认重庆126段/81点，长沙95段/71点。首页通过城市下拉切换，或访问 `/?city=changsha&view=food`。长沙另10段待定位、3段范围外，视频保留；两城仍为局部底图，不支持跨城连续拖动。旧说明按日期理解，最新状态见 [PROJECT-STATUS.md](PROJECT-STATUS.md)。
+
+长沙视频素材通过 [长沙素材预发布](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-01-changsha) 按来源下载；取得对应代码后运行 `npm.cmd run media:import -- 下载的素材包.zip`，再构建。旧重庆包继续兼容。构建会生成两城资料页及 `preview-chongqing.html`、`preview-changsha.html`；普通预览仍按下方方法启动。视频原片和MP4不在Git中，未导入素材时可看封面、来源和地址。
+
 > 2026-10-30 重庆第五批本地共126个视频片段、81个地图点和41段未定位；本批分支依赖尚未合并的第四批，详见 [PROJECT-STATUS.md](PROJECT-STATUS.md)。
 
 > 2026-10-30 第四批在 `codex/chongqing-video-batch4`：累计117个视频片段、79个地图点和34段未定位。下方第三批的93段、60点为之前的历史基线；最新交接和验证见 [PROJECT-STATUS.md](PROJECT-STATUS.md)。

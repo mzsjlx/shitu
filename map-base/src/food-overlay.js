@@ -79,7 +79,13 @@ export class FoodOverlay {
       this.markers.push(marker);
       const entry={item,button,element,marker,saveButton};this.items.push(entry);
       if(typeof onToggleSave==='function'){
-        button.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse'&&matchMedia('(hover:hover)').matches)this.popover.scheduleHover(item,entry);});
+        button.addEventListener('pointerenter',event=>{
+          if(event.pointerType==='mouse'&&matchMedia('(hover:hover)').matches){
+            if(!entry.element.classList.contains('is-collapsed')||entry.item.id===this.selected){
+              this.popover.scheduleHover(item,entry);
+            }
+          }
+        });
         button.addEventListener('focus',()=>{if(button.matches(':focus-visible'))this.popover.show(item,entry);});
         element.addEventListener('pointerleave',()=>this.popover.scheduleClose());
       }
@@ -106,6 +112,7 @@ export class FoodOverlay {
     // Their actual coordinates and route distances must remain unchanged.
     const coincident=new Map();
     for(const entry of this.items){const key=entry.item.coordinates.join(',');if(!coincident.has(key))coincident.set(key,[]);coincident.get(key).push(entry);}
+    const zoom=this.map.getZoom(),isFar=zoom<14.8;
     const anchors=this.items.map(({item})=>{const p=this.map.project(item.coordinates);return {id:item.id,x:p.x+bounds.left,y:p.y+bounds.top};});
     const controls=[...document.querySelectorAll('.maplibregl-ctrl-top-right,.view-dock,#trip-dock,.street-tools,.walk-tools,#food-pick-tools,#walk-panel,.street-note,#road-info,#landmark-note,#video-map-note')].filter(e=>e.getClientRects().length).map(e=>e.getBoundingClientRect());
     const ordered=[...this.items].sort((a,b)=>Number(b.item.id===this.selected)-Number(a.item.id===this.selected)||Number(this.wanted.has(b.item.id))-Number(this.wanted.has(a.item.id)));
@@ -118,7 +125,7 @@ export class FoodOverlay {
       const coversOtherPoint=anchors.some(p=>p.id!==entry.item.id&&r.left<p.x+16&&r.right>p.x-16&&r.top<p.y+16&&r.bottom>p.y-16);
       const cardLimit=innerWidth<600?1:3;
       const cropped=r.left<bounds.left+12||r.right>bounds.right-12||r.top<bounds.top+10||r.bottom>bounds.bottom-105;
-      if(this.compact||cropped||coversControl||coversOtherPoint||(placed.length>=cardLimit&&entry.item.id!==this.selected)||(overlaps&&entry.item.id!==this.selected)){
+      if((isFar&&entry.item.id!==this.selected)||this.compact||cropped||coversControl||coversOtherPoint||(placed.length>=cardLimit&&entry.item.id!==this.selected)||(overlaps&&entry.item.id!==this.selected)){
         const focusedAction=entry.element.contains(document.activeElement)&&document.activeElement!==entry.button;
         entry.element.classList.add('is-collapsed');
         const group=coincident.get(entry.item.coordinates.join(',')),index=group.indexOf(entry);

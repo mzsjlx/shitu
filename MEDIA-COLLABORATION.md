@@ -1,5 +1,9 @@
 # 两台电脑共用地图与视频素材
 
+**2026-11-01 多城市素材：** 重庆原有包继续兼容；长沙54来源、95段视频（其中5个来源仅有原片）按来源打包到 [长沙素材预发布](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-01-changsha)，总7,630,535,842字节。精确包名、大小、SHA256见 `map-base/data/media-bundles.json`。先同步对应代码，再导入需要的ZIP，不要下载整个`.local`。
+
+在 `map-base` 下，制作方可用 `npm.cmd run media:pack -- --city changsha --source 来源ID`；不带来源时打包所选城市已有原片的来源。接收方用 `npm.cmd run media:import -- 下载的ZIP路径` 自动识别来源所属城市，也可加 `--city changsha` 限定；错误城市会拒绝且不写文件。旧重庆包没有city字段，仍按来源身份和哈希识别。不同城的剪辑记录追加合并，重复同内容跳过、冲突保留。本次54包已在独立目录导入并验证，不改用户真实素材。
+
 **2026-10-30 第五批：** 3个来源、9段片段，需先取得第四批代码和素材，再取得第五批代码及 [第五批素材 Release](https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch5) 中3个来源包并按下文导入。具体包名、哈希和页面发布状态以 `map-base/data/media-bundles.json` 及 Release 页面为准。第五批依赖尚未合并的第四批，不应直接覆盖同学的增量。
 
 **2026-10-30第四批：** 对应代码 `codex/chongqing-video-batch4`，新增4个来源、24段视频；四个素材包及校验摘要已上传并核对远端哈希，下载入口为 [第四批素材 Release](https://github.com/mzsjlx/shitu/releases/tag/media-2026-10-30-batch4)，以页面实际发布状态为准。已有前3批14包的电脑只需追加本批4包，取得对应代码后继续使用 `media:import` 命令。下文旧日期数字是当时记录。

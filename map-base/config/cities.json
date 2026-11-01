@@ -25,8 +25,13 @@
       "demTiles": "data/terrain/{z}/{x}/{y}.png",
       "demMinZoom": 11,
       "demMaxZoom": 13,
+      "amapCityCode": "500000",
+      "landmarks": [
+        "hongyadong"
+      ],
       "foodContent": {
         "records": "data/food-records.json",
+        "videoLibrary": "data/video-library.json",
         "sprite": "assets/food-concepts.jpg",
         "roadNetwork": "data/food-road-network.json"
       },
@@ -47,6 +52,46 @@
         "manifest": "data/source-manifest.json",
         "tileMetadata": "data/tile-metadata.json",
         "terrainManifest": "data/terrain-manifest.json"
+      },
+      "status": "local-validation-only"
+    },
+    "changsha": {
+      "name": "长沙",
+      "regionLabel": "中心城区",
+      "coverageLabel": "长沙核心城区，涵盖岳麓山、橘子洲、五一商圈及湘江两岸",
+      "bounds": [
+        112.86,
+        28.14,
+        113.05,
+        28.25
+      ],
+      "center": [
+        112.977,
+        28.194
+      ],
+      "zoom": 15.5,
+      "pitch": 52,
+      "bearing": -15,
+      "minZoom": 12,
+      "maxZoom": 19,
+      "tiles": "data/cities/changsha/changsha.pmtiles",
+      "demTiles": "data/cities/changsha/terrain/{z}/{x}/{y}.png",
+      "demMinZoom": 11,
+      "demMaxZoom": 13,
+      "amapCityCode": "430100",
+      "landmarks": [],
+      "foodContent": {
+        "records": "data/cities/changsha/food-records.json",
+        "videoLibrary": "data/cities/changsha/video-library.json",
+        "sprite": "assets/food-concepts.jpg",
+        "roadNetwork": "data/cities/changsha/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/changsha/roads-index.json",
+        "audit": "data/cities/changsha/data-audit.json",
+        "manifest": "data/cities/changsha/source-manifest.json",
+        "tileMetadata": "data/cities/changsha/tile-metadata.json",
+        "terrainManifest": "data/cities/changsha/terrain-manifest.json"
       },
       "status": "local-validation-only"
     }

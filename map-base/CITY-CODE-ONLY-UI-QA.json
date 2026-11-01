@@ -1,0 +1,20 @@
+{
+  "verifiedOn": "2026-11-01",
+  "commit": "a402b7c",
+  "scope": "Fresh worktree with no .local media; isolated simulated mobile browser.",
+  "checks": [
+    {
+      "name": "Clean checkout contains 221 posters and zero local clips",
+      "passed": true
+    },
+    {
+      "name": "changsha clean checkout renders real poster and honest import status",
+      "passed": true
+    },
+    {
+      "name": "chongqing clean checkout renders real poster and honest import status",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
