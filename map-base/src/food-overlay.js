@@ -102,6 +102,10 @@ export class FoodOverlay {
   scheduleLayout(){if(!this.frame)this.frame=requestAnimationFrame(()=>{this.frame=null;this.layout();});}
   layout(){
     const bounds=this.map.getContainer().getBoundingClientRect(),placed=[];
+    // Fan out markers sharing one approximate anchor in screen pixels only.
+    // Their actual coordinates and route distances must remain unchanged.
+    const coincident=new Map();
+    for(const entry of this.items){const key=entry.item.coordinates.join(',');if(!coincident.has(key))coincident.set(key,[]);coincident.get(key).push(entry);}
     const anchors=this.items.map(({item})=>{const p=this.map.project(item.coordinates);return {id:item.id,x:p.x+bounds.left,y:p.y+bounds.top};});
     const controls=[...document.querySelectorAll('.maplibregl-ctrl-top-right,.view-dock,#trip-dock,.street-tools,.walk-tools,#food-pick-tools,#walk-panel,.street-note,#road-info,#landmark-note,#video-map-note')].filter(e=>e.getClientRects().length).map(e=>e.getBoundingClientRect());
     const ordered=[...this.items].sort((a,b)=>Number(b.item.id===this.selected)-Number(a.item.id===this.selected)||Number(this.wanted.has(b.item.id))-Number(this.wanted.has(a.item.id)));
@@ -116,7 +120,9 @@ export class FoodOverlay {
       const cropped=r.left<bounds.left+12||r.right>bounds.right-12||r.top<bounds.top+10||r.bottom>bounds.bottom-105;
       if(this.compact||cropped||coversControl||coversOtherPoint||(placed.length>=cardLimit&&entry.item.id!==this.selected)||(overlaps&&entry.item.id!==this.selected)){
         const focusedAction=entry.element.contains(document.activeElement)&&document.activeElement!==entry.button;
-        entry.element.classList.add('is-collapsed');entry.marker.setOffset([0,14]);
+        entry.element.classList.add('is-collapsed');
+        const group=coincident.get(entry.item.coordinates.join(',')),index=group.indexOf(entry);
+        entry.marker.setOffset([(index-(group.length-1)/2)*52,14]);
         if(focusedAction&&getComputedStyle(entry.element).visibility!=='hidden')entry.button.focus({preventScroll:true});
       }
       else placed.push(r);
