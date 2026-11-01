@@ -5,7 +5,7 @@
   "rights": {
     "status": "user-confirmed",
     "confirmedOn": "2026-11-01",
-    "scope": "经用户确认已获作者王祖蓝、陈赫、达哥在上海允许剪辑并在食途网站使用；保留原平台、原作者与原作品链接。",
+    "scope": "经用户确认已获作者王祖蓝、陈赫、达哥在上海、天才少女小酒、小爆炸、肉肉大搜索、汤氏熊允许剪辑并在食途网站使用；保留原平台、原作者与原作品链接。",
     "evidence": "本项目会话中的用户指令与确认；未独立审查授权文件。"
   },
   "sources": [
@@ -156,6 +156,150 @@
             "accuracy": "approximate",
             "label": "柳锌小区 · 白沙路5号老生活区",
             "basis": "原片探访柳北区白沙路柳锌老小区内曹妹螺蛳粉（10栋对面），坐标落于柳锌小区生活区内部道路。"
+          },
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "lz-xiaojiu-7528722963782159659",
+      "author": "天才少女小酒",
+      "title": "柳州我最害怕倒闭的老破店！不太好找，但真的巨巨好吃 #柳州美食 #总要来一趟柳州吧",
+      "url": "https://www.douyin.com/video/7528722963782159659",
+      "shareURL": "https://v.douyin.com/G39HmE7jAm8/",
+      "publishedOn": "2025-07-19",
+      "durationSeconds": 17.87,
+      "sourceSHA256": "6bddcbea0cd46a8f1b12efaf4dd0b49024c3d39f7cca0b3c3d61d07e535b537c",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "天才少女小酒探访城中区公园路老巷子排档煨婆婆，现场铁板猪脚与鲜虾煲烟火气十足。",
+      "segments": [
+        {
+          "id": "lz-xiaojiu-weipopo",
+          "name": "煨婆婆（公园路店）",
+          "category": "特色小吃 / 铁板排档",
+          "summary": "藏在柳侯公园旁老巷子里的市井烟火排档，招牌炭火铁板猪脚皮糯肉烂、热油酱汁浇淋滋滋作响，搭配铁板排骨与鲜虾煲，是本地人私藏的夜宵宝藏老店。",
+          "addressText": "柳州市城中区公园路44号（近柳侯公园）",
+          "start": 0.0,
+          "end": 17.5,
+          "posterSecond": 4.0,
+          "coordinates": [
+            109.41240,
+            24.31820
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "公园路44号 · 柳侯公园南门片区",
+            "basis": "原片门店招牌与POI定位为城中区公园路44号煨婆婆，邻近柳侯公园。"
+          },
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "lz-xiaobaozha-7689477707755025563",
+      "author": "小爆炸",
+      "title": "拜见柳州宵夜大王！！！！这一桌真的夯爆了！！！！",
+      "url": "https://www.douyin.com/video/7689477707755025563",
+      "shareURL": "https://v.douyin.com/3kAS9i5rMsw/",
+      "publishedOn": "2024-07-17",
+      "durationSeconds": 25.29,
+      "sourceSHA256": "f4389ce359a8c6796b9044e7e9f6e0d457efd4d44263a087aa0c706de3d36947",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "小爆炸在柳州窑埠古镇打卡雷老板家烧烤，招牌鱼籽生牛配薄荷青金桔汁，搭配炭烤海鲜与烤大串。",
+      "segments": [
+        {
+          "id": "lz-xiaobaozha-leilaoban",
+          "name": "雷老板家烧烤（窑埠店）",
+          "category": "宵夜 / 烧烤排档",
+          "summary": "窑埠古镇超人气夜宵大王，招牌鱼籽生牛裹满青金桔与薄荷蘸酱酸辣爽口，大盘烤牛肉、烤肥肠与炭烤海鲜份量霸道，夜宵氛围直接拉满。",
+          "addressText": "柳州市鱼峰区蟠龙路9号窑埠古镇B区44栋第一层3号",
+          "start": 0.0,
+          "end": 20.0,
+          "posterSecond": 5.0,
+          "coordinates": [
+            109.42310,
+            24.32480
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "窑埠古镇B区 · 蟠龙路9号",
+            "basis": "原片围裙与POI标注为窑埠古镇B区44栋雷老板家烧烤，临近蟠龙山与文昌大桥。"
+          },
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "lz-rourou-7115662751636147459",
+      "author": "肉肉大搜索",
+      "title": "柳州藏在菜市场里“有螺蛳肉的螺蛳粉”，配上一个小龙虾尾好丰富",
+      "url": "https://www.douyin.com/video/7115662751636147459",
+      "shareURL": "https://v.douyin.com/LUg1TGA6NvM/",
+      "publishedOn": "2022-07-02",
+      "durationSeconds": 207.19,
+      "sourceSHA256": "cf186224f166fb57360832c3eb26511a7b204ebe7be337356953785b6fcf26fd",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "肉肉大搜索探访火车站旁大鹅山菜市里的高家螺蛳粉，现场点大盆螺蛳肉螺蛳粉加小龙虾尾与丰富配菜。",
+      "segments": [
+        {
+          "id": "lz-rourou-gaojia",
+          "name": "高家螺蛳粉店",
+          "category": "特色小吃 / 螺蛳粉",
+          "summary": "藏在火车站旁大鹅山菜市里的老字号螺蛳粉，最大亮点是能吃到货真价实的大勺炒螺蛳肉，酸笋脆爽，配菜丰富，配上小龙虾尾和油葱极其过瘾。",
+          "addressText": "柳州市柳南区鹅山路大鹅山菜市31之一号",
+          "start": 0.0,
+          "end": 15.0,
+          "posterSecond": 2.0,
+          "coordinates": [
+            109.38750,
+            24.31680
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大鹅山菜市 · 鹅山路31-1号",
+            "basis": "原片探访柳州火车站西侧大鹅山菜市场内高家螺蛳粉店，坐标位于鹅山路南侧生活菜市。"
+          },
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "lz-tangshixiong-7699430467695148651",
+      "author": "汤氏熊",
+      "title": "柳州，远不止螺蛳粉！ 72小时连吃10家本地特色，20种美食，螺蛳粉只是冰山一角！",
+      "url": "https://www.douyin.com/video/7699430467695148651",
+      "shareURL": "https://v.douyin.com/3Yo15R_hbsA/",
+      "publishedOn": "2026-08-03",
+      "durationSeconds": 1007.03,
+      "sourceSHA256": "d94417b5255dfe0d56b4acb9634c295768014ef381b78cd7a5a0ce96d75cf514",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "汤氏熊打卡连塘路炒螺蛳粉创始名店刘姐鲜肉螺蛳粉，现场品尝招牌爆炒螺蛳粉与大盘炒螺蛳、虎皮猪脚。",
+      "segments": [
+        {
+          "id": "lz-tangshixiong-liujie",
+          "name": "刘姐鲜肉螺蛳粉（总店）",
+          "category": "特色小吃 / 炒螺蛳粉",
+          "summary": "连塘路上的老牌名店，荣获柳州最具创意螺蛳粉品牌，据传是柳州最早首创炒螺蛳粉的老店之一；大火爆炒锅气喷香，螺蛳大颗入味，虎皮猪脚酥烂饱汁。",
+          "addressText": "柳州市城中区中南街道连塘路90号",
+          "start": 19.0,
+          "end": 39.0,
+          "posterSecond": 20.0,
+          "coordinates": [
+            109.40190,
+            24.31692
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "连塘路90号 · 中南街道",
+            "basis": "原片墙面金色奖牌明确标注“刘姐鲜肉螺蛳粉”，位于城中区中南街道连塘路90号，紧邻青云与映山街片区。"
           },
           "routeEligible": false
         }

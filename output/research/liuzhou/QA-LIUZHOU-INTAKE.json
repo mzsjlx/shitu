@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-01T12:39:11.359Z",
+  "verifiedOn": "2026-11-01T14:26:10.063Z",
   "city": "liuzhou",
   "source": "lz-wangzulan-7575112557141898601",
   "checks": [
@@ -9,12 +9,12 @@
       "detail": {
         "name": "柳州",
         "center": [
-          109.40726337611665,
-          24.32972053875494
+          109.41000000000008,
+          24.32988392610001
         ],
-        "zoom": 13.109949651617894,
+        "zoom": 13.042599881714072,
         "cityKey": "liuzhou",
-        "recordCount": 5,
+        "recordCount": 9,
         "records": [
           {
             "id": "video-lz-wangzulan-zhangji",
@@ -70,12 +70,56 @@
             ],
             "localClip": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.mp4",
             "localPoster": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.jpg"
+          },
+          {
+            "id": "video-lz-xiaojiu-weipopo",
+            "name": "煨婆婆（公园路店）",
+            "category": "特色小吃 / 铁板排档",
+            "coordinates": [
+              109.4124,
+              24.3182
+            ],
+            "localClip": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.mp4",
+            "localPoster": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.jpg"
+          },
+          {
+            "id": "video-lz-xiaobaozha-leilaoban",
+            "name": "雷老板家烧烤（窑埠店）",
+            "category": "宵夜 / 烧烤排档",
+            "coordinates": [
+              109.4231,
+              24.3248
+            ],
+            "localClip": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.mp4",
+            "localPoster": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.jpg"
+          },
+          {
+            "id": "video-lz-rourou-gaojia",
+            "name": "高家螺蛳粉店",
+            "category": "特色小吃 / 螺蛳粉",
+            "coordinates": [
+              109.3875,
+              24.3168
+            ],
+            "localClip": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.mp4",
+            "localPoster": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.jpg"
+          },
+          {
+            "id": "video-lz-tangshixiong-liujie",
+            "name": "刘姐鲜肉螺蛳粉（总店）",
+            "category": "特色小吃 / 炒螺蛳粉",
+            "coordinates": [
+              109.4019,
+              24.31692
+            ],
+            "localClip": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.mp4",
+            "localPoster": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.jpg"
           }
         ]
       }
     },
     {
-      "name": "5 food records loaded across Liuzhou",
+      "name": "9 food records loaded across Liuzhou",
       "passed": true,
       "detail": [
         {
@@ -132,11 +176,55 @@
           ],
           "localClip": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.mp4",
           "localPoster": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.jpg"
+        },
+        {
+          "id": "video-lz-xiaojiu-weipopo",
+          "name": "煨婆婆（公园路店）",
+          "category": "特色小吃 / 铁板排档",
+          "coordinates": [
+            109.4124,
+            24.3182
+          ],
+          "localClip": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.mp4",
+          "localPoster": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.jpg"
+        },
+        {
+          "id": "video-lz-xiaobaozha-leilaoban",
+          "name": "雷老板家烧烤（窑埠店）",
+          "category": "宵夜 / 烧烤排档",
+          "coordinates": [
+            109.4231,
+            24.3248
+          ],
+          "localClip": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.mp4",
+          "localPoster": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.jpg"
+        },
+        {
+          "id": "video-lz-rourou-gaojia",
+          "name": "高家螺蛳粉店",
+          "category": "特色小吃 / 螺蛳粉",
+          "coordinates": [
+            109.3875,
+            24.3168
+          ],
+          "localClip": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.mp4",
+          "localPoster": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.jpg"
+        },
+        {
+          "id": "video-lz-tangshixiong-liujie",
+          "name": "刘姐鲜肉螺蛳粉（总店）",
+          "category": "特色小吃 / 炒螺蛳粉",
+          "coordinates": [
+            109.4019,
+            24.31692
+          ],
+          "localClip": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.mp4",
+          "localPoster": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.jpg"
         }
       ]
     },
     {
-      "name": "All 5 records have local MP4 clips and JPG posters",
+      "name": "All 9 records have local MP4 clips and JPG posters",
       "passed": true,
       "detail": [
         {
@@ -193,11 +281,55 @@
           ],
           "localClip": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.mp4",
           "localPoster": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.jpg"
+        },
+        {
+          "id": "video-lz-xiaojiu-weipopo",
+          "name": "煨婆婆（公园路店）",
+          "category": "特色小吃 / 铁板排档",
+          "coordinates": [
+            109.4124,
+            24.3182
+          ],
+          "localClip": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.mp4",
+          "localPoster": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.jpg"
+        },
+        {
+          "id": "video-lz-xiaobaozha-leilaoban",
+          "name": "雷老板家烧烤（窑埠店）",
+          "category": "宵夜 / 烧烤排档",
+          "coordinates": [
+            109.4231,
+            24.3248
+          ],
+          "localClip": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.mp4",
+          "localPoster": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.jpg"
+        },
+        {
+          "id": "video-lz-rourou-gaojia",
+          "name": "高家螺蛳粉店",
+          "category": "特色小吃 / 螺蛳粉",
+          "coordinates": [
+            109.3875,
+            24.3168
+          ],
+          "localClip": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.mp4",
+          "localPoster": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.jpg"
+        },
+        {
+          "id": "video-lz-tangshixiong-liujie",
+          "name": "刘姐鲜肉螺蛳粉（总店）",
+          "category": "特色小吃 / 炒螺蛳粉",
+          "coordinates": [
+            109.4019,
+            24.31692
+          ],
+          "localClip": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.mp4",
+          "localPoster": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.jpg"
         }
       ]
     },
     {
-      "name": "All 5 food markers default to collapsed circular icon badges",
+      "name": "All 9 food markers default to collapsed circular icon badges",
       "passed": true
     },
     {
@@ -220,18 +352,18 @@
       "detail": {
         "found": true,
         "src": "http://127.0.0.1:8791/media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
-        "currentTime": 0.761151,
+        "currentTime": 0.771959,
         "paused": false,
         "duration": 20
       }
     },
     {
-      "name": "Direct distance mode active with 5 saved stops",
+      "name": "Direct distance mode active with 9 saved stops",
       "passed": true,
       "detail": {
         "routeMode": "direct",
-        "caption": "直线约 6.4 公里",
-        "savedCount": 5,
+        "caption": "直线约 15.4 公里",
+        "savedCount": 9,
         "phase": "ready"
       }
     },
@@ -244,21 +376,25 @@
       "passed": true
     },
     {
-      "name": "Road mode truthfully reports partial connectivity across distant districts",
+      "name": "Road mode truthfully reports route status across Liuzhou",
       "passed": true,
       "detail": {
         "routeMode": "road",
         "phase": "partial",
-        "missing": 2,
+        "missing": 6,
         "total": 49.7029529896614,
-        "caption": "2 段道路暂未连通",
+        "caption": "6 段道路暂未连通",
         "localStorageMode": "road",
         "localStorageWants": [
           "video-lz-wangzulan-zhangji",
           "video-lz-wangzulan-zhuoheji",
           "video-lz-wangzulan-panjie",
           "video-lz-chenhe-aningmeng",
-          "video-lz-dage-caomei"
+          "video-lz-dage-caomei",
+          "video-lz-xiaojiu-weipopo",
+          "video-lz-xiaobaozha-leilaoban",
+          "video-lz-rourou-gaojia",
+          "video-lz-tangshixiong-liujie"
         ]
       }
     },
@@ -268,16 +404,20 @@
       "detail": {
         "routeMode": "road",
         "phase": "partial",
-        "missing": 2,
+        "missing": 6,
         "total": 49.7029529896614,
-        "caption": "2 段道路暂未连通",
+        "caption": "6 段道路暂未连通",
         "localStorageMode": "road",
         "localStorageWants": [
           "video-lz-wangzulan-zhangji",
           "video-lz-wangzulan-zhuoheji",
           "video-lz-wangzulan-panjie",
           "video-lz-chenhe-aningmeng",
-          "video-lz-dage-caomei"
+          "video-lz-dage-caomei",
+          "video-lz-xiaojiu-weipopo",
+          "video-lz-xiaobaozha-leilaoban",
+          "video-lz-rourou-gaojia",
+          "video-lz-tangshixiong-liujie"
         ]
       }
     },
@@ -296,7 +436,7 @@
       "name": "Mobile layout renders cards and trip dock",
       "passed": true,
       "detail": {
-        "cardCount": 5,
+        "cardCount": 9,
         "dockVisible": true
       }
     },

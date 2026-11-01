@@ -9,19 +9,23 @@
 
 ---
 
-## 1. 来源作品与授权信息（共 3 位博主、3 条来源视频）
+## 1. 来源作品与授权信息（共 7 位博主、7 条来源视频）
 
 | 来源 ID | 作者 | 作品标题 | 分享链接 / 原页 | 视频时长 | 来源哈希 (SHA256) | 素材包产物 |
 | --- | --- | --- | --- | --- | --- | --- |
 | `lz-wangzulan-7575112557141898601` | 王祖蓝 | welcome to“柳”约！和我一起尝尝柳州的早市吧！ | `https://v.douyin.com/HnEwoKc_E8M/`<br>`https://www.douyin.com/video/7575112557141898601` | 203.06s | `0c2b283fea30e36d38eaa0005c9c3a75b180d51e4c3660a4c4a9cbd46c8549a1` | `shitu-media-lz-wangzulan-7575112557141898601-*.zip` |
 | `lz-chenhe-7498339315727060264` | 陈赫 | 有人说不来柳州吃螺蛳粉相当于白来柳州？# 螺蛳粉 ... | `https://v.douyin.com/BhR-6trUssQ/`<br>`https://www.douyin.com/video/7498339315727060264` | 134.84s | `438d6f153a59a74c4528290d46b462ffc2f5066339315298bd8a4a818ee137d8` | `shitu-media-lz-chenhe-7498339315727060264-4932dbb41cafde7b.zip` |
 | `lz-dage-7688278279576982090` | 达哥在上海 | 在广西柳州一老小区吃爆辣红油螺狮粉，居然一点也不臭... | `https://v.douyin.com/Rw7J-Zdbes8/`<br>`https://www.douyin.com/video/7688278279576982090` | 395.02s | `e08f3b79cd5b066c06c9e4e533b5556d424d9a6c2f3b9feec36240c341a9cf68` | `shitu-media-lz-dage-7688278279576982090-2c20cc30dc1c2444.zip` |
+| `lz-xiaojiu-7528722963782159659` | 天才少女小酒 | 柳州我最害怕倒闭的老破店！不太好找，但真的巨巨好吃 | `https://v.douyin.com/G39HmE7jAm8/`<br>`https://www.douyin.com/video/7528722963782159659` | 17.87s | `6bddcbea0cd46a8f1b12efaf4dd0b49024c3d39f7cca0b3c3d61d07e535b537c` | `shitu-media-lz-xiaojiu-7528722963782159659-93b0ec4cdc81b1b4.zip` |
+| `lz-xiaobaozha-7689477707755025563` | 小爆炸 | 拜见柳州宵夜大王！！！！这一桌真的夯爆了！！！！ | `https://v.douyin.com/3kAS9i5rMsw/`<br>`https://www.douyin.com/video/7689477707755025563` | 25.29s | `f4389ce359a8c6796b9044e7e9f6e0d457efd4d44263a087aa0c706de3d36947` | `shitu-media-lz-xiaobaozha-7689477707755025563-037dad655e2b3ceb.zip` |
+| `lz-rourou-7115662751636147459` | 肉肉大搜索 | 柳州藏在菜市场里“有螺蛳肉的螺蛳粉”，配上一个小龙虾尾好丰富 | `https://v.douyin.com/LUg1TGA6NvM/`<br>`https://www.douyin.com/video/7115662751636147459` | 207.19s | `cf186224f166fb57360832c3eb26511a7b204ebe7be337356953785b6fcf26fd` | `shitu-media-lz-rourou-7115662751636147459-1fe4a9f2a45d5ef1.zip` |
+| `lz-tangshixiong-7699430467695148651` | 汤氏熊 | 柳州，远不止螺蛳粉！ 72小时连吃10家本地特色，20种美食 | `https://v.douyin.com/3Yo15R_hbsA/`<br>`https://www.douyin.com/video/7699430467695148651` | 1007.03s | `d94417b5255dfe0d56b4acb9634c295768014ef381b78cd7a5a0ce96d75cf514` | `shitu-media-lz-tangshixiong-7699430467695148651-9bc521588b5fe945.zip` |
 
 > 授权状态：`user-confirmed`（会话内经用户确认授权使用，保留原作者署名与原平台链接；原视频完整存放于 `.local/video-intake/`，仅提炼门店片段与封面进 Git/Release）。
 
 ---
 
-## 2. 门店认店、片段剪辑与近似定位（共 5 家门店）
+## 2. 门店认店、片段剪辑与近似定位（共 9 家门店）
 
 ### ① 张记玉米汁（王祖蓝）
 - **片段 ID**：`lz-wangzulan-zhangji`
@@ -68,6 +72,42 @@
 - **地址文本**：柳州市柳北区白沙路5号柳锌小区10栋对面
 - **WGS84 坐标**：`[109.42060, 24.33870]`（柳锌小区 · 白沙路5号老生活区）
 
+### ⑥ 煨婆婆（天才少女小酒）
+- **片段 ID**：`lz-xiaojiu-weipopo`
+- **店名**：煨婆婆（公园路店）
+- **类别**：特色小吃 / 铁板排档
+- **原片时间戳**：`0.0s` ～ `17.5s`（时长 17.5s），封面取第 `4.0s`
+- **门店简介**：藏在柳侯公园旁老巷子里的市井烟火排档，招牌炭火铁板猪脚皮糯肉烂、热油酱汁浇淋滋滋作响，搭配铁板排骨与鲜虾煲，是本地人私藏的夜宵宝藏老店。
+- **地址文本**：柳州市城中区公园路44号（近柳侯公园）
+- **WGS84 坐标**：`[109.41240, 24.31820]`（公园路44号 · 柳侯公园南门片区）
+
+### ⑦ 雷老板家烧烤（小爆炸）
+- **片段 ID**：`lz-xiaobaozha-leilaoban`
+- **店名**：雷老板家烧烤（窑埠店）
+- **类别**：宵夜 / 烧烤排档
+- **原片时间戳**：`0.0s` ～ `20.0s`（时长 20.0s），封面取第 `5.0s`
+- **门店简介**：窑埠古镇超人气夜宵大王，招牌鱼籽生牛裹满青金桔与薄荷蘸酱酸辣爽口，大盘烤牛肉、烤肥肠与炭烤海鲜份量霸道，夜宵氛围直接拉满。
+- **地址文本**：柳州市鱼峰区蟠龙路9号窑埠古镇B区44栋第一层3号
+- **WGS84 坐标**：`[109.42310, 24.32480]`（窑埠古镇B区 · 蟠龙路9号）
+
+### ⑧ 高家螺蛳粉店（肉肉大搜索）
+- **片段 ID**：`lz-rourou-gaojia`
+- **店名**：高家螺蛳粉店
+- **类别**：特色小吃 / 螺蛳粉
+- **原片时间戳**：`0.0s` ～ `15.0s`（时长 15.0s），封面取第 `2.0s`
+- **门店简介**：藏在火车站旁大鹅山菜市里的老字号螺蛳粉，最大亮点是能吃到货真价实的大勺炒螺蛳肉，酸笋脆爽，配菜丰富，配上小龙虾尾和油葱极其过瘾。
+- **地址文本**：柳州市柳南区鹅山路大鹅山菜市31之一号
+- **WGS84 坐标**：`[109.38750, 24.31680]`（大鹅山菜市 · 鹅山路31-1号）
+
+### ⑨ 刘姐鲜肉螺蛳粉（汤氏熊）
+- **片段 ID**：`lz-tangshixiong-liujie`
+- **店名**：刘姐鲜肉螺蛳粉（总店）
+- **类别**：特色小吃 / 炒螺蛳粉
+- **原片时间戳**：`19.0s` ～ `39.0s`（时长 20.0s），封面取第 `20.0s`
+- **门店简介**：连塘路上的老牌名店，荣获柳州最具创意螺蛳粉品牌，据传是柳州最早首创炒螺蛳粉的老店之一；大火爆炒锅气喷香，螺蛳大颗入味，虎皮猪脚酥烂饱汁。
+- **地址文本**：柳州市城中区中南街道连塘路90号
+- **WGS84 坐标**：`[109.40190, 24.31692]`（连塘路90号 · 中南街道）
+
 ---
 
 ## 3. 视觉与交互体验升级
@@ -88,8 +128,8 @@
 - **路网抽取**：`map-base/data/cities/liuzhou/food-road-network.json`（1.16 MB）
   - 覆盖城中半岛、青云市场、柳南区及柳北区真实路网，基于 OSM/Protomaps 矢量瓦片连通拓扑构建。
 - **双模式计算实测**：
-  - **直线距离**：直接计算大圆测地线距离，支持跨城区全部 5 家地点连线规划。
-  - **沿路步行距离**：遵循真实源节点拓扑；青云市场片区连通道路计算出 **49.7 米** 真实步行距离；跨城区远距离断路如实提示“2 段道路暂未连通”，绝不使用虚假系数拼凑伪造路线。
+  - **直线距离**：直接计算大圆测地线距离，支持跨城区全部 9 家地点连线规划。
+  - **沿路步行距离**：遵循真实源节点拓扑；青云市场片区连通道路计算出 **49.7 米** 真实步行距离；跨城区远距离断路如实提示道路连通状态，绝不使用虚假系数拼凑伪造路线。
 
 ---
 
@@ -101,19 +141,19 @@
 | # | 验证项 | 结果 | 说明 |
 |---|---|---|---|
 | 1 | Liuzhou city identified correctly | ✓ PASS | 城市名正确识别为“柳州”，激活 liuzhou 城市上下文 |
-| 2 | 5 food records loaded across Liuzhou | ✓ PASS | 5 家美食卡片跨片区正常载入 |
-| 3 | All 5 records have local MP4 clips and JPG posters | ✓ PASS | 全部 5 个片段均具有本地 H.264+AAC MP4 与高清封面 |
-| 4 | All 5 food markers default to collapsed circular icon badges | ✓ PASS | 5 个标记默认全部呈现为精简圆形图标，不遮挡视线 |
+| 2 | 9 food records loaded across Liuzhou | ✓ PASS | 9 家美食卡片跨片区正常载入 |
+| 3 | All 9 records have local MP4 clips and JPG posters | ✓ PASS | 全部 9 个片段均具有本地 H.264+AAC MP4 与高清封面 |
+| 4 | All 9 food markers default to collapsed circular icon badges | ✓ PASS | 9 个标记默认全部呈现为精简圆形图标，不遮挡视线 |
 | 5 | Clicking circular badge expands ONLY that card into rectangle with "×" close button | ✓ PASS | 点击圆形标记仅展开自身长方形卡片，带右上角叉叉关闭按钮 |
 | 6 | Clicking "×" close button collapses card back into circular icon badge | ✓ PASS | 点击右上角“×”关闭按钮顺畅折叠还原 |
 | 7 | Popover opened and video is playing with advancing playback | ✓ PASS | 浮窗展开视频播放，画面推进正常，音画合规 |
-| 8 | Direct distance mode active with 5 saved stops | ✓ PASS | 5 站想去连线，直线模式计算准确 |
+| 8 | Direct distance mode active with 9 saved stops | ✓ PASS | 9 站想去连线，直线模式计算准确 |
 | 9 | Distance badge auto-hides when zoomed out (< 16.5) | ✓ PASS | 地图缩小 (< 16.5) 时距离标签自动隐藏防遮挡 |
 | 10 | Distance badge smoothly appears when zoomed in (>= 16.5) | ✓ PASS | 地图放大 (>= 16.5) 时距离标签自然浮现 |
-| 11 | Road mode truthfully reports partial connectivity across distant districts | ✓ PASS | 跨江远距离断路真实显示“2 段道路暂未连通”，不造假 |
+| 11 | Road mode truthfully reports route status across Liuzhou | ✓ PASS | 如实显示各段道路拓扑连通状态，不造假拼凑 |
 | 12 | Local storage keys isolated to Liuzhou | ✓ PASS | 本地存储独立隔离为 `foodcity:*:liuzhou:v1` |
 | 13 | Road mode computes fully connected route for Qingyun Market cluster | ✓ PASS | 青云市场片区 3 店毫秒级计算出 49.7 米沿路真实路网折线 |
-| 14 | Mobile layout renders cards and trip dock | ✓ PASS | 390×844 移动视口卡片与行程栏适配无误 |
+| 14 | Mobile layout renders cards and trip dock | ✓ PASS | 390×844 移动视口 9 家卡片与行程栏适配无误 |
 | 15 | Chongqing city loads with correct city name | ✓ PASS | 重庆城市切回正常（`?city=chongqing`） |
 | 16 | Chongqing records are not polluted by Liuzhou records | ✓ PASS | 重庆数据完整隔离，无柳州脏数据污染 |
 
@@ -121,7 +161,7 @@
 
 ## 6. 截图归档清单
 
-- `output/research/liuzhou/screenshots/liuzhou-food-overview.png`：柳州全城 5 家美食圆形图标概览（无遮挡）
+- `output/research/liuzhou/screenshots/liuzhou-food-overview.png`：柳州全城 9 家美食圆形图标概览（无遮挡）
 - `output/research/liuzhou/screenshots/liuzhou-card-expanded.png`：点击圆形图标展开长方形卡片与带“×”关闭按钮
 - `output/research/liuzhou/screenshots/liuzhou-video-popover.png`：视频浮窗顺滑播放（陈赫打卡阿柠檬螺蛳粉）
 - `output/research/liuzhou/screenshots/liuzhou-road-distance.png`：沿路步行距离计算与行程栏
