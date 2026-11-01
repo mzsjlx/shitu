@@ -1,6 +1,7 @@
 const safeId=value=>typeof value==='string'&&/^[a-z][a-z0-9-]{0,79}$/.test(value);
-export function validateVideoMapContexts(data,library,bounds=[106.49,29.49,106.65,29.65]){
-  if(data?.schemaVersion!==1||data.city!=='chongqing'||!Array.isArray(data.contexts)||!Array.isArray(data.reviews))throw new Error('视频周边资料格式不正确');
+export function validateVideoMapContexts(data,library,bounds=[106.49,29.49,106.65,29.65],city='chongqing'){
+  const expectedCity=city||data?.city||'chongqing';
+  if(data?.schemaVersion!==1||data.city!==expectedCity||!Array.isArray(data.contexts)||!Array.isArray(data.reviews))throw new Error('视频周边资料格式不正确');
   const segments=new Map(library.sources.flatMap(s=>s.segments).map(s=>[s.id,s]));
   const contextIds=new Set(),reviewIds=new Set();
   for(const context of data.contexts){

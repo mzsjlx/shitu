@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "city": "changsha",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "Configured central-urban cutout, not the whole Chongqing municipality",
+  "bounds": [
+    112.86,
+    28.14,
+    113.05,
+    28.25
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 5253724,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      112.86,
+      28.14,
+      113.05,
+      28.25
+    ]
+  },
+  "osmReplicationTime": "2026-10-29T04:00:00Z",
+  "counters": {
+    "requestedTiles": 228,
+    "presentTiles": 228,
+    "roadLineFragments": 4212,
+    "namedRoadLineFragments": 2387,
+    "unnamedRoadLineFragments": 1825,
+    "nonRoadTransportFragmentsExcluded": 405,
+    "buildingPolygonFragments": 24360,
+    "buildingFragmentsWithPositiveHeight": 1508,
+    "buildingFragmentsWithoutPositiveHeight": 22852,
+    "namedRoadGroups": 891
+  },
+  "roadClassCounts": {
+    "major_road": 2340,
+    "minor_road": 1366,
+    "path": 460,
+    "highway": 46
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    "嘉滨路": {
+      "exact": null,
+      "related": []
+    },
+    "沧白路": {
+      "exact": null,
+      "related": []
+    },
+    "千厮门大桥": {
+      "exact": null,
+      "related": []
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}

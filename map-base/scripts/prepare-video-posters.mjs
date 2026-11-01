@@ -5,10 +5,13 @@ import {validateVideoLibrary} from '../src/video-library-model.js';
 import {digest,mediaKey,mediaNames} from './video-library-common.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const catalog=validateVideoLibrary(JSON.parse(await readFile(path.join(root,'data/video-library.json'),'utf8')));
+const cityOption=process.argv.indexOf('--city'),cityId=cityOption>=0?process.argv[cityOption+1]:null;
+const catalogPath=cityId?path.join(root,`data/cities/${cityId}/video-library.json`):path.join(root,'data/video-library.json');
+const postersPath=cityId?path.join(root,`data/cities/${cityId}/video-posters.json`):path.join(root,'data/video-posters.json');
+const catalog=validateVideoLibrary(JSON.parse(await readFile(catalogPath,'utf8')),cityId||undefined);
 const report=JSON.parse(await readFile(path.join(root,'.local/video-clips/report.json'),'utf8'));
 let previous={schemaVersion:1,segments:{}};
-try{previous=JSON.parse(await readFile(path.join(root,'data/video-posters.json'),'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
+try{previous=JSON.parse(await readFile(postersPath,'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
 const manifest={schemaVersion:1,segments:{}};
 for(const source of catalog.sources)for(const segment of source.segments){
   const key=mediaKey(source,segment),names=mediaNames(source,segment);
@@ -20,5 +23,5 @@ for(const source of catalog.sources)for(const segment of source.segments){
   await mkdir(path.dirname(target),{recursive:true});await cp(from,target);
   manifest.segments[segment.id]={sourceId:source.id,sourceSHA256:source.sourceSHA256,mediaKey:key,path:relative,sha256:record.posterSHA256,bytes:bytes.length};
 }
-await writeFile(path.join(root,'data/video-posters.json'),JSON.stringify(manifest,null,2)+'\n');
+await writeFile(postersPath,JSON.stringify(manifest,null,2)+'\n');
 console.log('仓库封面：'+Object.keys(manifest.segments).length+' 张；原片和剪辑仍在 .local/。');

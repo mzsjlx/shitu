@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "city": "changsha",
+  "name": "长沙",
+  "province": "湖南省",
+  "amapCityCode": "430100",
+  "regionLabel": "中心城区",
+  "coverageLabel": "长沙核心城区，涵盖岳麓山、橘子洲、五一商圈及湘江两岸（约 14.5 × 12.2 公里）",
+  "bounds": [
+    112.90,
+    28.14,
+    113.05,
+    28.25
+  ],
+  "center": [
+    112.977,
+    28.194
+  ],
+  "zoom": 15.5,
+  "pitch": 52,
+  "bearing": -15,
+  "minZoom": 12.0,
+  "maxZoom": 19,
+  "landmarks": [],
+  "status": "in-preparation",
+  "workflow": {
+    "rightsStatus": "pending-user-links",
+    "videoIntake": "strict-user-provided-only",
+    "locationAccuracy": "approximate-planning-first",
+    "multiCreatorSupport": true,
+    "roadNetworkTopology": "osm-node-consecutive"
+  },
+  "dataFiles": {
+    "profile": "data/cities/changsha/city-profile.json",
+    "tiles": "data/cities/changsha/changsha.pmtiles",
+    "videoLibrary": "data/cities/changsha/video-library.json",
+    "foodRecords": "data/cities/changsha/food-records.json",
+    "roadNetwork": "data/cities/changsha/food-road-network.json",
+    "roadsIndex": "data/cities/changsha/roads-index.json",
+    "dataAudit": "data/cities/changsha/data-audit.json",
+    "sourceManifest": "data/cities/changsha/source-manifest.json",
+    "tileMetadata": "data/cities/changsha/tile-metadata.json",
+    "terrainManifest": "data/cities/changsha/terrain-manifest.json"
+  },
+  "notes": [
+    "严格遵守只处理用户实际提供的探店链接，不自行到外站搜集凑数。",
+    "门店位置采用有充分街区依据的大致规划点（approximate-planning），无充分依据的片段保留视频库。",
+    "同一分店多博主探店共用一个地图点，浮窗支持切换博主并停止旧音轨。",
+    "保留直线和基于OSM真实节点拓扑的沿路距离两种计算模式。"
+  ]
+}

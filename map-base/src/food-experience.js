@@ -12,16 +12,16 @@ const thumbFor=(item,cls)=>{
   thumb.setAttribute('role','img');return thumb;
 };
 export class FoodExperience{
-  constructor(map,overlay,{config,readJSON,assetURL,roadWorkerURL,onFocus,onExplore=onFocus}){
-    this.map=map;this.overlay=overlay;this.config=config;this.readJSON=readJSON;this.assetURL=assetURL;this.onFocus=onFocus;this.onExplore=onExplore;
+  constructor(map,overlay,{cityId='chongqing',cityName='重庆',amapCityCode='500000',config,readJSON,assetURL,roadWorkerURL,onFocus,onExplore=onFocus}){
+    this.map=map;this.overlay=overlay;this.cityId=cityId;this.cityName=cityName;this.amapCityCode=amapCityCode;this.config=config;this.readJSON=readJSON;this.assetURL=assetURL;this.onFocus=onFocus;this.onExplore=onExplore;
     this.records=[];this.phase='unloaded';this.active=false;this.selected=null;this.generation=0;this.saved=[];this.category=null;this.draftCategory=null;this.routeSuppressed=false;
-    this.routeMode='direct';try{const mode=localStorage.getItem('foodcity:distance-mode:chongqing:v1');if(['direct','road'].includes(mode))this.routeMode=mode;}catch{}
+    this.routeMode='direct';try{const mode=localStorage.getItem('foodcity:distance-mode:'+this.cityId+':v1');if(['direct','road'].includes(mode))this.routeMode=mode;}catch{}
     this.routePreview=new FoodRoutePreview(map,overlay.Marker,{loadNetwork:signal=>readJSON(config.roadNetwork,{signal}),workerURL:roadWorkerURL,onChange:()=>this.renderRouteStatus()});
     const query=new URLSearchParams(location.search),place=query.get('place');
     this.initialPlaceId=(!query.get('view')||query.get('view')==='food')&&place&&place.length<=100?place:null;
     byId('place-directory-link').hidden=!['http:','https:'].includes(location.protocol);
     for(const id of ['creator-guides-link','food-pick-guides'])byId(id).hidden=!['http:','https:'].includes(location.protocol);
-    try{const saved=JSON.parse(localStorage.getItem('foodcity:wants:chongqing:v1')||'[]');if(Array.isArray(saved))this.saved=[...new Set(saved.filter(x=>typeof x==='string'&&x.length<=100))].slice(0,100);}catch{}
+    try{const saved=JSON.parse(localStorage.getItem('foodcity:wants:'+this.cityId+':v1')||'[]');if(Array.isArray(saved))this.saved=[...new Set(saved.filter(x=>typeof x==='string'&&x.length<=100))].slice(0,100);}catch{}
     byId('food-entry').addEventListener('click',()=>this.active?this.deactivate():this.activate());
     byId('food-option').addEventListener('change',event=>event.target.checked?this.activate():this.deactivate());
     for(const id of ['wants-open','trip-open','trip-manage'])byId(id).addEventListener('click',event=>this.openWants(event.currentTarget));
@@ -65,12 +65,16 @@ export class FoodExperience{
     if(this.pending)return this.pending;
     this.phase='loading';this.error=null;
     const controller=new AbortController(),timer=setTimeout(()=>controller.abort(new Error('美食资料读取超时')),12000);
-    this.pending=Promise.all([this.readJSON(this.config.records,{signal:controller.signal}),this.readJSON('data/video-library.json',{signal:controller.signal}).catch(()=>bundledVideoLibrary)]).then(async([data,catalog])=>{
-      if(data.city!=='chongqing'||!Array.isArray(data.records))throw new Error('美食资料尚未准备好');
+    const videoLibPath=this.config.videoLibrary||'data/video-library.json';
+    this.pending=Promise.all([
+      this.readJSON(this.config.records,{signal:controller.signal}),
+      this.readJSON(videoLibPath,{signal:controller.signal}).catch(()=>(this.cityId==='chongqing'?bundledVideoLibrary:{schemaVersion:1,city:this.cityId,rights:{status:'user-confirmed'},sources:[]}))
+    ]).then(async([data,catalog])=>{
+      if(data.city!==this.cityId||!Array.isArray(data.records))throw new Error('美食资料尚未准备好');
       const records=data.records.map(item=>({...item,spriteURL:this.assetURL(this.config.sprite)}));
-      validateVideoLibrary(catalog);
+      validateVideoLibrary(catalog,this.cityId);
       const b=this.overlay.bounds,positioned=groupVideoPlaces(catalog).filter(({primary:{segment}})=>Array.isArray(segment.coordinates)&&segment.coordinates[0]>=b[0]&&segment.coordinates[0]<=b[2]&&segment.coordinates[1]>=b[1]&&segment.coordinates[1]<=b[3]);
-      let assets={};if(positioned.length){try{assets=(await this.readJSON('data/video-library-assets.json',{signal:controller.signal})).segments||{};}catch{}}
+      let assets={};if(positioned.length){try{const assetsPath=this.config.videoAssets||'data/video-library-assets.json';assets=(await this.readJSON(assetsPath,{signal:controller.signal})).segments||{};}catch{}}
       for(const {id,primary:{source,segment},clips:entries}of positioned){
         const asset=assets[segment.id],clip=localVideoAsset(asset?.clip,'mp4'),poster=localVideoAsset(asset?.poster,'jpg');
         const clips=entries.map(({source:s,segment:t})=>({id:t.id,title:s.title,author:s.author,url:s.url,publishedOn:s.publishedOn,footageNote:t.footageNote||null,clip:localVideoAsset(assets[t.id]?.clip,'mp4'),poster:localVideoAsset(assets[t.id]?.poster,'jpg')}));
@@ -98,7 +102,9 @@ export class FoodExperience{
     if(requestedPlaceId)byId('status').textContent='这个地点暂不在当前资料中，已展开现有美食候选。';
     const points=this.visibleRecords().map(r=>r.coordinates),xs=points.map(p=>p[0]),ys=points.map(p=>p[1]);
     const padding=this.fitPadding();
-    this.map.fitBounds([[Math.min(...xs),Math.min(...ys)],[Math.max(...xs),Math.max(...ys)]],{padding,maxZoom:16.3,pitch:48,bearing:-24,duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:1050});
+    if(xs.length&&ys.length){
+      this.map.fitBounds([[Math.min(...xs),Math.min(...ys)],[Math.max(...xs),Math.max(...ys)]],{padding,maxZoom:16.3,pitch:48,bearing:this.map.getBearing(),duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:1050});
+    }
   }
   deactivate(){
     this.cancelFocus();this.active=false;this.overlay.clear();byId('food-option').checked=false;document.body.classList.remove('food-active');
@@ -204,7 +210,7 @@ export class FoodExperience{
     }
   }
   persistSaved(){
-    try{localStorage.setItem('foodcity:wants:chongqing:v1',JSON.stringify(this.saved));this.saveError=false;}
+    try{localStorage.setItem('foodcity:wants:'+this.cityId+':v1',JSON.stringify(this.saved));this.saveError=false;}
     catch{this.saveError=true;}
   }
   moveStop(id,direction){
@@ -258,7 +264,7 @@ export class FoodExperience{
   setRouteMode(mode){
     if(!['direct','road'].includes(mode))return;
     if(mode===this.routeMode&&this.routePreview.phase==='error')this.routePreview.retry();
-    this.routeMode=mode;try{localStorage.setItem('foodcity:distance-mode:chongqing:v1',mode);}catch{}
+    this.routeMode=mode;try{localStorage.setItem('foodcity:distance-mode:'+this.cityId+':v1',mode);}catch{}
     this.renderDock();
   }
   renderRouteStatus(){
