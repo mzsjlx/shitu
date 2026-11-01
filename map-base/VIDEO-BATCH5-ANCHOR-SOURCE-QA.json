@@ -1,0 +1,27 @@
+{
+  "verifiedOn": "2026-10-30",
+  "source": "OpenStreetMap extract 2026-10-25",
+  "sourceSHA256": "ea1bd60ca0a71231f6ec62bb5ff270594e56559c88d483e25c7e60bcc6fd20ba",
+  "anchors": [
+    {
+      "id": 6475285730,
+      "name": "牛角沱",
+      "coordinates": [
+        106.5388502,
+        29.5634801
+      ],
+      "passed": true
+    },
+    {
+      "id": 6898635501,
+      "name": "朝天门",
+      "coordinates": [
+        106.5824925,
+        29.5672922
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "原始开放地图节点与坐标；不代表摊位精确地址。"
+}

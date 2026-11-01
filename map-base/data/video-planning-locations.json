@@ -1868,6 +1868,50 @@
         "sourceDate": "2026-10-25",
         "method": "point"
       }
+    },
+    {
+      "segmentId": "cq-mei-7529179722208546106-hefan",
+      "name": "朝天门盒饭",
+      "coordinates": [
+        106.5824925,
+        29.5672922
+      ],
+      "accuracy": "approximate",
+      "label": "朝天门附近",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片字幕称朝天门盒饭；按开放地图朝天门站表示大致街区，摊位位置未核。",
+      "reviewedOn": "2026-10-30",
+      "anchor": {
+        "kind": "osm-node",
+        "id": 6898635501,
+        "name": "朝天门",
+        "url": "https://www.openstreetmap.org/node/6898635501",
+        "sourceDate": "2026-10-25",
+        "method": "point"
+      }
+    },
+    {
+      "segmentId": "cq-mei-7529179722208546106-yangyu",
+      "name": "牛角沱锅巴洋芋",
+      "coordinates": [
+        106.5388502,
+        29.5634801
+      ],
+      "accuracy": "approximate",
+      "label": "牛角沱附近",
+      "basis": "video-address",
+      "branchMatch": "unconfirmed",
+      "note": "原片字幕称在牛角沱；按开放地图牛角沱站表示大致街区，摊位位置未核。",
+      "reviewedOn": "2026-10-30",
+      "anchor": {
+        "kind": "osm-node",
+        "id": 6475285730,
+        "name": "牛角沱",
+        "url": "https://www.openstreetmap.org/node/6475285730",
+        "sourceDate": "2026-10-25",
+        "method": "point"
+      }
     }
   ]
 }

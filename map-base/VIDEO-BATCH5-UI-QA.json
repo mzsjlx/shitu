@@ -1,0 +1,620 @@
+{
+  "verifiedOn": "2026-10-30",
+  "scope": "Isolated local Chromium: every new clip decodes, one muted advancing playback per source, media cleanup, video library source switching and close behavior. No external platform playback or geographic verification.",
+  "checks": [
+    {
+      "name": "All three supplied works are present with actual segments",
+      "passed": true,
+      "detail": [
+        {
+          "id": "cq-mei-7529179722208546106",
+          "author": "莓有吃饱",
+          "segments": 7
+        },
+        {
+          "id": "cq-wenzi-7642999598881033417",
+          "author": "富婆雯仔（100道路边摊）",
+          "segments": 1
+        },
+        {
+          "id": "cq-xianxian-7563133332981484858",
+          "author": "🌶️麻辣河仙仙",
+          "segments": 1
+        }
+      ]
+    },
+    {
+      "name": "Every new segment has a built local clip and poster",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Library counts reflect the full current JSON",
+      "passed": true,
+      "detail": "126 个本地片段 · 41 段位置待补"
+    },
+    {
+      "name": "cq-mei-7529179722208546106 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-nuomifan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-nuomifan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 7.633008,
+        "width": 576,
+        "height": 768,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-nuomifan-ebd307ead64bd9b5.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 7.633000000000001
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-nuomifan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.127987,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-nuomifan stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-nuomifan preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-20",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-malachuan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-malachuan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 9.2,
+        "width": 576,
+        "height": 768,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-malachuan-96f317886d7733bf.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 9.2
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-malachuan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-malachuan stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-malachuan preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-20",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-hefan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-hefan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 11.866667,
+        "width": 576,
+        "height": 768,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-hefan-23c04476753924bd.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 11.834000000000003
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-hefan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-hefan preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-20",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-liangmian selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-liangmian decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 6.5,
+        "width": 576,
+        "height": 768,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-liangmian-77b828157f1645d2.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 6.5
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-liangmian keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-liangmian stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-liangmian preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-20",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-ciba selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-ciba decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 3.633008,
+        "width": 576,
+        "height": 768,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-ciba-5697479d9a65cbf9.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 3.6329999999999956
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-ciba keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-ciba stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-ciba preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-20",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-yangyu selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-yangyu decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 4,
+        "width": 576,
+        "height": 768,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-yangyu-541ee9acffc8dd33.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 3.9669999999999987
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-yangyu keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-yangyu preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-20",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-kuanfen selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-kuanfen decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 6.833008,
+        "width": 576,
+        "height": 768,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-kuanfen-1dac3f89b44bd1c0.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 6.8330000000000055
+      }
+    },
+    {
+      "name": "cq-mei-7529179722208546106-kuanfen keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-kuanfen stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-kuanfen preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-07-20",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "Changing to cq-wenzi-7642999598881033417 pauses and unloads the previous source",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-wenzi-7642999598881033417 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "cq-wenzi-7642999598881033417-malachuan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-wenzi-7642999598881033417-malachuan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 63,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8794/media/videos/cq-wenzi-7642999598881033417/cq-wenzi-7642999598881033417-malachuan-d4cbbd06be10bf7c.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 63
+      }
+    },
+    {
+      "name": "cq-wenzi-7642999598881033417-malachuan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-wenzi-7642999598881033417 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.12598,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-wenzi-7642999598881033417-malachuan stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "Changing to cq-xianxian-7563133332981484858 pauses and unloads the previous source",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-xianxian-7563133332981484858 exposes every registered segment",
+      "passed": true
+    },
+    {
+      "name": "cq-xianxian-7563133332981484858-hefan selection stops the old segment",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "cq-xianxian-7563133332981484858-hefan decodes on library",
+      "passed": true,
+      "detail": {
+        "duration": 69,
+        "width": 576,
+        "height": 1024,
+        "readyState": 4,
+        "currentTime": 0,
+        "paused": true,
+        "src": "http://127.0.0.1:8794/media/videos/cq-xianxian-7563133332981484858/cq-xianxian-7563133332981484858-hefan-b0134b9309029e26.mp4",
+        "objectFit": "contain",
+        "error": null,
+        "expectedDuration": 69
+      }
+    },
+    {
+      "name": "cq-xianxian-7563133332981484858-hefan keeps the original work and creator",
+      "passed": true
+    },
+    {
+      "name": "cq-xianxian-7563133332981484858 really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.127318,
+        "muted": true
+      }
+    },
+    {
+      "name": "cq-xianxian-7563133332981484858-hefan stays playable without a fictitious map action",
+      "passed": true
+    },
+    {
+      "name": "cq-xianxian-7563133332981484858-hefan preserves 2025 publication and historical-footage note",
+      "passed": true,
+      "detail": {
+        "publishedOn": "2025-10-20",
+        "footageNote": "2025年视频 · 营业情况待确认"
+      }
+    },
+    {
+      "name": "Library before close really advances after play",
+      "passed": true,
+      "detail": {
+        "currentTime": 0.262071,
+        "muted": true
+      }
+    },
+    {
+      "name": "Closing library unloads active video",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "Library is closed after the close control",
+      "passed": true
+    },
+    {
+      "name": "No runtime or media verification errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "No external platform or third-party prefetch requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "media": [
+    {
+      "source": "cq-mei-7529179722208546106",
+      "id": "cq-mei-7529179722208546106-nuomifan",
+      "surface": "library",
+      "duration": 7.633008,
+      "width": 576,
+      "height": 768,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-nuomifan-ebd307ead64bd9b5.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-mei-7529179722208546106",
+      "id": "cq-mei-7529179722208546106-malachuan",
+      "surface": "library",
+      "duration": 9.2,
+      "width": 576,
+      "height": 768,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-malachuan-96f317886d7733bf.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-mei-7529179722208546106",
+      "id": "cq-mei-7529179722208546106-hefan",
+      "surface": "library",
+      "duration": 11.866667,
+      "width": 576,
+      "height": 768,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-hefan-23c04476753924bd.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-mei-7529179722208546106",
+      "id": "cq-mei-7529179722208546106-liangmian",
+      "surface": "library",
+      "duration": 6.5,
+      "width": 576,
+      "height": 768,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-liangmian-77b828157f1645d2.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-mei-7529179722208546106",
+      "id": "cq-mei-7529179722208546106-ciba",
+      "surface": "library",
+      "duration": 3.633008,
+      "width": 576,
+      "height": 768,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-ciba-5697479d9a65cbf9.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-mei-7529179722208546106",
+      "id": "cq-mei-7529179722208546106-yangyu",
+      "surface": "library",
+      "duration": 4,
+      "width": 576,
+      "height": 768,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-yangyu-541ee9acffc8dd33.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-mei-7529179722208546106",
+      "id": "cq-mei-7529179722208546106-kuanfen",
+      "surface": "library",
+      "duration": 6.833008,
+      "width": 576,
+      "height": 768,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8794/media/videos/cq-mei-7529179722208546106/cq-mei-7529179722208546106-kuanfen-1dac3f89b44bd1c0.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-wenzi-7642999598881033417",
+      "id": "cq-wenzi-7642999598881033417-malachuan",
+      "surface": "library",
+      "duration": 63,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8794/media/videos/cq-wenzi-7642999598881033417/cq-wenzi-7642999598881033417-malachuan-d4cbbd06be10bf7c.mp4",
+      "objectFit": "contain",
+      "error": null
+    },
+    {
+      "source": "cq-xianxian-7563133332981484858",
+      "id": "cq-xianxian-7563133332981484858-hefan",
+      "surface": "library",
+      "duration": 69,
+      "width": 576,
+      "height": 1024,
+      "readyState": 4,
+      "currentTime": 0,
+      "paused": true,
+      "src": "http://127.0.0.1:8794/media/videos/cq-xianxian-7563133332981484858/cq-xianxian-7563133332981484858-hefan-b0134b9309029e26.mp4",
+      "objectFit": "contain",
+      "error": null
+    }
+  ],
+  "externalRequests": [],
+  "screenshots": [],
+  "counts": {
+    "sources": 3,
+    "newSegments": 9,
+    "newUnlocatedSegments": 7,
+    "totalSegments": 126,
+    "totalUnlocatedSegments": 41,
+    "mapPlaces": 81
+  },
+  "sources": [
+    {
+      "id": "cq-mei-7529179722208546106",
+      "author": "莓有吃饱",
+      "segments": 7
+    },
+    {
+      "id": "cq-wenzi-7642999598881033417",
+      "author": "富婆雯仔（100道路边摊）",
+      "segments": 1
+    },
+    {
+      "id": "cq-xianxian-7563133332981484858",
+      "author": "🌶️麻辣河仙仙",
+      "segments": 1
+    }
+  ],
+  "passed": true
+}
