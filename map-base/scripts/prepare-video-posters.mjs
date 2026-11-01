@@ -2,13 +2,14 @@ import {readFile,writeFile,mkdir,cp} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {validateVideoLibrary} from '../src/video-library-model.js';
+import {loadCityCatalog} from './city-catalogs.mjs';
 import {digest,mediaKey,mediaNames} from './video-library-common.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const cityOption=process.argv.indexOf('--city'),cityId=cityOption>=0?process.argv[cityOption+1]:null;
-const catalogPath=cityId?path.join(root,`data/cities/${cityId}/video-library.json`):path.join(root,'data/video-library.json');
-const postersPath=cityId?path.join(root,`data/cities/${cityId}/video-posters.json`):path.join(root,'data/video-posters.json');
-const catalog=validateVideoLibrary(JSON.parse(await readFile(catalogPath,'utf8')),cityId||undefined);
+const context=await loadCityCatalog(root,cityId||'chongqing');
+const postersPath=path.join(root,context.cityId==='chongqing'?'data/video-posters.json':`data/cities/${context.cityId}/video-posters.json`);
+const catalog=context.catalog;
 const report=JSON.parse(await readFile(path.join(root,'.local/video-clips/report.json'),'utf8'));
 let previous={schemaVersion:1,segments:{}};
 try{previous=JSON.parse(await readFile(postersPath,'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}

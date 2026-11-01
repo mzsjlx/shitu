@@ -1,5 +1,7 @@
 # 食途 · 长沙城市制作接手与准备报告
 
+> 2026-11-01整合修正：下文为首批历史记录，原“高德POI转入”等说明已被本次开放参照重核取代。当前采用冻结湖南PBF中的55份对象/原节点参照，坐标、来源与SHA见 `map-base/data/cities/changsha/location-anchors.json`，逐片段结果见本目录 `location-review-20261101.json`。95片段、54来源保留，71点上图；10段待定位、3段范围外。单文件、资料页、素材导入均已按城适配。实际合并及验证状态见根目录PROJECT-STATUS顶部。
+
 日期：2026-10-30  
 负责城市：长沙（`changsha`）  
 当前工作分支：`codex/city-changsha-prep`（基于 `main` 提交 `1676742` 的独立 worktree 工作区）  

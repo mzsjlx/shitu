@@ -3,11 +3,12 @@ import {spawn} from 'node:child_process';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {validateVideoLibrary} from '../src/video-library-model.js';
+import {loadCityCatalog} from './city-catalogs.mjs';
 import {digest,mediaKey,mediaNames} from './video-library-common.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const cityOption=process.argv.indexOf('--city'),cityId=cityOption>=0?process.argv[cityOption+1]:null;
-const catalogPath=cityId?path.join(root,`data/cities/${cityId}/video-library.json`):path.join(root,'data/video-library.json');
-const data=validateVideoLibrary(JSON.parse(await readFile(catalogPath,'utf8')),cityId||undefined);
+const context=await loadCityCatalog(root,cityId||'chongqing'),catalogPath=path.join(root,context.relative);
+const data=context.catalog;
 const ffmpeg=process.env.FOODCITY_FFMPEG||'ffmpeg',ffprobe=process.env.FOODCITY_FFPROBE||'ffprobe';
 function run(command,args){return new Promise((resolve,reject)=>{const child=spawn(command,args,{windowsHide:true,stdio:['ignore','pipe','pipe']});let out='',err='';child.stdout.on('data',b=>out+=b);child.stderr.on('data',b=>err+=b);child.once('error',reject);child.once('close',code=>code===0?resolve(out):reject(new Error(`${command} exited ${code}: ${err.slice(-2500)}`)));});}
 const option=process.argv.indexOf('--source'),sourceId=option>=0?process.argv[option+1]:null;

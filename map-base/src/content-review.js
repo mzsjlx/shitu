@@ -154,6 +154,15 @@ function wire(){
   $('audit-open').addEventListener('click',()=>$('audit-dialog').showModal());$('audit-close').addEventListener('click',()=>$('audit-dialog').close());
 }
 async function init(){
+  const cityId=new URLSearchParams(location.search).get('city')||'chongqing';
+  if(cityId!=='chongqing'){
+    const config=await (await fetch('./config/cities.json')).json(),city=config.cities[cityId];
+    if(!city)throw new Error('城市尚未配置');
+    document.title='食途 · '+city.name+'内容工作台';
+    for(const link of document.querySelectorAll('a[href="./?view=food"]'))link.href='./?city='+cityId+'&view=food';
+    $('review-load-state').textContent=city.name+'暂未开放核实工作台，请在地图和门店资料中查看来源。';
+    $('save-status').textContent='未读取或改动其他城市的草稿';window.__CONTENT_REVIEW_BOOT__.ready();return;
+  }
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
   try{const response=await fetch('./data/content-review-catalog.json',{signal:controller.signal});if(!response.ok)throw new Error('候选资料读取失败');catalog=await response.json();if(catalog.schemaVersion!==1||!Array.isArray(catalog.candidates))throw new Error('候选资料格式不完整');}finally{clearTimeout(timer);}
   if(!catalog.candidates.length){$('review-load-state').textContent='旧示例已移除，视频门店可在地图中查看。';$('save-status').textContent='原有本地草稿已保留';window.__CONTENT_REVIEW_BOOT__.ready();return;}

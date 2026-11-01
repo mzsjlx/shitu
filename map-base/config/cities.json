@@ -72,7 +72,7 @@
       "zoom": 15.5,
       "pitch": 52,
       "bearing": -15,
-      "minZoom": 12.0,
+      "minZoom": 12,
       "maxZoom": 19,
       "tiles": "data/cities/changsha/changsha.pmtiles",
       "demTiles": "data/cities/changsha/terrain/{z}/{x}/{y}.png",
@@ -93,7 +93,7 @@
         "tileMetadata": "data/cities/changsha/tile-metadata.json",
         "terrainManifest": "data/cities/changsha/terrain-manifest.json"
       },
-      "status": "in-preparation"
+      "status": "local-validation-only"
     }
   }
 }

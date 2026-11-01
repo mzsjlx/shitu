@@ -1,0 +1,1690 @@
+{
+  "reviewedOn": "2026-11-01",
+  "previousCatalogCommit": "d0bae5d",
+  "sourceSHA256": "332b53d9abfb33deb3093829cb38c6f016e775720edc5da39e11e00b9496c21d",
+  "notes": [
+    "原目录未提供可追溯开放对象ID，本次采用冻结PBF对象重新建立街区参照。",
+    "未改切点、媒体哈希或同店关系；缺参照的段保留在视频库。",
+    "盼盼小学、星沙中茂城原图边界点缺少对应开放参照，撤下待核，不挪到其他道路冒充。"
+  ],
+  "reviews": [
+    {
+      "segmentId": "cs-chilezaijian-laowenjia",
+      "name": "佬文家老地方私房菜",
+      "address": "长沙市雨花区朝晖路都城康欣园2栋107号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1311929868,
+        "name": "朝晖路",
+        "url": "https://www.openstreetmap.org/way/1311929868",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 12143517883
+      },
+      "coordinates": [
+        113.011444,
+        28.180217
+      ]
+    },
+    {
+      "segmentId": "cs-xiaoxuan-yangdachui",
+      "name": "杨大锤地摊烧烤",
+      "address": "长沙市岳麓区枫林三路859号附近安置小区",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 59098367,
+        "name": "枫林三路",
+        "url": "https://www.openstreetmap.org/way/59098367",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13615738861
+      },
+      "coordinates": [
+        112.882208,
+        28.203289
+      ]
+    },
+    {
+      "segmentId": "cs-daxiang-zhaoji",
+      "name": "赵记面粉老店",
+      "address": "长沙市天心区南门口老街区（赛婵水产旁小区巷内）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-node",
+        "id": 13897940283,
+        "name": "南门口",
+        "url": "https://www.openstreetmap.org/node/13897940283",
+        "sourceDate": "2026-10-30",
+        "method": "point"
+      },
+      "coordinates": [
+        112.9705587,
+        28.1849031
+      ]
+    },
+    {
+      "segmentId": "cs-daxiang-wangji",
+      "name": "汪记生煎包",
+      "address": "长沙市天心区城南西路南门口菜市场",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1524792756,
+        "name": "城南西路",
+        "url": "https://www.openstreetmap.org/way/1524792756",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13921185769
+      },
+      "coordinates": [
+        112.9747814,
+        28.1866975
+      ]
+    },
+    {
+      "segmentId": "cs-daxiang-deyuan",
+      "name": "德园包子",
+      "address": "长沙市芙蓉区蔡锷北路老街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1527630151,
+        "name": "蔡锷北路",
+        "url": "https://www.openstreetmap.org/way/1527630151",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13920959799
+      },
+      "coordinates": [
+        112.9758468,
+        28.20456
+      ]
+    },
+    {
+      "segmentId": "cs-fanqie-jiachang",
+      "name": "家常风味馆",
+      "address": "长沙市开福区营盘路周边市井街巷",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 185140711,
+        "name": "营盘路",
+        "url": "https://www.openstreetmap.org/way/185140711",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13920972417
+      },
+      "coordinates": [
+        112.9737942,
+        28.2078415
+      ]
+    },
+    {
+      "segmentId": "cs-fanqie-fandai",
+      "name": "凡嗲乡里口味菜",
+      "address": "长沙市开福区四方坪老街区",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 30612615,
+        "name": "三一大道",
+        "url": "https://www.openstreetmap.org/way/30612615",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 338485497
+      },
+      "coordinates": [
+        113.0026259,
+        28.2351978
+      ]
+    },
+    {
+      "segmentId": "cs-fanqie-xinkouwei",
+      "name": "新口味餐馆",
+      "address": "长沙市岳麓区大学城靳江路周边居民楼49号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 389412058,
+        "name": "靳江路",
+        "url": "https://www.openstreetmap.org/way/389412058",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9466479446
+      },
+      "coordinates": [
+        112.9361742,
+        28.1547354
+      ]
+    },
+    {
+      "segmentId": "cs-fanqie-xiaoge",
+      "name": "肖歌口味菜",
+      "address": "长沙市开福区东风路湖南博物院（省博）周边街区",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 87015316,
+        "name": "东风路",
+        "url": "https://www.openstreetmap.org/way/87015316",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 2785100701
+      },
+      "coordinates": [
+        112.9860982,
+        28.2143961
+      ]
+    },
+    {
+      "segmentId": "cs-yiyi-rezaoxiongdi",
+      "name": "热灶兄弟·热炒湘菜",
+      "address": "长沙市雨花区花侯路高铁吾悦广场5楼L5003",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 395682956,
+        "name": "花侯路",
+        "url": "https://www.openstreetmap.org/way/395682956",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3985057777
+      },
+      "coordinates": [
+        113.0467163,
+        28.1897884
+      ]
+    },
+    {
+      "segmentId": "cs-bendong-laowenjia",
+      "name": "佬文家老地方私房菜",
+      "address": "长沙市雨花区朝晖路都城康欣园2栋107号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1311929868,
+        "name": "朝晖路",
+        "url": "https://www.openstreetmap.org/way/1311929868",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 12143517883
+      },
+      "coordinates": [
+        113.011444,
+        28.180217
+      ]
+    },
+    {
+      "segmentId": "cs-huangqiguai-laowenjia",
+      "name": "佬文家老地方私房菜",
+      "address": "长沙市雨花区朝晖路都城康欣园2栋107号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1311929868,
+        "name": "朝晖路",
+        "url": "https://www.openstreetmap.org/way/1311929868",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 12143517883
+      },
+      "coordinates": [
+        113.011444,
+        28.180217
+      ]
+    },
+    {
+      "segmentId": "cs-zhouqi-leifan",
+      "name": "擂饭",
+      "address": "长沙市天心区黄兴南路411号（黄兴广场地铁站2号口步行70米）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1526805982,
+        "name": "黄兴南路",
+        "url": "https://www.openstreetmap.org/way/1526805982",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13915051309
+      },
+      "coordinates": [
+        112.9706941,
+        28.1871
+      ]
+    },
+    {
+      "segmentId": "cs-zhouqi-ladu",
+      "name": "辣度鲜椒火锅（招商花园城店）",
+      "address": "长沙市岳麓区茶子山中路49号观沙岭招商花园城",
+      "status": "needs-location",
+      "reason": "保留原片地址线索；尚未取得能够对应此街区的开放地图参照，暂留视频库。原有边界点或未核实坐标已撤下，具体位置仍待核对。"
+    },
+    {
+      "segmentId": "cs-chaolan-huanan",
+      "name": "华南小吃",
+      "address": "长沙市开福区蔡锷北路253号（近营盘路）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1524792748,
+        "name": "蔡锷北路",
+        "url": "https://www.openstreetmap.org/way/1524792748",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13920972428
+      },
+      "coordinates": [
+        112.9760933,
+        28.2085941
+      ]
+    },
+    {
+      "segmentId": "cs-chaolan-langge",
+      "name": "浪哥捆鸡",
+      "address": "长沙市天心区城南西路南门口菜市场",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-node",
+        "id": 13897940283,
+        "name": "南门口",
+        "url": "https://www.openstreetmap.org/node/13897940283",
+        "sourceDate": "2026-10-30",
+        "method": "point"
+      },
+      "coordinates": [
+        112.9705587,
+        28.1849031
+      ]
+    },
+    {
+      "segmentId": "cs-chaolan-huangjie",
+      "name": "黄姐小吃",
+      "address": "长沙市天心区三兴街（近五一广场）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 542992630,
+        "name": "三兴街",
+        "url": "https://www.openstreetmap.org/way/542992630",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13890968182
+      },
+      "coordinates": [
+        112.9682532,
+        28.1950588
+      ]
+    },
+    {
+      "segmentId": "cs-chaolan-tianma",
+      "name": "运栋天马牛肉饼",
+      "address": "长沙市岳麓区麓山南路天马学生公寓旁",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1545181614,
+        "name": "湖南大学天马学生公寓四区",
+        "url": "https://www.openstreetmap.org/way/1545181614",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 14054577395
+      },
+      "coordinates": [
+        112.9433132,
+        28.165746
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-jiangxiangbing",
+      "name": "天马酱香饼",
+      "address": "长沙市岳麓区天马路200号天马学生公寓美食街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1545181614,
+        "name": "湖南大学天马学生公寓四区",
+        "url": "https://www.openstreetmap.org/way/1545181614",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 14054577395
+      },
+      "coordinates": [
+        112.9433132,
+        28.165746
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-lvdoubing",
+      "name": "黄记手工绿豆饼",
+      "address": "长沙市岳麓区天马学生公寓美食街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1545181614,
+        "name": "湖南大学天马学生公寓四区",
+        "url": "https://www.openstreetmap.org/way/1545181614",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 14054577395
+      },
+      "coordinates": [
+        112.9433132,
+        28.165746
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-choudoufu",
+      "name": "臭名远扬臭豆腐",
+      "address": "长沙市岳麓区天马学生公寓美食街（黄记绿豆饼旁）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1545181614,
+        "name": "湖南大学天马学生公寓四区",
+        "url": "https://www.openstreetmap.org/way/1545181614",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 14054577395
+      },
+      "coordinates": [
+        112.9433132,
+        28.165746
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-guobaojiliu",
+      "name": "和美锅包鸡柳",
+      "address": "长沙市岳麓区天马学生公寓美食街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1545181614,
+        "name": "湖南大学天马学生公寓四区",
+        "url": "https://www.openstreetmap.org/way/1545181614",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 14054577395
+      },
+      "coordinates": [
+        112.9433132,
+        28.165746
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-kouroubing",
+      "name": "邵师傅梅菜扣肉饼",
+      "address": "长沙市岳麓区天马学生公寓美食街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1545181614,
+        "name": "湖南大学天马学生公寓四区",
+        "url": "https://www.openstreetmap.org/way/1545181614",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 14054577395
+      },
+      "coordinates": [
+        112.9433132,
+        28.165746
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-tianmaniuroubing",
+      "name": "运栋天马牛肉饼",
+      "address": "长沙市岳麓区麓山南路天马学生公寓旁",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1545181614,
+        "name": "湖南大学天马学生公寓四区",
+        "url": "https://www.openstreetmap.org/way/1545181614",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 14054577395
+      },
+      "coordinates": [
+        112.9433132,
+        28.165746
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-jiaozi",
+      "name": "奉天跃祥饺子馆",
+      "address": "长沙市岳麓区麓山南路大学城",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 308054423,
+        "name": "麓山南路",
+        "url": "https://www.openstreetmap.org/way/308054423",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 8686557149
+      },
+      "coordinates": [
+        112.9368984,
+        28.1709603
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-jidaoguanbing",
+      "name": "神奇的鸡蛋灌饼",
+      "address": "长沙市岳麓区麓山南路大学城",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 308054423,
+        "name": "麓山南路",
+        "url": "https://www.openstreetmap.org/way/308054423",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 8686557149
+      },
+      "coordinates": [
+        112.9368984,
+        28.1709603
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-shousi",
+      "name": "鮨花道手作寿司",
+      "address": "长沙市岳麓区麓山南路大学城",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 308054423,
+        "name": "麓山南路",
+        "url": "https://www.openstreetmap.org/way/308054423",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9441042961
+      },
+      "coordinates": [
+        112.9367831,
+        28.1708416
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-kongxinfen",
+      "name": "志菲空心粉",
+      "address": "长沙市岳麓区麓山南路大学城",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 308054423,
+        "name": "麓山南路",
+        "url": "https://www.openstreetmap.org/way/308054423",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9441042961
+      },
+      "coordinates": [
+        112.9367831,
+        28.1708416
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-changfen",
+      "name": "潮头家潮汕肠粉",
+      "address": "长沙市岳麓区麓山南路大学城",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 308054423,
+        "name": "麓山南路",
+        "url": "https://www.openstreetmap.org/way/308054423",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 690140923
+      },
+      "coordinates": [
+        112.9366714,
+        28.17074
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-yuni",
+      "name": "大大多芋泥麻薯（天马店）",
+      "address": "长沙市岳麓区天马学生公寓美食街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1545181614,
+        "name": "湖南大学天马学生公寓四区",
+        "url": "https://www.openstreetmap.org/way/1545181614",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 14054577395
+      },
+      "coordinates": [
+        112.9433132,
+        28.165746
+      ]
+    },
+    {
+      "segmentId": "cs-liubibi-roujiamo",
+      "name": "王记老潼关肉夹馍",
+      "address": "长沙市岳麓区麓山南路天马蜜雪冰城旁",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 308054423,
+        "name": "麓山南路",
+        "url": "https://www.openstreetmap.org/way/308054423",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 8686557149
+      },
+      "coordinates": [
+        112.9368984,
+        28.1709603
+      ]
+    },
+    {
+      "segmentId": "cs-kelezhaji-sidaduo",
+      "name": "肆大锅·老长沙宁乡鲜辣土菜馆",
+      "address": "长沙市天心区书院路下碧湘街8号商铺2楼",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 365300528,
+        "name": "下碧湘街",
+        "url": "https://www.openstreetmap.org/way/365300528",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3693235594
+      },
+      "coordinates": [
+        112.9672944,
+        28.1860467
+      ]
+    },
+    {
+      "segmentId": "cs-xiatian-yuminxiang",
+      "name": "裕民巷饭店（河西王府井店）",
+      "address": "长沙市岳麓区裕民街42号沁园春御院4栋",
+      "status": "needs-location",
+      "reason": "保留原片地址线索；尚未取得能够对应此街区的开放地图参照，暂留视频库。原有边界点或未核实坐标已撤下，具体位置仍待核对。"
+    },
+    {
+      "segmentId": "cs-dawei-laowenjia",
+      "name": "佬文家老地方私房菜",
+      "address": "长沙市雨花区朝晖路都市阳光家园2栋107号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1311929868,
+        "name": "朝晖路",
+        "url": "https://www.openstreetmap.org/way/1311929868",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 12143517883
+      },
+      "coordinates": [
+        113.011444,
+        28.180217
+      ]
+    },
+    {
+      "segmentId": "cs-jianxi-xiongyingjun",
+      "name": "熊英俊果木炭烧烤",
+      "address": "长沙市开福区德雅路1291号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-node",
+        "id": 8532516216,
+        "name": "四方坪街道",
+        "url": "https://www.openstreetmap.org/node/8532516216",
+        "sourceDate": "2026-10-30",
+        "method": "point"
+      },
+      "coordinates": [
+        113.0056619,
+        28.2306687
+      ]
+    },
+    {
+      "segmentId": "cs-jianxi-hehuachi",
+      "name": "荷花池生鲜市场美食摊群",
+      "address": "长沙市开福区蔡锷北路315号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1527630151,
+        "name": "蔡锷北路",
+        "url": "https://www.openstreetmap.org/way/1527630151",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3925535607
+      },
+      "coordinates": [
+        112.9759455,
+        28.2066064
+      ]
+    },
+    {
+      "segmentId": "cs-jianxi-zhouji",
+      "name": "周记粉店（县正街店）",
+      "address": "长沙市芙蓉区县正街16号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1524403714,
+        "name": "县正街",
+        "url": "https://www.openstreetmap.org/way/1524403714",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 1955841399
+      },
+      "coordinates": [
+        112.9754198,
+        28.1892032
+      ]
+    },
+    {
+      "segmentId": "cs-jianxi-bandeng",
+      "name": "板凳宽宽（五一店）",
+      "address": "长沙市开福区荷花池巷与红墙巷交叉口",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1334821135,
+        "name": "红墙巷",
+        "url": "https://www.openstreetmap.org/way/1334821135",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 12348683781
+      },
+      "coordinates": [
+        112.9779709,
+        28.2047662
+      ]
+    },
+    {
+      "segmentId": "cs-jianxi-qinjie",
+      "name": "秦娭毑皮蛋肉丸（袁家岭店）",
+      "address": "长沙市芙蓉区韭菜园街道新军路2号煤炭局小区",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-node",
+        "id": 13912406419,
+        "name": "袁家岭南",
+        "url": "https://www.openstreetmap.org/node/13912406419",
+        "sourceDate": "2026-10-30",
+        "method": "point"
+      },
+      "coordinates": [
+        112.9912734,
+        28.1957754
+      ]
+    },
+    {
+      "segmentId": "cs-jianxi-jiaoluowan",
+      "name": "角落湾口味菜馆（开福店）",
+      "address": "长沙市开福区东风路立交桥旁废弃火车小院",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1524805322,
+        "name": "东风路",
+        "url": "https://www.openstreetmap.org/way/1524805322",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 1600975019
+      },
+      "coordinates": [
+        112.9868697,
+        28.2231283
+      ]
+    },
+    {
+      "segmentId": "cs-xiaoyu-taotao",
+      "name": "涛涛小吃（人民东路店）",
+      "address": "长沙市芙蓉区人民东路111号东郡小区2栋106号",
+      "status": "needs-location",
+      "reason": "保留原片地址线索；尚未取得能够对应此街区的开放地图参照，暂留视频库。原有边界点或未核实坐标已撤下，具体位置仍待核对。"
+    },
+    {
+      "segmentId": "cs-xiaoyu-shuifengjing",
+      "name": "水风井小钵子蒸菜",
+      "address": "长沙市开福区中山路水风井社区教育街巷内",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-node",
+        "id": 13897940243,
+        "name": "水风井",
+        "url": "https://www.openstreetmap.org/node/13897940243",
+        "sourceDate": "2026-10-30",
+        "method": "point"
+      },
+      "coordinates": [
+        112.9756764,
+        28.2040878
+      ]
+    },
+    {
+      "segmentId": "cs-xiaoyu-jiachang",
+      "name": "家常风味馆",
+      "address": "长沙市开福区营盘路周围老街巷",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 185140711,
+        "name": "营盘路",
+        "url": "https://www.openstreetmap.org/way/185140711",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13920972417
+      },
+      "coordinates": [
+        112.9737942,
+        28.2078415
+      ]
+    },
+    {
+      "segmentId": "cs-xiaoyu-huanan",
+      "name": "华南小吃",
+      "address": "长沙市开福区蔡锷北路253号（营盘路口）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1524792748,
+        "name": "蔡锷北路",
+        "url": "https://www.openstreetmap.org/way/1524792748",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13920972428
+      },
+      "coordinates": [
+        112.9760933,
+        28.2085941
+      ]
+    },
+    {
+      "segmentId": "cs-xiaoyu-xiaobanma",
+      "name": "小斑马品质海鲜（直营总店）",
+      "address": "长沙市开福区营盘路296号元盛大厦一层",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1548111897,
+        "name": "营盘路",
+        "url": "https://www.openstreetmap.org/way/1548111897",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3139866134
+      },
+      "coordinates": [
+        112.9803818,
+        28.2070025
+      ]
+    },
+    {
+      "segmentId": "cs-changshadt-huanan",
+      "name": "华南小吃",
+      "address": "长沙市开福区蔡锷北路553号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1524792748,
+        "name": "蔡锷北路",
+        "url": "https://www.openstreetmap.org/way/1524792748",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13920972428
+      },
+      "coordinates": [
+        112.9760933,
+        28.2085941
+      ]
+    },
+    {
+      "segmentId": "cs-zhizhi-guangtou",
+      "name": "光头粉馆 (燕山街总店)",
+      "address": "长沙市芙蓉区朝阳街道燕山街103号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 185145104,
+        "name": "燕山街",
+        "url": "https://www.openstreetmap.org/way/185145104",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 1957171810
+      },
+      "coordinates": [
+        112.9983932,
+        28.1998014
+      ]
+    },
+    {
+      "segmentId": "cs-zhizhi-xishi",
+      "name": "西施臭豆腐",
+      "address": "长沙市天心区学院街与黄兴南路交叉口旁",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 184960644,
+        "name": "学院街",
+        "url": "https://www.openstreetmap.org/way/184960644",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 4619022553
+      },
+      "coordinates": [
+        112.9696097,
+        28.188502
+      ]
+    },
+    {
+      "segmentId": "cs-zhizhi-langge",
+      "name": "浪哥捆鸡",
+      "address": "长沙市天心区下碧湘街南门口街巷",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-node",
+        "id": 13897940283,
+        "name": "南门口",
+        "url": "https://www.openstreetmap.org/node/13897940283",
+        "sourceDate": "2026-10-30",
+        "method": "point"
+      },
+      "coordinates": [
+        112.9705587,
+        28.1849031
+      ]
+    },
+    {
+      "segmentId": "cs-zhizhi-pengji",
+      "name": "彭记肉丸店",
+      "address": "长沙市芙蓉区韭菜园街道藩后街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 543405237,
+        "name": "藩后街",
+        "url": "https://www.openstreetmap.org/way/543405237",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 5128509167
+      },
+      "coordinates": [
+        112.9778707,
+        28.1965695
+      ]
+    },
+    {
+      "segmentId": "cs-xiaoyu-baishajiaozi",
+      "name": "白沙饺子店",
+      "address": "长沙市天心区白沙路160号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 184964585,
+        "name": "白沙路",
+        "url": "https://www.openstreetmap.org/way/184964585",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 1955308119
+      },
+      "coordinates": [
+        112.9756749,
+        28.183696
+      ]
+    },
+    {
+      "segmentId": "cs-xiaoyu-guangnaoke",
+      "name": "光脑壳家常菜馆",
+      "address": "长沙市开福区春风街与轩辕殿巷交汇处",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 185145063,
+        "name": "春风街",
+        "url": "https://www.openstreetmap.org/way/185145063",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9612223708
+      },
+      "coordinates": [
+        112.9695374,
+        28.2006938
+      ]
+    },
+    {
+      "segmentId": "cs-yesheng-kaodaixiong",
+      "name": "烤袋熊旋转自助烤肉",
+      "address": "长沙市天心区五一广场商圈",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 268748336,
+        "name": "五一广场",
+        "url": "https://www.openstreetmap.org/way/268748336",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 2740741662
+      },
+      "coordinates": [
+        112.9725896,
+        28.1993209
+      ]
+    },
+    {
+      "segmentId": "cs-33dachihuo-ningxiangning",
+      "name": "宁乡宁手工鸡蛋面 (大学城店)",
+      "address": "长沙市岳麓区大学城麓山南路商圈",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 308054423,
+        "name": "麓山南路",
+        "url": "https://www.openstreetmap.org/way/308054423",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9441042961
+      },
+      "coordinates": [
+        112.9367831,
+        28.1708416
+      ]
+    },
+    {
+      "segmentId": "cs-yizhikaizi-yangfan",
+      "name": "扬帆夜市 · 扬帆麻糍铺",
+      "address": "长沙市芙蓉区东屯渡街道扬帆夜市",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1311929833,
+        "name": "扬帆小区-E区",
+        "url": "https://www.openstreetmap.org/way/1311929833",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 12143517418
+      },
+      "coordinates": [
+        113.0328856,
+        28.191185
+      ]
+    },
+    {
+      "segmentId": "cs-wanziyou-jinpingguo",
+      "name": "金苹果大市场市井小吃",
+      "address": "长沙市芙蓉区朝阳路78号金苹果大市场",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-node",
+        "id": 13916453788,
+        "name": "朝阳村地铁站",
+        "url": "https://www.openstreetmap.org/node/13916453788",
+        "sourceDate": "2026-10-30",
+        "method": "point"
+      },
+      "coordinates": [
+        113.0052316,
+        28.1916053
+      ]
+    },
+    {
+      "segmentId": "cs-cuicuisha-tangshui",
+      "name": "中国糖水 (大学城店)",
+      "address": "长沙市岳麓区大学城麓山南路849号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 308054423,
+        "name": "麓山南路",
+        "url": "https://www.openstreetmap.org/way/308054423",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 690140924
+      },
+      "coordinates": [
+        112.9370671,
+        28.1711643
+      ]
+    },
+    {
+      "segmentId": "cs-cuicuisha-roujiamo",
+      "name": "王记老潼关肉夹馍",
+      "address": "长沙市岳麓区麓山南路大学城小吃街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 308054423,
+        "name": "麓山南路",
+        "url": "https://www.openstreetmap.org/way/308054423",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 8686557149
+      },
+      "coordinates": [
+        112.9368984,
+        28.1709603
+      ]
+    },
+    {
+      "segmentId": "cs-cuicuisha-zhoushu",
+      "name": "周叔沙茶面 (大学城店)",
+      "address": "长沙市岳麓区阜埠河路与麓山南路交汇处",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 54818904,
+        "name": "阜埠河路",
+        "url": "https://www.openstreetmap.org/way/54818904",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9441042993
+      },
+      "coordinates": [
+        112.9484073,
+        28.1669592
+      ]
+    },
+    {
+      "segmentId": "cs-xiaxia-jinjituotuo",
+      "name": "金记糖油佗佗（学院街老店）",
+      "address": "天心区学院街55号（长郡中学正门旁）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 184960644,
+        "name": "学院街",
+        "url": "https://www.openstreetmap.org/way/184960644",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 4619022553
+      },
+      "coordinates": [
+        112.9696097,
+        28.188502
+      ]
+    },
+    {
+      "segmentId": "cs-xiaxia-yangdia",
+      "name": "杨嗲甜酒",
+      "address": "天心区学院街55号巷内",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 184960644,
+        "name": "学院街",
+        "url": "https://www.openstreetmap.org/way/184960644",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 4619022553
+      },
+      "coordinates": [
+        112.9696097,
+        28.188502
+      ]
+    },
+    {
+      "segmentId": "cs-xiaxia-zuoguniang",
+      "name": "左姑娘湘西泡菜",
+      "address": "天心区学院街长郡中学旁",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 184960644,
+        "name": "学院街",
+        "url": "https://www.openstreetmap.org/way/184960644",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 4619022553
+      },
+      "coordinates": [
+        112.9696097,
+        28.188502
+      ]
+    },
+    {
+      "segmentId": "cs-seven-zhajiliu",
+      "name": "林科大霸王炸鸡柳",
+      "address": "天心区青园街道文香路中南林业科技大学后街",
+      "status": "needs-location",
+      "reason": "保留原片地址线索；尚未取得能够对应此街区的开放地图参照，暂留视频库。原有边界点或未核实坐标已撤下，具体位置仍待核对。"
+    },
+    {
+      "segmentId": "cs-seven-maci",
+      "name": "小桃手作麻糍（林科大店）",
+      "address": "天心区文香路中南林业科技大学商业街十字路口",
+      "status": "needs-location",
+      "reason": "保留原片地址线索；尚未取得能够对应此街区的开放地图参照，暂留视频库。原有边界点或未核实坐标已撤下，具体位置仍待核对。"
+    },
+    {
+      "segmentId": "cs-seven-juanbing",
+      "name": "大山丘鸡柳卷饼",
+      "address": "天心区文香路中南林业科技大学美食街十字路口",
+      "status": "needs-location",
+      "reason": "保留原片地址线索；尚未取得能够对应此街区的开放地图参照，暂留视频库。原有边界点或未核实坐标已撤下，具体位置仍待核对。"
+    },
+    {
+      "segmentId": "cs-chilezaijian-tudouni",
+      "name": "宝嗲煤炉子土锅菜（树木岭店）",
+      "address": "雨花区雨花亭街道曲塘路106号（近树木岭站）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1034623963,
+        "name": "曲塘路",
+        "url": "https://www.openstreetmap.org/way/1034623963",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 12065371596
+      },
+      "coordinates": [
+        113.0117248,
+        28.1465409
+      ]
+    },
+    {
+      "segmentId": "cs-gongfupang-shuguangxiaoxue",
+      "name": "曙光小学门口老味道小吃摊",
+      "address": "雨花区曙光中路曙光小学门口校门外",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 389383157,
+        "name": "曙光中路",
+        "url": "https://www.openstreetmap.org/way/389383157",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 4845046352
+      },
+      "coordinates": [
+        112.9956506,
+        28.1764153
+      ]
+    },
+    {
+      "segmentId": "cs-jintian-shenjian",
+      "name": "德思勤夜市 · 灌汤生煎",
+      "address": "雨花区中意一路68号德思勤四季汇步行街夜市",
+      "status": "needs-location",
+      "reason": "保留原片地址线索；尚未取得能够对应此街区的开放地图参照，暂留视频库。原有边界点或未核实坐标已撤下，具体位置仍待核对。"
+    },
+    {
+      "segmentId": "cs-jintian-tiebanshao",
+      "name": "德思勤夜市 · 磊小二铁板烧",
+      "address": "雨花区中意一路68号德思勤四季汇步行街夜市",
+      "status": "needs-location",
+      "reason": "保留原片地址线索；尚未取得能够对应此街区的开放地图参照，暂留视频库。原有边界点或未核实坐标已撤下，具体位置仍待核对。"
+    },
+    {
+      "segmentId": "cs-yeye-duoroumixian",
+      "name": "多肉小锅米线（后湖店）",
+      "address": "岳麓区阜埠河路后湖小区二期美食街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 54818904,
+        "name": "阜埠河路",
+        "url": "https://www.openstreetmap.org/way/54818904",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9441042993
+      },
+      "coordinates": [
+        112.9484073,
+        28.1669592
+      ]
+    },
+    {
+      "segmentId": "cs-yeye-ganchaoniuhe",
+      "name": "后湖小区 · 铁板干炒牛河",
+      "address": "岳麓区后湖小区美食街路口推车",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 54818904,
+        "name": "阜埠河路",
+        "url": "https://www.openstreetmap.org/way/54818904",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9441042993
+      },
+      "coordinates": [
+        112.9484073,
+        28.1669592
+      ]
+    },
+    {
+      "segmentId": "cs-yeye-shihaoman",
+      "name": "实好满糖水铺（后湖店）",
+      "address": "岳麓区后湖小区二期美食街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 54818904,
+        "name": "阜埠河路",
+        "url": "https://www.openstreetmap.org/way/54818904",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9441042993
+      },
+      "coordinates": [
+        112.9484073,
+        28.1669592
+      ]
+    },
+    {
+      "segmentId": "cs-yeye-chaolu",
+      "name": "后湖夜市 · 老长沙铁锅炒卤",
+      "address": "岳麓区后湖小区夜市街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1029410063,
+        "name": "后湖路",
+        "url": "https://www.openstreetmap.org/way/1029410063",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9466479523
+      },
+      "coordinates": [
+        112.9438755,
+        28.1680774
+      ]
+    },
+    {
+      "segmentId": "cs-yeye-chongqingmianguan",
+      "name": "后湖小区 · 重庆面馆",
+      "address": "岳麓区后湖小区商业街老店",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1029410063,
+        "name": "后湖路",
+        "url": "https://www.openstreetmap.org/way/1029410063",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 9466479523
+      },
+      "coordinates": [
+        112.9438755,
+        28.1680774
+      ]
+    },
+    {
+      "segmentId": "cs-meishi-panpanxiaoxue",
+      "name": "盼盼小学门口老味道路边摊",
+      "address": "长沙县星沙街道天华路盼盼小学门口外",
+      "status": "needs-location",
+      "reason": "保留原片地址线索；尚未取得能够对应此街区的开放地图参照，暂留视频库。原有边界点或未核实坐标已撤下，具体位置仍待核对。"
+    },
+    {
+      "segmentId": "cs-yiyi-manshuan",
+      "name": "蛮涮自助小火锅·糖水铺子集合店（黄兴广场店）",
+      "address": "天心区黄兴广场商业广场2楼（长沙礼物旁扶梯上二楼）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1550060837,
+        "name": "黄兴南路",
+        "url": "https://www.openstreetmap.org/way/1550060837",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13915051300
+      },
+      "coordinates": [
+        112.9705739,
+        28.1871017
+      ]
+    },
+    {
+      "segmentId": "cs-wanlaoban-chunxi",
+      "name": "春禧烤肉 · 炭火烤肉自助（市政府店）",
+      "address": "岳麓区银盆岭街道府中路（长沙市政府商圈）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 316397569,
+        "name": "府中路",
+        "url": "https://www.openstreetmap.org/way/316397569",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3225051930
+      },
+      "coordinates": [
+        112.9343345,
+        28.23256
+      ]
+    },
+    {
+      "segmentId": "cs-yewen-xianchao",
+      "name": "17元现炒家常小炒自助（滨江农贸市场老街店）",
+      "address": "岳麓区含光路390号锦尚生鲜滨江综合农贸市场旁老街",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 389264690,
+        "name": "含光路",
+        "url": "https://www.openstreetmap.org/way/389264690",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3926980950
+      },
+      "coordinates": [
+        112.946123,
+        28.2404782
+      ]
+    },
+    {
+      "segmentId": "cs-awendouzi-xinjingwei",
+      "name": "新京位自助北京涮肉（黄兴南路步行街店）",
+      "address": "天心区黄兴南路383号（步行街西厢北栋E区3楼,三福楼上）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1526805982,
+        "name": "黄兴南路",
+        "url": "https://www.openstreetmap.org/way/1526805982",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13915051309
+      },
+      "coordinates": [
+        112.9706941,
+        28.1871
+      ]
+    },
+    {
+      "segmentId": "cs-longxiaoban-jiuji",
+      "name": "九记潮汕现切鲜牛肉自助火锅（星沙中茂城店）",
+      "address": "长沙县星沙中茂城商业广场5楼514门面",
+      "status": "needs-location",
+      "reason": "保留原片地址线索；尚未取得能够对应此街区的开放地图参照，暂留视频库。原有边界点或未核实坐标已撤下，具体位置仍待核对。"
+    },
+    {
+      "segmentId": "cs-qiaolezizi-guolulu",
+      "name": "郭璐璐·一头牛烤肉酒厂（银盆岭万达旗舰店）",
+      "address": "岳麓区银盆南路万达广场1号门左侧",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 963432587,
+        "name": "银盆南路",
+        "url": "https://www.openstreetmap.org/way/963432587",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 11986117060
+      },
+      "coordinates": [
+        112.948319,
+        28.2273023
+      ]
+    },
+    {
+      "segmentId": "cs-nihaodamaoge-yamaxun",
+      "name": "亚马逊环球美食百汇（悦方ID MALL店）",
+      "address": "天心区坡子街216号悦方ID MALL 3层",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 184960645,
+        "name": "坡子街",
+        "url": "https://www.openstreetmap.org/way/184960645",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13922610466
+      },
+      "coordinates": [
+        112.9707312,
+        28.1933402
+      ]
+    },
+    {
+      "segmentId": "cs-zailaiyiwan-changji",
+      "name": "常记烤全羊自助（远大二路店）",
+      "address": "芙蓉区远大二路（农科院/东湖段）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 848038109,
+        "name": "远大二路",
+        "url": "https://www.openstreetmap.org/way/848038109",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3924256674
+      },
+      "coordinates": [
+        113.0576019,
+        28.2033578
+      ]
+    },
+    {
+      "segmentId": "cs-danniu-wangjie",
+      "name": "王姐粉面店 / 王姐自助快餐",
+      "address": "长沙市岳麓区观沙岭街道含光路450号兴安苑临街商铺",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 389264690,
+        "name": "含光路",
+        "url": "https://www.openstreetmap.org/way/389264690",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3926980934
+      },
+      "coordinates": [
+        112.9465084,
+        28.2404996
+      ]
+    },
+    {
+      "segmentId": "cs-danniu-haoqingnian",
+      "name": "好青年超级自助餐厅",
+      "address": "长沙市芙蓉区浏正街123号",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 527545456,
+        "name": "浏正街",
+        "url": "https://www.openstreetmap.org/way/527545456",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 12060625545
+      },
+      "coordinates": [
+        112.9811329,
+        28.1942903
+      ]
+    },
+    {
+      "segmentId": "cs-danniu-dongmaojie",
+      "name": "东茅街茶馆",
+      "address": "长沙市芙蓉区东茅街与蔡锷南路交叉口旁",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 543973401,
+        "name": "东茅街",
+        "url": "https://www.openstreetmap.org/way/543973401",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 5258386738
+      },
+      "coordinates": [
+        112.9768114,
+        28.1931653
+      ]
+    },
+    {
+      "segmentId": "cs-chenniuniu-junyue",
+      "name": "长沙君悦酒店 · 咖啡厅海鲜自助餐",
+      "address": "长沙市天心区湘江中路二段36号华远国际中心长沙君悦酒店",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 308723466,
+        "name": "湘江中路",
+        "url": "https://www.openstreetmap.org/way/308723466",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3139866089
+      },
+      "coordinates": [
+        112.9638312,
+        28.1891726
+      ]
+    },
+    {
+      "segmentId": "cs-nanjiang-kaoquanyang",
+      "name": "南疆牧场馕坑烤全羊自助（洪西店）",
+      "address": "长沙市开福区万家丽北路洪西小区商业街（近长沙学院）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 391471199,
+        "name": "万家丽北路",
+        "url": "https://www.openstreetmap.org/way/391471199",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3950069214
+      },
+      "coordinates": [
+        113.0347586,
+        28.2429085
+      ]
+    },
+    {
+      "segmentId": "cs-zailaiyiwan-tangshui",
+      "name": "国民地摊糖水自助（西牌楼店）",
+      "address": "长沙市天心区西牌楼街口（近太平老街南口）",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 542992631,
+        "name": "西牌楼",
+        "url": "https://www.openstreetmap.org/way/542992631",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 4448731556
+      },
+      "coordinates": [
+        112.9682926,
+        28.1971182
+      ]
+    },
+    {
+      "segmentId": "cs-wuenwenwen-wyndham",
+      "name": "长沙西雅温德姆酒店 · 海鲜自助餐厅",
+      "address": "长沙市雨花区湘府中路48号西雅温德姆酒店3楼",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 876602287,
+        "name": "湘府中路",
+        "url": "https://www.openstreetmap.org/way/876602287",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 8175504809
+      },
+      "coordinates": [
+        113.0054168,
+        28.113726
+      ]
+    },
+    {
+      "segmentId": "cs-xinxin-guolulu",
+      "name": "郭璐璐·一头牛烤肉酒厂（银盆岭万达旗舰店）",
+      "address": "岳麓区银盆南路万达广场1号门",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 963432587,
+        "name": "银盆南路",
+        "url": "https://www.openstreetmap.org/way/963432587",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 11986117060
+      },
+      "coordinates": [
+        112.948319,
+        28.2273023
+      ]
+    },
+    {
+      "segmentId": "cs-zailaiyiwan-wukong",
+      "name": "悟空叔叔蛋糕甜品自助（德思勤店）",
+      "address": "长沙市雨花区迎新路德思勤四季汇购物中心周边",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 789248911,
+        "name": "迎新路",
+        "url": "https://www.openstreetmap.org/way/789248911",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 4843444119
+      },
+      "coordinates": [
+        113.0089671,
+        28.115576
+      ]
+    },
+    {
+      "segmentId": "cs-hanbao-wenke",
+      "name": "温可蛋糕 · 甜品自助（东方新城店）",
+      "address": "长沙市芙蓉区荷花路东方新城H6栋临街门面",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1569033303,
+        "name": "荷花路",
+        "url": "https://www.openstreetmap.org/way/1569033303",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 6304586960
+      },
+      "coordinates": [
+        113.0200834,
+        28.1949269
+      ]
+    },
+    {
+      "segmentId": "cs-nanyihao-manxiangxiang",
+      "name": "蛮享享自助烤肉（洪西小区店）",
+      "address": "长沙市开福区万家丽北路一段906号洪西小区",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 391471214,
+        "name": "万家丽北路",
+        "url": "https://www.openstreetmap.org/way/391471214",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 3946852016
+      },
+      "coordinates": [
+        113.0354439,
+        28.247259
+      ]
+    },
+    {
+      "segmentId": "cs-markvlogs-yamaxun",
+      "name": "亚马逊环球美食百汇（悦方ID MALL店）",
+      "address": "坡子街216号悦方ID MALL 3层",
+      "status": "approximate-planning",
+      "anchor": {
+        "kind": "osm-way",
+        "id": 184960645,
+        "name": "坡子街",
+        "url": "https://www.openstreetmap.org/way/184960645",
+        "sourceDate": "2026-10-30",
+        "method": "original-way-node",
+        "nodeId": 13922610466
+      },
+      "coordinates": [
+        112.9707312,
+        28.1933402
+      ]
+    }
+  ]
+}

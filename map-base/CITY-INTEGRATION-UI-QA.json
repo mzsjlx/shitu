@@ -1,0 +1,3000 @@
+{
+  "date": "2026-11-01",
+  "scope": "Integrated Chongqing/Changsha; isolated Chromium; desktop and simulated mobile; media decode and one muted playback per source with clips.",
+  "checks": [
+    {
+      "name": "cs-chilezaijian-laowenjia decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-chilezaijian-7637507311833195429 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoxuan-yangdachui decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoxuan-7637827182958702309 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-daxiang-zhaoji decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-daxiang-7671127597723438345 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-daxiang-wangji decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-daxiang-deyuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-fanqie-jiachang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-fanqie-7639310431341694178 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-fanqie-fandai decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-fanqie-xinkouwei decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-fanqie-xiaoge decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yiyi-rezaoxiongdi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yiyi-7671566075503569344 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-bendong-laowenjia decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-bendong-7671596892647941745 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-huangqiguai-laowenjia decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-huangqiguai-7649357746190653135 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-zhouqi-leifan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-zhouqi-7577313911873054580 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-zhouqi-ladu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-zhouqi-7579175414606633344 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-chaolan-huanan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-chaolan-7581690596319759673 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-chaolan-langge decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-chaolan-huangjie decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-chaolan-tianma decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-jiangxiangbing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-7592838890860416308 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-lvdoubing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-choudoufu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-guobaojiliu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-kouroubing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-tianmaniuroubing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-jiaozi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-jidaoguanbing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-shousi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-kongxinfen decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-changfen decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-yuni decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-liubibi-roujiamo decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-kelezhaji-sidaduo decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-kelezhaji-7626001690990729573 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-xiatian-yuminxiang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiatian-7653826542430715087 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-dawei-laowenjia decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-dawei-7663454035731778678 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-jianxi-xiongyingjun decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-jianxi-7663901991059393819 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-jianxi-hehuachi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-jianxi-zhouji decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-jianxi-bandeng decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-jianxi-qinjie decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-jianxi-jiaoluowan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-bendong-7698700405891477931 keeps the original link without invented clips",
+      "passed": true
+    },
+    {
+      "name": "cs-dongmai-7536713544731348287 keeps the original link without invented clips",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoyu-taotao decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoyugugu-7475652462477659404 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoyu-shuifengjing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoyu-jiachang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoyu-huanan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoyu-xiaobanma decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-changshadt-huanan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-changshadt-7393161654390787382 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-zhizhi-guangtou decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-zhizhi-7650474844718428389 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-zhizhi-xishi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-zhizhi-langge decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-zhizhi-pengji decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoyu-baishajiaozi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoyugugu-7627385830349278843 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaoyu-guangnaoke decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yesheng-kaodaixiong decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yesheng-7644401714867017721 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-yezi-7586268117493173539 keeps the original link without invented clips",
+      "passed": true
+    },
+    {
+      "name": "cs-33dachihuo-ningxiangning decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-33dachihuo-7654870889092708090 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-yizhikaizi-yangfan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yizhikaizi-7673783812815375643 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-wanziyou-jinpingguo decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-wanziyou-7595885886282257551 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-cuicuisha-tangshui decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-cuicuisha-7650444000676517562 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-cuicuisha-roujiamo decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-cuicuisha-zhoushu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaxia-jinjituotuo decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaxia-7241189634946927872 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaxia-yangdia decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xiaxia-zuoguniang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-seven-zhajiliu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-seven-7644509538927015080 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-seven-maci decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-seven-juanbing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-chilezaijian-tudouni decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-chilezaijian-7616195320946892186 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-gongfupang-shuguangxiaoxue decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-gongfupang-7409966816576998706 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-jintian-shenjian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-jintian-7693568734276325993 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-jintian-tiebanshao decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yeye-duoroumixian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yeye-7697897212177408168 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-yeye-ganchaoniuhe decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yeye-shihaoman decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yeye-chaolu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yeye-chongqingmianguan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-meishi-panpanxiaoxue decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-meishi-7581783976941473051 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-yiyi-manshuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yiyi-7653707970563932148 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-wanlaoban-chunxi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-wanlaoban-7683424935469726385 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-yewen-xianchao decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-yewen-7546539062639987977 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-awendouzi-xinjingwei decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-awendouzi-7698562250957061563 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-longxiaoban-jiuji decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-longxiaoban-7569540712392403323 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-qiaolezizi-guolulu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-qiaolezizi-7694249332182967973 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-nihaodamaoge-yamaxun decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-nihaodamaoge-7654057236876167369 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-zailaiyiwan-changji decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-zailaiyiwan-7572535288392851694 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-danniu-wangjie decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-danniu-7449400408910335267 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-danniu-haoqingnian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-danniu-dongmaojie decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-chenniuniu-junyue decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-chenniuniu-7699081615532226715 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-nanjiang-kaoquanyang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-nanjiangmuchang-7623672155142734818 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-zailaiyiwan-tangshui decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-zailaiyiwan-7445227820151868711 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-wuenwenwen-wyndham decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-wuenwenwen-7699846548570796657 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-xinxin-guolulu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-xinxin-7692000121852780371 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-zailaiyiwan-wukong decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-zailaiyiwan-7384738733913836850 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-hanbao-wenke decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-hanbao-7493749635656207650 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-nanyihao-manxiangxiang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-nanyihao-7506463757934152999 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-markvlogs-yamaxun decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cs-markvlogs-7535102640792751401 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cs-xiao7chifan-7688674954804360678 keeps the original link without invented clips",
+      "passed": true
+    },
+    {
+      "name": "cs-lurenfei-7494578839352380712 keeps the original link without invented clips",
+      "passed": true
+    },
+    {
+      "name": "changsha library geometry 1440",
+      "passed": true,
+      "details": {
+        "card": {
+          "width": 353.5,
+          "height": 338.40625
+        },
+        "image": {
+          "width": 341.5,
+          "height": 220.3125
+        },
+        "scroll": 723,
+        "width": 723,
+        "loading": false
+      }
+    },
+    {
+      "name": "changsha library geometry 390",
+      "passed": true,
+      "details": {
+        "card": {
+          "width": 160,
+          "height": 237.65625
+        },
+        "image": {
+          "width": 148,
+          "height": 95.46875
+        },
+        "scroll": 332,
+        "width": 332,
+        "loading": false
+      }
+    },
+    {
+      "name": "changsha library geometry 320",
+      "passed": true,
+      "details": {
+        "card": {
+          "width": 125,
+          "height": 215.078125
+        },
+        "image": {
+          "width": 113,
+          "height": 72.890625
+        },
+        "scroll": 262,
+        "width": 262,
+        "loading": false
+      }
+    },
+    {
+      "name": "changsha library geometry 736",
+      "passed": true,
+      "details": {
+        "card": {
+          "width": 165,
+          "height": 251.765625
+        },
+        "image": {
+          "width": 153,
+          "height": 98.703125
+        },
+        "scroll": 342,
+        "width": 342,
+        "loading": false
+      }
+    },
+    {
+      "name": "nangua-jiachang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "nangua playback advances",
+      "passed": true
+    },
+    {
+      "name": "nangua-jeju decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "nangua-set-coffee decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "nangua-nendouya decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "nangua-cailanzi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "nangua-dayan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "nangua-daling decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "nangua-sanyangzi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "nangua-huilaiwei decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "nangua-qianjiang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "nangua-rongchang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "abang-babajian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "abang playback advances",
+      "passed": true
+    },
+    {
+      "name": "abang-43 decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "abang-guijing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "abang-xidajiang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "abang-ganyitai decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "abang-xiongfeng decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "abang-shanlishu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "abang-wuduwudu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "abang-yabatu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "zhizhi keeps the original link without invented clips",
+      "passed": true
+    },
+    {
+      "name": "tiedan-gangzi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "tiedan playback advances",
+      "passed": true
+    },
+    {
+      "name": "yumo-hotpot decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "yumo playback advances",
+      "passed": true
+    },
+    {
+      "name": "wulala-wangshifu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "wulala playback advances",
+      "passed": true
+    },
+    {
+      "name": "jiankang-linhua decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "jiankang playback advances",
+      "passed": true
+    },
+    {
+      "name": "jiankang-chunyang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "jiankang-shaotiao decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "jiankang-liuyouchi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "jiankang-zhuer decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "jiankang-beicheng decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "jiankang-mixian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "jiankang-zhibaoyu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "jiankang-liruotao decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "bailong-zhuer decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "bailong playback advances",
+      "passed": true
+    },
+    {
+      "name": "bailong-gangzi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "bailong-chunhong decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "mizijun-tianbang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "mizijun playback advances",
+      "passed": true
+    },
+    {
+      "name": "zhangxixi-haochijie decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "zhangxixi playback advances",
+      "passed": true
+    },
+    {
+      "name": "manbei-hongjiuge decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "manbei playback advances",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-wanza decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-7602232743804036730 playback advances",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-linmeimei decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-xiangyuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-tianpin decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-douhuaniurou decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "xiaoyang-shaokao decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "lanmei-wanza decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-lanmei-7692311805913784713 playback advances",
+      "passed": true
+    },
+    {
+      "name": "lanmei-shaomai decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "lanmei-xidajiang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "lanmei-zhengcai decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yikou decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "lanmei-yuanma decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hulake decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-7666393424492268852 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-yikoutangjiao decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-yangheshaomai decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-xinyiniurou decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-zhuer decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-xiangyaju decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-hill-bbq decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-wuming-tihua decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-gumufeng decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-caijibaozi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-kaizi-bai-chaoshou decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-caiji decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhoushi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baomian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-konger decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-limixian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-liaoji decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-qixing-hotpot decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-bingdouhua decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-huangjia decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-renyi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-miaoshifu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-luoerwa decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangshi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yangfen decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-tangyuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-xinzhu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lidouhua decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lvdousu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-longyi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zhengfa decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-ganguo decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuanji decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jinli decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-baixin decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-shuguang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-nawan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-yuqingnian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-zengbin decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-lichaoshou decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-jidong decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-dianjiang decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-pp-7583215165723266354-hongyu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongjing-doufunao decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dalitang-liangxia decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-dadukou-roubing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-rongchang-dougan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-tongliang-gao decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-xinyang-guobaorou decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-yudong-chuanchuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-shiziping-tudou decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-nanping-ciba decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-danzishi-huoguofen decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-yangyu-7699016826356895027 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-guobaorou decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-dayoubian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-zhurouchuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-xiangjiaofeibing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-suisui-7640793670463833265-luchuanchuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-nuomifan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-malachuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-hefan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-liangmian decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-ciba decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-yangyu decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-mei-7529179722208546106-kuanfen decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-wenzi-7642999598881033417-malachuan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-wenzi-7642999598881033417 playback advances",
+      "passed": true
+    },
+    {
+      "name": "cq-xianxian-7563133332981484858-hefan decodes with matching duration",
+      "passed": true
+    },
+    {
+      "name": "cq-xianxian-7563133332981484858 playback advances",
+      "passed": true
+    },
+    {
+      "name": "chongqing library geometry 1440",
+      "passed": true,
+      "details": {
+        "card": {
+          "width": 353.5,
+          "height": 338.40625
+        },
+        "image": {
+          "width": 341.5,
+          "height": 220.3125
+        },
+        "scroll": 723,
+        "width": 723,
+        "loading": false
+      }
+    },
+    {
+      "name": "chongqing library geometry 390",
+      "passed": true,
+      "details": {
+        "card": {
+          "width": 160,
+          "height": 208.46875
+        },
+        "image": {
+          "width": 148,
+          "height": 95.46875
+        },
+        "scroll": 332,
+        "width": 332,
+        "loading": false
+      }
+    },
+    {
+      "name": "chongqing library geometry 320",
+      "passed": true,
+      "details": {
+        "card": {
+          "width": 125,
+          "height": 189.078125
+        },
+        "image": {
+          "width": 113,
+          "height": 72.890625
+        },
+        "scroll": 262,
+        "width": 262,
+        "loading": false
+      }
+    },
+    {
+      "name": "chongqing library geometry 736",
+      "passed": true,
+      "details": {
+        "card": {
+          "width": 165,
+          "height": 216.796875
+        },
+        "image": {
+          "width": 153,
+          "height": 98.703125
+        },
+        "scroll": 342,
+        "width": 342,
+        "loading": false
+      }
+    },
+    {
+      "name": "popup fits 1440",
+      "passed": true,
+      "details": {
+        "width": 1440,
+        "height": 960,
+        "top": 349.90625,
+        "bottom": 746.40625,
+        "left": 827,
+        "right": 1137,
+        "ratio": 0.6809583858764187
+      }
+    },
+    {
+      "name": "popup stops on close 1440",
+      "passed": true
+    },
+    {
+      "name": "popup fits 390",
+      "passed": true,
+      "details": {
+        "width": 390,
+        "height": 844,
+        "top": 438,
+        "bottom": 832,
+        "left": 118,
+        "right": 378,
+        "ratio": 0.6852791878172588
+      }
+    },
+    {
+      "name": "popup stops on close 390",
+      "passed": true
+    },
+    {
+      "name": "popup fits 320",
+      "passed": true,
+      "details": {
+        "width": 320,
+        "height": 680,
+        "top": 76,
+        "bottom": 470,
+        "left": 12,
+        "right": 272,
+        "ratio": 0.6852791878172588
+      }
+    },
+    {
+      "name": "popup stops on close 320",
+      "passed": true
+    },
+    {
+      "name": "popup fits 736",
+      "passed": true,
+      "details": {
+        "width": 736,
+        "height": 414,
+        "top": 72,
+        "bottom": 402,
+        "left": 404,
+        "right": 714,
+        "ratio": 0.6666666666666666
+      }
+    },
+    {
+      "name": "popup stops on close 736",
+      "passed": true
+    },
+    {
+      "name": "Changsha real cross-river route ready",
+      "passed": true,
+      "details": {
+        "mode": "road",
+        "phase": "ready",
+        "total": 6075.397635342177,
+        "count": 1,
+        "missing": 0
+      }
+    },
+    {
+      "name": "city picker loads Chongqing without Changsha favorites",
+      "passed": true
+    },
+    {
+      "name": "returning to Changsha keeps its favorites",
+      "passed": true
+    },
+    {
+      "name": "legacy directory city query redirects correctly",
+      "passed": true
+    },
+    {
+      "name": "Changsha detail back-link retains city",
+      "passed": true
+    },
+    {
+      "name": "unconfigured workbench is explicit and keeps city links",
+      "passed": true
+    },
+    {
+      "name": "single-file Changsha uses its own archive",
+      "passed": true
+    },
+    {
+      "name": "single-file Chongqing keeps 81 points",
+      "passed": true
+    },
+    {
+      "name": "no browser runtime errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "shots": [
+    "output/playwright/changsha-fixed-20261101-changsha-library-1440.png",
+    "output/playwright/changsha-fixed-20261101-changsha-library-390.png",
+    "output/playwright/changsha-fixed-20261101-chongqing-library-1440.png",
+    "output/playwright/changsha-fixed-20261101-chongqing-library-390.png",
+    "output/playwright/changsha-fixed-20261101-landscape.png"
+  ],
+  "media": [
+    {
+      "city": "changsha",
+      "id": "cs-chilezaijian-laowenjia",
+      "width": 1080,
+      "height": 1920,
+      "duration": 30.23023
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaoxuan-yangdachui",
+      "width": 1080,
+      "height": 1920,
+      "duration": 146.133008
+    },
+    {
+      "city": "changsha",
+      "id": "cs-daxiang-zhaoji",
+      "width": 1080,
+      "height": 1920,
+      "duration": 35
+    },
+    {
+      "city": "changsha",
+      "id": "cs-daxiang-wangji",
+      "width": 1080,
+      "height": 1920,
+      "duration": 39
+    },
+    {
+      "city": "changsha",
+      "id": "cs-daxiang-deyuan",
+      "width": 1080,
+      "height": 1920,
+      "duration": 19.5
+    },
+    {
+      "city": "changsha",
+      "id": "cs-fanqie-jiachang",
+      "width": 1080,
+      "height": 1920,
+      "duration": 26
+    },
+    {
+      "city": "changsha",
+      "id": "cs-fanqie-fandai",
+      "width": 1080,
+      "height": 1920,
+      "duration": 30
+    },
+    {
+      "city": "changsha",
+      "id": "cs-fanqie-xinkouwei",
+      "width": 1080,
+      "height": 1920,
+      "duration": 20
+    },
+    {
+      "city": "changsha",
+      "id": "cs-fanqie-xiaoge",
+      "width": 1080,
+      "height": 1920,
+      "duration": 26.866667
+    },
+    {
+      "city": "changsha",
+      "id": "cs-yiyi-rezaoxiongdi",
+      "width": 1080,
+      "height": 1920,
+      "duration": 145.133333
+    },
+    {
+      "city": "changsha",
+      "id": "cs-bendong-laowenjia",
+      "width": 1080,
+      "height": 1920,
+      "duration": 19.433008
+    },
+    {
+      "city": "changsha",
+      "id": "cs-huangqiguai-laowenjia",
+      "width": 1080,
+      "height": 1920,
+      "duration": 23.966667
+    },
+    {
+      "city": "changsha",
+      "id": "cs-zhouqi-leifan",
+      "width": 1080,
+      "height": 1920,
+      "duration": 49.466667
+    },
+    {
+      "city": "changsha",
+      "id": "cs-zhouqi-ladu",
+      "width": 576,
+      "height": 1024,
+      "duration": 72.656009
+    },
+    {
+      "city": "changsha",
+      "id": "cs-chaolan-huanan",
+      "width": 576,
+      "height": 1024,
+      "duration": 31
+    },
+    {
+      "city": "changsha",
+      "id": "cs-chaolan-langge",
+      "width": 576,
+      "height": 1024,
+      "duration": 15
+    },
+    {
+      "city": "changsha",
+      "id": "cs-chaolan-huangjie",
+      "width": 576,
+      "height": 1024,
+      "duration": 11
+    },
+    {
+      "city": "changsha",
+      "id": "cs-chaolan-tianma",
+      "width": 576,
+      "height": 1024,
+      "duration": 24.3
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-jiangxiangbing",
+      "width": 576,
+      "height": 1024,
+      "duration": 20
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-lvdoubing",
+      "width": 576,
+      "height": 1024,
+      "duration": 34
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-choudoufu",
+      "width": 576,
+      "height": 1024,
+      "duration": 38
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-guobaojiliu",
+      "width": 576,
+      "height": 1024,
+      "duration": 40
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-kouroubing",
+      "width": 576,
+      "height": 1024,
+      "duration": 30
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-tianmaniuroubing",
+      "width": 576,
+      "height": 1024,
+      "duration": 40
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-jiaozi",
+      "width": 576,
+      "height": 1024,
+      "duration": 60
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-jidaoguanbing",
+      "width": 576,
+      "height": 1024,
+      "duration": 45
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-shousi",
+      "width": 576,
+      "height": 1024,
+      "duration": 40
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-kongxinfen",
+      "width": 576,
+      "height": 1024,
+      "duration": 60
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-changfen",
+      "width": 576,
+      "height": 1024,
+      "duration": 35
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-yuni",
+      "width": 576,
+      "height": 1024,
+      "duration": 25
+    },
+    {
+      "city": "changsha",
+      "id": "cs-liubibi-roujiamo",
+      "width": 576,
+      "height": 1024,
+      "duration": 36.266667
+    },
+    {
+      "city": "changsha",
+      "id": "cs-kelezhaji-sidaduo",
+      "width": 576,
+      "height": 1024,
+      "duration": 30.966667
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiatian-yuminxiang",
+      "width": 576,
+      "height": 1024,
+      "duration": 30.833008
+    },
+    {
+      "city": "changsha",
+      "id": "cs-dawei-laowenjia",
+      "width": 1080,
+      "height": 1920,
+      "duration": 88
+    },
+    {
+      "city": "changsha",
+      "id": "cs-jianxi-xiongyingjun",
+      "width": 1080,
+      "height": 1920,
+      "duration": 24
+    },
+    {
+      "city": "changsha",
+      "id": "cs-jianxi-hehuachi",
+      "width": 1080,
+      "height": 1920,
+      "duration": 32
+    },
+    {
+      "city": "changsha",
+      "id": "cs-jianxi-zhouji",
+      "width": 1080,
+      "height": 1920,
+      "duration": 18
+    },
+    {
+      "city": "changsha",
+      "id": "cs-jianxi-bandeng",
+      "width": 1080,
+      "height": 1920,
+      "duration": 18
+    },
+    {
+      "city": "changsha",
+      "id": "cs-jianxi-qinjie",
+      "width": 1080,
+      "height": 1920,
+      "duration": 27
+    },
+    {
+      "city": "changsha",
+      "id": "cs-jianxi-jiaoluowan",
+      "width": 1080,
+      "height": 1920,
+      "duration": 35
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaoyu-taotao",
+      "width": 1080,
+      "height": 1920,
+      "duration": 13
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaoyu-shuifengjing",
+      "width": 1080,
+      "height": 1920,
+      "duration": 14
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaoyu-jiachang",
+      "width": 1080,
+      "height": 1920,
+      "duration": 14
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaoyu-huanan",
+      "width": 1080,
+      "height": 1920,
+      "duration": 14
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaoyu-xiaobanma",
+      "width": 1080,
+      "height": 1920,
+      "duration": 19
+    },
+    {
+      "city": "changsha",
+      "id": "cs-changshadt-huanan",
+      "width": 1080,
+      "height": 1920,
+      "duration": 40.17
+    },
+    {
+      "city": "changsha",
+      "id": "cs-zhizhi-guangtou",
+      "width": 1080,
+      "height": 1920,
+      "duration": 21
+    },
+    {
+      "city": "changsha",
+      "id": "cs-zhizhi-xishi",
+      "width": 1080,
+      "height": 1920,
+      "duration": 14
+    },
+    {
+      "city": "changsha",
+      "id": "cs-zhizhi-langge",
+      "width": 1080,
+      "height": 1920,
+      "duration": 10
+    },
+    {
+      "city": "changsha",
+      "id": "cs-zhizhi-pengji",
+      "width": 1080,
+      "height": 1920,
+      "duration": 21
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaoyu-baishajiaozi",
+      "width": 1080,
+      "height": 1920,
+      "duration": 8
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaoyu-guangnaoke",
+      "width": 1080,
+      "height": 1920,
+      "duration": 16
+    },
+    {
+      "city": "changsha",
+      "id": "cs-yesheng-kaodaixiong",
+      "width": 1080,
+      "height": 1920,
+      "duration": 18
+    },
+    {
+      "city": "changsha",
+      "id": "cs-33dachihuo-ningxiangning",
+      "width": 1080,
+      "height": 1920,
+      "duration": 53
+    },
+    {
+      "city": "changsha",
+      "id": "cs-yizhikaizi-yangfan",
+      "width": 1080,
+      "height": 1920,
+      "duration": 59
+    },
+    {
+      "city": "changsha",
+      "id": "cs-wanziyou-jinpingguo",
+      "width": 1080,
+      "height": 1920,
+      "duration": 53.2
+    },
+    {
+      "city": "changsha",
+      "id": "cs-cuicuisha-tangshui",
+      "width": 1080,
+      "height": 1920,
+      "duration": 14
+    },
+    {
+      "city": "changsha",
+      "id": "cs-cuicuisha-roujiamo",
+      "width": 1080,
+      "height": 1920,
+      "duration": 18
+    },
+    {
+      "city": "changsha",
+      "id": "cs-cuicuisha-zhoushu",
+      "width": 1080,
+      "height": 1920,
+      "duration": 24
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaxia-jinjituotuo",
+      "width": 1080,
+      "height": 1920,
+      "duration": 15
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaxia-yangdia",
+      "width": 1080,
+      "height": 1920,
+      "duration": 15
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xiaxia-zuoguniang",
+      "width": 1080,
+      "height": 1920,
+      "duration": 15
+    },
+    {
+      "city": "changsha",
+      "id": "cs-seven-zhajiliu",
+      "width": 1080,
+      "height": 1920,
+      "duration": 27
+    },
+    {
+      "city": "changsha",
+      "id": "cs-seven-maci",
+      "width": 1080,
+      "height": 1920,
+      "duration": 30
+    },
+    {
+      "city": "changsha",
+      "id": "cs-seven-juanbing",
+      "width": 1080,
+      "height": 1920,
+      "duration": 35
+    },
+    {
+      "city": "changsha",
+      "id": "cs-chilezaijian-tudouni",
+      "width": 1080,
+      "height": 1920,
+      "duration": 23
+    },
+    {
+      "city": "changsha",
+      "id": "cs-gongfupang-shuguangxiaoxue",
+      "width": 1080,
+      "height": 1920,
+      "duration": 50
+    },
+    {
+      "city": "changsha",
+      "id": "cs-jintian-shenjian",
+      "width": 1080,
+      "height": 1920,
+      "duration": 20
+    },
+    {
+      "city": "changsha",
+      "id": "cs-jintian-tiebanshao",
+      "width": 1080,
+      "height": 1920,
+      "duration": 25
+    },
+    {
+      "city": "changsha",
+      "id": "cs-yeye-duoroumixian",
+      "width": 1080,
+      "height": 1920,
+      "duration": 23
+    },
+    {
+      "city": "changsha",
+      "id": "cs-yeye-ganchaoniuhe",
+      "width": 1080,
+      "height": 1920,
+      "duration": 20
+    },
+    {
+      "city": "changsha",
+      "id": "cs-yeye-shihaoman",
+      "width": 1080,
+      "height": 1920,
+      "duration": 18
+    },
+    {
+      "city": "changsha",
+      "id": "cs-yeye-chaolu",
+      "width": 1080,
+      "height": 1920,
+      "duration": 12
+    },
+    {
+      "city": "changsha",
+      "id": "cs-yeye-chongqingmianguan",
+      "width": 1080,
+      "height": 1920,
+      "duration": 10
+    },
+    {
+      "city": "changsha",
+      "id": "cs-meishi-panpanxiaoxue",
+      "width": 1080,
+      "height": 1920,
+      "duration": 50
+    },
+    {
+      "city": "changsha",
+      "id": "cs-yiyi-manshuan",
+      "width": 1080,
+      "height": 1920,
+      "duration": 154
+    },
+    {
+      "city": "changsha",
+      "id": "cs-wanlaoban-chunxi",
+      "width": 1080,
+      "height": 1920,
+      "duration": 120
+    },
+    {
+      "city": "changsha",
+      "id": "cs-yewen-xianchao",
+      "width": 1920,
+      "height": 1080,
+      "duration": 120
+    },
+    {
+      "city": "changsha",
+      "id": "cs-awendouzi-xinjingwei",
+      "width": 1080,
+      "height": 1920,
+      "duration": 157
+    },
+    {
+      "city": "changsha",
+      "id": "cs-longxiaoban-jiuji",
+      "width": 1920,
+      "height": 1080,
+      "duration": 120
+    },
+    {
+      "city": "changsha",
+      "id": "cs-qiaolezizi-guolulu",
+      "width": 1080,
+      "height": 1920,
+      "duration": 148
+    },
+    {
+      "city": "changsha",
+      "id": "cs-nihaodamaoge-yamaxun",
+      "width": 1080,
+      "height": 1920,
+      "duration": 120
+    },
+    {
+      "city": "changsha",
+      "id": "cs-zailaiyiwan-changji",
+      "width": 1920,
+      "height": 1080,
+      "duration": 120
+    },
+    {
+      "city": "changsha",
+      "id": "cs-danniu-wangjie",
+      "width": 1920,
+      "height": 1080,
+      "duration": 466
+    },
+    {
+      "city": "changsha",
+      "id": "cs-danniu-haoqingnian",
+      "width": 1920,
+      "height": 1080,
+      "duration": 148
+    },
+    {
+      "city": "changsha",
+      "id": "cs-danniu-dongmaojie",
+      "width": 1920,
+      "height": 1080,
+      "duration": 76.8
+    },
+    {
+      "city": "changsha",
+      "id": "cs-chenniuniu-junyue",
+      "width": 1920,
+      "height": 1080,
+      "duration": 224.733008
+    },
+    {
+      "city": "changsha",
+      "id": "cs-nanjiang-kaoquanyang",
+      "width": 1080,
+      "height": 1920,
+      "duration": 19.533333
+    },
+    {
+      "city": "changsha",
+      "id": "cs-zailaiyiwan-tangshui",
+      "width": 1080,
+      "height": 1920,
+      "duration": 212.8
+    },
+    {
+      "city": "changsha",
+      "id": "cs-wuenwenwen-wyndham",
+      "width": 1080,
+      "height": 1920,
+      "duration": 101.133333
+    },
+    {
+      "city": "changsha",
+      "id": "cs-xinxin-guolulu",
+      "width": 1080,
+      "height": 1920,
+      "duration": 52.2
+    },
+    {
+      "city": "changsha",
+      "id": "cs-zailaiyiwan-wukong",
+      "width": 1920,
+      "height": 1080,
+      "duration": 203.08
+    },
+    {
+      "city": "changsha",
+      "id": "cs-hanbao-wenke",
+      "width": 1080,
+      "height": 1920,
+      "duration": 545.2
+    },
+    {
+      "city": "changsha",
+      "id": "cs-nanyihao-manxiangxiang",
+      "width": 1080,
+      "height": 1920,
+      "duration": 139.833333
+    },
+    {
+      "city": "changsha",
+      "id": "cs-markvlogs-yamaxun",
+      "width": 1920,
+      "height": 1080,
+      "duration": 231.8
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-jiachang",
+      "width": 576,
+      "height": 1024,
+      "duration": 30.866667
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-jeju",
+      "width": 576,
+      "height": 1024,
+      "duration": 59.833333
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-set-coffee",
+      "width": 576,
+      "height": 1024,
+      "duration": 18.666667
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-nendouya",
+      "width": 576,
+      "height": 1024,
+      "duration": 79.8
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-cailanzi",
+      "width": 576,
+      "height": 1024,
+      "duration": 21.466667
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-dayan",
+      "width": 576,
+      "height": 1024,
+      "duration": 10.866667
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-daling",
+      "width": 576,
+      "height": 1024,
+      "duration": 30.433333
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-sanyangzi",
+      "width": 576,
+      "height": 1024,
+      "duration": 13.966016
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-huilaiwei",
+      "width": 576,
+      "height": 1024,
+      "duration": 14.866667
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-qianjiang",
+      "width": 576,
+      "height": 1024,
+      "duration": 14.2
+    },
+    {
+      "city": "chongqing",
+      "id": "nangua-rongchang",
+      "width": 576,
+      "height": 1024,
+      "duration": 7.166667
+    },
+    {
+      "city": "chongqing",
+      "id": "abang-babajian",
+      "width": 576,
+      "height": 1024,
+      "duration": 26.066016
+    },
+    {
+      "city": "chongqing",
+      "id": "abang-43",
+      "width": 576,
+      "height": 1024,
+      "duration": 18.233333
+    },
+    {
+      "city": "chongqing",
+      "id": "abang-guijing",
+      "width": 576,
+      "height": 1024,
+      "duration": 30.366667
+    },
+    {
+      "city": "chongqing",
+      "id": "abang-xidajiang",
+      "width": 576,
+      "height": 1024,
+      "duration": 37.5
+    },
+    {
+      "city": "chongqing",
+      "id": "abang-ganyitai",
+      "width": 576,
+      "height": 1024,
+      "duration": 13.566016
+    },
+    {
+      "city": "chongqing",
+      "id": "abang-xiongfeng",
+      "width": 576,
+      "height": 1024,
+      "duration": 11.766667
+    },
+    {
+      "city": "chongqing",
+      "id": "abang-shanlishu",
+      "width": 576,
+      "height": 1024,
+      "duration": 13.266667
+    },
+    {
+      "city": "chongqing",
+      "id": "abang-wuduwudu",
+      "width": 576,
+      "height": 1024,
+      "duration": 10.2
+    },
+    {
+      "city": "chongqing",
+      "id": "abang-yabatu",
+      "width": 576,
+      "height": 1024,
+      "duration": 21.766667
+    },
+    {
+      "city": "chongqing",
+      "id": "tiedan-gangzi",
+      "width": 576,
+      "height": 1024,
+      "duration": 218
+    },
+    {
+      "city": "chongqing",
+      "id": "yumo-hotpot",
+      "width": 720,
+      "height": 1280,
+      "duration": 116.2
+    },
+    {
+      "city": "chongqing",
+      "id": "wulala-wangshifu",
+      "width": 1280,
+      "height": 720,
+      "duration": 320
+    },
+    {
+      "city": "chongqing",
+      "id": "jiankang-linhua",
+      "width": 720,
+      "height": 1280,
+      "duration": 25.1
+    },
+    {
+      "city": "chongqing",
+      "id": "jiankang-chunyang",
+      "width": 720,
+      "height": 1280,
+      "duration": 33.6
+    },
+    {
+      "city": "chongqing",
+      "id": "jiankang-shaotiao",
+      "width": 720,
+      "height": 1280,
+      "duration": 15.266016
+    },
+    {
+      "city": "chongqing",
+      "id": "jiankang-liuyouchi",
+      "width": 720,
+      "height": 1280,
+      "duration": 78.9
+    },
+    {
+      "city": "chongqing",
+      "id": "jiankang-zhuer",
+      "width": 720,
+      "height": 1280,
+      "duration": 54.9
+    },
+    {
+      "city": "chongqing",
+      "id": "jiankang-beicheng",
+      "width": 720,
+      "height": 1280,
+      "duration": 26.8
+    },
+    {
+      "city": "chongqing",
+      "id": "jiankang-mixian",
+      "width": 720,
+      "height": 1280,
+      "duration": 28.8
+    },
+    {
+      "city": "chongqing",
+      "id": "jiankang-zhibaoyu",
+      "width": 720,
+      "height": 1280,
+      "duration": 23.5
+    },
+    {
+      "city": "chongqing",
+      "id": "jiankang-liruotao",
+      "width": 720,
+      "height": 1280,
+      "duration": 29
+    },
+    {
+      "city": "chongqing",
+      "id": "bailong-zhuer",
+      "width": 576,
+      "height": 1024,
+      "duration": 74
+    },
+    {
+      "city": "chongqing",
+      "id": "bailong-gangzi",
+      "width": 576,
+      "height": 1024,
+      "duration": 79
+    },
+    {
+      "city": "chongqing",
+      "id": "bailong-chunhong",
+      "width": 576,
+      "height": 1024,
+      "duration": 206
+    },
+    {
+      "city": "chongqing",
+      "id": "mizijun-tianbang",
+      "width": 1280,
+      "height": 720,
+      "duration": 615.015015
+    },
+    {
+      "city": "chongqing",
+      "id": "zhangxixi-haochijie",
+      "width": 1280,
+      "height": 720,
+      "duration": 273
+    },
+    {
+      "city": "chongqing",
+      "id": "manbei-hongjiuge",
+      "width": 1280,
+      "height": 720,
+      "duration": 99.5
+    },
+    {
+      "city": "chongqing",
+      "id": "xiaoyang-wanza",
+      "width": 720,
+      "height": 1280,
+      "duration": 64.8
+    },
+    {
+      "city": "chongqing",
+      "id": "xiaoyang-linmeimei",
+      "width": 720,
+      "height": 1280,
+      "duration": 66.1
+    },
+    {
+      "city": "chongqing",
+      "id": "xiaoyang-xiangyuan",
+      "width": 720,
+      "height": 1280,
+      "duration": 69.6
+    },
+    {
+      "city": "chongqing",
+      "id": "xiaoyang-tianpin",
+      "width": 720,
+      "height": 1280,
+      "duration": 26.766667
+    },
+    {
+      "city": "chongqing",
+      "id": "xiaoyang-douhuaniurou",
+      "width": 720,
+      "height": 1280,
+      "duration": 56.866667
+    },
+    {
+      "city": "chongqing",
+      "id": "xiaoyang-shaokao",
+      "width": 720,
+      "height": 1280,
+      "duration": 75.366667
+    },
+    {
+      "city": "chongqing",
+      "id": "lanmei-wanza",
+      "width": 1920,
+      "height": 3414,
+      "duration": 10.066667
+    },
+    {
+      "city": "chongqing",
+      "id": "lanmei-shaomai",
+      "width": 1920,
+      "height": 3414,
+      "duration": 10.116667
+    },
+    {
+      "city": "chongqing",
+      "id": "lanmei-xidajiang",
+      "width": 1920,
+      "height": 3414,
+      "duration": 26.983008
+    },
+    {
+      "city": "chongqing",
+      "id": "lanmei-zhengcai",
+      "width": 1920,
+      "height": 3414,
+      "duration": 9.5
+    },
+    {
+      "city": "chongqing",
+      "id": "lanmei-yikou",
+      "width": 1920,
+      "height": 3414,
+      "duration": 10.466667
+    },
+    {
+      "city": "chongqing",
+      "id": "lanmei-yuanma",
+      "width": 1920,
+      "height": 3414,
+      "duration": 11.133333
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-hulake",
+      "width": 2160,
+      "height": 3840,
+      "duration": 15.566667
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-yikoutangjiao",
+      "width": 2160,
+      "height": 3840,
+      "duration": 17.766667
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-yangheshaomai",
+      "width": 2160,
+      "height": 3840,
+      "duration": 17.1
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-xinyiniurou",
+      "width": 2160,
+      "height": 3840,
+      "duration": 44.8
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-zhuer",
+      "width": 2160,
+      "height": 3840,
+      "duration": 14.533333
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-xiangyaju",
+      "width": 2160,
+      "height": 3840,
+      "duration": 18.95
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-hill-bbq",
+      "width": 2160,
+      "height": 3840,
+      "duration": 3.95
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-wuming-tihua",
+      "width": 2160,
+      "height": 3840,
+      "duration": 16.283008
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-gumufeng",
+      "width": 2160,
+      "height": 3840,
+      "duration": 68.65
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-caijibaozi",
+      "width": 2160,
+      "height": 3840,
+      "duration": 21.25
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-kaizi-bai-chaoshou",
+      "width": 2160,
+      "height": 3840,
+      "duration": 16.372993
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-caiji",
+      "width": 576,
+      "height": 1024,
+      "duration": 74.5
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-zhoushi",
+      "width": 576,
+      "height": 1024,
+      "duration": 21.3
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-baomian",
+      "width": 576,
+      "height": 1024,
+      "duration": 25.1
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-konger",
+      "width": 576,
+      "height": 1024,
+      "duration": 121.8
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-limixian",
+      "width": 576,
+      "height": 1024,
+      "duration": 39
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-liaoji",
+      "width": 576,
+      "height": 1024,
+      "duration": 8.2
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-qixing-hotpot",
+      "width": 576,
+      "height": 1024,
+      "duration": 137.9
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-bingdouhua",
+      "width": 576,
+      "height": 1024,
+      "duration": 4.1
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-huangjia",
+      "width": 576,
+      "height": 1024,
+      "duration": 26.8
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-renyi",
+      "width": 576,
+      "height": 1024,
+      "duration": 34.6
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-miaoshifu",
+      "width": 576,
+      "height": 1024,
+      "duration": 6.8
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-luoerwa",
+      "width": 576,
+      "height": 1024,
+      "duration": 20.5
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-yangshi",
+      "width": 576,
+      "height": 1024,
+      "duration": 24.9
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-yangfen",
+      "width": 576,
+      "height": 1024,
+      "duration": 25.2
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-tangyuan",
+      "width": 576,
+      "height": 1024,
+      "duration": 15
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-xinzhu",
+      "width": 576,
+      "height": 1024,
+      "duration": 14.5
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-lidouhua",
+      "width": 576,
+      "height": 1024,
+      "duration": 19.1
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-lvdousu",
+      "width": 576,
+      "height": 1024,
+      "duration": 8.5
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-longyi",
+      "width": 576,
+      "height": 1024,
+      "duration": 43.7
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-zhengfa",
+      "width": 576,
+      "height": 1024,
+      "duration": 30
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-ganguo",
+      "width": 576,
+      "height": 1024,
+      "duration": 30.8
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-yuanji",
+      "width": 576,
+      "height": 1024,
+      "duration": 15.2
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-jinli",
+      "width": 576,
+      "height": 1024,
+      "duration": 22.2
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-baixin",
+      "width": 576,
+      "height": 1024,
+      "duration": 16.9
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-shuguang",
+      "width": 576,
+      "height": 1024,
+      "duration": 30.1
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-nawan",
+      "width": 576,
+      "height": 1024,
+      "duration": 25.5
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-yuqingnian",
+      "width": 576,
+      "height": 1024,
+      "duration": 37.2
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-zengbin",
+      "width": 576,
+      "height": 1024,
+      "duration": 23.4
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-lichaoshou",
+      "width": 576,
+      "height": 1024,
+      "duration": 16.2
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-jidong",
+      "width": 576,
+      "height": 1024,
+      "duration": 26.7
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-dianjiang",
+      "width": 576,
+      "height": 1024,
+      "duration": 26.5
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-pp-7583215165723266354-hongyu",
+      "width": 576,
+      "height": 1024,
+      "duration": 24.3
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-rongjing-doufunao",
+      "width": 576,
+      "height": 1024,
+      "duration": 16.1
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-dalitang-liangxia",
+      "width": 576,
+      "height": 1024,
+      "duration": 16.366341
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-dadukou-roubing",
+      "width": 576,
+      "height": 1024,
+      "duration": 14.5
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-rongchang-dougan",
+      "width": 576,
+      "height": 1024,
+      "duration": 13.633333
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-tongliang-gao",
+      "width": 576,
+      "height": 1024,
+      "duration": 13.1
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-xinyang-guobaorou",
+      "width": 576,
+      "height": 1024,
+      "duration": 17.766667
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-yudong-chuanchuan",
+      "width": 576,
+      "height": 1024,
+      "duration": 14.7
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-shiziping-tudou",
+      "width": 576,
+      "height": 1024,
+      "duration": 12.7
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-nanping-ciba",
+      "width": 576,
+      "height": 1024,
+      "duration": 7.966341
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-danzishi-huoguofen",
+      "width": 576,
+      "height": 1024,
+      "duration": 17.5
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-baozao-7676071047438803849-huahuiyuan-juanjuan",
+      "width": 576,
+      "height": 1024,
+      "duration": 17.233333
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-yangyu-7699016826356895027-xiaoxue-xiaochi",
+      "width": 2160,
+      "height": 3840,
+      "duration": 33.6
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-suisui-7640793670463833265-guobaorou",
+      "width": 576,
+      "height": 1024,
+      "duration": 20.466667
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-suisui-7640793670463833265-dayoubian",
+      "width": 576,
+      "height": 1024,
+      "duration": 7.9
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-suisui-7640793670463833265-zhurouchuan",
+      "width": 576,
+      "height": 1024,
+      "duration": 10.4
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-suisui-7640793670463833265-xiangjiaofeibing",
+      "width": 576,
+      "height": 1024,
+      "duration": 10.6
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-suisui-7640793670463833265-luchuanchuan",
+      "width": 576,
+      "height": 1024,
+      "duration": 17.8
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huangni-niuroubing",
+      "width": 1440,
+      "height": 1920,
+      "duration": 6.833333
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huangni-tudoubing",
+      "width": 1440,
+      "height": 1920,
+      "duration": 7.4
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-hongqi-ciba",
+      "width": 1440,
+      "height": 1920,
+      "duration": 6.866016
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-hongqi-malchuan",
+      "width": 1440,
+      "height": 1920,
+      "duration": 7.066341
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-liangmian",
+      "width": 1440,
+      "height": 1920,
+      "duration": 10
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-shaopi",
+      "width": 1440,
+      "height": 1920,
+      "duration": 8.1
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-xiaoyang-yubei-7532432677610278170-huahui-ciba",
+      "width": 1440,
+      "height": 1920,
+      "duration": 8.133008
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-mei-7529179722208546106-nuomifan",
+      "width": 576,
+      "height": 768,
+      "duration": 7.633008
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-mei-7529179722208546106-malachuan",
+      "width": 576,
+      "height": 768,
+      "duration": 9.2
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-mei-7529179722208546106-hefan",
+      "width": 576,
+      "height": 768,
+      "duration": 11.866667
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-mei-7529179722208546106-liangmian",
+      "width": 576,
+      "height": 768,
+      "duration": 6.5
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-mei-7529179722208546106-ciba",
+      "width": 576,
+      "height": 768,
+      "duration": 3.633008
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-mei-7529179722208546106-yangyu",
+      "width": 576,
+      "height": 768,
+      "duration": 4
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-mei-7529179722208546106-kuanfen",
+      "width": 576,
+      "height": 768,
+      "duration": 6.833008
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-wenzi-7642999598881033417-malachuan",
+      "width": 576,
+      "height": 1024,
+      "duration": 63
+    },
+    {
+      "city": "chongqing",
+      "id": "cq-xianxian-7563133332981484858-hefan",
+      "width": 576,
+      "height": 1024,
+      "duration": 69
+    }
+  ],
+  "passed": true
+}

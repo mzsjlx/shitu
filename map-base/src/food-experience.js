@@ -16,10 +16,14 @@ export class FoodExperience{
     this.map=map;this.overlay=overlay;this.cityId=cityId;this.cityName=cityName;this.amapCityCode=amapCityCode;this.config=config;this.readJSON=readJSON;this.assetURL=assetURL;this.onFocus=onFocus;this.onExplore=onExplore;
     this.records=[];this.phase='unloaded';this.active=false;this.selected=null;this.generation=0;this.saved=[];this.category=null;this.draftCategory=null;this.routeSuppressed=false;
     this.routeMode='direct';try{const mode=localStorage.getItem('foodcity:distance-mode:'+this.cityId+':v1');if(['direct','road'].includes(mode))this.routeMode=mode;}catch{}
-    this.routePreview=new FoodRoutePreview(map,overlay.Marker,{loadNetwork:signal=>readJSON(config.roadNetwork,{signal}),workerURL:roadWorkerURL,onChange:()=>this.renderRouteStatus()});
+    this.routePreview=new FoodRoutePreview(map,overlay.Marker,{loadNetwork:async signal=>{const data=await readJSON(config.roadNetwork,{signal});if(data.city!==this.cityId)throw new Error('道路资料与当前城市不一致');return data;},workerURL:roadWorkerURL,onChange:()=>this.renderRouteStatus()});
     const query=new URLSearchParams(location.search),place=query.get('place');
     this.initialPlaceId=(!query.get('view')||query.get('view')==='food')&&place&&place.length<=100?place:null;
     byId('place-directory-link').hidden=!['http:','https:'].includes(location.protocol);
+    const suffix=this.cityId==='chongqing'?'':'-'+this.cityId;
+    byId('place-directory-link').href='./places'+suffix+'.html';
+    byId('creator-guides-link').href='./videos'+suffix+'.html';
+    byId('food-pick-guides').href='./videos'+suffix+'.html';
     for(const id of ['creator-guides-link','food-pick-guides'])byId(id).hidden=!['http:','https:'].includes(location.protocol);
     try{const saved=JSON.parse(localStorage.getItem('foodcity:wants:'+this.cityId+':v1')||'[]');if(Array.isArray(saved))this.saved=[...new Set(saved.filter(x=>typeof x==='string'&&x.length<=100))].slice(0,100);}catch{}
     byId('food-entry').addEventListener('click',()=>this.active?this.deactivate():this.activate());
@@ -68,7 +72,7 @@ export class FoodExperience{
     const videoLibPath=this.config.videoLibrary||'data/video-library.json';
     this.pending=Promise.all([
       this.readJSON(this.config.records,{signal:controller.signal}),
-      this.readJSON(videoLibPath,{signal:controller.signal}).catch(()=>(this.cityId==='chongqing'?bundledVideoLibrary:{schemaVersion:1,city:this.cityId,rights:{status:'user-confirmed'},sources:[]}))
+      this.readJSON(videoLibPath,{signal:controller.signal}).catch(error=>{if(this.cityId==='chongqing')return bundledVideoLibrary;throw error;})
     ]).then(async([data,catalog])=>{
       if(data.city!==this.cityId||!Array.isArray(data.records))throw new Error('美食资料尚未准备好');
       const records=data.records.map(item=>({...item,spriteURL:this.assetURL(this.config.sprite)}));

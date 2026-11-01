@@ -208,6 +208,9 @@ async function init() {
   const cityKey=query.get('city')||config.activeCity;
   city=config.cities[cityKey];
   if(!city)throw new Error('城市“'+cityKey+'”尚未配置');
+  if(bundle?.cityId&&bundle.cityId!==cityKey){
+    location.replace(new URL('preview-'+cityKey+'.html'+location.search+location.hash,location.href));return;
+  }
   const [index,manifest,audit]=await Promise.all([
     readJSON(city.dataFiles.index),readJSON(city.dataFiles.manifest),readJSON(city.dataFiles.audit)
   ]);
@@ -216,8 +219,17 @@ async function init() {
   document.title='食途 · '+city.name+'地图';
   $('search-input').setAttribute('aria-label','搜索'+city.name+'道路');
   $('coverage-description').textContent=city.coverageLabel;
-  document.querySelector('.city-chip').replaceChildren(document.createTextNode(city.name));
+  const citySelect=document.createElement('select');citySelect.setAttribute('aria-label','切换城市');
+  for(const [id,value] of Object.entries(config.cities)){const option=document.createElement('option');option.value=id;option.textContent=value.name;citySelect.append(option);}citySelect.value=cityKey;
+  citySelect.addEventListener('change',()=>{videoLibrary?.stop();overlay?.popover.close();const url=new URL(location.href);url.searchParams.set('city',citySelect.value);for(const key of ['place','clip','videos'])url.searchParams.delete(key);url.hash='';location.assign(url);});
+  document.querySelector('.city-chip').replaceChildren(citySelect);
   const region=document.createElement('span');region.textContent=' · '+city.regionLabel;document.querySelector('.city-chip').append(region);
+  $('search-input').placeholder='找一条路，开始逛'+city.name;
+  document.querySelector('.map-shell').setAttribute('aria-label',city.name+'真实道路三维地图');
+  $('loading').replaceChildren(document.createElement('span'),document.createTextNode('正在展开'+city.name+'…'));
+  $('reset-view').setAttribute('aria-label','回到'+city.name+'初始视角');
+  $('about-map').textContent=city.name+city.regionLabel+' · 自建底图 ⓘ';
+  $('terrain-option').closest('label').querySelector('small').textContent='查看'+city.name+'的地形起伏';
   const tileURL=new URL(city.tiles,location.href).href;
   boot.stage('准备地图数据与后台绘图程序');
   if(bundle){
