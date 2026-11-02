@@ -1,23 +1,23 @@
 {
   "checks": [
     {
-      "name": "Nanjing catalog has 11 sources and 49 segments",
+      "name": "Nanjing catalog has 16 sources and 66 segments",
       "passed": true
     },
     {
-      "name": "Catalog groups into exactly 45 unique map stops with 3 multi-blogger merges",
+      "name": "Catalog groups into 61 items (57 map stops + 4 Jiangning pending-expansion) with 3 multi-blogger merges",
       "passed": true
     },
     {
-      "name": "Every Nanjing segment has a frozen OSM way and node anchor",
+      "name": "Every located Nanjing segment has a frozen OSM way and node anchor",
       "passed": true
     },
     {
-      "name": "All 45 map stops snap directly to walkable OSM roads within 25m",
+      "name": "All 57 map stops snap directly to walkable OSM roads within 25m",
       "passed": true
     },
     {
-      "name": "All 49 video clip MP4s and poster JPGs exist with correct SHA256 in report",
+      "name": "All 66 video clip MP4s and poster JPGs exist with correct SHA256 in report",
       "passed": true
     },
     {
@@ -25,7 +25,7 @@
       "passed": true
     },
     {
-      "name": "Walking route between Xuanwumen (Bansheng BBQ) and Jiming Temple connects along road network",
+      "name": "Walking route between Youfangqiao (Eat Burger) and Yurun Street (Li Ji Noodles) connects along road network",
       "passed": true
     }
   ],
