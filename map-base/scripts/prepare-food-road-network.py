@@ -9,15 +9,20 @@ config = json.loads((root / 'config/cities.json').read_text(encoding='utf8'))
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--city', default=None)
 parser.add_argument('--pbf', type=Path, default=None)
-parser.add_argument('--source-date', default='2026-10-25')
+parser.add_argument('--source-date', default='2026-10-31')
 parser.add_argument('--sha256', default=None)
 parser.add_argument('--url', default=None)
 args = parser.parse_args()
 
 city_id = args.city or config['activeCity']
 if city_id not in config['cities']:
-    raise ValueError(f'City {city_id} is not configured.')
-city_conf = config['cities'][city_id]
+    profile_path = root / f'data/cities/{city_id}/city-profile.json'
+    if profile_path.exists():
+        city_conf = json.loads(profile_path.read_text(encoding='utf8'))
+    else:
+        raise ValueError(f'City {city_id} is not configured.')
+else:
+    city_conf = config['cities'][city_id]
 bounds = city_conf['bounds']
 west, south, east, north = bounds
 
@@ -57,10 +62,12 @@ with tempfile.TemporaryDirectory(prefix='shitu-road-') as temp:
         if t.get('restriction:foot') or (t.get('type') == 'restriction' and t.get('restriction:conditional') and 'foot' not in t.get('except','').split(';')):
             excluded.update(m.ref for m in rel.members if m.type == 'w' and m.ref in way_ids)
     
-    default_url = (
-        'https://download.geofabrik.de/asia/china/hunan.html' if city_id == 'changsha'
-        else 'https://download.geofabrik.de/asia/china/chongqing.html'
-    )
+    default_urls = {
+        'chongqing': 'https://download.geofabrik.de/asia/china/chongqing.html',
+        'changsha': 'https://download.geofabrik.de/asia/china/hunan.html',
+        'nanjing': 'https://download.geofabrik.de/asia/china/jiangsu.html'
+    }
+    default_url = default_urls.get(city_id, f'https://download.geofabrik.de/asia/china/{city_id}.html')
     data = {'schemaVersion':1,'kind':'food-road-planning-network','city':city_id,'coordinateSystem':'WGS84',
         'bounds':bounds,'source':{'date':args.source_date,'sha256':source_hash,
         'url':args.url or default_url,'fileName':source_path.name,

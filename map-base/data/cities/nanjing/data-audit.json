@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "city": "nanjing",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "南京核心城区，涵盖玄武湖、秦淮河、新街口、老门东及钟山周边商圈（约 17.1 × 15.6 公里）",
+  "bounds": [
+    118.7,
+    31.98,
+    118.88,
+    32.12
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 5905700,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      118.7,
+      31.98,
+      118.88,
+      32.12
+    ]
+  },
+  "osmReplicationTime": "2026-11-01T04:00:00Z",
+  "counters": {
+    "requestedTiles": 289,
+    "presentTiles": 289,
+    "roadLineFragments": 5463,
+    "namedRoadLineFragments": 3389,
+    "unnamedRoadLineFragments": 2074,
+    "nonRoadTransportFragmentsExcluded": 1020,
+    "buildingPolygonFragments": 30711,
+    "buildingFragmentsWithPositiveHeight": 11076,
+    "buildingFragmentsWithoutPositiveHeight": 19635,
+    "namedRoadGroups": 1113
+  },
+  "roadClassCounts": {
+    "major_road": 2749,
+    "minor_road": 1682,
+    "path": 930,
+    "highway": 102
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    "新街口": {
+      "exact": null,
+      "related": []
+    },
+    "中山东路": {
+      "exact": {
+        "id": "road:中山东路",
+        "class": "major_road",
+        "detail": "primary",
+        "name": "中山东路",
+        "bounds": [
+          118.7787563,
+          32.0409426,
+          118.8202929,
+          32.0439414
+        ],
+        "center": [
+          118.7896729,
+          32.0430263
+        ],
+        "bridge": true,
+        "tunnel": false,
+        "bridgeFragments": 1,
+        "tunnelFragments": 0,
+        "segments": 9
+      },
+      "related": [
+        "中山东路"
+      ]
+    },
+    "秦淮河": {
+      "exact": null,
+      "related": []
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}

@@ -10,8 +10,13 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(await readFile(path.join(root, 'config/cities.json'), 'utf8'));
 const cityOption=process.argv.indexOf('--city');
 const cityId=cityOption>=0?process.argv[cityOption+1]:config.activeCity;
-if(!config.cities[cityId])throw new Error('City is not configured.');
-const city = config.cities[cityId];
+let city = config.cities[cityId];
+if (!city) {
+  try {
+    city = JSON.parse(await readFile(path.join(root, `data/cities/${cityId}/city-profile.json`), 'utf8'));
+  } catch {}
+}
+if(!city)throw new Error('City is not configured.');
 const bounds = city.bounds;
 const archivePath = path.resolve(root, city.tiles);
 const archiveBytes = await readFile(archivePath);
@@ -48,6 +53,7 @@ function geometryBounds(geometry) {
   visit(geometry.coordinates);
   return box;
 }
+
 // Liang–Barsky clipping keeps the search bounds and anchor on actual lines in the city cutout.
 function clipSegment(a, b) {
   const dx = b[0] - a[0], dy = b[1] - a[1];
@@ -145,12 +151,11 @@ const roads = [...named.values()].map(entry => ({
 const validEntries = roads.every(road => [...road.bounds, ...road.center].every(Number.isFinite) && road.bounds[0] >= bounds[0] - 1e-7 && road.bounds[1] >= bounds[1] - 1e-7 && road.bounds[2] <= bounds[2] + 1e-7 && road.bounds[3] <= bounds[3] + 1e-7 && road.center[0] >= road.bounds[0] && road.center[0] <= road.bounds[2] && road.center[1] >= road.bounds[1] && road.center[1] <= road.bounds[3]);
 if (!validEntries || !roads.length) throw new Error('Road index is empty or has out-of-bounds anchors.');
 const index = { schemaVersion: 1, city: cityId, coordinateSystem: 'WGS84', bounds, source: 'Protomaps / OSM', sourceArchive: city.tiles, sourceZoom: z, osmReplicationTime: metadata['planetiler:osm:osmosisreplicationtime'], attribution: '© OpenStreetMap contributors · Protomaps', license: 'ODbL 1.0', notes: ['Names group vector-tile fragments for local search; they are not unique physical road identifiers.', 'Bounds are clipped to the configured city cutout. Center is a point on the longest retained straight segment, not an address or entrance.', 'Bridge/tunnel flags mean at least one grouped fragment has the corresponding source flag.', 'This is a display/search index, not a routing graph. Tile fragments can repeat across tile boundaries.'], roads };
-const requestedSamples = ['嘉滨路', '沧白路', '千厮门大桥'];
-const samples = Object.fromEntries(requestedSamples.map(name => [name, { exact: roads.find(road => road.name === name) || null, related: roads.filter(road => name === '嘉滨路' ? /嘉滨|嘉陵江滨江/.test(road.name) : road.name.includes(name)).map(road => road.name) }]));
-const audit = { schemaVersion: 1, city: cityId, source: 'Protomaps / OpenStreetMap', scope: 'Configured central-urban cutout, not the whole Chongqing municipality', bounds, sourceZoom: z, archiveBytes: archiveBytes.byteLength, archiveHeader: { minZoom: header.minZoom, maxZoom: header.maxZoom, bounds: [header.minLon, header.minLat, header.maxLon, header.maxLat] }, osmReplicationTime: index.osmReplicationTime, counters: { ...counters, namedRoadGroups: roads.length }, roadClassCounts, checks: { finiteAndClippedSearchBoundsAndAnchors: validEntries, everyRequestedTilePresent: counters.requestedTiles === counters.presentTiles, roadFragmentsHaveNamedOrUnnamedCounts: counters.namedRoadLineFragments + counters.unnamedRoadLineFragments === counters.roadLineFragments, buildingHeightCountsBalance: counters.buildingFragmentsWithPositiveHeight + counters.buildingFragmentsWithoutPositiveHeight === counters.buildingPolygonFragments }, samples, limitations: ['All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.', 'A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.', 'Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index.'] };
+const requestedSamples = ['新街口', '中山东路', '秦淮河'];
+const samples = Object.fromEntries(requestedSamples.map(name => [name, { exact: roads.find(road => road.name === name) || null, related: roads.filter(road => road.name.includes(name)).map(road => road.name) }]));
+const audit = { schemaVersion: 1, city: cityId, source: 'Protomaps / OpenStreetMap', scope: city.coverageLabel || 'Configured city cutout', bounds, sourceZoom: z, archiveBytes: archiveBytes.byteLength, archiveHeader: { minZoom: header.minZoom, maxZoom: header.maxZoom, bounds: [header.minLon, header.minLat, header.maxLon, header.maxLat] }, osmReplicationTime: index.osmReplicationTime, counters: { ...counters, namedRoadGroups: roads.length }, roadClassCounts, checks: { finiteAndClippedSearchBoundsAndAnchors: validEntries, everyRequestedTilePresent: counters.requestedTiles === counters.presentTiles, roadFragmentsHaveNamedOrUnnamedCounts: counters.namedRoadLineFragments + counters.unnamedRoadLineFragments === counters.roadLineFragments, buildingHeightCountsBalance: counters.buildingFragmentsWithPositiveHeight + counters.buildingFragmentsWithoutPositiveHeight === counters.buildingPolygonFragments }, samples, limitations: ['All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.', 'A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.', 'Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index.'] };
 await mkdir(path.dirname(path.join(root,city.dataFiles.index)),{recursive:true});
 await mkdir(path.dirname(path.join(root,city.dataFiles.audit)),{recursive:true});
 await writeFile(path.join(root, city.dataFiles.index), JSON.stringify(index), 'utf8');
 await writeFile(path.join(root, city.dataFiles.audit), JSON.stringify(audit, null, 2) + '\n', 'utf8');
 console.log(JSON.stringify({ counters: audit.counters, checks: audit.checks, samples }, null, 2));
-

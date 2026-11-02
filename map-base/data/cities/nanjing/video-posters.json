@@ -1,4 +1,205 @@
 {
   "schemaVersion": 1,
-  "segments": {}
+  "segments": {
+    "nj-xiaojingang-tiantihan": {
+      "sourceId": "nj-xiaojingang-7661207794054245362",
+      "sourceSHA256": "0055dc9f9985131611d6b11cb20b6cf49e85f2c3e82a079e6193a2abce351204",
+      "mediaKey": "3f2666bfada5de5d",
+      "path": "assets/video-posters/nj-xiaojingang-7661207794054245362/nj-xiaojingang-tiantihan-3f2666bfada5de5d.jpg",
+      "sha256": "9732d716782e39d004148ae7b9a8d5f461e738c690c059436b584cb29dcbf228",
+      "bytes": 196662
+    },
+    "nj-xiaojingang-sanshanban": {
+      "sourceId": "nj-xiaojingang-7661207794054245362",
+      "sourceSHA256": "0055dc9f9985131611d6b11cb20b6cf49e85f2c3e82a079e6193a2abce351204",
+      "mediaKey": "694fbfb4a73a3037",
+      "path": "assets/video-posters/nj-xiaojingang-7661207794054245362/nj-xiaojingang-sanshanban-694fbfb4a73a3037.jpg",
+      "sha256": "6d17a8d8a537a5dc0f0765662dd4d110a95d8e01f270da08a65a1ab8bc448cf8",
+      "bytes": 158962
+    },
+    "nj-xiaojingang-yiwei": {
+      "sourceId": "nj-xiaojingang-7661207794054245362",
+      "sourceSHA256": "0055dc9f9985131611d6b11cb20b6cf49e85f2c3e82a079e6193a2abce351204",
+      "mediaKey": "b72d8ec89e13de3e",
+      "path": "assets/video-posters/nj-xiaojingang-7661207794054245362/nj-xiaojingang-yiwei-b72d8ec89e13de3e.jpg",
+      "sha256": "125b8778743064e66b303361200fab1e4766c9b15103b3d49ac3f9ef95fe935b",
+      "bytes": 129834
+    },
+    "nj-xiaojingang-dabao": {
+      "sourceId": "nj-xiaojingang-7661207794054245362",
+      "sourceSHA256": "0055dc9f9985131611d6b11cb20b6cf49e85f2c3e82a079e6193a2abce351204",
+      "mediaKey": "6ae6129f8dd9d42a",
+      "path": "assets/video-posters/nj-xiaojingang-7661207794054245362/nj-xiaojingang-dabao-6ae6129f8dd9d42a.jpg",
+      "sha256": "c90282e2fecacb26f7f1fcabda1e97be8abd55733f3a5850ed375c567e47a3b3",
+      "bytes": 201777
+    },
+    "nj-xiaojingang-aide": {
+      "sourceId": "nj-xiaojingang-7661207794054245362",
+      "sourceSHA256": "0055dc9f9985131611d6b11cb20b6cf49e85f2c3e82a079e6193a2abce351204",
+      "mediaKey": "fac9217c1f62be51",
+      "path": "assets/video-posters/nj-xiaojingang-7661207794054245362/nj-xiaojingang-aide-fac9217c1f62be51.jpg",
+      "sha256": "fa4c297f7f2719bbfacb0bb7d35aec3da5874deae06315f5d8099623a39fee94",
+      "bytes": 143810
+    },
+    "nj-tieldan-jinghua": {
+      "sourceId": "nj-tieldan-7591415909940612386",
+      "sourceSHA256": "671bc8040b2ab3a612c33a53f747b5f0abe6d3df249a183160445b713f582d16",
+      "mediaKey": "53ba1e3634ca3662",
+      "path": "assets/video-posters/nj-tieldan-7591415909940612386/nj-tieldan-jinghua-53ba1e3634ca3662.jpg",
+      "sha256": "690d63fb3336be6891c63e2b354aa55aff6ae37adb5baa0a42039c86a4fb9838",
+      "bytes": 205762
+    },
+    "nj-tieldan-liji": {
+      "sourceId": "nj-tieldan-7591415909940612386",
+      "sourceSHA256": "671bc8040b2ab3a612c33a53f747b5f0abe6d3df249a183160445b713f582d16",
+      "mediaKey": "87453138449d1300",
+      "path": "assets/video-posters/nj-tieldan-7591415909940612386/nj-tieldan-liji-87453138449d1300.jpg",
+      "sha256": "4d1165fd77679153f2c64adc515bdd14e2b7de10528e0d3606dd5b2585afac9c",
+      "bytes": 50485
+    },
+    "nj-tieldan-qijia": {
+      "sourceId": "nj-tieldan-7591415909940612386",
+      "sourceSHA256": "671bc8040b2ab3a612c33a53f747b5f0abe6d3df249a183160445b713f582d16",
+      "mediaKey": "21714f93c3239fd2",
+      "path": "assets/video-posters/nj-tieldan-7591415909940612386/nj-tieldan-qijia-21714f93c3239fd2.jpg",
+      "sha256": "8159efb746f72f9d9fbdbcdb576ab1936618559ff20a22629fadc8d0647e8de1",
+      "bytes": 186917
+    },
+    "nj-houge-yexin": {
+      "sourceId": "nj-hougeshuoche-7257088243424840999",
+      "sourceSHA256": "05eb2a1c29fb85b6673e339bd116a77fa803f6ae9e5fd4239e64e0b38841ae01",
+      "mediaKey": "2dc59d5ad0f13547",
+      "path": "assets/video-posters/nj-hougeshuoche-7257088243424840999/nj-houge-yexin-2dc59d5ad0f13547.jpg",
+      "sha256": "163b65efd71d1dbfbc9deb876d4418948f86adf4aa45377bd3b67b2660df832a",
+      "bytes": 146393
+    },
+    "nj-houge-liji": {
+      "sourceId": "nj-hougeshuoche-7257088243424840999",
+      "sourceSHA256": "05eb2a1c29fb85b6673e339bd116a77fa803f6ae9e5fd4239e64e0b38841ae01",
+      "mediaKey": "fb55af9ac5d153e6",
+      "path": "assets/video-posters/nj-hougeshuoche-7257088243424840999/nj-houge-liji-fb55af9ac5d153e6.jpg",
+      "sha256": "1a207a1c32e496a06c39c984d5324922478f6f877cf572aee8f0acfc842e7079",
+      "bytes": 98442
+    },
+    "nj-houge-chuanhuo": {
+      "sourceId": "nj-hougeshuoche-7257088243424840999",
+      "sourceSHA256": "05eb2a1c29fb85b6673e339bd116a77fa803f6ae9e5fd4239e64e0b38841ae01",
+      "mediaKey": "929d95a3ee1e5118",
+      "path": "assets/video-posters/nj-hougeshuoche-7257088243424840999/nj-houge-chuanhuo-929d95a3ee1e5118.jpg",
+      "sha256": "2b17830c3f009604b76d746edf1d153e913409eaf7586b21c904fdf4d00b0251",
+      "bytes": 102551
+    },
+    "nj-houge-chenjia": {
+      "sourceId": "nj-hougeshuoche-7257088243424840999",
+      "sourceSHA256": "05eb2a1c29fb85b6673e339bd116a77fa803f6ae9e5fd4239e64e0b38841ae01",
+      "mediaKey": "a7a4f89bdcb4bdbd",
+      "path": "assets/video-posters/nj-hougeshuoche-7257088243424840999/nj-houge-chenjia-a7a4f89bdcb4bdbd.jpg",
+      "sha256": "278b259cde32c9c91ca86378dff968bdf1e983169aa12cecba7dfbe8dd20413e",
+      "bytes": 88839
+    },
+    "nj-houge-zhaoji": {
+      "sourceId": "nj-hougeshuoche-7257088243424840999",
+      "sourceSHA256": "05eb2a1c29fb85b6673e339bd116a77fa803f6ae9e5fd4239e64e0b38841ae01",
+      "mediaKey": "5f24bda4b021ef32",
+      "path": "assets/video-posters/nj-hougeshuoche-7257088243424840999/nj-houge-zhaoji-5f24bda4b021ef32.jpg",
+      "sha256": "98714606d410af1da45fef607fddff34d0b7ea845cbfcf8c48baba03abd4672e",
+      "bytes": 94367
+    },
+    "nj-houge-anjia": {
+      "sourceId": "nj-hougeshuoche-7257088243424840999",
+      "sourceSHA256": "05eb2a1c29fb85b6673e339bd116a77fa803f6ae9e5fd4239e64e0b38841ae01",
+      "mediaKey": "a6c6d652345111b8",
+      "path": "assets/video-posters/nj-hougeshuoche-7257088243424840999/nj-houge-anjia-a6c6d652345111b8.jpg",
+      "sha256": "a3ae02b10dc8d4287f10dd74b38dc5996030666bdc8f6858aff34073bf6817e5",
+      "bytes": 85928
+    },
+    "nj-enendeditu-shuangxiang": {
+      "sourceId": "nj-enendeditu-7670847045342749519",
+      "sourceSHA256": "f2fa542fc1b8124684df807f15cf97f2528ef9cde1c21f81eff626b12f29d54b",
+      "mediaKey": "80ca315836aa7e5b",
+      "path": "assets/video-posters/nj-enendeditu-7670847045342749519/nj-enendeditu-shuangxiang-80ca315836aa7e5b.jpg",
+      "sha256": "94d1513d5c7a2164ba17182e21bc62715c197a704e70b7dd148f5a8bc8bdb302",
+      "bytes": 208652
+    },
+    "nj-enendeditu-gujia": {
+      "sourceId": "nj-enendeditu-7670847045342749519",
+      "sourceSHA256": "f2fa542fc1b8124684df807f15cf97f2528ef9cde1c21f81eff626b12f29d54b",
+      "mediaKey": "8995fb44a908ca2d",
+      "path": "assets/video-posters/nj-enendeditu-7670847045342749519/nj-enendeditu-gujia-8995fb44a908ca2d.jpg",
+      "sha256": "2afe280f02bd5eb1ff6200ff77b18930fd315c4122d4a0a462b0af8bbd939ccd",
+      "bytes": 243769
+    },
+    "nj-enendeditu-dudao": {
+      "sourceId": "nj-enendeditu-7670847045342749519",
+      "sourceSHA256": "f2fa542fc1b8124684df807f15cf97f2528ef9cde1c21f81eff626b12f29d54b",
+      "mediaKey": "f6327d07125a904c",
+      "path": "assets/video-posters/nj-enendeditu-7670847045342749519/nj-enendeditu-dudao-f6327d07125a904c.jpg",
+      "sha256": "ca8dd1901ef55f1e4e6f64d44a797a23aedd149a3634e23c8cbfd7760d5f7993",
+      "bytes": 222139
+    },
+    "nj-enendeditu-tangyumiao": {
+      "sourceId": "nj-enendeditu-7670847045342749519",
+      "sourceSHA256": "f2fa542fc1b8124684df807f15cf97f2528ef9cde1c21f81eff626b12f29d54b",
+      "mediaKey": "3889f4b5ec6f062a",
+      "path": "assets/video-posters/nj-enendeditu-7670847045342749519/nj-enendeditu-tangyumiao-3889f4b5ec6f062a.jpg",
+      "sha256": "8177632ce221b00ff1dd982e42afa2382eb570c7455ea877f06019f57e4fbff5",
+      "bytes": 126753
+    },
+    "nj-enendeditu-yexin": {
+      "sourceId": "nj-enendeditu-7670847045342749519",
+      "sourceSHA256": "f2fa542fc1b8124684df807f15cf97f2528ef9cde1c21f81eff626b12f29d54b",
+      "mediaKey": "38b9d1d137f2cd5a",
+      "path": "assets/video-posters/nj-enendeditu-7670847045342749519/nj-enendeditu-yexin-38b9d1d137f2cd5a.jpg",
+      "sha256": "24714a232c48738e12d9e06776c1cd14ec6da16b461b2812790559871fcb7a34",
+      "bytes": 228567
+    },
+    "nj-enendeditu-diaolong": {
+      "sourceId": "nj-enendeditu-7670847045342749519",
+      "sourceSHA256": "f2fa542fc1b8124684df807f15cf97f2528ef9cde1c21f81eff626b12f29d54b",
+      "mediaKey": "9d6d293b896d06c9",
+      "path": "assets/video-posters/nj-enendeditu-7670847045342749519/nj-enendeditu-diaolong-9d6d293b896d06c9.jpg",
+      "sha256": "43aa0b4d412aded3fd2260d4ab77492eae5b81abfad7eed2258710b2f69c98bb",
+      "bytes": 220029
+    },
+    "nj-baifen-dexian": {
+      "sourceId": "nj-baifendeitian-7531356428105698570",
+      "sourceSHA256": "51c71ac873f9edcbdc31a62094db17952651b4cf30eb9d7dd57ab4030d3be346",
+      "mediaKey": "3b6b9fcacd6ab374",
+      "path": "assets/video-posters/nj-baifendeitian-7531356428105698570/nj-baifen-dexian-3b6b9fcacd6ab374.jpg",
+      "sha256": "a374a9fce968ff4f088fb50b5aa724cc0bd1baa5b938b169710bd5f1a2e3c85e",
+      "bytes": 211826
+    },
+    "nj-baifen-areas": {
+      "sourceId": "nj-baifendeitian-7531356428105698570",
+      "sourceSHA256": "51c71ac873f9edcbdc31a62094db17952651b4cf30eb9d7dd57ab4030d3be346",
+      "mediaKey": "a4eef80b7e5dcc8a",
+      "path": "assets/video-posters/nj-baifendeitian-7531356428105698570/nj-baifen-areas-a4eef80b7e5dcc8a.jpg",
+      "sha256": "b2b00f3ce71354459cede2738e7f87d37acb662e3b6f64a31a0acc72f1111d63",
+      "bytes": 298152
+    },
+    "nj-baifen-okin": {
+      "sourceId": "nj-baifendeitian-7531356428105698570",
+      "sourceSHA256": "51c71ac873f9edcbdc31a62094db17952651b4cf30eb9d7dd57ab4030d3be346",
+      "mediaKey": "a0fbe8a9b55c502b",
+      "path": "assets/video-posters/nj-baifendeitian-7531356428105698570/nj-baifen-okin-a0fbe8a9b55c502b.jpg",
+      "sha256": "1e970bf61a6d467e0a38c3a3950649c5a2cf4694984ab84afc3b4421673b64b0",
+      "bytes": 195029
+    },
+    "nj-baifen-tenolives": {
+      "sourceId": "nj-baifendeitian-7531356428105698570",
+      "sourceSHA256": "51c71ac873f9edcbdc31a62094db17952651b4cf30eb9d7dd57ab4030d3be346",
+      "mediaKey": "db63b2c9d975ed77",
+      "path": "assets/video-posters/nj-baifendeitian-7531356428105698570/nj-baifen-tenolives-db63b2c9d975ed77.jpg",
+      "sha256": "8dab6b52bc7d5d0ce08f5e5a1a7b9b017200f1aee9c9c18160991bd32a106690",
+      "bytes": 167202
+    },
+    "nj-baifen-simplebakery": {
+      "sourceId": "nj-baifendeitian-7531356428105698570",
+      "sourceSHA256": "51c71ac873f9edcbdc31a62094db17952651b4cf30eb9d7dd57ab4030d3be346",
+      "mediaKey": "09352823db0871d1",
+      "path": "assets/video-posters/nj-baifendeitian-7531356428105698570/nj-baifen-simplebakery-09352823db0871d1.jpg",
+      "sha256": "f01f7d02be1e2a23739c816faea9bb6c167f9460f04c33dc75671809c34f246a",
+      "bytes": 161199
+    }
+  }
 }

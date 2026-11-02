@@ -1,70 +1,85 @@
-# 食途 · 南京城市制作接手与基础初始化报告
+# 食途 · 南京城市交付报告 (Nanjing City Handoff)
 
-日期：2026-11-01  
-负责城市：南京（`nanjing`）  
-当前工作分支：`codex/city-nanjing-prep`（基于 `origin/main` 提交 `95c88b8` 创建的独立 worktree 工作区 `.local/worktrees/nanjing`）  
-协作隔离说明：
-- 重庆：主分支及 `codex/trip-sharing` 分支保留重庆既有成果与未提交工作，互不干扰；
-- 长沙：`codex/city-changsha-prep`（`.local/worktrees/changsha`）独立制作，互不影响；
-- 南京：本工作区全权负责，采用独立数据目录 `map-base/data/cities/nanjing/` 与独立研究目录 `output/research/nanjing/`。
+- **日期**：2026-11-02
+- **城市标识**：`nanjing`（高德城市代码 `320100`）
+- **开发分支**：`codex/city-nanjing-prep`（隔离工作树 `.local/worktrees/nanjing`）
+- **核心范围**：`[118.70, 31.98, 118.88, 32.12]`（玄武湖、新街口、明瓦廊、老门东、来凤小区、茶南等商圈，约 17.1 × 15.6 km）
+- **默认中心**：`[118.796, 32.058]`，Zoom 15.5，Pitch 52°，Bearing -15°
 
 ---
 
-## 1. 城市配置与地理边界
+## 1. 第一批 5 条视频整理与入库总览
 
-- **城市标识**：`nanjing`
-- **中文名称**：南京
-- **所属省份**：江苏省
-- **高德城市代码（amapCityCode）**：`320100`
-- **核心城区坐标范围（WGS84 Bounds）**：
-  `[118.70, 31.98, 118.88, 32.12]`（涵盖玄武湖、秦淮河、新街口、老门东及钟山周边商圈，跨度约 17.1 × 15.6 公里）
-- **地图默认中心点（Center）**：`[118.796, 32.058]`
-- **视角配置**：Zoom 15.5，Pitch 52°，Bearing -15°，MinZoom 12.0，MaxZoom 19
+用户在会话中提供的第一批 5 条抖音探店链接已全部完成原片获取、视频探测、逐店认店剪辑、真实海报截取、同店多博主归并与开放地图真实道路锚定：
 
----
+| 来源 ID | 作者 | 视频标题 | 视频时长 | 原片大小 | 切片数 | 涉及主要店铺 |
+|---|---|---|---|---|---|---|
+| `nj-xiaojingang-7661207794054245362` | 小金刚干饭王 | 我又在新街口附近的犄角旮旯里挖到了5家好吃的小店！ | 115.83s | 30.6 MB | 5 | 天天汉亭韩国拌饭、三山半·流行山野饭店、一尾芝士棒、大宝麻辣烫、爱德面包坊 |
+| `nj-tieldan-7591415909940612386` | 吃货老外铁蛋儿 | 汤包鲜掉眉毛了，锅贴金黄脆到心坎，南京美食爱了。 | 380.07s | 109.5 MB | 3 | 京华汤包(锁金村店)、李记清真馆、祁家面馆 |
+| `nj-hougeshuoche-7257088243424840999` | 猴哥说车 | 来南京一定要吃这几家地道美食！ | 134.43s | 43.1 MB | 6 | 叶新小吃(来凤小区总店)、李记清真馆、又见炊烟柴火馄饨、陈家鸭子店、赵记皮肚面大碗面、安家汤圆 |
+| `nj-enendeditu-7670847045342749519` | 恩恩的地图 | 南京小众宝藏的美食胜地分享6家来凤小区附近美食 | 126.87s | 46.1 MB | 6 | 双享馔烤鸭店、顾家包子、独稻小馆、无名桂花糖芋苗、叶新小吃、鲜切吊龙牛肉面 |
+| `nj-baifendeitian-7531356428105698570` | 百分的一天 | 百分在南京的宝藏好店合集 | 109.63s | 33.4 MB | 5 | 得闲食堂、Areas 敏包、OK IN Bistro、Ten Olives Patisserie、Simple Bakery·有卷 |
 
-## 2. 独立数据目录与骨架文件清单
-
-已在 `map-base/data/cities/nanjing/` 目录下完成骨架初始化：
-
-1. **`city-profile.json`**：
-   - 记录南京城市元数据、核心范围、高德代码、多博主归并策略与数据文件映射；
-2. **`video-library.json`**：
-   - 遵从规范的视频资料库骨架，`schemaVersion: 1`，`city: "nanjing"`，`rights.status: "user-confirmed"`，待录入第一批探店视频；
-3. **`video-posters.json`**：
-   - 片段真实画面封面索引骨架，`schemaVersion: 1`，`segments: {}`；
-4. **`food-records.json`**：
-   - 静态美食记录骨架，`schemaVersion: 1`，`city: "nanjing"`，`records: []`；
-5. **`map-base/config/cities.json`**：
-   - 登记 `nanjing` 城市节点，`status: "in-preparation"`；保留 `activeCity: "chongqing"` 与重庆现有完整配置，无任何破坏性改动。
+- **总切片数**：25 个单店音视频片段（H.264 + AAC，留存 `.local/video-clips/`）；
+- **地图打卡点**：经同店多博主归并后，生成 **23 个独立地图打卡卡片**。
 
 ---
 
-## 3. 严格遵守的视频与地理资产协作规范
+## 2. 多博主同店归并 (Multi-Creator Merges)
 
-1. **真实性第一**：
-   - 仅整理用户明确提供的探店视频链接；
-   - 完整保留原平台（抖音）、作者、原帖链接（规范作品页与短链）和作品时长；
-   - 封面必须截取自原视频对应的真实画面，严禁使用 AI 菜品图冒充实拍。
-2. **严禁造点与串城**：
-   - 仅限南京本地且具备可信街区/门牌依据的门店才进行 WGS84 规划坐标落点（`approximate-planning`）；
-   - 绝不随机在城市中心或政府大楼造点；
-   - 缺乏足够地理线索或非南京本地视频，诚实归档在 `video-library.json`，不上地图 Marker。
-3. **支持多博主同店归并**：
-   - 同一家店（相同分店）被多位博主探访时，通过相同的 `placeId` 归并为一个地图 Marker；
-   - 地图浮窗内保留各自博主片段，支持顺畅切换，并严格在换店/换博主/关闭时卸载停止前一个音轨。
-4. **大文件严格隔离**：
-   - 原片与剪辑 MP4 一律存放在 `.local/video-intake/` 与 `.local/video-clips/` 隔离环境，严禁提交进 Git；
-   - Git 仅跟踪数十 KB 的小封面 JPG（`map-base/assets/video-posters/<sourceId>/`）与 JSON 元数据。
-5. **多城市代码解耦**：
-   - `validateVideoLibrary(data, expectedCity)` 支持参数化多城校验；
-   - `amapSearchUrl(name, cityCode)` 适配各城专属代码（南京 `320100`）；
-   - 严禁全局查找替换或破坏其他城市的既有资产。
+按照项目契约规范，同一实体分店合用一个地图 Marker，浮窗保留各自博主片段供用户一键切换：
+
+1. **李记清真馆**（秦淮区评事街打钉巷1号）：
+   - 主片段：`nj-tieldan-liji`（吃货老外铁蛋儿，88s）；
+   - 并店片段：`nj-houge-liji`（猴哥说车，20s，`placeId: "nj-tieldan-liji"`）；
+   - 锚点：OSM Way `184268235` (打钉巷), Node `1947290725`，坐标 `[118.773745, 32.031773]`。
+   - 浮窗交互：自动展示两个博主切换按钮，点击无缝切换视频源与文案，旧音轨即刻中断。
+
+2. **叶新小吃(来凤小区总店)**（秦淮区金粟庵路来凤小区仓顶44号101室）：
+   - 主片段：`nj-houge-yexin`（猴哥说车，31s）；
+   - 并店片段：`nj-enendeditu-yexin`（恩恩的地图，12s，`placeId: "nj-houge-yexin"`）；
+   - 锚点：OSM Way `777476153` (来凤街), Node `1068746646`，坐标 `[118.765672, 32.025160]`。
+   - 浮窗交互：自动展示两个博主切换按钮。
 
 ---
 
-## 4. 下一步工作（Ready for Batch 1）
+## 3. 地理资产与真实道路拓扑
 
-基础环境与文件骨架初始化已完成并通过语法和校验检查，等待用户发送第一批南京探店视频链接。
-收到链接后将按规范流水线推进：
-`链接去重与元数据校验 -> 原片获取与SHA256固化 -> 门头字幕抽帧与门店切点划分 -> 原片高清封面截取 -> 街区规划坐标核实 -> 写入视频库与封面索引 -> 准备南京底图与离线切片`。
+1. **离线底图**：
+   - 矢量切片：`map-base/data/cities/nanjing/nanjing.pmtiles`（5,905,700 字节，421 个切片，SHA256: `38c269f4...`）；
+   - 高程地形：90 张 Terrarium DEM 瓦片（2,772,719 字节）位于 `data/cities/nanjing/terrain/{z}/{x}/{y}.png`；
+   - 道路索引：`data/cities/nanjing/roads-index.json`（290,981 字节，1,113 组具名道路）。
+2. **食品道路网络拓扑**：
+   - `data/cities/nanjing/food-road-network.json`（4,501,596 字节，65,935 个节点，12,881 条路段，network SHA256: `b4a77fe7...`）；
+   - 严格连续源节点拓扑，所有 23 个打卡点吸附偏移量均小于 10 米（最佳吸附 0.01m ~ 0.03m）；
+   - 路线规划（`findFoodRoadRoute`）严格沿真实连通边展开，测距完全基于拓扑路长，拒绝直线倍率插值。
+
+---
+
+## 4. 验证与回归记录 (QA & Regressions)
+
+1. **数据与逻辑质检**：
+   - 运行 `scripts/review-nanjing-data.mjs`：7 项测试 100% PASSED（包含 25 个切片哈希、23 个点位吸附、跨街区沿路规划、多博主合并完整性）；
+   - 运行 `scripts/review-city-integration.mjs`：重庆（126 切片 / 81 点位）与长沙（54 来源 / 71 点位）100% 回归通过，未造成任何污染或破坏。
+2. **全站构建**：
+   - `npm run build` 成功输出 `preview-chongqing.html`、`preview-changsha.html` 与 `preview-nanjing.html`（19,504,498 字节），0 错误。
+3. **真实浏览器 Playwright 运行验证**：
+   - 3D 真实地图正常渲染，23 个美食卡片点位分布清晰；
+   - 视频浮窗比例：视频画面高度占浮窗总高度 **69%**（满足产品要求 ≥ 2/3）；
+   - 音轨控制：切换博主、换店及关闭浮窗均百分百停止旧音轨；
+   - 距离模式：直线距离与沿路步行模式无缝切换；
+   - 多端视口截图归档在 `output/research/nanjing/screenshots/`：
+     - `01_desktop_all_23_stops.png`（桌面 1280×800 全城 23 点概览）
+     - `02_liji_creator1_playing.png`（李记清真馆 - 铁蛋儿播放与多博主标签）
+     - `03_liji_creator2_playing.png`（李记清真馆 - 一键切换猴哥说车播放）
+     - `04_yexin_multicreator.png`（叶新小吃 - 猴哥与恩恩多博主浮窗）
+     - `05_mobile_portrait_23_stops.png`（手机竖屏 390×844 响应式）
+     - `06_mobile_landscape_23_stops.png`（短横屏 844×390 响应式）
+
+---
+
+## 5. 资产与分支规范
+
+- **Git 纳入**：小封面海报（`assets/video-posters/`，25 张）、离线底图 PMTiles 与地形瓦片、JSON 数据与研究报告。
+- **Git 排除**：原片 MP4、剪辑 MP4、临时文件均严格保留在 `.local/`，未提交至版本库。
+- **本地服务入口**：可在工作树运行 `node scripts/open-preview.mjs --city nanjing` 直接在浏览器交互。

@@ -1,0 +1,36 @@
+{
+  "verifiedOn": "2026-11-02",
+  "city": "nanjing",
+  "scope": "Full validation of all 5 Nanjing sources, 25 clips, 23 map stops, 2 multi-creator merges, OSM road snaps and routing, and media digests.",
+  "checks": [
+    {
+      "name": "Nanjing catalog has 5 sources and 25 segments",
+      "passed": true
+    },
+    {
+      "name": "Catalog groups into exactly 23 unique map stops with 2 multi-blogger merges",
+      "passed": true
+    },
+    {
+      "name": "Every Nanjing segment has a frozen OSM way and node anchor",
+      "passed": true
+    },
+    {
+      "name": "All 23 map stops snap directly to walkable OSM roads within 25m",
+      "passed": true
+    },
+    {
+      "name": "Routing from Xinjiekou to Pingshida to Laomendong follows source edges",
+      "passed": true
+    },
+    {
+      "name": "All 25 posters exist in assets/video-posters and match hashes",
+      "passed": true
+    },
+    {
+      "name": "All 25 clips encoded and present in .local/video-clips report",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

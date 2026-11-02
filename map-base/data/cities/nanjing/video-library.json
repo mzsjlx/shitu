@@ -1,12 +1,935 @@
 {
   "schemaVersion": 1,
   "city": "nanjing",
-  "preparedOn": "2026-11-01",
+  "preparedOn": "2026-11-02",
   "rights": {
     "status": "user-confirmed",
-    "confirmedOn": "2026-11-01",
-    "scope": "南京探店视频剪辑与画面使用按用户在会话中明确提供的链接范围记录，原片保留在 .local/ 隔离环境，小封面与公开元数据纳入仓库。",
+    "confirmedOn": "2026-11-02",
+    "scope": "第一批共5条抖音南京探店链接经用户在会话中明确提供；视频剪辑与画面使用按用户提供范围记录，原片保留在.local，小封面海报与公开元数据纳入仓库。",
     "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
   },
-  "sources": []
+  "sources": [
+    {
+      "id": "nj-xiaojingang-7661207794054245362",
+      "author": "小金刚干饭王",
+      "title": "我又在新街口附近的犄角旮旯里挖到了5家好吃的小店！#南京美食 #我的美食日记 #新街口美食 #南京探店 #美食推荐",
+      "url": "https://www.douyin.com/video/7661207794054245362",
+      "shareURL": "https://v.douyin.com/bF69np6MS7M/",
+      "publishedOn": "2026-03-29",
+      "durationSeconds": 115.833333,
+      "sourceSHA256": "0055dc9f9985131611d6b11cb20b6cf49e85f2c3e82a079e6193a2abce351204",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "新街口淘淘巷、明瓦廊、正洪街、慈悲社及大锏银巷5家小店实拍探店与门头字幕",
+      "segments": [
+        {
+          "id": "nj-xiaojingang-tiantihan",
+          "name": "天天汉亭韩国拌饭",
+          "category": "韩餐 / 石锅拌饭",
+          "addressText": "南京市秦淮区洪武路135号淘淘巷抄纸巷",
+          "start": 6.0,
+          "end": 22.0,
+          "posterSecond": 10.0,
+          "summary": "新街口淘淘巷藏在抄纸巷的韩式小馆，招牌芝士石锅拌饭酱汁浓郁、拌饭香脆。",
+          "coordinates": [
+            118.7837,
+            32.040852
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "抄纸巷 / 淘淘巷",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及新街口淘淘巷抄纸巷犄角旮旯，采用开放地图抄纸巷参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 99978914,
+              "name": "抄纸巷",
+              "url": "https://www.openstreetmap.org/way/99978914",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1155831131
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-sanshanban",
+          "name": "三山半·流行山野饭店",
+          "category": "江浙融合菜 / 山野特色",
+          "addressText": "南京市秦淮区明瓦廊80号",
+          "start": 22.0,
+          "end": 58.0,
+          "posterSecond": 28.0,
+          "summary": "明瓦廊巷子里的山野特色餐厅，招牌山野炒鸡和特色下饭菜，风味鲜辣有镬气。",
+          "coordinates": [
+            118.776735,
+            32.036043
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "明瓦廊",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍明瓦廊80号，采用开放地图明瓦廊路段参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 94494930,
+              "name": "明瓦廊",
+              "url": "https://www.openstreetmap.org/way/94494930",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 4424594487
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-yiwei",
+          "name": "一尾芝士棒",
+          "category": "小吃 / 芝士热狗棒",
+          "addressText": "南京市秦淮区正洪街时尚莱迪广场地下",
+          "start": 58.0,
+          "end": 71.0,
+          "posterSecond": 64.0,
+          "summary": "新街口时尚莱迪地下街区的小吃铺，现炸超长拉丝芝士棒与热狗，酥脆拉丝。",
+          "coordinates": [
+            118.780014,
+            32.041876
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "正洪街",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及新街口正洪街时尚莱迪，采用开放地图正洪街参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 100101975,
+              "name": "正洪街",
+              "url": "https://www.openstreetmap.org/way/100101975",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1069278229
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-dabao",
+          "name": "大宝麻辣烫",
+          "category": "小吃 / 麻辣烫",
+          "addressText": "南京市鼓楼区慈悲社7-11号",
+          "start": 71.0,
+          "end": 96.5,
+          "posterSecond": 76.0,
+          "summary": "藏在慈悲社居民楼下的小店，大骨浓汤麻辣烫，自选食材丰富，辣油地道醇香。",
+          "coordinates": [
+            118.774029,
+            32.04557
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "慈悲社",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍慈悲社7-11号，采用开放地图慈悲社路段参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 94327820,
+              "name": "慈悲社",
+              "url": "https://www.openstreetmap.org/way/94327820",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1095948870
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-aide",
+          "name": "爱德面包坊",
+          "category": "烘焙 / 甜品面包",
+          "addressText": "南京市鼓楼区大锏银巷16号(省口腔医院对面)",
+          "start": 96.5,
+          "end": 115.833333,
+          "posterSecond": 108.0,
+          "summary": "大锏银巷开了多年的公益烘焙店，现烤肉桂卷、曲奇香脆扎实，温暖治愈。",
+          "coordinates": [
+            118.772851,
+            32.045806
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大锏银巷",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍大锏银巷16号(省口腔对面)，采用开放地图大锏银巷路段参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 192946582,
+              "name": "大锏银巷",
+              "url": "https://www.openstreetmap.org/way/192946582",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 2034775928
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-tieldan-7591415909940612386",
+      "author": "吃货老外铁蛋儿",
+      "title": "汤包鲜掉眉毛了，锅贴金黄脆到心坎，南京美食爱了。",
+      "url": "https://www.douyin.com/video/7591415909940612386",
+      "shareURL": "https://v.douyin.com/c9wqu7FdDeo/",
+      "publishedOn": "2026-04-14",
+      "durationSeconds": 380.066667,
+      "sourceSHA256": "671bc8040b2ab3a612c33a53f747b5f0abe6d3df249a183160445b713f582d16",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "锁金村京华汤包、评事街打钉巷李记清真馆及大香炉祁家面馆实拍探店与门头价目表",
+      "segments": [
+        {
+          "id": "nj-tieldan-jinghua",
+          "name": "京华汤包(锁金村店)",
+          "category": "小吃 / 传统汤包",
+          "addressText": "南京市玄武区锁金北路锁金二村1幢108室",
+          "start": 0.0,
+          "end": 167.0,
+          "posterSecond": 20.0,
+          "summary": "南京锁金村开了几十年的街坊老牌汤包馆，皮薄多汁，蟹黄汤包鲜嫩爆汁，搭配姜醋格外鲜香。",
+          "coordinates": [
+            118.810005,
+            32.075985
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "锁金北路 / 锁金村",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍京华汤包及桥头街景，采用开放地图锁金北路参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 91202333,
+              "name": "锁金北路",
+              "url": "https://www.openstreetmap.org/way/91202333",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 11876558718
+            }
+          }
+        },
+        {
+          "id": "nj-tieldan-liji",
+          "name": "李记清真馆",
+          "category": "清真 / 牛肉锅贴",
+          "addressText": "南京市秦淮区评事街打钉巷1号",
+          "start": 167.0,
+          "end": 255.0,
+          "posterSecond": 175.0,
+          "summary": "评事街打钉巷门前排长队的清真老字号，经典金黄月牙牛肉锅贴底脆爆汁，牛肉汤醇厚暖胃。",
+          "coordinates": [
+            118.773745,
+            32.031773
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "打钉巷 / 评事街",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍打钉巷路牌及排队入店，采用开放地图打钉巷参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 184268235,
+              "name": "打钉巷",
+              "url": "https://www.openstreetmap.org/way/184268235",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1947290725
+            }
+          }
+        },
+        {
+          "id": "nj-tieldan-qijia",
+          "name": "祁家面馆",
+          "category": "面馆 / 南京皮肚面",
+          "addressText": "南京市秦淮区明瓦廊大香炉32-34号",
+          "start": 255.0,
+          "end": 380.066667,
+          "posterSecond": 260.0,
+          "summary": "南京老派皮肚面的代表老店，大碗皮肚肉丝面吸满醇浓汤汁，街坊标配是到街口巴子烤鸭斩份烤鸭浇汁同吃。",
+          "coordinates": [
+            118.776624,
+            32.035785
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "明瓦廊 / 大香炉",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片价目表实拍祁家面馆，采用开放地图明瓦廊路段参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 94494930,
+              "name": "明瓦廊",
+              "url": "https://www.openstreetmap.org/way/94494930",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 3287264807
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-hougeshuoche-7257088243424840999",
+      "author": "猴哥说车",
+      "title": "来南京一定要吃这几家地道美食！#南京美食 #汽车人共创计划#沃尔沃XC90 #这一次为安全感买单",
+      "url": "https://www.douyin.com/video/7257088243424840999",
+      "shareURL": "https://v.douyin.com/POe-zOilYW4/",
+      "publishedOn": "2023-07-18",
+      "durationSeconds": 134.433333,
+      "sourceSHA256": "05eb2a1c29fb85b6673e339bd116a77fa803f6ae9e5fd4239e64e0b38841ae01",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "实拍来凤小区叶新小吃、打钉巷李记清真馆、老门东柴火馄饨、文体西路陈家鸭子店、赵记皮肚面及茶南安家汤圆",
+      "segments": [
+        {
+          "id": "nj-houge-yexin",
+          "name": "叶新小吃(来凤小区总店)",
+          "category": "小吃 / 鸭血粉丝汤",
+          "addressText": "南京市秦淮区金粟庵路来凤小区仓顶44号101室",
+          "start": 0.0,
+          "end": 31.0,
+          "posterSecond": 16.0,
+          "summary": "来凤小区开了二十多年的老牌小吃，鸭油调出来的地道辣油，鸭血、鸭肠扎实，搭配一块酥脆烤饼是南京老食客标配。",
+          "coordinates": [
+            118.765672,
+            32.02516
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "来凤街 / 金粟庵路",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头与片尾卡片标注金粟庵路来凤小区仓顶44号，采用开放地图来凤街参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 777476153,
+              "name": "来凤街",
+              "url": "https://www.openstreetmap.org/way/777476153",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1068746646
+            }
+          }
+        },
+        {
+          "id": "nj-houge-liji",
+          "placeId": "nj-tieldan-liji",
+          "name": "李记清真馆",
+          "category": "清真 / 牛肉锅贴",
+          "addressText": "南京市秦淮区评事街打钉巷1号",
+          "start": 31.0,
+          "end": 51.0,
+          "posterSecond": 36.0,
+          "summary": "南京排名前茅的清真锅贴名店，刚出锅的牛肉锅贴焦脆金黄，咬开一口肉汁四溢，肉馅紧实微甜。",
+          "coordinates": [
+            118.773745,
+            32.031773
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "打钉巷 / 评事街",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍李记清真馆及打钉巷1号，归并至同店锚点。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 184268235,
+              "name": "打钉巷",
+              "url": "https://www.openstreetmap.org/way/184268235",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1947290725
+            }
+          }
+        },
+        {
+          "id": "nj-houge-chuanhuo",
+          "name": "又见炊烟柴火馄饨",
+          "category": "小吃 / 柴火馄饨",
+          "addressText": "南京市秦淮区老门东三条营10号",
+          "start": 51.0,
+          "end": 71.0,
+          "posterSecond": 58.0,
+          "summary": "老门东三条营巷子里的柴火小馄饨，传统大铁锅柴火烧汤，馄饨皮薄肉嫩，舀一勺阿婆自制辣油香气四溢。",
+          "coordinates": [
+            118.782006,
+            32.01377
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "老门东三条营",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍又见炊烟柴火馄饨及三条营10号，采用开放地图三条营参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 318162427,
+              "name": "三条营",
+              "url": "https://www.openstreetmap.org/way/318162427",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 9630664993
+            }
+          }
+        },
+        {
+          "id": "nj-houge-chenjia",
+          "name": "陈家鸭子店(文体西路店)",
+          "category": "熟食 / 南京烤鸭",
+          "addressText": "南京市建邺区文体西路139号",
+          "start": 71.0,
+          "end": 87.0,
+          "posterSecond": 76.0,
+          "summary": "开了四十多年的南京老牌鸭子店，现烤烤鸭鸭皮红亮酥脆，斩上四分之一后腿淋上特调咸甜红卤，汁水充盈。",
+          "coordinates": [
+            118.752308,
+            32.027747
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "文体西路",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍陈家鸭子店及文体西路139号，采用开放地图文体西路参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 323932390,
+              "name": "文体西路",
+              "url": "https://www.openstreetmap.org/way/323932390",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 13531924593
+            }
+          }
+        },
+        {
+          "id": "nj-houge-zhaoji",
+          "name": "赵记皮肚面大碗面(所街总店)",
+          "category": "面馆 / 南京皮肚面",
+          "addressText": "南京市建邺区所街83号",
+          "start": 87.0,
+          "end": 109.0,
+          "posterSecond": 96.0,
+          "summary": "南京皮肚大碗面的硬核老店，皮肚、大肉、熏鱼、香肠七八分熟下锅大火快煮，炸透的皮肚孔隙吸饱鲜辣面汤爆汁过瘾。",
+          "coordinates": [
+            118.751161,
+            32.019781
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "所街",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍所街83号赵记皮肚面，采用开放地图所街参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 422195817,
+              "name": "所街",
+              "url": "https://www.openstreetmap.org/way/422195817",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 12137407598
+            }
+          }
+        },
+        {
+          "id": "nj-houge-anjia",
+          "name": "安家汤圆(茶南店)",
+          "category": "小吃 / 传统甜汤",
+          "addressText": "南京市建邺区福园街兆园22幢64号102室",
+          "start": 109.0,
+          "end": 134.433333,
+          "posterSecond": 114.0,
+          "summary": "茶南小区承载南京人童年回忆的甜汤小铺，浓稠软糯的赤豆小元宵搭配现煮现包的流心黑芝麻大汤圆，暖心甜蜜。",
+          "coordinates": [
+            118.738592,
+            32.033691
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "福园街 / 茶南",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍安家汤圆及福园街兆园22幢，采用开放地图福园街参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 101300819,
+              "name": "福园街",
+              "url": "https://www.openstreetmap.org/way/101300819",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 7276462427
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-enendeditu-7670847045342749519",
+      "author": "恩恩的地图",
+      "title": "南京小众宝藏的美食胜地❗️分享6家来凤小区附近美食 #南京美食#来凤小区#独稻小馆 #美食判官已上线#双享馔",
+      "url": "https://www.douyin.com/video/7670847045342749519",
+      "shareURL": "https://v.douyin.com/98rh3ANzBFk/",
+      "publishedOn": "2026-08-06",
+      "durationSeconds": 126.866667,
+      "sourceSHA256": "f2fa542fc1b8124684df807f15cf97f2528ef9cde1c21f81eff626b12f29d54b",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "实拍来凤小区双享馔烤鸭、顾家包子、独稻小馆、无名地摊糖芋苗、叶新鸭血粉丝及吊龙牛肉面",
+      "segments": [
+        {
+          "id": "nj-enendeditu-shuangxiang",
+          "name": "双享馔烤鸭店",
+          "category": "熟食 / 南京烤鸭",
+          "addressText": "南京市秦淮区双塘路来凤小区仓顶",
+          "start": 0.0,
+          "end": 35.0,
+          "posterSecond": 30.0,
+          "summary": "来凤小区居民排队买的现烤焖炉烤鸭，鸭皮红润肥美，斩1/4鸭脯浇上特调烤鸭卤汁，鲜香流汁。",
+          "coordinates": [
+            118.770115,
+            32.024926
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "双塘路 / 来凤小区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍来凤小区双享馔烤鸭打包袋与烤炉，采用开放地图双塘路参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 777476149,
+              "name": "双塘路",
+              "url": "https://www.openstreetmap.org/way/777476149",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1068742548
+            }
+          }
+        },
+        {
+          "id": "nj-enendeditu-gujia",
+          "name": "顾家包子",
+          "category": "小吃 / 小笼包",
+          "addressText": "南京市秦淮区双塘路来凤小区仓顶",
+          "start": 35.0,
+          "end": 49.0,
+          "posterSecond": 42.0,
+          "summary": "来凤小区几十年的老店，蒸笼现蒸小笼汤包个大饱满，肉馅紧实带微甜，一咬开里面满满浓鲜汤汁。",
+          "coordinates": [
+            118.770115,
+            32.024926
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "双塘路 / 来凤小区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍顾家包子，采用开放地图双塘路参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 777476149,
+              "name": "双塘路",
+              "url": "https://www.openstreetmap.org/way/777476149",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1068742548
+            }
+          }
+        },
+        {
+          "id": "nj-enendeditu-dudao",
+          "name": "独稻小馆",
+          "category": "家常菜 / 私房菜",
+          "addressText": "南京市秦淮区凤栖苑18号",
+          "start": 49.0,
+          "end": 87.0,
+          "posterSecond": 58.0,
+          "summary": "来凤街周边温馨的家庭小厨房，招牌红烧牛窝骨软烂入味满口胶原，蛋黄土豆丝与西红柿炖肘子咸鲜下饭。",
+          "coordinates": [
+            118.765672,
+            32.02516
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "来凤街 / 凤栖苑",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍独稻小馆及手写黑板店规，采用开放地图来凤街参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 777476153,
+              "name": "来凤街",
+              "url": "https://www.openstreetmap.org/way/777476153",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1068746646
+            }
+          }
+        },
+        {
+          "id": "nj-enendeditu-tangyumiao",
+          "name": "来凤街无名桂花糖芋苗",
+          "category": "小吃 / 传统甜汤",
+          "addressText": "南京市秦淮区来凤街居民区地摊",
+          "start": 87.0,
+          "end": 97.0,
+          "posterSecond": 92.0,
+          "summary": "来凤街老居民楼下推车卖的传统地摊甜品，小推车熬煮的桂花糖芋苗软烂香甜，冰镇酒酿赤豆元宵醇香扑鼻。",
+          "coordinates": [
+            118.765672,
+            32.02516
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "来凤街地摊",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍来凤街居民楼下小推车，采用开放地图来凤街参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 777476153,
+              "name": "来凤街",
+              "url": "https://www.openstreetmap.org/way/777476153",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1068746646
+            }
+          }
+        },
+        {
+          "id": "nj-enendeditu-yexin",
+          "placeId": "nj-houge-yexin",
+          "name": "叶新小吃(来凤小区总店)",
+          "category": "小吃 / 鸭血粉丝汤",
+          "addressText": "南京市秦淮区金粟庵路来凤小区仓顶44号101室",
+          "start": 97.0,
+          "end": 109.0,
+          "posterSecond": 104.0,
+          "summary": "来凤小区门前几乎每次都座无虚席的老牌鸭血粉丝，鸭血鸭肝给得很多，粉丝透亮不烂，汤头鲜醇入味。",
+          "coordinates": [
+            118.765672,
+            32.02516
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "来凤街 / 金粟庵路",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍施工门头叶新鸭血粉丝及座无虚席店内，归并至同店锚点。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 777476153,
+              "name": "来凤街",
+              "url": "https://www.openstreetmap.org/way/777476153",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1068746646
+            }
+          }
+        },
+        {
+          "id": "nj-enendeditu-diaolong",
+          "name": "鲜切吊龙牛肉面",
+          "category": "面馆 / 牛肉面",
+          "addressText": "南京市秦淮区双塘路来凤小区",
+          "start": 109.0,
+          "end": 126.866667,
+          "posterSecond": 114.0,
+          "summary": "双塘路面馆现烫鲜切潮汕吊龙牛肉，铺在劲道手擀面上，原汤清甜牛肉鲜嫩，肉香浓郁。",
+          "coordinates": [
+            118.770115,
+            32.024926
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "双塘路 / 来凤小区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍双塘路面馆鲜切吊龙牛肉面，采用开放地图双塘路参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 777476149,
+              "name": "双塘路",
+              "url": "https://www.openstreetmap.org/way/777476149",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1068742548
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-baifendeitian-7531356428105698570",
+      "author": "百分的一天",
+      "title": "百分在南京的宝藏好店合集",
+      "url": "https://www.douyin.com/video/7531356428105698570",
+      "shareURL": "https://v.douyin.com/y4P6sSpVN4g/",
+      "publishedOn": "2025-07-26",
+      "durationSeconds": 109.633333,
+      "sourceSHA256": "51c71ac873f9edcbdc31a62094db17952651b4cf30eb9d7dd57ab4030d3be346",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "实拍进香河、碑亭巷、老虎桥周边得闲食堂、Areas敏包、OK IN Bistro、Ten Olives甜品及Simple Bakery",
+      "segments": [
+        {
+          "id": "nj-baifen-dexian",
+          "name": "得闲食堂",
+          "category": "日料 / 简餐食堂",
+          "addressText": "南京市玄武区老虎桥与进香河路交叉口",
+          "start": 0.0,
+          "end": 43.5,
+          "posterSecond": 41.0,
+          "summary": "进香河路巷子里温馨的社区小食堂，招牌打抛猪肉太阳蛋饭肉酱咸辣开胃，流心蛋拌饭香气扑鼻。",
+          "coordinates": [
+            118.787096,
+            32.053766
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "老虎桥 / 进香河路",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片菜单实拍得闲食堂及打抛猪肉饭，采用开放地图老虎桥参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 99979560,
+              "name": "老虎桥",
+              "url": "https://www.openstreetmap.org/way/99979560",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1155842427
+            }
+          }
+        },
+        {
+          "id": "nj-baifen-areas",
+          "name": "Areas 敏包",
+          "category": "烘焙 / 早午餐Brunch",
+          "addressText": "南京市玄武区碑亭巷与珠江路周边",
+          "start": 43.5,
+          "end": 63.0,
+          "posterSecond": 48.0,
+          "summary": "街角工业风面包专门店，现烤酸种欧包与Brunch餐盘，搭配特调黄油与自制果酱香脆麦香。",
+          "coordinates": [
+            118.789189,
+            32.046919
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "碑亭巷",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍Areas敏包橱窗及早午餐面包，采用开放地图碑亭巷参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 256938736,
+              "name": "碑亭巷",
+              "url": "https://www.openstreetmap.org/way/256938736",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 9928281415
+            }
+          }
+        },
+        {
+          "id": "nj-baifen-okin",
+          "name": "OK IN Bistro",
+          "category": "西餐 / 小酒馆微醺",
+          "addressText": "南京市玄武区进香河路街区",
+          "start": 63.0,
+          "end": 79.0,
+          "posterSecond": 70.0,
+          "summary": "适合情侣约会与微醺小聚的氛围感Bistro，超级惹火白鳗鱼饭焦香肥润，低温牛里脊鲜嫩多汁。",
+          "coordinates": [
+            118.7849,
+            32.053724
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "进香河路",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍OK IN Bistro黑板小酒单与鳗鱼饭，采用开放地图进香河路参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 27811140,
+              "name": "进香河路",
+              "url": "https://www.openstreetmap.org/way/27811140",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 7995299348
+            }
+          }
+        },
+        {
+          "id": "nj-baifen-tenolives",
+          "name": "Ten Olives Patisserie",
+          "category": "甜品 / 法式西点",
+          "addressText": "南京市玄武区碑亭巷艺术街区",
+          "start": 79.0,
+          "end": 93.0,
+          "posterSecond": 82.0,
+          "summary": "专注于法式手工甜点的精致西点坊，黑松露培根酥层层酥化咸香扑鼻，清爽西柚奶油蛋糕果香沁甜。",
+          "coordinates": [
+            118.789189,
+            32.046919
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "碑亭巷",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍Ten Olives甜点橱窗与黑松露酥，采用开放地图碑亭巷参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 256938736,
+              "name": "碑亭巷",
+              "url": "https://www.openstreetmap.org/way/256938736",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 9928281415
+            }
+          }
+        },
+        {
+          "id": "nj-baifen-simplebakery",
+          "name": "Simple Bakery·有卷",
+          "category": "烘焙 / 法式可颂贝果",
+          "addressText": "南京市玄武区进香河路街区",
+          "start": 93.0,
+          "end": 109.633333,
+          "posterSecond": 104.0,
+          "summary": "主打法式可颂与贝果的街头面包小铺，开心果可颂与抹茶奶酥卷松软爆浆，外酥里韧麦香天然。",
+          "coordinates": [
+            118.7849,
+            32.053724
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "进香河路",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头实拍Simple Bakery橱窗及现切可颂，采用开放地图进香河路参照。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 27811140,
+              "name": "进香河路",
+              "url": "https://www.openstreetmap.org/way/27811140",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 7995299348
+            }
+          }
+        }
+      ]
+    }
+  ]
 }
