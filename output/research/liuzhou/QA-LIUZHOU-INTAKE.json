@@ -1,331 +1,50 @@
 {
-  "verifiedOn": "2026-11-01T14:56:09.599Z",
+  "verifiedOn": "2026-11-02T11:27:10.170Z",
   "city": "liuzhou",
-  "source": "lz-wangzulan-7575112557141898601",
+  "environment": {
+    "platform": "win32",
+    "release": "10.0.26200",
+    "node": "v24.18.0",
+    "previewUrl": "http://127.0.0.1:8791"
+  },
+  "viewportsCovered": [
+    "1440x960 (desktop)",
+    "390x844 (mobile)",
+    "320x680 (small)",
+    "736x414 (short-landscape)"
+  ],
   "checks": [
     {
-      "name": "Liuzhou city identified correctly",
+      "name": "Liuzhou city identified correctly with amapCityCode 450200",
       "passed": true,
       "detail": {
         "name": "柳州",
-        "center": [
-          109.40658613986398,
-          24.32981109286743
-        ],
-        "zoom": 13.12711365796577,
-        "cityKey": "liuzhou",
-        "recordCount": 9,
-        "records": [
-          {
-            "id": "video-lz-wangzulan-zhangji",
-            "name": "张记玉米汁",
-            "category": "饮品 / 甜品",
-            "coordinates": [
-              109.40585,
-              24.31438
-            ],
-            "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.mp4",
-            "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.jpg"
-          },
-          {
-            "id": "video-lz-wangzulan-zhuoheji",
-            "name": "卓和记猪肉脯",
-            "category": "特色小吃 / 伴手礼",
-            "coordinates": [
-              109.40583,
-              24.31415
-            ],
-            "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.mp4",
-            "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.jpg"
-          },
-          {
-            "id": "video-lz-wangzulan-panjie",
-            "name": "青云老牌潘姐小吃",
-            "category": "特色小吃 / 糯米饭",
-            "coordinates": [
-              109.40581,
-              24.3138
-            ],
-            "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.mp4",
-            "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.jpg"
-          },
-          {
-            "id": "video-lz-chenhe-aningmeng",
-            "name": "杨记阿柠檬螺蛳粉",
-            "category": "特色小吃 / 螺蛳粉",
-            "coordinates": [
-              109.38986,
-              24.33934
-            ],
-            "localClip": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
-            "localPoster": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.jpg"
-          },
-          {
-            "id": "video-lz-dage-caomei",
-            "name": "曹妹螺蛳粉",
-            "category": "特色小吃 / 螺蛳粉",
-            "coordinates": [
-              109.4206,
-              24.3387
-            ],
-            "localClip": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.mp4",
-            "localPoster": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.jpg"
-          },
-          {
-            "id": "video-lz-xiaojiu-weipopo",
-            "name": "煨婆婆（公园路店）",
-            "category": "特色小吃 / 铁板排档",
-            "coordinates": [
-              109.4124,
-              24.3182
-            ],
-            "localClip": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.mp4",
-            "localPoster": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.jpg"
-          },
-          {
-            "id": "video-lz-xiaobaozha-leilaoban",
-            "name": "雷老板家烧烤（窑埠店）",
-            "category": "宵夜 / 烧烤排档",
-            "coordinates": [
-              109.4231,
-              24.3248
-            ],
-            "localClip": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.mp4",
-            "localPoster": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.jpg"
-          },
-          {
-            "id": "video-lz-rourou-gaojia",
-            "name": "高家螺蛳粉店",
-            "category": "特色小吃 / 螺蛳粉",
-            "coordinates": [
-              109.3875,
-              24.3168
-            ],
-            "localClip": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.mp4",
-            "localPoster": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.jpg"
-          },
-          {
-            "id": "video-lz-tangshixiong-liujie",
-            "name": "刘姐鲜肉螺蛳粉（总店）",
-            "category": "特色小吃 / 炒螺蛳粉",
-            "coordinates": [
-              109.4019,
-              24.31692
-            ],
-            "localClip": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.mp4",
-            "localPoster": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.jpg"
-          }
-        ]
+        "amapCityCode": "450200"
       }
     },
     {
       "name": "9 food records loaded across Liuzhou",
       "passed": true,
-      "detail": [
-        {
-          "id": "video-lz-wangzulan-zhangji",
-          "name": "张记玉米汁",
-          "category": "饮品 / 甜品",
-          "coordinates": [
-            109.40585,
-            24.31438
-          ],
-          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.mp4",
-          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.jpg"
-        },
-        {
-          "id": "video-lz-wangzulan-zhuoheji",
-          "name": "卓和记猪肉脯",
-          "category": "特色小吃 / 伴手礼",
-          "coordinates": [
-            109.40583,
-            24.31415
-          ],
-          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.mp4",
-          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.jpg"
-        },
-        {
-          "id": "video-lz-wangzulan-panjie",
-          "name": "青云老牌潘姐小吃",
-          "category": "特色小吃 / 糯米饭",
-          "coordinates": [
-            109.40581,
-            24.3138
-          ],
-          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.mp4",
-          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.jpg"
-        },
-        {
-          "id": "video-lz-chenhe-aningmeng",
-          "name": "杨记阿柠檬螺蛳粉",
-          "category": "特色小吃 / 螺蛳粉",
-          "coordinates": [
-            109.38986,
-            24.33934
-          ],
-          "localClip": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
-          "localPoster": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.jpg"
-        },
-        {
-          "id": "video-lz-dage-caomei",
-          "name": "曹妹螺蛳粉",
-          "category": "特色小吃 / 螺蛳粉",
-          "coordinates": [
-            109.4206,
-            24.3387
-          ],
-          "localClip": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.mp4",
-          "localPoster": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.jpg"
-        },
-        {
-          "id": "video-lz-xiaojiu-weipopo",
-          "name": "煨婆婆（公园路店）",
-          "category": "特色小吃 / 铁板排档",
-          "coordinates": [
-            109.4124,
-            24.3182
-          ],
-          "localClip": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.mp4",
-          "localPoster": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.jpg"
-        },
-        {
-          "id": "video-lz-xiaobaozha-leilaoban",
-          "name": "雷老板家烧烤（窑埠店）",
-          "category": "宵夜 / 烧烤排档",
-          "coordinates": [
-            109.4231,
-            24.3248
-          ],
-          "localClip": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.mp4",
-          "localPoster": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.jpg"
-        },
-        {
-          "id": "video-lz-rourou-gaojia",
-          "name": "高家螺蛳粉店",
-          "category": "特色小吃 / 螺蛳粉",
-          "coordinates": [
-            109.3875,
-            24.3168
-          ],
-          "localClip": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.mp4",
-          "localPoster": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.jpg"
-        },
-        {
-          "id": "video-lz-tangshixiong-liujie",
-          "name": "刘姐鲜肉螺蛳粉（总店）",
-          "category": "特色小吃 / 炒螺蛳粉",
-          "coordinates": [
-            109.4019,
-            24.31692
-          ],
-          "localClip": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.mp4",
-          "localPoster": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.jpg"
-        }
-      ]
+      "detail": 9
     },
     {
       "name": "All 9 records have local MP4 clips and JPG posters",
       "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "All 9 records have open OSM anchor references",
+      "passed": true,
       "detail": [
-        {
-          "id": "video-lz-wangzulan-zhangji",
-          "name": "张记玉米汁",
-          "category": "饮品 / 甜品",
-          "coordinates": [
-            109.40585,
-            24.31438
-          ],
-          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.mp4",
-          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhangji-13ffb75d0fe754f0.jpg"
-        },
-        {
-          "id": "video-lz-wangzulan-zhuoheji",
-          "name": "卓和记猪肉脯",
-          "category": "特色小吃 / 伴手礼",
-          "coordinates": [
-            109.40583,
-            24.31415
-          ],
-          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.mp4",
-          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-zhuoheji-97ebc37244c55470.jpg"
-        },
-        {
-          "id": "video-lz-wangzulan-panjie",
-          "name": "青云老牌潘姐小吃",
-          "category": "特色小吃 / 糯米饭",
-          "coordinates": [
-            109.40581,
-            24.3138
-          ],
-          "localClip": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.mp4",
-          "localPoster": "./media/videos/lz-wangzulan-7575112557141898601/lz-wangzulan-panjie-07e7661fda79898d.jpg"
-        },
-        {
-          "id": "video-lz-chenhe-aningmeng",
-          "name": "杨记阿柠檬螺蛳粉",
-          "category": "特色小吃 / 螺蛳粉",
-          "coordinates": [
-            109.38986,
-            24.33934
-          ],
-          "localClip": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
-          "localPoster": "./media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.jpg"
-        },
-        {
-          "id": "video-lz-dage-caomei",
-          "name": "曹妹螺蛳粉",
-          "category": "特色小吃 / 螺蛳粉",
-          "coordinates": [
-            109.4206,
-            24.3387
-          ],
-          "localClip": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.mp4",
-          "localPoster": "./media/videos/lz-dage-7688278279576982090/lz-dage-caomei-bc14fd04764d79ef.jpg"
-        },
-        {
-          "id": "video-lz-xiaojiu-weipopo",
-          "name": "煨婆婆（公园路店）",
-          "category": "特色小吃 / 铁板排档",
-          "coordinates": [
-            109.4124,
-            24.3182
-          ],
-          "localClip": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.mp4",
-          "localPoster": "./media/videos/lz-xiaojiu-7528722963782159659/lz-xiaojiu-weipopo-95dce7180217b5c6.jpg"
-        },
-        {
-          "id": "video-lz-xiaobaozha-leilaoban",
-          "name": "雷老板家烧烤（窑埠店）",
-          "category": "宵夜 / 烧烤排档",
-          "coordinates": [
-            109.4231,
-            24.3248
-          ],
-          "localClip": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.mp4",
-          "localPoster": "./media/videos/lz-xiaobaozha-7689477707755025563/lz-xiaobaozha-leilaoban-6f0dbe3fc84a1496.jpg"
-        },
-        {
-          "id": "video-lz-rourou-gaojia",
-          "name": "高家螺蛳粉店",
-          "category": "特色小吃 / 螺蛳粉",
-          "coordinates": [
-            109.3875,
-            24.3168
-          ],
-          "localClip": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.mp4",
-          "localPoster": "./media/videos/lz-rourou-7115662751636147459/lz-rourou-gaojia-5a7d528a4aaf6305.jpg"
-        },
-        {
-          "id": "video-lz-tangshixiong-liujie",
-          "name": "刘姐鲜肉螺蛳粉（总店）",
-          "category": "特色小吃 / 炒螺蛳粉",
-          "coordinates": [
-            109.4019,
-            24.31692
-          ],
-          "localClip": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.mp4",
-          "localPoster": "./media/videos/lz-tangshixiong-7699430467695148651/lz-tangshixiong-liujie-7ff0211b09712f47.jpg"
-        }
+        "中山中路（青云民生市场樵家巷入口）",
+        "中山中路（青云民生市场入口通道）",
+        "青云市场内部通道（近樵家巷中段）",
+        "潭中西路北一巷生活区支路（近壶西实验中学）",
+        "白沙路 / 柳锌小区生活区支路",
+        "弯塘路（近公园路 / 柳侯公园南门）",
+        "文昌桥东引桥匝道（窑埠古镇B区入口）",
+        "大鹅山菜市周边支路（鹅山路31-1号一带）",
+        "连塘路（连塘路90号一带）"
       ]
     },
     {
@@ -347,15 +66,29 @@
       "passed": true
     },
     {
+      "name": "Popover contains original video link",
+      "passed": true,
+      "detail": "https://www.douyin.com/video/7498339315727060264"
+    },
+    {
       "name": "Popover opened and video is playing with advancing playback",
       "passed": true,
       "detail": {
         "found": true,
         "src": "http://127.0.0.1:8791/media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
-        "currentTime": 0.761695,
+        "currentTime": 0.763971,
         "paused": false,
         "duration": 20
       }
+    },
+    {
+      "name": "Closing popover immediately stops video playback and old audio track",
+      "passed": true
+    },
+    {
+      "name": "Amap search link in video library targets Liuzhou (city=450200)",
+      "passed": true,
+      "detail": "https://uri.amap.com/search?keyword=%E5%BC%A0%E8%AE%B0%E7%8E%89%E7%B1%B3%E6%B1%81&city=450200&view=list&src=shitu&callnative=0"
     },
     {
       "name": "Direct distance mode active with 9 saved stops",
@@ -376,14 +109,12 @@
       "passed": true
     },
     {
-      "name": "Road mode truthfully reports route status across Liuzhou",
+      "name": "Road mode computes connected route across Liuzhou with OSM road topology",
       "passed": true,
       "detail": {
         "routeMode": "road",
-        "phase": "partial",
-        "missing": 6,
-        "total": 49.7029529896614,
-        "caption": "6 段道路暂未连通",
+        "phase": "ready",
+        "caption": "沿路约 22.3 公里",
         "localStorageMode": "road",
         "localStorageWants": [
           "video-lz-wangzulan-zhangji",
@@ -403,10 +134,8 @@
       "passed": true,
       "detail": {
         "routeMode": "road",
-        "phase": "partial",
-        "missing": 6,
-        "total": 49.7029529896614,
-        "caption": "6 段道路暂未连通",
+        "phase": "ready",
+        "caption": "沿路约 22.3 公里",
         "localStorageMode": "road",
         "localStorageWants": [
           "video-lz-wangzulan-zhangji",
@@ -422,52 +151,63 @@
       }
     },
     {
-      "name": "Road mode computes fully connected route for Qingyun Market cluster",
-      "passed": true,
-      "detail": {
-        "routeMode": "road",
-        "phase": "ready",
-        "total": 49.7029529896614,
-        "caption": "沿路约 50 米",
-        "roadPointsCount": 6
-      }
-    },
-    {
-      "name": "Mobile layout renders cards and trip dock",
+      "name": "Mobile layout renders cards and trip dock without overflow",
       "passed": true,
       "detail": {
         "cardCount": 9,
-        "dockVisible": true
+        "dockVisible": true,
+        "hasHorizontalOverflow": false
       }
     },
     {
-      "name": "Chongqing city loads with correct city name",
+      "name": "Small screen (320px) renders cleanly without horizontal overflow",
+      "passed": true,
+      "detail": {
+        "cardCount": 9,
+        "dockVisible": true,
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Short landscape (736x414) maintains dock and header visibility",
+      "passed": true,
+      "detail": {
+        "dockVisible": true,
+        "entryVisible": true
+      }
+    },
+    {
+      "name": "Chongqing city loads cleanly with code 500000 and zero Liuzhou pollution",
       "passed": true,
       "detail": {
         "name": "重庆",
         "cityKey": "chongqing",
+        "amapCityCode": "500000",
         "recordCount": 81,
         "hasLiuzhouRecord": false
       }
     },
     {
-      "name": "Chongqing records are not polluted by Liuzhou records",
+      "name": "Changsha city loads cleanly with code 430100 and zero Liuzhou pollution",
       "passed": true,
       "detail": {
-        "name": "重庆",
-        "cityKey": "chongqing",
-        "recordCount": 81,
+        "name": "长沙",
+        "cityKey": "changsha",
+        "amapCityCode": "430100",
+        "recordCount": 71,
         "hasLiuzhouRecord": false
       }
     }
   ],
   "errors": [],
   "screenshots": [
-    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-food-overview.png",
-    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-card-expanded.png",
-    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-video-popover.png",
-    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-road-distance.png",
-    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-wants-dialog.png",
-    "D:/Antigravity/地图/output/research/liuzhou/screenshots/liuzhou-mobile.png"
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-food-overview.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-card-expanded.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-video-popover.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-road-distance.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-wants-dialog.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-mobile.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-small-320.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-landscape-736.png"
   ]
 }

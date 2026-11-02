@@ -27,7 +27,7 @@
           "category": "饮品 / 甜品",
           "summary": "青云民生市场20年老字号现榨玉米汁，香浓顺滑、温热清甜，王祖蓝喝完直呼“太好喝了”。",
           "addressText": "柳州市城中区中山西路樵家巷9号（青云民生市场内）",
-          "start": 48.0,
+          "start": 48,
           "end": 54.5,
           "posterSecond": 49.5,
           "coordinates": [
@@ -38,10 +38,23 @@
           "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "青云民生市场 · 中山西路樵家巷入口",
-            "basis": "原片招牌文字标注‘中山西路樵家巷9号’，对应青云民生市场北侧樵家巷道入口。"
+            "label": "中山中路（青云民生市场樵家巷入口）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图对象【中山中路（青云民生市场樵家巷入口）】（OSM way 205639714）作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 205639714,
+              "name": "中山中路（青云民生市场樵家巷入口）",
+              "url": "https://www.openstreetmap.org/way/205639714",
+              "sourceDate": "2026-11-01",
+              "method": "original-way-node",
+              "nodeId": 2065206498
+            }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 营业情况待确认"
         },
         {
           "id": "lz-wangzulan-zhuoheji",
@@ -51,7 +64,7 @@
           "addressText": "柳州市城中区青云民生市场内（近中山西路入口通道）",
           "start": 54.5,
           "end": 65.5,
-          "posterSecond": 56.0,
+          "posterSecond": 56,
           "coordinates": [
             109.40583,
             24.31415
@@ -60,10 +73,23 @@
           "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "青云民生市场 · 樵家巷熟食区",
-            "basis": "紧邻玉米汁摊位南侧熟食通道，按原片步行顺序与青云市场现场商户布局确定。"
+            "label": "中山中路（青云民生市场入口通道）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图对象【中山中路（青云民生市场入口通道）】（OSM way 205639714）作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 205639714,
+              "name": "中山中路（青云民生市场入口通道）",
+              "url": "https://www.openstreetmap.org/way/205639714",
+              "sourceDate": "2026-11-01",
+              "method": "original-way-node",
+              "nodeId": 2065206498
+            }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 营业情况待确认"
         },
         {
           "id": "lz-wangzulan-panjie",
@@ -71,21 +97,34 @@
           "category": "特色小吃 / 糯米饭",
           "summary": "青云市场招牌特色五色糯米饭，选用天然植物染色的彩色糯米，铺满腊肠、酸菜、肉松与炸腐竹等丰富配料，7元一大碗份量扎实。",
           "addressText": "柳州市城中区青云民生市场内（樵家巷中段）",
-          "start": 93.0,
-          "end": 109.0,
-          "posterSecond": 94.0,
+          "start": 93,
+          "end": 109,
+          "posterSecond": 94,
           "coordinates": [
             109.40581,
-            24.31380
+            24.3138
           ],
           "coordinateSystem": "WGS84",
           "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "青云民生市场 · 小吃排档区",
-            "basis": "青云老牌潘姐小吃摊位，位于青云民生市场樵家巷中段小吃区。"
+            "label": "青云市场内部通道（近樵家巷中段）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图对象【青云市场内部通道（近樵家巷中段）】（OSM way 205659718）作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 205659718,
+              "name": "青云市场内部通道（近樵家巷中段）",
+              "url": "https://www.openstreetmap.org/way/205659718",
+              "sourceDate": "2026-11-01",
+              "method": "original-way-node",
+              "nodeId": 2156323447
+            }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 营业情况待确认"
         }
       ]
     },
@@ -107,9 +146,9 @@
           "category": "特色小吃 / 螺蛳粉",
           "summary": "柳州开了二十多年的老牌夜宵螺蛳粉，以料足汤浓著称，陈赫打卡必点虎皮猪脚、炸蛋与大盆卤肥肠，酸爽过瘾。",
           "addressText": "柳州市柳南区潭中西路北一巷8号（近壶西实验中学）",
-          "start": 58.0,
-          "end": 78.0,
-          "posterSecond": 65.0,
+          "start": 58,
+          "end": 78,
+          "posterSecond": 65,
           "coordinates": [
             109.38986,
             24.33934
@@ -118,10 +157,23 @@
           "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "潭中西路北一巷 · 壶西实验中学旁",
-            "basis": "原片门店招牌为“杨记阿柠檬螺蛳粉”，位于柳南区潭中西路北一巷8号，临近壶西实验中学。"
+            "label": "潭中西路北一巷生活区支路（近壶西实验中学）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图对象【潭中西路北一巷生活区支路（近壶西实验中学）】（OSM way 1015164161）作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1015164161,
+              "name": "潭中西路北一巷生活区支路（近壶西实验中学）",
+              "url": "https://www.openstreetmap.org/way/1015164161",
+              "sourceDate": "2026-11-01",
+              "method": "original-way-node",
+              "nodeId": 9364759953
+            }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 营业情况待确认"
         }
       ]
     },
@@ -143,21 +195,34 @@
           "category": "特色小吃 / 螺蛳粉",
           "summary": "藏在柳锌老小区里的市井烟火宝藏老店，红油浓郁醇厚，炸蛋蓬松饱吸汤汁，木薯糖水清甜解辣，达哥盛赞一点都不臭、真的香。",
           "addressText": "柳州市柳北区白沙路5号柳锌小区10栋对面",
-          "start": 15.0,
-          "end": 35.0,
-          "posterSecond": 20.0,
+          "start": 15,
+          "end": 35,
+          "posterSecond": 20,
           "coordinates": [
-            109.42060,
-            24.33870
+            109.4206,
+            24.3387
           ],
           "coordinateSystem": "WGS84",
           "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "柳锌小区 · 白沙路5号老生活区",
-            "basis": "原片探访柳北区白沙路柳锌老小区内曹妹螺蛳粉（10栋对面），坐标落于柳锌小区生活区内部道路。"
+            "label": "白沙路 / 柳锌小区生活区支路",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图对象【白沙路 / 柳锌小区生活区支路】（OSM way 196861784）作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 196861784,
+              "name": "白沙路 / 柳锌小区生活区支路",
+              "url": "https://www.openstreetmap.org/way/196861784",
+              "sourceDate": "2026-11-01",
+              "method": "original-way-node",
+              "nodeId": 2071544877
+            }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2024年视频 · 营业情况待确认"
         }
       ]
     },
@@ -179,21 +244,34 @@
           "category": "特色小吃 / 铁板排档",
           "summary": "藏在柳侯公园旁老巷子里的市井烟火排档，招牌炭火铁板猪脚皮糯肉烂、热油酱汁浇淋滋滋作响，搭配铁板排骨与鲜虾煲，是本地人私藏的夜宵宝藏老店。",
           "addressText": "柳州市城中区公园路44号（近柳侯公园）",
-          "start": 0.0,
+          "start": 0,
           "end": 17.5,
-          "posterSecond": 4.0,
+          "posterSecond": 4,
           "coordinates": [
-            109.41240,
-            24.31820
+            109.4124,
+            24.3182
           ],
           "coordinateSystem": "WGS84",
           "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "公园路44号 · 柳侯公园南门片区",
-            "basis": "原片门店招牌与POI定位为城中区公园路44号煨婆婆，邻近柳侯公园。"
+            "label": "弯塘路（近公园路 / 柳侯公园南门）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图对象【弯塘路（近公园路 / 柳侯公园南门）】（OSM way 205513951）作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 205513951,
+              "name": "弯塘路（近公园路 / 柳侯公园南门）",
+              "url": "https://www.openstreetmap.org/way/205513951",
+              "sourceDate": "2026-11-01",
+              "method": "original-way-node",
+              "nodeId": 2154755049
+            }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 营业情况待确认"
         }
       ]
     },
@@ -215,21 +293,34 @@
           "category": "宵夜 / 烧烤排档",
           "summary": "窑埠古镇超人气夜宵大王，招牌鱼籽生牛裹满青金桔与薄荷蘸酱酸辣爽口，大盘烤牛肉、烤肥肠与炭烤海鲜份量霸道，夜宵氛围直接拉满。",
           "addressText": "柳州市鱼峰区蟠龙路9号窑埠古镇B区44栋第一层3号",
-          "start": 0.0,
-          "end": 20.0,
-          "posterSecond": 5.0,
+          "start": 0,
+          "end": 20,
+          "posterSecond": 5,
           "coordinates": [
-            109.42310,
-            24.32480
+            109.4231,
+            24.3248
           ],
           "coordinateSystem": "WGS84",
           "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "窑埠古镇B区 · 蟠龙路9号",
-            "basis": "原片围裙与POI标注为窑埠古镇B区44栋雷老板家烧烤，临近蟠龙山与文昌大桥。"
+            "label": "文昌桥东引桥匝道（窑埠古镇B区入口）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图对象【文昌桥东引桥匝道（窑埠古镇B区入口）】（OSM way 370559017）作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 370559017,
+              "name": "文昌桥东引桥匝道（窑埠古镇B区入口）",
+              "url": "https://www.openstreetmap.org/way/370559017",
+              "sourceDate": "2026-11-01",
+              "method": "original-way-node",
+              "nodeId": 7215520566
+            }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2024年视频 · 营业情况待确认"
         }
       ]
     },
@@ -251,21 +342,34 @@
           "category": "特色小吃 / 螺蛳粉",
           "summary": "藏在火车站旁大鹅山菜市里的老字号螺蛳粉，最大亮点是能吃到货真价实的大勺炒螺蛳肉，酸笋脆爽，配菜丰富，配上小龙虾尾和油葱极其过瘾。",
           "addressText": "柳州市柳南区鹅山路大鹅山菜市31之一号",
-          "start": 0.0,
-          "end": 15.0,
-          "posterSecond": 2.0,
+          "start": 0,
+          "end": 15,
+          "posterSecond": 2,
           "coordinates": [
-            109.38750,
-            24.31680
+            109.3875,
+            24.3168
           ],
           "coordinateSystem": "WGS84",
           "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "大鹅山菜市 · 鹅山路31-1号",
-            "basis": "原片探访柳州火车站西侧大鹅山菜市场内高家螺蛳粉店，坐标位于鹅山路南侧生活菜市。"
+            "label": "大鹅山菜市周边支路（鹅山路31-1号一带）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图对象【大鹅山菜市周边支路（鹅山路31-1号一带）】（OSM way 1448425478）作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1448425478,
+              "name": "大鹅山菜市周边支路（鹅山路31-1号一带）",
+              "url": "https://www.openstreetmap.org/way/1448425478",
+              "sourceDate": "2026-11-01",
+              "method": "original-way-node",
+              "nodeId": 13289195624
+            }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2022年视频 · 营业情况待确认"
         }
       ]
     },
@@ -287,19 +391,31 @@
           "category": "特色小吃 / 炒螺蛳粉",
           "summary": "连塘路上的老牌名店，荣获柳州最具创意螺蛳粉品牌，据传是柳州最早首创炒螺蛳粉的老店之一；大火爆炒锅气喷香，螺蛳大颗入味，虎皮猪脚酥烂饱汁。",
           "addressText": "柳州市城中区中南街道连塘路90号",
-          "start": 19.0,
-          "end": 39.0,
-          "posterSecond": 20.0,
+          "start": 19,
+          "end": 39,
+          "posterSecond": 20,
           "coordinates": [
-            109.40190,
+            109.4019,
             24.31692
           ],
           "coordinateSystem": "WGS84",
           "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "连塘路90号 · 中南街道",
-            "basis": "原片墙面金色奖牌明确标注“刘姐鲜肉螺蛳粉”，位于城中区中南街道连塘路90号，紧邻青云与映山街片区。"
+            "label": "连塘路（连塘路90号一带）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图对象【连塘路（连塘路90号一带）】（OSM way 205517132）作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 205517132,
+              "name": "连塘路（连塘路90号一带）",
+              "url": "https://www.openstreetmap.org/way/205517132",
+              "sourceDate": "2026-11-01",
+              "method": "original-way-node",
+              "nodeId": 5921940270
+            }
           },
           "routeEligible": false
         }

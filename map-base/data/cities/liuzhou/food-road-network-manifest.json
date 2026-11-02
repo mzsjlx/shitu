@@ -8,18 +8,18 @@
     24.38
   ],
   "source": {
-    "date": "2026-10-28",
-    "sha256": "06fc19bffd1087a7395b2b7536c667312767df13157324bdf0e227b0c921e335",
-    "url": "https://build.protomaps.com/20261028.pmtiles",
-    "fileName": "liuzhou.pmtiles",
-    "attribution": "© OpenStreetMap contributors · Protomaps",
-    "license": "ODbL 1.0 Produced Work"
+    "date": "2026-11-01",
+    "sha256": "3470e2e0780a4711c5470e6f7a1f7c6e4eaba672712274317fedf84bf97294dc",
+    "url": "https://download.geofabrik.de/asia/china/guangxi-261101.osm.pbf",
+    "fileName": "guangxi-261101.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
   },
-  "networkSHA256": "2159332b556b72451f33d8020d47f66390eb186e3a0d6bc68b59a8fa1fef6153",
-  "bytes": 1219333,
-  "nodes": 22168,
-  "ways": 5032,
+  "networkSHA256": "746799e71c795341eaa00ca4e840222fd31c42fa26e75ea3643394e4a32ef473",
+  "bytes": 1507824,
+  "nodes": 22161,
+  "ways": 4186,
   "footRestrictionWays": 0,
-  "topology": "Connected node topology extracted from local OSM/Protomaps archive.",
-  "profile": "Approximate walking reference: no motorways; connecting pedestrian and ordinary roads."
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
 }

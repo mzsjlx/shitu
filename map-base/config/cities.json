@@ -115,14 +115,15 @@
       "minZoom": 12.0,
       "maxZoom": 19,
       "tiles": "data/liuzhou.pmtiles",
+      "amapCityCode": "450200",
+      "landmarks": [],
       "foodContent": {
         "city": "liuzhou",
         "records": "data/cities/liuzhou/food-records.json",
         "sprite": "assets/food-concepts.jpg",
         "videoLibrary": "data/cities/liuzhou/video-library.json",
         "videoAssets": "data/cities/liuzhou/video-library-assets.json",
-        "roadNetwork": "data/cities/liuzhou/food-road-network.json",
-        "amapCityCode": "450200"
+        "roadNetwork": "data/cities/liuzhou/food-road-network.json"
       },
       "dataFiles": {
         "index": "data/liuzhou-roads-index.json",
