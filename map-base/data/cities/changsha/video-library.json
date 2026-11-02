@@ -3810,6 +3810,55 @@
       "acquisitionStatus": "acquired",
       "evidenceNote": "原片实景商场与收银木牌实名确证为四川省成都市武侯区科华中路9号王府井购物中心【流浪泡泡·破破烂烂的烤肉店(科华王府井店)】，非长沙探店，作为异地素材在媒体库完整归档，严格遵守真实落点原则不上图造点。",
       "segments": []
+    },
+    {
+      "id": "cs-yizhikaizi-7703099449282743592",
+      "author": "一支凯子",
+      "title": "每次回长沙和朋友吃的第一家烧烤必须是这家，牛肉筋和大力牛油都会爆汁超好吃！！#一支凯子  #长沙美食 #岳阳烧烤 #精选app美食记录 #精选app",
+      "url": "https://www.douyin.com/video/7703099449282743592",
+      "shareURL": "https://v.douyin.com/ZAD_vtOmtsI/",
+      "publishedOn": "2026-11-01",
+      "durationSeconds": 107.367,
+      "sourceSHA256": "004ad3961daa7808d6a121b48d10d7cf4ddd011ec4b707eba91a88ee03bb3cd0",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "门牌招牌实拍确证为雨花区自然岭路36号“两点打烊 老岳阳烧烤”（近树木岭站2号口），坐标锚定自然岭路与树木岭片区开放地图路网节点。",
+      "segments": [
+        {
+          "id": "cs-yizhikaizi-liangdiandayang",
+          "name": "两点打烊·老岳阳烧烤（树木岭店）",
+          "category": "岳阳烧烤",
+          "addressText": "雨花区自然岭路36号（树木岭地铁站2号口步行约200米）",
+          "start": 0,
+          "end": 107.3,
+          "posterSecond": 7,
+          "summary": "藏在树木岭小巷老楼下的地道岳阳烧烤，招牌猛火炭烤大粒牛油爆汁带奶香、牛肉筋外焦里嫩，配卤牛腩宽粉与高压锅筒子骨鸡爪。",
+          "coordinates": [
+            113.012308,
+            28.157303
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "自然岭路街区",
+            "basis": "video-signboard",
+            "branchMatch": "confirmed",
+            "note": "实拍“两点打烊 老岳阳烧烤”门头招牌与街巷环境，对齐雨花区自然岭路36号，以OSM自然岭路Way 390189612节点632800110为街区大致规划落点。",
+            "reviewedOn": "2026-11-02",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 390189612,
+              "name": "自然岭路",
+              "url": "https://www.openstreetmap.org/way/390189612",
+              "sourceDate": "2026-10-30",
+              "method": "original-way-node",
+              "nodeId": 632800110
+            }
+          },
+          "footageNote": "2026年视频 · 树木岭夜市岳阳烧烤"
+        }
+      ]
     }
   ]
 }

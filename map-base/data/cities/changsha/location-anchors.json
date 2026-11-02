@@ -1,5 +1,5 @@
 {
-  "reviewedOn": "2026-11-01",
+  "reviewedOn": "2026-11-02",
   "sourceDate": "2026-10-30",
   "sourceSHA256": "332b53d9abfb33deb3093829cb38c6f016e775720edc5da39e11e00b9496c21d",
   "scope": "原片地址所对应的开放街区参照；未核实店门或营业状态。",
@@ -712,6 +712,19 @@
       "coordinates": [
         113.0354439,
         28.247259
+      ]
+    },
+    {
+      "kind": "osm-way",
+      "id": 390189612,
+      "name": "自然岭路",
+      "url": "https://www.openstreetmap.org/way/390189612",
+      "sourceDate": "2026-10-30",
+      "method": "original-way-node",
+      "nodeId": 632800110,
+      "coordinates": [
+        113.012308,
+        28.157303
       ]
     }
   ]
