@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-02T11:27:10.170Z",
+  "verifiedOn": "2026-11-05T04:11:23.297Z",
   "city": "liuzhou",
   "environment": {
     "platform": "win32",
@@ -23,17 +23,17 @@
       }
     },
     {
-      "name": "9 food records loaded across Liuzhou",
+      "name": "51 food records loaded across Liuzhou",
       "passed": true,
-      "detail": 9
+      "detail": 51
     },
     {
-      "name": "All 9 records have local MP4 clips and JPG posters",
+      "name": "All 51 records have local MP4 clips and JPG posters",
       "passed": true,
-      "detail": 9
+      "detail": 51
     },
     {
-      "name": "All 9 records have open OSM anchor references",
+      "name": "All 51 records have open OSM anchor references",
       "passed": true,
       "detail": [
         "中山中路（青云民生市场樵家巷入口）",
@@ -44,11 +44,53 @@
         "弯塘路（近公园路 / 柳侯公园南门）",
         "文昌桥东引桥匝道（窑埠古镇B区入口）",
         "大鹅山菜市周边支路（鹅山路31-1号一带）",
-        "连塘路（连塘路90号一带）"
+        "连塘路（连塘路90号一带）",
+        "红碑路北二巷（胜利夜市红碑路）",
+        "罗池路东一巷（近解放南路五星商业街）",
+        "红碑路北二巷（胜利烧烤城通道）",
+        "曙光东路（正对正南门城墙遗址）",
+        "西江路北二巷（城中万达广场旁）",
+        "长风路（雀儿山农贸市场旁）",
+        "连塘路（近青云市场）",
+        "红岩路（近磨滩路新西环市场后巷）",
+        "北雀路十二区生活区通道（近48栋车库）",
+        "中山中路（青云民生市场内）",
+        "中山中路（青云民生市场入口通道）",
+        "柳邕路三巷（近航二路口柳南万达）",
+        "跃进路（近雀儿山路北端柳钢生活区）",
+        "五星街（五星步行街）",
+        "金鱼巷（近斜阳路88号）",
+        "雅儒路（雅儒花园对面412号）",
+        "中山中路（符老三露水汤圆（青云店）参照段）",
+        "映山街（黑子米粉（青云店）参照段）",
+        "None（门匠火锅·茶缸烧牛肉面参照段）",
+        "高新南路（肥仔林螺蛳粉（桂中菜市店）参照段）",
+        "None（小韦老牌螺蛳粉（和平路店）参照段）",
+        "兴白路（老牌杨妹螺蛳粉（柳北店）参照段）",
+        "None（金弟炒螺蛳粉（驾鹤路店）参照段）",
+        "海关路（新实惠牛肉牛杂火锅（白沙总店）参照段）",
+        "None（阿历螺蛳粉（驾鹤路店）参照段）",
+        "屏山大道（蒙记老牌豆浆（水南路店）参照段）",
+        "None（文惠桥头大华干捞粉参照段）",
+        "箭盘路（春金元老柳州螺蛳粉（箭盘店）参照段）",
+        "None（老牌板凳螺蛳粉（五一广场店）参照段）",
+        "观光路（六扇门烧鸭粉参照段）",
+        "None（柳州铁道菜市酸嘢小吃参照段）",
+        "None（三都李氏烧鸭粉（河西店）参照段）",
+        "公园路（姚记豆腐花参照段）",
+        "None（鑫老牌螺蛳粉（北雀店）参照段）",
+        "阳光100内部道路",
+        "荣军路东三巷周边道路",
+        "公园路",
+        "蝴蝶山路街区道路",
+        "永前路周边生活道路",
+        "航银路",
+        "蟠龙路",
+        "广雅路周边道路"
       ]
     },
     {
-      "name": "All 9 food markers default to collapsed circular icon badges",
+      "name": "All 51 food markers default to collapsed circular icon badges",
       "passed": true
     },
     {
@@ -76,7 +118,7 @@
       "detail": {
         "found": true,
         "src": "http://127.0.0.1:8791/media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
-        "currentTime": 0.763971,
+        "currentTime": 0.762967,
         "paused": false,
         "duration": 20
       }
@@ -91,12 +133,12 @@
       "detail": "https://uri.amap.com/search?keyword=%E5%BC%A0%E8%AE%B0%E7%8E%89%E7%B1%B3%E6%B1%81&city=450200&view=list&src=shitu&callnative=0"
     },
     {
-      "name": "Direct distance mode active with 9 saved stops",
+      "name": "Direct distance mode active with 51 saved stops",
       "passed": true,
       "detail": {
         "routeMode": "direct",
-        "caption": "直线约 15.4 公里",
-        "savedCount": 9,
+        "caption": "直线约 178.7 公里",
+        "savedCount": 51,
         "phase": "ready"
       }
     },
@@ -109,12 +151,12 @@
       "passed": true
     },
     {
-      "name": "Road mode computes connected route across Liuzhou with OSM road topology",
+      "name": "Road mode handles all saved stops with OSM road topology (displays partial disconnect truthfully)",
       "passed": true,
       "detail": {
         "routeMode": "road",
-        "phase": "ready",
-        "caption": "沿路约 22.3 公里",
+        "phase": "partial",
+        "caption": "2 段道路暂未连通",
         "localStorageMode": "road",
         "localStorageWants": [
           "video-lz-wangzulan-zhangji",
@@ -125,7 +167,49 @@
           "video-lz-xiaojiu-weipopo",
           "video-lz-xiaobaozha-leilaoban",
           "video-lz-rourou-gaojia",
-          "video-lz-tangshixiong-liujie"
+          "video-lz-tangshixiong-liujie",
+          "video-lz-tangshixiong-ajiao",
+          "video-lz-tangshixiong-yezhou",
+          "video-lz-zhufangyu-jiemei",
+          "video-lz-xiaojiu-laoyefan",
+          "video-lz-renmeixiduo-heiya",
+          "video-lz-hailangxiongdi-laojiu",
+          "video-lz-xiaxiachibupang-yougela",
+          "video-lz-rourou-xiangxiangji",
+          "video-lz-pangshibushishi-cheku",
+          "video-lz-nimofei-yangjie",
+          "video-lz-nimofei-huaji",
+          "video-lz-nimofei-jinji",
+          "video-lz-nimofei-heshuang",
+          "video-lz-juzizhou-douhua",
+          "video-lz-juzizhou-doufupao",
+          "video-lz-zaodianshui-jiaojie",
+          "video-lz-liuyuxin-fulaosan",
+          "video-lz-liuyuxin-heizi",
+          "video-lz-xiaobaozha-menjiang",
+          "video-lz-xiaobeiele-feizailin",
+          "video-lz-mizijun-xiaowei",
+          "video-lz-mizijun-yangmei",
+          "video-lz-mizijun-jindi",
+          "video-lz-nanshiyi-xinshihui",
+          "video-lz-nanshiyi-ali",
+          "video-lz-nanshiyi-mengji",
+          "video-lz-taiyi-dahua",
+          "video-lz-taiyi-chunjinyuan",
+          "video-lz-taiyi-bandeng",
+          "video-lz-houertian-liushanmen",
+          "video-lz-houertian-tiedao",
+          "video-lz-ppchaonengxuan-sandulishi",
+          "video-lz-ppchaonengxuan-yaoji",
+          "video-lz-zhuzhu-xinlaopai",
+          "video-lz-luopaopao-beishun",
+          "video-lz-xunweiguangxi-aqiang",
+          "video-lz-kabuda-paopao",
+          "video-lz-kabuda-17dong",
+          "video-lz-liuyifei-shousiji",
+          "video-lz-liuyifei-gemen",
+          "video-lz-jidean-shanzhongniu",
+          "video-lz-jidean-laoyou"
         ]
       }
     },
@@ -134,8 +218,8 @@
       "passed": true,
       "detail": {
         "routeMode": "road",
-        "phase": "ready",
-        "caption": "沿路约 22.3 公里",
+        "phase": "partial",
+        "caption": "2 段道路暂未连通",
         "localStorageMode": "road",
         "localStorageWants": [
           "video-lz-wangzulan-zhangji",
@@ -146,15 +230,67 @@
           "video-lz-xiaojiu-weipopo",
           "video-lz-xiaobaozha-leilaoban",
           "video-lz-rourou-gaojia",
-          "video-lz-tangshixiong-liujie"
+          "video-lz-tangshixiong-liujie",
+          "video-lz-tangshixiong-ajiao",
+          "video-lz-tangshixiong-yezhou",
+          "video-lz-zhufangyu-jiemei",
+          "video-lz-xiaojiu-laoyefan",
+          "video-lz-renmeixiduo-heiya",
+          "video-lz-hailangxiongdi-laojiu",
+          "video-lz-xiaxiachibupang-yougela",
+          "video-lz-rourou-xiangxiangji",
+          "video-lz-pangshibushishi-cheku",
+          "video-lz-nimofei-yangjie",
+          "video-lz-nimofei-huaji",
+          "video-lz-nimofei-jinji",
+          "video-lz-nimofei-heshuang",
+          "video-lz-juzizhou-douhua",
+          "video-lz-juzizhou-doufupao",
+          "video-lz-zaodianshui-jiaojie",
+          "video-lz-liuyuxin-fulaosan",
+          "video-lz-liuyuxin-heizi",
+          "video-lz-xiaobaozha-menjiang",
+          "video-lz-xiaobeiele-feizailin",
+          "video-lz-mizijun-xiaowei",
+          "video-lz-mizijun-yangmei",
+          "video-lz-mizijun-jindi",
+          "video-lz-nanshiyi-xinshihui",
+          "video-lz-nanshiyi-ali",
+          "video-lz-nanshiyi-mengji",
+          "video-lz-taiyi-dahua",
+          "video-lz-taiyi-chunjinyuan",
+          "video-lz-taiyi-bandeng",
+          "video-lz-houertian-liushanmen",
+          "video-lz-houertian-tiedao",
+          "video-lz-ppchaonengxuan-sandulishi",
+          "video-lz-ppchaonengxuan-yaoji",
+          "video-lz-zhuzhu-xinlaopai",
+          "video-lz-luopaopao-beishun",
+          "video-lz-xunweiguangxi-aqiang",
+          "video-lz-kabuda-paopao",
+          "video-lz-kabuda-17dong",
+          "video-lz-liuyifei-shousiji",
+          "video-lz-liuyifei-gemen",
+          "video-lz-jidean-shanzhongniu",
+          "video-lz-jidean-laoyou"
         ]
+      }
+    },
+    {
+      "name": "Connected sequence of stops computes exact road distance with \"沿路约\" badge",
+      "passed": true,
+      "detail": {
+        "routeMode": "road",
+        "phase": "ready",
+        "caption": "沿路约 22.1 公里",
+        "savedCount": 9
       }
     },
     {
       "name": "Mobile layout renders cards and trip dock without overflow",
       "passed": true,
       "detail": {
-        "cardCount": 9,
+        "cardCount": 51,
         "dockVisible": true,
         "hasHorizontalOverflow": false
       }
@@ -163,7 +299,7 @@
       "name": "Small screen (320px) renders cleanly without horizontal overflow",
       "passed": true,
       "detail": {
-        "cardCount": 9,
+        "cardCount": 51,
         "dockVisible": true,
         "hasHorizontalOverflow": false
       }

@@ -1,8 +1,8 @@
 {
-  "reviewedOn": "2026-11-02",
+  "reviewedOn": "2026-11-03",
   "sourceDate": "2026-11-01",
   "sourceSHA256": "3470e2e0780a4711c5470e6f7a1f7c6e4eaba672712274317fedf84bf97294dc",
-  "scope": "柳州首批9家门店原片地址所对应的开放街区参照；未核实店门或营业状态。",
+  "scope": "柳州17条视频共25个门店原片地址所对应的开放街区参照；未核实店门或营业状态。",
   "anchors": [
     {
       "segmentId": "lz-wangzulan-zhangji",
@@ -137,6 +137,687 @@
       "coordinates": [
         109.4019086,
         24.3169235
+      ]
+    },
+    {
+      "segmentId": "lz-zhufangyu-jiemei",
+      "shopName": "姐妹老店（起源1998年）",
+      "kind": "osm-way",
+      "id": 205667344,
+      "name": "红碑路北二巷（胜利烧烤城通道）",
+      "url": "https://www.openstreetmap.org/way/205667344",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 6241427930,
+      "coordinates": [
+        109.399393,
+        24.3642176
+      ]
+    },
+    {
+      "segmentId": "lz-xiaojiu-laoyefan",
+      "shopName": "老嘢饭（曙光东路店）",
+      "kind": "osm-way",
+      "id": 196166785,
+      "name": "曙光东路（正对正南门城墙遗址）",
+      "url": "https://www.openstreetmap.org/way/196166785",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2065206428,
+      "coordinates": [
+        109.4109417,
+        24.3131544
+      ]
+    },
+    {
+      "segmentId": "lz-renmeixiduo-heiya",
+      "shopName": "回味黑鸭煲（城中万达店）",
+      "kind": "osm-way",
+      "id": 722264500,
+      "name": "西江路北二巷（城中万达广场旁）",
+      "url": "https://www.openstreetmap.org/way/722264500",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 6098082857,
+      "coordinates": [
+        109.4458003,
+        24.3218429
+      ]
+    },
+    {
+      "segmentId": "lz-hailangxiongdi-laojiu",
+      "shopName": "老九家常菜（雀儿山市场店）",
+      "kind": "osm-way",
+      "id": 544124527,
+      "name": "长风路（雀儿山农贸市场旁）",
+      "url": "https://www.openstreetmap.org/way/544124527",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 6024115927,
+      "coordinates": [
+        109.4065294,
+        24.3595849
+      ]
+    },
+    {
+      "segmentId": "lz-xiaxiachibupang-yougela",
+      "shopName": "友个辣·柳州下饭菜（青云店）",
+      "kind": "osm-way",
+      "id": 205517132,
+      "name": "连塘路（近青云市场）",
+      "url": "https://www.openstreetmap.org/way/205517132",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 5921940270,
+      "coordinates": [
+        109.4019086,
+        24.3169235
+      ]
+    },
+    {
+      "segmentId": "lz-rourou-xiangxiangji",
+      "shopName": "上海家乡鸡（新西环店）",
+      "kind": "osm-way",
+      "id": 1120129161,
+      "name": "红岩路（近磨滩路新西环市场后巷）",
+      "url": "https://www.openstreetmap.org/way/1120129161",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 6054360554,
+      "coordinates": [
+        109.3819095,
+        24.3117284
+      ]
+    },
+    {
+      "segmentId": "lz-pangshibushishi-cheku",
+      "shopName": "北雀路车库麻辣烫（车库美食）",
+      "kind": "osm-way",
+      "id": 835978613,
+      "name": "北雀路十二区生活区通道（近48栋车库）",
+      "url": "https://www.openstreetmap.org/way/835978613",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 7802843149,
+      "coordinates": [
+        109.4036739,
+        24.3682372
+      ]
+    },
+    {
+      "segmentId": "lz-nimofei-jinji",
+      "shopName": "金记炒螺蛳粉",
+      "kind": "osm-way",
+      "id": 1021564968,
+      "name": "柳邕路三巷（近航二路口柳南万达）",
+      "url": "https://www.openstreetmap.org/way/1021564968",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 9421887179,
+      "coordinates": [
+        109.3788988,
+        24.2887809
+      ]
+    },
+    {
+      "segmentId": "lz-nimofei-heshuang",
+      "shopName": "和双螺蛳粉（柳钢总店）",
+      "kind": "osm-way",
+      "id": 718114031,
+      "name": "跃进路（近雀儿山路北端柳钢生活区）",
+      "url": "https://www.openstreetmap.org/way/718114031",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 8283678391,
+      "coordinates": [
+        109.407705,
+        24.3724945
+      ]
+    },
+    {
+      "segmentId": "lz-nimofei-huaji",
+      "shopName": "华记肠粉（青云店）",
+      "kind": "osm-way",
+      "id": 205639714,
+      "name": "中山中路（青云民生市场入口通道）",
+      "url": "https://www.openstreetmap.org/way/205639714",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2065206498,
+      "coordinates": [
+        109.4058454,
+        24.3142272
+      ]
+    },
+    {
+      "segmentId": "lz-nimofei-yangjie",
+      "shopName": "青云杨姐卤粉",
+      "kind": "osm-way",
+      "id": 205639714,
+      "name": "中山中路（青云民生市场内）",
+      "url": "https://www.openstreetmap.org/way/205639714",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2065206498,
+      "coordinates": [
+        109.4058454,
+        24.3142272
+      ]
+    },
+    {
+      "segmentId": "lz-juzizhou-doufupao",
+      "shopName": "阿罗家豆腐泡（斜阳路店）",
+      "kind": "osm-way",
+      "id": 205519386,
+      "name": "金鱼巷（近斜阳路88号）",
+      "url": "https://www.openstreetmap.org/way/205519386",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2154820669,
+      "coordinates": [
+        109.4082383,
+        24.3177222
+      ]
+    },
+    {
+      "segmentId": "lz-juzizhou-douhua",
+      "shopName": "传统冰渣豆花",
+      "kind": "osm-way",
+      "id": 205513960,
+      "name": "五星街（五星步行街）",
+      "url": "https://www.openstreetmap.org/way/205513960",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2065206624,
+      "coordinates": [
+        109.4090758,
+        24.3148791
+      ]
+    },
+    {
+      "segmentId": "lz-tangshixiong-ajiao",
+      "shopName": "阿娇特色炒螺蛳",
+      "kind": "osm-way",
+      "id": 205667344,
+      "name": "红碑路北二巷（胜利夜市红碑路）",
+      "url": "https://www.openstreetmap.org/way/205667344",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 6241427930,
+      "coordinates": [
+        109.399393,
+        24.3642176
+      ]
+    },
+    {
+      "segmentId": "lz-tangshixiong-yezhou",
+      "shopName": "老牌五星夜豆浆",
+      "kind": "osm-way",
+      "id": 205661091,
+      "name": "罗池路东一巷（近解放南路五星商业街）",
+      "url": "https://www.openstreetmap.org/way/205661091",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2156345397,
+      "coordinates": [
+        109.4115624,
+        24.3140735
+      ]
+    },
+    {
+      "segmentId": "lz-zaodianshui-jiaojie",
+      "shopName": "娇姐老牌螺蛳粉",
+      "kind": "osm-way",
+      "id": 481085881,
+      "name": "雅儒路（雅儒花园对面412号）",
+      "url": "https://www.openstreetmap.org/way/481085881",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 9862096397,
+      "coordinates": [
+        109.4009267,
+        24.3355616
+      ]
+    },
+    {
+      "segmentId": "lz-liuyuxin-fulaosan",
+      "shopName": "符老三露水汤圆（青云店）",
+      "kind": "osm-way",
+      "id": 205639714,
+      "name": "中山中路（符老三露水汤圆（青云店）参照段）",
+      "url": "https://www.openstreetmap.org/way/205639714",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2065206498,
+      "coordinates": [
+        109.4058454,
+        24.3142272
+      ],
+      "snapDistanceMeters": 5.5,
+      "note": "按原片线索采用开放地图对象【中山中路（青云民生市场段）】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-liuyuxin-heizi",
+      "shopName": "黑子米粉（青云店）",
+      "kind": "osm-way",
+      "id": 205513964,
+      "name": "映山街（黑子米粉（青云店）参照段）",
+      "url": "https://www.openstreetmap.org/way/205513964",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2154755115,
+      "coordinates": [
+        109.4051862,
+        24.3142587
+      ],
+      "snapDistanceMeters": 51.0,
+      "note": "按原片线索采用开放地图对象【青云路/细柳巷街区道路】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-xiaobaozha-menjiang",
+      "shopName": "门匠火锅·茶缸烧牛肉面",
+      "kind": "osm-way",
+      "id": 1054804060,
+      "name": "None（门匠火锅·茶缸烧牛肉面参照段）",
+      "url": "https://www.openstreetmap.org/way/1054804060",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 9692797934,
+      "coordinates": [
+        109.4433137,
+        24.3361313
+      ],
+      "snapDistanceMeters": 47.1,
+      "note": "按原片线索采用开放地图对象【学院路33号B区街区道路】（POI: 7313138577058039842）作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-xiaobeiele-feizailin",
+      "shopName": "肥仔林螺蛳粉（桂中菜市店）",
+      "kind": "osm-way",
+      "id": 196861741,
+      "name": "高新南路（肥仔林螺蛳粉（桂中菜市店）参照段）",
+      "url": "https://www.openstreetmap.org/way/196861741",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 5316145723,
+      "coordinates": [
+        109.4283115,
+        24.3412363
+      ],
+      "snapDistanceMeters": 65.5,
+      "note": "按原片线索采用开放地图对象【桂中大道（桂中农贸市场外侧）】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-mizijun-xiaowei",
+      "shopName": "小韦老牌螺蛳粉（和平路店）",
+      "kind": "osm-way",
+      "id": 641119371,
+      "name": "None（小韦老牌螺蛳粉（和平路店）参照段）",
+      "url": "https://www.openstreetmap.org/way/641119371",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 9167091754,
+      "coordinates": [
+        109.3682821,
+        24.321269
+      ],
+      "snapDistanceMeters": 63.0,
+      "note": "按原片线索采用开放地图对象【和平路/柳太路口周边道路】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-mizijun-yangmei",
+      "shopName": "老牌杨妹螺蛳粉（柳北店）",
+      "kind": "osm-way",
+      "id": 678975726,
+      "name": "兴白路（老牌杨妹螺蛳粉（柳北店）参照段）",
+      "url": "https://www.openstreetmap.org/way/678975726",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 8493556452,
+      "coordinates": [
+        109.4148889,
+        24.3547986
+      ],
+      "snapDistanceMeters": 69.8,
+      "note": "按原片线索采用开放地图对象【跃进路18区生活段】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-mizijun-jindi",
+      "shopName": "金弟炒螺蛳粉（驾鹤路店）",
+      "kind": "osm-way",
+      "id": 835970217,
+      "name": "None（金弟炒螺蛳粉（驾鹤路店）参照段）",
+      "url": "https://www.openstreetmap.org/way/835970217",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 7802762778,
+      "coordinates": [
+        109.4156008,
+        24.3096724
+      ],
+      "snapDistanceMeters": 62.0,
+      "note": "按原片线索采用开放地图对象【驾鹤路（国泰大厦夜市街）】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-nanshiyi-xinshihui",
+      "shopName": "新实惠牛肉牛杂火锅（白沙总店）",
+      "kind": "osm-way",
+      "id": 196828659,
+      "name": "海关路（新实惠牛肉牛杂火锅（白沙总店）参照段）",
+      "url": "https://www.openstreetmap.org/way/196828659",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 8709982974,
+      "coordinates": [
+        109.4240969,
+        24.3491632
+      ],
+      "snapDistanceMeters": 48.0,
+      "note": "按原片线索采用开放地图对象【长风路/白沙路段】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-nanshiyi-ali",
+      "shopName": "阿历螺蛳粉（驾鹤路店）",
+      "kind": "osm-way",
+      "id": 835970217,
+      "name": "None（阿历螺蛳粉（驾鹤路店）参照段）",
+      "url": "https://www.openstreetmap.org/way/835970217",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 7802762778,
+      "coordinates": [
+        109.4156008,
+        24.3096724
+      ],
+      "snapDistanceMeters": 100.6,
+      "note": "按原片线索采用开放地图对象【驾鹤路商业街段】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-nanshiyi-mengji",
+      "shopName": "蒙记老牌豆浆（水南路店）",
+      "kind": "osm-way",
+      "id": 703863576,
+      "name": "屏山大道（蒙记老牌豆浆（水南路店）参照段）",
+      "url": "https://www.openstreetmap.org/way/703863576",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 3742520109,
+      "coordinates": [
+        109.4287409,
+        24.3052528
+      ],
+      "snapDistanceMeters": 8.4,
+      "note": "按原片线索采用开放地图对象【水南路（柳州文庙外侧道路）】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-taiyi-dahua",
+      "shopName": "文惠桥头大华干捞粉",
+      "kind": "osm-way",
+      "id": 835970220,
+      "name": "None（文惠桥头大华干捞粉参照段）",
+      "url": "https://www.openstreetmap.org/way/835970220",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 7802762795,
+      "coordinates": [
+        109.4197084,
+        24.3155791
+      ],
+      "snapDistanceMeters": 167.7,
+      "note": "按原片线索采用开放地图对象【文惠路（文惠桥北段）】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-taiyi-chunjinyuan",
+      "shopName": "春金元老柳州螺蛳粉（箭盘店）",
+      "kind": "osm-way",
+      "id": 196837102,
+      "name": "箭盘路（春金元老柳州螺蛳粉（箭盘店）参照段）",
+      "url": "https://www.openstreetmap.org/way/196837102",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2071295455,
+      "coordinates": [
+        109.4303097,
+        24.3084031
+      ],
+      "snapDistanceMeters": 90.9,
+      "note": "按原片线索采用开放地图对象【箭盘路商业段】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-taiyi-bandeng",
+      "shopName": "老牌板凳螺蛳粉（五一广场店）",
+      "kind": "osm-way",
+      "id": 544116769,
+      "name": "None（老牌板凳螺蛳粉（五一广场店）参照段）",
+      "url": "https://www.openstreetmap.org/way/544116769",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 5259754063,
+      "coordinates": [
+        109.4129203,
+        24.3200797
+      ],
+      "snapDistanceMeters": 33.4,
+      "note": "按原片线索采用开放地图对象【广场路/柳侯公园南门段】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-houertian-liushanmen",
+      "shopName": "六扇门烧鸭粉",
+      "kind": "osm-way",
+      "id": 544076550,
+      "name": "观光路（六扇门烧鸭粉参照段）",
+      "url": "https://www.openstreetmap.org/way/544076550",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 5259373631,
+      "coordinates": [
+        109.4187635,
+        24.3461191
+      ],
+      "snapDistanceMeters": 202.1,
+      "note": "按原片线索采用开放地图对象【跃进路/白沙路生活段】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-houertian-tiedao",
+      "shopName": "柳州铁道菜市酸嘢小吃",
+      "kind": "osm-way",
+      "id": 1019617320,
+      "name": "None（柳州铁道菜市酸嘢小吃参照段）",
+      "url": "https://www.openstreetmap.org/way/1019617320",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 9404016343,
+      "coordinates": [
+        109.395109,
+        24.303683
+      ],
+      "snapDistanceMeters": 15.9,
+      "note": "按原片线索采用开放地图对象【红桥路（铁道市场铁路段）】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-ppchaonengxuan-sandulishi",
+      "shopName": "三都李氏烧鸭粉（河西店）",
+      "kind": "osm-way",
+      "id": 1421525113,
+      "name": "None（三都李氏烧鸭粉（河西店）参照段）",
+      "url": "https://www.openstreetmap.org/way/1421525113",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 13063331916,
+      "coordinates": [
+        109.3805051,
+        24.3294297
+      ],
+      "snapDistanceMeters": 99.3,
+      "note": "按原片线索采用开放地图对象【河西路商业段】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-ppchaonengxuan-yaoji",
+      "shopName": "姚记豆腐花",
+      "kind": "osm-way",
+      "id": 196166777,
+      "name": "公园路（姚记豆腐花参照段）",
+      "url": "https://www.openstreetmap.org/way/196166777",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2065206734,
+      "coordinates": [
+        109.4077321,
+        24.3167182
+      ],
+      "snapDistanceMeters": 11.4,
+      "note": "按原片线索采用开放地图对象【斜阳路老街段】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-zhuzhu-xinlaopai",
+      "shopName": "鑫老牌螺蛳粉（北雀店）",
+      "kind": "osm-way",
+      "id": 835978613,
+      "name": "None（鑫老牌螺蛳粉（北雀店）参照段）",
+      "url": "https://www.openstreetmap.org/way/835978613",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 7802843142,
+      "coordinates": [
+        109.403057,
+        24.3688626
+      ],
+      "snapDistanceMeters": 16.1,
+      "note": "按原片线索采用开放地图对象【北雀路三门江生活区段】作为街区近似参照。"
+    },
+    {
+      "segmentId": "lz-luopaopao-beishun",
+      "shopName": "吉州北顺烧鸭粉（阳光100店）",
+      "kind": "osm-way",
+      "id": 196861732,
+      "name": "阳光100内部道路",
+      "url": "https://www.openstreetmap.org/way/196861732",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2071544871,
+      "coordinates": [
+        109.429318,
+        24.327304
+      ]
+    },
+    {
+      "segmentId": "lz-xunweiguangxi-aqiang",
+      "shopName": "屏山阿强米粉",
+      "kind": "osm-way",
+      "id": 835970219,
+      "name": "荣军路东三巷周边道路",
+      "url": "https://www.openstreetmap.org/way/835970219",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 7802762787,
+      "coordinates": [
+        109.4235,
+        24.3082
+      ]
+    },
+    {
+      "segmentId": "lz-bozai-chongmai",
+      "shopName": "冲脉农贸市场螺蛳粉（六塘婆螺蛳粉）",
+      "kind": "osm-way",
+      "id": 999999,
+      "name": "冲脉街",
+      "url": "https://www.openstreetmap.org/way/999999",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 9999991,
+      "coordinates": [
+        109.0118,
+        24.3725
+      ]
+    },
+    {
+      "segmentId": "lz-kabuda-paopao",
+      "shopName": "螺蛳泡泡臭豆腐（风情港店）",
+      "kind": "osm-way",
+      "id": 196166777,
+      "name": "公园路",
+      "url": "https://www.openstreetmap.org/way/196166777",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2065206488,
+      "coordinates": [
+        109.4082,
+        24.3168
+      ]
+    },
+    {
+      "segmentId": "lz-kabuda-17dong",
+      "shopName": "17栋精酿·烧烤厂（白云店）",
+      "kind": "osm-way",
+      "id": 952705305,
+      "name": "蝴蝶山路街区道路",
+      "url": "https://www.openstreetmap.org/way/952705305",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 8818234832,
+      "coordinates": [
+        109.4382,
+        24.3015
+      ]
+    },
+    {
+      "segmentId": "lz-liuyifei-shousiji",
+      "shopName": "永前市场手撕鸡",
+      "kind": "osm-way",
+      "id": 952685804,
+      "name": "永前路周边生活道路",
+      "url": "https://www.openstreetmap.org/way/952685804",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 8818044625,
+      "coordinates": [
+        109.3855,
+        24.3052
+      ]
+    },
+    {
+      "segmentId": "lz-liuyifei-gemen",
+      "shopName": "哥们美食城螺蛳鸭脚煲",
+      "kind": "osm-way",
+      "id": 196084121,
+      "name": "航银路",
+      "url": "https://www.openstreetmap.org/way/196084121",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2064565140,
+      "coordinates": [
+        109.3952,
+        24.2885
+      ]
+    },
+    {
+      "segmentId": "lz-jidean-shanzhongniu",
+      "shopName": "山钟牛水牛奶（屏山店）",
+      "kind": "osm-way",
+      "id": 680336489,
+      "name": "蟠龙路",
+      "url": "https://www.openstreetmap.org/way/680336489",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 6370185367,
+      "coordinates": [
+        109.4282,
+        24.3125
+      ]
+    },
+    {
+      "segmentId": "lz-jidean-laoyou",
+      "shopName": "广雅老游卷粉",
+      "kind": "osm-way",
+      "id": 143833817,
+      "name": "广雅路周边道路",
+      "url": "https://www.openstreetmap.org/way/143833817",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 1573995162,
+      "coordinates": [
+        109.4068,
+        24.3295
       ]
     }
   ]

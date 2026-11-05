@@ -114,18 +114,19 @@ async function main() {
       cityInfo.name === '柳州' && cityInfo.cityKey === 'liuzhou' && cityInfo.amapCityCode === '450200',
       { name: cityInfo.name, amapCityCode: cityInfo.amapCityCode }
     );
-    check('9 food records loaded across Liuzhou', cityInfo.recordCount === 9, cityInfo.records.length);
-    check('All 9 records have local MP4 clips and JPG posters', cityInfo.records.every(r => r.localClip && r.localPoster), cityInfo.records.length);
-    check('All 9 records have open OSM anchor references',
+    const EXPECTED_COUNT = 51;
+    check(`${EXPECTED_COUNT} food records loaded across Liuzhou`, cityInfo.recordCount === EXPECTED_COUNT, cityInfo.records.length);
+    check(`All ${EXPECTED_COUNT} records have local MP4 clips and JPG posters`, cityInfo.records.every(r => r.localClip && r.localPoster), cityInfo.records.length);
+    check(`All ${EXPECTED_COUNT} records have open OSM anchor references`,
       cityInfo.records.every(r => r.planningLocation?.anchor?.id && r.planningLocation?.anchor?.url?.startsWith('https://www.openstreetmap.org/')),
       cityInfo.records.map(r => r.planningLocation?.anchor?.name)
     );
 
-    const allCollapsedInitial = await p.evaluate(() => {
+    const allCollapsedInitial = await p.evaluate(cnt => {
       const cards = document.querySelectorAll('.food-card');
-      return cards.length === 9 && Array.from(cards).every(c => c.classList.contains('is-collapsed'));
-    });
-    check('All 9 food markers default to collapsed circular icon badges', allCollapsedInitial);
+      return cards.length === cnt && Array.from(cards).every(c => c.classList.contains('is-collapsed'));
+    }, EXPECTED_COUNT);
+    check(`All ${EXPECTED_COUNT} food markers default to collapsed circular icon badges`, allCollapsedInitial);
 
     const shot1 = path.join(screenshotsDir, 'liuzhou-food-overview.png');
     await p.screenshot({ path: shot1 });
@@ -147,7 +148,7 @@ async function main() {
       return card && !card.classList.contains('is-collapsed');
     }, cardSelector, { timeout: 5000 });
 
-    const cardExpanded = await p.evaluate(sel => {
+    const cardExpanded = await p.evaluate(([sel, exp]) => {
       const card = document.querySelector(sel);
       const closeBtn = card?.querySelector('.food-card-close');
       const otherCards = Array.from(document.querySelectorAll('.food-card')).filter(c => c !== card);
@@ -155,9 +156,9 @@ async function main() {
         isExpanded: card && !card.classList.contains('is-collapsed'),
         hasCloseButton: !!closeBtn,
         closeButtonVisible: closeBtn && getComputedStyle(closeBtn).display !== 'none',
-        otherCardsStayCollapsed: otherCards.length === 8 && otherCards.every(c => c.classList.contains('is-collapsed'))
+        otherCardsStayCollapsed: otherCards.length === (exp - 1) && otherCards.every(c => c.classList.contains('is-collapsed'))
       };
-    }, cardSelector);
+    }, [cardSelector, EXPECTED_COUNT]);
 
     check('Clicking circular badge expands ONLY that card into rectangle with "×" close button',
       cardExpanded.isExpanded && cardExpanded.hasCloseButton && cardExpanded.closeButtonVisible && cardExpanded.otherCardsStayCollapsed,
@@ -273,7 +274,7 @@ async function main() {
         phase: food.routePreview.phase
       };
     });
-    check('Direct distance mode active with 9 saved stops', directStatus.savedCount === 9 && directStatus.caption.includes('直线约'), directStatus);
+    check(`Direct distance mode active with ${EXPECTED_COUNT} saved stops`, directStatus.savedCount === EXPECTED_COUNT && directStatus.caption.includes('直线约'), directStatus);
 
     // Test distance badge zoom threshold
     await p.evaluate(() => window.foodCityMap.map.setZoom(15));
@@ -292,7 +293,7 @@ async function main() {
     });
     check('Distance badge smoothly appears when zoomed in (>= 16.5) at street level', badgesVisibleZoomedIn);
 
-    console.log('Switching to road distance mode with 9 stops...');
+    console.log(`Switching to road distance mode with ${EXPECTED_COUNT} stops...`);
     await p.evaluate(() => window.foodCityMap.food.setRouteMode('road'));
     await p.waitForFunction(() => {
       const preview = window.foodCityMap?.food?.routePreview;
@@ -312,11 +313,39 @@ async function main() {
       };
     });
 
-    check('Road mode computes connected route across Liuzhou with OSM road topology',
-      roadStatus9.phase === 'ready' && roadStatus9.caption.includes('沿路约'),
+    check('Road mode handles all saved stops with OSM road topology (displays partial disconnect truthfully)',
+      (roadStatus9.phase === 'ready' || roadStatus9.phase === 'partial') && (roadStatus9.caption.includes('沿路约') || roadStatus9.caption.includes('暂未连通')),
       roadStatus9
     );
-    check('Local storage keys isolated to Liuzhou', roadStatus9.localStorageMode === 'road' && roadStatus9.localStorageWants.length === 9, roadStatus9);
+    check('Local storage keys isolated to Liuzhou', roadStatus9.localStorageMode === 'road' && roadStatus9.localStorageWants.length === EXPECTED_COUNT, roadStatus9);
+
+    // Also verify a connected sequence computes full road distance
+    await p.evaluate(() => {
+      const food = window.foodCityMap.food;
+      food.saved = food.records.slice(0, 9).map(r => r.id);
+      food.persistSaved();
+      food.refreshSaved();
+      food.setRouteMode('road');
+    });
+    await p.waitForFunction(() => {
+      const preview = window.foodCityMap?.food?.routePreview;
+      return preview && preview.phase === 'ready';
+    }, undefined, { timeout: 15000 });
+    await settle(p);
+
+    const connectedStatus = await p.evaluate(() => {
+      const food = window.foodCityMap.food;
+      return {
+        routeMode: food.routeMode,
+        phase: food.routePreview.phase,
+        caption: document.getElementById('trip-dock-caption')?.textContent,
+        savedCount: food.saved.length
+      };
+    });
+    check('Connected sequence of stops computes exact road distance with "沿路约" badge',
+      connectedStatus.phase === 'ready' && connectedStatus.caption.includes('沿路约'),
+      connectedStatus
+    );
 
     const shot3 = path.join(screenshotsDir, 'liuzhou-road-distance.png');
     await p.screenshot({ path: shot3 });
@@ -354,7 +383,7 @@ async function main() {
       };
     });
     check('Mobile layout renders cards and trip dock without overflow',
-      mobileCheck.cardCount === 9 && mobileCheck.dockVisible && !mobileCheck.hasHorizontalOverflow,
+      mobileCheck.cardCount === EXPECTED_COUNT && mobileCheck.dockVisible && !mobileCheck.hasHorizontalOverflow,
       mobileCheck
     );
 
@@ -384,7 +413,7 @@ async function main() {
       };
     });
     check('Small screen (320px) renders cleanly without horizontal overflow',
-      smallCheck.cardCount === 9 && !smallCheck.hasHorizontalOverflow,
+      smallCheck.cardCount === EXPECTED_COUNT && !smallCheck.hasHorizontalOverflow,
       smallCheck
     );
 
