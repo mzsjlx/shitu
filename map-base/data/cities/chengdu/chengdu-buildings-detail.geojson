@@ -1,0 +1,1769 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-339-podium",
+        "name": "天府熊猫塔 · 欢乐颂商业裙楼",
+        "type": "landmark",
+        "height": 24,
+        "min_height": 0,
+        "color": "#e2dacf",
+        "flat_color": "#cfc6b6"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0919842,
+              30.6638895
+            ],
+            [
+              104.0928415,
+              30.6636598
+            ],
+            [
+              104.0930158,
+              30.6643105
+            ],
+            [
+              104.0921585,
+              30.6645402
+            ],
+            [
+              104.0919842,
+              30.6638895
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-339-shaft",
+        "name": "天府熊猫塔 · 挺拔塔身立柱",
+        "type": "landmark",
+        "height": 218,
+        "min_height": 24,
+        "color": "#ece8de",
+        "flat_color": "#cdc3b3"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0929351,
+              30.6642481
+            ],
+            [
+              104.0928559,
+              30.6643162
+            ],
+            [
+              104.0927441,
+              30.6643162
+            ],
+            [
+              104.0926649,
+              30.6642481
+            ],
+            [
+              104.0926649,
+              30.6641519
+            ],
+            [
+              104.0927441,
+              30.6640838
+            ],
+            [
+              104.0928559,
+              30.6640838
+            ],
+            [
+              104.0929351,
+              30.6641519
+            ],
+            [
+              104.0929351,
+              30.6642481
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-339-pod",
+        "name": "天府熊猫塔 · 观光旋转球舱",
+        "type": "landmark",
+        "height": 258,
+        "min_height": 218,
+        "color": "#f5f0e4",
+        "flat_color": "#cdc3b3"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0930315,
+              30.6642825
+            ],
+            [
+              104.0928959,
+              30.6643992
+            ],
+            [
+              104.0927041,
+              30.6643992
+            ],
+            [
+              104.0925685,
+              30.6642825
+            ],
+            [
+              104.0925685,
+              30.6641175
+            ],
+            [
+              104.0927041,
+              30.6640008
+            ],
+            [
+              104.0928959,
+              30.6640008
+            ],
+            [
+              104.0930315,
+              30.6641175
+            ],
+            [
+              104.0930315,
+              30.6642825
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-339-spire",
+        "name": "天府熊猫塔 · 广播电视发射尖顶",
+        "type": "landmark",
+        "height": 339,
+        "min_height": 258,
+        "color": "#fffdf8",
+        "flat_color": "#b8ac98"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0928338,
+              30.664212
+            ],
+            [
+              104.092814,
+              30.664229
+            ],
+            [
+              104.092786,
+              30.664229
+            ],
+            [
+              104.0927662,
+              30.664212
+            ],
+            [
+              104.0927662,
+              30.664188
+            ],
+            [
+              104.092786,
+              30.664171
+            ],
+            [
+              104.092814,
+              30.664171
+            ],
+            [
+              104.0928338,
+              30.664188
+            ],
+            [
+              104.0928338,
+              30.664212
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-ifs-podium",
+        "name": "成都 IFS 国际金融中心 · 商业裙楼",
+        "type": "landmark",
+        "height": 35,
+        "min_height": 0,
+        "color": "#e5ded1",
+        "flat_color": "#cec4b4"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0801171,
+              30.6549424
+            ],
+            [
+              104.0813579,
+              30.654768
+            ],
+            [
+              104.0814829,
+              30.6556576
+            ],
+            [
+              104.0802421,
+              30.655832
+            ],
+            [
+              104.0801171,
+              30.6549424
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-ifs-tower-1",
+        "name": "成都 IFS 国际金融中心 · 主塔 1 号楼",
+        "type": "landmark",
+        "height": 248,
+        "min_height": 35,
+        "color": "#eee8dc",
+        "flat_color": "#cec4b4"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0809237,
+              30.6555347
+            ],
+            [
+              104.08142,
+              30.655465
+            ],
+            [
+              104.0814763,
+              30.6558653
+            ],
+            [
+              104.08098,
+              30.655935
+            ],
+            [
+              104.0809237,
+              30.6555347
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-ifs-tower-2",
+        "name": "成都 IFS 国际金融中心 · 塔楼 2 号楼",
+        "type": "landmark",
+        "height": 210,
+        "min_height": 35,
+        "color": "#eae4d8",
+        "flat_color": "#cec4b4"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0800579,
+              30.6546526
+            ],
+            [
+              104.0804921,
+              30.6545916
+            ],
+            [
+              104.0805421,
+              30.6549474
+            ],
+            [
+              104.0801079,
+              30.6550084
+            ],
+            [
+              104.0800579,
+              30.6546526
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-ifs-panda-head",
+        "name": "IFS 爬墙大熊猫雕塑 · 攀爬头部与前爪",
+        "type": "landmark",
+        "height": 48,
+        "min_height": 35,
+        "color": "#2c2a29",
+        "flat_color": "#2c2a29"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0801233,
+              30.6554217
+            ],
+            [
+              104.0802267,
+              30.6554072
+            ],
+            [
+              104.0802367,
+              30.6554783
+            ],
+            [
+              104.0801333,
+              30.6554928
+            ],
+            [
+              104.0801233,
+              30.6554217
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-ifs-panda-body",
+        "name": "IFS 爬墙大熊猫雕塑 · 圆润雪白背身",
+        "type": "landmark",
+        "height": 45,
+        "min_height": 35,
+        "color": "#faf8f5",
+        "flat_color": "#faf8f5"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0802317,
+              30.6553942
+            ],
+            [
+              104.0803558,
+              30.6553768
+            ],
+            [
+              104.0803683,
+              30.6554658
+            ],
+            [
+              104.0802442,
+              30.6554832
+            ],
+            [
+              104.0802317,
+              30.6553942
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-daci-1",
+        "name": "大慈古寺 · 天王殿（红墙青瓦）",
+        "type": "heritage",
+        "height": 11,
+        "min_height": 0,
+        "color": "#993a2c",
+        "flat_color": "#993a2c"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0823233,
+              30.6541432
+            ],
+            [
+              104.0826542,
+              30.6540967
+            ],
+            [
+              104.0826767,
+              30.6542568
+            ],
+            [
+              104.0823458,
+              30.6543033
+            ],
+            [
+              104.0823233,
+              30.6541432
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-daci-2",
+        "name": "大慈古寺 · 大雄宝殿（飞檐重楼）",
+        "type": "heritage",
+        "height": 16,
+        "min_height": 0,
+        "color": "#8c3225",
+        "flat_color": "#8c3225"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0824769,
+              30.6546134
+            ],
+            [
+              104.0828906,
+              30.6545553
+            ],
+            [
+              104.0829231,
+              30.6547866
+            ],
+            [
+              104.0825094,
+              30.6548447
+            ],
+            [
+              104.0824769,
+              30.6546134
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-daci-3",
+        "name": "大慈古寺 · 藏经楼",
+        "type": "heritage",
+        "height": 18,
+        "min_height": 0,
+        "color": "#852e22",
+        "flat_color": "#852e22"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0827001,
+              30.6551283
+            ],
+            [
+              104.0830724,
+              30.655076
+            ],
+            [
+              104.0830999,
+              30.6552717
+            ],
+            [
+              104.0827276,
+              30.655324
+            ],
+            [
+              104.0827001,
+              30.6551283
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-daci-4",
+        "name": "大慈古寺 · 西配殿廊庑",
+        "type": "heritage",
+        "height": 10,
+        "min_height": 0,
+        "color": "#993a2c",
+        "flat_color": "#993a2c"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0819788,
+              30.6545129
+            ],
+            [
+              104.0821649,
+              30.6544868
+            ],
+            [
+              104.0822212,
+              30.6548871
+            ],
+            [
+              104.0820351,
+              30.6549132
+            ],
+            [
+              104.0819788,
+              30.6545129
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-daci-5",
+        "name": "大慈古寺 · 东配殿廊庑",
+        "type": "heritage",
+        "height": 10,
+        "min_height": 0,
+        "color": "#993a2c",
+        "flat_color": "#993a2c"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0831788,
+              30.6545129
+            ],
+            [
+              104.0833649,
+              30.6544868
+            ],
+            [
+              104.0834212,
+              30.6548871
+            ],
+            [
+              104.0832351,
+              30.6549132
+            ],
+            [
+              104.0831788,
+              30.6545129
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-taikoo-1",
+        "name": "太古里 · 南里精品院落 A 区",
+        "type": "commercial",
+        "height": 12,
+        "min_height": 0,
+        "color": "#746453",
+        "flat_color": "#746453"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0815498,
+              30.6537082
+            ],
+            [
+              104.0820152,
+              30.6536428
+            ],
+            [
+              104.0820502,
+              30.6538918
+            ],
+            [
+              104.0815848,
+              30.6539572
+            ],
+            [
+              104.0815498,
+              30.6537082
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-taikoo-2",
+        "name": "太古里 · 慢里慢調风情商肆 B 区",
+        "type": "commercial",
+        "height": 13,
+        "min_height": 0,
+        "color": "#847361",
+        "flat_color": "#847361"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0832227,
+              30.6535029
+            ],
+            [
+              104.0837398,
+              30.6534302
+            ],
+            [
+              104.0837773,
+              30.6536971
+            ],
+            [
+              104.0832602,
+              30.6537698
+            ],
+            [
+              104.0832227,
+              30.6535029
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-taikoo-3",
+        "name": "太古里 · 锦里穿斗式特色廊坊",
+        "type": "commercial",
+        "height": 11,
+        "min_height": 0,
+        "color": "#6f5e4d",
+        "flat_color": "#6f5e4d"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0835666,
+              30.6542149
+            ],
+            [
+              104.0840009,
+              30.6541538
+            ],
+            [
+              104.0840334,
+              30.6543851
+            ],
+            [
+              104.0835991,
+              30.6544462
+            ],
+            [
+              104.0835666,
+              30.6542149
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-taikoo-4",
+        "name": "太古里 · 东里时尚街坊 C 区",
+        "type": "commercial",
+        "height": 12,
+        "min_height": 0,
+        "color": "#7d6c5a",
+        "flat_color": "#7d6c5a"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.083655,
+              30.6550074
+            ],
+            [
+              104.08411,
+              30.6549435
+            ],
+            [
+              104.084145,
+              30.6551926
+            ],
+            [
+              104.08369,
+              30.6552565
+            ],
+            [
+              104.083655,
+              30.6550074
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-taikoo-5",
+        "name": "太古里 · 快里沿街潮牌坊 D 区",
+        "type": "commercial",
+        "height": 11,
+        "min_height": 0,
+        "color": "#867563",
+        "flat_color": "#867563"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0818362,
+              30.6557237
+            ],
+            [
+              104.0823325,
+              30.6556539
+            ],
+            [
+              104.0823638,
+              30.6558763
+            ],
+            [
+              104.0818675,
+              30.6559461
+            ],
+            [
+              104.0818362,
+              30.6557237
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-taikoo-6",
+        "name": "太古里 · 北里川西民居院落群 E 区",
+        "type": "commercial",
+        "height": 14,
+        "min_height": 0,
+        "color": "#726150",
+        "flat_color": "#726150"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0829137,
+              30.6559132
+            ],
+            [
+              104.0834513,
+              30.6558377
+            ],
+            [
+              104.0834863,
+              30.6560868
+            ],
+            [
+              104.0829487,
+              30.6561623
+            ],
+            [
+              104.0829137,
+              30.6559132
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-taikoo-7",
+        "name": "太古里 · 广东会馆与古建筑活化坊",
+        "type": "commercial",
+        "height": 12,
+        "min_height": 0,
+        "color": "#806f5d",
+        "flat_color": "#806f5d"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0838885,
+              30.6558209
+            ],
+            [
+              104.0842815,
+              30.6557656
+            ],
+            [
+              104.0843115,
+              30.6559791
+            ],
+            [
+              104.0839185,
+              30.6560344
+            ],
+            [
+              104.0838885,
+              30.6558209
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-chunxi-1",
+        "name": "春熙路百盛与商业步行街商场",
+        "type": "commercial",
+        "height": 48,
+        "min_height": 0,
+        "color": "#e6e0d4",
+        "flat_color": "#e6e0d4"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0749606,
+              30.6585979
+            ],
+            [
+              104.0756394,
+              30.6585979
+            ],
+            [
+              104.0756394,
+              30.6590021
+            ],
+            [
+              104.0749606,
+              30.6590021
+            ],
+            [
+              104.0749606,
+              30.6585979
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-chunxi-2",
+        "name": "群光广场百货大厦",
+        "type": "commercial",
+        "height": 68,
+        "min_height": 0,
+        "color": "#eae4d8",
+        "flat_color": "#eae4d8"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0764806,
+              30.6572065
+            ],
+            [
+              104.0772005,
+              30.6573334
+            ],
+            [
+              104.0771194,
+              30.6577935
+            ],
+            [
+              104.0763995,
+              30.6576666
+            ],
+            [
+              104.0764806,
+              30.6572065
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-chunxi-3",
+        "name": "银石广场超高层",
+        "type": "commercial",
+        "height": 88,
+        "min_height": 0,
+        "color": "#eee8dc",
+        "flat_color": "#eee8dc"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0784906,
+              30.654062
+            ],
+            [
+              104.0790594,
+              30.6539821
+            ],
+            [
+              104.0791094,
+              30.654338
+            ],
+            [
+              104.0785406,
+              30.6544179
+            ],
+            [
+              104.0784906,
+              30.654062
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-chunxi-4",
+        "name": "春熙路北段中华老字号连排商肆",
+        "type": "commercial",
+        "height": 18,
+        "min_height": 0,
+        "color": "#dfd8cb",
+        "flat_color": "#dfd8cb"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0741972,
+              30.6593832
+            ],
+            [
+              104.0748028,
+              30.6593832
+            ],
+            [
+              104.0748028,
+              30.6596168
+            ],
+            [
+              104.0741972,
+              30.6596168
+            ],
+            [
+              104.0741972,
+              30.6593832
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-chunxi-5",
+        "name": "春熙路南段特色小吃连排坊",
+        "type": "commercial",
+        "height": 18,
+        "min_height": 0,
+        "color": "#dfd8cb",
+        "flat_color": "#dfd8cb"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0744867,
+              30.6576922
+            ],
+            [
+              104.0751133,
+              30.6576922
+            ],
+            [
+              104.0751133,
+              30.6579078
+            ],
+            [
+              104.0744867,
+              30.6579078
+            ],
+            [
+              104.0744867,
+              30.6576922
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-kz-1",
+        "name": "宽巷子清代四合院落群 A",
+        "type": "heritage",
+        "height": 9,
+        "min_height": 0,
+        "color": "#76695b",
+        "flat_color": "#76695b"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0529753,
+              30.6670721
+            ],
+            [
+              104.0534434,
+              30.6671131
+            ],
+            [
+              104.0534247,
+              30.6673279
+            ],
+            [
+              104.0529566,
+              30.6672869
+            ],
+            [
+              104.0529753,
+              30.6670721
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-kz-2",
+        "name": "宽巷子传统青砖重檐门楼 B",
+        "type": "heritage",
+        "height": 10,
+        "min_height": 0,
+        "color": "#85786a",
+        "flat_color": "#85786a"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0538601,
+              30.6671663
+            ],
+            [
+              104.0543594,
+              30.66721
+            ],
+            [
+              104.0543399,
+              30.6674337
+            ],
+            [
+              104.0538406,
+              30.66739
+            ],
+            [
+              104.0538601,
+              30.6671663
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-kz-3",
+        "name": "窄巷子西式洋楼与川西四合院",
+        "type": "heritage",
+        "height": 9,
+        "min_height": 0,
+        "color": "#726557",
+        "flat_color": "#726557"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0528694,
+              30.6664806
+            ],
+            [
+              104.0533479,
+              30.6665225
+            ],
+            [
+              104.0533306,
+              30.6667194
+            ],
+            [
+              104.0528521,
+              30.6666775
+            ],
+            [
+              104.0528694,
+              30.6664806
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-kz-4",
+        "name": "窄巷子川西青瓦老宅特色坊",
+        "type": "heritage",
+        "height": 10,
+        "min_height": 0,
+        "color": "#807365",
+        "flat_color": "#807365"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0537493,
+              30.6665699
+            ],
+            [
+              104.0542694,
+              30.6666154
+            ],
+            [
+              104.0542507,
+              30.6668301
+            ],
+            [
+              104.0537306,
+              30.6667846
+            ],
+            [
+              104.0537493,
+              30.6665699
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-kz-5",
+        "name": "井巷子民俗风情水井坊与砖墙",
+        "type": "heritage",
+        "height": 8,
+        "min_height": 0,
+        "color": "#7a6d5f",
+        "flat_color": "#7a6d5f"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0527382,
+              30.6658779
+            ],
+            [
+              104.0532791,
+              30.6659252
+            ],
+            [
+              104.0532618,
+              30.6661221
+            ],
+            [
+              104.0527209,
+              30.6660748
+            ],
+            [
+              104.0527382,
+              30.6658779
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-kz-6",
+        "name": "奎星楼街特色串串小吃骑楼坊",
+        "type": "heritage",
+        "height": 15,
+        "min_height": 0,
+        "color": "#ded7c8",
+        "flat_color": "#ded7c8"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0538867,
+              30.6684102
+            ],
+            [
+              104.0545133,
+              30.6684102
+            ],
+            [
+              104.0545133,
+              30.6685898
+            ],
+            [
+              104.0538867,
+              30.6685898
+            ],
+            [
+              104.0538867,
+              30.6684102
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-kz-7",
+        "name": "奎星楼路网红创意美食街坊",
+        "type": "heritage",
+        "height": 16,
+        "min_height": 0,
+        "color": "#e3dcd0",
+        "flat_color": "#e3dcd0"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0550128,
+              30.6684012
+            ],
+            [
+              104.0555872,
+              30.6684012
+            ],
+            [
+              104.0555872,
+              30.6685988
+            ],
+            [
+              104.0550128,
+              30.6685988
+            ],
+            [
+              104.0550128,
+              30.6684012
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-wp-1",
+        "name": "望平街滨河亲水漫步商廊 A",
+        "type": "commercial",
+        "height": 12,
+        "min_height": 0,
+        "color": "#dfd6c6",
+        "flat_color": "#dfd6c6"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0883739,
+              30.6583054
+            ],
+            [
+              104.0888944,
+              30.6585481
+            ],
+            [
+              104.0888261,
+              30.6586946
+            ],
+            [
+              104.0883056,
+              30.6584519
+            ],
+            [
+              104.0883739,
+              30.6583054
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-wp-2",
+        "name": "望平街特色甜品咖啡与川菜坊",
+        "type": "commercial",
+        "height": 14,
+        "min_height": 0,
+        "color": "#e5ded1",
+        "flat_color": "#e5ded1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0891854,
+              30.6600263
+            ],
+            [
+              104.089676,
+              30.6602049
+            ],
+            [
+              104.0896146,
+              30.6603737
+            ],
+            [
+              104.089124,
+              30.6601951
+            ],
+            [
+              104.0891854,
+              30.6600263
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-wp-3",
+        "name": "猛追湾市民休闲风情商业街",
+        "type": "commercial",
+        "height": 15,
+        "min_height": 0,
+        "color": "#ded7c8",
+        "flat_color": "#ded7c8"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0901978,
+              30.6620167
+            ],
+            [
+              104.0908534,
+              30.6621924
+            ],
+            [
+              104.0908022,
+              30.6623833
+            ],
+            [
+              104.0901466,
+              30.6622076
+            ],
+            [
+              104.0901978,
+              30.6620167
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-wp-4",
+        "name": "望平沿河老成都生活居民综合楼",
+        "type": "commercial",
+        "height": 18,
+        "min_height": 0,
+        "color": "#e2dbc9",
+        "flat_color": "#e2dbc9"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0895849,
+              30.6572461
+            ],
+            [
+              104.0901274,
+              30.6575594
+            ],
+            [
+              104.0900151,
+              30.6577539
+            ],
+            [
+              104.0894726,
+              30.6574406
+            ],
+            [
+              104.0895849,
+              30.6572461
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-yulin-1",
+        "name": "玉林西路特色小酒馆沿街坊",
+        "type": "residential",
+        "height": 20,
+        "min_height": 0,
+        "color": "#e3dcd0",
+        "flat_color": "#e3dcd0"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0588606,
+              30.6317832
+            ],
+            [
+              104.0595394,
+              30.6317832
+            ],
+            [
+              104.0595394,
+              30.6320168
+            ],
+            [
+              104.0588606,
+              30.6320168
+            ],
+            [
+              104.0588606,
+              30.6317832
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-yulin-2",
+        "name": "玉林西路串串香与传统川味排楼",
+        "type": "residential",
+        "height": 19,
+        "min_height": 0,
+        "color": "#ded6c8",
+        "flat_color": "#ded6c8"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0606867,
+              30.6318922
+            ],
+            [
+              104.0613133,
+              30.6318922
+            ],
+            [
+              104.0613133,
+              30.6321078
+            ],
+            [
+              104.0606867,
+              30.6321078
+            ],
+            [
+              104.0606867,
+              30.6318922
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-yulin-3",
+        "name": "玉林中路生活区综合商住坊",
+        "type": "residential",
+        "height": 21,
+        "min_height": 0,
+        "color": "#e5ded1",
+        "flat_color": "#e5ded1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0624345,
+              30.6319742
+            ],
+            [
+              104.0631655,
+              30.6319742
+            ],
+            [
+              104.0631655,
+              30.6322258
+            ],
+            [
+              104.0624345,
+              30.6322258
+            ],
+            [
+              104.0624345,
+              30.6319742
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-yulin-4",
+        "name": "玉林南路温馨市井居民楼坊",
+        "type": "residential",
+        "height": 22,
+        "min_height": 0,
+        "color": "#e0d9cb",
+        "flat_color": "#e0d9cb"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0602128,
+              30.6306428
+            ],
+            [
+              104.0607872,
+              30.6306428
+            ],
+            [
+              104.0607872,
+              30.6309572
+            ],
+            [
+              104.0602128,
+              30.6309572
+            ],
+            [
+              104.0602128,
+              30.6306428
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-jianshe-1",
+        "name": "建设巷万人夜市核心小吃排坊 A",
+        "type": "commercial",
+        "height": 22,
+        "min_height": 0,
+        "color": "#e4ded1",
+        "flat_color": "#e4ded1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.1107894,
+              30.6724264
+            ],
+            [
+              104.1115607,
+              30.6722905
+            ],
+            [
+              104.1116106,
+              30.6725736
+            ],
+            [
+              104.1108393,
+              30.6727095
+            ],
+            [
+              104.1107894,
+              30.6724264
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-jianshe-2",
+        "name": "建设路电子科技大学商业坊 B",
+        "type": "commercial",
+        "height": 20,
+        "min_height": 0,
+        "color": "#ded7c9",
+        "flat_color": "#ded7c9"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.1121285,
+              30.6721378
+            ],
+            [
+              104.1128278,
+              30.6720145
+            ],
+            [
+              104.1128715,
+              30.6722622
+            ],
+            [
+              104.1121722,
+              30.6723855
+            ],
+            [
+              104.1121285,
+              30.6721378
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd-bldg-jianshe-3",
+        "name": "第五大道综合美食商业楼",
+        "type": "commercial",
+        "height": 24,
+        "min_height": 0,
+        "color": "#e8e2d5",
+        "flat_color": "#e8e2d5"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.1098681,
+              30.6729217
+            ],
+            [
+              104.1104851,
+              30.6728129
+            ],
+            [
+              104.1105319,
+              30.6730783
+            ],
+            [
+              104.1099149,
+              30.6731871
+            ],
+            [
+              104.1098681,
+              30.6729217
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

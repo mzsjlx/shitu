@@ -1,0 +1,87 @@
+{
+  "verifiedOn": "2026-11-05T13:59:58.688Z",
+  "city": "chengdu",
+  "checks": [
+    {
+      "name": "Chengdu city identified correctly with name \"成都\"",
+      "passed": true,
+      "detail": "成都"
+    },
+    {
+      "name": "Chengdu amapCityCode is 510100",
+      "passed": true,
+      "detail": "510100"
+    },
+    {
+      "name": "Chengdu bounds configured around central 5 districts",
+      "passed": true,
+      "detail": [
+        104.01,
+        30.6,
+        104.15,
+        30.72
+      ]
+    },
+    {
+      "name": "Initial camera centered on Chunxi / Taikoo Li",
+      "passed": true,
+      "detail": [
+        104.0815,
+        30.655
+      ]
+    },
+    {
+      "name": "buildings-detail-3d layer loaded into map style",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "buildings-3d generic height inference layer present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Landmark view captured: 3d-339-panda-tower",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Landmark view captured: 3d-ifs-panda-taikooli",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Landmark view captured: 3d-kuanzhai-alleys",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Landmark view captured: 3d-yulin-neighborhood",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Switching to 2D view hides 3D extrusion layers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Switching back to 3D view restores 3D extrusion layers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Chongqing city loads cleanly without Chengdu pollution",
+      "passed": true,
+      "detail": "重庆"
+    },
+    {
+      "name": "Liuzhou city loads cleanly without Chengdu pollution",
+      "passed": true,
+      "detail": "柳州"
+    }
+  ],
+  "total": 14,
+  "passed": 14,
+  "failed": 0
+}

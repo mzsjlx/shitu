@@ -133,6 +133,45 @@
         "tileMetadata": "data/liuzhou-tile-metadata.json"
       },
       "status": "local-validation-only"
+    },
+    "chengdu": {
+      "name": "成都",
+      "regionLabel": "中心城区 · 核心五城区",
+      "coverageLabel": "春熙路、太古里、大慈寺、望平街天府熊猫塔、宽窄巷子、建设路至玉林街区",
+      "bounds": [
+        104.01,
+        30.60,
+        104.15,
+        30.72
+      ],
+      "center": [
+        104.0815,
+        30.6550
+      ],
+      "zoom": 15.6,
+      "pitch": 52,
+      "bearing": -18,
+      "minZoom": 12.0,
+      "maxZoom": 19,
+      "tiles": "data/cities/chengdu/chengdu.pmtiles",
+      "amapCityCode": "510100",
+      "landmarks": [],
+      "buildingsDetail": "data/cities/chengdu/chengdu-buildings-detail.geojson",
+      "foodContent": {
+        "city": "chengdu",
+        "records": "data/cities/chengdu/food-records.json",
+        "sprite": "assets/food-concepts.jpg",
+        "videoLibrary": "data/cities/chengdu/video-library.json",
+        "videoAssets": "data/cities/chengdu/video-library-assets.json",
+        "roadNetwork": "data/cities/chengdu/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/chengdu/roads-index.json",
+        "audit": "data/cities/chengdu/data-audit.json",
+        "manifest": "data/cities/chengdu/source-manifest.json",
+        "tileMetadata": "data/cities/chengdu/tile-metadata.json"
+      },
+      "status": "local-validation-only"
     }
   }
 }
