@@ -43,6 +43,8 @@ function layersVisible() {
   streets?.setLabels(state.labels);
   map.setLayoutProperty('buildings-3d','visibility',state.threeD&&state.buildings?'visible':'none');
   map.setLayoutProperty('buildings-flat','visibility',state.threeD&&state.buildings?'none':'visible');
+  if(map.getLayer('buildings-detail-3d'))map.setLayoutProperty('buildings-detail-3d','visibility',state.threeD&&state.buildings?'visible':'none');
+  if(map.getLayer('buildings-detail-flat'))map.setLayoutProperty('buildings-detail-flat','visibility',state.threeD&&state.buildings?'none':(state.buildings?'visible':'none'));
   if(map.getLayer('places'))map.setLayoutProperty('places','visibility',landmarkFocus?'none':'visible');
   if(map.getLayer('poi-landmarks'))map.setLayoutProperty('poi-landmarks','visibility',state.pois&&!landmarkFocus?'visible':'none');
   landmark?.setAppearance(state.threeD&&state.buildings&&!streets?.active);
@@ -447,7 +449,7 @@ async function init() {
     protocol.add(new PMTiles({getKey:()=>tileURL,getBytes:async(offset,length)=>({data:bytes.slice(offset,offset+length).buffer})}));
   }
   map=new maplibregl.Map({
-    container:'map',style:makeStyle(city,tileURL),center:city.center,zoom:city.zoom,
+    container:'map',style:makeStyle(city,tileURL,bundle),center:city.center,zoom:city.zoom,
     pitch:city.pitch,bearing:city.bearing,minZoom:city.minZoom,maxZoom:city.maxZoom,maxPitch:85,
     maxBounds:[[city.bounds[0],city.bounds[1]],[city.bounds[2],city.bounds[3]]],
     canvasContextAttributes:{antialias:true},

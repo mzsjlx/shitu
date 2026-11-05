@@ -7,7 +7,7 @@ const width = (stops) => ['interpolate', ['exponential', 1.45], ['zoom'], ...sto
 const namedRoad = ['all', line, ['!=', roadName, '']];
 const font = ['sans-serif'];
 
-export function makeStyle(city, tilesURL) {
+export function makeStyle(city, tilesURL, bundle) {
   const sources = {
     city: {
       type: 'vector',
@@ -15,6 +15,13 @@ export function makeStyle(city, tilesURL) {
       attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · <a href="https://protomaps.com/" target="_blank" rel="noreferrer">Protomaps</a>'
     }
   };
+  if (city.buildingsDetail) {
+    const detailData = bundle?.json?.[city.buildingsDetail] || new URL(city.buildingsDetail, location.href).href;
+    sources['buildings-detail'] = {
+      type: 'geojson',
+      data: detailData
+    };
+  }
   if (city.demTiles) {
     const demURL = new URL(city.demTiles, location.href).href.replaceAll('%7B', '{').replaceAll('%7D', '}');
     const b = city.bounds;
@@ -40,6 +47,17 @@ export function makeStyle(city, tilesURL) {
     {id:'water-lines',type:'line',source:'city','source-layer':'water',filter:line,paint:{'line-color':'#91b9b3','line-width':width([11,.5,16,3,19,10])}},
     ...(city.demTiles ? [{id:'hill-shade',type:'hillshade',source:'dem-shade',paint:{'hillshade-exaggeration':.18,'hillshade-shadow-color':'#7b846e','hillshade-highlight-color':'#fff8e9','hillshade-accent-color':'#a5ac93','hillshade-illumination-direction':310}}] : []),
     {id:'buildings-flat',type:'fill',source:'city','source-layer':'buildings',minzoom:13,filter:['==',['geometry-type'],'Polygon'],paint:{'fill-color':'#d5cebf','fill-outline-color':'#c6beaf','fill-opacity':.72}},
+    ...(city.buildingsDetail ? [{
+      id: 'buildings-detail-flat',
+      type: 'fill',
+      source: 'buildings-detail',
+      minzoom: 12,
+      paint: {
+        'fill-color': ['coalesce', ['get', 'flat_color'], ['get', 'color'], '#d0c8b8'],
+        'fill-outline-color': '#beaf9c',
+        'fill-opacity': 0.76
+      }
+    }] : []),
   ];
   const classes = [
     {name:'paths',test:['==',kind,'path'],minzoom:14,w:[13,.4,16,1.5,19,4],color:'#c5bbaa'},
@@ -60,12 +78,45 @@ export function makeStyle(city, tilesURL) {
     {id:'bridge-edges',type:'line',source:'city','source-layer':'roads',minzoom:12,filter:['all',line,['==',['get','is_bridge'],true],['in',kind,['literal',['major_road','minor_road','highway']]]],layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#a9a998','line-width':width([12,1.4,15,5,18,16,20,32])}},
     {id:'bridge-roads',type:'line',source:'city','source-layer':'roads',minzoom:12,filter:['all',line,['==',['get','is_bridge'],true],['in',kind,['literal',['major_road','minor_road','highway']]]],layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#f5ecdc','line-width':width([12,.8,15,3.5,18,12,20,27])}},
     {id:'buildings-3d',type:'fill-extrusion',source:'city','source-layer':'buildings',minzoom:13,filter:['all',['==',['geometry-type'],'Polygon'],['in',kind,['literal',['building','building_part']]]],paint:{
-      'fill-extrusion-color':['step',['coalesce',['get','height'],9],'#dddcd2',18,'#e8e5dc',55,'#f0ede6',140,'#f5f1e8'],
-      'fill-extrusion-height':['case',['>', ['coalesce',['get','height'],0],0],['min',500,['get','height']],['+',9,['coalesce',['get','min_height'],0]]],
+      'fill-extrusion-color':['step',
+        ['coalesce',['get','height'],15],
+        '#dad5c8', 16, '#e4dfd3', 25, '#ece7dc', 60, '#f2eee5', 140, '#f9f6ef'
+      ],
+      'fill-extrusion-height':[
+        'case',
+        ['>', ['coalesce',['get','height'],0],0],
+        ['min',500,['get','height']],
+        ['+',
+          ['match', detail,
+            ['mall', 'commercial', 'retail', 'department_store'], 28,
+            ['office', 'hotel'], 36,
+            ['apartments', 'residential'], 22,
+            ['school', 'kindergarten', 'hospital', 'civic'], 18,
+            ['case',
+              ['>', ['coalesce', ['get', 'sort_rank'], 400], 420], 25,
+              15
+            ]
+          ],
+          ['coalesce',['get','min_height'],0]
+        ]
+      ],
       'fill-extrusion-base':['max',0,['coalesce',['get','min_height'],0]],
       'fill-extrusion-opacity':1,
       'fill-extrusion-vertical-gradient':true
     }},
+    ...(city.buildingsDetail ? [{
+      id: 'buildings-detail-3d',
+      type: 'fill-extrusion',
+      source: 'buildings-detail',
+      minzoom: 12,
+      paint: {
+        'fill-extrusion-color': ['coalesce', ['get', 'color'], '#ece7dc'],
+        'fill-extrusion-height': ['coalesce', ['get', 'height'], 15],
+        'fill-extrusion-base': ['coalesce', ['get', 'min_height'], 0],
+        'fill-extrusion-opacity': 1,
+        'fill-extrusion-vertical-gradient': true
+      }
+    }] : []),
     {id:'selected-road-edge',type:'line',source:'city','source-layer':'roads',filter:['==',roadName,'__none__'],layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#fffaf2','line-width':width([12,5,16,11,19,25]),'line-opacity':.95}},
     {id:'selected-road',type:'line',source:'city','source-layer':'roads',filter:['==',roadName,'__none__'],layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#f47653','line-width':width([12,2,16,5,19,12])}},
     {id:'road-labels-major',type:'symbol',source:'city','source-layer':'roads',minzoom:13,filter:['all',namedRoad,['in',kind,['literal',['major_road','highway']]]],layout:{'symbol-placement':'line','symbol-spacing':320,'text-field':roadName,'text-font':font,'text-size':width([13,10,16,12.5,19,15]),'text-max-angle':35,'text-letter-spacing':.06,'text-padding':7},paint:{'text-color':'#736c60','text-halo-color':'#fffaf0','text-halo-width':1.8,'text-halo-blur':.7}},
@@ -128,7 +179,7 @@ export function makeStyle(city, tilesURL) {
     name:'食途 · 山城暖白',
     metadata:{owner:'FoodCity',geographicData:'Protomaps / OpenStreetMap',mapType:'self-hosted local validation'},
     sources,
-    light:{anchor:'map',color:'#fff6e6',intensity:.34,position:[1.3,315,45]},
+    light:{anchor:'map',color:'#fff5e4',intensity:.42,position:[1.35,315,42]},
     layers
   };
 }
