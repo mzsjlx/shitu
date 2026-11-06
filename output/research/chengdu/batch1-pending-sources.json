@@ -1,0 +1,90 @@
+{
+  "batchNote": "成都第一批 6 条探店视频 — 2026-11-06 建档",
+  "city": "chengdu",
+  "createdOn": "2026-11-06",
+  "acquisitionBlocker": "cookies.txt 已过期，需刷新后下载",
+  "ffmpegPath": "D:\\trae安装\\Trae CN\\resources\\app\\bin\\ffmpeg.exe",
+  "pendingSources": [
+    {
+      "id": "cd-ohyixi-7697573355297230080",
+      "author": "哦一西cc",
+      "title": "在四川成都48小时极限打卡22家店和3个景点",
+      "url": "https://www.douyin.com/video/7697573355297230080",
+      "shareURL": "https://v.douyin.com/Y5jw7v5rpsE/",
+      "platform": "douyin",
+      "publishedOnEstimate": "2026-11-04",
+      "publishedOnNote": "从分享文本04/11推算，待原页核实",
+      "estimatedShops": 22,
+      "acquisitionStatus": "pending",
+      "intakeDir": ".local/video-intake/cd-ohyixi-7697573355297230080/"
+    },
+    {
+      "id": "cd-pangshi-7645208472996950386",
+      "author": "庞师不是师",
+      "title": "本地人深挖成都头牌苍蝇馆子，家家都是夯爆的民间美食",
+      "url": "https://www.douyin.com/video/7645208472996950386",
+      "shareURL": "https://v.douyin.com/ZcEhKguCj3Y/",
+      "platform": "douyin",
+      "publishedOnEstimate": "2026-09-20",
+      "publishedOnNote": "从分享文本09/20推算，待核实",
+      "acquisitionStatus": "pending",
+      "intakeDir": ".local/video-intake/cd-pangshi-7645208472996950386/"
+    },
+    {
+      "id": "cd-tiaojie-7546207360981749033",
+      "author": "挑姐耍成都",
+      "title": "来成都怎么吃才算不白来！史上坠全的成都必吃美食",
+      "url": "https://www.douyin.com/video/7546207360981749033",
+      "shareURL": "https://v.douyin.com/KCV7S3bX5Xk/",
+      "platform": "douyin",
+      "publishedOnEstimate": "2026-08-30",
+      "publishedOnNote": "从分享文本08/30推算，待核实",
+      "acquisitionStatus": "pending",
+      "intakeDir": ".local/video-intake/cd-tiaojie-7546207360981749033/"
+    },
+    {
+      "id": "cd-xiaojunmao-7553603939585903882",
+      "author": "小君毛吃东西",
+      "title": "国庆爽吃成都懒人攻略：早饭到夜宵全土著认证老店",
+      "url": "https://www.douyin.com/video/7553603939585903882",
+      "shareURL": "https://v.douyin.com/CJu5PtLuR60/",
+      "platform": "douyin",
+      "publishedOnEstimate": "2026-07-23",
+      "publishedOnNote": "从分享文本07/23推算，待核实",
+      "acquisitionStatus": "pending",
+      "intakeDir": ".local/video-intake/cd-xiaojunmao-7553603939585903882/"
+    },
+    {
+      "id": "cd-chiyou-6839997190845287692",
+      "author": "吃游小分队木木酱",
+      "title": "成都苍蝇馆子十强，老板太实在了",
+      "url": "https://www.douyin.com/video/6839997190845287692",
+      "shareURL": "https://v.douyin.com/HxrTbY2Bqtg/",
+      "platform": "douyin",
+      "publishedOnEstimate": null,
+      "publishedOnNote": "分享文本07/06，视频ID偏小，疑为2021年老视频，须打开原页确认发布年份",
+      "acquisitionStatus": "pending",
+      "intakeDir": ".local/video-intake/cd-chiyou-6839997190845287692/"
+    },
+    {
+      "id": "cd-rourou-7016962567180389640",
+      "author": "肉肉大搜索",
+      "title": "成都嫩到爆辣冒菜，毛肚鸭肠嫩出水，桌桌都是一大锅",
+      "url": "https://www.douyin.com/video/7016962567180389640",
+      "shareURL": "https://v.douyin.com/1xCCd9CuqDk/",
+      "platform": "douyin",
+      "publishedOnEstimate": "2026-09-09",
+      "publishedOnNote": "从分享文本09/09推算，待核实；预判单店冒菜深度测评，优先跑通闭环",
+      "acquisitionStatus": "pending",
+      "intakeDir": ".local/video-intake/cd-rourou-7016962567180389640/"
+    }
+  ],
+  "processingOrder": [
+    "cd-rourou-7016962567180389640",
+    "cd-pangshi-7645208472996950386",
+    "cd-xiaojunmao-7553603939585903882",
+    "cd-tiaojie-7546207360981749033",
+    "cd-chiyou-6839997190845287692",
+    "cd-ohyixi-7697573355297230080"
+  ]
+}
