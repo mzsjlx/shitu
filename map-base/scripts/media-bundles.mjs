@@ -10,7 +10,8 @@ const readJSON=async file=>JSON.parse(await readFile(file,'utf8'));
 const safeRelative=value=>typeof value==='string'&&/^(?:video-intake|video-clips)\/[a-z][a-z0-9-]*\/[a-z][a-z0-9.-]*\.(?:mp4|jpg)$/.test(value)&&!value.includes('..');
 async function availableReport(project){try{return await readJSON(path.join(project,'.local/video-clips/report.json'));}catch(error){if(error.code==='ENOENT')return {schemaVersion:1,records:[]};throw error;}}
 
-export async function packSource(project,sourceId,{cityId}={}){
+export async function packSource(project,sourceId,options={}){
+  const cityId = typeof options === 'string' ? options : options?.cityId;
   const context=await sourceCatalog(project,sourceId,cityId),{source}=context;
   if(!/^[a-f0-9]{64}$/.test(source.sourceSHA256||''))throw new Error('这个来源还没有已取得的原片：'+sourceId);
   const report=await availableReport(project),entries={},files=[],records=[];
@@ -28,7 +29,8 @@ export async function packSource(project,sourceId,{cityId}={}){
   const summary={city:context.cityId,sourceId:source.id,name,bytes:archive.length,sha256:digest(archive),clips:records.length};await writeFile(target+'.json',JSON.stringify(summary,null,2)+'\n');return {...summary,path:target};
 }
 
-export async function importBundle(project,archivePath,{cityId}={}){
+export async function importBundle(project,archivePath,options={}){
+  const cityId = typeof options === 'string' ? options : options?.cityId;
   const info=await stat(archivePath);if(info.size>1024*1024*1024)throw new Error('素材包超过 1 GiB，请按视频来源分别打包。');
   const archive=await readFile(archivePath);
   let published;try{published=await readJSON(path.join(project,'data/media-bundles.json'));}catch(error){if(error.code!=='ENOENT')throw error;}

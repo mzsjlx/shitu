@@ -17,9 +17,9 @@ export class FoodOverlay {
     map.on('move',()=>this.scheduleLayout());
     map.on('resize',()=>this.scheduleLayout());
   }
-  replace(records,onOpen=()=>{}) {
+  replace(records,onOpen=()=>{},options={}) {
     this.validate(records,false);
-    return this.render(records,onOpen);
+    return this.render(records,onOpen,options);
   }
   replaceCandidates(records,onOpen=()=>{},options={}) {
     this.validate(records,true);
@@ -40,13 +40,20 @@ export class FoodOverlay {
       if(!Array.isArray(p)||p.length!==2||!p.every(Number.isFinite)||p[0]<b[0]||p[0]>b[2]||p[1]<b[1]||p[1]>b[3])throw new Error('门店坐标超出当前地图覆盖区域');
     }
   }
-  render(records,onOpen,{onToggleSave}={}){
+  render(records,onOpen,{onToggleSave,onClose}={}){
     this.clear();
-    this.popover.setHandler(onToggleSave);
+    this.popover.setHandler(onToggleSave,onClose);
     for(const item of records) {
-      const element=document.createElement('div');element.className='food-card';element.dataset.foodId=item.id;
+      const element=document.createElement('div');element.className='food-card is-collapsed';element.dataset.foodId=item.id;
       element.setAttribute('role','group');element.setAttribute('aria-label',item.name+'美食卡片');
       element.addEventListener('click',event=>event.stopPropagation());
+      const closeButton=document.createElement('button');closeButton.type='button';closeButton.className='food-card-close';
+      closeButton.setAttribute('aria-label','收起'+item.name+'卡片');closeButton.textContent='×';
+      closeButton.addEventListener('click',event=>{
+        event.stopPropagation();
+        if(typeof onClose==='function')onClose(item);
+      });
+      element.append(closeButton);
       const button=document.createElement('button');button.className='food-open';
       button.type='button';button.dataset.foodId=item.id;
       button.setAttribute('aria-label','查看'+item.name);
@@ -75,18 +82,19 @@ export class FoodOverlay {
       const video=originalVideo(item);if(video&&!item.originalVideoURL)item.originalVideoURL=video.url;
       if(actions.childElementCount)element.append(actions);
       const dot=document.createElement('span');dot.className='food-pin';dot.setAttribute('aria-hidden','true');dot.textContent='●';element.append(dot);
-      const marker=new this.Marker({element,anchor:'bottom',offset:[0,-4],pitchAlignment:'viewport',rotationAlignment:'viewport'}).setLngLat(item.coordinates).addTo(this.map);
+      const marker=new this.Marker({element,anchor:'bottom',offset:[0,14],pitchAlignment:'viewport',rotationAlignment:'viewport'}).setLngLat(item.coordinates).addTo(this.map);
       this.markers.push(marker);
-      const entry={item,button,element,marker,saveButton};this.items.push(entry);
+      const entry={item,button,element,marker,saveButton,closeButton};this.items.push(entry);
       if(typeof onToggleSave==='function'){
         button.addEventListener('pointerenter',event=>{
-          if(event.pointerType==='mouse'&&matchMedia('(hover:hover)').matches){
-            if(!entry.element.classList.contains('is-collapsed')||entry.item.id===this.selected){
-              this.popover.scheduleHover(item,entry);
-            }
+          if(entry.element.classList.contains('is-collapsed')&&entry.item.id!==this.selected)return;
+          if(event.pointerType==='mouse'&&matchMedia('(hover:hover)').matches)this.popover.scheduleHover(item,entry);
+        });
+        button.addEventListener('focus',()=>{
+          if(!entry.element.classList.contains('is-collapsed')||entry.item.id===this.selected){
+            if(button.matches(':focus-visible'))this.popover.show(item,entry);
           }
         });
-        button.addEventListener('focus',()=>{if(button.matches(':focus-visible'))this.popover.show(item,entry);});
         element.addEventListener('pointerleave',()=>this.popover.scheduleClose());
       }
     }
@@ -99,7 +107,7 @@ export class FoodOverlay {
   updateActions(){
     for(const {item,saveButton}of this.items){
       if(!saveButton)continue;const saved=this.wanted.has(item.id);
-      saveButton.textContent=saved?'✓':'+';saveButton.setAttribute('aria-pressed',String(saved));
+      saveButton.textContent=saved?'已加入想去 ✓':'加入想去 ＋';saveButton.setAttribute('aria-pressed',String(saved));
       saveButton.setAttribute('aria-label','将'+item.name+(saved?'从想去移除':'加入想去'));
     }
     this.popover.position();
@@ -112,27 +120,23 @@ export class FoodOverlay {
     // Their actual coordinates and route distances must remain unchanged.
     const coincident=new Map();
     for(const entry of this.items){const key=entry.item.coordinates.join(',');if(!coincident.has(key))coincident.set(key,[]);coincident.get(key).push(entry);}
-    const zoom=this.map.getZoom(),isFar=zoom<14.8;
-    const anchors=this.items.map(({item})=>{const p=this.map.project(item.coordinates);return {id:item.id,x:p.x+bounds.left,y:p.y+bounds.top};});
-    const controls=[...document.querySelectorAll('.maplibregl-ctrl-top-right,.view-dock,#trip-dock,.street-tools,.walk-tools,#food-pick-tools,#walk-panel,.street-note,#road-info,#landmark-note,#video-map-note')].filter(e=>e.getClientRects().length).map(e=>e.getBoundingClientRect());
     const ordered=[...this.items].sort((a,b)=>Number(b.item.id===this.selected)-Number(a.item.id===this.selected)||Number(this.wanted.has(b.item.id))-Number(this.wanted.has(a.item.id)));
     for(const entry of ordered){
-      entry.element.classList.remove('is-collapsed');entry.marker.setOffset([0,-4]);
+      const isSelected=Boolean(this.selected&&entry.item.id===this.selected);
       entry.element.classList.toggle('is-wanted',this.wanted.has(entry.item.id));
-      const r=entry.element.getBoundingClientRect();
-      const overlaps=placed.some(p=>r.left<p.right+12&&r.right>p.left-12&&r.top<p.bottom+12&&r.bottom>p.top-12);
-      const coversControl=controls.some(p=>r.left<p.right+8&&r.right>p.left-8&&r.top<p.bottom+8&&r.bottom>p.top-8);
-      const coversOtherPoint=anchors.some(p=>p.id!==entry.item.id&&r.left<p.x+16&&r.right>p.x-16&&r.top<p.y+16&&r.bottom>p.y-16);
-      const cardLimit=innerWidth<600?1:3;
-      const cropped=r.left<bounds.left+12||r.right>bounds.right-12||r.top<bounds.top+10||r.bottom>bounds.bottom-105;
-      if((isFar&&entry.item.id!==this.selected)||this.compact||cropped||coversControl||coversOtherPoint||(placed.length>=cardLimit&&entry.item.id!==this.selected)||(overlaps&&entry.item.id!==this.selected)){
+      entry.element.classList.toggle('is-selected',isSelected);
+      entry.element.style.zIndex=isSelected?'10':'';
+      if(!isSelected||this.compact){
         const focusedAction=entry.element.contains(document.activeElement)&&document.activeElement!==entry.button;
         entry.element.classList.add('is-collapsed');
-        const group=coincident.get(entry.item.coordinates.join(',')),index=group.indexOf(entry);
-        entry.marker.setOffset([(index-(group.length-1)/2)*52,14]);
+        const group=coincident.get(entry.item.coordinates.join(',')),index=group?group.indexOf(entry):0;
+        const xOffset=group?((index-(group.length-1)/2)*52):0;
+        entry.marker.setOffset([xOffset,14]);
         if(focusedAction&&getComputedStyle(entry.element).visibility!=='hidden')entry.button.focus({preventScroll:true});
+      }else{
+        entry.element.classList.remove('is-collapsed');entry.marker.setOffset([0,-4]);
+        placed.push(entry.element.getBoundingClientRect());
       }
-      else placed.push(r);
     }
     this.popover.position();
   }

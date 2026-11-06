@@ -26,9 +26,16 @@ export class FoodPopover{
     this.element.addEventListener('pointerleave',()=>this.scheduleClose());
     this.map.on('move',()=>this.position());this.map.on('resize',()=>this.position());
     this.map.on('click',()=>this.close());
-    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&this.current){event.stopPropagation();this.close();}});
+    document.addEventListener('keydown',event=>{
+      if(event.key==='Escape'&&this.current){
+        event.stopPropagation();
+        const item=this.current;
+        this.close();
+        if(typeof this.onClose==='function')this.onClose(item);
+      }
+    });
   }
-  setHandler(handler){this.onToggle=handler;}
+  setHandler(handler,onClose=null){this.onToggle=handler;this.onClose=onClose;}
   setWanted(wanted){this.wanted=new Set(wanted);this.updateSave();}
   updateSave(){
     if(!this.saveButton||!this.current)return;
@@ -63,7 +70,12 @@ export class FoodPopover{
         }
       });frame.append(play);
     }else frame.append(el('span','food-popover-missing',item.verificationStatus==='video-location'?'视频待同步':'视频待添加'));
-    const close=el('button','food-popover-close','×');close.type='button';close.setAttribute('aria-label','关闭'+item.name+'预览');close.addEventListener('click',()=>{this.close();entry.button.focus({preventScroll:true});});
+    const close=el('button','food-popover-close','×');close.type='button';close.setAttribute('aria-label','关闭'+item.name+'预览');
+    close.addEventListener('click',()=>{
+      this.close();
+      if(typeof this.onClose==='function')this.onClose(item);
+      entry.button.focus({preventScroll:true});
+    });
     const copy=el('div','food-popover-copy'),heading=el('div','food-popover-heading');
     const title=el('strong','',item.name),credit=foodVideoCredit(item),detail=el('small','',credit||'视频待添加');detail.title=credit||'';heading.append(title,detail);copy.append(heading);
     if(typeof this.onToggle==='function'){

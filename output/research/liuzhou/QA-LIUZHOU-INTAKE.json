@@ -1,0 +1,213 @@
+{
+  "verifiedOn": "2026-11-05T05:19:25.940Z",
+  "city": "liuzhou",
+  "environment": {
+    "platform": "win32",
+    "release": "10.0.26200",
+    "node": "v24.18.0",
+    "previewUrl": "http://127.0.0.1:8791"
+  },
+  "viewportsCovered": [
+    "1440x960 (desktop)",
+    "390x844 (mobile)",
+    "320x680 (small)",
+    "736x414 (short-landscape)"
+  ],
+  "checks": [
+    {
+      "name": "Liuzhou city identified correctly with amapCityCode 450200",
+      "passed": true,
+      "detail": {
+        "name": "柳州",
+        "amapCityCode": "450200"
+      }
+    },
+    {
+      "name": "9 food records loaded across Liuzhou",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "All 9 records have local MP4 clips and JPG posters",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "All 9 records have open OSM anchor references",
+      "passed": true,
+      "detail": [
+        "中山中路（青云民生市场樵家巷入口）",
+        "中山中路（青云民生市场入口通道）",
+        "青云市场内部通道（近樵家巷中段）",
+        "潭中西路北一巷生活区支路（近壶西实验中学）",
+        "白沙路 / 柳锌小区生活区支路",
+        "弯塘路（近公园路 / 柳侯公园南门）",
+        "文昌桥东引桥匝道（窑埠古镇B区入口）",
+        "大鹅山菜市周边支路（鹅山路31-1号一带）",
+        "连塘路（连塘路90号一带）"
+      ]
+    },
+    {
+      "name": "All 9 food markers default to collapsed circular icon badges",
+      "passed": true
+    },
+    {
+      "name": "Clicking circular badge expands ONLY that card into rectangle with \"×\" close button",
+      "passed": true,
+      "detail": {
+        "isExpanded": true,
+        "hasCloseButton": true,
+        "closeButtonVisible": true,
+        "otherCardsStayCollapsed": true
+      }
+    },
+    {
+      "name": "Clicking \"×\" close button collapses card back into circular icon badge",
+      "passed": true
+    },
+    {
+      "name": "Popover contains original video link",
+      "passed": true,
+      "detail": "https://www.douyin.com/video/7498339315727060264"
+    },
+    {
+      "name": "Popover opened and video is playing with advancing playback",
+      "passed": true,
+      "detail": {
+        "found": true,
+        "src": "http://127.0.0.1:8791/media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
+        "currentTime": 0.76095,
+        "paused": false,
+        "duration": 20
+      }
+    },
+    {
+      "name": "Closing popover immediately stops video playback and old audio track",
+      "passed": true
+    },
+    {
+      "name": "Amap search link in video library targets Liuzhou (city=450200)",
+      "passed": true,
+      "detail": "https://uri.amap.com/search?keyword=%E5%BC%A0%E8%AE%B0%E7%8E%89%E7%B1%B3%E6%B1%81&city=450200&view=list&src=shitu&callnative=0"
+    },
+    {
+      "name": "Direct distance mode active with 9 saved stops",
+      "passed": true,
+      "detail": {
+        "routeMode": "direct",
+        "caption": "直线约 15.4 公里",
+        "savedCount": 9,
+        "phase": "ready"
+      }
+    },
+    {
+      "name": "Distance badge auto-hides when zoomed out (< 16.5) to avoid obstructing icons",
+      "passed": true
+    },
+    {
+      "name": "Distance badge smoothly appears when zoomed in (>= 16.5) at street level",
+      "passed": true
+    },
+    {
+      "name": "Road mode computes connected route across Liuzhou with OSM road topology",
+      "passed": true,
+      "detail": {
+        "routeMode": "road",
+        "phase": "ready",
+        "caption": "沿路约 22.3 公里",
+        "localStorageMode": "road",
+        "localStorageWants": [
+          "video-lz-wangzulan-zhangji",
+          "video-lz-wangzulan-zhuoheji",
+          "video-lz-wangzulan-panjie",
+          "video-lz-chenhe-aningmeng",
+          "video-lz-dage-caomei",
+          "video-lz-xiaojiu-weipopo",
+          "video-lz-xiaobaozha-leilaoban",
+          "video-lz-rourou-gaojia",
+          "video-lz-tangshixiong-liujie"
+        ]
+      }
+    },
+    {
+      "name": "Local storage keys isolated to Liuzhou",
+      "passed": true,
+      "detail": {
+        "routeMode": "road",
+        "phase": "ready",
+        "caption": "沿路约 22.3 公里",
+        "localStorageMode": "road",
+        "localStorageWants": [
+          "video-lz-wangzulan-zhangji",
+          "video-lz-wangzulan-zhuoheji",
+          "video-lz-wangzulan-panjie",
+          "video-lz-chenhe-aningmeng",
+          "video-lz-dage-caomei",
+          "video-lz-xiaojiu-weipopo",
+          "video-lz-xiaobaozha-leilaoban",
+          "video-lz-rourou-gaojia",
+          "video-lz-tangshixiong-liujie"
+        ]
+      }
+    },
+    {
+      "name": "Mobile layout renders cards and trip dock without overflow",
+      "passed": true,
+      "detail": {
+        "cardCount": 9,
+        "dockVisible": true,
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Small screen (320px) renders cleanly without horizontal overflow",
+      "passed": true,
+      "detail": {
+        "cardCount": 9,
+        "dockVisible": true,
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Short landscape (736x414) maintains dock and header visibility",
+      "passed": true,
+      "detail": {
+        "dockVisible": true,
+        "entryVisible": true
+      }
+    },
+    {
+      "name": "Chongqing city loads cleanly with code 500000 and zero Liuzhou pollution",
+      "passed": true,
+      "detail": {
+        "name": "重庆",
+        "cityKey": "chongqing",
+        "amapCityCode": "500000",
+        "recordCount": 81,
+        "hasLiuzhouRecord": false
+      }
+    },
+    {
+      "name": "Changsha city loads cleanly with code 430100 and zero Liuzhou pollution",
+      "passed": true,
+      "detail": {
+        "name": "长沙",
+        "cityKey": "changsha",
+        "amapCityCode": "430100",
+        "recordCount": 71,
+        "hasLiuzhouRecord": false
+      }
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-food-overview.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-card-expanded.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-video-popover.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-road-distance.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-wants-dialog.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-mobile.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-small-320.png",
+    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-landscape-736.png"
+  ]
+}
