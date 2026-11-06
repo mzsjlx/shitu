@@ -2421,6 +2421,714 @@
           "routeEligible": false
         }
       ]
+    },
+    {
+      "id": "nj-xiaojingang-7665887740169734834",
+      "author": "小金刚干饭王",
+      "title": "分享南京13家好吃的饼子 它们大多没什么名气，但是本地人从小吃到大",
+      "url": "https://www.douyin.com/video/7665887740169734834",
+      "shareURL": "https://v.douyin.com/BUlr_cOUEtE/",
+      "publishedOn": "2026-04-02",
+      "durationSeconds": 201.01,
+      "sourceSHA256": "182613f2d0707a8c9fb186b4b8ad260266def49864c76cf67fd47a09d724898c",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "南京13家老式饼子小店实拍探店与门头字幕",
+      "segments": [
+        {
+          "id": "nj-xiaojingang-xujicongyoubing",
+          "name": "徐记葱油饼",
+          "category": "小吃 / 葱油饼",
+          "addressText": "建邺区南湖东路27号南湖一中旁",
+          "start": 6.0,
+          "end": 20.0,
+          "posterSecond": 12.0,
+          "summary": "南湖开了多年的老字号葱油饼，外皮焦脆葱香浓郁，咬下去层层酥脆热气腾腾。",
+          "coordinates": [
+            118.754643,
+            32.028926
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "南湖东路 / 南湖",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及南湖东路老字号葱油饼，采用开放地图南湖东路路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 452263380,
+              "name": "南湖东路",
+              "url": "https://www.openstreetmap.org/way/452263380",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1039201228
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-liehuoshaobing",
+          "name": "烈火油酥烧饼",
+          "category": "小吃 / 烧饼",
+          "addressText": "秦淮区来凤街金粟庵路来凤小区门面",
+          "start": 20.0,
+          "end": 35.0,
+          "posterSecond": 27.0,
+          "summary": "来凤小区人气极旺的油酥烧饼，现烤出炉外壳薄脆，芝麻与油酥香气扑鼻。",
+          "coordinates": [
+            118.765672,
+            32.02516
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "来凤街 / 来凤小区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及来凤小区油酥烧饼，采用开放地图来凤街路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 777476153,
+              "name": "来凤街",
+              "url": "https://www.openstreetmap.org/way/777476153",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1068746646
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-chunjianghuoxiao",
+          "name": "春江路老北京火烧",
+          "category": "小吃 / 火烧",
+          "addressText": "雨花台区春江路新林商业街（当前地图范围外·待南延扩图）",
+          "start": 35.0,
+          "end": 50.0,
+          "posterSecond": 42.0,
+          "summary": "春江路老北京火烧，外皮焦黄酥化，馅料扎实多汁热气腾腾。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-xiaojingang-beifangmantou",
+          "name": "北方手工馒头",
+          "category": "面点 / 手工馒头",
+          "addressText": "秦淮区秦虹路128号老居民区沿街",
+          "start": 50.0,
+          "end": 65.0,
+          "posterSecond": 57.0,
+          "summary": "秦虹路老社区手工大馒头，纯酵母发面麦香醇厚，扎实有嚼劲。",
+          "coordinates": [
+            118.805876,
+            32.013967
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "秦虹路 / 秦虹小区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及秦虹小区手工馒头，采用开放地图秦虹路路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 89638618,
+              "name": "秦虹路",
+              "url": "https://www.openstreetmap.org/way/89638618",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 4420146010
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-laizhangbing",
+          "name": "来张饼",
+          "category": "小吃 / 卷饼",
+          "addressText": "江宁区天元西路百家湖商圈（当前地图范围外·待南延扩图）",
+          "start": 65.0,
+          "end": 80.0,
+          "posterSecond": 72.0,
+          "summary": "江宁人气卷饼店，饼皮韧劲十足，包裹秘制酱料与丰富配料。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-xiaojingang-lanqishaobing",
+          "name": "蓝旗菜场小烧饼",
+          "category": "小吃 / 酥烧饼",
+          "addressText": "秦淮区蓝旗街蓝旗新村菜市场门面",
+          "start": 80.0,
+          "end": 95.0,
+          "posterSecond": 88.0,
+          "summary": "蓝旗新村菜场旁的老牌小烧饼，咸甜两款，酥皮掉渣咸香适口。",
+          "coordinates": [
+            118.818512,
+            32.027962
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "蓝旗街 / 蓝旗新村",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及蓝旗菜场小烧饼，采用开放地图蓝旗街路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 88805573,
+              "name": "蓝旗街",
+              "url": "https://www.openstreetmap.org/way/88805573",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1030570361
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-enshishaobing",
+          "name": "恩施烧饼",
+          "category": "小吃 / 恩施烧饼",
+          "addressText": "江宁区双龙大道金鹰天地商业街（当前地图范围外·待南延扩图）",
+          "start": 95.0,
+          "end": 110.0,
+          "posterSecond": 102.0,
+          "summary": "荆楚风味恩施掉渣烧饼，肉馅均匀铺满，烤制金黄香脆微辣。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-xiaojingang-shandonglijiajianbing",
+          "name": "山东李家煎饼",
+          "category": "小吃 / 杂粮煎饼",
+          "addressText": "玄武区珠江路红庙相府营路口",
+          "start": 110.0,
+          "end": 125.0,
+          "posterSecond": 118.0,
+          "summary": "珠江路红庙老巷里的山东杂粮大煎饼，现摊薄脆，酱香浓郁分量十足。",
+          "coordinates": [
+            118.786197,
+            32.049475
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "红庙 / 珠江路",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及红庙巷口山东煎饼，采用开放地图红庙路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 89637281,
+              "name": "红庙",
+              "url": "https://www.openstreetmap.org/way/89637281",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1058327569
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-xiaowangshaobing",
+          "name": "小王酥烧饼",
+          "category": "小吃 / 鸭油酥烧饼",
+          "addressText": "秦淮区老门东马道街剪子巷路口",
+          "start": 125.0,
+          "end": 140.0,
+          "posterSecond": 133.0,
+          "summary": "老城南马道街经典鸭油酥烧饼，层次分明，咬开满口鸭油葱香。",
+          "coordinates": [
+            118.788275,
+            32.014829
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "马道街 / 老门东",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及老门东马道街小王酥烧饼，采用开放地图马道街路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 606894152,
+              "name": "马道街",
+              "url": "https://www.openstreetmap.org/way/606894152",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1068750515
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-baipijianbing",
+          "name": "白皮煎饼",
+          "category": "小吃 / 煎饼",
+          "addressText": "江宁区河定桥地铁站商圈（当前地图范围外·待南延扩图）",
+          "start": 140.0,
+          "end": 155.0,
+          "posterSecond": 148.0,
+          "summary": "江宁河定桥附近特色白皮软煎饼，软糯有嚼头，酱料鲜辣开胃。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-xiaojingang-jinlingheji",
+          "name": "金陵贺记肉夹馍",
+          "category": "小吃 / 肉夹馍",
+          "addressText": "秦淮区雨花路中华门城堡南侧路边",
+          "start": 155.0,
+          "end": 170.0,
+          "posterSecond": 162.0,
+          "summary": "中华门城堡旁老字号肉夹馍，现烤白吉馍酥脆夹入多汁卤肉。",
+          "coordinates": [
+            118.77483,
+            32.008447
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "雨花路 / 中华门",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及中华门城堡旁贺记肉夹馍，采用开放地图雨花路路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 142491932,
+              "name": "雨花路",
+              "url": "https://www.openstreetmap.org/way/142491932",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1530463137
+            }
+          }
+        },
+        {
+          "id": "nj-xiaojingang-tuolejia",
+          "name": "托乐嘉羊肉串烧饼",
+          "category": "小吃 / 羊肉串烧饼",
+          "addressText": "江宁区将军大道托乐嘉街区（当前地图范围外·待南延扩图）",
+          "start": 170.0,
+          "end": 185.0,
+          "posterSecond": 178.0,
+          "summary": "江宁南航托乐嘉街区特色，酥热空心烧饼夹入炭烤现烤羊肉串。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-xiaojingang-xiaoxulijimao",
+          "name": "小徐里脊馍",
+          "category": "小吃 / 里脊馍",
+          "addressText": "秦淮区新街口明瓦廊石鼓路路口",
+          "start": 185.0,
+          "end": 201.0,
+          "posterSecond": 193.0,
+          "summary": "新街口明瓦廊排队顶流小徐里脊馍，炸里脊鲜嫩多汁，抹上秘制辣酱夹热馍绝配。",
+          "coordinates": [
+            118.778443,
+            32.040022
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "明瓦廊 / 新街口",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及新街口明瓦廊小徐里脊馍，采用开放地图明瓦廊路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 94494930,
+              "name": "明瓦廊",
+              "url": "https://www.openstreetmap.org/way/94494930",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 10196453952
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-sunxiaogua-7640774364690876401",
+      "author": "孙小瓜",
+      "title": "这个是网上不火，本地人常去吃的夜市",
+      "url": "https://www.douyin.com/video/7640774364690876401",
+      "shareURL": "https://v.douyin.com/YHtKCWO2x2g/",
+      "publishedOn": "2026-08-30",
+      "durationSeconds": 109.3,
+      "sourceSHA256": "029e1704eefb863ce08660160c7a039873165e557a3aab6f983c29c2d8e855ca",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "南京浦口桥北夜市实拍探店与摊位实录",
+      "segments": [
+        {
+          "id": "nj-sunxiaogua-qiaobeizixuan",
+          "name": "桥北夜市·自选凉菜",
+          "category": "夜市 / 自选凉菜",
+          "addressText": "浦口区大桥北路弘阳广场西街夜市（当前地图范围外·待江北扩图）",
+          "start": 3.0,
+          "end": 28.0,
+          "posterSecond": 15.0,
+          "summary": "桥北夜市琳琅满目的自选凉菜摊，二三十种荤素任选，红油香醋拌匀爽口开胃。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-sunxiaogua-qiaobeitieban",
+          "name": "桥北夜市·铁板牛排大串",
+          "category": "夜市 / 铁板牛排大串",
+          "addressText": "浦口区大桥北路弘阳广场西街夜市（当前地图范围外·待江北扩图）",
+          "start": 28.0,
+          "end": 55.0,
+          "posterSecond": 42.0,
+          "summary": "铁板现煎现切的大块牛排与大串，滋滋冒油，撒上孜然辣椒面鲜嫩喷香。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-sunxiaogua-qiaobeichaomian",
+          "name": "桥北夜市·炒方便面",
+          "category": "夜市 / 镬气炒面",
+          "addressText": "浦口区大桥北路弘阳广场西街夜市（当前地图范围外·待江北扩图）",
+          "start": 55.0,
+          "end": 82.0,
+          "posterSecond": 68.0,
+          "summary": "猛火重油大镬炒方便面，加入包菜鸡蛋和香肠，镬气十足碳水过瘾。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-sunxiaogua-qiaobeilaomo",
+          "name": "桥北夜市·徐州烙馍卷一切",
+          "category": "夜市 / 徐州烙馍",
+          "addressText": "浦口区大桥北路弘阳广场西街夜市（当前地图范围外·待江北扩图）",
+          "start": 82.0,
+          "end": 108.0,
+          "posterSecond": 95.0,
+          "summary": "正宗徐州现烙圆形薄馍，抹上甜面酱辣椒油，卷上馓子和自选小菜酥脆劲道。",
+          "coordinates": null,
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "nj-chenwanye-7686096177858628914",
+      "author": "陈玩野",
+      "title": "南京江宁老牌夜市 同曦夜市2 这次推荐的是同曦夜市另外几家高手摊位",
+      "url": "https://www.douyin.com/video/7686096177858628914",
+      "shareURL": "https://v.douyin.com/n64HwCe_bn4/",
+      "publishedOn": "2026-08-24",
+      "durationSeconds": 178.06,
+      "sourceSHA256": "cb1c4b57ec5006ddbeac9f2d8cd14581d812d28944ecc52b70c52a5260702599",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "南京江宁同曦夜市2实拍探店与摊位招牌",
+      "segments": [
+        {
+          "id": "nj-chenwanye-tongxi2-zhishiliji",
+          "name": "同曦夜市·手打芝士里脊",
+          "category": "夜市 / 芝士里脊",
+          "addressText": "江宁区胜太东路8号同曦商业街夜市（当前地图范围外·待南延扩图）",
+          "start": 0.0,
+          "end": 45.0,
+          "posterSecond": 22.0,
+          "summary": "手打鲜里脊肉排包裹厚厚芝士碎，下锅现炸金黄酥脆，拉丝超长肉质鲜嫩。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-chenwanye-tongxi2-fuyangjuanbing",
+          "name": "同曦夜市·阜阳卷馍",
+          "category": "夜市 / 阜阳卷馍",
+          "addressText": "江宁区胜太东路8号同曦商业街夜市（当前地图范围外·待南延扩图）",
+          "start": 45.0,
+          "end": 90.0,
+          "posterSecond": 68.0,
+          "summary": "徽味经典阜阳卷馍，四层薄面皮浸入鸡汤卤汁，裹上面筋豆芽与卤蛋软烂入味。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-chenwanye-tongxi2-yanshuie",
+          "name": "同曦夜市·盐水卤鹅鹅粉铺",
+          "category": "夜市 / 盐水卤鹅",
+          "addressText": "江宁区胜太东路8号同曦商业街夜市（当前地图范围外·待南延扩图）",
+          "start": 90.0,
+          "end": 135.0,
+          "posterSecond": 112.0,
+          "summary": "现斩现拌盐水嫩鹅与鹅杂，淋上特调咸鲜卤汁与香菜，肉质紧实皮脆肉滑。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-chenwanye-tongxi2-luoshixia",
+          "name": "同曦夜市·爆炒罗氏虾",
+          "category": "夜市 / 爆炒罗氏虾",
+          "addressText": "江宁区胜太东路8号同曦商业街夜市（当前地图范围外·待南延扩图）",
+          "start": 135.0,
+          "end": 178.0,
+          "posterSecond": 155.0,
+          "summary": "活蹦乱跳的大只罗氏虾，猛火爆炒裹满浓郁酱汁，虾膏饱满紧实Q弹。",
+          "coordinates": null,
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "nj-chenwanye-7638288069757570346",
+      "author": "陈玩野",
+      "title": "南京夜市天花板 龙湖紫金夜市 绝非千篇一律的同质化小吃街",
+      "url": "https://www.douyin.com/video/7638288069757570346",
+      "shareURL": "https://v.douyin.com/KKqX7V5PI7s/",
+      "publishedOn": "2026-06-25",
+      "durationSeconds": 147.6,
+      "sourceSHA256": "aacc50c46e0e5ef13363e098596d1756c6e9667ac44ef60fd4c1f00c21573275",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "南京玄武孝陵卫龙湖紫金夜市实拍探店与摊位招牌",
+      "segments": [
+        {
+          "id": "nj-chenwanye-zijin-haodanshao",
+          "name": "龙湖紫金夜市·台湾蚝蛋烧",
+          "category": "夜市 / 台湾蚝蛋烧",
+          "addressText": "玄武区中山门大街699号龙湖紫金MALL外街（孝陵卫地铁站3号口旁）",
+          "start": 0.0,
+          "end": 36.0,
+          "posterSecond": 18.0,
+          "summary": "孝陵卫龙湖紫金夜市招牌蚝蛋烧，鲜生蚝打入整颗鸡蛋煎至金黄微焦，淋特制甜辣海鲜酱鲜嫩滑口。",
+          "coordinates": [
+            118.85438,
+            32.037772
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中山门大街 / 龙湖紫金",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及孝陵卫龙湖紫金夜市，采用开放地图中山门大街路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 146636101,
+              "name": "中山门大街",
+              "url": "https://www.openstreetmap.org/way/146636101",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 12528269340
+            }
+          }
+        },
+        {
+          "id": "nj-chenwanye-zijin-congyoubing",
+          "name": "龙湖紫金夜市·现炸老式葱油饼",
+          "category": "夜市 / 葱油饼",
+          "addressText": "玄武区中山门大街699号龙湖紫金MALL外街（孝陵卫地铁站3号口旁）",
+          "start": 36.0,
+          "end": 72.0,
+          "posterSecond": 54.0,
+          "summary": "现揉现炸的老式葱油饼，油锅里炸到金黄鼓泡，外皮酥脆内里层层咸香。",
+          "coordinates": [
+            118.854864,
+            32.037827
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中山门大街 / 龙湖紫金",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及孝陵卫龙湖紫金夜市，采用开放地图中山门大街路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 146636101,
+              "name": "中山门大街",
+              "url": "https://www.openstreetmap.org/way/146636101",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1038874307
+            }
+          }
+        },
+        {
+          "id": "nj-chenwanye-zijin-lijirou",
+          "name": "龙湖紫金夜市·手工里脊肉串",
+          "category": "夜市 / 里脊肉串",
+          "addressText": "玄武区中山门大街699号龙湖紫金MALL外街（孝陵卫地铁站3号口旁）",
+          "start": 72.0,
+          "end": 110.0,
+          "posterSecond": 90.0,
+          "summary": "师傅手工腌制切片的大肉里脊串，油炸火候刚到断生，撒上孜然辣椒面鲜嫩爆汁。",
+          "coordinates": [
+            118.855743,
+            32.037902
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中山门大街 / 龙湖紫金",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及孝陵卫龙湖紫金夜市，采用开放地图中山门大街路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 146636101,
+              "name": "中山门大街",
+              "url": "https://www.openstreetmap.org/way/146636101",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1741676378
+            }
+          }
+        },
+        {
+          "id": "nj-chenwanye-zijin-chaofan",
+          "name": "龙湖紫金夜市·现炒大火炒饭",
+          "category": "夜市 / 猛火炒饭",
+          "addressText": "玄武区中山门大街699号龙湖紫金MALL外街（孝陵卫地铁站3号口旁）",
+          "start": 110.0,
+          "end": 147.0,
+          "posterSecond": 128.0,
+          "summary": "铁锅猛火狂颠翻炒，米粒颗颗分明金黄焦香，香肠酸豆角炒出满满夜市镬气。",
+          "coordinates": [
+            118.856636,
+            32.037984
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中山门大街 / 龙湖紫金",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片提及孝陵卫龙湖紫金夜市，采用开放地图中山门大街路网节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 146636101,
+              "name": "中山门大街",
+              "url": "https://www.openstreetmap.org/way/146636101",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1484509851
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-tiandoucc-7616768947669219058",
+      "author": "甜豆Cc_",
+      "title": "南京四大夜市之一的江宁义乌美食城，好吃的真的太多了",
+      "url": "https://www.douyin.com/video/7616768947669219058",
+      "shareURL": "https://v.douyin.com/i3Fa4H7GClY/",
+      "publishedOn": "2026-12-02",
+      "durationSeconds": 86.86,
+      "sourceSHA256": "f8bf3efa2e51fc9911753bef0a49b43696e381d59fc93e2dfe2bedab4f3c59a9",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "南京江宁义乌小商品城夜市实拍探店与摊位实录",
+      "segments": [
+        {
+          "id": "nj-tiandoucc-yiwu-kaozhuti",
+          "name": "义乌美食城·方燕烤猪蹄",
+          "category": "夜市 / 烤猪蹄",
+          "addressText": "江宁区天元东路388号义乌小商品城夜市（当前地图范围外·待南延扩图）",
+          "start": 0.0,
+          "end": 23.0,
+          "posterSecond": 12.0,
+          "summary": "炭烤猪蹄先卤后烤，外皮焦香Q弹胶原蛋白满满，撒上熟花生碎香辣软糯。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-tiandoucc-yiwu-suansunshaobing",
+          "name": "义乌美食城·酸笋烤烧饼",
+          "category": "夜市 / 酸笋烧饼",
+          "addressText": "江宁区天元东路388号义乌小商品城夜市（当前地图范围外·待南延扩图）",
+          "start": 23.0,
+          "end": 45.0,
+          "posterSecond": 34.0,
+          "summary": "特色酸笋馅烤烧饼，现烤焦酥，酸辣爽脆的酸笋中和油香格外提味。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-tiandoucc-yiwu-bingjiuniang",
+          "name": "义乌美食城·维维冰酒酿",
+          "category": "夜市 / 冰酒酿甜汤",
+          "addressText": "江宁区天元东路388号义乌小商品城夜市（当前地图范围外·待南延扩图）",
+          "start": 45.0,
+          "end": 68.0,
+          "posterSecond": 56.0,
+          "summary": "夜市解腻神仙甜汤，自酿米酒清甜微醺，搭配软糯小圆子与桂花冰爽宜人。",
+          "coordinates": null,
+          "routeEligible": false
+        },
+        {
+          "id": "nj-tiandoucc-yiwu-baojiangdoufu",
+          "name": "义乌美食城·爆浆冰淇淋豆腐",
+          "category": "夜市 / 炸豆腐",
+          "addressText": "江宁区天元东路388号义乌小商品城夜市（当前地图范围外·待南延扩图）",
+          "start": 68.0,
+          "end": 86.8,
+          "posterSecond": 78.0,
+          "summary": "外皮金黄酥脆内里如嫩滑布丁，咬开瞬间爆浆烫口，蘸上甜辣酱咸甜交织。",
+          "coordinates": null,
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "nj-chenwanye-7664255415638641929",
+      "author": "陈玩野",
+      "title": "南京岱山夜市必吃 人气排队王 属于岱山夜市排队王，超大里脊肉饼",
+      "url": "https://www.douyin.com/video/7664255415638641929",
+      "shareURL": "https://v.douyin.com/0U-88rQ5iv0/",
+      "publishedOn": "2026-07-02",
+      "durationSeconds": 81.43,
+      "sourceSHA256": "8344a390ad7c0f20ea08cf7d0e28d1e12671ba80cae7ded4d5be6ad38836a820",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "南京岱山夜市超大里脊肉饼实拍探店与摊位招牌",
+      "segments": [
+        {
+          "id": "nj-chenwanye-daishan-lijibing",
+          "name": "岱山夜市·超大里脊肉饼",
+          "category": "夜市 / 超大里脊肉饼",
+          "addressText": "雨花台区岱山新城岱山中路夜市街区（当前地图范围外·待西南扩图）",
+          "start": 0.0,
+          "end": 81.0,
+          "posterSecond": 38.0,
+          "summary": "岱山夜市天天大排长龙的排队王，巴掌大的整块鲜嫩里脊炸得香气四溢，塞满酥脆烧饼肉香爆棚。",
+          "coordinates": null,
+          "routeEligible": false
+        }
+      ]
     }
   ]
 }
