@@ -8,9 +8,9 @@
 
 ---
 
-## 1. 视频整理与入库总览（九批共 65 条视频）
+## 1. 视频整理与入库总览（十批共 75 条视频）
 
-用户在会话中提供的八批共 55 条抖音探店链接已全部完成原片获取、视频探测、逐店认店剪辑、真实海报截取、同店多博主归并与开放地图真实道路锚定：
+用户在会话中提供的十批共 75 条抖音探店链接已全部完成原片获取、视频探测、逐店认店剪辑、真实海报截取、同店多博主归并与开放地图真实道路锚定：
 
 ### 第一批（5 条）
 | 来源 ID | 作者 | 视频标题 | 视频时长 | 原片大小 | 切片数 | 涉及主要店铺 |
@@ -140,6 +140,26 @@
 
 
 
+### 第十批（10 条 · 自助海鲜烤肉与日料放题合辑）
+| 来源 ID | 作者 | 视频标题 | 视频时长 | 原片大小 | 切片数 | 涉及主要店铺 |
+|---|---|---|---|---|---|---|
+| `nj-feifeihenlan-7698640001463205029` | 狒狒很懒 | 在南京华贸中心花100出头爽吃云贵自助烤肉！超高品... | 72.80s | 22.8 MB | 1 | 黔右右贵州山岭自助烤肉(南京华贸中心店)（鼓楼区中央路339号华贸中心6F，包浆豆腐/牛肋条/折耳根蘸水，上图） |
+| `nj-tianpupu-7690408600897157546` | 甜噗噗 | 两百多两个人吃这么高端# 南京明宇豪雅饭店# 南京... | 67.97s | 20.3 MB | 1 | 南京明宇豪雅饭店·豪雅自助餐厅（玄武区红山路12号铁北红山国际社区2号楼，五星级酒店海鲜刺身牛排自助，上图） |
+| `nj-huhuda-e-7661925151235993434` | 糊糊大饿 | 马粪海胆不限量！新西兰鳌虾随便吃！！南京刺身自助都... | 100.87s | 31.5 MB | 1 | 彩亭精致料理·铁板烧(南京茂业天地店)（秦淮区建康路2号南京茂业天地中心A1座1F，鲜活马粪海胆/新西兰鳌虾/刺身放题，上图） |
+| `nj-isfafa-7665309629173528697` | Is fafa | 南京开了一家高端海鲜自助天花板！海鲜都是当日新鲜海... | 77.03s | 22.8 MB | 1 | 环璟·蒸汽海鲜·刺身火锅(南京金陵天地店)（建邺区中和路68号金陵天地L4层，超出当前核心底图南界，标记待河西南扩图，保留视频库不上图） |
+| `nj-heiheizhou-7701780068049678474` | 嘿嘿周 | 南京vlog｜分享百家湖非常好吃的一家和牛烧肉，环... | 69.30s | 19.6 MB | 1 | 火麒麟和牛烧肉·串烧·夜酒(百家湖1912店)（江宁区佳湖东路百家湖1912街区6号楼1F，超出当前核心底图南界，标记待江宁扩图，保留视频库不上图） |
+| `nj-xinzangshilande-7583999195707968825` | 心脏是蓝的 | 蘸着辣椒的牛肋排太香了！一键实现糖水、水果、蔬菜、... | 138.83s | 44.1 MB | 1 | 鸿牛叔吃牛火锅大排档(新街口店)（秦淮区五老村街道洪武路119-7号2F，烂炖牛肋排/市井火锅/甜品糖水放题，上图） |
+| `nj-haimianxiaobao-7555136225922632998` | 海绵小饱 | 100多的这个自助再吃不回本！就真的打你喽！# 自... | 113.80s | 27.6 MB | 1 | 览山海·蒸汽海鲜·火锅自助(新城市广场店)（鼓楼区草场门大街99号新城市广场2F，蒸汽海鲜/鲜活罗氏虾/鲍鱼生蚝放题，上图） |
+| `nj-sunxiaogua-7699431427368561579` | 孙小瓜 | 200多一个人的海鲜自助你们看看怎么样 # 海鲜自... | 121.73s | 38.6 MB | 1 | 盛小牛·和牛榴莲烧肉放题自助(城北万象汇店)（栖霞区迈皋桥街道栖霞大道106号城北万象汇B馆4F，超出当前核心底图北界，标记待城北扩图，保留视频库不上图） |
+| `nj-nanjingsanqian-7703217219765774491` | 南京三千 | 宴誉199！ 畅吃大闸蟹！三文鱼！M6和牛！# 自助餐... | 52.60s | 14.1 MB | 1 | 宴誉看海·海鲜美学自助(景枫店)（江宁区双龙大道1698号景枫中心5F，超出当前核心底图南界，标记待江宁百家湖扩图，保留视频库不上图） |
+| `nj-gaolegao-7535349234586193210` | 糕乐糕 | 南京新开没多久的云贵川自助！竟然手作gelato冰... | 77.20s | 22.8 MB | 1 | 赵山岭·云贵集市烤肉自助(水游城店)（秦淮区建康路1号水游城B2-M05-M06，酸汤现切牛肉/手作gelato冰淇淋放题，上图） |
+
+- **总视频源**：75 条
+- **总切片数**：160 个单店音视频片段（H.264 + AAC，留存 `.local/video-clips/`）
+- **地图打卡点**：经同店多博主归并后，生成 **103 个核心城区地图打卡点**（覆盖新街口、明瓦廊、老门东、来凤小区、玄武门、中央路华贸中心、鸡鸣寺、锁金村、红山月苑、红山明宇豪雅、草场门新城市广场、水游城、茂业天地、南湖、茶南、大行宫、明故宫、钟灵街、油坊桥、建邺万达、河西中央商场、元通华采天地、鼓楼金陵饭店、鼓楼吾悦广场、玄武艾尚天地、玄武招商花园城、孝陵卫龙湖紫金夜市等）。
+- **范围外归档点**：**49 个范围外片段**（江宁大学城/岔路口/同曦商圈/义乌小商品城/百家湖1912/景枫中心、浦口弘阳/金象城/龙湖天街/诚宇城商圈、建邺河西南金陵天地、栖霞马群花园城/仙林金鹰/城北万象汇、雨花万象天地、岱山新城等），严格遵循地理真实性规范，设置 `coordinates: null` 并标记“当前地图范围外·待...扩图”，诚实归档在视频库中不上图，不伪造坐标。
+
+
 ## 2. 多博主同店归并 (Multi-Creator Merges)
 
 按照项目契约规范，同一实体分店合用一个地图 Marker，浮窗保留各自博主片段供用户一键切换：
@@ -206,10 +226,10 @@
    - `node scripts/build.mjs` 成功产出三城独立产物：
      - `preview-chongqing.html`（45.1 MB，126 个片段，81 个打卡点）
      - `preview-changsha.html`（19.4 MB，54 个来源，71 个打卡点）
-     - `preview-nanjing.html`（19.6 MB，150 个片段，97 个打卡点）
+     - `preview-nanjing.html`（19.71 MB，160 个片段，103 个打卡点）
 2. **回归测试**：
    - `node scripts/review-city-integration.mjs`：重庆与长沙核心指标回归 100% 通过（`passed: true`）；
-   - `node scripts/review-nanjing-data.mjs`：南京 7 项指标全绿通过（`passed: true`，覆盖 65 来源、150 切片、97 打卡点、25 范围外归档）。
+   - `node scripts/review-nanjing-data.mjs`：南京 7 项指标全绿通过（`passed: true`，覆盖 75 来源、160 切片、103 打卡点、49 范围外归档）。
 3. **视觉与交互测试（Playwright）**：
    - 桌面端概览（1440×900）：69 张美食卡片完整渲染（[查看截图 `23_desktop_nanjing_69stops_overview.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/23_desktop_nanjing_69stops_overview.png)）；
    - 视频库与夜市分类：视频库状态正确显示“99 个本地片段 · 28 段待定位或待扩图”，陈玩野龙湖紫金夜市4个摊位完整展示（[查看截图 `24_desktop_video_library_zijin_nightmarket.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/24_desktop_video_library_zijin_nightmarket.png)）；
@@ -218,12 +238,19 @@
 
 ---
 
+   - 桌面端第十批 103 点位概览（1440×900）：103 张核心商圈美食卡片完整吸附渲染（[查看截图 `43_desktop_nanjing_103stops_overview.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/43_desktop_nanjing_103stops_overview.png)）；
+   - 视频库分类与第十批视频：视频库准确显示“160 个本地片段 · 49 段待定位或待扩图”，第十批探店内容清晰呈现（[查看截图 `44_desktop_video_library_batch10.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/44_desktop_video_library_batch10.png)）；
+   - 美食卡片详情与浮窗交互：点击美食卡片顺畅唤起视频浮窗与多项打卡信息（[查看截图 `45_desktop_food_card_modal_batch10.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/45_desktop_food_card_modal_batch10.png)）；
+   - 移动端 103 点位竖屏自适应：390×844 竖屏下地图卡片流与底部交互自适应良好（[查看截图 `46_mobile_nanjing_103stops_portrait.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/46_mobile_nanjing_103stops_portrait.png)）。
+
+---
+
 ## 5. 交付物归档清单
 
 - **代码与元数据（Git 已跟踪）**：
   - `map-base/data/cities/nanjing/`（包含 `video-library.json`, `video-posters.json`, `city-profile.json`, `nanjing.pmtiles`, `food-road-network.json` 等全套地图数据）
-  - `map-base/assets/video-posters/`（共 150 张单店小封面海报 JPG）
-  - `output/research/nanjing/`（QA 结果与测试截图 01~42）
+  - `map-base/assets/video-posters/`（共 160 张单店小封面海报 JPG）
+  - `output/research/nanjing/`（QA 结果与测试截图 01~46）
 - **大媒体文件（本地 .local/ 隔离留存）**：
-  - `.local/video-intake/`（65 份原片及帧截取）
-  - `.local/video-clips/`（150 份单店 H.264+AAC 切片 MP4）
+  - `.local/video-intake/`（75 份原片及帧截取）
+  - `.local/video-clips/`（160 份单店 H.264+AAC 切片 MP4）
