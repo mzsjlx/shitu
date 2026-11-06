@@ -19,19 +19,19 @@ async function check(name,fn){
 const catalogData=JSON.parse(await readFile('data/cities/nanjing/video-library.json','utf8'));
 const catalog=validateVideoLibrary(catalogData,'nanjing');
 
-await check('Nanjing catalog has 23 sources and 99 segments',()=>{
-  assert.equal(catalog.sources.length,23);
+await check('Nanjing catalog has 33 sources and 118 segments',()=>{
+  assert.equal(catalog.sources.length,33);
   const total=catalog.sources.reduce((sum,s)=>sum+s.segments.length,0);
-  assert.equal(total,99);
+  assert.equal(total,118);
 });
 
 const groups=groupVideoPlaces(catalog);
 const cityBounds=[118.70, 31.98, 118.88, 32.12];
 const locatedGroups=groups.filter(g=>g.primary.segment.coordinates&&withinMapBounds(g.primary.segment,cityBounds));
 
-await check('Catalog groups into 94 items (69 map stops + 25 pending-expansion) with 3 multi-blogger merges',()=>{
-  assert.equal(groups.length,94);
-  assert.equal(locatedGroups.length,69);
+await check('Catalog groups into 112 items (84 map stops + 28 pending-expansion) with 4 multi-blogger merges',()=>{
+  assert.equal(groups.length,112);
+  assert.equal(locatedGroups.length,84);
   
   const liji=groups.find(g=>g.primary.segment.name==='李记清真馆');
   assert(liji&&liji.clips.length===4,'李记清真馆 should have 4 clips (铁蛋儿, 猴哥说车, Sasaaaaa, 特别乌啦啦)');
@@ -41,6 +41,9 @@ await check('Catalog groups into 94 items (69 map stops + 25 pending-expansion) 
   
   const liuchangxing=groups.find(g=>g.primary.segment.name==='刘长兴(高楼门店)');
   assert(liuchangxing&&liuchangxing.clips.length===2,'刘长兴(高楼门店) should have 2 clips (飞飞有点饿, 关小婕)');
+
+  const maxingfa=groups.find(g=>g.primary.segment.name.includes('麻兴发'));
+  assert(maxingfa&&maxingfa.clips.length===2,'麻兴发 should have 2 clips (心脏是蓝的, 王炸炸炸炸！！)');
 });
 
 await check('Every located Nanjing segment has a frozen OSM way and node anchor',()=>{
@@ -55,13 +58,13 @@ await check('Every located Nanjing segment has a frozen OSM way and node anchor'
       assert(Number.isSafeInteger(anchor.nodeId));
     } else {
       assert.equal(seg.routeEligible,false);
-      assert(seg.addressText.includes('当前地图范围外'));
+      assert(seg.addressText.includes('当前地图范围外') || seg.addressText.includes('待扩图') || seg.addressText.includes('留视频库不上图'));
     }
   }
 });
 
 const router=buildFoodRoadRouter(JSON.parse(await readFile('data/cities/nanjing/food-road-network.json','utf8')));
-await check('All 69 map stops snap directly to walkable OSM roads within 25m',()=>{
+await check('All 84 map stops snap directly to walkable OSM roads within 25m',()=>{
   for(const g of locatedGroups){
     const coords=g.primary.segment.coordinates;
     const snaps=nearestRoadSnaps(router,coords);
@@ -69,7 +72,7 @@ await check('All 69 map stops snap directly to walkable OSM roads within 25m',()
   }
 });
 
-await check('All 99 video clip MP4s and poster JPGs exist with correct SHA256 in report',()=>{
+await check('All 118 video clip MP4s and poster JPGs exist with correct SHA256 in report',()=>{
   for(const source of catalog.sources){
     for(const seg of source.segments){
       const names=mediaNames(source,seg);
@@ -78,8 +81,8 @@ await check('All 99 video clip MP4s and poster JPGs exist with correct SHA256 in
 });
 
 await check('Walking route between Xinjiekou (GuGu Bistro) and Mingwalang connects along road network',()=>{
-  const gugu=groups.find(g=>g.primary.segment.name.includes('GuGu'));
-  const qianduoduo=groups.find(g=>g.primary.segment.name.includes('黔夺夺'));
+  const gugu=groups.find(g=>g.primary.segment.id==='nj-tiansha-gugu');
+  const qianduoduo=groups.find(g=>g.primary.segment.id==='nj-tiansha-qianduoduo');
   assert(gugu&&qianduoduo);
   const route=findFoodRoadRoute(router,gugu.primary.segment.coordinates,qianduoduo.primary.segment.coordinates);
   assert.equal(route.status,'ready');
@@ -88,8 +91,8 @@ await check('Walking route between Xinjiekou (GuGu Bistro) and Mingwalang connec
 });
 
 await check('Walking route between Youfangqiao (Eat Burger) and Yurun Street (Li Ji Noodles) connects along road network',()=>{
-  const burger=groups.find(g=>g.primary.segment.name.includes('BURGER'));
-  const noodles=groups.find(g=>g.primary.segment.name.includes('李记手擀面'));
+  const burger=groups.find(g=>g.primary.segment.id==='nj-feifei-eatburger');
+  const noodles=groups.find(g=>g.primary.segment.id==='nj-feifei-lijishouganmian');
   assert(burger&&noodles);
   const route=findFoodRoadRoute(router,burger.primary.segment.coordinates,noodles.primary.segment.coordinates);
   assert.equal(route.status,'ready');

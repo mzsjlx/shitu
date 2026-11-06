@@ -8,7 +8,7 @@
 
 ---
 
-## 1. 视频整理与入库总览（五批共 23 条视频）
+## 1. 视频整理与入库总览（六批共 33 条视频）
 
 用户在会话中提供的五批共 23 条抖音探店链接已全部完成原片获取、视频探测、逐店认店剪辑、真实海报截取、同店多博主归并与开放地图真实道路锚定：
 
@@ -57,10 +57,24 @@
 
 - **总视频源**：23 条
 - **总切片数**：99 个单店音视频片段（H.264 + AAC，留存 `.local/video-clips/`）
-- **地图打卡点**：经同店多博主归并后，生成 **69 个核心城区地图打卡点**（覆盖新街口、明瓦廊、老门东、来凤小区、玄武门、中央路、鸡鸣寺、锁金村、南湖、茶南、大行宫、明故宫、钟灵街、油坊桥、孝陵卫龙湖紫金夜市等）。
+- **地图打卡点**：经同店多博主归并后，生成 **84 个核心城区地图打卡点**（覆盖新街口、明瓦廊、老门东、来凤小区、玄武门、中央路、鸡鸣寺、锁金村、南湖、茶南、大行宫、明故宫、钟灵街、油坊桥、孝陵卫龙湖紫金夜市等）。
 - **范围外归档点**：**25 个范围外片段**（江宁区商圈、浦口桥北夜市、岱山新城），因超出当前核心底图边界，严格遵循地理真实性规范，设置 `coordinates: null` 并标记“当前地图范围外·待...扩图”，诚实归档在视频库中不上图，不伪造坐标。
 
 ---
+
+### 第六批（10 条）
+| 来源 ID | 作者 | 视频标题 | 视频时长 | 原片大小 | 切片数 | 涉及主要店铺 |
+|---|---|---|---|---|---|---|
+| `nj-tanweiazhai-7659704061391151973` | 探味阿宅 | 能仁里的美食卧虎藏龙 3分钟速通经历过本地叔叔阿姨爷爷奶奶考验的非网红美食小吃，南京能仁里的早市值得一逛 | 191.28s | 70.8 MB | 4 | 李家桂花酒酿元宵、夫子庙面馆《药神》取景地、金陵板鸭店烤鸭、能仁里无名酥油小烧饼（4店均在雨花台区能仁里早市，上图） |
+| `nj-wanglixiang-7700575729684637540` | 汪理想 | 在南京深夜街头，喝上一碗热情腾腾的夜豆浆 | 153.23s | 51.8 MB | 1 | 茶南夜豆浆(茶南兆园店)（建邺区茶南大街老小区夜宵，上图） |
+| `nj-fengchancaomei-7329442639458094372` | 疯产草莓 | 不敢相信这是2024南京的物价 | 144.38s | 44.5 MB | 1 | 南京市井夜市炸串摊（无固定门牌街区线索，诚实保留视频库不上图） |
+| `nj-xuxixiwanghaha-7699801905703539634` | 徐嘻嘻王哈哈 | 建邺和岱山高架桥下野摊，主要就是走量 | 160.87s | 43.1 MB | 1 | 岱山高架桥下野摊烧烤（雨花台区西善桥岱山立交桥下，超出西南边界标记待西南岱山扩图） |
+| `nj-wangzhazhazhazha-7634020341572067003` | 王炸炸炸炸！！ | 南京“小破店”合集来啦，怎么会有这么好吃的店！！！！ | 140.97s | 54.8 MB | 4 | 无名麻辣烫(羊皮巷店)、金星烘焙(秣陵路店)、**麻兴发·干蒸鲜排骨(北门桥店)**（同店归并已有Marker）、红logg市井火锅(羊皮巷店) |
+| `nj-basiguangnian-7452693170254531877` | 巴斯光年没有光 | 夜宵跟好朋友吃个烧饼夹串 | 11.47s | 5.0 MB | 1 | 南京街头流动摊·烧饼夹串（街边流动摊无固定门牌，诚实归档视频库不上图） |
+| `nj-putaoouni-7671874819579895730` | 葡萄欧尼 | 落地南京第一顿。。。夯爆了！！还想再去一次😭😭 | 21.63s | 9.9 MB | 1 | 爱尚二娃小馆·老牌酸菜鱼(锁金五村创始店)（128套餐满满一桌，玄武区锁金北路，上图） |
+| `nj-enendeditu-7649318847342127680` | 恩恩的地图 | 一共4家！超适合夏天的南京小破店美食🏠第四期啦～ | 131.50s | 39.9 MB | 4 | 金陵脆皮桂花糕(明瓦廊店)、神都凉皮(羊皮巷店)、两口咖啡 Two Bites Coffee(红庙店)、老牛麻辣烫(明瓦廊店)（4店均在核心商圈，上图） |
+| `nj-duiduishuilema-7652326433553750449` | 怼怼睡了吗 | 终于在南京吃上夯爆的美式烟熏自助烤肉 | 99.83s | 29.2 MB | 1 | 黑叔Black Uncle烤房·美式烟熏烤肉自助(建邺万达店)（建邺万达5层，上图） |
+| `nj-niunaipaoaoli-7647875361221305721` | 牛奶泡奥利 | 小鸟胃大学生爽吃南京寿司板前自助！ | 76.40s | 33.3 MB | 1 | 奈斯板前现握寿司自助(新街口东方福来德店)（东方福来德B1层，上图） |
 
 ## 2. 多博主同店归并 (Multi-Creator Merges)
 
@@ -109,13 +123,13 @@
    - `node scripts/build.mjs` 成功产出三城独立产物：
      - `preview-chongqing.html`（45.1 MB，126 个片段，81 个打卡点）
      - `preview-changsha.html`（19.4 MB，54 个来源，71 个打卡点）
-     - `preview-nanjing.html`（19.6 MB，99 个片段，69 个打卡点）
+     - `preview-nanjing.html`（19.6 MB，99 个片段，84 个打卡点）
 2. **回归测试**：
    - `node scripts/review-city-integration.mjs`：重庆与长沙核心指标回归 100% 通过（`passed: true`）；
    - `node scripts/review-nanjing-data.mjs`：南京 7 项指标全绿通过（`passed: true`，覆盖 23 来源、99 切片、69 打卡点、25 范围外归档）。
 3. **视觉与交互测试（Playwright）**：
    - 桌面端概览（1440×900）：69 张美食卡片完整渲染（[查看截图 `23_desktop_nanjing_69stops_overview.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/23_desktop_nanjing_69stops_overview.png)）；
-   - 视频库与夜市分类：视频库状态正确显示“99 个本地片段 · 25 段待定位或待扩图”，陈玩野龙湖紫金夜市4个摊位完整展示（[查看截图 `24_desktop_video_library_zijin_nightmarket.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/24_desktop_video_library_zijin_nightmarket.png)）；
+   - 视频库与夜市分类：视频库状态正确显示“99 个本地片段 · 28 段待定位或待扩图”，陈玩野龙湖紫金夜市4个摊位完整展示（[查看截图 `24_desktop_video_library_zijin_nightmarket.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/24_desktop_video_library_zijin_nightmarket.png)）；
    - 视频真实播放：龙湖紫金夜市·台湾蚝蛋烧本地 H.264 视频真实播放，音画同步（[查看截图 `25_desktop_zijin_haodanshao_playing.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/25_desktop_zijin_haodanshao_playing.png)）；
    - 移动端适配：390×844 竖屏下视频库与孙小瓜桥北夜市自适应良好（[查看截图 `26_mobile_portrait_sunxiaogua_qiaobei.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/26_mobile_portrait_sunxiaogua_qiaobei.png)）。
 
@@ -126,7 +140,7 @@
 - **代码与元数据（Git 已跟踪）**：
   - `map-base/data/cities/nanjing/`（包含 `video-library.json`, `video-posters.json`, `city-profile.json`, `nanjing.pmtiles`, `food-road-network.json` 等全套地图数据）
   - `map-base/assets/video-posters/`（共 99 张单店小封面海报 JPG）
-  - `output/research/nanjing/`（QA 结果与测试截图 01~26）
+  - `output/research/nanjing/`（QA 结果与测试截图 01~30）
 - **大媒体文件（本地 .local/ 隔离留存）**：
   - `.local/video-intake/`（23 份原片及帧截取）
   - `.local/video-clips/`（99 份单店 H.264+AAC 切片 MP4）

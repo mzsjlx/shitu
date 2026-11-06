@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "city": "nanjing",
-  "preparedOn": "2026-11-02",
+  "preparedOn": "2026-11-06",
   "rights": {
     "status": "user-confirmed",
     "confirmedOn": "2026-11-02",
@@ -3127,6 +3127,727 @@
           "summary": "岱山夜市天天大排长龙的排队王，巴掌大的整块鲜嫩里脊炸得香气四溢，塞满酥脆烧饼肉香爆棚。",
           "coordinates": null,
           "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "nj-tanweiazhai-7659704061391151973",
+      "author": "探味阿宅",
+      "title": "能仁里的美食卧虎藏龙 3分钟速通经历过本地叔叔阿姨爷爷奶奶考验的非网红美食小吃，南京能仁里的早市值得一逛",
+      "url": "https://www.douyin.com/video/7659704061391151973",
+      "shareURL": "https://v.douyin.com/DIsRoqj6dF0/",
+      "publishedOn": "2024-09-22",
+      "durationSeconds": 191.28,
+      "sourceSHA256": "2c932f8c7cfa6db4211c70d4392d409f0f547883900d4ae16e66f1db1b3d49b9",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "用户提供抖音分享链接，本地获取原片、提取帧与ASR逐字稿，核验能仁里老早市4家特色小吃。",
+      "segments": [
+        {
+          "id": "nj-tanweiazhai-lijia-yuanxiao",
+          "name": "李家桂花酒酿元宵",
+          "category": "甜品小吃",
+          "addressText": "南京市雨花台区雨花西路能仁里1号 (能仁里农贸市场口)",
+          "start": 0.0,
+          "end": 45.0,
+          "posterSecond": 15.0,
+          "summary": "探味阿宅打卡能仁里早市李家桂花酒酿元宵，稠厚浓郁红豆沙搭配软糯小元宵，热气腾腾老少皆宜。",
+          "coordinates": [
+            118.772267,
+            32.00694
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "雨花台区 / 能仁里农贸市场口",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍雨花西路能仁里菜市场口李家酒酿元宵，吸附雨花西路拓扑节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 165485909,
+              "name": "雨花西路",
+              "url": "https://www.openstreetmap.org/way/165485909",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1040613707
+            }
+          }
+        },
+        {
+          "id": "nj-tanweiazhai-fuzimiao-mianguan",
+          "name": "夫子庙面馆(能仁里店)",
+          "category": "传统面馆",
+          "addressText": "南京市雨花台区能仁里小区16幢102室",
+          "start": 45.0,
+          "end": 95.0,
+          "posterSecond": 65.0,
+          "summary": "《我不是药神》取景老面馆，皮肚大肉面汤鲜味浓，面条爽滑劲道，藏在居民楼下几十年的老味道。",
+          "coordinates": [
+            118.770636,
+            32.00727
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "雨花台区 / 能仁里小区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍能仁里小区内夫子庙面馆，与雨花西路支路吸附对齐。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 165486635,
+              "name": "雨花西路",
+              "url": "https://www.openstreetmap.org/way/165486635",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 13610808563
+            }
+          }
+        },
+        {
+          "id": "nj-tanweiazhai-jinling-banya",
+          "name": "金陵板鸭店烤鸭(能仁里店)",
+          "category": "金陵烤鸭卤味",
+          "addressText": "南京市雨花台区雨花西路能仁里二村临街",
+          "start": 95.0,
+          "end": 142.0,
+          "posterSecond": 115.0,
+          "summary": "能仁里老牌金陵烤鸭，外皮焦红油亮，鸭肉细嫩多汁，淋上秘制红卤咸甜适口，本地居民日常排队。",
+          "coordinates": [
+            118.769346,
+            32.007461
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "雨花台区 / 能仁里二村",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍能仁里二村外侧金陵板鸭店，吸附雨花西路源节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 27797139,
+              "name": "雨花西路",
+              "url": "https://www.openstreetmap.org/way/27797139",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 4226771715
+            }
+          }
+        },
+        {
+          "id": "nj-tanweiazhai-nengrenli-shaobing",
+          "name": "能仁里无名酥油小烧饼",
+          "category": "传统小吃·烧饼",
+          "addressText": "南京市雨花台区雨花西路能仁里菜市场内",
+          "start": 142.0,
+          "end": 191.28,
+          "posterSecond": 165.0,
+          "summary": "能仁里早市老夫妻手工炭炉酥油小烧饼，葱油咸酥甜香酥脆，刚出炉层层掉渣，性价比极高。",
+          "coordinates": [
+            118.767475,
+            32.00669
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "雨花台区 / 能仁里菜市场",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍能仁里菜市场内老字号酥油小烧饼，吸附雨花西路道路节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 27797139,
+              "name": "雨花西路",
+              "url": "https://www.openstreetmap.org/way/27797139",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 6153284841
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-wanglixiang-7700575729684637540",
+      "author": "汪理想",
+      "title": "在南京深夜街头，喝上一碗热情腾腾的夜豆浆 #南京#南京美食",
+      "url": "https://www.douyin.com/video/7700575729684637540",
+      "shareURL": "https://v.douyin.com/Ci1UQzOXVb4/",
+      "publishedOn": "2024-08-03",
+      "durationSeconds": 153.23,
+      "sourceSHA256": "2f98248e3c1a307b5d0c640a1dcd7c6bb5e8a13fe613579f2f0a5571f59faef8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "用户提供抖音分享链接，本地获取原片、提取关键帧与ASR逐字稿，核验建邺茶南夜豆浆。",
+      "segments": [
+        {
+          "id": "nj-wanglixiang-chanan-yedoujiang",
+          "name": "茶南夜豆浆(茶南兆园店)",
+          "category": "夜宵点心",
+          "addressText": "南京市建邺区茶南兆园22幢101室 (茶南大街与福园街交叉口)",
+          "start": 0.0,
+          "end": 153.23,
+          "posterSecond": 45.0,
+          "summary": "汪理想深夜探访茶南夜豆浆，热豆浆配油条馃子，现炸小吃暖胃暖心，茶南老小区夜间烟火气代表。",
+          "coordinates": [
+            118.742745,
+            32.032809
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "建邺区 / 茶南兆园",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍茶南兆园与茶南大街路口夜豆浆，吸附茶南大街与福园街交叉节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 89385317,
+              "name": "茶南大街",
+              "url": "https://www.openstreetmap.org/way/89385317",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1036713384
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-fengchancaomei-7329442639458094372",
+      "author": "疯产草莓",
+      "title": "不敢相信这是2024南京的物价\n#南京美食 #炸串 #街边小吃 #抖音美食推荐官 #夜市里的烟火气",
+      "url": "https://www.douyin.com/video/7329442639458094372",
+      "shareURL": "https://v.douyin.com/M5hQf4cSGK4/",
+      "publishedOn": "2024-01-29",
+      "durationSeconds": 144.38,
+      "sourceSHA256": "1021ed90809a61c49d991611371b64c7419e0980fb79c911bb4dc8ed73d344d7",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "用户提供抖音分享链接，本地获取原片与逐字稿。片中为南京市井夜市低价炸串摊，无固定门牌与街区线索，诚实保留视频库。",
+      "segments": [
+        {
+          "id": "nj-fengchancaomei-zhachuan",
+          "name": "南京市井夜市炸串摊",
+          "category": "街边炸串 / 夜市小吃",
+          "addressText": "南京市井夜市炸串摊（当前地图范围外·待确认街区后扩图归档）",
+          "start": 0.0,
+          "end": 144.38,
+          "posterSecond": 35.0,
+          "summary": "疯产草莓探访南京市井夜市炸串摊，5毛钱素菜炸串、招牌臭豆腐与炸苕皮，超高性价比市井美味。",
+          "coordinates": null,
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "nj-xuxixiwanghaha-7699801905703539634",
+      "author": "徐嘻嘻王哈哈",
+      "title": "建邺和岱山高架桥下野摊，主要就是走量 脆骨鸡肉都是1块5一根，牛肉3块，放食材的冰箱特别干净透亮！给我感觉很舒服#南京野摊 #烟火气小店 #岱山烧烤 #露天夜宵摊 #藏在街头巷尾的城市美味",
+      "url": "https://www.douyin.com/video/7699801905703539634",
+      "shareURL": "https://v.douyin.com/X1wBfMiX2so/",
+      "publishedOn": "2024-12-14",
+      "durationSeconds": 160.87,
+      "sourceSHA256": "c60758677399cde8f6e3515fc9eb7e8d6846ccfd2aece4b7dd2e0ffdfe02a6cb",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "用户提供抖音分享链接，本地获取原片与逐字稿。拍摄建邺与岱山高架桥下露天野摊烧烤，地处西南岱山范围外，诚实归档。",
+      "segments": [
+        {
+          "id": "nj-xuxixi-daishan-yetanshaokao",
+          "name": "岱山高架桥下野摊烧烤",
+          "category": "露天烧烤 / 夜市野摊",
+          "addressText": "南京市雨花台区西善桥街道岱山立交高架桥下（当前地图范围外·待西南岱山扩图）",
+          "start": 0.0,
+          "end": 160.87,
+          "posterSecond": 40.0,
+          "summary": "建邺与岱山交界高架桥下路边野摊烧烤，走量平价烤串，脆骨鸡肉实惠香脆，深夜市井烟火气。",
+          "coordinates": null,
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "nj-wangzhazhazhazha-7634020341572067003",
+      "author": "王炸炸炸炸！！",
+      "title": "南京“小破店”合集来啦，怎么会有这么好吃的店！！！！#南京小破店  #南京美食 #私藏好店请集合 #吃货日常记录 #街头烟火气",
+      "url": "https://www.douyin.com/video/7634020341572067003",
+      "shareURL": "https://v.douyin.com/OnACBovcN9A/",
+      "publishedOn": "2024-06-23",
+      "durationSeconds": 140.97,
+      "sourceSHA256": "9faac66910b1377c86c947044b808ebaca4030c1936016d57096b000f18873e0",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "用户提供抖音分享链接，本地获取原片、提取关键帧与逐字稿，合集拆分为新街口4家店，其中麻兴发归并已有同店Marker。",
+      "segments": [
+        {
+          "id": "nj-wangzhazha-wuming-malatang",
+          "name": "无名麻辣烫(新街口羊皮巷店)",
+          "category": "老牌小吃·麻辣烫",
+          "addressText": "南京市秦淮区羊皮巷与延龄巷交叉口巷内",
+          "start": 0.0,
+          "end": 33.0,
+          "posterSecond": 15.0,
+          "summary": "藏在新街口羊皮巷老巷子里的无名麻辣烫，自选串串搭配浓郁红油汤底，老南京街头经典小吃。",
+          "coordinates": [
+            118.780845,
+            32.03835
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "秦淮区 / 羊皮巷",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍新街口羊皮巷无名麻辣烫门面，吸附羊皮巷道路节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 444086387,
+              "name": "羊皮巷",
+              "url": "https://www.openstreetmap.org/way/444086387",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 3285577554
+            }
+          }
+        },
+        {
+          "id": "nj-wangzhazha-jinxing-hongbei",
+          "name": "金星烘焙(秣陵路店)",
+          "category": "老式糕点烘焙",
+          "addressText": "南京市秦淮区秣陵路小区东区门面 (秣陵路21号旁)",
+          "start": 33.0,
+          "end": 64.0,
+          "posterSecond": 45.0,
+          "summary": "秣陵路社区老牌金星烘焙，肉松小贝、麻薯与老式蛋糕松软香甜，价格亲民深受老街坊青睐。",
+          "coordinates": [
+            118.775638,
+            32.037648
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "秦淮区 / 秣陵路",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍秣陵路金星烘焙招牌门面，吸附秣陵路道路节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 89638684,
+              "name": "秣陵路",
+              "url": "https://www.openstreetmap.org/way/89638684",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1038879789
+            }
+          }
+        },
+        {
+          "id": "nj-wangzhazha-maxingfa",
+          "placeId": "nj-xinzang-maxingfa",
+          "name": "麻兴发·干蒸鲜排骨(北门桥路店)",
+          "category": "排骨 / 粤式干蒸大排档",
+          "addressText": "南京市玄武区北门桥路15-1号",
+          "start": 64.0,
+          "end": 99.0,
+          "posterSecond": 80.0,
+          "summary": "王炸炸炸炸打卡新街口北门桥麻兴发干蒸鲜排骨，芝士吊龙裹着热肉拉丝浓郁，市井小破店合集推荐。",
+          "coordinates": [
+            118.7821106,
+            32.0513315
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "玄武区 / 北门桥路",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片与门头实拍玄武区北门桥路15-1号，与开放道路北门桥路吸附对齐。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 27811151,
+              "name": "北门桥",
+              "url": "https://www.openstreetmap.org/way/27811151",
+              "sourceDate": "2026-11-02",
+              "method": "original-way-node",
+              "nodeId": 1155833090
+            }
+          }
+        },
+        {
+          "id": "nj-wangzhazha-honglogg-huoguo",
+          "name": "红logg市井火锅(新街口店)",
+          "category": "市井火锅",
+          "addressText": "南京市秦淮区羊皮巷27号",
+          "start": 99.0,
+          "end": 140.97,
+          "posterSecond": 120.0,
+          "summary": "新街口羊皮巷复古市井火锅，牛油锅底醇厚麻辣，屠场鲜毛肚与大刀腰片脆嫩入味，市井烟火氛围浓。",
+          "coordinates": [
+            118.781401,
+            32.03821
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "秦淮区 / 羊皮巷",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍羊皮巷红logg市井火锅，吸附羊皮巷道路拓扑节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 444086387,
+              "name": "羊皮巷",
+              "url": "https://www.openstreetmap.org/way/444086387",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 4330284137
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-basiguangnian-7452693170254531877",
+      "author": "巴斯光年没有光",
+      "title": "夜宵跟好朋友吃个烧饼夹串 #炸串#街边小吃#人间烟火",
+      "url": "https://www.douyin.com/video/7452693170254531877",
+      "shareURL": "https://v.douyin.com/qEOihcULwpw/",
+      "publishedOn": "2024-03-29",
+      "durationSeconds": 11.47,
+      "sourceSHA256": "0dd4a9c27da9f1912b704ef0536a8394c8c969c156608178e6a143a43d792198",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "用户提供抖音分享链接，本地获取原片与提取关键帧。南京街头流动摊烧饼夹炸串，无固定门牌依据，诚实归档视频库不上图。",
+      "segments": [
+        {
+          "id": "nj-basiguangnian-shaobing-jiachuan",
+          "name": "南京街头流动摊·烧饼夹串",
+          "category": "街边流动摊 / 炸串夹饼",
+          "addressText": "南京街头流动摊·烧饼夹串（当前地图范围外·流动摊待扩图）",
+          "start": 0.0,
+          "end": 11.47,
+          "posterSecond": 5.0,
+          "summary": "南京街头深夜流动炸串摊，热油炸制串串剪碎夹入酥脆芝麻烧饼，刷满甜辣酱料，接地气夜宵小吃。",
+          "coordinates": null,
+          "routeEligible": false
+        }
+      ]
+    },
+    {
+      "id": "nj-putaoouni-7671874819579895730",
+      "author": "葡萄欧尼",
+      "title": "落地南京第一顿。。。夯爆了！！还想再去一次😭😭 #街边小吃 #接地气的小吃 #真实分享美食计划 #寻味烟火气 #南京美食",
+      "url": "https://www.douyin.com/video/7671874819579895730",
+      "shareURL": "https://v.douyin.com/BPEZAV675cA/",
+      "publishedOn": "2024-12-01",
+      "durationSeconds": 21.63,
+      "sourceSHA256": "40162ea330a0721a9fa068f6fc1dad73e973130f8c49652703e9e3ea0950f17c",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "用户提供抖音分享链接，本地获取原片、提取帧与逐字稿，视频门头明示“二娃小馆 三代传承”，核验为锁金五村老牌酸菜鱼创始店。",
+      "segments": [
+        {
+          "id": "nj-putaoouni-erwa-xiaoguan",
+          "name": "爱尚二娃小馆·老牌酸菜鱼(锁金五村创始店)",
+          "category": "老牌家常小馆",
+          "addressText": "南京市玄武区锁金北路锁金五村16号临街",
+          "start": 0.0,
+          "end": 21.63,
+          "posterSecond": 10.0,
+          "summary": "葡萄欧尼打卡锁金五村2002年老牌爱尚二娃小馆，128套餐满满一大桌，山楂藕儿粉排骨、布袋虾球与大虾满满一盆，分量夯实。",
+          "coordinates": [
+            118.814928,
+            32.077102
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "玄武区 / 锁金五村",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片与门头实拍玄武区锁金北路锁金五村爱尚二娃小馆，吸附锁金北路节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 91202333,
+              "name": "锁金北路",
+              "url": "https://www.openstreetmap.org/way/91202333",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 1166141271
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-enendeditu-7649318847342127680",
+      "author": "恩恩的地图",
+      "title": "一共4家！超适合夏天的南京小破店美食🏠第四期啦～ #南京美食 #南京攻略 #南京面包 #南京逛吃攻略",
+      "url": "https://www.douyin.com/video/7649318847342127680",
+      "shareURL": "https://v.douyin.com/T9kxQYXyVwo/",
+      "publishedOn": "2024-08-27",
+      "durationSeconds": 131.5,
+      "sourceSHA256": "684bf7d48d4a0e383960a63469db8a7e1c79eaee66d2f73d4ccd417907e8623d",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "用户提供抖音分享链接，本地获取原片、提取关键帧与逐字稿，合集拆分为新街口与红庙4家特色小破店。",
+      "segments": [
+        {
+          "id": "nj-enendeditu-jinling-guihuagao",
+          "name": "金陵脆皮桂花糕(明瓦廊店)",
+          "category": "特色传统糕点",
+          "addressText": "南京市秦淮区明瓦廊129号旁",
+          "start": 0.0,
+          "end": 32.0,
+          "posterSecond": 15.0,
+          "summary": "明瓦廊爆浆金陵脆皮桂花糕与米麻薯，外皮酥脆内馅软糯流心，热气腾腾甜而不腻的小甜品。",
+          "coordinates": [
+            118.777258,
+            32.037251
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "秦淮区 / 明瓦廊",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍明瓦廊金陵脆皮桂花糕门面，吸附明瓦廊道路节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 94494930,
+              "name": "明瓦廊",
+              "url": "https://www.openstreetmap.org/way/94494930",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 10196453951
+            }
+          }
+        },
+        {
+          "id": "nj-enendeditu-shendu-liangpi",
+          "name": "神都凉皮(羊皮巷店)",
+          "category": "传统风味小吃",
+          "addressText": "南京市秦淮区羊皮巷25号",
+          "start": 32.0,
+          "end": 64.0,
+          "posterSecond": 48.0,
+          "summary": "羊皮巷老木牌“神都凉皮”，手工现切擀面皮与牛筋面混搭，黄瓜丝面筋吸饱酸辣红油，夏季开胃绝配。",
+          "coordinates": [
+            118.780349,
+            32.038483
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "秦淮区 / 羊皮巷",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍羊皮巷神都凉皮门牌与操作档口，吸附羊皮巷道路节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 444086387,
+              "name": "羊皮巷",
+              "url": "https://www.openstreetmap.org/way/444086387",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 3285577553
+            }
+          }
+        },
+        {
+          "id": "nj-enendeditu-twobites-coffee",
+          "name": "两口咖啡 Two Bites Coffee(红庙店)",
+          "category": "社区咖啡烘焙",
+          "addressText": "南京市玄武区红庙街4-1号",
+          "start": 64.0,
+          "end": 98.0,
+          "posterSecond": 80.0,
+          "summary": "藏在红庙老街巷子里的两口咖啡，特色招牌美式与手作贝果烘焙，环境温馨舒适的社区宝藏小店。",
+          "coordinates": [
+            118.785242,
+            32.049636
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "玄武区 / 红庙街",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍红庙两口咖啡门面与招牌，吸附红庙道路拓扑节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 89637281,
+              "name": "红庙",
+              "url": "https://www.openstreetmap.org/way/89637281",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 13741908596
+            }
+          }
+        },
+        {
+          "id": "nj-enendeditu-laoniu-malatang",
+          "name": "老牛麻辣烫(明瓦廊店)",
+          "category": "老牌市井小吃",
+          "addressText": "南京市秦淮区明瓦廊大锏银巷内",
+          "start": 98.0,
+          "end": 131.5,
+          "posterSecond": 115.0,
+          "summary": "明瓦廊巷内老牌老牛麻辣烫，自选新鲜食材老卤慢熬，牛油鲜香微麻回甘，学生与上班族常年光顾。",
+          "coordinates": [
+            118.776735,
+            32.036043
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "秦淮区 / 明瓦廊",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍明瓦廊老牛麻辣烫档口，吸附明瓦廊道路节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 94494930,
+              "name": "明瓦廊",
+              "url": "https://www.openstreetmap.org/way/94494930",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 4424594487
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-duiduishuilema-7652326433553750449",
+      "author": "怼怼睡了吗",
+      "title": "终于在南京吃上夯爆的美式烟熏自助烤肉，没有3斤肉量千万别来！ #美式烟熏烤肉 #美式烟熏自助 #美式烤肉自助 #大口吃肉的感觉太爽了 #南京自助餐",
+      "url": "https://www.douyin.com/video/7652326433553750449",
+      "shareURL": "https://v.douyin.com/8p8ky20mRTo/",
+      "publishedOn": "2024-11-30",
+      "durationSeconds": 99.83,
+      "sourceSHA256": "68ece6a8562e43caf26f6cc75dc3bae1551ad765aa1d108c672f0d093caa453b",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "用户提供抖音分享链接，本地获取原片、提取帧与逐字稿，视频门牌清晰展示Black Uncle建邺万达店L5-03。",
+      "segments": [
+        {
+          "id": "nj-duidui-heishu-kaofang",
+          "name": "黑叔Black Uncle烤房·美式烟熏烤肉自助(建邺万达店)",
+          "category": "美式烟熏烤肉",
+          "addressText": "南京市建邺区江东中路98号建邺万达广场5层L5-03",
+          "start": 0.0,
+          "end": 99.83,
+          "posterSecond": 35.0,
+          "summary": "怼怼睡了吗探访建邺万达黑叔美式烟熏烤肉自助，低温慢熏牛胸肉、猪肋排与手撕猪肉肉香四溢，大口吃肉过瘾。",
+          "coordinates": [
+            118.735079,
+            32.030369
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "建邺区 / 建邺万达广场",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍建邺万达广场5层黑叔烤房，吸附江东中路与集庆门大街路口节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 61817945,
+              "name": "集庆门大街",
+              "url": "https://www.openstreetmap.org/way/61817945",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 3145632567
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nj-niunaipaoaoli-7647875361221305721",
+      "author": "牛奶泡奥利",
+      "title": "小鸟胃大学生爽吃南京寿司板前自助！ 一条视频给你们测评看看到底怎么样～#古韵江南 #苏超 #奈司 #南京自助寿司 #南京自助",
+      "url": "https://www.douyin.com/video/7647875361221305721",
+      "shareURL": "https://v.douyin.com/NKtk0Sqruaw/",
+      "publishedOn": "2024-06-24",
+      "durationSeconds": 76.4,
+      "sourceSHA256": "6dbe24e50cc58122115063584154a593a8a25b4e88653519ccafbfeb1edc38ff",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "用户提供抖音分享链接，本地获取原片、提取关键帧与逐字稿，标签明确奈司板前现握寿司，核验新街口东方福来德店。",
+      "segments": [
+        {
+          "id": "nj-niunai-naisi-shoushi",
+          "name": "奈斯板前现握寿司自助(新街口东方福来德店)",
+          "category": "日式板前料理",
+          "addressText": "南京市秦淮区中山南路68号东方福来德B1层",
+          "start": 0.0,
+          "end": 76.4,
+          "posterSecond": 30.0,
+          "summary": "牛奶泡奥利测评新街口东方福来德奈斯板前现握寿司自助，三文鱼、甜虾、鹅肝与蒲烧鳗鱼现点现握，性价比亲民。",
+          "coordinates": [
+            118.778808,
+            32.040111
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "秦淮区 / 东方福来德",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍新街口中山南路东方福来德商场B1层奈斯寿司，吸附中山南路节点。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 74658302,
+              "name": "中山南路",
+              "url": "https://www.openstreetmap.org/way/74658302",
+              "sourceDate": "2026-11-06",
+              "method": "original-way-node",
+              "nodeId": 10196453941
+            }
+          }
         }
       ]
     }
