@@ -69,7 +69,7 @@ export class FoodOverlay {
       }
       const name=document.createElement('strong');name.textContent=item.name;button.append(name);
       if(item.verificationStatus==='source-record'||item.verificationStatus==='video-location'){
-        const state=document.createElement('small');state.className='food-record-state';state.textContent=(item.category?item.category+' · ':'')+(item.verificationStatus==='video-location'?'位置大致':'店址待核实');button.append(state);
+        const state=document.createElement('small');state.className='food-record-state';state.textContent=(item.category?item.category+' · ':'')+(item.verificationStatus==='video-location'?(item.planningLocation?.precision==='area'?'区域粗估':'位置大致'):'店址待核实');button.append(state);
       }else if(item.category){const category=document.createElement('small');category.className='food-category';category.textContent=item.category;button.append(category);}
       const credit=foodVideoCredit(item);if(credit){const source=document.createElement('small');source.className='food-video-credit';source.textContent=credit;source.title=credit;button.append(source);}
       button.addEventListener('click',event=>{event.stopPropagation();onOpen(item);});

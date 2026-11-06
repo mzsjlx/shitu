@@ -89,7 +89,7 @@ export class FoodPopover{
       button.addEventListener('click',()=>{this.show(item,entry,{pinned:true,clipId:clip.id});this.element.querySelector('[data-clip-id="'+clip.id+'"]')?.focus({preventScroll:true});});choices.append(button);
     }
     const originalURL=official?.original||item.originalVideoURL;
-    if(originalURL){const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));if(item.verificationStatus==='video-location'){const note=el('small','food-popover-branch-note','位置大致 · 分店待核');note.title=item.planningLocation?.note||'按地址街区估计';links.append(note);}}
+    if(originalURL){const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));if(item.verificationStatus==='video-location'){const note=el('small','food-popover-branch-note',item.planningLocation?.precision==='area'?'区域粗估 · 店址待核':'位置大致 · 分店待核');note.title=item.planningLocation?.note||'按地址街区估计';links.append(note);}}
     if(item.clipFootageNote){const note=el('small','food-popover-branch-note',item.clipFootageNote);links.append(note);}
     this.element.classList.toggle('has-clip-choices',choices.childElementCount>0);this.element.classList.toggle('has-footage-note',!!item.clipFootageNote);
     const details=el('div','food-popover-details');details.append(copy,choices,this.errorNote,links);
