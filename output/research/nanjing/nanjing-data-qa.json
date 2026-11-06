@@ -1,11 +1,11 @@
 {
   "checks": [
     {
-      "name": "Nanjing catalog has 55 sources and 140 segments",
+      "name": "Nanjing catalog has 65 sources and 150 segments",
       "passed": true
     },
     {
-      "name": "Catalog groups into 133 items (92 map stops + 41 pending-expansion) with 5 multi-blogger merges",
+      "name": "Catalog groups into 142 items (97 map stops + 45 pending-expansion) with 6 multi-blogger merges",
       "passed": true
     },
     {
@@ -13,11 +13,11 @@
       "passed": true
     },
     {
-      "name": "All 92 map stops snap directly to walkable OSM roads within 25m",
+      "name": "All 97 map stops snap directly to walkable OSM roads within 25m",
       "passed": true
     },
     {
-      "name": "All 140 video clip MP4s and poster JPGs exist with correct SHA256 in report",
+      "name": "All 150 video clip MP4s and poster JPGs exist with correct SHA256 in report",
       "passed": true
     },
     {
