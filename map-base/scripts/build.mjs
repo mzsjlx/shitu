@@ -33,11 +33,16 @@ for(const file of Object.values(city.dataFiles))json[file]=JSON.parse(await read
 if(city.streetDetail)for(const file of [city.streetDetail.data,city.streetDetail.manifest])json[file]=JSON.parse(await readFile(path.join(root,file),'utf8'));
 if(city.foodContent)json[city.foodContent.records]=JSON.parse(await readFile(path.join(root,city.foodContent.records),'utf8'));
 if(city.foodContent?.roadNetwork)json[city.foodContent.roadNetwork]=JSON.parse(await readFile(path.join(root,city.foodContent.roadNetwork),'utf8'));
+if(city.foodContent?.videoLibrary)json[city.foodContent.videoLibrary]=JSON.parse(await readFile(path.join(root,city.foodContent.videoLibrary),'utf8'));
+if(city.foodContent?.videoAssets)json[city.foodContent.videoAssets]=JSON.parse(await readFile(path.join(root,'dist',city.foodContent.videoAssets),'utf8'));
 if(city.walkNetwork)json[city.walkNetwork]=JSON.parse(await readFile(path.join(root,city.walkNetwork),'utf8'));
+if(city.buildingsDetail)json[city.buildingsDetail]=JSON.parse(await readFile(path.join(root,city.buildingsDetail),'utf8'));
 const terrain={};
-for(const tile of json[city.dataFiles.terrainManifest].tiles){
-  const relative=city.demTiles.replace('{z}',tile.z).replace('{x}',tile.x).replace('{y}',tile.y);
-  terrain[relative]='data:image/png;base64,'+(await readFile(path.join(root,relative))).toString('base64');
+if (city.demTiles && city.dataFiles?.terrainManifest && json[city.dataFiles.terrainManifest]) {
+  for(const tile of json[city.dataFiles.terrainManifest].tiles){
+    const relative=city.demTiles.replace('{z}',tile.z).replace('{x}',tile.x).replace('{y}',tile.y);
+    terrain[relative]='data:image/png;base64,'+(await readFile(path.join(root,relative))).toString('base64');
+  }
 }
 const assets={};
 if(city.foodContent)assets[city.foodContent.sprite]='data:image/jpeg;base64,'+(await readFile(path.join(root,'dist',city.foodContent.sprite))).toString('base64');

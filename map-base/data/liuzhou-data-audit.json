@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "city": "liuzhou",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "Configured central-urban cutout of Liuzhou",
+  "bounds": [
+    109.35,
+    24.26,
+    109.47,
+    24.38
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 2391641,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      109.35,
+      24.26,
+      109.47,
+      24.38
+    ]
+  },
+  "osmReplicationTime": "2026-10-28T04:00:00Z",
+  "counters": {
+    "requestedTiles": 156,
+    "presentTiles": 156,
+    "roadLineFragments": 1918,
+    "namedRoadLineFragments": 1052,
+    "unnamedRoadLineFragments": 866,
+    "nonRoadTransportFragmentsExcluded": 217,
+    "buildingPolygonFragments": 4352,
+    "buildingFragmentsWithPositiveHeight": 70,
+    "buildingFragmentsWithoutPositiveHeight": 4282,
+    "namedRoadGroups": 304
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  }
+}

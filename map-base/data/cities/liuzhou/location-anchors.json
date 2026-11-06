@@ -1,0 +1,143 @@
+{
+  "reviewedOn": "2026-11-02",
+  "sourceDate": "2026-11-01",
+  "sourceSHA256": "3470e2e0780a4711c5470e6f7a1f7c6e4eaba672712274317fedf84bf97294dc",
+  "scope": "柳州首批9家门店原片地址所对应的开放街区参照；未核实店门或营业状态。",
+  "anchors": [
+    {
+      "segmentId": "lz-wangzulan-zhangji",
+      "shopName": "张记玉米汁",
+      "kind": "osm-way",
+      "id": 205639714,
+      "name": "中山中路（青云民生市场樵家巷入口）",
+      "url": "https://www.openstreetmap.org/way/205639714",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2065206498,
+      "coordinates": [
+        109.4058454,
+        24.3142272
+      ]
+    },
+    {
+      "segmentId": "lz-wangzulan-zhuoheji",
+      "shopName": "卓和记猪肉脯",
+      "kind": "osm-way",
+      "id": 205639714,
+      "name": "中山中路（青云民生市场入口通道）",
+      "url": "https://www.openstreetmap.org/way/205639714",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2065206498,
+      "coordinates": [
+        109.4058454,
+        24.3142272
+      ]
+    },
+    {
+      "segmentId": "lz-wangzulan-panjie",
+      "shopName": "青云老牌潘姐小吃",
+      "kind": "osm-way",
+      "id": 205659718,
+      "name": "青云市场内部通道（近樵家巷中段）",
+      "url": "https://www.openstreetmap.org/way/205659718",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2156323447,
+      "coordinates": [
+        109.4058116,
+        24.3139247
+      ]
+    },
+    {
+      "segmentId": "lz-chenhe-aningmeng",
+      "shopName": "杨记阿柠檬螺蛳粉",
+      "kind": "osm-way",
+      "id": 1015164161,
+      "name": "潭中西路北一巷生活区支路（近壶西实验中学）",
+      "url": "https://www.openstreetmap.org/way/1015164161",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 9364759953,
+      "coordinates": [
+        109.3896839,
+        24.3391988
+      ]
+    },
+    {
+      "segmentId": "lz-dage-caomei",
+      "shopName": "曹妹螺蛳粉",
+      "kind": "osm-way",
+      "id": 196861784,
+      "name": "白沙路 / 柳锌小区生活区支路",
+      "url": "https://www.openstreetmap.org/way/196861784",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2071544877,
+      "coordinates": [
+        109.4207196,
+        24.3383261
+      ]
+    },
+    {
+      "segmentId": "lz-xiaojiu-weipopo",
+      "shopName": "煨婆婆（公园路店）",
+      "kind": "osm-way",
+      "id": 205513951,
+      "name": "弯塘路（近公园路 / 柳侯公园南门）",
+      "url": "https://www.openstreetmap.org/way/205513951",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 2154755049,
+      "coordinates": [
+        109.4123742,
+        24.3180399
+      ]
+    },
+    {
+      "segmentId": "lz-xiaobaozha-leilaoban",
+      "shopName": "雷老板家烧烤（窑埠店）",
+      "kind": "osm-way",
+      "id": 370559017,
+      "name": "文昌桥东引桥匝道（窑埠古镇B区入口）",
+      "url": "https://www.openstreetmap.org/way/370559017",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 7215520566,
+      "coordinates": [
+        109.4233171,
+        24.3247132
+      ]
+    },
+    {
+      "segmentId": "lz-rourou-gaojia",
+      "shopName": "高家螺蛳粉店",
+      "kind": "osm-way",
+      "id": 1448425478,
+      "name": "大鹅山菜市周边支路（鹅山路31-1号一带）",
+      "url": "https://www.openstreetmap.org/way/1448425478",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 13289195624,
+      "coordinates": [
+        109.3876945,
+        24.3170634
+      ]
+    },
+    {
+      "segmentId": "lz-tangshixiong-liujie",
+      "shopName": "刘姐鲜肉螺蛳粉（总店）",
+      "kind": "osm-way",
+      "id": 205517132,
+      "name": "连塘路（连塘路90号一带）",
+      "url": "https://www.openstreetmap.org/way/205517132",
+      "sourceDate": "2026-11-01",
+      "method": "original-way-node",
+      "nodeId": 5921940270,
+      "coordinates": [
+        109.4019086,
+        24.3169235
+      ]
+    }
+  ]
+}
