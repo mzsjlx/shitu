@@ -19,19 +19,19 @@ async function check(name,fn){
 const catalogData=JSON.parse(await readFile('data/cities/nanjing/video-library.json','utf8'));
 const catalog=validateVideoLibrary(catalogData,'nanjing');
 
-await check('Nanjing catalog has 33 sources and 118 segments',()=>{
-  assert.equal(catalog.sources.length,33);
+await check('Nanjing catalog has 43 sources and 128 segments',()=>{
+  assert.equal(catalog.sources.length,43);
   const total=catalog.sources.reduce((sum,s)=>sum+s.segments.length,0);
-  assert.equal(total,118);
+  assert.equal(total,128);
 });
 
 const groups=groupVideoPlaces(catalog);
 const cityBounds=[118.70, 31.98, 118.88, 32.12];
 const locatedGroups=groups.filter(g=>g.primary.segment.coordinates&&withinMapBounds(g.primary.segment,cityBounds));
 
-await check('Catalog groups into 112 items (84 map stops + 28 pending-expansion) with 4 multi-blogger merges',()=>{
-  assert.equal(groups.length,112);
-  assert.equal(locatedGroups.length,84);
+await check('Catalog groups into 122 items (88 map stops + 34 pending-expansion) with 4 multi-blogger merges',()=>{
+  assert.equal(groups.length,122);
+  assert.equal(locatedGroups.length,88);
   
   const liji=groups.find(g=>g.primary.segment.name==='李记清真馆');
   assert(liji&&liji.clips.length===4,'李记清真馆 should have 4 clips (铁蛋儿, 猴哥说车, Sasaaaaa, 特别乌啦啦)');
@@ -64,7 +64,7 @@ await check('Every located Nanjing segment has a frozen OSM way and node anchor'
 });
 
 const router=buildFoodRoadRouter(JSON.parse(await readFile('data/cities/nanjing/food-road-network.json','utf8')));
-await check('All 84 map stops snap directly to walkable OSM roads within 25m',()=>{
+await check('All 88 map stops snap directly to walkable OSM roads within 25m',()=>{
   for(const g of locatedGroups){
     const coords=g.primary.segment.coordinates;
     const snaps=nearestRoadSnaps(router,coords);
@@ -72,7 +72,7 @@ await check('All 84 map stops snap directly to walkable OSM roads within 25m',()
   }
 });
 
-await check('All 118 video clip MP4s and poster JPGs exist with correct SHA256 in report',()=>{
+await check('All 128 video clip MP4s and poster JPGs exist with correct SHA256 in report',()=>{
   for(const source of catalog.sources){
     for(const seg of source.segments){
       const names=mediaNames(source,seg);
