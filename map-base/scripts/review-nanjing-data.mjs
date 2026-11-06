@@ -19,18 +19,18 @@ async function check(name,fn){
 const catalogData=JSON.parse(await readFile('data/cities/nanjing/video-library.json','utf8'));
 const catalog=validateVideoLibrary(catalogData,'nanjing');
 
-await check('Nanjing catalog has 16 sources and 66 segments',()=>{
-  assert.equal(catalog.sources.length,16);
+await check('Nanjing catalog has 17 sources and 69 segments',()=>{
+  assert.equal(catalog.sources.length,17);
   const total=catalog.sources.reduce((sum,s)=>sum+s.segments.length,0);
-  assert.equal(total,66);
+  assert.equal(total,69);
 });
 
 const groups=groupVideoPlaces(catalog);
 const cityBounds=[118.70, 31.98, 118.88, 32.12];
 const locatedGroups=groups.filter(g=>g.primary.segment.coordinates&&withinMapBounds(g.primary.segment,cityBounds));
 
-await check('Catalog groups into 61 items (57 map stops + 4 Jiangning pending-expansion) with 3 multi-blogger merges',()=>{
-  assert.equal(groups.length,61);
+await check('Catalog groups into 64 items (57 map stops + 7 Jiangning pending-expansion) with 3 multi-blogger merges',()=>{
+  assert.equal(groups.length,64);
   assert.equal(locatedGroups.length,57);
   
   const liji=groups.find(g=>g.primary.segment.name==='李记清真馆');
@@ -69,7 +69,7 @@ await check('All 57 map stops snap directly to walkable OSM roads within 25m',()
   }
 });
 
-await check('All 66 video clip MP4s and poster JPGs exist with correct SHA256 in report',()=>{
+await check('All 69 video clip MP4s and poster JPGs exist with correct SHA256 in report',()=>{
   for(const source of catalog.sources){
     for(const seg of source.segments){
       const names=mediaNames(source,seg);

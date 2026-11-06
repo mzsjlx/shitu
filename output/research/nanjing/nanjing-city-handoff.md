@@ -1,6 +1,6 @@
 # 食途 · 南京城市交付报告 (Nanjing City Handoff)
 
-- **日期**：2026-11-02
+- **日期**：2026-11-06
 - **城市标识**：`nanjing`（高德城市代码 `320100`）
 - **开发分支**：`codex/city-nanjing-prep`（隔离工作树 `.local/worktrees/nanjing`）
 - **核心范围**：`[118.70, 31.98, 118.88, 32.12]`（玄武湖、新街口、明瓦廊、老门东、来凤小区、锁金村、南湖、茶南、大行宫、明故宫、钟灵街、油坊桥等商圈与地铁沿线，约 17.1 × 15.6 km）
@@ -8,9 +8,9 @@
 
 ---
 
-## 1. 视频整理与入库总览（三批共 16 条视频）
+## 1. 视频整理与入库总览（四批共 17 条视频）
 
-用户在会话中提供的三批共 16 条抖音探店链接已全部完成原片获取、视频探测、逐店认店剪辑、真实海报截取、同店多博主归并与开放地图真实道路锚定：
+用户在会话中提供的四批共 17 条抖音探店链接已全部完成原片获取、视频探测、逐店认店剪辑、真实海报截取、同店多博主归并与开放地图真实道路锚定：
 
 ### 第一批（5 条）
 | 来源 ID | 作者 | 视频标题 | 视频时长 | 原片大小 | 切片数 | 涉及主要店铺 |
@@ -40,10 +40,15 @@
 | `nj-feifeiyoudiene-7536571388175453499` | 飞飞有点饿 | 2号线美食合集10家店 | 313.00s | 121.1 MB | 10 | EAT BURGER(油坊桥)、南湖中华面馆(莫愁湖)、汉中门水西门鸭子店(汉中门)、小鱼儿面馆(上海路)、芳婆糕团店(王府大街/上海路)、陶记正宗德州扒鸡(新街口)、老头爱马仕酸豇豆炒饭(大行宫)、小潘记鸭血粉丝(大行宫/珠江路)、老汪草鸡蛋煎饼(明故宫)、李记牛肉锅贴(钟灵街) |
 | `nj-fanzongyaochi-7687122503726393339` | 饭总要吃 | 和闺蜜找到的穷鬼食堂！板前小火锅 | 119.30s | 119.7 MB | 1 | 桂觅·板前小火锅(艾尚天地店) |
 
-- **总视频源**：16 条
-- **总切片数**：66 个单店音视频片段（H.264 + AAC，留存 `.local/video-clips/`）
+### 第四批（1 条）
+| 来源 ID | 作者 | 视频标题 | 视频时长 | 原片大小 | 切片数 | 涉及主要店铺 |
+|---|---|---|---|---|---|---|
+| `nj-chenwanye-7700155406131268891` | 陈玩野 | 十年宵夜老场子 同曦夜市3 这期高手成分很高，同曦可以闭眼冲的经典美食摊位！ | 153.63s | 60.6 MB | 3 | 正宗山东临沂炒鸡(同曦夜市店)、来壹碗·五色小馄饨(同曦夜市店)、毛记鸡柳烧饼(同曦夜市店)（3家同曦夜市摊位位于江宁区胜太路百家湖商圈，超出核心底图南界 `31.98`，标记待南延扩图，在视频库归档保留） |
+
+- **总视频源**：17 条
+- **总切片数**：69 个单店音视频片段（H.264 + AAC，留存 `.local/video-clips/`）
 - **地图打卡点**：经同店多博主归并后，生成 **57 个核心城区地图打卡点**（覆盖新街口、明瓦廊、老门东、来凤小区、玄武门、中央路、鸡鸣寺、锁金村、南湖、茶南、大行宫、明故宫、钟灵街、油坊桥等）。
-- **范围外归档点**：**4 个江宁区商圈片段**（胜太西路、百家湖、竹山路），因超出当前核心底图南界 `31.98`，严格遵循地理真实性规范，设置 `coordinates: null` 并标记“当前地图范围外·待南延扩图”，诚实归档在视频库中不上图，不伪造坐标。
+- **范围外归档点**：**7 个江宁区商圈片段**（胜太西路、百家湖、竹山路、同曦夜市），因超出当前核心底图南界 `31.98`，严格遵循地理真实性规范，设置 `coordinates: null` 并标记“当前地图范围外·待南延扩图”，诚实归档在视频库中不上图，不伪造坐标。
 
 ---
 
@@ -94,15 +99,14 @@
    - `node scripts/build.mjs` 成功产出三城独立产物：
      - `preview-chongqing.html`（45.1 MB，126 个片段，81 个打卡点）
      - `preview-changsha.html`（19.4 MB，54 个来源，71 个打卡点）
-     - `preview-nanjing.html`（19.6 MB，66 个片段，57 个打卡点）
+     - `preview-nanjing.html`（19.6 MB，69 个片段，57 个打卡点）
 2. **回归测试**：
    - `node scripts/review-city-integration.mjs`：重庆与长沙核心指标回归 100% 通过（`passed: true`）；
    - `node scripts/review-nanjing-data.mjs`：南京 7 项指标全绿通过（`passed: true`）。
 3. **视觉与交互测试（Playwright）**：
-   - 桌面端（1440×900）：57 张美食卡片完整渲染，李记清真馆（4 位博主切换）无缝切换播放，麻兴发、EAT BURGER 浮窗顺畅唤起，旧音轨即时终止；
-   - 浮窗比例：实测视频高度占比 68.1%（$\ge 2/3$）；
-   - 移动端竖屏（390×844）与短横屏（844×390）自适应完好；
-   - 验证截图归档：`output/research/nanjing/screenshots/13_desktop_all_57_stops.png` 至 `19_mobile_landscape_57_stops.png`。
+   - 桌面端（1440×900）：57 张美食卡片完整渲染，视频库成功打开并识别陈玩野来源与 3 个独立摊位切片（[查看截图 `20_desktop_video_library_chenwanye.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/20_desktop_video_library_chenwanye.png)）；
+   - 视频真实播放：陈玩野临沂炒鸡本地 H.264 视频真实播放，音画同步（[查看截图 `21_desktop_chenwanye_linyichaoji_playing.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/21_desktop_chenwanye_linyichaoji_playing.png)）；
+   - 移动端适配：390×844 竖屏下视频库自适应良好（[查看截图 `22_mobile_portrait_chenwanye_library.png`](file:///d:/codex/美食网站/.local/worktrees/nanjing/output/research/nanjing/screenshots/22_mobile_portrait_chenwanye_library.png)）。
 
 ---
 
@@ -110,8 +114,8 @@
 
 - **代码与元数据（Git 已跟踪）**：
   - `map-base/data/cities/nanjing/`（包含 `video-library.json`, `video-posters.json`, `city-profile.json`, `nanjing.pmtiles`, `food-road-network.json` 等全套地图数据）
-  - `map-base/assets/video-posters/`（共 66 张单店小封面海报 JPG）
-  - `output/research/nanjing/`（QA 结果与测试截图 01~19）
+  - `map-base/assets/video-posters/`（共 69 张单店小封面海报 JPG）
+  - `output/research/nanjing/`（QA 结果与测试截图 01~22）
 - **大媒体文件（本地 .local/ 隔离留存）**：
-  - `.local/video-intake/`（16 份原片及帧截取）
-  - `.local/video-clips/`（66 份单店 H.264+AAC 切片 MP4）
+  - `.local/video-intake/`（17 份原片及帧截取）
+  - `.local/video-clips/`（69 份单店 H.264+AAC 切片 MP4）
