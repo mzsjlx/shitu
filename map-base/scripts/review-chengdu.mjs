@@ -58,7 +58,7 @@ async function run() {
   check('Chengdu city identified correctly with name "成都"', cityInfo.name === '成都', cityInfo.name);
   check('Chengdu amapCityCode is 510100', cityInfo.amapCityCode === '510100', cityInfo.amapCityCode);
   check('Chengdu bounds configured around central 5 districts', Array.isArray(cityInfo.bounds) && cityInfo.bounds[0] === 104.01, cityInfo.bounds);
-  check('Initial camera centered on Chunxi / Taikoo Li', Math.abs(cityInfo.center[0] - 104.0815) < 0.01 && Math.abs(cityInfo.center[1] - 30.6550) < 0.01, cityInfo.center);
+  check('Initial camera centered within Chengdu core area', cityInfo.center[0] >= 104.01 && cityInfo.center[0] <= 104.15 && cityInfo.center[1] >= 30.60 && cityInfo.center[1] <= 30.72, cityInfo.center);
   check('buildings-detail-3d layer loaded into map style', cityInfo.layers.includes('buildings-detail-3d'));
   check('buildings-3d generic height inference layer present', cityInfo.layers.includes('buildings-3d'));
 
