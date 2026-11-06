@@ -2,16 +2,16 @@
 
 食途是“跟着探店视频安排旅行吃什么”的网站，以真实道路三维地图、美食图片、原作者视频和想去清单帮助规划逛吃行程。主工程为 **`map-base/`**，使用 MapLibre GL JS、本地 PMTiles 与 Terrarium 地形，自定义奶油暖色视觉，本地运行不需要高德显示密钥。
 
-仓库：[mzsjlx/shitu](https://github.com/mzsjlx/shitu)。2026-11-01重庆与长沙整合修复已通过 [PR #6](https://github.com/mzsjlx/shitu/pull/6) 合入main（`4b3c4e5`）。网站尚未公开部署，两城均为局部底图，可以快速切城，尚不能跨城连续拖动。
+仓库：[mzsjlx/shitu](https://github.com/mzsjlx/shitu)。重庆与长沙的整合见 [PR #6](https://github.com/mzsjlx/shitu/pull/6)，柳州的接入见 [PR #8](https://github.com/mzsjlx/shitu/pull/8)。三城采用局部底图，可以在本地预览中快速切城。
 
 ## 当前状态与协作入口
 
-| 城市 | 2026-11-01状态 |
+| 城市 | 2026-11-06 状态 |
 | --- | --- |
 | 重庆 | 126片段、81地图点、41段未定位；覆盖主城至北碚局部 |
 | 长沙 | 54来源、95片段、71地图点；另10段待定位、3段范围外，视频均保留 |
 | 南京 | ID `nanjing`，本机已有独立初始化分支，尚未接入 |
-| 柳州 | ID `liuzhou`，保留同学电脑上的独立成果，本次未确认接入 |
+| 柳州 | ID `liuzhou`，7 个来源、9 个片段、9 个地图点，覆盖中心城区局部 |
 
 数字为本次快照，后续以当前目录与 [PROJECT-STATUS.md](PROJECT-STATUS.md) 顶部为准。地图位置是有依据的街区近似点，不代表店门或实时营业核实。加入两家以上想去后，可切换直线/沿路；沿路使用真实道路源节点拓扑和长度，适合规划参考。
 
@@ -35,17 +35,18 @@ macOS/Linux把 `npm.cmd` 换成 `npm`；地图提取工具另需检查平台兼�
 | --- | --- |
 | 重庆美食地图 | `/?view=food` |
 | 长沙美食地图 | `/?city=changsha&view=food` |
+| 柳州美食地图 | `/?city=liuzhou&view=food` |
 | 重庆资料目录 | `/videos.html`、`/places.html` |
 | 长沙资料目录 | `/videos-changsha.html`、`/places-changsha.html` |
 | 重庆内容核实工作台 | `/content-review.html` |
-| 单文件本地审阅 | `/preview-chongqing.html`、`/preview-changsha.html`；`/preview.html`为默认别名 |
+| 单文件本地审阅 | `/preview-chongqing.html`、`/preview-changsha.html`、`/preview-liuzhou.html`。`/preview.html` 为默认别名 |
 | 重庆旧道路节点试算 | `/?view=walk`，不代表其他城市已适配该样板 |
 
 普通页面顶部可切城市。长沙核实工作台明确提示未开放，不读取重庆草稿。想去与距离模式按城保存在浏览器里，不随Git同步；重庆核实草稿可导出/导入。单文件也应通过HTTP验证，不能据此承诺所有浏览器的file协议均可用。
 
 ## 两台电脑的素材同步
 
-Git包含两城221张片段小封面、来源和必要地图；原片与MP4需单独导入。重庆按已有来源包增量同步；长沙54个来源包（含5份仅原片）已在 [长沙素材预发布](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-01-changsha) 发布并核对远端SHA256。按 `map-base/data/media-bundles.json` 选择所需ZIP，不必重下已有素材。
+Git 包含三城 230 张片段封面、来源和必要地图。原片与 MP4 按 `map-base/data/media-bundles.json` 选择 ZIP 单独导入。长沙有 54 个来源包，其中 5 份仅含原片。柳州有 7 个来源包，共 9 段视频。[长沙素材](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-01-changsha) · [柳州素材](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-02-liuzhou)
 
 先同步包含相应来源的代码，在 `map-base/` 执行：
 

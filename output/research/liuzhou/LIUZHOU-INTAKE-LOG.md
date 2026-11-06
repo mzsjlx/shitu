@@ -1,5 +1,13 @@
 # 食途 · 柳州（liuzhou）视频摄入与交互验证台账
 
+## 2026-11-06 接续记录
+
+最新素材包名称和 SHA256 见 `map-base/data/media-bundles.json`。下文保留首批制作时的记录。[柳州素材发布](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-02-liuzhou)
+
+把细节 GeoJSON 的轮廓顶点与 `map-base/data/liuzhou.pmtiles` 的 z15 建筑轮廓比对后，确认 86 条细节轮廓对应 85 个底图要素。`config/cities.json` 中柳州的 `replacedBuildingIds` 保存这些瓦片要素 ID，供平面和立体图层过滤。底图文件 SHA256 为 `06fc19bffd1087a7395b2b7536c667312767df13157324bdf0e227b0c921e335`。更新柳州底图或细节轮廓时须重新比对。地标分层和补绘轮廓是视觉示意。
+
+## 首批制作记录
+
 - **记录日期**：2026-11-01
 - **分支**：`codex/city-liuzhou-intake`
 - **城市标识**：`liuzhou`（柳州市中心城区 · 城中半岛、柳南区、柳北区）
