@@ -1,3 +1,34 @@
+## 2026-11-06 长沙第 12 批来源接入：开福区“四方坪夜市”9家摊位实证上图，全城达 56 来源、105 片段、81 个地图点
+
+在独立 worktree `d:\codex\美食网站\.local\worktrees\changsha`（分支 `codex/city-changsha-prep`，已同步最新 `origin/main`）下，完成用户最新提供的第 12 批单个探店视频处理：
+1. **视频来源获取与 SHA256 强校验**：
+   - 来源：【小瓶饱饱】（`cs-xiaopingbaobao-7702803636661397922`），标题《100块爽吃长沙四方坪夜市！不仅有我吃了10几次的...》；
+   - 时长 109.866s，大小 47.24 MB，分辨率 1080x1920，H.264 + AAC，SHA256=`b189c4a4c43e2c6790e3b236b209c983706f5a5dd9374b44818cd3ae766e699b`；
+   - 落地路径：`.local/video-intake/cs-xiaopingbaobao-7702803636661397922/source.mp4`，伴随元数据 `record.json`、`aweme.json`。
+2. **片尾总结清单与逐帧实证，9家摊位全部精准上图**：
+   - 视频片尾 109s 官方白底总结卡《四方坪美食2.0版》逐一清晰列出 9 家摊位及推荐菜品；
+   - 结合原片逐秒抽帧与招牌、摊位牌匾对齐，在开放地图四方商贸城夜市步行街区（OSM Way 664274447）确定全部 9 家摊位的真实路网连续节点（处于底图范围 `[112.86, 28.14, 113.05, 28.25]` 之内，吸附距离 0 米）：
+     1. `cs-xiaopingbaobao-liuji`：刘记手打酸辣粉（四方坪夜市店），Node 6217416029 `[113.003374, 28.237011]`
+     2. `cs-xiaopingbaobao-chaoniuhe`：干炒炒牛河（四方坪夜市店），Node 6217416019 `[113.003373, 28.237135]`
+     3. `cs-xiaopingbaobao-meishizhaipaitiao`：美式炸排条（四方坪店），Node 6217415989 `[113.003372, 28.237303]`
+     4. `cs-xiaopingbaobao-longjimianmianbing`：隆基绵绵冰（四方坪店），Node 6217415988 `[113.003372, 28.237353]`
+     5. `cs-xiaopingbaobao-zhamogu`：炸蘑菇（四方坪夜市店），Node 6217415980 `[113.003371, 28.237511]`
+     6. `cs-xiaopingbaobao-lijishufulei`：李记糖果舒芙蕾（四方坪店），Node 6217415982 `[113.003370, 28.237735]`
+     7. `cs-xiaopingbaobao-lijifeibing`：李记飞饼（四方坪店），Node 6217415944 `[113.003369, 28.237826]`
+     8. `cs-xiaopingbaobao-baojiangdoufu`：云南包浆豆腐（四方坪夜市店），Node 6217415945 `[113.003368, 28.237989]`
+     9. `cs-xiaopingbaobao-daniuzai`：大牛仔铁板牛肉串（四方坪夜市店），Node 6217415943 `[113.003365, 28.238447]`
+   - 位置锚点持久化记录于 `data/cities/changsha/location-anchors.json`。
+3. **单店切片转码与小海报构建**：
+   - 运行 `prepare-video-clips.mjs`，切出 9 段单店精选切片（共 105 段片段，全城缺少原片 0 份）；
+   - 运行 `prepare-video-posters.mjs`，精准抓取原片招牌与特色菜品，生成 9 张真实画面小海报进 `assets/video-posters/`，更新 `video-posters.json`（共 105 张小封面进 Git）；
+   - 重新构建 `preview-changsha.html`、`preview-chongqing.html`、`places-changsha.html`、`videos-changsha.html`。
+4. **全链路 Playwright E2E 自动化验证**：
+   - 长沙全城有效上图点由 72 个增至 **81 个**（总片段增至 105 段，另 10 段待定位、3 段范围外储备保持不变，严格未造点或回填旧77不可靠点）；
+   - 9 家摊位卡片全部正确展示，浮窗顺畅展开，视频真实播放（`currentTime > 0`），关闭浮窗旧音轨即刻停止；
+   - 真实 3D 道路拓扑测距：夜市内部（刘记酸辣粉至大牛仔牛肉串）步行道路实测 **约 120 米**（拓扑状态 ready）；与远端君悦酒店跨区域联动规划，沿路测距 **约 8.4 公里**；直线与沿路模式自由切换；
+   - 移动端视口（390x844）排版与浮窗适配良好；重庆全量兼容性测试（81卡片及交互）无回归；
+   - 8 张关键测试截图归档至 brain 目录。
+
 ## 2026-11-02 长沙第 11 批来源接入：雨花区树木岭“两点打烊·老岳阳烧烤”实证上图，全城达 55 来源、96 片段、72 个地图点
 
 在独立 worktree `d:\codex\美食网站\.local\worktrees\changsha\map-base`（分支 `codex/city-changsha-prep`，已同步最新 `origin/main`）下，完成用户最新提供的第 11 批单个探店视频处理：

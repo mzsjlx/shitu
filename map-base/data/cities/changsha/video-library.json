@@ -3859,6 +3859,335 @@
           "footageNote": "2026年视频 · 树木岭夜市岳阳烧烤"
         }
       ]
+    },
+    {
+      "id": "cs-xiaopingbaobao-7702803636661397922",
+      "author": "小瓶饱饱",
+      "title": "100块爽吃长沙四方坪夜市！不仅有我吃了10几次的老店，还有新发现的宝藏小店#长沙夜市#四方坪#长沙美食",
+      "url": "https://www.douyin.com/video/7702803636661397922",
+      "shareURL": "https://v.douyin.com/ruQql2c9cv8/",
+      "publishedOn": "2026-10-31",
+      "durationSeconds": 109.866,
+      "sourceSHA256": "b189c4a4c43e2c6790e3b236b209c983706f5a5dd9374b44818cd3ae766e699b",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "视频实景与片尾清单确证为开福区四方商贸城夜市（学堂园路）9家特色摊位，坐标锚定四方商贸城步行街区开放地图路网连续节点。",
+      "segments": [
+        {
+          "id": "cs-xiaopingbaobao-liuji",
+          "name": "刘记手打酸辣粉（四方坪夜市店）",
+          "category": "酸辣粉 / 街头小吃",
+          "addressText": "开福区四方商贸城夜市（学堂园路南入口附近）",
+          "start": 12.0,
+          "end": 28.5,
+          "posterSecond": 20,
+          "summary": "四方坪夜市排队王老摊，老板现场用铜漏手打鲜粉入沸水锅，鸡丝泡菜搭配软韧爽滑的手打粉，酸辣中带微甜开胃过瘾。",
+          "coordinates": [
+            113.003374,
+            28.237011
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "四方商贸城南街区",
+            "basis": "video-signboard",
+            "branchMatch": "confirmed",
+            "note": "实拍手打酸辣粉红碗与摊位环境，对齐四方坪商贸城夜市学堂园路南路口，锚定OSM路网节点6217416029。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 664274447,
+              "name": "四方商贸城街巷",
+              "url": "https://www.openstreetmap.org/way/664274447",
+              "sourceDate": "2026-10-30",
+              "method": "original-way-node",
+              "nodeId": 6217416029
+            }
+          },
+          "footageNote": "2026年视频 · 四方坪夜市美食合集"
+        },
+        {
+          "id": "cs-xiaopingbaobao-chaoniuhe",
+          "name": "干炒炒牛河（四方坪夜市店）",
+          "category": "铁板炒粉 / 广式牛河",
+          "addressText": "开福区四方商贸城夜市",
+          "start": 28.5,
+          "end": 40.5,
+          "posterSecond": 33,
+          "summary": "四方坪夜市路过必被香味吸引的铁板现炒牛河，猛火铁板爆炒和牛肉、鸡蛋与宽河粉，镬气十足，软糯微弹趁热吃酱香浓郁。",
+          "coordinates": [
+            113.003373,
+            28.237135
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "四方商贸城夜市街",
+            "basis": "video-signboard",
+            "branchMatch": "confirmed",
+            "note": "实拍铁板炒和牛河粉摊位与餐盒，对齐四方商贸城中街，锚定OSM路网节点6217416019。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 664274447,
+              "name": "四方商贸城街巷",
+              "url": "https://www.openstreetmap.org/way/664274447",
+              "sourceDate": "2026-10-30",
+              "method": "original-way-node",
+              "nodeId": 6217416019
+            }
+          },
+          "footageNote": "2026年视频 · 四方坪夜市美食合集"
+        },
+        {
+          "id": "cs-xiaopingbaobao-meishizhaipaitiao",
+          "name": "美式炸排条（四方坪店）",
+          "category": "炸物 / 老字号排条",
+          "addressText": "开福区四方商贸城夜市（基隆绵绵冰旁）",
+          "start": 40.5,
+          "end": 47.5,
+          "posterSecond": 44,
+          "summary": "四方坪夜市开了近20年的白月光老摊，现裹现炸的肉排条炸得通体金黄，外皮酥酥脆脆，裹满葱花辣椒面，承载十几年老街记忆。",
+          "coordinates": [
+            113.003372,
+            28.237303
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "四方商贸城夜市街",
+            "basis": "video-signboard",
+            "branchMatch": "confirmed",
+            "note": "实拍炸排条摊位与20年老招牌，对齐四方商贸城夜市中段，锚定OSM路网节点6217415989。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 664274447,
+              "name": "四方商贸城街巷",
+              "url": "https://www.openstreetmap.org/way/664274447",
+              "sourceDate": "2026-10-30",
+              "method": "original-way-node",
+              "nodeId": 6217415989
+            }
+          },
+          "footageNote": "2026年视频 · 四方坪夜市美食合集"
+        },
+        {
+          "id": "cs-xiaopingbaobao-longjimianmianbing",
+          "name": "隆基绵绵冰（四方坪店）",
+          "category": "糖水甜品 / 绵绵冰",
+          "addressText": "开福区四方商贸城夜市（美式炸排条旁）",
+          "start": 47.5,
+          "end": 59.5,
+          "posterSecond": 53,
+          "summary": "紧邻炸排条的台味古早冰店，招牌芒果雪冰用料扎实豪爽，冰底绵密不甜腻，铺满大颗鲜芒果肉、Q弹芋圆和椰子脆片。",
+          "coordinates": [
+            113.003372,
+            28.237353
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "四方商贸城夜市街",
+            "basis": "video-signboard",
+            "branchMatch": "confirmed",
+            "note": "实拍‘宝岛基隆绵绵冰’灯箱招牌与古早冰摊位，紧邻炸排条，锚定OSM路网节点6217415988。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 664274447,
+              "name": "四方商贸城街巷",
+              "url": "https://www.openstreetmap.org/way/664274447",
+              "sourceDate": "2026-10-30",
+              "method": "original-way-node",
+              "nodeId": 6217415988
+            }
+          },
+          "footageNote": "2026年视频 · 四方坪夜市美食合集"
+        },
+        {
+          "id": "cs-xiaopingbaobao-zhamogu",
+          "name": "炸蘑菇（四方坪夜市店）",
+          "category": "炸物 / 椒盐炸菌",
+          "addressText": "开福区四方商贸城夜市",
+          "start": 59.5,
+          "end": 71.5,
+          "posterSecond": 66,
+          "summary": "四方坪夜市高人气现炸小吃摊，各色鲜蘑菇裹薄浆现炸出锅，撒上厚厚孜然辣椒粉，外酥里嫩，咬开软嫩多汁带天然菌香。",
+          "coordinates": [
+            113.003371,
+            28.237511
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "四方商贸城夜市街",
+            "basis": "video-signboard",
+            "branchMatch": "confirmed",
+            "note": "实拍炸蘑菇摊位与油炸平菇，对齐四方商贸城夜市中路，锚定OSM路网节点6217415980。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 664274447,
+              "name": "四方商贸城街巷",
+              "url": "https://www.openstreetmap.org/way/664274447",
+              "sourceDate": "2026-10-30",
+              "method": "original-way-node",
+              "nodeId": 6217415980
+            }
+          },
+          "footageNote": "2026年视频 · 四方坪夜市美食合集"
+        },
+        {
+          "id": "cs-xiaopingbaobao-lijishufulei",
+          "name": "李记糖果舒芙蕾（四方坪店）",
+          "category": "烘焙甜品 / 舒芙蕾",
+          "addressText": "开福区四方商贸城夜市（李记飞饼旁）",
+          "start": 71.5,
+          "end": 82.5,
+          "posterSecond": 78,
+          "summary": "摊位前常年排队的现烤日式舒芙蕾，老板现场手打蛋白霜铁板慢煎，热乎蓬松如云朵，铺上青提、芒果果肉与细腻奶油，十几块治愈感满满。",
+          "coordinates": [
+            113.00337,
+            28.237735
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "四方商贸城夜市街",
+            "basis": "video-signboard",
+            "branchMatch": "confirmed",
+            "note": "实拍舒芙蕾现烤铁板与‘李记糖果舒芙蕾’招牌，紧邻李记飞饼，锚定OSM路网节点6217415982。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 664274447,
+              "name": "四方商贸城街巷",
+              "url": "https://www.openstreetmap.org/way/664274447",
+              "sourceDate": "2026-10-30",
+              "method": "original-way-node",
+              "nodeId": 6217415982
+            }
+          },
+          "footageNote": "2026年视频 · 四方坪夜市美食合集"
+        },
+        {
+          "id": "cs-xiaopingbaobao-lijifeibing",
+          "name": "李记飞饼（四方坪店）",
+          "category": "印度飞饼 / 街头小吃",
+          "addressText": "开福区四方商贸城夜市（舒芙蕾旁）",
+          "start": 82.5,
+          "end": 90.5,
+          "posterSecond": 86,
+          "summary": "陪伴四方坪十余年的经典老牌飞饼摊，老板双手翻飞甩出薄如蝉翼的饼皮，包入新鲜香蕉泥铁板烙至两面金黄酥脆，层次分明甜香适口。",
+          "coordinates": [
+            113.003369,
+            28.237826
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "四方商贸城夜市街",
+            "basis": "video-signboard",
+            "branchMatch": "confirmed",
+            "note": "实拍‘飞饼’招牌与现场甩飞饼操作，紧邻舒芙蕾摊位，锚定OSM路网节点6217415944。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 664274447,
+              "name": "四方商贸城街巷",
+              "url": "https://www.openstreetmap.org/way/664274447",
+              "sourceDate": "2026-10-30",
+              "method": "original-way-node",
+              "nodeId": 6217415944
+            }
+          },
+          "footageNote": "2026年视频 · 四方坪夜市美食合集"
+        },
+        {
+          "id": "cs-xiaopingbaobao-baojiangdoufu",
+          "name": "云南包浆豆腐（四方坪夜市店）",
+          "category": "滇味小吃 / 包浆豆腐",
+          "addressText": "开福区四方商贸城夜市",
+          "start": 90.5,
+          "end": 99.5,
+          "posterSecond": 95,
+          "summary": "还原地道滇味的炭火铁板包浆豆腐，豆腐煎至外皮金黄鼓泡、内里嫩浆滚烫，灵魂在于一定要淋满折耳根、蒜末、小米辣调配的酸辣蘸水。",
+          "coordinates": [
+            113.003368,
+            28.237989
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "四方商贸城夜市街",
+            "basis": "video-signboard",
+            "branchMatch": "confirmed",
+            "note": "实拍铁板包浆豆腐与秘制折耳根红油蘸水，对齐四方商贸城夜市北段，锚定OSM路网节点6217415945。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 664274447,
+              "name": "四方商贸城街巷",
+              "url": "https://www.openstreetmap.org/way/664274447",
+              "sourceDate": "2026-10-30",
+              "method": "original-way-node",
+              "nodeId": 6217415945
+            }
+          },
+          "footageNote": "2026年视频 · 四方坪夜市美食合集"
+        },
+        {
+          "id": "cs-xiaopingbaobao-daniuzai",
+          "name": "大牛仔铁板牛肉串（四方坪夜市店）",
+          "category": "铁板烧烤 / 鲜牛肉串",
+          "addressText": "开福区四方商贸城夜市",
+          "start": 99.5,
+          "end": 106.0,
+          "posterSecond": 102,
+          "summary": "四方坪夜市烟火气十足的铁板牛肉串老摊，长签牛肉在铁板上压制滋滋冒油，拌入浓郁孜然辣粉，肉质扎实重口。",
+          "coordinates": [
+            113.003365,
+            28.238447
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "四方商贸城夜市街",
+            "basis": "video-signboard",
+            "branchMatch": "confirmed",
+            "note": "实拍铁板压烤长签牛肉串与‘大牛仔’摊位招牌，对齐四方商贸城夜市北侧出入口，锚定OSM路网节点6217415943。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 664274447,
+              "name": "四方商贸城街巷",
+              "url": "https://www.openstreetmap.org/way/664274447",
+              "sourceDate": "2026-10-30",
+              "method": "original-way-node",
+              "nodeId": 6217415943
+            }
+          },
+          "footageNote": "2026年视频 · 四方坪夜市美食合集"
+        }
+      ]
     }
   ]
 }
