@@ -1,5 +1,7 @@
 # 食途 · 美食旅行地图
 
+> 2026-11-07 南京整合：现支持顶部菜单切换重庆、长沙、柳州、南京。南京104地图点、164视频片段；四城构建及54项浏览器复核通过。当前整合工作区 `.local/worktrees/nanjing-integration`，本机预览 [打开南京与四城切换](http://127.0.0.1:8792/?city=nanjing&view=food)。南京MP4在本机已接通，尚未发布南京Release素材包；只拉代码可看地图和封面。详见 [本轮复核记录](output/research/nanjing/integration-review-20261107.md) 与 PROJECT-STATUS 顶部。下方旧日期数字和端口为历史记录。
+
 食途是“跟着探店视频安排旅行吃什么”的网站，以真实道路三维地图、美食图片、原作者视频和想去清单帮助规划逛吃行程。主工程为 **`map-base/`**，使用 MapLibre GL JS、本地 PMTiles 与 Terrarium 地形，自定义奶油暖色视觉，本地运行不需要高德显示密钥。
 
 仓库：[mzsjlx/shitu](https://github.com/mzsjlx/shitu)。重庆与长沙的整合见 [PR #6](https://github.com/mzsjlx/shitu/pull/6)，柳州的接入见 [PR #8](https://github.com/mzsjlx/shitu/pull/8)。三城采用局部底图，可以在本地预览中快速切城。

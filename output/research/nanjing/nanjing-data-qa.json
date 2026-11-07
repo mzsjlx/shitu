@@ -1,0 +1,35 @@
+{
+  "verifiedOn": "2026-11-07",
+  "scope": "Catalog, approximate references, source/clip/poster SHA256, ffprobe streams/durations and two source-road routes. No shop entrance or current business verification.",
+  "checks": [
+    {
+      "name": "Nanjing catalog has 79 sources and 164 segments",
+      "passed": true
+    },
+    {
+      "name": "Catalog groups into 155 items (104 map stops + 51 pending-expansion) with 7 multi-blogger merges",
+      "passed": true
+    },
+    {
+      "name": "Every located Nanjing segment has a frozen OSM way and node anchor",
+      "passed": true
+    },
+    {
+      "name": "All 104 map stops snap directly to walkable OSM roads within 25m",
+      "passed": true
+    },
+    {
+      "name": "All original videos, 164 clips and public posters match their media identities, SHA256 and audio/video duration",
+      "passed": true
+    },
+    {
+      "name": "Walking route between Xinjiekou (GuGu Bistro) and Mingwalang connects along road network",
+      "passed": true
+    },
+    {
+      "name": "Walking route between Youfangqiao (Eat Burger) and Yurun Street (Li Ji Noodles) connects along road network",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,801 @@
+{
+  "verifiedOn": "2026-11-07",
+  "passed": true,
+  "sourceSHA256": "0d236db5878f2d18b4f717c6471194c20f715780f931faca0d78f607acb74baa",
+  "nodesChecked": 65935,
+  "waysChecked": 12881,
+  "locationChecks": [
+    {
+      "segmentId": "nj-xiaojingang-tiantihan",
+      "wayId": 99978914,
+      "nodeId": 1155831131,
+      "sourceWayName": "抄纸巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-sanshanban",
+      "wayId": 94494930,
+      "nodeId": 4424594487,
+      "sourceWayName": "明瓦廊",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-yiwei",
+      "wayId": 100101975,
+      "nodeId": 1069278229,
+      "sourceWayName": "正洪街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-dabao",
+      "wayId": 94327820,
+      "nodeId": 1095948870,
+      "sourceWayName": "慈悲社",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-aide",
+      "wayId": 192946582,
+      "nodeId": 2034775928,
+      "sourceWayName": "大锏银巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tieldan-jinghua",
+      "wayId": 91202333,
+      "nodeId": 11876558718,
+      "sourceWayName": "锁金北路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tieldan-liji",
+      "wayId": 184268235,
+      "nodeId": 1947290725,
+      "sourceWayName": "打钉巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tieldan-qijia",
+      "wayId": 94494930,
+      "nodeId": 3287264807,
+      "sourceWayName": "明瓦廊",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-houge-yexin",
+      "wayId": 777476153,
+      "nodeId": 1068746646,
+      "sourceWayName": "来凤街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-houge-liji",
+      "wayId": 184268235,
+      "nodeId": 1947290725,
+      "sourceWayName": "打钉巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-houge-chuanhuo",
+      "wayId": 318162427,
+      "nodeId": 9630664993,
+      "sourceWayName": "三条营",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-houge-chenjia",
+      "wayId": 323932390,
+      "nodeId": 13531924593,
+      "sourceWayName": "文体西路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-houge-zhaoji",
+      "wayId": 422195817,
+      "nodeId": 12137407598,
+      "sourceWayName": "所街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-houge-anjia",
+      "wayId": 101300819,
+      "nodeId": 7276462427,
+      "sourceWayName": "福园街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-enendeditu-shuangxiang",
+      "wayId": 777476149,
+      "nodeId": 1068742548,
+      "sourceWayName": "双塘路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-enendeditu-gujia",
+      "wayId": 777476149,
+      "nodeId": 1068742548,
+      "sourceWayName": "双塘路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-enendeditu-dudao",
+      "wayId": 777476153,
+      "nodeId": 1068746646,
+      "sourceWayName": "来凤街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-enendeditu-tangyumiao",
+      "wayId": 777476153,
+      "nodeId": 1068746646,
+      "sourceWayName": "来凤街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-enendeditu-yexin",
+      "wayId": 777476153,
+      "nodeId": 1068746646,
+      "sourceWayName": "来凤街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-enendeditu-diaolong",
+      "wayId": 777476149,
+      "nodeId": 1068742548,
+      "sourceWayName": "双塘路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-baifen-dexian",
+      "wayId": 99979560,
+      "nodeId": 1155842427,
+      "sourceWayName": "老虎桥",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-baifen-areas",
+      "wayId": 256938736,
+      "nodeId": 9928281415,
+      "sourceWayName": "碑亭巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-baifen-okin",
+      "wayId": 27811140,
+      "nodeId": 7995299348,
+      "sourceWayName": "进香河路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-baifen-tenolives",
+      "wayId": 256938736,
+      "nodeId": 9928281415,
+      "sourceWayName": "碑亭巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-baifen-simplebakery",
+      "wayId": 27811140,
+      "nodeId": 7995299348,
+      "sourceWayName": "进香河路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xinzangshilande-bansheng",
+      "wayId": 155900474,
+      "nodeId": 1038070524,
+      "sourceWayName": "昆仑路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-sasaaaaa-chaihuo",
+      "wayId": 606894148,
+      "nodeId": 1068750524,
+      "sourceWayName": "三条营",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-sasaaaaa-xiaochen",
+      "wayId": 89638624,
+      "nodeId": 1038878507,
+      "sourceWayName": "马道街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-sasaaaaa-liji",
+      "wayId": 184268235,
+      "nodeId": 1947290725,
+      "sourceWayName": "打钉巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-sasaaaaa-wuming",
+      "wayId": 142491926,
+      "nodeId": 305194317,
+      "sourceWayName": "中华路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-sasaaaaa-jiming",
+      "wayId": 585539415,
+      "nodeId": 10666040510,
+      "sourceWayName": "贡院街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tiansha-gugu",
+      "wayId": 94494930,
+      "nodeId": 10196453952,
+      "sourceWayName": "明瓦廊",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tiansha-qianduoduo",
+      "wayId": 61879252,
+      "nodeId": 4225751323,
+      "sourceWayName": "王府大街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tiansha-cherrybomb",
+      "wayId": 324477594,
+      "nodeId": 3311906293,
+      "sourceWayName": "南台巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-liuyi",
+      "wayId": 89637353,
+      "nodeId": 1038862162,
+      "sourceWayName": "玄武门路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-xibeiqiaotou",
+      "wayId": 105830599,
+      "nodeId": 1111383695,
+      "sourceWayName": "昆仑路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-sunshi",
+      "wayId": 105830599,
+      "nodeId": 1111383695,
+      "sourceWayName": "昆仑路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-jimingsi",
+      "wayId": 444087519,
+      "nodeId": 14321205971,
+      "sourceWayName": "北京东路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-liuchangxing",
+      "wayId": 155900479,
+      "nodeId": 1038070524,
+      "sourceWayName": "高楼门",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-laogulou",
+      "wayId": 375025773,
+      "nodeId": 3261333971,
+      "sourceWayName": "太平门西街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-jinyuan",
+      "wayId": 100944897,
+      "nodeId": 1166141322,
+      "sourceWayName": "锁金中路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-zhaoming",
+      "wayId": 100944897,
+      "nodeId": 1166141322,
+      "sourceWayName": "锁金中路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-wenqing",
+      "wayId": 100944898,
+      "nodeId": 1058304423,
+      "sourceWayName": "锁金东路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-guanxiao-shuiximen",
+      "wayId": 52458554,
+      "nodeId": 10951715712,
+      "sourceWayName": "汉口路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-guanxiao-lirongxing",
+      "wayId": 147039024,
+      "nodeId": 1039201234,
+      "sourceWayName": "南湖路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-guanxiao-xujianping",
+      "wayId": 452263380,
+      "nodeId": 1039201228,
+      "sourceWayName": "南湖东路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-guanxiao-chengcheng",
+      "wayId": 32005636,
+      "nodeId": 1169362784,
+      "sourceWayName": "南湖街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-guanxiao-liuchangxing",
+      "wayId": 155900479,
+      "nodeId": 1038070524,
+      "sourceWayName": "高楼门",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-wanmeizhuama-dapaidang",
+      "wayId": 99978916,
+      "nodeId": 13884515446,
+      "sourceWayName": "邓府街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xinzang-maxingfa",
+      "wayId": 27811151,
+      "nodeId": 1155833090,
+      "sourceWayName": "北门桥",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-wulala-liji",
+      "wayId": 184268235,
+      "nodeId": 1947290725,
+      "sourceWayName": "打钉巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-heijiliao",
+      "wayId": 549385009,
+      "nodeId": 8227315986,
+      "sourceWayName": "黄山路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-eatburger",
+      "wayId": 549385009,
+      "nodeId": 8227315986,
+      "sourceWayName": "黄山路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-zhengjichongqing",
+      "wayId": 549385009,
+      "nodeId": 8227318806,
+      "sourceWayName": "黄山路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-lijishouganmian",
+      "wayId": 779278385,
+      "nodeId": 3917985224,
+      "sourceWayName": "黄山路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-sanshishaoniao",
+      "wayId": 121782842,
+      "nodeId": 14285475076,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-chuixiaogou",
+      "wayId": 89667585,
+      "nodeId": 1039201431,
+      "sourceWayName": "湖西街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-xianjia",
+      "wayId": 101300819,
+      "nodeId": 12123587532,
+      "sourceWayName": "福园街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-zhifang",
+      "wayId": 1571966693,
+      "nodeId": 14321202100,
+      "sourceWayName": "汉中门大街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-sanyang",
+      "wayId": 444086387,
+      "nodeId": 3285577553,
+      "sourceWayName": "羊皮巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-dehexishi",
+      "wayId": 1114823897,
+      "nodeId": 13894999751,
+      "sourceWayName": "中山路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-fanzong-guimi",
+      "wayId": 161318989,
+      "nodeId": 1992349857,
+      "sourceWayName": "中山路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-xujicongyoubing",
+      "wayId": 452263380,
+      "nodeId": 1039201228,
+      "sourceWayName": "南湖东路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-liehuoshaobing",
+      "wayId": 777476153,
+      "nodeId": 1068746646,
+      "sourceWayName": "来凤街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-beifangmantou",
+      "wayId": 89638618,
+      "nodeId": 4420146010,
+      "sourceWayName": "秦虹路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-lanqishaobing",
+      "wayId": 88805573,
+      "nodeId": 1030570361,
+      "sourceWayName": "蓝旗街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-shandonglijiajianbing",
+      "wayId": 89637281,
+      "nodeId": 1058327569,
+      "sourceWayName": "红庙",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-xiaowangshaobing",
+      "wayId": 606894152,
+      "nodeId": 1068750515,
+      "sourceWayName": "马道街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-jinlingheji",
+      "wayId": 142491932,
+      "nodeId": 1530463137,
+      "sourceWayName": "雨花路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaojingang-xiaoxulijimao",
+      "wayId": 94494930,
+      "nodeId": 10196453952,
+      "sourceWayName": "明瓦廊",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-chenwanye-zijin-haodanshao",
+      "wayId": 146636101,
+      "nodeId": 12528269340,
+      "sourceWayName": "中山门大街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-chenwanye-zijin-congyoubing",
+      "wayId": 146636101,
+      "nodeId": 1038874307,
+      "sourceWayName": "中山门大街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-chenwanye-zijin-lijirou",
+      "wayId": 146636101,
+      "nodeId": 1741676378,
+      "sourceWayName": "中山门大街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-chenwanye-zijin-chaofan",
+      "wayId": 146636101,
+      "nodeId": 1484509851,
+      "sourceWayName": "中山门大街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tanweiazhai-lijia-yuanxiao",
+      "wayId": 165485909,
+      "nodeId": 1040613707,
+      "sourceWayName": "雨花西路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tanweiazhai-fuzimiao-mianguan",
+      "wayId": 165486635,
+      "nodeId": 13610808563,
+      "sourceWayName": "雨花西路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tanweiazhai-jinling-banya",
+      "wayId": 27797139,
+      "nodeId": 4226771715,
+      "sourceWayName": "雨花西路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tanweiazhai-nengrenli-shaobing",
+      "wayId": 27797139,
+      "nodeId": 6153284841,
+      "sourceWayName": "雨花西路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-wanglixiang-chanan-yedoujiang",
+      "wayId": 89385317,
+      "nodeId": 1036713384,
+      "sourceWayName": "茶南大街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-wangzhazha-wuming-malatang",
+      "wayId": 444086387,
+      "nodeId": 3285577554,
+      "sourceWayName": "羊皮巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-wangzhazha-jinxing-hongbei",
+      "wayId": 89638684,
+      "nodeId": 1038879789,
+      "sourceWayName": "秣陵路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-wangzhazha-maxingfa",
+      "wayId": 27811151,
+      "nodeId": 1155833090,
+      "sourceWayName": "北门桥",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-wangzhazha-honglogg-huoguo",
+      "wayId": 444086387,
+      "nodeId": 4330284137,
+      "sourceWayName": "羊皮巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-putaoouni-erwa-xiaoguan",
+      "wayId": 91202333,
+      "nodeId": 1166141271,
+      "sourceWayName": "锁金北路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-enendeditu-jinling-guihuagao",
+      "wayId": 94494930,
+      "nodeId": 10196453951,
+      "sourceWayName": "明瓦廊",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-enendeditu-shendu-liangpi",
+      "wayId": 444086387,
+      "nodeId": 3285577553,
+      "sourceWayName": "羊皮巷",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-enendeditu-twobites-coffee",
+      "wayId": 89637281,
+      "nodeId": 13741908596,
+      "sourceWayName": "红庙",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-enendeditu-laoniu-malatang",
+      "wayId": 94494930,
+      "nodeId": 4424594487,
+      "sourceWayName": "明瓦廊",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-duidui-heishu-kaofang",
+      "wayId": 61817945,
+      "nodeId": 3145632567,
+      "sourceWayName": "集庆门大街",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-niunai-naisi-shoushi",
+      "wayId": 74658302,
+      "nodeId": 10196453941,
+      "sourceWayName": "中山南路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xuxi-aqinjia",
+      "wayId": 422195827,
+      "nodeId": 12053121995,
+      "sourceWayName": "燕山路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-weihong-haihuangshu",
+      "wayId": 89566371,
+      "nodeId": 1038242003,
+      "sourceWayName": "湖北路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-lvliuye-banshannan",
+      "wayId": 549385015,
+      "nodeId": 6151399061,
+      "sourceWayName": "江东中路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-qitun-wudai",
+      "wayId": 1571953951,
+      "nodeId": 14320985016,
+      "sourceWayName": "洪武路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaohongtongxue-dongsheng",
+      "wayId": 1524378243,
+      "nodeId": 13894099589,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tiansha-dongsheng",
+      "wayId": 1022153800,
+      "nodeId": 4411275222,
+      "sourceWayName": "大壮观路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tom-yanyulianhai",
+      "wayId": 549385020,
+      "nodeId": 8637073197,
+      "sourceWayName": "江东中路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-buling-huodingding",
+      "wayId": 1513382590,
+      "nodeId": 13891535369,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xinzang-banshannan",
+      "wayId": 549385015,
+      "nodeId": 6151399061,
+      "sourceWayName": "江东中路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tanchijiu-liulangpaopao",
+      "wayId": 1178781332,
+      "nodeId": 10951684500,
+      "sourceWayName": "中山路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-gebide-dongsheng",
+      "wayId": 1524378243,
+      "nodeId": 13894099589,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-fuffffu-jinhaiwan",
+      "wayId": 155882963,
+      "nodeId": 1682376895,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaogangjie-benbenyang",
+      "wayId": 94674194,
+      "nodeId": 9427180712,
+      "sourceWayName": "北苑东路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tiansha-yixu",
+      "wayId": 792235763,
+      "nodeId": 13890956028,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-aq-heniushe",
+      "wayId": 1513382592,
+      "nodeId": 1682376284,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-feifei-qianyouyou",
+      "wayId": 302178328,
+      "nodeId": 3141358986,
+      "sourceWayName": "南昌路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-tianpupu-mingyuhaoya",
+      "wayId": 588547556,
+      "nodeId": 5621229955,
+      "sourceWayName": "红山南路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-huhuda-caiting",
+      "wayId": 1394872145,
+      "nodeId": 12911747063,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xinzang-hongniushu",
+      "wayId": 1524581544,
+      "nodeId": 13895949724,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-haimian-lanshanhai",
+      "wayId": 159185769,
+      "nodeId": 2604132686,
+      "sourceWayName": "江东北路",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-gaolegao-zhaoshanling",
+      "wayId": 1395657659,
+      "nodeId": 12918745278,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-xiaogangjie-caiting",
+      "wayId": 1394872145,
+      "nodeId": 12911747063,
+      "sourceWayName": "",
+      "passed": true
+    },
+    {
+      "segmentId": "nj-gaolegao-wanli",
+      "wayId": 822846338,
+      "nodeId": 7682679963,
+      "sourceWayName": "",
+      "passed": true
+    }
+  ],
+  "scope": "Frozen OSM node coordinates, tags, full way node order and membership. Approximate street references only; not independent confirmation of each shop address or current business."
+}

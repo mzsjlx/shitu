@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "city": "nanjing",
+  "name": "南京",
+  "province": "江苏省",
+  "amapCityCode": "320100",
+  "regionLabel": "中心城区",
+  "coverageLabel": "南京核心城区，涵盖玄武湖、秦淮河、新街口、老门东及钟山周边商圈（约 17.1 × 15.6 公里）",
+  "bounds": [
+    118.7,
+    31.98,
+    118.88,
+    32.12
+  ],
+  "center": [
+    118.796,
+    32.058
+  ],
+  "zoom": 15.5,
+  "pitch": 52,
+  "bearing": -15,
+  "minZoom": 12.0,
+  "maxZoom": 19,
+  "tiles": "data/cities/nanjing/nanjing.pmtiles",
+  "demTiles": "data/cities/nanjing/terrain/{z}/{x}/{y}.png",
+  "demMinZoom": 11,
+  "demMaxZoom": 13,
+  "landmarks": [],
+  "status": "local-validation-only",
+  "workflow": {
+    "rightsStatus": "user-confirmed",
+    "videoIntake": "strict-user-provided-only",
+    "locationAccuracy": "approximate-planning-first",
+    "multiCreatorSupport": true,
+    "roadNetworkTopology": "osm-node-consecutive"
+  },
+  "dataFiles": {
+    "profile": "data/cities/nanjing/city-profile.json",
+    "tiles": "data/cities/nanjing/nanjing.pmtiles",
+    "videoLibrary": "data/cities/nanjing/video-library.json",
+    "videoPosters": "data/cities/nanjing/video-posters.json",
+    "foodRecords": "data/cities/nanjing/food-records.json",
+    "roadNetwork": "data/cities/nanjing/food-road-network.json",
+    "index": "data/cities/nanjing/roads-index.json",
+    "audit": "data/cities/nanjing/data-audit.json",
+    "manifest": "data/cities/nanjing/source-manifest.json",
+    "roadsIndex": "data/cities/nanjing/roads-index.json",
+    "dataAudit": "data/cities/nanjing/data-audit.json",
+    "sourceManifest": "data/cities/nanjing/source-manifest.json",
+    "tileMetadata": "data/cities/nanjing/tile-metadata.json",
+    "terrainManifest": "data/cities/nanjing/terrain-manifest.json"
+  },
+  "notes": [
+    "严格遵守只处理用户实际提供的探店链接，不自行到外站搜集凑数。",
+    "门店位置采用有充分街区依据的大致规划点（approximate-planning），无充分依据的片段保留视频库不强行造点。",
+    "同一分店多博主探店共用一个地图点（相同的 placeId），浮窗保留各自博主片段供用户切换。",
+    "大文件隔离：原片与剪辑 MP4 保留在 .local/ 隔离目录，仅小封面海报与 JSON 元数据进 Git。"
+  ]
+}
