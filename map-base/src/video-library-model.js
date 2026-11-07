@@ -9,6 +9,7 @@ export function validateVideoLibrary(data, expectedCity = null){
     const url=new URL(source.url);
     if(url.protocol!=='https:'||url.hostname!=='www.douyin.com'||!/^\/video\/\d+$/.test(url.pathname))throw new Error('视频原页无效');
     if(typeof source.author!=='string'||!source.author||typeof source.title!=='string'||!Number.isFinite(source.durationSeconds)||source.durationSeconds<=0||!Array.isArray(source.segments))throw new Error('视频来源缺少信息');
+    if(source.clipProfile!==undefined&&source.clipProfile!=='h264-1080x1920-crf21-aac128-v1')throw new Error('视频剪辑规格无效');
     if(source.segments.length&&!/^[a-f0-9]{64}$/.test(source.sourceSHA256||''))throw new Error('本地视频缺少来源哈希');
     let previous=0;
     for(const segment of source.segments){
