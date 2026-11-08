@@ -41,8 +41,13 @@ function fail(message) {
 function layersVisible() {
   for(const id of labelLayers)map.setLayoutProperty(id,'visibility',state.labels&&!streets?.active?'visible':'none');
   streets?.setLabels(state.labels);
-  map.setLayoutProperty('buildings-3d','visibility',state.threeD&&state.buildings?'visible':'none');
-  map.setLayoutProperty('buildings-flat','visibility',state.threeD&&state.buildings?'none':'visible');
+  const showExtrusions = state.threeD && state.buildings;
+  for (const id of ['buildings-3d', 'buildings-detail-3d']) {
+    if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', showExtrusions ? 'visible' : 'none');
+  }
+  for (const id of ['buildings-flat', 'buildings-detail-flat']) {
+    if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', showExtrusions ? 'none' : 'visible');
+  }
   if(map.getLayer('places'))map.setLayoutProperty('places','visibility',landmarkFocus?'none':'visible');
   if(map.getLayer('poi-landmarks'))map.setLayoutProperty('poi-landmarks','visibility',state.pois&&!landmarkFocus?'visible':'none');
   landmark?.setAppearance(state.threeD&&state.buildings&&!streets?.active);
@@ -415,6 +420,10 @@ async function init() {
   $('search-input').setAttribute('aria-label','搜索'+city.name+'道路');
   $('search-input').setAttribute('placeholder','找一条路，开始逛'+city.name);
   $('coverage-description').textContent=city.coverageLabel;
+  if (city.buildingsDetail) {
+    $('source-basemap-description').textContent = '道路、路名和河流来自开放地图数据。建筑采用开放轮廓与地标示意模型，地图包保存在本地。';
+    $('building-height-note').textContent = '部分建筑缺少高度记录，按类型和底图等级估算楼高。地标分层和街区补绘为视觉示意。';
+  }
   const citySelect=document.createElement('select');citySelect.setAttribute('aria-label','切换城市');
   for(const [id,value] of Object.entries(config.cities)){const option=document.createElement('option');option.value=id;option.textContent=value.name;citySelect.append(option);}citySelect.value=cityKey;
   citySelect.addEventListener('change',()=>{videoLibrary?.stop();overlay?.popover.close();const url=new URL(location.href);url.searchParams.set('city',citySelect.value);for(const key of ['place','clip','videos'])url.searchParams.delete(key);url.hash='';location.assign(url);});
@@ -447,7 +456,7 @@ async function init() {
     protocol.add(new PMTiles({getKey:()=>tileURL,getBytes:async(offset,length)=>({data:bytes.slice(offset,offset+length).buffer})}));
   }
   map=new maplibregl.Map({
-    container:'map',style:makeStyle(city,tileURL),center:city.center,zoom:city.zoom,
+    container:'map',style:makeStyle(city,tileURL,bundle),center:city.center,zoom:city.zoom,
     pitch:city.pitch,bearing:city.bearing,minZoom:city.minZoom,maxZoom:city.maxZoom,maxPitch:85,
     maxBounds:[[city.bounds[0],city.bounds[1]],[city.bounds[2],city.bounds[3]]],
     canvasContextAttributes:{antialias:true},

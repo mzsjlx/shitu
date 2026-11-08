@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "nanjing",
+  "bounds": [
+    118.7,
+    31.98,
+    118.88,
+    32.12
+  ],
+  "source": {
+    "date": "2026-10-31",
+    "sha256": "0d236db5878f2d18b4f717c6471194c20f715780f931faca0d78f607acb74baa",
+    "url": "https://download.geofabrik.de/asia/china/jiangsu.html",
+    "fileName": "nanjing-osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "networkSHA256": "b4a77fe785205b44316ea4e06f920e9ea85430e3ac990a47ceee8c1c1a276fd6",
+  "bytes": 4501596,
+  "nodes": 65935,
+  "ways": 12881,
+  "footRestrictionWays": 0,
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
+}

@@ -1,5 +1,7 @@
 # 两台电脑共用地图与视频素材
 
+> 2026-11-07 南京：源码、地图、164张真实原片封面随本次整合；本机已有79份原片、164段剪辑，已核对SHA256及音视频信息。当前GitHub Release没有南京素材包，不能把“推送城市代码”说成“另一台电脑已能播放南京视频”。本轮四城预览已接通本机素材，原MP4继续留.local。后续按本文按来源打包、导入和发布；目录rights.scope仍只描述首两批11条，发布后续批次素材前应从原南京会话补齐实际授权记录，不编造确认。参见 [复核记录](output/research/nanjing/integration-review-20261107.md)。
+
 **2026-11-01 多城市素材：** 重庆原有包继续兼容；长沙54来源、95段视频（其中5个来源仅有原片）按来源打包到 [长沙素材预发布](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-01-changsha)，总7,630,535,842字节。精确包名、大小、SHA256见 `map-base/data/media-bundles.json`。先同步对应代码，再导入需要的ZIP，不要下载整个`.local`。
 
 在 `map-base` 下，制作方可用 `npm.cmd run media:pack -- --city changsha --source 来源ID`；不带来源时打包所选城市已有原片的来源。接收方用 `npm.cmd run media:import -- 下载的ZIP路径` 自动识别来源所属城市，也可加 `--city changsha` 限定；错误城市会拒绝且不写文件。旧重庆包没有city字段，仍按来源身份和哈希识别。不同城的剪辑记录追加合并，重复同内容跳过、冲突保留。本次54包已在独立目录导入并验证，不改用户真实素材。

@@ -1,0 +1,303 @@
+{
+  "verifiedOn": "2026-11-07",
+  "scope": "Fix reference identities and disclose existing estimates; coordinates and grouping unchanged. Raw PBF confirmation in nanjing-source-qa.json.",
+  "corrections": [
+    {
+      "segmentId": "nj-sasaaaaa-jiming",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 61858485,
+        "name": "建康路",
+        "url": "https://www.openstreetmap.org/way/61858485",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 10666040510
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 585539415,
+        "name": "贡院街",
+        "url": "https://www.openstreetmap.org/way/585539415",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 10666040510
+      }
+    },
+    {
+      "segmentId": "nj-feifei-jimingsi",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 27796679,
+        "name": "北京东路",
+        "url": "https://www.openstreetmap.org/way/27796679",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 14321205971
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 444087519,
+        "name": "北京东路",
+        "url": "https://www.openstreetmap.org/way/444087519",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 14321205971
+      }
+    },
+    {
+      "segmentId": "nj-wanmeizhuama-dapaidang",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 52504285,
+        "name": "中山路",
+        "url": "https://www.openstreetmap.org/way/52504285",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 13884515446
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 99978916,
+        "name": "邓府街",
+        "url": "https://www.openstreetmap.org/way/99978916",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 13884515446
+      }
+    },
+    {
+      "segmentId": "nj-tanchijiu-liulangpaopao",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 1178781332,
+        "name": "中山路",
+        "url": "https://www.openstreetmap.org/way/1178781332",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 10951684500
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 1178781332,
+        "name": "中山路",
+        "url": "https://www.openstreetmap.org/way/1178781332",
+        "sourceDate": "2026-10-31",
+        "method": "nearby-original-way-node",
+        "nodeId": 10951684500,
+        "coordinates": [
+          118.7789579,
+          32.0479357
+        ],
+        "offsetMetres": 55.71
+      }
+    },
+    {
+      "segmentId": "nj-xiaogangjie-benbenyang",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 94674194,
+        "name": "北苑东路",
+        "url": "https://www.openstreetmap.org/way/94674194",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 9427180712
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 94674194,
+        "name": "北苑东路",
+        "url": "https://www.openstreetmap.org/way/94674194",
+        "sourceDate": "2026-10-31",
+        "method": "nearby-original-way-node",
+        "nodeId": 9427180712,
+        "coordinates": [
+          118.8212385,
+          32.1035231
+        ],
+        "offsetMetres": 43.2
+      }
+    },
+    {
+      "segmentId": "nj-tiansha-yixu",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 792235763,
+        "name": "中山南路",
+        "url": "https://www.openstreetmap.org/way/792235763",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 13890956028
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 792235763,
+        "name": "中山南路",
+        "url": "https://www.openstreetmap.org/way/792235763",
+        "sourceDate": "2026-10-31",
+        "method": "nearby-original-way-node",
+        "nodeId": 13890956028,
+        "coordinates": [
+          118.7800675,
+          32.0423306
+        ],
+        "offsetMetres": 9.64
+      }
+    },
+    {
+      "segmentId": "nj-aq-heniushe",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 1513382592,
+        "name": "中山南路",
+        "url": "https://www.openstreetmap.org/way/1513382592",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 1682376284
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 1513382592,
+        "name": "中山南路",
+        "url": "https://www.openstreetmap.org/way/1513382592",
+        "sourceDate": "2026-10-31",
+        "method": "nearby-original-way-node",
+        "nodeId": 1682376284,
+        "coordinates": [
+          118.778154,
+          32.0424976
+        ],
+        "offsetMetres": 1.02
+      }
+    },
+    {
+      "segmentId": "nj-tianpupu-mingyuhaoya",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 588547556,
+        "name": "红山路",
+        "url": "https://www.openstreetmap.org/way/588547556",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 5621229955
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 588547556,
+        "name": "红山路",
+        "url": "https://www.openstreetmap.org/way/588547556",
+        "sourceDate": "2026-10-31",
+        "method": "nearby-original-way-node",
+        "nodeId": 5621229955,
+        "coordinates": [
+          118.8063788,
+          32.0864852
+        ],
+        "offsetMetres": 5.39
+      }
+    },
+    {
+      "segmentId": "nj-huhuda-caiting",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 1394872145,
+        "name": "建康路",
+        "url": "https://www.openstreetmap.org/way/1394872145",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 12911747063
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 1394872145,
+        "name": "建康路",
+        "url": "https://www.openstreetmap.org/way/1394872145",
+        "sourceDate": "2026-10-31",
+        "method": "nearby-original-way-node",
+        "nodeId": 12911747063,
+        "coordinates": [
+          118.7799902,
+          32.024862
+        ],
+        "offsetMetres": 29.95
+      }
+    },
+    {
+      "segmentId": "nj-haimian-lanshanhai",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 159185769,
+        "name": "草场门大街 / 江东北路",
+        "url": "https://www.openstreetmap.org/way/159185769",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 2604132686
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 159185769,
+        "name": "草场门大街 / 江东北路",
+        "url": "https://www.openstreetmap.org/way/159185769",
+        "sourceDate": "2026-10-31",
+        "method": "nearby-original-way-node",
+        "nodeId": 2604132686,
+        "coordinates": [
+          118.7347969,
+          32.0578377
+        ],
+        "offsetMetres": 7.65
+      }
+    },
+    {
+      "segmentId": "nj-gaolegao-zhaoshanling",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 1395657659,
+        "name": "建康路",
+        "url": "https://www.openstreetmap.org/way/1395657659",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 12918745278
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 1395657659,
+        "name": "建康路",
+        "url": "https://www.openstreetmap.org/way/1395657659",
+        "sourceDate": "2026-10-31",
+        "method": "nearby-original-way-node",
+        "nodeId": 12918745278,
+        "coordinates": [
+          118.7800258,
+          32.0252709
+        ],
+        "offsetMetres": 1.68
+      }
+    },
+    {
+      "segmentId": "nj-xiaogangjie-caiting",
+      "previousAnchor": {
+        "kind": "osm-way",
+        "id": 1394872145,
+        "name": "建康路",
+        "url": "https://www.openstreetmap.org/way/1394872145",
+        "sourceDate": "2026-10-31",
+        "method": "original-way-node",
+        "nodeId": 12911747063
+      },
+      "correctedAnchor": {
+        "kind": "osm-way",
+        "id": 1394872145,
+        "name": "建康路",
+        "url": "https://www.openstreetmap.org/way/1394872145",
+        "sourceDate": "2026-10-31",
+        "method": "nearby-original-way-node",
+        "nodeId": 12911747063,
+        "coordinates": [
+          118.7799902,
+          32.024862
+        ],
+        "offsetMetres": 29.95
+      }
+    }
+  ]
+}

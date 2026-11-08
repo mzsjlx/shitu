@@ -1,0 +1,441 @@
+{
+  "verifiedOn": "2026-11-07",
+  "scope": "Isolated browser; four cities, two-stop road samples, actual playback per city, creator/close/city audio teardown, saved-state isolation, Nanjing four viewports and generated pages. Simulated mobile, not physical devices.",
+  "checks": [
+    {
+      "name": "Switcher lists all four cities",
+      "passed": true
+    },
+    {
+      "name": "nanjing loads its own map, content and empty saved list",
+      "passed": true,
+      "detail": {
+        "city": "nanjing",
+        "name": "南京",
+        "count": 104,
+        "saved": [],
+        "tiles": "data/cities/nanjing/nanjing.pmtiles",
+        "failures": [],
+        "records": [
+          {
+            "id": "video-nj-xiaojingang-tiantihan",
+            "name": "天天汉亭韩国拌饭"
+          },
+          {
+            "id": "video-nj-xiaojingang-sanshanban",
+            "name": "三山半·流行山野饭店"
+          }
+        ]
+      }
+    },
+    {
+      "name": "nanjing road search uses city title",
+      "passed": true
+    },
+    {
+      "name": "nanjing has no Chongqing landmark outside Chongqing",
+      "passed": true
+    },
+    {
+      "name": "nanjing defaults to direct distance",
+      "passed": true
+    },
+    {
+      "name": "nanjing computes a real road route",
+      "passed": true,
+      "detail": {
+        "mode": "road",
+        "phase": "ready",
+        "total": 1185.7041578235014,
+        "count": 1,
+        "missing": 0
+      }
+    },
+    {
+      "name": "nanjing actual local video decodes and plays",
+      "passed": true
+    },
+    {
+      "name": "chongqing loads its own map, content and empty saved list",
+      "passed": true,
+      "detail": {
+        "city": "chongqing",
+        "name": "重庆",
+        "count": 81,
+        "saved": [],
+        "tiles": "data/chongqing.pmtiles",
+        "failures": [],
+        "records": [
+          {
+            "id": "video-nangua-jiachang",
+            "name": "家常蹄花"
+          },
+          {
+            "id": "video-nangua-jeju",
+            "name": "jeju"
+          }
+        ]
+      }
+    },
+    {
+      "name": "chongqing road search uses city title",
+      "passed": true
+    },
+    {
+      "name": "chongqing has no Chongqing landmark outside Chongqing",
+      "passed": true
+    },
+    {
+      "name": "chongqing defaults to direct distance",
+      "passed": true
+    },
+    {
+      "name": "chongqing computes a real road route",
+      "passed": true,
+      "detail": {
+        "mode": "road",
+        "phase": "ready",
+        "total": 10139.405637642936,
+        "count": 1,
+        "missing": 0
+      }
+    },
+    {
+      "name": "chongqing actual local video decodes and plays",
+      "passed": true
+    },
+    {
+      "name": "changsha loads its own map, content and empty saved list",
+      "passed": true,
+      "detail": {
+        "city": "changsha",
+        "name": "长沙",
+        "count": 71,
+        "saved": [],
+        "tiles": "data/cities/changsha/changsha.pmtiles",
+        "failures": [],
+        "records": [
+          {
+            "id": "video-cs-chilezaijian-laowenjia",
+            "name": "佬文家老地方私房菜"
+          },
+          {
+            "id": "video-cs-xiaoxuan-yangdachui",
+            "name": "杨大锤地摊烧烤"
+          }
+        ]
+      }
+    },
+    {
+      "name": "changsha road search uses city title",
+      "passed": true
+    },
+    {
+      "name": "changsha has no Chongqing landmark outside Chongqing",
+      "passed": true
+    },
+    {
+      "name": "changsha defaults to direct distance",
+      "passed": true
+    },
+    {
+      "name": "changsha computes a real road route",
+      "passed": true,
+      "detail": {
+        "mode": "road",
+        "phase": "ready",
+        "total": 15836.345972038303,
+        "count": 1,
+        "missing": 0
+      }
+    },
+    {
+      "name": "changsha actual local video decodes and plays",
+      "passed": true
+    },
+    {
+      "name": "liuzhou loads its own map, content and empty saved list",
+      "passed": true,
+      "detail": {
+        "city": "liuzhou",
+        "name": "柳州",
+        "count": 9,
+        "saved": [],
+        "tiles": "data/liuzhou.pmtiles",
+        "failures": [],
+        "records": [
+          {
+            "id": "video-lz-wangzulan-zhangji",
+            "name": "张记玉米汁"
+          },
+          {
+            "id": "video-lz-wangzulan-zhuoheji",
+            "name": "卓和记猪肉脯"
+          }
+        ]
+      }
+    },
+    {
+      "name": "liuzhou road search uses city title",
+      "passed": true
+    },
+    {
+      "name": "liuzhou has no Chongqing landmark outside Chongqing",
+      "passed": true
+    },
+    {
+      "name": "liuzhou defaults to direct distance",
+      "passed": true
+    },
+    {
+      "name": "liuzhou computes a real road route",
+      "passed": true,
+      "detail": {
+        "mode": "road",
+        "phase": "ready",
+        "total": 10.652222495859082,
+        "count": 1,
+        "missing": 0
+      }
+    },
+    {
+      "name": "liuzhou actual local video decodes and plays",
+      "passed": true
+    },
+    {
+      "name": "nanjing saved places and road mode survive city round trip",
+      "passed": true,
+      "detail": {
+        "saved": [
+          "video-nj-xiaojingang-tiantihan",
+          "video-nj-xiaojingang-sanshanban"
+        ],
+        "mode": "road"
+      }
+    },
+    {
+      "name": "chongqing saved places and road mode survive city round trip",
+      "passed": true,
+      "detail": {
+        "saved": [
+          "video-nangua-jiachang",
+          "video-nangua-jeju"
+        ],
+        "mode": "road"
+      }
+    },
+    {
+      "name": "changsha saved places and road mode survive city round trip",
+      "passed": true,
+      "detail": {
+        "saved": [
+          "video-cs-chilezaijian-laowenjia",
+          "video-cs-xiaoxuan-yangdachui"
+        ],
+        "mode": "road"
+      }
+    },
+    {
+      "name": "liuzhou saved places and road mode survive city round trip",
+      "passed": true,
+      "detail": {
+        "saved": [
+          "video-lz-wangzulan-zhangji",
+          "video-lz-wangzulan-zhuoheji"
+        ],
+        "mode": "road"
+      }
+    },
+    {
+      "name": "nanjing saved places and road mode survive city round trip",
+      "passed": true,
+      "detail": {
+        "saved": [
+          "video-nj-xiaojingang-tiantihan",
+          "video-nj-xiaojingang-sanshanban"
+        ],
+        "mode": "road"
+      }
+    },
+    {
+      "name": "Switching cities stops and clears all four old video tracks",
+      "passed": true,
+      "detail": [
+        {
+          "city": "nanjing",
+          "paused": true,
+          "cleared": true
+        },
+        {
+          "city": "chongqing",
+          "paused": true,
+          "cleared": true
+        },
+        {
+          "city": "changsha",
+          "paused": true,
+          "cleared": true
+        },
+        {
+          "city": "liuzhou",
+          "paused": true,
+          "cleared": true
+        }
+      ]
+    },
+    {
+      "name": "Changing creator stops and releases old track",
+      "passed": true
+    },
+    {
+      "name": "Closing popover stops old track",
+      "passed": true
+    },
+    {
+      "name": "Nanjing popover fits 1440x960 with video >= two thirds",
+      "passed": true,
+      "detail": {
+        "box": {
+          "x": 303,
+          "y": 302.90625,
+          "width": 310,
+          "height": 443.5
+        },
+        "media": {
+          "x": 310,
+          "y": 309.90625,
+          "width": 296,
+          "height": 296
+        },
+        "ratio": 0.6674182638105975
+      }
+    },
+    {
+      "name": "No horizontal page overflow at 1440",
+      "passed": true
+    },
+    {
+      "name": "Nanjing popover fits 390x844 with video >= two thirds",
+      "passed": true,
+      "detail": {
+        "box": {
+          "x": 12,
+          "y": 76,
+          "width": 260,
+          "height": 498
+        },
+        "media": {
+          "x": 19,
+          "y": 83,
+          "width": 246,
+          "height": 332
+        },
+        "ratio": 0.6666666666666666
+      }
+    },
+    {
+      "name": "No horizontal page overflow at 390",
+      "passed": true
+    },
+    {
+      "name": "Nanjing popover fits 320x680 with video >= two thirds",
+      "passed": true,
+      "detail": {
+        "box": {
+          "x": 12,
+          "y": 76,
+          "width": 260,
+          "height": 498
+        },
+        "media": {
+          "x": 19,
+          "y": 83,
+          "width": 246,
+          "height": 332
+        },
+        "ratio": 0.6666666666666666
+      }
+    },
+    {
+      "name": "No horizontal page overflow at 320",
+      "passed": true
+    },
+    {
+      "name": "Nanjing popover fits 736x414 with video >= two thirds",
+      "passed": true,
+      "detail": {
+        "box": {
+          "x": 414,
+          "y": 72,
+          "width": 310,
+          "height": 330
+        },
+        "media": {
+          "x": 421,
+          "y": 79,
+          "width": 296,
+          "height": 220
+        },
+        "ratio": 0.6666666666666666
+      }
+    },
+    {
+      "name": "No horizontal page overflow at 736",
+      "passed": true
+    },
+    {
+      "name": "Library uses corrected year and displays source price caution",
+      "passed": true
+    },
+    {
+      "name": "Nanjing map search uses city code 320100",
+      "passed": true
+    },
+    {
+      "name": "nanjing videos page retains city and map link",
+      "passed": true
+    },
+    {
+      "name": "nanjing places page retains city and map link",
+      "passed": true
+    },
+    {
+      "name": "changsha videos page retains city and map link",
+      "passed": true
+    },
+    {
+      "name": "changsha places page retains city and map link",
+      "passed": true
+    },
+    {
+      "name": "liuzhou videos page retains city and map link",
+      "passed": true
+    },
+    {
+      "name": "liuzhou places page retains city and map link",
+      "passed": true
+    },
+    {
+      "name": "chongqing videos page retains city and map link",
+      "passed": true
+    },
+    {
+      "name": "chongqing places page retains city and map link",
+      "passed": true
+    },
+    {
+      "name": "Nanjing place detail returns to its own city",
+      "passed": true
+    },
+    {
+      "name": "Standalone Nanjing preview uses Nanjing map and 104 stops",
+      "passed": true
+    },
+    {
+      "name": "No uncaught browser errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passed": true
+}

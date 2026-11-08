@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "city": "nanjing",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "南京主城区（新街口、玄武湖、老门东及周边商圈）",
+  "bounds": [
+    118.7,
+    31.98,
+    118.88,
+    32.12
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 5905700,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      118.7,
+      31.98,
+      118.88,
+      32.12
+    ]
+  },
+  "osmReplicationTime": "2026-11-01T04:00:00Z",
+  "counters": {
+    "requestedTiles": 289,
+    "presentTiles": 289,
+    "roadLineFragments": 5463,
+    "namedRoadLineFragments": 3389,
+    "unnamedRoadLineFragments": 2074,
+    "nonRoadTransportFragmentsExcluded": 1020,
+    "buildingPolygonFragments": 30711,
+    "buildingFragmentsWithPositiveHeight": 11076,
+    "buildingFragmentsWithoutPositiveHeight": 19635,
+    "namedRoadGroups": 1113
+  },
+  "roadClassCounts": {
+    "major_road": 2749,
+    "minor_road": 1682,
+    "path": 930,
+    "highway": 102
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    ".": {
+      "exact": {
+        "id": "road:.",
+        "class": "path",
+        "detail": "footway",
+        "name": ".",
+        "bounds": [
+          118.7211317,
+          31.9990937,
+          118.7212417,
+          31.999253
+        ],
+        "center": [
+          118.7211826,
+          31.9991836
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 1
+      },
+      "related": [
+        "."
+      ]
+    },
+    "1 蒋王庙登山道": {
+      "exact": {
+        "id": "road:1 蒋王庙登山道",
+        "class": "path",
+        "detail": "steps",
+        "name": "1 蒋王庙登山道",
+        "bounds": [
+          118.8272882,
+          32.0732974,
+          118.8378185,
+          32.0806292
+        ],
+        "center": [
+          118.8351685,
+          32.0761293
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 4
+      },
+      "related": [
+        "1 蒋王庙登山道"
+      ]
+    },
+    "37 拥翠亭到五棵松": {
+      "exact": {
+        "id": "road:37 拥翠亭到五棵松",
+        "class": "minor_road",
+        "detail": "service",
+        "name": "37 拥翠亭到五棵松",
+        "bounds": [
+          118.8702437,
+          32.055288,
+          118.8765925,
+          32.0644761
+        ],
+        "center": [
+          118.8741691,
+          32.0570157
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 3
+      },
+      "related": [
+        "37 拥翠亭到五棵松"
+      ]
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}
