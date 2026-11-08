@@ -23,9 +23,14 @@ let existing={records:[]};try{existing=JSON.parse(await readFile(reportPath,'utf
 const report={schemaVersion:1,preparedAt:new Date().toISOString(),catalogSHA256:digest(await readFile(catalogPath)),mediaUploaded:false,records:existing.records||[],missingSources:[]};
 for(const source of data.sources.filter(source=>!sourceId||source.id===sourceId)){
   if(!source.segments.length)continue;
+  if(source.clipProfile&&!['h264-1080x1920-crf21-aac128-v1'].includes(source.clipProfile))throw new Error(`不支持的视频剪辑规格: ${source.clipProfile}`);
   const input=path.join(root,'.local/video-intake',source.id,'source.mp4');
   let bytes;try{bytes=await readFile(input);}catch(error){if(error.code==='ENOENT'){report.missingSources.push(source.id);continue;}throw error;}
   if(digest(bytes)!==source.sourceSHA256)throw new Error(`原片哈希不一致: ${source.id}`);
+  if(source.clipProfile){
+    const original=JSON.parse(await run(ffprobe,['-v','error','-select_streams','v:0','-show_entries','stream=width,height','-of','json',input])).streams?.[0];
+    if(!original||original.width*16!==original.height*9)throw new Error(`1080p竖屏规格只适用于9:16原片: ${source.id}`);
+  }
   const out=path.join(root,'.local/video-clips',source.id);await mkdir(out,{recursive:true});
   for(const segment of source.segments){
     const names=mediaNames(source,segment),clip=path.join(out,names.clip),poster=path.join(out,names.poster),temporary=clip+'.tmp.mp4';
@@ -38,12 +43,14 @@ for(const source of data.sources.filter(source=>!sourceId||source.id===sourceId)
         }catch(error){if(error.code!=='ENOENT')throw error;}
       }
     }
-    await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.start),'-i',input,'-t',String(segment.end-segment.start),'-map','0:v:0','-map','0:a:0','-c:v','libx264','-preset','fast','-crf','21','-pix_fmt','yuv420p','-threads','4','-c:a','aac','-b:a','128k','-map_metadata','-1','-movflags','+faststart',temporary]);
+    const scale=source.clipProfile==='h264-1080x1920-crf21-aac128-v1'?['-vf','scale=1080:1920']:[];
+    await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.start),'-i',input,'-t',String(segment.end-segment.start),'-map','0:v:0','-map','0:a:0',...scale,'-c:v','libx264','-preset','fast','-crf','21','-pix_fmt','yuv420p','-threads','4','-c:a','aac','-b:a','128k','-map_metadata','-1','-movflags','+faststart',temporary]);
     await rename(temporary,clip);
     await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.posterSecond),'-i',input,'-frames:v','1','-q:v','3',poster]);
     const probe=JSON.parse(await run(ffprobe,['-v','error','-show_entries','format=duration:stream=codec_name,codec_type,width,height,duration','-of','json',clip]));
     const duration=Number(probe.format.duration);
     if(!probe.streams.some(s=>s.codec_type==='video'&&s.codec_name==='h264')||!probe.streams.some(s=>s.codec_type==='audio'&&s.codec_name==='aac')||Math.abs(duration-(segment.end-segment.start))>.16)throw new Error(`片段音画或长度校验失败: ${segment.id}`);
+    if(source.clipProfile&& !probe.streams.some(s=>s.codec_type==='video'&&s.width===1080&&s.height===1920))throw new Error(`片段分辨率不符: ${segment.id}`);
     const clipBytes=await readFile(clip),posterBytes=await readFile(poster);
     report.records=report.records.filter(record=>record.id!==segment.id);
     report.records.push({id:segment.id,sourceId:source.id,mediaKey:mediaKey(source,segment),sourceSHA256:source.sourceSHA256,start:segment.start,end:segment.end,posterSecond:segment.posterSecond,clip:names.clip,poster:names.poster,clipBytes:clipBytes.length,posterBytes:posterBytes.length,clipSHA256:digest(clipBytes),posterSHA256:digest(posterBytes),probe});

@@ -199,7 +199,7 @@ export class FoodExperience{
     byId('food-address').textContent=item.address||'公开地图记录尚未提供完整门牌。';
     byId('food-intro').textContent=item.summary;
     const hero=byId('food-hero');hero.style.backgroundImage='url('+JSON.stringify(item.photoURL||item.spriteURL)+')';hero.style.backgroundSize=item.photoURL?'cover':'';hero.style.backgroundPosition=item.photoURL?'center':(item.spriteIndex*50)+'% center';hero.setAttribute('aria-label',item.photoURL?item.name+' · 原视频画面':'AI生成的通用菜品示意，非门店实拍');hero.querySelector('.photo-note').textContent=item.photoURL?'原视频画面':'菜品示意 · 非门店实拍';
-    byId('food-location-note').textContent=item.verificationStatus==='video-location'?('位置大致 · '+(item.planningLocation?.note||'按原片地址与周边街区估计，出发前可在高德确认。')):'地图位置来自 '+item.coordinateEvidence.sourceDate+' 的开放地图节点，当前店址、营业及入口仍待核实。';
+    byId('food-location-note').textContent=item.verificationStatus==='video-location'?((item.planningLocation?.precision==='area'?'区域粗估 · ':'位置大致 · ')+(item.planningLocation?.note||'按原片地址与周边街区估计，出发前可在高德确认。')):'地图位置来自 '+item.coordinateEvidence.sourceDate+' 的开放地图节点，当前店址、营业及入口仍待核实。';
     const sources=byId('food-sources');sources.replaceChildren();
     for(const source of [{label:item.verificationStatus==='video-location'?'查看原视频':'查看原始地图记录',url:item.coordinateEvidence.url},...(item.sources||[])]){
       const url=allowedURL(source.url);if(!url)continue;

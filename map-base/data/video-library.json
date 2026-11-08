@@ -1598,12 +1598,32 @@
           "start": 11.666667,
           "end": 21.733333,
           "posterSecond": 20,
-          "coordinates": null,
+          "coordinates": [
+            106.5289422,
+            29.5761428
+          ],
           "evidenceNote": "11.666667秒由开场合集进入第一家；12秒字幕是豌杂面的介绍句，并不是店名，不能把缩略图错读为晓安面栋等不存在的名称。原片未见完整店招。",
-          "addressNote": "原片标题限定观音桥，未确认该店具体街区及店名。",
+          "addressNote": "原片标题限定观音桥；坐标是观音桥站的商圈参考，不代表店面或已确认分店。",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "needs-location"
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "观音桥商圈 · 具体店址待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片标题限定观音桥；坐标是观音桥站的商圈参考，不代表店面或已确认分店。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1856754755,
+              "name": "观音桥",
+              "url": "https://www.openstreetmap.org/node/1856754755",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
         },
         {
           "id": "lanmei-shaomai",
@@ -1614,12 +1634,32 @@
           "start": 21.733333,
           "end": 31.85,
           "posterSecond": 29,
-          "coordinates": null,
+          "coordinates": [
+            106.5289422,
+            29.5761428
+          ],
           "evidenceNote": "22秒字幕是“第二家进门就能看见”，不是店名；随后展示手包与烧麦。未见清楚品牌门头，不能仅按洋河烧麦候选直接归并其他作者。",
-          "addressNote": "原片标题限定观音桥，烧麦店名和分店待补。",
+          "addressNote": "原片标题限定观音桥；坐标是观音桥站的商圈参考，不代表店面或已确认分店。",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "needs-location"
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "观音桥商圈 · 具体店址待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片标题限定观音桥；坐标是观音桥站的商圈参考，不代表店面或已确认分店。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1856754755,
+              "name": "观音桥",
+              "url": "https://www.openstreetmap.org/node/1856754755",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
         },
         {
           "id": "lanmei-xidajiang",
@@ -1630,12 +1670,32 @@
           "start": 31.85,
           "end": 58.833333,
           "posterSecond": 48,
-          "coordinates": null,
+          "coordinates": [
+            106.5289422,
+            29.5761428
+          ],
           "evidenceNote": "33秒灰围裙完整可读喜大匠老火锅；32—58秒为该同一火锅店，蒸包和甜品不另造店。旧abang-xidajiang品牌相同，双方均有灰围裙、橙衣和相似餐食，但尚无唯一门牌或外立面对应，不仅按同名设置placeId。",
-          "addressNote": "品牌已认出，观音桥同名候选分店仍待对应。",
+          "addressNote": "原片标题限定观音桥；坐标是观音桥站的商圈参考，不代表店面或已确认分店。",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "needs-location"
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "观音桥商圈 · 具体店址待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片标题限定观音桥；坐标是观音桥站的商圈参考，不代表店面或已确认分店。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1856754755,
+              "name": "观音桥",
+              "url": "https://www.openstreetmap.org/node/1856754755",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
         },
         {
           "id": "lanmei-zhengcai",
@@ -1646,12 +1706,32 @@
           "start": 58.833333,
           "end": 68.333333,
           "posterSecond": 66,
-          "coordinates": null,
+          "coordinates": [
+            106.5289422,
+            29.5761428
+          ],
           "evidenceNote": "59秒开始第四家蒸菜；66秒粉蒸肥肠餐盘可见分散品牌字样，疑似管格格但本轮未完整辨定，不按外部相似菜单认店。68.333333秒进入下一家手包汤饺。",
-          "addressNote": "原片标题限定观音桥，蒸菜店名及街区待核。",
+          "addressNote": "原片标题限定观音桥；坐标是观音桥站的商圈参考，不代表店面或已确认分店。",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "needs-location"
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "观音桥商圈 · 具体店址待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片标题限定观音桥；坐标是观音桥站的商圈参考，不代表店面或已确认分店。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1856754755,
+              "name": "观音桥",
+              "url": "https://www.openstreetmap.org/node/1856754755",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
         },
         {
           "id": "lanmei-yikou",
@@ -1699,12 +1779,32 @@
           "start": 78.8,
           "end": 89.933333,
           "posterSecond": 81,
-          "coordinates": null,
+          "coordinates": [
+            106.5289422,
+            29.5761428
+          ],
           "evidenceNote": "79秒完整门头直接写袁妈红豆汤、重庆总店；81—89秒糖水桌面。89.933333秒转回其他店蒸包画面的结尾合集，故不纳入此单店片段。原片没有露出可直接读出的门牌。",
-          "addressNote": "店招含重庆总店，原片标题为观音桥；具体门牌与开放街区参照仍需对应。",
+          "addressNote": "原片标题限定观音桥；坐标是观音桥站的商圈参考，不代表店面或已确认分店。",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "needs-location"
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "观音桥商圈 · 具体店址待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片标题限定观音桥；坐标是观音桥站的商圈参考，不代表店面或已确认分店。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1856754755,
+              "name": "观音桥",
+              "url": "https://www.openstreetmap.org/node/1856754755",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
         }
       ]
     },
@@ -2020,12 +2120,32 @@
           "start": 229.466667,
           "end": 250.716667,
           "posterSecond": 231.3,
-          "coordinates": null,
-          "locationStatus": "needs-location",
+          "coordinates": [
+            106.531423,
+            29.595717
+          ],
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "evidenceNote": "230.2秒蔡记包子红牌白字清楚，左侧万州杂酱面、上层黄墙木框绿玻璃，店前紫伞和白盆植物；250.716667秒转至掰抄手。",
-          "addressNote": "与PP的蔡记均有黄泥磅街区线索，但原片正门未确认是同一分店；先保留独立视频，待补对应后归并地图点。",
-          "coordinateSystem": "WGS84"
+          "addressNote": "原片与资料均有黄泥磅线索，采用紫福路已有开放地图参照；与其他作者是否同一分店仍未确认。",
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "黄泥磅 · 紫福路候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片与资料均有黄泥磅线索，采用紫福路已有开放地图参照；与其他作者是否同一分店仍未确认。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 152098908,
+              "name": "紫福路",
+              "url": "https://www.openstreetmap.org/way/152098908",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            }
+          }
         },
         {
           "id": "cq-kaizi-bai-chaoshou",
@@ -2293,13 +2413,33 @@
           "start": 301.9,
           "end": 439.8,
           "posterSecond": 313,
-          "coordinates": null,
-          "locationStatus": "needs-location",
+          "coordinates": [
+            106.5592001,
+            29.5570085
+          ],
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "evidenceNote": "302—303秒莲花池社区石碑，原字幕七星岗；304—316秒进入居民楼巷道老火锅。未独立确认完整门头，不直接采用旧搜索中的渝香源候选。",
-          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
-          "footageNote": "2025年视频 · 营业情况待确认"
+          "addressNote": "原片字幕及社区碑指向七星岗莲花池附近；坐标仅取七星岗站作区域参考，非门店或摊位位置。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "七星岗 · 莲花池社区候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片字幕及社区碑指向七星岗莲花池附近；坐标仅取七星岗站作区域参考，非门店或摊位位置。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1853880104,
+              "name": "七星岗",
+              "url": "https://www.openstreetmap.org/node/1853880104",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
         },
         {
           "id": "cq-pp-7583215165723266354-bingdouhua",
@@ -2310,13 +2450,33 @@
           "start": 439.8,
           "end": 443.9,
           "posterSecond": 442,
-          "coordinates": null,
-          "locationStatus": "needs-location",
+          "coordinates": [
+            106.5592001,
+            29.5570085
+          ],
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "evidenceNote": "440—443秒原字幕临走在旁边这些小摊买了冰豆花；没有完整摊名。",
-          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
-          "footageNote": "2025年视频 · 营业情况待确认"
+          "addressNote": "原片字幕及社区碑指向七星岗莲花池附近；坐标仅取七星岗站作区域参考，非门店或摊位位置。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "七星岗 · 莲花池社区候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片字幕及社区碑指向七星岗莲花池附近；坐标仅取七星岗站作区域参考，非门店或摊位位置。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1853880104,
+              "name": "七星岗",
+              "url": "https://www.openstreetmap.org/node/1853880104",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
         },
         {
           "id": "cq-pp-7583215165723266354-huangjia",
@@ -2697,13 +2857,34 @@
           "start": 639.8,
           "end": 683.5,
           "posterSecond": 645,
-          "coordinates": null,
-          "locationStatus": "needs-location",
+          "coordinates": [
+            106.4320924,
+            29.8251514
+          ],
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "evidenceNote": "640—643秒正门与原字幕明确龙逸豆花庄；684秒切到郑发食店。",
-          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
-          "footageNote": "2025年视频 · 营业情况待确认"
+          "addressNote": "原片明确龙逸豆花庄；公开探店资料称云泉路50号、区门诊对面，以云泉路公交站作区域参照，具体门店和营业待核。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "北碚 · 云泉路候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片明确龙逸豆花庄；公开探店资料称云泉路50号、区门诊对面，以云泉路公交站作区域参照，具体门店和营业待核。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 2689754415,
+              "name": "云泉路公交站",
+              "url": "https://www.openstreetmap.org/node/2689754415",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "referenceURL": "https://www.sohu.com/a/785685580_121948401"
+          }
         },
         {
           "id": "cq-pp-7583215165723266354-zhengfa",
@@ -2714,13 +2895,33 @@
           "start": 683.5,
           "end": 713.5,
           "posterSecond": 686,
-          "coordinates": null,
-          "locationStatus": "needs-location",
+          "coordinates": [
+            106.4288206,
+            29.8206118
+          ],
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "evidenceNote": "684秒门头北碚郑发食店，原字幕也明确郑发食店；685—713秒豆腐鱼与肥肠。蓝门牌疑似龙溪路319号附53，未读准门牌不作已核地址。",
-          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
-          "footageNote": "2025年视频 · 营业情况待确认"
+          "addressNote": "原片门头为北碚郑发食店，蓝门牌疑似龙溪路；以龙溪路开放地图道路作粗略参照，门牌与分店仍待核。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "北碚 · 龙溪路候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头为北碚郑发食店，蓝门牌疑似龙溪路；以龙溪路开放地图道路作粗略参照，门牌与分店仍待核。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 102321652,
+              "name": "龙溪路",
+              "url": "https://www.openstreetmap.org/way/102321652",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            }
+          }
         },
         {
           "id": "cq-pp-7583215165723266354-ganguo",
@@ -2731,13 +2932,33 @@
           "start": 713.5,
           "end": 744.3,
           "posterSecond": 715,
-          "coordinates": null,
-          "locationStatus": "needs-location",
+          "coordinates": [
+            106.4197505,
+            29.8186857
+          ],
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "evidenceNote": "714秒原字幕下午去了西南大学附近；门头只拍到鲜啤等局部字，不能据此补完整店名。",
-          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
-          "footageNote": "2025年视频 · 营业情况待确认"
+          "addressNote": "原片称西南大学附近，后续源吉煲饭称在附近；以西南大学站作区域参考，具体街区、出入口与店面待核。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "北碚 · 西南大学候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片称西南大学附近，后续源吉煲饭称在附近；以西南大学站作区域参考，具体街区、出入口与店面待核。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 5359333277,
+              "name": "西南大学",
+              "url": "https://www.openstreetmap.org/node/5359333277",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
         },
         {
           "id": "cq-pp-7583215165723266354-yuanji",
@@ -2748,13 +2969,33 @@
           "start": 744.3,
           "end": 759.5,
           "posterSecond": 748,
-          "coordinates": null,
-          "locationStatus": "needs-location",
+          "coordinates": [
+            106.4197505,
+            29.8186857
+          ],
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "evidenceNote": "745—746秒原字幕这附近还有一个小店叫源吉煲饭；菜单与三拼饭对应。",
-          "addressNote": "已辨识门店或街区线索，具体分店与开放地图参照见本批核对材料。",
-          "footageNote": "2025年视频 · 营业情况待确认"
+          "addressNote": "原片称西南大学附近，后续源吉煲饭称在附近；以西南大学站作区域参考，具体街区、出入口与店面待核。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "北碚 · 西南大学候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片称西南大学附近，后续源吉煲饭称在附近；以西南大学站作区域参考，具体街区、出入口与店面待核。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 5359333277,
+              "name": "西南大学",
+              "url": "https://www.openstreetmap.org/node/5359333277",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
         },
         {
           "id": "cq-pp-7583215165723266354-jinli",
@@ -2981,13 +3222,34 @@
           "start": 931,
           "end": 957.7,
           "posterSecond": 937,
-          "coordinates": null,
-          "locationStatus": "needs-location",
+          "coordinates": [
+            106.401672,
+            29.812156
+          ],
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "evidenceNote": "931秒完整招牌记东串串总店；934秒原字幕记东，935秒说去的是总店。",
-          "addressNote": "主agent在现有两份anchor与沿路网络未找到双柏路/支路，正在扫源PBF；找到有依据的开放街区参照再落点，不用猜坐标。 本片仍按候选资料处理，不代表已确认分店或当前营业。",
-          "footageNote": "2025年视频 · 营业情况待确认"
+          "addressNote": "原片记东与典匠世家相邻，公开资料指双柏路/支路；以附近双元大道开放地图道路作区域参考，不是店门，分店与营业待核。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "北碚 · 双元大道候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片记东与典匠世家相邻，公开资料指双柏路/支路；以附近双元大道开放地图道路作区域参考，不是店门，分店与营业待核。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1552242025,
+              "name": "双元大道",
+              "url": "https://www.openstreetmap.org/way/1552242025",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "referenceURL": "https://whlyw.cq.gov.cn/zwxx_221/bmdt/tzgg/202505/P020250530603313691848.pdf"
+          }
         },
         {
           "id": "cq-pp-7583215165723266354-dianjiang",
@@ -2998,13 +3260,34 @@
           "start": 957.7,
           "end": 984.2,
           "posterSecond": 960,
-          "coordinates": null,
-          "locationStatus": "needs-location",
+          "coordinates": [
+            106.401672,
+            29.812156
+          ],
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "evidenceNote": "958秒门头与959秒原字幕典匠世家耙牛肉；作者说在记东旁边，980—983秒凉糕仍在该店，不另造一店。",
-          "addressNote": "2024名单早于2025原视频，为地址核对材料，不代表2026营业状态；待主agent补相应OSM参照，门店POI不是前置条件。 本片仍按候选资料处理，不代表已确认分店或当前营业。",
-          "footageNote": "2025年视频 · 营业情况待确认"
+          "addressNote": "原片记东与典匠世家相邻，公开资料指双柏路/支路；以附近双元大道开放地图道路作区域参考，不是店门，分店与营业待核。",
+          "footageNote": "2025年视频 · 营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "北碚 · 双元大道候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片记东与典匠世家相邻，公开资料指双柏路/支路；以附近双元大道开放地图道路作区域参考，不是店门，分店与营业待核。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1552242025,
+              "name": "双元大道",
+              "url": "https://www.openstreetmap.org/way/1552242025",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            },
+            "referenceURL": "https://whlyw.cq.gov.cn/zwxx_221/bmdt/tzgg/202505/P020250530603313691848.pdf"
+          }
         },
         {
           "id": "cq-pp-7583215165723266354-hongyu",
@@ -4096,6 +4379,1053 @@
           "evidenceNote": "原片 0–69 秒；原片没有足够可靠的街区位置线索；暂不放置地图点。",
           "addressNote": "原片没有足够可靠的街区位置线索；暂不放置地图点。",
           "footageNote": "2025年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-b6-gongfupang-7410745786901875995",
+      "author": "四方坪功夫胖",
+      "title": "重庆马路边上究竟能有多少好吃的？",
+      "url": "https://www.douyin.com/video/7410745786901875995",
+      "shareURL": "https://v.douyin.com/AKDFeK1CAEw/",
+      "publishedOn": "2024-09-04",
+      "durationSeconds": 182.277007,
+      "sourceSHA256": "f53d4c4166fc238f3765a117ef96aafff2c2dd1da9e0058ff0ec06c7e8339172",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批七个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "依原片画面粗分；流动摊位及同摊关系待核实。",
+      "segments": [
+        {
+          "id": "b6-gongfupang-niuza",
+          "name": "路边挑挑牛杂",
+          "category": "牛杂 / 盒饭",
+          "addressText": null,
+          "start": 0,
+          "end": 48,
+          "posterSecond": 15,
+          "summary": "原片中的牛杂 / 盒饭画面，摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片可见路边摊及菜品，摊位名称和具体位置尚待确认。",
+          "footageNote": "2024年视频 · 营业及摆摊情况待确认"
+        },
+        {
+          "id": "b6-gongfupang-feichang",
+          "name": "路边肥肠",
+          "category": "肥肠",
+          "addressText": null,
+          "start": 48,
+          "end": 72,
+          "posterSecond": 58,
+          "summary": "原片中的肥肠画面，摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片可见路边摊及菜品，摊位名称和具体位置尚待确认。",
+          "footageNote": "2024年视频 · 营业及摆摊情况待确认"
+        },
+        {
+          "id": "b6-gongfupang-shaobai",
+          "name": "路边烧白",
+          "category": "烧白",
+          "addressText": null,
+          "start": 72,
+          "end": 100,
+          "posterSecond": 85,
+          "summary": "原片中的烧白画面，摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片可见路边摊及菜品，摊位名称和具体位置尚待确认。",
+          "footageNote": "2024年视频 · 营业及摆摊情况待确认"
+        },
+        {
+          "id": "b6-gongfupang-jidan",
+          "name": "路边鸡蛋肉饼",
+          "category": "鸡蛋肉饼",
+          "addressText": null,
+          "start": 100,
+          "end": 135,
+          "posterSecond": 112,
+          "summary": "原片中的鸡蛋肉饼画面，摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片可见路边摊及菜品，摊位名称和具体位置尚待确认。",
+          "footageNote": "2024年视频 · 营业及摆摊情况待确认"
+        },
+        {
+          "id": "b6-gongfupang-tudou",
+          "name": "路边土豆凉面",
+          "category": "凉面 / 土豆",
+          "addressText": null,
+          "start": 135,
+          "end": 182,
+          "posterSecond": 157,
+          "summary": "原片中的凉面 / 土豆画面，摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片可见路边摊及菜品，摊位名称和具体位置尚待确认。",
+          "footageNote": "2024年视频 · 营业及摆摊情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-b6-zhishi-7512424363913661754",
+      "author": "来碗芝士吧",
+      "title": "校门口神仙物价我能记一辈子！带20元花不完",
+      "url": "https://www.douyin.com/video/7512424363913661754",
+      "shareURL": "https://v.douyin.com/OBYi9oM7ITo/",
+      "publishedOn": "2025-06-05",
+      "durationSeconds": 34.033333,
+      "sourceSHA256": "4f979c766f8ab191de4dc31f462ba3ca994bdd36e32c600bba2365d9ebcc2601",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批七个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "依原片画面粗分；流动摊位及同摊关系待核实。",
+      "segments": [
+        {
+          "id": "b6-zhishi-xiaochi",
+          "name": "校门口小吃",
+          "category": "街边小吃",
+          "addressText": null,
+          "start": 0,
+          "end": 34,
+          "posterSecond": 12,
+          "summary": "原片中的街边小吃画面，摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片显示校门口小吃，具体学校与摊位位置待确认。",
+          "footageNote": "2025年视频 · 营业及摆摊情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-b6-tiaotiao-7248181434786041144",
+      "author": "半岛饭盒",
+      "title": "花不到20块看看我能吃到多少种挑挑美食",
+      "url": "https://www.douyin.com/video/7248181434786041144",
+      "shareURL": "https://v.douyin.com/SdLK5LQZ0vU/",
+      "publishedOn": "2023-06-24",
+      "durationSeconds": 160.844943,
+      "sourceSHA256": "bfaef6bb3eac42808c74e808a2679b7e0a7443fe4ec750dcc54ee3149d953827",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批七个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "依原片画面粗分；流动摊位及同摊关系待核实。",
+      "segments": [
+        {
+          "id": "b6-tiaotiao-xiaochi",
+          "name": "挑挑美食",
+          "category": "街边小吃",
+          "addressText": null,
+          "start": 0,
+          "end": 160,
+          "posterSecond": 40,
+          "summary": "原片中的街边小吃画面，摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片可见路边摊及菜品，摊位名称和具体位置尚待确认。",
+          "footageNote": "2023年视频 · 营业及摆摊情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-b6-huarou-7665172306860703345",
+      "author": "发财河河🔆",
+      "title": "重庆路边12元一碗滑肉",
+      "url": "https://www.douyin.com/video/7665172306860703345",
+      "shareURL": "https://v.douyin.com/J2GhQCRuyyE/",
+      "publishedOn": "2026-07-22",
+      "durationSeconds": 26.566667,
+      "sourceSHA256": "23c47e22390bc5ebaf0ffbcc1e355d72324754b03698ce6cf7989a35bf05c528",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批七个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "依原片画面粗分；流动摊位及同摊关系待核实。",
+      "segments": [
+        {
+          "id": "b6-huarou-stall",
+          "name": "路边滑肉",
+          "category": "滑肉",
+          "addressText": null,
+          "start": 0,
+          "end": 26,
+          "posterSecond": 12,
+          "summary": "原片中的滑肉画面，摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片可见路边摊及菜品，摊位名称和具体位置尚待确认。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-b6-niuza-7414809933394332965",
+      "author": "半岛饭盒",
+      "title": "重庆街头17块一大碗的牛杂盒饭",
+      "url": "https://www.douyin.com/video/7414809933394332965",
+      "shareURL": "https://v.douyin.com/4k0PO9VaQC0/",
+      "publishedOn": "2024-09-15",
+      "durationSeconds": 48.900998,
+      "sourceSHA256": "35fd639d0e18ace24f0a9e9505aa6894f77587529b7d3689b14f6154061ed82d",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批七个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "依原片画面粗分；流动摊位及同摊关系待核实。",
+      "segments": [
+        {
+          "id": "b6-niuza-stall",
+          "name": "路边牛杂盒饭",
+          "category": "牛杂 / 盒饭",
+          "addressText": null,
+          "start": 0,
+          "end": 48,
+          "posterSecond": 20,
+          "summary": "原片中的牛杂 / 盒饭画面，摊位和营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "用户提供九龙坡建材市场线索；具体市场和摊位仍需核对，不据此推定坐标。",
+          "footageNote": "2024年视频 · 营业及摆摊情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-b6-suisui-7655539443751865329",
+      "author": "岁岁念～",
+      "title": "跟着大学生脚本逛吃重庆工商大学夜市",
+      "url": "https://www.douyin.com/video/7655539443751865329",
+      "shareURL": "https://v.douyin.com/mOdMLlV9VKs/",
+      "publishedOn": "2026-06-26",
+      "durationSeconds": 90.633008,
+      "sourceSHA256": "844caec45cdb8a3d9ddfe1ca464e0424250adc65299d8484fde19f01df341ab1",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批七个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "按原片画面、字幕和播放内容区分；位置待核实。",
+      "segments": [
+        {
+          "id": "b6-suisui-roujiamo",
+          "name": "工商大学夜市把子肉夹馍",
+          "category": "夹馍",
+          "addressText": null,
+          "start": 6,
+          "end": 22,
+          "posterSecond": 12,
+          "summary": "原片中的夹馍画面，具体摊位及营业情况待确认。",
+          "coordinates": [
+            106.5669055,
+            29.5111062
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "工商大学 · 回龙湾候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13917314572,
+              "name": "回龙湾",
+              "url": "https://www.openstreetmap.org/node/13917314572",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "referenceURL": "https://www.cqnews.net/1/detail/content_51387130.html"
+          }
+        },
+        {
+          "id": "b6-suisui-lengmian",
+          "name": "工商大学夜市烤冷面",
+          "category": "烤冷面",
+          "addressText": null,
+          "start": 22,
+          "end": 32,
+          "posterSecond": 27,
+          "summary": "原片中的烤冷面画面，具体摊位及营业情况待确认。",
+          "coordinates": [
+            106.5669055,
+            29.5111062
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "工商大学 · 回龙湾候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13917314572,
+              "name": "回龙湾",
+              "url": "https://www.openstreetmap.org/node/13917314572",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "referenceURL": "https://www.cqnews.net/1/detail/content_51387130.html"
+          }
+        },
+        {
+          "id": "b6-suisui-guanbing",
+          "name": "工商大学夜市鸡蛋灌饼",
+          "category": "鸡蛋灌饼",
+          "addressText": null,
+          "start": 32,
+          "end": 39,
+          "posterSecond": 35,
+          "summary": "原片中的鸡蛋灌饼画面，具体摊位及营业情况待确认。",
+          "coordinates": [
+            106.5669055,
+            29.5111062
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "工商大学 · 回龙湾候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13917314572,
+              "name": "回龙湾",
+              "url": "https://www.openstreetmap.org/node/13917314572",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "referenceURL": "https://www.cqnews.net/1/detail/content_51387130.html"
+          }
+        },
+        {
+          "id": "b6-suisui-liangpi",
+          "name": "工商大学夜市凉皮卷饼",
+          "category": "凉皮卷饼",
+          "addressText": null,
+          "start": 39,
+          "end": 47,
+          "posterSecond": 42,
+          "summary": "原片中的凉皮卷饼画面，具体摊位及营业情况待确认。",
+          "coordinates": [
+            106.5669055,
+            29.5111062
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "工商大学 · 回龙湾候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13917314572,
+              "name": "回龙湾",
+              "url": "https://www.openstreetmap.org/node/13917314572",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "referenceURL": "https://www.cqnews.net/1/detail/content_51387130.html"
+          }
+        },
+        {
+          "id": "b6-suisui-choudoufu",
+          "name": "工商大学夜市臭豆腐",
+          "category": "臭豆腐",
+          "addressText": null,
+          "start": 47,
+          "end": 60,
+          "posterSecond": 51,
+          "summary": "原片中的臭豆腐画面，具体摊位及营业情况待确认。",
+          "coordinates": [
+            106.5669055,
+            29.5111062
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "工商大学 · 回龙湾候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13917314572,
+              "name": "回龙湾",
+              "url": "https://www.openstreetmap.org/node/13917314572",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "referenceURL": "https://www.cqnews.net/1/detail/content_51387130.html"
+          }
+        },
+        {
+          "id": "b6-suisui-guobaorou",
+          "name": "工商大学夜市锅包肉",
+          "category": "锅包肉",
+          "addressText": null,
+          "start": 73,
+          "end": 81,
+          "posterSecond": 76,
+          "summary": "原片中的锅包肉画面，具体摊位及营业情况待确认。",
+          "coordinates": [
+            106.5669055,
+            29.5111062
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "工商大学 · 回龙湾候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片称工商大学夜市；媒体报道学府校区1号门外有回龙湾小吃街，此处取回龙湾公交站作候选区域参照，不能确认片中摊位或校区。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13917314572,
+              "name": "回龙湾",
+              "url": "https://www.openstreetmap.org/node/13917314572",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "referenceURL": "https://www.cqnews.net/1/detail/content_51387130.html"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cq-b6-zaoshi-7696456768931857018",
+      "author": "涂你爱吃（逛吃重庆版）",
+      "title": "重庆的烟火气都藏在早市里：五个重庆主城早市",
+      "url": "https://www.douyin.com/video/7696456768931857018",
+      "shareURL": "https://v.douyin.com/og6pH78HeI4/",
+      "publishedOn": "2026-10-14",
+      "durationSeconds": 188.9,
+      "sourceSHA256": "46b1354f2f4bfdc9e9cc46e477e0d5080c6810413b8b25dbec32bc4ef20de965",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批七个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "按原片画面、字幕和播放内容区分；位置待核实。",
+      "segments": [
+        {
+          "id": "b6-zaoshi-yeshuigou",
+          "name": "野水沟早市",
+          "category": "早市 / 小吃",
+          "addressText": "观音桥地铁站8号口附近",
+          "start": 10,
+          "end": 50,
+          "posterSecond": 13,
+          "summary": "原片中的早市 / 小吃画面，具体摊位及营业情况待确认。",
+          "coordinates": [
+            106.5289422,
+            29.5761428
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片15秒字幕称位于观音桥地铁站8号口；以开放地图的观音桥站节点作街区参照，站点不代表8号出口或早市摊位的精确位置。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "观音桥地铁站附近 · 出口待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片15秒标注观音桥地铁站8号口；此点是车站节点，非8号口或早市具体摊位。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1856754755,
+              "name": "观音桥站",
+              "url": "https://www.openstreetmap.org/node/1856754755",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "addressCheckURL": "https://www.amap.com/search?query=%E9%87%8E%E6%B0%B4%E6%B2%9F%E6%97%A9%E5%B8%82%20%E9%87%8D%E5%BA%86"
+          }
+        },
+        {
+          "id": "b6-zaoshi-wangjiabao",
+          "name": "汪家堡早市",
+          "category": "早市 / 小吃",
+          "addressText": null,
+          "start": 50,
+          "end": 90,
+          "posterSecond": 53,
+          "summary": "原片中的早市 / 小吃画面，具体摊位及营业情况待确认。",
+          "coordinates": [
+            106.4705082,
+            29.7313928
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片称汪家堡早市，公开报道指蔡家；使用蔡家农贸市场开放地图对象作区域参照，不能确定该节点即早市或入口。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "蔡家岗 · 汪家堡候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片称汪家堡早市，公开报道指蔡家；使用蔡家农贸市场开放地图对象作区域参照，不能确定该节点即早市或入口。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13142381501,
+              "name": "蔡家农贸市场",
+              "url": "https://www.openstreetmap.org/node/13142381501",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "referenceURL": "https://www.ljxq.gov.cn/bm/qsww/zwxx/dt/202603/t20260323_15560226.html"
+          }
+        },
+        {
+          "id": "b6-zaoshi-fangkongdong",
+          "name": "防空洞早市",
+          "category": "早市 / 小吃",
+          "addressText": null,
+          "start": 90,
+          "end": 129,
+          "posterSecond": 93,
+          "summary": "原片中的早市 / 小吃画面，具体摊位及营业情况待确认。",
+          "coordinates": [
+            106.5472105,
+            29.5869266
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "防空洞背篓菜市公开报道位于红土地站附近；红土地早市仅以地名限定。本坐标是站点参照，不是两个市场的准确入口。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "红土地站候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "防空洞背篓菜市公开报道位于红土地站附近；红土地早市仅以地名限定。本坐标是站点参照，不是两个市场的准确入口。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 2156031504,
+              "name": "红土地",
+              "url": "https://www.openstreetmap.org/node/2156031504",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "referenceURL": "https://www.agri.cn/sj/scdt/202405/t20240520_8634408.htm"
+          }
+        },
+        {
+          "id": "b6-zaoshi-hongtudi",
+          "name": "红土地早市",
+          "category": "早市 / 小吃",
+          "addressText": null,
+          "start": 129,
+          "end": 164,
+          "posterSecond": 131,
+          "summary": "原片中的早市 / 小吃画面，具体摊位及营业情况待确认。",
+          "coordinates": [
+            106.5472105,
+            29.5869266
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "防空洞背篓菜市公开报道位于红土地站附近；红土地早市仅以地名限定。本坐标是站点参照，不是两个市场的准确入口。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "红土地站候选区域",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "防空洞背篓菜市公开报道位于红土地站附近；红土地早市仅以地名限定。本坐标是站点参照，不是两个市场的准确入口。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 2156031504,
+              "name": "红土地",
+              "url": "https://www.openstreetmap.org/node/2156031504",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            },
+            "referenceURL": "https://www.agri.cn/sj/scdt/202405/t20240520_8634408.htm"
+          }
+        },
+        {
+          "id": "b6-zaoshi-changshengqiao",
+          "name": "长生桥早市",
+          "category": "早市 / 小吃",
+          "addressText": null,
+          "start": 164,
+          "end": 179,
+          "posterSecond": 166,
+          "summary": "原片中的早市 / 小吃画面，具体摊位及营业情况待确认。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片标注早市名称；具体范围、入口和当前赶集时间尚待核实。",
+          "footageNote": "2026年视频 · 营业及摆摊情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-b7-7690817949007624041",
+      "author": "是小徐",
+      "title": "今天吃南坪，60多/位炭火烤肉自助",
+      "url": "https://www.douyin.com/video/7690817949007624041",
+      "shareURL": "https://v.douyin.com/ufSCovJbghs/",
+      "publishedOn": "2026-09-29",
+      "durationSeconds": 217.919002,
+      "sourceSHA256": "9e1c31f70d81d290ac127550bd7a823cc2e9c20eb0ee37e291740d5f6c1d94e7",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批8个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "按原片画面、字幕及原页核对；价格为视频时点，地址与分店见各片段说明。",
+      "segments": [
+        {
+          "id": "b7-7690817949007624041-buffet",
+          "name": "南坪万达炭火烤肉自助",
+          "category": "自助烤肉",
+          "addressText": null,
+          "start": 75,
+          "end": 120,
+          "posterSecond": 105,
+          "summary": "原片展示自助烤肉，视频中价格为拍摄时参考，具体门店、营业及当前价格待核。",
+          "coordinates": [
+            106.5663664,
+            29.5277319
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片15秒写明南坪万达，画面聊天提及尹三顺；以开放地图南坪万达广场为商圈参照，具体门店和营业情况待核。",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "南坪万达 · 分店待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片15秒写明南坪万达，画面聊天提及尹三顺；以开放地图南坪万达广场为商圈参照，具体门店和营业情况待核。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 230692049,
+              "name": "南坪万达广场",
+              "url": "https://www.openstreetmap.org/way/230692049",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            }
+          }
+        }
+      ],
+      "clipProfile": "h264-1080x1920-crf21-aac128-v1"
+    },
+    {
+      "id": "cq-b7-7643426875569828559",
+      "author": "我爱吃大份",
+      "title": "确实是重庆超nb的自助",
+      "url": "https://www.douyin.com/video/7643426875569828559",
+      "shareURL": "https://v.douyin.com/k-wwsQF_IPw/",
+      "publishedOn": "2026-05-24",
+      "durationSeconds": 20.409002,
+      "sourceSHA256": "06e30fce2253ad991d51e894e41e32248777b2048200da78053aec9add587d87",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批8个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "按原片画面、字幕及原页核对；价格为视频时点，地址与分店见各片段说明。",
+      "segments": [
+        {
+          "id": "b7-7643426875569828559-buffet",
+          "name": "重庆自助餐（店名待核）",
+          "category": "自助餐",
+          "addressText": null,
+          "start": 0,
+          "end": 20,
+          "posterSecond": 3,
+          "summary": "原片展示自助餐，视频中价格为拍摄时参考，具体门店、营业及当前价格待核。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片中的门店、分店或街区线索仍待核实。",
+          "footageNote": "2026年视频 · 价格与营业情况待确认"
+        }
+      ],
+      "clipProfile": "h264-1080x1920-crf21-aac128-v1"
+    },
+    {
+      "id": "cq-b7-7685274762122469995",
+      "author": "是小徐",
+      "title": "今天吃时代天街，59/位牛肉火锅自助",
+      "url": "https://www.douyin.com/video/7685274762122469995",
+      "shareURL": "https://v.douyin.com/33roFnYiTTw/",
+      "publishedOn": "2026-09-14",
+      "durationSeconds": 271.066016,
+      "sourceSHA256": "7b4012abd0f29e22f6a9ab984d6402e5710f2a24f103ffb45e0284614ddc8356",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批8个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "按原片画面、字幕及原页核对；价格为视频时点，地址与分店见各片段说明。",
+      "segments": [
+        {
+          "id": "b7-7685274762122469995-buffet",
+          "name": "时代天街牛肉火锅自助",
+          "category": "火锅 / 自助餐",
+          "addressText": null,
+          "start": 20,
+          "end": 65,
+          "posterSecond": 30,
+          "summary": "原片展示火锅 / 自助餐，视频中价格为拍摄时参考，具体门店、营业及当前价格待核。",
+          "coordinates": [
+            106.5093386,
+            29.5381103
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片标题写时代天街，以开放地图时代天街作商圈参照，门店名称、楼层及营业情况待核。",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "时代天街 · 店址待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片标题写时代天街，以开放地图时代天街作商圈参照，门店名称、楼层及营业情况待核。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 817756398,
+              "name": "龙湖·时代天街",
+              "url": "https://www.openstreetmap.org/way/817756398",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            }
+          }
+        }
+      ],
+      "clipProfile": "h264-1080x1920-crf21-aac128-v1"
+    },
+    {
+      "id": "cq-b7-7700081528461991414",
+      "author": "是小徐",
+      "title": "今天吃石桥铺，53/位酸辣鸭掌自助",
+      "url": "https://www.douyin.com/video/7700081528461991414",
+      "shareURL": "https://v.douyin.com/d8sSDH5Mnlk/",
+      "publishedOn": "2026-10-24",
+      "durationSeconds": 168.9,
+      "sourceSHA256": "150c132dd166e54e0101de075af4d370050c40ccb85f4ac490739fed45c519a0",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批8个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "按原片画面、字幕及原页核对；价格为视频时点，地址与分店见各片段说明。",
+      "segments": [
+        {
+          "id": "b7-7700081528461991414-buffet",
+          "name": "石桥铺酸辣鸭掌自助",
+          "category": "鸭掌 / 自助餐",
+          "addressText": null,
+          "start": 20,
+          "end": 65,
+          "posterSecond": 38,
+          "summary": "原片展示鸭掌 / 自助餐，视频中价格为拍摄时参考，具体门店、营业及当前价格待核。",
+          "coordinates": [
+            106.4810258,
+            29.5354588
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片标题写石桥铺；以开放地图石桥铺站作为商圈粗略参照，门店名称和具体位置待核。",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "石桥铺 · 店址待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片标题写石桥铺；以开放地图石桥铺站作为商圈粗略参照，门店名称和具体位置待核。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1854002078,
+              "name": "石桥铺站",
+              "url": "https://www.openstreetmap.org/node/1854002078",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
+        }
+      ],
+      "clipProfile": "h264-1080x1920-crf21-aac128-v1"
+    },
+    {
+      "id": "cq-b7-7652455692191700091",
+      "author": "给小刘留一口",
+      "title": "在火锅店实现甜品自由，谁懂啊太幸福了",
+      "url": "https://www.douyin.com/video/7652455692191700091",
+      "shareURL": "https://v.douyin.com/ocYumLHU790/",
+      "publishedOn": "2026-06-18",
+      "durationSeconds": 205.566667,
+      "sourceSHA256": "695bacce7f412effa60d1997b68eb9aabe59d32e42837476091a6803d6cc1077",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批8个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "按原片画面、字幕及原页核对；价格为视频时点，地址与分店见各片段说明。",
+      "segments": [
+        {
+          "id": "b7-7652455692191700091-buffet",
+          "name": "观音桥火锅甜品（店名待核）",
+          "category": "火锅 / 甜品",
+          "addressText": null,
+          "start": 18,
+          "end": 63,
+          "posterSecond": 35,
+          "summary": "原片展示火锅 / 甜品，视频中价格为拍摄时参考，具体门店、营业及当前价格待核。",
+          "coordinates": [
+            106.5289422,
+            29.5761428
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片约15秒拍到“我在重庆”大屏，作为观音桥商圈线索；以观音桥站作区域参照，火锅店具体店址与分店待核。",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "观音桥 · 店址待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片约15秒拍到“我在重庆”大屏，作为观音桥商圈线索；以观音桥站作区域参照，火锅店具体店址与分店待核。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 1856754755,
+              "name": "观音桥站",
+              "url": "https://www.openstreetmap.org/node/1856754755",
+              "sourceDate": "2026-10-25",
+              "method": "node-coordinate"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cq-b7-7690070689378166505",
+      "author": "是小徐",
+      "title": "重庆133/位大闸蟹自助",
+      "url": "https://www.douyin.com/video/7690070689378166505",
+      "shareURL": "https://v.douyin.com/zxvfpcu9yk4/",
+      "publishedOn": "2026-09-27",
+      "durationSeconds": 305.458005,
+      "sourceSHA256": "f0a1072b41b928439103e48160485237d6f1c7561466a0de169883458409cbb8",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批8个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "按原片画面、字幕及原页核对；价格为视频时点，地址与分店见各片段说明。",
+      "segments": [
+        {
+          "id": "b7-7690070689378166505-buffet",
+          "name": "微电园酒店大闸蟹自助（店名待核）",
+          "category": "海鲜 / 自助餐",
+          "addressText": null,
+          "start": 10,
+          "end": 65,
+          "posterSecond": 20,
+          "summary": "原片展示海鲜 / 自助餐，视频中价格为拍摄时参考，具体门店、营业及当前价格待核。",
+          "coordinates": [
+            106.3700914,
+            29.6019989
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片15秒字幕称在微电园的星级酒店；以开放地图西永微电园对象作较大范围参照，并非酒店或入口位置。",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "precision": "area",
+            "label": "西永微电园 · 酒店待核",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片15秒字幕称在微电园的星级酒店；以开放地图西永微电园对象作较大范围参照，并非酒店或入口位置。",
+            "reviewedOn": "2026-11-06",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 461068821,
+              "name": "西永微电园",
+              "url": "https://www.openstreetmap.org/way/461068821",
+              "sourceDate": "2026-10-25",
+              "method": "area-or-road-average"
+            }
+          }
+        }
+      ],
+      "clipProfile": "h264-1080x1920-crf21-aac128-v1"
+    },
+    {
+      "id": "cq-b7-7654888278734159537",
+      "author": "重庆饭冰冰",
+      "title": "重庆16块的自助餐，简直太权威了",
+      "url": "https://www.douyin.com/video/7654888278734159537",
+      "shareURL": "https://v.douyin.com/-iBMcanIwuw/",
+      "publishedOn": "2026-06-24",
+      "durationSeconds": 182.733008,
+      "sourceSHA256": "6ebd0615a7dc3f6da656e76f61bcd4c0a3969b54eb4192ec0fc4bb6501aafb5a",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批8个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "按原片画面、字幕及原页核对；价格为视频时点，地址与分店见各片段说明。",
+      "segments": [
+        {
+          "id": "b7-7654888278734159537-buffet",
+          "name": "网约车的士快餐（店址待核）",
+          "category": "自助餐 / 快餐",
+          "addressText": null,
+          "start": 0,
+          "end": 55,
+          "posterSecond": 2,
+          "summary": "原片展示自助餐 / 快餐，视频中价格为拍摄时参考，具体门店、营业及当前价格待核。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片中的门店、分店或街区线索仍待核实。",
+          "footageNote": "2026年视频 · 价格与营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "cq-b7-7509416149726153994",
+      "author": "大象吃花生",
+      "title": "现在六十多的自助烤肉，能吃到现拌牛肉和现烤蛋挞披萨",
+      "url": "https://www.douyin.com/video/7509416149726153994",
+      "shareURL": "https://v.douyin.com/02MfmJRvLl0/",
+      "publishedOn": "2025-05-28",
+      "durationSeconds": 254.2,
+      "sourceSHA256": "818ee4b2834fdb548acd811cdd50bb2627eb28fd7445fe884dff6cbb3598762c",
+      "acquisitionStatus": "local-source",
+      "rights": {
+        "status": "user-confirmed",
+        "confirmedOn": "2026-11-06",
+        "scope": "用户确认本批8个作品已获作者允许剪辑并用于网站。"
+      },
+      "evidenceNote": "按原片画面、字幕及原页核对；价格为视频时点，地址与分店见各片段说明。",
+      "segments": [
+        {
+          "id": "b7-7509416149726153994-buffet",
+          "name": "重庆自助烤肉（店名待核）",
+          "category": "自助烤肉",
+          "addressText": null,
+          "start": 10,
+          "end": 60,
+          "posterSecond": 35,
+          "summary": "原片展示自助烤肉，视频中价格为拍摄时参考，具体门店、营业及当前价格待核。",
+          "coordinates": null,
+          "locationStatus": "needs-location",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片中的门店、分店或街区线索仍待核实。",
+          "footageNote": "2025年视频 · 价格与营业情况待确认"
         }
       ]
     }
