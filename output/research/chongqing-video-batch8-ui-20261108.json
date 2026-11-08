@@ -1,0 +1,41 @@
+{
+  "verifiedOn": "2026-11-08",
+  "checks": [
+    {
+      "name": "four cities registered",
+      "passed": true
+    },
+    {
+      "name": "new approximate card present",
+      "passed": true
+    },
+    {
+      "name": "new actual video plays",
+      "passed": true
+    },
+    {
+      "name": "mobile popup within screen",
+      "passed": true,
+      "detail": {
+        "x": 118,
+        "y": 470,
+        "width": 260,
+        "height": 362
+      }
+    },
+    {
+      "name": "unlocated multi-shop clip visible in library",
+      "passed": true
+    },
+    {
+      "name": "all five clips available",
+      "passed": true
+    },
+    {
+      "name": "no uncaught page errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passed": true
+}
