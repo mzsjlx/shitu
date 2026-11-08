@@ -33,3 +33,21 @@ scratch/
 # Keep output/ source audits, research snapshots, and reviewed screenshots.
 # Some data verification/preparation scripts depend on those project files.
 map-base/preview-*.html
+
+# Temporary video frame extraction dumps from research scripts
+output/research/**/*_frames/
+output/research/**/tmp_frames/
+output/research/**/*_intro*/
+output/research/**/*_all/
+output/research/**/*_menu/
+output/research/**/*_end/
+output/research/**/*_door/
+output/research/**/batch*_inspection/
+output/research/**/*.tmp.jpg
+output/research/chengdu/*_ticket.jpg
+output/research/chengdu/*_26s.jpg
+output/research/chengdu/*_40s.jpg
+output/research/chengdu/*_100s.jpg
+output/research/chengdu/*_bowl_*.jpg
+output/research/chengdu/ticket_title.jpg
+output/research/chengdu/bozai_frame*.jpg
