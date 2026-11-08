@@ -1,0 +1,19 @@
+{
+  "verifiedOn": "2026-11-07",
+  "scope": "Browser asset-manifest interception simulating missing clips, not a second-computer media import.",
+  "checks": [
+    {
+      "name": "Without clip assets Nanjing still renders 104 map places",
+      "passed": true
+    },
+    {
+      "name": "Missing media is disclosed, retaining original source link",
+      "passed": true
+    },
+    {
+      "name": "Git-tracked real poster remains visible without MP4",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

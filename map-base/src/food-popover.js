@@ -102,9 +102,17 @@ export class FoodPopover{
     // Size against the visible map area; a short landscape screen has less space below the toolbar.
     const visibleTop=Math.max(0,shell.top),visibleBottom=Math.min(innerHeight,shell.bottom),availableHeight=Math.max(0,Math.floor(visibleBottom-visibleTop-gap*2));
     this.element.classList.remove('is-height-limited');
+    const media=this.element.querySelector('.food-popover-media');
+    media.style.height='';
+    // Creator tabs and footage notes can wrap. Reserve twice their actual height
+    // for the video; on short screens the existing scrollable details take over.
+    const detailsHeight=this.element.offsetHeight-media.offsetHeight;
+    const mediaHeight=Math.max(media.offsetHeight,Math.ceil(detailsHeight*2));
     this.element.style.setProperty('--food-popover-available-height',availableHeight+'px');
     this.element.style.setProperty('--food-popover-media-height',(availableHeight*2/3)+'px');
-    this.element.classList.toggle('is-height-limited',this.element.offsetHeight>availableHeight);
+    const limited=mediaHeight+detailsHeight>availableHeight;
+    if(!limited)media.style.height=mediaHeight+'px';
+    this.element.classList.toggle('is-height-limited',limited);
     const w=this.element.offsetWidth,h=this.element.offsetHeight;
     const obstacles=[...this.shell.querySelectorAll('.food-card,.food-distance-badge,#trip-dock,.view-dock,#food-pick-tools,.maplibregl-ctrl-top-right')]
       .filter(node=>node.getClientRects().length).map(node=>node.getBoundingClientRect());

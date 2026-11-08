@@ -8,6 +8,18 @@ const namedRoad = ['all', line, ['!=', roadName, '']];
 const font = ['sans-serif'];
 
 export function makeStyle(city, tilesURL, bundle) {
+  const hasBuildingDetails = Boolean(city.buildingsDetail);
+  const baseBuildingFilters = [['==', ['geometry-type'], 'Polygon']];
+  if (hasBuildingDetails && city.replacedBuildingIds?.length) {
+    baseBuildingFilters.push(['!', ['in', ['id'], ['literal', city.replacedBuildingIds]]]);
+  }
+  const estimatedBuildingHeight = hasBuildingDetails ? ['match', detail,
+    ['mall', 'commercial', 'retail', 'department_store'], 28,
+    ['office', 'hotel'], 36,
+    ['apartments', 'residential'], 22,
+    ['school', 'kindergarten', 'hospital', 'civic'], 18,
+    ['case', ['>', ['coalesce', ['get', 'sort_rank'], 400], 420], 25, 15]
+  ] : 9;
   const sources = {
     city: {
       type: 'vector',
@@ -15,7 +27,7 @@ export function makeStyle(city, tilesURL, bundle) {
       attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · <a href="https://protomaps.com/" target="_blank" rel="noreferrer">Protomaps</a>'
     }
   };
-  if (city.buildingsDetail) {
+  if (hasBuildingDetails) {
     const detailData = bundle?.json?.[city.buildingsDetail] || new URL(city.buildingsDetail, location.href).href;
     sources['buildings-detail'] = {
       type: 'geojson',
@@ -46,8 +58,8 @@ export function makeStyle(city, tilesURL, bundle) {
     {id:'water',type:'fill',source:'city','source-layer':'water',filter:['==',['geometry-type'],'Polygon'],paint:{'fill-color':'#91b9b3','fill-antialias':true}},
     {id:'water-lines',type:'line',source:'city','source-layer':'water',filter:line,paint:{'line-color':'#91b9b3','line-width':width([11,.5,16,3,19,10])}},
     ...(city.demTiles ? [{id:'hill-shade',type:'hillshade',source:'dem-shade',paint:{'hillshade-exaggeration':.18,'hillshade-shadow-color':'#7b846e','hillshade-highlight-color':'#fff8e9','hillshade-accent-color':'#a5ac93','hillshade-illumination-direction':310}}] : []),
-    {id:'buildings-flat',type:'fill',source:'city','source-layer':'buildings',minzoom:13,filter:['==',['geometry-type'],'Polygon'],paint:{'fill-color':'#d5cebf','fill-outline-color':'#c6beaf','fill-opacity':.72}},
-    ...(city.buildingsDetail ? [{
+    {id:'buildings-flat',type:'fill',source:'city','source-layer':'buildings',minzoom:13,filter:['all',...baseBuildingFilters],paint:{'fill-color':'#d5cebf','fill-outline-color':'#c6beaf','fill-opacity':.72}},
+    ...(hasBuildingDetails ? [{
       id: 'buildings-detail-flat',
       type: 'fill',
       source: 'buildings-detail',
@@ -77,34 +89,22 @@ export function makeStyle(city, tilesURL, bundle) {
     {id:'railways',type:'line',source:'city','source-layer':'roads',minzoom:13,filter:['all',line,['==',kind,'rail'],['!=',['get','is_tunnel'],true]],paint:{'line-color':'#b4b7a7','line-width':width([13,.6,17,2,20,5]),'line-dasharray':[2,1.8]}},
     {id:'bridge-edges',type:'line',source:'city','source-layer':'roads',minzoom:12,filter:['all',line,['==',['get','is_bridge'],true],['in',kind,['literal',['major_road','minor_road','highway']]]],layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#a9a998','line-width':width([12,1.4,15,5,18,16,20,32])}},
     {id:'bridge-roads',type:'line',source:'city','source-layer':'roads',minzoom:12,filter:['all',line,['==',['get','is_bridge'],true],['in',kind,['literal',['major_road','minor_road','highway']]]],layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#f5ecdc','line-width':width([12,.8,15,3.5,18,12,20,27])}},
-    {id:'buildings-3d',type:'fill-extrusion',source:'city','source-layer':'buildings',minzoom:13,filter:['all',['==',['geometry-type'],'Polygon'],['in',kind,['literal',['building','building_part']]]],paint:{
-      'fill-extrusion-color':['step',
+    {id:'buildings-3d',type:'fill-extrusion',source:'city','source-layer':'buildings',minzoom:13,filter:['all',...baseBuildingFilters,['in',kind,['literal',['building','building_part']]]],paint:{
+      'fill-extrusion-color':hasBuildingDetails ? ['step',
         ['coalesce',['get','height'],15],
         '#dad5c8', 16, '#e4dfd3', 25, '#ece7dc', 60, '#f2eee5', 140, '#f9f6ef'
-      ],
+      ] : ['step',['coalesce',['get','height'],9],'#dddcd2',18,'#e8e5dc',55,'#f0ede6',140,'#f5f1e8'],
       'fill-extrusion-height':[
         'case',
         ['>', ['coalesce',['get','height'],0],0],
         ['min',500,['get','height']],
-        ['+',
-          ['match', detail,
-            ['mall', 'commercial', 'retail', 'department_store'], 28,
-            ['office', 'hotel'], 36,
-            ['apartments', 'residential'], 22,
-            ['school', 'kindergarten', 'hospital', 'civic'], 18,
-            ['case',
-              ['>', ['coalesce', ['get', 'sort_rank'], 400], 420], 25,
-              15
-            ]
-          ],
-          ['coalesce',['get','min_height'],0]
-        ]
+        ['+', estimatedBuildingHeight, ['coalesce',['get','min_height'],0]]
       ],
       'fill-extrusion-base':['max',0,['coalesce',['get','min_height'],0]],
       'fill-extrusion-opacity':1,
       'fill-extrusion-vertical-gradient':true
     }},
-    ...(city.buildingsDetail ? [{
+    ...(hasBuildingDetails ? [{
       id: 'buildings-detail-3d',
       type: 'fill-extrusion',
       source: 'buildings-detail',
@@ -179,7 +179,9 @@ export function makeStyle(city, tilesURL, bundle) {
     name:'食途 · 山城暖白',
     metadata:{owner:'FoodCity',geographicData:'Protomaps / OpenStreetMap',mapType:'self-hosted local validation'},
     sources,
-    light:{anchor:'map',color:'#fff5e4',intensity:.42,position:[1.35,315,42]},
+    light:hasBuildingDetails
+      ? {anchor:'map',color:'#fff5e4',intensity:.42,position:[1.35,315,42]}
+      : {anchor:'map',color:'#fff6e6',intensity:.34,position:[1.3,315,45]},
     layers
   };
 }

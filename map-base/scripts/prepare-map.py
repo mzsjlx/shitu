@@ -17,8 +17,13 @@ args = parser.parse_args()
 config = json.loads((ROOT / 'config/cities.json').read_text(encoding='utf8'))
 city_id = args.city or config['activeCity']
 if city_id not in config['cities']:
-    parser.error('City is not configured; add its bounds and independent dataFiles first.')
-city = config['cities'][city_id]
+    profile_path = ROOT / f'data/cities/{city_id}/city-profile.json'
+    if profile_path.exists():
+        city = json.loads(profile_path.read_text(encoding='utf8'))
+    else:
+        parser.error('City is not configured; add its bounds and independent dataFiles first.')
+else:
+    city = config['cities'][city_id]
 manifest_path = (ROOT / city['dataFiles']['manifest']).resolve()
 metadata_path = (ROOT / city['dataFiles']['tileMetadata']).resolve()
 target = (ROOT / city['tiles']).resolve()
