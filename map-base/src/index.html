@@ -47,7 +47,7 @@
       <p id="food-load-note" class="food-load-note" role="status" hidden></p>
       <p id="walk-load-note" class="food-load-note" role="status" hidden>道路样板暂未展开。<button id="walk-retry">点击重试</button></p>
       <div id="loading" class="loading" role="status"><span></span>正在展开重庆…</div>
-      <div id="map-error" class="error-card" role="alert" hidden><strong>地图暂时没有展开</strong><p id="map-error-text">请确认本地地图文件已准备完成。</p><p id="local-file-hint" hidden>直接打开 HTML 可能受到浏览器限制。请双击 map-base 文件夹里的“打开地图.cmd”，通过本地预览打开。</p><button onclick="location.reload()">重新加载</button><details><summary>查看加载详情</summary><pre id="map-error-detail"></pre></details></div>
+      <div id="map-error" class="error-card" role="alert" hidden><strong>地图暂时没有展开</strong><p id="map-error-text">请确认本地地图文件已准备完成。</p><p id="local-file-hint" hidden>直接打开 HTML 可能受到浏览器限制。请双击 map-base 文件夹里的“打开地图.cmd”，通过本地预览打开。</p><button onclick="location.href=location.pathname+(location.search?(location.search.replace(/([?&])_t=\d+/g,'')+'&_t='+Date.now()):'?_t='+Date.now())">重新加载</button><details><summary>查看加载详情</summary><pre id="map-error-detail"></pre></details></div>
       <section id="layers-panel" class="layers-panel paper" aria-label="地图图层" hidden>
         <div class="panel-head"><strong>让地图刚刚好</strong><button id="layers-close" class="close" aria-label="关闭图层设置">×</button></div>
         <button id="landmark-entry" class="landmark-entry" type="button"><span>看看洪崖洞<small>沿江木楼与层叠屋檐</small></span><span aria-hidden="true">↗</span></button>
