@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "city": "chaoshan",
+  "preparedOn": "2026-11-09",
+  "rights": {
+    "status": "user-confirmed",
+    "confirmedOn": "2026-11-09",
+    "scope": "第一批6条抖音探店链接经用户在会话中明确提供；视频剪辑与画面使用按用户提供范围记录，原片保留在.local，小封面与公开元数据纳入仓库。",
+    "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
+  },
+  "sources": [
+    {
+      "id": "chaoshan-miaojiang-7661157240087097061",
+      "author": "喵酱饿了",
+      "title": "潮汕太好吃了！4天3晚吃了38顿选出的精髓，特色又好吃！",
+      "url": "https://www.douyin.com/video/7661157240087097061",
+      "shareURL": "https://v.douyin.com/-XV6cMe-S20/",
+      "publishedOn": "2026-09-27",
+      "durationSeconds": 265.0,
+      "sourceSHA256": "8b31fceed9b5d7bfd0c2753a7902d46f1471fd35d7a8e6b12c1bedf9228899fd",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍金平区小公园中山纪念亭、安平路、中山路老店及老市区镇邦路，实拍招牌与特色美食。",
+      "segments": [
+        {
+          "id": "chaoshan-miaojiang-yibaichaoche",
+          "name": "一杯潮茶（小公园店）",
+          "category": "茶饮 / 鸭屎香单丛",
+          "addressText": "汕头市金平区安平路（小公园中山纪念亭旁）",
+          "start": 60.0,
+          "end": 71.6,
+          "posterSecond": 64.0,
+          "summary": "位于汕头小公园骑楼“汕頭”打卡墙旁，招牌鸭屎香咸鲜奶茶搭配潮汕特色清心丸，清心解腻软糯香醇。",
+          "coordinates": [
+            116.6785,
+            23.3598
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "小公园历史文化街区（安平路口）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频背景金平区小公园中山纪念亭及安平路实景定位街区，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "chaoshan-miaojiang-chunmeili",
+          "name": "春梅里卤鹅馆（中山路总店）",
+          "category": "潮汕卤味 / 狮头鹅全拼",
+          "addressText": "汕头市金平区中山路71号",
+          "start": 71.6,
+          "end": 84.0,
+          "posterSecond": 80.0,
+          "summary": "近50年老字号潮式卤鹅，大竹簸箕盛装澄海狮头鹅全拼，鹅肝粉糯如冰淇淋，鹅肠脆嫩卤香浓郁。",
+          "coordinates": [
+            116.6869,
+            23.3589
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中山路老城区（春梅里一带）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频门头招牌、近50年老店说明及中山路71号老店实景定位街区，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "chaoshan-miaojiang-laoshiquguozhi",
+          "name": "老市区老字号粿汁",
+          "category": "潮汕传统小吃 / 老式粿汁",
+          "addressText": "汕头市金平区镇邦路老市区美食街",
+          "start": 107.5,
+          "end": 117.0,
+          "posterSecond": 114.0,
+          "summary": "汕头老市区开了几十年的传统老式粿汁，米浆粿皮现浇卤汁，铺满卤大肠、卤蛋、卤肉与蒜头油，原汁原味。",
+          "coordinates": [
+            116.666,
+            23.3538
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "老市区镇邦路美食街一带",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频中“接着跟我来老市区开了几十年老字号粿汁”及实景定位老市区镇邦路美食街街区，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        }
+      ]
+    }
+  ]
+}

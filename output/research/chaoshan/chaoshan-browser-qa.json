@@ -1,0 +1,80 @@
+{
+  "city": "chaoshan",
+  "verifiedOn": "2026-11-09",
+  "scope": "Automated browser Playwright verification for Chaoshan (places page, video detail player, 3D map, video popovers, responsive layouts, audio stop on switch/close)",
+  "totalChecks": 14,
+  "passedChecks": 14,
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "1. places-chaoshan.html loads successfully",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "2. places-chaoshan.html shows 3 food cards",
+      "passed": true,
+      "detail": "Count: 3"
+    },
+    {
+      "name": "3. Detail page loads successfully",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "4. Detail page has HTML5 video element",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "5. Video loads metadata and decodes valid resolution",
+      "passed": true,
+      "detail": "1080x1920, 11.60s"
+    },
+    {
+      "name": "6. Video playback advances past 0.5s",
+      "passed": true,
+      "detail": "currentTime: 0.74s"
+    },
+    {
+      "name": "7. Chaoshan 3D map initializes with food overlay active",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "8. Food overlay has 3 Chaoshan food stops",
+      "passed": true,
+      "detail": "Cards: 3"
+    },
+    {
+      "name": "9. Clicking food open button opens .food-inline-popover",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "10. Popover contains video play button",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "11. Clicking play launches HTML5 video in popover",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "12. Video media occupies significant area of popover (>= 60% height)",
+      "passed": true,
+      "detail": "heightRatio: 69.0%, areaRatio: 65.9%"
+    },
+    {
+      "name": "13. Switching to another store unloads and stops old audio/video track",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "14. Pressing Escape closes video popover and resets state",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}
