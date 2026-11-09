@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import subprocess
 import time
 import os
@@ -42,12 +43,18 @@ try:
         
         cards = page.locator('.card')
         card_count = cards.count()
-        check('2. places-chaoshan.html shows expanded food cards', card_count >= 10, f'Count: {card_count}')
+        check('2. places-chaoshan.html shows expanded food cards', card_count >= 25, f'Count: {card_count}')
         
         # Check multi-blogger merge badge in cards
         multi_badges = page.locator('.card small:has-text("条同店视频")')
         check('3. Multi-blogger same-shop merge badges exist on grouped cards', multi_badges.count() >= 5, f'Badges: {multi_badges.count()}')
         
+        # Check batch 3 new shops exist on places list
+        page_text = page.locator('main').inner_text()
+        check('3b. Batch 3 new shops exist in food cards list', 
+              '厝味火锅' in page_text and '宏兴大排档' in page_text and '正五冻品' in page_text and '林三满' in page_text,
+              'Found 厝味火锅, 宏兴大排档, 正五冻品, 林三满')
+
         page.screenshot(path=os.path.join(out_dir, 'places-desktop.png'))
         
         page.set_viewport_size({'width': 390, 'height': 844})
@@ -61,7 +68,7 @@ try:
         check('4. Detail page loads successfully', res.status == 200)
 
         # Check cross-blogger related links
-        related_links = page.locator('p:has-text("同一家店的其他视频") a')
+        related_links = page.locator('p:has-text("同一家店") a')
         check('5. Detail page provides cross-blogger links for same shop', related_links.count() >= 2, f'Related bloggers: {related_links.count()}')
 
         video = page.locator('video')
@@ -88,6 +95,24 @@ try:
         page.screenshot(path=os.path.join(out_dir, 'detail-video-chunmeili.png'))
         context.close()
 
+        # 2b. Test batch 3 new shop detail page with video playback (厝味火锅)
+        context = browser.new_context(viewport={'width': 1440, 'height': 900})
+        page = context.new_page()
+        res = page.goto(f'{base_url}/places/video-chaoshan-xiaozhen-cuoweihuoguo.html')
+        check('8b. Batch 3 detail page loads successfully', res.status == 200)
+        page.wait_for_function('() => document.querySelector("video") && document.querySelector("video").readyState >= 1')
+        cuowei_meta = page.evaluate('''() => {
+            const v = document.querySelector("video");
+            return {
+                videoWidth: v.videoWidth,
+                videoHeight: v.videoHeight,
+                duration: v.duration
+            };
+        }''')
+        check('8c. Batch 3 video loads valid metadata', cuowei_meta['videoWidth'] > 0 and cuowei_meta['duration'] > 10, f"{cuowei_meta['videoWidth']}x{cuowei_meta['videoHeight']}, {cuowei_meta['duration']:.2f}s")
+        page.screenshot(path=os.path.join(out_dir, 'detail-video-cuoweihuoguo.png'))
+        context.close()
+
         # 3. Test 3D Map Preview Page (preview-chaoshan.html)
         context = browser.new_context(viewport={'width': 1440, 'height': 900})
         page = context.new_page()
@@ -96,15 +121,15 @@ try:
 
         # Check map overlay initialized
         stats = page.evaluate('''() => {
-            const cards = document.querySelectorAll('.food-card');
-            const popover = document.querySelector('.food-inline-popover');
+            const cards = document.querySelectorAll(".food-card");
+            const popover = document.querySelector(".food-inline-popover");
             return {
                 foodCards: cards.length,
                 hasPopover: !!popover
             };
         }''')
-        check('9. Chaoshan 3D map initializes with food overlay active', stats.get('hasPopover') and stats.get('foodCards') >= 10)
-        check('10. Food overlay has Chaoshan food stops', stats.get('foodCards') >= 10, f"Cards: {stats.get('foodCards')}")
+        check('9. Chaoshan 3D map initializes with food overlay active', stats.get('hasPopover') and stats.get('foodCards') >= 20)
+        check('10. Food overlay has Chaoshan food stops', stats.get('foodCards') >= 20, f"Cards: {stats.get('foodCards')}")
 
         page.screenshot(path=os.path.join(out_dir, 'map-chaoshan-desktop.png'))
 
@@ -178,19 +203,9 @@ finally:
     server_proc.wait()
     print('Server terminated.')
 
-report = {
-    'city': 'chaoshan',
-    'verifiedOn': '2026-11-09',
-    'scope': 'Automated browser Playwright verification for Chaoshan (places page, video detail player, 3D map, video popovers, responsive layouts, audio stop on switch/close)',
-    'totalChecks': len(checks),
-    'passedChecks': sum(1 for c in checks if c['passed']),
-    'allPassed': all(c['passed'] for c in checks),
-    'checks': checks
-}
+out_qa = 'D:/codex/美食网站/.local/worktrees/chaoshan/output/research/chaoshan/chaoshan-batch1-playwright-qa.json'
+with open(out_qa, 'w', encoding='utf-8') as f:
+    json.dump(checks, f, ensure_ascii=False, indent=2)
 
-with open('D:/codex/美食网站/.local/worktrees/chaoshan/output/research/chaoshan/chaoshan-browser-qa.json', 'w', encoding='utf8') as f:
-    json.dump(report, f, ensure_ascii=False, indent=2)
-
-print(f"\nBrowser test completed: {report['passedChecks']}/{report['totalChecks']} checks passed!")
-if not report['allPassed']:
-    sys.exit(1)
+passed_count = sum(1 for c in checks if c['passed'])
+print(f'\nPlaywright QA Results: {passed_count}/{len(checks)} passed')

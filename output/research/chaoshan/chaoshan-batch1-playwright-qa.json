@@ -1,0 +1,97 @@
+[
+  {
+    "name": "1. places-chaoshan.html loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "2. places-chaoshan.html shows expanded food cards",
+    "passed": true,
+    "detail": "Count: 35"
+  },
+  {
+    "name": "3. Multi-blogger same-shop merge badges exist on grouped cards",
+    "passed": true,
+    "detail": "Badges: 6"
+  },
+  {
+    "name": "3b. Batch 3 new shops exist in food cards list",
+    "passed": true,
+    "detail": "Found 厝味火锅, 宏兴大排档, 正五冻品, 林三满"
+  },
+  {
+    "name": "4. Detail page loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "5. Detail page provides cross-blogger links for same shop",
+    "passed": true,
+    "detail": "Related bloggers: 2"
+  },
+  {
+    "name": "6. Detail page has HTML5 video element",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "7. Video loads metadata and decodes valid resolution",
+    "passed": true,
+    "detail": "1080x1920, 12.40s"
+  },
+  {
+    "name": "8. Video playback advances past 0.5s",
+    "passed": true,
+    "detail": "currentTime: 0.75s"
+  },
+  {
+    "name": "8b. Batch 3 detail page loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "8c. Batch 3 video loads valid metadata",
+    "passed": true,
+    "detail": "1080x1920, 19.00s"
+  },
+  {
+    "name": "9. Chaoshan 3D map initializes with food overlay active",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "10. Food overlay has Chaoshan food stops",
+    "passed": true,
+    "detail": "Cards: 29"
+  },
+  {
+    "name": "11. Clicking food open button opens .food-inline-popover",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "12. Popover contains video play button",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "13. Clicking play launches HTML5 video in popover",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "14. Video media occupies significant area of popover (>= 60% height)",
+    "passed": true,
+    "detail": "heightRatio: 69.0%, areaRatio: 65.9%"
+  },
+  {
+    "name": "15. Switching to another store unloads and stops old audio/video track",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "16. Pressing Escape closes video popover and resets state",
+    "passed": true,
+    "detail": ""
+  }
+]
