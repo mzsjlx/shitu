@@ -47,13 +47,13 @@ try:
         
         # Check multi-blogger merge badge in cards
         multi_badges = page.locator('.card small:has-text("条同店视频")')
-        check('3. Multi-blogger same-shop merge badges exist on grouped cards', multi_badges.count() >= 5, f'Badges: {multi_badges.count()}')
+        check('3. Multi-blogger same-shop merge badges exist on grouped cards', multi_badges.count() >= 6, f'Badges: {multi_badges.count()}')
         
-        # Check batch 3 new shops exist on places list
+        # Check batch 3 & 4 new shops exist on places list
         page_text = page.locator('main').inner_text()
-        check('3b. Batch 3 new shops exist in food cards list', 
-              '厝味火锅' in page_text and '宏兴大排档' in page_text and '正五冻品' in page_text and '林三满' in page_text,
-              'Found 厝味火锅, 宏兴大排档, 正五冻品, 林三满')
+        check('3b. Batch 3 & 4 new shops exist in food cards list', 
+              '厝味火锅' in page_text and '林三满' in page_text and '阿洲炭炉鸡煲' in page_text and '四十载古早味炭火烧烤' in page_text,
+              'Found 厝味火锅, 林三满, 阿洲炭炉鸡煲, 四十载古早味炭火烧烤')
 
         page.screenshot(path=os.path.join(out_dir, 'places-desktop.png'))
         
@@ -111,6 +111,24 @@ try:
         }''')
         check('8c. Batch 3 video loads valid metadata', cuowei_meta['videoWidth'] > 0 and cuowei_meta['duration'] > 10, f"{cuowei_meta['videoWidth']}x{cuowei_meta['videoHeight']}, {cuowei_meta['duration']:.2f}s")
         page.screenshot(path=os.path.join(out_dir, 'detail-video-cuoweihuoguo.png'))
+        context.close()
+
+        # 2c. Test batch 4 new shop detail page with video playback (阿洲炭炉鸡煲)
+        context = browser.new_context(viewport={'width': 1440, 'height': 900})
+        page = context.new_page()
+        res = page.goto(f'{base_url}/places/video-chaoshan-wangdingyi-azhoujibao.html')
+        check('8d. Batch 4 detail page loads successfully', res.status == 200)
+        page.wait_for_function('() => document.querySelector("video") && document.querySelector("video").readyState >= 1')
+        azhou_meta = page.evaluate('''() => {
+            const v = document.querySelector("video");
+            return {
+                videoWidth: v.videoWidth,
+                videoHeight: v.videoHeight,
+                duration: v.duration
+            };
+        }''')
+        check('8e. Batch 4 video loads valid metadata and decodes resolution', azhou_meta['videoWidth'] > 0 and azhou_meta['duration'] > 10, f"{azhou_meta['videoWidth']}x{azhou_meta['videoHeight']}, {azhou_meta['duration']:.2f}s")
+        page.screenshot(path=os.path.join(out_dir, 'detail-video-azhoujibao.png'))
         context.close()
 
         # 3. Test 3D Map Preview Page (preview-chaoshan.html)
