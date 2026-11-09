@@ -1,42 +1,34 @@
-{
-  "city": "chaoshan",
-  "reviewedOn": "2026-11-09",
-  "scope": "Chaoshan Batch 1 Closed Loop: 1 source (喵酱饿了), 3 shops (一杯潮茶, 春梅里卤鹅, 老市区老字号粿汁). Real H.264+AAC clips, small posters, WGS84 approximate coordinates, cross-city catalog uniqueness, HTML generation, and real OSM road network walking routing.",
-  "totalChecks": 8,
-  "passedChecks": 8,
-  "allPassed": true,
-  "checks": [
-    {
-      "name": "1. Catalog schema and rights status: user-confirmed",
-      "passed": true
-    },
-    {
-      "name": "2. Local source.mp4 integrity against sourceSHA256",
-      "passed": true
-    },
-    {
-      "name": "3. Single-shop clips match expected media keys and H.264+AAC format",
-      "passed": true
-    },
-    {
-      "name": "4. Video posters in assets/video-posters have matching hashes and paths",
-      "passed": true
-    },
-    {
-      "name": "5. Approximate locations stay within Chaoshan bounds with routeEligible=false",
-      "passed": true
-    },
-    {
-      "name": "6. Cross-city catalog uniqueness via allCityCatalogs",
-      "passed": true
-    },
-    {
-      "name": "7. Generated food pages (places-chaoshan.html and detail pages) contain correct content",
-      "passed": true
-    },
-    {
-      "name": "8. Real OSM walking route between Chaoshan shops resolves to ready status",
-      "passed": true
-    }
-  ]
-}
+[
+  {
+    "name": "1. Catalog schema and rights status: user-confirmed",
+    "passed": true
+  },
+  {
+    "name": "2. Local source.mp4 integrity against sourceSHA256 for all sources",
+    "passed": true
+  },
+  {
+    "name": "3. Single-shop clips match expected media keys and H.264+AAC format",
+    "passed": true
+  },
+  {
+    "name": "4. Video posters in assets/video-posters have matching hashes and paths",
+    "passed": true
+  },
+  {
+    "name": "5. Approximate locations stay within Chaoshan bounds with routeEligible=false",
+    "passed": true
+  },
+  {
+    "name": "6. Cross-city catalog uniqueness via allCityCatalogs",
+    "passed": true
+  },
+  {
+    "name": "7. Generated food pages (places-chaoshan.html and detail pages) contain correct content",
+    "passed": true
+  },
+  {
+    "name": "8. Real OSM walking route between Chaoshan shops resolves to ready status",
+    "passed": true
+  }
+]

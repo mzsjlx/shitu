@@ -12,9 +12,9 @@
       "detail": ""
     },
     {
-      "name": "2. places-chaoshan.html shows 3 food cards",
+      "name": "2. places-chaoshan.html shows expanded food cards",
       "passed": true,
-      "detail": "Count: 3"
+      "detail": "Count: 12"
     },
     {
       "name": "3. Detail page loads successfully",
@@ -34,7 +34,7 @@
     {
       "name": "6. Video playback advances past 0.5s",
       "passed": true,
-      "detail": "currentTime: 0.74s"
+      "detail": "currentTime: 0.82s"
     },
     {
       "name": "7. Chaoshan 3D map initializes with food overlay active",
@@ -42,9 +42,9 @@
       "detail": ""
     },
     {
-      "name": "8. Food overlay has 3 Chaoshan food stops",
+      "name": "8. Food overlay has Chaoshan food stops",
       "passed": true,
-      "detail": "Cards: 3"
+      "detail": "Cards: 12"
     },
     {
       "name": "9. Clicking food open button opens .food-inline-popover",

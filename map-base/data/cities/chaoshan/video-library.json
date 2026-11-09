@@ -64,10 +64,10 @@
           "coordinateSystem": "WGS84",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "中山路老城区（春梅里一带）",
+            "label": "中山路老城区商业街",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "根据视频门头招牌、近50年老店说明及中山路71号老店实景定位街区，非店门实测。",
+            "note": "根据门头实拍与中山路71号历史门牌大致定位街区，非店门实测。",
             "reviewedOn": "2026-11-09"
           }
         },
@@ -75,11 +75,11 @@
           "id": "chaoshan-miaojiang-laoshiquguozhi",
           "name": "老市区老字号粿汁",
           "category": "潮汕传统小吃 / 老式粿汁",
-          "addressText": "汕头市金平区镇邦路老市区美食街",
+          "addressText": "汕头市金平区镇邦路美食街",
           "start": 107.5,
           "end": 117.0,
           "posterSecond": 114.0,
-          "summary": "汕头老市区开了几十年的传统老式粿汁，米浆粿皮现浇卤汁，铺满卤大肠、卤蛋、卤肉与蒜头油，原汁原味。",
+          "summary": "金平老市区镇邦路几十年老字号，老卤汁大铁锅热滚，现浇米浆粿角配卤大肠、卤肉卤蛋炸蒜油，浓稠鲜甜。",
           "coordinates": [
             116.666,
             23.3538
@@ -89,10 +89,277 @@
           "coordinateSystem": "WGS84",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "老市区镇邦路美食街一带",
+            "label": "老市区镇邦路美食街",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "根据视频中“接着跟我来老市区开了几十年老字号粿汁”及实景定位老市区镇邦路美食街街区，非店门实测。",
+            "note": "根据视频实拍金平区老市区镇邦路老店招牌定位街区，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "chaoshan-miaojiang-abomeizhi",
+          "name": "阿伯梅汁水果（小公园店）",
+          "category": "潮汕甘草水果 / 梅汁水果",
+          "addressText": "汕头市金平区跃进路3号（小公园东南街区）",
+          "start": 185.0,
+          "end": 192.0,
+          "posterSecond": 188.0,
+          "summary": "金平老城区知名阿伯梅汁水果，满满一大盆时令鲜果只要20元，莲雾、翠芒、红心芭乐淋酸甜老梅汁清爽解腻。",
+          "coordinates": [
+            116.6845,
+            23.3575
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区跃进路街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频背景老城区跃进路店面与招牌实录大致定位街区，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-zhizhi-7556966907678084409",
+      "author": "汁汁冰激凌",
+      "title": "汕头美食攻略极速版第一弹～",
+      "url": "https://www.douyin.com/video/7556966907678084409",
+      "shareURL": "https://v.douyin.com/OVNiAI8NWIw/",
+      "publishedOn": "2025-10-03",
+      "durationSeconds": 603.2,
+      "sourceSHA256": "fdfd5d12b00db2c713374cd08c4cc96bdf3547a142100d079f186b73c077cb25",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头金平区老城区阿伯梅汁水果、苏南卤鹅、同济肠粉、广场老姿娘米粉等本土老店。",
+      "segments": [
+        {
+          "id": "chaoshan-zhizhi-abomeizhi",
+          "name": "阿伯梅汁水果（小公园店）",
+          "category": "潮汕甘草水果 / 梅汁水果",
+          "addressText": "汕头市金平区跃进路3号（小公园东南街区）",
+          "start": 47.0,
+          "end": 72.0,
+          "posterSecond": 52.0,
+          "summary": "金平老字号阿伯梅汁水果，实拍十二种高级时令水果大拼盘，阳光玫瑰、莲雾、红心芭乐淋上酸甜解腻的特制老梅汁。",
+          "coordinates": [
+            116.6845,
+            23.3575
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区跃进路街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍金平区跃进路阿伯梅汁水果老店与多博主打卡交叉核实大致定位街区，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "chaoshan-zhizhi-sunanlue",
+          "name": "苏南特产卤鹅（金平店）",
+          "category": "潮汕卤味 / 澄海卤鹅",
+          "addressText": "汕头市金平区光华路/同济路老街附近",
+          "start": 156.9,
+          "end": 192.0,
+          "posterSecond": 178.0,
+          "summary": "澄海苏南特产卤鹅老字号，师傅刀工精湛，粉肝入口即化软糯甘甜，卤鹅肠嫩脆爆汁，配卤鹅汁拌饭一绝。",
+          "coordinates": [
+            116.671,
+            23.3685
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区光华同济老街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍苏南特产卤鹅金平老店店面与堂食环境大致定位街区，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "chaoshan-zhizhi-tongjichangfen",
+          "name": "同济肠粉",
+          "category": "潮汕肠粉 / 牛肉肠粉",
+          "addressText": "汕头市金平区同济路老街坊",
+          "start": 380.9,
+          "end": 408.0,
+          "posterSecond": 395.0,
+          "summary": "汕头街坊无名厚皮圆盘肠粉，皮糯有韧劲，裹满鲜牛肉与空心菜，配自制辣椒酱与贴心爱心凉茶。",
+          "coordinates": [
+            116.6725,
+            23.371
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区同济路老街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据博主口述与街坊路牌定位金平区同济路无名老肠粉摊位，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "chaoshan-zhizhi-guangchanglaoziniang",
+          "name": "广场老姿娘米粉店",
+          "category": "潮汕汤粉 / 猪杂海鲜米粉",
+          "addressText": "汕头市金平区定安路（人民广场旁）",
+          "start": 534.7,
+          "end": 562.5,
+          "posterSecond": 545.0,
+          "summary": "人民广场老牌老姿娘米粉，大铁锅滚汤现煮十几种配菜，大虾鱿鱼猪杂满满一大碗，点睛金桔汁酸爽鲜美。",
+          "coordinates": [
+            116.683,
+            23.354
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "人民广场定安路街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据实拍人民广场老姿娘米粉店面与定安路街区定位，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaolu-7589618937185756025",
+      "author": "小陆日记",
+      "title": "潮汕潮州一日游！24小时狂吃18家店是什么体验！",
+      "url": "https://www.douyin.com/video/7589618937185756025",
+      "shareURL": "https://v.douyin.com/1OiM58G0deM/",
+      "publishedOn": "2025-12-30",
+      "durationSeconds": 191.1,
+      "sourceSHA256": "d98a57f0ee9ca01e6de6e721d0f2754b369db30cb408e18c907ce54e574a86b8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮州古城牌坊街、西湖街区特色沙茶肠粉、吴敬平炸春饼及官塘老陈鱼生。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaolu-chaozhouchangfen",
+          "name": "潮州老牌沙茶花生酱肠粉",
+          "category": "潮州特色肠粉 / 沙茶肠粉",
+          "addressText": "潮州市湘桥区西湖街区",
+          "start": 11.2,
+          "end": 26.7,
+          "posterSecond": 15.0,
+          "summary": "潮州特色浓颜系肠粉，沙茶酱与花生酱双重浇汁，薄皮包裹巨量牛肉、生蚝、鲜虾和大朵蔬菜，加面双吃超满足。",
+          "coordinates": [
+            116.643,
+            23.666
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城西湖街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍潮州西湖街区老肠粉摊位与沙茶花生酱特色定位街区，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "chaoshan-xiaolu-wujinpingchunbing",
+          "name": "吴敬平传统潮州春饼",
+          "category": "潮州传统小吃 / 炸春饼",
+          "addressText": "潮州市湘桥区太平路牌坊街",
+          "start": 57.0,
+          "end": 63.2,
+          "posterSecond": 58.0,
+          "summary": "牌坊街老字号吴敬平春饼，金黄酥脆大铁锅现炸，内馅汇集去皮绿豆、猪肉香菇，外酥里嫩层次分明。",
+          "coordinates": [
+            116.6455,
+            23.6678
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城太平路牌坊街",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍牌坊街吴敬平传统春饼门头定位街区，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "chaoshan-xiaolu-laochenyusheng",
+          "name": "官塘老陈鱼生",
+          "category": "潮汕生鱼料理 / 官塘鱼生",
+          "addressText": "潮州市湘桥区西新路 / 牌坊街西侧",
+          "start": 143.1,
+          "end": 156.0,
+          "posterSecond": 146.0,
+          "summary": "纪录片级官塘鱼生老店，老师傅大刀片鱼薄如蝉翼透光，搭配十数种香辛料、普宁豆酱与香油，脆韧弹牙打太极。",
+          "coordinates": [
+            116.648,
+            23.6645
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城西新街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据实拍老陈鱼生刀工与古城西新路老店招牌定位街区，非店门实测。",
+            "reviewedOn": "2026-11-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaozhen-7695617424514632994",
+      "author": "小珍来咯…",
+      "title": "潮汕牛肉火锅的魅力在于新鲜的食材 简单锅底碰撞出的美味～",
+      "url": "https://www.douyin.com/video/7695617424514632994",
+      "shareURL": "https://v.douyin.com/30W8GVYm72s/",
+      "publishedOn": "2026-10-12",
+      "durationSeconds": 1002.7,
+      "sourceSHA256": "7e864ca9c1ada8e200c937118ed49f51fdf38cfb7614ca310267ddfc968f5a9d",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙湖区金鸿公路谢肥记鲜牛肉老店，现切会跳动的牛肉与全牛各部位。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaozhen-xiefeiji",
+          "name": "谢肥记牛肉",
+          "category": "潮汕鲜牛肉火锅 / 蒸汽牛肉",
+          "addressText": "汕头市龙湖区金鸿公路（近新溪镇）",
+          "start": 46.0,
+          "end": 120.0,
+          "posterSecond": 115.0,
+          "summary": "汕头金鸿公路爆火鲜牛肉老店，会跳动的现宰鲜牛肉，五花趾、匙柄、吊龙统统30元统一价，配鲜牛骨高汤锅底。",
+          "coordinates": [
+            116.79,
+            23.415
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "龙湖区金鸿公路新溪街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据实拍谢肥记牛肉大红菜单与金鸿公路新溪镇实地位置定位街区，非店门实测。",
             "reviewedOn": "2026-11-09"
           }
         }
