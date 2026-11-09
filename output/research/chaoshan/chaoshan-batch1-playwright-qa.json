@@ -7,7 +7,7 @@
   {
     "name": "2. places-chaoshan.html shows expanded food cards",
     "passed": true,
-    "detail": "Count: 52"
+    "detail": "Count: 58"
   },
   {
     "name": "3. Multi-blogger same-shop merge badges exist on grouped cards",
@@ -15,9 +15,9 @@
     "detail": "Badges: 7"
   },
   {
-    "name": "3b. Batch 3, 4 & 5 new shops exist in food cards list",
+    "name": "3b. Batch 3, 4, 5 & 6 new shops exist in food cards list",
     "passed": true,
-    "detail": "Found 厝味火锅, 林三满, 阿洲炭炉鸡煲, 蔡杰牛肉店, 创新土鸡火锅"
+    "detail": "Found 厝味火锅, 林三满, 阿洲炭炉鸡煲, 蔡杰牛肉店, 花城夜市, 薪滋滋"
   },
   {
     "name": "4. Detail page loads successfully",
@@ -42,7 +42,7 @@
   {
     "name": "8. Video playback advances past 0.5s",
     "passed": true,
-    "detail": "currentTime: 0.78s"
+    "detail": "currentTime: 0.75s"
   },
   {
     "name": "8b. Batch 3 detail page loads successfully",
@@ -75,6 +75,21 @@
     "detail": "1920x1080, 28.00s"
   },
   {
+    "name": "8h. Batch 6 detail page (林三满) loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "8i. 林三满 has triple-vlogger merge cross-links",
+    "passed": true,
+    "detail": "Related bloggers: 2"
+  },
+  {
+    "name": "8j. Batch 6 video loads valid metadata and decodes resolution",
+    "passed": true,
+    "detail": "1920x1080, 34.00s"
+  },
+  {
     "name": "9. Chaoshan 3D map initializes with food overlay active",
     "passed": true,
     "detail": ""
@@ -82,7 +97,7 @@
   {
     "name": "10. Food overlay has Chaoshan food stops",
     "passed": true,
-    "detail": "Cards: 39"
+    "detail": "Cards: 42"
   },
   {
     "name": "11. Clicking food open button opens .food-inline-popover",

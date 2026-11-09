@@ -49,11 +49,11 @@ try:
         multi_badges = page.locator('.card small:has-text("条同店视频")')
         check('3. Multi-blogger same-shop merge badges exist on grouped cards', multi_badges.count() >= 6, f'Badges: {multi_badges.count()}')
         
-        # Check batch 3, 4 & 5 new shops exist on places list
+        # Check batch 3, 4, 5 & 6 new shops exist on places list
         page_text = page.locator('main').inner_text()
-        check('3b. Batch 3, 4 & 5 new shops exist in food cards list', 
-              '厝味火锅' in page_text and '林三满' in page_text and '阿洲炭炉鸡煲' in page_text and '蔡杰牛肉店' in page_text and '创新土鸡火锅' in page_text,
-              'Found 厝味火锅, 林三满, 阿洲炭炉鸡煲, 蔡杰牛肉店, 创新土鸡火锅')
+        check('3b. Batch 3, 4, 5 & 6 new shops exist in food cards list', 
+              '厝味火锅' in page_text and '林三满' in page_text and '阿洲炭炉鸡煲' in page_text and '蔡杰牛肉店' in page_text and '花城夜市' in page_text and '薪滋滋' in page_text,
+              'Found 厝味火锅, 林三满, 阿洲炭炉鸡煲, 蔡杰牛肉店, 花城夜市, 薪滋滋')
 
         page.screenshot(path=os.path.join(out_dir, 'places-desktop.png'))
         
@@ -147,6 +147,29 @@ try:
         }''')
         check('8g. Batch 5 video loads valid metadata and decodes resolution', caijie_meta['videoWidth'] > 0 and caijie_meta['duration'] > 10, f"{caijie_meta['videoWidth']}x{caijie_meta['videoHeight']}, {caijie_meta['duration']:.2f}s")
         page.screenshot(path=os.path.join(out_dir, 'detail-video-caijieniurou.png'))
+        context.close()
+
+        # 2e. Test batch 6 new shop detail page with video playback and triple-vlogger links (东麦·林三满)
+        context = browser.new_context(viewport={'width': 1440, 'height': 900})
+        page = context.new_page()
+        res = page.goto(f'{base_url}/places/video-chaoshan-dongmai-linsanman.html')
+        check('8h. Batch 6 detail page (林三满) loads successfully', res.status == 200)
+        
+        # Check triple-vlogger cross links (汁汁冰激凌 + 大猛每一餐)
+        linsanman_related = page.locator('p:has-text("同一家店") a')
+        check('8i. 林三满 has triple-vlogger merge cross-links', linsanman_related.count() >= 2, f'Related bloggers: {linsanman_related.count()}')
+        
+        page.wait_for_function('() => document.querySelector("video") && document.querySelector("video").readyState >= 1')
+        dongmai_meta = page.evaluate('''() => {
+            const v = document.querySelector("video");
+            return {
+                videoWidth: v.videoWidth,
+                videoHeight: v.videoHeight,
+                duration: v.duration
+            };
+        }''')
+        check('8j. Batch 6 video loads valid metadata and decodes resolution', dongmai_meta['videoWidth'] > 0 and dongmai_meta['duration'] > 10, f"{dongmai_meta['videoWidth']}x{dongmai_meta['videoHeight']}, {dongmai_meta['duration']:.2f}s")
+        page.screenshot(path=os.path.join(out_dir, 'detail-video-linsanman-dongmai.png'))
         context.close()
 
         # 3. Test 3D Map Preview Page (preview-chaoshan.html)
