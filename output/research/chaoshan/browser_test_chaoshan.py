@@ -44,20 +44,28 @@ try:
         card_count = cards.count()
         check('2. places-chaoshan.html shows expanded food cards', card_count >= 10, f'Count: {card_count}')
         
+        # Check multi-blogger merge badge in cards
+        multi_badges = page.locator('.card small:has-text("条同店视频")')
+        check('3. Multi-blogger same-shop merge badges exist on grouped cards', multi_badges.count() >= 5, f'Badges: {multi_badges.count()}')
+        
         page.screenshot(path=os.path.join(out_dir, 'places-desktop.png'))
         
         page.set_viewport_size({'width': 390, 'height': 844})
         page.screenshot(path=os.path.join(out_dir, 'places-mobile.png'))
         context.close()
 
-        # 2. Test detail page with HTML5 Video
+        # 2. Test detail page with HTML5 Video and multi-blogger cross-links
         context = browser.new_context(viewport={'width': 1440, 'height': 900})
         page = context.new_page()
-        res = page.goto(f'{base_url}/places/video-chaoshan-miaojiang-yibaichaoche.html')
-        check('3. Detail page loads successfully', res.status == 200)
+        res = page.goto(f'{base_url}/places/video-chaoshan-miaojiang-chunmeili.html')
+        check('4. Detail page loads successfully', res.status == 200)
+
+        # Check cross-blogger related links
+        related_links = page.locator('p:has-text("同一家店的其他视频") a')
+        check('5. Detail page provides cross-blogger links for same shop', related_links.count() >= 2, f'Related bloggers: {related_links.count()}')
 
         video = page.locator('video')
-        check('4. Detail page has HTML5 video element', video.count() == 1)
+        check('6. Detail page has HTML5 video element', video.count() == 1)
 
         # Wait for video metadata to load
         page.wait_for_function('() => document.querySelector("video") && document.querySelector("video").readyState >= 1')
@@ -70,14 +78,14 @@ try:
                 paused: v.paused
             };
         }''')
-        check('5. Video loads metadata and decodes valid resolution', video_meta['videoWidth'] > 0 and video_meta['videoHeight'] > 0, f"{video_meta['videoWidth']}x{video_meta['videoHeight']}, {video_meta['duration']:.2f}s")
+        check('7. Video loads metadata and decodes valid resolution', video_meta['videoWidth'] > 0 and video_meta['videoHeight'] > 0, f"{video_meta['videoWidth']}x{video_meta['videoHeight']}, {video_meta['duration']:.2f}s")
 
         # Play video and test playback advance
         page.evaluate('() => document.querySelector("video").play()')
         page.wait_for_timeout(1000)
         curr_time = page.evaluate('() => document.querySelector("video").currentTime')
-        check('6. Video playback advances past 0.5s', curr_time > 0.5, f"currentTime: {curr_time:.2f}s")
-        page.screenshot(path=os.path.join(out_dir, 'detail-video-yibaichaoche.png'))
+        check('8. Video playback advances past 0.5s', curr_time > 0.5, f"currentTime: {curr_time:.2f}s")
+        page.screenshot(path=os.path.join(out_dir, 'detail-video-chunmeili.png'))
         context.close()
 
         # 3. Test 3D Map Preview Page (preview-chaoshan.html)
@@ -95,8 +103,8 @@ try:
                 hasPopover: !!popover
             };
         }''')
-        check('7. Chaoshan 3D map initializes with food overlay active', stats.get('hasPopover') and stats.get('foodCards') >= 10)
-        check('8. Food overlay has Chaoshan food stops', stats.get('foodCards') >= 10, f"Cards: {stats.get('foodCards')}")
+        check('9. Chaoshan 3D map initializes with food overlay active', stats.get('hasPopover') and stats.get('foodCards') >= 10)
+        check('10. Food overlay has Chaoshan food stops', stats.get('foodCards') >= 10, f"Cards: {stats.get('foodCards')}")
 
         page.screenshot(path=os.path.join(out_dir, 'map-chaoshan-desktop.png'))
 
@@ -112,18 +120,18 @@ try:
         page.wait_for_timeout(1000)
 
         popover_visible = page.evaluate('() => { const p = document.querySelector(".food-inline-popover"); return p && !p.hidden && p.classList.contains("is-shown"); }')
-        check('9. Clicking food open button opens .food-inline-popover', popover_visible)
+        check('11. Clicking food open button opens .food-inline-popover', popover_visible)
 
         # Check play button inside popover and click to expand video
         play_btn = page.locator('.food-popover-play')
-        check('10. Popover contains video play button', play_btn.count() == 1)
+        check('12. Popover contains video play button', play_btn.count() == 1)
 
         page.evaluate('() => { const b = document.querySelector(".food-popover-play"); if(b) b.click(); }')
         page.wait_for_timeout(1200)
 
         # Verify video element is created and playing inside popover
         popover_video = page.locator('.food-inline-popover video')
-        check('11. Clicking play launches HTML5 video in popover', popover_video.count() == 1)
+        check('13. Clicking play launches HTML5 video in popover', popover_video.count() == 1)
 
         # Check video size ratio in popover (video occupies >= 60% of popover height)
         geometry = page.evaluate('''() => {
@@ -143,7 +151,7 @@ try:
         }''')
         if geometry:
             h_ratio = geometry.get('heightRatio', 0)
-            check('12. Video media occupies significant area of popover (>= 60% height)', h_ratio >= 0.55, f"heightRatio: {h_ratio:.1%}, areaRatio: {geometry.get('areaRatio',0):.1%}")
+            check('14. Video media occupies significant area of popover (>= 60% height)', h_ratio >= 0.55, f"heightRatio: {h_ratio:.1%}, areaRatio: {geometry.get('areaRatio',0):.1%}")
 
         page.screenshot(path=os.path.join(out_dir, 'popover-chaoshan.png'))
 
@@ -155,13 +163,13 @@ try:
         page.wait_for_timeout(800)
 
         old_stopped = page.evaluate('() => { const v = window.__qaPopoverOldVideo; return v ? (v.paused && !v.getAttribute("src")) : true; }')
-        check('13. Switching to another store unloads and stops old audio/video track', old_stopped)
+        check('15. Switching to another store unloads and stops old audio/video track', old_stopped)
 
         # Test pressing Escape closes popover and stops media
         page.keyboard.press('Escape')
         page.wait_for_timeout(600)
         popover_closed = page.evaluate('() => { const p = document.querySelector(".food-inline-popover"); return !p || p.hidden || !p.classList.contains("is-shown"); }')
-        check('14. Pressing Escape closes video popover and resets state', popover_closed)
+        check('16. Pressing Escape closes video popover and resets state', popover_closed)
 
         browser.close()
 

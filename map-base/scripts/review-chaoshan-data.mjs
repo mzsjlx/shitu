@@ -84,13 +84,16 @@ await check('5. Approximate locations stay within Chaoshan bounds with routeElig
   const bounds = [116.55, 23.3, 116.85, 23.72];
   for (const src of catalog.sources) {
     for (const seg of src.segments) {
-      assert(seg.coordinates, `Missing coordinates for ${seg.id}`);
-      assert.equal(seg.coordinateSystem, 'WGS84');
       assert.equal(seg.routeEligible, false);
-      assert.equal(seg.locationStatus, 'approximate-planning');
-      assert(seg.planningLocation && seg.planningLocation.accuracy === 'approximate');
-      assert(seg.coordinates[0] >= bounds[0] && seg.coordinates[0] <= bounds[2], `Longitude out of bounds for ${seg.id}: ${seg.coordinates[0]}`);
-      assert(seg.coordinates[1] >= bounds[1] && seg.coordinates[1] <= bounds[3], `Latitude out of bounds for ${seg.id}: ${seg.coordinates[1]}`);
+      if (seg.coordinates) {
+        assert.equal(seg.coordinateSystem, 'WGS84');
+        assert.equal(seg.locationStatus, 'approximate-planning');
+        assert(seg.planningLocation && seg.planningLocation.accuracy === 'approximate');
+        assert(seg.coordinates[0] >= bounds[0] && seg.coordinates[0] <= bounds[2], `Longitude out of bounds for ${seg.id}: ${seg.coordinates[0]}`);
+        assert(seg.coordinates[1] >= bounds[1] && seg.coordinates[1] <= bounds[3], `Latitude out of bounds for ${seg.id}: ${seg.coordinates[1]}`);
+      } else {
+        assert.equal(seg.locationStatus, 'unpositioned-archive');
+      }
     }
   }
 });
