@@ -43,17 +43,17 @@ try:
         
         cards = page.locator('.card')
         card_count = cards.count()
-        check('2. places-chaoshan.html shows expanded food cards', card_count >= 25, f'Count: {card_count}')
+        check('2. places-chaoshan.html shows expanded food cards', card_count >= 50, f'Count: {card_count}')
         
         # Check multi-blogger merge badge in cards
         multi_badges = page.locator('.card small:has-text("条同店视频")')
         check('3. Multi-blogger same-shop merge badges exist on grouped cards', multi_badges.count() >= 6, f'Badges: {multi_badges.count()}')
         
-        # Check batch 3, 4, 5 & 6 new shops exist on places list
+        # Check batch 3, 4, 5, 6 & 7 new shops exist on places list
         page_text = page.locator('main').inner_text()
-        check('3b. Batch 3, 4, 5 & 6 new shops exist in food cards list', 
-              '厝味火锅' in page_text and '林三满' in page_text and '阿洲炭炉鸡煲' in page_text and '蔡杰牛肉店' in page_text and '花城夜市' in page_text and '薪滋滋' in page_text,
-              'Found 厝味火锅, 林三满, 阿洲炭炉鸡煲, 蔡杰牛肉店, 花城夜市, 薪滋滋')
+        check('3b. Batch 3, 4, 5, 6 & 7 new shops exist in food cards list', 
+              '厝味火锅' in page_text and '林三满' in page_text and '阿洲炭炉鸡煲' in page_text and '蔡杰牛肉店' in page_text and '花城夜市' in page_text and '薪滋滋' in page_text and '熹烤' in page_text and '来只蛙' in page_text,
+              'Found 厝味火锅, 林三满, 阿洲炭炉鸡煲, 蔡杰牛肉店, 花城夜市, 薪滋滋, 熹烤, 来只蛙')
 
         page.screenshot(path=os.path.join(out_dir, 'places-desktop.png'))
         
@@ -170,6 +170,24 @@ try:
         }''')
         check('8j. Batch 6 video loads valid metadata and decodes resolution', dongmai_meta['videoWidth'] > 0 and dongmai_meta['duration'] > 10, f"{dongmai_meta['videoWidth']}x{dongmai_meta['videoHeight']}, {dongmai_meta['duration']:.2f}s")
         page.screenshot(path=os.path.join(out_dir, 'detail-video-linsanman-dongmai.png'))
+        context.close()
+
+        # 2f. Test batch 7 new shop detail page with video playback (778 · 熹烤巴西烤肉自助)
+        context = browser.new_context(viewport={'width': 1440, 'height': 900})
+        page = context.new_page()
+        res = page.goto(f'{base_url}/places/video-chaoshan-qiqiba-xikaobaxi.html')
+        check('8k. Batch 7 detail page (熹烤巴西烤肉) loads successfully', res.status == 200)
+        page.wait_for_function('() => document.querySelector("video") && document.querySelector("video").readyState >= 1')
+        xikao_meta = page.evaluate('''() => {
+            const v = document.querySelector("video");
+            return {
+                videoWidth: v.videoWidth,
+                videoHeight: v.videoHeight,
+                duration: v.duration
+            };
+        }''')
+        check('8l. Batch 7 video loads valid metadata and decodes resolution', xikao_meta['videoWidth'] > 0 and xikao_meta['duration'] > 10, f"{xikao_meta['videoWidth']}x{xikao_meta['videoHeight']}, {xikao_meta['duration']:.2f}s")
+        page.screenshot(path=os.path.join(out_dir, 'detail-video-xikaobaxi.png'))
         context.close()
 
         # 3. Test 3D Map Preview Page (preview-chaoshan.html)
