@@ -1,46 +1,51 @@
-import json
-import math
+import json, math
 
-def haversine(lon1, lat1, lon2, lat2):
-    R = 6371000  # meters
-    phi1 = math.radians(lat1)
-    phi2 = math.radians(lat2)
-    delta_phi = math.radians(lat2 - lat1)
-    delta_lambda = math.radians(lon2 - lon1)
-    a = math.sin(delta_phi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(delta_lambda / 2)**2
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-    return R * c
+def haversine(c1, c2):
+    lon1, lat1 = c1
+    lon2, lat2 = c2
+    R = 6371000
+    phi1, phi2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlam = math.radians(lon2 - lon1)
+    a = math.sin(dphi/2)**2 + math.cos(phi1)*math.cos(phi2)*math.sin(dlam/2)**2
+    return 2 * R * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 with open('map-base/data/cities/chengdu/food-road-network.json', 'r', encoding='utf-8') as f:
     net = json.load(f)
 
-nodes = net['nodes']  # {id: [lon, lat]} or list? Let's check structure
-print('Network keys:', list(net.keys()))
-node_items = [(item[0], item[1], item[2]) for item in nodes]
+nodes = net['nodes']
 
-def find_nearest(lon, lat):
-    best_dist = float('inf')
+candidates = {
+    "daming_jiachangcai": [104.0864, 30.6872],
+    "xiexiaoyao_dapaidang": [104.0673, 30.6128],
+    "xinlin_tiaoshuitu": [104.0538, 30.6685],
+    "maojiao_nailiang": [104.0526, 30.6683],
+    "wuming_maocai": [104.0531, 30.6684],
+    "zhubiqiong_feichangfen": [104.0371, 30.6865],
+    "heizhu_xiangji": [104.0355, 30.6878],
+    "dongguang_shaokao": [104.1015, 30.6195],
+    "yanglaotou_taikooli": [104.0847, 30.6515]
+}
+
+results = {}
+for name, coord in candidates.items():
+    best_dist = 999999
     best_node = None
-    best_coords = None
-    for nid, nlon, nlat in node_items:
-        d = haversine(lon, lat, nlon, nlat)
+    for entry in nodes:
+        nid = entry[0]
+        pt = [entry[1], entry[2]]
+        d = haversine(coord, pt)
         if d < best_dist:
             best_dist = d
-            best_node = nid
-            best_coords = [nlon, nlat]
-    return best_node, best_dist, best_coords
+            best_node = (nid, pt)
+    results[name] = {
+        "coord": coord,
+        "best_node": best_node[0],
+        "node_coord": best_node[1],
+        "dist": round(best_dist, 2),
+        "pass_250m": best_dist <= 250
+    }
+    print(f'{name}: dist={best_dist:.2f}m, node={best_node[0]}, pass={best_dist <= 250}')
 
-# Test candidates
-candidates = [
-    ("三道街老宅子肥肠鱼", 104.0526, 30.6769),
-    ("朱大嘴肥肠豆汤(福字街)", 104.0788, 30.6564),
-    ("私房水饺(海椒市)", 104.1012, 30.6416),
-    ("小妹滋补蹄花(理工大学)", 104.1458, 30.6738),
-    ("纯阳馆鱼香排骨面(吉祥街)", 104.0583, 30.6698),
-    ("罗大姐餐厅(肖家河)", 104.0410, 30.6270),
-    ("奇味甜不辣(水碾河)", 104.0950, 30.6480)
-]
-
-for name, lon, lat in candidates:
-    nid, dist, coords = find_nearest(lon, lat)
-    print(f"{name}: nearest node {nid}, dist = {dist:.1f}m (coords: {coords})")
+with open('output/research/chengdu/batch7_snapping_results.json', 'w', encoding='utf-8') as out:
+    json.dump(results, out, ensure_ascii=False, indent=2)

@@ -18,7 +18,7 @@ const server=createServer(async(req,res)=>{
     const info=await stat(target);
     if(!info.isFile()){res.writeHead(404).end();return;}
     const etag='"'+info.size.toString(16)+'-'+Math.trunc(info.mtimeMs).toString(16)+'"';
-    const headers={'Content-Type':types[path.extname(target)]||'application/octet-stream','Accept-Ranges':'bytes','ETag':etag,'Cache-Control':'no-cache','X-Content-Type-Options':'nosniff'};
+    const headers={'Content-Type':types[path.extname(target)]||'application/octet-stream','Accept-Ranges':'bytes','ETag':etag,'Cache-Control':'no-store, no-cache, must-revalidate','X-Content-Type-Options':'nosniff'};
     if(req.headers['if-match']&&req.headers['if-match']!==etag){res.writeHead(412,headers).end();return;}
     let start=0,end=info.size-1,status=200;
     if(req.headers.range){

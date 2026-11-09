@@ -31,7 +31,7 @@ maplibregl.addProtocol('pmtiles',protocol.tile);
 
 async function readJSON(path,{signal}={}) {
   if(bundle?.json[path])return bundle.json[path];
-  const response=await fetch(path,{signal});
+  const response=await fetch(path,{signal,cache:'no-store'});
   if(!response.ok)throw new Error(path+' 加载失败（'+response.status+'）');
   return response.json();
 }
