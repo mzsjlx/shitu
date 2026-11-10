@@ -8,12 +8,15 @@ root = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--pbf', type=Path, default=root / '.local/chongqing-261025.osm.pbf')
 parser.add_argument('--report', default='FOOD-ROAD-SOURCE-QA.json')
+parser.add_argument('--city', default='chongqing')
 parser.add_argument('--verified-on', default=datetime.now(timezone(timedelta(hours=8))).date().isoformat())
 args = parser.parse_args()
 report_path = (root / args.report).resolve()
 if not report_path.is_relative_to(root):
     parser.error('Report must stay within the project.')
-data = json.loads((root / 'data/food-road-network.json').read_text(encoding='utf8'))
+config = json.loads((root / 'config/cities.json').read_text(encoding='utf8'))
+network = config['cities'][args.city]['foodContent']['roadNetwork']
+data = json.loads((root / network).read_text(encoding='utf8'))
 with args.pbf.open('rb') as file:
     assert hashlib.file_digest(file, 'sha256').hexdigest() == data['source']['sha256']
 nodes = {n[0]:n for n in data['nodes']}

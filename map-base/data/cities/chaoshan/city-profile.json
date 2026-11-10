@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "city": "chaoshan",
+  "name": "潮汕",
+  "province": "广东省",
+  "amapCityCode": "440500",
+  "regionLabel": "汕头 · 潮州核心区",
+  "coverageLabel": "潮汕美食核心区（涵盖汕头小公园、龙湖区、潮州古城牌坊街及周边商圈）",
+  "bounds": [
+    116.55,
+    23.3,
+    116.85,
+    23.72
+  ],
+  "center": [
+    116.68,
+    23.36
+  ],
+  "zoom": 15.5,
+  "pitch": 52,
+  "bearing": -15,
+  "minZoom": 11.5,
+  "maxZoom": 19,
+  "tiles": "data/cities/chaoshan/chaoshan.pmtiles",
+  "demTiles": "data/cities/chaoshan/terrain/{z}/{x}/{y}.png",
+  "demMinZoom": 11,
+  "demMaxZoom": 13,
+  "landmarks": [],
+  "status": "local-validation-only",
+  "workflow": {
+    "rightsStatus": "user-confirmed",
+    "videoIntake": "strict-user-provided-only",
+    "locationAccuracy": "approximate-planning-first",
+    "multiCreatorSupport": true,
+    "roadNetworkTopology": "osm-node-consecutive"
+  },
+  "dataFiles": {
+    "profile": "data/cities/chaoshan/city-profile.json",
+    "tiles": "data/cities/chaoshan/chaoshan.pmtiles",
+    "videoLibrary": "data/cities/chaoshan/video-library.json",
+    "videoPosters": "data/cities/chaoshan/video-posters.json",
+    "foodRecords": "data/cities/chaoshan/food-records.json",
+    "roadNetwork": "data/cities/chaoshan/food-road-network.json"
+  },
+  "notes": [
+    "严格遵守只处理用户实际提供的探店链接，不自行到外站搜集凑数。",
+    "门店位置采用有充分街区依据的大致规划点（approximate-planning），无充分依据的片段保留视频库不强行造点。",
+    "同一分店多博主探店共用一个地图点（相同的 placeId），浮窗保留各自博主片段供用户切换。",
+    "大文件隔离：原片与剪辑 MP4 保留在 .local/ 隔离目录，仅小封面海报与 JSON 元数据进 Git。"
+  ]
+}

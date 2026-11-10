@@ -85,7 +85,7 @@ export class VideoLibrary{
       const fallback=el('p','video-player-error','本机片段暂时无法播放，可以查看原视频。');fallback.hidden=true;video.addEventListener('error',()=>{if(video.getAttribute('src'))fallback.hidden=false;});this.player.append(video,fallback);
     }else{if(asset?.poster){const cover=el('img','video-player-media');cover.src=asset.poster;cover.alt=segment.name+' · 原视频画面';this.player.append(cover);}this.player.append(el('p','video-player-empty','视频素材待同步，可先查看封面、地址或原视频。'));}
     const titleRow=el('div','video-place-title-row');titleRow.append(el('h3','',segment.name));
-    const mapLink=el('a','video-map-search','在高德地图搜索 ↗');mapLink.href=amapSearchUrl(segment.name,this.cityConfig?.amapCityCode);mapLink.target='_blank';mapLink.rel='noopener noreferrer';mapLink.setAttribute('aria-label','在高德地图搜索'+segment.name+'，新窗口打开');
+    const mapLink=el('a','video-map-search','在高德地图搜索 ↗');mapLink.href=amapSearchUrl(segment.name,segment.amapCityCode||this.cityConfig?.amapCityCode);mapLink.target='_blank';mapLink.rel='noopener noreferrer';mapLink.setAttribute('aria-label','在高德地图搜索'+segment.name+'，新窗口打开');
     this.player.append(el('small','video-player-category',segment.category),titleRow,mapLink,el('p','video-player-summary',segment.summary));
     const address=el('div','video-player-address');address.append(el('small','',segment.addressOrigin==='name-address-crosscheck'?'店名与地址对照':'原作者地址线索'),el('p','',segment.addressText||'原片未提供详细地址，选择时留意具体分店。'));if(segment.addressNote)address.append(el('p','video-address-note',segment.addressNote));
     this.player.append(address);

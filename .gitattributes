@@ -1,3 +1,6 @@
 # Keep frozen road-network bytes stable across Windows and Unix checkouts.
 map-base/data/food-road-network.json text eol=lf
 map-base/data/food-road-network-manifest.json text eol=lf
+
+map-base/data/cities/chaoshan/food-road-network.json text eol=lf
+map-base/data/cities/chaoshan/food-road-network-manifest.json text eol=lf

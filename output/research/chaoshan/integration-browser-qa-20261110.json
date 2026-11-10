@@ -1,0 +1,298 @@
+[
+  {
+    "name": "1. places-chaoshan.html loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "2. places-chaoshan.html shows expanded food cards",
+    "passed": true,
+    "detail": "Count: 67"
+  },
+  {
+    "name": "3. Multi-blogger same-shop merge badges exist on grouped cards",
+    "passed": true,
+    "detail": "Badges: 7"
+  },
+  {
+    "name": "3b. Batch 3, 4, 5, 6 & 7 new shops exist in food cards list",
+    "passed": true,
+    "detail": "Found 厝味火锅, 林三满, 阿洲炭炉鸡煲, 蔡杰牛肉店, 花城夜市, 薪滋滋, 熹烤, 来只蛙"
+  },
+  {
+    "name": "4. Detail page loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "5. Detail page provides cross-blogger links for same shop",
+    "passed": true,
+    "detail": "Related bloggers: 2"
+  },
+  {
+    "name": "6. Detail page has HTML5 video element",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "7. Video loads metadata and decodes valid resolution",
+    "passed": true,
+    "detail": "1080x1920, 12.40s"
+  },
+  {
+    "name": "8. Video playback advances past 0.5s",
+    "passed": true,
+    "detail": "currentTime: 0.77s"
+  },
+  {
+    "name": "8b. Batch 3 detail page loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "8c. Batch 3 video loads valid metadata",
+    "passed": true,
+    "detail": "1080x1920, 19.00s"
+  },
+  {
+    "name": "8d. Batch 4 detail page loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "8e. Batch 4 video loads valid metadata and decodes resolution",
+    "passed": true,
+    "detail": "1080x1920, 25.00s"
+  },
+  {
+    "name": "8f. Batch 5 detail page loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "8g. Batch 5 video loads valid metadata and decodes resolution",
+    "passed": true,
+    "detail": "1920x1080, 28.00s"
+  },
+  {
+    "name": "8h. Batch 6 detail page (林三满) loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "8i. 林三满 has triple-vlogger merge cross-links",
+    "passed": true,
+    "detail": "Related bloggers: 2"
+  },
+  {
+    "name": "8j. Batch 6 video loads valid metadata and decodes resolution",
+    "passed": true,
+    "detail": "1920x1080, 34.00s"
+  },
+  {
+    "name": "8k. Batch 7 detail page (熹烤巴西烤肉) loads successfully",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "8l. Batch 7 video loads valid metadata and decodes resolution",
+    "passed": true,
+    "detail": "1080x1920, 28.00s"
+  },
+  {
+    "name": "9. Chaoshan 3D map initializes with food overlay active",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "10. Food overlay has Chaoshan food stops",
+    "passed": true,
+    "detail": "Cards: 46"
+  },
+  {
+    "name": "11. Clicking food open button opens .food-inline-popover",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "12. Popover contains video play button",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "13. Clicking play launches HTML5 video in popover",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "14. Video media occupies at least 2/3 of the complete popover area",
+    "passed": true,
+    "detail": "heightRatio: 70.0%, areaRatio: 66.8%"
+  },
+  {
+    "name": "15. Switching to another store unloads and stops old audio/video track",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "16. Pressing Escape closes video popover and resets state",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: chongqing loads correct records without saved-state leakage",
+    "passed": true,
+    "detail": {
+      "city": "chongqing",
+      "count": 81,
+      "saved": 0
+    }
+  },
+  {
+    "name": "Integration: changsha loads correct records without saved-state leakage",
+    "passed": true,
+    "detail": {
+      "city": "changsha",
+      "count": 71,
+      "saved": 0
+    }
+  },
+  {
+    "name": "Integration: liuzhou loads correct records without saved-state leakage",
+    "passed": true,
+    "detail": {
+      "city": "liuzhou",
+      "count": 9,
+      "saved": 0
+    }
+  },
+  {
+    "name": "Integration: nanjing loads correct records without saved-state leakage",
+    "passed": true,
+    "detail": {
+      "city": "nanjing",
+      "count": 104,
+      "saved": 0
+    }
+  },
+  {
+    "name": "Integration: chaoshan loads correct records without saved-state leakage",
+    "passed": true,
+    "detail": {
+      "city": "chaoshan",
+      "count": 46,
+      "saved": 0
+    }
+  },
+  {
+    "name": "Integration: original-node road network computes a connected trip",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: Chaoshan wants do not enter Chongqing",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: Chaoshan wants survive return",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: 1440x960 multi-creator area >=2/3 and fits screen",
+    "passed": true,
+    "detail": {
+      "area": 0.6677057643615797,
+      "inside": true,
+      "tabs": 3
+    }
+  },
+  {
+    "name": "Integration: 1440px switching creator unloads old audio",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: 1440px Escape unloads actively playing video",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: 390x844 multi-creator area >=2/3 and fits screen",
+    "passed": true,
+    "detail": {
+      "area": 0.6667397775340749,
+      "inside": true,
+      "tabs": 3
+    }
+  },
+  {
+    "name": "Integration: 390px switching creator unloads old audio",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: 390px Escape unloads actively playing video",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: 320x680 multi-creator area >=2/3 and fits screen",
+    "passed": true,
+    "detail": {
+      "area": 0.6667397775340749,
+      "inside": true,
+      "tabs": 3
+    }
+  },
+  {
+    "name": "Integration: 320px switching creator unloads old audio",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: 320px Escape unloads actively playing video",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: 736x414 multi-creator area >=2/3 and fits screen",
+    "passed": true,
+    "detail": {
+      "area": 0.6683870967741935,
+      "inside": true,
+      "tabs": 3
+    }
+  },
+  {
+    "name": "Integration: 736px switching creator unloads old audio",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: 736px Escape unloads actively playing video",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Integration: 吴敬平 searches the correct city",
+    "passed": true,
+    "detail": "https://uri.amap.com/search?keyword=%E5%90%B4%E6%95%AC%E5%B9%B3%E4%BC%A0%E7%BB%9F%E6%BD%AE%E5%B7%9E%E6%98%A5%E9%A5%BC&city=445100&view=list&src=shitu&callnative=0"
+  },
+  {
+    "name": "Integration: 揭阳卢记 searches the correct city",
+    "passed": true,
+    "detail": "https://uri.amap.com/search?keyword=%E6%8F%AD%E9%98%B3%E5%8D%A2%E8%AE%B0%E7%89%9B%E8%82%89%E7%81%AB%E9%94%85&city=445200&view=list&src=shitu&callnative=0"
+  },
+  {
+    "name": "Integration: 熹烤 searches the correct city",
+    "passed": true,
+    "detail": "https://uri.amap.com/search?keyword=%E7%86%B9%E7%83%A4%C2%B7%E5%B7%B4%E8%A5%BF%E7%83%A4%E8%82%89%E8%87%AA%E5%8A%A9%E9%A4%90%E5%8E%85%EF%BC%88%E8%8B%8F%E5%AE%81%E5%B9%BF%E5%9C%BA%E5%BA%97%EF%BC%89&city=440500&view=list&src=shitu&callnative=0"
+  },
+  {
+    "name": "Integration: no browser page errors",
+    "passed": true,
+    "detail": []
+  }
+]
