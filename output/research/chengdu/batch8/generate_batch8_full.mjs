@@ -130,36 +130,6 @@ const batch8Sources = [
     evidenceNote: "原片深度探寻成都经典早餐：北门张婆婆香酥锅盔夹牛肉与凉粉、成都50强食而百面馆酸辣鸡杂面，传承老成都早市地道风味。",
     segments: [
       {
-        id: "cd-danniushi-zhangpopoguokui",
-        name: "张婆婆香酥锅盔（北门店）",
-        category: "锅盔 / 传统名小吃",
-        summary: "丹牛食探寻成都经典早餐第四站：张婆婆香酥锅盔，金黄酥脆的外壳裹挟鲜香麻辣的拌牛肉、凉粉与耳片，咬下去层次分明、咔嚓作响。",
-        addressText: "成都市金牛区一环路北二段6号附2号",
-        start: 645.0,
-        end: 705.0,
-        posterSecond: 655.0,
-        coordinates: [104.080278, 30.686871],
-        locationStatus: "approximate-planning",
-        coordinateSystem: "WGS84",
-        planningLocation: {
-          accuracy: "approximate",
-          label: "金牛区 · 一环路北二段",
-          basis: "video-address-and-osm-road",
-          branchMatch: "exact-match",
-          note: "北门老字号香酥锅盔店，吸附一环路北二段真实道路节点（距离82.9米）",
-          reviewedOn: "2026-11-09",
-          anchor: {
-            kind: "osm-way",
-            id: "road:一环路北二段",
-            name: "一环路北二段",
-            nearestNode: 9484,
-            sourceDate: "2026-11-05",
-            method: "road-network-snap"
-          }
-        },
-        routeEligible: false
-      },
-      {
         id: "cd-danniushi-shierbaimian",
         name: "食而百面馆（北门店）",
         category: "面馆 / 成都50强面馆",
@@ -183,6 +153,36 @@ const batch8Sources = [
             id: "road:树德二路",
             name: "树德二路",
             nearestNode: 9420,
+            sourceDate: "2026-11-05",
+            method: "road-network-snap"
+          }
+        },
+        routeEligible: false
+      },
+      {
+        id: "cd-danniushi-zhangpopoguokui",
+        name: "张婆婆香酥锅盔（北门店）",
+        category: "锅盔 / 传统名小吃",
+        summary: "丹牛食探寻成都经典早餐第四站：张婆婆香酥锅盔，金黄酥脆的外壳裹挟鲜香麻辣的拌牛肉、凉粉与耳片，咬下去层次分明、咔嚓作响。",
+        addressText: "成都市金牛区一环路北二段6号附2号",
+        start: 645.0,
+        end: 705.0,
+        posterSecond: 655.0,
+        coordinates: [104.080278, 30.686871],
+        locationStatus: "approximate-planning",
+        coordinateSystem: "WGS84",
+        planningLocation: {
+          accuracy: "approximate",
+          label: "金牛区 · 一环路北二段",
+          basis: "video-address-and-osm-road",
+          branchMatch: "exact-match",
+          note: "北门老字号香酥锅盔店，吸附一环路北二段真实道路节点（距离82.9米）",
+          reviewedOn: "2026-11-09",
+          anchor: {
+            kind: "osm-way",
+            id: "road:一环路北二段",
+            name: "一环路北二段",
+            nearestNode: 9484,
             sourceDate: "2026-11-05",
             method: "road-network-snap"
           }
@@ -859,36 +859,6 @@ const batch8Sources = [
     evidenceNote: "太古里常住博主叫我Finn无广实测锦江区与太古里周边高分外卖名店：太升南路老字号黄嬢甜不辣、东门大桥桃香源火锅鸡。",
     segments: [
       {
-        id: "cd-finn-huangniang",
-        name: "黄嬢甜不辣（太升南路店）",
-        category: "传统小吃 / 油炸甜不辣",
-        summary: "叫我Finn强力推荐的成都老牌甜不辣黄嬢甜不辣，两种特制干湿蘸碟搭配酥香炸串，外酥里嫩、香气扑鼻。",
-        addressText: "成都市锦江区太升南路天涯石街区",
-        start: 125.0,
-        end: 155.0,
-        posterSecond: 130.0,
-        coordinates: [104.074323, 30.666118],
-        locationStatus: "approximate-planning",
-        coordinateSystem: "WGS84",
-        planningLocation: {
-          accuracy: "approximate",
-          label: "锦江区 · 太升南路商圈",
-          basis: "video-address-and-osm-road",
-          branchMatch: "exact-match",
-          note: "太升南路天涯石老街区知名甜不辣，吸附太升南路真实道路节点（距离39.2米）",
-          reviewedOn: "2026-11-09",
-          anchor: {
-            kind: "osm-way",
-            id: "road:太升南路",
-            name: "太升南路",
-            nearestNode: 17019,
-            sourceDate: "2026-11-05",
-            method: "road-network-snap"
-          }
-        },
-        routeEligible: false
-      },
-      {
         id: "cd-finn-taoxiangyuan",
         name: "桃香源火锅鸡（东门大桥店）",
         category: "火锅鸡 / 川味火锅",
@@ -912,6 +882,36 @@ const batch8Sources = [
             id: "road:天仙桥南路",
             name: "天仙桥南路",
             nearestNode: 26970,
+            sourceDate: "2026-11-05",
+            method: "road-network-snap"
+          }
+        },
+        routeEligible: false
+      },
+      {
+        id: "cd-finn-huangniang",
+        name: "黄嬢甜不辣（太升南路店）",
+        category: "传统小吃 / 油炸甜不辣",
+        summary: "叫我Finn强力推荐的成都老牌甜不辣黄嬢甜不辣，两种特制干湿蘸碟搭配酥香炸串，外酥里嫩、香气扑鼻。",
+        addressText: "成都市锦江区太升南路天涯石街区",
+        start: 125.0,
+        end: 155.0,
+        posterSecond: 130.0,
+        coordinates: [104.074323, 30.666118],
+        locationStatus: "approximate-planning",
+        coordinateSystem: "WGS84",
+        planningLocation: {
+          accuracy: "approximate",
+          label: "锦江区 · 太升南路商圈",
+          basis: "video-address-and-osm-road",
+          branchMatch: "exact-match",
+          note: "太升南路天涯石老街区知名甜不辣，吸附太升南路真实道路节点（距离39.2米）",
+          reviewedOn: "2026-11-09",
+          anchor: {
+            kind: "osm-way",
+            id: "road:太升南路",
+            name: "太升南路",
+            nearestNode: 17019,
             sourceDate: "2026-11-05",
             method: "road-network-snap"
           }
@@ -1031,7 +1031,7 @@ for (const source of batch8Sources) {
   }
   
   for (const seg of source.segments) {
-    const names = mediaNames(source.id, seg.id);
+    const names = mediaNames(source, seg);
     const clipDir = path.join(root, '.local/video-clips', source.id);
     const posterDir = path.join(root, 'assets/video-posters', source.id);
     fs.mkdirSync(clipDir, { recursive: true });
@@ -1056,7 +1056,7 @@ for (const source of batch8Sources) {
     // Register poster in video-posters.json
     const posterBuffer = fs.readFileSync(posterFile);
     const posterDigest = digest(posterBuffer);
-    posters[mediaKey(source.id, seg.id)] = {
+    posters[mediaKey(source, seg)] = {
       file: `assets/video-posters/${source.id}/${names.poster}`,
       sha256: posterDigest
     };
