@@ -3,10 +3,12 @@
 ## 2026-11-08 全量扩充交付（从首批 9 家精选扩展至 32 来源、64 切片、52 处打卡点）
 
 - **工作分支**：`codex/city-liuzhou-batch5-expansion`
-- **提交哈希**：`27bb39a`（基于已合入南京与 3D 建筑的主线 `origin/main`）
+- **提交哈希**：`2f704ad`（已合入南京与 3D 建筑并补齐 25 来源素材包下载索引）
 - **城市标识**：`liuzhou`（柳州市中心城区 · 城中半岛、柳南区、柳北区、鱼峰区及白沙片区）
 - **城市地图边界**：`[109.35, 24.26, 109.47, 24.38]`（WGS84 经度/纬度）
-- **PR 快捷发起链接**：https://github.com/mzsjlx/shitu/pull/new/codex/city-liuzhou-batch5-expansion
+- **素材 Release 目标地址**：https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-10-liuzhou-batch5
+- **素材 Release 网页创建入口**：https://github.com/mzsjlx/shitu/releases/new?tag=media-2026-11-10-liuzhou-batch5&target=codex/city-liuzhou-batch5-expansion
+- **PR 正式发起链接**：https://github.com/mzsjlx/shitu/compare/main...codex/city-liuzhou-batch5-expansion?expand=1
 - **核心数据汇总**：
   - **视频来源**：32 个（首批 7 个 + 本轮扩充 25 个）
   - **视频切片**：64 段（首批 9 段 + 本轮扩充 55 段）
