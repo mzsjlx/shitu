@@ -261,6 +261,45 @@
       },
       "status": "local-validation-only"
     },
+    "chaoshan": {
+      "name": "潮汕",
+      "regionLabel": "汕头 · 潮州核心区",
+      "coverageLabel": "潮汕美食核心区（涵盖汕头小公园、龙湖区、潮州古城牌坊街及周边商圈）",
+      "bounds": [
+        116.55,
+        23.3,
+        116.85,
+        23.72
+      ],
+      "center": [
+        116.68,
+        23.36
+      ],
+      "zoom": 15.5,
+      "pitch": 52,
+      "bearing": -15,
+      "minZoom": 11.5,
+      "maxZoom": 19,
+      "tiles": "data/cities/chaoshan/chaoshan.pmtiles",
+      "amapCityCode": "440500",
+      "landmarks": [],
+      "foodContent": {
+        "city": "chaoshan",
+        "records": "data/cities/chaoshan/food-records.json",
+        "videoLibrary": "data/cities/chaoshan/video-library.json",
+        "videoAssets": "data/cities/chaoshan/video-library-assets.json",
+        "videoPosters": "data/cities/chaoshan/video-posters.json",
+        "sprite": "assets/food-concepts.jpg",
+        "roadNetwork": "data/cities/chaoshan/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/chaoshan/roads-index.json",
+        "audit": "data/cities/chaoshan/data-audit.json",
+        "manifest": "data/cities/chaoshan/source-manifest.json",
+        "tileMetadata": "data/cities/chaoshan/tile-metadata.json"
+      },
+      "status": "local-validation-only"
+    },
     "chengdu": {
       "name": "成都",
       "regionLabel": "中心城区 · 核心五城区",
