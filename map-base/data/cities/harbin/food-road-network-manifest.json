@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "harbin",
+  "bounds": [
+    126.57,
+    45.72,
+    126.71,
+    45.81
+  ],
+  "source": {
+    "date": "2026-11-12",
+    "sha256": "70d9fc1cf00d47ed31ea700b7aa32ae96e611995872d426bc067356f69d92abe",
+    "url": "https://build.protomaps.com/20261112.pmtiles",
+    "fileName": "harbin.pmtiles",
+    "attribution": "© OpenStreetMap contributors · Protomaps",
+    "license": "ODbL 1.0 Produced Work"
+  },
+  "networkSHA256": "f05fdb96cb7367f2b9e17d6f0a70f59085aee089ab15426e9c67e450b3226d9f",
+  "bytes": 1599174,
+  "nodes": 27067,
+  "ways": 7523,
+  "footRestrictionWays": 0,
+  "topology": "Connected node topology extracted from local OSM/Protomaps archive.",
+  "profile": "Approximate walking reference: no motorways; connecting pedestrian and ordinary roads."
+}

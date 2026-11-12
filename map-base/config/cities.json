@@ -299,6 +299,50 @@
         "tileMetadata": "data/cities/chaoshan/tile-metadata.json"
       },
       "status": "local-validation-only"
+    },
+    "harbin": {
+      "name": "哈尔滨",
+      "regionLabel": "江南核心 · 沿江走廊",
+      "coverageLabel": "哈尔滨核心城区（中央大街、圣索菲亚大教堂、中华巴洛克、哈尔滨站与秋林商圈）",
+      "bounds": [
+        126.57,
+        45.72,
+        126.71,
+        45.81
+      ],
+      "center": [
+        126.625,
+        45.768
+      ],
+      "zoom": 15.5,
+      "pitch": 54,
+      "bearing": -18,
+      "minZoom": 12.0,
+      "maxZoom": 19,
+      "tiles": "data/cities/harbin/harbin.pmtiles",
+      "demTiles": "data/cities/harbin/terrain/{z}/{x}/{y}.png",
+      "demMinZoom": 11,
+      "demMaxZoom": 13,
+      "amapCityCode": "230100",
+      "landmarks": [],
+      "buildingsDetail": "data/cities/harbin/harbin-buildings-detail.geojson",
+      "foodContent": {
+        "city": "harbin",
+        "records": "data/cities/harbin/food-records.json",
+        "videoLibrary": "data/cities/harbin/video-library.json",
+        "videoAssets": "data/cities/harbin/video-library-assets.json",
+        "videoPosters": "data/cities/harbin/video-posters.json",
+        "sprite": "assets/food-concepts.jpg",
+        "roadNetwork": "data/cities/harbin/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/harbin/roads-index.json",
+        "audit": "data/cities/harbin/data-audit.json",
+        "manifest": "data/cities/harbin/source-manifest.json",
+        "tileMetadata": "data/cities/harbin/tile-metadata.json",
+        "terrainManifest": "data/cities/harbin/terrain-manifest.json"
+      },
+      "status": "local-validation-only"
     }
   }
 }

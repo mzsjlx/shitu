@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "city": "harbin",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "哈尔滨核心城区（中央大街、圣索菲亚大教堂、中华巴洛克、哈尔滨站与秋林商圈）",
+  "bounds": [
+    126.57,
+    45.72,
+    126.71,
+    45.81
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 3404113,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      126.57,
+      45.72,
+      126.71,
+      45.81
+    ]
+  },
+  "osmReplicationTime": "2026-11-12T04:00:00Z",
+  "counters": {
+    "requestedTiles": 182,
+    "presentTiles": 182,
+    "roadLineFragments": 3874,
+    "namedRoadLineFragments": 2766,
+    "unnamedRoadLineFragments": 1108,
+    "nonRoadTransportFragmentsExcluded": 403,
+    "buildingPolygonFragments": 13591,
+    "buildingFragmentsWithPositiveHeight": 242,
+    "buildingFragmentsWithoutPositiveHeight": 13349,
+    "namedRoadGroups": 1051
+  },
+  "roadClassCounts": {
+    "major_road": 2547,
+    "path": 412,
+    "minor_road": 915
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    "阿勒锦道·环岛路": {
+      "exact": {
+        "id": "road:阿勒锦道·环岛路",
+        "class": "minor_road",
+        "detail": "unclassified",
+        "name": "阿勒锦道·环岛路",
+        "bounds": [
+          126.6254809,
+          45.7927986,
+          126.6745305,
+          45.81
+        ],
+        "center": [
+          126.6336845,
+          45.801999
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 13
+      },
+      "related": [
+        "阿勒锦道·环岛路"
+      ]
+    },
+    "阿什河街": {
+      "exact": {
+        "id": "road:阿什河街",
+        "class": "major_road",
+        "detail": "tertiary",
+        "name": "阿什河街",
+        "bounds": [
+          126.6338333,
+          45.7564903,
+          126.6456914,
+          45.763255
+        ],
+        "center": [
+          126.6422649,
+          45.7584627
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 3
+      },
+      "related": [
+        "阿什河街",
+        "小阿什河街"
+      ]
+    },
+    "埃德蒙顿路": {
+      "exact": {
+        "id": "road:埃德蒙顿路",
+        "class": "major_road",
+        "detail": "trunk",
+        "name": "埃德蒙顿路",
+        "bounds": [
+          126.5802267,
+          45.7287642,
+          126.5928009,
+          45.7384751
+        ],
+        "center": [
+          126.5869001,
+          45.7333549
+        ],
+        "bridge": true,
+        "tunnel": false,
+        "bridgeFragments": 2,
+        "tunnelFragments": 0,
+        "segments": 6
+      },
+      "related": [
+        "埃德蒙顿路"
+      ]
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}

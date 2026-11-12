@@ -1,5 +1,5 @@
 """Cache public Terrarium DEM tiles for the configured city, with provenance."""
-import argparse, concurrent.futures, hashlib, json, math, urllib.request
+import argparse, concurrent.futures, hashlib, json, math, time, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -39,11 +39,19 @@ def cache(job):
         raise ValueError('Terrain cache must stay in the project.')
     url = f'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'
     if not path.exists():
-        request = urllib.request.Request(url, headers={'User-Agent': 'FoodCity-map-base/0.3 local-prototype'})
-        with urllib.request.urlopen(request, timeout=45) as r:
-            raw = r.read()
-        if raw[:8] != b'\x89PNG\r\n\x1a\n':
-            raise ValueError('DEM response is not PNG')
+        raw = None
+        for attempt in range(5):
+            try:
+                request = urllib.request.Request(url, headers={'User-Agent': 'FoodCity-map-base/0.3 local-prototype'})
+                with urllib.request.urlopen(request, timeout=45) as r:
+                    raw = r.read()
+                if raw[:8] != b'\x89PNG\r\n\x1a\n':
+                    raise ValueError('DEM response is not PNG')
+                break
+            except Exception as e:
+                if attempt == 4:
+                    raise
+                time.sleep(1 + attempt)
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(raw)
     raw = path.read_bytes()

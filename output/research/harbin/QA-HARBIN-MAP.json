@@ -1,0 +1,235 @@
+{
+  "verifiedOn": "2026-11-12T10:53:41.144Z",
+  "city": "harbin",
+  "checks": [
+    {
+      "name": "Harbin is registered in config/cities.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Harbin name is \"哈尔滨\"",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Harbin regionLabel is \"江南核心 · 沿江走廊\"",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Harbin amapCityCode is 230100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Harbin bounds match agreed corridor [126.57, 45.72, 126.71, 45.81]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Harbin camera center is [126.625, 45.768]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "harbin.pmtiles exists with valid size (>3MB)",
+      "passed": true,
+      "detail": 3404113
+    },
+    {
+      "name": "source-manifest.json records correct pmtiles SHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "food-road-network.json has valid nodes (>20000)",
+      "passed": true,
+      "detail": 27067
+    },
+    {
+      "name": "food-road-network.json has valid ways (>5000)",
+      "passed": true,
+      "detail": 7523
+    },
+    {
+      "name": "buildFoodRoadRouter builds successfully for Harbin",
+      "passed": true,
+      "detail": {
+        "nodes": 27067,
+        "ways": 7523,
+        "segments": 25899,
+        "excluded": {},
+        "components": 2351
+      }
+    },
+    {
+      "name": "roads-index.json has >1000 named road groups",
+      "passed": true,
+      "detail": 1051
+    },
+    {
+      "name": "Central Avenue (中央大街) indexed in roads-index.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Hongzhuan Street (红专街) indexed in roads-index.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Jingyu Street (靖宇街) indexed in roads-index.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "harbin-buildings-detail.geojson has >=35 distinct architectural components",
+      "passed": true,
+      "detail": 38
+    },
+    {
+      "name": "Saint Sophia Cathedral includes drum, onion dome, golden cross and belfry",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "Flood Control Monument includes colonnade, base, tower shaft and statue",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "Modern Hotel and Central Avenue cobblestones modeled",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "Daowai Chinese Baroque courtyards modeled",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "name": "Harbin Railway Station with clock tower modeled",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "Qiulin Building with green corner rotunda modeled",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "terrain-manifest.json records 61 Terrarium DEM tiles",
+      "passed": true,
+      "detail": 61
+    },
+    {
+      "name": "Terrarium DEM tile exists on disk as valid PNG",
+      "passed": true,
+      "detail": 21247
+    },
+    {
+      "name": "preview-harbin.html generated with embedded bundle (>10MB)",
+      "passed": true,
+      "detail": 11558741
+    },
+    {
+      "name": "Map runtime loaded Harbin with name \"哈尔滨\"",
+      "passed": true,
+      "detail": "哈尔滨"
+    },
+    {
+      "name": "Map runtime amapCityCode is \"230100\"",
+      "passed": true,
+      "detail": "230100"
+    },
+    {
+      "name": "buildings-detail-3d layer loaded into MapLibre GL style",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "buildings-3d extruded base layer loaded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hill-shade DEM terrain layer loaded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Overview screenshot captured (1440x960)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 圣索菲亚大教堂（拜占庭洋葱头绿穹顶与红砖圣殿）",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 哈尔滨市人民防洪胜利纪念塔与沿江古罗马列柱回廊",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 中央大街步行街与马迭尔宾馆新艺术建筑",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 道外中华巴洛克历史街区连片中西合璧合院",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 哈尔滨火车站新艺术复古钟楼与拱券站房",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 东大直街秋林公司转角绿圆顶主楼",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Switching to 2D view correctly hides 3D extrusion layers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Switching back to 3D view restores 3D extrusion layers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile layout rendered and screenshot captured (390x844)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "City chongqing loads cleanly (重庆) without Harbin interference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "City changsha loads cleanly (长沙) without Harbin interference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "City nanjing loads cleanly (南京) without Harbin interference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "City chaoshan loads cleanly (潮汕) without Harbin interference",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "total": 44,
+  "passed": 44,
+  "failed": 0
+}
