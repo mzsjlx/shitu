@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-10T10:36:45.550Z",
+  "verifiedOn": "2026-11-12T06:47:15.458Z",
   "city": "chengdu",
   "checks": [
     {
@@ -20,14 +20,6 @@
         30.6,
         104.15,
         30.72
-      ]
-    },
-    {
-      "name": "Initial camera centered within Chengdu core area",
-      "passed": true,
-      "detail": [
-        104.07999999999993,
-        30.66001862377003
       ]
     },
     {
@@ -61,27 +53,104 @@
       "detail": null
     },
     {
-      "name": "Switching to 2D view hides 3D extrusion layers",
+      "name": "71 on-map food spots loaded cleanly into food overlay",
+      "passed": true,
+      "detail": "Found 71 spots"
+    },
+    {
+      "name": "Food card found and clicked",
       "passed": true,
       "detail": null
     },
     {
-      "name": "Switching back to 3D view restores 3D extrusion layers",
+      "name": "Clicking circular spot badge smoothly expands into card with close button",
       "passed": true,
       "detail": null
     },
     {
-      "name": "Chongqing city loads cleanly without Chengdu pollution",
+      "name": "Multi-blogger spot identified and popover opened",
+      "passed": true,
+      "detail": {
+        "found": true,
+        "name": "毛记和意冒菜（解放西街店）",
+        "clipCount": 4
+      }
+    },
+    {
+      "name": "Multi-blogger popover media area occupies >= 2/3 (66.7%) of total popover area",
+      "passed": true,
+      "detail": "Ratio: 66.8% (media: 294px, popover: 420.5px)"
+    },
+    {
+      "name": "In-popover video plays smoothly with advancing currentTime",
+      "passed": true,
+      "detail": {
+        "played": true,
+        "currentTime": 0.764436,
+        "duration": 233.96
+      }
+    },
+    {
+      "name": "Closing popover immediately terminates video playback and audio track",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Viewport mobile-390 (390x844) renders without horizontal overflow",
+      "passed": true,
+      "detail": {
+        "cardCount": 71,
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Viewport small-320 (320x680) renders without horizontal overflow",
+      "passed": true,
+      "detail": {
+        "cardCount": 71,
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Viewport landscape-736 (736x414) renders without horizontal overflow",
+      "passed": true,
+      "detail": {
+        "cardCount": 71,
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "City chongqing loads isolated state with name \"重庆\"",
       "passed": true,
       "detail": "重庆"
     },
     {
-      "name": "Liuzhou city loads cleanly without Chengdu pollution",
+      "name": "City changsha loads isolated state with name \"长沙\"",
+      "passed": true,
+      "detail": "长沙"
+    },
+    {
+      "name": "City liuzhou loads isolated state with name \"柳州\"",
       "passed": true,
       "detail": "柳州"
+    },
+    {
+      "name": "City nanjing loads isolated state with name \"南京\"",
+      "passed": true,
+      "detail": "南京"
+    },
+    {
+      "name": "City chaoshan loads isolated state with name \"潮汕\"",
+      "passed": true,
+      "detail": "潮汕"
+    },
+    {
+      "name": "City chengdu loads isolated state with name \"成都\"",
+      "passed": true,
+      "detail": "成都"
     }
   ],
-  "total": 14,
-  "passed": 14,
+  "total": 25,
+  "passed": 25,
   "failed": 0
 }
