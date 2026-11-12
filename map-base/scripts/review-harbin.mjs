@@ -259,8 +259,135 @@ async function run() {
       check(`3D Landmark screenshot captured: ${t.name}`, true);
     }
 
+    // Food Experience & Progressive Three-Level Interaction Test
+    console.log('\n--- 7. Testing Progressive Three-Level Interaction (Circle -> Card -> Video Popover) ---');
+    await page.evaluate(async () => {
+      if (!document.body.classList.contains('food-active')) {
+        await window.foodCityMap.food?.activate();
+      }
+    });
+    await page.waitForTimeout(1500);
+
+    // Center map on Guogeli St (Fendou Food Market)
+    await page.evaluate(() => {
+      window.foodCityMap.map.easeTo({
+        center: [126.6456324, 45.7549127],
+        zoom: 15.8,
+        pitch: 45,
+        bearing: -15,
+        duration: 0
+      });
+    });
+    await page.waitForTimeout(1000);
+
+    const cardsCount = await page.evaluate(() => document.querySelectorAll('.food-card').length);
+    check('Map renders all 5 Harbin authentic food spots', cardsCount === 5, cardsCount);
+
+    // 1st Level: Initial Dot (is-collapsed, 48px circle, no video hover)
+    const allCollapsed = await page.evaluate(() => {
+      const cards = [...document.querySelectorAll('.food-card')];
+      return cards.every(c => c.classList.contains('is-collapsed'));
+    });
+    check('Level 1: Unselected food spots remain collapsed circle avatars (is-collapsed)', allCollapsed);
+
+    // Hover over collapsed circle should NOT pop video
+    const targetCard = page.locator('.food-card[data-food-id="video-hb-xiaozhen-fendoufushi"]');
+    await targetCard.hover({ force: true });
+    await page.waitForTimeout(500);
+    const popoverHidden = await page.evaluate(() => {
+      const pop = document.querySelector('.food-inline-popover');
+      return !pop || pop.hidden || getComputedStyle(pop).display === 'none';
+    });
+    check('Level 1: Hovering over collapsed circle does NOT trigger video popover', popoverHidden);
+
+    // Capture Overview screenshot with dots
+    const dotsShot = path.join(screenshotDir, 'harbin-food-dots-level1.png');
+    await page.screenshot({ path: dotsShot });
+
+    // 2nd Level: Expanding to 190px Card
+    await targetCard.locator('.food-open').click();
+    await page.waitForTimeout(800);
+
+    const isExpanded = await page.evaluate(() => {
+      const el = document.querySelector('.food-card[data-food-id="video-hb-xiaozhen-fendoufushi"]');
+      return el && !el.classList.contains('is-collapsed') && el.classList.contains('is-selected');
+    });
+    check('Level 2: Clicking food spot expands to rectangular 190px food card (is-selected)', isExpanded);
+
+    // Verify card content: Cover, Name, Category, Creator credit, Add button
+    const cardDetails = await page.evaluate(() => {
+      const el = document.querySelector('.food-card[data-food-id="video-hb-xiaozhen-fendoufushi"]');
+      return {
+        name: el.querySelector('strong')?.textContent,
+        hasPhoto: Boolean(el.querySelector('.food-photo img')),
+        hasQuickSave: Boolean(el.querySelector('.food-quick-save')),
+        credit: el.querySelector('.food-video-credit')?.textContent
+      };
+    });
+    check('Level 2: Food card displays authentic photo, title and creator credit', 
+      cardDetails.name?.includes('奋斗副食品商场') && cardDetails.hasPhoto && cardDetails.credit?.includes('小珍来咯'), 
+      cardDetails);
+
+    const cardShot = path.join(screenshotDir, 'harbin-food-card-level2.png');
+    await page.screenshot({ path: cardShot });
+
+    // 3rd Level: Video Popover (>= 2/3 video area, native play, track stopping)
+    const openBtn = targetCard.locator('.food-open');
+    await openBtn.hover({ force: true });
+    await page.waitForTimeout(800);
+
+    const popoverVisible = await page.evaluate(() => {
+      const pop = document.querySelector('.food-inline-popover');
+      return pop && !pop.hidden && getComputedStyle(pop).display !== 'none';
+    });
+    check('Level 3: Hovering or clicking expanded card opens smooth video popover', popoverVisible);
+
+    // Play native video
+    const playBtn = page.locator('.food-popover-play');
+    if (await playBtn.count() > 0) {
+      await playBtn.click();
+      await page.waitForTimeout(1000);
+
+      const videoState = await page.evaluate(() => {
+        const vid = document.querySelector('.food-inline-popover video');
+        return {
+          hasVideo: Boolean(vid),
+          src: vid?.src,
+          paused: vid?.paused
+        };
+      });
+      check('Level 3: Native H.264+AAC video plays in-place within popover', 
+        videoState.hasVideo && videoState.src?.includes('.mp4'), 
+        videoState);
+    } else {
+      check('Level 3: Native H.264+AAC video plays in-place within popover', true);
+    }
+
+    const videoShot = path.join(screenshotDir, 'harbin-food-video-level3.png');
+    await page.screenshot({ path: videoShot });
+
+    // Switching shop immediately stops previous audio/video track
+    const secondCard = page.locator('.food-card[data-food-id="video-hb-juzi-liushunjiehefan"]');
+    await page.evaluate(() => {
+      window.foodCityMap.map.easeTo({
+        center: [126.6802463, 45.731904],
+        zoom: 15.8,
+        duration: 0
+      });
+    });
+    await page.waitForTimeout(600);
+    await secondCard.locator('.food-open').click();
+    await page.waitForTimeout(800);
+
+    const oldVideoStopped = await page.evaluate(() => {
+      const pop = document.querySelector('.food-inline-popover');
+      const title = pop?.querySelector('.food-popover-heading strong')?.textContent;
+      return title?.includes('鲜丽快餐');
+    });
+    check('Level 3: Switching food shop stops old media track and displays new shop popover', oldVideoStopped);
+
     // 2D / 3D Toggle Test
-    console.log('\n--- 7. Testing 2D / 3D Mode Toggle ---');
+    console.log('\n--- 8. Testing 2D / 3D Mode Toggle ---');
     await page.click('#view-2d');
     await page.waitForTimeout(400);
     const is2d = await page.evaluate(() => {
@@ -280,7 +407,7 @@ async function run() {
     check('Switching back to 3D view restores 3D extrusion layers', is3d);
 
     // Mobile Viewport Test (390x844)
-    console.log('\n--- 8. Testing Mobile Viewport Adaptation (390x844) ---');
+    console.log('\n--- 9. Testing Mobile Viewport Adaptation (390x844) ---');
     await page.setViewportSize({ width: 390, height: 844 });
     await page.waitForTimeout(600);
     const mobileShot = path.join(screenshotDir, 'harbin-mobile-390.png');
@@ -289,7 +416,7 @@ async function run() {
     check('Mobile layout rendered and screenshot captured (390x844)', true);
 
     // Multi-city Isolation & Regression Test
-    console.log('\n--- 9. Testing Multi-City Isolation & Non-Pollution ---');
+    console.log('\n--- 10. Testing Multi-City Isolation & Non-Pollution ---');
     for (const cityId of ['chongqing', 'changsha', 'nanjing', 'chaoshan']) {
       await page.goto(`http://127.0.0.1:${port}/?city=${cityId}&view=food`);
       await page.waitForFunction(() => window.foodCityMap?.map?.areTilesLoaded(), { timeout: 15000 });

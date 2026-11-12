@@ -5,8 +5,249 @@
   "rights": {
     "status": "user-confirmed",
     "confirmedOn": "2026-11-12",
-    "scope": "哈尔滨探店视频来源由用户提供，原片留.local，公开元数据纳入仓库。",
+    "scope": "哈尔滨探店视频来源由用户提供，经确认已获作者特别乌啦啦、小珍来咯…、橘子公主、澳仔、刘雨鑫JASON允许剪辑并在食途网站使用；保留原平台、原作者与原作品链接。",
     "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
   },
-  "sources": []
+  "sources": [
+    {
+      "id": "hb-wulala-7585934292711132467",
+      "author": "特别乌啦啦",
+      "title": "花444元在哈尔滨吃「铁锅㸆大鹅」～㸆到滋啦冒油才叫过瘾",
+      "url": "https://www.douyin.com/video/7585934292711132467",
+      "shareURL": "https://v.douyin.com/p1D3MIRjh38/",
+      "publishedOn": "2025-12-21",
+      "durationSeconds": 361.66,
+      "sourceSHA256": "91f8100f766500be17227e688956feeeb6f838f29de074a05a70c13bbcc62e0f",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "特别乌啦啦哈尔滨探店视频，原片口播明确标注香坊区电碳路原木材厂旁，招牌清晰可见笨柴笨火笨锅大笨鹅。",
+      "segments": [
+        {
+          "id": "hb-wulala-tieguodae",
+          "name": "笨锅铁锅炖大鹅（电碳路店）",
+          "category": "东北铁锅炖 / 㸆大鹅",
+          "summary": "香坊区电碳路木材厂旁地道老店，笨柴铁锅㸆大鹅，大火收汁滋啦冒油，焦香四溢配金黄玉米贴饼子。",
+          "addressText": "哈尔滨市香坊区电碳路（近木材东街木材厂小区）",
+          "start": 30.0,
+          "end": 42.0,
+          "posterSecond": 34.0,
+          "coordinates": [
+            126.6852104,
+            45.7231201
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "香坊大街与电碳路交汇街区（近木材东街）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片香坊区电碳路木材厂线索采用开放地图对象香坊大街交汇处作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-12",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 16982,
+              "name": "香坊大街交汇处",
+              "url": "https://www.openstreetmap.org/node/16982",
+              "sourceDate": "2026-11-12",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "hb-xiaozhen-7592037940180569380",
+      "author": "小珍来咯…",
+      "title": "好多吃的我都没见过 东北副食品商场好吃又好逛~",
+      "url": "https://www.douyin.com/video/7592037940180569380",
+      "shareURL": "https://v.douyin.com/i1991L4KSfw/",
+      "publishedOn": "2026-01-05",
+      "durationSeconds": 782.57,
+      "sourceSHA256": "eab6a594b0b7ccc95791de710710dc4b6350cd334e494987595045b5db2687da",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "小珍来咯哈尔滨探店视频，实地打卡南岗区果戈里大街370号奋斗副食品商场（东北副食品商场）。",
+      "segments": [
+        {
+          "id": "hb-xiaozhen-fendoufushi",
+          "name": "奋斗副食品商场（东北副食）",
+          "category": "特色小吃 / 伴手礼",
+          "summary": "南岗区果戈里大街老字号国营副食商场，哈尔滨本地红肠、松仁小肚、粉肠熟食与老式糕点大列巴聚集地。",
+          "addressText": "哈尔滨市南岗区果戈里大街370号（近秋林商圈）",
+          "start": 10.0,
+          "end": 22.0,
+          "posterSecond": 14.0,
+          "coordinates": [
+            126.6456324,
+            45.7549127
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "果戈里大街370号奋斗副食门前",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图对象【果戈里大街】（OSM node 15273）作为街区精确门前参照，未核实营业状态变更。",
+            "reviewedOn": "2026-11-12",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 15273,
+              "name": "果戈里大街370号门前",
+              "url": "https://www.openstreetmap.org/node/15273",
+              "sourceDate": "2026-11-12",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2026年视频 · 正常营业"
+        }
+      ]
+    },
+    {
+      "id": "hb-juzigongzhu-7330178597065461029",
+      "author": "橘子公主",
+      "title": "藏在哈尔滨的12元东北自助盒饭，居然被南方人发现了！ 又好吃又便宜！震惊土豆一整年",
+      "url": "https://www.douyin.com/video/7330178597065461029",
+      "shareURL": "https://v.douyin.com/NlJsataPGXc/",
+      "publishedOn": "2024-03-29",
+      "durationSeconds": 323.48,
+      "sourceSHA256": "1edc50bb16b50c0f2d4482f54d8e3adc3c70095d2efa5f8e37990a7d5fc7c76d",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "橘子公主哈尔滨探店视频，原片门牌清晰醒目标注六顺街1-4-5号鲜丽快餐，12元一位30多道家常东北菜随便吃。",
+      "segments": [
+        {
+          "id": "hb-juzi-liushunjiehefan",
+          "name": "鲜丽快餐（六顺街12元自助盒饭）",
+          "category": "东北快餐 / 自助盒饭",
+          "summary": "香坊区六顺街24小时营业市井自助快餐，12元一位锅包肉、溜肉段、红烧肉等三十余道东北家常菜不限量管饱。",
+          "addressText": "哈尔滨市香坊区六顺街1-4-5号（近三辅三道街）",
+          "start": 16.0,
+          "end": 28.0,
+          "posterSecond": 23.0,
+          "coordinates": [
+            126.6802463,
+            45.731904
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "六顺街与三辅三道街交汇处",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片门牌六顺街1-4-5号线索采用开放地图对象【六顺街】交汇节点作为街区门前参照。",
+            "reviewedOn": "2026-11-12",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 16802,
+              "name": "六顺街三辅三道街口",
+              "url": "https://www.openstreetmap.org/node/16802",
+              "sourceDate": "2026-11-12",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2024年视频 · 24小时营业"
+        }
+      ]
+    },
+    {
+      "id": "hb-aozai-7671974217537115874",
+      "author": "澳仔",
+      "title": "深夜在哈尔滨急头白脸吃一顿烧烤 又给自己吃爽了",
+      "url": "https://www.douyin.com/video/7671974217537115874",
+      "shareURL": "https://v.douyin.com/tAvkSsYJUXw/",
+      "publishedOn": "2026-08-09",
+      "durationSeconds": 417.8,
+      "sourceSHA256": "39907d199f947f49b3200cfd42f295b7f8d49e6a53ec005b6d12a44b688bb1e3",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "澳仔哈尔滨探店视频，原片口播明确提及大油边小烧烤小花袄，招牌主打整条大油边、开花肠与老味铜盆涮肚。",
+      "segments": [
+        {
+          "id": "hb-aozai-xiaohuao",
+          "name": "尔滨小花袄东北炭烤大油边",
+          "category": "东北烧烤 / 炭烤大油边",
+          "summary": "哈尔滨地道老式炭火烧烤与红油涮肚，招牌爆汁整条大油边外焦里嫩，千层筋、开花肠搭配老式麻酱红油涮肚盆。",
+          "addressText": "哈尔滨市道里区铁景街与哈阿线交口附近（小花袄道里店）",
+          "start": 1.0,
+          "end": 13.0,
+          "posterSecond": 3.0,
+          "coordinates": [
+            126.6125432,
+            45.748231
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "铁景街与哈阿线街区（近新阳路）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片口播与商户线索采用开放地图对象作为街区近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-12",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 14502,
+              "name": "铁景街",
+              "url": "https://www.openstreetmap.org/way/14502",
+              "sourceDate": "2026-11-12",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2026年视频 · 夜间营业"
+        }
+      ]
+    },
+    {
+      "id": "hb-liuyuxin-7464616074248555828",
+      "author": "刘雨鑫JASON",
+      "title": "黑龙江哈尔滨，东北人的特色宵夜，尝尝怎么样？",
+      "url": "https://www.douyin.com/video/7464616074248555828",
+      "shareURL": "https://v.douyin.com/76UHKtD9FD8/",
+      "publishedOn": "2025-02-03",
+      "durationSeconds": 179.76,
+      "sourceSHA256": "812ee7827e9dcb7aadca9e1c6ab25bc16c24cc6f49505048e5e85ea285e3f4f9",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "刘雨鑫哈尔滨探店视频，原片招牌清晰标注涮肚老店，一次性现兑锅底、鲜切牛胸口、牛心管、手切羊排肉与冻豆腐。",
+      "segments": [
+        {
+          "id": "hb-liuyuxin-laoshishuandu",
+          "name": "哈尔滨老式涮毛肚锅",
+          "category": "东北特色宵夜 / 涮毛肚锅",
+          "summary": "零下18度冬夜里哈尔滨人热气腾腾的特色宵夜，一次性现兑锅底、鲜切牛胸口、大片毛肚与黄喉牛心管，浓香蘸料裹紧热气。",
+          "addressText": "哈尔滨市道里区友谊西路街区（近群力音乐长廊）",
+          "start": 50.0,
+          "end": 62.0,
+          "posterSecond": 54.0,
+          "coordinates": [
+            126.5838718,
+            45.7584421
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "道里区友谊西路街区（近音乐长廊）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地标线索采用友谊西路音乐长廊附近街区作为近似参照，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-12",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13675,
+              "name": "友谊西路音乐长廊段",
+              "url": "https://www.openstreetmap.org/node/13675",
+              "sourceDate": "2026-11-12",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 深夜营业"
+        }
+      ]
+    }
+  ]
 }

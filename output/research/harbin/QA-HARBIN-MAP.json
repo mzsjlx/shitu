@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-12T10:53:41.144Z",
+  "verifiedOn": "2026-11-12T14:25:00.307Z",
   "city": "harbin",
   "checks": [
     {
@@ -131,7 +131,7 @@
     {
       "name": "preview-harbin.html generated with embedded bundle (>10MB)",
       "passed": true,
-      "detail": 11558741
+      "detail": 11569760
     },
     {
       "name": "Map runtime loaded Harbin with name \"哈尔滨\"",
@@ -194,6 +194,55 @@
       "detail": null
     },
     {
+      "name": "Map renders all 5 Harbin authentic food spots",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "Level 1: Unselected food spots remain collapsed circle avatars (is-collapsed)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Level 1: Hovering over collapsed circle does NOT trigger video popover",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Level 2: Clicking food spot expands to rectangular 190px food card (is-selected)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Level 2: Food card displays authentic photo, title and creator credit",
+      "passed": true,
+      "detail": {
+        "name": "奋斗副食品商场（东北副食）",
+        "hasPhoto": true,
+        "hasQuickSave": true,
+        "credit": "来源：抖音 · 小珍来咯… · 2026年视频"
+      }
+    },
+    {
+      "name": "Level 3: Hovering or clicking expanded card opens smooth video popover",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Level 3: Native H.264+AAC video plays in-place within popover",
+      "passed": true,
+      "detail": {
+        "hasVideo": true,
+        "src": "http://127.0.0.1:8796/media/videos/hb-xiaozhen-7592037940180569380/hb-xiaozhen-fendoufushi-7b14dcb0c8606922.mp4",
+        "paused": false
+      }
+    },
+    {
+      "name": "Level 3: Switching food shop stops old media track and displays new shop popover",
+      "passed": true,
+      "detail": null
+    },
+    {
       "name": "Switching to 2D view correctly hides 3D extrusion layers",
       "passed": true,
       "detail": null
@@ -229,7 +278,7 @@
       "detail": null
     }
   ],
-  "total": 44,
-  "passed": 44,
+  "total": 52,
+  "passed": 52,
   "failed": 0
 }

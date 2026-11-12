@@ -1,0 +1,44 @@
+{
+  "verifiedOn": "2026-11-12T14:21:40.605Z",
+  "city": "harbin",
+  "checks": [
+    {
+      "name": "1. Catalog schema and rights status: user-confirmed",
+      "passed": true
+    },
+    {
+      "name": "2. Local source.mp4 integrity against sourceSHA256 for all sources",
+      "passed": true
+    },
+    {
+      "name": "3. Single-shop clips match expected media keys and H.264+AAC format",
+      "passed": true
+    },
+    {
+      "name": "4. Public video posters exist in repo and match recorded sha256",
+      "passed": true
+    },
+    {
+      "name": "5. Video assets manifest in data/cities/harbin/ matches assets",
+      "passed": true
+    },
+    {
+      "name": "6. All segment coordinates within Harbin bounds",
+      "passed": true
+    },
+    {
+      "name": "7. Strict cross-city rejection: all spots are Harbin authentic",
+      "passed": true
+    },
+    {
+      "name": "8. All video spots snap to Harbin OSM walking network within 250m",
+      "passed": true
+    },
+    {
+      "name": "9. Real walking route follows true topology and never uses fake multiplier",
+      "passed": true
+    }
+  ],
+  "passed": 9,
+  "total": 9
+}
