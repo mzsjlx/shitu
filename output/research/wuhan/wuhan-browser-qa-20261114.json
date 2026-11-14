@@ -7,10 +7,10 @@
     }
   },
   {
-    "name": "2. Food cards rendered on map for Wuhan (19 on-map stops across Hankou, Wuchang, Qingshan)",
+    "name": "2. Food cards rendered on map for Wuhan (33 on-map stops across Hankou, Wuchang, Hanyang, Qingshan)",
     "passed": true,
     "details": {
-      "cardCount": 19
+      "cardCount": 33
     }
   },
   {
@@ -54,7 +54,7 @@
     "details": {
       "src": "http://127.0.0.1:8798/media/videos/wh-guagua-7695718351578976329/wh-guagua-xiaowu-112e3ef1ff53f28e.mp4",
       "paused": false,
-      "currentTime": 0.799325,
+      "currentTime": 0.787294,
       "duration": 11.5,
       "readyState": 4
     }
@@ -74,10 +74,11 @@
     "details": {
       "found": true,
       "title": "长堤街油炸小吃",
-      "clipCount": 2,
+      "clipCount": 3,
       "authors": [
         "吃个瓜瓜",
-        "人间行走小饭桶"
+        "人间行走小饭桶",
+        "哦一西cc"
       ]
     }
   },
@@ -139,10 +140,10 @@
     }
   },
   {
-    "name": "17. Standalone bundle preview-wuhan.html renders food cards (19 offline stops)",
+    "name": "17. Standalone bundle preview-wuhan.html renders food cards (33 offline stops)",
     "passed": true,
     "details": {
-      "cardCount": 19
+      "cardCount": 33
     }
   },
   {
