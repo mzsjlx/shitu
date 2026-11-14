@@ -133,13 +133,28 @@ await check('6. food-road-router calculates genuine Wuhan routes (bridges, shops
   assert.equal(r4.status, 'ready');
   assert(r4.distanceMetres > 3000 && r4.distanceMetres < 5500);
 
-  // Route 5: Outside network point fails gracefully
+  // Route 5: New shops route: Jiqing Street ([114.28503, 30.58699]) -> Miaoli Road ([114.28518, 30.59948])
+  const p_jiqing = [114.28503, 30.58699];
+  const p_miaoli = [114.28518, 30.59948];
+  const r5 = findFoodRoadRoute(router, p_jiqing, p_miaoli);
+  assert.equal(r5.status, 'ready');
+  assert(r5.distanceMetres > 1200 && r5.distanceMetres < 2200);
+
+  // Route 6: Long cross-river route: Jiqing Street Hankou ([114.28503, 30.58699]) -> Enshi Street Qingshan ([114.3995, 30.62356])
+  const p_enshi = [114.3995, 30.62356];
+  const r6 = findFoodRoadRoute(router, p_jiqing, p_enshi);
+  assert.equal(r6.status, 'ready');
+  assert(r6.distanceMetres > 11000 && r6.distanceMetres < 16000);
+
+  // Route 7: Outside network point fails gracefully
   const r_outside = findFoodRoadRoute(router, [115.5, 31.5], p_wsy);
   assert.equal(r_outside.status, 'unavailable');
   assert.equal(r_outside.reason, 'outside-network');
 
   return {
     shopToShopXiaowuToChangdi: `${Math.round(r_shops.distanceMetres)}m`,
+    jiqingToMiaoli: `${Math.round(r5.distanceMetres)}m`,
+    jiqingToEnshiCrossRiver: `${Math.round(r6.distanceMetres)}m`,
     wansongyuanToJianghanRoad: `${Math.round(r1.distanceMetres)}m`,
     yangtzeRiverBridgeCross: `${Math.round(r2.distanceMetres)}m`,
     jianghanBridgeCross: `${Math.round(r3.distanceMetres)}m`,
@@ -155,26 +170,28 @@ await check('7. allCityCatalogs loads all 6 cities without ID collision', async 
   assert.deepEqual(cities.sort(), ['changsha', 'chaoshan', 'chongqing', 'liuzhou', 'nanjing', 'wuhan'].sort());
   const wuhanCat = catalogs.find(c => c.cityId === 'wuhan');
   assert(wuhanCat, 'Wuhan catalog loaded successfully');
-  assert.equal(wuhanCat.catalog.sources.length, 1);
-  const source = wuhanCat.catalog.sources[0];
-  assert.equal(source.id, 'wh-guagua-7695718351578976329');
-  assert.equal(source.segments.length, 5);
-  const located = source.segments.filter(s => s.coordinates !== null);
-  const unlocated = source.segments.filter(s => s.coordinates === null);
-  assert.equal(located.length, 3);
+  assert.equal(wuhanCat.catalog.sources.length, 4);
+  const totalSegs = wuhanCat.catalog.sources.reduce((acc, s) => acc + s.segments.length, 0);
+  assert.equal(totalSegs, 12);
+  const allSegs = wuhanCat.catalog.sources.flatMap(s => s.segments);
+  const located = allSegs.filter(s => s.coordinates !== null);
+  const unlocated = allSegs.filter(s => s.locationStatus === 'unlocated');
+  const outOfBounds = allSegs.filter(s => s.locationStatus === 'out-of-bounds');
+  assert.equal(located.length, 9);
   assert.equal(unlocated.length, 2);
-  return { totalCities: catalogs.length, cities, wuhanSegments: 5, located: 3, unlocated: 2 };
+  assert.equal(outOfBounds.length, 1);
+  return { totalCities: catalogs.length, cities, wuhanSources: 4, wuhanSegments: 12, located: 9, unlocated: 2, outOfBounds: 1 };
 });
 
 // 8. Global video posters preservation & merge
 await check('8. Global video-posters.json and built library assets retain all existing city posters and include Wuhan', async () => {
   const globalPosters = JSON.parse(await readFile('data/video-posters.json', 'utf8'));
   const count = Object.keys(globalPosters.segments).length;
-  assert.equal(count, 380, `Expected 380 posters in global index (375 existing + 5 Wuhan), got ${count}`);
+  assert.equal(count, 387, `Expected 387 posters in global index (375 existing + 12 Wuhan), got ${count}`);
   
   const distAssets = JSON.parse(await readFile('dist/data/video-library-assets.json', 'utf8'));
   const distCount = Object.keys(distAssets.segments).length;
-  assert.equal(distCount, 475, `Expected 475 total posters compiled into dist/data/video-library-assets.json (470 existing + 5 Wuhan), got ${distCount}`);
+  assert.equal(distCount, 482, `Expected 482 total posters compiled into dist/data/video-library-assets.json (470 existing + 12 Wuhan), got ${distCount}`);
 
   return { globalPostersCount: count, distLibraryAssetsCount: distCount };
 });

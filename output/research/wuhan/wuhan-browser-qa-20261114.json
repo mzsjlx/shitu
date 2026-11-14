@@ -10,7 +10,7 @@
     "name": "2. Food cards rendered on map for Wuhan",
     "passed": true,
     "details": {
-      "cardCount": 3
+      "cardCount": 9
     }
   },
   {
@@ -20,7 +20,13 @@
       "cardNames": [
         "小屋卤肉大饼",
         "长堤街油炸小吃",
-        "李爹爹米酒"
+        "李爹爹米酒",
+        "吉庆78号私房菜",
+        "潘小馆湖北菜",
+        "和旺湖北菜(统一街店)",
+        "龚兴城鱼羊吉(苗栗路店)",
+        "小荷园·乡野湖北菜(恩施街店)",
+        "邓矮子家常菜焖锅鱼(恩施街总店)"
       ]
     }
   },
@@ -47,7 +53,7 @@
     "details": {
       "src": "http://127.0.0.1:8798/media/videos/wh-guagua-7695718351578976329/wh-guagua-xiaowu-112e3ef1ff53f28e.mp4",
       "paused": false,
-      "currentTime": 0.801482,
+      "currentTime": 0.787707,
       "duration": 11.5,
       "readyState": 4
     }
@@ -122,7 +128,7 @@
     "name": "16. Standalone bundle preview-wuhan.html renders food cards",
     "passed": true,
     "details": {
-      "cardCount": 3
+      "cardCount": 9
     }
   },
   {

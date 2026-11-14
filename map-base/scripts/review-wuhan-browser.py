@@ -19,10 +19,24 @@ def check(name, passed, details=None):
     status = '[PASS]' if passed else '[FAIL]'
     print(f"{status} {name}")
 
+def open_first_visible_popover(target_page):
+    target_page.evaluate("""() => {
+        const visibleCard = Array.from(document.querySelectorAll('.food-card')).find(c => {
+            const r = c.getBoundingClientRect();
+            return r.left >= -20 && r.right <= window.innerWidth + 20 && r.top >= -20 && r.bottom <= window.innerHeight + 20;
+        }) || document.querySelector('.food-card');
+        if (visibleCard) {
+            const btn = visibleCard.querySelector('.food-open') || visibleCard;
+            btn.click();
+        }
+    }""")
+    target_page.wait_for_selector('.food-inline-popover:not([hidden])', timeout=10000)
+    time.sleep(0.5)
+
 print(f"=== Starting Wuhan Browser UI, Food Markers & Video Verification against {base_url} ===\n")
 
-with sync_playwright() as p:
-    browser = p.chromium.launch(headless=True)
+with sync_playwright() as pw:
+    browser = pw.chromium.launch(headless=True)
     
     # 1. Desktop 1440x960 verification
     context_desktop = browser.new_context(
@@ -56,10 +70,7 @@ with sync_playwright() as p:
     check('3. Shop names match real Wuhan establishments', any('小屋' in n for n in card_names) and any('长堤' in n for n in card_names), {'cardNames': card_names})
 
     # Open first food card popover
-    first_card = food_cards.first
-    first_card.click()
-    page.wait_for_selector('.food-inline-popover:not([hidden])', timeout=5000)
-    time.sleep(0.5)
+    open_first_visible_popover(page)
 
     popover_visible = page.locator('.food-inline-popover').is_visible()
     check('4. Video popover opens on card click', popover_visible)
@@ -156,8 +167,7 @@ with sync_playwright() as p:
     p_mob.wait_for_selector('.food-card', timeout=10000)
     
     # Open popover on mobile
-    p_mob.locator('.food-card').first.click()
-    time.sleep(0.5)
+    open_first_visible_popover(p_mob)
     mob_ratio = p_mob.evaluate('''() => {
         const popover = document.querySelector('.food-inline-popover');
         const media = document.querySelector('.food-popover-media');
@@ -183,8 +193,7 @@ with sync_playwright() as p:
     p_small.goto(f"{base_url}/?city=wuhan&view=food", wait_until='networkidle')
     p_small.wait_for_function("() => window.foodCityMap && window.foodCityMap.ready", timeout=30000)
     p_small.wait_for_selector('.food-card', timeout=10000)
-    p_small.locator('.food-card').first.click()
-    time.sleep(0.5)
+    open_first_visible_popover(p_small)
     small_ratio = p_small.evaluate('''() => {
         const popover = document.querySelector('.food-inline-popover');
         const media = document.querySelector('.food-popover-media');
@@ -210,8 +219,7 @@ with sync_playwright() as p:
     p_land.goto(f"{base_url}/?city=wuhan&view=food", wait_until='networkidle')
     p_land.wait_for_function("() => window.foodCityMap && window.foodCityMap.ready", timeout=30000)
     p_land.wait_for_selector('.food-card', timeout=10000)
-    p_land.locator('.food-card').first.click()
-    time.sleep(0.5)
+    open_first_visible_popover(p_land)
     land_ratio = p_land.evaluate('''() => {
         const popover = document.querySelector('.food-inline-popover');
         const media = document.querySelector('.food-popover-media');

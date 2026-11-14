@@ -69,6 +69,126 @@
         "sourceDate": "2026-11-13",
         "method": "original-way-node"
       }
+    },
+    {
+      "segmentId": "wh-wanjuxiong-jiqing78",
+      "coordinates": [
+        114.28503,
+        30.58699
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177629406,
+        "name": "吉庆街",
+        "url": "https://www.openstreetmap.org/way/177629406",
+        "nodeId": 1880480117,
+        "coordinates": [
+          114.2850281,
+          30.5869977
+        ],
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node"
+      }
+    },
+    {
+      "segmentId": "wh-xiaochen-panxiaoguan",
+      "coordinates": [
+        114.28585,
+        30.58778
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177629406,
+        "name": "吉庆街",
+        "url": "https://www.openstreetmap.org/way/177629406",
+        "nodeId": 1880480113,
+        "coordinates": [
+          114.285848,
+          30.587776
+        ],
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node"
+      }
+    },
+    {
+      "segmentId": "wh-laoluo-hewang-tongyi",
+      "coordinates": [
+        114.284,
+        30.57931
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177265282,
+        "name": "统一街",
+        "url": "https://www.openstreetmap.org/way/177265282",
+        "nodeId": 1419796840,
+        "coordinates": [
+          114.2840018,
+          30.5793137
+        ],
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node"
+      }
+    },
+    {
+      "segmentId": "wh-laoluo-gongxingcheng-miaoli",
+      "coordinates": [
+        114.28518,
+        30.59948
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1577830705,
+        "name": "苗栗路",
+        "url": "https://www.openstreetmap.org/way/1577830705",
+        "nodeId": 1926866307,
+        "coordinates": [
+          114.2851824,
+          30.5994818
+        ],
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node"
+      }
+    },
+    {
+      "segmentId": "wh-laoluo-xiaoheyuan-enshi",
+      "coordinates": [
+        114.3995,
+        30.62356
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 105154102,
+        "name": "恩施街",
+        "url": "https://www.openstreetmap.org/way/105154102",
+        "nodeId": 4524874747,
+        "coordinates": [
+          114.3995919,
+          30.6235646
+        ],
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node"
+      }
+    },
+    {
+      "segmentId": "wh-laoluo-aizi-enshi",
+      "coordinates": [
+        114.39736,
+        30.62356
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 105154102,
+        "name": "恩施街",
+        "url": "https://www.openstreetmap.org/way/105154102",
+        "nodeId": 1211889430,
+        "coordinates": [
+          114.3973627,
+          30.6235607
+        ],
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node"
+      }
     }
   ]
 }
