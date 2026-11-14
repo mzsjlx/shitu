@@ -1,0 +1,133 @@
+[
+  {
+    "name": "1. config/cities.json includes valid wuhan entry with 3 towns coverage",
+    "passed": true,
+    "details": {
+      "wuhanConfig": {
+        "name": "武汉",
+        "regionLabel": "三镇核心 · 两江交汇",
+        "coverageLabel": "武汉核心城区（涵盖汉口江汉路、吉庆街、万松园，武昌粮道街、户部巷、楚河汉街，汉阳归元古镇周边商圈，含长江大桥与两江交汇）",
+        "bounds": [
+          114.18,
+          30.48,
+          114.42,
+          30.64
+        ],
+        "center": [
+          114.305,
+          30.562
+        ],
+        "zoom": 15.5,
+        "pitch": 52,
+        "bearing": -15,
+        "minZoom": 11.5,
+        "maxZoom": 19,
+        "tiles": "data/cities/wuhan/wuhan.pmtiles",
+        "amapCityCode": "420100",
+        "landmarks": [],
+        "foodContent": {
+          "city": "wuhan",
+          "records": "data/cities/wuhan/food-records.json",
+          "videoLibrary": "data/cities/wuhan/video-library.json",
+          "videoAssets": "data/cities/wuhan/video-library-assets.json",
+          "videoPosters": "data/cities/wuhan/video-posters.json",
+          "sprite": "assets/food-concepts.jpg",
+          "roadNetwork": "data/cities/wuhan/food-road-network.json"
+        },
+        "dataFiles": {
+          "index": "data/cities/wuhan/roads-index.json",
+          "audit": "data/cities/wuhan/data-audit.json",
+          "manifest": "data/cities/wuhan/source-manifest.json",
+          "tileMetadata": "data/cities/wuhan/tile-metadata.json"
+        },
+        "status": "local-validation-only"
+      }
+    }
+  },
+  {
+    "name": "2. data/cities/wuhan/wuhan.pmtiles exists, size and sha256 match manifest",
+    "passed": true,
+    "details": {
+      "bytes": 7047532,
+      "sha256": "b0af5c1540c3a08bdf07bf5c10b077e0fb6cd023bf4a346fb7173eed83c83cb0"
+    }
+  },
+  {
+    "name": "3. data/cities/wuhan/data-audit.json verifies all 414 tiles extracted",
+    "passed": true,
+    "details": {
+      "requestedTiles": 414,
+      "presentTiles": 414
+    }
+  },
+  {
+    "name": "4. data/cities/wuhan/roads-index.json has valid groups all within bounds",
+    "passed": true,
+    "details": {
+      "roadCount": 1726,
+      "bounds": [
+        114.18,
+        30.48,
+        114.42,
+        30.64
+      ]
+    }
+  },
+  {
+    "name": "5. data/cities/wuhan/food-road-network.json has valid topological nodes and ways",
+    "passed": true,
+    "details": {
+      "nodes": 145114,
+      "ways": 25028,
+      "bridges": 2049,
+      "tunnels": 467,
+      "sha256": "6768706cce8b1c9395a78c54f8a034ec781b6abc789e17b8206c7f20f3c0655b"
+    }
+  },
+  {
+    "name": "6. food-road-router calculates genuine Wuhan routes (bridges, shops, and error fallback)",
+    "passed": true,
+    "details": {
+      "shopToShopXiaowuToChangdi": "3938m",
+      "wansongyuanToJianghanRoad": "2538m",
+      "yangtzeRiverBridgeCross": "2160m",
+      "jianghanBridgeCross": "1530m",
+      "liangdaoToChuheHanjie": "3816m"
+    }
+  },
+  {
+    "name": "7. allCityCatalogs loads all 6 cities without ID collision",
+    "passed": true,
+    "details": {
+      "totalCities": 6,
+      "cities": [
+        "changsha",
+        "chaoshan",
+        "chongqing",
+        "liuzhou",
+        "nanjing",
+        "wuhan"
+      ],
+      "wuhanSegments": 5,
+      "located": 3,
+      "unlocated": 2
+    }
+  },
+  {
+    "name": "8. Global video-posters.json and built library assets retain all existing city posters and include Wuhan",
+    "passed": true,
+    "details": {
+      "globalPostersCount": 380,
+      "distLibraryAssetsCount": 475
+    }
+  },
+  {
+    "name": "9. Built HTML pages and single-file preview exist and are valid",
+    "passed": true,
+    "details": {
+      "previewSize": 22566840,
+      "placesSize": 4698,
+      "videosSize": 4820
+    }
+  }
+]

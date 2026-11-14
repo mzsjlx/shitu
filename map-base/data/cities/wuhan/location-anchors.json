@@ -1,0 +1,74 @@
+{
+  "reviewedOn": "2026-11-14",
+  "source": {
+    "date": "2026-11-13",
+    "sha256": "49ca07434d859a01f5fbaf238558806ea67be0fb3335c53c4bc313a446c5ff6c",
+    "url": "https://download.geofabrik.de/asia/china/hubei-261113.osm.pbf",
+    "fileName": "hubei-261113.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "scope": "Nearest original OSM road references for Wuhan video-address block estimates; coordinates unchanged; not independent shop/address verification.",
+  "anchors": [
+    {
+      "segmentId": "wh-guagua-xiaowu",
+      "coordinates": [
+        114.2784,
+        30.58925
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177820528,
+        "name": "江汉北路",
+        "url": "https://www.openstreetmap.org/way/177820528",
+        "nodeId": 14344790040,
+        "coordinates": [
+          114.2784349,
+          30.5892586
+        ],
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node"
+      }
+    },
+    {
+      "segmentId": "wh-guagua-changdi-youzha",
+      "coordinates": [
+        114.2525,
+        30.57082
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 178122933,
+        "name": "长堤街",
+        "url": "https://www.openstreetmap.org/way/178122933",
+        "nodeId": 1884981395,
+        "coordinates": [
+          114.2530757,
+          30.5708524
+        ],
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node"
+      }
+    },
+    {
+      "segmentId": "wh-guagua-lidadai-mijiu",
+      "coordinates": [
+        114.2528,
+        30.57085
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 178122933,
+        "name": "长堤街",
+        "url": "https://www.openstreetmap.org/way/178122933",
+        "nodeId": 1884981395,
+        "coordinates": [
+          114.2530757,
+          30.5708524
+        ],
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node"
+      }
+    }
+  ]
+}

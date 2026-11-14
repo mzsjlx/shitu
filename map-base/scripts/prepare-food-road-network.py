@@ -22,7 +22,9 @@ default_urls = {
     'chongqing': 'https://download.geofabrik.de/asia/china/chongqing.html',
     'changsha': 'https://download.geofabrik.de/asia/china/hunan.html',
     'liuzhou': 'https://download.geofabrik.de/asia/china/guangxi.html',
-    'nanjing': 'https://download.geofabrik.de/asia/china/jiangsu.html'
+    'nanjing': 'https://download.geofabrik.de/asia/china/jiangsu.html',
+    'chaoshan': 'https://download.geofabrik.de/asia/china/guangdong.html',
+    'wuhan': 'https://download.geofabrik.de/asia/china/hubei.html'
 }
 source_url = args.url or default_urls.get(city_id)
 if not source_url:

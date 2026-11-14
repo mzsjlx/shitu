@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "city": "wuhan",
+  "preparedOn": "2026-11-14",
+  "rights": {
+    "status": "user-confirmed",
+    "confirmedOn": "2026-11-14",
+    "scope": "首批7条武汉探店视频由用户在会话中明确提供，首选来源打通端到端全流程；视频画面仅使用用户提供范围，记录与原片留.local，小封面海报与公开元数据进库。",
+    "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
+  },
+  "sources": [
+    {
+      "id": "wh-guagua-7695718351578976329",
+      "author": "吃个瓜瓜",
+      "title": "分享武汉几家便宜好吃的香香饭们！ 每家都很接地气#武汉美食 #武汉美食推荐 #武汉旅游攻略 #日常vlog #路边摊美味",
+      "url": "https://www.douyin.com/video/7695718351578976329",
+      "shareURL": "https://v.douyin.com/Iqt1v_wSF9w/",
+      "publishedOn": "2026-10-12",
+      "durationSeconds": 99.1,
+      "sourceSHA256": "5f19dee38d6bdef8fc3e7d9a1a2b38c0b77166c98d12fda39866fa337439931f",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍门头、价目表、排队街景与店主制作全过程，作者口播逐家推荐。",
+      "segments": [
+        {
+          "id": "wh-guagua-liji-zhujiaofan",
+          "name": "李记隆江猪脚饭烧鹅饭",
+          "category": "快餐便当 / 烧腊",
+          "addressText": "武汉市社区快餐（分店待确认）",
+          "start": 7.5,
+          "end": 34.0,
+          "posterSecond": 14.5,
+          "summary": "粤式烧腊快餐，招牌烧鸭皮脆肉香、双拼叉烧饭，配菜免费自选。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片展示价目表与双拼饭，武汉多同名社区快餐店，具体分店待进一步核实。",
+          "footageNote": "2026年原视频 · 具体分店与营业情况待核实。"
+        },
+        {
+          "id": "wh-guagua-xiaowu",
+          "name": "小屋卤肉大饼",
+          "category": "大饼 / 卷饼",
+          "addressText": "武汉市江汉区江汉北路73附2号（渣家社区旁）",
+          "start": 34.0,
+          "end": 45.5,
+          "posterSecond": 45.0,
+          "summary": "江汉北路老店卷饼，薄饼卷入现炸肉饼、香肠、卤蛋与香菜全家福，排队常客众多。",
+          "coordinates": [
+            114.2784,
+            30.58925
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉北路 / 渣家路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片排队实拍与特色卷饼，位于江汉北路渣家社区段，采用开放地图江汉北路参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177820528,
+              "name": "江汉北路",
+              "url": "https://www.openstreetmap.org/way/177820528",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 14344790040
+            }
+          },
+          "footageNote": "2026年原视频 · 片中价格、套餐及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "wh-guagua-changdi-youzha",
+          "name": "长堤街油炸小吃",
+          "category": "炸串 / 油炸小吃",
+          "addressText": "武汉市硚口区长堤街116号（近桂萍牛杂）",
+          "start": 45.5,
+          "end": 65.0,
+          "posterSecond": 59.0,
+          "summary": "汉口长堤街老街炸串摊，招牌大鸡腿与藕片、鸡皮外酥里嫩，刷上浓郁红油辣酱。",
+          "coordinates": [
+            114.2525,
+            30.57082
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长堤街 / 义烈巷附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片排队炸串实拍，位于长堤街核心街段，采用开放地图长堤街路段参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 178122933,
+              "name": "长堤街",
+              "url": "https://www.openstreetmap.org/way/178122933",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1884981395
+            }
+          },
+          "footageNote": "2026年原视频 · 片中价格、套餐及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "wh-guagua-lidadai-mijiu",
+          "name": "李爹爹米酒",
+          "category": "传统饮品 / 米酒",
+          "addressText": "武汉市硚口区长堤街巷内（长堤街油炸小吃旁）",
+          "start": 65.0,
+          "end": 75.0,
+          "posterSecond": 72.0,
+          "summary": "长堤街老巷内传统手作甜米酒，入口甘甜醇厚，老牌传统原味。",
+          "coordinates": [
+            114.2528,
+            30.57085
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长堤街老巷内",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片紧邻长堤街油炸小吃旁巷子招牌，采用长堤街参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 178122933,
+              "name": "长堤街",
+              "url": "https://www.openstreetmap.org/way/178122933",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1884981395
+            }
+          },
+          "footageNote": "2026年原视频 · 片中价格、套餐及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "wh-guagua-sanjiequ",
+          "name": "三街区28号",
+          "category": "家常菜 / 川菜",
+          "addressText": "武汉市（原片注明汉口店已关停）",
+          "start": 75.0,
+          "end": 95.0,
+          "posterSecond": 85.0,
+          "summary": "实惠家常炒菜馆，平价鱼香肉丝与干煸牛肉，原片口播注明汉口店已不再营业。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片明确注明“汉口没店了非常可惜”，当前保留在视频库记录。",
+          "footageNote": "2026年原视频 · 原片作者注明原汉口店已关停或搬迁，待确认现址。"
+        }
+      ]
+    }
+  ]
+}

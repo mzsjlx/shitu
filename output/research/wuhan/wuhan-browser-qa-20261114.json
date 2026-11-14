@@ -1,0 +1,135 @@
+[
+  {
+    "name": "1. Map readiness signal and Wuhan title",
+    "passed": true,
+    "details": {
+      "statusText": "武汉地图已展开"
+    }
+  },
+  {
+    "name": "2. Food cards rendered on map for Wuhan",
+    "passed": true,
+    "details": {
+      "cardCount": 3
+    }
+  },
+  {
+    "name": "3. Shop names match real Wuhan establishments",
+    "passed": true,
+    "details": {
+      "cardNames": [
+        "小屋卤肉大饼",
+        "长堤街油炸小吃",
+        "李爹爹米酒"
+      ]
+    }
+  },
+  {
+    "name": "4. Video popover opens on card click",
+    "passed": true
+  },
+  {
+    "name": "5. Floating window media area >= 2/3 of border box",
+    "passed": true,
+    "details": {
+      "popoverWidth": 310,
+      "popoverHeight": 381.5,
+      "popoverArea": 118265,
+      "mediaWidth": 296,
+      "mediaHeight": 267,
+      "mediaArea": 79032,
+      "ratio": 0.6682619540861624
+    }
+  },
+  {
+    "name": "6. Video mounts and playback advances time",
+    "passed": true,
+    "details": {
+      "src": "http://127.0.0.1:8798/media/videos/wh-guagua-7695718351578976329/wh-guagua-xiaowu-112e3ef1ff53f28e.mp4",
+      "paused": false,
+      "currentTime": 0.801482,
+      "duration": 11.5,
+      "readyState": 4
+    }
+  },
+  {
+    "name": "7. Pressing Escape stops video, removes src, and closes popover",
+    "passed": true,
+    "details": {
+      "popoverHidden": true,
+      "hasSrc": false,
+      "paused": true
+    }
+  },
+  {
+    "name": "8. Desktop 1440x960 screenshot saved",
+    "passed": true,
+    "details": {
+      "file": "D:\\codex\\美食网站\\.local\\worktrees\\wuhan-prep\\map-base\\..\\output\\research\\wuhan\\screenshots\\wuhan-desktop-1440.png"
+    }
+  },
+  {
+    "name": "9. Multi-city navigation switches without cross-city contamination",
+    "passed": true,
+    "details": {
+      "cqCity": "重庆",
+      "whCity": "武汉"
+    }
+  },
+  {
+    "name": "10. Mobile 390x844 popover media area >= 2/3",
+    "passed": true,
+    "details": {
+      "ratio": 0.6671328671328671
+    }
+  },
+  {
+    "name": "11. Mobile 390x844 screenshot saved",
+    "passed": true,
+    "details": {
+      "file": "D:\\codex\\美食网站\\.local\\worktrees\\wuhan-prep\\map-base\\..\\output\\research\\wuhan\\screenshots\\wuhan-mobile-390.png"
+    }
+  },
+  {
+    "name": "12. Small screen 320x680 popover media area >= 2/3",
+    "passed": true,
+    "details": {
+      "ratio": 0.6671328671328671
+    }
+  },
+  {
+    "name": "13. Small screen 320x680 screenshot saved",
+    "passed": true,
+    "details": {
+      "file": "D:\\codex\\美食网站\\.local\\worktrees\\wuhan-prep\\map-base\\..\\output\\research\\wuhan\\screenshots\\wuhan-small-320.png"
+    }
+  },
+  {
+    "name": "14. Short landscape 736x414 popover media area >= 2/3",
+    "passed": true,
+    "details": {
+      "ratio": 0.6683870967741935
+    }
+  },
+  {
+    "name": "15. Short landscape 736x414 screenshot saved",
+    "passed": true,
+    "details": {
+      "file": "D:\\codex\\美食网站\\.local\\worktrees\\wuhan-prep\\map-base\\..\\output\\research\\wuhan\\screenshots\\wuhan-landscape-736.png"
+    }
+  },
+  {
+    "name": "16. Standalone bundle preview-wuhan.html renders food cards",
+    "passed": true,
+    "details": {
+      "cardCount": 3
+    }
+  },
+  {
+    "name": "17. No unhandled page errors during browser navigation",
+    "passed": true,
+    "details": {
+      "errors": []
+    }
+  }
+]

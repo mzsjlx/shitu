@@ -299,6 +299,45 @@
         "tileMetadata": "data/cities/chaoshan/tile-metadata.json"
       },
       "status": "local-validation-only"
+    },
+    "wuhan": {
+      "name": "武汉",
+      "regionLabel": "三镇核心 · 两江交汇",
+      "coverageLabel": "武汉核心城区（涵盖汉口江汉路、吉庆街、万松园，武昌粮道街、户部巷、楚河汉街，汉阳归元古镇周边商圈，含长江大桥与两江交汇）",
+      "bounds": [
+        114.18,
+        30.48,
+        114.42,
+        30.64
+      ],
+      "center": [
+        114.305,
+        30.562
+      ],
+      "zoom": 15.5,
+      "pitch": 52,
+      "bearing": -15,
+      "minZoom": 11.5,
+      "maxZoom": 19,
+      "tiles": "data/cities/wuhan/wuhan.pmtiles",
+      "amapCityCode": "420100",
+      "landmarks": [],
+      "foodContent": {
+        "city": "wuhan",
+        "records": "data/cities/wuhan/food-records.json",
+        "videoLibrary": "data/cities/wuhan/video-library.json",
+        "videoAssets": "data/cities/wuhan/video-library-assets.json",
+        "videoPosters": "data/cities/wuhan/video-posters.json",
+        "sprite": "assets/food-concepts.jpg",
+        "roadNetwork": "data/cities/wuhan/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/wuhan/roads-index.json",
+        "audit": "data/cities/wuhan/data-audit.json",
+        "manifest": "data/cities/wuhan/source-manifest.json",
+        "tileMetadata": "data/cities/wuhan/tile-metadata.json"
+      },
+      "status": "local-validation-only"
     }
   }
 }
