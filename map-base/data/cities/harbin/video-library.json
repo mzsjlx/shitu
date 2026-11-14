@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "harbin",
-  "preparedOn": "2026-11-12",
+  "preparedOn": "2026-11-14",
   "rights": {
     "status": "user-confirmed",
     "confirmedOn": "2026-11-12",
-    "scope": "哈尔滨探店视频来源由用户提供，经确认已获作者特别乌啦啦、小珍来咯…、橘子公主、澳仔、刘雨鑫JASON、盗月社食遇记、面条人、PP超能炫允许剪辑并在食途网站使用；保留原平台、原作者与原作品链接。",
+    "scope": "哈尔滨探店视频来源由用户提供，经确认已获作者特别乌啦啦、小珍来咯…、橘子公主、澳仔、刘雨鑫JASON、盗月社食遇记、面条人、PP超能炫、特厨隋坡（重新出发版）、真探唐仁杰、玲子reiko、给我囊次一口、达哥在上海允许剪辑并在食途网站使用；保留原平台、原作者与原作品链接。",
     "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
   },
   "sources": [
@@ -458,6 +458,343 @@
           },
           "routeEligible": false,
           "footageNote": "2026年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "hb-tangrenjie-7293734337541918003",
+      "author": "真探唐仁杰",
+      "title": "哈尔滨第一顿吃铁锅炖大鹅！这炖的可真是嘎嘎香！",
+      "url": "https://www.douyin.com/video/7293734337541918003",
+      "shareURL": "https://v.douyin.com/3RgZoXkqkMA/",
+      "publishedOn": "2023-10-25",
+      "durationSeconds": 248.73,
+      "sourceSHA256": "44643213b2a640d16977fab91d0c44defad5eccfdfa02ace08e1f170fae74ee8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "真探唐仁杰哈尔滨探店视频，实地打卡道里区民安街山河屯铁锅炖大鹅总店。",
+      "segments": [
+        {
+          "id": "hb-tangrenjie-shanhetun",
+          "name": "山河屯铁锅炖大鹅（民安街总店）",
+          "category": "东北铁锅炖 / 炖大鹅",
+          "summary": "道里区民安街哈尔滨铁锅炖老字号顶流，鲜嫩大鹅小火柴火慢㸆，汤汁红亮香浓裹满干豆角与玉米贴饼。",
+          "addressText": "哈尔滨市道里区民安街29号（近安发桥）",
+          "start": 12.0,
+          "end": 24.0,
+          "posterSecond": 16.0,
+          "coordinates": [
+            126.609841,
+            45.7492419
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "民安街与抚顺街路段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片民安街总店线索采用开放地图对象【民安街】（OSM node 17201）作为街区参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 17201,
+              "name": "民安街路段",
+              "url": "https://www.openstreetmap.org/node/17201",
+              "sourceDate": "2026-11-14",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "hb-suipo-7532707521379699968",
+      "author": "特厨隋坡（重新出发版）",
+      "title": "特厨探店 |哈尔滨还得排两次队的家常菜馆？—知音酒楼",
+      "url": "https://www.douyin.com/video/7532707521379699968",
+      "shareURL": "https://v.douyin.com/lMyokdDDk-4/",
+      "publishedOn": "2025-07-30",
+      "durationSeconds": 144.7,
+      "sourceSHA256": "142ab6550903cdfe72a365d8c69608ffb95a610e4be1a91da5f0611a7770bec1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "特厨隋坡哈尔滨探店视频，实地排队打卡南岗区辽阳街刘氏知音酒楼，招牌黑椒小滑肉。",
+      "segments": [
+        {
+          "id": "hb-suipo-zhiyinfood",
+          "name": "刘氏知音酒楼（辽阳街店）",
+          "category": "哈尔滨老菜馆 / 家常菜",
+          "summary": "南岗区辽阳街排号传奇家常菜老馆，首创黑椒小滑肉滑嫩香浓，传统老式溜肉段与特色排骨地道醇厚。",
+          "addressText": "哈尔滨市南岗区辽阳街84号",
+          "start": 5.0,
+          "end": 17.0,
+          "posterSecond": 6.0,
+          "coordinates": [
+            126.6518256,
+            45.7617805
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "辽阳街街区段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片刘氏知音酒楼线索采用开放地图对象【辽阳街】（OSM node 13018）作为街区参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 13018,
+              "name": "辽阳街路段",
+              "url": "https://www.openstreetmap.org/node/13018",
+              "sourceDate": "2026-11-14",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "hb-lingzi-7607291212181163300",
+      "author": "玲子reiko",
+      "title": "逛哈尔滨百年菜市场，美食太多吃不下！",
+      "url": "https://www.douyin.com/video/7607291212181163300",
+      "shareURL": "https://v.douyin.com/IR51xSu1Yac/",
+      "publishedOn": "2026-02-17",
+      "durationSeconds": 296.83,
+      "sourceSHA256": "59357bac69526a4a8c89e7bd171d59441d274f0e59f748e50f61d20849568608",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "玲子reiko哈尔滨探店视频，实地打卡道里区尚志大街57号百年老字号道里菜市场室内美食城。",
+      "segments": [
+        {
+          "id": "hb-lingzi-daolishichang",
+          "name": "道里菜市场（百年老字号美食城）",
+          "category": "百年室内菜市 / 东北名吃聚集地",
+          "summary": "道里区尚志大街百年老菜场室内美食天花板，传统烤冷面、现炸油炸糕、老式熟食红肠与格瓦斯一网打尽。",
+          "addressText": "哈尔滨市道里区尚志大街57号",
+          "start": 24.0,
+          "end": 36.0,
+          "posterSecond": 25.0,
+          "coordinates": [
+            126.6161925,
+            45.7725128
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "尚志大街道里菜市场门前",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片道里菜市场线索采用开放地图对象【尚志大街】（OSM node 10271）作为街区参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 10271,
+              "name": "尚志大街路段",
+              "url": "https://www.openstreetmap.org/node/10271",
+              "sourceDate": "2026-11-14",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2026年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "hb-nangci-7599605004614756837",
+      "author": "给我囊次一口",
+      "title": "哈尔滨好吃，但带不走的东西！",
+      "url": "https://www.douyin.com/video/7599605004614756837",
+      "shareURL": "https://v.douyin.com/RNwPtg8CZag/",
+      "publishedOn": "2026-01-26",
+      "durationSeconds": 19.0,
+      "sourceSHA256": "7d21af5a8d582f6e8f5f5083473673ec59ce8a9452bfa06901c5d005cb72cd61",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "给我囊次一口哈尔滨探店视频，实地探访道里菜市场百年熟食炸蔬莱等名吃。",
+      "segments": [
+        {
+          "id": "hb-nangci-daolishichang",
+          "name": "道里菜市场（百年老字号美食城）",
+          "category": "百年室内菜市 / 东北名吃聚集地",
+          "summary": "道里区尚志大街百年老菜场室内美食天花板，传统烤冷面、现炸油炸糕、老式熟食红肠与格瓦斯一网打尽。",
+          "addressText": "哈尔滨市道里区尚志大街57号",
+          "start": 2.0,
+          "end": 14.0,
+          "posterSecond": 3.0,
+          "coordinates": [
+            126.6161925,
+            45.7725128
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "尚志大街道里菜市场门前",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片道里菜市场线索采用开放地图对象【尚志大街】（OSM node 10271）作为街区参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 10271,
+              "name": "尚志大街路段",
+              "url": "https://www.openstreetmap.org/node/10271",
+              "sourceDate": "2026-11-14",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2026年视频 · 营业情况待确认",
+          "placeId": "hb-lingzi-daolishichang"
+        }
+      ]
+    },
+    {
+      "id": "hb-liuyuxin-7460912322115112204",
+      "author": "刘雨鑫JASON",
+      "title": "黑龙江哈尔滨人气扒肉馆，尝尝怎么样？",
+      "url": "https://www.douyin.com/video/7460912322115112204",
+      "shareURL": "https://v.douyin.com/uutMMeldDtw/",
+      "publishedOn": "2025-01-20",
+      "durationSeconds": 151.8,
+      "sourceSHA256": "5d556737b4bea28af1c59cbca9d5d65b619cc89426526e88efad47ada1850438",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "刘雨鑫JASON哈尔滨探店视频，实地打卡老道外南五道街张飞扒肉老店。",
+      "segments": [
+        {
+          "id": "hb-liuyuxin-zhangfeibarou",
+          "name": "道外张飞扒肉（南五道街老店）",
+          "category": "老道外名吃 / 传统扒肉",
+          "summary": "道外百年传统市井老铺，招牌大块扒肉软烂化渣不腻口，配肥肠炒尖椒、扒肉丸子与苏伯汤大米饭堪称绝配。",
+          "addressText": "哈尔滨市道外区南五道街208号",
+          "start": 11.0,
+          "end": 23.0,
+          "posterSecond": 13.0,
+          "coordinates": [
+            126.637052,
+            45.7828147
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "老道外南五道街路段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片道外老店线索采用开放地图对象【南五道街】（OSM node 5714）作为街区参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 5714,
+              "name": "南五道街路段",
+              "url": "https://www.openstreetmap.org/node/5714",
+              "sourceDate": "2026-11-14",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "hb-wulala-7585062675730779427",
+      "author": "特别乌啦啦",
+      "title": "花356元在哈尔滨吃「饺子」～你的家乡冬至都吃啥",
+      "url": "https://www.douyin.com/video/7585062675730779427",
+      "shareURL": "https://v.douyin.com/HPIKk-ay2zk/",
+      "publishedOn": "2025-12-18",
+      "durationSeconds": 399.7,
+      "sourceSHA256": "e728684df2102eb7e7f2ae25f7dab0c18c972dff6b9c66b569618a0f97cbf467",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "特别乌啦啦哈尔滨冬至探店视频，实地打卡中央大街老字号现包水饺名店。",
+      "segments": [
+        {
+          "id": "hb-wulala-zhongyangjiaozi",
+          "name": "喜家德现包水饺（中央大街店）",
+          "category": "东北水饺 / 现包水饺",
+          "summary": "中央大街百年老街现包东北水饺名店，招牌喜三鲜与酸菜猪肉现包现煮，皮薄馅大热气腾腾。",
+          "addressText": "哈尔滨市道里区中央大街步行街",
+          "start": 6.0,
+          "end": 18.0,
+          "posterSecond": 7.0,
+          "coordinates": [
+            126.6121826,
+            45.7750665
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中央大街步行街中段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片中央大街现包水饺实录采用开放地图对象【中央大街】（OSM node 8210）作为街区参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 8210,
+              "name": "中央大街路段",
+              "url": "https://www.openstreetmap.org/node/8210",
+              "sourceDate": "2026-11-14",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 营业情况待确认"
+        }
+      ]
+    },
+    {
+      "id": "hb-dage-7419632775109578025",
+      "author": "达哥在上海",
+      "title": "藏在居民楼子里只有四张桌子的小吃店，竟然是哈尔滨锅包肉天花板？",
+      "url": "https://www.douyin.com/video/7419632775109578025",
+      "shareURL": "https://v.douyin.com/C68no__udEo/",
+      "publishedOn": "2024-09-28",
+      "durationSeconds": 285.81,
+      "sourceSHA256": "04898fc5af9d57bb9a415b7de0219a39fad92444e8d054ddc98ba05ad6f4e390",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "达哥在上海哈尔滨锅包肉探店视频，实地打卡香坊区六顺街老式四张桌居民楼小吃店。",
+      "segments": [
+        {
+          "id": "hb-dage-guobaorou",
+          "name": "老式居民楼锅包肉小吃店（香坊区店）",
+          "category": "东北传统名菜 / 锅包肉小吃",
+          "summary": "香坊老居民楼内仅四张桌子的传奇小铺，老师傅大锅现炸老式糖醋锅包肉，金黄酥脆焦香挂糊，酸甜利口。",
+          "addressText": "哈尔滨市香坊区六顺街与三辅三道街附近",
+          "start": 7.0,
+          "end": 19.0,
+          "posterSecond": 13.0,
+          "coordinates": [
+            126.6807827,
+            45.7339784
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "香坊区六顺街路段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片香坊区老店线索采用开放地图对象【六顺街】（OSM node 22988）作为街区参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-node",
+              "id": 22988,
+              "name": "六顺街路段",
+              "url": "https://www.openstreetmap.org/node/22988",
+              "sourceDate": "2026-11-14",
+              "method": "original-way-node"
+            }
+          },
+          "routeEligible": false,
+          "footageNote": "2024年视频 · 营业情况待确认"
         }
       ]
     }

@@ -36,9 +36,9 @@ const harbinBounds = citiesConfig.cities.harbin.bounds;
 await check('1. Catalog schema and rights status: user-confirmed', () => {
   assert.equal(catalog.city, 'harbin');
   assert.equal(catalog.rights.status, 'user-confirmed');
-  assert.equal(catalog.sources.length, 8, `Expected 8 sources, got ${catalog.sources.length}`);
+  assert.equal(catalog.sources.length, 15, `Expected 15 sources, got ${catalog.sources.length}`);
   const allSegs = catalog.sources.flatMap(s => s.segments);
-  assert.equal(allSegs.length, 10, `Expected 10 segments, got ${allSegs.length}`);
+  assert.equal(allSegs.length, 17, `Expected 17 segments, got ${allSegs.length}`);
 });
 
 // 2. Source MP4 hash verification

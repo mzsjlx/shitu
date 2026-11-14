@@ -281,7 +281,7 @@ async function run() {
     await page.waitForTimeout(1000);
 
     const cardsCount = await page.evaluate(() => document.querySelectorAll('.food-card').length);
-    check('Map renders all 10 Harbin authentic food spots', cardsCount === 10, cardsCount);
+    check('Map renders all 16 Harbin authentic food spots', cardsCount === 16, cardsCount);
 
     // 1st Level: Initial Dot (is-collapsed, 48px circle, no video hover)
     const allCollapsed = await page.evaluate(() => {
