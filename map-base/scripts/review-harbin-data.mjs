@@ -36,9 +36,9 @@ const harbinBounds = citiesConfig.cities.harbin.bounds;
 await check('1. Catalog schema and rights status: user-confirmed', () => {
   assert.equal(catalog.city, 'harbin');
   assert.equal(catalog.rights.status, 'user-confirmed');
-  assert.equal(catalog.sources.length, 15, `Expected 15 sources, got ${catalog.sources.length}`);
+  assert.equal(catalog.sources.length, 30, `Expected 30 sources, got ${catalog.sources.length}`);
   const allSegs = catalog.sources.flatMap(s => s.segments);
-  assert.equal(allSegs.length, 17, `Expected 17 segments, got ${allSegs.length}`);
+  assert.equal(allSegs.length, 34, `Expected 34 segments, got ${allSegs.length}`);
 });
 
 // 2. Source MP4 hash verification
@@ -110,7 +110,7 @@ await check('7. Strict cross-city rejection: all spots are Harbin authentic', ()
   for (const src of catalog.sources) {
     assert(!src.title.includes('沈阳') && !src.evidenceNote.includes('沈阳'), `Cross-city violation in ${src.id}`);
     for (const seg of src.segments) {
-      assert(seg.addressText.includes('哈尔滨') || seg.planningLocation.label.includes('道里') || seg.planningLocation.label.includes('香坊') || seg.planningLocation.label.includes('果戈里'));
+      assert(seg.addressText.includes('哈尔滨') || seg.planningLocation.label.includes('道里') || seg.planningLocation.label.includes('香坊') || seg.planningLocation.label.includes('果戈里') || seg.planningLocation.label.includes('道外') || seg.planningLocation.label.includes('南岗'));
     }
   }
 });

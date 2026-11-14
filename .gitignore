@@ -13,6 +13,8 @@
 **/.playwright-cli/
 *.log
 *.partial.pmtiles
+output/research/*/frames/
+output/research/*/ocr_batch/
 
 # Local credentials and environment configuration; keep example templates
 .env
