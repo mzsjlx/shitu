@@ -1,4 +1,4 @@
-"""Verify Wuhan map base, food cards, video popover, ratio >= 2/3, and playback in headless browser with Playwright."""
+"""Verify Wuhan map base, food cards, video popover, ratio >= 2/3, playback, and multi-creator switcher in headless browser with Playwright."""
 import json, os, sys, time
 from pathlib import Path
 from playwright.sync_api import sync_playwright
@@ -63,11 +63,13 @@ with sync_playwright() as pw:
     page.wait_for_selector('.food-card', timeout=10000)
     food_cards = page.locator('.food-card')
     card_count = food_cards.count()
-    check('2. Food cards rendered on map for Wuhan', card_count >= 2, {'cardCount': card_count})
+    check('2. Food cards rendered on map for Wuhan (19 on-map stops across Hankou, Wuchang, Qingshan)', card_count >= 15, {'cardCount': card_count})
     
     # Verify shop names in cards
     card_names = page.evaluate("() => Array.from(document.querySelectorAll('.food-card strong')).map(el => el.textContent)")
-    check('3. Shop names match real Wuhan establishments', any('小屋' in n for n in card_names) and any('长堤' in n for n in card_names), {'cardNames': card_names})
+    check('3. Shop names match real Wuhan establishments across 3 areas', 
+          any('小屋' in n for n in card_names) and any('长堤' in n for n in card_names) and any('赵师傅' in n or '燕子' in n or '山海关' in n for n in card_names), 
+          {'cardNames': card_names[:10]})
 
     # Open first food card popover
     open_first_visible_popover(page)
@@ -137,19 +139,43 @@ with sync_playwright() as pw:
         check('6. Video play button present', False)
         check('7. Video unmount check', False)
 
+    # 8. Multi-creator shop switcher test (e.g., 燕子煨汤 or 赵师傅 or 毛氏汽水包)
+    multi_creator_test = page.evaluate('''() => {
+        // Find card for a merged stop
+        const cards = Array.from(document.querySelectorAll('.food-card'));
+        const target = cards.find(c => {
+            const t = c.textContent || '';
+            return t.includes('燕子') || t.includes('赵师傅') || t.includes('毛氏') || t.includes('汪记') || t.includes('长堤');
+        });
+        if (!target) return { found: false };
+        const btn = target.querySelector('.food-open') || target;
+        btn.click();
+        const popover = document.querySelector('.food-inline-popover');
+        const clipButtons = Array.from(document.querySelectorAll('.food-popover-clip'));
+        return {
+            found: true,
+            title: target.querySelector('strong')?.textContent,
+            clipCount: clipButtons.length,
+            authors: clipButtons.map(b => b.textContent)
+        };
+    }''')
+    check('8. Multi-creator merged shop renders creator switch tabs', 
+          multi_creator_test['found'] and multi_creator_test['clipCount'] >= 2, 
+          multi_creator_test)
+
     # Desktop screenshot
     desktop_shot = output_dir / 'wuhan-desktop-1440.png'
     page.screenshot(path=str(desktop_shot))
-    check('8. Desktop 1440x960 screenshot saved', desktop_shot.exists(), {'file': str(desktop_shot)})
+    check('9. Desktop 1440x960 screenshot saved', desktop_shot.exists(), {'file': str(desktop_shot)})
     
-    # 8. City Isolation Test: switch to Chongqing then back to Wuhan
+    # 9. City Isolation Test: switch to Chongqing then back to Wuhan
     page.select_option('.city-chip select', 'chongqing')
     time.sleep(1.0)
     cq_city = page.evaluate("() => window.foodCityMap.city.name")
     page.select_option('.city-chip select', 'wuhan')
     time.sleep(1.0)
     wh_city = page.evaluate("() => window.foodCityMap.city.name")
-    check('9. Multi-city navigation switches without cross-city contamination', cq_city == '重庆' and wh_city == '武汉', {'cqCity': cq_city, 'whCity': wh_city})
+    check('10. Multi-city navigation switches without cross-city contamination', cq_city == '重庆' and wh_city == '武汉', {'cqCity': cq_city, 'whCity': wh_city})
 
     context_desktop.close()
 
@@ -175,10 +201,10 @@ with sync_playwright() as pw:
         return (media.getBoundingClientRect().width * media.getBoundingClientRect().height) / 
                (popover.getBoundingClientRect().width * popover.getBoundingClientRect().height);
     }''')
-    check('10. Mobile 390x844 popover media area >= 2/3', mob_ratio and mob_ratio >= (2.0 / 3.0), {'ratio': mob_ratio})
+    check('11. Mobile 390x844 popover media area >= 2/3', mob_ratio and mob_ratio >= (2.0 / 3.0), {'ratio': mob_ratio})
     mob_shot = output_dir / 'wuhan-mobile-390.png'
     p_mob.screenshot(path=str(mob_shot))
-    check('11. Mobile 390x844 screenshot saved', mob_shot.exists(), {'file': str(mob_shot)})
+    check('12. Mobile 390x844 screenshot saved', mob_shot.exists(), {'file': str(mob_shot)})
     context_mobile.close()
 
     # 3. Small screen 320x680 verification
@@ -201,10 +227,10 @@ with sync_playwright() as pw:
         return (media.getBoundingClientRect().width * media.getBoundingClientRect().height) / 
                (popover.getBoundingClientRect().width * popover.getBoundingClientRect().height);
     }''')
-    check('12. Small screen 320x680 popover media area >= 2/3', small_ratio and small_ratio >= (2.0 / 3.0), {'ratio': small_ratio})
+    check('13. Small screen 320x680 popover media area >= 2/3', small_ratio and small_ratio >= (2.0 / 3.0), {'ratio': small_ratio})
     small_shot = output_dir / 'wuhan-small-320.png'
     p_small.screenshot(path=str(small_shot))
-    check('13. Small screen 320x680 screenshot saved', small_shot.exists(), {'file': str(small_shot)})
+    check('14. Small screen 320x680 screenshot saved', small_shot.exists(), {'file': str(small_shot)})
     context_small.close()
 
     # 4. Short landscape 736x414 verification
@@ -227,10 +253,10 @@ with sync_playwright() as pw:
         return (media.getBoundingClientRect().width * media.getBoundingClientRect().height) / 
                (popover.getBoundingClientRect().width * popover.getBoundingClientRect().height);
     }''')
-    check('14. Short landscape 736x414 popover media area >= 2/3', land_ratio and land_ratio >= (2.0 / 3.0), {'ratio': land_ratio})
+    check('15. Short landscape 736x414 popover media area >= 2/3', land_ratio and land_ratio >= (2.0 / 3.0), {'ratio': land_ratio})
     land_shot = output_dir / 'wuhan-landscape-736.png'
     p_land.screenshot(path=str(land_shot))
-    check('15. Short landscape 736x414 screenshot saved', land_shot.exists(), {'file': str(land_shot)})
+    check('16. Short landscape 736x414 screenshot saved', land_shot.exists(), {'file': str(land_shot)})
     context_land.close()
 
     # 5. Single-file preview-wuhan.html verification
@@ -243,13 +269,14 @@ with sync_playwright() as pw:
     p_single.wait_for_function("() => window.foodCityMap && window.foodCityMap.ready", timeout=30000)
     p_single.wait_for_selector('.food-card', timeout=5000)
     single_cards = p_single.locator('.food-card').count()
-    check('16. Standalone bundle preview-wuhan.html renders food cards', single_cards >= 2, {'cardCount': single_cards})
+    check('17. Standalone bundle preview-wuhan.html renders food cards (19 offline stops)', single_cards >= 15, {'cardCount': single_cards})
     single_shot = output_dir / 'wuhan-preview-bundle-1440.png'
     p_single.screenshot(path=str(single_shot))
+    check('18. Standalone bundle preview-wuhan.html screenshot saved', single_shot.exists(), {'file': str(single_shot)})
     context_single.close()
 
     # 6. Check for runtime page errors
-    check('17. No unhandled page errors during browser navigation', len(page_errors) == 0, {'errors': page_errors})
+    check('19. No unhandled page errors during browser navigation', len(page_errors) == 0, {'errors': page_errors})
 
     browser.close()
 

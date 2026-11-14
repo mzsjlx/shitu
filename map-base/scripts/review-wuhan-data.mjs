@@ -146,7 +146,14 @@ await check('6. food-road-router calculates genuine Wuhan routes (bridges, shops
   assert.equal(r6.status, 'ready');
   assert(r6.distanceMetres > 11000 && r6.distanceMetres < 16000);
 
-  // Route 7: Outside network point fails gracefully
+  // Route 7: Major Cross-river route: Shanheiguan Road (Hankou) ([114.3042, 30.6050]) -> Liangdao Street (Wuchang) ([114.3042, 30.54997])
+  const p_shg = [114.3042, 30.6050];
+  const p_zhaoshifu = [114.3042, 30.54997];
+  const r7 = findFoodRoadRoute(router, p_shg, p_zhaoshifu);
+  assert.equal(r7.status, 'ready');
+  assert(r7.distanceMetres > 7000 && r7.distanceMetres < 12000);
+
+  // Route 8: Outside network point fails gracefully
   const r_outside = findFoodRoadRoute(router, [115.5, 31.5], p_wsy);
   assert.equal(r_outside.status, 'unavailable');
   assert.equal(r_outside.reason, 'outside-network');
@@ -155,6 +162,7 @@ await check('6. food-road-router calculates genuine Wuhan routes (bridges, shops
     shopToShopXiaowuToChangdi: `${Math.round(r_shops.distanceMetres)}m`,
     jiqingToMiaoli: `${Math.round(r5.distanceMetres)}m`,
     jiqingToEnshiCrossRiver: `${Math.round(r6.distanceMetres)}m`,
+    shanheiguanToLiangdaoCrossRiver: `${Math.round(r7.distanceMetres)}m`,
     wansongyuanToJianghanRoad: `${Math.round(r1.distanceMetres)}m`,
     yangtzeRiverBridgeCross: `${Math.round(r2.distanceMetres)}m`,
     jianghanBridgeCross: `${Math.round(r3.distanceMetres)}m`,
@@ -170,33 +178,33 @@ await check('7. allCityCatalogs loads all 6 cities without ID collision', async 
   assert.deepEqual(cities.sort(), ['changsha', 'chaoshan', 'chongqing', 'liuzhou', 'nanjing', 'wuhan'].sort());
   const wuhanCat = catalogs.find(c => c.cityId === 'wuhan');
   assert(wuhanCat, 'Wuhan catalog loaded successfully');
-  assert.equal(wuhanCat.catalog.sources.length, 4);
+  assert.equal(wuhanCat.catalog.sources.length, 7);
   const totalSegs = wuhanCat.catalog.sources.reduce((acc, s) => acc + s.segments.length, 0);
-  assert.equal(totalSegs, 12);
+  assert.equal(totalSegs, 29);
   const allSegs = wuhanCat.catalog.sources.flatMap(s => s.segments);
   const located = allSegs.filter(s => s.coordinates !== null);
   const unlocated = allSegs.filter(s => s.locationStatus === 'unlocated');
   const outOfBounds = allSegs.filter(s => s.locationStatus === 'out-of-bounds');
-  assert.equal(located.length, 9);
+  assert.equal(located.length, 26);
   assert.equal(unlocated.length, 2);
   assert.equal(outOfBounds.length, 1);
-  return { totalCities: catalogs.length, cities, wuhanSources: 4, wuhanSegments: 12, located: 9, unlocated: 2, outOfBounds: 1 };
+  return { totalCities: catalogs.length, cities, wuhanSources: 7, wuhanSegments: 29, located: 26, unlocated: 2, outOfBounds: 1 };
 });
 
 // 8. Global video posters preservation & merge
 await check('8. Global video-posters.json and built library assets retain all existing city posters and include Wuhan', async () => {
   const globalPosters = JSON.parse(await readFile('data/video-posters.json', 'utf8'));
   const count = Object.keys(globalPosters.segments).length;
-  assert.equal(count, 387, `Expected 387 posters in global index (375 existing + 12 Wuhan), got ${count}`);
+  assert.equal(count, 404, `Expected 404 posters in global index (375 existing + 29 Wuhan), got ${count}`);
   
   const distAssets = JSON.parse(await readFile('dist/data/video-library-assets.json', 'utf8'));
   const distCount = Object.keys(distAssets.segments).length;
-  assert.equal(distCount, 482, `Expected 482 total posters compiled into dist/data/video-library-assets.json (470 existing + 12 Wuhan), got ${distCount}`);
+  assert.equal(distCount, 499, `Expected 499 total posters compiled into dist/data/video-library-assets.json (470 existing + 29 Wuhan), got ${distCount}`);
 
   return { globalPostersCount: count, distLibraryAssetsCount: distCount };
 });
 
-// 9. Built artifacts check
+// 9. Built HTML pages and single-file preview exist and are valid
 await check('9. Built HTML pages and single-file preview exist and are valid', async () => {
   const preview = await readFile('dist/preview-wuhan.html', 'utf8');
   assert(preview.includes('window.__FOOD_CITY_BUNDLE__'));

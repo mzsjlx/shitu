@@ -189,6 +189,346 @@
         "sourceDate": "2026-11-13",
         "method": "original-way-node"
       }
+    },
+    {
+      "segmentId": "wh-dage-shuangyang-doupi",
+      "coordinates": [
+        114.3048,
+        30.6047
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177794593,
+        "name": "山海关路",
+        "url": "https://www.openstreetmap.org/way/177794593",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1882077240,
+        "coordinates": [
+          114.3048,
+          30.6047
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-dage-xushi-nuomibao",
+      "coordinates": [
+        114.3032,
+        30.6055
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177794593,
+        "name": "山海关路",
+        "url": "https://www.openstreetmap.org/way/177794593",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1882095562,
+        "coordinates": [
+          114.3032,
+          30.6055
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-dage-wangji-hutoufen",
+      "coordinates": [
+        114.3042,
+        30.605
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177794593,
+        "name": "山海关路",
+        "url": "https://www.openstreetmap.org/way/177794593",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1882077240,
+        "coordinates": [
+          114.3042,
+          30.605
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-dage-maoshi-qishuibao",
+      "coordinates": [
+        114.3045,
+        30.6049
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177794593,
+        "name": "山海关路",
+        "url": "https://www.openstreetmap.org/way/177794593",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1882077240,
+        "coordinates": [
+          114.3045,
+          30.6049
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-dage-yanzi-weitang",
+      "coordinates": [
+        114.30338,
+        30.60475
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 852058777,
+        "name": "胜利街",
+        "url": "https://www.openstreetmap.org/way/852058777",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1882095062,
+        "coordinates": [
+          114.30338,
+          30.60475
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaozhen-maoshi-qishuibao",
+      "coordinates": [
+        114.3045,
+        30.6049
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177794593,
+        "name": "山海关路",
+        "url": "https://www.openstreetmap.org/way/177794593",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1882077240,
+        "coordinates": [
+          114.3045,
+          30.6049
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaozhen-xushi-nuomibao",
+      "coordinates": [
+        114.3032,
+        30.6055
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177794593,
+        "name": "山海关路",
+        "url": "https://www.openstreetmap.org/way/177794593",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1882095562,
+        "coordinates": [
+          114.3032,
+          30.6055
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaozhen-zhaoshifu",
+      "coordinates": [
+        114.3042,
+        30.54997
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 740776416,
+        "name": "粮道街",
+        "url": "https://www.openstreetmap.org/way/740776416",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1218887076,
+        "coordinates": [
+          114.3042,
+          30.54997
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaozhen-wangji-hutoufen",
+      "coordinates": [
+        114.3042,
+        30.605
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177794593,
+        "name": "山海关路",
+        "url": "https://www.openstreetmap.org/way/177794593",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1882077240,
+        "coordinates": [
+          114.3042,
+          30.605
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaozhen-yanzi-weitang",
+      "coordinates": [
+        114.30338,
+        30.60475
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 852058777,
+        "name": "胜利街",
+        "url": "https://www.openstreetmap.org/way/852058777",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1882095062,
+        "coordinates": [
+          114.30338,
+          30.60475
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaofantong-xidajie-doupi",
+      "coordinates": [
+        114.294,
+        30.5488
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 105573446,
+        "name": "大成路",
+        "url": "https://www.openstreetmap.org/way/105573446",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1205476699,
+        "coordinates": [
+          114.294,
+          30.5488
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaofantong-liji-hutoufen",
+      "coordinates": [
+        114.2928,
+        30.5456
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 105573446,
+        "name": "大成路",
+        "url": "https://www.openstreetmap.org/way/105573446",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1205476699,
+        "coordinates": [
+          114.2928,
+          30.5456
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaofantong-xiaoqiu-shuijiao",
+      "coordinates": [
+        114.2915,
+        30.5456
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 105573446,
+        "name": "大成路",
+        "url": "https://www.openstreetmap.org/way/105573446",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1205476699,
+        "coordinates": [
+          114.2915,
+          30.5456
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaofantong-niubazi",
+      "coordinates": [
+        114.306,
+        30.5495
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 740776416,
+        "name": "粮道街",
+        "url": "https://www.openstreetmap.org/way/740776416",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1218887076,
+        "coordinates": [
+          114.306,
+          30.5495
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaofantong-zhaoshifu",
+      "coordinates": [
+        114.3042,
+        30.54997
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 740776416,
+        "name": "粮道街",
+        "url": "https://www.openstreetmap.org/way/740776416",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1218887076,
+        "coordinates": [
+          114.3042,
+          30.54997
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaofantong-yanzi-weitang",
+      "coordinates": [
+        114.30338,
+        30.60475
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 852058777,
+        "name": "胜利街",
+        "url": "https://www.openstreetmap.org/way/852058777",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1882095062,
+        "coordinates": [
+          114.30338,
+          30.60475
+        ]
+      }
+    },
+    {
+      "segmentId": "wh-xiaofantong-changdi-youzha",
+      "coordinates": [
+        114.2525,
+        30.57082
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 178122933,
+        "name": "长堤街",
+        "url": "https://www.openstreetmap.org/way/178122933",
+        "sourceDate": "2026-11-13",
+        "method": "original-way-node",
+        "nodeId": 1884981395,
+        "coordinates": [
+          114.2525,
+          30.57082
+        ]
+      }
     }
   ]
 }

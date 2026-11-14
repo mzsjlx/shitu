@@ -91,6 +91,7 @@
       "shopToShopXiaowuToChangdi": "3938m",
       "jiqingToMiaoli": "1734m",
       "jiqingToEnshiCrossRiver": "14729m",
+      "shanheiguanToLiangdaoCrossRiver": "10103m",
       "wansongyuanToJianghanRoad": "2538m",
       "yangtzeRiverBridgeCross": "2160m",
       "jianghanBridgeCross": "1530m",
@@ -110,9 +111,9 @@
         "nanjing",
         "wuhan"
       ],
-      "wuhanSources": 4,
-      "wuhanSegments": 12,
-      "located": 9,
+      "wuhanSources": 7,
+      "wuhanSegments": 29,
+      "located": 26,
       "unlocated": 2,
       "outOfBounds": 1
     }
@@ -121,17 +122,17 @@
     "name": "8. Global video-posters.json and built library assets retain all existing city posters and include Wuhan",
     "passed": true,
     "details": {
-      "globalPostersCount": 387,
-      "distLibraryAssetsCount": 482
+      "globalPostersCount": 404,
+      "distLibraryAssetsCount": 499
     }
   },
   {
     "name": "9. Built HTML pages and single-file preview exist and are valid",
     "passed": true,
     "details": {
-      "previewSize": 22576819,
-      "placesSize": 7540,
-      "videosSize": 8020
+      "previewSize": 22599741,
+      "placesSize": 11564,
+      "videosSize": 15166
     }
   }
 ]

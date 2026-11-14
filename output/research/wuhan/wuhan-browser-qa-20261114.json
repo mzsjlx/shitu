@@ -7,14 +7,14 @@
     }
   },
   {
-    "name": "2. Food cards rendered on map for Wuhan",
+    "name": "2. Food cards rendered on map for Wuhan (19 on-map stops across Hankou, Wuchang, Qingshan)",
     "passed": true,
     "details": {
-      "cardCount": 9
+      "cardCount": 19
     }
   },
   {
-    "name": "3. Shop names match real Wuhan establishments",
+    "name": "3. Shop names match real Wuhan establishments across 3 areas",
     "passed": true,
     "details": {
       "cardNames": [
@@ -26,7 +26,8 @@
         "和旺湖北菜(统一街店)",
         "龚兴城鱼羊吉(苗栗路店)",
         "小荷园·乡野湖北菜(恩施街店)",
-        "邓矮子家常菜焖锅鱼(恩施街总店)"
+        "邓矮子家常菜焖锅鱼(恩施街总店)",
+        "双阳豆皮(山海关路店)"
       ]
     }
   },
@@ -53,7 +54,7 @@
     "details": {
       "src": "http://127.0.0.1:8798/media/videos/wh-guagua-7695718351578976329/wh-guagua-xiaowu-112e3ef1ff53f28e.mp4",
       "paused": false,
-      "currentTime": 0.787707,
+      "currentTime": 0.799325,
       "duration": 11.5,
       "readyState": 4
     }
@@ -68,14 +69,27 @@
     }
   },
   {
-    "name": "8. Desktop 1440x960 screenshot saved",
+    "name": "8. Multi-creator merged shop renders creator switch tabs",
+    "passed": true,
+    "details": {
+      "found": true,
+      "title": "长堤街油炸小吃",
+      "clipCount": 2,
+      "authors": [
+        "吃个瓜瓜",
+        "人间行走小饭桶"
+      ]
+    }
+  },
+  {
+    "name": "9. Desktop 1440x960 screenshot saved",
     "passed": true,
     "details": {
       "file": "D:\\codex\\美食网站\\.local\\worktrees\\wuhan-prep\\map-base\\..\\output\\research\\wuhan\\screenshots\\wuhan-desktop-1440.png"
     }
   },
   {
-    "name": "9. Multi-city navigation switches without cross-city contamination",
+    "name": "10. Multi-city navigation switches without cross-city contamination",
     "passed": true,
     "details": {
       "cqCity": "重庆",
@@ -83,56 +97,63 @@
     }
   },
   {
-    "name": "10. Mobile 390x844 popover media area >= 2/3",
+    "name": "11. Mobile 390x844 popover media area >= 2/3",
     "passed": true,
     "details": {
       "ratio": 0.6671328671328671
     }
   },
   {
-    "name": "11. Mobile 390x844 screenshot saved",
+    "name": "12. Mobile 390x844 screenshot saved",
     "passed": true,
     "details": {
       "file": "D:\\codex\\美食网站\\.local\\worktrees\\wuhan-prep\\map-base\\..\\output\\research\\wuhan\\screenshots\\wuhan-mobile-390.png"
     }
   },
   {
-    "name": "12. Small screen 320x680 popover media area >= 2/3",
+    "name": "13. Small screen 320x680 popover media area >= 2/3",
     "passed": true,
     "details": {
       "ratio": 0.6671328671328671
     }
   },
   {
-    "name": "13. Small screen 320x680 screenshot saved",
+    "name": "14. Small screen 320x680 screenshot saved",
     "passed": true,
     "details": {
       "file": "D:\\codex\\美食网站\\.local\\worktrees\\wuhan-prep\\map-base\\..\\output\\research\\wuhan\\screenshots\\wuhan-small-320.png"
     }
   },
   {
-    "name": "14. Short landscape 736x414 popover media area >= 2/3",
+    "name": "15. Short landscape 736x414 popover media area >= 2/3",
     "passed": true,
     "details": {
       "ratio": 0.6683870967741935
     }
   },
   {
-    "name": "15. Short landscape 736x414 screenshot saved",
+    "name": "16. Short landscape 736x414 screenshot saved",
     "passed": true,
     "details": {
       "file": "D:\\codex\\美食网站\\.local\\worktrees\\wuhan-prep\\map-base\\..\\output\\research\\wuhan\\screenshots\\wuhan-landscape-736.png"
     }
   },
   {
-    "name": "16. Standalone bundle preview-wuhan.html renders food cards",
+    "name": "17. Standalone bundle preview-wuhan.html renders food cards (19 offline stops)",
     "passed": true,
     "details": {
-      "cardCount": 9
+      "cardCount": 19
     }
   },
   {
-    "name": "17. No unhandled page errors during browser navigation",
+    "name": "18. Standalone bundle preview-wuhan.html screenshot saved",
+    "passed": true,
+    "details": {
+      "file": "D:\\codex\\美食网站\\.local\\worktrees\\wuhan-prep\\map-base\\..\\output\\research\\wuhan\\screenshots\\wuhan-preview-bundle-1440.png"
+    }
+  },
+  {
+    "name": "19. No unhandled page errors during browser navigation",
     "passed": true,
     "details": {
       "errors": []
