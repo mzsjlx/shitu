@@ -1989,6 +1989,154 @@
         "sourceDate": "2026-11-15",
         "method": "original-way-node"
       }
+    },
+    {
+      "segmentId": "wh-geixiaoliu-baxi-shaokao",
+      "placeId": "wh-place-baxi-shaokao-xinchongguang",
+      "coordinates": [
+        114.2786131,
+        30.5877979
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 107057049,
+        "name": "解放大道",
+        "url": "https://www.openstreetmap.org/way/107057049",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 1230843718
+      }
+    },
+    {
+      "segmentId": "wh-lurenfei-xingfu-xiaochuan",
+      "placeId": "wh-place-xingfu-xiaochuan-sanyang",
+      "coordinates": [
+        114.2940136,
+        30.6020501
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177783265,
+        "name": "三阳路",
+        "url": "https://www.openstreetmap.org/way/177783265",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 5941852302
+      }
+    },
+    {
+      "segmentId": "wh-zhoumedazi-jinmamen-zizhu",
+      "placeId": "wh-place-jinmamen-zizhu-junyi",
+      "coordinates": [
+        114.3538914,
+        30.5277733
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 149570571,
+        "name": "珞喻路",
+        "url": "https://www.openstreetmap.org/way/149570571",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 1210058592
+      }
+    },
+    {
+      "segmentId": "wh-wanlaoban-dongsheng-zizhu",
+      "placeId": "wh-place-dongsheng-zizhu-chubaotiandi",
+      "coordinates": [
+        114.2830578,
+        30.5802216
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177624349,
+        "name": "前进四路",
+        "url": "https://www.openstreetmap.org/way/177624349",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 1880421374
+      }
+    },
+    {
+      "segmentId": "wh-lurenfei-shuanmeng-huoguo",
+      "placeId": "wh-place-shuanmeng-huoguo-baocheng",
+      "coordinates": [
+        114.283632,
+        30.5867023
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177629408,
+        "name": "保成路",
+        "url": "https://www.openstreetmap.org/way/177629408",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 11303773629
+      }
+    },
+    {
+      "segmentId": "wh-dahantongxue-baiyoucheng-huoguo",
+      "placeId": "wh-place-baiyoucheng-huoguo-xinrong",
+      "coordinates": null,
+      "locationStatus": "out-of-bounds"
+    },
+    {
+      "segmentId": "wh-xiaozhen-mengguli-kaorou",
+      "placeId": "wh-place-mengguli-kaorou-beijing",
+      "coordinates": null,
+      "locationStatus": "out-of-bounds"
+    },
+    {
+      "segmentId": "wh-wanlaoban-hongmofang-kaorou",
+      "placeId": "wh-place-hongmofang-kaorou-zijingcheng",
+      "coordinates": [
+        114.2862864,
+        30.5852986
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177627389,
+        "name": "江汉一路",
+        "url": "https://www.openstreetmap.org/way/177627389",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 1880477855
+      }
+    },
+    {
+      "segmentId": "wh-malatu-benxiaoxi-huoguo",
+      "placeId": "wh-place-benxiaoxi-huoguo-yintai",
+      "coordinates": [
+        114.3488272,
+        30.5288393
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 100305700,
+        "name": "珞喻路辅路",
+        "url": "https://www.openstreetmap.org/way/100305700",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 13578233899
+      }
+    },
+    {
+      "segmentId": "wh-xiaozhang-shuanmeng-huoguo",
+      "placeId": "wh-place-shuanmeng-huoguo-baocheng",
+      "coordinates": [
+        114.283632,
+        30.5867023
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177629408,
+        "name": "保成路",
+        "url": "https://www.openstreetmap.org/way/177629408",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 11303773629
+      }
     }
   ]
 }
