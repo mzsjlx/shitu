@@ -63,7 +63,7 @@ with sync_playwright() as pw:
     page.wait_for_selector('.food-card', timeout=10000)
     food_cards = page.locator('.food-card')
     card_count = food_cards.count()
-    check('2. Food cards rendered on map for Wuhan (52 on-map stops across Hankou, Wuchang, Hanyang, Qingshan)', card_count == 52, {'cardCount': card_count})
+    check('2. Food cards rendered on map for Wuhan (61 on-map stops across Hankou, Wuchang, Hanyang, Qingshan)', card_count == 61, {'cardCount': card_count})
     
     # Verify shop names in cards
     card_names = page.evaluate("() => Array.from(document.querySelectorAll('.food-card strong')).map(el => el.textContent)")
@@ -269,7 +269,7 @@ with sync_playwright() as pw:
     p_single.wait_for_function("() => window.foodCityMap && window.foodCityMap.ready", timeout=30000)
     p_single.wait_for_selector('.food-card', timeout=5000)
     single_cards = p_single.locator('.food-card').count()
-    check('17. Standalone bundle preview-wuhan.html renders food cards (52 offline stops)', single_cards == 52, {'cardCount': single_cards})
+    check('17. Standalone bundle preview-wuhan.html renders food cards (61 offline stops)', single_cards == 61, {'cardCount': single_cards})
     single_shot = output_dir / 'wuhan-preview-bundle-1440.png'
     p_single.screenshot(path=str(single_shot))
     check('18. Standalone bundle preview-wuhan.html screenshot saved', single_shot.exists(), {'file': str(single_shot)})
