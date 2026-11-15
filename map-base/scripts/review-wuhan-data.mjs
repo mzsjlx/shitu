@@ -178,28 +178,28 @@ await check('7. allCityCatalogs loads all 6 cities without ID collision', async 
   assert.deepEqual(cities.sort(), ['changsha', 'chaoshan', 'chongqing', 'liuzhou', 'nanjing', 'wuhan'].sort());
   const wuhanCat = catalogs.find(c => c.cityId === 'wuhan');
   assert(wuhanCat, 'Wuhan catalog loaded successfully');
-  assert.equal(wuhanCat.catalog.sources.length, 69);
+  assert.equal(wuhanCat.catalog.sources.length, 76);
   const totalSegs = wuhanCat.catalog.sources.reduce((acc, s) => acc + s.segments.length, 0);
-  assert.equal(totalSegs, 122);
+  assert.equal(totalSegs, 129);
   const allSegs = wuhanCat.catalog.sources.flatMap(s => s.segments);
   const located = allSegs.filter(s => s.coordinates !== null);
   const unlocated = allSegs.filter(s => s.locationStatus === 'unlocated');
   const outOfBounds = allSegs.filter(s => s.locationStatus === 'out-of-bounds');
-  assert.equal(located.length, 107);
+  assert.equal(located.length, 114);
   assert.equal(unlocated.length, 8);
   assert.equal(outOfBounds.length, 7);
-  return { totalCities: catalogs.length, cities, wuhanSources: 69, wuhanSegments: 122, located: 107, unlocated: 8, outOfBounds: 7 };
+  return { totalCities: catalogs.length, cities, wuhanSources: 76, wuhanSegments: 129, located: 114, unlocated: 8, outOfBounds: 7 };
 });
 
 // 8. Global video posters preservation & merge
 await check('8. Global video-posters.json and built library assets retain all existing city posters and include Wuhan', async () => {
   const globalPosters = JSON.parse(await readFile('data/video-posters.json', 'utf8'));
   const count = Object.keys(globalPosters.segments).length;
-  assert.equal(count, 497, `Expected 497 posters in global index (375 existing + 122 Wuhan), got ${count}`);
+  assert.equal(count, 504, `Expected 504 posters in global index (375 existing + 129 Wuhan), got ${count}`);
   
   const distAssets = JSON.parse(await readFile('dist/data/video-library-assets.json', 'utf8'));
   const distCount = Object.keys(distAssets.segments).length;
-  assert.equal(distCount, 592, `Expected 592 total posters compiled into dist/data/video-library-assets.json (470 existing + 122 Wuhan), got ${distCount}`);
+  assert.equal(distCount, 599, `Expected 599 total posters compiled into dist/data/video-library-assets.json (470 existing + 129 Wuhan), got ${distCount}`);
 
   return { globalPostersCount: count, distLibraryAssetsCount: distCount };
 });

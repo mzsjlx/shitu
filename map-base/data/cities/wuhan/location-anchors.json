@@ -2137,6 +2137,125 @@
         "method": "original-way-node",
         "nodeId": 11303773629
       }
+    },
+    {
+      "segmentId": "wh-dahantongxue-bailixian-shuanrou",
+      "placeId": "wh-place-bailixian-shuanrou-wanli",
+      "coordinates": [
+        114.3488371,
+        30.6039721
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 607883588,
+        "name": "友谊大道",
+        "url": "https://www.openstreetmap.org/way/607883588",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 694059597
+      }
+    },
+    {
+      "segmentId": "wh-lurenfei-xiyueshanju-kaorou",
+      "placeId": "wh-place-xiyueshanju-kaorou-hanjie",
+      "coordinates": [
+        114.3320592,
+        30.5607667
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 158436649,
+        "name": "汉街",
+        "url": "https://www.openstreetmap.org/way/158436649",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 13706847050
+      }
+    },
+    {
+      "segmentId": "wh-aman-matouniurou-zizhu",
+      "placeId": "wh-place-matouniurou-zizhu-jianghanlu",
+      "coordinates": [
+        114.2833901,
+        30.5854427
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177627147,
+        "name": "江汉路步行街",
+        "url": "https://www.openstreetmap.org/way/177627147",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 1186631527
+      }
+    },
+    {
+      "segmentId": "wh-niushi-manshuan-huoguo",
+      "placeId": "wh-place-manshuan-huoguo-jiangchen",
+      "coordinates": [
+        114.2537723,
+        30.6100859
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1577830678,
+        "name": "青年路",
+        "url": "https://www.openstreetmap.org/way/1577830678",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 8197792009
+      }
+    },
+    {
+      "segmentId": "wh-wenhao-suyuhe-niurou",
+      "placeId": "wh-place-suyuhe-niurou-baisha",
+      "coordinates": [
+        114.2818,
+        30.4802281
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 341720947,
+        "name": "白沙三路",
+        "url": "https://www.openstreetmap.org/way/341720947",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 7674713304
+      }
+    },
+    {
+      "segmentId": "wh-baiyang-longge-huoguo",
+      "placeId": "wh-place-longge-huoguo-wanxiangcheng",
+      "coordinates": [
+        114.2770676,
+        30.5976046
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 178756569,
+        "name": "台北路",
+        "url": "https://www.openstreetmap.org/way/178756569",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 1891154865
+      }
+    },
+    {
+      "segmentId": "wh-xiaoman-dongsheng-zizhu",
+      "placeId": "wh-place-dongsheng-kaorou-chubao",
+      "coordinates": [
+        114.2830578,
+        30.5802216
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177624349,
+        "name": "前进四路",
+        "url": "https://www.openstreetmap.org/way/177624349",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 1880421374
+      }
     }
   ]
 }
