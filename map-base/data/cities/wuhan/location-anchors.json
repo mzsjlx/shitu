@@ -2256,6 +2256,125 @@
         "method": "original-way-node",
         "nodeId": 1880421374
       }
+    },
+    {
+      "segmentId": "wh-wanlaoban-shengkalun-zizhu",
+      "placeId": "wh-place-shengkalun-zizhu-fanyuehui",
+      "coordinates": [
+        114.3037444,
+        30.5358989
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 231810581,
+        "name": "张之洞路",
+        "url": "https://www.openstreetmap.org/way/231810581",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 1220521677
+      }
+    },
+    {
+      "segmentId": "wh-savill-jiangguanzhang-zizhu",
+      "placeId": "wh-place-jiangguanzhang-zizhu-jianghan",
+      "coordinates": [
+        114.2825159,
+        30.5861951
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177629407,
+        "name": "江汉四路",
+        "url": "https://www.openstreetmap.org/way/177629407",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 1880455455
+      }
+    },
+    {
+      "segmentId": "wh-waimajiemei-lizhi-zizhu",
+      "placeId": "wh-place-lizhi-zizhu-wushangmall",
+      "coordinates": [
+        114.2714556,
+        30.5854382
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 177621043,
+        "name": "解放大道",
+        "url": "https://www.openstreetmap.org/way/177621043",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 4519170281
+      }
+    },
+    {
+      "segmentId": "wh-dahantongxue-xiaomeiyudazhuang-zizhu",
+      "placeId": "wh-place-xiaomeiyudazhuang-jindi",
+      "coordinates": [
+        114.3842035,
+        30.6076692
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 173113084,
+        "name": "团结大道",
+        "url": "https://www.openstreetmap.org/way/173113084",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 2418671775
+      }
+    },
+    {
+      "segmentId": "wh-wanlaoban-qianma-zizhu",
+      "placeId": "wh-place-qianma-zizhu-machangjiao",
+      "coordinates": [
+        114.2556728,
+        30.6102279
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 881465148,
+        "name": "马场角小路",
+        "url": "https://www.openstreetmap.org/way/881465148",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 8197792012
+      }
+    },
+    {
+      "segmentId": "wh-shefan-fujifeng-zizhu",
+      "placeId": "wh-place-fujifeng-zizhu-xiongchu",
+      "coordinates": [
+        114.329637,
+        30.5187203
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 231521461,
+        "name": "雄楚大道地面道",
+        "url": "https://www.openstreetmap.org/way/231521461",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 8445134878
+      }
+    },
+    {
+      "segmentId": "wh-wanlaoban-enshichadian-niurou",
+      "placeId": "wh-place-enshichadian-niurou-meigui",
+      "coordinates": [
+        114.1961221,
+        30.5685153
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 132905559,
+        "name": "玫瑰南街",
+        "url": "https://www.openstreetmap.org/way/132905559",
+        "sourceDate": "2026-11-15",
+        "method": "original-way-node",
+        "nodeId": 1462111137
+      }
     }
   ]
 }
