@@ -111,10 +111,10 @@
         "nanjing",
         "wuhan"
       ],
-      "wuhanSources": 14,
-      "wuhanSegments": 47,
-      "located": 43,
-      "unlocated": 2,
+      "wuhanSources": 24,
+      "wuhanSegments": 71,
+      "located": 66,
+      "unlocated": 3,
       "outOfBounds": 2
     }
   },
@@ -122,17 +122,17 @@
     "name": "8. Global video-posters.json and built library assets retain all existing city posters and include Wuhan",
     "passed": true,
     "details": {
-      "globalPostersCount": 422,
-      "distLibraryAssetsCount": 517
+      "globalPostersCount": 446,
+      "distLibraryAssetsCount": 541
     }
   },
   {
     "name": "9. Built HTML pages and single-file preview exist and are valid",
     "passed": true,
     "details": {
-      "previewSize": 22619623,
-      "placesSize": 17500,
-      "videosSize": 23051
+      "previewSize": 22650571,
+      "placesSize": 25385,
+      "videosSize": 33620
     }
   }
 ]

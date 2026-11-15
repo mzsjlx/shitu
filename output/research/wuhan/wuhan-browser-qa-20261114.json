@@ -7,10 +7,10 @@
     }
   },
   {
-    "name": "2. Food cards rendered on map for Wuhan (33 on-map stops across Hankou, Wuchang, Hanyang, Qingshan)",
+    "name": "2. Food cards rendered on map for Wuhan (52 on-map stops across Hankou, Wuchang, Hanyang, Qingshan)",
     "passed": true,
     "details": {
-      "cardCount": 33
+      "cardCount": 52
     }
   },
   {
@@ -40,12 +40,12 @@
     "passed": true,
     "details": {
       "popoverWidth": 310,
-      "popoverHeight": 381.5,
-      "popoverArea": 118265,
+      "popoverHeight": 490.5,
+      "popoverArea": 152055,
       "mediaWidth": 296,
-      "mediaHeight": 267,
-      "mediaArea": 79032,
-      "ratio": 0.6682619540861624
+      "mediaHeight": 343,
+      "mediaArea": 101528,
+      "ratio": 0.6677057643615797
     }
   },
   {
@@ -54,7 +54,7 @@
     "details": {
       "src": "http://127.0.0.1:8798/media/videos/wh-guagua-7695718351578976329/wh-guagua-xiaowu-112e3ef1ff53f28e.mp4",
       "paused": false,
-      "currentTime": 0.787294,
+      "currentTime": 0.721102,
       "duration": 11.5,
       "readyState": 4
     }
@@ -74,11 +74,12 @@
     "details": {
       "found": true,
       "title": "长堤街油炸小吃",
-      "clipCount": 3,
+      "clipCount": 4,
       "authors": [
         "吃个瓜瓜",
         "人间行走小饭桶",
-        "哦一西cc"
+        "哦一西cc",
+        "刘雨鑫JASON"
       ]
     }
   },
@@ -101,7 +102,7 @@
     "name": "11. Mobile 390x844 popover media area >= 2/3",
     "passed": true,
     "details": {
-      "ratio": 0.6671328671328671
+      "ratio": 0.6666849165069806
     }
   },
   {
@@ -115,7 +116,7 @@
     "name": "13. Small screen 320x680 popover media area >= 2/3",
     "passed": true,
     "details": {
-      "ratio": 0.6671328671328671
+      "ratio": 0.6666849165069806
     }
   },
   {
@@ -140,10 +141,10 @@
     }
   },
   {
-    "name": "17. Standalone bundle preview-wuhan.html renders food cards (33 offline stops)",
+    "name": "17. Standalone bundle preview-wuhan.html renders food cards (52 offline stops)",
     "passed": true,
     "details": {
-      "cardCount": 33
+      "cardCount": 52
     }
   },
   {
