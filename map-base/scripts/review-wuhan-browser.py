@@ -202,10 +202,20 @@ with sync_playwright() as pw:
             };
         }''')
         
-        switch_ok = (c1_after['paused'] and c2_adv >= 0.2 and c2_after['paused'])
+        c1_adv = (c1_t2 - c1_t1) if (c1_t2 >= 0 and c1_t1 >= 0) else 0
+        c2_adv = (c2_t2 - c2_t1) if (c2_t2 >= 0 and c2_t1 >= 0) else 0
+
+        switch_ok = bool(
+            c1_adv >= 0.2 and
+            c1_after['paused'] and
+            not c1_after['hasSrc'] and
+            c2_adv >= 0.2 and
+            c2_after['paused'] and
+            not c2_after['hasSrc']
+        )
         check('8. Multi-creator shop switch: old video stops, new creator plays and advances, stops on close', 
               switch_ok, 
-              {'c1Advance': c1_t2 - c1_t1, 'c1After': c1_after, 'c2Advance': c2_adv, 'c2After': c2_after})
+              {'c1Advance': c1_adv, 'c1After': c1_after, 'c2Advance': c2_adv, 'c2After': c2_after})
     else:
         check('8. Multi-creator shop switch tabs', False, multi_creator_test)
 

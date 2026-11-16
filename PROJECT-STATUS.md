@@ -2,10 +2,10 @@
 
 在独立 worktree `.local/worktrees/wuhan-prep`（分支 `codex/city-wuhan-prep`，基于 `origin/main` 提交 `51f15e5`）下，针对 2026-11-16 接收端复核意见完成全量交付整改：
 1. **Windows 干净检出 LF 规则补齐**：在 `.gitattributes` 中补齐 `map-base/data/cities/wuhan/food-road-network.json text eol=lf` 及 manifest 规则，避免 Windows 自动 CRLF 转换导致字节校验不符，独立干净检出数据测试实现 9/9 PASS；
-2. **83 来源 Release 素材包远端发布与 media-bundles.json 登记**：发布正式 GitHub Release `media-2026-11-16-wuhan`（覆盖全量 83 来源、136 剪辑，共 13,675,829,098 字节），并按来源将所有 83 个素材包的下载 URL、字节数与 SHA256 合并至 `map-base/data/media-bundles.json`，最新发布标签指向 `media-2026-11-16-wuhan`；
+2. **83 来源 Release 素材包远端发布与 media-bundles.json 登记（上传中）**：发布正式 GitHub Release `media-2026-11-16-wuhan`（覆盖全量 83 来源、136 剪辑，共 13,675,829,098 字节），83 份摘要已全部就绪，83 个视频 ZIP 素材包正在后台并发上传中（截至 17:50 已完成 14/83，其余 69 个包上传中，全部完成后核验全量附件与索引），并按来源将所有 83 个素材包的下载 URL、字节数与 SHA256 合并至 `map-base/data/media-bundles.json`，最新发布标签指向 `media-2026-11-16-wuhan`；
 3. **吃个瓜瓜来源包（wh-guagua-7695718351578976329）重构**：剔除旧版本切片，以当前最新切片重新生成 `shitu-media-wh-guagua-7695718351578976329-a312bd603819a20a.zip`，验证 83 包 0 哈希偏差，导入幂等性校验通过（newFiles: 0）；
-4. **浏览器端到端测试断言升级**：升级 `scripts/review-wuhan-browser.py`，改为 1 秒间隔双采样验证 `currentTime` 推进（$\Delta t \ge 0.3s$），持有旧 video DOM 引用验证关闭浮窗时 `paused === true` 且 `src` 移除，在多博主合并店（小屋卤肉大饼）真实切片验证新旧音视频状态，19/19 项断言全部 PASS；
-5. **交付报告与正式 PR 编号补齐**：完善交付报告 `output/research/wuhan/wuhan-handover-20261114.md` 与 `output/research/wuhan/wuhan-full-delivery-report.md`，建立正式 PR。
+4. **浏览器端到端测试断言升级（Check 8 全量断言）**：升级 `scripts/review-wuhan-browser.py`，改为 1 秒间隔双采样验证 `currentTime` 推进（$\Delta t \ge 0.3s$），持有旧 video DOM 引用验证关闭浮窗时 `paused === true` 且 `src` 移除；在多博主合并店（小屋卤肉大饼）真实切片验证第一段推进、切片后旧视频 paused 且 hasSrc===false、第二段推进、关闭后新视频 paused 且 hasSrc===false，19/19 项断言全部 PASS；
+5. **交付报告与正式 PR 编号补齐**：完善交付报告 `output/research/wuhan/wuhan-handover-20261114.md` 与 `output/research/wuhan/wuhan-full-delivery-report.md`，建立正式 PR #10（https://github.com/mzsjlx/shitu/pull/10）。
 
 ## 2026-11-15 武汉第十批 7 来源全量集成完成：累积 83 来源全打通、136 单店切片、104 地图点、13 处多博主同店归并、8 店未定位与 7 店待扩图归档
 

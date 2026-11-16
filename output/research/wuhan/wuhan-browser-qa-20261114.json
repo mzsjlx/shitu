@@ -57,10 +57,10 @@
         "paused": false
       },
       "t2": {
-        "t": 0.757429,
+        "t": 0.757586,
         "paused": false
       },
-      "advance": 0.757429
+      "advance": 0.757586
     }
   },
   {
@@ -77,12 +77,12 @@
     "name": "8. Multi-creator shop switch: old video stops, new creator plays and advances, stops on close",
     "passed": true,
     "details": {
-      "c1Advance": 0.8034340000000001,
+      "c1Advance": 0.8034739999999999,
       "c1After": {
         "paused": true,
         "hasSrc": false
       },
-      "c2Advance": 0.8035129999999999,
+      "c2Advance": 0.802631,
       "c2After": {
         "paused": true,
         "hasSrc": false
