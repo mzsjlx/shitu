@@ -24,7 +24,11 @@ export class VideoLibrary{
     this.preferredClip=requested;
     document.querySelector('.video-library-head .eyebrow').textContent=(this.cityConfig?.name||'重庆')+' · 跟着镜头找好吃的';
     this.opener=opener;if(!this.dialog.open)this.dialog.showModal();
-    if(this.data){const source=this.data.sources.find(s=>s.segments.some(segment=>segment.id===requested));this.renderSource(source?.id||this.sourceId,requested);}else await this.load();
+    if(this.data){
+      const source=this.data.sources.find(s=>s.segments.some(segment=>segment.id===requested));
+      if(source)this.renderSource(source.id,requested);
+      else if(this.data.sources.length)this.renderSource(this.sourceId||this.data.sources[0].id,requested);
+    }else await this.load();
   }
   async load(){
     const generation=++this.generation;this.controller?.abort();this.controller=new AbortController();
@@ -44,6 +48,15 @@ export class VideoLibrary{
       this.status.textContent=count?`${count} 个本地片段 · ${pending?pending+' 段待定位或待扩图':'位置大致'}`:'原片片段未导入本机 · 可查看来源与地址线索';
       this.sources.replaceChildren();
       for(const source of data.sources){const button=el('button','video-source-tab',source.author);button.type='button';button.dataset.source=source.id;button.append(el('span','',String(source.segments.length)));button.addEventListener('click',()=>this.renderSource(source.id));this.sources.append(button);}
+      if(!data.sources.length){
+        this.status.textContent='暂无视频资料';
+        this.sources.replaceChildren();
+        this.grid.replaceChildren();
+        this.player.replaceChildren();
+        this.message.textContent='当前城市暂未收录视频来源。';
+        this.message.hidden=false;
+        return;
+      }
       const source=data.sources.find(s=>s.segments.some(segment=>segment.id===this.preferredClip))||data.sources[0];this.renderSource(source.id,this.preferredClip);
     }catch(error){if(generation!==this.generation)return;this.message.textContent=error.name==='AbortError'?'视频资料读取超时，可以重试。':error.message;document.getElementById('video-library-retry').hidden=false;}
     finally{clearTimeout(timer);}
@@ -54,11 +67,14 @@ export class VideoLibrary{
     for(const button of this.sources.children)button.setAttribute('aria-pressed',String(button.dataset.source===id));
     this.renderCards();
     const source=this.data.sources.find(s=>s.id===id);
+    if(!source)return;
     if(source.segments.length)this.select(source.segments.find(s=>s.id===clipId)||source.segments[0],false);else this.renderMissing(source);
   }
   renderCards(){
     if(!this.data)return;
-    const source=this.data.sources.find(s=>s.id===this.sourceId),term=document.getElementById('video-library-search').value.trim().toLocaleLowerCase();
+    const source=this.data.sources.find(s=>s.id===this.sourceId);
+    if(!source)return;
+    const term=document.getElementById('video-library-search').value.trim().toLocaleLowerCase();
     this.grid.replaceChildren();
     const segments=source.segments.filter(s=>[s.name,s.category,s.addressText||''].join(' ').toLocaleLowerCase().includes(term));
     this.message.hidden=segments.length>0;
