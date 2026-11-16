@@ -1,6 +1,6 @@
 {
   "city": "zhengzhou",
-  "verifiedAt": "2026-11-16 20:14:33",
+  "verifiedAt": "2026-11-16 20:28:10",
   "previewUrl": "http://127.0.0.1:8796",
   "total": 12,
   "passed": 12,
@@ -14,7 +14,7 @@
       }
     },
     {
-      "name": "2. City switcher contains all 6 cities (chongqing, changsha, liuzhou, nanjing, chaoshan, zhengzhou)",
+      "name": "2. City switcher contains all 7 cities (chongqing, changsha, liuzhou, nanjing, chaoshan, wuhan, zhengzhou)",
       "passed": true,
       "details": {
         "cities": [
@@ -23,6 +23,7 @@
           "liuzhou",
           "nanjing",
           "chaoshan",
+          "wuhan",
           "zhengzhou"
         ]
       }

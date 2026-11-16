@@ -165,7 +165,7 @@ await check('9. allCityCatalogs passes without duplicate source or segment IDs a
   const catalogs = await allCityCatalogs(root);
   const zz = catalogs.find(c => c.cityId === 'zhengzhou');
   assert(zz, 'zhengzhou catalog loaded');
-  assert.equal(catalogs.length, 6, `Expected 6 cities, got ${catalogs.length}`);
+  assert.equal(catalogs.length, 7, `Expected 7 cities, got ${catalogs.length}`);
   return { cities: catalogs.map(c => c.cityId) };
 });
 

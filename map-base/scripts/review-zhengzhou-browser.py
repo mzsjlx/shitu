@@ -50,11 +50,11 @@ with sync_playwright() as pw:
           '食途 · 郑州地图' in title and '郑州地图已展开' in status_text, 
           {'title': title, 'statusText': status_text})
     
-    # 2. City select dropdown contains all 6 cities
+    # 2. City select dropdown contains all 7 cities
     city_options = page.evaluate("() => Array.from(document.querySelectorAll('.city-chip select option')).map(o => ({ value: o.value, text: o.textContent }))")
     city_values = [o['value'] for o in city_options]
-    check('2. City switcher contains all 6 cities (chongqing, changsha, liuzhou, nanjing, chaoshan, zhengzhou)',
-          all(c in city_values for c in ['chongqing', 'changsha', 'liuzhou', 'nanjing', 'chaoshan', 'zhengzhou']) and len(city_values) == 6,
+    check('2. City switcher contains all 7 cities (chongqing, changsha, liuzhou, nanjing, chaoshan, wuhan, zhengzhou)',
+          all(c in city_values for c in ['chongqing', 'changsha', 'liuzhou', 'nanjing', 'chaoshan', 'wuhan', 'zhengzhou']) and len(city_values) == 7,
           {'cities': city_values})
     
     current_city_val = page.locator('.city-chip select').input_value()
@@ -146,6 +146,7 @@ with sync_playwright() as pw:
     with page_sw.expect_navigation(timeout=15000):
         page_sw.select_option('.city-chip select', 'chongqing')
     page_sw.wait_for_function("() => window.foodCityMap && window.foodCityMap.ready && window.foodCityMap.city.name === '重庆'", timeout=30000)
+    page_sw.wait_for_selector('.food-card', timeout=10000)
     cq_title = page_sw.title()
     cq_cards = page_sw.locator('.food-card').count()
     check('11. Switch to Chongqing: title is Chongqing and food cards render without city collision',
