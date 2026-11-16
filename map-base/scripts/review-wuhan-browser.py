@@ -104,48 +104,45 @@ with sync_playwright() as pw:
     if play_btn.is_visible():
         play_btn.click()
         page.wait_for_selector('video.food-popover-video', timeout=5000)
-        time.sleep(1.0)
         
-        # Verify video playback state
-        play_state = page.evaluate('''() => {
-            const v = document.querySelector('video.food-popover-video');
-            if (!v) return null;
-            return {
-                src: v.src,
-                paused: v.paused,
-                currentTime: v.currentTime,
-                duration: v.duration,
-                readyState: v.readyState
-            };
-        }''')
-        check('6. Video mounts and playback advances time', play_state and play_state['currentTime'] >= 0, play_state)
+        # Store reference to old video in window
+        page.evaluate("() => { window.__testedVideo1 = document.querySelector('video.food-popover-video'); }")
+        
+        # Two-sample advance check
+        t1 = page.evaluate("() => ({ t: window.__testedVideo1.currentTime, paused: window.__testedVideo1.paused })")
+        time.sleep(1.0)
+        t2 = page.evaluate("() => ({ t: window.__testedVideo1.currentTime, paused: window.__testedVideo1.paused })")
+        adv = (t2['t'] - t1['t']) if (t2 and t1) else 0
+        adv_ok = adv >= 0.3 and not t2['paused']
+        check('6. Video mounts and playback advances time across two samples (dt >= 0.3s)', adv_ok, {'t1': t1, 't2': t2, 'advance': adv})
 
-        # 7. Unmount and stop sound on close/Escape
+        # 7. Unmount and stop sound on close/Escape (retaining old video reference)
         page.keyboard.press('Escape')
         time.sleep(0.5)
-        stop_state = page.evaluate('''() => {
+        old_state = page.evaluate('''() => {
+            const v = window.__testedVideo1;
             const popover = document.querySelector('.food-inline-popover');
-            const v = document.querySelector('video.food-popover-video');
             return {
-                popoverHidden: popover.hidden,
-                hasSrc: v ? v.hasAttribute('src') : false,
-                paused: v ? v.paused : true
+                popoverHidden: popover ? popover.hidden : true,
+                paused: v ? v.paused : true,
+                hasSrc: v ? (v.hasAttribute('src') && v.getAttribute('src') !== '') : false,
+                srcVal: v ? v.getAttribute('src') : null
             };
         }''')
-        check('7. Pressing Escape stops video, removes src, and closes popover', 
-              stop_state['popoverHidden'] and not stop_state['hasSrc'] and stop_state['paused'], 
-              stop_state)
+        check('7. Retained old video reference is paused, src removed, and popover closed on Escape', 
+              old_state['popoverHidden'] and not old_state['hasSrc'] and old_state['paused'], 
+              old_state)
     else:
         check('6. Video play button present', False)
         check('7. Video unmount check', False)
 
-    # 8. Multi-creator shop switcher test (e.g., 燕子煨汤 or 赵师傅 or 毛氏汽水包)
+    # 8. Multi-creator shop switcher test (e.g., 小屋卤肉大饼, 燕子煨汤, or 赵师傅)
+    # Actually click card, play creator 1, retain reference, click creator 2, verify old paused and new playing, then close
     multi_creator_test = page.evaluate('''() => {
-        // Find card for a merged stop
         const cards = Array.from(document.querySelectorAll('.food-card'));
         const target = cards.find(c => {
             const t = c.textContent || '';
-            return t.includes('燕子') || t.includes('赵师傅') || t.includes('毛氏') || t.includes('汪记') || t.includes('长堤');
+            return t.includes('小屋') || t.includes('燕子') || t.includes('赵师傅');
         });
         if (!target) return { found: false };
         const btn = target.querySelector('.food-open') || target;
@@ -159,9 +156,58 @@ with sync_playwright() as pw:
             authors: clipButtons.map(b => b.textContent)
         };
     }''')
-    check('8. Multi-creator merged shop renders creator switch tabs', 
-          multi_creator_test['found'] and multi_creator_test['clipCount'] >= 2, 
-          multi_creator_test)
+    if multi_creator_test['found'] and multi_creator_test['clipCount'] >= 2:
+        page.wait_for_selector('.food-inline-popover:not([hidden])')
+        play_btn2 = page.locator('.food-popover-play')
+        if play_btn2.is_visible():
+            play_btn2.click()
+        page.wait_for_selector('video.food-popover-video', timeout=5000)
+        page.evaluate("() => { window.__creatorVideo1 = document.querySelector('video.food-popover-video'); }")
+        time.sleep(0.5)
+        c1_t1 = page.evaluate("() => window.__creatorVideo1 ? window.__creatorVideo1.currentTime : 0")
+        time.sleep(0.8)
+        c1_t2 = page.evaluate("() => window.__creatorVideo1 ? window.__creatorVideo1.currentTime : 0")
+        
+        # Switch to creator 2
+        clip_btns = page.locator('.food-popover-clip')
+        clip_btns.nth(1).click()
+        time.sleep(0.5)
+        play_btn_c2 = page.locator('.food-popover-play')
+        if play_btn_c2.is_visible():
+            play_btn_c2.click()
+            page.wait_for_selector('video.food-popover-video', timeout=5000)
+        
+        c1_after = page.evaluate('''() => {
+            const v1 = window.__creatorVideo1;
+            return {
+                paused: v1 ? v1.paused : true,
+                hasSrc: v1 ? (v1.hasAttribute('src') && v1.getAttribute('src') !== '') : false
+            };
+        }''')
+        page.evaluate("() => { window.__creatorVideo2 = document.querySelector('video.food-popover-video'); }")
+        time.sleep(0.5)
+        c2_t1 = page.evaluate("() => window.__creatorVideo2 ? window.__creatorVideo2.currentTime : -1")
+        time.sleep(0.8)
+        c2_t2 = page.evaluate("() => window.__creatorVideo2 ? window.__creatorVideo2.currentTime : -1")
+        c2_adv = (c2_t2 - c2_t1) if (c2_t2 >= 0 and c2_t1 >= 0) else 0
+
+        # Close popover
+        page.keyboard.press('Escape')
+        time.sleep(0.5)
+        c2_after = page.evaluate('''() => {
+            const v2 = window.__creatorVideo2;
+            return {
+                paused: v2 ? v2.paused : true,
+                hasSrc: v2 ? (v2.hasAttribute('src') && v2.getAttribute('src') !== '') : false
+            };
+        }''')
+        
+        switch_ok = (c1_after['paused'] and c2_adv >= 0.2 and c2_after['paused'])
+        check('8. Multi-creator shop switch: old video stops, new creator plays and advances, stops on close', 
+              switch_ok, 
+              {'c1Advance': c1_t2 - c1_t1, 'c1After': c1_after, 'c2Advance': c2_adv, 'c2After': c2_after})
+    else:
+        check('8. Multi-creator shop switch tabs', False, multi_creator_test)
 
     # Desktop screenshot
     desktop_shot = output_dir / 'wuhan-desktop-1440.png'

@@ -49,38 +49,44 @@
     }
   },
   {
-    "name": "6. Video mounts and playback advances time",
+    "name": "6. Video mounts and playback advances time across two samples (dt >= 0.3s)",
     "passed": true,
     "details": {
-      "src": "http://127.0.0.1:8798/media/videos/wh-guagua-7695718351578976329/wh-guagua-xiaowu-112e3ef1ff53f28e.mp4",
-      "paused": false,
-      "currentTime": 0.767915,
-      "duration": 11.5,
-      "readyState": 4
+      "t1": {
+        "t": 0,
+        "paused": false
+      },
+      "t2": {
+        "t": 0.757429,
+        "paused": false
+      },
+      "advance": 0.757429
     }
   },
   {
-    "name": "7. Pressing Escape stops video, removes src, and closes popover",
+    "name": "7. Retained old video reference is paused, src removed, and popover closed on Escape",
     "passed": true,
     "details": {
       "popoverHidden": true,
+      "paused": true,
       "hasSrc": false,
-      "paused": true
+      "srcVal": null
     }
   },
   {
-    "name": "8. Multi-creator merged shop renders creator switch tabs",
+    "name": "8. Multi-creator shop switch: old video stops, new creator plays and advances, stops on close",
     "passed": true,
     "details": {
-      "found": true,
-      "title": "长堤街油炸小吃",
-      "clipCount": 4,
-      "authors": [
-        "吃个瓜瓜",
-        "人间行走小饭桶",
-        "哦一西cc",
-        "刘雨鑫JASON"
-      ]
+      "c1Advance": 0.8034340000000001,
+      "c1After": {
+        "paused": true,
+        "hasSrc": false
+      },
+      "c2Advance": 0.8035129999999999,
+      "c2After": {
+        "paused": true,
+        "hasSrc": false
+      }
     }
   },
   {
