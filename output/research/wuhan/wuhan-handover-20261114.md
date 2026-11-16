@@ -6,6 +6,8 @@
 - **独立开发工作区**：`D:\codex\美食网站\.local\worktrees\wuhan-prep`（根工作区 `D:\codex\美食网站` 保留原有修改，未触碰）
 - **武汉开发分支**：`codex/city-wuhan-prep`
 - **目标合并分支**：`origin/main`
+- **正式 PR 链接**：https://github.com/mzsjlx/shitu/pull/10（PR #10）
+- **正式 PR 编号**：#10
 - **正式 Release 地址**：https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-wuhan
 - **正式 Release 标签**：`media-2026-11-16-wuhan`
 - **本地服务地址**：`http://127.0.0.1:8798/?city=wuhan&view=food`（常驻预览服务）
