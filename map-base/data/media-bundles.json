@@ -1466,9 +1466,63 @@
       "sha256": "6c2d6b64a151f075d6193182b9b88ffba0271ecda3b7af04799fb1d4043dde88",
       "clips": 1,
       "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-11-16-wuhan/shitu-media-wh-zhoumedazi-7621876045624663473-b80d1e8eb22eea99.zip"
+    },
+    {
+      "city": "zhengzhou",
+      "sourceId": "zz-chaixiaochai-7674563519769881320",
+      "name": "shitu-media-zz-chaixiaochai-7674563519769881320-96661691ced64ce9.zip",
+      "bytes": 104817431,
+      "sha256": "84fd9870bb95060140470b6faef56efaef3202ea37fa3fa0a4c42872bb8857d2",
+      "clips": 1,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-11-16-zhengzhou/shitu-media-zz-chaixiaochai-7674563519769881320-96661691ced64ce9.zip"
+    },
+    {
+      "city": "zhengzhou",
+      "sourceId": "zz-chichi-7472290364137671987",
+      "name": "shitu-media-zz-chichi-7472290364137671987-f511c88d0f1245f6.zip",
+      "bytes": 283039504,
+      "sha256": "2141421283b410230d9aea9ff87ad53a28c55f3e1571ce58950ba2ee67122726",
+      "clips": 1,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-11-16-zhengzhou/shitu-media-zz-chichi-7472290364137671987-f511c88d0f1245f6.zip"
+    },
+    {
+      "city": "zhengzhou",
+      "sourceId": "zz-dapanda-7621196008361978609",
+      "name": "shitu-media-zz-dapanda-7621196008361978609-68c21ba3fbd5f4d7.zip",
+      "bytes": 221425327,
+      "sha256": "886817f5834681819dcc7d7539b5c849e0a8862519e603e695419e7a3728ef57",
+      "clips": 1,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-11-16-zhengzhou/shitu-media-zz-dapanda-7621196008361978609-68c21ba3fbd5f4d7.zip"
+    },
+    {
+      "city": "zhengzhou",
+      "sourceId": "zz-yuanao-7617429859431122502",
+      "name": "shitu-media-zz-yuanao-7617429859431122502-6f2f88fc5da03110.zip",
+      "bytes": 115873126,
+      "sha256": "62cca4ee0609a4044f971de821253476bca0077c3ca7abece78c3e78fdcfb6ef",
+      "clips": 4,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-11-16-zhengzhou/shitu-media-zz-yuanao-7617429859431122502-6f2f88fc5da03110.zip"
+    },
+    {
+      "city": "zhengzhou",
+      "sourceId": "zz-beizeng-7661525430997912882",
+      "name": "shitu-media-zz-beizeng-7661525430997912882-8c06002de9608834.zip",
+      "bytes": 173113846,
+      "sha256": "9303e9d0e210e766749feaea72085907e34908a49ea1850545a5f0d0273061b4",
+      "clips": 5,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-11-16-zhengzhou/shitu-media-zz-beizeng-7661525430997912882-8c06002de9608834.zip"
+    },
+    {
+      "city": "zhengzhou",
+      "sourceId": "zz-shiwu-7687558663678177521",
+      "name": "shitu-media-zz-shiwu-7687558663678177521-a1fa8e8c2b614c95.zip",
+      "bytes": 217400491,
+      "sha256": "23c32e0a7d710d4d443ef493f0061519d3d6df13287cd68eb7d27b41e8f4de7b",
+      "clips": 12,
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-11-16-zhengzhou/shitu-media-zz-shiwu-7687558663678177521-a1fa8e8c2b614c95.zip"
     }
   ],
-  "latestRelease": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-wuhan",
+  "latestRelease": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-zhengzhou",
   "releases": [
     {
       "tag": "media-2026-10-28",
@@ -1497,6 +1551,10 @@
     {
       "tag": "media-2026-11-16-wuhan",
       "url": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-wuhan"
+    },
+    {
+      "tag": "media-2026-11-16-zhengzhou",
+      "url": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-zhengzhou"
     }
   ]
 }
