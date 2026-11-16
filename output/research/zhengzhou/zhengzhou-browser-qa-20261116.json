@@ -1,9 +1,9 @@
 {
   "city": "zhengzhou",
-  "verifiedAt": "2026-11-16 20:28:10",
+  "verifiedAt": "2026-11-16 21:36:19",
   "previewUrl": "http://127.0.0.1:8796",
-  "total": 12,
-  "passed": 12,
+  "total": 21,
+  "passed": 21,
   "checks": [
     {
       "name": "1. Map readiness signal and Zhengzhou title",
@@ -14,40 +14,118 @@
       }
     },
     {
-      "name": "2. City switcher contains all 7 cities (chongqing, changsha, liuzhou, nanjing, chaoshan, wuhan, zhengzhou)",
+      "name": "2. Food cards rendered on map for Zhengzhou (21 on-map stops)",
       "passed": true,
       "details": {
-        "cities": [
-          "chongqing",
-          "changsha",
-          "liuzhou",
-          "nanjing",
-          "chaoshan",
-          "wuhan",
-          "zhengzhou"
+        "cardCount": 21
+      }
+    },
+    {
+      "name": "3. Shop names match real Zhengzhou establishments across districts",
+      "passed": true,
+      "details": {
+        "cardNames": [
+          "知青老食堂（沙口路店）",
+          "灶座小锅烀饼·铁锅炖（漓江路黄科大店）",
+          "天一日料（正弘城店）",
+          "北兰台湾牛肉面",
+          "王繁星面馆（大卫城商圈店）",
+          "复兴面王（亳都·新象店）",
+          "刘相五胡辣汤豆沫馆（康复中街店）",
+          "姚记老婆羊肉鲜汤",
+          "合记烩面（人民路店）",
+          "刘俊峰胡辣汤（科瑞大厦店）"
         ]
       }
     },
     {
-      "name": "3. City selector current value is zhengzhou",
+      "name": "4. Video popover opens on card click",
       "passed": true
     },
     {
-      "name": "4. Search input placeholder for Zhengzhou",
+      "name": "5. Floating window media area >= 2/3 of border box",
       "passed": true,
       "details": {
-        "placeholder": "找一条路，开始逛郑州"
+        "popoverWidth": 310,
+        "popoverHeight": 381.5,
+        "popoverArea": 118265,
+        "mediaWidth": 296,
+        "mediaHeight": 267,
+        "mediaArea": 79032,
+        "ratio": 0.6682619540861624
       }
     },
     {
-      "name": "5. Initial food card count is 0 (clean baseline awaiting user video links, no fabricated stores)",
+      "name": "6. Video mounts and playback advances time across two samples (dt >= 0.3s)",
       "passed": true,
       "details": {
-        "cardCount": 0
+        "t1": {
+          "t": 0,
+          "paused": false
+        },
+        "t2": {
+          "t": 0.810232,
+          "paused": false
+        },
+        "advance": 0.810232
       }
     },
     {
-      "name": "6. Road search returns genuine Zhengzhou roads containing \"二七\"",
+      "name": "7. Retained old video reference is paused, src removed, and popover closed on Escape",
+      "passed": true,
+      "details": {
+        "popoverHidden": true,
+        "paused": true,
+        "hasSrc": false,
+        "srcVal": null
+      }
+    },
+    {
+      "name": "8. Multi-creator shop switch: old creator video stops, new creator plays and advances, stops on close",
+      "passed": true,
+      "details": {
+        "c1Advance": 0.803694,
+        "c1After": {
+          "paused": true,
+          "hasSrc": false
+        },
+        "c2Advance": 0.79562,
+        "c2After": {
+          "paused": true,
+          "hasSrc": false
+        }
+      }
+    },
+    {
+      "name": "9. Video library creator tabs and search filter clips containing \"烩面\" (合记)",
+      "passed": true,
+      "details": {
+        "defaultCards": [
+          "知青老食堂（沙口路店）"
+        ],
+        "results": [
+          "合记烩面（人民路店）"
+        ]
+      }
+    },
+    {
+      "name": "10. Desktop 1440x960 screenshot saved",
+      "passed": true,
+      "details": {
+        "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-desktop-1440.png",
+        "bytes": 1340004
+      }
+    },
+    {
+      "name": "11. Multi-city navigation switches without cross-city contamination",
+      "passed": true,
+      "details": {
+        "cqCity": "重庆",
+        "zzCity": "郑州"
+      }
+    },
+    {
+      "name": "12. Road search in street mode returns genuine Zhengzhou roads containing \"二七\"",
       "passed": true,
       "details": {
         "results": [
@@ -57,50 +135,66 @@
       }
     },
     {
-      "name": "7. Desktop 1440x960 screenshot saved",
+      "name": "13. Mobile 390x844 popover media area >= 2/3",
       "passed": true,
       "details": {
-        "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-desktop-1440.png",
-        "bytes": 870094
+        "ratio": 0.6671328671328671
       }
     },
     {
-      "name": "8. Mobile 390x844 screenshot saved",
+      "name": "14. Mobile 390x844 screenshot saved",
       "passed": true,
       "details": {
-        "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-mobile-390.png",
-        "bytes": 527603
+        "file": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-mobile-390.png"
       }
     },
     {
-      "name": "9. Small screen 320x680 screenshot saved",
+      "name": "15. Small screen 320x680 popover media area >= 2/3",
       "passed": true,
       "details": {
-        "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-small-320.png",
-        "bytes": 340844
+        "ratio": 0.6671328671328671
       }
     },
     {
-      "name": "10. Landscape 736x414 screenshot saved",
+      "name": "16. Small screen 320x680 screenshot saved",
       "passed": true,
       "details": {
-        "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-landscape-736.png",
-        "bytes": 504922
+        "file": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-small-320.png"
       }
     },
     {
-      "name": "11. Switch to Chongqing: title is Chongqing and food cards render without city collision",
+      "name": "17. Short landscape 736x414 popover media area >= 2/3",
       "passed": true,
       "details": {
-        "cqTitle": "食途 · 重庆地图",
-        "cqCards": 81
+        "ratio": 0.6683870967741935
       }
     },
     {
-      "name": "12. Switch back to Zhengzhou: state isolated, no ghost cards or Chongqing artifacts",
+      "name": "18. Short landscape 736x414 screenshot saved",
       "passed": true,
       "details": {
-        "zzTitle": "食途 · 郑州地图"
+        "file": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-landscape-736.png"
+      }
+    },
+    {
+      "name": "19. Standalone bundle preview-zhengzhou.html renders food cards (21 offline stops)",
+      "passed": true,
+      "details": {
+        "cardCount": 21
+      }
+    },
+    {
+      "name": "20. Standalone bundle preview-zhengzhou.html screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-preview-bundle-1440.png"
+      }
+    },
+    {
+      "name": "21. No unhandled page errors during browser navigation",
+      "passed": true,
+      "details": {
+        "errors": []
       }
     }
   ]

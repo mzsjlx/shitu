@@ -5,6 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildFoodRoadRouter, findFoodRoadRoute, nearestRoadSnaps } from '../src/food-road-router.js';
 import { validateVideoLibrary } from '../src/video-library-model.js';
+import { withinMapBounds, groupVideoPlaces } from '../src/video-places.js';
 import { allCityCatalogs } from './city-catalogs.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -37,6 +38,7 @@ await check('1. config/cities.json includes valid zhengzhou entry preserving exi
   assert(content.cities.liuzhou, 'liuzhou preserved');
   assert(content.cities.nanjing, 'nanjing preserved');
   assert(content.cities.chaoshan, 'chaoshan preserved');
+  assert(content.cities.wuhan, 'wuhan preserved');
   return { zhengzhouConfig: zz };
 });
 
@@ -118,27 +120,27 @@ await check('6. data/cities/zhengzhou/terrain-manifest.json and 97 DEM tiles exi
 });
 
 // 7. Router connectivity test on real Zhengzhou streets
-await check('7. food-road-router calculates genuine Zhengzhou routes and distance', async () => {
+await check('7. food-road-router calculates genuine Zhengzhou routes and distance between food stops', async () => {
   const net = JSON.parse(await readFile(path.join(root, 'data/cities/zhengzhou/food-road-network.json'), 'utf8'));
   const router = buildFoodRoadRouter(net);
   assert(router.segments.length > 50000, `Expected >50000 road segments, got ${router.segments.length}`);
   
-  // Route 1: Erqi Square to Dashanghai City (二七广场到大上海城)
-  const p1 = [113.665, 34.753];
-  const p2 = [113.670, 34.758];
+  // Route 1: 知青老食堂 (沙口路) 到 老蔡记蒸饺 (德化美食街)
+  const p1 = [113.6353, 34.7689];
+  const p2 = [113.6625, 34.7505];
   const route1 = findFoodRoadRoute(router, p1, p2);
   assert.equal(route1.status, 'ready', 'Route 1 must be ready');
-  assert(route1.distanceMetres > 400 && route1.distanceMetres < 1500, `Expected 400m-1500m, got ${route1.distanceMetres}`);
-  assert(route1.coordinates.length >= 2, 'Route coordinates present');
+  assert(route1.distanceMetres > 3000 && route1.distanceMetres < 7000, `Expected 3km-7km, got ${route1.distanceMetres}`);
+  assert(route1.coordinates.length >= 10, 'Route coordinates present');
   
-  // Route 2: Guomao 360 to Nongke Road (国贸360到农科路酒吧美食街)
-  const p3 = [113.680, 34.783];
-  const p4 = [113.685, 34.790];
+  // Route 2: 老蔡记 到 合记烩面 (人民路丹尼斯旁)
+  const p3 = [113.6625, 34.7505];
+  const p4 = [113.6705, 34.7575];
   const route2 = findFoodRoadRoute(router, p3, p4);
   assert.equal(route2.status, 'ready', 'Route 2 must be ready');
-  assert(route2.distanceMetres > 500 && route2.distanceMetres < 2000, `Expected 500m-2000m, got ${route2.distanceMetres}`);
+  assert(route2.distanceMetres > 900 && route2.distanceMetres < 2500, `Expected 900m-2500m, got ${route2.distanceMetres}`);
 
-  // Out of reach test: point beyond 250m max snap distance returns null
+  // Out of reach test: point beyond 250m max snap distance returns empty
   const faraway = [112.0, 33.0];
   const snaps = nearestRoadSnaps(router, faraway, 250);
   assert.equal(snaps.length, 0, 'Faraway point must not snap');
@@ -151,17 +153,64 @@ await check('7. food-road-router calculates genuine Zhengzhou routes and distanc
 });
 
 // 8. Video library validation check
-await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 0 fabricated stores', async () => {
+await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 6 user sources and 24 segments', async () => {
   const raw = await readFile(path.join(root, 'data/cities/zhengzhou/video-library.json'), 'utf8');
   const catalog = JSON.parse(raw);
   const validated = validateVideoLibrary(catalog, 'zhengzhou');
   assert.equal(validated.city, 'zhengzhou');
-  assert.equal(validated.sources.length, 0, '0 sources initially, strictly waiting for user links');
-  return { status: 'Clean video library awaiting user intake', sourceCount: validated.sources.length };
+  assert.equal(validated.sources.length, 6, 'Must have 6 sources from user batch 1');
+  
+  const allSegments = validated.sources.flatMap(s => s.segments);
+  assert.equal(allSegments.length, 24, 'Must have 24 total segments');
+  
+  const authors = new Set(validated.sources.map(s => s.author));
+  assert.equal(authors.size, 6, 'Must have 6 distinct authors');
+  
+  // Multi-creator deduplication check: 合记烩面
+  const hejiSegments = allSegments.filter(s => s.name.includes('合记烩面'));
+  assert.equal(hejiSegments.length, 2, '合记烩面 must have 2 segments from 2 creators');
+  const secondaryHeji = hejiSegments.find(s => s.placeId);
+  assert.equal(secondaryHeji.placeId, 'zz-shiwu-heji', 'Secondary heji must point to primary zz-shiwu-heji');
+
+  // Groups and stops check
+  const bounds = [113.58, 34.7, 113.78, 34.83];
+  const groups = groupVideoPlaces(catalog);
+  assert.equal(groups.length, 23, '24 segments deduplicate into 23 places');
+  
+  const inBoundsGroups = groups.filter(g => withinMapBounds(g.primary.segment, bounds));
+  assert.equal(inBoundsGroups.length, 21, 'Must have 21 in-bounds distinct map stops');
+  
+  const outOfBoundsSegments = allSegments.filter(s => !withinMapBounds(s, bounds));
+  assert.equal(outOfBoundsSegments.length, 2, 'Must have 2 out-of-bounds segments (换利小吃 & 郑三指固始鹅块)');
+  
+  return {
+    sources: validated.sources.length,
+    segments: allSegments.length,
+    authors: authors.size,
+    dedupPlaces: groups.length,
+    inBoundsMapStops: inBoundsGroups.length,
+    outOfBoundsSegments: outOfBoundsSegments.length
+  };
 });
 
-// 9. All city catalogs check
-await check('9. allCityCatalogs passes without duplicate source or segment IDs across all cities', async () => {
+// 9. Poster files existence and SHA256 integrity
+await check('9. data/cities/zhengzhou/video-posters.json records all 24 posters matching disk files', async () => {
+  const postersData = JSON.parse(await readFile(path.join(root, 'data/cities/zhengzhou/video-posters.json'), 'utf8'));
+  const segments = Object.entries(postersData.segments);
+  assert.equal(segments.length, 24, 'Must have 24 poster entries');
+  
+  for (const [segId, entry] of segments) {
+    const filePath = path.join(root, entry.path);
+    const bytes = await readFile(filePath);
+    const sha = crypto.createHash('sha256').update(bytes).digest('hex');
+    assert.equal(sha, entry.sha256, `Poster hash mismatch for ${segId}`);
+    assert.equal(bytes.length, entry.bytes, `Poster size mismatch for ${segId}`);
+  }
+  return { posterCount: segments.length };
+});
+
+// 10. All city catalogs check
+await check('10. allCityCatalogs passes without duplicate source or segment IDs across all 7 cities', async () => {
   const catalogs = await allCityCatalogs(root);
   const zz = catalogs.find(c => c.cityId === 'zhengzhou');
   assert(zz, 'zhengzhou catalog loaded');
