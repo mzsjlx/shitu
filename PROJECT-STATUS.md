@@ -12,9 +12,11 @@
    - 从原片提取 24 真实店门头/招牌菜画面并发布至 `map-base/assets/video-posters/`；
    - 登记郑州海报清单 `data/cities/zhengzhou/video-posters.json`，按 ID 增量追加至全局 `data/video-posters.json`（全局海报达 630 张，既有城市 606 张 100% 完整无扰）；
    - `npm.cmd run build` 干净编译全部 7 大城市，0 媒体缺失报错；产出单文件版 `preview-zhengzhou.html`（16,164,157 字节）。
-3. **6 来源素材独立打包与接收端导入核验**：
-   - 全部 6 来源经 `scripts/media-bundles.mjs pack` 打包入 `.local/media-bundles/`（共 6 个 ZIP 与 6 份 `.zip.json` 摘要清单，总计约 1.11 GiB）；
-   - 在独立隔离干净目录下实测 `importBundle`，首次导入新增文件并写入账本，重复导入幂等安全跳过（newFiles: 0）。
+3. **6 来源素材独立打包、正式 Release 发布与接收端导入核验（12/12 uploaded 全量上线）**：
+   - 全部 6 来源经 `scripts/media-bundles.mjs pack` 打包入 `.local/media-bundles/`（共 6 个 ZIP 与 6 份 `.zip.json` 摘要清单，总计 1,115,669,725 字节，约 1.04 GiB）；
+   - 正式发布 GitHub Release [`media-2026-11-16-zhengzhou`](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-zhengzhou)，经 API 分页审计 **12/12 附件全部达到 `uploaded` 状态，0 个 starter**；
+   - 远端抽样下载 `shitu-media-zz-chaixiaochai-*.zip`，重新计算哈希为 `84fd9870...` 严格一致；在干净独立目录下运行 `importBundle`，首次导入 3 文件写账本，重复导入幂等安全跳过（newFiles: 0）；
+   - `map-base/data/media-bundles.json` 追加全量 6 来源包下载地址与哈希，`latestRelease` 更新至郑州发布。
 4. **全端自动化双套件全过（10/10 数据 + 21/21 浏览器断言）**：
    - 数据回归 `node scripts/review-zhengzhou-data.mjs` **10/10 PASS**；
    - 真实浏览器验证 `python -u scripts/review-zhengzhou-browser.py` **21/21 PASS**：

@@ -78,23 +78,29 @@
 
 ---
 
-## 4. 素材包打包与接收端导入核验
+## 4. 素材包打包、正式 Release 发布与接收端导入核验
 
-全部 6 个探店来源已通过 `scripts/media-bundles.mjs pack` 打包入 `.local/media-bundles/`：
+全部 6 个探店来源已通过 `scripts/media-bundles.mjs pack` 打包入 `.local/media-bundles/`，并已全量发布至 GitHub Release [media-2026-11-16-zhengzhou](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-zhengzhou)：
 
-| 包文件名 | 包含片段数 | 字节数 (Bytes) | SHA256 摘要 | 状态 |
+- **Release ID**：447100672
+- **全量附件核查**：**12/12 全部为 `uploaded` 状态**（6 个 ZIP 素材包 + 6 份 `.zip.json` 清单，**0 个 starter**）
+- **ZIP 总字节数**：1,115,669,725 字节（约 1.04 GiB）
+
+| 包文件名 | 包含片段数 | 字节数 (Bytes) | SHA256 摘要 | 远端 Release 状态 |
 | --- | --- | --- | --- | --- |
-| `shitu-media-zz-chaixiaochai-7674563519769881320-96661691ced64ce9.zip` | 1 | 104,817,431 | `84fd9870bb95060140470b6faef56efaef3202ea37fa3fa0a4c42872bb8857d2` | 打包完毕 / 校验通过 |
-| `shitu-media-zz-chichi-7472290364137671987-f511c88d0f1245f6.zip` | 1 | 283,039,504 | `2141421283b410230d9aea9ff87ad53a28c55f3e1571ce58950ba2ee67122726` | 打包完毕 / 校验通过 |
-| `shitu-media-zz-dapanda-7621196008361978609-68c21ba3fbd5f4d7.zip` | 1 | 221,425,327 | `886817f5834681819dcc7d7539b5c849e0a8862519e603e695419e7a3728ef57` | 打包完毕 / 校验通过 |
-| `shitu-media-zz-yuanao-7617429859431122502-6f2f88fc5da03110.zip` | 4 | 115,873,126 | `62cca4ee0609a4044f971de821253476bca0077c3ca7abece78c3e78fdcfb6ef` | 打包完毕 / 校验通过 |
-| `shitu-media-zz-beizeng-7661525430997912882-8c06002de9608834.zip` | 5 | 173,113,846 | `9303e9d0e210e766749feaea72085907e34908a49ea1850545a5f0d0273061b4` | 打包完毕 / 校验通过 |
-| `shitu-media-zz-shiwu-7687558663678177521-a1fa8e8c2b614c95.zip` | 12 | 217,400,491 | `23c32e0a7d710d4d443ef493f0061519d3d6df13287cd68eb7d27b41e8f4de7b` | 打包完毕 / 校验通过 |
+| `shitu-media-zz-chaixiaochai-7674563519769881320-96661691ced64ce9.zip` | 1 | 104,817,431 | `84fd9870bb95060140470b6faef56efaef3202ea37fa3fa0a4c42872bb8857d2` | **uploaded** (已上线) |
+| `shitu-media-zz-chichi-7472290364137671987-f511c88d0f1245f6.zip` | 1 | 283,039,504 | `2141421283b410230d9aea9ff87ad53a28c55f3e1571ce58950ba2ee67122726` | **uploaded** (已上线) |
+| `shitu-media-zz-dapanda-7621196008361978609-68c21ba3fbd5f4d7.zip` | 1 | 221,425,327 | `886817f5834681819dcc7d7539b5c849e0a8862519e603e695419e7a3728ef57` | **uploaded** (已上线) |
+| `shitu-media-zz-yuanao-7617429859431122502-6f2f88fc5da03110.zip` | 4 | 115,873,126 | `62cca4ee0609a4044f971de821253476bca0077c3ca7abece78c3e78fdcfb6ef` | **uploaded** (已上线) |
+| `shitu-media-zz-beizeng-7661525430997912882-8c06002de9608834.zip` | 5 | 173,113,846 | `9303e9d0e210e766749feaea72085907e34908a49ea1850545a5f0d0273061b4` | **uploaded** (已上线) |
+| `shitu-media-zz-shiwu-7687558663678177521-a1fa8e8c2b614c95.zip` | 12 | 217,400,491 | `23c32e0a7d710d4d443ef493f0061519d3d6df13287cd68eb7d27b41e8f4de7b` | **uploaded** (已上线) |
 
-### 隔离接收端导入验证
-在干净隔离测试目录下模拟外部协作者机器接收：
-- 首次导入（以 `zz-chaixiaochai` 为例）：解压 `bundle.json` 与对应视频/海报，生成本地账本 `report.json`，返回 `newFiles: 3, clips: 1`，PASS；
-- 重复导入：检测到本地内容哈希一致，安全跳过写入，返回 `newFiles: 0, clips: 1`，PASS。
+### 远端下载样本实测与接收端导入核验
+- **远端下载核验**：通过公开 URL 从 Release 实际下载 `shitu-media-zz-chaixiaochai-7674563519769881320-96661691ced64ce9.zip`，实测 104,817,431 字节，重新计算 SHA256 为 `84fd9870bb95060140470b6faef56efaef3202ea37fa3fa0a4c42872bb8857d2`，与索引及本地打包完全一致；
+- **干净隔离目录导入测试**：模拟外部协作者独立检出环境运行 `importBundle`：
+  - 首次导入：成功解压 3 个文件（原片、单店切片、海报）并写入账本 `report.json`，返回 `newFiles: 3, clips: 1`，PASS；
+  - 二次导入（幂等性验证）：检测到已有文件哈希完全一致，安全跳过写入，返回 `newFiles: 0, clips: 1`，PASS。
+- **全局清单追加**：`map-base/data/media-bundles.json` 已追加上述 6 个包下载地址，`latestRelease` 指向该发布。
 
 ---
 
