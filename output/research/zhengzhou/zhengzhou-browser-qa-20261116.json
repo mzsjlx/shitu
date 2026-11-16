@@ -1,0 +1,106 @@
+{
+  "city": "zhengzhou",
+  "verifiedAt": "2026-11-16 20:14:33",
+  "previewUrl": "http://127.0.0.1:8796",
+  "total": 12,
+  "passed": 12,
+  "checks": [
+    {
+      "name": "1. Map readiness signal and Zhengzhou title",
+      "passed": true,
+      "details": {
+        "title": "食途 · 郑州地图",
+        "statusText": "郑州地图已展开"
+      }
+    },
+    {
+      "name": "2. City switcher contains all 6 cities (chongqing, changsha, liuzhou, nanjing, chaoshan, zhengzhou)",
+      "passed": true,
+      "details": {
+        "cities": [
+          "chongqing",
+          "changsha",
+          "liuzhou",
+          "nanjing",
+          "chaoshan",
+          "zhengzhou"
+        ]
+      }
+    },
+    {
+      "name": "3. City selector current value is zhengzhou",
+      "passed": true
+    },
+    {
+      "name": "4. Search input placeholder for Zhengzhou",
+      "passed": true,
+      "details": {
+        "placeholder": "找一条路，开始逛郑州"
+      }
+    },
+    {
+      "name": "5. Initial food card count is 0 (clean baseline awaiting user video links, no fabricated stores)",
+      "passed": true,
+      "details": {
+        "cardCount": 0
+      }
+    },
+    {
+      "name": "6. Road search returns genuine Zhengzhou roads containing \"二七\"",
+      "passed": true,
+      "details": {
+        "results": [
+          "二七路",
+          "二七广场隧道"
+        ]
+      }
+    },
+    {
+      "name": "7. Desktop 1440x960 screenshot saved",
+      "passed": true,
+      "details": {
+        "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-desktop-1440.png",
+        "bytes": 870094
+      }
+    },
+    {
+      "name": "8. Mobile 390x844 screenshot saved",
+      "passed": true,
+      "details": {
+        "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-mobile-390.png",
+        "bytes": 527603
+      }
+    },
+    {
+      "name": "9. Small screen 320x680 screenshot saved",
+      "passed": true,
+      "details": {
+        "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-small-320.png",
+        "bytes": 340844
+      }
+    },
+    {
+      "name": "10. Landscape 736x414 screenshot saved",
+      "passed": true,
+      "details": {
+        "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-landscape-736.png",
+        "bytes": 504922
+      }
+    },
+    {
+      "name": "11. Switch to Chongqing: title is Chongqing and food cards render without city collision",
+      "passed": true,
+      "details": {
+        "cqTitle": "食途 · 重庆地图",
+        "cqCards": 81
+      }
+    },
+    {
+      "name": "12. Switch back to Zhengzhou: state isolated, no ghost cards or Chongqing artifacts",
+      "passed": true,
+      "details": {
+        "zzTitle": "食途 · 郑州地图"
+      }
+    }
+  ]
+}

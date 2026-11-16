@@ -1,3 +1,24 @@
+## 2026-11-16 郑州独立接入完成：真实 3D 开放底图、原始 OSM 路网拓扑与 LF 规则就绪，七城无媒体构建通过，干净等待探店视频
+
+在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`）下，完成郑州城市基础架构接入与底图路网准备：
+1. **真实 3D 开放底图与道路索引就绪**：
+   - 提取郑州核心城区 `[113.58, 34.7, 113.78, 34.83]`（涵盖二七商圈、健康路、国贸360、顺城街、CBD 等核心区域），生成 `zhengzhou.pmtiles`（4,171,880 字节，SHA256 `d0c92b0598b8549627aaea9d0919efe348d9166e5242eebc538c6dde52c99a71`，285 张 z15 瓦片全量呈现，19,245 栋真实三维建筑足迹）；
+   - 生成 625 组道路搜索索引 `roads-index.json`（含二七路、人民路、花园路、文化路、金水路、健康路等），道路搜索实时可用；
+   - 缓存 97 张 Terrarium DEM 地形瓦片（2,259,260 字节，`terrain-manifest.json`），真实还原郑州微地貌。
+2. **原始 OSM 节点拓扑路网与 LF 规则锁定**：
+   - 基于 2026-11-16 Geofabrik 河南原始 OSM PBF（51,640,443 字节，SHA256 `a741ad2504467aa6a8b24bded0bf198f882d37adc0c28b54000d54c790b97dee`）提取 `food-road-network.json`（4,184,356 字节，SHA256 `42840c5cecc8a4a9e973c9f9893d81bba134d406c1e60869b4a46bda5525f70e`），包含 64,780 个真实节点与 10,536 条道路；
+   - 严格保留原始节点顺序与连续 ID 拓扑，无折线拼接伪造拓扑，不按几何交叉造路口，禁止直线乘系数；
+   - 在 `.gitattributes` 中锁定 LF 行尾规则，避免 Windows 干净检出产生 CRLF 导致字节与哈希偏差。
+3. **全链路多城构建与干净基线**：
+   - 视频目录 `video-library.json` 保持规范空基线（`sources: []`，`rights.status: "user-confirmed"`），0 虚构商家、0 假视频，通过 `validateVideoLibrary` 校验；
+   - 全局无媒体构建 `npm.cmd run build` 成功通过，既有城市封面 100% 完整保留，产出 `preview-zhengzhou.html`（16,098,413 字节）；
+   - 数据回归 `node scripts/review-zhengzhou-data.mjs` 9/9 PASS（含二七广场到大上海城、国贸360到农科路真实路网连通性计算）。
+4. **浏览器端到端与多视口真机验证（12/12 PASS）**：
+   - 自动化套件 `review-zhengzhou-browser.py` 12 项断言全过；
+   - 桌面 1440、手机 390、小屏 320、横屏 736 截图生成并目视确认；
+   - 城市切换器包含全部城市，双向切换重庆与郑州无残留、不串城；
+   - 本地预览服务已启动于端口 `8796`：`http://127.0.0.1:8796/?city=zhengzhou&view=food`。
+
 ## 2026-11-16 武汉全链路交付整改复核完成：LF路网规则保干净检出 9/9、83 来源 Release 素材发布与 media-bundles 远端交付、呱呱包重构幂等、播放双采样与换片停音 19/19、正式 PR 建立
 
 在独立 worktree `.local/worktrees/wuhan-prep`（分支 `codex/city-wuhan-prep`，基于 `origin/main` 提交 `51f15e5`）下，针对 2026-11-16 接收端复核意见完成全量交付整改：
