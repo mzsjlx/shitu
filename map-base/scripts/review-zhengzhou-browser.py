@@ -9,7 +9,7 @@ output_dir.mkdir(parents=True, exist_ok=True)
 report_path = root / '../output/research/zhengzhou/zhengzhou-browser-qa-20261116.json'
 report_path.parent.mkdir(parents=True, exist_ok=True)
 
-base_url = os.environ.get('PREVIEW_URL', 'http://127.0.0.1:8796')
+base_url = os.environ.get('PREVIEW_URL', 'http://127.0.0.1:8798')
 
 checks = []
 def check(name, passed, details=None):
@@ -63,17 +63,17 @@ with sync_playwright() as pw:
           '食途 · 郑州地图' in title and '郑州地图已展开' in status_text, 
           {'title': title, 'statusText': status_text})
     
-    # Check food markers rendered on map (21 on-map stops: 24 total segments - 2 out-of-bounds - 1 multi-creator merged)
+    # Check food markers rendered on map (50 on-map stops: 56 total segments - 2 out-of-bounds - 4 merged places)
     page.wait_for_selector('.food-card', timeout=10000)
     food_cards = page.locator('.food-card')
     card_count = food_cards.count()
-    check('2. Food cards rendered on map for Zhengzhou (21 on-map stops)', 
-          card_count == 21, {'cardCount': card_count})
+    check('2. Food cards rendered on map for Zhengzhou (50 on-map stops)', 
+          card_count == 50, {'cardCount': card_count})
     
     # Verify shop names in cards
     card_names = page.evaluate("() => Array.from(document.querySelectorAll('.food-card strong')).map(el => el.textContent)")
     check('3. Shop names match real Zhengzhou establishments across districts', 
-          any('合记' in n for n in card_names) and any('知青' in n for n in card_names) and any('小锅烀饼' in n or '方老祖' in n or '四厂' in n for n in card_names), 
+          any('合记' in n for n in card_names) and any('知青' in n for n in card_names) and any('唐风阁' in n or '小锅烀饼' in n or '方老祖' in n or '四厂' in n for n in card_names), 
           {'cardNames': card_names[:10]})
 
     # Open first food card popover
@@ -227,10 +227,12 @@ with sync_playwright() as pw:
     page.wait_for_selector('#food-pick-dialog[open]', timeout=5000)
     page.click('#video-library-open')
     page.wait_for_selector('#video-library-dialog[open]', timeout=5000)
+    page.wait_for_selector('#video-library-grid .video-clip-card', timeout=10000)
     c1_cards = page.evaluate("""() => {
         const items = Array.from(document.querySelectorAll('#video-library-grid .video-clip-card strong'));
         return items.map(el => el.textContent.trim()).filter(Boolean);
     }""")
+    page.wait_for_selector('#video-library-sources .video-source-tab', timeout=5000)
     page.evaluate("""() => {
         const tabs = Array.from(document.querySelectorAll('#video-library-sources .video-source-tab'));
         const target = tabs.find(t => t.textContent.includes('15再吃') || t.textContent.includes('亿点儿'));
@@ -260,10 +262,10 @@ with sync_playwright() as pw:
 
     # City Switcher regression: switch to Chongqing then back to Zhengzhou
     page.select_option('.city-chip select', 'chongqing')
-    time.sleep(1.0)
+    page.wait_for_function("() => window.foodCityMap && window.foodCityMap.ready", timeout=30000)
     cq_city = page.evaluate("() => window.foodCityMap.city.name")
     page.select_option('.city-chip select', 'zhengzhou')
-    time.sleep(1.0)
+    page.wait_for_function("() => window.foodCityMap && window.foodCityMap.ready", timeout=30000)
     zz_city = page.evaluate("() => window.foodCityMap.city.name")
     check('11. Multi-city navigation switches without cross-city contamination', 
           cq_city == '重庆' and zz_city == '郑州', 
@@ -384,8 +386,8 @@ with sync_playwright() as pw:
     p_single.wait_for_function("() => window.foodCityMap && window.foodCityMap.ready", timeout=30000)
     p_single.wait_for_selector('.food-card', timeout=5000)
     single_cards = p_single.locator('.food-card').count()
-    check('19. Standalone bundle preview-zhengzhou.html renders food cards (21 offline stops)', 
-          single_cards == 21, {'cardCount': single_cards})
+    check('19. Standalone bundle preview-zhengzhou.html renders food cards (50 offline stops)', 
+          single_cards == 50, {'cardCount': single_cards})
     single_shot = output_dir / 'zhengzhou-preview-bundle-1440.png'
     p_single.screenshot(path=str(single_shot))
     check('20. Standalone bundle preview-zhengzhou.html screenshot saved', 

@@ -1,36 +1,42 @@
-# 郑州城市接入与首批探店视频闭环交付报告（2026-11-16）
+# 郑州城市全栈接入与双批次探店视频完整闭环交付报告（2026-11-16 ~ 2026-11-17）
 
 ## 1. 交付结论
 
-根据“食途”多城市产品规范与用户明确要求，在独立工作区 `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 最新提交 `6019700`）内，已完整完成郑州（`zhengzhou`）城市全栈接入、3D 开放底图与真实 OSM 拓扑路网、以及用户提供的首批 6 条抖音探店视频端到端闭环（下载、转录、精准切片、真实封面、归并落点、全端播放验证、素材打包）：
+根据“食途”多城市产品规范与用户明确要求，在独立工作区 `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 最新提交 `6019700`，PR #11）内，已完整完成郑州（`zhengzhou`）城市全栈接入、3D 开放底图与真实 OSM 拓扑路网、以及用户提供的两批次共 13 条抖音探店视频端到端闭环（下载、转录、精准切片、真实封面、归并落点、全端播放验证、素材打包、Release 发布与隔离导入测试）：
 
-- **0 虚构商家、0 凭空编造**：严格仅处理用户在会话中明确提供的 6 条抖音链接；
+- **0 虚构商家、0 凭空编造**：严格仅处理用户在会话中明确提供的 13 条抖音链接；
 - **批次精准统计**：
-  - **探店作品数**：6 部
-  - **探店博主人数**：6 位（柴小柴、赤赤吃啥呢、大潘达、Yuanao、倍增CD了、15再吃亿点儿）
-  - **拆分门店片段数**：24 个
-  - **上图有效美食点**：21 处（24 片段 - 2 范围外 - 1 多博主合用分店）
-  - **同店多博主合用**：1 处（`zz-shiwu-heji` 与 `zz-beizeng-heji` 合用人民路“合记烩面”，保留各自独立片段与切片切换）
+  - **探店作品数**：13 部（第一批 6 部 + 第二批 7 部）
+  - **探店博主人数**：13 位（柴小柴、赤赤吃啥呢、大潘达、Yuanao、倍增CD了、15再吃亿点儿、樱桃大婉子、河南民生频道香香美食、特别乌啦啦、蛋壳Danke、李囧囧、迈扣来了、薄荷脆脆薯）
+  - **拆分门店片段数**：56 个（第一批 24 个 + 第二批 32 个）
+  - **去重美食点**：52 处（56 片段 - 2 处跨博主合用分店 - 2 处同博主同地点多分店片段）
+  - **上图有效美食点**：50 处（52 去重点 - 2 范围外）
+  - **同分店多博主合用**：2 处：
+    1. 人民路“合记烩面”：`zz-shiwu-heji`（主片段）与 `zz-beizeng-heji`（合用点，指向主片段）
+    2. 南阳路“唐风阁肉夹馍（南阳路总店）”：`zz-lijiongjiong-tangfengge`（主片段）与 `zz-maikou-tangfengge`（合用点，指向主片段）
+  - **同博主同物理点多片段合用**：2 处：
+    1. 中原电影院“石记百花面鱼”：`zz-maikou-shiji`（主片段）与 `zz-maikou-chaoliangfen`（炒凉粉，指向主片段）
+    2. 河南农大“牧场直销门市部”：`zz-maikou-nongda-niunai`（主片段）与 `zz-maikou-nongda-suannaijuan`（酸奶卷，指向主片段）
   - **范围外待扩图片段**：2 个（换利小吃 须水镇 `[113.4985, 34.7562]`、郑三指固始鹅块 新城路 `[113.6300, 34.8650]`，如实保留真实坐标，绝不压界）
   - **完全未定位数**：0 个
-- **真实音视频流与时长**：全部 24 段剪辑采用 H.264/AAC faststart 编码，实际 `ffprobe` 逐项测得音视频流与真实秒数（非 `end - start` 伪造），容差均在 0.16s 标称内；
-- **真实原片封面提取**：提取各店门头或招牌菜真实画面作为小封面，进 Git 版本库管理（全局海报库扩充至 630 张，其他城市 606 张 100% 零污染）；
+- **真实音视频流与时长**：全部 56 段剪辑采用 H.264/AAC faststart 编码，实际 `ffprobe` 逐项测得音视频流与真实秒数（非 `end - start` 伪造），容差均在 0.16s 标称内；
+- **真实原片封面提取**：提取各店门头、菜品或实景真实画面作为小封面，进 Git 版本库管理（郑州专有封面 56 张，全局海报库扩充至 662 张，其他城市 606 张 100% 零污染）；
 - **全端自动化验证双全过**：
   - 数据与拓扑审查：**10/10 PASS**（`scripts/review-zhengzhou-data.mjs`）
   - 真实浏览器 UI/视频全场景断言：**21/21 PASS**（`scripts/review-zhengzhou-browser.py`）
   - 视频浮窗边框面积比 $\ge 2/3$（实测 66.83% ~ 81.25%）
   - 真实解码与时间推进（1秒双采样 `currentTime` 推进 $\ge 0.3s$）
   - 关闭浮窗/按 Escape/切片/切城市立即停旧音、移除 `src` 并设 `paused=true`
-  - 合记烩面双博主切换播放、互斥暂停及断流全量断言通过
+  - 合记烩面与唐风阁双博主切换播放、互斥暂停及断流全量断言通过
   - 五套视口真机截图完整留存：桌面 1440、手机 390、小屏 320、横屏 736、单文件离线版 1440
 - **多城市构建与离线单文件**：
   - `npm.cmd run build` 干净编译全部 7 大城市（重庆、长沙、柳州、南京、潮汕、武汉、郑州），0 媒体缺失警告；
-  - 产出离线单文件版 `preview-zhengzhou.html`（16,164,157 字节），脱机亦可浏览 21 处郑州美食点。
-- **本地服务运行端口**：**`8796`**（独立启动，不冲突不占用其他端口）。
+  - 产出离线单文件版 `preview-zhengzhou.html`（16,221,810 字节），脱机亦可浏览 50 处郑州在图美食点。
+- **本地服务运行端口**：**`8798`**（独立启动于郑州工作区 `map-base/dist`，避免与旧端口冲突）。
 
 ---
 
-## 2. 首批来源与作品台账（6 来源）
+## 2. 13 个探店来源与作品台账
 
 | 来源 ID | 博主作者 | 发布日期 | 原片时长 | 原片字节数 | 原始 SHA256 | 作品主题 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -40,51 +46,23 @@
 | `zz-yuanao-7617429859431122502` | Yuanao | 2024-09-17 | 126.00s | 110,314,943 | `05b370d9eecb7e4a19de482413e2e468e9583dc90a96dcf4133b8958936e3525` | 郑州社恐友好一人食合集 |
 | `zz-beizeng-7661525430997912882` | 倍增CD了 | 2024-11-01 | 162.10s | 165,116,423 | `fc91e19f6c196c3b73dd79995b17d4c62117ff400632e77026ee97bc497c8dd0` | 专门给吃货的郑州美食攻略 |
 | `zz-shiwu-7687558663678177521` | 15再吃亿点儿 | 2025-02-10 | 225.53s | 207,249,709 | `470ddf5760451ed5199fbcbe6036d580fb0b72d6ccb51a1d7d11e453c05cc0db` | 攒了两年的郑州美食小合集 |
+| `zz-yingtao-7600001486366366446` | 樱桃大婉子 | 2024-08-02 | 193.20s | 67,381,643 | `0b194b6b1929a9cb423a09cf80e2cdb4d85478c95baf85b7dd1134c74302eea0` | 【年度总结】来郑州必吃！土著私藏6家20年老店 |
+| `zz-xiangxiang-7545084990569123110` | 河南民生频道香香美食 | 2024-04-22 | 170.34s | 35,979,531 | `0aca01b5fceed998dcb95ff2f6d8bc77d4e3fb39394e59811a989cf33602ceab` | 寻找郑州100家老店：京广路保全街老洪烧烤 |
+| `zz-wulala-7558104351017897231` | 特别乌啦啦 | 2024-06-15 | 291.33s | 99,282,109 | `9326a41e1b30d674d511a3faa43d5847586d22f720109e5b110c3bb22990230a` | 花110元在郑州狂喝8碗胡辣汤：穆彦华胡辣汤岗坡路店 |
+| `zz-danke-7342060229149855028` | 蛋壳Danke | 2024-10-29 | 313.13s | 130,996,935 | `0898f7737d8c27cc17472b132e82e1425c05e8af455e72bad3f625ab2ca7d2b3` | 郑州深夜爆辣炒鸡：起龙香辣鸡金城街店 |
+| `zz-lijiongjiong-7703625687684386074` | 李囧囧 | 2024-06-30 | 162.05s | 164,260,379 | `281abc8a180b0491f220d1d5e22f391f57bebc53d2c620c4aec46e2648f692c4` | 郑州真正好吃的美味在民间：唐风阁总店/崔记米线/烙馍卷面筋 |
+| `zz-maikou-7617388953503456226` | 迈扣来了 | 2024-11-26 | 722.47s | 209,738,103 | `1d1850fc07e2b08f538e3b9c17c4c9fd90142a04c92271292165d0bfd85ee067` | 河南郑州美食推荐：19家地道老店真实打卡合集 |
+| `zz-cuicuishu-7661276660537628270` | 薄荷脆脆薯 | 2024-09-18 | 17.37s | 7,654,775 | `5b6cee002f7823080b6cb1b6f4875beedd76c60b9d4658d57f485830ade4ae78` | 河南人眼中的漂亮饭：鸣升鲜炒鸡经七路店 |
 
 ---
 
-## 3. 24 门店片段与地理落点台账
+## 3. 素材包打包、正式 Release 发布与远端导入核验
 
-| 片段 ID | 门店名称 | 类别 | 真实坐标 WGS84 | 边界状态 | 归并关系 | 剪辑起止 | 实测时长 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| `zz-chaixiaochai-zhiqing` | 知青老食堂（沙口路店） | 正餐 | `[113.6391, 34.7865]` | 范围内 | 独立点 | 0.0s - 86.9s | 86.90s |
-| `zz-chichi-huanli` | 换利小吃 | 面食 | `[113.4985, 34.7562]` | **范围外待扩图**（须水老镇西） | 独立点 | 0.0s - 266.8s | 266.87s |
-| `zz-dapanda-zaozuo` | 灶座小锅烀饼·铁锅炖（漓江路黄科大店） | 正餐 | `[113.6812, 34.7008]` | 范围内 | 独立点 | 0.0s - 193.4s | 193.42s |
-| `zz-yuanao-tianyi` | 天一日料（正弘城店） | 正餐 | `[113.6766, 34.7885]` | 范围内 | 独立点 | 0.0s - 32.5s | 32.50s |
-| `zz-yuanao-beilan` | 北兰台湾牛肉面 | 面食 | `[113.6742, 34.7846]` | 范围内 | 独立点 | 32.5s - 61.2s | 28.70s |
-| `zz-yuanao-wangfanxing` | 王繁星面馆（大卫城商圈店） | 面食 | `[113.6601, 34.7582]` | 范围内 | 独立点 | 61.2s - 93.8s | 32.60s |
-| `zz-yuanao-fuxing` | 复兴面王（亳都·新象店） | 面食 | `[113.6835, 34.7516]` | 范围内 | 独立点 | 93.8s - 126.0s | 32.20s |
-| `zz-beizeng-liuxiangwu` | 刘相五胡辣汤豆沫馆（康复中街店） | 早餐小吃 | `[113.6508, 34.7431]` | 范围内 | 独立点 | 0.0s - 34.8s | 34.80s |
-| `zz-beizeng-yaoji` | 姚记老婆羊肉鲜汤 | 汤馆 | `[113.6738, 34.7433]` | 范围内 | 独立点 | 34.8s - 60.5s | 25.70s |
-| `zz-beizeng-zhengsan` | 郑三指固始鹅块（惠和苑店） | 正餐 | `[113.6300, 34.8650]` | **范围外待扩图**（惠济区新城路北） | 独立点 | 60.5s - 92.0s | 31.50s |
-| `zz-beizeng-heji` | 合记烩面（人民路店） | 面食 | `[113.6702, 34.7591]` | 范围内 | **合用点**（指向 `zz-shiwu-heji`） | 92.0s - 124.5s | 32.50s |
-| `zz-beizeng-sanchang` | 三厂大头羊肉串（建设路店） | 烧烤小吃 | `[113.6062, 34.7554]` | 范围内 | 独立点 | 124.5s - 162.1s | 37.60s |
-| `zz-shiwu-fanglaozu` | 方老祖胡辣汤（农科路店） | 早餐小吃 | `[113.6789, 34.7951]` | 范围内 | 独立点 | 0.0s - 26.5s | 26.50s |
-| `zz-shiwu-liujunfeng` | 刘俊峰胡辣汤（科瑞大厦店） | 早餐小吃 | `[113.7275, 34.7709]` | 范围内 | 独立点 | 26.5s - 50.8s | 24.30s |
-| `zz-shiwu-muyanhu` | 木言糊焖饼（健康路店） | 小吃 | `[113.6655, 34.7712]` | 范围内 | 独立点 | 50.8s - 70.2s | 19.40s |
-| `zz-shiwu-heji` | 合记烩面（人民路店） | 面食 | `[113.6702, 34.7591]` | 范围内 | **主片段点**（双博主合用） | 70.2s - 89.6s | 19.40s |
-| `zz-shiwu-xiaoma` | 小马三辈清真烧烤（东风路店） | 烧烤小吃 | `[113.6611, 34.7975]` | 范围内 | 独立点 | 89.6s - 108.5s | 18.90s |
-| `zz-shiwu-laoli` | 老李家正宗土包子（棉纺路店） | 早餐小吃 | `[113.6305, 34.7571]` | 范围内 | 独立点 | 108.5s - 122.8s | 14.30s |
-| `zz-shiwu-yichang-guangtou` | 国棉一厂光头烧烤（棉纺路店） | 烧烤小吃 | `[113.6278, 34.7568]` | 范围内 | 独立点 | 122.8s - 141.2s | 18.40s |
-| `zz-shiwu-laoyilou` | 老一楼蒸饺（经八路店） | 小吃面食 | `[113.6725, 34.7728]` | 范围内 | 独立点 | 141.2s - 156.4s | 15.20s |
-| `zz-shiwu-laocaiji` | 老蔡记馄饨（二七商圈店） | 小吃面点 | `[113.6632, 34.7548]` | 范围内 | 独立点 | 156.4s - 169.8s | 13.40s |
-| `zz-shiwu-pangzi` | 胖子雪花酪（南下街店） | 甜品小吃 | `[113.6668, 34.7495]` | 范围内 | 独立点 | 169.8s - 180.5s | 10.70s |
-| `zz-shiwu-zhutun` | 四厂猪蹄·三厂胡辣汤（四厂中街店） | 熟食小吃 | `[113.6185, 34.7562]` | 范围内 | 独立点 | 180.5s - 193.1s | 12.60s |
-| `zz-shiwu-xuji` | 顺城街老马家小吃·老顺城 | 清真小吃 | `[113.6672, 34.7471]` | 范围内 | 独立点 | 193.1s - 206.5s | 13.40s |
-| `zz-shiwu-laoshuncheng` | 顺城街徐记羊肉鲜汤（顺城街店） | 汤馆 | `[113.6685, 34.7465]` | 范围内 | 独立点 | 206.5s - 215.2s | 8.70s |
-| `zz-shiwu-guizhoucun` | 贵州花江狗肉脆皮牛肉（优胜南路店） | 正餐火锅 | `[113.6615, 34.7678]` | 范围内 | 独立点 | 215.2s - 225.5s | 10.30s |
-
-*(注：`zz-shiwu-xuji` 与 `zz-shiwu-laoshuncheng` 位于管城顺城街清真美食街区，精确标明不同门牌地址)*
-
----
-
-## 4. 素材包打包、正式 Release 发布与接收端导入核验
-
-全部 6 个探店来源已通过 `scripts/media-bundles.mjs pack` 打包入 `.local/media-bundles/`，并已全量发布至 GitHub Release [media-2026-11-16-zhengzhou](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-zhengzhou)：
+全部 13 个探店来源已通过 `scripts/media-bundles.mjs pack` 打包入 `.local/media-bundles/`，并已全量发布至 GitHub Release [media-2026-11-16-zhengzhou](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-zhengzhou)：
 
 - **Release ID**：447100672
-- **全量附件核查**：**12/12 全部为 `uploaded` 状态**（6 个 ZIP 素材包 + 6 份 `.zip.json` 清单，**0 个 starter**）
-- **ZIP 总字节数**：1,115,669,725 字节（约 1.04 GiB）
+- **全量附件核查**：**26/26 全部为 `uploaded` 状态**（13 个 ZIP 素材包 + 13 份 `.zip.json` 清单，**0 个 starter**）
+- **ZIP 总字节数**：3,277,143,018 字节（约 3.05 GiB）
 
 | 包文件名 | 包含片段数 | 字节数 (Bytes) | SHA256 摘要 | 远端 Release 状态 |
 | --- | --- | --- | --- | --- |
@@ -94,19 +72,26 @@
 | `shitu-media-zz-yuanao-7617429859431122502-6f2f88fc5da03110.zip` | 4 | 115,873,126 | `62cca4ee0609a4044f971de821253476bca0077c3ca7abece78c3e78fdcfb6ef` | **uploaded** (已上线) |
 | `shitu-media-zz-beizeng-7661525430997912882-8c06002de9608834.zip` | 5 | 173,113,846 | `9303e9d0e210e766749feaea72085907e34908a49ea1850545a5f0d0273061b4` | **uploaded** (已上线) |
 | `shitu-media-zz-shiwu-7687558663678177521-a1fa8e8c2b614c95.zip` | 12 | 217,400,491 | `23c32e0a7d710d4d443ef493f0061519d3d6df13287cd68eb7d27b41e8f4de7b` | **uploaded** (已上线) |
+| `shitu-media-zz-yingtao-7600001486366366446-cc5288aae54152ae.zip` | 6 | 204,475,927 | `a3e0ffd9f544fbae935a978a2d6d8ec06028d04fd85e45b1e6c4910d702bfea4` | **uploaded** (已上线) |
+| `shitu-media-zz-xiangxiang-7545084990569123110-60a545a8c9468aa3.zip` | 1 | 109,202,398 | `64c70baec0f63f7d6e321d664a8e64baa132a81316c63387d4d9e60b173b2f74` | **uploaded** (已上线) |
+| `shitu-media-zz-wulala-7558104351017897231-ccc46cf636715213.zip` | 1 | 275,532,265 | `ec6ab2c183def521219479c9009990e68954ce7123107661ab4a5429c82e1bd1` | **uploaded** (已上线) |
+| `shitu-media-zz-danke-7342060229149855028-fdcf0f121a2314a2.zip` | 1 | 368,066,323 | `ba244232c7cdf427397953b56f320950f2c2db85a7080213c167f555fbd28f36` | **uploaded** (已上线) |
+| `shitu-media-zz-lijiongjiong-7703625687684386074-e3ccdae94b4905bb.zip` | 3 | 359,872,730 | `b30bb346e29602bfa9006582d3b2114f8b409c555b273454e50a69102ad3c874` | **uploaded** (已上线) |
+| `shitu-media-zz-maikou-7617388953503456226-12e3d1fb9ae115fa.zip` | 19 | 671,931,482 | `da5ba0a0a569fadaf806da22247274f908b7cb2f4401be15de84fd4f5cc885e6` | **uploaded** (已上线) |
+| `shitu-media-zz-cuicuishu-7661276660537628270-23d6eb799480c0c2.zip` | 1 | 22,252,410 | `b4e4573742fde7268b74b08283f9ee461b23aeb2856e22fd26c1097fc4734c47` | **uploaded** (已上线) |
 
 ### 远端下载样本实测与接收端导入核验
-- **远端下载核验**：通过公开 URL 从 Release 实际下载 `shitu-media-zz-chaixiaochai-7674563519769881320-96661691ced64ce9.zip`，实测 104,817,431 字节，重新计算 SHA256 为 `84fd9870bb95060140470b6faef56efaef3202ea37fa3fa0a4c42872bb8857d2`，与索引及本地打包完全一致；
+- **远端下载核验**：通过公开 URL 从 Release 实际下载 `shitu-media-zz-cuicuishu-7661276660537628270-23d6eb799480c0c2.zip`，实测 22,252,410 字节，重新计算 SHA256 为 `b4e4573742fde7268b74b08283f9ee461b23aeb2856e22fd26c1097fc4734c47`，与索引及本地打包完全一致；
 - **干净隔离目录导入测试**：模拟外部协作者独立检出环境运行 `importBundle`：
   - 首次导入：成功解压 3 个文件（原片、单店切片、海报）并写入账本 `report.json`，返回 `newFiles: 3, clips: 1`，PASS；
   - 二次导入（幂等性验证）：检测到已有文件哈希完全一致，安全跳过写入，返回 `newFiles: 0, clips: 1`，PASS。
-- **全局清单追加**：`map-base/data/media-bundles.json` 已追加上述 6 个包下载地址，`latestRelease` 指向该发布。
+- **全局清单追加**：`map-base/data/media-bundles.json` 已追加全量 13 个包下载地址，`latestRelease` 指向该发布。
 
 ---
 
-## 5. 自动化测试套件与执行命令
+## 4. 自动化测试套件与执行命令
 
-### 5.1 数据与路由回归检查（10/10 PASS）
+### 4.1 数据与路由回归检查（10/10 PASS）
 执行命令：
 ```powershell
 Set-Location "D:\codex\美食网站\.local\worktrees\zhengzhou-prep\map-base"
@@ -121,14 +106,14 @@ node scripts/review-zhengzhou-data.mjs
 [PASS] 5. data/cities/zhengzhou/food-road-network.json has valid topological nodes and ways with strict LF line endings
 [PASS] 6. data/cities/zhengzhou/terrain-manifest.json and 97 DEM tiles exist
 [PASS] 7. food-road-router calculates genuine Zhengzhou routes and distance between food stops
-[PASS] 8. data/cities/zhengzhou/video-library.json validates cleanly with 6 user sources and 24 segments
-[PASS] 9. data/cities/zhengzhou/video-posters.json records all 24 posters matching disk files
+[PASS] 8. data/cities/zhengzhou/video-library.json validates cleanly with 13 user sources and 56 segments
+[PASS] 9. data/cities/zhengzhou/video-posters.json records all 56 posters matching disk files
 [PASS] 10. allCityCatalogs passes without duplicate source or segment IDs across all 7 cities
 
 Zhengzhou Data Review Summary: 10/10 passed.
 ```
 
-### 5.2 浏览器端到端与真机视频断言（21/21 PASS）
+### 4.2 浏览器端到端与真机视频断言（21/21 PASS）
 执行命令：
 ```powershell
 Set-Location "D:\codex\美食网站\.local\worktrees\zhengzhou-prep\map-base"
@@ -136,10 +121,10 @@ python -u scripts/review-zhengzhou-browser.py
 ```
 输出：
 ```text
-=== Starting Zhengzhou Browser UI, Food Markers & Video Verification against http://127.0.0.1:8796 ===
+=== Starting Zhengzhou Browser UI, Food Markers & Video Verification against http://127.0.0.1:8798 ===
 
 [PASS] 1. Map readiness signal and Zhengzhou title
-[PASS] 2. Food cards rendered on map for Zhengzhou (21 on-map stops)
+[PASS] 2. Food cards rendered on map for Zhengzhou (50 on-map stops)
 [PASS] 3. Shop names match real Zhengzhou establishments across districts
 [PASS] 4. Video popover opens on card click
 [PASS] 5. Floating window media area >= 2/3 of border box
@@ -156,7 +141,7 @@ python -u scripts/review-zhengzhou-browser.py
 [PASS] 16. Small screen 320x680 screenshot saved
 [PASS] 17. Short landscape 736x414 popover media area >= 2/3
 [PASS] 18. Short landscape 736x414 screenshot saved
-[PASS] 19. Standalone bundle preview-zhengzhou.html renders food cards (21 offline stops)
+[PASS] 19. Standalone bundle preview-zhengzhou.html renders food cards (50 offline stops)
 [PASS] 20. Standalone bundle preview-zhengzhou.html screenshot saved
 [PASS] 21. No unhandled page errors during browser navigation
 
@@ -165,7 +150,7 @@ python -u scripts/review-zhengzhou-browser.py
 
 ---
 
-## 6. 截图与证据归档
+## 5. 截图与证据归档
 
 所有真机渲染截图存放于：
 `output/playwright/zhengzhou/`

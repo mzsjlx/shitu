@@ -153,18 +153,18 @@ await check('7. food-road-router calculates genuine Zhengzhou routes and distanc
 });
 
 // 8. Video library validation check
-await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 6 user sources and 24 segments', async () => {
+await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 13 user sources and 56 segments', async () => {
   const raw = await readFile(path.join(root, 'data/cities/zhengzhou/video-library.json'), 'utf8');
   const catalog = JSON.parse(raw);
   const validated = validateVideoLibrary(catalog, 'zhengzhou');
   assert.equal(validated.city, 'zhengzhou');
-  assert.equal(validated.sources.length, 6, 'Must have 6 sources from user batch 1');
+  assert.equal(validated.sources.length, 13, 'Must have 13 sources from user batches');
   
   const allSegments = validated.sources.flatMap(s => s.segments);
-  assert.equal(allSegments.length, 24, 'Must have 24 total segments');
+  assert.equal(allSegments.length, 56, 'Must have 56 total segments');
   
   const authors = new Set(validated.sources.map(s => s.author));
-  assert.equal(authors.size, 6, 'Must have 6 distinct authors');
+  assert.equal(authors.size, 13, 'Must have 13 distinct authors');
   
   // Multi-creator deduplication check: 合记烩面
   const hejiSegments = allSegments.filter(s => s.name.includes('合记烩面'));
@@ -172,13 +172,31 @@ await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 
   const secondaryHeji = hejiSegments.find(s => s.placeId);
   assert.equal(secondaryHeji.placeId, 'zz-shiwu-heji', 'Secondary heji must point to primary zz-shiwu-heji');
 
+  // Multi-creator deduplication check: 唐风阁肉夹馍
+  const tangfenggeSegments = allSegments.filter(s => s.name.includes('唐风阁肉夹馍'));
+  assert.equal(tangfenggeSegments.length, 2, '唐风阁肉夹馍 must have 2 segments from 2 creators');
+  const secondaryTangfengge = tangfenggeSegments.find(s => s.placeId);
+  assert.equal(secondaryTangfengge.placeId, 'zz-lijiongjiong-tangfengge', 'Secondary tangfengge must point to primary zz-lijiongjiong-tangfengge');
+
+  // Single-creator multi-clip check: 石记百花面鱼 / 炒凉粉
+  const shijiSegments = allSegments.filter(s => s.id === 'zz-maikou-shiji' || s.id === 'zz-maikou-chaoliangfen');
+  assert.equal(shijiSegments.length, 2, '石记百花面鱼 and 炒凉粉 must share location');
+  const secondaryShiji = shijiSegments.find(s => s.placeId);
+  assert.equal(secondaryShiji.placeId, 'zz-maikou-shiji');
+
+  // Single-creator multi-clip check: 农大牛奶 / 酸奶卷
+  const nongdaSegments = allSegments.filter(s => s.id === 'zz-maikou-nongda-niunai' || s.id === 'zz-maikou-nongda-suannaijuan');
+  assert.equal(nongdaSegments.length, 2, '农大牛奶 and 酸奶卷 must share location');
+  const secondaryNongda = nongdaSegments.find(s => s.placeId);
+  assert.equal(secondaryNongda.placeId, 'zz-maikou-nongda-niunai');
+
   // Groups and stops check
   const bounds = [113.58, 34.7, 113.78, 34.83];
   const groups = groupVideoPlaces(catalog);
-  assert.equal(groups.length, 23, '24 segments deduplicate into 23 places');
+  assert.equal(groups.length, 52, '56 segments deduplicate into 52 places');
   
   const inBoundsGroups = groups.filter(g => withinMapBounds(g.primary.segment, bounds));
-  assert.equal(inBoundsGroups.length, 21, 'Must have 21 in-bounds distinct map stops');
+  assert.equal(inBoundsGroups.length, 50, 'Must have 50 in-bounds distinct map stops');
   
   const outOfBoundsSegments = allSegments.filter(s => !withinMapBounds(s, bounds));
   assert.equal(outOfBoundsSegments.length, 2, 'Must have 2 out-of-bounds segments (换利小吃 & 郑三指固始鹅块)');
@@ -194,10 +212,10 @@ await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 
 });
 
 // 9. Poster files existence and SHA256 integrity
-await check('9. data/cities/zhengzhou/video-posters.json records all 24 posters matching disk files', async () => {
+await check('9. data/cities/zhengzhou/video-posters.json records all 56 posters matching disk files', async () => {
   const postersData = JSON.parse(await readFile(path.join(root, 'data/cities/zhengzhou/video-posters.json'), 'utf8'));
   const segments = Object.entries(postersData.segments);
-  assert.equal(segments.length, 24, 'Must have 24 poster entries');
+  assert.equal(segments.length, 56, 'Must have 56 poster entries');
   
   for (const [segId, entry] of segments) {
     const filePath = path.join(root, entry.path);

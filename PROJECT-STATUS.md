@@ -1,36 +1,41 @@
-## 2026-11-16 郑州首批 6 来源全量接入与端到端闭环完成：24 门店片段精准切片、21 处地图点（1 处双博主合用、2 处范围外待扩图）、24 张真实原片封面入库、素材完整打包与 21/21 浏览器全场景断言通过
+## 2026-11-17 郑州两批次 13 来源全量接入与端到端闭环交付完成：56 门店片段精准切片、50 处在图美食点（2 处跨博主合用、2 处同博主多分店片段合用、2 处范围外待扩图）、56 张真实原片封面入库、全量素材包发布（26/26 uploaded）与 21/21 浏览器全场景断言通过
 
-在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`）下，完整完成郑州（`zhengzhou`）首批 6 份抖音探店视频（柴小柴知青老食堂、赤赤吃啥呢换利小吃、大潘达灶座小锅烀饼、Yuanao社恐一人食合集、倍增CD了美食攻略、15再吃亿点儿郑州美食合集）全链路闭环接入：
-1. **真实来源与精确门店台账（6 来源、6 博主、24 片段、21 地图点）**：
-   - 严格仅处理用户提供的 6 条真实抖音链接，正常取得 6 份原片至 `.local/video-intake/` 并冻结原始 SHA256；
-   - 提取 faster-whisper 真实原音字幕与关键帧，按真实门店精准切分 24 个片段，实测 FFprobe 真实音视频流（H.264+AAC faststart，时长实测无虚构，容差在 0.16s 内）；
-   - **上图有效美食点 21 处**（24 片段 - 2 范围外待扩图 - 1 多博主合用分店）；
-   - **同店多博主合用 1 处**：合记烩面（人民路店）由 15再吃亿点儿（`zz-shiwu-heji`）与倍增CD了（`zz-beizeng-heji`）共用一个地图点，保留各自片段独立切换；
+在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`，PR #11）下，完整完成郑州（`zhengzhou`）两批次共 13 份抖音探店视频（第一批 6 来源：柴小柴、赤赤吃啥呢、大潘达、Yuanao、倍增CD了、15再吃亿点儿；第二批 7 来源：樱桃大婉子、河南民生频道香香美食、特别乌啦啦、蛋壳Danke、李囧囧、迈扣来了、薄荷脆脆薯）全链路闭环接入：
+1. **真实来源与精确门店台账（13 来源、13 博主、56 片段、50 处地图点）**：
+   - 严格仅处理用户提供的 13 条真实抖音链接，全部取得 13 份原片至 `.local/video-intake/` 并冻结原始 SHA256；
+   - 提取 faster-whisper 真实原音字幕与关键帧，按真实门店精准切分 56 个片段，实测 FFprobe 真实音视频流（H.264+AAC faststart，时长实测无虚构，容差在 0.16s 内）；
+   - **去重美食点 52 处，上图有效美食点 50 处**（56 片段 - 2 处跨博主合用 - 2 处同博主多分店片段合用 - 2 处范围外待扩图）；
+   - **同分店多博主合用 2 处**：
+     1. 人民路“合记烩面”：15再吃亿点儿（`zz-shiwu-heji`，主片段）与倍增CD了（`zz-beizeng-heji`，合用点）；
+     2. 南阳路“唐风阁肉夹馍（南阳路总店）”：李囧囧（`zz-lijiongjiong-tangfengge`，主片段）与迈扣来了（`zz-maikou-tangfengge`，合用点）；
+   - **同博主同物理点多分店片段合用 2 处**：
+     1. 中原电影院“石记百花面鱼”：`zz-maikou-shiji` 与 `zz-maikou-chaoliangfen`；
+     2. 河南农大“牧场直销门市部”：`zz-maikou-nongda-niunai` 与 `zz-maikou-nongda-suannaijuan`；
    - **范围外待扩图片段 2 个**：换利小吃（须水老镇西，`[113.4985, 34.7562]`）、郑三指固始鹅块（惠济区新城路北，`[113.6300, 34.8650]`），保留有依据的真实 WGS84 坐标并标记待扩图，绝不压界；
    - **完全未定位数 0 个**。
-2. **真实原片封面入库与全局海报扩充（630 张）**：
-   - 从原片提取 24 真实店门头/招牌菜画面并发布至 `map-base/assets/video-posters/`；
-   - 登记郑州海报清单 `data/cities/zhengzhou/video-posters.json`，按 ID 增量追加至全局 `data/video-posters.json`（全局海报达 630 张，既有城市 606 张 100% 完整无扰）；
-   - `npm.cmd run build` 干净编译全部 7 大城市，0 媒体缺失报错；产出单文件版 `preview-zhengzhou.html`（16,164,157 字节）。
-3. **6 来源素材独立打包、正式 Release 发布与接收端导入核验（12/12 uploaded 全量上线）**：
-   - 全部 6 来源经 `scripts/media-bundles.mjs pack` 打包入 `.local/media-bundles/`（共 6 个 ZIP 与 6 份 `.zip.json` 摘要清单，总计 1,115,669,725 字节，约 1.04 GiB）；
-   - 正式发布 GitHub Release [`media-2026-11-16-zhengzhou`](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-zhengzhou)，经 API 分页审计 **12/12 附件全部达到 `uploaded` 状态，0 个 starter**；
-   - 远端抽样下载 `shitu-media-zz-chaixiaochai-*.zip`，重新计算哈希为 `84fd9870...` 严格一致；在干净独立目录下运行 `importBundle`，首次导入 3 文件写账本，重复导入幂等安全跳过（newFiles: 0）；
-   - `map-base/data/media-bundles.json` 追加全量 6 来源包下载地址与哈希，`latestRelease` 更新至郑州发布。
+2. **真实原片封面入库与全局海报扩充（662 张）**：
+   - 从原片提取 56 张真实店门头/招牌菜/实景画面并发布至 `map-base/assets/video-posters/`；
+   - 登记郑州海报清单 `data/cities/zhengzhou/video-posters.json`，按 ID 增量追加至全局 `data/video-posters.json`（全局海报达 662 张，既有城市 606 张 100% 完整无扰）；
+   - `npm.cmd run build` 干净编译全部 7 大城市，0 媒体缺失报错；产出单文件版 `preview-zhengzhou.html`（16,221,810 字节）。
+3. **13 来源素材独立打包、正式 Release 发布与接收端导入核验（26/26 uploaded 全量上线）**：
+   - 全部 13 来源经 `scripts/media-bundles.mjs pack` 打包入 `.local/media-bundles/`（共 13 个 ZIP 与 13 份 `.zip.json` 摘要清单，总计 3,277,143,018 字节，约 3.05 GiB）；
+   - 正式发布至 GitHub Release [`media-2026-11-16-zhengzhou`](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-zhengzhou)，经 API 分页审计 **26/26 附件全部达到 `uploaded` 状态，0 个 starter**；
+   - 远端抽样下载 `shitu-media-zz-cuicuishu-*.zip`，重新计算哈希为 `b4e45737...` 严格一致；在干净独立目录下运行 `importBundle`，首次导入 3 文件写账本，重复导入幂等安全跳过（newFiles: 0）；
+   - `map-base/data/media-bundles.json` 追加全量 13 来源包下载地址与哈希，`latestRelease` 指向该发布。
 4. **全端自动化双套件全过（10/10 数据 + 21/21 浏览器断言）**：
    - 数据回归 `node scripts/review-zhengzhou-data.mjs` **10/10 PASS**；
    - 真实浏览器验证 `python -u scripts/review-zhengzhou-browser.py` **21/21 PASS**：
      - 真实解码与播放时间推进（1秒双采样 `currentTime` 推进 $\ge 0.3s$）；
      - 浮窗边框面积比 $\ge 2/3$（桌面 66.83%、手机 70.80%、小屏 81.25%、横屏 69.24% 全部合格）；
      - 关闭浮窗/按 Escape 卸载 `<video>`、停音并移除 `src`；
-     - 合记烩面双博主切片联动切换：博主1播放推进 -> 切博主2后旧片暂停且 src 移除 -> 博主2播放推进 -> 关闭停音全量断言通过；
+     - 合记烩面与唐风阁双博主切片联动切换：博主1播放推进 -> 切博主2后旧片暂停且 src 移除 -> 博主2播放推进 -> 关闭停音全量断言通过；
      - 道路搜索输入“二七”返回真实郑州道路；视频库搜索“烩面”精准过滤合记烩面；
      - 双向切换重庆与郑州无跨城污染；五套真机视口截图归档至 `output/playwright/zhengzhou/`；
-     - 离线单文件 `preview-zhengzhou.html` 脱机加载 21 处美食点断言通过。
+     - 离线单文件 `preview-zhengzhou.html` 脱机加载 50 处美食点断言通过。
 5. **本地预览服务状态**：
-   - 运行端口：**`8796`**
-   - 访问地址：`http://127.0.0.1:8796/?city=zhengzhou&view=food`
-   - 离线单文件：`http://127.0.0.1:8796/preview-zhengzhou.html`
+   - 运行端口：**`8798`**
+   - 访问地址：`http://127.0.0.1:8798/?city=zhengzhou&view=food`
+   - 离线单文件：`http://127.0.0.1:8798/preview-zhengzhou.html`
 
 
 ## 2026-11-16 武汉全链路交付整改复核完成：LF路网规则保干净检出 9/9、83 来源 Release 素材发布与 media-bundles 远端交付、呱呱包重构幂等、播放双采样与换片停音 19/19、正式 PR 建立
