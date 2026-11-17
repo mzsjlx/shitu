@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "city": "zhengzhou",
-  "preparedOn": "2026-11-17",
+  "updatedAt": "2026-11-17T17:15:00+08:00",
   "rights": {
     "status": "user-confirmed",
     "note": "郑州探店视频来自用户提供的抖音分享链接，严格按来源去重、核验原片与门店信息后入库。"
@@ -2150,6 +2150,1417 @@
             }
           },
           "footageNote": "2026年原视频 · 河南特色漂亮饭实测，炒鸡酱汁拌烩面极佳。"
+        }
+      ]
+    },
+    {
+      "id": "zz-wanzitou-7595848325316775203",
+      "author": "丸子头逛郑州",
+      "title": "在郑州经常去的6家面馆，一碗一碗吃出来的合集！ 襄阳牛杂面、油泼面、豌杂面...地址和价格都标好了~看看有你吃过的没？#抖音美食推荐官 #郑州美食 #人间烟火 #心动打卡指南 #郑州美食攻略",
+      "url": "https://www.douyin.com/video/7595848325316775203",
+      "shareURL": "https://v.douyin.com/fmN1Aak1fkc/",
+      "publishedOn": "2026-01-16",
+      "durationSeconds": 137.07,
+      "sourceSHA256": "b0a02640faefebcb60211b5214e52b69ec01de5677de104aa82d174cf845e64b",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍与片中地址标注6家常去面馆（国敏襄阳牛杂面、五福油泼面、范小面、豫蓉源川味担担面、蒋阿爷挞挞面、买买江新疆大盘鸡）。",
+      "segments": [
+        {
+          "id": "zz-wanzitou-guomin",
+          "name": "国敏襄阳牛杂面",
+          "category": "襄阳牛肉面 / 牛杂面",
+          "addressText": "河南省郑州市管城回族区东明路43号院西门北侧",
+          "start": 15.48,
+          "end": 32.72,
+          "posterSecond": 20.0,
+          "summary": "东明路大院西门旁地道襄阳牛肉面，牛油红亮香辣扑鼻，大块厚切牛杂与牛肉炖得软烂入味，配一碗现打黄酒过瘾解腻。",
+          "coordinates": [
+            113.6941,
+            34.7615
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "东明路 / 43号院西门附近",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍东明路43号院西门旁国敏襄阳牛肉面，采用东明路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644518,
+              "name": "东明路",
+              "url": "https://www.openstreetmap.org/way/724644518",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6839725173
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州经常去的6家面馆合集，牛油红汤浓郁。"
+        },
+        {
+          "id": "zz-wanzitou-wufu",
+          "placeId": "zz-maikou-wufu",
+          "name": "五福油泼面（城北路店）",
+          "category": "面食 / 陕味",
+          "addressText": "河南省郑州市金水区东明路与城北路交叉口43号院内",
+          "start": 32.72,
+          "end": 51.04,
+          "posterSecond": 38.0,
+          "summary": "居民大院内开了多年的油泼面老店，热油猛泼干辣椒与葱花，手擀宽面条筋道弹牙，加一块炖得透亮入味的红烧肉，满碗香气扑鼻。",
+          "coordinates": [
+            113.7001,
+            34.7612
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "城北路 / 东明路口43号院",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍城北路大院内五福油泼面加红烧肉，与迈扣探店合用同一点位。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644506,
+              "name": "燕西路",
+              "url": "https://www.openstreetmap.org/way/724644506",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796155039
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州经常去的6家面馆合集，手擀宽面筋道耐嚼。"
+        },
+        {
+          "id": "zz-wanzitou-fanxiaomian",
+          "name": "范小面",
+          "category": "重庆小面 / 豌杂面",
+          "addressText": "河南省郑州市中原区前进路与陇海西路交叉口北100米路西",
+          "start": 51.04,
+          "end": 69.12,
+          "posterSecond": 58.0,
+          "summary": "前进路西郊老社区重庆小面馆，手作豌杂面肉酱浓稠，软糯豌豆绵密起沙，拌匀后每根细面挂满酱汁，麻辣鲜香层次丰富。",
+          "coordinates": [
+            113.6034,
+            34.7438
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "前进路 / 陇海西路北侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍前进路与陇海西路交叉口北100米范小面，采用前进路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 735363853,
+              "name": "前进路",
+              "url": "https://www.openstreetmap.org/way/735363853",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6887461677
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州经常去的6家面馆合集，肉酱豌豆浓稠。"
+        },
+        {
+          "id": "zz-wanzitou-yurongyuan",
+          "name": "豫蓉源川味担担面",
+          "category": "担担面 / 川味面",
+          "addressText": "河南省郑州市中原区前进路25号院内",
+          "start": 69.12,
+          "end": 87.92,
+          "posterSecond": 74.0,
+          "summary": "西郊前进路院内的川味面食老店，招牌担担面红油麻酱比例恰到好处，芽菜肉末干香脆爽，辣油回甘，老郑州吃货私藏小破店。",
+          "coordinates": [
+            113.6034,
+            34.7457
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "前进路 / 25号院内",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍前进路25号院内豫蓉源川味担担面，采用前进路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 735363853,
+              "name": "前进路",
+              "url": "https://www.openstreetmap.org/way/735363853",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6904824682
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州经常去的6家面馆合集，芽菜肉末干香酥脆。"
+        },
+        {
+          "id": "zz-wanzitou-jiangaye",
+          "name": "蒋阿爷挞挞面",
+          "category": "面食 / 荥经挞挞面",
+          "addressText": "河南省郑州市管城回族区杜岭街道东太康路与人民路交叉口向西20米巷内",
+          "start": 87.92,
+          "end": 111.12,
+          "posterSecond": 94.0,
+          "summary": "人民路与东太康路深巷内四川荥经特色挞挞面，师傅现场摔打甩拉面条啪啪作响，面体粗韧有嚼劲，红烧排骨与大块牛肉臊子给料厚实。",
+          "coordinates": [
+            113.6609,
+            34.7573
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "东太康路 / 人民路口向西巷内",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍东太康路与人民路口向西20米巷内蒋阿爷挞挞面，采用东太康路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644657,
+              "name": "东太康路",
+              "url": "https://www.openstreetmap.org/way/724644657",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796156028
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州经常去的6家面馆合集，手工摔挞面劲道弹牙。"
+        },
+        {
+          "id": "zz-wanzitou-maimaijiang",
+          "name": "买买江新疆大盘鸡（永安街店）",
+          "category": "新疆大盘鸡 / 拌面",
+          "addressText": "河南省郑州市二七区东福民街与永安街交叉口东95米路北",
+          "start": 111.12,
+          "end": 137.07,
+          "posterSecond": 120.0,
+          "summary": "永安街美食街老牌新疆馆子，现炒大盘鸡肉质鲜嫩多汁，沙瓤土豆软糯沙甜，铺底手工皮带面吸足浓郁香辣汤汁。",
+          "coordinates": [
+            113.6508,
+            34.735
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "永安街 / 京广路西侧美食街",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍二七区永安街老社区买买江大盘鸡，采用永安街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 732794319,
+              "name": "永安街",
+              "url": "https://www.openstreetmap.org/way/732794319",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 8994165510
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州经常去的6家面馆合集，大盘鸡与手工皮带面。"
+        }
+      ]
+    },
+    {
+      "id": "zz-yingtao-7594792007391003238",
+      "author": "樱桃大婉子",
+      "title": "这才是郑州的必吃榜！这6家私藏小破店，只要不倒闭我都会一直吃！5块钱三个现做菠萝包，黑酱热干面，一个人的火锅不是冒菜，而是武陟砂锅啊！#郑州美食 #郑州必吃 #郑州探店 #郑州烟火气 #抖音美食创作者",
+      "url": "https://www.douyin.com/video/7594792007391003238",
+      "shareURL": "https://v.douyin.com/TkmW3ZcOrgs/",
+      "publishedOn": "2026-01-13",
+      "durationSeconds": 176.17,
+      "sourceSHA256": "eba2ab0f5ae123675db130604acbe9e774d1fde2b30930d599f34c68989452d0",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍与片中探访6家私藏小破店（买买江新疆大盘鸡、5个面包、田荷花热干面、武陟虹兴砂锅、跳跳小面、伊真楼清真牛羊肉泡馍）。",
+      "segments": [
+        {
+          "id": "zz-yingtao-maimaijiang",
+          "placeId": "zz-wanzitou-maimaijiang",
+          "name": "买买江新疆大盘鸡（永安街店）",
+          "category": "新疆大盘鸡 / 拌面",
+          "addressText": "河南省郑州市二七区东福民街与永安街交叉口东95米路北",
+          "start": 0.0,
+          "end": 42.2,
+          "posterSecond": 18.0,
+          "summary": "永安街火了多年的新疆大盘鸡，鸡肉鲜嫩多汁大块过瘾，绵密土豆吸饱汤汁，下入皮带面裹满辣油酱汁，分量扎实。",
+          "coordinates": [
+            113.6508,
+            34.735
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "永安街 / 京广路西侧美食街",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍永安街买买江大盘鸡，与丸子头探店合用同一点位。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 732794319,
+              "name": "永安街",
+              "url": "https://www.openstreetmap.org/way/732794319",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 8994165510
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州私藏小破店必吃榜，分量扎实皮带面绝配。"
+        },
+        {
+          "id": "zz-yingtao-wugemianbao",
+          "name": "5个面包",
+          "category": "烘焙 / 菠萝包",
+          "addressText": "河南省郑州市金水区文化路高校创业实习点旁",
+          "start": 42.2,
+          "end": 72.7,
+          "posterSecond": 50.0,
+          "summary": "文化路创业园旁现烤面包小铺，主打五块钱三个现烤菠萝包，外皮酥脆掉渣，内里热气腾腾松软可口，大学城学生人手一袋。",
+          "coordinates": [
+            113.6605,
+            34.7877
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "文化路 / 创业孵化园旁",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍文化路高校创业实习点旁5个面包铺，采用文化路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724672376,
+              "name": "文化路",
+              "url": "https://www.openstreetmap.org/way/724672376",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796416659
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州私藏小破店必吃榜，五块钱三个现烤菠萝包。"
+        },
+        {
+          "id": "zz-yingtao-tianhehua",
+          "name": "田荷花热干面",
+          "category": "热干面 / 汉味小吃",
+          "addressText": "河南省郑州市金水区纬一路与文化路交叉口东50米路南",
+          "start": 72.7,
+          "end": 94.7,
+          "posterSecond": 78.0,
+          "summary": "纬一路与文化路交叉口老汉味热干面，自熬独门黑芝麻酱浓香挂汁，面条劲道爽滑，酸豆角与萝卜丁爽脆解腻，一口回魂。",
+          "coordinates": [
+            113.6662,
+            34.7679
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "纬一路 / 文化路口东侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍纬一路文化路东50米田荷花热干面，采用纬一路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724672266,
+              "name": "纬一路",
+              "url": "https://www.openstreetmap.org/way/724672266",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796414920
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州私藏小破店必吃榜，独门黑芝麻酱汉味热干面。"
+        },
+        {
+          "id": "zz-yingtao-wuzhi",
+          "name": "武陟虹兴砂锅（普庆路店）",
+          "category": "传统砂锅 / 河南砂锅",
+          "addressText": "河南省郑州市金水区普庆路与博颂路交叉口向南50米路东",
+          "start": 94.7,
+          "end": 132.9,
+          "posterSecond": 110.0,
+          "summary": "金水北区开了多年的武陟传统砂锅，焦香酥肉与软烂排骨砂锅滚烫翻滚，配油饼现泡浓汤，一个人也能吃得热气腾腾。",
+          "coordinates": [
+            113.6378,
+            34.8116
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "普庆路 / 博颂路口南侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍普庆路博颂路口武陟砂锅，采用普庆路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724847440,
+              "name": "普庆路",
+              "url": "https://www.openstreetmap.org/way/724847440",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 12624975741
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州私藏小破店必吃榜，酥肉排骨砂锅滚烫翻滚。"
+        },
+        {
+          "id": "zz-yingtao-tiaotiao",
+          "name": "跳跳小面",
+          "category": "重庆小面 / 川味面",
+          "addressText": "河南省郑州市金水区经八路与纬一路老街区",
+          "start": 132.9,
+          "end": 150.6,
+          "posterSecond": 138.0,
+          "summary": "经八路老街巷内川味小馆，招牌肥肠面大肠处理得极为干净软糯带嚼劲，红油辣而不燥，麻香透顶。",
+          "coordinates": [
+            113.6636,
+            34.77
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "经八路 / 纬一路老街区",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍经八路跳跳小面，采用经八路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724672260,
+              "name": "经八路",
+              "url": "https://www.openstreetmap.org/way/724672260",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6845466293
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州私藏小破店必吃榜，红油肥肠面软糯麻辣。"
+        },
+        {
+          "id": "zz-yingtao-yizhenlou",
+          "name": "伊真楼·清真牛羊肉泡馍",
+          "category": "清真泡馍 / 羊肉泡馍",
+          "addressText": "河南省郑州市管城回族区顺城南街与西大街交叉口南150米路西",
+          "start": 150.6,
+          "end": 176.17,
+          "posterSecond": 160.0,
+          "summary": "清真寺顺城南街老底子牛羊肉泡馍馆，老汤熬煮原汁原味汤浓不膻，手工掰碎坨坨馍烩煮入味，配糖蒜辣酱热气满屋。",
+          "coordinates": [
+            113.6643,
+            34.7484
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "南顺城街 / 西大街口南侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍顺城南街清真伊真楼泡馍，采用南顺城街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644611,
+              "name": "南顺城街",
+              "url": "https://www.openstreetmap.org/way/724644611",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6848896734
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州私藏小破店必吃榜，老字号清真泡馍汤浓馍香。"
+        }
+      ]
+    },
+    {
+      "id": "zz-ganfan-7690414619361430819",
+      "author": "干饭同事局",
+      "title": "整整 22 家！郑州土著私藏的美食家底大公开 📝无论你是本地老饕还是初来乍到，跟着这份攻略吃，绝对不踩雷！快艾特你的饭搭子一起去打卡吧～ #郑州美食 #郑州探店 #郑州吃喝玩乐 #城市美食名片 #我的美食日记",
+      "url": "https://www.douyin.com/video/7690414619361430819",
+      "shareURL": "https://v.douyin.com/AMEa-6V1id4/",
+      "publishedOn": "2026-03-31",
+      "durationSeconds": 329.87,
+      "sourceSHA256": "515295d5f7f5f9172f30d4fad008c04f05e0dd97f3a40fb2791e5fa8a71bfb6c",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍郑州土著私藏美食家底，筛选具备固定门头实景与真实路网位置的11处实体地标（新乡糊涂面馆、国棉四厂尤记烧饼、老尹记炭火烧烤、合顺合、清真老李牛肉丸子汤、城北老董记传统鸡血汤、城南路老式半地下绿豆饼店、老四川家常菜、渝井巷重庆老火锅、闽南牛肉馆、紫荆山公园茶馆），流动摊车依零造假准则排除。",
+      "segments": [
+        {
+          "id": "zz-ganfan-hutu",
+          "name": "新乡糊涂面馆（湖光新苑店）",
+          "category": "糊涂面 / 豫北面食",
+          "addressText": "河南省郑州市中原区中原西路湖光新苑胡同内",
+          "start": 108.72,
+          "end": 142.68,
+          "posterSecond": 120.0,
+          "summary": "藏在中原西路湖光新苑深巷里，豫北传统玉米糁熬煮浓糊涂面，加入干豆角、芝麻叶与手擀面条，入口绵稠麦香回甜。",
+          "coordinates": [
+            113.5907,
+            34.7486
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中原中路 / 湖光新苑深巷",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍湖光新苑胡同内新乡糊涂面馆，采用中原中路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 735363887,
+              "name": "中原中路",
+              "url": "https://www.openstreetmap.org/way/735363887",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6919101470
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，豫北玉米糁糊涂面。"
+        },
+        {
+          "id": "zz-ganfan-youji",
+          "name": "尤记香酥脆烧饼（国棉四厂店）",
+          "category": "烧饼 / 传统面点",
+          "addressText": "河南省郑州市中原区棉纺西路国棉四厂内中街",
+          "start": 142.68,
+          "end": 153.8,
+          "posterSecond": 146.0,
+          "summary": "国棉四厂老社区排队传奇烧饼店，炉膛炭火现烤外皮焦脆起酥，撒满白芝麻香气四溢，老纺织厂人几十年的下午茶标配。",
+          "coordinates": [
+            113.6122,
+            34.7607
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "棉纺西路 / 国棉四厂内",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍国棉四厂老院内尤记烧饼，采用棉纺西路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 736382918,
+              "name": "棉纺西路",
+              "url": "https://www.openstreetmap.org/way/736382918",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6894219088
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，炭火现烤酥脆起层烧饼。"
+        },
+        {
+          "id": "zz-ganfan-laoyinji",
+          "name": "老尹记炭火烧烤（国棉四厂店）",
+          "category": "烧烤 / 炭火肉串",
+          "addressText": "河南省郑州市中原区棉纺西路国棉四厂内尤记隔壁",
+          "start": 153.8,
+          "end": 164.68,
+          "posterSecond": 158.0,
+          "summary": "紧邻四厂尤记烧饼的炭火肉串摊，两块钱一串现穿现烤，羊肉鲜嫩焦香多汁，夹在刚出炉的尤记脆烧饼里堪称绝配。",
+          "coordinates": [
+            113.6122,
+            34.7607
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "棉纺西路 / 国棉四厂尤记隔壁",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍国棉四厂尤记隔壁老尹记炭火肉串，与尤记烧饼合用同一点位。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 736382918,
+              "name": "棉纺西路",
+              "url": "https://www.openstreetmap.org/way/736382918",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6894219088
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，现穿现烤炭火羊肉串夹烧饼。"
+        },
+        {
+          "id": "zz-ganfan-heshunhe",
+          "name": "合顺合（棉纺路店）",
+          "category": "传统小吃 / 老郑州风味",
+          "addressText": "河南省郑州市中原区棉纺路与桐柏路交叉口附近",
+          "start": 164.68,
+          "end": 187.12,
+          "posterSecond": 174.0,
+          "summary": "棉纺路附近的老字号传统小吃铺，主营传统卤味与老郑州烙馍小吃，酱肉肥而不腻、浓油赤酱，老纺织工人家喻户晓的味道。",
+          "coordinates": [
+            113.6157,
+            34.7598
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "棉纺西路 / 桐柏路口附近",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍棉纺路附近合顺合老店，采用棉纺西路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 736382918,
+              "name": "棉纺西路",
+              "url": "https://www.openstreetmap.org/way/736382918",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6894219011
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，老纺织厂人传统卤味烙馍。"
+        },
+        {
+          "id": "zz-ganfan-laoli",
+          "placeId": "zz-shiwu-laoli",
+          "name": "清真老李牛肉丸子汤（黄河路230号院店）",
+          "category": "丸子汤 / 酥肉汤",
+          "addressText": "河南省郑州市金水区黄河路50号（海滩寺地铁站A口步行160米）",
+          "start": 187.12,
+          "end": 193.04,
+          "posterSecond": 190.0,
+          "summary": "海滩寺地铁站旁牛肉丸子汤老店，咖喱底汤胡椒香浓，牛肉丸外软里筋，酥肉入口即化，本地人爱加方便面同食。",
+          "coordinates": [
+            113.651,
+            34.7715
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "黄河路 / 海滩寺地铁站A口附近",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实测黄河路加油站身后老李丸子汤，与15再吃亿点儿探店合用同一点位。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724672287,
+              "name": "黄河路",
+              "url": "https://www.openstreetmap.org/way/724672287",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 724672287
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，咖喱底汤牛肉丸子泡方便面。"
+        },
+        {
+          "id": "zz-ganfan-dongji",
+          "name": "城北老董记传统鸡血汤",
+          "category": "鸡血汤 / 传统小吃",
+          "addressText": "河南省郑州市管城回族区城北路老董记传统鸡血汤",
+          "start": 193.04,
+          "end": 201.2,
+          "posterSecond": 196.0,
+          "summary": "城北路上低调的老字号鸡血汤，鲜鸡高汤底加入嫩滑鸡血块与滑嫩鸡肠豆腐皮，胡椒香气浓郁醒胃，老板常休息易吃闭门羹。",
+          "coordinates": [
+            113.6852,
+            34.7565
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "城北路 / 老字号街区",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍城北路老董记传统鸡血汤，采用城北路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644515,
+              "name": "城北路",
+              "url": "https://www.openstreetmap.org/way/724644515",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796155102
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，老派鲜鸡汤滑嫩鸡血。"
+        },
+        {
+          "id": "zz-ganfan-lvdoubing",
+          "name": "城南路老式半地下绿豆饼店",
+          "category": "传统糕点 / 绿豆饼",
+          "addressText": "河南省郑州市管城回族区城南路小李庄菜市场旁半地下门面",
+          "start": 201.2,
+          "end": 217.4,
+          "posterSecond": 208.0,
+          "summary": "城南路小李庄菜市场旁的半地下铺位，几十载坚持古法手工现烘绿豆饼与红豆饼，皮薄如纸层层起酥，馅心清甜绵密不齁甜。",
+          "coordinates": [
+            113.6748,
+            34.7462
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "城南路 / 小李庄菜市场旁",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍城南路小李庄菜市场旁半地下绿豆饼店，采用城南路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644610,
+              "name": "城南路",
+              "url": "https://www.openstreetmap.org/way/724644610",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6861896414
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，半地下传统手工起酥绿豆饼。"
+        },
+        {
+          "id": "zz-ganfan-laosichuan",
+          "name": "老四川家常菜（沙口路店）",
+          "category": "川菜 / 市井小炒",
+          "addressText": "河南省郑州市金水区沙口路三北小区外临街门面",
+          "start": 225.68,
+          "end": 240.36,
+          "posterSecond": 230.0,
+          "summary": "沙口路三北小区外不起眼的临街老馆子，正宗老派川味小炒，宫保鸡丁酸甜微辣带荔枝口，回锅肉焦香下饭，性价比极高。",
+          "coordinates": [
+            113.6329,
+            34.7724
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "沙口路 / 三北小区临街",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍沙口路三北小区门面老四川家常菜，采用沙口路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 736878834,
+              "name": "沙口路",
+              "url": "https://www.openstreetmap.org/way/736878834",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6898973280
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，市井小馆地道荔枝口宫保鸡丁。"
+        },
+        {
+          "id": "zz-ganfan-yujingxiang",
+          "name": "渝井巷重庆老火锅（铁路边总店）",
+          "category": "重庆老火锅 / 铁路市井",
+          "addressText": "河南省郑州市管城回族区京广铁路边陇海东路铁文街南侧",
+          "start": 240.36,
+          "end": 250.6,
+          "posterSecond": 244.0,
+          "summary": "京广铁路边老红砖楼下的市井老火锅，浓郁纯牛油老火锅底料麻辣鲜香，毛肚爽脆鸭肠新鲜，吃着火锅听着火车轰鸣极具市井情怀。",
+          "coordinates": [
+            113.6579,
+            34.7398
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "陇海东路 / 铁路沿线市井老楼",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍铁路沿线渝井巷老火锅，采用陇海东路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 971773062,
+              "name": "陇海东路",
+              "url": "https://www.openstreetmap.org/way/971773062",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 8994165461
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，铁路边市井纯牛油老火锅。"
+        },
+        {
+          "id": "zz-ganfan-minnan",
+          "name": "闽南牛肉馆（金一路店）",
+          "category": "闽南风味 / 牛肉羹·咸饭",
+          "addressText": "河南省郑州市管城回族区物流园区金一路",
+          "start": 250.6,
+          "end": 285.32,
+          "posterSecond": 268.0,
+          "summary": "物流园区金一路旁的隐蔽闽南风味小馆，地道泉州牛肉羹肉质滑嫩带汤脆甜，配上一碗油亮喷香的红葱头咸饭，暖心暖胃。",
+          "coordinates": [
+            113.7336,
+            34.7219
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "航海东路 / 物流园区金一路口",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍物流园区金一路闽南牛肉馆，采用航海东路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724086594,
+              "name": "航海东路",
+              "url": "https://www.openstreetmap.org/way/724086594",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6790881553
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，泉州牛肉羹与红葱头咸饭。"
+        },
+        {
+          "id": "zz-ganfan-zijingteahouse",
+          "name": "紫荆山公园茶馆",
+          "category": "茶饮 / 市井茶摊",
+          "addressText": "河南省郑州市金水区紫荆山公园内临山茶室",
+          "start": 285.32,
+          "end": 302.44,
+          "posterSecond": 292.0,
+          "summary": "紫荆山公园绿树环抱下的露天老茶室，几把竹椅一壶清茶，临湖迎风悠闲自得，郑州老市民惬意品茶会友的隐秘角落。",
+          "coordinates": [
+            113.676,
+            34.7629
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "紫荆山路 / 紫荆山公园内",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍紫荆山公园内老茶室，采用紫荆山路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724672363,
+              "name": "紫荆山路",
+              "url": "https://www.openstreetmap.org/way/724672363",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796416440
+            }
+          },
+          "footageNote": "2026年原视频 · 郑州土著私藏老味道，公园竹椅悠闲清茶。"
+        }
+      ]
+    },
+    {
+      "id": "zz-yingtao-7637482311005593006",
+      "author": "樱桃大婉子",
+      "title": "周末吃郑州，看这一条老店合集就够啦～天南海北老味道应有尽有！#郑州美食 #周末去哪儿 #郑州老店 #城市美食名片 #抖音美食创作者",
+      "url": "https://www.douyin.com/video/7637482311005593006",
+      "shareURL": "https://v.douyin.com/mwVZpeXaeeE/",
+      "publishedOn": "2026-05-09",
+      "durationSeconds": 170.34,
+      "sourceSHA256": "a8eb9a3c57420807f2fab440015ddedcb148b5b27bd7e202edb4a85ad901eee3",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍与片中推荐6家周末老味道老店（宝正臻天津包子店、虎一家鱼火锅、华豫川餐厅、白仙煎包、多美奶酪、新疆美食城）。",
+      "segments": [
+        {
+          "id": "zz-yingtao-baozhengzhen",
+          "name": "宝正臻天津包子店",
+          "category": "包子 / 传统面点",
+          "addressText": "河南省郑州市金水区天明路72-3-23号（群办路口南侧）",
+          "start": 0.0,
+          "end": 34.0,
+          "posterSecond": 16.0,
+          "summary": "天明路老牌天津包子铺，手工现包现蒸，半发面皮松软有韧劲，水馅肉丸饱满多汁，咬开一口肉香流油，配一碗热稀饭老味地道。",
+          "coordinates": [
+            113.6439,
+            34.7897
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "天明路 / 群办路口南侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍天明路72-3-23号宝正臻包子铺，采用天明路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724784736,
+              "name": "天明路",
+              "url": "https://www.openstreetmap.org/way/724784736",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6797377901
+            }
+          },
+          "footageNote": "2026年原视频 · 周末老店合集，半发面水馅现蒸天津包子。"
+        },
+        {
+          "id": "zz-yingtao-huyijia",
+          "name": "虎一家鱼火锅（秦岭路总店）",
+          "category": "鱼火锅 / 川味火锅",
+          "addressText": "河南省郑州市中原区秦岭路与棉纺西路交叉口南侧路东",
+          "start": 34.0,
+          "end": 54.0,
+          "posterSecond": 42.0,
+          "summary": "西郊秦岭路老牌鱼火锅，活鱼现杀现片，麻辣红汤锅底醇厚回味悠长，鱼片鲜嫩弹牙毫无腥味，蘸上原汤油碟香辣过瘾。",
+          "coordinates": [
+            113.5973,
+            34.758
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "秦岭路 / 棉纺西路口南侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍秦岭路虎一家鱼火锅，采用秦岭路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 735363858,
+              "name": "秦岭路",
+              "url": "https://www.openstreetmap.org/way/735363858",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6894126841
+            }
+          },
+          "footageNote": "2026年原视频 · 周末老店合集，活鱼现片麻辣鲜嫩鱼火锅。"
+        },
+        {
+          "id": "zz-yingtao-huayuchuan",
+          "name": "华豫川餐厅（熙地港店）",
+          "category": "川菜 / 新派川味",
+          "addressText": "河南省郑州市金水区农业东路熙地港购物中心4楼",
+          "start": 54.0,
+          "end": 94.0,
+          "posterSecond": 68.0,
+          "summary": "郑州开了二十多年的川味名店，经典毛血旺料足汤亮，麻辣醇厚；精品水煮肉片滑嫩适口，辣度温和香气扑鼻。",
+          "coordinates": [
+            113.7376,
+            34.783
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "农业东路 / 熙地港购物中心",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍熙地港4楼华豫川餐厅，采用农业东路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724784850,
+              "name": "农业东路",
+              "url": "https://www.openstreetmap.org/way/724784850",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6797378630
+            }
+          },
+          "footageNote": "2026年原视频 · 周末老店合集，经典二十年老牌川味毛血旺。"
+        },
+        {
+          "id": "zz-yingtao-baixian",
+          "name": "白仙煎包",
+          "category": "水煎包 / 早餐汤品",
+          "addressText": "河南省郑州市管城回族区顺河路与硝滩街回民老街区",
+          "start": 94.0,
+          "end": 118.0,
+          "posterSecond": 106.0,
+          "summary": "管城老城区水煎包老铺，金黄焦脆的雪花底脆爽诱人，牛肉粉条馅汁水丰沛，再点一碗鲜脑花肚丝汤或现炸鸡蛋布袋，经典早点标配。",
+          "coordinates": [
+            113.6714,
+            34.7614
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "顺河路 / 回民老街区",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍顺河路老街白仙煎包，采用顺河路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644652,
+              "name": "顺河路",
+              "url": "https://www.openstreetmap.org/way/724644652",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6831833283
+            }
+          },
+          "footageNote": "2026年原视频 · 周末老店合集，雪花底水煎包与肚丝汤早点。"
+        },
+        {
+          "id": "zz-yingtao-duomei",
+          "name": "多美奶酪",
+          "category": "甜品 / 老式奶酪",
+          "addressText": "河南省郑州市金水区优胜南路与健康路交叉口向东路北",
+          "start": 118.0,
+          "end": 136.0,
+          "posterSecond": 126.0,
+          "summary": "优胜南路清香中学旁的老式甜品店，主打纯奶发酵双皮奶与老式烤奶酪，乳香浓郁丝滑甜润，陪伴了一代郑州学生的青春滋味。",
+          "coordinates": [
+            113.6545,
+            34.7679
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "优胜南路 / 健康路口东侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍优胜南路多美奶酪，采用优胜南路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724672267,
+              "name": "优胜南路",
+              "url": "https://www.openstreetmap.org/way/724672267",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796415879
+            }
+          },
+          "footageNote": "2026年原视频 · 周末老店合集，纯奶发酵双皮奶与老式烤奶酪。"
+        },
+        {
+          "id": "zz-yingtao-xinjiangmeishi",
+          "name": "新疆美食城",
+          "category": "新疆菜 / 烤肉大盘鸡",
+          "addressText": "河南省郑州市二七区大学中路与桃源路交叉口东北角",
+          "start": 136.0,
+          "end": 170.34,
+          "posterSecond": 154.0,
+          "summary": "郑大南校区桃源路二十年老牌新疆餐厅，炭烤羊肉串大块焦香、汁水充盈，手抓饭颗粒分明羊油润泽，老校区门口的深夜欢聚点。",
+          "coordinates": [
+            113.638,
+            34.7414
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "桃源路 / 大学中路口东北角",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍大学中路与桃源路口新疆美食城，采用桃源路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 732794302,
+              "name": "桃源路",
+              "url": "https://www.openstreetmap.org/way/732794302",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6861895814
+            }
+          },
+          "footageNote": "2026年原视频 · 周末老店合集，郑大南校区老牌炭烤羊肉大盘鸡。"
+        }
+      ]
+    },
+    {
+      "id": "zz-xiaoying-7641156958607073521",
+      "author": "百变小樱",
+      "title": "郑州南五里堡的美食绝对是被低估了 # 美食 # 记录真实生活",
+      "url": "https://www.douyin.com/video/7641156958607073521",
+      "shareURL": "https://v.douyin.com/xXwrMQMhA38/",
+      "publishedOn": "2026-05-18",
+      "durationSeconds": 129.17,
+      "sourceSHA256": "277329da09bcb93efab320221c80669e07274ad59b84cbe2f5c8e005f9733500",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实地探访管城回族区南五里堡金城街美食街5家市井小吃（齐八两功夫炸海鱼、四川凉面、来氏梅花糕炒冰、猪椰记生炸鸡爪、传统炸面条）。",
+      "segments": [
+        {
+          "id": "zz-xiaoying-zhahaiyu",
+          "name": "齐八两功夫炸海鱼（金城街店）",
+          "category": "炸物 / 特色海鱼",
+          "addressText": "河南省郑州市管城回族区金城街冠禾集市农贸市场旁",
+          "start": 0.0,
+          "end": 36.32,
+          "posterSecond": 18.0,
+          "summary": "南五里堡金城街菜市场旁现炸小海鲜摊，小海鱼现裹薄浆油炸金黄酥脆，鱼骨炸透酥脆可嚼，撒上特制椒盐孜然干料趁热吃鲜美无比。",
+          "coordinates": [
+            113.6751,
+            34.7274
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金城街 / 冠禾集市旁",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍金城街冠禾集市农贸市场旁齐八两炸海鱼，采用金城街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644593,
+              "name": "金城街",
+              "url": "https://www.openstreetmap.org/way/724644593",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796155571
+            }
+          },
+          "footageNote": "2026年原视频 · 南五里堡市井美食，现炸金黄酥脆椒盐小海鱼。"
+        },
+        {
+          "id": "zz-xiaoying-sichuanliangmian",
+          "name": "四川凉面（金城街12号院店）",
+          "category": "凉面 / 川味小吃",
+          "addressText": "河南省郑州市管城回族区金城街12号院门面",
+          "start": 36.32,
+          "end": 75.0,
+          "posterSecond": 54.0,
+          "summary": "金城街12号院门口的老字号川味小吃摊，手工凉面粗细均匀爽滑筋道，淋满香浓麻酱与红油辣子，配豆芽黄瓜丝清凉爽口。",
+          "coordinates": [
+            113.6757,
+            34.7274
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金城街 / 12号院门前",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍金城街12号院门面四川凉面，采用金城街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644593,
+              "name": "金城街",
+              "url": "https://www.openstreetmap.org/way/724644593",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796154245
+            }
+          },
+          "footageNote": "2026年原视频 · 南五里堡市井美食，秘制麻酱红油手工凉面。"
+        },
+        {
+          "id": "zz-xiaoying-meihuagao",
+          "name": "来氏梅花糕·炒冰（金城街店）",
+          "category": "江南小吃 / 梅花糕",
+          "addressText": "河南省郑州市管城回族区金城街小吃街中段",
+          "start": 75.0,
+          "end": 97.68,
+          "posterSecond": 82.0,
+          "summary": "金城街小吃一条街招牌江南糕点，特制铁模现场烘烤，外壳金黄酥脆如梅花绽放，内裹红豆沙、香芋泥与各色果脯，热气腾腾香甜软糯。",
+          "coordinates": [
+            113.6817,
+            34.7274
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金城街 / 小吃街中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍金城街来氏梅花糕，采用金城街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644593,
+              "name": "金城街",
+              "url": "https://www.openstreetmap.org/way/724644593",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796154309
+            }
+          },
+          "footageNote": "2026年原视频 · 南五里堡市井美食，现烤热腾香甜传统梅花糕。"
+        },
+        {
+          "id": "zz-xiaoying-zhuyejia",
+          "name": "猪椰记生炸鸡爪（金城街摊）",
+          "category": "炸鸡爪 / 卤味炸串",
+          "addressText": "河南省郑州市管城回族区金城街小吃一条街",
+          "start": 97.68,
+          "end": 116.48,
+          "posterSecond": 106.0,
+          "summary": "金城街人气极高的现炸生鸡爪摊，生鸡爪腌制入味后入油锅生炸至表皮金黄起泡，外皮酥脆内里筋糯弹牙，撒满麻辣粉越嚼越香。",
+          "coordinates": [
+            113.683,
+            34.7274
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金城街 / 小吃一条街",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍金城街猪椰记生炸鸡爪摊，采用金城街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644593,
+              "name": "金城街",
+              "url": "https://www.openstreetmap.org/way/724644593",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796155573
+            }
+          },
+          "footageNote": "2026年原视频 · 南五里堡市井美食，外酥里糯现炸生鸡爪。"
+        },
+        {
+          "id": "zz-xiaoying-zhamiantiao",
+          "name": "金城街传统炸面条摊",
+          "category": "传统小吃 / 炸面条",
+          "addressText": "河南省郑州市管城回族区金城街美食街东段",
+          "start": 116.48,
+          "end": 129.17,
+          "posterSecond": 122.0,
+          "summary": "金城街市井特色传统油炸小吃，新鲜手工面条入热油锅迅速蓬松酥脆，金黄香脆不油腻，是南五里堡居民从小吃到大的怀旧小零食。",
+          "coordinates": [
+            113.6843,
+            34.7274
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金城街 / 美食街东段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍金城街炸面条摊，采用金城街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644593,
+              "name": "金城街",
+              "url": "https://www.openstreetmap.org/way/724644593",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796155572
+            }
+          },
+          "footageNote": "2026年原视频 · 南五里堡市井美食，金黄酥脆传统手工炸面条。"
+        }
+      ]
+    },
+    {
+      "id": "zz-uubuchi-7626717054757964922",
+      "author": "UU不吃",
+      "title": "郑州这一口山楂凤梨排骨将会很疯狂！！ 炖的也太软烂入味了！米饭杀手！还有普洱茶烤鸡也是一绝！ #郑州美食 #普洱菜 #郑州吃喝玩乐",
+      "url": "https://www.douyin.com/video/7626717054757964922",
+      "shareURL": "https://v.douyin.com/pqjM_TMmTWI/",
+      "publishedOn": "2026-04-10",
+      "durationSeconds": 23.0,
+      "sourceSHA256": "6c39f3a7d8f1c0cdf4a11b2735c471262a42cd6ce025fc128e995ea4b0ee9076",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍与分享沙口路113号南山有鸣思茅普洱菜特色山楂凤梨排骨与普洱茶烤鸡。",
+      "segments": [
+        {
+          "id": "zz-uubuchi-nanshan",
+          "name": "南山有鸣思茅普洱菜（沙口路店）",
+          "category": "云南菜 / 思茅普洱风味",
+          "addressText": "河南省郑州市金水区沙口路113号（知青老食堂隔壁，摩尔时代对面）",
+          "start": 0.0,
+          "end": 23.0,
+          "posterSecond": 8.0,
+          "summary": "沙口路摩尔时代对面紧邻知青老食堂的滇味小馆，招牌山楂凤梨排骨酸甜开胃、肉质软烂一抿脱骨，普洱茶烤鸡茶香扑鼻表皮金脆。",
+          "coordinates": [
+            113.6354,
+            34.7688
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "沙口路 / 二环支路路口西南",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍沙口路113号南山有鸣（紧邻115号知青老食堂），采用二环支路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 736382774,
+              "name": "二环支路",
+              "url": "https://www.openstreetmap.org/way/736382774",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6894218038
+            }
+          },
+          "footageNote": "2026年原视频 · 思茅普洱风味菜实测，山楂凤梨排骨酸甜软烂脱骨。"
+        }
+      ]
+    },
+    {
+      "id": "zz-juzigongzhu-7264126930473995557",
+      "author": "橘子公主",
+      "title": "第一次来河南怼正宗烩面，配上当地天花板米皮，真的中！ #跟着美食去旅行 #美食探店 #郑州美食 #赵记米皮 #河南烩面",
+      "url": "https://www.douyin.com/video/7264126930473995557",
+      "shareURL": "https://v.douyin.com/SFI6rDzNekY/",
+      "publishedOn": "2023-08-06",
+      "durationSeconds": 427.18,
+      "sourceSHA256": "3fb8057b5c14a5d94f3db1f1977cd62984df7207d866f65cc02e9be340b68a52",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实地探店管城回族区南关街168号老牌赵记米皮，实测大米现磨蒸制米皮与浓郁红油配料。",
+      "segments": [
+        {
+          "id": "zz-juzigongzhu-zhaoji",
+          "name": "赵记米皮（南关街店）",
+          "category": "米皮 / 特色小吃",
+          "addressText": "河南省郑州市管城回族区南关街168号（近熊耳河）",
+          "start": 0.0,
+          "end": 427.18,
+          "posterSecond": 104.0,
+          "summary": "管城老城区南关街三十年米皮老店，大米现磨蒸制米皮厚实绵软爽滑，秘制红油红亮醇厚不干辣，配上爽脆面筋和鲜黄瓜丝，老郑州心中的米皮天花板。",
+          "coordinates": [
+            113.6695,
+            34.7417
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "南关街 / 熊耳河桥北侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍南关街168号赵记米皮老店，采用南关街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644602,
+              "name": "南关街",
+              "url": "https://www.openstreetmap.org/way/724644602",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6873900727
+            }
+          },
+          "footageNote": "2023年原视频 · 首次来河南实测老店，现磨米皮厚实滑糯红油醇香。"
+        }
+      ]
+    },
+    {
+      "id": "zz-xiaochen-7307296694943681830",
+      "author": "小晨吃不饱",
+      "title": "它唯一的缺点是：郑州限定！！！炸面筋封神了，搭配莲菜很解腻 #向右滑出我的美食攻略 #它唯一的缺点是本地限定  #宝藏餐厅藏不住  #郑州美食 #河南美食",
+      "url": "https://www.douyin.com/video/7307296694943681830",
+      "shareURL": "https://v.douyin.com/06TyaH6Pk9I/",
+      "publishedOn": "2023-12-03",
+      "durationSeconds": 160.53,
+      "sourceSHA256": "cebe5a6e83602ce2d1dc7236e097f0af207282bd66bec173dfce4947957fee52",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍探店中原区须水河东路18号老店换利小吃，实测招牌砂锅与焦炸面筋搭配莲菜。",
+      "segments": [
+        {
+          "id": "zz-xiaochen-huanli",
+          "placeId": "zz-chichi-huanli",
+          "name": "换利小吃",
+          "category": "传统砂锅 / 砂锅烩面",
+          "addressText": "河南省郑州市中原区郑上路与须水河东路交叉口附近（原须水镇一带）",
+          "start": 0.0,
+          "end": 160.53,
+          "posterSecond": 54.0,
+          "summary": "须水镇二十多年老字号砂锅小吃店，猛火现煮砂锅烩面与砂锅米线滚烫鲜浓，招牌焦炸面筋搭配爽脆莲菜解腻，本地食客驱车数十里必吃。",
+          "coordinates": [
+            113.4985,
+            34.7562
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中原区须水老镇 / 郑上路口西侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍须水老店换利小吃焦炸面筋，与赤赤吃啥呢探店合用同一点位，超出当前中心底图范围。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 736382774,
+              "name": "须水镇区参照",
+              "url": "https://www.openstreetmap.org",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6894218038
+            }
+          },
+          "footageNote": "2023年原视频 · 须水砂锅老店实测，位于中心城区底图边界西侧（范围外）。"
         }
       ]
     }
