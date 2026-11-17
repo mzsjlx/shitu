@@ -342,29 +342,37 @@ async function run() {
     });
     check('Level 3: Hovering or clicking expanded card opens smooth video popover', popoverVisible);
 
-    // Play native video
+    // Play native video with dual-sample verification
     const playBtn = page.locator('.food-popover-play');
-    if (await playBtn.count() > 0) {
-      await playBtn.click();
-      await page.waitForTimeout(1000);
+    await playBtn.waitFor({ state: 'visible', timeout: 8000 });
+    await playBtn.click();
+    await page.waitForFunction(() => {
+      const v = document.querySelector('.food-popover-media video');
+      return v && v.readyState >= 2 && !v.paused;
+    }, undefined, { timeout: 15000 });
 
-      const videoState = await page.evaluate(() => {
-        const vid = document.querySelector('.food-inline-popover video');
-        return {
-          hasVideo: Boolean(vid),
-          src: vid?.src,
-          paused: vid?.paused
-        };
-      });
-      check('Level 3: Native H.264+AAC video plays in-place within popover', 
-        videoState.hasVideo && videoState.src?.includes('.mp4'), 
-        videoState);
-    } else {
-      check('Level 3: Native H.264+AAC video plays in-place within popover', true);
-    }
+    const sample1 = await page.evaluate(() => {
+      const v = document.querySelector('.food-popover-media video');
+      return { t: v ? v.currentTime : -1, paused: v ? v.paused : true, readyState: v ? v.readyState : 0 };
+    });
+    await page.waitForTimeout(500);
+    const sample2 = await page.evaluate(() => {
+      const v = document.querySelector('.food-popover-media video');
+      return { t: v ? v.currentTime : -1, paused: v ? v.paused : true, src: v ? (v.currentSrc || v.src) : '' };
+    });
+
+    const isPlaying = !sample1.paused && !sample2.paused && sample2.t > sample1.t && sample2.t > 0.1;
+    check('Level 3: Native H.264+AAC video plays in-place within popover (dual-sampled)', 
+      isPlaying, 
+      { sample1, sample2 });
 
     const videoShot = path.join(screenshotDir, 'harbin-food-video-level3.png');
     await page.screenshot({ path: videoShot });
+
+    // Save reference to old video element before switching shop
+    await page.evaluate(() => {
+      window.reviewOldVideo = document.querySelector('.food-popover-media video');
+    });
 
     // Switching shop immediately stops previous audio/video track
     const secondCard = page.locator('.food-card[data-food-id="video-hb-juzi-liushunjiehefan"]');
@@ -380,11 +388,45 @@ async function run() {
     await page.waitForTimeout(800);
 
     const oldVideoStopped = await page.evaluate(() => {
-      const pop = document.querySelector('.food-inline-popover');
-      const title = pop?.querySelector('.food-popover-heading strong')?.textContent;
-      return title?.includes('鲜丽快餐');
+      const old = window.reviewOldVideo;
+      return !old || old.paused || !old.getAttribute('src');
     });
-    check('Level 3: Switching food shop stops old media track and displays new shop popover', oldVideoStopped);
+    check('Level 3: Switching food shop stops and releases old media track', oldVideoStopped);
+
+    // Multi-clip place switching and close lifecycle verification
+    const multiPlaceId = await page.evaluate(() => {
+      const rec = window.foodCityMap.food.records.find(r => r.clips && r.clips.length > 1);
+      return rec ? rec.id : null;
+    });
+    if (multiPlaceId) {
+      await page.evaluate(id => window.foodCityMap.food.focusStops(id), multiPlaceId);
+      await page.waitForTimeout(600);
+      await page.locator(`[data-food-id="${multiPlaceId}"] .food-open`).click();
+      await page.waitForTimeout(400);
+      const multiPlayBtn = page.locator('.food-popover-play');
+      if (await multiPlayBtn.isVisible()) {
+        await multiPlayBtn.click();
+        await page.waitForTimeout(600);
+      }
+      await page.evaluate(() => { window.reviewOldVideo = document.querySelector('.food-popover-media video'); });
+      const clipTabs = page.locator('.food-popover-clip');
+      if (await clipTabs.count() > 1) {
+        await clipTabs.nth(1).click();
+        await page.waitForTimeout(400);
+        const clipChanged = await page.evaluate(() => {
+          const old = window.reviewOldVideo;
+          return !old || old.paused || !old.getAttribute('src');
+        });
+        check('Level 3: Changing creator clip stops and releases old track', clipChanged);
+      }
+      await page.locator('.food-popover-close').click();
+      await page.waitForTimeout(400);
+      const popoverClosed = await page.evaluate(() => {
+        const old = window.reviewOldVideo;
+        return !old || old.paused || !old.getAttribute('src');
+      });
+      check('Level 3: Closing popover stops and releases old track', popoverClosed);
+    }
 
     // 2D / 3D Toggle Test
     console.log('\n--- 8. Testing 2D / 3D Mode Toggle ---');

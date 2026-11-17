@@ -27,9 +27,9 @@
           "category": "东北铁锅炖 / 㸆大鹅",
           "summary": "香坊区电碳路木材厂旁地道老店，笨柴铁锅㸆大鹅，大火收汁滋啦冒油，焦香四溢配金黄玉米贴饼子。",
           "addressText": "哈尔滨市香坊区电碳路（近木材东街木材厂小区）",
-          "start": 30.0,
-          "end": 42.0,
-          "posterSecond": 34.0,
+          "start": 30,
+          "end": 42,
+          "posterSecond": 34,
           "coordinates": [
             126.6852104,
             45.7231201
@@ -41,15 +41,21 @@
             "label": "香坊大街与电碳路交汇街区（近木材东街）",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片香坊区电碳路木材厂线索采用开放地图对象香坊大街交汇处作为街区近似参照，未核实店门精确入口或营业状态。",
-            "reviewedOn": "2026-11-12",
+            "note": "按原片地址线索采用开放地图道路【未命名开放道路】（OSM way 976215010，节点 9034120460）作为街区近似参照，距参考道路约 34.6 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 16982,
-              "name": "香坊大街交汇处",
-              "url": "https://www.openstreetmap.org/node/16982",
-              "sourceDate": "2026-11-12",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 976215010,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/976215010",
+              "nodeId": 9034120460,
+              "coordinates": [
+                126.6847953,
+                45.7230079
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 34.6
             }
           },
           "routeEligible": false,
@@ -75,9 +81,9 @@
           "category": "特色小吃 / 伴手礼",
           "summary": "南岗区果戈里大街老字号国营副食商场，哈尔滨本地红肠、松仁小肚、粉肠熟食与老式糕点大列巴聚集地。",
           "addressText": "哈尔滨市南岗区果戈里大街370号（近秋林商圈）",
-          "start": 10.0,
-          "end": 22.0,
-          "posterSecond": 14.0,
+          "start": 10,
+          "end": 22,
+          "posterSecond": 14,
           "coordinates": [
             126.6456324,
             45.7549127
@@ -89,15 +95,21 @@
             "label": "果戈里大街370号奋斗副食门前",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片地址线索采用开放地图对象【果戈里大街】（OSM node 15273）作为街区精确门前参照，未核实营业状态变更。",
-            "reviewedOn": "2026-11-12",
+            "note": "按原片地址线索采用开放地图道路【果戈里大街】（OSM way 1080875659，节点 9906988370）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 15273,
-              "name": "果戈里大街370号门前",
-              "url": "https://www.openstreetmap.org/node/15273",
-              "sourceDate": "2026-11-12",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 1080875659,
+              "name": "果戈里大街",
+              "url": "https://www.openstreetmap.org/way/1080875659",
+              "nodeId": 9906988370,
+              "coordinates": [
+                126.6456311,
+                45.7549132
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -123,9 +135,9 @@
           "category": "东北快餐 / 自助盒饭",
           "summary": "香坊区六顺街24小时营业市井自助快餐，12元一位锅包肉、溜肉段、红烧肉等三十余道东北家常菜不限量管饱。",
           "addressText": "哈尔滨市香坊区六顺街1-4-5号（近三辅三道街）",
-          "start": 16.0,
-          "end": 28.0,
-          "posterSecond": 23.0,
+          "start": 16,
+          "end": 28,
+          "posterSecond": 23,
           "coordinates": [
             126.6802463,
             45.731904
@@ -137,15 +149,21 @@
             "label": "六顺街与三辅三道街交汇处",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片门牌六顺街1-4-5号线索采用开放地图对象【六顺街】交汇节点作为街区门前参照。",
-            "reviewedOn": "2026-11-12",
+            "note": "按原片地址线索采用开放地图道路【三辅街】（OSM way 626337762，节点 406445419）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 16802,
-              "name": "六顺街三辅三道街口",
-              "url": "https://www.openstreetmap.org/node/16802",
-              "sourceDate": "2026-11-12",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 626337762,
+              "name": "三辅街",
+              "url": "https://www.openstreetmap.org/way/626337762",
+              "nodeId": 406445419,
+              "coordinates": [
+                126.6802463,
+                45.7319047
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -171,9 +189,9 @@
           "category": "东北烧烤 / 炭烤大油边",
           "summary": "哈尔滨地道老式炭火烧烤与红油涮肚，招牌爆汁整条大油边外焦里嫩，千层筋、开花肠搭配老式麻酱红油涮肚盆。",
           "addressText": "哈尔滨市道里区铁景街与哈阿线交口附近（小花袄道里店）",
-          "start": 1.0,
-          "end": 13.0,
-          "posterSecond": 3.0,
+          "start": 1,
+          "end": 13,
+          "posterSecond": 3,
           "coordinates": [
             126.6125432,
             45.748231
@@ -185,15 +203,21 @@
             "label": "铁景街与哈阿线街区（近新阳路）",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片口播与商户线索采用开放地图对象作为街区近似参照，未核实店门精确入口或营业状态。",
-            "reviewedOn": "2026-11-12",
+            "note": "按原片地址线索采用开放地图道路【大民兴街】（OSM way 506745933，节点 9910982554）作为街区近似参照，距参考道路约 44.5 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
               "kind": "osm-way",
-              "id": 14502,
-              "name": "铁景街",
-              "url": "https://www.openstreetmap.org/way/14502",
-              "sourceDate": "2026-11-12",
-              "method": "original-way-node"
+              "id": 506745933,
+              "name": "大民兴街",
+              "url": "https://www.openstreetmap.org/way/506745933",
+              "nodeId": 9910982554,
+              "coordinates": [
+                126.6121218,
+                45.7485122
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 44.5
             }
           },
           "routeEligible": false,
@@ -219,9 +243,9 @@
           "category": "东北特色宵夜 / 涮毛肚锅",
           "summary": "零下18度冬夜里哈尔滨人热气腾腾的特色宵夜，一次性现兑锅底、鲜切牛胸口、大片毛肚与黄喉牛心管，浓香蘸料裹紧热气。",
           "addressText": "哈尔滨市道里区友谊西路街区（近群力音乐长廊）",
-          "start": 50.0,
-          "end": 62.0,
-          "posterSecond": 54.0,
+          "start": 50,
+          "end": 62,
+          "posterSecond": 54,
           "coordinates": [
             126.5838718,
             45.7584421
@@ -233,15 +257,21 @@
             "label": "道里区友谊西路街区（近音乐长廊）",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片地标线索采用友谊西路音乐长廊附近街区作为近似参照，未核实店门精确入口或营业状态。",
-            "reviewedOn": "2026-11-12",
+            "note": "按原片地址线索采用开放地图道路【友谊西路】（OSM way 976828138，节点 1943924445）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 13675,
-              "name": "友谊西路音乐长廊段",
-              "url": "https://www.openstreetmap.org/node/13675",
-              "sourceDate": "2026-11-12",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 976828138,
+              "name": "友谊西路",
+              "url": "https://www.openstreetmap.org/way/976828138",
+              "nodeId": 1943924445,
+              "coordinates": [
+                126.5838725,
+                45.7584427
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -267,9 +297,9 @@
           "category": "早市名吃 / 东北油炸糕",
           "summary": "道里区红专街早市传奇老摊，金黄酥脆外皮包裹热气腾腾玫瑰红豆沙，现炸现卖排队长龙。",
           "addressText": "哈尔滨市道里区红专街88号（红专街早市中段）",
-          "start": 196.0,
-          "end": 208.0,
-          "posterSecond": 200.0,
+          "start": 196,
+          "end": 208,
+          "posterSecond": 200,
           "coordinates": [
             126.6130543,
             45.7716129
@@ -281,15 +311,21 @@
             "label": "红专街早市近通江街交口",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片早市排队实录采用开放地图对象【红专街】（OSM node 10360）作为街区参照，未核实摊位日间撤市变动。",
-            "reviewedOn": "2026-11-12",
+            "note": "按原片地址线索采用开放地图道路【红专街】（OSM way 300845869，节点 1634842661）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10360,
-              "name": "红专街与通江街交汇处",
-              "url": "https://www.openstreetmap.org/node/10360",
-              "sourceDate": "2026-11-12",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300845869,
+              "name": "红专街",
+              "url": "https://www.openstreetmap.org/way/300845869",
+              "nodeId": 1634842661,
+              "coordinates": [
+                126.613055,
+                45.7716134
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -301,9 +337,9 @@
           "category": "百年老字号 / 冰品甜点",
           "summary": "中央大街地标名店，零下二十度在百年欧式石板街上咬一口奶香醇厚浓郁的经典马迭尔冰棍与秋林格瓦斯。",
           "addressText": "哈尔滨市道里区中央大街89号马迭尔宾馆1楼",
-          "start": 1152.0,
-          "end": 1164.0,
-          "posterSecond": 1156.0,
+          "start": 1152,
+          "end": 1164,
+          "posterSecond": 1156,
           "coordinates": [
             126.6162461,
             45.771916
@@ -315,15 +351,21 @@
             "label": "中央大街与西七道街交汇处",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片中央大街步行街实景采用开放地图对象【西七道街】（OSM node 10332）作为街区参照。",
-            "reviewedOn": "2026-11-12",
+            "note": "按原片地址线索采用开放地图道路【西七道街】（OSM way 159808131，节点 7109545217）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10332,
-              "name": "西七道街与中央大街交界口",
-              "url": "https://www.openstreetmap.org/node/10332",
-              "sourceDate": "2026-11-12",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 159808131,
+              "name": "西七道街",
+              "url": "https://www.openstreetmap.org/way/159808131",
+              "nodeId": 7109545217,
+              "coordinates": [
+                126.6162471,
+                45.7719163
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -335,9 +377,9 @@
           "category": "百年老字号 / 排骨包子",
           "summary": "道外中华巴洛克百年风味名店，首创排骨大包与老式豆腐包，骨肉软烂浓郁鲜香，配蒜泥酱油格外开胃。",
           "addressText": "哈尔滨市道外区南三道街与南勋街交叉口西北角",
-          "start": 1308.0,
-          "end": 1320.0,
-          "posterSecond": 1312.0,
+          "start": 1308,
+          "end": 1320,
+          "posterSecond": 1312,
           "coordinates": [
             126.6392434,
             45.779848
@@ -349,15 +391,21 @@
             "label": "中华巴洛克街区南勋街口",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片老道外排骨包实录采用开放地图对象【南勋街】（OSM node 8406）作为街区参照。",
-            "reviewedOn": "2026-11-12",
+            "note": "按原片地址线索采用开放地图道路【南勋街】（OSM way 263491210，节点 2691070093）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 8406,
-              "name": "南勋街与南三道街交汇处",
-              "url": "https://www.openstreetmap.org/node/8406",
-              "sourceDate": "2026-11-12",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 263491210,
+              "name": "南勋街",
+              "url": "https://www.openstreetmap.org/way/263491210",
+              "nodeId": 2691070093,
+              "coordinates": [
+                126.6392436,
+                45.7798481
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -383,9 +431,9 @@
           "category": "东北烧烤 / 老味涮肚",
           "summary": "南岗区建兴街传奇苍蝇馆子，大铁锅慢熬浓香老汤，大串厚实毛肚吸饱麻酱辣油，炭火双筋与牛胸口外焦里嫩。",
           "addressText": "哈尔滨市南岗区建兴街5号",
-          "start": 12.0,
-          "end": 24.0,
-          "posterSecond": 16.0,
+          "start": 12,
+          "end": 24,
+          "posterSecond": 16,
           "coordinates": [
             126.6074163,
             45.731537
@@ -397,15 +445,21 @@
             "label": "建兴街涮肚一条街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片建兴街老店线索采用开放地图对象【建兴街】（OSM node 22011）作为街区参照。",
-            "reviewedOn": "2026-11-12",
+            "note": "按原片地址线索采用开放地图道路【建兴街】（OSM way 393513136，节点 3967083160）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 22011,
-              "name": "建兴街街区段",
-              "url": "https://www.openstreetmap.org/node/22011",
-              "sourceDate": "2026-11-12",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 393513136,
+              "name": "建兴街",
+              "url": "https://www.openstreetmap.org/way/393513136",
+              "nodeId": 3967083160,
+              "coordinates": [
+                126.6074164,
+                45.7315376
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -431,9 +485,9 @@
           "category": "东北炖菜 / 老道外名店",
           "summary": "老道外丰润街几十载招牌老馆，大砂锅原汁原味小火慢煨家养笨鸡，鸡肉软烂脱骨，汤浓汁醇泡大米饭一绝。",
           "addressText": "哈尔滨市道外区丰润街48号",
-          "start": 598.0,
-          "end": 610.0,
-          "posterSecond": 602.0,
+          "start": 598,
+          "end": 610,
+          "posterSecond": 602,
           "coordinates": [
             126.640842,
             45.7826239
@@ -445,15 +499,21 @@
             "label": "老道外丰润街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道外丰润街炖鸡老店线索采用开放地图对象【丰润街】（OSM node 8569）作为街区参照。",
-            "reviewedOn": "2026-11-12",
+            "note": "按原片地址线索采用开放地图道路【丰润街】（OSM way 300908369，节点 3050115705）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 8569,
-              "name": "丰润街老店门前",
-              "url": "https://www.openstreetmap.org/node/8569",
-              "sourceDate": "2026-11-12",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300908369,
+              "name": "丰润街",
+              "url": "https://www.openstreetmap.org/way/300908369",
+              "nodeId": 3050115705,
+              "coordinates": [
+                126.640843,
+                45.7826242
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -479,9 +539,9 @@
           "category": "东北铁锅炖 / 炖大鹅",
           "summary": "道里区民安街哈尔滨铁锅炖老字号顶流，鲜嫩大鹅小火柴火慢㸆，汤汁红亮香浓裹满干豆角与玉米贴饼。",
           "addressText": "哈尔滨市道里区民安街29号（近安发桥）",
-          "start": 12.0,
-          "end": 24.0,
-          "posterSecond": 16.0,
+          "start": 12,
+          "end": 24,
+          "posterSecond": 16,
           "coordinates": [
             126.609841,
             45.7492419
@@ -493,15 +553,21 @@
             "label": "民安街与抚顺街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片民安街总店线索采用开放地图对象【民安街】（OSM node 17201）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【民安街】（OSM way 102252152，节点 5755083492）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 17201,
-              "name": "民安街路段",
-              "url": "https://www.openstreetmap.org/node/17201",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 102252152,
+              "name": "民安街",
+              "url": "https://www.openstreetmap.org/way/102252152",
+              "nodeId": 5755083492,
+              "coordinates": [
+                126.6098403,
+                45.7492417
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -527,9 +593,9 @@
           "category": "哈尔滨老菜馆 / 家常菜",
           "summary": "南岗区辽阳街排号传奇家常菜老馆，首创黑椒小滑肉滑嫩香浓，传统老式溜肉段与特色排骨地道醇厚。",
           "addressText": "哈尔滨市南岗区辽阳街84号",
-          "start": 5.0,
-          "end": 17.0,
-          "posterSecond": 6.0,
+          "start": 5,
+          "end": 17,
+          "posterSecond": 6,
           "coordinates": [
             126.6518256,
             45.7617805
@@ -541,15 +607,21 @@
             "label": "辽阳街街区段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片刘氏知音酒楼线索采用开放地图对象【辽阳街】（OSM node 13018）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【河渠街】（OSM way 300724903，节点 3048325064）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 13018,
-              "name": "辽阳街路段",
-              "url": "https://www.openstreetmap.org/node/13018",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300724903,
+              "name": "河渠街",
+              "url": "https://www.openstreetmap.org/way/300724903",
+              "nodeId": 3048325064,
+              "coordinates": [
+                126.651825,
+                45.7617798
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -575,9 +647,9 @@
           "category": "百年室内菜市 / 东北名吃聚集地",
           "summary": "道里区尚志大街百年老菜场室内美食天花板，传统烤冷面、现炸油炸糕、老式熟食红肠与格瓦斯一网打尽。",
           "addressText": "哈尔滨市道里区尚志大街57号",
-          "start": 24.0,
-          "end": 36.0,
-          "posterSecond": 25.0,
+          "start": 24,
+          "end": 36,
+          "posterSecond": 25,
           "coordinates": [
             126.6161925,
             45.7725128
@@ -589,15 +661,21 @@
             "label": "尚志大街道里菜市场门前",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道里菜市场线索采用开放地图对象【尚志大街】（OSM node 10271）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【尚志大街】（OSM way 44300943，节点 2168403099）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10271,
-              "name": "尚志大街路段",
-              "url": "https://www.openstreetmap.org/node/10271",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 44300943,
+              "name": "尚志大街",
+              "url": "https://www.openstreetmap.org/way/44300943",
+              "nodeId": 2168403099,
+              "coordinates": [
+                126.6161925,
+                45.7725125
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -612,7 +690,7 @@
       "url": "https://www.douyin.com/video/7599605004614756837",
       "shareURL": "https://v.douyin.com/RNwPtg8CZag/",
       "publishedOn": "2026-01-26",
-      "durationSeconds": 19.0,
+      "durationSeconds": 19,
       "sourceSHA256": "7d21af5a8d582f6e8f5f5083473673ec59ce8a9452bfa06901c5d005cb72cd61",
       "acquisitionStatus": "local-source",
       "evidenceNote": "给我囊次一口哈尔滨探店视频，实地探访道里菜市场百年熟食炸蔬莱等名吃。",
@@ -623,9 +701,9 @@
           "category": "百年室内菜市 / 东北名吃聚集地",
           "summary": "道里区尚志大街百年老菜场室内美食天花板，传统烤冷面、现炸油炸糕、老式熟食红肠与格瓦斯一网打尽。",
           "addressText": "哈尔滨市道里区尚志大街57号",
-          "start": 2.0,
-          "end": 14.0,
-          "posterSecond": 3.0,
+          "start": 2,
+          "end": 14,
+          "posterSecond": 3,
           "coordinates": [
             126.6161925,
             45.7725128
@@ -637,15 +715,21 @@
             "label": "尚志大街道里菜市场门前",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道里菜市场线索采用开放地图对象【尚志大街】（OSM node 10271）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【尚志大街】（OSM way 44300943，节点 2168403099）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10271,
-              "name": "尚志大街路段",
-              "url": "https://www.openstreetmap.org/node/10271",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 44300943,
+              "name": "尚志大街",
+              "url": "https://www.openstreetmap.org/way/44300943",
+              "nodeId": 2168403099,
+              "coordinates": [
+                126.6161925,
+                45.7725125
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -672,9 +756,9 @@
           "category": "老道外名吃 / 传统扒肉",
           "summary": "道外百年传统市井老铺，招牌大块扒肉软烂化渣不腻口，配肥肠炒尖椒、扒肉丸子与苏伯汤大米饭堪称绝配。",
           "addressText": "哈尔滨市道外区南五道街208号",
-          "start": 11.0,
-          "end": 23.0,
-          "posterSecond": 13.0,
+          "start": 11,
+          "end": 23,
+          "posterSecond": 13,
           "coordinates": [
             126.637052,
             45.7828147
@@ -686,15 +770,21 @@
             "label": "老道外南五道街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道外老店线索采用开放地图对象【南五道街】（OSM node 5714）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【靖宇街】（OSM way 263490210，节点 2691058643）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 5714,
-              "name": "南五道街路段",
-              "url": "https://www.openstreetmap.org/node/5714",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 263490210,
+              "name": "靖宇街",
+              "url": "https://www.openstreetmap.org/way/263490210",
+              "nodeId": 2691058643,
+              "coordinates": [
+                126.6370513,
+                45.7828138
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -720,9 +810,9 @@
           "category": "东北水饺 / 现包水饺",
           "summary": "中央大街百年老街现包东北水饺名店，招牌喜三鲜与酸菜猪肉现包现煮，皮薄馅大热气腾腾。",
           "addressText": "哈尔滨市道里区中央大街步行街",
-          "start": 6.0,
-          "end": 18.0,
-          "posterSecond": 7.0,
+          "start": 6,
+          "end": 18,
+          "posterSecond": 7,
           "coordinates": [
             126.6121826,
             45.7750665
@@ -734,15 +824,21 @@
             "label": "中央大街步行街中段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片中央大街现包水饺实录采用开放地图对象【中央大街】（OSM node 8210）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【中央大街】（OSM way 300842743，节点 1719100569）作为街区近似参照，距参考道路约 0.2 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 8210,
-              "name": "中央大街路段",
-              "url": "https://www.openstreetmap.org/node/8210",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300842743,
+              "name": "中央大街",
+              "url": "https://www.openstreetmap.org/way/300842743",
+              "nodeId": 1719100569,
+              "coordinates": [
+                126.6121674,
+                45.7751357
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.2
             }
           },
           "routeEligible": false,
@@ -768,9 +864,9 @@
           "category": "东北传统名菜 / 锅包肉小吃",
           "summary": "香坊老居民楼内仅四张桌子的传奇小铺，老师傅大锅现炸老式糖醋锅包肉，金黄酥脆焦香挂糊，酸甜利口。",
           "addressText": "哈尔滨市香坊区六顺街与三辅三道街附近",
-          "start": 7.0,
-          "end": 19.0,
-          "posterSecond": 13.0,
+          "start": 7,
+          "end": 19,
+          "posterSecond": 13,
           "coordinates": [
             126.6807827,
             45.7339784
@@ -782,15 +878,21 @@
             "label": "香坊区六顺街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片香坊区老店线索采用开放地图对象【六顺街】（OSM node 22988）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【三辅三道街】（OSM way 300029217，节点 9922079369）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 22988,
-              "name": "六顺街路段",
-              "url": "https://www.openstreetmap.org/node/22988",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300029217,
+              "name": "三辅三道街",
+              "url": "https://www.openstreetmap.org/way/300029217",
+              "nodeId": 9922079369,
+              "coordinates": [
+                126.6807835,
+                45.7339779
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -816,9 +918,9 @@
           "category": "东北特色烤肉 / 农大烤盘",
           "summary": "香坊区东北农业大学旁传奇烤盘名店，招牌烤牛肉与酸菜五花肉焦香四溢，铁盘滋滋冒油配干调蘸料风味绝佳。",
           "addressText": "哈尔滨市香坊区公滨路木材东街农大生活区附近",
-          "start": 10.0,
-          "end": 22.0,
-          "posterSecond": 13.0,
+          "start": 10,
+          "end": 22,
+          "posterSecond": 13,
           "coordinates": [
             126.6688094,
             45.7240401
@@ -830,15 +932,21 @@
             "label": "公滨路农大生活区路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片香坊农大烤盘老店线索采用开放地图对象【公滨路】（OSM node 24319）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【公滨路】（OSM way 35166846，节点 6566297186）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 24319,
-              "name": "公滨路段",
-              "url": "https://www.openstreetmap.org/node/24319",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 35166846,
+              "name": "公滨路",
+              "url": "https://www.openstreetmap.org/way/35166846",
+              "nodeId": 6566297186,
+              "coordinates": [
+                126.6688092,
+                45.7240393
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -864,9 +972,9 @@
           "category": "东北家常菜 / 市井小吃馆",
           "summary": "道里区森林街著名高性价比老菜馆，大盘金黄酥脆锅包肉、软嫩咸鲜溜三样与下饭尖椒肥肠，量大实惠烟火气十足。",
           "addressText": "哈尔滨市道里区森林街小吃一条街",
-          "start": 5.0,
-          "end": 17.0,
-          "posterSecond": 6.0,
+          "start": 5,
+          "end": 17,
+          "posterSecond": 6,
           "coordinates": [
             126.6236249,
             45.7749261
@@ -878,15 +986,21 @@
             "label": "道里区森林街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片森林街嘉样小吃线索采用开放地图对象【森林街】（OSM node 10446）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【森林东街】（OSM way 1081355580，节点 9907941595）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10446,
-              "name": "森林街路段",
-              "url": "https://www.openstreetmap.org/node/10446",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 1081355580,
+              "name": "森林东街",
+              "url": "https://www.openstreetmap.org/way/1081355580",
+              "nodeId": 9907941595,
+              "coordinates": [
+                126.6236239,
+                45.7749263
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -912,9 +1026,9 @@
           "category": "哈尔滨市井早市 / 特色早点小吃",
           "summary": "道里区安静街哈尔滨本地人最爱的烟火气早市，金黄现煎粘豆包、热气腾腾羊汤、牛肉火勺与刚出锅油条豆腐脑集结。",
           "addressText": "哈尔滨市道里区安静街与安升街交界处",
-          "start": 12.0,
-          "end": 24.0,
-          "posterSecond": 13.0,
+          "start": 12,
+          "end": 24,
+          "posterSecond": 13,
           "coordinates": [
             126.6079366,
             45.7586255
@@ -926,15 +1040,21 @@
             "label": "安静街与安升街交汇路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片安静街早市线索采用开放地图对象【安静街】（OSM node 14494）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【安静街】（OSM way 35166204，节点 412477363）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 14494,
-              "name": "安静街早市路段",
-              "url": "https://www.openstreetmap.org/node/14494",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 35166204,
+              "name": "安静街",
+              "url": "https://www.openstreetmap.org/way/35166204",
+              "nodeId": 412477363,
+              "coordinates": [
+                126.6079378,
+                45.7586264
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -946,9 +1066,9 @@
           "category": "东北铁锅炖 / 炖排骨大鹅",
           "summary": "中央大街旁黑龙江老字号铁锅炖旗舰店，大锅慢炖大鹅、排骨土豆豆角，金黄玉米饼子贴在锅边焦香软糯。",
           "addressText": "哈尔滨市道里区中央大街近红专街路段",
-          "start": 384.0,
-          "end": 396.0,
-          "posterSecond": 385.0,
+          "start": 384,
+          "end": 396,
+          "posterSecond": 385,
           "coordinates": [
             126.6137516,
             45.7688439
@@ -960,15 +1080,21 @@
             "label": "中央大街近红专街交汇处",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片中央大街山河屯铁锅炖线索采用开放地图对象【中央大街】（OSM node 10353）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【未命名开放道路】（OSM way 1511498729，节点 13814546529）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10353,
-              "name": "中央大街路段",
-              "url": "https://www.openstreetmap.org/node/10353",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 1511498729,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/1511498729",
+              "nodeId": 13814546529,
+              "coordinates": [
+                126.6137526,
+                45.7688445
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -995,9 +1121,9 @@
           "category": "哈尔滨市井早市 / 特色早点小吃",
           "summary": "道里区安静街哈尔滨本地人最爱的烟火气早市，金黄现煎粘豆包、热气腾腾羊汤、牛肉火勺与刚出锅油条豆腐脑集结。",
           "addressText": "哈尔滨市道里区安静街与安升街交界处",
-          "start": 0.0,
-          "end": 12.0,
-          "posterSecond": 1.0,
+          "start": 0,
+          "end": 12,
+          "posterSecond": 1,
           "coordinates": [
             126.6079366,
             45.7586255
@@ -1009,15 +1135,21 @@
             "label": "安静街与安升街交汇路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片安静街早市线索采用开放地图对象【安静街】（OSM node 14494）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【安静街】（OSM way 35166204，节点 412477363）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 14494,
-              "name": "安静街早市路段",
-              "url": "https://www.openstreetmap.org/node/14494",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 35166204,
+              "name": "安静街",
+              "url": "https://www.openstreetmap.org/way/35166204",
+              "nodeId": 412477363,
+              "coordinates": [
+                126.6079378,
+                45.7586264
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1043,9 +1175,9 @@
           "category": "东北老字号 / 锅包肉创始人店",
           "summary": "哈尔滨锅包肉发源地百年老店，外皮酸甜金黄酥脆、肉片大而紧实，配招牌油炸冰棍与麻酱大拉皮。",
           "addressText": "哈尔滨市道里区友谊路与地段街交汇处",
-          "start": 17.0,
-          "end": 29.0,
-          "posterSecond": 20.0,
+          "start": 17,
+          "end": 29,
+          "posterSecond": 20,
           "coordinates": [
             126.6200495,
             45.7750665
@@ -1057,15 +1189,21 @@
             "label": "友谊路与地段街交汇路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片老厨家友谊路老店线索采用开放地图对象【地段街】（OSM node 8239）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【地段街】（OSM way 44879670，节点 2168403108）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 8239,
-              "name": "地段街北段",
-              "url": "https://www.openstreetmap.org/node/8239",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 44879670,
+              "name": "地段街",
+              "url": "https://www.openstreetmap.org/way/44879670",
+              "nodeId": 2168403108,
+              "coordinates": [
+                126.6200367,
+                45.7755503
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -1091,9 +1229,9 @@
           "category": "传统清真糕点 / 老式光头饼",
           "summary": "道外中华巴洛克核心区排队长龙传奇点心铺，刚出炉传统老式光头饼外酥内暄，泡牛奶或咖啡风味绝佳。",
           "addressText": "哈尔滨市道外区北三道街与靖宇街交口",
-          "start": 5.0,
-          "end": 17.0,
-          "posterSecond": 6.0,
+          "start": 5,
+          "end": 17,
+          "posterSecond": 6,
           "coordinates": [
             126.6338307,
             45.7827286
@@ -1105,15 +1243,21 @@
             "label": "北三道街与靖宇街交口路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片北三凯奇清真食品线索采用开放地图对象【北三道街】（OSM node 5745）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【北三道街】（OSM way 342685706，节点 2691058641）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 5745,
-              "name": "北三道街路段",
-              "url": "https://www.openstreetmap.org/node/5745",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 342685706,
+              "name": "北三道街",
+              "url": "https://www.openstreetmap.org/way/342685706",
+              "nodeId": 2691058641,
+              "coordinates": [
+                126.634731,
+                45.7818632
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1125,9 +1269,9 @@
           "category": "哈尔滨特色麻辣烫 / 金太阳老味道",
           "summary": "圣索菲亚大教堂旁金太阳商厦地下一层神级老店，浓郁醇厚麻酱汤底裹满宽粉、手擀面与素串。",
           "addressText": "哈尔滨市道里区透笼街金太阳商厦地下一层",
-          "start": 18.0,
-          "end": 30.0,
-          "posterSecond": 19.0,
+          "start": 18,
+          "end": 30,
+          "posterSecond": 19,
           "coordinates": [
             126.6249177,
             45.768567
@@ -1139,15 +1283,21 @@
             "label": "透笼街金太阳商厦路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片金太阳吉之味麻辣烫线索采用开放地图对象【透笼街】（OSM node 10442）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【透笼街】（OSM way 300842749，节点 1629280304）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10442,
-              "name": "透笼街路段",
-              "url": "https://www.openstreetmap.org/node/10442",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300842749,
+              "name": "透笼街",
+              "url": "https://www.openstreetmap.org/way/300842749",
+              "nodeId": 1629280304,
+              "coordinates": [
+                126.6249172,
+                45.7685667
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1173,9 +1323,9 @@
           "category": "东北市井烧烤 / 经典6毛小串",
           "summary": "南岗革新街老市井烟火气烤串铺，6毛钱一串现烤小脆骨、羊肉串带羊油香，配鲜豆皮大蒜吃出老哈尔滨夜生活。",
           "addressText": "哈尔滨市南岗区革新街夜市街区",
-          "start": 5.0,
-          "end": 17.0,
-          "posterSecond": 10.0,
+          "start": 5,
+          "end": 17,
+          "posterSecond": 10,
           "coordinates": [
             126.6569942,
             45.7520736
@@ -1187,15 +1337,21 @@
             "label": "革新街夜市路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片革新街6毛小串线索采用开放地图对象【革新街】（OSM node 15473）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【革新街】（OSM way 300555657，节点 9066287225）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 15473,
-              "name": "革新街路段",
-              "url": "https://www.openstreetmap.org/node/15473",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300555657,
+              "name": "革新街",
+              "url": "https://www.openstreetmap.org/way/300555657",
+              "nodeId": 9066287225,
+              "coordinates": [
+                126.6574671,
+                45.7523634
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1221,9 +1377,9 @@
           "category": "哈尔滨百年老字号 / 砂锅扒肉",
           "summary": "道外中华巴洛克历史街区著名扒肉老馆，整块五花大扒肉炖得软烂脱骨、入口即化，浇上肉汤拌米饭香浓过瘾。",
           "addressText": "哈尔滨市道外区南勋街中华巴洛克街区",
-          "start": 1.0,
-          "end": 13.0,
-          "posterSecond": 3.0,
+          "start": 1,
+          "end": 13,
+          "posterSecond": 3,
           "coordinates": [
             126.6470003,
             45.7827904
@@ -1235,15 +1391,21 @@
             "label": "南勋街中华巴洛克路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道外老太太扒肉馆线索采用开放地图对象【南勋街】（OSM node 5870）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【南勋街】（OSM way 300908867，节点 3050115708）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 5870,
-              "name": "南勋街路段",
-              "url": "https://www.openstreetmap.org/node/5870",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300908867,
+              "name": "南勋街",
+              "url": "https://www.openstreetmap.org/way/300908867",
+              "nodeId": 3050115708,
+              "coordinates": [
+                126.6469994,
+                45.7827896
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1269,9 +1431,9 @@
           "category": "哈尔滨百年晨市 / 特色早点小吃",
           "summary": "道里区百年红专街大早市，热气腾腾大油条配豆腐脑、油条包麻糍、大肉包与现煎粘豆包连吃七八摊。",
           "addressText": "哈尔滨市道里区红专街与红霞街交界处",
-          "start": 3.0,
-          "end": 15.0,
-          "posterSecond": 4.0,
+          "start": 3,
+          "end": 15,
+          "posterSecond": 4,
           "coordinates": [
             126.6111815,
             45.7725927
@@ -1283,15 +1445,21 @@
             "label": "红专街与红霞街交汇路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片红专街早市线索采用开放地图对象【红专街】（OSM node 10232）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【红霞街】（OSM way 208855953，节点 1719100475）作为街区近似参照，距参考道路约 44.8 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10232,
-              "name": "红专街路段",
-              "url": "https://www.openstreetmap.org/node/10232",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 208855953,
+              "name": "红霞街",
+              "url": "https://www.openstreetmap.org/way/208855953",
+              "nodeId": 1719100475,
+              "coordinates": [
+                126.6128026,
+                45.772615
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 44.8
             }
           },
           "routeEligible": false,
@@ -1317,9 +1485,9 @@
           "category": "甜品西点 / 蛋糕自助",
           "summary": "98元限时自助西点殿堂，招牌开心果巴斯克、蓝天白云生椰慕斯、手工脆皮面包与多款法式切块甜品畅吃。",
           "addressText": "哈尔滨市道里区西十道街近中央大街",
-          "start": 3.0,
-          "end": 15.0,
-          "posterSecond": 6.0,
+          "start": 3,
+          "end": 15,
+          "posterSecond": 6,
           "coordinates": [
             126.6149157,
             45.7695885
@@ -1331,15 +1499,21 @@
             "label": "道里区西十道街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片Lisa Bakery线索采用开放地图对象【西十道街】（OSM node 10363）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【西十道街】（OSM way 479404472，节点 5904084577）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10363,
-              "name": "西十道街路段",
-              "url": "https://www.openstreetmap.org/node/10363",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 479404472,
+              "name": "西十道街",
+              "url": "https://www.openstreetmap.org/way/479404472",
+              "nodeId": 5904084577,
+              "coordinates": [
+                126.6149156,
+                45.769589
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -1365,9 +1539,9 @@
           "category": "东北铁锅炖 / 炖排骨小鸡",
           "summary": "安发街地道东北柴火铁锅炖，鲜排骨、鸡爪与小鸡炖蘑菇，加盖帘慢炖软烂入味，锅沿贴满焦香玉米饼。",
           "addressText": "哈尔滨市道里区安发街街区",
-          "start": 10.0,
-          "end": 22.0,
-          "posterSecond": 15.0,
+          "start": 10,
+          "end": 22,
+          "posterSecond": 15,
           "coordinates": [
             126.6022208,
             45.7563537
@@ -1379,15 +1553,21 @@
             "label": "道里区安发街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片乡村老式铁锅炖线索采用开放地图对象【安发街】（OSM node 14291）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【安定街】（OSM way 438416181，节点 4361619984）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 14291,
-              "name": "安发街路段",
-              "url": "https://www.openstreetmap.org/node/14291",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 438416181,
+              "name": "安定街",
+              "url": "https://www.openstreetmap.org/way/438416181",
+              "nodeId": 4361619984,
+              "coordinates": [
+                126.6022219,
+                45.7563545
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -1413,9 +1593,9 @@
           "category": "东北街头小吃 / 招牌烤冷面",
           "summary": "师大夜市排队大王烤冷面，面皮现烤刷满经典酸甜酱汁，裹上鸡蛋、洋葱香菜与火腿肠，外润内劲道。",
           "addressText": "哈尔滨市南岗区文兴街师大夜市核心路段",
-          "start": 1.0,
-          "end": 13.0,
-          "posterSecond": 4.0,
+          "start": 1,
+          "end": 13,
+          "posterSecond": 4,
           "coordinates": [
             126.6156426,
             45.7225215
@@ -1427,15 +1607,21 @@
             "label": "师大夜市文兴街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片师大夜市烤冷面线索采用开放地图对象【文兴街】（OSM node 23689）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【文兴街】（OSM way 506745967，节点 4964161568）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 23689,
-              "name": "文兴街路段",
-              "url": "https://www.openstreetmap.org/node/23689",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 506745967,
+              "name": "文兴街",
+              "url": "https://www.openstreetmap.org/way/506745967",
+              "nodeId": 4964161568,
+              "coordinates": [
+                126.6156417,
+                45.7225206
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1461,9 +1647,9 @@
           "category": "东北砂锅涮肚 / 炭火串烤",
           "summary": "哈尔滨通达街热气腾腾大铜锅涮肚，浓郁牛油香辣老汤底浸润千层肚与肉串，冬天围炉吃得汗流浃背。",
           "addressText": "哈尔滨市道里区通达街美食街区",
-          "start": 970.0,
-          "end": 982.0,
-          "posterSecond": 975.0,
+          "start": 970,
+          "end": 982,
+          "posterSecond": 975,
           "coordinates": [
             126.592412,
             45.7475199
@@ -1475,15 +1661,21 @@
             "label": "通达街美食街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片通达街炭火涮肚线索采用开放地图对象【通达街】（OSM node 16942）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【建国北四道街】（OSM way 53625177，节点 677295413）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 16942,
-              "name": "通达街路段",
-              "url": "https://www.openstreetmap.org/node/16942",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 53625177,
+              "name": "建国北四道街",
+              "url": "https://www.openstreetmap.org/way/53625177",
+              "nodeId": 677295413,
+              "coordinates": [
+                126.5924107,
+                45.7475194
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -1509,9 +1701,9 @@
           "category": "哈尔滨老字号砂锅 / 坛肉酸菜",
           "summary": "道外老区三十载砂锅老店，滚烫砂锅酸菜五花肉、浓油赤酱红烧坛肉，米饭拌肉汤连干三碗。",
           "addressText": "哈尔滨市道外区丰润街街区",
-          "start": 145.0,
-          "end": 157.0,
-          "posterSecond": 149.0,
+          "start": 145,
+          "end": 157,
+          "posterSecond": 149,
           "coordinates": [
             126.6425559,
             45.7834787
@@ -1523,15 +1715,21 @@
             "label": "道外区丰润街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片丰润街鑫鑫砂锅居线索采用开放地图对象【丰润街】（OSM node 5867）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【丰润街】（OSM way 300908369，节点 3050121106）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 5867,
-              "name": "丰润街路段",
-              "url": "https://www.openstreetmap.org/node/5867",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300908369,
+              "name": "丰润街",
+              "url": "https://www.openstreetmap.org/way/300908369",
+              "nodeId": 3050121106,
+              "coordinates": [
+                126.6425565,
+                45.7834792
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1557,9 +1755,9 @@
           "category": "东北硬核盒饭 / 24小时自助快餐",
           "summary": "道里安和街名扬全城的东北大盒饭，二三十种热菜全自助，溜肉段、排骨红烧肉与地三鲜无限量任添。",
           "addressText": "哈尔滨市道里区安和街美食街区",
-          "start": 240.0,
-          "end": 252.0,
-          "posterSecond": 242.0,
+          "start": 240,
+          "end": 252,
+          "posterSecond": 242,
           "coordinates": [
             126.6033447,
             45.7549651
@@ -1571,15 +1769,21 @@
             "label": "道里区安和街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片亮仔特色大盒饭线索采用开放地图对象【安和街】（OSM node 14360）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【安德街】（OSM way 102252148，节点 412478115）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 14360,
-              "name": "安和街路段",
-              "url": "https://www.openstreetmap.org/node/14360",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 102252148,
+              "name": "安德街",
+              "url": "https://www.openstreetmap.org/way/102252148",
+              "nodeId": 412478115,
+              "coordinates": [
+                126.603346,
+                45.7549658
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1605,9 +1809,9 @@
           "category": "东北老字号 / 传统熏肉大饼",
           "summary": "哈尔滨百年老字号熏肉大饼，现烙热腾腾层层酥脆薄饼，卷入大片酱香熏肉、软嫩煎蛋与爽脆土豆丝，抹上面酱葱丝卷着吃。",
           "addressText": "哈尔滨市道里区中央大街近红专街路段",
-          "start": 15.0,
-          "end": 27.0,
-          "posterSecond": 17.0,
+          "start": 15,
+          "end": 27,
+          "posterSecond": 17,
           "coordinates": [
             126.6137516,
             45.7688439
@@ -1619,15 +1823,21 @@
             "label": "中央大街近红专街交汇处",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片中央大街老昌熏肉大饼线索采用开放地图对象【中央大街】（OSM node 10353）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【未命名开放道路】（OSM way 1511498729，节点 13814546529）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10353,
-              "name": "中央大街路段",
-              "url": "https://www.openstreetmap.org/node/10353",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 1511498729,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/1511498729",
+              "nodeId": 13814546529,
+              "coordinates": [
+                126.6137526,
+                45.7688445
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -1653,9 +1863,9 @@
           "category": "精品法式西点 / 手工拿破仑",
           "summary": "道里区红霞街高品质法式甜点私房，金黄酥脆千层香草拿破仑、日本小柚子酸甜果香慕斯与手冲咖啡风味清爽。",
           "addressText": "哈尔滨市道里区红霞街街区",
-          "start": 16.0,
-          "end": 28.0,
-          "posterSecond": 25.0,
+          "start": 16,
+          "end": 28,
+          "posterSecond": 25,
           "coordinates": [
             126.606617,
             45.7698523
@@ -1667,15 +1877,21 @@
             "label": "道里区红霞街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道里区红霞街法式甜品线索采用开放地图对象【红专街/红霞街】（OSM node 10232）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【红专街】（OSM way 300845869，节点 2676836496）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10232,
-              "name": "红霞街周边路段",
-              "url": "https://www.openstreetmap.org/node/10232",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300845869,
+              "name": "红专街",
+              "url": "https://www.openstreetmap.org/way/300845869",
+              "nodeId": 2676836496,
+              "coordinates": [
+                126.6069364,
+                45.7699355
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -1701,9 +1917,9 @@
           "category": "东北传统大包 / 清真熟食名吃",
           "summary": "道外中华巴洛克核心区传统清真包子铺，手工老面现蒸透油麻辣牛杂包、软糯牛窝骨大包，肉馅多汁油香四溢。",
           "addressText": "哈尔滨市道外区靖宇街近北四道街路段",
-          "start": 10.0,
-          "end": 22.0,
-          "posterSecond": 15.0,
+          "start": 10,
+          "end": 22,
+          "posterSecond": 15,
           "coordinates": [
             126.6394231,
             45.7838566
@@ -1715,15 +1931,21 @@
             "label": "靖宇街近北四道街路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道外老清真大包线索采用开放地图对象【靖宇街】（OSM node 5700）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【北七道街】（OSM way 300907286，节点 2691058645）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 5700,
-              "name": "靖宇街路段",
-              "url": "https://www.openstreetmap.org/node/5700",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300907286,
+              "name": "北七道街",
+              "url": "https://www.openstreetmap.org/way/300907286",
+              "nodeId": 2691058645,
+              "coordinates": [
+                126.6394244,
+                45.7838563
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -1749,9 +1971,9 @@
           "category": "东北铁锅炖 / 柴火炖大鹅",
           "summary": "道外江畔老牌柴火铁锅炖，大铁锅慢煨肥美东北大鹅，配干豆角、宽粉与土豆，锅沿现贴焦黄玉米饼子沾满浓香鹅汤。",
           "addressText": "哈尔滨市道外区大新街江畔段",
-          "start": 5.0,
-          "end": 17.0,
-          "posterSecond": 8.0,
+          "start": 5,
+          "end": 17,
+          "posterSecond": 8,
           "coordinates": [
             126.6508932,
             45.7892144
@@ -1763,15 +1985,21 @@
             "label": "道外区大新街江畔路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道外江畔柴火铁锅炖线索采用开放地图对象【大新街/靖宇街】（OSM node 11210）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【礼化街】（OSM way 30343564，节点 334650462）作为街区近似参照，距参考道路约 8.8 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 11210,
-              "name": "大新街路段",
-              "url": "https://www.openstreetmap.org/node/11210",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 30343564,
+              "name": "礼化街",
+              "url": "https://www.openstreetmap.org/way/30343564",
+              "nodeId": 334650462,
+              "coordinates": [
+                126.6502445,
+                45.7891056
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 8.8
             }
           },
           "routeEligible": false,
@@ -1794,9 +2022,9 @@
           "category": "传统面馆 / 特色麻酱砂锅面",
           "summary": "圣索菲亚大教堂旁金太阳6楼大众点评必吃榜名面，双拼面条浇上秘制浓厚麻酱与热气腾腾小砂锅。",
           "addressText": "哈尔滨市道里区地段街128号索菲亚金太阳买手商城6楼",
-          "start": 20.0,
-          "end": 32.0,
-          "posterSecond": 24.0,
+          "start": 20,
+          "end": 32,
+          "posterSecond": 24,
           "coordinates": [
             126.6279486,
             45.769538
@@ -1808,15 +2036,21 @@
             "label": "金太阳商城地段街门前",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片索菲亚金太阳买手商城6楼线索采用开放地图对象【地段街路段】（OSM node 10470）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【南极三道街】（OSM way 906327851，节点 3053547407）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10470,
-              "name": "地段街路段",
-              "url": "https://www.openstreetmap.org/node/10470",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 906327851,
+              "name": "南极三道街",
+              "url": "https://www.openstreetmap.org/way/906327851",
+              "nodeId": 3053547407,
+              "coordinates": [
+                126.627948,
+                45.7695381
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1841,9 +2075,9 @@
           "category": "老道外本帮菜 / 传统名菜",
           "summary": "中华巴洛克历史街区旁道外老字号苍蝇小馆，招牌红焖溜达鸡、滑熘里脊与传统老道外菜品。",
           "addressText": "哈尔滨市道外区北十道街17号",
-          "start": 22.0,
-          "end": 34.0,
-          "posterSecond": 25.0,
+          "start": 22,
+          "end": 34,
+          "posterSecond": 25,
           "coordinates": [
             126.657072,
             45.7883848
@@ -1855,15 +2089,21 @@
             "label": "北十道街与正阳街交口",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道外北十道街17号正阳北小区线索采用开放地图对象【北十道街】（OSM node 5959）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【北二十道街】（OSM way 183951129，节点 412774902）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 5959,
-              "name": "北十道街路段",
-              "url": "https://www.openstreetmap.org/node/5959",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 183951129,
+              "name": "北二十道街",
+              "url": "https://www.openstreetmap.org/way/183951129",
+              "nodeId": 412774902,
+              "coordinates": [
+                126.6570724,
+                45.7883843
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1888,9 +2128,9 @@
           "category": "市井融合私房菜 / 百姓小馆",
           "summary": "始名369小吃红房子，哈埠早年融合菜百姓私房老字号，招牌桂花排骨与黄蘑扣肉。",
           "addressText": "哈尔滨市南岗区下夹树街20号",
-          "start": 16.0,
-          "end": 28.0,
-          "posterSecond": 20.0,
+          "start": 16,
+          "end": 28,
+          "posterSecond": 20,
           "coordinates": [
             126.6340077,
             45.7530281
@@ -1902,15 +2142,21 @@
             "label": "下夹树街居民区路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片下夹树街20号原369小吃线索采用开放地图对象【下夹树街】（OSM node 15149）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【未命名开放道路】（OSM way 338086428，节点 3451550881）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 15149,
-              "name": "下夹树街路段",
-              "url": "https://www.openstreetmap.org/node/15149",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 338086428,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/338086428",
+              "nodeId": 3451550881,
+              "coordinates": [
+                126.6340069,
+                45.7530285
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1935,9 +2181,9 @@
           "category": "韩式料理 / 辣炖鸡爪与芝士年糕",
           "summary": "中央大街商圈红霞街宝藏韩式小馆，浓郁焦糖拉丝芝士熔岩、热辣炖鸡爪与金枪鱼饭团。",
           "addressText": "哈尔滨市道里区红霞街59号",
-          "start": 6.0,
-          "end": 18.0,
-          "posterSecond": 10.0,
+          "start": 6,
+          "end": 18,
+          "posterSecond": 10,
           "coordinates": [
             126.6206181,
             45.7676427
@@ -1949,15 +2195,21 @@
             "label": "红霞街中央大街交汇街区",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片中央大街红霞街59号线索采用开放地图对象【红霞街】（OSM node 12368）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【透笼街】（OSM way 300842749，节点 610579530）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 12368,
-              "name": "红霞街路段",
-              "url": "https://www.openstreetmap.org/node/12368",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 300842749,
+              "name": "透笼街",
+              "url": "https://www.openstreetmap.org/way/300842749",
+              "nodeId": 610579530,
+              "coordinates": [
+                126.6203102,
+                45.7675769
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -1982,9 +2234,9 @@
           "category": "俄式手工面包 / 烘焙甜点",
           "summary": "花园街俄罗斯师傅主理手工面包坊，扎实纯正俄式大列巴、传统甜品与黑麦发酵烘焙。",
           "addressText": "哈尔滨市南岗区花园街D区20号",
-          "start": 14.0,
-          "end": 26.0,
-          "posterSecond": 18.0,
+          "start": 14,
+          "end": 26,
+          "posterSecond": 18,
           "coordinates": [
             126.6392326,
             45.7577553
@@ -1996,15 +2248,21 @@
             "label": "花园街水木清华社区",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片花园街D区20号文汇路口线索采用开放地图对象【花园街】（OSM node 15218）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【东大直街】（OSM way 1056635931，节点 9709299536）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 15218,
-              "name": "花园街路段",
-              "url": "https://www.openstreetmap.org/node/15218",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 1056635931,
+              "name": "东大直街",
+              "url": "https://www.openstreetmap.org/way/1056635931",
+              "nodeId": 9709299536,
+              "coordinates": [
+                126.6387199,
+                45.7573117
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -2029,9 +2287,9 @@
           "category": "老道外水饺 / 独门纯手工水饺",
           "summary": "老道外长春街无招牌隐秘小馆，红纸门牌仅卖一锅纯手工传统三鲜水饺，皮薄多汁肉馅爆鲜。",
           "addressText": "哈尔滨市道外区长春街222号",
-          "start": 248.0,
-          "end": 260.0,
-          "posterSecond": 252.0,
+          "start": 248,
+          "end": 260,
+          "posterSecond": 252,
           "coordinates": [
             126.6656899,
             45.7884652
@@ -2043,15 +2301,21 @@
             "label": "长春街222号老街巷",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片长春街222号门贴线索采用开放地图对象【长春街】（OSM node 6166）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【公益街】（OSM way 1089103577，节点 9977337398）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 6166,
-              "name": "长春街路段",
-              "url": "https://www.openstreetmap.org/node/6166",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 1089103577,
+              "name": "公益街",
+              "url": "https://www.openstreetmap.org/way/1089103577",
+              "nodeId": 9977337398,
+              "coordinates": [
+                126.6656902,
+                45.7884654
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -2076,9 +2340,9 @@
           "category": "老道外字号 / 传统包子熏酱",
           "summary": "中华巴洛克历史街区小学旁老字号包子铺，手工热气腾腾大肉包配精选哈尔滨自制熏酱。",
           "addressText": "哈尔滨市道外区丰润街17号",
-          "start": 62.0,
-          "end": 74.0,
-          "posterSecond": 66.0,
+          "start": 62,
+          "end": 74,
+          "posterSecond": 66,
           "coordinates": [
             126.6537809,
             45.7866809
@@ -2090,15 +2354,21 @@
             "label": "丰润街中华巴洛克路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道外区丰润街17号117中学对面线索采用开放地图对象【丰润街】（OSM node 6003）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【南十八道街】（OSM way 239962621，节点 3305928438）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 6003,
-              "name": "丰润街路段",
-              "url": "https://www.openstreetmap.org/node/6003",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 239962621,
+              "name": "南十八道街",
+              "url": "https://www.openstreetmap.org/way/239962621",
+              "nodeId": 3305928438,
+              "coordinates": [
+                126.6537807,
+                45.7866814
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -2123,9 +2393,9 @@
           "category": "老道外小吃 / 招牌肘子配老汤豆腐",
           "summary": "老道外长春街镇街之宝，路边大爷推荐的软烂咸甜家常大肘子、老汤豆腐与地道东北家常菜。",
           "addressText": "哈尔滨市道外区长春街37号",
-          "start": 14.0,
-          "end": 26.0,
-          "posterSecond": 18.0,
+          "start": 14,
+          "end": 26,
+          "posterSecond": 18,
           "coordinates": [
             126.6626617,
             45.7871784
@@ -2137,15 +2407,21 @@
             "label": "长春街永顺小吃门前",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道外长春街37号线索采用开放地图对象【长春街】（OSM node 6173）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【南新街】（OSM way 1356863044，节点 12558454614）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 6173,
-              "name": "长春街路段",
-              "url": "https://www.openstreetmap.org/node/6173",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 1356863044,
+              "name": "南新街",
+              "url": "https://www.openstreetmap.org/way/1356863044",
+              "nodeId": 12558454614,
+              "coordinates": [
+                126.662663,
+                45.7871783
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -2171,9 +2447,9 @@
           "category": "百年室内菜市 / 东北名吃聚集地",
           "summary": "何浩楠、卓沅与特别乌啦啦打卡道里菜市场，品尝大煎饼、熏酱熟食与市井烟火。",
           "addressText": "哈尔滨市道里区尚志大街57号",
-          "start": 18.0,
-          "end": 30.0,
-          "posterSecond": 22.0,
+          "start": 18,
+          "end": 30,
+          "posterSecond": 22,
           "coordinates": [
             126.6161925,
             45.7725128
@@ -2185,15 +2461,21 @@
             "label": "尚志大街道里菜市场门前",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道里菜市场线索采用开放地图对象【尚志大街】（OSM node 10271）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【尚志大街】（OSM way 44300943，节点 2168403099）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10271,
-              "name": "尚志大街路段",
-              "url": "https://www.openstreetmap.org/node/10271",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 44300943,
+              "name": "尚志大街",
+              "url": "https://www.openstreetmap.org/way/44300943",
+              "nodeId": 2168403099,
+              "coordinates": [
+                126.6161925,
+                45.7725125
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -2219,9 +2501,9 @@
           "category": "百年室内菜市 / 东北名吃聚集地",
           "summary": "南方博主冬日零上20度舒适打卡道里菜市场，热腾腾的东北大包、蛋堡与红肠烤冷面一网打尽。",
           "addressText": "哈尔滨市道里区尚志大街57号",
-          "start": 10.0,
-          "end": 22.0,
-          "posterSecond": 15.0,
+          "start": 10,
+          "end": 22,
+          "posterSecond": 15,
           "coordinates": [
             126.6161925,
             45.7725128
@@ -2233,15 +2515,21 @@
             "label": "尚志大街道里菜市场门前",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道里菜市场线索采用开放地图对象【尚志大街】（OSM node 10271）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【尚志大街】（OSM way 44300943，节点 2168403099）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10271,
-              "name": "尚志大街路段",
-              "url": "https://www.openstreetmap.org/node/10271",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 44300943,
+              "name": "尚志大街",
+              "url": "https://www.openstreetmap.org/way/44300943",
+              "nodeId": 2168403099,
+              "coordinates": [
+                126.6161925,
+                45.7725125
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -2267,9 +2555,9 @@
           "category": "哈尔滨百年晨市 / 特色早点小吃",
           "summary": "零下二十度冰城晨光中的热气腾腾红专街早市，油炸糕、蛋堡、热豆浆与满街烟火长队。",
           "addressText": "哈尔滨市道里区红专街（近红霞街口）",
-          "start": 12.0,
-          "end": 24.0,
-          "posterSecond": 16.0,
+          "start": 12,
+          "end": 24,
+          "posterSecond": 16,
           "coordinates": [
             126.6111815,
             45.7725927
@@ -2281,15 +2569,21 @@
             "label": "红专街早市步行街口",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片红专街早市线索采用开放地图对象【红专街】（OSM node 10302）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【红霞街】（OSM way 208855953，节点 1719100475）作为街区近似参照，距参考道路约 44.8 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10302,
-              "name": "红专街路段",
-              "url": "https://www.openstreetmap.org/node/10302",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 208855953,
+              "name": "红霞街",
+              "url": "https://www.openstreetmap.org/way/208855953",
+              "nodeId": 1719100475,
+              "coordinates": [
+                126.6128026,
+                45.772615
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 44.8
             }
           },
           "routeEligible": false,
@@ -2315,9 +2609,9 @@
           "category": "老道外名吃 / 传统扒肉",
           "summary": "老道外百年传统扒肉名店，肥而不腻酥烂脱骨的传统扒肉淋上汤汁拌白米饭，尽显冰城人情暖意。",
           "addressText": "哈尔滨市道外区南五道街258号",
-          "start": 28.0,
-          "end": 40.0,
-          "posterSecond": 32.0,
+          "start": 28,
+          "end": 40,
+          "posterSecond": 32,
           "coordinates": [
             126.637052,
             45.7828147
@@ -2329,15 +2623,21 @@
             "label": "南五道街张飞扒肉门前",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片南五道街张飞扒肉线索采用开放地图对象【南五道街】（OSM node 5780）作为街区参照。",
-            "reviewedOn": "2026-11-15",
+            "note": "按原片地址线索采用开放地图道路【靖宇街】（OSM way 263490210，节点 2691058643）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 5780,
-              "name": "南五道街路段",
-              "url": "https://www.openstreetmap.org/node/5780",
-              "sourceDate": "2026-11-15",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 263490210,
+              "name": "靖宇街",
+              "url": "https://www.openstreetmap.org/way/263490210",
+              "nodeId": 2691058643,
+              "coordinates": [
+                126.6370513,
+                45.7828138
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -2365,9 +2665,9 @@
           "category": "传统清真小吃 / 平民拉面凉菜",
           "summary": "洪剑涛实地探访哈尔滨超实惠清真老店，一碗拉面4元，88元摆满8道硬菜与传统凉拌牛肉。",
           "addressText": "哈尔滨市道里区新华街84号",
-          "start": 8.0,
-          "end": 20.0,
-          "posterSecond": 10.0,
+          "start": 8,
+          "end": 20,
+          "posterSecond": 10,
           "coordinates": [
             126.5845719,
             45.7344726
@@ -2377,8 +2677,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "道里区新华街张家清真小吃门前",
-            "source": "douyin-poi",
-            "osmNode": 21721
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【利民街】（OSM way 674078937，节点 6312677317）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 674078937,
+              "name": "利民街",
+              "url": "https://www.openstreetmap.org/way/674078937",
+              "nodeId": 6312677317,
+              "coordinates": [
+                126.5845731,
+                45.7344728
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
+            }
           },
           "routeEligible": false,
           "footageNote": "洪剑涛实拍进店点菜与丰盛餐桌全景，突出拉面与家常清真硬菜。"
@@ -2403,9 +2719,9 @@
           "category": "俄式家庭料理 / 经典焖罐牛肉",
           "summary": "中央大街旁无需营销的宝藏俄式餐厅，招牌罐焖牛肉肉质软烂大块，罐焖虾与沙拉虾球地道浓郁。",
           "addressText": "哈尔滨市道里区西五道街3号",
-          "start": 4.0,
-          "end": 16.0,
-          "posterSecond": 8.0,
+          "start": 4,
+          "end": 16,
+          "posterSecond": 8,
           "coordinates": [
             126.6156507,
             45.7730722
@@ -2415,8 +2731,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "道里区西五道街小安利餐厅门前",
-            "source": "douyin-poi",
-            "osmNode": 10287
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【西五道街】（OSM way 159808134，节点 7109545249）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 159808134,
+              "name": "西五道街",
+              "url": "https://www.openstreetmap.org/way/159808134",
+              "nodeId": 7109545249,
+              "coordinates": [
+                126.6156508,
+                45.7730729
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
+            }
           },
           "routeEligible": false,
           "footageNote": "博主实拍经典罐焖牛肉开罐与热气腾腾大块软烂牛肉特写。"
@@ -2441,9 +2773,9 @@
           "category": "传统清真菜 / 四十年老字号",
           "summary": "哈尔滨开了40多年的老牌清真馆子，招牌尖椒干豆腐镬气十足，清真溜肉段与辣炒羊蝎子焦香酥脆。",
           "addressText": "哈尔滨市南岗区宣庆街3-7号",
-          "start": 10.0,
-          "end": 22.0,
-          "posterSecond": 14.0,
+          "start": 10,
+          "end": 22,
+          "posterSecond": 14,
           "coordinates": [
             126.6685975,
             45.7536457
@@ -2453,8 +2785,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "南岗区宣庆街义增祥回民饭店门前",
-            "source": "douyin-poi",
-            "osmNode": 15654
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【卢家街】（OSM way 1551707582，节点 2476377862）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1551707582,
+              "name": "卢家街",
+              "url": "https://www.openstreetmap.org/way/1551707582",
+              "nodeId": 2476377862,
+              "coordinates": [
+                126.6685986,
+                45.7536463
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
+            }
           },
           "routeEligible": false,
           "footageNote": "博主实拍宣庆街义增祥门脸与刚出锅招牌溜肉段焦香脆壳特写。"
@@ -2479,9 +2827,9 @@
           "category": "东北居民楼老菜馆 / 秘制扒肉肘子",
           "summary": "居民楼下每天仅营业4小时的传奇老馆，满满两大锅秘制老汤扒肉与脱骨大肘子，拌米饭满口留香。",
           "addressText": "哈尔滨市道里区松发街29号",
-          "start": 22.0,
-          "end": 34.0,
-          "posterSecond": 26.0,
+          "start": 22,
+          "end": 34,
+          "posterSecond": 26,
           "coordinates": [
             126.5729043,
             45.7462659
@@ -2491,8 +2839,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "道里区松发街百姓小吃门前",
-            "source": "douyin-poi",
-            "osmNode": 16485
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【未命名开放道路】（OSM way 506745919，节点 6313925626）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 506745919,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/506745919",
+              "nodeId": 6313925626,
+              "coordinates": [
+                126.5729041,
+                45.7462657
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
+            }
           },
           "routeEligible": false,
           "footageNote": "实拍松发街居民楼入口与老汤大铜锅热气腾腾大肘子特写。"
@@ -2517,9 +2881,9 @@
           "category": "老字号麻辣面 / 熏酱干香拌菜",
           "summary": "道外老区深藏的人气麻辣面馆，面条筋道麻香浓厚，搭配招牌土豆丝拼干豆腐下饭一绝。",
           "addressText": "哈尔滨市道外区南新街（近南十七道街）",
-          "start": 16.0,
-          "end": 28.0,
-          "posterSecond": 18.0,
+          "start": 16,
+          "end": 28,
+          "posterSecond": 18,
           "coordinates": [
             126.6565892,
             45.7853062
@@ -2529,8 +2893,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "道外区南新街晓军麻辣面门前",
-            "source": "douyin-poi",
-            "osmNode": 6011
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【南新街】（OSM way 301295560，节点 3305928431）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 301295560,
+              "name": "南新街",
+              "url": "https://www.openstreetmap.org/way/301295560",
+              "nodeId": 3305928431,
+              "coordinates": [
+                126.6565883,
+                45.7853065
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
+            }
           },
           "routeEligible": false,
           "footageNote": "实拍道外南新街招牌晓军麻辣面拌面与招牌土豆丝拼干豆腐。"
@@ -2555,9 +2935,9 @@
           "category": "东北老式麻辣烫 / 纯汤无麻酱",
           "summary": "草市街老字号老式麻辣烫，十元一碗大份瓷实，传统老汤麻辣鲜香、原汁原味透着市井烟火。",
           "addressText": "哈尔滨市道外区草市街78号",
-          "start": 18.0,
-          "end": 30.0,
-          "posterSecond": 20.0,
+          "start": 18,
+          "end": 30,
+          "posterSecond": 20,
           "coordinates": [
             126.6399086,
             45.7750665
@@ -2567,8 +2947,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "道外区草市街李桂鑫麻辣烫门前",
-            "source": "douyin-poi",
-            "osmNode": 8595
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【草市街】（OSM way 301290278，节点 3050102118）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 301290278,
+              "name": "草市街",
+              "url": "https://www.openstreetmap.org/way/301290278",
+              "nodeId": 3050102118,
+              "coordinates": [
+                126.6393795,
+                45.7744527
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
+            }
           },
           "routeEligible": false,
           "footageNote": "实拍草市街李桂鑫老式麻辣烫沸腾红油大碗与大份吸汁面条。"
@@ -2594,9 +2990,9 @@
           "category": "哈尔滨市井早市 / 特色早点小吃",
           "summary": "稳仔实地速通哈尔滨安静街早市，从集头吃到集尾，打卡特色巧克力油条、大酱肉包与东北蛋宝宝。",
           "addressText": "哈尔滨市道里区安静街（近安和街、安发街交汇段）",
-          "start": 2.0,
-          "end": 14.0,
-          "posterSecond": 4.0,
+          "start": 2,
+          "end": 14,
+          "posterSecond": 4,
           "coordinates": [
             126.6079366,
             45.7586255
@@ -2606,8 +3002,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "道里区安静街早市街区",
-            "source": "douyin-poi",
-            "osmWay": 3666
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【安静街】（OSM way 35166204，节点 412477363）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 35166204,
+              "name": "安静街",
+              "url": "https://www.openstreetmap.org/way/35166204",
+              "nodeId": 412477363,
+              "coordinates": [
+                126.6079378,
+                45.7586264
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
+            }
           },
           "routeEligible": false,
           "footageNote": "稳仔实拍安静街早市人头攒动的市井烟火气与特色早餐。"
@@ -2633,9 +3045,9 @@
           "category": "哈尔滨市井早市 / 特色早点小吃",
           "summary": "汤氏熊逛吃哈尔滨本地人私藏安静街市场，现炸大油条与阿玉热气腾腾锅包肉，充满市井生活气息。",
           "addressText": "哈尔滨市道里区安静街（近安和街、安发街交汇段）",
-          "start": 12.0,
-          "end": 24.0,
-          "posterSecond": 18.0,
+          "start": 12,
+          "end": 24,
+          "posterSecond": 18,
           "coordinates": [
             126.6079366,
             45.7586255
@@ -2645,8 +3057,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "道里区安静街早市街区",
-            "source": "douyin-poi",
-            "osmWay": 3666
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【安静街】（OSM way 35166204，节点 412477363）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 35166204,
+              "name": "安静街",
+              "url": "https://www.openstreetmap.org/way/35166204",
+              "nodeId": 412477363,
+              "coordinates": [
+                126.6079378,
+                45.7586264
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
+            }
           },
           "routeEligible": false,
           "footageNote": "汤氏熊实拍安静街早市金黄现炸大油条与市井摊位。"
@@ -2672,9 +3100,9 @@
           "category": "百年室内菜市 / 东北名吃聚集地",
           "summary": "PP超能炫逛吃哈尔滨道里菜市场，一口气打卡排队现炸糕、小酥饼、杂粮糕与传统醇厚豆腐脑。",
           "addressText": "哈尔滨市道里区尚志大街57号（索菲亚广场西侧）",
-          "start": 6.0,
-          "end": 18.0,
-          "posterSecond": 10.0,
+          "start": 6,
+          "end": 18,
+          "posterSecond": 10,
           "coordinates": [
             126.6161925,
             45.7725128
@@ -2684,8 +3112,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "尚志大街与西十二道街交汇处",
-            "source": "douyin-poi",
-            "osmWay": 2439
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【尚志大街】（OSM way 44300943，节点 2168403099）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 44300943,
+              "name": "尚志大街",
+              "url": "https://www.openstreetmap.org/way/44300943",
+              "nodeId": 2168403099,
+              "coordinates": [
+                126.6161925,
+                45.7725125
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
+            }
           },
           "routeEligible": false,
           "footageNote": "PP超能炫实拍百年道里菜市场熙熙攘攘的小吃长廊与丰富熟食糕点。"
@@ -2711,9 +3155,9 @@
           "category": "哈尔滨百年晨市 / 特色早点小吃",
           "summary": "杨温柔冬日清晨打卡红专街早市，体验零下20度的热气腾腾白气与地道东北特色早点小吃。",
           "addressText": "哈尔滨市道里区红专街与通江街交界处",
-          "start": 24.0,
-          "end": 36.0,
-          "posterSecond": 28.0,
+          "start": 24,
+          "end": 36,
+          "posterSecond": 28,
           "coordinates": [
             126.6111815,
             45.7725927
@@ -2723,8 +3167,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "道里区红专街街区",
-            "source": "douyin-poi",
-            "osmWay": 2447
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【红霞街】（OSM way 208855953，节点 1719100475）作为街区近似参照，距参考道路约 44.8 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 208855953,
+              "name": "红霞街",
+              "url": "https://www.openstreetmap.org/way/208855953",
+              "nodeId": 1719100475,
+              "coordinates": [
+                126.6128026,
+                45.772615
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 44.8
+            }
           },
           "routeEligible": false,
           "footageNote": "杨温柔实拍零下20度红专街早市热气腾腾的早市长廊。"
@@ -2750,9 +3210,9 @@
           "category": "东北烧烤 / 老味涮肚",
           "summary": "鲨鲨又馋了零下25度夜访建兴街胖姐涮肚，居民楼下热气腾腾的砂锅涮肚锅、酸菜五花与烤千层筋。",
           "addressText": "哈尔滨市南岗区建兴街5号（近铁工街）",
-          "start": 12.0,
-          "end": 24.0,
-          "posterSecond": 16.0,
+          "start": 12,
+          "end": 24,
+          "posterSecond": 16,
           "coordinates": [
             126.6074163,
             45.731537
@@ -2762,8 +3222,24 @@
           "planningLocation": {
             "accuracy": "approximate",
             "label": "南岗区建兴街胖姐涮肚老店",
-            "source": "douyin-poi",
-            "osmNode": 22359
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "按原片地址线索采用开放地图道路【建兴街】（OSM way 393513136，节点 3967083160）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 393513136,
+              "name": "建兴街",
+              "url": "https://www.openstreetmap.org/way/393513136",
+              "nodeId": 3967083160,
+              "coordinates": [
+                126.6074164,
+                45.7315376
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
+            }
           },
           "routeEligible": false,
           "footageNote": "鲨鲨又馋了实拍居民楼下胖姐涮肚招牌与沸腾砂锅涮肚锅。"
@@ -2789,9 +3265,9 @@
           "category": "百年室内菜市 / 东北名吃聚集地",
           "summary": "明明的幸福生活实地打卡道里菜市场，细数招牌粘豆包、大饼子与传统老街熟食。",
           "addressText": "哈尔滨市道里区尚志大街57号",
-          "start": 26.0,
-          "end": 38.0,
-          "posterSecond": 32.0,
+          "start": 26,
+          "end": 38,
+          "posterSecond": 32,
           "coordinates": [
             126.6161925,
             45.7725128
@@ -2803,15 +3279,21 @@
             "label": "尚志大街道里菜市场门前",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片道里菜市场线索采用开放地图对象【尚志大街】（OSM node 10271）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【尚志大街】（OSM way 44300943，节点 2168403099）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10271,
-              "name": "尚志大街路段",
-              "url": "https://www.openstreetmap.org/node/10271",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 44300943,
+              "name": "尚志大街",
+              "url": "https://www.openstreetmap.org/way/44300943",
+              "nodeId": 2168403099,
+              "coordinates": [
+                126.6161925,
+                45.7725125
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -2838,9 +3320,9 @@
           "category": "哈尔滨百年晨市 / 特色早点小吃",
           "summary": "小旋宝宝冬日清晨逛吃红专街早市，热气腾腾的铁板煎血肠、米肠与传统炸物烟火气十足。",
           "addressText": "哈尔滨市道里区红专街与红霞街交界处",
-          "start": 66.0,
-          "end": 78.0,
-          "posterSecond": 72.0,
+          "start": 66,
+          "end": 78,
+          "posterSecond": 72,
           "coordinates": [
             126.6111815,
             45.7725927
@@ -2852,15 +3334,21 @@
             "label": "红专街与红霞街交汇路段",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片红专街早市线索采用开放地图对象【红专街】（OSM node 10232）作为街区参照。",
-            "reviewedOn": "2026-11-14",
+            "note": "按原片地址线索采用开放地图道路【红霞街】（OSM way 208855953，节点 1719100475）作为街区近似参照，距参考道路约 44.8 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10232,
-              "name": "红专街路段",
-              "url": "https://www.openstreetmap.org/node/10232",
-              "sourceDate": "2026-11-14",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 208855953,
+              "name": "红霞街",
+              "url": "https://www.openstreetmap.org/way/208855953",
+              "nodeId": 1719100475,
+              "coordinates": [
+                126.6128026,
+                45.772615
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 44.8
             }
           },
           "routeEligible": false,
@@ -2887,9 +3375,9 @@
           "category": "特色面食 / 老式麻辣烫",
           "summary": "王勉打卡哈尔滨卓展购物中心邵胖子麻辣烫，大碗现煮老式东北麻辣烫浓香过瘾。",
           "addressText": "哈尔滨市道里区上海街99号卓展购物中心负一层B1-7室",
-          "start": 175.0,
-          "end": 187.0,
-          "posterSecond": 180.0,
+          "start": 175,
+          "end": 187,
+          "posterSecond": 180,
           "coordinates": [
             126.606617,
             45.758569
@@ -2901,15 +3389,21 @@
             "label": "上海街卓展购物中心",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片与POI线索采用开放地图对象【上海街路段】（OSM node 14361）作为街区参照。",
-            "reviewedOn": "2026-11-16",
+            "note": "按原片地址线索采用开放地图道路【安德街】（OSM way 35166169，节点 412477509）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 14361,
-              "name": "上海街路段",
-              "url": "https://www.openstreetmap.org/node/14361",
-              "sourceDate": "2026-11-16",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 35166169,
+              "name": "安德街",
+              "url": "https://www.openstreetmap.org/way/35166169",
+              "nodeId": 412477509,
+              "coordinates": [
+                126.6064127,
+                45.7581624
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -2936,9 +3430,9 @@
           "category": "特色面食 / 老道外传统麻辣面",
           "summary": "刘一口实地评测哈尔滨老道外天意麻辣面，经典红油手擀面搭配猪皮与卤干豆腐滋味醇厚。",
           "addressText": "哈尔滨市道外区南极三道街23号",
-          "start": 36.0,
-          "end": 48.0,
-          "posterSecond": 40.0,
+          "start": 36,
+          "end": 48,
+          "posterSecond": 40,
           "coordinates": [
             126.644294,
             45.775067
@@ -2950,15 +3444,21 @@
             "label": "南极三道街老街区",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片天意麻辣面南极三道街线索采用开放地图对象【南极三道街】（OSM node 8606）作为街区参照。",
-            "reviewedOn": "2026-11-16",
+            "note": "按原片地址线索采用开放地图道路【德胜街】（OSM way 301300774，节点 3053756183）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 8606,
-              "name": "南极三道街路段",
-              "url": "https://www.openstreetmap.org/node/8606",
-              "sourceDate": "2026-11-16",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 301300774,
+              "name": "德胜街",
+              "url": "https://www.openstreetmap.org/way/301300774",
+              "nodeId": 3053756183,
+              "coordinates": [
+                126.6440827,
+                45.7752065
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,
@@ -2973,7 +3473,7 @@
       "url": "https://www.douyin.com/video/7702647090325159652",
       "shareURL": "https://v.douyin.com/Bm5is0EXL18/",
       "publishedOn": "2026-10-31",
-      "durationSeconds": 346.0,
+      "durationSeconds": 346,
       "sourceSHA256": "fdedcdad1a414a33ee25939bd5e1f9dcde45afd5e43c81d4418d14bbe05e99d0",
       "acquisitionStatus": "ready",
       "evidenceNote": "博主漫步中央大街打卡本土经典完达山·乳此新鲜，品尝招牌宝藏草莓牛乳与新鲜奶香乳品。",
@@ -2985,9 +3485,9 @@
           "category": "面包甜品 / 本土经典乳品冰饮",
           "summary": "一只蒸包zz漫步中央大街打卡本土经典老字号完达山·乳此新鲜，清爽奶香草莓牛乳十分解腻。",
           "addressText": "哈尔滨市道里区中央大街66号松雷国际商厦F1层",
-          "start": 315.0,
-          "end": 327.0,
-          "posterSecond": 322.0,
+          "start": 315,
+          "end": 327,
+          "posterSecond": 322,
           "coordinates": [
             126.619564,
             45.769431
@@ -2999,15 +3499,21 @@
             "label": "中央大街松雷商厦",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片中央大街66号线索采用开放地图对象【中央大街路段】（OSM node 10432）作为街区参照。",
-            "reviewedOn": "2026-11-16",
+            "note": "按原片地址线索采用开放地图道路【兆麟街】（OSM way 48016457，节点 9910240902）作为街区近似参照，距参考道路约 0.1 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 10432,
-              "name": "中央大街路段",
-              "url": "https://www.openstreetmap.org/node/10432",
-              "sourceDate": "2026-11-16",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 48016457,
+              "name": "兆麟街",
+              "url": "https://www.openstreetmap.org/way/48016457",
+              "nodeId": 9910240902,
+              "coordinates": [
+                126.6195647,
+                45.7694312
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
           "routeEligible": false,
@@ -3034,9 +3540,9 @@
           "category": "面包甜品 / 人气海盐烘焙",
           "summary": "rikku闲不咸打卡哈尔滨人气排队王心朋制菓，刚出炉的金黄海盐面包外皮酥软香浓。",
           "addressText": "哈尔滨市南岗区红旗大街339号红博中央公园",
-          "start": 67.0,
-          "end": 79.0,
-          "posterSecond": 72.0,
+          "start": 67,
+          "end": 79,
+          "posterSecond": 72,
           "coordinates": [
             126.698442,
             45.758015
@@ -3048,15 +3554,21 @@
             "label": "红旗大街红博中央公园",
             "basis": "video-address",
             "branchMatch": "unconfirmed",
-            "note": "按原片红旗大街红博中央公园线索采用开放地图对象【红旗大街路段】（OSM node 16228）作为街区参照。",
-            "reviewedOn": "2026-11-16",
+            "note": "按原片地址线索采用开放地图道路【海河东路】（OSM way 243044653，节点 3826288374）作为街区近似参照，距参考道路约 0 米，未核实店门精确入口或营业状态。",
+            "reviewedOn": "2026-11-17",
             "anchor": {
-              "kind": "osm-node",
-              "id": 16228,
-              "name": "红旗大街路段",
-              "url": "https://www.openstreetmap.org/node/16228",
-              "sourceDate": "2026-11-16",
-              "method": "original-way-node"
+              "kind": "osm-way",
+              "id": 243044653,
+              "name": "海河东路",
+              "url": "https://www.openstreetmap.org/way/243044653",
+              "nodeId": 3826288374,
+              "coordinates": [
+                126.6984414,
+                45.758015
+              ],
+              "sourceDate": "2026-11-17",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
           "routeEligible": false,

@@ -1,0 +1,546 @@
+{
+  "verifiedOn": "2026-11-17",
+  "passed": true,
+  "sourceSHA256": "161e4c652b253c81ae867ef446aea0cf5f05ae7dabe204feec33b7dac1da8b1b",
+  "nodesChecked": 27124,
+  "waysChecked": 5944,
+  "locationChecks": [
+    {
+      "segmentId": "hb-wulala-tieguodae",
+      "wayId": 976215010,
+      "nodeId": 9034120460,
+      "sourceWayName": "未命名开放道路",
+      "offsetMetres": 34.6,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-xiaozhen-fendoufushi",
+      "wayId": 1080875659,
+      "nodeId": 9906988370,
+      "sourceWayName": "果戈里大街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-juzi-liushunjiehefan",
+      "wayId": 626337762,
+      "nodeId": 406445419,
+      "sourceWayName": "三辅街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-aozai-xiaohuao",
+      "wayId": 506745933,
+      "nodeId": 9910982554,
+      "sourceWayName": "大民兴街",
+      "offsetMetres": 44.5,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-liuyuxin-laoshishuandu",
+      "wayId": 976828138,
+      "nodeId": 1943924445,
+      "sourceWayName": "友谊西路",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-daoyueshe-yinpangzi",
+      "wayId": 300845869,
+      "nodeId": 1634842661,
+      "sourceWayName": "红专街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-daoyueshe-madieer",
+      "wayId": 159808131,
+      "nodeId": 7109545217,
+      "sourceWayName": "西七道街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-daoyueshe-zhangbaopu",
+      "wayId": 263491210,
+      "nodeId": 2691070093,
+      "sourceWayName": "南勋街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-miantiaoren-pangjie",
+      "wayId": 393513136,
+      "nodeId": 3967083160,
+      "sourceWayName": "建兴街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-ppchaonengxuan-cuijia",
+      "wayId": 300908369,
+      "nodeId": 3050115705,
+      "sourceWayName": "丰润街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-tangrenjie-shanhetun",
+      "wayId": 102252152,
+      "nodeId": 5755083492,
+      "sourceWayName": "民安街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-suipo-zhiyinfood",
+      "wayId": 300724903,
+      "nodeId": 3048325064,
+      "sourceWayName": "河渠街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-lingzi-daolishichang",
+      "wayId": 44300943,
+      "nodeId": 2168403099,
+      "sourceWayName": "尚志大街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-nangci-daolishichang",
+      "wayId": 44300943,
+      "nodeId": 2168403099,
+      "sourceWayName": "尚志大街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-liuyuxin-zhangfeibarou",
+      "wayId": 263490210,
+      "nodeId": 2691058643,
+      "sourceWayName": "靖宇街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-wulala-zhongyangjiaozi",
+      "wayId": 300842743,
+      "nodeId": 1719100569,
+      "sourceWayName": "中央大街",
+      "offsetMetres": 0.2,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-dage-guobaorou",
+      "wayId": 300029217,
+      "nodeId": 9922079369,
+      "sourceWayName": "三辅三道街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-liangkou-nongdakaopan",
+      "wayId": 35166846,
+      "nodeId": 6566297186,
+      "sourceWayName": "公滨路",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-wulala-jiayangxiaochi",
+      "wayId": 1081355580,
+      "nodeId": 9907941595,
+      "sourceWayName": "森林东街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-bunny-anjingzaoshi",
+      "wayId": 35166204,
+      "nodeId": 412477363,
+      "sourceWayName": "安静街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-bunny-shanhetunzhongyang",
+      "wayId": 1511498729,
+      "nodeId": 13814546529,
+      "sourceWayName": "未命名开放道路",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-xianyu-anjingzaoshi",
+      "wayId": 35166204,
+      "nodeId": 412477363,
+      "sourceWayName": "安静街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-cuijianan-laochujia",
+      "wayId": 44879670,
+      "nodeId": 2168403108,
+      "sourceWayName": "地段街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-lige-kaiqiqingzhen",
+      "wayId": 342685706,
+      "nodeId": 2691058641,
+      "sourceWayName": "北三道街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-lige-jizhiweimalatang",
+      "wayId": 300842749,
+      "nodeId": 1629280304,
+      "sourceWayName": "透笼街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-liuyuxin-liumaoxiaochuan",
+      "wayId": 300555657,
+      "nodeId": 9066287225,
+      "sourceWayName": "革新街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-erbaizheye-laotaitai",
+      "wayId": 300908867,
+      "nodeId": 3050115708,
+      "sourceWayName": "南勋街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-lingzi-hongzhuanzaoshi",
+      "wayId": 208855953,
+      "nodeId": 1719100475,
+      "sourceWayName": "红霞街",
+      "offsetMetres": 44.8,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-puputongxue-lisabakery",
+      "wayId": 479404472,
+      "nodeId": 5904084577,
+      "sourceWayName": "西十道街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-xiaotui-laoshitieguodun",
+      "wayId": 438416181,
+      "nodeId": 4361619984,
+      "sourceWayName": "安定街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-miaomiao-kaolengmian",
+      "wayId": 506745967,
+      "nodeId": 4964161568,
+      "sourceWayName": "文兴街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-tangshixiong-shuanduguo",
+      "wayId": 53625177,
+      "nodeId": 677295413,
+      "sourceWayName": "建国北四道街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-houertian-xinxinshaguo",
+      "wayId": 300908369,
+      "nodeId": 3050121106,
+      "sourceWayName": "丰润街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-huaer-liangzaihefan",
+      "wayId": 102252148,
+      "nodeId": 412478115,
+      "sourceWayName": "安德街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-yunibobo-laochang",
+      "wayId": 1511498729,
+      "nodeId": 13814546529,
+      "sourceWayName": "未命名开放道路",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-caomeixiong-shanye",
+      "wayId": 300845869,
+      "nodeId": 2676836496,
+      "sourceWayName": "红专街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-xiaofanxiong-niuzabao",
+      "wayId": 300907286,
+      "nodeId": 2691058645,
+      "sourceWayName": "北七道街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-liuyuxin-chaihuotieguo",
+      "wayId": 30343564,
+      "nodeId": 334650462,
+      "sourceWayName": "礼化街",
+      "offsetMetres": 8.8,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-wulala-jizhiwei-shaguomian",
+      "wayId": 906327851,
+      "nodeId": 3053547407,
+      "sourceWayName": "南极三道街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-weiwei-cuijia-jiguan",
+      "wayId": 183951129,
+      "nodeId": 412774902,
+      "sourceWayName": "北二十道街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-xiaotui-juju-caiguan",
+      "wayId": 338086428,
+      "nodeId": 3451550881,
+      "sourceWayName": "未命名开放道路",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-xiaociwei-lajiaogaoshou",
+      "wayId": 300842749,
+      "nodeId": 610579530,
+      "sourceWayName": "透笼街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-caomeixiong-danko-bakery",
+      "wayId": 1056635931,
+      "nodeId": 9709299536,
+      "sourceWayName": "东大直街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-daoyueshe-changchun222-shuijiao",
+      "wayId": 1089103577,
+      "nodeId": 9977337398,
+      "sourceWayName": "公益街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-tanchiwang-xubaopu",
+      "wayId": 239962621,
+      "nodeId": 3305928438,
+      "sourceWayName": "南十八道街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-lige-yongshun-xiaochi",
+      "wayId": 1356863044,
+      "nodeId": 12558454614,
+      "sourceWayName": "南新街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-kanqiuzugeju-daolishichang",
+      "wayId": 44300943,
+      "nodeId": 2168403099,
+      "sourceWayName": "尚志大街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-chongchong-daolishichang",
+      "wayId": 44300943,
+      "nodeId": 2168403099,
+      "sourceWayName": "尚志大街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-chongchong-hongzhuanzaoshi",
+      "wayId": 208855953,
+      "nodeId": 1719100475,
+      "sourceWayName": "红霞街",
+      "offsetMetres": 44.8,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-linchenshui-zhangfeibarou",
+      "wayId": 263490210,
+      "nodeId": 2691058643,
+      "sourceWayName": "靖宇街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-hongjiantao-zhangjiaqingzhen",
+      "wayId": 674078937,
+      "nodeId": 6312677317,
+      "sourceWayName": "利民街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-tongyizhongdiaodiao-xiaoanli",
+      "wayId": 159808134,
+      "nodeId": 7109545249,
+      "sourceWayName": "西五道街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-xiaocaohehuige-yizengxiang",
+      "wayId": 1551707582,
+      "nodeId": 2476377862,
+      "sourceWayName": "卢家街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-dankedanke-baixingxiaochi",
+      "wayId": 506745919,
+      "nodeId": 6313925626,
+      "sourceWayName": "未命名开放道路",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-geixiaoliuliuyikou-xiaojunmalamian",
+      "wayId": 301295560,
+      "nodeId": 3305928431,
+      "sourceWayName": "南新街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-xiaokeriji-liguixinmalatang",
+      "wayId": 301290278,
+      "nodeId": 3050102118,
+      "sourceWayName": "草市街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-wenzai-anjingzaoshi",
+      "wayId": 35166204,
+      "nodeId": 412477363,
+      "sourceWayName": "安静街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-tangshixiong-anjingzaoshi",
+      "wayId": 35166204,
+      "nodeId": 412477363,
+      "sourceWayName": "安静街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-ppchaonengxuan-daolishichang",
+      "wayId": 44300943,
+      "nodeId": 2168403099,
+      "sourceWayName": "尚志大街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-yangwenrou-hongzhuanzaoshi",
+      "wayId": 208855953,
+      "nodeId": 1719100475,
+      "sourceWayName": "红霞街",
+      "offsetMetres": 44.8,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-shashayouchanle-pangjie",
+      "wayId": 393513136,
+      "nodeId": 3967083160,
+      "sourceWayName": "建兴街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-mingming-daolishichang",
+      "wayId": 44300943,
+      "nodeId": 2168403099,
+      "sourceWayName": "尚志大街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-xiaoxuanbaobao-hongzhuanzaoshi",
+      "wayId": 208855953,
+      "nodeId": 1719100475,
+      "sourceWayName": "红霞街",
+      "offsetMetres": 44.8,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-wangmian-shaopangzi-zhuozhan",
+      "wayId": 35166169,
+      "nodeId": 412477509,
+      "sourceWayName": "安德街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-liuyikou-tianyimalamian",
+      "wayId": 301300774,
+      "nodeId": 3053756183,
+      "sourceWayName": "德胜街",
+      "offsetMetres": 0,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-yizhezhengbao-wandashan-zhongyangdajie",
+      "wayId": 48016457,
+      "nodeId": 9910240902,
+      "sourceWayName": "兆麟街",
+      "offsetMetres": 0.1,
+      "passed": true
+    },
+    {
+      "segmentId": "hb-rikkuxianbuxian-xinpengzhiguo",
+      "wayId": 243044653,
+      "nodeId": 3826288374,
+      "sourceWayName": "海河东路",
+      "offsetMetres": 0,
+      "passed": true
+    }
+  ],
+  "scope": "Frozen OSM node coordinates, tags, full way node order and membership. Approximate street references only; not independent confirmation of each shop address or current business."
+}

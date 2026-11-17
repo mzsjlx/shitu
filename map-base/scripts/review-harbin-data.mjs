@@ -132,24 +132,41 @@ await check('8. All video spots snap to Harbin OSM walking network within 250m',
 // 9. Real road routing: Connected regions compute real polyline; disconnected regions report unavailable faithfully
 await check('9. Real walking route follows true topology and never uses fake multiplier', () => {
   const router = buildFoodRoadRouter(roadNetwork);
-  // A. Within connected Daowai Chinese Baroque quarter:
-  const segsInBaroque = router.segments.filter(s => s.component === 11885);
-  const pA = segsInBaroque[0].start;
-  const pB = segsInBaroque[100].start;
-  const route = findFoodRoadRoute(router, pA, pB);
-  assert.equal(route.status, 'ready');
-  assert(route.distanceMetres > 100 && route.distanceMetres < 5000);
-  assert(route.coordinates.length >= 5, `Expected real polyline with multiple coordinates, got ${route.coordinates.length}`);
-  console.log(`   * Baroque intra-quarter walking: ${route.distanceMetres.toFixed(1)}m, ${route.coordinates.length} waypoints along real street curves`);
-
-  // B. Disconnected cross-quarter route faithfully reports unavailable:
   const segs = catalog.sources.flatMap(s => s.segments);
-  const spotA = segs.find(s => s.id === 'hb-xiaozhen-fendoufushi');
-  const spotB = segs.find(s => s.id === 'hb-juzi-liushunjiehefan');
-  const crossRoute = findFoodRoadRoute(router, spotA.coordinates, spotB.coordinates);
+
+  // A. Connected route along Central Avenue (Yinpangzi -> Madieer):
+  const spotA = segs.find(s => s.id === 'hb-daoyueshe-yinpangzi');
+  const spotB = segs.find(s => s.id === 'hb-daoyueshe-madieer');
+  assert(spotA && spotB);
+  const routeCentral = findFoodRoadRoute(router, spotA.coordinates, spotB.coordinates);
+  assert.equal(routeCentral.status, 'ready');
+  assert(routeCentral.distanceMetres > 100 && routeCentral.distanceMetres < 1000);
+  assert(routeCentral.coordinates.length >= 5, `Expected real polyline with multiple coordinates, got ${routeCentral.coordinates.length}`);
+  console.log(`   * Central Ave walking: ${routeCentral.distanceMetres.toFixed(1)}m, ${routeCentral.coordinates.length} waypoints along real street curves`);
+
+  // B. Connected cross-district route: Central Avenue to Daowai Baroque (Madieer -> Zhangbaopu):
+  const spotBaroque = segs.find(s => s.id === 'hb-daoyueshe-zhangbaopu');
+  assert(spotBaroque);
+  const routeBaroque = findFoodRoadRoute(router, spotB.coordinates, spotBaroque.coordinates);
+  assert.equal(routeBaroque.status, 'ready');
+  assert(routeBaroque.distanceMetres > 1500 && routeBaroque.distanceMetres < 4000);
+  assert(routeBaroque.coordinates.length >= 10);
+  console.log(`   * Central Ave to Baroque walking: ${routeBaroque.distanceMetres.toFixed(1)}m, ${routeBaroque.coordinates.length} waypoints along real street curves`);
+
+  // C. Disconnected component faithfully reports unavailable / disconnected:
+  const mainSeg = router.segments.find(s => String(s.component) === '334304160');
+  const islandSeg = router.segments.find(s => String(s.component) === '6327767440');
+  assert(mainSeg && islandSeg);
+  const crossRoute = findFoodRoadRoute(router, mainSeg.start, islandSeg.start);
   assert.equal(crossRoute.status, 'unavailable');
   assert.equal(crossRoute.reason, 'disconnected');
-  console.log('   * Cross-quarter unlinked route faithfully reports unavailable/disconnected without multiplying factor');
+  console.log('   * Isolated component route faithfully reports unavailable/disconnected without multiplying factor');
+
+  // D. Outside-network point faithfully reports outside-network:
+  const outsideRoute = findFoodRoadRoute(router, spotA.coordinates, [126.30, 45.50]);
+  assert.equal(outsideRoute.status, 'unavailable');
+  assert.equal(outsideRoute.reason, 'outside-network');
+  console.log('   * Outside-network coordinate faithfully reports unavailable/outside-network');
 });
 
 const passed = checks.filter(c => c.passed).length;
