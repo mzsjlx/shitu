@@ -153,18 +153,18 @@ await check('7. food-road-router calculates genuine Zhengzhou routes and distanc
 });
 
 // 8. Video library validation check
-await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 21 user sources and 93 segments', async () => {
+await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 29 user sources and 101 segments', async () => {
   const raw = await readFile(path.join(root, 'data/cities/zhengzhou/video-library.json'), 'utf8');
   const catalog = JSON.parse(raw);
   const validated = validateVideoLibrary(catalog, 'zhengzhou');
   assert.equal(validated.city, 'zhengzhou');
-  assert.equal(validated.sources.length, 21, 'Must have 21 sources from user batches');
+  assert.equal(validated.sources.length, 29, 'Must have 29 sources from user batches');
   
   const allSegments = validated.sources.flatMap(s => s.segments);
-  assert.equal(allSegments.length, 93, 'Must have 93 total segments');
+  assert.equal(allSegments.length, 101, 'Must have 101 total segments');
   
   const authors = new Set(validated.sources.map(s => s.author));
-  assert.equal(authors.size, 19, 'Must have 19 distinct authors');
+  assert.equal(authors.size, 24, 'Must have 24 distinct authors');
   
   // Multi-creator deduplication check: 合记烩面
   const hejiSegments = allSegments.filter(s => s.name.includes('合记烩面'));
@@ -202,6 +202,12 @@ await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 
   const secondaryHuanli = huanliSegments.find(s => s.placeId);
   assert.equal(secondaryHuanli.placeId, 'zz-chichi-huanli', 'Secondary huanli must point to primary zz-chichi-huanli');
 
+  // Multi-creator deduplication check: 东三马路小吃街 (银河小强 + 蛋壳Danke)
+  const dongsanSegments = allSegments.filter(s => s.name.includes('东三马路小吃街'));
+  assert.equal(dongsanSegments.length, 2, '东三马路小吃街 must have 2 segments from 2 creators');
+  const secondaryDongsan = dongsanSegments.find(s => s.placeId);
+  assert.equal(secondaryDongsan.placeId, 'zz-yinhe-dongsanmalu', 'Secondary dongsanmalu must point to primary zz-yinhe-dongsanmalu');
+
   // Single-creator multi-clip check: 石记百花面鱼 / 炒凉粉
   const shijiSegments = allSegments.filter(s => s.id === 'zz-maikou-shiji' || s.id === 'zz-maikou-chaoliangfen');
   assert.equal(shijiSegments.length, 2, '石记百花面鱼 and 炒凉粉 must share location');
@@ -217,13 +223,13 @@ await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 
   // Groups and stops check
   const bounds = [113.58, 34.7, 113.78, 34.83];
   const groups = groupVideoPlaces(catalog);
-  assert.equal(groups.length, 85, '93 segments deduplicate into 85 places');
+  assert.equal(groups.length, 92, '101 segments deduplicate into 92 places');
   
   const inBoundsGroups = groups.filter(g => withinMapBounds(g.primary.segment, bounds));
-  assert.equal(inBoundsGroups.length, 83, 'Must have 83 in-bounds distinct map stops');
+  assert.equal(inBoundsGroups.length, 89, 'Must have 89 in-bounds distinct map stops');
   
   const outOfBoundsSegments = allSegments.filter(s => !withinMapBounds(s, bounds));
-  assert.equal(outOfBoundsSegments.length, 3, 'Must have 3 out-of-bounds segments (换利小吃x2 & 郑三指固始鹅块)');
+  assert.equal(outOfBoundsSegments.length, 4, 'Must have 4 out-of-bounds segments (换利小吃x2 & 郑三指固始鹅块 & 刘新生羊肉炝锅面)');
   
   return {
     sources: validated.sources.length,
@@ -236,10 +242,10 @@ await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 
 });
 
 // 9. Poster files existence and SHA256 integrity
-await check('9. data/cities/zhengzhou/video-posters.json records all 93 posters matching disk files', async () => {
+await check('9. data/cities/zhengzhou/video-posters.json records all 101 posters matching disk files', async () => {
   const postersData = JSON.parse(await readFile(path.join(root, 'data/cities/zhengzhou/video-posters.json'), 'utf8'));
   const segments = Object.entries(postersData.segments);
-  assert.equal(segments.length, 93, 'Must have 93 poster entries');
+  assert.equal(segments.length, 101, 'Must have 101 poster entries');
   
   for (const [segId, entry] of segments) {
     const filePath = path.join(root, entry.path);

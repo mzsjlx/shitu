@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "city": "zhengzhou",
-  "updatedAt": "2026-11-17T17:15:00+08:00",
+  "updatedAt": "2026-11-17T19:30:00+08:00",
   "rights": {
     "status": "user-confirmed",
     "note": "郑州探店视频来自用户提供的抖音分享链接，严格按来源去重、核验原片与门店信息后入库。"
@@ -3561,6 +3561,399 @@
             }
           },
           "footageNote": "2023年原视频 · 须水砂锅老店实测，位于中心城区底图边界西侧（范围外）。"
+        }
+      ]
+    },
+    {
+      "id": "zz-yinhe-7584324923196198194",
+      "author": "银河小强",
+      "title": "离谱！郑州一环神奇物价美食街，53块的快乐 是20年前的！ 东三马路爆碳一条街#寻味烟火气 #郑州美食",
+      "url": "https://www.douyin.com/video/7584324923196198194",
+      "shareURL": "https://v.douyin.com/kEOiZfQFjw4/",
+      "publishedOn": "2025-12-16",
+      "durationSeconds": 152.73,
+      "sourceSHA256": "fef8b030e5b7d9fd910eb516a3b9afa5c52004994ada1f76e410002fce6593c9",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "已下载原片并校验 SHA256，真实时长 152.73s，提取 faster-whisper 原声字幕及 0.5fps 关键帧核验，无虚构落点。",
+      "segments": [
+        {
+          "id": "zz-yinhe-dongsanmalu",
+          "name": "东三马路小吃街",
+          "category": "小吃街 / 街头排档",
+          "addressText": "河南省郑州市二七区东三马路（锦荣大观商贸城中间、近扶轮外国语学校）",
+          "start": 0.0,
+          "end": 152.73,
+          "posterSecond": 5.0,
+          "summary": "53元吃撑的郑州一环神奇物价街：10元大锅菜送两馒头、10元烤肉鸡排拌饭、10元豆角焖面、10元莲藕排骨汤、3元葱花饼、10元炸红薯丸子，市井烟火气浓厚。",
+          "coordinates": [
+            113.6647,
+            34.7446
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "东三马路 / 锦荣大观小吃街",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍郑州火车站东三马路小吃街，位于锦荣大观商贸城中间路段，采用东三马路开放地图路网节点参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644557,
+              "name": "东三马路",
+              "url": "https://www.openstreetmap.org/way/724644557",
+              "sourceDate": "2026-11-17",
+              "method": "original-way-node",
+              "nodeId": 6796155341
+            }
+          },
+          "footageNote": "2024年原视频 · 郑州一环东三马路神奇物价美食街实测，出发前请核对出摊与营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-xiangxiang-7649713026907606307",
+      "author": "河南民生频道香香美食",
+      "title": "郑州zui不想火的宝藏清真老馆子！ 老客说不想被“曝光”！菜品很有特色，但能吃上啥，全看运气。招牌的酱爆鱼每天现炸，一天就4、5条，想吃提前预定，秘制酱料焖制，鱼肉紧实入味，有客人年夜饭都打包这条鱼回家！酱焖鸡爪、花甲炒鸡也得预定，预定也得拼速度！老板：不是饥饿营销，是真忙不过来！#寻找郑州100家老店  #清真老店  #海鲜  #寻味烟火气 @大嘴嘴不大",
+      "url": "https://www.douyin.com/video/7649713026907606307",
+      "shareURL": "https://v.douyin.com/zXoB3vZP28w/",
+      "publishedOn": "2026-06-11",
+      "durationSeconds": 295.06,
+      "sourceSHA256": "6f5cbd20ed6e476e6d293d7c56bc7817a27289406342286e415f25d097951a1a",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "已下载原片并校验 SHA256，真实时长 295.06s，提取 faster-whisper 原声字幕及 0.5fps 关键帧核验，无虚构落点。",
+      "segments": [
+        {
+          "id": "zz-xiangxiang-maxiao",
+          "name": "麻小海鲜厨房（漓江路店）",
+          "category": "豫菜家常 / 清真海鲜烧烤",
+          "addressText": "河南省郑州市二七区漓江路与连云路交叉口附近",
+          "start": 0.0,
+          "end": 295.06,
+          "posterSecond": 8.0,
+          "summary": "南三环外老客深爱的宝藏清真馆子：预约招牌酱爆鲤鱼汁浓鲜甜、生焖四十分钟脱骨酱焖鸡爪、大份花甲炒鸡浓汁拌圆面条，老店手艺扎实。",
+          "coordinates": [
+            113.665,
+            34.7015
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "漓江路 / 连云路路口",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实访漓江路与连云路交叉口附近清真老店，采用连云路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 727616200,
+              "name": "连云路",
+              "url": "https://www.openstreetmap.org/way/727616200",
+              "sourceDate": "2026-11-17",
+              "method": "original-way-node",
+              "nodeId": 6818587240
+            }
+          },
+          "footageNote": "2024年原视频 · 清真酱爆鱼与焖鸡爪，特色大菜需提前预约，出发前请核对营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-xiaozhen-7405859595777772836",
+      "author": "小珍来咯…",
+      "title": "河南菜个个都是plus版的，分量震惊，不仅味道好人也很热情～#省饭课代表  #放假开始全国巡吃 #美食vlog",
+      "url": "https://www.douyin.com/video/7405859595777772836",
+      "shareURL": "https://v.douyin.com/M5Eb8UBGQKo/",
+      "publishedOn": "2024-08-22",
+      "durationSeconds": 543.6,
+      "sourceSHA256": "259ea1058b24600d0b63d0b6cb8a87479670b801b888e5ac3ef36458b4276e7d",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "已下载原片并校验 SHA256，真实时长 543.60s，提取 faster-whisper 原声字幕及 0.5fps 关键帧核验，无虚构落点。",
+      "segments": [
+        {
+          "id": "zz-xiaozhen-liuxinsheng",
+          "name": "刘新生羊肉炝锅面（滨河路店）",
+          "category": "传统豫菜 / 手擀炝锅面",
+          "addressText": "河南省郑州市惠济区开元路与滨河路交叉口附近",
+          "start": 0.0,
+          "end": 543.6,
+          "posterSecond": 10.0,
+          "summary": "三十年传统豫菜老店超大份量实测：脸盆装现炝羊肉炝锅面鲜香劲道、被子般大小的韭菜鸡蛋蒸菜蟒、农家青麦仁碾转炒鸡蛋，老家烟火味道浓烈。",
+          "coordinates": [
+            113.635,
+            34.855
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "惠济区贾鲁河畔 / 开元路滨河路口",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍惠济区开元路滨河路总店，位于中心城区底图北边界外，真实坐标保留，超出底图范围。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 736382774,
+              "name": "惠济滨河路区段参照",
+              "url": "https://www.openstreetmap.org",
+              "sourceDate": "2026-11-17",
+              "method": "original-way-node",
+              "nodeId": 6894218038
+            }
+          },
+          "footageNote": "2024年原视频 · 惠济区老牌羊肉炝锅面与特色菜蟒，位于底图外，出发前请核对营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-gali-7615505232744065125",
+      "author": "咖喱",
+      "title": "郑州最最最好吃的砂锅鸡！！里面一定要加宽粉、板栗、玉米…面条也好好吃啊，连炫三碗大米饭不是问题！！#郑州美食 #地方特色美食 #分享日常#vlog十亿流量扶持计划 #谁懂这一口的好吃程度",
+      "url": "https://www.douyin.com/video/7615505232744065125",
+      "shareURL": "https://v.douyin.com/5u_W3SrdVuY/",
+      "publishedOn": "2026-03-10",
+      "durationSeconds": 21.83,
+      "sourceSHA256": "17a59069688ebe2af6054222a832d35650b9ca3adc6567d2bb93237718e02859",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "已下载原片并校验 SHA256，真实时长 21.83s，提取 faster-whisper 原声字幕及 0.5fps 关键帧核验，无虚构落点。",
+      "segments": [
+        {
+          "id": "zz-gali-shaguoji",
+          "name": "西域臻品砂锅鸡（园田路店）",
+          "category": "砂锅小吃 / 新疆大盘鸡砂锅",
+          "addressText": "河南省郑州市金水区园田路瑞穗苑56-9号",
+          "start": 0.0,
+          "end": 21.83,
+          "posterSecond": 4.0,
+          "summary": "金水区园田路高人气砂锅鸡：热气腾腾大盘鸡砂锅酱香麻辣带微甜，吸饱酱汁的宽粉、板栗、玉米软糯入味，搭配手工烩面/手擀面劲道爽口。",
+          "coordinates": [
+            113.6565,
+            34.805
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "园田路 / 瑞穗苑底商",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍园田路瑞穗苑底商门头，采用园田路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 725153393,
+              "name": "园田路",
+              "url": "https://www.openstreetmap.org/way/725153393",
+              "sourceDate": "2026-11-17",
+              "method": "original-way-node",
+              "nodeId": 6800045921
+            }
+          },
+          "footageNote": "2024年原视频 · 招牌砂锅鸡加宽粉板栗，出锅极烫，出发前请核对营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-rourou-7000294256841674021",
+      "author": "肉肉大搜索",
+      "title": "河南“超大片”原油肉，小店一天要炖10只羊，40元一碗大口吃肉真得劲#美食推荐官 #美食探店 #羊肉汤 ",
+      "url": "https://www.douyin.com/video/7000294256841674021",
+      "shareURL": "https://v.douyin.com/m3yWP0izaUo/",
+      "publishedOn": "2021-08-25",
+      "durationSeconds": 231.83,
+      "sourceSHA256": "eafa855c0136c10995cbabbe99bca73c7ef8b4a79afca0fa4a767b52002c5062",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "已下载原片并校验 SHA256，真实时长 231.83s，提取 faster-whisper 原声字幕及 0.5fps 关键帧核验，无虚构落点。",
+      "segments": [
+        {
+          "id": "zz-rourou-songlaosan",
+          "name": "清真宋老三苏肉老店",
+          "category": "清真老字号 / 传统苏肉原油肉",
+          "addressText": "河南省郑州市管城回族区管城街9-1号",
+          "start": 0.0,
+          "end": 231.83,
+          "posterSecond": 6.0,
+          "summary": "老管城传承多年的清真老店：一天炖10只羊的原油肉，超大片肥羊肉与羊油先煮后蒸，配奶白羊汤、花椒葱姜与鲜辣椒，入口化油，酥肉焦质香浓。",
+          "coordinates": [
+            113.671,
+            34.753
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "管城街 / 法院东街路口",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍管城街9-1号门头，位于管城街与法院东街交叉口附近，采用法院东街开放地图节点参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644526,
+              "name": "法院东街",
+              "url": "https://www.openstreetmap.org/way/724644526",
+              "sourceDate": "2026-11-17",
+              "method": "original-way-node",
+              "nodeId": 6796155161
+            }
+          },
+          "footageNote": "2021年原视频 · 老管城原油肉与酥肉羊汤，老店排队常见，出发前请核对营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-lijiongjiong-7571945984889081134",
+      "author": "李囧囧",
+      "title": "一盘15块 量大实惠 传统豫菜有多绝？ 条子肉 梅菜扣肉 酥肉 排骨 大烩菜 回锅肉各个是硬菜#郑州美食 #河南美食 #每天生活更优惠  #中信银行信用卡积分兑换更超值 #地方特色美食",
+      "url": "https://www.douyin.com/video/7571945984889081134",
+      "shareURL": "https://v.douyin.com/UmMIUX5tL3I/",
+      "publishedOn": "2025-11-13",
+      "durationSeconds": 189.57,
+      "sourceSHA256": "cd2c7ea3c379447062b7e6984ebca7e3dda2f4a5b8c29b3ea35f9a042de02a5f",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "已下载原片并校验 SHA256，真实时长 189.57s，提取 faster-whisper 原声字幕及 0.5fps 关键帧核验，无虚构落点。",
+      "segments": [
+        {
+          "id": "zz-lijiongjiong-duanji",
+          "name": "段记川菜扣碗（二里岗南街店）",
+          "category": "豫式扣碗 / 家常川菜",
+          "addressText": "河南省郑州市管城回族区二里岗南街475号（紫荆阳光地带18号楼底商）",
+          "start": 0.0,
+          "end": 189.57,
+          "posterSecond": 7.0,
+          "summary": "老二里岗开了十多年的家常豫式扣碗老店：一盘15块量大实惠，条子肉软烂酱香夹大馒头、蒸小酥肉面皮吸汁、蒸排骨脱骨带脆骨、辣子鸡酥脆香微辣。",
+          "coordinates": [
+            113.6785,
+            34.7302
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "二里岗南街 / 紫荆阳光地带底商",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍二里岗南街紫荆阳光地带底商门头，采用二里岗南街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644586,
+              "name": "二里岗南街",
+              "url": "https://www.openstreetmap.org/way/724644586",
+              "sourceDate": "2026-11-17",
+              "method": "original-way-node",
+              "nodeId": 13604120348
+            }
+          },
+          "footageNote": "2024年原视频 · 豫式扣碗条子肉与酥肉，大馒头现蒸，出发前请核对营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-danke-7501570847896456475",
+      "author": "蛋壳Danke",
+      "title": "郑州10元路边摊美食街 烩菜 卤面 烤肉拌饭好吃的可太多了 #地方特色美食 #河南美食 #万物皆可种草搜 #烩菜 #舌尖上的抖音",
+      "url": "https://www.douyin.com/video/7501570847896456475",
+      "shareURL": "https://v.douyin.com/3qyR_Z-96Rs/",
+      "publishedOn": "2025-05-07",
+      "durationSeconds": 323.6,
+      "sourceSHA256": "507991d84ee167087fd3fddbd8b04eb4daa9f63039156e1b93d140453425f5c7",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "已下载原片并校验 SHA256，真实时长 323.60s，提取 faster-whisper 原声字幕及 0.5fps 关键帧核验，无虚构落点。",
+      "segments": [
+        {
+          "id": "zz-danke-dongsanmalu",
+          "name": "东三马路小吃街",
+          "category": "小吃街 / 街头排档",
+          "placeId": "zz-yinhe-dongsanmalu",
+          "addressText": "河南省郑州市二七区东三马路（银基批发市场、扶轮外国语学校一带）",
+          "start": 0.0,
+          "end": 323.6,
+          "posterSecond": 12.0,
+          "summary": "郑州火车站银基商圈东三马路10元路边摊美食街：10元酥肉丸子大烩菜送俩馒头泡汤吃、10元烤肉鸡排双拼饭、5元豆角卤面送小菜与鸡蛋汤。",
+          "coordinates": [
+            113.6647,
+            34.7446
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "东三马路 / 银基商圈小吃街",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍银基批发市场旁东三马路小吃街，归并至主片段 zz-yinhe-dongsanmalu，采用东三马路开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644557,
+              "name": "东三马路",
+              "url": "https://www.openstreetmap.org/way/724644557",
+              "sourceDate": "2026-11-17",
+              "method": "original-way-node",
+              "nodeId": 6796155341
+            }
+          },
+          "footageNote": "2024年原视频 · 银基旁东三马路十元美食街，与银河小强合用一点，出发前请核对营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-renyi-7416364341185809701",
+      "author": "Renyi毅哥",
+      "title": "30元拿下一大碗河南深夜纯肉羊杂汤！巨量羊杂配上鲜浓羊汤，干净小店俘获大批吃货，关键本地人加辣居然比我还厉害！#干净饮食食谱分享 #干净饮食 #美食分享 #人间烟火 #心动打卡指南",
+      "url": "https://www.douyin.com/video/7416364341185809701",
+      "shareURL": "https://v.douyin.com/Rid_V0QmnNs/",
+      "publishedOn": "2024-09-20",
+      "durationSeconds": 204.97,
+      "sourceSHA256": "af41b91a000a127e398a5ef0572e8aed5981fc28e91281872b142fe705c30893",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "已下载原片并校验 SHA256，真实时长 204.97s，提取 faster-whisper 原声字幕及 0.5fps 关键帧核验，无虚构落点。",
+      "segments": [
+        {
+          "id": "zz-renyi-zhouji",
+          "name": "周记特色羊杂汤（京广中路店）",
+          "category": "传统羊杂割 / 夜市羊肉汤",
+          "addressText": "河南省郑州市二七区京广中路134-4号（京广路与政通路交叉口向北路西）",
+          "start": 0.0,
+          "end": 204.97,
+          "posterSecond": 5.0,
+          "summary": "京广路开了十几年的高人气纯肉羊杂汤：现切羊肚羊肠羊肺羊肉烫热，加鲜葱花、香菜与羊油红辣椒原汤浇灌，汤浓肉满、层次分明、烟火气十足。",
+          "coordinates": [
+            113.651,
+            34.7268
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "京广中路 / 政通路路口以北路西",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍京广中路134-4号周记羊杂汤门头，位于京广路政通路北侧，采用京广中路开放地图节点参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 732794343,
+              "name": "京广中路",
+              "url": "https://www.openstreetmap.org/way/732794343",
+              "sourceDate": "2026-11-17",
+              "method": "original-way-node",
+              "nodeId": 6818586049
+            }
+          },
+          "footageNote": "2024年原视频 · 京广路纯肉羊杂汤，夜市营业至深夜，出发前请核对营业时间。"
         }
       ]
     }
