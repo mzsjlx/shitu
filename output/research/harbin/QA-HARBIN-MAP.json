@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-16T13:00:01.928Z",
+  "verifiedOn": "2026-11-18T10:22:50.973Z",
   "city": "harbin",
   "checks": [
     {
@@ -45,22 +45,27 @@
     {
       "name": "food-road-network.json has valid nodes (>20000)",
       "passed": true,
-      "detail": 27067
+      "detail": 27124
     },
     {
       "name": "food-road-network.json has valid ways (>5000)",
       "passed": true,
-      "detail": 7523
+      "detail": 5944
     },
     {
       "name": "buildFoodRoadRouter builds successfully for Harbin",
       "passed": true,
       "detail": {
-        "nodes": 27067,
-        "ways": 7523,
-        "segments": 25899,
-        "excluded": {},
-        "components": 2351
+        "nodes": 23210,
+        "ways": 5256,
+        "segments": 27267,
+        "excluded": {
+          "unsupported-highway": 655,
+          "access-restricted": 4,
+          "indoor-or-area": 28,
+          "foot-not-permitted": 1
+        },
+        "components": 132
       }
     },
     {
@@ -131,7 +136,7 @@
     {
       "name": "preview-harbin.html generated with embedded bundle (>10MB)",
       "passed": true,
-      "detail": 11697922
+      "detail": 12058029
     },
     {
       "name": "Map runtime loaded Harbin with name \"哈尔滨\"",
@@ -229,16 +234,33 @@
       "detail": null
     },
     {
-      "name": "Level 3: Native H.264+AAC video plays in-place within popover",
+      "name": "Level 3: Native H.264+AAC video plays in-place within popover (dual-sampled)",
       "passed": true,
       "detail": {
-        "hasVideo": true,
-        "src": "http://127.0.0.1:8796/media/videos/hb-xiaozhen-7592037940180569380/hb-xiaozhen-fendoufushi-7b14dcb0c8606922.mp4",
-        "paused": false
+        "sample1": {
+          "t": 0,
+          "paused": false,
+          "readyState": 4
+        },
+        "sample2": {
+          "t": 0.250238,
+          "paused": false,
+          "src": "http://127.0.0.1:8796/media/videos/hb-xiaozhen-7592037940180569380/hb-xiaozhen-fendoufushi-7b14dcb0c8606922.mp4"
+        }
       }
     },
     {
-      "name": "Level 3: Switching food shop stops old media track and displays new shop popover",
+      "name": "Level 3: Switching food shop stops and releases old media track",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Level 3: Changing creator clip stops and releases old track",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Level 3: Closing popover stops and releases old track",
       "passed": true,
       "detail": null
     },
@@ -278,7 +300,7 @@
       "detail": null
     }
   ],
-  "total": 52,
-  "passed": 52,
+  "total": 54,
+  "passed": 54,
   "failed": 0
 }
