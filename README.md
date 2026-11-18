@@ -1,5 +1,7 @@
 # 食途 · 美食旅行地图
 
+> **2026-11-16 武汉交付复核：** `codex/city-wuhan-prep` / `488079f` 的 [PR #10](https://github.com/mzsjlx/shitu/pull/10) 已完成本轮接收端复核：83 个 ZIP 与83份摘要全部上传，呱呱更新包实际远端下载、隔离导入和重复导入通过。PR现已通过 `6019700` 合入main，可使用 `?city=wuhan&view=food` 切换武汉。最终状态见 [武汉复核记录](output/research/wuhan-followup-20261116.md)；新城开发先读 [城市手册](CITY-AGENT-HANDBOOK.md) 与 [素材说明](MEDIA-COLLABORATION.md) 的同日补充。
+
 > 2026-11-10：潮汕作为第五个区域接入，57来源/76片段、67张资料卡、46个地图点。修复与实测范围见 [潮汕整合复核](output/research/chaoshan/integration-review-20261110.md)。视频仍需另行导入本机；下方较早进度按历史日期阅读。
 
 > 2026-11-07 南京整合：现支持顶部菜单切换重庆、长沙、柳州、南京。南京104地图点、164视频片段；四城构建及54项浏览器复核通过。当前整合工作区 `.local/worktrees/nanjing-integration`，本机预览 [打开南京与四城切换](http://127.0.0.1:8792/?city=nanjing&view=food)。南京MP4在本机已接通，尚未发布南京Release素材包；只拉代码可看地图和封面。详见 [本轮复核记录](output/research/nanjing/integration-review-20261107.md) 与 PROJECT-STATUS 顶部。下方旧日期数字和端口为历史记录。

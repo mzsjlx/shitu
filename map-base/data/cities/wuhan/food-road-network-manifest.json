@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "wuhan",
+  "bounds": [
+    114.18,
+    30.48,
+    114.42,
+    30.64
+  ],
+  "source": {
+    "date": "2026-11-13",
+    "sha256": "49ca07434d859a01f5fbaf238558806ea67be0fb3335c53c4bc313a446c5ff6c",
+    "url": "https://download.geofabrik.de/asia/china/hubei.html",
+    "fileName": "hubei-261113.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "networkSHA256": "6768706cce8b1c9395a78c54f8a034ec781b6abc789e17b8206c7f20f3c0655b",
+  "bytes": 9640292,
+  "nodes": 145114,
+  "ways": 25028,
+  "footRestrictionWays": 0,
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
+}

@@ -1,0 +1,5192 @@
+{
+  "schemaVersion": 1,
+  "city": "wuhan",
+  "preparedOn": "2026-11-14",
+  "rights": {
+    "status": "user-confirmed",
+    "confirmedOn": "2026-11-14",
+    "scope": "首批7条武汉探店视频由用户在会话中明确提供，首选来源打通端到端全流程；视频画面仅使用用户提供范围，记录与原片留.local，小封面海报与公开元数据进库。",
+    "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
+  },
+  "sources": [
+    {
+      "id": "wh-guagua-7695718351578976329",
+      "author": "吃个瓜瓜",
+      "title": "分享武汉几家便宜好吃的香香饭们！ 每家都很接地气#武汉美食 #武汉美食推荐 #武汉旅游攻略 #日常vlog #路边摊美味",
+      "url": "https://www.douyin.com/video/7695718351578976329",
+      "shareURL": "https://v.douyin.com/Iqt1v_wSF9w/",
+      "publishedOn": "2026-10-12",
+      "durationSeconds": 99.1,
+      "sourceSHA256": "5f19dee38d6bdef8fc3e7d9a1a2b38c0b77166c98d12fda39866fa337439931f",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍门头、价目表、排队街景与店主制作全过程，作者口播逐家推荐。",
+      "segments": [
+        {
+          "id": "wh-guagua-liji-zhujiaofan",
+          "name": "李记隆江猪脚饭烧鹅饭",
+          "category": "快餐便当 / 烧腊",
+          "addressText": "武汉市社区快餐（分店待确认）",
+          "start": 7.5,
+          "end": 34,
+          "posterSecond": 14.5,
+          "summary": "粤式烧腊快餐，招牌烧鸭皮脆肉香、双拼叉烧饭，配菜免费自选。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片展示价目表与双拼饭，武汉多同名社区快餐店，具体分店待进一步核实。",
+          "footageNote": "2026年原视频 · 具体分店与营业情况待核实。"
+        },
+        {
+          "id": "wh-guagua-xiaowu",
+          "name": "小屋卤肉大饼",
+          "category": "大饼 / 卷饼",
+          "addressText": "武汉市江汉区江汉北路73附2号（渣家社区旁）",
+          "start": 34,
+          "end": 45.5,
+          "posterSecond": 45,
+          "summary": "江汉北路老店卷饼，薄饼卷入现炸肉饼、香肠、卤蛋与香菜全家福，排队常客众多。",
+          "coordinates": [
+            114.2784,
+            30.58925
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉北路 / 渣家路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片排队实拍与特色卷饼，位于江汉北路渣家社区段，采用开放地图江汉北路参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177820528,
+              "name": "江汉北路",
+              "url": "https://www.openstreetmap.org/way/177820528",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 14344790040
+            }
+          },
+          "footageNote": "2026年原视频 · 片中价格、套餐及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "wh-guagua-changdi-youzha",
+          "name": "长堤街油炸小吃",
+          "category": "炸串 / 油炸小吃",
+          "addressText": "武汉市硚口区长堤街116号（近桂萍牛杂）",
+          "start": 45.5,
+          "end": 65,
+          "posterSecond": 59,
+          "summary": "汉口长堤街老街炸串摊，招牌大鸡腿与藕片、鸡皮外酥里嫩，刷上浓郁红油辣酱。",
+          "coordinates": [
+            114.2525,
+            30.57082
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长堤街 / 义烈巷附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片排队炸串实拍，位于长堤街核心街段，采用开放地图长堤街路段参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 178122933,
+              "name": "长堤街",
+              "url": "https://www.openstreetmap.org/way/178122933",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1884981395
+            }
+          },
+          "footageNote": "2026年原视频 · 片中价格、套餐及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "wh-guagua-lidadai-mijiu",
+          "name": "李爹爹米酒",
+          "category": "传统饮品 / 米酒",
+          "addressText": "武汉市硚口区长堤街巷内（长堤街油炸小吃旁）",
+          "start": 65,
+          "end": 75,
+          "posterSecond": 72,
+          "summary": "长堤街老巷内传统手作甜米酒，入口甘甜醇厚，老牌传统原味。",
+          "coordinates": [
+            114.2528,
+            30.57085
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长堤街老巷内",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片紧邻长堤街油炸小吃旁巷子招牌，采用长堤街参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 178122933,
+              "name": "长堤街",
+              "url": "https://www.openstreetmap.org/way/178122933",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1884981395
+            }
+          },
+          "footageNote": "2026年原视频 · 片中价格、套餐及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "wh-guagua-sanjiequ",
+          "name": "三街区28号",
+          "category": "家常菜 / 川菜",
+          "addressText": "武汉市（原片注明汉口店已关停）",
+          "start": 75,
+          "end": 95,
+          "posterSecond": 85,
+          "summary": "实惠家常炒菜馆，平价鱼香肉丝与干煸牛肉，原片口播注明汉口店已不再营业。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片明确注明“汉口没店了非常可惜”，当前保留在视频库记录。",
+          "footageNote": "2026年原视频 · 原片作者注明原汉口店已关停或搬迁，待确认现址。"
+        }
+      ]
+    },
+    {
+      "id": "wh-wanjuxiong-7703157055855474274",
+      "author": "上腮红的玩具熊",
+      "title": "给你们看看武汉真正好吃的民间米其林！砂锅羊排 罐罐猪蹄巨巨好吃...",
+      "url": "https://www.douyin.com/video/7703157055855474274",
+      "shareURL": "https://v.douyin.com/TVqUe5yYTl8/",
+      "publishedOn": "2026-11-01",
+      "durationSeconds": 19.7,
+      "sourceSHA256": "d666061b8821266a3918f25eed2fd87e504a64b21fd50d67adb90d4bb8b2c6d8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍吉庆街巷内摆桌、砂锅羊排与特色菜品，作者出镜试吃点评。",
+      "segments": [
+        {
+          "id": "wh-wanjuxiong-jiqing78",
+          "name": "吉庆78号私房菜",
+          "category": "本地私房菜 / 楚菜",
+          "addressText": "武汉市江岸区南京路吉庆街78号（近南京路交汇口）",
+          "start": 0,
+          "end": 19.7,
+          "posterSecond": 5,
+          "summary": "吉庆街民间私房菜馆，招牌砂锅羊排外酥里嫩、香辣入味，罐罐猪蹄浓郁软烂，市井风味十足。",
+          "coordinates": [
+            114.28503,
+            30.58699
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "吉庆街 / 南京路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片吉庆街老巷实拍，采用开放地图吉庆街与南京路交汇路段参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177629406,
+              "name": "吉庆街",
+              "url": "https://www.openstreetmap.org/way/177629406",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1880480117
+            }
+          },
+          "footageNote": "2026年原视频 · 片中价格、套餐及营业情况可能已变化，出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaochen-7690966986494526059",
+      "author": "小陈整点吃的",
+      "title": "武汉巨牛逼好吃的鱼籽鱼泡锅！！！！！！# 武汉美食",
+      "url": "https://www.douyin.com/video/7690966986494526059",
+      "shareURL": "https://v.douyin.com/mtwSlzbT8H0/",
+      "publishedOn": "2026-09-29",
+      "durationSeconds": 21.3,
+      "sourceSHA256": "92fa715cacd75b4fe51fb7e17b76e5cb85c7a2af7357092c286678cf5a3c77ea",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍老武汉里份巷口摆桌就餐与满满一盆鱼籽鱼泡锅，博主实吃解说。",
+      "segments": [
+        {
+          "id": "wh-xiaochen-panxiaoguan",
+          "name": "潘小馆湖北菜",
+          "category": "本地小馆 / 湖北江湖菜",
+          "addressText": "武汉市江岸区吉庆街商圈民俗街巷内（潘小馆·湖北菜·老武汉藕汤）",
+          "start": 0,
+          "end": 21.3,
+          "posterSecond": 6,
+          "summary": "老汉口居民楼巷内的地道湖北家常小馆，招牌鱼籽鱼泡锅分量惊人，鱼籽紧实饱满，鱼泡软糯吸汁，泡饭一绝。",
+          "coordinates": [
+            114.28585,
+            30.58778
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "吉庆街民俗街区巷内",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片老武汉里份街景实拍，采用开放地图吉庆街东段参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177629406,
+              "name": "吉庆街",
+              "url": "https://www.openstreetmap.org/way/177629406",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1880480113
+            }
+          },
+          "footageNote": "2026年原视频 · 片中价格、分量及营业情况可能已变化，出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "wh-laoluo-7591505988797173026",
+      "author": "饭搭子老罗",
+      "title": "武汉苍蝇馆子合集 2 #美食 #武汉美食  #武汉美食推荐 #苍蝇馆子  #武汉旅游攻略",
+      "url": "https://www.douyin.com/video/7591505988797173026",
+      "shareURL": "https://v.douyin.com/zbB7Sq1AMAI/",
+      "publishedOn": "2026-01-05",
+      "durationSeconds": 178.2,
+      "sourceSHA256": "625687c7eff214aa58afe313501ca5db2ca42bcc273c8a7bee739508f13f38d4",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片5家门店实地探店、招牌门头、出餐过程与博主堂食试吃，口播推荐菜与巷子定位线索。",
+      "segments": [
+        {
+          "id": "wh-laoluo-hewang-tongyi",
+          "name": "和旺湖北菜(统一街店)",
+          "category": "市井湖北菜 / 苍蝇馆子",
+          "addressText": "武汉市江汉区统一街近民生路（民众乐园对面的巷子里）",
+          "start": 0,
+          "end": 40,
+          "posterSecond": 15,
+          "summary": "民众乐园对面巷子里的市井老馆子，招牌芋头烧牛腩大块软烂、汤汁拌饭一绝，鱼籽烧豆腐鲜香咸香。",
+          "coordinates": [
+            114.284,
+            30.57931
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "统一街 / 民众乐园对面巷内",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片字幕注明民众乐园对面的巷子里，统一街北段，采用开放地图统一街参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177265282,
+              "name": "统一街",
+              "url": "https://www.openstreetmap.org/way/177265282",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1419796840
+            }
+          },
+          "footageNote": "2026年原视频 · 片中价格、分量及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "wh-laoluo-gongxingcheng-miaoli",
+          "name": "龚兴城鱼羊吉(苗栗路店)",
+          "category": "老牌荆楚菜 / 特色鱼头泡饭",
+          "addressText": "武汉市江岸区苗栗路20号（武汉市第三十中学东侧）",
+          "start": 40,
+          "end": 98,
+          "posterSecond": 80,
+          "summary": "苗栗路上开了近20年的地道老店，招牌胖头鱼鱼头泡饭现点现焖，麦酱肉配饼大快朵颐，砂锅鱼羊吉外层卤香内里羊鲜。",
+          "coordinates": [
+            114.28518,
+            30.59948
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "苗栗路三十中东侧",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头标牌清晰，位于苗栗路老城区，采用开放地图苗栗路段参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1577830705,
+              "name": "苗栗路",
+              "url": "https://www.openstreetmap.org/way/1577830705",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1926866307
+            }
+          },
+          "footageNote": "2026年原视频 · 开店近20年老店，片中价格及营业情况可能已调整，出发前请核实。"
+        },
+        {
+          "id": "wh-laoluo-huihui-songziji",
+          "name": "辉辉秘制松滋鸡(田园街店)",
+          "category": "荆楚风味 / 松滋鸡",
+          "addressText": "武汉市东西湖区吴家山街道田园街554号附3号",
+          "start": 98,
+          "end": 125,
+          "posterSecond": 105,
+          "summary": "吴家山田园街元老级秘制松滋鸡，一盘菜盘活一条街，鸡肉现做现烧带重庆香辣味型，吸满汤汁的手工土豆粉极其入味。",
+          "coordinates": null,
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "位于东西湖区吴家山田园街，超出当前核心底图西界，标记待东西湖扩图，如实保留在视频库中。",
+          "footageNote": "2026年原视频 · 东西湖区吴家山老店，超出当前三镇核心底图范围，标记待扩图。"
+        },
+        {
+          "id": "wh-laoluo-xiaoheyuan-enshi",
+          "name": "小荷园·乡野湖北菜(恩施街店)",
+          "category": "乡野庭院菜 / 湖北家常菜",
+          "addressText": "武汉市青山区恩施街1号附13号（近工业路交汇处）",
+          "start": 125,
+          "end": 154,
+          "posterSecond": 145,
+          "summary": "青山恩施街庭院风味湖北菜，生意十分火爆，招牌手打黄牛肉锅红油汤底浸满牛肉，微麻微辣，牛肉香浓郁。",
+          "coordinates": [
+            114.3995,
+            30.62356
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "恩施街 / 工业路口",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门头与青山恩施街实景，位于恩施街东端靠近工业路，采用开放地图恩施街参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105154102,
+              "name": "恩施街",
+              "url": "https://www.openstreetmap.org/way/105154102",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 4524874747
+            }
+          },
+          "footageNote": "2026年原视频 · 片中价格、分量及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "wh-laoluo-aizi-enshi",
+          "name": "邓矮子家常菜焖锅鱼(恩施街总店)",
+          "category": "恩施街市井小馆 / 水煮肉片",
+          "addressText": "武汉市青山区恩施街中段（邓矮子家常菜焖锅鱼）",
+          "start": 154,
+          "end": 178.2,
+          "posterSecond": 170,
+          "summary": "青山恩施街街坊老菜馆，周边居民常客众多，招牌水煮肉片分量扎实，打底蔬菜千张甘甜入味，干煸藕丝焦脆香浓。",
+          "coordinates": [
+            114.39736,
+            30.62356
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "恩施街中段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片邓矮子招牌门头清晰，位于青山恩施街核心段，采用开放地图恩施街路段参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105154102,
+              "name": "恩施街",
+              "url": "https://www.openstreetmap.org/way/105154102",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1211889430
+            }
+          },
+          "footageNote": "2026年原视频 · 居民街坊老店，片中价格及营业情况可能已变化，出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "wh-dage-7521707461288774954",
+      "author": "达哥在上海",
+      "title": "总要来一趟武汉吧，体验一下武汉过早的烟火气，感受一条街上碳水开会的盛况#武汉美食 #武汉过早 #过早#碳水#地方特色美食",
+      "url": "https://www.douyin.com/video/7521707461288774954",
+      "shareURL": "https://v.douyin.com/MAfthoAtCLg/",
+      "publishedOn": "2026-07-14",
+      "durationSeconds": 583.1,
+      "sourceSHA256": "f5e3073b31879161eefc6341f9f83f339fe7be669277bf02a6ba6f70379ea398",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "视频实拍汉口山海关路过早街区、胜利街与粮道街，门店真实门头与排队点餐实况清晰可见。",
+      "segments": [
+        {
+          "id": "wh-dage-shuangyang-doupi",
+          "name": "双阳豆皮(山海关路店)",
+          "category": "三鲜豆皮 / 过早",
+          "addressText": "武汉市江岸区山海关路10号",
+          "start": 0,
+          "end": 7.5,
+          "posterSecond": 4,
+          "summary": "山海关路老牌三鲜豆皮，金黄蛋皮现煎现切，糯米软糯、肉丁榨菜香气浓郁。",
+          "coordinates": [
+            114.3048,
+            30.6047
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "山海关路 / 胜利街口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片山海关路排队过早实拍，大铁锅煎三鲜豆皮，采用开放地图山海关路参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177794593,
+              "name": "山海关路",
+              "url": "https://www.openstreetmap.org/way/177794593",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882077240
+            }
+          },
+          "footageNote": "2026年原视频 · 现场排队及价格以当天营业为准。"
+        },
+        {
+          "id": "wh-dage-xushi-nuomibao",
+          "name": "徐氏糯米包油条(山海关路店)",
+          "category": "糯米包油条 / 鸡冠饺",
+          "addressText": "武汉市江岸区山海关路77号",
+          "start": 7.5,
+          "end": 14,
+          "posterSecond": 12,
+          "summary": "山海关路招牌大鸡冠饺，金黄酥脆外皮比脸大，内馅肉末鲜香饱满。",
+          "coordinates": [
+            114.3032,
+            30.6055
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "山海关路 / 长春街口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片油炸大鸡冠饺实拍，位于山海关路西段，采用开放地图山海关路参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177794593,
+              "name": "山海关路",
+              "url": "https://www.openstreetmap.org/way/177794593",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882095562
+            }
+          },
+          "footageNote": "2026年原视频 · 现场排队及价格以当天营业为准。"
+        },
+        {
+          "id": "wh-dage-wangji-hutoufen",
+          "name": "汪记鲜鱼糊汤粉(山海关路店)",
+          "category": "鲜鱼糊汤粉 / 过早",
+          "addressText": "武汉市江岸区山海关路21号",
+          "start": 26,
+          "end": 41.5,
+          "posterSecond": 34,
+          "summary": "小鱼熬煮成浓稠鲜鱼糊汤，现撒黑胡椒碎与葱花，配小油条吸饱汤汁。",
+          "coordinates": [
+            114.3042,
+            30.605
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "山海关路中段附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片红色汪记字样碗装鲜鱼糊汤粉实拍，采用开放地图山海关路参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177794593,
+              "name": "山海关路",
+              "url": "https://www.openstreetmap.org/way/177794593",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882077240
+            }
+          },
+          "footageNote": "2026年原视频 · 现场排队及价格以当天营业为准。"
+        },
+        {
+          "id": "wh-dage-maoshi-qishuibao",
+          "name": "毛氏汽水包(山海关路店)",
+          "category": "汽水包 / 包子",
+          "addressText": "武汉市江岸区山海关路19号",
+          "start": 41.5,
+          "end": 61.5,
+          "posterSecond": 54,
+          "summary": "汉口经典汽水包，平底锅淋水加盖汽蒸，底壳金黄焦脆，莲藕粉丝馅鲜香多汁。",
+          "coordinates": [
+            114.3045,
+            30.6049
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "山海关路中段附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片平底锅现煎汽水包实拍，采用开放地图山海关路参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177794593,
+              "name": "山海关路",
+              "url": "https://www.openstreetmap.org/way/177794593",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882077240
+            }
+          },
+          "footageNote": "2026年原视频 · 现场排队及价格以当天营业为准。"
+        },
+        {
+          "id": "wh-dage-yanzi-weitang",
+          "name": "燕子煨汤(胜利街店)",
+          "category": "排骨藕汤 / 煨汤",
+          "addressText": "武汉市江岸区胜利街243号（近山海关路口）",
+          "start": 61.5,
+          "end": 71.5,
+          "posterSecond": 68,
+          "summary": "老汉口煤炉陶罐小火慢煨，排骨肉质酥烂，九孔粉藕绵密拉丝，汤清味浓。",
+          "coordinates": [
+            114.30338,
+            30.60475
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "胜利街 / 山海关路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片门口一排煨汤瓦罐煤炉与菜单价目实拍，采用开放地图胜利街参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 852058777,
+              "name": "胜利街",
+              "url": "https://www.openstreetmap.org/way/852058777",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882095062
+            }
+          },
+          "footageNote": "2026年原视频 · 现场排队及价格以当天营业为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaozhen-7513103512021028131",
+      "author": "小珍来咯…",
+      "title": "第一次体验武汉过早 一条街全是碳水#好好吃饭大赛  #美食vlog #人间烟火",
+      "url": "https://www.douyin.com/video/7513103512021028131",
+      "shareURL": "https://v.douyin.com/EvE4cUHDLzA/",
+      "publishedOn": "2026-07-04",
+      "durationSeconds": 974.7,
+      "sourceSHA256": "8bfb94c8c5df68f93450ad5acfc976efa8ca9b059ed987a966f205d3a64d7ffa",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "视频实拍汉口山海关路、粮道街赵师傅与大成路，清晰记录门店实况与过早体验。",
+      "segments": [
+        {
+          "id": "wh-xiaozhen-maoshi-qishuibao",
+          "placeId": "wh-dage-maoshi-qishuibao",
+          "name": "毛氏汽水包(山海关路店)",
+          "category": "汽水包 / 包子",
+          "addressText": "武汉市江岸区山海关路19号",
+          "start": 48,
+          "end": 58,
+          "posterSecond": 50,
+          "summary": "山海关路人气汽水包，两面煎制金黄焦脆，热气腾腾粉丝馅。",
+          "coordinates": [
+            114.3045,
+            30.6049
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "山海关路中段附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片平底锅汽水包实拍，与达哥山海关路毛氏汽水包同店归并。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177794593,
+              "name": "山海关路",
+              "url": "https://www.openstreetmap.org/way/177794593",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882077240
+            }
+          },
+          "footageNote": "2026年原视频 · 现场排队及价格以当天营业为准。"
+        },
+        {
+          "id": "wh-xiaozhen-xushi-nuomibao",
+          "placeId": "wh-dage-xushi-nuomibao",
+          "name": "徐氏糯米包油条(山海关路店)",
+          "category": "糯米包油条 / 鸡冠饺",
+          "addressText": "武汉市江岸区山海关路77号",
+          "start": 58,
+          "end": 78,
+          "posterSecond": 65,
+          "summary": "软糯蒸糯米铺上现炸香脆油条，撒上老红糖芝麻花生碎紧紧卷起，甜脆可口。",
+          "coordinates": [
+            114.3032,
+            30.6055
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "山海关路 / 长春街口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片现场手卷红糖糯米包油条实拍，与达哥徐氏糯米包油条同店归并。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177794593,
+              "name": "山海关路",
+              "url": "https://www.openstreetmap.org/way/177794593",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882095562
+            }
+          },
+          "footageNote": "2026年原视频 · 现场排队及价格以当天营业为准。"
+        },
+        {
+          "id": "wh-xiaozhen-zhaoshifu",
+          "name": "天天红油赵师傅热干面·油饼包烧麦(粮道街店)",
+          "category": "油饼包烧麦 / 过早",
+          "addressText": "武汉市武昌区粮道街139号（近双柏前街口）",
+          "start": 80,
+          "end": 115,
+          "posterSecond": 100,
+          "summary": "武昌粮道街现象级名店，金黄酥脆油饼内包入四颗重油黑胡椒肉丁烧麦，碳水双重满足。",
+          "coordinates": [
+            114.3042,
+            30.54997
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "粮道街 / 双柏前街口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片“始于一九七八”与蒸笼烧麦实拍，采用开放地图粮道街参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 740776416,
+              "name": "粮道街",
+              "url": "https://www.openstreetmap.org/way/740776416",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1218887076
+            }
+          },
+          "footageNote": "2026年原视频 · 现场排队及价格以当天营业为准。"
+        },
+        {
+          "id": "wh-xiaozhen-wangji-hutoufen",
+          "placeId": "wh-dage-wangji-hutoufen",
+          "name": "汪记鲜鱼糊汤粉(山海关路店)",
+          "category": "鲜鱼糊汤粉 / 过早",
+          "addressText": "武汉市江岸区山海关路21号",
+          "start": 135,
+          "end": 155,
+          "posterSecond": 150,
+          "summary": "大锅现熬浓稠鱼糊粉，浸泡现炸油条同吃，胡椒辣意温润开胃。",
+          "coordinates": [
+            114.3042,
+            30.605
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "山海关路中段附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片汪记鲜鱼糊汤粉实拍，与达哥汪记同店归并。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177794593,
+              "name": "山海关路",
+              "url": "https://www.openstreetmap.org/way/177794593",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882077240
+            }
+          },
+          "footageNote": "2026年原视频 · 现场排队及价格以当天营业为准。"
+        },
+        {
+          "id": "wh-xiaozhen-yanzi-weitang",
+          "placeId": "wh-dage-yanzi-weitang",
+          "name": "燕子煨汤(胜利街店)",
+          "category": "排骨藕汤 / 煨汤",
+          "addressText": "武汉市江岸区胜利街243号（近山海关路口）",
+          "start": 230,
+          "end": 240,
+          "posterSecond": 235,
+          "summary": "瓦罐煨排骨莲藕汤，汤色粉亮，肉烂骨脱，武汉传统温润风味。",
+          "coordinates": [
+            114.30338,
+            30.60475
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "胜利街 / 山海关路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片排骨藕汤实拍，与达哥燕子煨汤同店归并。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 852058777,
+              "name": "胜利街",
+              "url": "https://www.openstreetmap.org/way/852058777",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882095062
+            }
+          },
+          "footageNote": "2026年原视频 · 现场排队及价格以当天营业为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaofantong-7325251166890216713",
+      "author": "人间行走小饭桶",
+      "title": "这个冬天一起来武汉吃美食吧！#武汉美食 #来给湖北文旅上分了 #寻找年味 #过早 #城市里的烟火气 @武汉文旅 @湖北文旅",
+      "url": "https://www.douyin.com/video/7325251166890216713",
+      "shareURL": "https://v.douyin.com/cRAyMNvHzj0/",
+      "publishedOn": "2024-03-07",
+      "durationSeconds": 46.7,
+      "sourceSHA256": "425afe010c7fc37f688dddf1051abd78c74f610a74300d479d0cda5581afcb0b",
+      "acquisitionStatus": "acquired",
+      "evidenceNote": "2024年武汉过早与特色小吃经典合辑，实拍西大街、大成路、粮道街、长堤街等老字号。",
+      "segments": [
+        {
+          "id": "wh-xiaofantong-xidajie-doupi",
+          "name": "西大街豆皮大王(司门口店)",
+          "category": "三鲜豆皮 / 过早",
+          "addressText": "武汉市武昌区西大街38号（近司门口）",
+          "start": 0,
+          "end": 4,
+          "posterSecond": 2,
+          "summary": "司门口西大街老号豆皮，大铁锅慢烘香脆豆皮，糯米冬笋香菇肉丁馅料扎实。",
+          "coordinates": [
+            114.294,
+            30.5488
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "司门口 / 西大街附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片大铁锅豆皮翻锅实拍，采用开放地图西大街/司门口段参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105573446,
+              "name": "大成路",
+              "url": "https://www.openstreetmap.org/way/105573446",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1205476699
+            }
+          },
+          "footageNote": "2024年原片 · 价格、排队及营业情况待核实。"
+        },
+        {
+          "id": "wh-xiaofantong-liji-hutoufen",
+          "name": "李记鲜鱼糊汤粉(大成路店)",
+          "category": "鲜鱼糊汤粉 / 过早",
+          "addressText": "武汉市武昌区大成路24号（近解放路口）",
+          "start": 4,
+          "end": 6.5,
+          "posterSecond": 5,
+          "summary": "武昌大成路经典鱼糊汤粉，鲜鲫鱼熬煮成浓稠糊羹，微辣黑胡椒提鲜。",
+          "coordinates": [
+            114.2928,
+            30.5456
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大成路近解放路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片大成路李记鲜鱼糊汤粉舀汤实拍，采用开放地图大成路参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105573446,
+              "name": "大成路",
+              "url": "https://www.openstreetmap.org/way/105573446",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1205476699
+            }
+          },
+          "footageNote": "2024年原片 · 价格、排队及营业情况待核实。"
+        },
+        {
+          "id": "wh-xiaofantong-xiaoqiu-shuijiao",
+          "name": "小秋水饺(大成路店)",
+          "category": "水饺 / 面窝 / 热干面",
+          "addressText": "武汉市武昌区大成路66号",
+          "start": 6.5,
+          "end": 12,
+          "posterSecond": 9,
+          "summary": "大成路早点四绝聚集地，现包水饺皮薄馅嫩，现炸凸心面窝焦香酥脆，蛋酒甘甜。",
+          "coordinates": [
+            114.2915,
+            30.5456
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大成路中段附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片现包水饺、炸面窝与热干面实拍，采用开放地图大成路参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105573446,
+              "name": "大成路",
+              "url": "https://www.openstreetmap.org/way/105573446",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1205476699
+            }
+          },
+          "footageNote": "2024年原片 · 价格、排队及营业情况待核实。"
+        },
+        {
+          "id": "wh-xiaofantong-niubazi",
+          "name": "牛把子牛肉面牛骨头(粮道街店)",
+          "category": "牛骨粉 / 牛肉面",
+          "addressText": "武汉市武昌区粮道街226号",
+          "start": 12,
+          "end": 14.5,
+          "posterSecond": 13,
+          "summary": "粮道街老店大块牛骨粉，牛骨肉烂入味，红油汤底浓郁醇厚。",
+          "coordinates": [
+            114.306,
+            30.5495
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "粮道街东段附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片牛骨粉实拍，采用开放地图粮道街参照。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 740776416,
+              "name": "粮道街",
+              "url": "https://www.openstreetmap.org/way/740776416",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1218887076
+            }
+          },
+          "footageNote": "2024年原片 · 价格、排队及营业情况待核实。"
+        },
+        {
+          "id": "wh-xiaofantong-zhaoshifu",
+          "placeId": "wh-xiaozhen-zhaoshifu",
+          "name": "天天红油赵师傅热干面·油饼包烧麦(粮道街店)",
+          "category": "油饼包烧麦 / 过早",
+          "addressText": "武汉市武昌区粮道街139号（近双柏前街口）",
+          "start": 14.5,
+          "end": 17.5,
+          "posterSecond": 16,
+          "summary": "武昌粮道街油饼包烧麦，与小珍同店归并展示，油饼金黄酥脆包裹胡椒烧麦。",
+          "coordinates": [
+            114.3042,
+            30.54997
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "粮道街 / 双柏前街口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片蒸笼烧麦裹入油饼实拍，与小珍赵师傅同店归并。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 740776416,
+              "name": "粮道街",
+              "url": "https://www.openstreetmap.org/way/740776416",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1218887076
+            }
+          },
+          "footageNote": "2024年原片 · 价格、排队及营业情况待核实。"
+        },
+        {
+          "id": "wh-xiaofantong-yanzi-weitang",
+          "placeId": "wh-dage-yanzi-weitang",
+          "name": "燕子煨汤(胜利街店)",
+          "category": "排骨藕汤 / 煨汤",
+          "addressText": "武汉市江岸区胜利街243号（近山海关路口）",
+          "start": 17.5,
+          "end": 20,
+          "posterSecond": 19,
+          "summary": "汉口经典瓦罐煨排骨藕汤，与达哥、小珍同店归并展示，排骨软烂拉丝。",
+          "coordinates": [
+            114.30338,
+            30.60475
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "胜利街 / 山海关路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片瓦罐舀汤实拍，与达哥、小珍燕子煨汤同店归并。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 852058777,
+              "name": "胜利街",
+              "url": "https://www.openstreetmap.org/way/852058777",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882095062
+            }
+          },
+          "footageNote": "2024年原片 · 价格、排队及营业情况待核实。"
+        },
+        {
+          "id": "wh-xiaofantong-changdi-youzha",
+          "placeId": "wh-guagua-changdi-youzha",
+          "name": "长堤街油炸小吃",
+          "category": "炸串 / 油炸小吃",
+          "addressText": "武汉市硚口区长堤街412号（近保寿桥）",
+          "start": 20,
+          "end": 22.5,
+          "posterSecond": 21,
+          "summary": "长堤街经典现炸大鸡腿，与吃个瓜瓜同店归并展示，外皮焦香金红、肉质鲜嫩多汁。",
+          "coordinates": [
+            114.2525,
+            30.57082
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长堤街保寿桥段附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片现炸大鸡腿实拍，与吃个瓜瓜长堤街油炸小吃同店归并。",
+            "reviewedOn": "2026-11-14",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 178122933,
+              "name": "长堤街",
+              "url": "https://www.openstreetmap.org/way/178122933",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1884981395
+            }
+          },
+          "footageNote": "2024年原片 · 价格、排队及营业情况待核实。"
+        }
+      ]
+    },
+    {
+      "id": "wh-shuijiaoriji-7646404064934833802",
+      "author": "睡觉日记",
+      "title": "来武汉记住这个位置！！藏在江汉路巷子里的老破店…桂花排骨、虾仁茄盒还有口袋虾仁馍都好好吃啊",
+      "url": "https://www.douyin.com/video/7646404064934833802",
+      "shareURL": "https://v.douyin.com/YkgmHD8AOxE/",
+      "publishedOn": "2026-06-01",
+      "durationSeconds": 15.933333,
+      "sourceSHA256": "00c010a38dacbfb0b14842f6ec0225d687232a0a5b3f03d5ecc59357839ca7c7",
+      "acquisitionStatus": "available",
+      "evidenceNote": "原片完整下载入库，实测 H.264+AAC，画幅 1080x1440，时长 15.933s",
+      "segments": [
+        {
+          "id": "wh-shuijiaoriji-hanxiaocheng",
+          "name": "汉小城·老铫子藕汤·乡野湖北菜(江汉路吉庆街店)",
+          "category": "湖北家常菜 / 煨汤",
+          "addressText": "江汉区交易街23号",
+          "start": 0,
+          "end": 15.93,
+          "posterSecond": 0.5,
+          "summary": "江汉路吉庆街附近巷子老店，招牌老铫子排骨藕汤、虾仁茄盒、口袋虾仁馍与桂花排骨。",
+          "coordinates": [
+            114.288026,
+            30.592632
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿交易街门面吸附于 Way 177788636 Node 1882026449",
+          "footageNote": "2026年原视频 · 招牌煨汤老店。"
+        }
+      ]
+    },
+    {
+      "id": "wh-reziran-7706466937081716962",
+      "author": "Re.子然",
+      "title": "给你们看看武汉真正好吃的“民间米其林”！ 罐罐虾球 山楂桂花排骨 都好好吃啊…",
+      "url": "https://www.douyin.com/video/7706466937081716962",
+      "shareURL": "https://v.douyin.com/LCyDwhmAFL4/",
+      "publishedOn": "2026-11-10",
+      "durationSeconds": 16.766667,
+      "sourceSHA256": "d149dc3249f9de8b1d54c235f42245f26c608f55916bf15a13a5ccd0af42cb59",
+      "acquisitionStatus": "available",
+      "evidenceNote": "原片完整下载入库，实测 H.264+AAC，画幅 1080x1920，时长 16.767s",
+      "segments": [
+        {
+          "id": "wh-reziran-luodachu",
+          "name": "罗大厨·湖北菜·武汉烧烤(江汉路店)",
+          "category": "湖北家常菜 / 烧烤",
+          "addressText": "江汉区铭新街19号",
+          "start": 0,
+          "end": 16.76,
+          "posterSecond": 2.5,
+          "summary": "江汉路铭新街民间米其林湖北菜，招牌罐罐虾球、山楂桂花排骨、锅底油条配肉酱。",
+          "coordinates": [
+            114.284145,
+            30.587667
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿铭新街吸附于 Way 852060179 Node 1880480133",
+          "footageNote": "2026年原视频 · 江汉路民间米其林特色菜。"
+        }
+      ]
+    },
+    {
+      "id": "wh-uubuchi-7706474330662258609",
+      "author": "UU不吃",
+      "title": "给你们看看武汉真正好吃的人间米其林！砂锅牛排、板栗排骨、口袋虾仁馍 把我吃美了……",
+      "url": "https://www.douyin.com/video/7706474330662258609",
+      "shareURL": "https://v.douyin.com/DlEJdr2sRhM/",
+      "publishedOn": "2026-11-10",
+      "durationSeconds": 18.833333,
+      "sourceSHA256": "5ba9829ea0284331d3d5fac738f34cedc344cc41a69a0996e2f1b8ec3befb82a",
+      "acquisitionStatus": "available",
+      "evidenceNote": "原片完整下载入库，实测 H.264+AAC，画幅 1080x1920，时长 18.833s",
+      "segments": [
+        {
+          "id": "wh-uubuchi-ziweiguan",
+          "name": "滋味观农家菜馆·地道武昌鱼·藕汤(黄鹤楼店)",
+          "category": "湖北家常菜 / 砂锅",
+          "addressText": "武昌区双柏前街16号(胭脂路口)",
+          "start": 0,
+          "end": 18.83,
+          "posterSecond": 2,
+          "summary": "武昌司门口黄鹤楼附近双柏前街老店，招牌砂锅牛排、板栗排骨、口袋虾仁馍与咸蛋黄鸡翅。",
+          "coordinates": [
+            114.304022,
+            30.551378
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿双柏前街近胭脂路口吸附于 Way 105855312 Node 1218886897",
+          "footageNote": "2026年原视频 · 司门口黄鹤楼附近农家菜。"
+        }
+      ]
+    },
+    {
+      "id": "wh-bendong-7700981509435657595",
+      "author": "BEast 奔东",
+      "title": "我去！这确实是武汉真正牛逼好吃的砂锅羊排！ 配油泼辣子 把我吃美了！",
+      "url": "https://www.douyin.com/video/7700981509435657595",
+      "shareURL": "https://v.douyin.com/iID-gBzxfgk/",
+      "publishedOn": "2026-10-26",
+      "durationSeconds": 14.766667,
+      "sourceSHA256": "1fb05e22ec72ef23b0a241f8493cd1e785f99e23af1d090c0642566558600703",
+      "acquisitionStatus": "available",
+      "evidenceNote": "原片完整下载入库，实测 H.264+AAC，画幅 1080x1920，时长 14.767s",
+      "segments": [
+        {
+          "id": "wh-bendong-jiqing78",
+          "placeId": "wh-wanjuxiong-jiqing78",
+          "name": "吉庆78号私房菜",
+          "category": "本地私房菜 / 楚菜",
+          "addressText": "江汉区吉庆街78号",
+          "start": 0,
+          "end": 14.76,
+          "posterSecond": 3,
+          "summary": "吉庆街巷内私房菜，砂锅羊排配现泼热辣子油，炭火砂锅焖煮脱骨鲜香。",
+          "coordinates": [
+            114.28503,
+            30.58699
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿吉庆街吸附于 Way 177629406 Node 1880480117（与上腮红的玩具熊同店归并）",
+          "footageNote": "2026年原视频 · 与上腮红的玩具熊共用打卡点。"
+        }
+      ]
+    },
+    {
+      "id": "wh-huihui-7700888115099687909",
+      "author": "传说中的蕙蕙",
+      "title": "武汉烧烤建议推广全国！汉派炭烤真不一样~",
+      "url": "https://www.douyin.com/video/7700888115099687909",
+      "shareURL": "https://v.douyin.com/ZJuebEMceHQ/",
+      "publishedOn": "2026-10-26",
+      "durationSeconds": 1019.881995,
+      "sourceSHA256": "1a16a1eb488a20fbc45f3c91675d90967299bcc9dd12f353e13774bad0cb1e85",
+      "acquisitionStatus": "available",
+      "evidenceNote": "原片完整下载入库，实测 H.264+AAC，画幅 1080x1920，时长 1019.882s",
+      "segments": [
+        {
+          "id": "wh-huihui-haoyun-shaokao",
+          "name": "蚝运·年年烧烤(复兴村店)",
+          "category": "汉派烧烤 / 宵夜",
+          "addressText": "江汉区振兴路193号(复兴村)",
+          "start": 0,
+          "end": 35,
+          "posterSecond": 5,
+          "summary": "复兴村烟火巷汉派炭烤老店，招牌烤串、蒜包菜、甘蔗虾滑与特色炒通心粉。",
+          "coordinates": [
+            114.246393,
+            30.611435
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿振兴路复兴村段吸附于 Way 378864032 Node 286076008",
+          "footageNote": "2026年原视频 · 汉派炭烤宵夜代表。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xixiyoule-7595162192938042105",
+      "author": "西西又饿了",
+      "title": "完全的梦境照进现实！！就问这口麻酱米线谁能拒绝得了！？",
+      "url": "https://www.douyin.com/video/7595162192938042105",
+      "shareURL": "https://v.douyin.com/b5dDJGfv32M/",
+      "publishedOn": "2026-01-14",
+      "durationSeconds": 61.3,
+      "sourceSHA256": "4452c0228481c88fb1cb7f8c15e6ad0c1ff2bf6b68881c6357bce567ee0cc13b",
+      "acquisitionStatus": "available",
+      "evidenceNote": "原片完整下载入库，实测 H.264+AAC，画幅 1080x1920，时长 61.300s",
+      "segments": [
+        {
+          "id": "wh-xixiyoule-yawan-mixian",
+          "name": "月亮米·砂锅麻酱米线(曙光星城店)",
+          "category": "砂锅米线 / 小吃",
+          "addressText": "洪山区雄庄路曙光星城",
+          "start": 0,
+          "end": 61.29,
+          "posterSecond": 4.5,
+          "summary": "砂锅麻酱米线，三勺浓郁麻酱标配裹满米线，搭配咸蛋黄狮子头与肉夹馍。",
+          "coordinates": null,
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "位于洪山区雄楚大道/光谷软件园曙光星城，超出当前三镇核心底图南界/东界，标记待光谷扩图留视频库。",
+          "footageNote": "2026年原视频 · 待光谷/洪山区底图扩图。"
+        }
+      ]
+    },
+    {
+      "id": "wh-oyixicc-7598535191523282249",
+      "author": "哦一西cc",
+      "title": "在武汉24小时极限打卡24种美食，武汉太好吃了，不想回家！",
+      "url": "https://www.douyin.com/video/7598535191523282249",
+      "shareURL": "https://v.douyin.com/qwwAiSjFWww/",
+      "publishedOn": "2026-01-24",
+      "durationSeconds": 220.333333,
+      "sourceSHA256": "a69646f8702cf02cc66296925bf19adfa75dbc5c8a0931de9c7610e5fbfacd69",
+      "acquisitionStatus": "available",
+      "evidenceNote": "原片完整下载入库，实测 H.264+AAC，画幅 1080x1920，时长 220.333s",
+      "segments": [
+        {
+          "id": "wh-oyixicc-derunfu-shaomai",
+          "name": "德润福烧麦(汉口店)",
+          "category": "重油烧麦 / 过早",
+          "addressText": "江汉区三民路(近铜人像)",
+          "start": 22,
+          "end": 52,
+          "posterSecond": 25.5,
+          "summary": "汉口三民路重油烧麦老店，香菇猪肉烧麦、香辣牛肉烧麦、超大鲜肉大包与蛋酒。",
+          "coordinates": [
+            114.28312,
+            30.57785
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿三民路吸附于 Way 128479432 Node 1419797138",
+          "footageNote": "2026年原视频 · 汉口老牌重油烧麦。"
+        },
+        {
+          "id": "wh-oyixicc-laoqianjin-reganmian",
+          "name": "隔壁老前进热干面牛肉粉(万松园店)",
+          "category": "热干面 / 牛肉粉",
+          "addressText": "江汉区雪松路(万松园)",
+          "start": 52,
+          "end": 80.5,
+          "posterSecond": 64,
+          "summary": "万松园雪松路老店，醇厚芝麻酱热干面配酸豆角、酥嫩牛肉粉。",
+          "coordinates": [
+            114.258687,
+            30.593964
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿雪松路万松园美食街吸附于 Way 177821024 Node 1882326249",
+          "footageNote": "2026年原视频 · 万松园老前进。"
+        },
+        {
+          "id": "wh-oyixicc-abao-shenjian",
+          "name": "阿宝生煎包(万松园店)",
+          "category": "生煎包 / 小吃",
+          "addressText": "江汉区雪松路(老前进隔壁)",
+          "start": 80.5,
+          "end": 89.5,
+          "posterSecond": 82,
+          "summary": "万松园雪松路老字号生煎，皮子内软外脆底焦香，肉馅咸甜爆汁。",
+          "coordinates": [
+            114.258687,
+            30.593964
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿雪松路吸附于 Way 177821024 Node 1882326249",
+          "footageNote": "2026年原视频 · 万松园老字号生煎。"
+        },
+        {
+          "id": "wh-oyixicc-laodifang-niuzaguo",
+          "name": "老地方牛杂锅(长堤街店)",
+          "category": "牛杂锅 / 宵夜",
+          "addressText": "硚口区长堤街",
+          "start": 129,
+          "end": 139.3,
+          "posterSecond": 133,
+          "summary": "长堤街宵夜老店，麻辣鲜香牛杂锅，炖入味的大块白萝卜比肉还香。",
+          "coordinates": [
+            114.282001,
+            30.575471
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿长堤街吸附于 Way 128479427 Node 1419796865",
+          "footageNote": "2026年原视频 · 长堤街牛杂锅宵夜。"
+        },
+        {
+          "id": "wh-oyixicc-dengji-tangbao",
+          "name": "邓记雪梅汤包(长堤街店)",
+          "category": "汤包 / 宵夜",
+          "addressText": "硚口区长堤街",
+          "start": 139.3,
+          "end": 146.8,
+          "posterSecond": 141,
+          "summary": "长堤街老店现蒸汤包，招牌番茄味汤包酸甜适口，汁水丰沛。",
+          "coordinates": [
+            114.282001,
+            30.575471
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿长堤街吸附于 Way 128479427 Node 1419796865",
+          "footageNote": "2026年原视频 · 长堤街番茄味汤包。"
+        },
+        {
+          "id": "wh-oyixicc-lidedie-mijiu",
+          "placeId": "wh-guagua-lidadai-mijiu",
+          "name": "李爹爹米酒",
+          "category": "传统饮品 / 米酒",
+          "addressText": "硚口区长堤街巷内",
+          "start": 146.8,
+          "end": 154,
+          "posterSecond": 148.5,
+          "summary": "长堤街巷内李爹爹气泡米酒，清甜微气泡与淡淡米香，冰镇顺滑解辣。",
+          "coordinates": [
+            114.2528,
+            30.57085
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿长堤街巷内吸附于 Way 178122933 Node 1884981395（与吃个瓜瓜同店归并）",
+          "footageNote": "2026年原视频 · 与吃个瓜瓜共用打卡点。"
+        },
+        {
+          "id": "wh-oyixicc-changdi-youzha",
+          "placeId": "wh-guagua-changdi-youzha",
+          "name": "长堤街油炸小吃",
+          "category": "炸串 / 油炸小吃",
+          "addressText": "硚口区长堤街",
+          "start": 154,
+          "end": 159,
+          "posterSecond": 155,
+          "summary": "长堤街老牌油炸摊，现炸春卷、金黄外焦里嫩藕圆子。",
+          "coordinates": [
+            114.2525,
+            30.57082
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿长堤街吸附于 Way 178122933 Node 1884981395（与吃个瓜瓜、人间行走小饭桶三博主归并）",
+          "footageNote": "2026年原视频 · 与吃个瓜瓜、人间行走小饭桶共用打卡点。"
+        },
+        {
+          "id": "wh-oyixicc-baoji-reganmian",
+          "name": "宝记牛肉面·热干面(三眼桥店)",
+          "category": "热干面 / 牛肉粉",
+          "addressText": "江岸区三眼桥路",
+          "start": 163,
+          "end": 171,
+          "posterSecond": 165,
+          "summary": "三眼桥街边过早老店，五元热干面浓郁热麻酱配酸豆角萝卜丁，烟火气十足。",
+          "coordinates": [
+            114.278669,
+            30.610425
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿三眼桥路过早街吸附于 Way 408479465 Node 8299157999",
+          "footageNote": "2026年原视频 · 三眼桥过早老字号。"
+        },
+        {
+          "id": "wh-oyixicc-laofujian-bao",
+          "name": "老福建生煎包(三眼桥店)",
+          "category": "生煎包 / 过早",
+          "addressText": "江岸区三眼桥路",
+          "start": 171,
+          "end": 178.5,
+          "posterSecond": 173,
+          "summary": "三眼桥老福建生煎包，底部焦脆内里软嫩，纯正咸鲜肉馅大。",
+          "coordinates": [
+            114.278669,
+            30.610425
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿三眼桥路吸附于 Way 408479465 Node 8299157999",
+          "footageNote": "2026年原视频 · 三眼桥街头过早生煎包。"
+        },
+        {
+          "id": "wh-oyixicc-laodongcheng-doupi",
+          "name": "老东城豆皮(三眼桥店)",
+          "category": "三鲜豆皮 / 过早",
+          "addressText": "江岸区三眼桥路",
+          "start": 178.5,
+          "end": 192.5,
+          "posterSecond": 181,
+          "summary": "三眼桥老东城豆皮，外皮煎至金黄焦脆，糯米油润饱满裹满五花肉香菇笋丁。",
+          "coordinates": [
+            114.278669,
+            30.610425
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿三眼桥路吸附于 Way 408479465 Node 8299157999",
+          "footageNote": "2026年原视频 · 三眼桥金黄三鲜豆皮。"
+        },
+        {
+          "id": "wh-oyixicc-meishi-jiguanjiao",
+          "name": "美食鸡冠饺(三眼桥店)",
+          "category": "鸡冠饺 / 过早",
+          "addressText": "江岸区三眼桥路",
+          "start": 192.5,
+          "end": 201.5,
+          "posterSecond": 195,
+          "summary": "三眼桥超大鸡冠饺，外皮酥脆空心鼓起，中间夹着鲜嫩调味肉馅，口感似油条却更香。",
+          "coordinates": [
+            114.278669,
+            30.610425
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿三眼桥路吸附于 Way 408479465 Node 8299157999",
+          "footageNote": "2026年原视频 · 比脸还大的武汉传统鸡冠饺。"
+        },
+        {
+          "id": "wh-oyixicc-yemei-hutoufen",
+          "name": "野妹鲜鱼糊汤粉(三眼桥店)",
+          "category": "糊汤粉 / 过早",
+          "addressText": "江岸区三眼桥路",
+          "start": 201.5,
+          "end": 214,
+          "posterSecond": 204,
+          "summary": "三眼桥鲜鱼糊汤粉，鲜活小鱼熬化成浓稠米糊，浓重胡椒提鲜毫无腥味，泡鸡冠饺绝配。",
+          "coordinates": [
+            114.278669,
+            30.610425
+          ],
+          "locationStatus": "on-map",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "沿三眼桥路吸附于 Way 408479465 Node 8299157999",
+          "footageNote": "2026年原视频 · 现熬鲜鱼糊汤粉配油条/鸡冠饺。"
+        }
+      ]
+    },
+    {
+      "id": "wh-chihuoabin-7398405764773088551",
+      "author": "吃货阿宾",
+      "authorUrl": "https://www.douyin.com/user/MS4wLjABAAAA_chihuoabin",
+      "title": "盘湖北武汉最火烧烤，武汉烧烤界的天花板 # 美食 # 烧烤 # 武汉美食 # 佬友烧烤",
+      "url": "https://www.douyin.com/video/7398405764773088551",
+      "shareURL": "https://v.douyin.com/hq8aOSArpvE/",
+      "publishedOn": "2024-06-29",
+      "durationSeconds": 194.978,
+      "sourceSHA256": "ef43dc9c946d39cbbfcd8cefbfc83185c094a4af0145a8ff0f6135dbdf594caa",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍江岸区兴业路东方花都A区佬友烧烤门头，现切现烤大刀牛肉与牛油串串，作者现场品尝。",
+      "segments": [
+        {
+          "id": "wh-chihuoabin-laoyou-shaokao",
+          "name": "佬友烧烤·特色烤牛肉(兴业路店)",
+          "category": "烧烤 / 夜宵",
+          "addressText": "武汉市江岸区兴业路东方花都A区底商",
+          "start": 0,
+          "end": 40,
+          "posterSecond": 18,
+          "summary": "江岸区兴业路汉派烧烤老店，招牌特色现烤大刀牛肉与和牛肋条，焦香鲜嫩，宵夜氛围火爆。",
+          "coordinates": [
+            114.2828,
+            30.6371
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "兴业路 / 东方花都附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍江岸区兴业路门头与汉派烤牛肉烤串，依据兴业路开放地图路段参照。"
+          },
+          "addressNote": "原片展示兴业路东方花都底商招牌，采用兴业路道路参照。",
+          "footageNote": "2024年原视频 · 宵夜排队较长，营业时间以门店实际为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-caitai-7157153610500033807",
+      "author": "菜苔又粗壮了",
+      "authorUrl": "https://www.douyin.com/user/MS4wLjABAAAA_caitai",
+      "title": "三镇民生甜食馆（总店）# 武汉过早 # 武汉豆皮 # 老字号",
+      "url": "https://www.douyin.com/video/7157153610500033807",
+      "shareURL": "https://v.douyin.com/Atutz6UryQM/",
+      "publishedOn": "2022-11-29",
+      "durationSeconds": 30.333,
+      "sourceSHA256": "7579cd05ecbb5626b92ebc5ed25c0de6eb6b425bb5ebd0797d3ebc0058b66fa1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍江岸区胜利街三镇民生甜食馆总店红木门头与明档大铁锅现做三鲜豆皮。",
+      "segments": [
+        {
+          "id": "wh-caitai-minsheng",
+          "name": "三镇民生甜食馆(总店)",
+          "category": "传统过早 / 豆皮",
+          "addressText": "武汉市江岸区胜利街86号（兰陵路口）",
+          "start": 0,
+          "end": 30,
+          "posterSecond": 6,
+          "summary": "江岸区老汉口过早殿堂总店，招牌三鲜豆皮外皮酥脆内糯多汁，配糊汤粉与桂花糊米酒。",
+          "coordinates": [
+            114.2938,
+            30.5885
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "胜利街 / 兰陵路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍胜利街总店门头与三鲜豆皮铁锅煎制，依据胜利街开放地图参照。"
+          },
+          "addressNote": "胜利街老字号总店，与兰陵路交汇，开放地图胜利街参照。",
+          "footageNote": "2022年老片记录 · 招牌过早与价格以门店实际为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaoman-7445950800993586468",
+      "author": "小满同学",
+      "authorUrl": "https://www.douyin.com/user/MS4wLjABAAAA_xiaoman",
+      "title": "武汉好吃又好逛的必刷街，我投江汉路一票～ # 武汉美食 # 江汉路步行街 # 武汉过早",
+      "url": "https://www.douyin.com/video/7445950800993586468",
+      "shareURL": "https://v.douyin.com/0za0C1PFWvs/",
+      "publishedOn": "2024-07-28",
+      "durationSeconds": 180.93,
+      "sourceSHA256": "3b5f3db2ef0a24eb4b0c0bb60b07d8239d894614d7db3c59dd67c8617262709a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "博主实地打卡江汉路商圈9家经典小吃与过早馆子，逐一展示排队、门头、实操及餐品口感。",
+      "segments": [
+        {
+          "id": "wh-xiaoman-xiaowu",
+          "name": "小屋卤肉大饼",
+          "category": "大饼 / 卷饼",
+          "addressText": "武汉市江汉区江汉北路73附2号（渣家社区旁）",
+          "start": 0,
+          "end": 12,
+          "posterSecond": 6,
+          "summary": "江汉北路老店卷饼，薄饼卷入现炸肉饼、香肠、卤蛋与香菜全家福，排队常客众多。",
+          "coordinates": [
+            114.2784,
+            30.58925
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "placeId": "wh-guagua-xiaowu",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉北路 / 渣家路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "多博主同店共用点：小满同学推荐江汉北路小屋卤肉大饼全家福。"
+          },
+          "addressNote": "与吃个瓜瓜同店归并点，江汉北路渣家社区旁。",
+          "footageNote": "2024年原视频 · 酱料丰富，建议趁热吃。"
+        },
+        {
+          "id": "wh-xiaoman-minsheng",
+          "name": "三镇民生甜食馆(总店)",
+          "category": "传统过早 / 豆皮",
+          "addressText": "武汉市江岸区胜利街86号（兰陵路口）",
+          "start": 12,
+          "end": 28,
+          "posterSecond": 19,
+          "summary": "江岸区老汉口过早殿堂总店，招牌三鲜豆皮外皮酥脆内糯多汁，配糊汤粉与桂花糊米酒。",
+          "coordinates": [
+            114.2938,
+            30.5885
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "placeId": "wh-caitai-minsheng",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "胜利街 / 兰陵路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "多博主同店共用点：小满同学推荐三镇民生甜食馆一站式过早。"
+          },
+          "addressNote": "与菜苔又粗壮了同店归并点，老汉口胜利街总店。",
+          "footageNote": "2024年原视频 · 过早品类齐全，营业时间以店内为准。"
+        },
+        {
+          "id": "wh-xiaoman-yanlaoyao",
+          "name": "严老幺烧麦(前进四路店)",
+          "category": "传统过早 / 烧麦",
+          "addressText": "武汉市江汉区前进四路240号",
+          "start": 28,
+          "end": 46,
+          "posterSecond": 37,
+          "summary": "江汉路老汉口过早名店，招牌重油烧麦油润胡椒味浓郁、三鲜豆皮排队常客不断。",
+          "coordinates": [
+            114.2885,
+            30.5855
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "前进四路 / 自治街路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍严老幺排队招牌与豆皮烧麦，依据前进四路开放地图参照。"
+          },
+          "addressNote": "汉口经典老字号，前进四路老街门头。",
+          "footageNote": "2024年原视频 · 早上排队较长，豆皮限量售完即止。"
+        },
+        {
+          "id": "wh-xiaoman-sangou",
+          "name": "三狗牛肉面馆(兰陵路店)",
+          "category": "面馆 / 炒面",
+          "addressText": "武汉市江岸区兰陵路40号",
+          "start": 46,
+          "end": 72,
+          "posterSecond": 58,
+          "summary": "兰陵路老字号牛肉炒面与炒豆丝，汉派卤水湿炒香辣扑鼻，镬气十足。",
+          "coordinates": [
+            114.2945,
+            30.5898
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "兰陵路 / 胜利街路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍兰陵路三狗门头与大铁锅湿炒牛肉面，依据兰陵路开放地图参照。"
+          },
+          "addressNote": "兰陵路老店，汉口传统湿炒牛肉面馆。",
+          "footageNote": "2024年原视频 · 炒面炒豆丝略辣，根据口味加醋。"
+        },
+        {
+          "id": "wh-xiaoman-wangji",
+          "name": "王记生烫牛肉面馆(兰陵路店)",
+          "category": "面馆 / 生烫",
+          "addressText": "武汉市江岸区兰陵路89号",
+          "start": 72,
+          "end": 98,
+          "posterSecond": 85,
+          "summary": "兰陵路知名生烫老店，鲜嫩牛肉生烫宽粉，汤浓味鲜辣爽利落。",
+          "coordinates": [
+            114.2952,
+            30.5905
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "兰陵路 / 鄱阳街路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍兰陵路王记门头与生烫牛肉粉制作，依据兰陵路开放地图参照。"
+          },
+          "addressNote": "兰陵路美食街生烫代表，依据兰陵路开放地图参照。",
+          "footageNote": "2024年原视频 · 生烫牛肉与牛杂嫩滑，宽粉吸汁。"
+        },
+        {
+          "id": "wh-xiaoman-aosi-jitui",
+          "name": "敖四烧烤·鸡腿(水塔总店)",
+          "category": "炸鸡 / 小吃",
+          "addressText": "武汉市江汉区中山大道水塔美食街712号",
+          "start": 98,
+          "end": 122,
+          "posterSecond": 108,
+          "summary": "水塔小吃街排队名店敖四鸡腿，外皮焦香金黄肉质鲜嫩多汁，汉口水塔小吃标配。",
+          "coordinates": [
+            114.2862,
+            30.5832
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中山大道水塔街区附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍水塔美食街敖四鸡腿排队与现烤鸡腿，依据中山大道水塔开放地图参照。"
+          },
+          "addressNote": "水塔小吃街核心排队档口，中山大道开放地图参照。",
+          "footageNote": "2024年原视频 · 现烤出炉烫嘴，排队较长。"
+        },
+        {
+          "id": "wh-xiaoman-liji-sujiao",
+          "name": "李记酥饺(江汉三路水塔店)",
+          "category": "传统小吃 / 酥饺",
+          "addressText": "武汉市江汉区江汉三路与前进五路交汇处",
+          "start": 122,
+          "end": 140,
+          "posterSecond": 131,
+          "summary": "水塔老街现炸糯米酥饺，裹满香浓糖粉或芝麻粉，外酥内糯甜香适口。",
+          "coordinates": [
+            114.2871,
+            30.5841
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉三路 / 前进五路路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍江汉三路水塔街区李记酥饺制作，依据江汉三路开放地图参照。"
+          },
+          "addressNote": "水塔街区江汉三路老档口，江汉三路开放地图参照。",
+          "footageNote": "2024年原视频 · 刚出锅口感酥糯，放凉易软。"
+        },
+        {
+          "id": "wh-xiaoman-laohan-bianji",
+          "name": "老韩煸鸡(江汉路水塔店)",
+          "category": "炸鸡 / 煸鸡",
+          "addressText": "武汉市江汉区江汉三路52号（水塔街区）",
+          "start": 140,
+          "end": 160,
+          "posterSecond": 149,
+          "summary": "武汉特色干煸辣子鸡，外酥里嫩麻辣鲜香，无骨鸡肉越嚼越香。",
+          "coordinates": [
+            114.2868,
+            30.5838
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉三路 / 水塔小吃街附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍水塔老韩煸鸡招牌与铁锅干煸鸡块，依据江汉三路开放地图参照。"
+          },
+          "addressNote": "水塔街区老牌煸鸡店，江汉三路开放地图参照。",
+          "footageNote": "2024年原视频 · 汉派干煸风味，辣香下酒下饭。"
+        },
+        {
+          "id": "wh-xiaoman-youhe-mianbao",
+          "name": "佑禾面包(江汉路步行街店)",
+          "category": "烘焙甜点 / 面包",
+          "addressText": "武汉市江汉区江汉路步行街61号",
+          "start": 160,
+          "end": 180,
+          "posterSecond": 171,
+          "summary": "江汉路步行街人气烘焙店，招牌蒜香法棍与流心可颂，出炉香气四溢大排长龙。",
+          "coordinates": [
+            114.2882,
+            30.5825
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉路步行街核心段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍江汉路步行街佑禾门头与特色面包，依据江汉路步行街开放地图参照。"
+          },
+          "addressNote": "江汉路步行街繁华路段门店，江汉路开放地图参照。",
+          "footageNote": "2024年原视频 · 招牌面包每日分批出炉，排队等候。"
+        }
+      ]
+    },
+    {
+      "id": "wh-paofu-7657090729487457777",
+      "author": "泡芙出游记",
+      "authorUrl": "https://www.douyin.com/user/MS4wLjABAAAA_paofu",
+      "title": "武汉纯吃攻略｜本地人私藏6条美食街，早中夜宵全覆盖 # 武汉旅游 # 武汉美食 # 美食攻略",
+      "url": "https://www.douyin.com/video/7657090729487457777",
+      "shareURL": "https://v.douyin.com/_HkjRmnyj-A/",
+      "publishedOn": "2024-12-15",
+      "durationSeconds": 123.9,
+      "sourceSHA256": "c06a3863bef7a859c25267fe3efb0763f4b559ee7f8a238d479896efd068038a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "博主实地航拍与街拍青山红房子、大成路早市、山海关路、万松园与粮道街等武汉代表性街区。",
+      "segments": [
+        {
+          "id": "wh-paofu-qingshan-hongfangzi",
+          "name": "青山红房子美食街区",
+          "category": "街区美食 / 综合小吃",
+          "addressText": "武汉市青山区红钢城三街坊至六街坊周边",
+          "start": 0,
+          "end": 25,
+          "posterSecond": 12,
+          "summary": "青山工业老城区特色红砖街区，集聚老青山炸炸、重油烧麦、热干面与居民老味。",
+          "coordinates": [
+            114.3985,
+            30.6382
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "红钢城 / 青山红房子核心街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍青山红砖建筑群与街边老牌美食，依据青山区红钢城开放地图参照。"
+          },
+          "addressNote": "青山区代表性老工业街区，红钢城开放地图参照。",
+          "footageNote": "2024年原视频 · 老工业社区特色街区，体验老青山韵味。"
+        },
+        {
+          "id": "wh-paofu-dachengguan-zhaqiao",
+          "name": "大成路早市美食街",
+          "category": "传统过早 / 早市",
+          "addressText": "武汉市武昌区大成路（近黄鹤楼/司门口）",
+          "start": 25,
+          "end": 50,
+          "posterSecond": 38,
+          "summary": "武昌老城区过早烟火气聚集地，小秋水饺、鲜鱼糊汤粉、面窝热干面齐聚的老街。",
+          "coordinates": [
+            114.3015,
+            30.5422
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "武昌大成路老街段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍武昌大成路过早长街与热闹人流，依据大成路开放地图参照。"
+          },
+          "addressNote": "武昌经典过早老街，大成路开放地图参照。",
+          "footageNote": "2024年原视频 · 早上过早高峰人多，尽早前往。"
+        },
+        {
+          "id": "wh-paofu-shanhaiguan-lu",
+          "name": "山海关路老汉口过早街",
+          "category": "传统过早 / 综合小吃",
+          "addressText": "武汉市江岸区山海关路",
+          "start": 50,
+          "end": 75,
+          "posterSecond": 63,
+          "summary": "老汉口过早天花板街道之一，集结双柳豆皮、毛氏汽水包、李记牛肉粉与李氏酥饺。",
+          "coordinates": [
+            114.3068,
+            30.6052
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江岸区山海关路街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍江岸区山海关路过早招牌与排队人潮，依据山海关路开放地图参照。"
+          },
+          "addressNote": "江岸区老汉口过早地标街道，山海关路开放地图参照。",
+          "footageNote": "2024年原视频 · 过早名店云集，节假日排队较长。"
+        },
+        {
+          "id": "wh-paofu-wansongyuan-meishijie",
+          "name": "万松园美食街",
+          "category": "街区美食 / 宵夜街",
+          "addressText": "武汉市江汉区万松园路及雪松路美食街区",
+          "start": 75,
+          "end": 100,
+          "posterSecond": 88,
+          "summary": "汉口核心美食宵夜商圈，夏氏砂锅、靓靓蒸虾、巴厘龙虾与沈记烧烤名店云集。",
+          "coordinates": [
+            114.2692,
+            30.5898
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "万松园路 / 雪松路路口周边",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍万松园雪松路霓虹招牌与宵夜排队群，依据雪松路开放地图参照。"
+          },
+          "addressNote": "汉口最火宵夜与美食街区之一，雪松路开放地图参照。",
+          "footageNote": "2024年原视频 · 宵夜摊位营业至深夜，旺季需提前取号。"
+        },
+        {
+          "id": "wh-paofu-liangdaojie-meishi",
+          "name": "粮道街美食街区",
+          "category": "街区美食 / 校园老街",
+          "addressText": "武汉市武昌区粮道街",
+          "start": 100,
+          "end": 123.9,
+          "posterSecond": 112,
+          "summary": "武昌学府老街，赵师傅油饼包烧麦、桂花糊米酒、大连铁板鱿鱼与辣克马土菜云集。",
+          "coordinates": [
+            114.3105,
+            30.5475
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "武昌粮道街核心街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍粮道街街景招牌与特色排队小吃，依据粮道街开放地图参照。"
+          },
+          "addressNote": "武昌学府美食老街，粮道街开放地图参照。",
+          "footageNote": "2024年原视频 · 从早到晚都有各种小吃美食摊位。"
+        }
+      ]
+    },
+    {
+      "id": "wh-youqingqing-7648602250999210405",
+      "author": "Youqingqing",
+      "authorUrl": "https://www.douyin.com/user/MS4wLjABAAAA_youqingqing",
+      "title": "二刷武汉这家超超超好吃的冒菜锅 # 满级吃商通关赛 # 武汉美食 # 冒菜 # 江汉路美食",
+      "url": "https://www.douyin.com/video/7648602250999210405",
+      "shareURL": "https://v.douyin.com/gxCIN8vqokY/",
+      "publishedOn": "2024-08-12",
+      "durationSeconds": 177.191,
+      "sourceSHA256": "eaaa7c99d6713d6c73f481ab7d9cc77c54f6845b4bf0b2600f5590f4e7808911",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍江汉二路榕三川·川渝冒肚门头与浓香红油冒肚锅制作，作者现场二刷展示食材口感。",
+      "segments": [
+        {
+          "id": "wh-youqingqing-rongsanchuan-maocai",
+          "name": "榕三川·川渝冒肚(江汉二路店)",
+          "category": "冒菜 / 川渝风味",
+          "addressText": "武汉市江汉区江汉二路保成路夜市旁",
+          "start": 0,
+          "end": 45,
+          "posterSecond": 23,
+          "summary": "江汉二路火爆川味冒菜锅，招牌牛肚肥肠牛肉大拼盘，麻辣浓油红汤拌饭过瘾。",
+          "coordinates": [
+            114.2858,
+            30.5835
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉二路 / 保成路口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍江汉二路门头与招牌红油冒肚锅，依据江汉二路开放地图参照。"
+          },
+          "addressNote": "江汉二路临近保成路夜市，江汉二路开放地图参照。",
+          "footageNote": "2024年原视频 · 现煮红油麻辣浓郁，分量扎实。"
+        }
+      ]
+    },
+    {
+      "id": "wh-dawei-7622227847897801811",
+      "author": "大魏的胃",
+      "authorUrl": "https://www.douyin.com/user/MS4wLjABAAAA_daweidewei",
+      "title": "属于武汉人的特色辣克马 搭配热干面太爽了 # 特色美食 # 武汉美食 # 湖北土菜 # 粮道街美食",
+      "url": "https://www.douyin.com/video/7622227847897801811",
+      "shareURL": "https://v.douyin.com/M_vOCU--HKM/",
+      "publishedOn": "2024-08-09",
+      "durationSeconds": 274.867,
+      "sourceSHA256": "75b50efdea805b26e75d1a3d53e51045f3bde3bafbe22b4c1d8c09767507d1ae",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍武昌粮道街辣克马·湖北土菜门头、大火猛炒辣克马与拌入热干面全过程，作者详细点评。",
+      "segments": [
+        {
+          "id": "wh-dawei-lakema-tucai",
+          "name": "辣克马·湖北土菜(武昌粮道街店)",
+          "category": "湖北土菜 / 炒菜",
+          "addressText": "武汉市武昌区粮道街226-4号",
+          "start": 0,
+          "end": 60,
+          "posterSecond": 28,
+          "summary": "武昌粮道街特色湖北土菜，招牌辣克马浓油赤酱辣爽鲜嫩，搭配热干面拌汁堪称一绝。",
+          "coordinates": [
+            114.3112,
+            30.5478
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "武昌粮道街东段附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍武昌粮道街门头与招牌红烧辣克马配热干面，依据粮道街开放地图参照。"
+          },
+          "addressNote": "武昌粮道街临街门面，粮道街开放地图参照。",
+          "footageNote": "2024年原视频 · 辣克马口味偏重辣，拌面是特色吃法。"
+        }
+      ]
+    },
+    {
+      "id": "wh-ouaaa-7652243356344521957",
+      "author": "欧啊啊",
+      "authorUrl": "https://www.douyin.com/user/MS4wLjABAAAA_ouaaa",
+      "title": "武汉真正好吃的家常菜！🥵 # 武汉 # 武汉美食 # 湖北家常菜 # 藕汤",
+      "url": "https://www.douyin.com/video/7652243356344521957",
+      "shareURL": "https://v.douyin.com/OAf0KR9LYnA/",
+      "publishedOn": "2024-03-22",
+      "durationSeconds": 33.6,
+      "sourceSHA256": "3f12121f9094e243e7736d3e99d3e0f36ea4421bec17dfce21932c3c641f9740",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍武昌国控紫阳广场吃肉不如喝汤明档大砂锅煨排骨藕汤、凤爪与热炒家常菜。",
+      "segments": [
+        {
+          "id": "wh-ouaaa-chirou-buru-hetang",
+          "name": "吃肉不如喝汤(国控紫阳广场店)",
+          "category": "湖北菜 / 煨汤家常菜",
+          "addressText": "武汉市武昌区张之洞路国控紫阳广场B1层",
+          "start": 0,
+          "end": 33.6,
+          "posterSecond": 15,
+          "summary": "武昌老火煨汤与地道家常菜馆，招牌排骨藕汤沙糯拉丝、砂锅凤爪软烂脱骨、泡藕带炒牛肉鲜爽开胃。",
+          "coordinates": [
+            114.3052,
+            30.5365
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "张之洞路国控紫阳广场地下商街",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍国控紫阳广场店内明档煨汤与特色砂锅家常菜，依据张之洞路国控紫阳广场开放地图参照。"
+          },
+          "addressNote": "武昌区张之洞路商圈，国控紫阳广场开放地图参照。",
+          "footageNote": "2024年原视频 · 老火吊子煨汤，粉藕软糯。"
+        }
+      ]
+    },
+    {
+      "id": "wh-liuyuxin-7513855392716246272",
+      "author": "刘雨鑫JASON",
+      "authorUrl": "https://www.douyin.com/user/MS4wLjABAAAA_liuyuxinjason",
+      "title": "2个人花169在湖北武汉的老巷子里吃宵夜！ # 深夜食堂 # 武汉宵夜 # 桂萍牛杂 # 长堤街",
+      "url": "https://www.douyin.com/video/7513855392716246272",
+      "shareURL": "https://v.douyin.com/4z2D0jHOE50/",
+      "publishedOn": "2024-11-09",
+      "durationSeconds": 212.694,
+      "sourceSHA256": "d1f170d58de68a9650a0c7eef11ec0a7065f00290939c5e0c0c63adf416fe2b5",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "博主实地探访汉口硚口区长堤街老巷宵夜，打卡桂萍牛杂、李爹爹米酒与长堤街油炸小吃三家名档。",
+      "segments": [
+        {
+          "id": "wh-liuyuxin-guiping-niuza",
+          "name": "桂萍牛杂(长堤街店)",
+          "category": "牛杂 / 汉口老味道",
+          "addressText": "武汉市硚口区长堤街与芦草胡同交叉口西40米",
+          "start": 0,
+          "end": 95,
+          "posterSecond": 45,
+          "summary": "汉口长堤街宵夜传奇，红汤牛杂锅慢火炖煨烂熟入味，萝卜清甜吸汁，市井老街烟火十足。",
+          "coordinates": [
+            114.2522,
+            30.57078
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长堤街与芦草胡同交口附近",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍长堤街桂萍牛杂红底白字招牌与大锅炖牛杂，依据长堤街开放地图参照。"
+          },
+          "addressNote": "硚口区长堤街老巷深处，长堤街开放地图参照。",
+          "footageNote": "2024年原视频 · 宵夜摊位氛围市井，牛杂锅微辣浓郁。"
+        },
+        {
+          "id": "wh-liuyuxin-lidadai-mijiu",
+          "name": "李爹爹米酒",
+          "category": "传统饮品 / 米酒",
+          "addressText": "武汉市硚口区长堤街巷内（长堤街油炸小吃旁）",
+          "start": 95,
+          "end": 140,
+          "posterSecond": 115,
+          "summary": "长堤街老巷内传统手作甜米酒，入口甘甜醇厚，老牌传统原味。",
+          "coordinates": [
+            114.2528,
+            30.57085
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "placeId": "wh-guagua-lidadai-mijiu",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长堤街老巷内",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "多博主同店共用点：刘雨鑫打卡长堤街李爹爹米酒配合宵夜。"
+          },
+          "addressNote": "与吃个瓜瓜同店归并点，长堤街老巷手作甜米酒。",
+          "footageNote": "2024年原视频 · 传统发酵甜米酒，解辣清甜。"
+        },
+        {
+          "id": "wh-liuyuxin-changti-youzha",
+          "name": "长堤街油炸小吃",
+          "category": "炸串 / 油炸小吃",
+          "addressText": "武汉市硚口区长堤街513号",
+          "start": 140,
+          "end": 212,
+          "posterSecond": 175,
+          "summary": "长堤街深夜油炸名档，现炸藕夹、鸡排与肉串刷秘制辣酱，外脆里嫩，四博主同店共用打卡。",
+          "coordinates": [
+            114.2525,
+            30.57082
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "placeId": "wh-guagua-changdi-youzha",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长堤街老街路段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "多博主同店共用点：刘雨鑫打卡长堤街油炸小吃现炸藕夹与炸串。"
+          },
+          "addressNote": "与吃个瓜瓜、小饭桶、哦一西cc同店归并点，长堤街老牌炸串。",
+          "footageNote": "2024年原视频 · 现炸现刷酱，外焦里嫩。"
+        }
+      ]
+    },
+    {
+      "id": "wh-yumipaigu-7664533039381140963",
+      "author": "玉米排骨没有汤",
+      "authorUrl": "https://www.douyin.com/user/MS4wLjABAAAA_yumipaigu",
+      "title": "为了这口。。。武汉…… 酒酿桂花软酪！好好吃的🥺🥺 # 武汉美食 # 万松园美食 # 澳门陈光记",
+      "url": "https://www.douyin.com/video/7664533039381140963",
+      "shareURL": "https://v.douyin.com/B4LS9a6vHHY/",
+      "publishedOn": "2025-03-11",
+      "durationSeconds": 5.6,
+      "sourceSHA256": "7043396e035a48712d9785204b96e7ffe4cf45cb08a6102b157494d58ce68f18",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍万松园雪松路陈光记烧味饭店特写镜头，拉丝酒酿桂花软酪。",
+      "segments": [
+        {
+          "id": "wh-yumipaigu-chenguangji",
+          "name": "澳门陈光记烧味饭店(万松园店)",
+          "category": "烧腊 / 甜品",
+          "addressText": "武汉市江汉区万松园雪松路65号",
+          "start": 0,
+          "end": 5.6,
+          "posterSecond": 2.5,
+          "summary": "万松园雪松路知名烧味店，特色酒酿桂花软酪软糯拉丝、桂花香浓，搭配黑椒烧鸭人气极高。",
+          "coordinates": [
+            114.2685,
+            30.5895
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "雪松路美食街西段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "原片实拍万松园雪松路陈光记招牌甜品酒酿桂花软酪，依据雪松路开放地图参照。"
+          },
+          "addressNote": "万松园雪松路临街商铺，雪松路开放地图参照。",
+          "footageNote": "2025年短片 · 甜品酒酿桂花软酪需现点现吃口感最佳。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaoman-7617023984453963071",
+      "author": "小满同学",
+      "authorUrl": "https://www.douyin.com/user/MS4wLjABAAAA_xiaoman",
+      "title": "每个菜都很好吃的武汉大排档～又辣又过瘾 # 无辣不欢 # 武汉大排档 # 武汉美食",
+      "url": "https://www.douyin.com/video/7617023984453963071",
+      "shareURL": "https://v.douyin.com/YxnwFvEccSA/",
+      "publishedOn": "2024-06-09",
+      "durationSeconds": 293.5,
+      "sourceSHA256": "22fbeb249ea0a6265e58d480edf3487ff8d125b8e7ecfdb74dbb71376912c25e",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "博主实地探访武汉特色市井大排档，脆皮肥肠、香辣蟹、辣炒螺蛳等热炒菜品；原片未露出街区门牌，留存视频库。",
+      "segments": [
+        {
+          "id": "wh-xiaoman-wuhan-dapaidang",
+          "name": "武汉市井特色大排档",
+          "category": "大排档 / 炒菜",
+          "addressText": "武汉市市井大排档（具体地址无街区线索）",
+          "start": 0,
+          "end": 60,
+          "posterSecond": 25,
+          "summary": "武汉本地烟火气大排档，脆皮肥肠、香辣蟹与汉派热炒，又辣又过瘾；原片未露出街区门牌，留存视频库。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片实拍室内大排档热炒与菜品，未拍摄街景门牌或提及具体分店路段，按规范留存视频库不上图。",
+          "footageNote": "2024年原视频 · 具体门店线索未查实，暂不上图。"
+        }
+      ]
+    },
+    {
+      "id": "wh-kelezhadji-7621090635530052453",
+      "author": "可乐炸鸡🍗",
+      "title": "武汉天下无敌好吃的一锅炖！🥵 真的好吃到爆！！！！",
+      "url": "https://www.douyin.com/video/7621090635530052453",
+      "shareURL": "https://v.douyin.com/nwyY01luW54/",
+      "publishedOn": "2026-03-03",
+      "durationSeconds": 29.333,
+      "sourceSHA256": "4ad1f543c2fe3547d84a36a5871db89b328dab99d10e1886f2e05ec0fcb9b19b",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍特色一锅炖大铁锅、鱿鱼小龙虾沸腾实景，博主现场品尝。",
+      "segments": [
+        {
+          "id": "wh-kelezhadji-guodun",
+          "name": "武汉天下无敌一锅炖",
+          "category": "一锅炖 / 铁锅炖",
+          "addressText": "武汉市特色铁锅炖（具体店名与地址待核实）",
+          "start": 0,
+          "end": 29.333,
+          "posterSecond": 5,
+          "summary": "大铁锅热气腾腾慢炖大鱿鱼、鲜活小龙虾与吸汁配菜，鲜香浓郁。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片聚焦鱿鱼小龙虾一锅炖菜品展示与食用，无店招及路牌信息，待进一步核对。",
+          "footageNote": "2026年原视频 · 具体店铺信息待核实。"
+        }
+      ]
+    },
+    {
+      "id": "wh-manjie-7624117708687160255",
+      "author": "蔓姐…",
+      "title": "武汉无敌爆香的大学生食堂！！盆盆鸡热干面啊啊啊啊好...",
+      "url": "https://www.douyin.com/video/7624117708687160255",
+      "shareURL": "https://v.douyin.com/zMNlTw1g3aI/",
+      "publishedOn": "2026-10-28",
+      "durationSeconds": 23.334,
+      "sourceSHA256": "a9a513307ab753d74dc453c0ab8464dd9e8f987536e8f5cfcfc53959e29486eb",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍超大不锈钢盆装盆盆鸡、虎皮鸡爪与热干面拌酱实景，博主口播分享。",
+      "segments": [
+        {
+          "id": "wh-manjie-penpenji",
+          "name": "武汉大学生食堂盆盆鸡",
+          "category": "高校食堂 / 川味盆盆鸡",
+          "addressText": "武汉市高校食堂档口（具体校区待核实）",
+          "start": 0,
+          "end": 23.334,
+          "posterSecond": 8,
+          "summary": "高校食堂超大份盆盆鸡，红油浓香，手撕鸡肉、虎皮鸡爪过油焦香，拌入热干面极具性价比。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片分享大学生食堂档口盆盆鸡与热干面吃法，未露具体高校校区标牌，标记待核实。",
+          "footageNote": "2026年原视频 · 具体高校档口与营业时间待核实。"
+        }
+      ]
+    },
+    {
+      "id": "wh-renyiyige-7618038064559967494",
+      "author": "Renyi毅哥",
+      "title": "被武汉巷子里的宵夜深深折服！炭烤猪蹄鸡爪配上捞汁海鲜",
+      "url": "https://www.douyin.com/video/7618038064559967494",
+      "shareURL": "https://v.douyin.com/hyQL4eDoMMM/",
+      "publishedOn": "2026-01-27",
+      "durationSeconds": 193.259,
+      "sourceSHA256": "11001a304a68078392d49900503c5a619118e07b16848667c815fb3732cb526a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍万松园巷内宵夜大排档、炭火烤腰片、烤猪蹄鸡爪与捞汁生蚝，博主口播体验。",
+      "segments": [
+        {
+          "id": "wh-renyiyige-juweiyuxiaoxian",
+          "name": "聚味渔小鲜·海鲜烧烤(万松园店)",
+          "category": "海鲜烧烤 / 夜宵",
+          "addressText": "武汉市江汉区万松园雪松路65号",
+          "start": 0,
+          "end": 193.259,
+          "posterSecond": 60,
+          "summary": "万松园宵夜老巷海鲜烧烤，招牌炭烤软糯脱骨猪蹄、焦香鸡爪，配嫩烤腰片与酸爽捞汁生蚝海鲜。",
+          "coordinates": [
+            114.2643437,
+            30.5953083
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "雪松路 / 万松园路口",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍万松园雪松路宵夜档与菜品制作，采用开放地图雪松路节点作为道路参照。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177821024,
+              "name": "雪松路",
+              "url": "https://www.openstreetmap.org/way/177821024",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882326251
+            }
+          },
+          "footageNote": "2026年原视频 · 宵夜时段客人较多，营业情况请出行前核实。"
+        }
+      ]
+    },
+    {
+      "id": "wh-tao-7685306913152954105",
+      "author": "tao",
+      "title": "武汉真正便宜好吃的小破店🥵🥵 人均40就可吃好～ 东东大排档",
+      "url": "https://www.douyin.com/video/7685306913152954105",
+      "shareURL": "https://v.douyin.com/1nrxON32--c/",
+      "publishedOn": "2026-04-03",
+      "durationSeconds": 29.233,
+      "sourceSHA256": "991903f55af8518b3fa131979f61b9dd362c1191bbe6124b6274a2ce6928138a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍居民楼下东东大排档、热气腾腾铁板排骨加面与脱骨排骨特写。",
+      "segments": [
+        {
+          "id": "wh-tao-dongdong-dapaidang",
+          "name": "东东大排档·铁板排骨",
+          "category": "市井大排档 / 烧烤",
+          "addressText": "武汉市江汉区民意四路（居民楼下排档）",
+          "start": 0,
+          "end": 29.233,
+          "posterSecond": 8,
+          "summary": "藏在市井居民楼下的人气大排档，招牌铁板大排骨肉质软烂一咬脱骨，浓油赤酱拌入热干面极具镬气。",
+          "coordinates": [
+            114.2722834,
+            30.5782327
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "民意四路 / 市井居民区",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍居民楼下东东大排档及招牌铁板排骨，结合民意四路商户信息，采用开放地图民意四路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177618118,
+              "name": "民意四路",
+              "url": "https://www.openstreetmap.org/way/177618118",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1880363677
+            }
+          },
+          "footageNote": "2026年原视频 · 居民楼下排档饭点排队较多，出行请核实。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xixiyoule-7529453665905233212",
+      "author": "西西又饿了",
+      "title": "真正本地人爱来吃的地方！！不吃这一顿等于白来武汉！“憨老三”",
+      "url": "https://www.douyin.com/video/7529453665905233212",
+      "shareURL": "https://v.douyin.com/zdObR5Yu3D8/",
+      "publishedOn": "2026-10-18",
+      "durationSeconds": 60.133,
+      "sourceSHA256": "b6b5b4a82992853cf128f3693b1b37ad8afcf5bc8d5302bd2701925bc1a489f9",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍憨老三汉派武昌鱼、炸整茄子、酥脆菠萝肉、麻辣虾球与菜单。",
+      "segments": [
+        {
+          "id": "wh-xixiyoule-hanlaosan",
+          "name": "憨老三·湖北菜(招牌武昌鱼)",
+          "category": "湖北家常菜 / 武昌鱼",
+          "addressText": "武汉市江汉区民生路153号（近江汉路）",
+          "start": 0,
+          "end": 60.133,
+          "posterSecond": 38,
+          "summary": "汉口核心民生路老字号湖北菜，招牌汉派武昌鱼日销数百条肉质细嫩，整只酥炸茄子外脆里糯，湖北风味菠萝肉酸甜开胃。",
+          "coordinates": [
+            114.2896775,
+            30.5761979
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "民生路 / 近江汉路商圈",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍憨老三招牌菜品与堂食实景，结合民生路老店地址，采用开放地图民生路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 621846016,
+              "name": "民生路",
+              "url": "https://www.openstreetmap.org/way/621846016",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1419140480
+            }
+          },
+          "footageNote": "2026年原视频 · 汉派武昌鱼与家常菜受食客青睐，请留意营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "wh-heqianwan-7685361846979969883",
+      "author": "贺千万。",
+      "title": "确实是武汉真正好吃的老破店！！藏在居民楼下！黄鹤楼陈掌柜",
+      "url": "https://www.douyin.com/video/7685361846979969883",
+      "shareURL": "https://v.douyin.com/k5j457magVk/",
+      "publishedOn": "2026-05-24",
+      "durationSeconds": 16.2,
+      "sourceSHA256": "bc3b7990b5d241a123b6a9c66fffaa9f4d0cec68f06f0e6086e698bd64a0bcc2",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍柴火大灶台、热气蒸笼咸蛋黄烧麦、油条牛肉与大桌农家菜。",
+      "segments": [
+        {
+          "id": "wh-heqianwan-chenzhanggui",
+          "name": "陈掌柜·地道湖北菜(黄鹤楼店)",
+          "category": "湖北农家土菜 / 柴火灶",
+          "addressText": "武汉市武昌区双柏前街（黄鹤楼附近居民楼下）",
+          "start": 0,
+          "end": 16.2,
+          "posterSecond": 1,
+          "summary": "黄鹤楼附近居民楼下的柴火灶老馆子，现包咸蛋黄大烧麦油润饱满，围炉柴火炖煮排骨与油条牛肉镬气十足。",
+          "coordinates": [
+            114.3043944,
+            30.5509388
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "双柏前街 / 黄鹤楼街区",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍柴火灶与特色咸蛋黄烧麦，位于黄鹤楼双柏前街居民区，采用开放地图双柏前街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105855323,
+              "name": "双柏前街",
+              "url": "https://www.openstreetmap.org/way/105855323",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1218886557
+            }
+          },
+          "footageNote": "2026年原视频 · 柴火灶家常菜老店，建议错峰前往。"
+        }
+      ]
+    },
+    {
+      "id": "wh-lulu-7473051650211515708",
+      "author": "lulu.",
+      "title": "武汉我最害怕倒闭的小店！！有点难找但巨好吃… 江汉路的冯烫烫",
+      "url": "https://www.douyin.com/video/7473051650211515708",
+      "shareURL": "https://v.douyin.com/6cuoDSfcK-k/",
+      "publishedOn": "2026-12-09",
+      "durationSeconds": 15.167,
+      "sourceSHA256": "17569a9a3863d2e47382fa228629ec4e9acb1e30b76e15e504dfcf163eea4b0b",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍穿入江汉村老巷弄、排队取餐、鲜红牛肉生烫与瓦罐煨肉淋汁过程。",
+      "segments": [
+        {
+          "id": "wh-lulu-fengtangtang",
+          "name": "冯烫烫·市井生烫(江汉村店)",
+          "category": "生烫牛肉 / 瓦罐肉",
+          "addressText": "武汉市江汉区江汉路步行街江汉村巷内",
+          "start": 0,
+          "end": 15.167,
+          "posterSecond": 5,
+          "summary": "江汉路深处江汉村老巷内的宝藏小铺，鲜嫩多汁的现烫跷脚牛肉配浓油赤酱瓦罐煨肉，市井烟火气浓厚。",
+          "coordinates": [
+            114.2833901,
+            30.5854427
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉路步行街 / 江汉村巷口",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江汉村巷弄门楼、瓦罐肉与生烫牛肉制作，采用开放地图江汉路步行街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177627147,
+              "name": "江汉路步行街",
+              "url": "https://www.openstreetmap.org/way/177627147",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1186631527
+            }
+          },
+          "footageNote": "2026年原视频 · 巷弄小店座位有限，出发前请核实营业状态。"
+        }
+      ]
+    },
+    {
+      "id": "wh-laoluo-7580779439332576555",
+      "author": "饭搭子老罗",
+      "title": "我和饭搭子吃过的苍蝇馆子合集 # 苍蝇馆子 # 武汉美食",
+      "url": "https://www.douyin.com/video/7580779439332576555",
+      "shareURL": "https://v.douyin.com/XdJAlCyyP0Y/",
+      "publishedOn": "2026-06-22",
+      "durationSeconds": 175.7,
+      "sourceSHA256": "3093affe6eb318b24c92ad154bfbb2b413a1644be4110b6014ad8500f8bf6e8a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片逐家实拍武汉5家十余年苍蝇馆子门头菜品、萝卜筒子骨炖煲、鱼籽鱼泡与恩施土家菜。",
+      "segments": [
+        {
+          "id": "wh-laoluo2-qinchuan",
+          "name": "秦川人家(柏林路店)",
+          "category": "湖北家常菜 / 苍蝇馆子",
+          "addressText": "武汉市汉阳区柏林路（近翠微路）",
+          "start": 0,
+          "end": 58,
+          "posterSecond": 24,
+          "summary": "汉阳柏林路13年老馆子，招牌养生大煲黄皮大萝卜配筒骨炖煮软烂脱骨，番茄土豆牛腩汤汁浓稠下饭。",
+          "coordinates": [
+            114.2575872,
+            30.5483197
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "翠微路 / 柏林路附近",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍汉阳柏林路秦川人家老店，采用开放地图翠微路节点作为道路参照。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 99465607,
+              "name": "翠微路",
+              "url": "https://www.openstreetmap.org/way/99465607",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1150606488
+            }
+          },
+          "footageNote": "2026年原视频 · 老店天天座无虚席，建议提早前往。"
+        },
+        {
+          "id": "wh-laoluo2-zhangji",
+          "name": "张记鲜鱼馆(鱼籽鱼泡)",
+          "category": "湖北菜 / 鱼鲜",
+          "addressText": "武汉市老牌鲜鱼馆（分店待确认）",
+          "start": 58,
+          "end": 90.5,
+          "posterSecond": 66,
+          "summary": "武汉12年老牌鲜鱼馆，招牌鱼籽鱼泡咸辣鲜香粘牙过瘾，配金黄焦香猫牙米土豆炕饭。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片口播武汉12年张记鲜鱼馆，片中展示鱼籽鱼泡与土豆炕饭，具体分店待进一步核实。",
+          "footageNote": "2026年原视频 · 具体分店与营业情况待核实。"
+        },
+        {
+          "id": "wh-laoluo2-xilan",
+          "name": "西兰吊脚楼·恩施土家菜",
+          "category": "恩施土家菜",
+          "addressText": "武汉市隐蔽恩施土家菜馆（具体地址待确认）",
+          "start": 90.5,
+          "end": 129,
+          "posterSecond": 109,
+          "summary": "藏在市井近10年的恩施土家菜，老黄牛肉越炒越香的酸萝卜牛肉，搭配金黄锅巴土豆炕饭与特色合渣。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片展示恩施土产干货与土家菜肴，老板称位置较为隐蔽，具体门牌待进一步核实。",
+          "footageNote": "2026年原视频 · 店内桌数不多建议提前了解。"
+        },
+        {
+          "id": "wh-laoluo2-fangfang",
+          "name": "方方牛杂",
+          "category": "牛杂煲 / 火锅",
+          "addressText": "武汉市老牌牛杂馆（分店待确认）",
+          "start": 129,
+          "end": 149,
+          "posterSecond": 138,
+          "summary": "武汉开店十余年的老牌牛杂锅，经典红油甜辣风味，牛杂软烂入味，白萝卜垫底吸足鲜辣汤汁。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "原片推荐开店十多年的方方牛杂红油锅，具体分店与街区待进一步核查。",
+          "footageNote": "2026年原视频 · 具体店铺位置待核实。"
+        },
+        {
+          "id": "wh-laoluo2-yutangwan",
+          "name": "鱼汤湾酒家",
+          "category": "苍蝇馆子 / 家常菜",
+          "addressText": "武汉市青山区工业三路附近",
+          "start": 149,
+          "end": 175.7,
+          "posterSecond": 159,
+          "summary": "青山区开店十余年的居民楼老苍蝇馆子，自家种小韭菜手工包水饺皮薄馅大，火爆鱿鱼腰花脆嫩爽口。",
+          "coordinates": [
+            114.3949842,
+            30.6331771
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "工业三路 / 青山老街区",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍青山区开店十多年的老店鱼汤湾酒家，采用开放地图工业三路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105144474,
+              "name": "工业三路",
+              "url": "https://www.openstreetmap.org/way/105144474",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1211806413
+            }
+          },
+          "footageNote": "2026年原视频 · 社区老味道，食客多为周边街坊。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaofantong-7699808378240052617",
+      "author": "人间行走小饭桶",
+      "title": "武汉人自己的“板前川菜”！从出锅到上桌不过十秒，烟火气十足 炽舍板前猛火爆炒",
+      "url": "https://www.douyin.com/video/7699808378240052617",
+      "shareURL": "https://v.douyin.com/bxcQn40KdXU/",
+      "publishedOn": "2026-04-12",
+      "durationSeconds": 249.433,
+      "sourceSHA256": "39af6887c95678cbf0c1b9d40af4749d70b519393c3eb333afd071fabb49fdaa",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍围炉吧台现场爆炒、大火掂锅、烧椒鸡肝与特色现炒热菜过程。",
+      "segments": [
+        {
+          "id": "wh-xiaofantong-chishe",
+          "name": "炽舍·板前猛火爆炒(汉阳大道店)",
+          "category": "板前川菜 / 猛火爆炒",
+          "addressText": "武汉市汉阳区汉阳大道134号（汉商银座/钟家村站旁）",
+          "start": 0,
+          "end": 249.433,
+          "posterSecond": 28,
+          "summary": "武汉首创板前川菜体验，围坐吧台直面大厨猛火掂锅爆炒，招牌烧椒鸡肝镬气逼人，出锅十秒直达餐盘超级下饭。",
+          "coordinates": [
+            114.2648028,
+            30.5523172
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "汉阳大道 / 钟家村商圈",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍板前现场大火爆炒，结合汉阳大道134号门店地址，采用开放地图汉阳大道节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 33680055,
+              "name": "汉阳大道",
+              "url": "https://www.openstreetmap.org/way/33680055",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 5178930139
+            }
+          },
+          "footageNote": "2026年原视频 · 现点现炒板前座位，饭点常需排队等位。"
+        }
+      ]
+    },
+    {
+      "id": "wh-dawei-7535015367912246579",
+      "author": "大魏的胃",
+      "title": "没想到在武汉的小馆子里吃到了这么好吃的湖北菜 乡厨味道 复兴路地铁站",
+      "url": "https://www.douyin.com/video/7535015367912246579",
+      "shareURL": "https://v.douyin.com/kXLK6uvCvhU/",
+      "publishedOn": "2026-02-25",
+      "durationSeconds": 294.133,
+      "sourceSHA256": "0926e044836d9c482c9b9ccc801173545a5de144bc3947a68d1c4a6784e0abfe",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍复兴路地铁站旁苍蝇馆子乡厨味道、大口吃重油烧卖、清蒸武昌鱼配细汁面条与铫子煨藕汤。",
+      "segments": [
+        {
+          "id": "wh-dawei-xiangchu",
+          "name": "乡厨味道·湖北家常菜(复兴路店)",
+          "category": "湖北家常菜 / 烧卖",
+          "addressText": "武汉市武昌区复兴路（近复兴路地铁站）",
+          "start": 0,
+          "end": 294.133,
+          "posterSecond": 82,
+          "summary": "武昌复兴路地铁站旁宝藏湖北菜小馆，皮薄透油多汁的双麦肉馅重油烧卖惊艳四座，武昌鱼汤汁拌细面与瓦罐煨藕汤浓郁回甘。",
+          "coordinates": [
+            114.2958194,
+            30.5320122
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "复兴路 / 地铁复兴路站旁",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍武昌复兴路地铁旁乡厨味道堂食实景，采用开放地图复兴路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105999809,
+              "name": "复兴路",
+              "url": "https://www.openstreetmap.org/way/105999809",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 13772869249
+            }
+          },
+          "footageNote": "2026年原视频 · 招牌烧卖与特色武昌鱼备受欢迎，建议错峰探访。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaowu-7701605975832514722",
+      "author": "小五同學",
+      "title": "藏在武汉的乡村“米其林”有多好吃# 武汉江边三十年地道湖北菜老店汉和里黄鹤楼店",
+      "url": "https://www.douyin.com/video/7701605975832514722",
+      "shareURL": "https://v.douyin.com/NTLf2Mt-WAY/",
+      "publishedOn": "2026-01-26",
+      "durationSeconds": 18.467,
+      "sourceSHA256": "18283529933e916174b772a1fb18e757155da18e21f4bb0543b350c6cbba45dc",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍江边三十年老店汉和里、铁板热气腾腾大虾球、重油烧卖与多彩馄饨，博主现场口播。",
+      "segments": [
+        {
+          "id": "wh-xiaowu-hanheli",
+          "name": "汉和里·地道湖北菜(黄鹤楼店)",
+          "category": "湖北家常菜 / 楚菜老店",
+          "addressText": "武汉市武昌区民主路与临江大道交叉口附近（近黄鹤楼/户部巷）",
+          "start": 0,
+          "end": 18.467,
+          "posterSecond": 6,
+          "summary": "武汉江边三十年老牌地道湖北菜，招牌滋滋滚烫铁板大虾球、香酥排骨与油润重油烧卖，市井江味十足。",
+          "coordinates": [
+            114.2882318,
+            30.5500068
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "民主路 / 临江大道路口（近黄鹤楼）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍汉和里招牌菜品与临江老街区，采用开放地图民主路节点作为道路参照。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105570371,
+              "name": "民主路",
+              "url": "https://www.openstreetmap.org/way/105570371",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1215728284
+            }
+          },
+          "footageNote": "2026年原视频 · 老牌江湖菜，建议游览黄鹤楼后顺路前往。"
+        }
+      ]
+    },
+    {
+      "id": "wh-bendong-7660036865043782065",
+      "author": "BEast 奔东",
+      "title": "我去！这确实是武汉近乎失传的民间米其林极品八件套！婆婆土钵菜",
+      "url": "https://www.douyin.com/video/7660036865043782065",
+      "shareURL": "https://v.douyin.com/U4nNhtv40ak/",
+      "publishedOn": "2026-07-14",
+      "durationSeconds": 21.267,
+      "sourceSHA256": "fb2d9f84b5ab7f3ae91d85b56ae7a0948fa9fa4c6a96f7fc891c3a62b8041dbb",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍特色松毛烤炉大灶台、松枝香气烘烤整鸡、烤猪蹄、烤土豆与烤大豆腐实景。",
+      "segments": [
+        {
+          "id": "wh-bendong-popotubaicai",
+          "name": "婆婆土钵菜·松毛烤鸡(玫瑰街店)",
+          "category": "民间土菜 / 松毛烤鸡",
+          "addressText": "武汉市汉阳区玫瑰街（汉阳核心美食街）",
+          "start": 0,
+          "end": 21.267,
+          "posterSecond": 15,
+          "summary": "汉阳玫瑰街独具特色的松毛土炉烤味，利用松枝燃烧独特烟熏香气烤出金黄脆皮整鸡、酥烂猪蹄与焦香烤土豆。",
+          "coordinates": [
+            114.2207344,
+            30.5659185
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "玫瑰街 / 汉阳老街区",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍玫瑰街特色松毛土钵烤炉与菜品制作，采用开放地图玫瑰街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1340699095,
+              "name": "玫瑰街",
+              "url": "https://www.openstreetmap.org/way/1340699095",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1459170196
+            }
+          },
+          "footageNote": "2026年原视频 · 现烤现出炉，建议就餐时提早候单。"
+        }
+      ]
+    },
+    {
+      "id": "wh-agno3-7625266558624925563",
+      "author": "AgNO3",
+      "title": "武汉小巷子里的宝藏菜馆！大肘子爽爽吃🍖 玲玲好记小吃",
+      "url": "https://www.douyin.com/video/7625266558624925563",
+      "shareURL": "https://v.douyin.com/4PRYwKuELCk/",
+      "publishedOn": "2026-06-10",
+      "durationSeconds": 70.067,
+      "sourceSHA256": "5ef902877c8e74d8b3bd776edab15616e3687af2ff8a4bbb91b1b7588622aff1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍高雄路长航村小巷、玲玲好记小吃招牌门头、超大酱香软烂肘子与牛蹄筋烧安全带。",
+      "segments": [
+        {
+          "id": "wh-agno3-lingling-haoji",
+          "name": "玲玲好记小吃(高雄路店)",
+          "category": "市井苍蝇馆子 / 酱香大肘子",
+          "addressText": "武汉市江岸区高雄路1号3栋1层（近长航村小区）",
+          "start": 0,
+          "end": 70.067,
+          "posterSecond": 25,
+          "summary": "藏在高雄路老社区小巷里的宝藏苍蝇馆子，招牌超大红烧大肘子软烂胶粘、肥而不腻，浓郁酱汁肘子皮拌饭超级下饭。",
+          "coordinates": [
+            114.281032,
+            30.6017665
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "高雄路 / 长航村小巷",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍高雄路1号长航村小巷玲玲好记小吃门店，采用开放地图高雄路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 50892005,
+              "name": "高雄路",
+              "url": "https://www.openstreetmap.org/way/50892005",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 648969803
+            }
+          },
+          "footageNote": "2026年原视频 · 居民楼小巷老店，饭点常需排队。"
+        }
+      ]
+    },
+    {
+      "id": "wh-tangtang-7595927769872222897",
+      "author": "糖糖来一勺",
+      "title": "全程无广！！！客观真实测评江夏夜市究竟怎么样？物价怎么样！",
+      "url": "https://www.douyin.com/video/7595927769872222897",
+      "shareURL": "https://v.douyin.com/nHtmdD_hfcM/",
+      "publishedOn": "2026-12-20",
+      "durationSeconds": 70.433,
+      "sourceSHA256": "b04118b85f81c8c0663b4d6678131cc04c07c281379b50bc8d2cdc8470d62077",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍江夏夜市壮观排档群、烤串、现榨玉米汁、铁板豆腐与香脆酱香饼。",
+      "segments": [
+        {
+          "id": "wh-tangtang-jiangxia-yeishi",
+          "name": "江夏夜市(工程科技学院北门)",
+          "category": "特色夜市 / 小吃街区",
+          "addressText": "武汉市江夏区纸坊街道城关村36号（武汉工程科技学院北门旁）",
+          "start": 0,
+          "end": 70.433,
+          "posterSecond": 12,
+          "summary": "武汉超大规模学生创业夜市，两百余家摊位汇聚，十元三串大肉串、五元铁板豆腐与特色酱香饼性价比极高。",
+          "coordinates": null,
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "位于江夏区纸坊街道，超出当前武汉中心城区底图南界（纬度30.48以南），标记为范围外，待后续底图扩图接入。",
+          "footageNote": "2026年原视频 · 位于江夏区纸坊，距离汉口及武昌中心区约30公里。"
+        }
+      ]
+    },
+    {
+      "id": "wh-laoluo-7636804052948487433",
+      "author": "饭搭子老罗",
+      "title": "极限 3 小时，逛吃武汉曙光夜市 #武汉美食 #曙光夜市",
+      "url": "https://www.douyin.com/video/7636804052948487433",
+      "shareURL": "https://v.douyin.com/OrefF0kRvco/",
+      "publishedOn": "2026-05-29",
+      "durationSeconds": 190.233,
+      "sourceSHA256": "997847531d3ba27d21117585cbf2dde6aa5dcbea787cfad11248222954dfc208",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍光谷曙光夜市全景、鲜肉米线、卤肉卷、酱爆鱿鱼、烤肉筋、肉夹馍等15种特色档口。",
+      "segments": [
+        {
+          "id": "wh-laoluo-shuguang-yeishi",
+          "name": "曙光夜市美食街(光谷关山大道店)",
+          "category": "综合夜市 / 美食街区",
+          "addressText": "武汉市洪山区关山大道曙光星城小区旁（光谷曙光夜市）",
+          "start": 0,
+          "end": 190.233,
+          "posterSecond": 45,
+          "summary": "光谷核心区超高人气市井夜市，汇聚鲜辣肉酱米线、杜哥卤肉卷、现铁板脆弹酱爆鱿鱼、两元烤肉筋与热乎酥脆肉夹馍。",
+          "coordinates": [
+            114.4074451,
+            30.5078905
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "关山大道 / 曙光夜市街区",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍光谷关山大道曙光星城旁曙光夜市，采用开放地图关山大道节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 170305302,
+              "name": "关山大道",
+              "url": "https://www.openstreetmap.org/way/170305302",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 11813528481
+            }
+          },
+          "footageNote": "2026年原视频 · 光谷夜市出摊时间通常为傍晚至深夜。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xixiyoule-7616635726125996401",
+      "author": "西西又饿了",
+      "title": "来武汉旅游早上起不来就试试晚上的山海关吧！！咱就是一吃一个不吱声",
+      "url": "https://www.douyin.com/video/7616635726125996401",
+      "shareURL": "https://v.douyin.com/WZUdjddewnM/",
+      "publishedOn": "2026-03-26",
+      "durationSeconds": 66.6,
+      "sourceSHA256": "be31a3e449977eac60635e6b2d9cc1786a631b2d3797217c8428095baa5d3cbb",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍山海关路深夜排档、金三角吊子煨汤爆浆罐子、24小时牛肉湿炒面与焦脆生煎包锅贴。",
+      "segments": [
+        {
+          "id": "wh-xixiyoule-shanhaiguan-yeishi",
+          "name": "山海关路深夜食堂(晚上的山海关)",
+          "category": "夜市排档 / 煨汤炒面",
+          "addressText": "武汉市江岸区山海关路老街巷（夜市排档）",
+          "start": 0,
+          "end": 66.6,
+          "posterSecond": 20,
+          "summary": "山海关路不仅有过早更是本地人的深夜食堂，老式酥煤慢煨排骨藕汤、油光水滑24小时汉派牛肉炒面与现包现煎生煎包。",
+          "coordinates": [
+            114.3037079,
+            30.6053269
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "山海关路 / 夜市美食街",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍山海关路深夜夜市排档，采用开放地图山海关路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177794593,
+              "name": "山海关路",
+              "url": "https://www.openstreetmap.org/way/177794593",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1882077240
+            }
+          },
+          "footageNote": "2026年原视频 · 晚上营业档口多为老汉口深夜食堂，错峰过早首选。"
+        }
+      ]
+    },
+    {
+      "id": "wh-tangtangpaotang-7670563088543079395",
+      "author": "堂堂一跑堂",
+      "title": "挑战花一百块逛吃武汉财大小吃街！看看是踩雷还是种草吧",
+      "url": "https://www.douyin.com/video/7670563088543079395",
+      "shareURL": "https://v.douyin.com/aARSqxQG_0k/",
+      "publishedOn": "2026-06-24",
+      "durationSeconds": 135.7,
+      "sourceSHA256": "8ff51082965adb9e2168528437fb12a5e696988082515b727a2ac9582aa4f2b4",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍中南财大小吃街百元逛吃、福春融藕粉满满红豆山楂花生碎、黄石老土豆片与财大酱香饼。",
+      "segments": [
+        {
+          "id": "wh-tangtangpaotang-caida-meishijie",
+          "name": "财大小吃街(南湖大道政苑店)",
+          "category": "高校小吃街 / 甜品炸物",
+          "addressText": "武汉市洪山区南湖大道136号（中南财经政法大学南湖校区政苑小区北门）",
+          "start": 0,
+          "end": 135.7,
+          "posterSecond": 70,
+          "summary": "中南财大茶山刘知名学生美食街，十余年老店福春融五元超大碗配料炸裂藕粉、焦香财大酱香饼与黄石特色双酱炸土豆片。",
+          "coordinates": [
+            114.392218,
+            30.4822319
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "南湖大道 / 财大小吃街口",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍中南财大南湖校区政苑小吃街实景，采用开放地图南湖大道节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 70203942,
+              "name": "南湖大道",
+              "url": "https://www.openstreetmap.org/way/70203942",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 13951150796
+            }
+          },
+          "footageNote": "2026年原视频 · 傍晚学生人流密集，小吃档口性价比极佳。"
+        }
+      ]
+    },
+    {
+      "id": "wh-lianmeier-7610343360432107435",
+      "author": "脸妹儿",
+      "title": "开工第一天 你们吃的啥？ # 开工第一餐 # 武汉美食 # 徐东时光夜市",
+      "url": "https://www.douyin.com/video/7610343360432107435",
+      "shareURL": "https://v.douyin.com/sdnBvrnDnyk/",
+      "publishedOn": "2026-04-23",
+      "durationSeconds": 66.7,
+      "sourceSHA256": "1e42e62f082cc4e2b71d3a0c007c7da5526ac7f60fe33c8c49b70c21429b3f27",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍徐东时光夜市门头、铁板现煎超大里脊肉饼、酱香饼、现切刀削面与镬气炒豆丝。",
+      "segments": [
+        {
+          "id": "wh-lianmeier-xudong-yeishi",
+          "name": "徐东时光夜市(徐东一路店)",
+          "category": "综合夜市 / 铁板排档",
+          "addressText": "武汉市武昌区徐东一路（近地铁徐东站、销品茂）",
+          "start": 0,
+          "end": 66.7,
+          "posterSecond": 15,
+          "summary": "武昌徐东商圈高人气时光夜市，十元爆满铁板超大里脊肉饼、酥香酱香饼、热辣手工刀削面与镬气十足现炒牛肉豆丝。",
+          "coordinates": [
+            114.3399847,
+            30.5912792
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "徐东一路 / 徐东商圈",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍武昌徐东一路徐东时光夜市，采用开放地图徐东一路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 417602117,
+              "name": "徐东一路",
+              "url": "https://www.openstreetmap.org/way/417602117",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 11880563919
+            }
+          },
+          "footageNote": "2026年原视频 · 商圈夜市，地铁直达交通便利。"
+        }
+      ]
+    },
+    {
+      "id": "wh-chihuoabin-7399544195733572891",
+      "author": "吃货阿宾",
+      "title": "盘武汉最大烟火夜市，爆辣牛蛙辣到哭 #美食 #夜市 #武汉",
+      "url": "https://www.douyin.com/video/7399544195733572891",
+      "shareURL": "https://v.douyin.com/5CgWBGJKuAY/",
+      "publishedOn": "2024-08-05",
+      "durationSeconds": 306.178,
+      "sourceSHA256": "cc3fce978cb62280ee47ad239b64fb4e75189fcd01c1fb7bef1d65ae8b8e7471",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍江汉路水塔街夜市/前进五路水塔美食街，打卡驴肉火烧、李氏酥饺、带油边烤腰子与爆辣牛蛙辣的跳。",
+      "segments": [
+        {
+          "id": "wh-chihuoabin-shuitajie-yeishi",
+          "name": "江汉路水塔街夜市(水塔美食街)",
+          "category": "夜市小吃 / 街头大排档",
+          "addressText": "武汉市江汉区前进五路与江汉三路交叉口（水塔美食街）",
+          "start": 0,
+          "end": 105,
+          "posterSecond": 9,
+          "summary": "江汉路旁超火烟火夜市，打卡热气腾腾的驴肉火烧、中华老字号李氏酥饺、油边烤腰子，以及武汉知名特色“辣的跳”爆辣牛蛙。",
+          "coordinates": [
+            114.2847865,
+            30.581188
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "前进五路水塔街（水塔美食街）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍汉口水塔美食街牌匾与各摊位，匹配 OSM 前进五路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177627390,
+              "name": "前进五路",
+              "url": "https://www.openstreetmap.org/way/177627390",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1880447270
+            }
+          },
+          "footageNote": "2024年原视频 · 夜市档口及营业情况以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-dawei-7582891584477596970",
+      "author": "大魏的胃",
+      "title": "还得是武汉这种传统的汉派烧烤 简直过瘾 #武汉美食 #武汉冬日夜宵局",
+      "url": "https://www.douyin.com/video/7582891584477596970",
+      "shareURL": "https://v.douyin.com/B8yirudIqS0/",
+      "publishedOn": "2025-12-12",
+      "durationSeconds": 301.6,
+      "sourceSHA256": "380dd97ca5add6d6d3baffc71b3a448481e6a270e7dbd9dd1bd049da0c28eab6",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汉阳江欣苑烧烤一条街无敌烧烤，实拍招牌糯筋子、牛骨头火锅、油包腰、烤鲜鱼与烤猪蹄。",
+      "segments": [
+        {
+          "id": "wh-dawei-wudi-shaokao",
+          "name": "无敌烧烤(汉阳江欣苑路店)",
+          "category": "汉派烧烤 / 市井夜宵",
+          "addressText": "武汉市汉阳区江欣苑路（江欣苑烧烤一条街，好药师大药房对面）",
+          "start": 28,
+          "end": 295,
+          "posterSecond": 88,
+          "summary": "汉阳江欣苑烧烤街名店，招牌糯筋子外焦里嫩粘牙多汁，搭配热气腾腾的牛骨头火锅、油包腰、烤鲜鱼、烤猪蹄与奶香牛油筋。",
+          "coordinates": [
+            114.2400827,
+            30.5321577
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江欣苑路（江欣苑烧烤一条街）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江欣苑路门头好药师对面排档，匹配 OSM 江欣苑路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 766735144,
+              "name": "江欣苑路",
+              "url": "https://www.openstreetmap.org/way/766735144",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 13747437747
+            }
+          },
+          "footageNote": "2025年原视频 · 晚间排档出摊以实际营业为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaoman-7612941913641028905",
+      "author": "小满同学",
+      "title": "超难排队的武汉烧烤大排档能有多好吃？大肉筋爽吃～ #无辣不欢 #武汉美食",
+      "url": "https://www.douyin.com/video/7612941913641028905",
+      "shareURL": "https://v.douyin.com/pvwKagL5WSQ/",
+      "publishedOn": "2026-03-03",
+      "durationSeconds": 252.033,
+      "sourceSHA256": "0503e6c10da7f34c52325e2d38b6eb12532df26c1ea0495583160b8fe84caaa0",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汉阳老牌排队王盼盼烧烤大排档重装开业，实拍招牌牛骨锅、胸口油、烤猪蹄、溏心荷包蛋与沉甸甸大肉筋。",
+      "segments": [
+        {
+          "id": "wh-xiaoman-panpan-shaokao",
+          "name": "盼盼烧烤大排档(汉阳拦江路店)",
+          "category": "汉派烧烤 / 大排档",
+          "addressText": "武汉市汉阳区腰路堤路/拦江路（近拦江路地铁站B口）",
+          "start": 19.5,
+          "end": 251,
+          "posterSecond": 197,
+          "summary": "汉阳超难排队老牌烧烤大排档，招牌牛骨锅泡椒入味辣香浓郁，胸口油奶香嘎嘣脆，还有招牌沉甸甸大肉筋与流心烤荷包蛋。",
+          "coordinates": [
+            114.2676785,
+            30.5471365
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "拦江路 / 腰路堤路（近拦江路站）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍盼盼烧烤重装起航菜单与排队盛况，匹配 OSM 拦江路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 780557570,
+              "name": "拦江路",
+              "url": "https://www.openstreetmap.org/way/780557570",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 7288820604
+            }
+          },
+          "footageNote": "2026年原视频 · 傍晚排队火爆，营业情况以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaofantong-7566946341760330314",
+      "author": "人间行走小饭桶",
+      "title": "武汉炭烤再出黑马！手工牛油一口奶香爆汁，太过瘾了！#武汉美食 #烧烤",
+      "url": "https://www.douyin.com/video/7566946341760330314",
+      "shareURL": "https://v.douyin.com/7Cgr8e458FA/",
+      "publishedOn": "2025-10-30",
+      "durationSeconds": 188.367,
+      "sourceSHA256": "3442e2ed33e3d919db7969f9f962029482a107b97b7492dc50446afc5a9a77a5",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汉阳江欣苑碳烤江湖，打卡手切大片牛油、小葱卷糯筋、牛燕翅、松板肉与生烤鸡爪。",
+      "segments": [
+        {
+          "id": "wh-xiaofantong-tankaojianghu",
+          "name": "碳烤江湖(汉阳江欣苑店)",
+          "category": "炭烤烧烤 / 江湖夜市",
+          "addressText": "武汉市汉阳区江欣苑路（江欣苑烧烤一条街）",
+          "start": 28.5,
+          "end": 188,
+          "posterSecond": 38,
+          "summary": "江欣苑炭火烧烤黑马，手切大片牛油脆弹爆汁满口奶香，小葱卷糯筋层次丰富，搭配特色牛燕翅、脆嫩松板肉与酸辣炒粉。",
+          "coordinates": [
+            114.2401585,
+            30.532121
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江欣苑路烧烤街",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江欣苑路碳烤江湖夜市大棚，匹配 OSM 江欣苑路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 766735144,
+              "name": "江欣苑路",
+              "url": "https://www.openstreetmap.org/way/766735144",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 2045952271
+            }
+          },
+          "footageNote": "2025年原视频 · 营业与出餐以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-haitai-7672682106002663537",
+      "author": "海苔肉松小贝",
+      "title": "武汉烧烤攻略如期而至 依旧是武昌 汉口 汉阳各一家！！！",
+      "url": "https://www.douyin.com/video/7672682106002663537",
+      "shareURL": "https://v.douyin.com/3bJdpkscJ60/",
+      "publishedOn": "2026-08-11",
+      "durationSeconds": 119.7,
+      "sourceSHA256": "6cd353d9ea6131bba8fe1a954ab604257d2da78e2ebe0e6d77db6fe6ecf5c715",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片探访武汉三镇三大烧烤名店：武重胖胖烧烤（武昌）、小宝烧烤（汉口）、小鹿烧烤（汉阳）。",
+      "segments": [
+        {
+          "id": "wh-haitai-wuzhong-pangpang",
+          "name": "武重胖胖烧烤(徐东百瑞景店)",
+          "category": "汉派烧烤 / 市井小吃",
+          "addressText": "武汉市洪山区徐东大街143号华腾园（原武重宿舍区旁）",
+          "start": 7,
+          "end": 46.5,
+          "posterSecond": 8,
+          "summary": "武昌老牌市井烧烤代表，选用恩施优质猪肉，肉筋焦香紧实、碎碎鱼片脆爽弹牙、生烤鸡爪外皮焦脆吸汁入味。",
+          "coordinates": [
+            114.3499911,
+            30.5835314
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "徐东大街华腾园（武重片区）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍武重胖胖烧烤门头与肉源，匹配 OSM 徐东大街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 236669231,
+              "name": "徐东大街",
+              "url": "https://www.openstreetmap.org/way/236669231",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 299847133
+            }
+          },
+          "footageNote": "2026年原视频 · 营业时间与菜品以到店为准。"
+        },
+        {
+          "id": "wh-haitai-xiaobao-shaokao",
+          "name": "小宝烧烤(汉口民主一街店)",
+          "category": "汉派烧烤 / 老牌宵夜",
+          "addressText": "武汉市江汉区民主一街13号（近中山大道/老王糖水旁）",
+          "start": 46.5,
+          "end": 83.7,
+          "posterSecond": 48,
+          "summary": "汉口老城区中山大道旁老派烧烤，肉筋焦糯肥瘦得当，腰筋嚼劲十足，烤刁子鱼外酥里嫩，配一碗老王桂花绿豆汤冰爽解腻。",
+          "coordinates": [
+            114.2758907,
+            30.5797044
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "民主一街（近中山大道）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍老街坊露天小宝烧烤排档，匹配 OSM 民主一街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 852060174,
+              "name": "民主一街",
+              "url": "https://www.openstreetmap.org/way/852060174",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 1880395969
+            }
+          },
+          "footageNote": "2026年原视频 · 街巷摊位与营业以现场为准。"
+        },
+        {
+          "id": "wh-haitai-xiaolu-shaokao",
+          "name": "小鹿烧烤(汉阳建港路店)",
+          "category": "汉派烧烤 / 刁角小馆",
+          "addressText": "武汉市汉阳区建港路社区（近拦江堤路）",
+          "start": 83.7,
+          "end": 119.7,
+          "posterSecond": 85,
+          "summary": "汉阳社区刁角神级烤串，肉筋炭烤焦香干脆、油脂迸发，猪雪花鲜嫩多汁，烤猪蹄软糯入味焦香粘唇。",
+          "coordinates": [
+            114.25124,
+            30.5280163
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "建港路社区",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍汉阳建港路小鹿烧烤烤炉与招牌菜品，匹配 OSM 建港路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 194084640,
+              "name": "建港路",
+              "url": "https://www.openstreetmap.org/way/194084640",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 14352484903
+            }
+          },
+          "footageNote": "2026年原视频 · 社区老店营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-wanlaoban-7612454625081798841",
+      "author": "万老板爱干饭",
+      "title": "盘点我学生时期常吃的宝藏小店！ 1元的肉筋，2元的现穿牛羊肉，对钱包真的很友好！",
+      "url": "https://www.douyin.com/video/7612454625081798841",
+      "shareURL": "https://v.douyin.com/9BScHDEFyYM/",
+      "publishedOn": "2026-03-02",
+      "durationSeconds": 298.567,
+      "sourceSHA256": "1df08e7ce73af65a5948540caef490b7610934ed2c9c74966158788ba55efc61",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍广八路神厨烧烤大排档，打卡1元肉筋、2元现穿牛羊肉、烤鸡爪、现烤基围虾与干锅牛蛙。",
+      "segments": [
+        {
+          "id": "wh-wanlaoban-shenchu-shaokao",
+          "name": "神厨烧烤大排档(广八路武大店)",
+          "category": "大排档烧烤 / 干锅炒菜",
+          "addressText": "武汉市洪山区广八路银海雅苑小巷内（武汉大学南门旁）",
+          "start": 31,
+          "end": 297,
+          "posterSecond": 53,
+          "summary": "武大学生时代宝藏大排档，主打超实惠1元大肉筋、2元现穿牛羊肉，卤香烤鸡爪一嗦脱骨，更有现杀干锅牛蛙与大火炒米粉。",
+          "coordinates": [
+            114.3571129,
+            30.5269828
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "广八路小巷（近武汉大学南门）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍广八路神厨烧烤大排档菜单与菜品，匹配 OSM 广八路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 415176587,
+              "name": "广八路",
+              "url": "https://www.openstreetmap.org/way/415176587",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 13578080735
+            }
+          },
+          "footageNote": "2026年原视频 · 学生街区排档，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-zhoumedazi-7555534535824739642",
+      "author": "周末搭子",
+      "title": "很多网友推荐的武汉武昌区烧烤排档排队王 #周末搭子#需要大声安利的烟火气美食",
+      "url": "https://www.douyin.com/video/7555534535824739642",
+      "shareURL": "https://v.douyin.com/qFiHlXA-jjI/",
+      "publishedOn": "2025-09-29",
+      "durationSeconds": 219.777,
+      "sourceSHA256": "d308534f2c6c70bc380d3b0d2a554be6e182a8d81e52efbde295ddbb694fda4d",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍武昌黄鹤楼脚下炙天天·烧烤海鲜大排档，实拍松针炭烤鸡、稻草烤鲫鱼、现磨豆浆油条与黑胡椒炒罗氏虾。",
+      "segments": [
+        {
+          "id": "wh-zhoumedazi-zhitiantian",
+          "name": "炙天天·烧烤海鲜大排档(黄鹤楼总店)",
+          "category": "烧烤海鲜 / 夜景大排档",
+          "addressText": "武汉市武昌区中山路（近司门口黄鹤楼站，黄鹤楼旁）",
+          "start": 22,
+          "end": 217,
+          "posterSecond": 47,
+          "summary": "武昌黄鹤楼脚下火爆排队王，特色松针炭烤鸡皮薄汁足带独特烟熏香，稻草裹料炭烤鲫鱼鲜嫩香浓，还有现磨豆浆炸油条与黄油黑胡椒炒罗氏虾。",
+          "coordinates": [
+            114.3124939,
+            30.5505088
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中山路（黄鹤楼旁）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍黄鹤楼旁炙天天排队大排档，匹配 OSM 中山路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 231781500,
+              "name": "中山路",
+              "url": "https://www.openstreetmap.org/way/231781500",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 10312684728
+            }
+          },
+          "footageNote": "2025年原视频 · 节假日周末排队较长，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-lurenfei-7559484022401895734",
+      "author": "路人飞.毛腿",
+      "title": "街头宵夜整顿汉派烧烤!!猛火炭烤糯筋子、耙猪蹄,太得劲了 #武汉烧烤的快乐我懂",
+      "url": "https://www.douyin.com/video/7559484022401895734",
+      "shareURL": "https://v.douyin.com/15hi8I586WE/",
+      "publishedOn": "2025-10-10",
+      "durationSeconds": 354.661,
+      "sourceSHA256": "45c0d23547c99d4f78be9e4b08d89862749566e0425f1a99dac110a547754da8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍武昌才华街三毛烧烤社区大排档，打卡鲜辣嫩腰片、文火慢烤糯筋子、整根烤黄鳝、生烤鸡爪与蟹脚面。",
+      "segments": [
+        {
+          "id": "wh-lurenfei-sanmao-shaokao",
+          "name": "三毛烧烤社区大排档(武昌才华街店)",
+          "category": "汉派烧烤 / 社区大排档",
+          "addressText": "武汉市武昌区才华街8号附5号（杨园铁四院地铁站A口旁）",
+          "start": 20,
+          "end": 354,
+          "posterSecond": 71,
+          "summary": "武昌才华街深夜老街坊排档，大腰片嫩度飞起、鲜辣过瘾，文火慢烤糯筋子外焦酥内粘牙，还有整根鲜烤黄鳝大串、生烤鸡爪与招牌蟹脚面。",
+          "coordinates": [
+            114.3381295,
+            30.5978069
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "才华街（近杨园铁四院站）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍武昌才华街三毛烧烤排队与后厨炭烤，匹配 OSM 才华街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 48279143,
+              "name": "才华街",
+              "url": "https://www.openstreetmap.org/way/48279143",
+              "sourceDate": "2026-11-13",
+              "method": "original-way-node",
+              "nodeId": 613500241
+            }
+          },
+          "footageNote": "2025年原视频 · 现点现烤出餐慢，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaofantong-7620384841565789166",
+      "author": "人间行走小饭桶",
+      "title": "在宵夜大排档这个领域里面武汉还是太权威了～#武汉美食 #武汉旅游攻略 #寻味烟火气 #烟火老吃家入门考试 #这届网友都是老吃家来的",
+      "url": "https://www.douyin.com/video/7620384841565789166",
+      "shareURL": "https://v.douyin.com/H2DlAUrgjFU/",
+      "publishedOn": "2026-03-23",
+      "durationSeconds": 261.618,
+      "sourceSHA256": "dce963ec6c7af56cb7c3829e192d7d81069f5c8fb9272fcb198989561b785bc8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍青山区冶金大道张记烧烤牛肉馆·武汉大排档，开花肠卷牛、炭烤猪蹄、菜椒牛肉条、茶缸牛杂与炸牛扎丸子。",
+      "segments": [
+        {
+          "id": "wh-xiaofantong-zhangji-dapaidang",
+          "name": "张记烧烤牛肉馆·武汉大排档(青山店)",
+          "category": "烧烤 / 武汉大排档",
+          "addressText": "湖北省武汉市青山区冶金大道9号健吾假日广场F1层",
+          "start": 0,
+          "end": 261,
+          "posterSecond": 22,
+          "summary": "青山健吾假日广场大排档老店，开花肠卷牛、炭烤猪蹄、菜椒牛肉条、茶缸牛杂与炸牛扎丸子，烟火气十足。",
+          "coordinates": [
+            114.3860487,
+            30.6354875
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "冶金大道（健吾假日广场）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍青山健吾假日广场张记烧烤大排档，匹配 OSM 冶金一街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105737894,
+              "name": "冶金一街",
+              "url": "https://www.openstreetmap.org/way/105737894",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1217604755
+            }
+          },
+          "footageNote": "2025年原视频 · 现点现烤，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-dawei-7525370255965113638",
+      "author": "大魏的胃",
+      "title": "武汉深夜的烧烤也太过瘾了吧 #被治愈美食馋到流口水 #武汉美食 #夜宵吃什么 #烤猪蹄",
+      "url": "https://www.douyin.com/video/7525370255965113638",
+      "shareURL": "https://v.douyin.com/ZZcTG7xPH1Q/",
+      "publishedOn": "2025-07-10",
+      "durationSeconds": 227.4,
+      "sourceSHA256": "01b47c1aa4f5fef562dda1e15308ebd9384322d948c6635c092c961f93c60a1e",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍关山大道光谷新发展国际中心一家破烧烤店，碳烤猪蹄、脆皮烤鸡爪、辣卤罗氏虾花甲与汉派炒米粉。",
+      "segments": [
+        {
+          "id": "wh-dawei-yijiapo-shaokao",
+          "name": "一家破烧烤店·辣卤海鲜·小排档(关山漾店)",
+          "category": "烧烤 / 辣卤海鲜",
+          "addressText": "湖北省武汉市洪山区关山大道473号光谷新发展国际中心裙楼A1-01、A1-02",
+          "start": 0,
+          "end": 227,
+          "posterSecond": 25,
+          "summary": "关山大道光谷新发展国际中心排档，碳烤猪蹄、脆皮烤鸡爪、辣卤罗氏虾花甲与汉派炒米粉，深夜夜宵人气旺。",
+          "coordinates": [
+            114.4049018,
+            30.4837962
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "关山大道（光谷新发展国际中心）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍关山大道一家破烧烤店排档，匹配 OSM 关山大道节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 112947574,
+              "name": "关山大道",
+              "url": "https://www.openstreetmap.org/way/112947574",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1282529922
+            }
+          },
+          "footageNote": "2025年原视频 · 现点现烤，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-shejianwuhan-7661927998434082917",
+      "author": "舌尖武汉",
+      "title": "东北烧烤就是要大口撸串口口爆汁的快了 这大串吃起来嘎嘎香#寻味烟火气 #东北烧烤 #东北菜 #巷子里的美食 #武汉美食",
+      "url": "https://www.douyin.com/video/7661927998434082917",
+      "shareURL": "https://v.douyin.com/8zngCEWJ7g8/",
+      "publishedOn": "2026-07-13",
+      "durationSeconds": 115.834,
+      "sourceSHA256": "d86a5a77104951b5100bd956d239ea3fb4bd86433d58051f32611759eb1e1210",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍江岸区华隆路与兆瑞大道交叉口东北韩小狗东北烧烤，特色原味东北大串、口口爆汁大油边与东北大饭。",
+      "segments": [
+        {
+          "id": "wh-shejianwuhan-hanxiaogou-shaokao",
+          "name": "韩小狗东北烧烤(华隆路店)",
+          "category": "东北烧烤 / 东北菜",
+          "addressText": "湖北省武汉市江岸区华隆路与兆瑞大道交叉口东北80米",
+          "start": 0,
+          "end": 115,
+          "posterSecond": 2,
+          "summary": "江岸区后湖华隆路与兆瑞大道交叉口，特色原味东北大串、口口爆汁大油边、烤排骨串与东北大饭。",
+          "coordinates": null,
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 超出当前底图北界(30.64)，标记为 out-of-bounds 待后续底图扩图接入。"
+        }
+      ]
+    },
+    {
+      "id": "wh-zaitaoreganmian-7543180201598733619",
+      "author": "在逃热干面",
+      "title": "来武汉就为这口大肉串 #深夜的快乐是夜宵给的 #武汉美食 #寻味烟火气 #烧烤",
+      "url": "https://www.douyin.com/video/7543180201598733619",
+      "shareURL": "https://v.douyin.com/bUGsUBr4Y0Y/",
+      "publishedOn": "2025-08-27",
+      "durationSeconds": 13.734,
+      "sourceSHA256": "954b653229a324df90ae491390731c253724da15cab10eea6f8f50b3fdc58329",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍硚口区云鹤小区情怀烧烤，特大现穿烤肉筋、大油边、烤鲜鱼大串与焦香五花肉。",
+      "segments": [
+        {
+          "id": "wh-zaitaoreganmian-qinghuai-shaokao",
+          "name": "情怀烧烤(云鹤小区店)",
+          "category": "汉派烧烤 / 市井小摊",
+          "addressText": "湖北省武汉市硚口区云鹤南路1号附31号云鹤小区",
+          "start": 0,
+          "end": 13,
+          "posterSecond": 5,
+          "summary": "硚口区云鹤南路云鹤小区老破店，特大现穿烤肉筋、大油边、烤鲜鱼大串与焦香五花肉。",
+          "coordinates": [
+            114.2172918,
+            30.6052001
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "云鹤南路（云鹤小区）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍云鹤小区情怀烧烤，匹配 OSM 云鹤南路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 455529107,
+              "name": "云鹤南路",
+              "url": "https://www.openstreetmap.org/way/455529107",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 4519229591
+            }
+          },
+          "footageNote": "2025年原视频 · 市井摊位，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-lurenfei-7678648685202345279",
+      "author": "路人飞.毛腿",
+      "title": "武汉132一位的美式烟熏烤肉自助 #自助餐 #烤肉 #美式烤肉 #路人飞毛腿",
+      "url": "https://www.douyin.com/video/7678648685202345279",
+      "shareURL": "https://v.douyin.com/lsDC7yqLdhs/",
+      "publishedOn": "2026-08-27",
+      "durationSeconds": 235.667,
+      "sourceSHA256": "a0db83cafba771064c8ba1dc528a6e343ecefa5fea619049f9b44927c8fbc4df",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍武昌万象城与九烤肉精酿自助，美式慢烤牛胸肉、烟熏猪肋排、中式炭烤小串与自酿精酿啤酒。",
+      "segments": [
+        {
+          "id": "wh-lurenfei-yujiu-kaorou",
+          "name": "与九烤肉精酿自助(武昌万象城店)",
+          "category": "美式烤肉 / 精酿自助",
+          "addressText": "湖北省武汉市武昌区徐家棚街道武昌万象城七层落日剧场旁L7076",
+          "start": 0,
+          "end": 235,
+          "posterSecond": 70,
+          "summary": "武昌万象城7楼落日剧场旁，美式慢烤牛胸肉、烟熏猪肋排、中式炭烤小串、厚切牛舌与自酿精酿啤酒。",
+          "coordinates": [
+            114.3190277,
+            30.5889986
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "武昌万象城（江流路）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍武昌万象城七层落日剧场旁与九烤肉，匹配 OSM 江流路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1315252649,
+              "name": "江流路",
+              "url": "https://www.openstreetmap.org/way/1315252649",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 12174256908
+            }
+          },
+          "footageNote": "2025年原视频 · 自助用餐限时，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaoman-7647828583880117550",
+      "author": "小满同学",
+      "title": "小龙虾烤榴莲无限吃的武汉老牌自助！超多种类看花眼～ #武汉美食 #自助 #武汉自助 #美食vlog#金马门小龙虾",
+      "url": "https://www.douyin.com/video/7647828583880117550",
+      "shareURL": "https://v.douyin.com/Bz7UW9H0mt4/",
+      "publishedOn": "2026-06-05",
+      "durationSeconds": 331.9,
+      "sourceSHA256": "29360c38064d9272a2a430ae67e741f7c48c6ea1bbcb0327c684bdfbd0a62492",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍洪山区珞喻路君宜王朝大饭店金马门国际美食百汇，无限量小龙虾、炭烤金枕榴莲与海鲜百汇。",
+      "segments": [
+        {
+          "id": "wh-xiaoman-jinmamen-zizhu",
+          "name": "金马门国际美食百汇(君宜王朝店)",
+          "category": "海鲜自助 / 国际百汇",
+          "addressText": "湖北省武汉市洪山区珞喻路87号武汉君宜王朝大饭店5楼",
+          "start": 0,
+          "end": 331,
+          "posterSecond": 35,
+          "summary": "洪山区珞喻路君宜王朝大饭店5楼武汉老牌自助，无限量三味小龙虾、炭烤金枕榴莲、刺身厚切与哈根达斯。",
+          "coordinates": [
+            114.3538914,
+            30.5277733
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "珞喻路（君宜王朝大饭店）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍君宜王朝大饭店5楼金马门自助，匹配 OSM 珞喻路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 149570571,
+              "name": "珞喻路",
+              "url": "https://www.openstreetmap.org/way/149570571",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1210058592
+            }
+          },
+          "footageNote": "2025年原视频 · 档口自取，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-dahantongxue-7596144053143296497",
+      "author": "大韩同学呀（爱吃比格）",
+      "title": "武汉70元左右的炭火烤串加烤肉自助，还有现做的锅包肉，看看能吃饱吗？\n#vlog十亿流量扶持计划",
+      "url": "https://www.douyin.com/video/7596144053143296497",
+      "shareURL": "https://v.douyin.com/Es77szyCd0Q/",
+      "publishedOn": "2026-01-17",
+      "durationSeconds": 450.634,
+      "sourceSHA256": "7d61980b4b459d22b340edbad078ce4f02fc9441bc3c13e4abc97f37bf69d47e",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍青山区恩施街炉功夫·炭火烤肉，69元现烤牛羊肉小串不限量、烤糯筋子、现炸东北锅包肉与酸菜白肉。",
+      "segments": [
+        {
+          "id": "wh-dahantongxue-lugongfu-kaorou",
+          "name": "炉功夫·炭火烤肉(恩施街店)",
+          "category": "烤肉自助 / 现烤小串",
+          "addressText": "湖北省武汉市青山区恩施街18号",
+          "start": 0,
+          "end": 450,
+          "posterSecond": 38,
+          "summary": "青山区恩施街18号铁桶炭火烤肉，69元现烤牛羊肉小串不限量、烤糯筋子、现炸东北锅包肉与酸菜白肉。",
+          "coordinates": [
+            114.3973627,
+            30.6235607
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "恩施街（美食街）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍恩施街18号炉功夫铁桶烤肉，匹配 OSM 恩施街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 105154102,
+              "name": "恩施街",
+              "url": "https://www.openstreetmap.org/way/105154102",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1211889430
+            }
+          },
+          "footageNote": "2025年原视频 · 现点现烤，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-wanbilinda-7643085915082109155",
+      "author": "碗比脸大🥣",
+      "title": "在武汉开了30年的冷锅鱼自助，主理人都70多岁了！#武汉美食 #冷锅鱼 #武汉自助 #社区火锅 #巷子里的美食",
+      "url": "https://www.douyin.com/video/7643085915082109155",
+      "shareURL": "https://v.douyin.com/gvsyJ_5cyKw/",
+      "publishedOn": "2026-05-23",
+      "durationSeconds": 118.934,
+      "sourceSHA256": "ed21c023e786056fc02285632aeced4f41834904566ce31ea52c0fdce3f0cf88",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍洪山区珞狮路荣泰小区重庆特色火锅冷锅鱼，现杀现剖鲜花鲢草鱼、秘制麻辣红油底与自选鲜毛肚鸭肠。",
+      "segments": [
+        {
+          "id": "wh-wanbilinda-lengguoyu-zizhu",
+          "name": "重庆特色火锅冷锅鱼(荣泰小区店)",
+          "category": "冷锅鱼 / 社区火锅自助",
+          "addressText": "湖北省武汉市洪山区珞狮路8号荣泰小区7栋1门101",
+          "start": 0,
+          "end": 118,
+          "posterSecond": 95,
+          "summary": "洪山区珞狮路荣泰小区30年老牌社区自助，现杀现剖鲜花鲢草鱼、秘制麻辣红油底、自选鲜毛肚鸭肠与豆皮。",
+          "coordinates": [
+            114.3495053,
+            30.5346744
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "珞狮路（荣泰小区）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍珞狮路荣泰小区重庆冷锅鱼老店，匹配 OSM 珞狮路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 415176579,
+              "name": "珞狮路",
+              "url": "https://www.openstreetmap.org/way/415176579",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1272837646
+            }
+          },
+          "footageNote": "2025年原视频 · 现杀现剖，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaofantong-7696799583125471910",
+      "author": "人间行走小饭桶",
+      "title": "百元内的朝鲜烤肉自助，竟然可以这么丰富！上百道菜品畅吃不限量，直接吃爽了#武汉美食 #自助餐 #烤肉自助 #朝鲜族美食 #烤肉",
+      "url": "https://www.douyin.com/video/7696799583125471910",
+      "shareURL": "https://v.douyin.com/QZMhUGgfy_Q/",
+      "publishedOn": "2026-10-15",
+      "durationSeconds": 304.529,
+      "sourceSHA256": "4601598912cc3e81b8a376a1f44727d33714585e092e792cd6cd37d1c9992801",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍东西湖区吴家山临空港大道鸿达中央广场炽城·烤肉名家，百元内朝鲜烤肉自助、干式熟成梅芯肉与风干小油边。",
+      "segments": [
+        {
+          "id": "wh-xiaofantong-chicheng-kaorou",
+          "name": "炽城·烤肉名家(东西湖鸿达中央广场店)",
+          "category": "朝鲜烤肉 / 烤肉自助",
+          "addressText": "湖北省武汉市东西湖区临空港大道58号鸿达中央广场",
+          "start": 0,
+          "end": 304,
+          "posterSecond": 92,
+          "summary": "东西湖区吴家山临空港大道鸿达中央广场，百元内朝鲜烤肉自助、干式熟成梅芯肉、风干小油边与烤牛大肠。",
+          "coordinates": null,
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 超出当前底图西界(114.18)，标记为 out-of-bounds 待后续底图扩图接入。"
+        }
+      ]
+    },
+    {
+      "id": "wh-geixiaoliu-7451146803660999996",
+      "author": "给小刘留一口",
+      "title": "武汉88元的巴西烤肉自助🔥都能吃到些啥😋能不能回本❓ #今天吃啥 #创作者中心 #创作灵感 #自助餐 #武汉",
+      "url": "https://www.douyin.com/video/7451146803660999996",
+      "shareURL": "https://v.douyin.com/j67NUY8oH_I/",
+      "publishedOn": "2024-12-22",
+      "durationSeconds": 486.033333,
+      "sourceSHA256": "4ed2cffa54d11f47924081c0637bb49c03688e0e71c0f84b3b0eeb9e72ab5343",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江汉区解放大道新崇光百货B座巴犀烧烤，现切大叉烧、黑胡椒烤肉、烤羊腿与热菜海鲜。",
+      "segments": [
+        {
+          "id": "wh-geixiaoliu-baxi-shaokao",
+          "name": "巴犀烧烤(新崇光百货店)",
+          "category": "巴西烤肉 / 自助餐",
+          "addressText": "湖北省武汉市江汉区解放大道374号新崇光百货B座3楼",
+          "start": 0,
+          "end": 486,
+          "posterSecond": 85,
+          "summary": "解放大道新崇光百货老牌巴西烤肉自助，现切大叉烧、黑胡椒烤肉、烤羊腿与热菜海鲜，风味地道。",
+          "coordinates": [
+            114.2786131,
+            30.5877979
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "解放大道（新崇光百货）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江汉路/中山公园对面新崇光百货巴犀烧烤，匹配 OSM 解放大道节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 107057049,
+              "name": "解放大道",
+              "url": "https://www.openstreetmap.org/way/107057049",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1230843718
+            }
+          },
+          "footageNote": "2024年原视频 · 现点现切现烤，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-lurenfei-7683811767377530166",
+      "author": "路人飞.毛腿",
+      "title": "武汉99/位的炭火烧烤自助~肉很顶 #烧烤 #烤肉 #自助餐 #路人飞毛腿",
+      "url": "https://www.douyin.com/video/7683811767377530166",
+      "shareURL": "https://v.douyin.com/SvoGsRod7Nc/",
+      "publishedOn": "2026-09-10",
+      "durationSeconds": 280.766667,
+      "sourceSHA256": "58206f417250846fd682ec9370c7653c6ba064bdedf034c95a30dd1498f29f7c",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江岸区三阳路幸福小串·地摊小炉子，99元炭火烤串自助，现穿牛羊肉小串、烤肉筋与自制酸梅汤。",
+      "segments": [
+        {
+          "id": "wh-lurenfei-xingfu-xiaochuan",
+          "name": "幸福小串·地摊小炉子(三阳路店)",
+          "category": "烧烤 / 炭火烤串自助",
+          "addressText": "湖北省武汉市江岸区三阳路",
+          "start": 0,
+          "end": 280,
+          "posterSecond": 45,
+          "summary": "三阳路地摊小炉子烤串自助，99元现穿牛羊肉小串、烤肉筋与自制酸梅汤，炭火现烤大口撸串。",
+          "coordinates": [
+            114.2940136,
+            30.6020501
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "三阳路（幸福小串）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江岸区三阳路街景与幸福小串门头，匹配 OSM 三阳路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177783265,
+              "name": "三阳路",
+              "url": "https://www.openstreetmap.org/way/177783265",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 5941852302
+            }
+          },
+          "footageNote": "2024年原视频 · 现穿现烤，备货有限先到先得。"
+        }
+      ]
+    },
+    {
+      "id": "wh-zhoumedazi-7621876045624663473",
+      "author": "周末搭子",
+      "title": "在武汉不限时不限量，老辈子都知道的海鲜自助餐，小龙虾自由 #周末搭子#武汉#武汉美食#创作者扶持计划 #金马门小龙虾",
+      "url": "https://www.douyin.com/video/7621876045624663473",
+      "shareURL": "https://v.douyin.com/SNs7Amc36S4/",
+      "publishedOn": "2026-03-27",
+      "durationSeconds": 248.633333,
+      "sourceSHA256": "57baa996dd534cb629dbc05c46a16ec1d0b039e9cc2d201acbef24a85ab579c7",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍洪山区珞喻路君宜王朝大饭店金马门国际美食百汇，不限时不限量海鲜自助、小龙虾、现开生蚝刺身与手工冰淇淋。",
+      "segments": [
+        {
+          "id": "wh-zhoumedazi-jinmamen-zizhu",
+          "placeId": "wh-xiaoman-jinmamen-zizhu",
+          "name": "金马门国际美食百汇(君宜王朝店)",
+          "category": "海鲜自助 / 国际百汇",
+          "addressText": "湖北省武汉市洪山区珞喻路87号武汉君宜王朝大饭店5楼",
+          "start": 0,
+          "end": 248,
+          "posterSecond": 60,
+          "summary": "珞喻路君宜王朝大饭店老牌海鲜百汇，不限时不限量，大铁锅热炒蒜蓉麻辣小龙虾、现开生蚝刺身与手工冰淇淋。",
+          "coordinates": [
+            114.3538914,
+            30.5277733
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "珞喻路（君宜王朝大饭店）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍洪山区珞喻路君宜王朝大饭店5楼金马门，匹配 OSM 珞喻路节点，与小满同学同店共点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 149570571,
+              "name": "珞喻路",
+              "url": "https://www.openstreetmap.org/way/149570571",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1210058592
+            }
+          },
+          "footageNote": "2024年原视频 · 不限时海鲜自助，菜品以时令供应为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-wanlaoban-7701935409731382939",
+      "author": "万老板爱干饭",
+      "title": "东盛自助入驻武汉，立马上测评！ 128/人的炭烤自助料理，黑安格斯牛肉、挪威三文鱼、黑虎虾等200多道菜品不限量#自助餐测评 #干饭南波万 #東盛自助料理 #新店开业 #武汉首店",
+      "url": "https://www.douyin.com/video/7701935409731382939",
+      "shareURL": "https://v.douyin.com/0mDT812Vijs/",
+      "publishedOn": "2026-10-29",
+      "durationSeconds": 276.066667,
+      "sourceSHA256": "97c2c50e26333179d5166d238769f8b547aa8d7a45ffcb05a6e20855487a8dd7",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江汉区前进四路与中山大道交叉口楚宝天地東盛炭烤自助料理，黑安格斯牛肉、现切挪威三文鱼、黑虎虾与炭烤原切肉。",
+      "segments": [
+        {
+          "id": "wh-wanlaoban-dongsheng-zizhu",
+          "name": "東盛炭烤自助料理(武汉楚宝天地店)",
+          "category": "炭火烤肉 / 自助料理",
+          "addressText": "湖北省武汉市江汉区前进四路与中山大道交叉口西北60米楚宝天地L3层M308、M309号商铺",
+          "start": 0,
+          "end": 276,
+          "posterSecond": 3,
+          "summary": "江汉路楚宝天地炭烤自助料理，黑安格斯牛肉、现切挪威三文鱼、黑虎虾与炭烤原切肉，菜品丰富。",
+          "coordinates": [
+            114.2830578,
+            30.5802216
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "前进四路（楚宝天地）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江汉路楚宝天地東盛炭烤自助料理，匹配 OSM 前进四路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177624349,
+              "name": "前进四路",
+              "url": "https://www.openstreetmap.org/way/177624349",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1880421374
+            }
+          },
+          "footageNote": "2025年原视频 · 炭火自烤，现切生鲜限量分批出餐。"
+        }
+      ]
+    },
+    {
+      "id": "wh-lurenfei-7418847766601977114",
+      "author": "路人飞.毛腿",
+      "title": "爽吃羊排的铜锅涮羊肉自助~星星越多越难回本! 涮盟回本难度:三星半!#自助餐 #羊排 #涮羊肉 #路人飞毛腿",
+      "url": "https://www.douyin.com/video/7418847766601977114",
+      "shareURL": "https://v.douyin.com/ExutYvj8pcY/",
+      "publishedOn": "2024-09-26",
+      "durationSeconds": 293.766667,
+      "sourceSHA256": "5c4061eeca03aeab1200635156dc73e0d18e71ffde38d673f764aa152ce83aaf",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江岸区保成路涮盟火锅·铜锅涮羊肉，99元传统铜锅涮羊肉、手抓蒸羊排、鲜切羊上脑与羊尾油润锅。",
+      "segments": [
+        {
+          "id": "wh-lurenfei-shuanmeng-huoguo",
+          "name": "涮盟火锅·铜锅涮羊肉(江汉路店)",
+          "category": "火锅 / 铜锅涮羊肉",
+          "addressText": "湖北省武汉市江岸区保成路122号（近循礼门站H口）",
+          "start": 0,
+          "end": 293,
+          "posterSecond": 12,
+          "summary": "循礼门保成路老北京铜锅涮羊肉自助，手抓蒸羊排、鲜切羊上脑、内蒙羊腿肉与羊尾油，炭火铜锅大口吃肉。",
+          "coordinates": [
+            114.283632,
+            30.5867023
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "保成路（涮盟火锅）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江岸区循礼门保成路夜市街边涮盟火锅门头，匹配 OSM 保成路节点，与小张一人食同店共点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177629408,
+              "name": "保成路",
+              "url": "https://www.openstreetmap.org/way/177629408",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 11303773629
+            }
+          },
+          "footageNote": "2024年原视频 · 清水铜锅现涮，热气腾腾。"
+        }
+      ]
+    },
+    {
+      "id": "wh-dahantongxue-7566892806855740721",
+      "author": "大韩同学呀（爱吃比格）",
+      "title": "@佰友成（新荣天街店） \n武汉89元鲜切牛肉毛肚自助！烧烤，羊肉，熟食都好吃！环境也好！同学们诚不欺我！#vlog十亿流量扶持计划 #探店达人日记",
+      "url": "https://www.douyin.com/video/7566892806855740721",
+      "shareURL": "https://v.douyin.com/_KSipoRUwEk/",
+      "publishedOn": "2025-10-30",
+      "durationSeconds": 563.666667,
+      "sourceSHA256": "4bba7919fa4f73d1686174ad05caa63735af7539c46e7ac3832d047ae5e85f43",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江岸区后湖新荣天街佰友成，89元鲜切牛肉毛肚自助、烤羊肉大串与热菜熟食（纬度 30.659 超出当前底图北界 30.64）。",
+      "segments": [
+        {
+          "id": "wh-dahantongxue-baiyoucheng-huoguo",
+          "name": "佰友成(新荣天街店)",
+          "category": "火锅 / 鲜切牛肉自助",
+          "addressText": "湖北省武汉市江岸区后湖大道与汉黄路交汇处龙湖新荣天街",
+          "start": 0,
+          "end": 563,
+          "posterSecond": 6,
+          "summary": "后湖新荣天街89元鲜切牛肉毛肚火锅自助，现切鲜牛肉、熟食与烤肉小吃，分量实在。",
+          "coordinates": null,
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "footageNote": "2025年原视频 · 超出当前武汉路网边界，如实记录保留素材。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaozhen-7539451167282089235",
+      "author": "小珍来咯…",
+      "title": "新晋百元自助的神 十几种肉畅吃还不用自己烤～#心动打卡指南 #山茶花水乳泛敏肌保姆 #溪木源山茶花水乳",
+      "url": "https://www.douyin.com/video/7539451167282089235",
+      "shareURL": "https://v.douyin.com/vFmPavuywls/",
+      "publishedOn": "2025-08-17",
+      "durationSeconds": 927.5,
+      "sourceSHA256": "19dc002af499595f7bd1cbc78704bb1c3e4fe044a2599ccf78447d782fe5d3e4",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片记录博主受邀前往北京活动打卡猛古里烤肉自助北京店，惠灵顿牛排、烤全羊与清炖羊排（非武汉本地门店）。",
+      "segments": [
+        {
+          "id": "wh-xiaozhen-mengguli-kaorou",
+          "name": "猛古里烤肉自助(北京店)",
+          "category": "烤肉 / 自助餐",
+          "addressText": "北京市（博主受邀前往北京活动打卡，非武汉本地门店）",
+          "start": 0,
+          "end": 927,
+          "posterSecond": 5,
+          "summary": "博主受邀赴北京参加活动打卡猛古里烤肉自助，惠灵顿牛排、现烤全羊与清炖羊排畅吃。",
+          "coordinates": null,
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "footageNote": "2024年原视频 · 北京外埠探店，如实记录保留素材。"
+        }
+      ]
+    },
+    {
+      "id": "wh-wanlaoban-7584445620695092529",
+      "author": "万老板爱干饭",
+      "title": "江汉路的美式熏肉自助 ➕20超长牛肋排和金枕榴莲无限畅吃，看看怎么样\n#武汉美食 #自助餐 #美式烤肉 #真实测评 #解馋",
+      "url": "https://www.douyin.com/video/7584445620695092529",
+      "shareURL": "https://v.douyin.com/X3emNjJswMg/",
+      "publishedOn": "2025-12-17",
+      "durationSeconds": 282.666667,
+      "sourceSHA256": "1b57d5ddae8757b14b09be5dc3c692721e59a60ee0a7e5d968499bcf0b1e097e",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江汉路紫晶城红磨坊美式烤肉·榴莲·生蚝自助，超长恐龙骨牛肋排、金枕榴莲与烤生蚝。",
+      "segments": [
+        {
+          "id": "wh-wanlaoban-hongmofang-kaorou",
+          "name": "红磨坊美式烤肉·榴莲·生蚝自助(江汉路店)",
+          "category": "烤肉 / 美式烟熏烤肉自助",
+          "addressText": "湖北省武汉市江汉区江汉一路19号紫晶城2层47室-2",
+          "start": 0,
+          "end": 282,
+          "posterSecond": 45,
+          "summary": "江汉路紫晶城美式烟熏慢烤自助，超长恐龙骨牛肋排、金枕榴莲与烤生蚝畅吃，肉食爱好者天堂。",
+          "coordinates": [
+            114.2862864,
+            30.5852986
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉一路（紫晶城）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江汉路紫晶城2楼红磨坊美式烤肉门头，匹配 OSM 江汉一路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177627389,
+              "name": "江汉一路",
+              "url": "https://www.openstreetmap.org/way/177627389",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1880477855
+            }
+          },
+          "footageNote": "2025年原视频 · 美式烟熏慢烤，恐龙骨限量加购或按餐标提供。"
+        }
+      ]
+    },
+    {
+      "id": "wh-malatu-7666420892688336296",
+      "author": "麻辣兔",
+      "title": "两位数鲜切牛肉火锅看看能吃到什么！ #武汉美食 #犇小喜 #自助餐 #武汉自助火锅 #鲜切牛肉",
+      "url": "https://www.douyin.com/video/7666420892688336296",
+      "shareURL": "https://v.douyin.com/jy_IGphiwRE/",
+      "publishedOn": "2026-07-25",
+      "durationSeconds": 213.966667,
+      "sourceSHA256": "609ee9913901aab6140885f56e31d347bfef472907b0e62ccad3f6e9fadcf63b",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍街道口银泰百货F8层犇小喜·活鲜火锅自助，现拆现切吊龙嫩牛肉、胸口油、鲜活海鲜与现场烘焙甜品。",
+      "segments": [
+        {
+          "id": "wh-malatu-benxiaoxi-huoguo",
+          "name": "犇小喜·活鲜火锅自助(武汉首店)",
+          "category": "火锅 / 鲜切牛肉活鲜自助",
+          "addressText": "湖北省武汉市洪山区珞南街道珞喻路33号银泰百货F8层8005-1号商铺",
+          "start": 0,
+          "end": 213,
+          "posterSecond": 30,
+          "summary": "街道口银泰百货鲜切牛肉自助火锅，两位数畅吃现拆现切吊龙、胸口油、鲜活海鲜与现场烘焙甜品。",
+          "coordinates": [
+            114.3488272,
+            30.5288393
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "珞喻路（街道口银泰百货）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍街道口银泰百货F8层顶上兰犇小喜门头，匹配 OSM 珞喻路辅路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 100305700,
+              "name": "珞喻路辅路",
+              "url": "https://www.openstreetmap.org/way/100305700",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 13578233899
+            }
+          },
+          "footageNote": "2025年原视频 · 现切鲜牛肉活鲜自助，高峰期需排队取号。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaozhang-7480129805837405498",
+      "author": "小张一人食",
+      "title": "不限时的自助你们都吃过吗？在武汉吃98/位不限时的铜锅涮肉自助，看看到底有多快乐#铜锅涮肉  #自助餐 #一人食 #武汉美食 #万物皆可种草搜",
+      "url": "https://www.douyin.com/video/7480129805837405498",
+      "shareURL": "https://v.douyin.com/7N96AhveEqo/",
+      "publishedOn": "2025-03-10",
+      "durationSeconds": 336.6,
+      "sourceSHA256": "f7c6de6973a073e9e1a6dffdd9bdbac232fc20f41543cda0511fd9cbd1d99d1b",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江岸区保成路夜市涮盟火锅·铜锅涮羊肉，98元不限时铜锅涮肉、鲜切羊腿肉、羊尾油润锅与清蒸羊排。",
+      "segments": [
+        {
+          "id": "wh-xiaozhang-shuanmeng-huoguo",
+          "placeId": "wh-lurenfei-shuanmeng-huoguo",
+          "name": "涮盟火锅·铜锅涮羊肉(江汉路店)",
+          "category": "火锅 / 铜锅涮羊肉",
+          "addressText": "湖北省武汉市江岸区保成路122号（近循礼门站H口）",
+          "start": 0,
+          "end": 336,
+          "posterSecond": 3,
+          "summary": "保成路夜市老北京铜锅涮肉，98元不限时畅吃鲜切羊腿肉、羊尾油润锅、清蒸羊排与糖蒜，单人食舒适自由。",
+          "coordinates": [
+            114.283632,
+            30.5867023
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "保成路（涮盟火锅）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江岸区保成路夜市街边涮盟门头与门匾，匹配 OSM 保成路节点，与路人飞.毛腿同店共点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177629408,
+              "name": "保成路",
+              "url": "https://www.openstreetmap.org/way/177629408",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 11303773629
+            }
+          },
+          "footageNote": "2024年原视频 · 不限时铜锅涮肉，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-dahantongxue-7707554319663889595",
+      "author": "大韩同学呀（爱吃比格）",
+      "title": "武汉98元的烤羊排涮羊肉自助！吃爽了～ #vlog十亿流量扶持计划",
+      "url": "https://www.douyin.com/video/7707554319663889595",
+      "shareURL": "https://v.douyin.com/2T9S6TeP6X4/",
+      "publishedOn": "2026-11-13",
+      "durationSeconds": 331.5,
+      "sourceSHA256": "ef2ac9a3807beacb2b4f9a2fd031ebc81214fcf3b0669a74d915629aa6f6dd1b",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍洪山区友谊大道万利生活广场白李鲜铜锅涮羊肉，98元手切鲜羊肉、羊腿肉、烤羊排、现蒸羊肉烧卖与炸包子。",
+      "segments": [
+        {
+          "id": "wh-dahantongxue-bailixian-shuanrou",
+          "name": "白李鲜铜锅涮羊肉(万利生活广场店)",
+          "category": "火锅 / 铜锅涮羊肉自助",
+          "addressText": "湖北省武汉市洪山区和平街道友谊大道508号万利生活广场一楼",
+          "start": 0,
+          "end": 331,
+          "posterSecond": 58,
+          "summary": "徐东万利生活广场98元烤羊排铜锅涮肉自助，手切鲜羊肉、羊腿肉、烤羊排、现蒸羊肉烧卖与羊肉串畅吃。",
+          "coordinates": [
+            114.3488371,
+            30.6039721
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "友谊大道（万利生活广场）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍洪山区和平街道友谊大道508号万利生活广场门头与白李鲜店内实景，匹配 OSM 友谊大道节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 607883588,
+              "name": "友谊大道",
+              "url": "https://www.openstreetmap.org/way/607883588",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 694059597
+            }
+          },
+          "footageNote": "2024年原视频 · 现切现涮烤羊排，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-lurenfei-7624071820911676708",
+      "author": "路人飞.毛腿",
+      "title": "带好兄弟吃159/位的炭火烤肉自助 @爱吃自助的橙子 #自助餐 #烤肉 #榴莲 #路人飞毛腿",
+      "url": "https://www.douyin.com/video/7624071820911676708",
+      "shareURL": "https://v.douyin.com/1mNv10BbL8E/",
+      "publishedOn": "2026-04-02",
+      "durationSeconds": 247.5,
+      "sourceSHA256": "58415d63ee29331b0576dd035cfed8284f1a5871a217eb99be93fc3f26417847",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍武昌区楚河汉街西月山居炭火烤肉自助，159元现烤活鳗鱼、烤金枕榴莲、厚切牛舌、横膈膜与三文鱼刺身自由。",
+      "segments": [
+        {
+          "id": "wh-lurenfei-xiyueshanju-kaorou",
+          "name": "西月山居·炭火烤肉自助(楚河汉街店)",
+          "category": "烤肉 / 炭火烤肉自助",
+          "addressText": "湖北省武汉市武昌区中北路楚河汉街第三街区",
+          "start": 0,
+          "end": 247,
+          "posterSecond": 45,
+          "summary": "楚河汉街159元炭火烤肉自助，现烤活鳗鱼、烤金枕榴莲、厚切牛舌、横膈膜与三文鱼刺身自由。",
+          "coordinates": [
+            114.3320592,
+            30.5607667
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "汉街（西月山居）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍楚河汉街第三街区街景与西月山居门头，匹配 OSM 汉街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 158436649,
+              "name": "汉街",
+              "url": "https://www.openstreetmap.org/way/158436649",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 13706847050
+            }
+          },
+          "footageNote": "2024年原视频 · 现点现烤，菜品以时令供应为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-aman-7539002425313021243",
+      "author": "阿满来都来了",
+      "title": "59一位在武汉吃码头牛肉自助，还有各种小炒畅吃，能吃饱吗？ #寻味烟火气 #自助餐的正确吃法 #建议普及这一口 #好好吃饭大赛 #武汉美食",
+      "url": "https://www.douyin.com/video/7539002425313021243",
+      "shareURL": "https://v.douyin.com/nK_E1o95WjM/",
+      "publishedOn": "2025-08-16",
+      "durationSeconds": 170.866667,
+      "sourceSHA256": "4308968d0ea84c3259489306e6c3be78fe462ef0ee79b119da45a66c9d79e883",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江汉路步行街码头牛肉·湖北码头菜，59元码头牛肉火锅小炒自助，牛骨、牛杂、千层肚与现炒湖北菜畅吃。",
+      "segments": [
+        {
+          "id": "wh-aman-matouniurou-zizhu",
+          "name": "码头牛肉·湖北码头菜(江汉路店)",
+          "category": "湖北菜 / 牛肉火锅小炒自助",
+          "addressText": "湖北省武汉市江汉区江汉路步行街",
+          "start": 0,
+          "end": 170,
+          "posterSecond": 5,
+          "summary": "江汉路59元码头牛肉自助，牛骨、牛杂、千层肚与现炒湖北码头菜畅吃，热气腾腾极具烟火气。",
+          "coordinates": [
+            114.2833901,
+            30.5854427
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉路步行街（码头牛肉）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江汉路步行街商圈街景与码头牛肉招牌，匹配 OSM 江汉路步行街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177627147,
+              "name": "江汉路步行街",
+              "url": "https://www.openstreetmap.org/way/177627147",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1186631527
+            }
+          },
+          "footageNote": "2025年原视频 · 现炖现炒，单人食或聚餐均宜。"
+        }
+      ]
+    },
+    {
+      "id": "wh-niushi-7500875924222954810",
+      "author": "牛师 刘晔俊杰",
+      "title": "今天在武汉吃一个小学生都能每天吃得起的“旋转火锅自助餐”！ #自助餐 #自助餐的正确吃法 #蛮涮自助小火锅",
+      "url": "https://www.douyin.com/video/7500875924222954810",
+      "shareURL": "https://v.douyin.com/C3ivoSdrjwo/",
+      "publishedOn": "2025-05-05",
+      "durationSeconds": 63.166667,
+      "sourceSHA256": "bc6e950cc455b74090d6fdf4eed7d3e1154162f74649ef17045e1148cc338176",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江汉区青年路江宸天街三层蛮涮自助小火锅，七种免费自选锅底，百余种菜品海鲜甜品旋转传送带畅吃。",
+      "segments": [
+        {
+          "id": "wh-niushi-manshuan-huoguo",
+          "name": "蛮涮自助小火锅(江宸天街店)",
+          "category": "火锅 / 旋转小火锅自助",
+          "addressText": "湖北省武汉市江汉区青年路518号江宸天街三层一号电梯厅旁",
+          "start": 0,
+          "end": 63,
+          "posterSecond": 3,
+          "summary": "青年路江宸天街超高性价比旋转小火锅，七种免费自选锅底，百余种菜品、海鲜甜品传送带自助畅拿。",
+          "coordinates": [
+            114.2537723,
+            30.6100859
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "青年路（江宸天街）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍青年路518号江宸天街三层蛮涮店内旋转传送带实景，匹配 OSM 青年路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1577830678,
+              "name": "青年路",
+              "url": "https://www.openstreetmap.org/way/1577830678",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 8197792009
+            }
+          },
+          "footageNote": "2024年原视频 · 旋转自选一人一锅，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-wenhao-7657017063319900593",
+      "author": "瘦不了的文浩",
+      "title": "测评！！白沙洲新开的人均50多一位的鲜切牛肉自助，还有烧烤也不限量，值不值得来？？#武汉美食 #武汉自助餐 #白沙洲美食 #鲜切牛肉自助 #武汉探店 （不含锅底，需另外收费）",
+      "url": "https://www.douyin.com/video/7657017063319900593",
+      "shareURL": "https://v.douyin.com/2nHTqEY7kjM/",
+      "publishedOn": "2026-06-30",
+      "durationSeconds": 74.7,
+      "sourceSHA256": "9329590c1fcf2b12421aa6c248ca04374627b013be72d386ff96c526c9595b25",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍洪山区白沙三路未来城12号线市农科院站B1出口蘇雨禾鲜牛肉鲜毛肚自助，人均50多手切吊龙牛肉、鲜毛肚与现烤烤串畅吃。",
+      "segments": [
+        {
+          "id": "wh-wenhao-suyuhe-niurou",
+          "name": "蘇雨禾鲜牛肉鲜毛肚自助(白沙三路未来城店)",
+          "category": "火锅 / 鲜切牛肉烧烤自助",
+          "addressText": "湖北省武汉市洪山区白沙三路未来城12号线市农科院站B1出口",
+          "start": 0,
+          "end": 74,
+          "posterSecond": 25,
+          "summary": "白沙洲未来城人均50多元鲜切牛肉自助，手切吊龙鲜牛肉、鲜毛肚、现烤烤串与海鲜畅吃。",
+          "coordinates": [
+            114.2818,
+            30.4802281
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "白沙三路（未来城）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍白沙三路白沙未来城12号线市农科院站B1出口街景与蘇雨禾门头，匹配 OSM 白沙三路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 341720947,
+              "name": "白沙三路",
+              "url": "https://www.openstreetmap.org/way/341720947",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 7674713304
+            }
+          },
+          "footageNote": "2024年原视频 · 现切现烤，单人或聚餐均宜。"
+        }
+      ]
+    },
+    {
+      "id": "wh-baiyang-7569584580312327930",
+      "author": "白杨在武汉",
+      "title": "5刷龍歌 给大家准备的超值回本攻略记得点赞收藏～#龍歌黑金脂渣堡 #龍歌十一月新品 #龍歌自助小火锅 #龍歌十周年欢乐哈哈舞 #武汉美食龍歌",
+      "url": "https://www.douyin.com/video/7569584580312327930",
+      "shareURL": "https://v.douyin.com/_3tW4P1yqb4/",
+      "publishedOn": "2025-11-06",
+      "durationSeconds": 73.466667,
+      "sourceSHA256": "2038a2bcb44b218f86238ebcc000322502dd2d9e21d99ecbe3bd5ac121ac2128",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江岸区建设大道与台北路交汇处武汉万象城FB109龍歌自助小火锅，单人小火锅、黑金芝麻包、肥牛与捞汁小海鲜。",
+      "segments": [
+        {
+          "id": "wh-baiyang-longge-huoguo",
+          "name": "龍歌自助小火锅(武汉万象城店)",
+          "category": "火锅 / 自助小火锅",
+          "addressText": "湖北省武汉市江岸区台北街道建设大道与台北路交汇处武汉华润万象城FB109",
+          "start": 0,
+          "end": 73,
+          "posterSecond": 5,
+          "summary": "建设大道万象城高品质单人小火锅，黑金芝麻包自由、金番茄锅底、肥牛与捞汁小海鲜回本攻略。",
+          "coordinates": [
+            114.2770676,
+            30.5976046
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "台北路（武汉万象城）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍台北街道建设大道与台北路交汇处武汉华润万象城FB109龍歌门头，匹配 OSM 台北路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 178756569,
+              "name": "台北路",
+              "url": "https://www.openstreetmap.org/way/178756569",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1891154865
+            }
+          },
+          "footageNote": "2024年原视频 · 单人小火锅，菜品以时令供应为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-xiaoman-7705347415657843978",
+      "author": "小满同学",
+      "title": "好久没吃自助了！爽炫三文鱼各种烤肉大虾冰淇淋～ #自助餐 #武汉美食 #楚宝天地 #美食vlog",
+      "url": "https://www.douyin.com/video/7705347415657843978",
+      "shareURL": "https://v.douyin.com/AocdDU_di-8/",
+      "publishedOn": "2026-11-07",
+      "durationSeconds": 292.933333,
+      "sourceSHA256": "cf04e670263d50abb25e66f3dbebc23195b2d8c985291e28e3b32ed2190203c7",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江汉路楚宝天地東盛炭烤自助料理，厚切三文鱼、鳗鱼披萨、烤牛上脑、大虾与羊肉串畅吃（与万老板爱干饭同店共点归并）。",
+      "segments": [
+        {
+          "id": "wh-xiaoman-dongsheng-zizhu",
+          "placeId": "wh-wanlaoban-dongsheng-zizhu",
+          "name": "東盛炭烤自助料理(武汉楚宝天地店)",
+          "category": "炭火烤肉 / 自助料理",
+          "addressText": "湖北省武汉市江汉区前进四路与中山大道交叉口西北60米楚宝天地L3层M308、M309号商铺",
+          "start": 0,
+          "end": 292,
+          "posterSecond": 45,
+          "summary": "江汉路楚宝天地炭烤料理百汇，厚切三文鱼、鳗鱼披萨、烤牛上脑、大虾、猪肋排与现烤羊肉串畅吃。",
+          "coordinates": [
+            114.2830578,
+            30.5802216
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "前进四路（楚宝天地）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江汉路前进四路楚宝天地L3层東盛炭烤门头，匹配 OSM 前进四路节点，与万老板爱干饭同店共点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177624349,
+              "name": "前进四路",
+              "url": "https://www.openstreetmap.org/way/177624349",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1880421374
+            }
+          },
+          "footageNote": "2024年原视频 · 现烤现切，高峰期建议提前排队取号。"
+        }
+      ]
+    },
+    {
+      "id": "wh-wanlaoban-7679666597216644977",
+      "author": "万老板爱干饭",
+      "title": "年度夯炸了的自助！ 79/人我无法理解，品质拉满但近期别去#海鲜自助火锅烤肉 #性价比天花板 #武汉美食 #自助餐 #干饭南波万",
+      "url": "https://www.douyin.com/video/7679666597216644977",
+      "shareURL": "https://v.douyin.com/XmkumuE4MiE/",
+      "publishedOn": "2026-08-30",
+      "durationSeconds": 307.233333,
+      "sourceSHA256": "d58c4eab7642c47332c89757522cbae54002a3ac1bc90d1dae6f272fc85bfd54",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍武昌区张之洞路泛悦汇负一楼盛卡伦海鲜烤肉火锅自助，79元鲜切牛肉、熟食大闸蟹、小龙虾、活海虾与生蚝涮烤一体。",
+      "segments": [
+        {
+          "id": "wh-wanlaoban-shengkalun-zizhu",
+          "name": "盛卡伦海鲜烤肉火锅自助(泛悦汇店)",
+          "category": "海鲜烤肉 / 火锅自助",
+          "addressText": "湖北省武汉市武昌区黄鹤楼街道张之洞路151号泛悦汇负一楼",
+          "start": 0,
+          "end": 160,
+          "posterSecond": 102,
+          "summary": "武昌首义泛悦汇79元涮烤一体自助，鲜切牛肉、熟食大闸蟹、小龙虾、生蚝与鲜活海虾畅吃。",
+          "coordinates": [
+            114.3037444,
+            30.5358989
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "张之洞路（泛悦汇）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍武昌区张之洞路151号泛悦汇门头与盛卡伦店内实景，匹配 OSM 张之洞路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 231810581,
+              "name": "张之洞路",
+              "url": "https://www.openstreetmap.org/way/231810581",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1220521677
+            }
+          },
+          "footageNote": "2024年原视频 · 涮烤一体海鲜牛肉自助，客流高峰建议错峰就餐。"
+        }
+      ]
+    },
+    {
+      "id": "wh-savill-7527246391383624979",
+      "author": "Savill",
+      "title": "68一位的烤肉自助居然能吃到这么多品种？ #这也太好吃了 #武汉烤肉自助 #大学生自助餐 #夜宵吃什么 #平价美食",
+      "url": "https://www.douyin.com/video/7527246391383624979",
+      "shareURL": "https://v.douyin.com/XooLvOhZNBo/",
+      "publishedOn": "2025-07-15",
+      "durationSeconds": 91.369002,
+      "sourceSHA256": "c19e898c6c93a543550245fcbdd8eef2f0f9a3c087db3bc1fac34fca07aca94c",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江汉区江汉四路姜馆长·韩式无限烤肉，68元韩式原切烤肉、韩式炸鸡、芝士榴莲与奶油火鸡面无限供应。",
+      "segments": [
+        {
+          "id": "wh-savill-jiangguanzhang-zizhu",
+          "name": "姜馆长·韩式无限烤肉(江汉路店)",
+          "category": "韩式烤肉 / 烤肉自助",
+          "addressText": "湖北省武汉市江汉区江汉四路20号",
+          "start": 0,
+          "end": 91,
+          "posterSecond": 56,
+          "summary": "江汉四路循礼门68元韩式烤肉自助，原切肉类、韩式炸鸡、芝士榴莲、小吃与奶油火鸡面无限畅吃。",
+          "coordinates": [
+            114.2825159,
+            30.5861951
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "江汉四路（姜馆长）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江汉四路姜馆长韩式烤肉门头与店内实景，匹配 OSM 江汉四路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177629407,
+              "name": "江汉四路",
+              "url": "https://www.openstreetmap.org/way/177629407",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1880455455
+            }
+          },
+          "footageNote": "2024年原视频 · 韩式风味无限烤肉，招牌炸鸡与原切肉按需取用。"
+        }
+      ]
+    },
+    {
+      "id": "wh-waimajiemei-7706857509290289642",
+      "author": "外码姐妹",
+      "title": "武汉大学生勇闯高端海鲜自助实现五蟹畅吃是什么体验#武汉美食 #武汉自助 #海鲜自助#吃蟹正确打开方式 #帝王蟹",
+      "url": "https://www.douyin.com/video/7706857509290289642",
+      "shareURL": "https://v.douyin.com/I4KerepmIGU/",
+      "publishedOn": "2026-11-11",
+      "durationSeconds": 189.533333,
+      "sourceSHA256": "d638badb9a0f0f08795e95c02d7cbbb7426f71c916b931084038812234ef852c",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江汉区武商MALL丽炙活帝王蟹活龙虾自助餐，鲜活帝王蟹、活波士顿龙虾、面包蟹、梭子蟹、青蟹五蟹畅吃与鹅肝刺身。",
+      "segments": [
+        {
+          "id": "wh-waimajiemei-lizhi-zizhu",
+          "name": "丽炙活帝王蟹活龙虾自助餐(武商黑钻店)",
+          "category": "高端海鲜自助 / 帝王蟹波龙",
+          "addressText": "湖北省武汉市江汉区解放大道690号武商MALL",
+          "start": 0,
+          "end": 189,
+          "posterSecond": 5,
+          "summary": "武商MALL高端海鲜自助，现捞活帝王蟹、活波士顿龙虾、面包蟹、梭子蟹、青蟹五蟹畅吃与刺身鹅肝榴莲自由。",
+          "coordinates": [
+            114.2714556,
+            30.5854382
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "解放大道（武商MALL）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍武商MALL丽炙海鲜自助活鲜池与就餐区，匹配 OSM 解放大道武商MALL节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 177621043,
+              "name": "解放大道",
+              "url": "https://www.openstreetmap.org/way/177621043",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 4519170281
+            }
+          },
+          "footageNote": "2024年原视频 · 现捞鲜活海鲜与活蟹烹饪，营业以商场门店为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-dahantongxue-7594719564493247993",
+      "author": "大韩同学呀（爱吃比格）",
+      "title": "这应该是我吃过最满意的连锁烤肉，甜品真的是太出彩了!80块左右太值了!\n#vlog十亿流量扶持计划",
+      "url": "https://www.douyin.com/video/7594719564493247993",
+      "shareURL": "https://v.douyin.com/e1yUBY9MBQU/",
+      "publishedOn": "2026-01-13",
+      "durationSeconds": 501.133333,
+      "sourceSHA256": "9533208d9ffccaecfcda8e19fd241aecddc48870bd633008bd7772087fb42596",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍洪山区金地广场小美与大壮·东北烤肉，79元齐齐哈尔拌肉烤肉、酸菜拌五花、手作巴斯克与蛋挞甜品无限量。",
+      "segments": [
+        {
+          "id": "wh-dahantongxue-xiaomeiyudazhuang-zizhu",
+          "name": "小美与大壮·东北烤肉(金地广场店)",
+          "category": "东北烤肉 / 甜品烤肉自助",
+          "addressText": "湖北省武汉市洪山区团结大道与仁和路交汇处武汉金地广场",
+          "start": 0,
+          "end": 180,
+          "posterSecond": 10,
+          "summary": "金地广场79元东北烤肉自助，老式拌牛肉、酸菜五花肉与手作巴斯克、蛋挞甜品无限量畅吃。",
+          "coordinates": [
+            114.3842035,
+            30.6076692
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "团结大道（金地广场）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍金地广场小美与大壮门头与店内实景，匹配 OSM 团结大道与仁和路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 173113084,
+              "name": "团结大道",
+              "url": "https://www.openstreetmap.org/way/173113084",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 2418671775
+            }
+          },
+          "footageNote": "2024年原视频 · 东北炭烤与烘焙甜品结合，建议按食量取用。"
+        }
+      ]
+    },
+    {
+      "id": "wh-wanlaoban-7602898154400717435",
+      "author": "万老板爱干饭",
+      "title": "武汉有六十多道菜的自助快餐 一个人消费不到二十，真挺能打@花间一壶酒专营店 \n#vlog十亿流量扶持计划 #自助餐 #快餐盒饭 #宝藏小店 #口粮酒",
+      "url": "https://www.douyin.com/video/7602898154400717435",
+      "shareURL": "https://v.douyin.com/_tWiBXZaIk8/",
+      "publishedOn": "2026-02-04",
+      "durationSeconds": 302.6,
+      "sourceSHA256": "dd3e779c32e1cf98fcec4b5b05234c4a2f3b0cb0cdb21a5f967f3981bffa77a2",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍江汉区马场角小路钱妈自助快餐，17.9元六十多道东北风味家常菜、粉蒸肉、排骨、啤酒鸭与排骨藕汤自选畅吃。",
+      "segments": [
+        {
+          "id": "wh-wanlaoban-qianma-zizhu",
+          "name": "钱妈自助快餐(马场角店)",
+          "category": "平价快餐 / 现炒自助",
+          "addressText": "湖北省武汉市江汉区马场角小路",
+          "start": 0,
+          "end": 180,
+          "posterSecond": 40,
+          "summary": "汉口马场角17.9元现炒快餐自助，60余种东北与家常热菜、粉蒸肉、大块排骨与啤酒鸭无限自选。",
+          "coordinates": [
+            114.2556728,
+            30.6102279
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "马场角小路（钱妈快餐）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍江汉区马场角小路钱妈自助快餐门头与排队打菜实况，匹配 OSM 马场角小路节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 881465148,
+              "name": "马场角小路",
+              "url": "https://www.openstreetmap.org/way/881465148",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 8197792012
+            }
+          },
+          "footageNote": "2024年原视频 · 社区平价自选快餐，饭点客流密集需有序取餐。"
+        }
+      ]
+    },
+    {
+      "id": "wh-shefan-7683113843170772965",
+      "author": "舍梵",
+      "title": "武汉也有自己的「富龙」快餐？18元/位，四十种菜品不限量 富吉丰国民现炒自助餐:洪山区洪山街雄楚大道258号。\n餐厅环境不错，菜品多，吃起来也挺清爽，就是高峰期间很容易没位置做，有些菜打空的很快，要等补，其他都还行，毕竟不限量～\n#美食判官已上线 #武汉周末去哪吃 #吃喝玩乐分享计划 #我的品味值得反复品鉴 #自选美食自由",
+      "url": "https://www.douyin.com/video/7683113843170772965",
+      "shareURL": "https://v.douyin.com/M5pwgDQ8SUk/",
+      "publishedOn": "2026-09-22",
+      "durationSeconds": 212.333333,
+      "sourceSHA256": "da2b436f366a882575961c6e5930f264037f31ce641d585e17a6606594ce6855",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍洪山区雄楚大道258号富吉丰国民现炒自助餐，18元四十余种现炒热菜、荤素自选、热汤与主食不限量。",
+      "segments": [
+        {
+          "id": "wh-shefan-fujifeng-zizhu",
+          "name": "富吉丰国民现炒自助餐(雄楚大道店)",
+          "category": "现炒快餐 / 自助盒饭",
+          "addressText": "湖北省武汉市洪山区洪山街雄楚大道258号",
+          "start": 0,
+          "end": 209.4,
+          "posterSecond": 35,
+          "summary": "雄楚大道校区旁18元现炒快餐自助，四十余种现炒荤素、回锅肉、藕带鸡杂与豆浆小吃不限量畅吃。",
+          "coordinates": [
+            114.329637,
+            30.5187203
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "雄楚大道（富吉丰）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍洪山区雄楚大道258号富吉丰店内四十余种现炒菜品，匹配 OSM 雄楚大道地面道节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 231521461,
+              "name": "雄楚大道地面道",
+              "url": "https://www.openstreetmap.org/way/231521461",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 8445134878
+            }
+          },
+          "footageNote": "2024年原视频 · 现炒自选热菜，菜品出餐频率高，营业以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "wh-wanlaoban-7620643316258201211",
+      "author": "万老板爱干饭",
+      "title": "汉阳的恩施茶店牛肉自助 65/人，牛肉、炒菜无限续，夯爆了！\n#武汉美食 #牛肉 #自助餐 #寻味烟火气 #苍蝇馆子",
+      "url": "https://www.douyin.com/video/7620643316258201211",
+      "shareURL": "https://v.douyin.com/THstncVBDJE/",
+      "publishedOn": "2026-03-24",
+      "durationSeconds": 165.333333,
+      "sourceSHA256": "abe803dacef883ecd811886f59b3a07f7f866345818fc54c235697349a6898dd",
+      "acquisitionStatus": "verified-local",
+      "evidenceNote": "原片实拍汉阳区玫瑰南街恩施茶店牛肉，65元恩施特色酸萝卜牛肉火锅无限续加，现炒农家荤素小菜合渣畅吃。",
+      "segments": [
+        {
+          "id": "wh-wanlaoban-enshichadian-niurou",
+          "name": "恩施茶店牛肉(玫瑰苑南苑店)",
+          "category": "恩施特色菜 / 牛肉火锅自助",
+          "addressText": "湖北省武汉市汉阳区玫瑰南街玫瑰苑南苑",
+          "start": 0,
+          "end": 161.88,
+          "posterSecond": 38,
+          "summary": "汉阳王家湾玫瑰南街65元恩施茶店牛肉自助，大块牛肉牛杂锅无限续，现炒农家小菜包菜土豆片自由。",
+          "coordinates": [
+            114.1961221,
+            30.5685153
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "玫瑰南街（恩施茶店牛肉）",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "原片实拍汉阳区玫瑰南街恩施茶店牛肉门头与大锅续牛肉现场，匹配 OSM 玫瑰南街节点。",
+            "reviewedOn": "2026-11-15",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 132905559,
+              "name": "玫瑰南街",
+              "url": "https://www.openstreetmap.org/way/132905559",
+              "sourceDate": "2026-11-15",
+              "method": "original-way-node",
+              "nodeId": 1462111137
+            }
+          },
+          "footageNote": "2024年原视频 · 现烧牛肉牛杂无限续加，口味香辣地道。"
+        }
+      ]
+    }
+  ]
+}
