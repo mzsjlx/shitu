@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "city": "zhengzhou",
-  "updatedAt": "2026-11-17T19:30:00+08:00",
+  "updatedAt": "2026-11-19T01:30:00+08:00",
   "rights": {
     "status": "user-confirmed",
     "note": "郑州探店视频来自用户提供的抖音分享链接，严格按来源去重、核验原片与门店信息后入库。"
@@ -1171,7 +1171,7 @@
       "segments": [
         {
           "id": "zz-xiangxiang-jingguang",
-          "name": "京广路二厂附近老店（保全街烧烤）",
+          "name": "老马家烧烤（保全街店）",
           "category": "烧烤 / 街头小吃",
           "addressText": "河南省郑州市二七区保全街与京广南路交叉口西侧街区（京广路二厂片区胡同）",
           "start": 10.0,
@@ -4542,6 +4542,506 @@
             }
           },
           "footageNote": "2025年原视频 · 健康路夜市街头小吃漫步实测，出发前请核对出摊时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-mamarangwoshaochidian-7506093958495456549",
+      "author": "妈妈让我少吃点😋",
+      "title": "磨李夜市！名不虚传！还有谁没去过？ #郑州美食 #郑州吃喝玩乐 #郑州夜市 #郑州 #寻味烟火气",
+      "url": "https://www.douyin.com/video/7506093958495456549",
+      "shareURL": "https://v.douyin.com/2hXrj-yjko0/",
+      "publishedOn": "2024-12-06",
+      "durationSeconds": 76.37,
+      "sourceSHA256": "df38b6ea84fcdb0d4e70502ef07ad4a5836405d107a5a8024cb33654b5aea308",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍郑东新区龙子湖高校区北侧磨李社区便民夜市，十元任选凉菜山、十元十二个烤生蚝、八元皮蛋瘦肉粥与特色炸藕盒、炒蒸菜。",
+      "segments": [
+        {
+          "id": "zz-mamarangwo-moli",
+          "name": "磨李夜市（磨李社区夜市）",
+          "category": "夜市 / 街头小吃",
+          "addressText": "河南省郑州市金水区龙子湖街道磨李社区商业街",
+          "start": 0.0,
+          "end": 76.3,
+          "posterSecond": 10.0,
+          "summary": "郑东新区龙子湖高校园区旁的超大型便民夜市，超五百个摊位物美价廉；十元任选凉菜山、十元十二个烤生蚝、八元皮蛋瘦肉粥，现烤蛋挞泡芙、炒蒸菜（槐花/荆芥）与现炸藕盒香脆可口。",
+          "coordinates": [
+            113.7911,
+            34.8142
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "磨李社区商业街（龙子湖高校区北）",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍金水区龙子湖街道磨李社区商业街，位于郑东新区高校园区北侧，超出当前郑州核心底图东界[113.78]，保留真实WGS84坐标，标记为规划暂缓路网。",
+            "reviewedOn": "2026-11-18",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 894123000,
+              "name": "贾鲁街",
+              "url": "https://www.openstreetmap.org/way/894123000",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 8941230001
+            }
+          },
+          "footageNote": "2024年原视频 · 磨李夜市超全攻略实测，傍晚出摊请核对出摊时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-chunjuan-7550956119860170044",
+      "author": "春卷吃呀",
+      "title": "郑州北边最大的夜市：北大学城夜市，便宜又好吃的东西可太多了，而且好多美食出了北大学城就找不到#地摊夜市 #街边小吃#郑州美食  #地方美食大推荐 #创作者中心",
+      "url": "https://www.douyin.com/video/7550956119860170044",
+      "shareURL": "https://v.douyin.com/9haXUHY9YyY/",
+      "publishedOn": "2025-06-06",
+      "durationSeconds": 105.98,
+      "sourceSHA256": "597abb75745b1826d12367d7d690bab5c1683ad4393e5ad8323450c9fdbf5173",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍惠济区文化北路与英才街周边北大学城夜市，王记卷馍、老成记炒凉粉焖两样、舒芙蕾与一元自选串串。",
+      "segments": [
+        {
+          "id": "zz-chunjuan-beidaxuecheng",
+          "name": "北大学城夜市（英才街小吃街）",
+          "category": "夜市 / 大学城小吃",
+          "addressText": "河南省郑州市惠济区英才街与文化北路交叉口周边（美景万科广场附近）",
+          "start": 0.0,
+          "end": 105.9,
+          "posterSecond": 18.0,
+          "summary": "郑州北部高校云集的烟火夜市，排队十几年的王记卷馍淋满芝麻酱与蒜汁，老成记炒凉粉焖两样焦脆爽滑，搭配五块九现做舒芙蕾与一元自选串串，量大便宜。",
+          "coordinates": [
+            113.6404,
+            34.8609
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "文化北路 / 英才街路口（北大学城）",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍惠济区北大学城夜市（英才街与文化北路交叉口美景万科周边），超出当前郑州核心底图北界[34.83]，保留真实WGS84坐标，标记为规划暂缓路网。",
+            "reviewedOn": "2026-11-18",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 894124000,
+              "name": "英才街",
+              "url": "https://www.openstreetmap.org/way/894124000",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 8941240001
+            }
+          },
+          "footageNote": "2025年原视频 · 惠济区北大学城夜市实测，傍晚出摊请核对出摊时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-pangtouyu-7641200006666627441",
+      "author": "胖头鱼鱼",
+      "title": "郑州夜市的权威！南五里堡夜市也太好吃了 #郑州美食 #地方特色美食 #夜市里的烟火气#美食分享  #鱼的吃吃日记",
+      "url": "https://www.douyin.com/video/7641200006666627441",
+      "shareURL": "https://v.douyin.com/WOuZfqPDkNg/",
+      "publishedOn": "2026-08-18",
+      "durationSeconds": 159.73,
+      "sourceSHA256": "a11900ee99f76b38ee8d4fcc5ad97b290a0d60ebe2d2a65eaad4d7bafe64c77b",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍管城回族区南五里堡夜市（金城街沿线），宗记烤冷面、淘淘串串香麻辣烫，并探访金城街齐八两炸海鱼与四川凉面麻酱宽粉。",
+      "segments": [
+        {
+          "id": "zz-pangtouyu-zongji",
+          "name": "宗记烤冷面（南五里堡夜市）",
+          "category": "烤冷面 / 街头小吃",
+          "addressText": "河南省郑州市管城回族区金城街与紫荆山南路交叉口西侧南五里堡夜市入口",
+          "start": 0.0,
+          "end": 41.5,
+          "posterSecond": 25.0,
+          "summary": "南五里堡夜市入口排长队的宗记烤冷面，老板用笔记本手写记口味，一锅连出七八份；冷面软嫩微甜、酸甜咸辣调味轻盈，酱汁丰富清爽不腻。",
+          "coordinates": [
+            113.684,
+            34.7274
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金城街 / 紫荆山南路口西",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍南五里堡夜市入口宗记烤冷面，位于金城街与紫荆山南路交界西侧，采用金城街开放地图路段参照。",
+            "reviewedOn": "2026-11-18",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644593,
+              "name": "金城街",
+              "url": "https://www.openstreetmap.org/way/724644593",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796155572
+            }
+          },
+          "footageNote": "2026年原视频 · 南五里堡夜市入口招牌烤冷面实测。"
+        },
+        {
+          "id": "zz-pangtouyu-taotao",
+          "name": "淘淘串串香麻辣烫（南五里堡夜市）",
+          "category": "麻辣烫 / 串串香",
+          "addressText": "河南省郑州市管城回族区金城街南五里堡夜市中段",
+          "start": 41.5,
+          "end": 75.6,
+          "posterSecond": 55.0,
+          "summary": "南五里堡夜市高性价比麻辣烫小吃摊，十三元一大碗配菜丰富，金钱肚、炸蛋与大玉米吸满浓厚红油汤汁，支持干拌与带汤，鲜香麻辣停不下来。",
+          "coordinates": [
+            113.6825,
+            34.7274
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金城街 / 夜市中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍南五里堡夜市淘淘串串香，位于金城街中段，采用金城街开放地图路段参照。",
+            "reviewedOn": "2026-11-18",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644593,
+              "name": "金城街",
+              "url": "https://www.openstreetmap.org/way/724644593",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796155573
+            }
+          },
+          "footageNote": "2026年原视频 · 南五里堡夜市麻辣烫实测。"
+        },
+        {
+          "id": "zz-pangtouyu-zhahaiyu",
+          "placeId": "zz-xiaoying-zhahaiyu",
+          "name": "齐八两功夫炸海鱼（金城街店）",
+          "category": "炸物 / 特色海鱼",
+          "addressText": "河南省郑州市管城回族区金城街冠禾集市农贸市场旁",
+          "start": 75.6,
+          "end": 111.7,
+          "posterSecond": 84.0,
+          "summary": "胖头鱼鱼打卡南五里堡火出圈的齐八两现炸海鱼，无刺海鱼趁热吃咸香软嫩、外皮金黄酥脆，放凉后紧实耐嚼，与百变小樱合力推荐。",
+          "coordinates": [
+            113.6751,
+            34.7274
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金城街 / 冠禾集市旁",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍金城街冠禾集市农贸市场旁齐八两炸海鱼，采用金城街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644593,
+              "name": "金城街",
+              "url": "https://www.openstreetmap.org/way/724644593",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796155571
+            }
+          },
+          "footageNote": "2026年原视频 · 齐八两炸海鱼二次打卡实测。"
+        },
+        {
+          "id": "zz-pangtouyu-sichuanliangmian",
+          "placeId": "zz-xiaoying-sichuanliangmian",
+          "name": "四川凉面（金城街12号院店）",
+          "category": "凉面 / 川味小吃",
+          "addressText": "河南省郑州市管城回族区金城街12号院门面",
+          "start": 111.7,
+          "end": 159.0,
+          "posterSecond": 120.0,
+          "summary": "金城街12号院门口的四川凉面窗口，特制麻酱宽粉酱香轻盈微甜，宽粉爽滑筋道入味，为重口味夜市小吃带来清爽解腻的舒适体验。",
+          "coordinates": [
+            113.6757,
+            34.7274
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金城街 / 12号院门前",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍金城街12号院门面四川凉面，采用金城街开放地图路段参照。",
+            "reviewedOn": "2026-11-17",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644593,
+              "name": "金城街",
+              "url": "https://www.openstreetmap.org/way/724644593",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796154245
+            }
+          },
+          "footageNote": "2026年原视频 · 金城街12号院四川凉面麻酱宽粉实测。"
+        }
+      ]
+    },
+    {
+      "id": "zz-laoxu-7584006588722269489",
+      "author": "老徐不迷路",
+      "title": "吃遍全郑州夜市！黄河南街！#郑州 #小吃 #夜市 #路边摊美味 #夜市里的烟火气",
+      "url": "https://www.douyin.com/video/7584006588722269489",
+      "shareURL": "https://v.douyin.com/URcwgEJlGE8/",
+      "publishedOn": "2025-07-21",
+      "durationSeconds": 159.07,
+      "sourceSHA256": "422490d60b641ca320fa301b9860d7b7960ba837c90a30790cd01fd79bd52ad5",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍金水区黄河南街优街夜市（优胜北路至同乐路段），十元十个烤生蚝、现炸土豆饼、坛子肉夹馍与里脊肉饼。",
+      "segments": [
+        {
+          "id": "zz-laoxu-youjie",
+          "name": "黄河南街优街夜市",
+          "category": "夜市 / 街头小吃",
+          "addressText": "河南省郑州市金水区黄河南街（优胜北路至同乐路段）",
+          "start": 0.0,
+          "end": 158.0,
+          "posterSecond": 50.0,
+          "summary": "白天为清静的黄河南街，夜间变身灯火通明的优街夜市；汇聚十元十个烤生蚝、手工金黄土豆饼、糖色现炒坛子肉夹馍、山东炒饭、热干面与里脊肉饼等各色平价摊位，烟火气拉满。",
+          "coordinates": [
+            113.6552,
+            34.7733
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "黄河南街 / 优街夜市",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍金水区黄河南街（优胜北路至同乐路之间街区），夜晚变身优街夜市，采用黄河南街开放地图路段参照。",
+            "reviewedOn": "2026-11-18",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724672250,
+              "name": "黄河南街",
+              "url": "https://www.openstreetmap.org/way/724672250",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796415889
+            }
+          },
+          "footageNote": "2025年原视频 · 黄河南街优街夜市全攻略实测。"
+        }
+      ]
+    },
+    {
+      "id": "zz-danke-baoquan-7326427838737845538",
+      "author": "蛋壳Danke",
+      "title": "河南烤了20多年的羊肉串 1块一串瘦夹肥羊油在嘴里爆 太香啦 #河南美食 #妈呀太香了 #烧烤 #好吃到停不下来 #抖音美食推荐官",
+      "url": "https://www.douyin.com/video/7326427838737845538",
+      "shareURL": "https://v.douyin.com/wXzxqdlZfzo/",
+      "publishedOn": "2024-06-04",
+      "durationSeconds": 284.19,
+      "sourceSHA256": "7bb1bfc1573a5a393866d0073b6ac0f7aae8cea0638b0fb7d5f31765926cb9db",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍二七区保全街胡同老马家烧烤，二十余年一块钱铁车条烤羊肉串、羊排、羊腰，并与现蒸灌汤包同食，印证香香美食探访之老店。",
+      "segments": [
+        {
+          "id": "zz-danke-baoquan",
+          "placeId": "zz-xiangxiang-jingguang",
+          "name": "老马家烧烤（保全街店）",
+          "category": "烧烤 / 街头小吃",
+          "addressText": "河南省郑州市二七区保全街与京广南路交叉口西侧街区（京广路二厂片区胡同）",
+          "start": 12.0,
+          "end": 284.1,
+          "posterSecond": 30.0,
+          "summary": "二十余年如一日坚持一块钱一串的铁车条烤羊肉串，两瘦一肥在炭火上滋滋冒油、香气四溢，羊排、羊腰、羊眼样样实惠；配刚出笼的热气腾腾灌汤包，深夜烧烤与面点同享。",
+          "coordinates": [
+            113.6552,
+            34.7335
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "保全街 / 京广南路口西侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "视频实拍保全街胡同内二十余年平价老摊老马家烧烤，与香香美食探店合用同一点位，采用开放地图路段参照。",
+            "reviewedOn": "2026-11-18",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 732794317,
+              "name": "保全街街区",
+              "url": "https://www.openstreetmap.org/way/732794317",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6861895903
+            }
+          },
+          "footageNote": "2024年原视频 · 保全街老马家一元烧烤实测，夜间出摊请核对营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-shejianshang-7634461692823242158",
+      "author": "舌尖上的中原",
+      "title": "郑州这家烧烤只有你不想吃的没有你吃不到的，心中的宵夜解馋地！ #假期先来这里吃一口 #寻找城市宝藏老店 #抖音五一吃喝玩乐节 #烧烤 #郑州美食",
+      "url": "https://www.douyin.com/video/7634461692823242158",
+      "shareURL": "https://v.douyin.com/pPvf0t6T6-s/",
+      "publishedOn": "2025-11-18",
+      "durationSeconds": 84.63,
+      "sourceSHA256": "0579ced358f40d19ae57fe9eebed3a838dd9240cafa953d3b46b603d8dc63a1e",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍金水区沈庄路里外牛烤肉筋，现穿现烤奶香牛肉、葱花牛肉、烤肉筋与牛仔骨，炭火大边炉牛排锅。",
+      "segments": [
+        {
+          "id": "zz-shejianshang-liwainiu",
+          "name": "里外牛烤肉筋（沈庄店）",
+          "category": "烧烤 / 牛肉烤串",
+          "addressText": "河南省郑州市金水区沈庄路45-34号（近曼哈顿广场、玉凤路）",
+          "start": 0.0,
+          "end": 84.6,
+          "posterSecond": 28.0,
+          "summary": "沈庄街坊老饕的深夜食堂，专注牛肉烧烤三十年，现穿现烤奶香牛肉、葱花牛肉、招牌烤肉筋与牛仔骨；炭火大边炉牛排锅肉量扎实，搭配烤烧饼香气扑鼻。",
+          "coordinates": [
+            113.7081,
+            34.7565
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "沈庄路 / 玉凤路口西",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍沈庄路45-34号里外牛烤肉筋，位于沈庄路与玉凤路交界西侧，采用沈庄路开放地图路段参照。",
+            "reviewedOn": "2026-11-18",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644509,
+              "name": "沈庄路",
+              "url": "https://www.openstreetmap.org/way/724644509",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796155079
+            }
+          },
+          "footageNote": "2025年原视频 · 沈庄路里外牛烤肉筋实测，出发前请核对营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-xiangxiang-laodou-7679034991845690678",
+      "author": "河南民生频道香香美食",
+      "title": "郑州老饕追着吃的老牌烧烤店，烤白串真的惊艳 直接从隐藏菜单吃成招牌必点！只撒盐，感受羊肉本身的鲜，考验师傅真功夫！蒜蓉生蚝蒜香浓郁，蚝肉饱满肥美，一口超满足，除了烤串海鲜，砂锅一定要点！吃的就是实打实老郑州宵夜味道！#郑州美食  #郑州烧烤  #寻找郑州100家老店  #寻味烟火气",
+      "url": "https://www.douyin.com/video/7679034991845690678",
+      "shareURL": "https://v.douyin.com/wOWXTt8sY00/",
+      "publishedOn": "2026-08-27",
+      "durationSeconds": 200.25,
+      "sourceSHA256": "5f9c94c055d19bbcfe7f8a6efa8120e1f0e2e80c2c58408103d83274cc914970",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍金水区红旗路老窦烧烤海鲜，1990年开业老字号，招牌烤白串只撒少许盐、蒜蓉烤生蚝与老式砂锅。",
+      "segments": [
+        {
+          "id": "zz-xiangxiang-laodou",
+          "name": "老窦烧烤海鲜（红旗路总店）",
+          "category": "烧烤 / 海鲜大排档",
+          "addressText": "河南省郑州市金水区红旗路与经三路交叉口向西约100米路北",
+          "start": 10.0,
+          "end": 198.0,
+          "posterSecond": 48.0,
+          "summary": "始于1990年的老牌烧烤名店，招牌烤白串羊肉仅撒薄盐提味，原汁原味鲜嫩多汁毫无膻味；配肥美蒜蓉烤生蚝与热气腾腾老式砂锅，老郑州宵夜纯粹风味。",
+          "coordinates": [
+            113.6852,
+            34.7779
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "红旗路 / 经三路口西",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍红旗路与经三路交叉口西侧老窦烧烤海鲜总店，采用红旗路开放地图路段参照。",
+            "reviewedOn": "2026-11-18",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724672263,
+              "name": "红旗路",
+              "url": "https://www.openstreetmap.org/way/724672263",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796415925
+            }
+          },
+          "footageNote": "2026年原视频 · 寻找郑州100家老店老窦烧烤实测。"
+        }
+      ]
+    },
+    {
+      "id": "zz-sanxiaba-7668622046158425363",
+      "author": "三下巴",
+      "title": "郑州2元大肉串，老板劝老外别点太多 #外国人在中国美食体验#老外吃中餐 #家家红罐头",
+      "url": "https://www.douyin.com/video/7668622046158425363",
+      "shareURL": "https://v.douyin.com/jE6xR4c7a6I/",
+      "publishedOn": "2026-07-29",
+      "durationSeconds": 443.84,
+      "sourceSHA256": "e47ce10327e5ff7c4c145a97ec6063988033fa8ff9507d1b3f5969d593e35554",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍中原区电厂路公交站旁孟先生两元大肉串，两元超大串现烤酸酱肉、烤大虾、烤鱼，老外博主沉浸式宵夜打卡。",
+      "segments": [
+        {
+          "id": "zz-sanxiaba-dianchanglu",
+          "name": "电厂路公交站孟先生2元烧烤",
+          "category": "烧烤 / 街头烤串",
+          "addressText": "河南省郑州市中原区电厂路与北三环/电厂南路附近公交站旁",
+          "start": 0.0,
+          "end": 443.0,
+          "posterSecond": 30.0,
+          "summary": "中原区电厂路公交站旁的超高性价比平价烤串，两元一串现穿现烤的大块酸酱肉、烤大虾、烤鱼，个头惊人份量十足，老外博主大呼过瘾的西郊市井宵夜。",
+          "coordinates": [
+            113.5963,
+            34.7826
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "电厂路公交站旁",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍中原区电厂路公交站旁孟先生两元烧烤摊，采用电厂路开放地图路段参照。",
+            "reviewedOn": "2026-11-18",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 736878743,
+              "name": "电厂路",
+              "url": "https://www.openstreetmap.org/way/736878743",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6898972187
+            }
+          },
+          "footageNote": "2026年原视频 · 电厂路公交站两元烧烤实测，夜间出摊请核对出摊时间。"
         }
       ]
     }
