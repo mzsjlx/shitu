@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "city": "zhengzhou",
-  "updatedAt": "2026-11-19T01:30:00+08:00",
+  "updatedAt": "2026-11-19",
   "rights": {
     "status": "user-confirmed",
     "note": "郑州探店视频来自用户提供的抖音分享链接，严格按来源去重、核验原片与门店信息后入库。"
@@ -5042,6 +5042,399 @@
             }
           },
           "footageNote": "2026年原视频 · 电厂路公交站两元烧烤实测，夜间出摊请核对出摊时间。"
+        }
+      ]
+    },
+    {
+      "id": "zz-dahan-youbianwang-7607761230933766137",
+      "author": "大韩同学呀（爱吃比格）",
+      "title": "@臣名烤东北油边王（郑州分店） 带上海来的两位饕餮小伙伴尝尝我郑州最爱吃的烧烤大串，腰子油边宫后样样好吃，看看能吃饱吗？",
+      "url": "https://www.douyin.com/video/7607761230933766137",
+      "shareURL": "https://v.douyin.com/iSYmt6p5_n4/",
+      "publishedOn": "2026-02-17",
+      "durationSeconds": 354.615011,
+      "sourceSHA256": "da44334c129fac61768262327e9b62860ab7476b01aaa1889e674775e4e31bb3",
+      "acquisitionStatus": "obtained",
+      "evidenceNote": "博主实访臣名烤东北油边王（郑州分店），二七区行云路长江花园9号店铺。",
+      "segments": [
+        {
+          "id": "zz-dahan-youbianwang",
+          "name": "臣名烤东北油边王（郑州分店）",
+          "category": "烧烤 / 东北大串",
+          "addressText": "河南省郑州市二七区行云路长江花园9号店铺",
+          "start": 0.0,
+          "end": 354.6,
+          "posterSecond": 50.0,
+          "summary": "二七区行云路长江花园底商的高人气东北烧烤，主打手工现穿的大油边、风干小油边、烤腰子、酱油筋与东北蘸酱菜，大串多汁肉香浓郁，外地博主赞不绝口。",
+          "coordinates": [
+            113.644473,
+            34.711071
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "行云路长江花园底商",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实访二七区行云路长江花园9号店铺，采用行云路与长江中路交叉口路段参照。",
+            "reviewedOn": "2026-11-19",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 727616166,
+              "name": "行云路",
+              "url": "https://www.openstreetmap.org/way/727616166",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6818586106
+            }
+          },
+          "footageNote": "2026年原视频 · 臣名烤东北油边王实测，夜间用餐建议提前取号。"
+        }
+      ]
+    },
+    {
+      "id": "zz-liliwoba-dingji-7480062174472260916",
+      "author": "黎理我吧_",
+      "title": "藏在路边？郑州 烤牛肉串小馆 能烤能涮 2人233吃爽了！ 70期 也是开了7、8年的老店了。",
+      "url": "https://www.douyin.com/video/7480062174472260916",
+      "shareURL": "https://v.douyin.com/XcdXk5bzvAI/",
+      "publishedOn": "2025-03-10",
+      "durationSeconds": 413.433333,
+      "sourceSHA256": "564a436a50b463c2e9ff9692934836d7d5f5c490114ace9e7c18b445d3009604",
+      "acquisitionStatus": "obtained",
+      "evidenceNote": "博主实访丁记牛肉汤烧烤，管城区玉城街五里堡小学新校区正对面。",
+      "segments": [
+        {
+          "id": "zz-liliwoba-dingji",
+          "name": "丁记牛肉汤烧烤",
+          "category": "烧烤 / 牛肉汤烧烤",
+          "addressText": "河南省郑州市管城回族区玉城街（五里堡小学新校门对面）",
+          "start": 0.0,
+          "end": 413.4,
+          "posterSecond": 1.0,
+          "summary": "管城区玉城街五里堡小学新校门对面的七八年宝藏小馆，主打烤牛肉串、大油包肝、烤牛胸口、烤牛腰与热气腾腾的酸菜牛肉锅，能烤能涮滋味醇厚。",
+          "coordinates": [
+            113.680101,
+            34.723038
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "玉城街五里堡小学对面",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实拍管城回族区玉城街五里堡小学新校门对面，采用玉城街开放地图路段参照。",
+            "reviewedOn": "2026-11-19",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644419,
+              "name": "玉城街",
+              "url": "https://www.openstreetmap.org/way/724644419",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 12292942997
+            }
+          },
+          "footageNote": "2025年原视频 · 丁记牛肉汤烧烤实测，能烤能涮推荐酸菜牛肉锅配烤串。"
+        }
+      ]
+    },
+    {
+      "id": "zz-wutang-laoyang-7619947953578986161",
+      "author": "无糖气泡水",
+      "title": "100家郑州地道苍蝇小馆第30期之老扬烧烤",
+      "url": "https://www.douyin.com/video/7619947953578986161",
+      "shareURL": "https://v.douyin.com/rdZYD9N5hkc/",
+      "publishedOn": "2026-03-22",
+      "durationSeconds": 39.933333,
+      "sourceSHA256": "b597bf12582e08b700fae3e3e45ca33e5b226d96701387757eca2a6a29b38bba",
+      "acquisitionStatus": "obtained",
+      "evidenceNote": "博主实访老扬烧烤（天泰艺墅世家店），二七区汉江路69-27号。",
+      "segments": [
+        {
+          "id": "zz-wutang-laoyang",
+          "name": "老扬烧烤（天泰艺墅世家店）",
+          "category": "烧烤 / 市井小馆烧烤",
+          "addressText": "河南省郑州市二七区汉江路69-27号（天泰艺墅世家底商）",
+          "start": 0.0,
+          "end": 39.9,
+          "posterSecond": 10.0,
+          "summary": "二七区汉江路天泰艺墅世家底商的地道苍蝇小馆，晚间出摊烟火气十足，主打现烤羊肉串、板筋与特色米线，适宜街头小聚与深夜下酒。",
+          "coordinates": [
+            113.632401,
+            34.716453
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "汉江路天泰艺墅世家底商",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实访二七区汉江路69-27号天泰艺墅世家底商，采用汉江路开放地图路段参照。",
+            "reviewedOn": "2026-11-19",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 727616080,
+              "name": "汉江路",
+              "url": "https://www.openstreetmap.org/way/727616080",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 13373984215
+            }
+          },
+          "footageNote": "2026年原视频 · 老扬烧烤实测，晚间营业烟火气十足。"
+        }
+      ]
+    },
+    {
+      "id": "zz-dahan-xiaorongcheng-7681955724839497713",
+      "author": "大韩同学呀（爱吃比格）",
+      "title": "郑州目前第二夯的自助出现了! 不吃你后悔",
+      "url": "https://www.douyin.com/video/7681955724839497713",
+      "shareURL": "https://v.douyin.com/j5i_fBu6APU/",
+      "publishedOn": "2026-09-05",
+      "durationSeconds": 284.566667,
+      "sourceSHA256": "108de7513d17a01c27f24dd6d452bb1bc0d940e8a5400f4a91f69cbcc00af3ba",
+      "acquisitionStatus": "obtained",
+      "evidenceNote": "博主实访晓蓉城·放题自助火锅（时光里店），金水区平安大道与湖心环路永和时光里F4。",
+      "segments": [
+        {
+          "id": "zz-dahan-xiaorongcheng",
+          "name": "晓蓉城·放题自助火锅（时光里店）",
+          "category": "火锅串串 / 自助火锅",
+          "addressText": "河南省郑州市金水区平安大道与湖心环路交叉口东南200米永和时光里购物中心F4",
+          "start": 0.0,
+          "end": 284.5,
+          "posterSecond": 70.0,
+          "summary": "郑东新区龙子湖永和时光里商场的高性价比老火锅放题自助，由单点转自助，鲜切牛肉、毛肚、黄喉与特色老豆腐不限量畅吃。",
+          "coordinates": [
+            113.799482,
+            34.792047
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "龙子湖永和时光里商场",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实访郑东新区龙子湖永和时光里F4，位置超出市区中心底图东侧界限，保留真实WGS84坐标与平安大道延伸段参照。",
+            "reviewedOn": "2026-11-19",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 660478732,
+              "name": "平安大道",
+              "url": "https://www.openstreetmap.org/way/660478732",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6816400024
+            }
+          },
+          "footageNote": "2026年原视频 · 晓蓉城放题自助火锅实测，单点品质自助畅吃。"
+        }
+      ]
+    },
+    {
+      "id": "zz-fantongdidi-woodfire-7706463593285596857",
+      "author": "饭桶弟弟",
+      "title": "郑州168元巴西烤肉自助！几十种肉轮流上 两小时如何吃过瘾！",
+      "url": "https://www.douyin.com/video/7706463593285596857",
+      "shareURL": "https://v.douyin.com/WT_uy4B8KTk/",
+      "publishedOn": "2026-11-10",
+      "durationSeconds": 481.4,
+      "sourceSHA256": "d698c43d6dfc92a30796f232f2847431749f431fac723dfe8e05db945290aee0",
+      "acquisitionStatus": "obtained",
+      "evidenceNote": "博主实访Wood&Fire 意大利自助牛排烤肉披萨餐厅，金水区绿地新都会A座2楼。",
+      "segments": [
+        {
+          "id": "zz-fantongdidi-woodfire",
+          "name": "Wood&Fire 意大利自助牛排烤肉披萨餐厅（绿地新都会店）",
+          "category": "西餐烤肉 / 巴西烤肉披萨自助",
+          "addressText": "河南省郑州市金水区金水东路与东风南路交汇处绿地新都会A座2楼（近金水东路地铁站C口）",
+          "start": 0.0,
+          "end": 481.4,
+          "posterSecond": 70.0,
+          "summary": "郑东新区金水东路绿地新都会的高端西式放题餐厅，涵盖几十款轮番上桌的巴西炭烤肉串、美式慢烤牛胸肉、战斧牛排与现烤榴莲披萨。",
+          "coordinates": [
+            113.759483,
+            34.768866
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金水东路绿地新都会A座",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实访金水东路与东风南路交汇处绿地新都会A座2楼，采用金水东路开放地图交叉口参照。",
+            "reviewedOn": "2026-11-19",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724509161,
+              "name": "金水东路",
+              "url": "https://www.openstreetmap.org/way/724509161",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6794656060
+            }
+          },
+          "footageNote": "2026年原视频 · 饭桶弟弟实测Wood&Fire自助，巴西烤肉与意式薄底披萨畅吃。"
+        }
+      ]
+    },
+    {
+      "id": "zz-youmotou-quansanxi-7648524280167305081",
+      "author": "尤馍头",
+      "title": "二七广场下80多美式慢烤自助+韩式便利店烤肉自助一票畅吃！",
+      "url": "https://www.douyin.com/video/7648524280167305081",
+      "shareURL": "https://v.douyin.com/dyfZD-mp1pE/",
+      "publishedOn": "2026-06-07",
+      "durationSeconds": 61.366667,
+      "sourceSHA256": "a5610a004e4761c74554c6b008febb3bcf05bf58412c2ae02334958123233e1b",
+      "acquisitionStatus": "obtained",
+      "evidenceNote": "博主实访权三喜自助烤肉便利店，二七广场太空舱主题街区Q13。",
+      "segments": [
+        {
+          "id": "zz-youmotou-quansanxi",
+          "name": "权三喜自助烤肉便利店（二七广场店）",
+          "category": "烧烤 / 便利店烤肉自助",
+          "addressText": "河南省郑州市二七区二七广场太空舱主题街区Q13",
+          "start": 0.0,
+          "end": 61.3,
+          "posterSecond": 10.0,
+          "summary": "二七广场太空舱地下商业街的创新便利店自选烤肉模式，自提小篮在冷柜自选独立密封包肉品，兼具美式慢烤牛胸与韩式烤肉、炸鸡关东煮。",
+          "coordinates": [
+            113.660687,
+            34.753799
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "二七广场太空舱地下街区",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实访二七广场太空舱地下商业街Q13，采用二七路与二七广场路段参照。",
+            "reviewedOn": "2026-11-19",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644663,
+              "name": "二七路",
+              "url": "https://www.openstreetmap.org/way/724644663",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796156092
+            }
+          },
+          "footageNote": "2026年原视频 · 权三喜便利店烤肉自助实测，一票畅吃多种肉类及小吃。"
+        }
+      ]
+    },
+    {
+      "id": "zz-dahan-woodfire-7678287173745943793",
+      "author": "大韩同学呀（爱吃比格）",
+      "title": "（无广）郑州我最爱吃的自助没有之一! 环境服务通通在线",
+      "url": "https://www.douyin.com/video/7678287173745943793",
+      "shareURL": "https://v.douyin.com/rmOnC2KgvFI/",
+      "publishedOn": "2026-08-26",
+      "durationSeconds": 326.7,
+      "sourceSHA256": "a7a781d1de5378540b2456305302ed3b835781fdfb3bd64414c6ec9b3c38d23a",
+      "acquisitionStatus": "obtained",
+      "evidenceNote": "博主实访Wood&Fire意大利自助牛排烤肉披萨餐厅，金水区绿地新都会A座2楼（多创作者复核同一门店）。",
+      "segments": [
+        {
+          "id": "zz-dahan-woodfire",
+          "name": "Wood&Fire 意大利自助牛排烤肉披萨餐厅（绿地新都会店）",
+          "category": "西餐烤肉 / 巴西烤肉披萨自助",
+          "placeId": "zz-fantongdidi-woodfire",
+          "addressText": "河南省郑州市金水区金水东路与东风南路交汇处绿地新都会A座2楼（近金水东路地铁站C口）",
+          "start": 0.0,
+          "end": 326.7,
+          "posterSecond": 278.0,
+          "summary": "绿地新都会A座的高分放题西餐厅，炭烤巴西大肉串轮流切分，美式慢烤牛胸肉软烂爆汁，手工薄底榴莲披萨与意式奶油意面品质出众。",
+          "coordinates": [
+            113.759483,
+            34.768866
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金水东路绿地新都会A座",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实访金水东路与东风南路交汇处绿地新都会A座2楼，与饭桶弟弟合用同一点位，采用金水东路开放地图交叉口参照。",
+            "reviewedOn": "2026-11-19",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724509161,
+              "name": "金水东路",
+              "url": "https://www.openstreetmap.org/way/724509161",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6794656060
+            }
+          },
+          "footageNote": "2026年原视频 · 大韩同学实测Wood&Fire自助，多博主同店记录。"
+        }
+      ]
+    },
+    {
+      "id": "zz-dapanda-jinyan-7661593470154622385",
+      "author": "大潘达",
+      "title": "终于吃到这个好好好好吃的巴西烤肉自助啦！ 烤榴莲、烤生蚝、各种烤肉大虾甜品冰淇淋水果随便吃的快乐谁懂",
+      "url": "https://www.douyin.com/video/7661593470154622385",
+      "shareURL": "https://v.douyin.com/USItoxuTnbA/",
+      "publishedOn": "2026-07-12",
+      "durationSeconds": 113.8,
+      "sourceSHA256": "65f862417fc51a5bcfceb0059c44a679bf58e952839412b76e08251209a15a71",
+      "acquisitionStatus": "obtained",
+      "evidenceNote": "博主实访金焰巴西烤肉自助（大卫城店），金水区二七路与东太康路交叉口向北100米大卫城3号门对面。",
+      "segments": [
+        {
+          "id": "zz-dapanda-jinyan",
+          "name": "金焰巴西烤肉自助（大卫城店）",
+          "category": "西餐烤肉 / 巴西烤肉自助",
+          "addressText": "河南省郑州市金水区二七路与东太康路交叉口向北100米路东（大卫城3号门对面）",
+          "start": 0.0,
+          "end": 113.8,
+          "posterSecond": 1.0,
+          "summary": "金水区二七路大卫城3号门对面的老牌巴西烤肉自助，服务员轮流送上双层炭火现烤的安格斯牛尖峰、牛眼肉、烤榴莲与烤生蚝，怀旧美味兼具。",
+          "coordinates": [
+            113.660869,
+            34.757253
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "二七路大卫城对面",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片实访二七路与东太康路交叉口向北100米大卫城3号门对面，采用东太康路与二七路交叉口路段参照。",
+            "reviewedOn": "2026-11-19",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 724644657,
+              "name": "东太康路",
+              "url": "https://www.openstreetmap.org/way/724644657",
+              "sourceDate": "2026-11-16",
+              "method": "original-way-node",
+              "nodeId": 6796156028
+            }
+          },
+          "footageNote": "2026年原视频 · 大卫城金焰巴西烤肉自助实测，生蚝烤肉榴莲畅吃。"
         }
       ]
     }
