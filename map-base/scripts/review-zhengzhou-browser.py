@@ -63,12 +63,12 @@ with sync_playwright() as pw:
           '食途 · 郑州地图' in title and '郑州地图已展开' in status_text, 
           {'title': title, 'statusText': status_text})
     
-    # Check food markers rendered on map (111 on-map stops: 134 total segments - 9 out-of-bounds - 14 merged places)
+    # Check food markers rendered on map (118 on-map stops: 142 total segments - 10 out-of-bounds - 14 merged places)
     page.wait_for_selector('.food-card', timeout=10000)
     food_cards = page.locator('.food-card')
     card_count = food_cards.count()
-    check('2. Food cards rendered on map for Zhengzhou (111 on-map stops)', 
-          card_count == 111, {'cardCount': card_count})
+    check('2. Food cards rendered on map for Zhengzhou (118 on-map stops)', 
+          card_count == 118, {'cardCount': card_count})
     
     # Verify shop names in cards
     card_names = page.evaluate("() => Array.from(document.querySelectorAll('.food-card strong')).map(el => el.textContent)")
@@ -386,8 +386,8 @@ with sync_playwright() as pw:
     p_single.wait_for_function("() => window.foodCityMap && window.foodCityMap.ready", timeout=30000)
     p_single.wait_for_selector('.food-card', timeout=5000)
     single_cards = p_single.locator('.food-card').count()
-    check('19. Standalone bundle preview-zhengzhou.html renders food cards (111 offline stops)', 
-          single_cards == 111, {'cardCount': single_cards})
+    check('19. Standalone bundle preview-zhengzhou.html renders food cards (118 offline stops)', 
+          single_cards == 118, {'cardCount': single_cards})
     single_shot = output_dir / 'zhengzhou-preview-bundle-1440.png'
     p_single.screenshot(path=str(single_shot))
     check('20. Standalone bundle preview-zhengzhou.html screenshot saved', 
