@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "hangzhou",
+  "bounds": [
+    120.1,
+    30.2,
+    120.24,
+    30.34
+  ],
+  "source": {
+    "date": "2026-11-20",
+    "sha256": "9f21a063174f7c4bf2001488dc40a1237c9e228b7c61a96b5ac468efeae6ba85",
+    "url": "https://download.geofabrik.de/asia/china/zhejiang.html",
+    "fileName": "zhejiang-latest.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "networkSHA256": "b46bc7b76dedba95f6bbac77e9da780617033ebf8b73d779390317a49067b0bf",
+  "bytes": 7243708,
+  "nodes": 101677,
+  "ways": 23386,
+  "footRestrictionWays": 0,
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
+}
