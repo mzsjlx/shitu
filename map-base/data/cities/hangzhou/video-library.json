@@ -5,8 +5,138 @@
   "rights": {
     "status": "user-confirmed",
     "confirmedOn": "2026-11-20",
-    "scope": "杭州探店视频由用户在会话中明确提供，首选来源打通端到端全流程；视频画面仅使用用户提供范围，记录与原片留.local，小封面海报与公开元数据进库。",
+    "scope": "杭州第一批探店视频由用户在会话中明确提供，首选来源打通端到端全流程；视频画面仅使用用户提供范围，记录与原片留.local，小封面海报与公开元数据进库。",
     "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
   },
-  "sources": []
+  "sources": [
+    {
+      "id": "hz-shiyideliangsan-7670185446282245307",
+      "author": "十一的两三天",
+      "title": "杭州必吃两人食！5家老底子小馆 来杭州玩必冲的几家老店！烟火气满满～本地人私藏！",
+      "url": "https://www.douyin.com/video/7670185446282245307",
+      "shareURL": "https://v.douyin.com/WC1_bWZ4SOo/",
+      "publishedOn": "2026-06-20",
+      "durationSeconds": 156.92,
+      "sourceSHA256": "72161d830d1b53f7fe73b2918da5f789369210a6763d6ef535a88ce7d347fb36",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "博主实拍门头招牌、后厨炒制、菜单明细与菜品口感，逐家详细口播推荐。",
+      "segments": [
+        {
+          "id": "hz-shiyi-chunya-banchuan",
+          "name": "椿芽·鲜牛肉杭州拌川（长生路店）",
+          "category": "杭帮面食 / 现炒拌川",
+          "addressText": "杭州市上城区长生路34号（近东坡路、西湖湖滨步行街）",
+          "start": 11.0,
+          "end": 50.0,
+          "posterSecond": 24.0,
+          "summary": "西湖湖滨老底子风味拌川，金黄酥脆虾爆鳝、浓郁酱汁现切牛肉拌川，配现蒸番茄小笼包与炸白里脊串。",
+          "coordinates": [
+            120.1601,
+            30.2558
+          ],
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "湖滨长生路街区"
+          },
+          "locationStatus": "approximate",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "真实探店实拍，位于湖滨长生路街区，经度纬度吸附杭州开放道路网络。",
+          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+        },
+        {
+          "id": "hz-shiyi-chuanwei-paocaiyu",
+          "name": "川味泡菜馆（黄姑山路店）",
+          "category": "川味家常 / 招牌泡菜鱼",
+          "addressText": "杭州市西湖区黄姑山路11号（近文三路、颐高百脑汇）",
+          "start": 50.0,
+          "end": 83.0,
+          "posterSecond": 69.0,
+          "summary": "始于2000年的20年社区老店，白汤泡菜鱼片鲜薄嫩滑，老坛泡菜酸爽开胃超级下饭。",
+          "coordinates": [
+            120.1332,
+            30.2796
+          ],
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "文三路黄姑山路街区"
+          },
+          "locationStatus": "approximate",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "真实探店实拍，位于文三路黄姑山路街区，经度纬度吸附杭州开放道路网络。",
+          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+        },
+        {
+          "id": "hz-shiyi-juemeijia-huntun",
+          "name": "绝美嘉海鲜馄饨（武林总店）",
+          "category": "特色小吃 / 海鲜馄饨·烧麦",
+          "addressText": "杭州市拱墅区万寿亭街31号（近武林路、武林广场）",
+          "start": 83.0,
+          "end": 101.0,
+          "posterSecond": 90.0,
+          "summary": "武林广场社区经典老店，爆汁蛋黄鲜肉烧麦与18元超大碗鲜美海鲜馄饨，配料满满。",
+          "coordinates": [
+            120.1625,
+            30.2691
+          ],
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "武林广场万寿亭街区"
+          },
+          "locationStatus": "approximate",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "真实探店实拍，位于武林广场万寿亭街区，经度纬度吸附杭州开放道路网络。",
+          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+        },
+        {
+          "id": "hz-shiyi-jinzhongbang-sifangcai",
+          "name": "金仲帮中餐厅（虎玉路店）",
+          "category": "老底子杭帮菜 / 社区私房菜",
+          "addressText": "杭州市上城区虎玉路38号B幢（八卦新村内，近陶瓷市场、八卦田）",
+          "start": 101.0,
+          "end": 131.0,
+          "posterSecond": 114.0,
+          "summary": "老居民区土著私房菜，大颗鲍鱼红烧肉配酒酿馒头、清爽鲜甜手打鱼米羹，地道非流水线老杭帮口味。",
+          "coordinates": [
+            120.1503,
+            30.2185
+          ],
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "八卦新村虎玉路街区"
+          },
+          "locationStatus": "approximate",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "真实探店实拍，位于八卦新村虎玉路街区，经度纬度吸附杭州开放道路网络。",
+          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+        },
+        {
+          "id": "hz-shiyi-baijia-jiweiguan",
+          "name": "百家鸡味馆（清泰街店）",
+          "category": "杭州老字号 / 百家鸡·鸡粥鸡汁面",
+          "addressText": "杭州市上城区清泰街571号金泰商务大厦裙楼（近中河中路、定安路地铁站）",
+          "start": 131.0,
+          "end": 155.0,
+          "posterSecond": 138.0,
+          "summary": "杭州老城区土著老字号，招牌白斩百家鸡肉质滑嫩鲜美，搭配鸡粥与鸡汁拌面，老城烟火气十足。",
+          "coordinates": [
+            120.1706,
+            30.2458
+          ],
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "清泰街定安路街区"
+          },
+          "locationStatus": "approximate",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "真实探店实拍，位于清泰街定安路街区，经度纬度吸附杭州开放道路网络。",
+          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+        }
+      ]
+    }
+  ]
 }
