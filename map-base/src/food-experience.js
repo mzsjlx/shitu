@@ -14,6 +14,7 @@ const thumbFor=(item,cls)=>{
 export class FoodExperience{
   constructor(map,overlay,{cityId='chongqing',cityName='重庆',amapCityCode='500000',config,readJSON,assetURL,roadWorkerURL,onFocus,onExplore=onFocus}){
     this.map=map;this.overlay=overlay;this.cityId=cityId||config?.city||'chongqing';this.cityKey=this.cityId;this.cityName=cityName;this.amapCityCode=amapCityCode;this.config=config;this.readJSON=readJSON;this.assetURL=assetURL;this.onFocus=onFocus;this.onExplore=onExplore;
+    if(this.overlay?.popover)this.overlay.popover.cityCode=this.amapCityCode;
     this.records=[];this.phase='unloaded';this.active=false;this.selected=null;this.generation=0;this.saved=[];this.category=null;this.draftCategory=null;this.routeSuppressed=false;
     this.routeMode='direct';try{const mode=localStorage.getItem('foodcity:distance-mode:'+this.cityId+':v1');if(['direct','road'].includes(mode))this.routeMode=mode;}catch{}
     this.routePreview=new FoodRoutePreview(map,overlay.Marker,{loadNetwork:async signal=>{const data=await readJSON(config.roadNetwork,{signal});if(data.city!==this.cityId)throw new Error('道路资料与当前城市不一致');return data;},workerURL:roadWorkerURL,onChange:()=>this.renderRouteStatus()});

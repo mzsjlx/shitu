@@ -622,7 +622,8 @@ async function init() {
   map.on('render',checkReady);
   map.on('idle',checkReady);
   map.on('sourcedata',checkReady);
-  $('source-date').textContent=manifest.upstreamBuild.key.replace('.pmtiles','').replace(/^(\d{4})(\d{2})(\d{2})$/,'$1-$2-$3');
+  const buildKey = manifest.upstreamBuild?.key || (manifest.acquiredAtUTC ? manifest.acquiredAtUTC.slice(0, 10).replace(/-/g, '') : '20261120');
+  $('source-date').textContent=buildKey.replace('.pmtiles','').replace(/^(\d{4})(\d{2})(\d{2})$/,'$1-$2-$3');
   $('source-stats').textContent='当前可搜索 '+roads.length.toLocaleString()+' 组源道路名称。按源名称合并的道路可能包含多段路面、桥梁或隧道。';
   videoLibrary=new VideoLibrary({cityId:cityKey,cityConfig:city,onMapPlace:async segment=>{
     if(!state.ready||!food)throw new Error('地图还在展开，稍后再试。');

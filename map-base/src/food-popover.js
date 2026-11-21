@@ -1,4 +1,5 @@
 import {foodVideoCredit} from './food-video-credit.js';
+import {amapSearchUrl} from './video-library-model.js';
 import './food-popover.css';
 const el=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 
@@ -89,7 +90,16 @@ export class FoodPopover{
       button.addEventListener('click',()=>{this.show(item,entry,{pinned:true,clipId:clip.id});this.element.querySelector('[data-clip-id="'+clip.id+'"]')?.focus({preventScroll:true});});choices.append(button);
     }
     const originalURL=official?.original||item.originalVideoURL;
-    if(originalURL){const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));if(item.verificationStatus==='video-location'){const note=el('small','food-popover-branch-note','位置大致 · 分店待核');note.title=item.planningLocation?.note||'按地址街区估计';links.append(note);}}
+    if(originalURL){
+      const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);
+      const amapLink=el('a','food-popover-amap','高德搜索 ↗');
+      amapLink.href=amapSearchUrl(item.name,item.amapCityCode||this.cityCode||'330100');
+      amapLink.target='_blank';amapLink.rel='noopener noreferrer';
+      amapLink.setAttribute('aria-label','在高德地图搜索'+item.name+'，新窗口打开');
+      links.append(amapLink);
+      if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));
+      if(item.verificationStatus==='video-location'){const note=el('small','food-popover-branch-note','位置大致 · 分店待核');note.title=item.planningLocation?.note||'按地址街区估计';links.append(note);}
+    }
     if(item.clipFootageNote){const note=el('small','food-popover-branch-note',item.clipFootageNote);links.append(note);}
     this.element.classList.toggle('has-clip-choices',choices.childElementCount>0);this.element.classList.toggle('has-footage-note',!!item.clipFootageNote);
     const details=el('div','food-popover-details');details.append(copy,choices,this.errorNote,links);
