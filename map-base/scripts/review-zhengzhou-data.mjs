@@ -153,18 +153,18 @@ await check('7. food-road-router calculates genuine Zhengzhou routes and distanc
 });
 
 // 8. Video library validation check
-await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 75 user sources and 156 segments', async () => {
+await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 84 user sources and 165 segments', async () => {
   const raw = await readFile(path.join(root, 'data/cities/zhengzhou/video-library.json'), 'utf8');
   const catalog = JSON.parse(raw);
   const validated = validateVideoLibrary(catalog, 'zhengzhou');
   assert.equal(validated.city, 'zhengzhou');
-  assert.equal(validated.sources.length, 75, 'Must have 75 sources from user batches');
+  assert.equal(validated.sources.length, 84, 'Must have 84 sources from user batches');
   
   const allSegments = validated.sources.flatMap(s => s.segments);
-  assert.equal(allSegments.length, 156, 'Must have 156 total segments');
+  assert.equal(allSegments.length, 165, 'Must have 165 total segments');
   
   const authors = new Set(validated.sources.map(s => s.author));
-  assert.equal(authors.size, 55, 'Must have 55 distinct authors');
+  assert.equal(authors.size, 64, 'Must have 64 distinct authors');
   
   // Multi-creator deduplication check: 合记烩面
   const hejiSegments = allSegments.filter(s => s.name.includes('合记烩面'));
@@ -259,13 +259,13 @@ await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 
   // Groups and stops check
   const bounds = [113.58, 34.7, 113.78, 34.83];
   const groups = groupVideoPlaces(catalog);
-  assert.equal(groups.length, 141, '156 segments deduplicate into 141 places');
+  assert.equal(groups.length, 150, '165 segments deduplicate into 150 places');
   
   const inBoundsGroups = groups.filter(g => withinMapBounds(g.primary.segment, bounds));
-  assert.equal(inBoundsGroups.length, 130, 'Must have 130 in-bounds distinct map stops');
+  assert.equal(inBoundsGroups.length, 137, 'Must have 137 in-bounds distinct map stops');
   
   const outOfBoundsSegments = allSegments.filter(s => !withinMapBounds(s, bounds));
-  assert.equal(outOfBoundsSegments.length, 12, 'Must have 12 out-of-bounds segments (换利小吃x2 & 郑三指固始鹅块 & 刘新生羊肉炝锅面 & 郑大松园餐厅火锅粉 & 傻子张大盘鸡 & 磨李夜市 & 北大学城夜市 & 晓蓉城 & 清真·陈三抖自助火锅 & 喜樽牛寿喜烧 & 北岛烤肉吧)');
+  assert.equal(outOfBoundsSegments.length, 14, 'Must have 14 out-of-bounds segments (换利小吃x2 & 郑三指固始鹅块 & 刘新生羊肉炝锅面 & 郑大松园餐厅火锅粉 & 傻子张大盘鸡 & 磨李夜市 & 北大学城夜市 & 晓蓉城 & 清真·陈三抖自助火锅 & 喜樽牛寿喜烧 & 北岛烤肉吧 & 欣记快餐 & 米小盒自助餐)');
   
   return {
     sources: validated.sources.length,
@@ -278,10 +278,10 @@ await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 
 });
 
 // 9. Poster files existence and SHA256 integrity
-await check('9. data/cities/zhengzhou/video-posters.json records all 156 posters matching disk files', async () => {
+await check('9. data/cities/zhengzhou/video-posters.json records all 165 posters matching disk files', async () => {
   const postersData = JSON.parse(await readFile(path.join(root, 'data/cities/zhengzhou/video-posters.json'), 'utf8'));
   const segments = Object.entries(postersData.segments);
-  assert.equal(segments.length, 156, 'Must have 156 poster entries');
+  assert.equal(segments.length, 165, 'Must have 165 poster entries');
   
   for (const [segId, entry] of segments) {
     const filePath = path.join(root, entry.path);

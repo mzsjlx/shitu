@@ -1,6 +1,6 @@
 {
   "city": "zhengzhou",
-  "verifiedAt": "2026-11-19 22:02:29",
+  "verifiedAt": "2026-11-21 15:07:22",
   "previewUrl": "http://127.0.0.1:8798",
   "total": 21,
   "passed": 21,
@@ -14,10 +14,10 @@
       }
     },
     {
-      "name": "2. Food cards rendered on map for Zhengzhou (130 on-map stops)",
+      "name": "2. Food cards rendered on map for Zhengzhou (137 on-map stops)",
       "passed": true,
       "details": {
-        "cardCount": 130
+        "cardCount": 137
       }
     },
     {
@@ -64,10 +64,10 @@
           "paused": false
         },
         "t2": {
-          "t": 0.755501,
+          "t": 0.681957,
           "paused": false
         },
-        "advance": 0.755501
+        "advance": 0.681957
       }
     },
     {
@@ -84,12 +84,12 @@
       "name": "8. Multi-creator shop switch: old creator video stops, new creator plays and advances, stops on close",
       "passed": true,
       "details": {
-        "c1Advance": 0.7949089999999999,
+        "c1Advance": 0.803981,
         "c1After": {
           "paused": true,
           "hasSrc": false
         },
-        "c2Advance": 0.804268,
+        "c2Advance": 0.803134,
         "c2After": {
           "paused": true,
           "hasSrc": false
@@ -113,7 +113,7 @@
       "passed": true,
       "details": {
         "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-desktop-1440.png",
-        "bytes": 1547304
+        "bytes": 1564008
       }
     },
     {
@@ -166,7 +166,7 @@
       "name": "17. Short landscape 736x414 popover media area >= 2/3",
       "passed": true,
       "details": {
-        "ratio": 0.6683871324522024
+        "ratio": 0.6683870967741935
       }
     },
     {
@@ -177,10 +177,10 @@
       }
     },
     {
-      "name": "19. Standalone bundle preview-zhengzhou.html renders food cards (130 offline stops)",
+      "name": "19. Standalone bundle preview-zhengzhou.html renders food cards (137 offline stops)",
       "passed": true,
       "details": {
-        "cardCount": 130
+        "cardCount": 137
       }
     },
     {
