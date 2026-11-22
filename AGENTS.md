@@ -4,6 +4,7 @@
 
 ## 开始工作
 
+- **新同学 / 新城市快速入口（阅读止损）**：先读本文 + [CITY-AGENT-STARTER.md](CITY-AGENT-STARTER.md) 顶部（含城市/前缀防撞表与最新提示词）+ [PR-CHECKLIST.md](PR-CHECKLIST.md)（10 条 PR 准入红线）+ [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md) 顶部；标杆验证脚本直接参考 `map-base/scripts/review-zhengzhou-data.mjs` 与 `review-zhengzhou-browser.py`。不要通读 350 KB 的 `PROJECT-STATUS.md` 全文或套用 2026-10 月旧单城文档。
 - 2026-11-22 郑州 `48fb7b5` / PR #11 已完成接收端独立复核，并以 `7f513e1` 合入 `main`（主线现含重庆、长沙、柳州初始版、南京、潮汕、武汉、郑州 7 城；柳州扩充 PR #9、哈尔滨与成都仍待整改复核），证据见 `output/research/zhengzhou-review-20261122.md`。后续开工与合并务必基于最新 `origin/main`。
 - 2026-11-16 武汉交付问题已完成接收端复核；新城市先读手册和素材说明中的同日补充，证据见 `output/research/wuhan-followup-20261116.md` 顶部最终记录。`488079f` / PR #10 已通过复核，并以 `6019700` 合入main。后续开工仍要同步最新上游。
 
