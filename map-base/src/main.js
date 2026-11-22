@@ -606,8 +606,8 @@ async function init() {
     const availableRoadLayers = roadHitLayers.filter(id => map.getLayer(id));
     if(availableRoadLayers.length === 0)return;
     const renderedRoadCount = map.queryRenderedFeatures({layers: availableRoadLayers}).length;
-    // Road rendering is the base readiness signal. Once road features are rendered on screen, map is ready.
-    if(renderedRoadCount > 0 || (map.isSourceLoaded('city') && map.queryRenderedFeatures().length > 0)){
+    // Road rendering is the base readiness signal. Once road features or vector tiles are loaded, map is ready.
+    if(renderedRoadCount > 0 || map.isSourceLoaded('city') || (map.loaded() && map.queryRenderedFeatures().length > 0)){
       state.ready=true;
       if (readyInterval) clearInterval(readyInterval);
       boot.ready();$('status').textContent=city.name+'地图已展开';

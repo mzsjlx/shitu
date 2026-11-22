@@ -183,7 +183,7 @@
           document.getElementById('map-error-detail').textContent=['加载阶段：'+stage,'打开方式：'+location.protocol,...errors].join('\n');
         }
       };
-      const timer=setTimeout(()=>boot.fail('地图加载超时。请重新加载；若是直接打开 HTML，请使用“打开地图.cmd”。','20 秒内未能渲染真实道路。'),20000);
+      const timer=setTimeout(()=>boot.fail('地图加载超时。请重新加载；若是直接打开 HTML，请使用“打开地图.cmd”。','60 秒内未能渲染真实道路。'),60000);
       addEventListener('error',event=>{
         const detail=event.message||('资源加载失败：'+(event.target?.src||event.target?.href||'未知资源'));
         if(event.target===window||event.target?.tagName==='SCRIPT')boot.fail('地图程序未能启动，请查看加载详情或使用本地预览。',detail);
