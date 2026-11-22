@@ -1,5 +1,7 @@
 # 食途 · 美食旅行地图
 
+> **2026-11-22 郑州 PR #11 已合入主线：** `codex/city-zhengzhou-prep` / `48fb7b5` 的 [PR #11](https://github.com/mzsjlx/shitu/pull/11) 已完成接收端独立复核并以 `7f513e1` 合入 `main`，主线现支持 7 城（重庆、长沙、柳州初始版、南京、潮汕、武汉、郑州），可使用 `?city=zhengzhou&view=food` 切换郑州。88 个 ZIP 与 88 份摘要全部 `uploaded`，抽样远端下载导入与实播通过，详情与验证范围见 [郑州复核与合并记录](output/research/zhengzhou-review-20261122.md)。
+
 > **2026-11-16 武汉交付复核：** `codex/city-wuhan-prep` / `488079f` 的 [PR #10](https://github.com/mzsjlx/shitu/pull/10) 已完成本轮接收端复核：83 个 ZIP 与83份摘要全部上传，呱呱更新包实际远端下载、隔离导入和重复导入通过。PR现已通过 `6019700` 合入main，可使用 `?city=wuhan&view=food` 切换武汉。最终状态见 [武汉复核记录](output/research/wuhan-followup-20261116.md)；新城开发先读 [城市手册](CITY-AGENT-HANDBOOK.md) 与 [素材说明](MEDIA-COLLABORATION.md) 的同日补充。
 
 > 2026-11-10：潮汕作为第五个区域接入，57来源/76片段、67张资料卡、46个地图点。修复与实测范围见 [潮汕整合复核](output/research/chaoshan/integration-review-20261110.md)。视频仍需另行导入本机；下方较早进度按历史日期阅读。

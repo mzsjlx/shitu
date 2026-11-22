@@ -1,3 +1,11 @@
+## 2026-11-22 郑州 PR #11 已合入主线（7 城基线就绪）
+
+郑州 `48fb7b5` 已通过 [PR #11](https://github.com/mzsjlx/shitu/pull/11) 合并至 `origin/main`，合并提交为 `7f513e1548be7461e0396183a495b89507895be8`。主线现包含 **7 城**：重庆、长沙、柳州（初始 9 点版）、南京、潮汕、武汉、郑州；本轮未合并柳州扩充 PR #9、哈尔滨或成都。
+
+- 郑州最终规模：88 来源、67 博主、169 片段、153 去重美食点（14 处跨博主合用、2 处同博主多片段）、140 处在图美食点（155 在图片段全主网连通 0 断路）、14 范围外待扩图片段（13 去重点）。
+- 素材与验收范围：Release [media-2026-11-16-zhengzhou](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-zhengzhou) 分页核对 176/176 附件（88 ZIP + 88 `.zip.json`，`16,785,427,262` 字节）全 `uploaded`、0 `starter`，索引与服务端 digest / 字节 / 片段数 0 偏差；接收端实际远端下载 3 包（含复审修复的第 7 批 `zz-shejianshang` 以及 `zz-beizeng`、`zz-shiwu`，共 18 段）并完成独立隔离导入、重复导入 `newFiles: 0` 与双采样实播停音验证。完整证据见 [郑州复核与合并记录](output/research/zhengzhou-review-20261122.md)。
+- 合并后在独立无媒体工作区重新执行 7 城构建（775 张封面全部保留）与 `review-zhengzhou-data.mjs` 10/10 通过；根工作区 `codex/trip-sharing` 未提交成果保持保留。
+
 ## 2026-11-22 郑州 PR #11 复核整改全量完成（已合入最新 main `7db95f8`）：88 来源 / 169 片段 / 153 去重美食点 / 140 处在图美食点（14 处跨博主合用，全在图 155 片段 0 断路）、第 7 批 Release 摘要与第 1 批/10-12 批 OSM 锚点全部校验修复、10/10 数据与 21/21 浏览器全量通过
 
 针对 PR #11（原 `20cab1f`）独立复核意见，在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，已合入 `origin/main` 最新提交 `7db95f8`）完成全部 4 项闭环整改与重新验真：
