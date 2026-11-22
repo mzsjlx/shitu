@@ -1,3 +1,25 @@
+# 郑州城市全栈接入与 PR #11 复核整改闭环交付报告（2026-11-16 ~ 2026-11-22）
+
+## 0. 2026-11-22 独立复核 4 项整改与重新验真结论
+
+针对 PR #11（原 `20cab1f`）独立复核意见，在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，已合入 `origin/main` 最新提交 `7db95f8`）完成全部 4 项修复与全量复测：
+
+1. **同步 `map-base/data/media-bundles.json` 校验摘要与片段数**：
+   - 将第 7 批 7 个素材包（`zz-shejianshang`、`zz-mamarangwoshaochidian`、`zz-xiangxiang-laodou`、`zz-chunjuan`、`zz-pangtouyu`、`zz-laoxu`、`zz-danke-baoquan`）的 `sha256` 同步为 Release `media-2026-11-16-zhengzhou`（ID: 447100672）实际已上传 ZIP 的摘要；
+   - 更新 `zz-beizeng-7661525430997912882` `clips: 5 -> 4`、`zz-shiwu-7687558663678177521` `clips: 12 -> 13`；
+   - 88/88 服务端 digest 与字节数全量匹配（176/176 `uploaded`，0 starters），且实测远端下载第 7 批更新包 `zz-shejianshang-7634461692823242158`（90,825,026 字节，本地 SHA256 `43ce2828...` 匹配），隔离目录执行 `importBundle` 通过（`clips: 1, newFiles: 3`，重复导入 `newFiles: 0`）。
+2. **合入最新 `origin/main`（`7db95f8`）**：完成冲突解决与合并提交（`f1891d3`），保留主线武汉文档与协作规则更新。
+3. **重算第 1 批失配 OSM 锚点与统一第 10–12 批锚点格式**：
+   - 重算第 1 批 21 处（含跨批合用的 `zz-ganfan-laoli` 与 `zz-beizeng-heji` 等共 22 条存在 `wayId === nodeId` 及 0.5–7.3km 偏离记录）及 `zz-fantongdidi-liuzhenzhen`、`zz-wulala-muyanxiang` 共 24 条锚点，全部修正为真实 `food-road-network.json` 主连通分量 `way` + 所属 `nodeId`；
+   - 将第 10–12 批 17 条 `"way-xxxx"` 锚点统一为标准整型 `id`、`url`、`sourceDate`、`method: "original-way-node"` 与所属最近 `nodeId`，统一 `locationStatus: "approximate-planning"`。
+4. **修复正弘城两店坐标/断路及同店归并穆彦华逍遥镇胡辣汤**：
+   - 将 `zz-fantongdidi-liuzhenzhen`（柳真真·正弘城店）与 `zz-yuanao-tianyi`（天一日料·正弘城店）统一校准至真实花园路×东风路西南角正弘城（OSM `way/1337082576` `[113.674448, 34.796744]`，锚定花园路 `way/724672372` / `node/6796416624`），彻底解决原 `way/743429009` 孤立断路；
+   - 将两段 `穆彦华逍遥镇胡辣汤`（`zz-shiwu-muyanhu` 与 `zz-wulala-muyanxiang`）同店归并至主片段 `zz-shiwu-muyanhu`，并统一坐标至真实秦岭路×岗坡路交叉口西侧 `[113.5966, 34.7535]`（岗坡路 `way/735363835` / `node/6887461524`）；
+   - 归并后当前全量口径：**88 来源、67 博主、169 片段、153 去重美食点（14 处跨博主合用 + 2 处同博主多片段合用）、140 处在图美食点（155 个在图片段 100% 沿路连通、0 断路）、14 个范围外待扩图片段（13 去重点）**。
+5. **回归结果**：`npm run build` 成功；`review-zhengzhou-data.mjs` **10/10 PASS**；`review-zhengzhou-browser.py` **21/21 PASS**；专项浏览器实测穆彦华双博主切播、正弘城两店与全站 4 站沿路规划（`约 4.6 公里`、`missing: 0`）全部通过。
+
+---
+
 # 郑州城市全栈接入与全十二批次探店视频完整闭环交付报告（2026-11-16 ~ 2026-11-21）
 
 ## 1. 交付结论（全十二批次完成）

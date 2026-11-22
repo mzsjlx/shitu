@@ -1,6 +1,6 @@
 {
   "city": "zhengzhou",
-  "verifiedAt": "2026-11-21 16:40:43",
+  "verifiedAt": "2026-11-22 21:21:21",
   "previewUrl": "http://127.0.0.1:8798",
   "total": 21,
   "passed": 21,
@@ -14,10 +14,10 @@
       }
     },
     {
-      "name": "2. Food cards rendered on map for Zhengzhou (141 on-map stops)",
+      "name": "2. Food cards rendered on map for Zhengzhou (140 on-map stops)",
       "passed": true,
       "details": {
-        "cardCount": 141
+        "cardCount": 140
       }
     },
     {
@@ -64,10 +64,10 @@
           "paused": false
         },
         "t2": {
-          "t": 0.691647,
+          "t": 0.790637,
           "paused": false
         },
-        "advance": 0.691647
+        "advance": 0.790637
       }
     },
     {
@@ -84,12 +84,12 @@
       "name": "8. Multi-creator shop switch: old creator video stops, new creator plays and advances, stops on close",
       "passed": true,
       "details": {
-        "c1Advance": 0.803901,
+        "c1Advance": 0.7957940000000001,
         "c1After": {
           "paused": true,
           "hasSrc": false
         },
-        "c2Advance": 0.8035229999999999,
+        "c2Advance": 0.803766,
         "c2After": {
           "paused": true,
           "hasSrc": false
@@ -113,7 +113,7 @@
       "passed": true,
       "details": {
         "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-desktop-1440.png",
-        "bytes": 1569519
+        "bytes": 1570565
       }
     },
     {
@@ -177,10 +177,10 @@
       }
     },
     {
-      "name": "19. Standalone bundle preview-zhengzhou.html renders food cards (141 offline stops)",
+      "name": "19. Standalone bundle preview-zhengzhou.html renders food cards (140 offline stops)",
       "passed": true,
       "details": {
-        "cardCount": 141
+        "cardCount": 140
       }
     },
     {

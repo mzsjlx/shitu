@@ -1,3 +1,25 @@
+## 2026-11-22 郑州 PR #11 复核整改全量完成（已合入最新 main `7db95f8`）：88 来源 / 169 片段 / 153 去重美食点 / 140 处在图美食点（14 处跨博主合用，全在图 155 片段 0 断路）、第 7 批 Release 摘要与第 1 批/10-12 批 OSM 锚点全部校验修复、10/10 数据与 21/21 浏览器全量通过
+
+针对 PR #11（原 `20cab1f`）独立复核意见，在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，已合入 `origin/main` 最新提交 `7db95f8`）完成全部 4 项闭环整改与重新验真：
+1. **同步 `map-base/data/media-bundles.json` 校验摘要与片段数**：
+   - 将第 7 批 7 个素材包（`zz-shejianshang`、`zz-mamarangwoshaochidian`、`zz-xiangxiang-laodou`、`zz-chunjuan`、`zz-pangtouyu`、`zz-laoxu`、`zz-danke-baoquan`）的 `sha256` 同步为 Release `media-2026-11-16-zhengzhou`（ID: 447100672）实际上传 ZIP 摘要（无需重传 ZIP）；
+   - 更正 `zz-beizeng-7661525430997912882` `clips` 为 `4`、`zz-shiwu-7687558663678177521` `clips` 为 `13`；
+   - 经全量服务端 digest 比对，88/88 ZIP 与 Release 100% 一致（176/176 `uploaded`，0 starters）；并在新隔离目录实际远端下载 `zz-shejianshang-7634461692823242158`（90,825,026 字节，本地重算 SHA256 `43ce2828...` 一致），执行 `importBundle` 通过（首次 `clips: 1, newFiles: 3`，重复导入幂等 `newFiles: 0`）。
+2. **合入最新 `origin/main`（`7db95f8`）并解决 `PROJECT-STATUS.md` 冲突**：
+   - 在提交 `f1891d3` 完成 `origin/main`（`7db95f8`）合并，完整保留武汉 PR #10 合并记录与最新郑州成果，无任何文件冲突残留。
+3. **重算第 1 批失配 OSM 锚点并统一第 10–12 批锚点格式**：
+   - 重算第 1 批 21 处（含 `zz-ganfan-laoli` 与 `zz-beizeng-heji` 等共 22 条存在 `wayId === nodeId` 及 0.5–7.3km 偏离的记录）以及 `zz-fantongdidi-liuzhenzhen`、`zz-wulala-muyanxiang` 共 24 条记录的开放地图 `way` 与 `nodeId`，确保全部属于 `food-road-network.json` 真实主连通分量道路节点；
+   - 将第 10–12 批全部 17 条在图记录的 `"way-xxxx"` 锚点统一转换为标准整型 `id`、`url`、`sourceDate`、`method: "original-way-node"` 与实测所属路段最近 `nodeId`，并统一 `locationStatus: "approximate-planning"`。
+4. **修复正弘城两店坐标/孤立断路与归并穆彦华逍遥镇胡辣汤**：
+   - **正弘城两店**：校准 `zz-fantongdidi-liuzhenzhen`（柳真真·正弘城8F）与 `zz-yuanao-tianyi`（天一日料·正弘城B1）至花园路×东风路西南角正弘城（OSM `way/1337082576` `[113.674448, 34.796744]`，锚定花园路 `way/724672372` / `node/6796416624`），彻底消除原 `way/743429009` 孤立断路；
+   - **穆彦华逍遥镇胡辣汤**：经核对两段字幕、招牌海报与坐标，将 `zz-wulala-muyanxiang`（特别乌啦啦）通过 `placeId: "zz-shiwu-muyanhu"` 同店归并至 `zz-shiwu-muyanhu`（15再吃亿点儿），并将两段坐标统一校准至真实 OSM 秦岭路×岗坡路交叉口西侧（`[113.5966, 34.7535]`，锚定岗坡路 `way/735363835` / `node/6887461524`）。
+   - 归并后郑州总账调整为 **153 处去重美食点**（其中跨博主同店合用 14 处、同博主同店多片段 2 处）、**140 处在图美食点**、14 个范围外片段（13 处去重点）。
+5. **全量构建与自动化复测**：
+   - 重新运行 `npm run build`（干净构建 7 城，郑州 169 片段 / 169 封面，单页包 `preview-zhengzhou.html` 16,462,929 字节）；
+   - `node scripts/review-zhengzhou-data.mjs`：**10/10 PASS**（新增全量 155 条在图记录沿路主网连通性 `status === 'ready'`、`nodeId !== wayId` 及 `media-bundles.json` `clips` 数一致性强断言）；
+   - `python -u scripts/review-zhengzhou-browser.py`：**21/21 PASS**（140 在图/离线美食卡片、四视口浮窗占比 $\ge 2/3$、播放推进及切换/Escape 停音卸载）；
+   - 专项浏览器验证通过：穆彦华逍遥镇胡辣汤单卡片 2 博主切换播放与停音正常，正弘城两店与合记/穆彦华全 4 站切换“沿路”显示约 `4.6 公里`（0 断路）。
+
 ## 2026-11-21 郑州全十二批次 88 来源全量接入与端到端闭环交付完成：169 门店片段精准切片、141 处在图美食点（13 处跨博主合用、2 处同博主多分店片段合用、14 处范围外待扩图、0 未定位）、169 张真实原片封面入库、全量素材包发布（176/176 uploaded，0 starters）与 21/21 浏览器全场景断言通过
 
 在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`，PR #11）下，完整完成郑州（`zhengzhou`）全十二批次共 88 份抖音探店视频（涵盖 67 位博主，本批新增 3 位：谷大叔东北中式自助快餐、粉哥的简单生活、大囡的团购日记；Yuanao 为已有博主）全链路闭环接入：

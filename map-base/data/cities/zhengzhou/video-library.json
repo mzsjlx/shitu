@@ -142,12 +142,12 @@
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 727616201,
+              "id": 727616200,
               "name": "连云路",
-              "url": "https://www.openstreetmap.org/way/727616201",
-              "sourceDate": "2026-11-16",
+              "url": "https://www.openstreetmap.org/way/727616200",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 727616201
+              "nodeId": 6818586951
             }
           },
           "footageNote": "2026年原视频 · 现煮铁锅炖与烀饼，出发前请核对营业时间与排队情况。"
@@ -176,27 +176,27 @@
           "posterSecond": 15.0,
           "summary": "板前一人食日式定食，招牌肥牛饭搭配温泉蛋、鳗鱼饭与现炸天妇罗，配沙拉日式炸豆腐与海带汤。",
           "coordinates": [
-            113.6815,
-            34.7925
+            113.674448,
+            34.796744
           ],
           "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "花园路 / 东风路口正弘城",
+            "label": "花园路 / 东风路口西南角正弘城",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍商场板前日料，位于花园路正弘城负一层，采用花园路开放地图路段参照。",
-            "reviewedOn": "2026-11-16",
+            "note": "修正为花园路126号正弘城真实 WGS84 坐标（OSM way/1337082576 中心，位于花园路×东风路西南角），采用花园路开放地图路段参照（Way 724672372，Node 6796416624）。",
+            "reviewedOn": "2026-11-22",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672322,
+              "id": 724672372,
               "name": "花园路",
-              "url": "https://www.openstreetmap.org/way/724672322",
-              "sourceDate": "2026-11-16",
+              "url": "https://www.openstreetmap.org/way/724672372",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672322
+              "nodeId": 6796416624
             }
           },
           "footageNote": "2026年原视频 · 商场一人食日料套餐，出发前请核查营业时间。"
@@ -222,16 +222,16 @@
             "label": "农科路酒吧一条街段",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍农科路街头门头与台式装潢，采用农科路开放地图路段参照。",
+            "note": "原片实拍农科路街头门头与台式装潢，采用邻近花园路开放地图路段参照（Node 6797378065）。",
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672339,
-              "name": "农科路",
-              "url": "https://www.openstreetmap.org/way/724672339",
-              "sourceDate": "2026-11-16",
+              "id": 724672371,
+              "name": "花园路",
+              "url": "https://www.openstreetmap.org/way/724672371",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672339
+              "nodeId": 6797378065
             }
           },
           "footageNote": "2026年原视频 · 台式一人食牛肉面与盐酥鸡，出发前请核对营业状态。"
@@ -261,12 +261,12 @@
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672300,
+              "id": 724644663,
               "name": "二七路",
-              "url": "https://www.openstreetmap.org/way/724672300",
-              "sourceDate": "2026-11-16",
+              "url": "https://www.openstreetmap.org/way/724644663",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672300
+              "nodeId": 12880607833
             }
           },
           "footageNote": "2026年原视频 · 现炒浇头面，排队常客较多，出发前请核实。"
@@ -296,12 +296,12 @@
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672290,
+              "id": 724644717,
               "name": "东大街",
-              "url": "https://www.openstreetmap.org/way/724672290",
-              "sourceDate": "2026-11-16",
+              "url": "https://www.openstreetmap.org/way/724644717",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672290
+              "nodeId": 6856793415
             }
           },
           "footageNote": "2026年原视频 · 杭帮拌面与现炒浇头，出发前请核实营业时间。"
@@ -341,16 +341,16 @@
             "label": "康复中街 / 中原东路附近",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍康复中街37年老店，邻近中原东路医学院商圈，采用康复中街开放地图路段参照。",
+            "note": "原片实拍康复中街37年老店，邻近中原东路医学院商圈，采用中原东路开放地图路段参照（Node 6861896012）。",
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672280,
+              "id": 732794353,
               "name": "中原东路",
-              "url": "https://www.openstreetmap.org/way/724672280",
-              "sourceDate": "2026-11-16",
+              "url": "https://www.openstreetmap.org/way/732794353",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672280
+              "nodeId": 6861896012
             }
           },
           "footageNote": "2026年原视频 · 传统老牌早餐店，通常清晨至午前营业，出发前请趁早。"
@@ -380,12 +380,12 @@
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672270,
-              "name": "航海中路",
-              "url": "https://www.openstreetmap.org/way/724672270",
-              "sourceDate": "2026-11-16",
+              "id": 727616251,
+              "name": "航海路",
+              "url": "https://www.openstreetmap.org/way/727616251",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672270
+              "nodeId": 6818587733
             }
           },
           "footageNote": "2026年原视频 · 传统清汤羊肉馆，片中价格可能调整，出发前请核实。"
@@ -447,16 +447,16 @@
             "label": "人民路 / 二七广场东侧",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍人民路合记烩面总店招牌与后厨，与15再吃亿点儿合记烩面同店归并，采用人民路开放地图路段参照。",
+            "note": "原片实拍人民路合记烩面总店招牌与后厨，与15再吃亿点儿合记烩面同店归并，采用邻近管城后街开放地图路段参照（Node 6832122287）。",
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672314,
-              "name": "人民路",
-              "url": "https://www.openstreetmap.org/way/724672314",
-              "sourceDate": "2026-11-16",
+              "id": 724644531,
+              "name": "管城后街",
+              "url": "https://www.openstreetmap.org/way/724644531",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672314
+              "nodeId": 6832122287
             }
           },
           "footageNote": "2026年原视频 · 老字号传统烩面，多位博主实测推荐，出发前请核对营业时间。"
@@ -500,19 +500,19 @@
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672260,
+              "id": 724644658,
               "name": "商城路",
-              "url": "https://www.openstreetmap.org/way/724672260",
-              "sourceDate": "2026-11-16",
+              "url": "https://www.openstreetmap.org/way/724644658",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672260
+              "nodeId": 6796156035
             }
           },
           "footageNote": "2026年原视频 · 早餐胡辣汤与鸡蛋大油条，营业时间6:00-13:30。"
         },
         {
           "id": "zz-shiwu-muyanhu",
-          "name": "穆彦华逍遥镇胡辣汤（岗坡路总店）",
+          "name": "穆彦华逍遥镇胡辣汤（岗坡路店）",
           "category": "传统早点 / 牛肉盒与胡辣汤",
           "addressText": "河南省郑州市中原区秦岭路街道秦岭路岗坡路菜市场对面",
           "start": 25.0,
@@ -520,27 +520,27 @@
           "posterSecond": 28.0,
           "summary": "中原区老牌清真早点，招牌牛肉盒外皮分层酥脆掉渣，牛肉粉条馅香而不腻，牛肉薄嫩入味。",
           "coordinates": [
-            113.606,
-            34.747
+            113.5966,
+            34.7535
           ],
           "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "秦岭路 / 岗坡路口菜市场对面",
+            "label": "岗坡路 / 秦岭路口西侧",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍秦岭路岗坡路总店，采用秦岭路开放地图路段参照。",
-            "reviewedOn": "2026-11-16",
+            "note": "原片实拍秦岭路与岗坡路交叉口西侧总店（菜市场对面），与特别乌啦啦同店归并，采用岗坡路开放地图路段参照（Way 735363835，Node 6887461524）。",
+            "reviewedOn": "2026-11-22",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672250,
-              "name": "秦岭路",
-              "url": "https://www.openstreetmap.org/way/724672250",
-              "sourceDate": "2026-11-16",
+              "id": 735363835,
+              "name": "岗坡路",
+              "url": "https://www.openstreetmap.org/way/735363835",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672250
+              "nodeId": 6887461524
             }
           },
           "footageNote": "2026年原视频 · 招牌牛肉盒与优质胡辣汤，营业时间4:30-13:30。"
@@ -566,16 +566,16 @@
             "label": "人民路 / 二七广场东侧",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍人民路丹尼斯旁合记老店，与倍增CD了合记同店归并，采用人民路开放地图路段参照。",
+            "note": "原片实拍人民路丹尼斯旁合记老店，与倍增CD了合记同店归并，采用邻近管城后街开放地图路段参照（Node 6832122287）。",
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672314,
-              "name": "人民路",
-              "url": "https://www.openstreetmap.org/way/724672314",
-              "sourceDate": "2026-11-16",
+              "id": 724644531,
+              "name": "管城后街",
+              "url": "https://www.openstreetmap.org/way/724644531",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672314
+              "nodeId": 6832122287
             }
           },
           "footageNote": "2026年原视频 · 传统老字号清真烩面，多位博主推荐，营业时间11:00-15:00, 17:00-22:00。"
@@ -601,16 +601,16 @@
             "label": "裴昌庙街老社区段",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍裴昌庙街居民楼下清真炸鸡小摊，采用管城老街开放地图参照。",
+            "note": "原片实拍裴昌庙街居民楼下清真炸鸡小摊，采用邻近城南路开放地图路段参照（Node 6868088947）。",
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672240,
-              "name": "裴昌庙街",
-              "url": "https://www.openstreetmap.org/way/724672240",
-              "sourceDate": "2026-11-16",
+              "id": 1424963073,
+              "name": "城南路",
+              "url": "https://www.openstreetmap.org/way/1424963073",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672240
+              "nodeId": 6868088947
             }
           },
           "footageNote": "2026年原视频 · 招牌蒜香鸡腿与鸡叉骨，营业时间9:00-21:30。"
@@ -636,16 +636,16 @@
             "label": "黄河路 / 海滩寺地铁站A口附近",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实测黄河路50号老店，邻近海滩寺地铁站，采用黄河路开放地图路段参照。",
+            "note": "原片实测黄河路50号老店，邻近海滩寺地铁站，采用邻近东三街开放地图路段参照（Node 6877207641）。",
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672287,
-              "name": "黄河路",
-              "url": "https://www.openstreetmap.org/way/724672287",
-              "sourceDate": "2026-11-16",
+              "id": 724672268,
+              "name": "东三街",
+              "url": "https://www.openstreetmap.org/way/724672268",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672287
+              "nodeId": 6877207641
             }
           },
           "footageNote": "2026年原视频 · 传统牛肉丸子与酥肉，营业时间7:00-13:00。"
@@ -671,16 +671,16 @@
             "label": "棉纺西路 / 锦艺城商业街段",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍锦艺城步行街门面与片尾卡片，采用棉纺西路开放地图路段参照。",
+            "note": "原片实拍锦艺城步行街门面与片尾卡片，采用邻近建设西路开放地图路段参照（Node 12291368384）。",
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672230,
-              "name": "棉纺西路",
-              "url": "https://www.openstreetmap.org/way/724672230",
-              "sourceDate": "2026-11-16",
+              "id": 736382975,
+              "name": "建设西路",
+              "url": "https://www.openstreetmap.org/way/736382975",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672230
+              "nodeId": 12291368384
             }
           },
           "footageNote": "2026年原视频 · 现烤卷面筋，营业时间11:00-23:00。"
@@ -706,16 +706,16 @@
             "label": "城南路 / 南关街交叉口",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍城南路南关街口老店，现场包包子实拍，采用城南路开放地图路段参照。",
+            "note": "原片实拍城南路南关街口老店，现场包包子实拍，采用邻近陇海东路开放地图路段参照（Node 6796155720）。",
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672220,
-              "name": "城南路",
-              "url": "https://www.openstreetmap.org/way/724672220",
-              "sourceDate": "2026-11-16",
+              "id": 1424963069,
+              "name": "陇海东路",
+              "url": "https://www.openstreetmap.org/way/1424963069",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672220
+              "nodeId": 6796155720
             }
           },
           "footageNote": "2026年原视频 · 羊肉灌汤包与素三鲜蒸包，营业时间10:00-23:00。"
@@ -745,12 +745,12 @@
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672210,
+              "id": 724644547,
               "name": "德化街",
-              "url": "https://www.openstreetmap.org/way/724672210",
-              "sourceDate": "2026-11-16",
+              "url": "https://www.openstreetmap.org/way/724644547",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672210
+              "nodeId": 6796155262
             }
           },
           "footageNote": "2026年原视频 · 百年老字号蒸饺，营业时间6:30-21:30。"
@@ -780,12 +780,12 @@
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672200,
+              "id": 724644500,
               "name": "商城东路",
-              "url": "https://www.openstreetmap.org/way/724672200",
-              "sourceDate": "2026-11-16",
+              "url": "https://www.openstreetmap.org/way/724644500",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672200
+              "nodeId": 6796154987
             }
           },
           "footageNote": "2026年原视频 · 招牌炒凉粉与杏仁茶，营业时间10:30-21:30。"
@@ -815,12 +815,12 @@
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672190,
+              "id": 736878790,
               "name": "冉屯路",
-              "url": "https://www.openstreetmap.org/way/724672190",
-              "sourceDate": "2026-11-16",
+              "url": "https://www.openstreetmap.org/way/736878790",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672190
+              "nodeId": 6898972732
             }
           },
           "footageNote": "2026年原视频 · 农贸市场现炸杠子油条，清晨5:00起售完即止。"
@@ -846,16 +846,16 @@
             "label": "布厂街 / 豫泰商厦东门旁",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍豫泰商厦东门东南侧布厂街老摊，采用布厂街开放地图路段参照。",
+            "note": "原片实拍豫泰商厦东门东南侧布厂街老摊，采用邻近南关街开放地图路段参照（Node 6796155615）。",
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672180,
-              "name": "布厂街",
-              "url": "https://www.openstreetmap.org/way/724672180",
-              "sourceDate": "2026-11-16",
+              "id": 724644602,
+              "name": "南关街",
+              "url": "https://www.openstreetmap.org/way/724644602",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672180
+              "nodeId": 6796155615
             }
           },
           "footageNote": "2026年原视频 · 老式咖喱鸡肉夹饼，营业时间7:00-21:00。"
@@ -885,12 +885,12 @@
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672170,
+              "id": 724672250,
               "name": "黄河南街",
-              "url": "https://www.openstreetmap.org/way/724672170",
-              "sourceDate": "2026-11-16",
+              "url": "https://www.openstreetmap.org/way/724672250",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672170
+              "nodeId": 6877208807
             }
           },
           "footageNote": "2026年原视频 · 招牌五香豆沫与鸡蛋布袋，营业时间6:00-14:00。"
@@ -916,16 +916,16 @@
             "label": "文化路 / 丰产路口西侧",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍清真糕点门面与点心实物，采用文化路开放地图路段参照。",
+            "note": "原片实拍清真糕点门面与点心实物，采用丰产路开放地图路段参照（Node 6859585740）。",
             "reviewedOn": "2026-11-16",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672160,
-              "name": "文化路",
-              "url": "https://www.openstreetmap.org/way/724672160",
-              "sourceDate": "2026-11-16",
+              "id": 724672206,
+              "name": "丰产路",
+              "url": "https://www.openstreetmap.org/way/724672206",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672160
+              "nodeId": 6859585740
             }
           },
           "footageNote": "2026年原视频 · 老牌清真传统糕点，营业时间8:00-22:30。"
@@ -1221,15 +1221,15 @@
         {
           "id": "zz-wulala-muyanxiang",
           "name": "穆彦华逍遥镇胡辣汤（岗坡路店）",
-          "category": "胡辣汤 / 早点",
+          "category": "传统早点 / 牛肉盒与胡辣汤",
           "addressText": "河南省郑州市中原区秦岭路与岗坡路交叉口西100米",
           "start": 4.0,
           "end": 282.0,
           "posterSecond": 10.0,
           "summary": "郑州西郊人气火爆的逍遥镇胡辣汤老店，大锅熬出深棕浓稠汤底，大片牛肉真材实料，辛香胡椒热烈通透；配厚肉盒与现炸水煎包，早午餐扎实过瘾。",
           "coordinates": [
-            113.6061,
-            34.7482
+            113.5966,
+            34.7535
           ],
           "locationStatus": "approximate-planning",
           "routeEligible": false,
@@ -1239,19 +1239,20 @@
             "label": "岗坡路 / 秦岭路口西侧",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实拍秦岭路与岗坡路口西100米路北门头，采用中原中路/岗坡路开放地图路段参照。",
-            "reviewedOn": "2026-11-17",
+            "note": "原片实拍秦岭路与岗坡路交叉口西侧门头，与15再吃亿点儿（zz-shiwu-muyanhu）同店归并，采用岗坡路开放地图路段参照（Way 735363835，Node 6887461524）。",
+            "reviewedOn": "2026-11-22",
             "anchor": {
               "kind": "osm-way",
-              "id": 735363887,
-              "name": "中原中路",
-              "url": "https://www.openstreetmap.org/way/735363887",
-              "sourceDate": "2026-11-16",
+              "id": 735363835,
+              "name": "岗坡路",
+              "url": "https://www.openstreetmap.org/way/735363835",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 6887461848
+              "nodeId": 6887461524
             }
           },
-          "footageNote": "2025年原视频 · 狂喝8碗胡辣汤测评，早上常需排队建议错峰。"
+          "footageNote": "2025年原视频 · 狂喝8碗胡辣汤测评，早上常需排队建议错峰。",
+          "placeId": "zz-shiwu-muyanhu"
         }
       ]
     },
@@ -2779,16 +2780,16 @@
             "label": "黄河路 / 海滩寺地铁站A口附近",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "原片实测黄河路加油站身后老李丸子汤，与15再吃亿点儿探店合用同一点位。",
+            "note": "原片实测黄河路加油站身后老李丸子汤，与15再吃亿点儿探店合用同一点位，采用邻近东三街开放地图路段参照（Node 6877207641）。",
             "reviewedOn": "2026-11-17",
             "anchor": {
               "kind": "osm-way",
-              "id": 724672287,
-              "name": "黄河路",
-              "url": "https://www.openstreetmap.org/way/724672287",
-              "sourceDate": "2026-11-16",
+              "id": 724672268,
+              "name": "东三街",
+              "url": "https://www.openstreetmap.org/way/724672268",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 724672287
+              "nodeId": 6877207641
             }
           },
           "footageNote": "2026年原视频 · 郑州土著私藏老味道，咖喱底汤牛肉丸子泡方便面。"
@@ -5509,27 +5510,27 @@
           "posterSecond": 32.0,
           "summary": "89元高品质云贵山岭烤肉自助，全程帮烤服务，薄荷牛肉、松板肉、牛小肠焦香爆汁，搭配云贵野生菌与特色茶饮。",
           "coordinates": [
-            113.671671,
-            34.790552
+            113.674448,
+            34.796744
           ],
           "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "花园路 / 东风路正弘城8楼",
+            "label": "花园路 / 东风路口西南角正弘城",
             "basis": "video-address",
             "branchMatch": "exact",
-            "note": "采用开放地图路段参照：花园路正弘城8F，吸附节点 6958670083。",
-            "reviewedOn": "2026-11-19",
+            "note": "修正孤立断路并校准为花园路126号正弘城8楼真实 WGS84 坐标（OSM way/1337082576 中心，位于花园路×东风路西南角），采用花园路开放地图路段参照（Way 724672372，Node 6796416624）。",
+            "reviewedOn": "2026-11-22",
             "anchor": {
-              "kind": "osm-node",
-              "id": 6958670083,
-              "name": "花园路 / 东风路正弘城8楼",
-              "url": "https://www.openstreetmap.org/node/6958670083",
-              "sourceDate": "2026-11-19",
+              "kind": "osm-way",
+              "id": 724672372,
+              "name": "花园路",
+              "url": "https://www.openstreetmap.org/way/724672372",
+              "sourceDate": "2026-11-22",
               "method": "original-way-node",
-              "nodeId": 6958670083
+              "nodeId": 6796416624
             }
           },
           "footageNote": "2024年原视频 · 柳真真云贵山岭烤肉探店，出发前请核对商场营业时间与排队情况。"
@@ -6253,9 +6254,12 @@
             "reviewedOn": "2026-11-19",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-724509033",
+              "id": 724509033,
               "name": "民生路",
-              "note": "金水东路67号郑东万象城"
+              "url": "https://www.openstreetmap.org/way/724509033",
+              "sourceDate": "2026-11-19",
+              "method": "original-way-node",
+              "nodeId": 6794656190
             }
           },
           "road": {
@@ -6307,9 +6311,12 @@
             "reviewedOn": "2026-11-19",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-732539834",
+              "id": 732539834,
               "name": "花园路",
-              "note": "花园路39号新田360广场"
+              "url": "https://www.openstreetmap.org/way/732539834",
+              "sourceDate": "2026-11-19",
+              "method": "original-way-node",
+              "nodeId": 6859584391
             }
           },
           "road": {
@@ -6361,9 +6368,12 @@
             "reviewedOn": "2026-11-19",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-735363863",
+              "id": 735363863,
               "name": "伏牛路",
-              "note": "棉纺西路锦艺城B区"
+              "url": "https://www.openstreetmap.org/way/735363863",
+              "sourceDate": "2026-11-19",
+              "method": "original-way-node",
+              "nodeId": 6887461735
             }
           },
           "road": {
@@ -6415,9 +6425,12 @@
             "reviewedOn": "2026-11-19",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-724784744",
+              "id": 724784744,
               "name": "丰庆路",
-              "note": "东风路与丰庆路瀚海海尚广场"
+              "url": "https://www.openstreetmap.org/way/724784744",
+              "sourceDate": "2026-11-19",
+              "method": "original-way-node",
+              "nodeId": 6797377898
             }
           },
           "road": {
@@ -6469,9 +6482,12 @@
             "reviewedOn": "2026-11-19",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-724155279",
+              "id": 724155279,
               "name": "经开第四大街",
-              "note": "商都路五洲格调小区"
+              "url": "https://www.openstreetmap.org/way/724155279",
+              "sourceDate": "2026-11-19",
+              "method": "original-way-node",
+              "nodeId": 6791408947
             }
           },
           "road": {
@@ -6523,9 +6539,12 @@
             "reviewedOn": "2026-11-19",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-729747306",
+              "id": 729747306,
               "name": "黑朱庄路",
-              "note": "黑朱庄路86号未来滨河小区"
+              "url": "https://www.openstreetmap.org/way/729747306",
+              "sourceDate": "2026-11-19",
+              "method": "original-way-node",
+              "nodeId": 6835907516
             }
           },
           "road": {
@@ -6577,9 +6596,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-726997452",
+              "id": 726997452,
               "name": "龙湖内环路",
-              "note": "龙湖金融岛银泰inPARK"
+              "url": "https://www.openstreetmap.org/way/726997452",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6813329451
             }
           },
           "road": {
@@ -6631,9 +6653,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-727616088",
+              "id": 727616088,
               "name": "人和路",
-              "note": "二七区人和路万达2号院"
+              "url": "https://www.openstreetmap.org/way/727616088",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6818586132
             }
           },
           "road": {
@@ -6731,9 +6756,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-724672191",
+              "id": 724672191,
               "name": "经五路",
-              "note": "经五路与关虎屯商业步行街交叉口南"
+              "url": "https://www.openstreetmap.org/way/724672191",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6965609310
             }
           },
           "road": {
@@ -6785,9 +6813,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-724784738",
+              "id": 724784738,
               "name": "群英路",
-              "note": "南阳新村街道南阳路239号"
+              "url": "https://www.openstreetmap.org/way/724784738",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6797377900
             }
           },
           "road": {
@@ -6839,9 +6870,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-737110394",
+              "id": 737110394,
               "name": "外方路",
-              "note": "电厂路70号华强城市广场"
+              "url": "https://www.openstreetmap.org/way/737110394",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6900867074
             }
           },
           "road": {
@@ -6939,9 +6973,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-727616166",
+              "id": 727616166,
               "name": "行云路",
-              "note": "行云路101号长江路与行云路口"
+              "url": "https://www.openstreetmap.org/way/727616166",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6818586315
             }
           },
           "road": {
@@ -6993,9 +7030,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-724644580",
+              "id": 724644580,
               "name": "玉凤路",
-              "note": "福元路与玉凤路交叉口沈庄新城"
+              "url": "https://www.openstreetmap.org/way/724644580",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6796156307
             }
           },
           "road": {
@@ -7035,7 +7075,7 @@
             113.6438,
             34.7956
           ],
-          "locationStatus": "verified",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "planningLocation": {
@@ -7047,9 +7087,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-724784744",
+              "id": 724784744,
               "name": "丰庆路",
-              "note": "东风路与丰庆路瀚海海尚广场"
+              "url": "https://www.openstreetmap.org/way/724784744",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6797377898
             }
           },
           "road": {
@@ -7086,7 +7129,7 @@
             113.67235,
             34.79835
           ],
-          "locationStatus": "verified",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "planningLocation": {
@@ -7098,9 +7141,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-724784780",
+              "id": 724784780,
               "name": "东风路",
-              "note": "东风路28号院正弘蓝堡湾"
+              "url": "https://www.openstreetmap.org/way/724784780",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6797378235
             }
           },
           "road": {
@@ -7137,7 +7183,7 @@
             113.7272,
             34.798
           ],
-          "locationStatus": "verified",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "planningLocation": {
@@ -7149,9 +7195,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-727351346",
+              "id": 727351346,
               "name": "如意西路",
-              "note": "北龙湖如意西路明珠大厦"
+              "url": "https://www.openstreetmap.org/way/727351346",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6816399321
             }
           },
           "road": {
@@ -7188,7 +7237,7 @@
             113.6661,
             34.7828
           ],
-          "locationStatus": "verified",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "planningLocation": {
@@ -7200,9 +7249,12 @@
             "reviewedOn": "2026-11-21",
             "anchor": {
               "kind": "osm-way",
-              "id": "way-724672330",
+              "id": 724672330,
               "name": "经七路",
-              "note": "经七路与红专路北"
+              "url": "https://www.openstreetmap.org/way/724672330",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 6854443333
             }
           },
           "road": {

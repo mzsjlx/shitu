@@ -244,6 +244,12 @@ await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 
   const secondaryWoodfire = woodfireSegments.find(s => s.placeId);
   assert.equal(secondaryWoodfire.placeId, 'zz-fantongdidi-woodfire', 'Secondary woodfire must point to primary zz-fantongdidi-woodfire');
 
+  // Multi-creator deduplication check: 穆彦华逍遥镇胡辣汤 (15再吃亿点儿 + 特别乌啦啦)
+  const muyanhuaSegments = allSegments.filter(s => s.name.includes('穆彦华逍遥镇胡辣汤'));
+  assert.equal(muyanhuaSegments.length, 2, '穆彦华逍遥镇胡辣汤 must have 2 segments from 2 creators');
+  const secondaryMuyanhua = muyanhuaSegments.find(s => s.placeId);
+  assert.equal(secondaryMuyanhua.placeId, 'zz-shiwu-muyanhu', 'Secondary muyanhua must point to primary zz-shiwu-muyanhu');
+
   // Single-creator multi-clip check: 石记百花面鱼 / 炒凉粉
   const shijiSegments = allSegments.filter(s => s.id === 'zz-maikou-shiji' || s.id === 'zz-maikou-chaoliangfen');
   assert.equal(shijiSegments.length, 2, '石记百花面鱼 and 炒凉粉 must share location');
@@ -259,10 +265,32 @@ await check('8. data/cities/zhengzhou/video-library.json validates cleanly with 
   // Groups and stops check
   const bounds = [113.58, 34.7, 113.78, 34.83];
   const groups = groupVideoPlaces(catalog);
-  assert.equal(groups.length, 154, '169 segments deduplicate into 154 places');
+  assert.equal(groups.length, 153, '169 segments deduplicate into 153 places');
   
   const inBoundsGroups = groups.filter(g => withinMapBounds(g.primary.segment, bounds));
-  assert.equal(inBoundsGroups.length, 141, 'Must have 141 in-bounds distinct map stops');
+  assert.equal(inBoundsGroups.length, 140, 'Must have 140 in-bounds distinct map stops');
+  
+  // Verify every in-bounds segment has valid OSM anchor and connected main-component route, plus media-bundles clips parity
+  const net = JSON.parse(await readFile(path.join(root, 'data/cities/zhengzhou/food-road-network.json'), 'utf8'));
+  const router = buildFoodRoadRouter(net);
+  const wayMap = new Map(net.ways.map(w => [w.id, w]));
+  for (const s of allSegments.filter(seg => withinMapBounds(seg, bounds))) {
+    const a = s.planningLocation?.anchor;
+    assert(a && typeof a.id === 'number' && typeof a.nodeId === 'number', `Valid numeric anchor/nodeId for ${s.id}`);
+    if (a.kind === 'osm-way') {
+      assert.notEqual(a.id, a.nodeId, `wayId must not equal nodeId for ${s.id}`);
+      const w = wayMap.get(a.id);
+      assert(w && w.nodes.includes(a.nodeId), `nodeId ${a.nodeId} must belong to way ${a.id} for ${s.id}`);
+    }
+    assert(router.graph.nodes.has(a.nodeId), `nodeId ${a.nodeId} in network for ${s.id}`);
+    const rt = findFoodRoadRoute(router, s.coordinates, [113.6625, 34.7505]);
+    assert.equal(rt.status, 'ready', `Stop ${s.id} must route without isolation/disconnection`);
+  }
+  const bundles = JSON.parse(await readFile(path.join(root, 'data/media-bundles.json'), 'utf8'));
+  for (const src of validated.sources) {
+    const b = bundles.sources.find(item => item.city === 'zhengzhou' && item.sourceId === src.id);
+    assert(b && b.clips === src.segments.length, `Bundle clips parity for ${src.id}`);
+  }
   
   const outOfBoundsSegments = allSegments.filter(s => !withinMapBounds(s, bounds));
   assert.equal(outOfBoundsSegments.length, 14, 'Must have 14 out-of-bounds segments (换利小吃x2 & 郑三指固始鹅块 & 刘新生羊肉炝锅面 & 郑大松园餐厅火锅粉 & 傻子张大盘鸡 & 磨李夜市 & 北大学城夜市 & 晓蓉城 & 清真·陈三抖自助火锅 & 喜樽牛寿喜烧 & 北岛烤肉吧 & 欣记快餐 & 米小盒自助餐)');
