@@ -1,0 +1,201 @@
+{
+  "city": "zhengzhou",
+  "verifiedAt": "2026-11-22 21:21:21",
+  "previewUrl": "http://127.0.0.1:8798",
+  "total": 21,
+  "passed": 21,
+  "checks": [
+    {
+      "name": "1. Map readiness signal and Zhengzhou title",
+      "passed": true,
+      "details": {
+        "title": "食途 · 郑州地图",
+        "statusText": "郑州地图已展开"
+      }
+    },
+    {
+      "name": "2. Food cards rendered on map for Zhengzhou (140 on-map stops)",
+      "passed": true,
+      "details": {
+        "cardCount": 140
+      }
+    },
+    {
+      "name": "3. Shop names match real Zhengzhou establishments across districts",
+      "passed": true,
+      "details": {
+        "cardNames": [
+          "知青老食堂（沙口路店）",
+          "灶座小锅烀饼·铁锅炖（漓江路黄科大店）",
+          "天一日料（正弘城店）",
+          "北兰台湾牛肉面",
+          "王繁星面馆（大卫城商圈店）",
+          "复兴面王（亳都·新象店）",
+          "刘相五胡辣汤豆沫馆（康复中街店）",
+          "姚记老婆羊肉鲜汤",
+          "合记烩面（人民路店）",
+          "刘俊峰胡辣汤（科瑞大厦店）"
+        ]
+      }
+    },
+    {
+      "name": "4. Video popover opens on card click",
+      "passed": true
+    },
+    {
+      "name": "5. Floating window media area >= 2/3 of border box",
+      "passed": true,
+      "details": {
+        "popoverWidth": 310,
+        "popoverHeight": 381.5,
+        "popoverArea": 118265,
+        "mediaWidth": 296,
+        "mediaHeight": 267,
+        "mediaArea": 79032,
+        "ratio": 0.6682619540861624
+      }
+    },
+    {
+      "name": "6. Video mounts and playback advances time across two samples (dt >= 0.3s)",
+      "passed": true,
+      "details": {
+        "t1": {
+          "t": 0,
+          "paused": false
+        },
+        "t2": {
+          "t": 0.790637,
+          "paused": false
+        },
+        "advance": 0.790637
+      }
+    },
+    {
+      "name": "7. Retained old video reference is paused, src removed, and popover closed on Escape",
+      "passed": true,
+      "details": {
+        "popoverHidden": true,
+        "paused": true,
+        "hasSrc": false,
+        "srcVal": null
+      }
+    },
+    {
+      "name": "8. Multi-creator shop switch: old creator video stops, new creator plays and advances, stops on close",
+      "passed": true,
+      "details": {
+        "c1Advance": 0.7957940000000001,
+        "c1After": {
+          "paused": true,
+          "hasSrc": false
+        },
+        "c2Advance": 0.803766,
+        "c2After": {
+          "paused": true,
+          "hasSrc": false
+        }
+      }
+    },
+    {
+      "name": "9. Video library creator tabs and search filter clips containing \"烩面\" (合记)",
+      "passed": true,
+      "details": {
+        "defaultCards": [
+          "知青老食堂（沙口路店）"
+        ],
+        "results": [
+          "合记烩面（人民路店）"
+        ]
+      }
+    },
+    {
+      "name": "10. Desktop 1440x960 screenshot saved",
+      "passed": true,
+      "details": {
+        "path": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-desktop-1440.png",
+        "bytes": 1570565
+      }
+    },
+    {
+      "name": "11. Multi-city navigation switches without cross-city contamination",
+      "passed": true,
+      "details": {
+        "cqCity": "重庆",
+        "zzCity": "郑州"
+      }
+    },
+    {
+      "name": "12. Road search in street mode returns genuine Zhengzhou roads containing \"二七\"",
+      "passed": true,
+      "details": {
+        "results": [
+          "二七路",
+          "二七广场隧道"
+        ]
+      }
+    },
+    {
+      "name": "13. Mobile 390x844 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "ratio": 0.6671328671328671
+      }
+    },
+    {
+      "name": "14. Mobile 390x844 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-mobile-390.png"
+      }
+    },
+    {
+      "name": "15. Small screen 320x680 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "ratio": 0.6671328671328671
+      }
+    },
+    {
+      "name": "16. Small screen 320x680 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-small-320.png"
+      }
+    },
+    {
+      "name": "17. Short landscape 736x414 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "ratio": 0.6683870967741935
+      }
+    },
+    {
+      "name": "18. Short landscape 736x414 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-landscape-736.png"
+      }
+    },
+    {
+      "name": "19. Standalone bundle preview-zhengzhou.html renders food cards (140 offline stops)",
+      "passed": true,
+      "details": {
+        "cardCount": 140
+      }
+    },
+    {
+      "name": "20. Standalone bundle preview-zhengzhou.html screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\codex\\美食网站\\.local\\worktrees\\zhengzhou-prep\\map-base\\..\\output\\playwright\\zhengzhou\\zhengzhou-preview-bundle-1440.png"
+      }
+    },
+    {
+      "name": "21. No unhandled page errors during browser navigation",
+      "passed": true,
+      "details": {
+        "errors": []
+      }
+    }
+  ]
+}

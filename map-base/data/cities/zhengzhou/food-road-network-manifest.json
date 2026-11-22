@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "zhengzhou",
+  "bounds": [
+    113.58,
+    34.7,
+    113.78,
+    34.83
+  ],
+  "source": {
+    "date": "2026-11-16",
+    "sha256": "a741ad2504467aa6a8b24bded0bf198f882d37adc0c28b54000d54c790b97dee",
+    "url": "https://download.geofabrik.de/asia/china/henan.html",
+    "fileName": "henan-261116.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "networkSHA256": "42840c5cecc8a4a9e973c9f9893d81bba134d406c1e60869b4a46bda5525f70e",
+  "bytes": 4184356,
+  "nodes": 64780,
+  "ways": 10536,
+  "footRestrictionWays": 0,
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
+}

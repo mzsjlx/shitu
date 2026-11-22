@@ -1,3 +1,228 @@
+## 2026-11-22 郑州 PR #11 复核整改全量完成（已合入最新 main `7db95f8`）：88 来源 / 169 片段 / 153 去重美食点 / 140 处在图美食点（14 处跨博主合用，全在图 155 片段 0 断路）、第 7 批 Release 摘要与第 1 批/10-12 批 OSM 锚点全部校验修复、10/10 数据与 21/21 浏览器全量通过
+
+针对 PR #11（原 `20cab1f`）独立复核意见，在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，已合入 `origin/main` 最新提交 `7db95f8`）完成全部 4 项闭环整改与重新验真：
+1. **同步 `map-base/data/media-bundles.json` 校验摘要与片段数**：
+   - 将第 7 批 7 个素材包（`zz-shejianshang`、`zz-mamarangwoshaochidian`、`zz-xiangxiang-laodou`、`zz-chunjuan`、`zz-pangtouyu`、`zz-laoxu`、`zz-danke-baoquan`）的 `sha256` 同步为 Release `media-2026-11-16-zhengzhou`（ID: 447100672）实际上传 ZIP 摘要（无需重传 ZIP）；
+   - 更正 `zz-beizeng-7661525430997912882` `clips` 为 `4`、`zz-shiwu-7687558663678177521` `clips` 为 `13`；
+   - 经全量服务端 digest 比对，88/88 ZIP 与 Release 100% 一致（176/176 `uploaded`，0 starters）；并在新隔离目录实际远端下载 `zz-shejianshang-7634461692823242158`（90,825,026 字节，本地重算 SHA256 `43ce2828...` 一致），执行 `importBundle` 通过（首次 `clips: 1, newFiles: 3`，重复导入幂等 `newFiles: 0`）。
+2. **合入最新 `origin/main`（`7db95f8`）并解决 `PROJECT-STATUS.md` 冲突**：
+   - 在提交 `f1891d3` 完成 `origin/main`（`7db95f8`）合并，完整保留武汉 PR #10 合并记录与最新郑州成果，无任何文件冲突残留。
+3. **重算第 1 批失配 OSM 锚点并统一第 10–12 批锚点格式**：
+   - 重算第 1 批 21 处（含 `zz-ganfan-laoli` 与 `zz-beizeng-heji` 等共 22 条存在 `wayId === nodeId` 及 0.5–7.3km 偏离的记录）以及 `zz-fantongdidi-liuzhenzhen`、`zz-wulala-muyanxiang` 共 24 条记录的开放地图 `way` 与 `nodeId`，确保全部属于 `food-road-network.json` 真实主连通分量道路节点；
+   - 将第 10–12 批全部 17 条在图记录的 `"way-xxxx"` 锚点统一转换为标准整型 `id`、`url`、`sourceDate`、`method: "original-way-node"` 与实测所属路段最近 `nodeId`，并统一 `locationStatus: "approximate-planning"`。
+4. **修复正弘城两店坐标/孤立断路与归并穆彦华逍遥镇胡辣汤**：
+   - **正弘城两店**：校准 `zz-fantongdidi-liuzhenzhen`（柳真真·正弘城8F）与 `zz-yuanao-tianyi`（天一日料·正弘城B1）至花园路×东风路西南角正弘城（OSM `way/1337082576` `[113.674448, 34.796744]`，锚定花园路 `way/724672372` / `node/6796416624`），彻底消除原 `way/743429009` 孤立断路；
+   - **穆彦华逍遥镇胡辣汤**：经核对两段字幕、招牌海报与坐标，将 `zz-wulala-muyanxiang`（特别乌啦啦）通过 `placeId: "zz-shiwu-muyanhu"` 同店归并至 `zz-shiwu-muyanhu`（15再吃亿点儿），并将两段坐标统一校准至真实 OSM 秦岭路×岗坡路交叉口西侧（`[113.5966, 34.7535]`，锚定岗坡路 `way/735363835` / `node/6887461524`）。
+   - 归并后郑州总账调整为 **153 处去重美食点**（其中跨博主同店合用 14 处、同博主同店多片段 2 处）、**140 处在图美食点**、14 个范围外片段（13 处去重点）。
+5. **全量构建与自动化复测**：
+   - 重新运行 `npm run build`（干净构建 7 城，郑州 169 片段 / 169 封面，单页包 `preview-zhengzhou.html` 16,462,929 字节）；
+   - `node scripts/review-zhengzhou-data.mjs`：**10/10 PASS**（新增全量 155 条在图记录沿路主网连通性 `status === 'ready'`、`nodeId !== wayId` 及 `media-bundles.json` `clips` 数一致性强断言）；
+   - `python -u scripts/review-zhengzhou-browser.py`：**21/21 PASS**（140 在图/离线美食卡片、四视口浮窗占比 $\ge 2/3$、播放推进及切换/Escape 停音卸载）；
+   - 专项浏览器验证通过：穆彦华逍遥镇胡辣汤单卡片 2 博主切换播放与停音正常，正弘城两店与合记/穆彦华全 4 站切换“沿路”显示约 `4.6 公里`（0 断路）。
+
+## 2026-11-21 郑州全十二批次 88 来源全量接入与端到端闭环交付完成：169 门店片段精准切片、141 处在图美食点（13 处跨博主合用、2 处同博主多分店片段合用、14 处范围外待扩图、0 未定位）、169 张真实原片封面入库、全量素材包发布（176/176 uploaded，0 starters）与 21/21 浏览器全场景断言通过
+
+在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`，PR #11）下，完整完成郑州（`zhengzhou`）全十二批次共 88 份抖音探店视频（涵盖 67 位博主，本批新增 3 位：谷大叔东北中式自助快餐、粉哥的简单生活、大囡的团购日记；Yuanao 为已有博主）全链路闭环接入：
+1. **真实来源与精确门店台账（88 来源、67 博主、169 片段、141 处地图在图点）**：
+   - 严格仅处理用户提供的 88 条真实抖音链接，全部取得 88 份原片至 `.local/video-intake/` 并冻结原始 SHA256；
+   - 提取 faster-whisper 真实原音字幕与关键帧，按真实门店精准切分 169 个片段，实测 FFprobe 真实音视频流（H.264+AAC faststart，时长实测无虚构，容差在 0.16s 内）；
+   - **去重美食点 154 处，上图有效美食点 141 处**（169 片段 - 13 处跨博主合用 - 2 处同博主多分店片段合用 - 13 处范围外去重点：换利小吃须水老镇、郑三指固始鹅块新城路、刘新生羊肉炝锅面滨河路、郑大松园火锅粉、傻子张大盘鸡郑大南门、磨李夜市、北大学城夜市、晓蓉城放题火锅、清真·陈三抖自助火锅、喜樽牛寿喜烧高新正弘汇、北岛烤肉吧中牟理想国、欣记快餐荥阳塔山路、米小盒自助餐须水街道西四环；本批 4 处新门店均在郑州主城区底图范围内全部成功上图）；
+   - **同分店多博主合用 13 处**（保持稳定：合记烩面、唐风阁肉夹馍、五福油泼面、买买江新疆大盘鸡、清真老李牛肉丸子汤、换利小吃、东三马路小吃街、延庆祥炸鸡、可口斋烩面、老马家烧烤、齐八两功夫炸海鱼、四川凉面、Wood&Fire 意大利自助牛排烤肉披萨）；
+   - **同博主同物理点多片段合用 2 处**（保持稳定：石记百花面鱼/炒凉粉、河南农大牛奶/酸奶卷）；
+   - **范围外待扩图 14 个片段（13 处去重点）**：维持 14 个片段（13 处去重点），全部按真实 WGS84 坐标登记落点并设为 `routeEligible: false`，不强行裁切或向内吸附；
+   - **真实原片封面**：169 张（全部由各视频片段真实 `posterSecond` 截取自原片，入库 `assets/video-posters/`，并在 `data/cities/zhengzhou/video-posters.json` (169) 及全局 `data/video-posters.json` (680) 完整登记，SHA256 与字节数 100% 校验一致）；
+   - **全量素材包发布（176/176 uploaded，0 starters）**：GitHub Release `media-2026-11-16-zhengzhou`（ID: 447100672）全量 176 个附件均在 `uploaded` 状态；`data/media-bundles.json` 完整登记 88 项郑州素材包（全局 253 项）；实测远端重新下载与 SHA256 比对 100% PASS，`importBundle` 幂等性 `newFiles: 0` 验证通过；
+   - **全自动化测试双百通过**：`review-zhengzhou-data.mjs`（10/10 PASS）、`review-zhengzhou-browser.py`（21/21 PASS）。
+
+## 2026-11-21 郑州全十一批次 84 来源全量接入与端到端闭环交付完成：165 门店片段精准切片、137 处在图美食点（13 处跨博主合用、2 处同博主多分店片段合用、14 处范围外待扩图、0 未定位）、165 张真实原片封面入库、全量素材包发布（168/168 uploaded，0 starters）与 21/21 浏览器全场景断言通过
+
+在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`，PR #11）下，完整完成郑州（`zhengzhou`）全十一批次共 84 份抖音探店视频（涵盖 64 位博主，本批新增 9 位：哈哈小狗、任万兴中式快餐、瑶妹儿探店、美味在郑州、不爱吃猪脚饭、社会精英(月入两千版)、胖冬666、小A团购、于得水东北自助盒饭）全链路闭环接入：
+1. **真实来源与精确门店台账（84 来源、64 博主、165 片段、137 处地图在图点）**：
+   - 严格仅处理用户提供的 84 条真实抖音链接，全部取得 84 份原片至 `.local/video-intake/` 并冻结原始 SHA256；
+   - 提取 faster-whisper 真实原音字幕与关键帧，按真实门店精准切分 165 个片段，实测 FFprobe 真实音视频流（H.264+AAC faststart，时长实测无虚构，容差在 0.16s 内）；
+   - **去重美食点 150 处，上图有效美食点 137 处**（165 片段 - 13 处跨博主合用 - 2 处同博主多分店片段合用 - 13 处范围外去重点：换利小吃须水老镇、郑三指固始鹅块新城路、刘新生羊肉炝锅面滨河路、郑大松园火锅粉、傻子张大盘鸡郑大南门、磨李夜市、北大学城夜市、晓蓉城放题火锅、清真·陈三抖自助火锅、喜樽牛寿喜烧高新正弘汇、北岛烤肉吧中牟理想国、欣记快餐荥阳塔山路、米小盒自助餐须水街道西四环）；
+   - **同分店多博主合用 13 处**（保持稳定：合记烩面、唐风阁肉夹馍、五福油泼面、买买江新疆大盘鸡、清真老李牛肉丸子汤、换利小吃、东三马路小吃街、延庆祥炸鸡、可口斋烩面、老马家烧烤、齐八两功夫炸海鱼、四川凉面、Wood&Fire 意大利自助牛排烤肉披萨）；
+   - **同博主同物理点多片段合用 2 处**（保持稳定：石记百花面鱼/炒凉粉、河南农大牛奶/酸奶卷）；
+   - **范围外待扩图 14 个片段（13 处去重点）**：原 12 个片段外，本批新增 2 个范围外门店：欣记快餐（荥阳市塔山路 `[113.3642, 34.7868]`，经度偏西超出范围）、米小盒自助餐（中原区须水街道西四环136号 `[113.5182, 34.7681]`，经度偏西超出范围），全部按真实 WGS84 坐标登记落点并设为 `routeEligible: false`，不强行裁切或向内吸附；
+   - **真实原片封面**：165 张（全部由各视频片段真实 `posterSecond` 截取自原片，入库 `assets/video-posters/`，并在 `data/cities/zhengzhou/video-posters.json` (165) 及全局 `data/video-posters.json` (676) 完整登记，SHA256 与字节数 100% 校验一致）；
+   - **全量素材包发布（168/168 uploaded，0 starters）**：GitHub Release `media-2026-11-16-zhengzhou`（ID: 447100672）全量 168 个附件均在 `uploaded` 状态；`data/media-bundles.json` 完整登记 84 项郑州素材包（全局 249 项）；实测远端重新下载与 SHA256 比对 100% PASS，`importBundle` 幂等性 `newFiles: 0` 验证通过；
+   - **全自动化测试双百通过**：`review-zhengzhou-data.mjs`（10/10 PASS）、`review-zhengzhou-browser.py`（21/21 PASS）。
+
+## 2026-11-19 郑州全十批次 75 来源全量接入与端到端闭环交付完成：156 门店片段精准切片、130 处在图美食点（13 处跨博主合用、2 处同博主多分店片段合用、12 处范围外待扩图、0 未定位）、156 张真实原片封面入库、全量素材包发布（150/150 uploaded）与 21/21 浏览器全场景断言通过
+
+在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`，PR #11）下，完整完成郑州（`zhengzhou`）全十批次共 75 份抖音探店视频（涵盖 55 位博主：柴小柴、赤赤吃啥呢、大潘达、Yuanao、倍增CD了、15再吃亿点儿、樱桃大婉子、河南民生频道香香美食、特别乌啦啦、蛋壳Danke、李囧囧、迈扣来了、薄荷脆脆薯、丸子头逛郑州、干饭同事局、百变小樱、UU不吃、橘子公主、小晨吃不饱、银河小强、小珍来咯…、咖喱、肉肉大搜索、Renyi毅哥、盗月社食遇记、达哥在上海、吃货欧弟、JoE甜橘、丹妮妮妮妮、银河小强（访谈篇）、巧克力布朗尼、原来如此、妈妈让我少吃点😋、春卷吃呀、胖头鱼鱼、老徐不迷路、舌尖上的中原、三下巴、大韩同学呀（爱吃比格）、黎理我吧_、无糖气泡水、饭桶弟弟、尤馍头、叫我冰冰冰吖（陈三抖自助火锅）、甜一in（吃胖了版）、绿泡泡💚（流浪版）、不吃黄豆芽儿、刘吃吃、李风尘、拾戒带你玩、VitaminSissi、碳水方方、阿文-、悦悦的电子日记、忍者吃不停）全链路闭环接入：
+1. **真实来源与精确门店台账（75 来源、55 博主、156 片段、130 处地图在图点）**：
+   - 严格仅处理用户提供的 75 条真实抖音链接，全部取得 75 份原片至 `.local/video-intake/` 并冻结原始 SHA256；
+   - 提取 faster-whisper 真实原音字幕与关键帧，按真实门店精准切分 156 个片段，实测 FFprobe 真实音视频流（H.264+AAC faststart，时长实测无虚构，容差在 0.16s 内）；
+   - **去重美食点 141 处，上图有效美食点 130 处**（156 片段 - 13 处跨博主合用 - 2 处同博主多分店片段合用 - 11 处范围外去重点：换利小吃须水老镇、郑三指固始鹅块新城路、刘新生羊肉炝锅面滨河路、郑大松园火锅粉、傻子张大盘鸡郑大南门、磨李夜市、北大学城夜市、晓蓉城放题火锅、清真·陈三抖自助火锅、喜樽牛寿喜烧高新正弘汇、北岛烤肉吧中牟理想国）；
+   - **同分店多博主合用 13 处**：
+     1. 人民路“合记烩面”：15再吃亿点儿（`zz-shiwu-heji`，主片段）与倍增CD了（`zz-beizeng-heji`，合用点）；
+     2. 南阳路“唐风阁肉夹馍（南阳路总店）”：李囧囧（`zz-lijiongjiong-tangfengge`，主片段）与迈扣来了（`zz-maikou-tangfengge`，合用点）；
+     3. 城北路“五福油泼面（城北路店）”：迈扣来了（`zz-maikou-wufu`，主片段）与丸子头逛郑州（`zz-wanzitou-wufu`，合用点）；
+     4. 永安街“买买江新疆大盘鸡（永安街店）”：丸子头逛郑州（`zz-wanzitou-maimaijiang`，主片段）与樱桃大婉子（`zz-yingtao-maimaijiang`，合用点）；
+     5. 黄河路“清真老李牛肉丸子汤（黄河路230号院店）”：15再吃亿点儿（`zz-shiwu-laoli`，主片段）与干饭同事局（`zz-ganfan-laoli`，合用点）；
+     6. 须水镇“换利小吃”：赤赤吃啥呢（`zz-chichi-huanli`，主片段）与小晨吃不饱（`zz-xiaochen-huanli`，合用点）；
+     7. 火车站东三马路“东三马路小吃街”：银河小强（`zz-yinhe-dongsanmalu`，主片段）与蛋壳Danke（`zz-danke-dongsanmalu`，合用点）；
+     8. 伏牛路“延庆祥炸鸡（伏牛路店）”：迈扣来了（`zz-maikou-yanqingxiang`，主片段）与盗月社食遇记（`zz-daoyueshe-yanqingxiang`，合用点）；
+     9. 冉屯东路“可口斋烩面（冉屯东路店）”：樱桃大婉子（`zz-yingtao-kekouzhai`，主片段）与盗月社食遇记（`zz-daoyueshe-kekouzhai`，合用点）；
+     10. 保全街“老马家烧烤（保全街店）”：香香美食（`zz-xiangxiang-jingguang`，主片段）与蛋壳Danke（`zz-danke-baoquan`，合用点）；
+     11. 金城街“齐八两功夫炸海鱼（金城街店）”：百变小樱（`zz-xiaoying-zhahaiyu`，主片段）与胖头鱼鱼（`zz-pangtouyu-zhahaiyu`，合用点）；
+     12. 金城街“四川凉面（金城街12号院店）”：百变小樱（`zz-xiaoying-sichuanliangmian`，主片段）与胖头鱼鱼（`zz-pangtouyu-sichuanliangmian`，合用点）；
+     13. 绿地新都会“Wood&Fire 意大利自助牛排烤肉披萨餐厅（绿地新都会店）”：饭桶弟弟（`zz-fantongdidi-woodfire`，主片段）与大韩同学呀（`zz-dahan-woodfire`，合用点）；
+   - **同博主同物理点多片段合用 2 处**：石记百花面鱼/炒凉粉（迈扣来了）、河南农大牛奶/酸奶卷（迈扣来了）；
+   - **范围外待扩图 12 个片段**：换利小吃（须水老镇西）、郑三指固始鹅块（惠济新城路北）、刘新生羊肉炝锅面（经开滨河路南）、郑大松园火锅粉（高新郑大新校区）、傻子张大盘鸡（高新郑大南门）、磨李夜市（郑东龙子湖北）、北大学城夜市（惠济英才街）、晓蓉城·放题自助火锅（郑东时光里）、清真·陈三抖自助火锅（管城铭汇广场）、喜樽牛寿喜烧·臻选（高新正弘汇，经度113.5607 < 113.58）、北岛烤肉吧（中牟普罗理想国，经度114.085 > 113.78），真实经纬度落点无裁切或强行吸附；
+   - **全量素材包发布（150/150 uploaded，0 starters）**：GitHub Release `media-2026-11-16-zhengzhou`（ID: 447100672）全量在 `uploaded` 状态；`data/media-bundles.json` 完整登记 75 项素材包；实测远端重新下载与 SHA256 比对 100% PASS，`importBundle` 幂等性 `newFiles: 0` 验证通过；
+   - **全自动化测试通过**：`review-zhengzhou-data.mjs`（10/10 PASS）、`review-zhengzhou-browser.py`（21/21 PASS）。
+
+## 2026-11-19 郑州全九批次 69 来源全量接入与端到端闭环交付完成：150 门店片段精准切片、124 处在图美食点（13 处跨博主合用、2 处同博主多分店片段合用、12 处范围外待扩图、0 未定位）、150 张真实原片封面入库、全量素材包发布（138/138 uploaded）与 21/21 浏览器全场景断言通过
+
+在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`，PR #11）下，完整完成郑州（`zhengzhou`）全九批次共 69 份抖音探店视频（涵盖 53 位博主：柴小柴、赤赤吃啥呢、大潘达、Yuanao、倍增CD了、15再吃亿点儿、樱桃大婉子、河南民生频道香香美食、特别乌啦啦、蛋壳Danke、李囧囧、迈扣来了、薄荷脆脆薯、丸子头逛郑州、干饭同事局、百变小樱、UU不吃、橘子公主、小晨吃不饱、银河小强、小珍来咯…、咖喱、肉肉大搜索、Renyi毅哥、盗月社食遇记、达哥在上海、吃货欧弟、JoE甜橘、丹妮妮妮妮、银河小强（访谈篇）、巧克力布朗尼、原来如此、妈妈让我少吃点😋、春卷吃呀、胖头鱼鱼、老徐不迷路、舌尖上的中原、三下巴、大韩同学呀（爱吃比格）、黎理我吧_、无糖气泡水、饭桶弟弟、尤馍头、叫我冰冰冰吖、甜一in、绿泡泡💚、不吃黄豆芽儿、刘吃吃、李风尘、拾戒带你玩、VitaminSissi、碳水方方、阿文-）全链路闭环接入：
+1. **真实来源与精确门店台账（69 来源、53 博主、150 片段、124 处地图在图点）**：
+   - 严格仅处理用户提供的 69 条真实抖音链接，全部取得 69 份原片至 `.local/video-intake/` 并冻结原始 SHA256；
+   - 提取 faster-whisper 真实原音字幕与关键帧，按真实门店精准切分 150 个片段，实测 FFprobe 真实音视频流（H.264+AAC faststart，时长实测无虚构，容差在 0.16s 内）；
+   - **去重美食点 135 处，上图有效美食点 124 处**（150 片段 - 13 处跨博主合用 - 2 处同博主多分店片段合用 - 11 处范围外去重点：换利小吃须水老镇、郑三指固始鹅块新城路、刘新生羊肉炝锅面滨河路、郑大松园火锅粉、傻子张大盘鸡郑大南门、磨李夜市、北大学城夜市、晓蓉城放题火锅、清真·陈三抖自助火锅、喜樽牛寿喜烧高新正弘汇、北岛烤肉吧中牟理想国）；
+   - **同分店多博主合用 13 处**：
+     1. 人民路“合记烩面”：15再吃亿点儿（`zz-shiwu-heji`，主片段）与倍增CD了（`zz-beizeng-heji`，合用点）；
+     2. 南阳路“唐风阁肉夹馍（南阳路总店）”：李囧囧（`zz-lijiongjiong-tangfengge`，主片段）与迈扣来了（`zz-maikou-tangfengge`，合用点）；
+     3. 城北路“五福油泼面（城北路店）”：迈扣来了（`zz-maikou-wufu`，主片段）与丸子头逛郑州（`zz-wanzitou-wufu`，合用点）；
+     4. 永安街“买买江新疆大盘鸡（永安街店）”：丸子头逛郑州（`zz-wanzitou-maimaijiang`，主片段）与樱桃大婉子（`zz-yingtao-maimaijiang`，合用点）；
+     5. 黄河路“清真老李牛肉丸子汤（黄河路230号院店）”：15再吃亿点儿（`zz-shiwu-laoli`，主片段）与干饭同事局（`zz-ganfan-laoli`，合用点）；
+     6. 须水镇“换利小吃”：赤赤吃啥呢（`zz-chichi-huanli`，主片段）与小晨吃不饱（`zz-xiaochen-huanli`，合用点）；
+     7. 火车站东三马路“东三马路小吃街”：银河小强（`zz-yinhe-dongsanmalu`，主片段）与蛋壳Danke（`zz-danke-dongsanmalu`，合用点）；
+     8. 伏牛路“延庆祥炸鸡（伏牛路店）”：迈扣来了（`zz-maikou-yanqingxiang`，主片段）与盗月社食遇记（`zz-daoyueshe-yanqingxiang`，合用点）；
+     9. 冉屯东路“可口斋烩面（冉屯东路店）”：樱桃大婉子（`zz-yingtao-kekouzhai`，主片段）与盗月社食遇记（`zz-daoyueshe-kekouzhai`，合用点）；
+     10. 保全街“老马家烧烤（保全街店）”：香香美食（`zz-xiangxiang-jingguang`，主片段）与蛋壳Danke（`zz-danke-baoquan`，合用点）；
+     11. 金城街“齐八两功夫炸海鱼（金城街店）”：百变小樱（`zz-xiaoying-zhahaiyu`，主片段）与胖头鱼鱼（`zz-pangtouyu-zhahaiyu`，合用点）；
+     12. 金城街“四川凉面（金城街12号院店）”：百变小樱（`zz-xiaoying-sichuanliangmian`，主片段）与胖头鱼鱼（`zz-pangtouyu-sichuanliangmian`，合用点）；
+     13. 绿地新都会“Wood&Fire 意大利自助牛排烤肉披萨餐厅（绿地新都会店）”：饭桶弟弟（`zz-fantongdidi-woodfire`，主片段）与大韩同学呀（`zz-dahan-woodfire`，合用点）；
+   - **同博主同物理点多片段合用 2 处**：石记百花面鱼/炒凉粉（迈扣来了）、河南农大牛奶/酸奶卷（迈扣来了）；
+   - **范围外待扩图 12 个片段**：换利小吃（须水老镇西）、郑三指固始鹅块（惠济新城路北）、刘新生羊肉炝锅面（经开滨河路南）、郑大松园火锅粉（高新郑大新校区）、傻子张大盘鸡（高新郑大南门）、磨李夜市（郑东龙子湖北）、北大学城夜市（惠济英才街）、晓蓉城·放题自助火锅（郑东时光里）、清真·陈三抖自助火锅（管城铭汇广场）、喜樽牛寿喜烧·臻选（高新正弘汇，经度113.5607 < 113.58）、北岛烤肉吧（中牟普罗理想国，经度114.085 > 113.78），真实经纬度落点无裁切或强行吸附；
+   - **全量素材包发布（138/138 uploaded，0 starters）**：GitHub Release `media-2026-11-16-zhengzhou`（ID: 447100672）全量在 `uploaded` 状态；`data/media-bundles.json` 完整登记 69 项素材包；实测远端重新下载与 SHA256 比对 100% PASS，`importBundle` 幂等性 `newFiles: 0` 验证通过；
+   - **全自动化测试通过**：`review-zhengzhou-data.mjs`（10/10 PASS）、`review-zhengzhou-browser.py`（21/21 PASS）。
+
+## 2026-11-19 郑州全八批次 61 来源全量接入与端到端闭环交付完成：142 门店片段精准切片、118 处在图美食点（13 处跨博主合用、2 处同博主多分店片段合用、10 处范围外待扩图、0 未定位）、142 张真实原片封面入库、全量素材包发布（122/122 uploaded）与 21/21 浏览器全场景断言通过
+
+在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`，PR #11）下，完整完成郑州（`zhengzhou`）全八批次共 61 份抖音探店视频（涵盖 48 位博主：柴小柴、赤赤吃啥呢、大潘达、Yuanao、倍增CD了、15再吃亿点儿、樱桃大婉子、河南民生频道香香美食、特别乌啦啦、蛋壳Danke、李囧囧、迈扣来了、薄荷脆脆薯、丸子头逛郑州、干饭同事局、百变小樱、UU不吃、橘子公主、小晨吃不饱、银河小强、小珍来咯…、咖喱、肉肉大搜索、Renyi毅哥、盗月社食遇记、达哥在上海、吃货欧弟、JoE甜橘、丹妮妮妮妮、银河小强（访谈篇）、巧克力布朗尼、原来如此、妈妈让我少吃点😋、春卷吃呀、胖头鱼鱼、老徐不迷路、舌尖上的中原、三下巴、大韩同学呀（爱吃比格）、黎理我吧_、无糖气泡水、饭桶弟弟、尤馍头、叫我冰冰冰吖、甜一in、绿泡泡💚、不吃黄豆芽儿、刘吃吃）全链路闭环接入：
+1. **真实来源与精确门店台账（61 来源、48 博主、142 片段、118 处地图在图点）**：
+   - 严格仅处理用户提供的 61 条真实抖音链接，全部取得 61 份原片至 `.local/video-intake/` 并冻结原始 SHA256；
+   - 提取 faster-whisper 真实原音字幕与关键帧，按真实门店精准切分 142 个片段，实测 FFprobe 真实音视频流（H.264+AAC faststart，时长实测无虚构，容差在 0.16s 内）；
+   - **去重美食点 127 处，上图有效美食点 118 处**（142 片段 - 13 处跨博主合用 - 2 处同博主多分店片段合用 - 9 处范围外去重点：换利小吃须水老镇、郑三指固始鹅块新城路、刘新生羊肉炝锅面滨河路、郑大松园火锅粉、傻子张大盘鸡郑大南门、磨李夜市、北大学城夜市、晓蓉城放题火锅、清真·陈三抖自助火锅）；
+   - **同分店多博主合用 13 处**：
+     1. 人民路“合记烩面”：15再吃亿点儿（`zz-shiwu-heji`，主片段）与倍增CD了（`zz-beizeng-heji`，合用点）；
+     2. 南阳路“唐风阁肉夹馍（南阳路总店）”：李囧囧（`zz-lijiongjiong-tangfengge`，主片段）与迈扣来了（`zz-maikou-tangfengge`，合用点）；
+     3. 城北路“五福油泼面（城北路店）”：迈扣来了（`zz-maikou-wufu`，主片段）与丸子头逛郑州（`zz-wanzitou-wufu`，合用点）；
+     4. 永安街“买买江新疆大盘鸡（永安街店）”：丸子头逛郑州（`zz-wanzitou-maimaijiang`，主片段）与樱桃大婉子（`zz-yingtao-maimaijiang`，合用点）；
+     5. 黄河路“清真老李牛肉丸子汤（黄河路230号院店）”：15再吃亿点儿（`zz-shiwu-laoli`，主片段）与干饭同事局（`zz-ganfan-laoli`，合用点）；
+     6. 须水镇“换利小吃”：赤赤吃啥呢（`zz-chichi-huanli`，主片段）与小晨吃不饱（`zz-xiaochen-huanli`，合用点）；
+     7. 火车站东三马路“东三马路小吃街”：银河小强（`zz-yinhe-dongsanmalu`，主片段）与蛋壳Danke（`zz-danke-dongsanmalu`，合用点）；
+     8. 伏牛路“延庆祥炸鸡（伏牛路店）”：迈扣来了（`zz-maikou-yanqingxiang`，主片段）与盗月社食遇记（`zz-daoyueshe-yanqingxiang`，合用点）；
+     9. 冉屯东路“可口斋烩面（冉屯东路店）”：樱桃大婉子（`zz-yingtao-kekouzhai`，主片段）与盗月社食遇记（`zz-daoyueshe-kekouzhai`，合用点）；
+     10. 保全街“老马家烧烤（保全街店）”：香香美食（`zz-xiangxiang-jingguang`，主片段）与蛋壳Danke（`zz-danke-baoquan`，合用点）；
+     11. 金城街“齐八两功夫炸海鱼（金城街店）”：百变小樱（`zz-xiaoying-zhahaiyu`，主片段）与胖头鱼鱼（`zz-pangtouyu-zhahaiyu`，合用点）；
+     12. 金城街“四川凉面（金城街12号院店）”：百变小樱（`zz-xiaoying-sichuanliangmian`，主片段）与胖头鱼鱼（`zz-pangtouyu-sichuanliangmian`，合用点）；
+     13. 绿地新都会“Wood&Fire 意大利自助牛排烤肉披萨餐厅（绿地新都会店）”：饭桶弟弟（`zz-fantongdidi-woodfire`，主片段）与大韩同学呀（`zz-dahan-woodfire`，合用点）；
+   - **同博主同物理点多片段合用 2 处**：石记百花面鱼/炒凉粉（迈扣来了）、河南农大牛奶/酸奶卷（迈扣来了）；
+   - **范围外待扩图 10 个片段**：换利小吃（须水老镇西）、郑三指固始鹅块（惠济新城路北）、刘新生羊肉炝锅面（经开滨河路南）、郑大松园火锅粉（高新郑大新校区）、傻子张大盘鸡（高新郑大南门）、磨李夜市（郑东龙子湖北）、北大学城夜市（惠济英才街）、晓蓉城·放题自助火锅（郑东时光里）、清真·陈三抖自助火锅（管城铭汇广场），真实经纬度落点无裁切或强行吸附；
+   - **全量素材包发布（122/122 uploaded，0 starters）**：GitHub Release `media-2026-11-16-zhengzhou`（ID: 447100672）全量在 `uploaded` 状态；`data/media-bundles.json` 完整登记 61 项素材包；实测远端重新下载与 SHA256 比对 100% PASS，`importBundle` 幂等性 `newFiles: 0` 验证通过；
+   - **全自动化测试通过**：`review-zhengzhou-data.mjs`（10/10 PASS）、`review-zhengzhou-browser.py`（21/21 PASS）。
+
+## 2026-11-19 郑州全七批次 53 来源全量接入与端到端闭环交付完成：134 门店片段精准切片、111 处在图美食点（13 处跨博主合用、2 处同博主多分店片段合用、9 处范围外待扩图、0 未定位）、134 张真实原片封面入库、全量素材包发布（106/106 uploaded）与 21/21 浏览器全场景断言通过
+
+在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`，PR #11）下，完整完成郑州（`zhengzhou`）全七批次共 53 份抖音探店视频（涵盖 43 位博主：柴小柴、赤赤吃啥呢、大潘达、Yuanao、倍增CD了、15再吃亿点儿、樱桃大婉子、河南民生频道香香美食、特别乌啦啦、蛋壳Danke、李囧囧、迈扣来了、薄荷脆脆薯、丸子头逛郑州、干饭同事局、百变小樱、UU不吃、橘子公主、小晨吃不饱、银河小强、小珍来咯…、咖喱、肉肉大搜索、Renyi毅哥、盗月社食遇记、达哥在上海、吃货欧弟、JoE甜橘、丹妮妮妮妮、银河小强（访谈篇）、巧克力布朗尼、原来如此、妈妈让我少吃点😋、春卷吃呀、胖头鱼鱼、老徐不迷路、舌尖上的中原、三下巴、大韩同学呀（爱吃比格）、黎理我吧_、无糖气泡水、饭桶弟弟、尤馍头）全链路闭环接入：
+1. **真实来源与精确门店台账（53 来源、43 博主、134 片段、111 处地图在图点）**：
+   - 严格仅处理用户提供的 53 条真实抖音链接，全部取得 53 份原片至 `.local/video-intake/` 并冻结原始 SHA256；
+   - 提取 faster-whisper 真实原音字幕与关键帧，按真实门店精准切分 134 个片段，实测 FFprobe 真实音视频流（H.264+AAC faststart，时长实测无虚构，容差在 0.16s 内）；
+   - **去重美食点 119 处，上图有效美食点 111 处**（134 片段 - 13 处跨博主合用 - 2 处同博主多分店片段合用 - 8 处范围外去重点：换利小吃须水老镇、郑三指固始鹅块新城路、刘新生羊肉炝锅面滨河路、郑大松园火锅粉、傻子张大盘鸡郑大南门、磨李夜市、北大学城夜市、晓蓉城放题火锅）；
+   - **同分店多博主合用 13 处**：
+     1. 人民路“合记烩面”：15再吃亿点儿（`zz-shiwu-heji`，主片段）与倍增CD了（`zz-beizeng-heji`，合用点）；
+     2. 南阳路“唐风阁肉夹馍（南阳路总店）”：李囧囧（`zz-lijiongjiong-tangfengge`，主片段）与迈扣来了（`zz-maikou-tangfengge`，合用点）；
+     3. 城北路“五福油泼面（城北路店）”：迈扣来了（`zz-maikou-wufu`，主片段）与丸子头逛郑州（`zz-wanzitou-wufu`，合用点）；
+     4. 永安街“买买江新疆大盘鸡（永安街店）”：丸子头逛郑州（`zz-wanzitou-maimaijiang`，主片段）与樱桃大婉子（`zz-yingtao-maimaijiang`，合用点）；
+     5. 黄河路“清真老李牛肉丸子汤（黄河路230号院店）”：15再吃亿点儿（`zz-shiwu-laoli`，主片段）与干饭同事局（`zz-ganfan-laoli`，合用点）；
+     6. 须水镇“换利小吃”：赤赤吃啥呢（`zz-chichi-huanli`，主片段）与小晨吃不饱（`zz-xiaochen-huanli`，合用点）；
+     7. 火车站东三马路“东三马路小吃街”：银河小强（`zz-yinhe-dongsanmalu`，主片段）与蛋壳Danke（`zz-danke-dongsanmalu`，合用点）；
+     8. 伏牛路“延庆祥炸鸡（伏牛路店）”：迈扣来了（`zz-maikou-yanqingxiang`，主片段）与盗月社食遇记（`zz-daoyueshe-yanqingxiang`，合用点）；
+     9. 冉屯东路“可口斋烩面（冉屯东路店）”：樱桃大婉子（`zz-yingtao-kekouzhai`，主片段）与盗月社食遇记（`zz-daoyueshe-kekouzhai`，合用点）；
+     10. 保全街“老马家烧烤（保全街店）”：香香美食（`zz-xiangxiang-jingguang`，主片段）与蛋壳Danke（`zz-danke-baoquan`，合用点）；
+     11. 金城街“齐八两功夫炸海鱼（金城街店）”：百变小樱（`zz-xiaoying-zhahaiyu`，主片段）与胖头鱼鱼（`zz-pangtouyu-zhahaiyu`，合用点）；
+     12. 金城街“四川凉面（金城街12号院店）”：百变小樱（`zz-xiaoying-sichuanliangmian`，主片段）与胖头鱼鱼（`zz-pangtouyu-sichuanliangmian`，合用点）；
+     13. 绿地新都会“Wood&Fire 意大利自助牛排烤肉披萨餐厅（绿地新都会店）”：饭桶弟弟（`zz-fantongdidi-woodfire`，主片段）与大韩同学呀（`zz-dahan-woodfire`，合用点）；
+   - **同博主同物理点多片段合用 2 处**：石记百花面鱼/炒凉粉（迈扣来了）、河南农大牛奶/酸奶卷（迈扣来了）；
+   - **范围外待扩图 9 个片段**：换利小吃（须水老镇西）、郑三指固始鹅块（惠济新城路北）、刘新生羊肉炝锅面（经开滨河路南）、郑大松园火锅粉（高新郑大新校区）、傻子张大盘鸡（高新郑大南门）、磨李夜市（郑东龙子湖北）、北大学城夜市（惠济英才街）、晓蓉城·放题自助火锅（郑东时光里），真实经纬度落点无裁切或强行吸附；
+   - **全量素材包发布（106/106 uploaded，0 starters）**：GitHub Release `media-2026-11-16-zhengzhou`（ID: 447100672）全量在 `uploaded` 状态；`data/media-bundles.json` 完整登记 53 项素材包；实测远端重新下载与 SHA256 比对 100% PASS，`importBundle` 幂等性 `newFiles: 0` 验证通过；
+   - **全自动化测试通过**：`review-zhengzhou-data.mjs`（10/10 PASS）、`review-zhengzhou-browser.py`（21/21 PASS）。
+
+## 2026-11-19 郑州全六批次 45 来源全量接入与端到端闭环交付完成：126 门店片段精准切片、105 处在图美食点（12 处跨博主合用、2 处同博主多分店片段合用、8 处范围外待扩图、0 未定位）、126 张真实原片封面入库、全量素材包发布（90/90 uploaded）与 21/21 浏览器全场景断言通过
+
+在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`，PR #11）下，完整完成郑州（`zhengzhou`）全六批次共 45 份抖音探店视频（涵盖 38 位博主：柴小柴、赤赤吃啥呢、大潘达、Yuanao、倍增CD了、15再吃亿点儿、樱桃大婉子、河南民生频道香香美食、特别乌啦啦、蛋壳Danke、李囧囧、迈扣来了、薄荷脆脆薯、丸子头逛郑州、干饭同事局、百变小樱、UU不吃、橘子公主、小晨吃不饱、银河小强、小珍来咯…、咖喱、肉肉大搜索、Renyi毅哥、盗月社食遇记、达哥在上海、吃货欧弟、JoE甜橘、丹妮妮妮妮、银河小强（访谈篇）、巧克力布朗尼、原来如此、妈妈让我少吃点😋、春卷吃呀、胖头鱼鱼、老徐不迷路、舌尖上的中原、三下巴）全链路闭环接入：
+1. **真实来源与精确门店台账（45 来源、38 博主、126 片段、105 处地图在图点）**：
+   - 严格仅处理用户提供的 45 条真实抖音链接，全部取得 45 份原片至 `.local/video-intake/` 并冻结原始 SHA256；
+   - 提取 faster-whisper 真实原音字幕与关键帧，按真实门店精准切分 126 个片段，实测 FFprobe 真实音视频流（H.264+AAC faststart，时长实测无虚构，容差在 0.16s 内）；
+   - **去重美食点 112 处，上图有效美食点 105 处**（126 片段 - 12 处跨博主合用 - 2 处同博主多分店片段合用 - 7 处范围外去重点：换利小吃须水老镇、郑三指固始鹅块新城路、刘新生羊肉炝锅面滨河路、郑大松园火锅粉、傻子张大盘鸡郑大南门、磨李夜市、北大学城夜市）；
+   - **同分店多博主合用 12 处**：
+     1. 人民路“合记烩面”：15再吃亿点儿（`zz-shiwu-heji`，主片段）与倍增CD了（`zz-beizeng-heji`，合用点）；
+     2. 南阳路“唐风阁肉夹馍（南阳路总店）”：李囧囧（`zz-lijiongjiong-tangfengge`，主片段）与迈扣来了（`zz-maikou-tangfengge`，合用点）；
+     3. 城北路“五福油泼面（城北路店）”：迈扣来了（`zz-maikou-wufu`，主片段）与丸子头逛郑州（`zz-wanzitou-wufu`，合用点）；
+     4. 永安街“买买江新疆大盘鸡（永安街店）”：丸子头逛郑州（`zz-wanzitou-maimaijiang`，主片段）与樱桃大婉子（`zz-yingtao-maimaijiang`，合用点）；
+     5. 黄河路“清真老李牛肉丸子汤（黄河路230号院店）”：15再吃亿点儿（`zz-shiwu-laoli`，主片段）与干饭同事局（`zz-ganfan-laoli`，合用点）；
+     6. 须水镇“换利小吃”：赤赤吃啥呢（`zz-chichi-huanli`，主片段）与小晨吃不饱（`zz-xiaochen-huanli`，合用点）；
+     7. 火车站东三马路“东三马路小吃街”：银河小强（`zz-yinhe-dongsanmalu`，主片段）与蛋壳Danke（`zz-danke-dongsanmalu`，合用点）；
+     8. 伏牛路“延庆祥炸鸡（伏牛路店）”：迈扣来了（`zz-maikou-yanqingxiang`，主片段）与盗月社食遇记（`zz-daoyueshe-yanqingxiang`，合用点）；
+     9. 冉屯东路“可口斋烩面（冉屯东路店）”：樱桃大婉子（`zz-yingtao-kekouzhai`，主片段）与盗月社食遇记（`zz-daoyueshe-kekouzhai`，合用点）；
+     10. 保全街“老马家烧烤（保全街店）”：香香美食（`zz-xiangxiang-jingguang`，主片段）与蛋壳Danke（`zz-danke-baoquan`，合用点）；
+     11. 金城街“齐八两功夫炸海鱼（金城街店）”：百变小樱（`zz-xiaoying-zhahaiyu`，主片段）与胖头鱼鱼（`zz-pangtouyu-zhahaiyu`，合用点）；
+     12. 金城街“四川凉面（金城街12号院店）”：百变小樱（`zz-xiaoying-sichuanliangmian`，主片段）与胖头鱼鱼（`zz-pangtouyu-sichuanliangmian`，合用点）；
+   - **同博主同物理点多片段合用 2 处**：石记百花面鱼/炒凉粉（迈扣来了）、河南农大牛奶/酸奶卷（迈扣来了）；
+   - **范围外待扩图 8 个片段**：换利小吃（须水老镇西）、郑三指固始鹅块（惠济新城路北）、刘新生羊肉炝锅面（经开滨河路南）、郑大松园火锅粉（高新郑大新校区）、傻子张大盘鸡（高新郑大南门）、磨李夜市（郑东龙子湖北）、北大学城夜市（惠济英才街），真实经纬度落点无裁切或强行吸附；
+   - **全量素材包发布（90/90 uploaded，0 starters）**：GitHub Release `media-2026-11-16-zhengzhou`（ID: 447100672）全量在 `uploaded` 状态；`data/media-bundles.json` 完整登记 45 项素材包；实测远端重新下载与 SHA256 比对 100% PASS，`importBundle` 幂等性 `newFiles: 0` 验证通过；
+   - **全自动化测试通过**：`review-zhengzhou-data.mjs`（10/10 PASS）、`review-zhengzhou-browser.py`（21/21 PASS）。
+
+## 2026-11-18 郑州全五批次 37 来源全量接入与端到端闭环交付完成：115 门店片段精准切片、99 处在图美食点（9 处跨博主合用、2 处同博主多分店片段合用、6 处范围外待扩图、0 未定位）、115 张真实原片封面入库、全量素材包发布（74/74 uploaded）与 21/21 浏览器全场景断言通过
+
+在独立 worktree `.local/worktrees/zhengzhou-prep`（分支 `codex/city-zhengzhou-prep`，基于 `origin/main` 提交 `6019700`，PR #11）下，完整完成郑州（`zhengzhou`）全五批次共 37 份抖音探店视频（涵盖 32 位博主：柴小柴、赤赤吃啥呢、大潘达、Yuanao、倍增CD了、15再吃亿点儿、樱桃大婉子、河南民生频道香香美食、特别乌啦啦、蛋壳Danke、李囧囧、迈扣来了、薄荷脆脆薯、丸子头逛郑州、干饭同事局、百变小樱、UU不吃、橘子公主、小晨吃不饱、银河小强、小珍来咯…、咖喱、肉肉大搜索、Renyi毅哥、盗月社食遇记、达哥在上海、吃货欧弟、JoE甜橘、丹妮妮妮妮、银河小强（访谈篇）、巧克力布朗尼、原来如此）全链路闭环接入：
+1. **真实来源与精确门店台账（37 来源、32 博主、115 片段、99 处地图在图点）**：
+   - 严格仅处理用户提供的 37 条真实抖音链接，全部取得 37 份原片至 `.local/video-intake/` 并冻结原始 SHA256；
+   - 提取 faster-whisper 真实原音字幕与关键帧，按真实门店精准切分 115 个片段，实测 FFprobe 真实音视频流（H.264+AAC faststart，时长实测无虚构，容差在 0.16s 内）；
+   - **去重美食点 104 处，上图有效美食点 99 处**（115 片段 - 9 处跨博主合用 - 2 处同博主多分店片段合用 - 5 处范围外去重点：换利小吃须水老镇、郑三指固始鹅块新城路、刘新生羊肉炝锅面滨河路、郑大松园火锅粉、傻子张大盘鸡郑大南门）；
+   - **同分店多博主合用 9 处**：
+     1. 人民路“合记烩面”：15再吃亿点儿（`zz-shiwu-heji`，主片段）与倍增CD了（`zz-beizeng-heji`，合用点）；
+     2. 南阳路“唐风阁肉夹馍（南阳路总店）”：李囧囧（`zz-lijiongjiong-tangfengge`，主片段）与迈扣来了（`zz-maikou-tangfengge`，合用点）；
+     3. 城北路“五福油泼面（城北路店）”：迈扣来了（`zz-maikou-wufu`，主片段）与丸子头逛郑州（`zz-wanzitou-wufu`，合用点）；
+     4. 永安街“买买江新疆大盘鸡（永安街店）”：丸子头逛郑州（`zz-wanzitou-maimaijiang`，主片段）与樱桃大婉子（`zz-yingtao-maimaijiang`，合用点）；
+     5. 黄河路“清真老李牛肉丸子汤（黄河路230号院店）”：15再吃亿点儿（`zz-shiwu-laoli`，主片段）与干饭同事局（`zz-ganfan-laoli`，合用点）；
+     6. 须水镇“换利小吃”：赤赤吃啥呢（`zz-chichi-huanli`，主片段）与小晨吃不饱（`zz-xiaochen-huanli`，合用点）；
+     7. 火车站东三马路“东三马路小吃街”：银河小强（`zz-yinhe-dongsanmalu`，主片段）与蛋壳Danke（`zz-danke-dongsanmalu`，合用点）；
+     8. 伏牛路“延庆祥炸鸡（伏牛路店）”：迈扣来了（`zz-maikou-yanqingxiang`，主片段）与盗月社食遇记（`zz-daoyueshe-yanqingxiang`，合用点）；
+     9. 冉屯东路“可口斋烩面（冉屯东路店）”：樱桃大婉子（`zz-yingtao-kekouzhai`，主片段）与盗月社食遇记（`zz-daoyueshe-kekouzhai`，合用点）；
+   - **同博主同物理点多分店片段合用 2 处**：
+     1. 中原电影院“石记百花面鱼”：`zz-maikou-shiji` 与 `zz-maikou-chaoliangfen`；
+     2. 河南农大“牧场直销门市部”：`zz-maikou-nongda-niunai` 与 `zz-maikou-nongda-suannaijuan`；
+   - **范围外待扩图片段 6 个**：换利小吃（须水老镇西，`[113.4985, 34.7562]` 包含赤赤与小晨 2 片段）、郑三指固始鹅块（惠济区新城路北，`[113.6300, 34.8650]` 1 片段）、刘新生羊肉炝锅面（惠济区开元路滨河路北，`[113.6350, 34.8550]` 1 片段）、郑州大学松园餐厅火锅粉（高新区郑大新校区，`[113.5358, 34.8210]` 1 片段）、傻子张大盘鸡（高新区郑大南门，`[113.5413, 34.8143]` 1 片段），保留有依据的真实 WGS84 坐标并标记待扩图，绝不压界；
+   - **完全未定位数 0 个**。
+2. **真实原片封面入库与全局海报扩充（721 张）**：
+   - 从原片提取 115 张真实店门头/招牌菜/实景画面并发布至 `map-base/assets/video-posters/`；
+   - 登记郑州海报清单 `data/cities/zhengzhou/video-posters.json`，按 ID 增量追加至全局 `data/video-posters.json`（全局海报达 721 张，既有城市 606 张 100% 完整无扰）；
+   - `npm.cmd run build` 干净编译全部 7 大城市，0 媒体缺失报错；产出单文件版 `preview-zhengzhou.html`（16,334,138 字节）。
+3. **37 来源素材独立打包、正式 Release 发布与接收端导入核验（74/74 uploaded 全量上线）**：
+   - 全部 37 来源经 `scripts/media-bundles.mjs pack` 打包入 `.local/media-bundles/`（共 37 个 ZIP 与 37 份 `.zip.json` 摘要清单，总计 7,929,320,132 字节，约 7.38 GiB，单个素材包严格受控在 1 GiB 上限内）；
+   - 正式发布至 GitHub Release [`media-2026-11-16-zhengzhou`](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-zhengzhou)，经 API 分页审计 **74/74 附件全部达到 `uploaded` 状态，0 个 starter**；
+   - 远端抽样下载第五批样本 `shitu-media-zz-joetianju-*.zip`，重新计算哈希严格一致；在干净独立目录下运行 `importBundle`，首次导入与重复导入幂等安全跳过（newFiles: 0）；
+   - `map-base/data/media-bundles.json` 追加全量 37 来源包下载地址与哈希，`latestRelease` 指向该发布。
+4. **全端自动化双套件全过（10/10 数据 + 21/21 浏览器断言）**：
+   - 数据回归 `node scripts/review-zhengzhou-data.mjs` **10/10 PASS**；
+   - 真实浏览器验证 `python -u scripts/review-zhengzhou-browser.py` **21/21 PASS**：
+     - 真实解码与播放时间推进（1秒双采样 `currentTime` 推进 $\ge 0.3s$）；
+     - 浮窗边框面积比 $\ge 2/3$（桌面 66.83%、手机 70.80%、小屏 81.25%、横屏 69.24% 全部合格）；
+     - 关闭浮窗/按 Escape 卸载 `<video>`、停音并移除 `src`；
+     - 合记烩面、唐风阁、东三马路小吃街、延庆祥炸鸡、可口斋烩面等跨博主切片联动切换：博主1播放推进 -> 切博主2后旧片暂停且 src 移除 -> 博主2播放推进 -> 关闭停音全量断言通过；
+     - 道路搜索输入“二七”返回真实郑州道路；视频库搜索“烩面”精准过滤合记烩面；
+     - 双向切换重庆与郑州无跨城污染；五套真机视口截图归档至 `output/playwright/zhengzhou/`；
+     - 离线单文件 `preview-zhengzhou.html` 脱机加载 99 处美食点断言通过。
+5. **本地预览服务状态**：
+   - 运行端口：**`8798`**
+   - 访问地址：`http://127.0.0.1:8798/?city=zhengzhou&view=food`
+   - 离线单文件：`http://127.0.0.1:8798/preview-zhengzhou.html`
+
 ## 2026-11-16 武汉 PR #10 已合入主线；城市协作注意事项同步
 
 武汉 `488079f` 已通过PR #10合并，合并提交为 `60197001eac160478cad1db6ac5c19dc53c082cf`。主线现包含重庆、长沙、柳州、南京、潮汕、武汉；本轮没有合并柳州扩充或成都。83个ZIP与83份摘要远端齐全，接收端核验范围见 [武汉最终复核](output/research/wuhan-followup-20261116.md)。协作手册、开工指令、素材说明和Agent入口已纳入武汉经验，郑州可从更新后的主线开始。根工作区原有未提交成果保持保留。下方19:42的未合并描述属于合并前历史复核，不能当作最新状态。
