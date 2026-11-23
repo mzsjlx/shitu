@@ -1,11 +1,11 @@
 {
-  "verifiedOn": "2026-11-08T12:24:55.787Z",
+  "verifiedOn": "2026-11-23T09:53:52.726Z",
   "city": "liuzhou",
   "environment": {
     "platform": "win32",
-    "release": "10.0.26200",
+    "release": "10.0.26300",
     "node": "v24.18.0",
-    "previewUrl": "http://127.0.0.1:8791"
+    "previewUrl": "http://127.0.0.1:8795"
   },
   "viewportsCovered": [
     "1440x960 (desktop)",
@@ -104,6 +104,19 @@
       }
     },
     {
+      "name": "Desktop (1440x960) popover media area >= 2/3 of border box",
+      "passed": true,
+      "detail": {
+        "popoverWidth": 310,
+        "popoverHeight": 420.5,
+        "popoverArea": 130355,
+        "mediaWidth": 296,
+        "mediaHeight": 294,
+        "mediaArea": 87024,
+        "ratio": 0.6675923439837367
+      }
+    },
+    {
       "name": "Clicking \"×\" close button collapses card back into circular icon badge",
       "passed": true
     },
@@ -113,19 +126,65 @@
       "detail": "https://www.douyin.com/video/7498339315727060264"
     },
     {
-      "name": "Popover opened and video is playing with advancing playback",
+      "name": "Video mounts and playback advances time across two samples (dt >= 0.3s)",
       "passed": true,
       "detail": {
-        "found": true,
-        "src": "http://127.0.0.1:8791/media/videos/lz-chenhe-7498339315727060264/lz-chenhe-aningmeng-4671b87fc65cde32.mp4",
-        "currentTime": 0.762027,
-        "paused": false,
-        "duration": 20
+        "sample1": {
+          "t": 0,
+          "paused": false
+        },
+        "sample2": {
+          "t": 0.474971,
+          "paused": false
+        },
+        "advance": 0.474971
       }
     },
     {
-      "name": "Closing popover immediately stops video playback and old audio track",
-      "passed": true
+      "name": "Closing popover immediately pauses old video reference, removes src, and stops sound",
+      "passed": true,
+      "detail": {
+        "popoverHidden": true,
+        "paused": true,
+        "hasSrc": false,
+        "srcVal": null
+      }
+    },
+    {
+      "name": "Switching to another store immediately stops previous store video reference and unmounts src",
+      "passed": true,
+      "detail": {
+        "paused": true,
+        "hasSrc": false
+      }
+    },
+    {
+      "name": "Multi-creator shop \"张记玉米汁\" offers multiple creator clips (>= 2)",
+      "passed": true,
+      "detail": {
+        "clipCount": 3,
+        "authors": [
+          "王祖蓝",
+          "刘雨鑫JASON",
+          "卡不答"
+        ]
+      }
+    },
+    {
+      "name": "Multi-creator shop switch: old creator video stops, new creator plays and advances, stops on close",
+      "passed": true,
+      "detail": {
+        "c1_adv": 0.752494,
+        "c1_afterSwitch": {
+          "paused": true,
+          "hasSrc": false
+        },
+        "c2_adv": 0.756503,
+        "c2_afterClose": {
+          "paused": true,
+          "hasSrc": false
+        }
+      }
     },
     {
       "name": "Amap search link in video library targets Liuzhou (city=450200)",
@@ -296,12 +355,37 @@
       }
     },
     {
+      "name": "Mobile (390x844) popover media area >= 2/3 of border box",
+      "passed": true,
+      "detail": {
+        "popoverWidth": 252.20001220703125,
+        "popoverHeight": 476.27001953125,
+        "popoverArea": 120115.30473962426,
+        "mediaWidth": 238.6199951171875,
+        "mediaHeight": 335.6199951171875,
+        "mediaArea": 80085.64159609377,
+        "ratio": 0.6667396945767786
+      }
+    },
+    {
       "name": "Small screen (320px) renders cleanly without horizontal overflow",
       "passed": true,
       "detail": {
         "cardCount": 51,
-        "dockVisible": true,
         "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Small screen (320x680) popover media area >= 2/3 of border box",
+      "passed": true,
+      "detail": {
+        "popoverWidth": 252.20001220703125,
+        "popoverHeight": 476.27001953125,
+        "popoverArea": 120115.30473962426,
+        "mediaWidth": 238.6199951171875,
+        "mediaHeight": 335.6199951171875,
+        "mediaArea": 80085.64159609377,
+        "ratio": 0.6667396945767786
       }
     },
     {
@@ -313,7 +397,20 @@
       }
     },
     {
-      "name": "Chongqing city loads cleanly with code 500000 and zero Liuzhou pollution",
+      "name": "Short landscape (736x414) popover media area >= 2/3 of border box",
+      "passed": true,
+      "detail": {
+        "popoverWidth": 300.70001220703125,
+        "popoverHeight": 320.1000061035156,
+        "popoverArea": 96254.07574279793,
+        "mediaWidth": 287.1199951171875,
+        "mediaHeight": 224.06997680664062,
+        "mediaArea": 64334.97064663097,
+        "ratio": 0.6683869763452042
+      }
+    },
+    {
+      "name": "重庆 city loads cleanly with code 500000 and zero Liuzhou pollution",
       "passed": true,
       "detail": {
         "name": "重庆",
@@ -324,7 +421,7 @@
       }
     },
     {
-      "name": "Changsha city loads cleanly with code 430100 and zero Liuzhou pollution",
+      "name": "长沙 city loads cleanly with code 430100 and zero Liuzhou pollution",
       "passed": true,
       "detail": {
         "name": "长沙",
@@ -333,17 +430,69 @@
         "recordCount": 71,
         "hasLiuzhouRecord": false
       }
+    },
+    {
+      "name": "武汉 city loads cleanly with code 420100 and zero Liuzhou pollution",
+      "passed": true,
+      "detail": {
+        "name": "武汉",
+        "cityKey": "wuhan",
+        "amapCityCode": "420100",
+        "recordCount": 104,
+        "hasLiuzhouRecord": false
+      }
+    },
+    {
+      "name": "潮汕 city loads cleanly with code 440500 and zero Liuzhou pollution",
+      "passed": true,
+      "detail": {
+        "name": "潮汕",
+        "cityKey": "chaoshan",
+        "amapCityCode": "440500",
+        "recordCount": 46,
+        "hasLiuzhouRecord": false
+      }
+    },
+    {
+      "name": "南京 city loads cleanly with code 320100 and zero Liuzhou pollution",
+      "passed": true,
+      "detail": {
+        "name": "南京",
+        "cityKey": "nanjing",
+        "amapCityCode": "320100",
+        "recordCount": 104,
+        "hasLiuzhouRecord": false
+      }
+    },
+    {
+      "name": "郑州 city loads cleanly with code 410100 and zero Liuzhou pollution",
+      "passed": true,
+      "detail": {
+        "name": "郑州",
+        "cityKey": "zhengzhou",
+        "amapCityCode": "410100",
+        "recordCount": 140,
+        "hasLiuzhouRecord": false
+      }
+    },
+    {
+      "name": "Standalone bundle preview-liuzhou.html renders exactly 51 food cards",
+      "passed": true,
+      "detail": {
+        "singleCards": 51
+      }
     }
   ],
   "errors": [],
   "screenshots": [
-    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-food-overview.png",
-    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-card-expanded.png",
-    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-video-popover.png",
-    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-road-distance.png",
-    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-wants-dialog.png",
-    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-mobile.png",
-    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-small-320.png",
-    "D:\\Antigravity\\地图\\output\\research\\liuzhou\\screenshots\\liuzhou-landscape-736.png"
+    "D:\\Antigravity\\地图\\.local\\worktrees\\liuzhou-batch5\\output\\research\\liuzhou\\screenshots\\liuzhou-food-overview.png",
+    "D:\\Antigravity\\地图\\.local\\worktrees\\liuzhou-batch5\\output\\research\\liuzhou\\screenshots\\liuzhou-card-expanded.png",
+    "D:\\Antigravity\\地图\\.local\\worktrees\\liuzhou-batch5\\output\\research\\liuzhou\\screenshots\\liuzhou-video-popover.png",
+    "D:\\Antigravity\\地图\\.local\\worktrees\\liuzhou-batch5\\output\\research\\liuzhou\\screenshots\\liuzhou-road-distance.png",
+    "D:\\Antigravity\\地图\\.local\\worktrees\\liuzhou-batch5\\output\\research\\liuzhou\\screenshots\\liuzhou-wants-dialog.png",
+    "D:\\Antigravity\\地图\\.local\\worktrees\\liuzhou-batch5\\output\\research\\liuzhou\\screenshots\\liuzhou-mobile.png",
+    "D:\\Antigravity\\地图\\.local\\worktrees\\liuzhou-batch5\\output\\research\\liuzhou\\screenshots\\liuzhou-small-320.png",
+    "D:\\Antigravity\\地图\\.local\\worktrees\\liuzhou-batch5\\output\\research\\liuzhou\\screenshots\\liuzhou-landscape-736.png",
+    "D:\\Antigravity\\地图\\.local\\worktrees\\liuzhou-batch5\\output\\research\\liuzhou\\screenshots\\liuzhou-preview-bundle-1440.png"
   ]
 }
