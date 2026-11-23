@@ -339,6 +339,49 @@
       },
       "status": "local-validation-only"
     },
+    "zhengzhou": {
+      "name": "郑州",
+      "regionLabel": "中原核心 · 商都绿城",
+      "coverageLabel": "郑州核心城区（涵盖金水区二七广场、健康路、国贸360、农科路，中原区棉纺路、碧沙岗，管城区顺城街、管城街，郑东新区CBD及高铁商圈）",
+      "bounds": [
+        113.58,
+        34.7,
+        113.78,
+        34.83
+      ],
+      "center": [
+        113.665,
+        34.753
+      ],
+      "zoom": 15.5,
+      "pitch": 52,
+      "bearing": -15,
+      "minZoom": 11.5,
+      "maxZoom": 19,
+      "tiles": "data/cities/zhengzhou/zhengzhou.pmtiles",
+      "demTiles": "data/cities/zhengzhou/terrain/{z}/{x}/{y}.png",
+      "demMinZoom": 11,
+      "demMaxZoom": 13,
+      "amapCityCode": "410100",
+      "landmarks": [],
+      "foodContent": {
+        "city": "zhengzhou",
+        "records": "data/cities/zhengzhou/food-records.json",
+        "videoLibrary": "data/cities/zhengzhou/video-library.json",
+        "videoAssets": "data/cities/zhengzhou/video-library-assets.json",
+        "videoPosters": "data/cities/zhengzhou/video-posters.json",
+        "sprite": "assets/food-concepts.jpg",
+        "roadNetwork": "data/cities/zhengzhou/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/zhengzhou/roads-index.json",
+        "audit": "data/cities/zhengzhou/data-audit.json",
+        "manifest": "data/cities/zhengzhou/source-manifest.json",
+        "tileMetadata": "data/cities/zhengzhou/tile-metadata.json",
+        "terrainManifest": "data/cities/zhengzhou/terrain-manifest.json"
+      },
+      "status": "local-validation-only"
+    },
     "harbin": {
       "name": "哈尔滨",
       "regionLabel": "江南核心 · 沿江走廊",
