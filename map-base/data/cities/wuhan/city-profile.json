@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "city": "wuhan",
+  "name": "武汉",
+  "province": "湖北省",
+  "amapCityCode": "420100",
+  "regionLabel": "三镇核心 · 两江交汇",
+  "coverageLabel": "武汉核心城区（涵盖汉口江汉路、吉庆街、万松园，武昌粮道街、户部巷、楚河汉街，汉阳归元古镇周边商圈，含长江大桥与两江交汇）",
+  "bounds": [
+    114.18,
+    30.48,
+    114.42,
+    30.64
+  ],
+  "center": [
+    114.305,
+    30.562
+  ],
+  "zoom": 15.5,
+  "pitch": 52,
+  "bearing": -15,
+  "minZoom": 11.5,
+  "maxZoom": 19,
+  "tiles": "data/cities/wuhan/wuhan.pmtiles",
+  "landmarks": [],
+  "status": "local-validation-only",
+  "workflow": {
+    "rightsStatus": "user-confirmed",
+    "videoIntake": "strict-user-provided-only",
+    "locationAccuracy": "approximate-planning-first",
+    "multiCreatorSupport": true,
+    "roadNetworkTopology": "osm-node-consecutive"
+  },
+  "dataFiles": {
+    "profile": "data/cities/wuhan/city-profile.json",
+    "tiles": "data/cities/wuhan/wuhan.pmtiles",
+    "videoLibrary": "data/cities/wuhan/video-library.json",
+    "videoPosters": "data/cities/wuhan/video-posters.json",
+    "videoAssets": "data/cities/wuhan/video-library-assets.json",
+    "foodRecords": "data/cities/wuhan/food-records.json",
+    "roadNetwork": "data/cities/wuhan/food-road-network.json",
+    "index": "data/cities/wuhan/roads-index.json",
+    "audit": "data/cities/wuhan/data-audit.json",
+    "manifest": "data/cities/wuhan/source-manifest.json",
+    "tileMetadata": "data/cities/wuhan/tile-metadata.json"
+  },
+  "notes": [
+    "严格遵守只处理用户实际提供的探店链接，不自行到外站搜集凑数。",
+    "门店位置采用有充分街区依据的大致规划点（approximate-planning），无充分依据的片段保留视频库不强行造点。",
+    "同一分店多博主探店共用一个地图点（相同的 placeId），浮窗保留各自博主片段供用户切换。",
+    "大文件隔离：原片与剪辑 MP4 保留在 .local/ 隔离目录，仅小封面海报与 JSON 元数据进 Git。",
+    "沿路距离使用保留原始 OSM 节点拓扑的网络，桥梁、隧道和跨江连接真实区分层级，不采用几何交叉连线或直线乘系数。"
+  ]
+}

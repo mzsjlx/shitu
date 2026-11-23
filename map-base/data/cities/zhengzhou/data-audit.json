@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "city": "zhengzhou",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "郑州核心城区（涵盖金水区二七广场、健康路、国贸360、农科路，中原区棉纺路、碧沙岗，管城区顺城街、管城街，郑东新区CBD及高铁商圈）",
+  "bounds": [
+    113.58,
+    34.7,
+    113.78,
+    34.83
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 4171880,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      113.58,
+      34.7,
+      113.78,
+      34.83
+    ]
+  },
+  "osmReplicationTime": "2026-11-16T04:00:00Z",
+  "counters": {
+    "requestedTiles": 285,
+    "presentTiles": 285,
+    "roadLineFragments": 4139,
+    "namedRoadLineFragments": 2311,
+    "unnamedRoadLineFragments": 1828,
+    "nonRoadTransportFragmentsExcluded": 880,
+    "buildingPolygonFragments": 19245,
+    "buildingFragmentsWithPositiveHeight": 642,
+    "buildingFragmentsWithoutPositiveHeight": 18603,
+    "namedRoadGroups": 625
+  },
+  "roadClassCounts": {
+    "major_road": 2252,
+    "minor_road": 1505,
+    "path": 346,
+    "highway": 36
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    "奥克路": {
+      "exact": {
+        "id": "road:奥克路",
+        "class": "minor_road",
+        "detail": "unclassified",
+        "name": "奥克路",
+        "bounds": [
+          113.6644328,
+          34.8083661,
+          113.6709505,
+          34.8084167
+        ],
+        "center": [
+          113.6667529,
+          34.8083936
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 2
+      },
+      "related": [
+        "奥克路"
+      ]
+    },
+    "白庙路": {
+      "exact": {
+        "id": "road:白庙路",
+        "class": "minor_road",
+        "detail": "unclassified",
+        "name": "白庙路",
+        "bounds": [
+          113.6603746,
+          34.7965104,
+          113.6641243,
+          34.7965435
+        ],
+        "center": [
+          113.6622494,
+          34.7965269
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 1
+      },
+      "related": [
+        "白庙路"
+      ]
+    },
+    "白庄街": {
+      "exact": {
+        "id": "road:白庄街",
+        "class": "minor_road",
+        "detail": "unclassified",
+        "name": "白庄街",
+        "bounds": [
+          113.7207699,
+          34.7435631,
+          113.7309113,
+          34.7492822
+        ],
+        "center": [
+          113.7258044,
+          34.7435642
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 2
+      },
+      "related": [
+        "白庄街"
+      ]
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}

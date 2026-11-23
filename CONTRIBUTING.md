@@ -1,5 +1,7 @@
 # 一起开发食途
 
+> **2026-11-22 新城市协作者必看：** 开工请直接阅读 [CITY-AGENT-STARTER.md](CITY-AGENT-STARTER.md) 顶部（含 7 城主线防撞表与两阶段交付建议），提交 PR 前逐条核对 [PR-CHECKLIST.md](PR-CHECKLIST.md) 的 10 条准入红线（含 Fork 发布公开 Release 规则与禁止提交他城 `video-library-assets.json` 构建副作用）。
+
 主工程在 `map-base/`。开始前先读根目录 `README.md` 与 `PROJECT-STATUS.md` 顶部的最新记录。两台电脑的视频、封面和上传流程统一见 [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md)。从最新 `main` 取得已合并的地图、门店和素材清单，再建立自己的 `codex/` 分支；新增8条视频的来源工作分支为 `codex/chongqing-video-batch2`（PR #2），供查阅历史改动。
 
 ## 建议工作流程

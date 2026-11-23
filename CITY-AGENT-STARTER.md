@@ -1,5 +1,59 @@
 # 可转发给城市 Agent 的开工指令
 
+## 2026-11-22 最新通用开工指南（7 城主线基线 `d72b856`）
+
+> **新同学阅读止损提示**：本仓库历史记录较长，新城市 Agent **只需要读** `AGENTS.md` + 本文顶部 + [PR-CHECKLIST.md](PR-CHECKLIST.md) + [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md) 顶部 + 郑州标杆复核 [zhengzhou-review-20261122.md](output/research/zhengzhou-review-20261122.md) 即可开工；不要通读 350 KB 的 `PROJECT-STATUS.md` 全文，也不要照搬 2026-10 月的旧单城硬编码限制。
+
+### 城市认领与 ID / 前缀防撞表（开工前先核对）
+
+| 城市 | `cityId` | `sourceId` 前缀 | 当前状态（2026-11-22） |
+| --- | --- | --- | --- |
+| 重庆 | `chongqing` | `cq-`（及首批旧 ID） | 已合入 `main` |
+| 长沙 | `changsha` | `cs-` / `changsha-` | 已合入 `main` |
+| 柳州 | `liuzhou` | `lz-` | 初始 9 点已在 `main`；51 点扩充 PR #9 整改复核中 |
+| 南京 | `nanjing` | `nj-` | 已合入 `main` |
+| 潮汕 | `chaoshan` | `chaoshan-` | 已合入 `main` |
+| 武汉 | `wuhan` | `wh-` | 已合入 `main`（PR #10，`6019700`） |
+| 郑州 | `zhengzhou` | `zz-` | 已合入 `main`（PR #11，`7f513e1`） |
+| 哈尔滨 | `harbin` | `hb-` | 分支整改中（`codex/city-harbin-prep`，未合入） |
+| 成都 | `chengdu` | `cd-` | 分支整改中（`codex/city-chengdu-prep`，未合入） |
+
+新同学开工前请先与仓库维护者确认未占用的 `cityId` 与 `sourceId` 前缀，避免撞城或撞 ID。
+
+### 可直接复制发给新城市 Agent 的标准提示词
+
+> 把下方的 `【城市中文名】` 与 `【cityId】` 替换为实际值后转发（不转发账号令牌、验证码或 Cookie）：
+
+```text
+我们一起协作开发“食途”美食旅行地图网站，主仓库是 https://github.com/mzsjlx/shitu 。
+你现在负责【城市中文名】，城市 ID 约定为 `【cityId】`（来源 ID 统一用 `<城市前缀>-<作者拼音>-<作品数字ID>`，仅限小写字母/数字/连字符，全局唯一）。
+
+1. 先同步并基于最新 `origin/main`（已含重庆、长沙、柳州、南京、潮汕、武汉、郑州 7 城，≥ `d72b856`）建立工作分支 `codex/city-【cityId】-prep`；同机并行请在独立 worktree 开发，绝不重置或覆盖他人工作区。
+2. 开工先读 `AGENTS.md`、`CITY-AGENT-STARTER.md` 顶部、`PR-CHECKLIST.md`、`MEDIA-COLLABORATION.md` 顶部及 `output/research/zhengzhou-review-20261122.md`（标杆测试模板为 `map-base/scripts/review-zhengzhou-data.mjs` 和 `review-zhengzhou-browser.py`）。不要通读旧历史文档，也不要按 10 月旧单城限制工作。
+3. 推荐两阶段交付：阶段 1 先完成城市配置、开放底图、地形、原始 OSM PBF 路网（`prepare-food-road-network.py --city 【cityId】`）、`.gitattributes` 本城 LF 规则，并用我提供的 1~3 个探店链接跑通剪辑、封面、定位锚点、公开 Release、隔离导入与浏览器 QA，先发 Draft PR 预检结构；确认无误后再批量扩充。未收到链接前先准备地图与路网，不自行找外站视频凑数。
+4. 严守目录隔离：本城文件放 `map-base/data/cities/【cityId】/`、`map-base/assets/video-posters/<sourceId>/`、`output/research/【cityId】/`；原片/MP4/ZIP/临时文件留 `.local/`。共享索引按 ID 追加合并，保持 `activeCity` 为 `chongqing`；提交前检查 `git diff --name-only origin/main`，严禁提交无媒体构建改动其他城市的 `video-library-assets.json`。
+5. 路网与定位硬约束：禁止从 PMTiles 拼路网或造流水号；所有在图点锚点必须是真实整型 OSM `way` 与所属 `way.nodes` 中的 `nodeId`（`nodeId !== wayId`、距坐标 ≤ 300m），全部在图点位于主连通分量 0 断路；超出范围的保留真实坐标不夹边界，无线索留视频库不造点。
+6. 视频剪辑与 Release 交付：按真实门店内容切分（不要一刀切固定秒数），实测 FFprobe，非今年旧片补 `footageNote`，同分店多博主用 `placeId` 归并。按来源 `media:pack` 后上传全部 ZIP 和 `.zip.json` 到独立公开 Release（有主仓权限发主仓，Fork 同学无主仓写权限则发自己公开 Fork 仓库的 Release，并填真实可公开下载 URL，严禁填 404 地址）。注意重打包会改 ZIP SHA256，`media-bundles.json` 的 `sha256`/`bytes`/`clips` 必须与 Release 实际 `uploaded` 附件 100% 一致，并在新隔离空目录实测远端下载 + `media:import`（含重复导入 `newFiles: 0`）。
+7. 验收与正式 PR：必须通过无 `.local` 媒体的干净构建（全城封面 0 丢失）、数据与全锚点/全连通测试、以及浏览器端到端强断言（双采样播放推进 `dt >= 0.3s`、持有旧 `<video>` 引用且用 `&&` 验证切店/换博主/Escape 后 `old && old.paused && !old.getAttribute('src')`、1440/390/320/736 四视口浮窗在屏内且媒体占比 ≥ 2/3、直线/沿路切换、离线单页包与跨城零串城）。完成后在 `mzsjlx/shitu` 创建目标为 `main` 的正式编号 PR，分开统计作品/作者/切片/去重点/在图点/未上图段数，并诚实写明全量元数据核对范围与抽样下载播放范围。
+```
+
+---
+
+## 历史开工记录（归档参考，以顶部最新标准为准）
+
+### 2026-11-16 最新开工补充（郑州及后续城市）
+
+武汉PR #10的 `488079f` 已通过接收端复核，并以 `6019700` 合入主线。开工先同步最新main并确认本地检出已包含该合并，旧工作区不会自动更新；下面旧日期的城市数量和硬编码描述仅供历史参考。
+
+可以把本段和下方通用开工指令一同转发：
+
+> 我现在负责食途【郑州】，城市ID为 `zhengzhou`，工作分支 `codex/city-zhengzhou-prep`，建议独立worktree为 `.local/worktrees/zhengzhou-prep`。请先读AGENTS、README、PROJECT-STATUS最新章节、城市手册与素材说明，尤其是2026-11-16武汉复核补充。根目录可能有其他任务的未提交内容，不在根目录切分支或覆盖文件；从开工时最新main创建或继续已有独立工作区。还没收到视频链接时，先检查并准备城市配置、开放底图和真实路网，不自行添加探店来源。收到链接后先用一个来源跑通剪辑、真实封面、近似定位、同店归并、地图播放和素材包交付，再扩量。
+>
+> 保留其他城市和全局索引，冻结路网固定LF，并在无本地媒体的新检出验证构建与封面。实际播放要两次采样确认推进；持有旧video对象，把换片与关闭后的暂停和src移除纳入最终断言。改剪辑后重新核对并打包，分别验证空目录、重复导入及涉及的旧版本处理。Release分页核验ZIP及摘要，starter不计完成，上传期间如实报告；上传完核对全量名称、URL、大小和SHA256，实际下载样本并在隔离目录导入，注明抽样范围，不把服务端digest核验写成全量下载验证。提供存在的报告文件、正式编号PR、Release及是否已合并的真实状态。常规可逆工作持续推进，遇到单条来源受限先做其余内容。
+
+其他城市替换城市名称、ID、分支和目录即可。郑州授权只按本次实际来源确认，不沿用武汉素材授权。完整方法见 [手册](CITY-AGENT-HANDBOOK.md)，证据见 [武汉最终复核](output/research/wuhan-followup-20261116.md)。
+
+
 更新日期：2026-11-01。长沙续做与南京开工的具体文字见 [CITY-AGENT-MESSAGES.md](CITY-AGENT-MESSAGES.md)；以下为其他城市通用模板。把城市名与ID改成实际值，不转发令牌、验证码或浏览器Cookie。
 
 ---

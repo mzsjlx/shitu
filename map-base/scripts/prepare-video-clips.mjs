@@ -10,6 +10,7 @@ const cityOption=process.argv.indexOf('--city'),cityId=cityOption>=0?process.arg
 const context=await loadCityCatalog(root,cityId||'chongqing'),catalogPath=path.join(root,context.relative);
 const data=context.catalog;
 const ffmpeg=process.env.FOODCITY_FFMPEG||'ffmpeg',ffprobe=process.env.FOODCITY_FFPROBE||'ffprobe';
+const crf=process.env.FOODCITY_CRF||'21';
 function run(command,args){return new Promise((resolve,reject)=>{const child=spawn(command,args,{windowsHide:true,stdio:['ignore','pipe','pipe'],shell:/\.(?:cmd|bat)$/i.test(command)});let out='',err='';child.stdout.on('data',b=>out+=b);child.stderr.on('data',b=>err+=b);child.once('error',reject);child.once('close',code=>code===0?resolve(out):reject(new Error(`${command} exited ${code}: ${err.slice(-2500)}`)));});}
 const option=process.argv.indexOf('--source'),sourceId=option>=0?process.argv[option+1]:null;
 if(option>=0&&!data.sources.some(s=>s.id===sourceId))throw new Error('未找到这个来源ID');
@@ -38,7 +39,7 @@ for(const source of data.sources.filter(source=>!sourceId||source.id===sourceId)
         }catch(error){if(error.code!=='ENOENT')throw error;}
       }
     }
-    await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.start),'-i',input,'-t',String(segment.end-segment.start),'-map','0:v:0','-map','0:a:0','-c:v','libx264','-preset','fast','-crf','21','-pix_fmt','yuv420p','-threads','4','-c:a','aac','-b:a','128k','-map_metadata','-1','-movflags','+faststart',temporary]);
+    await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.start),'-i',input,'-t',String(segment.end-segment.start),'-map','0:v:0','-map','0:a:0','-c:v','libx264','-preset','fast','-crf',crf,'-pix_fmt','yuv420p','-threads','4','-c:a','aac','-b:a','128k','-map_metadata','-1','-movflags','+faststart',temporary]);
     await rename(temporary,clip);
     await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.posterSecond),'-i',input,'-frames:v','1','-q:v','3',poster]);
     const probe=JSON.parse(await run(ffprobe,['-v','error','-show_entries','format=duration:stream=codec_name,codec_type,width,height,duration','-of','json',clip]));
