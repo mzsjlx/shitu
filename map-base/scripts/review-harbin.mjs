@@ -8,18 +8,34 @@ import { PMTiles } from 'pmtiles';
 import { buildFoodRoadRouter } from '../src/food-road-router.js';
 
 let chromium;
-try {
-  const pw = await import('playwright');
-  chromium = pw.chromium;
-} catch {
+for (const mod of ['playwright', 'playwright-core']) {
   try {
-    const pwCore = await import('playwright-core');
-    chromium = pwCore.chromium;
-  } catch {
-    const fallback = 'file:///D:/nodejs/node_global/node_modules/@playwright/cli/node_modules/playwright-core/index.mjs';
-    const pwFallback = await import(fallback);
-    chromium = pwFallback.chromium;
-  }
+    const pw = await import(mod);
+    chromium = pw.chromium;
+    if (chromium) break;
+  } catch {}
+}
+if (!chromium) {
+  try {
+    const { execSync } = await import('node:child_process');
+    const { pathToFileURL } = await import('node:url');
+    const globalRoot = execSync('npm root -g', { encoding: 'utf8' }).trim();
+    const candidates = [
+      path.join(globalRoot, 'playwright-core/index.mjs'),
+      path.join(globalRoot, 'playwright/index.mjs'),
+      path.join(globalRoot, '@playwright/cli/node_modules/playwright-core/index.mjs')
+    ];
+    for (const cand of candidates) {
+      try {
+        const pw = await import(pathToFileURL(cand).href);
+        chromium = pw.chromium;
+        if (chromium) break;
+      } catch {}
+    }
+  } catch {}
+}
+if (!chromium) {
+  throw new Error('Playwright is required to run review-harbin.mjs. Please install playwright or playwright-core.');
 }
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -389,9 +405,9 @@ async function run() {
 
     const oldVideoStopped = await page.evaluate(() => {
       const old = window.reviewOldVideo;
-      return !old || old.paused || !old.getAttribute('src');
+      return Boolean(old && old.paused && !old.getAttribute('src'));
     });
-    check('Level 3: Switching food shop stops and releases old media track', oldVideoStopped);
+    check('Level 3: Switching food shop stops and releases old media track (old && old.paused && !old.getAttribute("src"))', oldVideoStopped);
 
     // Multi-clip place switching and close lifecycle verification
     const multiPlaceId = await page.evaluate(() => {
@@ -402,30 +418,66 @@ async function run() {
       await page.evaluate(id => window.foodCityMap.food.focusStops(id), multiPlaceId);
       await page.waitForTimeout(600);
       await page.locator(`[data-food-id="${multiPlaceId}"] .food-open`).click();
-      await page.waitForTimeout(400);
-      const multiPlayBtn = page.locator('.food-popover-play');
-      if (await multiPlayBtn.isVisible()) {
-        await multiPlayBtn.click();
-        await page.waitForTimeout(600);
+      await page.waitForTimeout(600);
+      
+      // 1st Clip Playback
+      const multiPlayBtn1 = page.locator('.food-popover-play');
+      if (await multiPlayBtn1.isVisible()) {
+        await multiPlayBtn1.click();
       }
-      await page.evaluate(() => { window.reviewOldVideo = document.querySelector('.food-popover-media video'); });
+      await page.waitForFunction(() => {
+        const v = document.querySelector('.food-popover-media video');
+        return v && v.readyState >= 2 && !v.paused;
+      }, undefined, { timeout: 15000 });
+      
+      await page.evaluate(() => { window.__creatorVideo1 = document.querySelector('.food-popover-media video'); });
+      const c1_s1 = await page.evaluate(() => window.__creatorVideo1 ? window.__creatorVideo1.currentTime : -1);
+      await page.waitForTimeout(500);
+      const c1_s2 = await page.evaluate(() => window.__creatorVideo1 ? window.__creatorVideo1.currentTime : -1);
+      const c1_adv = c1_s2 - c1_s1;
+      check('Multi-blogger: Clip 1 plays and advances (dual-sampled)', c1_adv > 0.1 && c1_s2 > 0.1, { c1_s1, c1_s2, c1_adv });
+
+      // Switch to 2nd Clip
       const clipTabs = page.locator('.food-popover-clip');
       if (await clipTabs.count() > 1) {
         await clipTabs.nth(1).click();
-        await page.waitForTimeout(400);
-        const clipChanged = await page.evaluate(() => {
-          const old = window.reviewOldVideo;
-          return !old || old.paused || !old.getAttribute('src');
+        await page.waitForTimeout(500);
+
+        // Assert Clip 1 stopped and src removed
+        const clip1Stopped = await page.evaluate(() => {
+          const old = window.__creatorVideo1;
+          return Boolean(old && old.paused && !old.getAttribute('src'));
         });
-        check('Level 3: Changing creator clip stops and releases old track', clipChanged);
+        check('Multi-blogger: Switching to Clip 2 stops and releases Clip 1 track', clip1Stopped);
+
+        // 2nd Clip Playback
+        const multiPlayBtn2 = page.locator('.food-popover-play');
+        if (await multiPlayBtn2.isVisible()) {
+          await multiPlayBtn2.click();
+        }
+        await page.waitForFunction(() => {
+          const v = document.querySelector('.food-popover-media video');
+          return v && v.readyState >= 2 && !v.paused;
+        }, undefined, { timeout: 15000 });
+
+        await page.evaluate(() => { window.__creatorVideo2 = document.querySelector('.food-popover-media video'); });
+        const c2_s1 = await page.evaluate(() => window.__creatorVideo2 ? window.__creatorVideo2.currentTime : -1);
+        await page.waitForTimeout(500);
+        const c2_s2 = await page.evaluate(() => window.__creatorVideo2 ? window.__creatorVideo2.currentTime : -1);
+        const c2_adv = c2_s2 - c2_s1;
+        check('Multi-blogger: Clip 2 plays and advances (dual-sampled)', c2_adv > 0.1 && c2_s2 > 0.1, { c2_s1, c2_s2, c2_adv });
+
+        // Close Popover
+        await page.locator('.food-popover-close').click();
+        await page.waitForTimeout(500);
+
+        // Assert Clip 2 stopped and src removed
+        const clip2Stopped = await page.evaluate(() => {
+          const old = window.__creatorVideo2;
+          return Boolean(old && old.paused && !old.getAttribute('src'));
+        });
+        check('Multi-blogger: Closing popover stops and releases Clip 2 track', clip2Stopped);
       }
-      await page.locator('.food-popover-close').click();
-      await page.waitForTimeout(400);
-      const popoverClosed = await page.evaluate(() => {
-        const old = window.reviewOldVideo;
-        return !old || old.paused || !old.getAttribute('src');
-      });
-      check('Level 3: Closing popover stops and releases old track', popoverClosed);
     }
 
     // 2D / 3D Toggle Test
@@ -448,22 +500,85 @@ async function run() {
     });
     check('Switching back to 3D view restores 3D extrusion layers', is3d);
 
-    // Mobile Viewport Test (390x844)
-    console.log('\n--- 9. Testing Mobile Viewport Adaptation (390x844) ---');
-    await page.setViewportSize({ width: 390, height: 844 });
-    await page.waitForTimeout(600);
-    const mobileShot = path.join(screenshotDir, 'harbin-mobile-390.png');
-    await page.screenshot({ path: mobileShot });
-    console.log(`Saved screenshot: ${mobileShot}`);
-    check('Mobile layout rendered and screenshot captured (390x844)', true);
+    // 4 Viewports & 2/3 Area Ratio Verification
+    console.log('\n--- 9. Testing 4 Viewports & Video Popover Area Ratio (>= 2/3) ---');
+    const viewports = [
+      { id: 'desktop-1440', name: 'Desktop (1440x960)', width: 1440, height: 960, file: 'harbin-desktop-1440.png' },
+      { id: 'mobile-390', name: 'Mobile (390x844)', width: 390, height: 844, file: 'harbin-mobile-390.png' },
+      { id: 'small-320', name: 'Small Screen (320x680)', width: 320, height: 680, file: 'harbin-small-320.png' },
+      { id: 'landscape-736', name: 'Short Landscape (736x414)', width: 736, height: 414, file: 'harbin-landscape-736.png' }
+    ];
+
+    for (const vp of viewports) {
+      await page.setViewportSize({ width: vp.width, height: vp.height });
+      await page.waitForTimeout(600);
+
+      // Ensure a card is open with popover visible
+      const popoverOpen = await page.evaluate(() => {
+        const pop = document.querySelector('.food-inline-popover');
+        return pop && !pop.hidden && getComputedStyle(pop).display !== 'none';
+      });
+      if (!popoverOpen) {
+        await page.evaluate(() => {
+          const target = document.querySelector('.food-card[data-food-id="video-hb-xiaozhen-fendoufushi"]') || document.querySelector('.food-card');
+          if (target) {
+            const btn = target.querySelector('.food-open') || target;
+            btn.click();
+          }
+        });
+        await page.waitForTimeout(600);
+      }
+
+      const ratioInfo = await page.evaluate(() => {
+        const popover = document.querySelector('.food-inline-popover');
+        const media = document.querySelector('.food-popover-media');
+        if (!popover || !media) return null;
+        const pRect = popover.getBoundingClientRect();
+        const mRect = media.getBoundingClientRect();
+        const pArea = pRect.width * pRect.height;
+        const mArea = mRect.width * mRect.height;
+        return {
+          popoverArea: pArea,
+          mediaArea: mArea,
+          ratio: pArea > 0 ? (mArea / pArea) : 0
+        };
+      });
+
+      const ratioPass = Boolean(ratioInfo && ratioInfo.ratio >= (2.0 / 3.0) - 0.01);
+      check(`Viewport ${vp.name}: Floating window media area >= 2/3 (ratio: ${(ratioInfo?.ratio * 100)?.toFixed(1)}%)`, ratioPass, ratioInfo);
+
+      const vpShot = path.join(screenshotDir, vp.file);
+      await page.screenshot({ path: vpShot });
+      console.log(`Saved viewport screenshot: ${vpShot}`);
+      check(`Viewport ${vp.name} screenshot captured: ${vp.file}`, true);
+    }
+
+    // Reset viewport back to desktop for multi-city checks
+    await page.setViewportSize({ width: 1440, height: 960 });
+    await page.waitForTimeout(400);
 
     // Multi-city Isolation & Regression Test
     console.log('\n--- 10. Testing Multi-City Isolation & Non-Pollution ---');
-    for (const cityId of ['chongqing', 'changsha', 'nanjing', 'chaoshan']) {
-      await page.goto(`http://127.0.0.1:${port}/?city=${cityId}&view=food`);
-      await page.waitForFunction(() => window.foodCityMap?.map?.areTilesLoaded(), { timeout: 15000 });
+    const cities = [
+      { id: 'chongqing', name: '重庆' },
+      { id: 'changsha', name: '长沙' },
+      { id: 'liuzhou', name: '柳州' },
+      { id: 'nanjing', name: '南京' },
+      { id: 'chaoshan', name: '潮汕' },
+      { id: 'wuhan', name: '武汉' }
+    ];
+
+    for (const city of cities) {
+      await page.goto(`http://127.0.0.1:${port}/?city=${city.id}&view=food`);
+      await page.waitForFunction(() => window.foodCityMap?.map?.areTilesLoaded(), { timeout: 20000 });
+      await page.waitForTimeout(1000);
       const cName = await page.evaluate(() => window.foodCityMap?.city?.name);
-      check(`City ${cityId} loads cleanly (${cName}) without Harbin interference`, Boolean(cName));
+      const cardTexts = await page.evaluate(() => Array.from(document.querySelectorAll('.food-card')).map(c => c.textContent));
+      const hasHarbinInterference = cardTexts.some(t => t.includes('圣索菲亚') || t.includes('中央大街') || t.includes('中华巴洛克'));
+      
+      check(`City ${city.id} loads cleanly as "${cName}" without Harbin data interference`, 
+        cName === city.name && !hasHarbinInterference, 
+        { cName, expected: city.name, hasHarbinInterference, cardsCount: cardTexts.length });
     }
 
   } finally {

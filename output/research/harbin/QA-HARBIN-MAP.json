@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-18T10:22:50.973Z",
+  "verifiedOn": "2026-11-23T04:57:21.071Z",
   "city": "harbin",
   "checks": [
     {
@@ -243,24 +243,42 @@
           "readyState": 4
         },
         "sample2": {
-          "t": 0.250238,
+          "t": 0.219713,
           "paused": false,
           "src": "http://127.0.0.1:8796/media/videos/hb-xiaozhen-7592037940180569380/hb-xiaozhen-fendoufushi-7b14dcb0c8606922.mp4"
         }
       }
     },
     {
-      "name": "Level 3: Switching food shop stops and releases old media track",
+      "name": "Level 3: Switching food shop stops and releases old media track (old && old.paused && !old.getAttribute(\"src\"))",
       "passed": true,
       "detail": null
     },
     {
-      "name": "Level 3: Changing creator clip stops and releases old track",
+      "name": "Multi-blogger: Clip 1 plays and advances (dual-sampled)",
+      "passed": true,
+      "detail": {
+        "c1_s1": 0,
+        "c1_s2": 0.357233,
+        "c1_adv": 0.357233
+      }
+    },
+    {
+      "name": "Multi-blogger: Switching to Clip 2 stops and releases Clip 1 track",
       "passed": true,
       "detail": null
     },
     {
-      "name": "Level 3: Closing popover stops and releases old track",
+      "name": "Multi-blogger: Clip 2 plays and advances (dual-sampled)",
+      "passed": true,
+      "detail": {
+        "c2_s1": 0,
+        "c2_s2": 0.480403,
+        "c2_adv": 0.480403
+      }
+    },
+    {
+      "name": "Multi-blogger: Closing popover stops and releases Clip 2 track",
       "passed": true,
       "detail": null
     },
@@ -275,32 +293,123 @@
       "detail": null
     },
     {
-      "name": "Mobile layout rendered and screenshot captured (390x844)",
+      "name": "Viewport Desktop (1440x960): Floating window media area >= 2/3 (ratio: 69.5%)",
+      "passed": true,
+      "detail": {
+        "popoverArea": 106485,
+        "mediaArea": 74000,
+        "ratio": 0.6949335587171902
+      }
+    },
+    {
+      "name": "Viewport Desktop (1440x960) screenshot captured: harbin-desktop-1440.png",
       "passed": true,
       "detail": null
     },
     {
-      "name": "City chongqing loads cleanly (重庆) without Harbin interference",
+      "name": "Viewport Mobile (390x844): Floating window media area >= 2/3 (ratio: 66.7%)",
+      "passed": true,
+      "detail": {
+        "popoverArea": 98800,
+        "mediaArea": 65928,
+        "ratio": 0.6672874493927126
+      }
+    },
+    {
+      "name": "Viewport Mobile (390x844) screenshot captured: harbin-mobile-390.png",
       "passed": true,
       "detail": null
     },
     {
-      "name": "City changsha loads cleanly (长沙) without Harbin interference",
+      "name": "Viewport Small Screen (320x680): Floating window media area >= 2/3 (ratio: 66.7%)",
+      "passed": true,
+      "detail": {
+        "popoverArea": 98800,
+        "mediaArea": 65928,
+        "ratio": 0.6672874493927126
+      }
+    },
+    {
+      "name": "Viewport Small Screen (320x680) screenshot captured: harbin-small-320.png",
       "passed": true,
       "detail": null
     },
     {
-      "name": "City nanjing loads cleanly (南京) without Harbin interference",
+      "name": "Viewport Short Landscape (736x414): Floating window media area >= 2/3 (ratio: 66.8%)",
+      "passed": true,
+      "detail": {
+        "popoverArea": 102300,
+        "mediaArea": 68376,
+        "ratio": 0.6683870967741935
+      }
+    },
+    {
+      "name": "Viewport Short Landscape (736x414) screenshot captured: harbin-landscape-736.png",
       "passed": true,
       "detail": null
     },
     {
-      "name": "City chaoshan loads cleanly (潮汕) without Harbin interference",
+      "name": "City chongqing loads cleanly as \"重庆\" without Harbin data interference",
       "passed": true,
-      "detail": null
+      "detail": {
+        "cName": "重庆",
+        "expected": "重庆",
+        "hasHarbinInterference": false,
+        "cardsCount": 81
+      }
+    },
+    {
+      "name": "City changsha loads cleanly as \"长沙\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "长沙",
+        "expected": "长沙",
+        "hasHarbinInterference": false,
+        "cardsCount": 71
+      }
+    },
+    {
+      "name": "City liuzhou loads cleanly as \"柳州\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "柳州",
+        "expected": "柳州",
+        "hasHarbinInterference": false,
+        "cardsCount": 9
+      }
+    },
+    {
+      "name": "City nanjing loads cleanly as \"南京\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "南京",
+        "expected": "南京",
+        "hasHarbinInterference": false,
+        "cardsCount": 104
+      }
+    },
+    {
+      "name": "City chaoshan loads cleanly as \"潮汕\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "潮汕",
+        "expected": "潮汕",
+        "hasHarbinInterference": false,
+        "cardsCount": 46
+      }
+    },
+    {
+      "name": "City wuhan loads cleanly as \"武汉\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "武汉",
+        "expected": "武汉",
+        "hasHarbinInterference": false,
+        "cardsCount": 104
+      }
     }
   ],
-  "total": 54,
-  "passed": 54,
+  "total": 65,
+  "passed": 65,
   "failed": 0
 }
