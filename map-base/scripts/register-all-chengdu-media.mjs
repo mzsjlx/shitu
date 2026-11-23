@@ -2,7 +2,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
 import { digest, mediaKey, mediaNames } from './video-library-common.mjs';
+
+const ffprobe = process.env.FOODCITY_FFPROBE || (fs.existsSync('D:\\trae安装程序\\Trae CN\\resources\\app\\bin\\ffprobe.exe') ? 'D:\\trae安装程序\\Trae CN\\resources\\app\\bin\\ffprobe.exe' : 'ffprobe');
 
 const scriptsDir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(scriptsDir, '../..');
@@ -66,7 +69,17 @@ for (const source of library.sources) {
     if (fs.existsSync(clipAbs)) {
       const clipBytes = fs.readFileSync(clipAbs);
       const clipSha256 = digest(clipBytes);
-      const duration = (seg.end - seg.start).toFixed(2);
+      const probeProc = spawnSync(ffprobe, [
+        '-v', 'error',
+        '-show_entries', 'format=duration:stream=codec_name,codec_type,width,height,duration',
+        '-of', 'json',
+        clipAbs
+      ], { encoding: 'utf8', windowsHide: true });
+
+      if (probeProc.status !== 0 || !probeProc.stdout) {
+        throw new Error(`FFprobe probe failed on ${clipAbs}: ${probeProc.stderr}`);
+      }
+      const probe = JSON.parse(probeProc.stdout);
 
       const record = {
         id: seg.id,
@@ -82,14 +95,7 @@ for (const source of library.sources) {
         posterBytes: posterBytes.length,
         clipSHA256: clipSha256,
         posterSHA256: posterSha256,
-        probe: {
-          programs: [],
-          streams: [
-            { codec_name: 'h264', codec_type: 'video', duration: duration },
-            { codec_name: 'aac', codec_type: 'audio', duration: duration }
-          ],
-          format: { duration: duration }
-        }
+        probe
       };
 
       existingReportMap.set(seg.id, record);

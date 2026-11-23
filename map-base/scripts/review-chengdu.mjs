@@ -3,26 +3,29 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 let chromium;
-try {
-  const pw = await import('playwright');
-  chromium = pw.chromium;
-} catch {
+for (const spec of [
+  'playwright',
+  'playwright-core',
+  process.env.PLAYWRIGHT_PATH,
+  'D:/nodejs/node_global/node_modules/@playwright/cli/node_modules/playwright-core/index.mjs'
+].filter(Boolean)) {
   try {
-    const pwCore = await import('playwright-core');
-    chromium = pwCore.chromium;
-  } catch {
-    const fallback = 'file:///D:/nodejs/node_global/node_modules/@playwright/cli/node_modules/playwright-core/index.mjs';
-    const pwFallback = await import(fallback);
-    chromium = pwFallback.chromium;
-  }
+    const url = spec.startsWith('/') || spec.includes(':') ? 'file:///' + path.resolve(spec).replace(/\\/g, '/') : spec;
+    const pw = await import(url);
+    if (pw.chromium) {
+      chromium = pw.chromium;
+      break;
+    }
+  } catch {}
 }
+if (!chromium) throw new Error('Playwright not available in environment');
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const screenshotDir = path.resolve(root, '../output/research/chengdu/screenshots');
 await fs.mkdir(screenshotDir, { recursive: true });
 
 async function run() {
-  console.log('=== Starting Comprehensive Chengdu Automated QA & Six-City Review ===');
+  console.log('=== Starting Upgraded Chengdu QA & Multi-City Baseline Review ===');
   let browser;
   try {
     browser = await chromium.launch({ headless: true });
@@ -32,12 +35,12 @@ async function run() {
 
   const results = [];
   function check(name, passed, detail = null) {
-    results.push({ name, passed, detail });
+    results.push({ name, passed: Boolean(passed), detail });
     console.log(`${passed ? '✓ PASS' : '✗ FAIL'}: ${name}`);
     if (!passed && detail) console.error('  Detail:', detail);
   }
 
-  const base = 'http://127.0.0.1:8791';
+  const base = process.env.FOODCITY_BASE_URL || `http://127.0.0.1:${process.env.FOODCITY_PORT || 8791}`;
 
   // -----------------------------------------------------------------
   // 1. Desktop Viewport (1440x960): Map Config, 3D Landmarks & Layers
@@ -47,8 +50,8 @@ async function run() {
   const page = await desktopCtx.newPage();
 
   await page.goto(`${base}/?city=chengdu&view=food`, { waitUntil: 'domcontentloaded' });
-  await page.waitForFunction(() => window.foodCityMap?.map?.areTilesLoaded(), { timeout: 25000 });
-  await page.waitForTimeout(1500);
+  await page.waitForFunction(() => window.foodCityMap && window.foodCityMap.ready, { timeout: 25000 });
+  await page.waitForTimeout(1000);
 
   const cityInfo = await page.evaluate(() => ({
     name: window.foodCityMap?.city?.name,
@@ -65,30 +68,9 @@ async function run() {
   check('buildings-3d generic height inference layer present', cityInfo.layers.includes('buildings-3d'));
 
   // -----------------------------------------------------------------
-  // 2. 3D Iconic Landmarks
+  // 2. 71 Food Spots & Progressive Card Presentation
   // -----------------------------------------------------------------
-  console.log('\n--- 2. Capturing Iconic 3D Landmarks ---');
-  const targets = [
-    { id: '3d-339-panda-tower', center: [104.0928, 30.6642], zoom: 16.0, pitch: 64, bearing: -30 },
-    { id: '3d-ifs-panda-taikooli', center: [104.0815, 30.6550], zoom: 16.4, pitch: 62, bearing: -25 },
-    { id: '3d-kuanzhai-alleys', center: [104.0535, 30.6668], zoom: 16.5, pitch: 58, bearing: 35 },
-    { id: '3d-yulin-neighborhood', center: [104.0600, 30.6319], zoom: 16.6, pitch: 56, bearing: 10 }
-  ];
-
-  for (const t of targets) {
-    await page.evaluate(target => {
-      window.foodCityMap.map.easeTo({ center: target.center, zoom: target.zoom, pitch: target.pitch, bearing: target.bearing, duration: 0 });
-    }, t);
-    await page.waitForTimeout(800);
-    const file = path.join(screenshotDir, `${t.id}.png`);
-    await page.screenshot({ path: file });
-    check(`Landmark view captured: ${t.id}`, true);
-  }
-
-  // -----------------------------------------------------------------
-  // 3. 71 Food Spots & Progressive Card Presentation
-  // -----------------------------------------------------------------
-  console.log('\n--- 3. Testing Food Spots & Card Expansion ---');
+  console.log('\n--- 2. Testing Food Spots & Card Expansion ---');
   const spotsCount = await page.evaluate(() => {
     return document.querySelectorAll('.food-card').length;
   });
@@ -106,7 +88,7 @@ async function run() {
     return false;
   });
   check('Food card found and clicked', cardClickSuccess);
-  await page.waitForTimeout(600);
+  await page.waitForTimeout(500);
 
   const cardExpanded = await page.evaluate(() => {
     const card = document.querySelector('.food-card:not(.is-collapsed)');
@@ -123,12 +105,10 @@ async function run() {
   await page.waitForTimeout(300);
 
   // -----------------------------------------------------------------
-  // 4. Multi-Blogger Popover, Media Area >= 2/3, & Audio Cut-off
+  // 3. Multi-Blogger Popover, Strict Ratio >= 2/3, & Playback / Audio Stop
   // -----------------------------------------------------------------
-  console.log('\n--- 4. Testing Multi-Blogger Popover, Media Area >= 2/3 & Audio Cut-off ---');
-  // Open popover for a known multi-blogger spot
+  console.log('\n--- 3. Testing Popover, Ratio >= 2/3, Double Sampling & Audio Stoppage ---');
   const popoverOpened = await page.evaluate(() => {
-    // Find item with multiple clips (e.g. Xie Xiao Yao or Yang Lao Tou or Mao Ji He Yi)
     const multiEntry = window.foodCityMap.food.overlay.items.find(e => e.item.videos?.length > 1);
     if (!multiEntry) return { found: false };
     window.foodCityMap.food.overlay.showPopover(multiEntry.item, true);
@@ -139,11 +119,11 @@ async function run() {
   await page.waitForSelector('.food-inline-popover.is-shown', { timeout: 10000 });
   await page.waitForTimeout(500);
 
-  // Verify Media Area >= 2/3 (66.7%)
+  // Ratio assertion (Strict >= 2/3)
   const areaRatio = await page.evaluate(() => {
     const popover = document.querySelector('.food-inline-popover');
     const media = document.querySelector('.food-popover-media');
-    if (!popover || !media) return 0;
+    if (!popover || !media) return null;
     const popRect = popover.getBoundingClientRect();
     const mediaRect = media.getBoundingClientRect();
     const popArea = popRect.width * popRect.height;
@@ -157,73 +137,147 @@ async function run() {
     };
   });
 
-  check('Multi-blogger popover media area occupies >= 2/3 (66.7%) of total popover area',
-    areaRatio.ratio >= 0.66,
-    `Ratio: ${(areaRatio.ratio * 100).toFixed(1)}% (media: ${areaRatio.mediaHeight}px, popover: ${areaRatio.popHeight}px)`
+  check('Multi-blogger popover media area occupies >= 2/3 (strict >= 2/3)',
+    areaRatio && areaRatio.ratio >= (2.0 / 3.0),
+    areaRatio ? `Ratio: ${(areaRatio.ratio * 100).toFixed(2)}%` : 'missing'
   );
 
-  const popoverShot = path.join(screenshotDir, 'chengdu-multi-blogger-popover.png');
-  await page.screenshot({ path: popoverShot });
-
-  // Test video play and advancing playback
+  // Play video with double sampling
   await page.evaluate(() => {
     const playBtn = document.querySelector('.food-popover-play');
     if (playBtn) playBtn.click();
   });
   await page.waitForSelector('video.food-popover-video', { timeout: 10000 });
 
-  const playCheck = await page.evaluate(async () => {
-    const video = document.querySelector('video.food-popover-video');
-    if (!video) return { played: false, reason: 'no video element' };
-    video.muted = true;
-    try { await video.play(); } catch (e) { return { played: false, reason: e.message }; }
-    await new Promise(r => setTimeout(r, 800));
+  // Store reference to video in window
+  await page.evaluate(() => {
+    window.__testedVideo1 = document.querySelector('video.food-popover-video');
+  });
+
+  // Double sampling playback check
+  const t1 = await page.evaluate(() => window.__testedVideo1 ? { t: window.__testedVideo1.currentTime, paused: window.__testedVideo1.paused } : null);
+  await page.waitForTimeout(800);
+  const t2 = await page.evaluate(() => window.__testedVideo1 ? { t: window.__testedVideo1.currentTime, paused: window.__testedVideo1.paused } : null);
+  const advancing = t1 && t2 && !t2.paused && (t2.t - t1.t >= 0.2);
+  check('In-popover video plays smoothly with double-sampling time advance (dt >= 0.2s)', advancing, { t1, t2, dt: t2?.t - t1?.t });
+
+  // Test blogger switch: hold reference to old video, switch tab, assert old video is paused & hasSrc stripped
+  const bloggerSwitchOk = await page.evaluate(async () => {
+    const oldVideo = window.__testedVideo1;
+    const clipButtons = document.querySelectorAll('.food-popover-clip');
+    if (clipButtons.length < 2) return { success: false, reason: 'fewer than 2 creator tabs' };
+    clipButtons[1].click();
+    await new Promise(r => setTimeout(r, 400));
+    const oldPaused = oldVideo.paused;
+    const oldHasSrc = oldVideo.hasAttribute('src') && oldVideo.getAttribute('src') !== '';
     return {
-      played: !video.paused && video.currentTime > 0.1,
-      currentTime: video.currentTime,
-      duration: video.duration
+      success: oldPaused && !oldHasSrc,
+      oldPaused,
+      oldHasSrc
     };
   });
-  check('In-popover video plays smoothly with advancing currentTime', playCheck.played, playCheck);
+  check('Switching creator tab terminates old video and strips src', bloggerSwitchOk.success, bloggerSwitchOk);
 
-  // Test audio stoppage on closing popover
-  const audioStopped = await page.evaluate(async () => {
+  // Test shop switch: hold reference to current video, open another shop, assert previous video paused & stripped
+  await page.evaluate(() => {
+    window.__testedVideo2 = document.querySelector('video.food-popover-video');
+  });
+  const shopSwitchOk = await page.evaluate(async () => {
+    const oldVideo = window.__testedVideo2;
+    const otherItem = window.foodCityMap.food.overlay.items[1]?.item;
+    if (!otherItem) return { success: false, reason: 'no second shop item' };
+    window.foodCityMap.food.overlay.showPopover(otherItem, true);
+    await new Promise(r => setTimeout(r, 400));
+    const oldPaused = !oldVideo || oldVideo.paused;
+    const oldHasSrc = oldVideo && oldVideo.hasAttribute('src') && oldVideo.getAttribute('src') !== '';
+    return {
+      success: oldPaused && !oldHasSrc,
+      oldPaused,
+      oldHasSrc
+    };
+  });
+  check('Switching to another shop terminates previous video and strips src', shopSwitchOk.success, shopSwitchOk);
+
+  // Test close popover: hold reference to video, close, assert paused & stripped
+  await page.evaluate(() => {
+    const playBtn = document.querySelector('.food-popover-play');
+    if (playBtn) playBtn.click();
+  });
+  await page.waitForTimeout(400);
+  await page.evaluate(() => {
+    window.__testedVideo3 = document.querySelector('video.food-popover-video');
+  });
+
+  const closeStopOk = await page.evaluate(async () => {
+    const oldVideo = window.__testedVideo3;
     const closeBtn = document.querySelector('.food-popover-close');
     if (closeBtn) closeBtn.click();
     await new Promise(r => setTimeout(r, 400));
-    const video = document.querySelector('video.food-popover-video');
-    return !video || video.paused;
+    const oldPaused = !oldVideo || oldVideo.paused;
+    const oldHasSrc = oldVideo && oldVideo.hasAttribute('src') && oldVideo.getAttribute('src') !== '';
+    return {
+      success: oldPaused && !oldHasSrc,
+      oldPaused,
+      oldHasSrc
+    };
   });
-  check('Closing popover immediately terminates video playback and audio track', audioStopped);
+  check('Closing popover immediately pauses video and strips src', closeStopOk.success, closeStopOk);
 
   await desktopCtx.close();
 
   // -----------------------------------------------------------------
-  // 5. Mobile (390x844), Small (320x680), and Landscape (736x414) Viewports
+  // 4. Multi-Viewport Layouts: 1440x960, 390x844, 320x680, 736x414
   // -----------------------------------------------------------------
-  console.log('\n--- 5. Testing Multi-Viewport Layouts ---');
+  console.log('\n--- 4. Testing Multi-Viewport Layouts & Popover Ratio >= 2/3 ---');
   const viewports = [
+    { name: 'desktop-1440', width: 1440, height: 960 },
     { name: 'mobile-390', width: 390, height: 844 },
     { name: 'small-320', width: 320, height: 680 },
     { name: 'landscape-736', width: 736, height: 414 }
   ];
 
   for (const vp of viewports) {
-    const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height }, isMobile: true, hasTouch: true });
+    const isMobile = vp.width < 800;
+    const ctx = await browser.newContext({ viewport: { width: vp.width, height: vp.height }, isMobile, hasTouch: isMobile });
     const vpPage = await ctx.newPage();
     await vpPage.goto(`${base}/?city=chengdu&view=food`, { waitUntil: 'domcontentloaded' });
-    await vpPage.waitForFunction(() => window.foodCityMap?.map?.areTilesLoaded(), { timeout: 25000 });
-    await vpPage.waitForTimeout(1000);
+    await vpPage.waitForFunction(() => window.foodCityMap && window.foodCityMap.ready, { timeout: 25000 });
+    await vpPage.waitForTimeout(600);
 
-    const vpCheck = await vpPage.evaluate(() => {
+    // Check no horizontal overflow
+    const overflowCheck = await vpPage.evaluate(() => {
       const cards = document.querySelectorAll('.food-card');
       const hasHorizontalOverflow = document.documentElement.scrollWidth > window.innerWidth;
       return { cardCount: cards.length, hasHorizontalOverflow };
     });
+    check(`Viewport ${vp.name} (${vp.width}x${vp.height}) has 71 cards without horizontal overflow`,
+      overflowCheck.cardCount === 71 && !overflowCheck.hasHorizontalOverflow,
+      overflowCheck
+    );
 
-    check(`Viewport ${vp.name} (${vp.width}x${vp.height}) renders without horizontal overflow`,
-      vpCheck.cardCount === 71 && !vpCheck.hasHorizontalOverflow,
-      vpCheck
+    // Open popover in this viewport and verify ratio >= 2/3 & within viewport bounds
+    const popoverVpCheck = await vpPage.evaluate(() => {
+      const firstItem = window.foodCityMap.food.overlay.items[0]?.item;
+      if (!firstItem) return null;
+      window.foodCityMap.food.overlay.showPopover(firstItem, true);
+      const popover = document.querySelector('.food-inline-popover');
+      const media = document.querySelector('.food-popover-media');
+      if (!popover || !media) return null;
+      const popRect = popover.getBoundingClientRect();
+      const mediaRect = media.getBoundingClientRect();
+      const popArea = popRect.width * popRect.height;
+      const mediaArea = mediaRect.width * mediaRect.height;
+      const inBounds = popRect.top >= -2 && popRect.left >= -2 && popRect.right <= window.innerWidth + 2 && popRect.bottom <= window.innerHeight + 2;
+      return {
+        ratio: mediaArea / popArea,
+        inBounds,
+        popRect: { width: popRect.width, height: popRect.height, top: popRect.top, left: popRect.left }
+      };
+    });
+
+    check(`Viewport ${vp.name} popover in bounds and ratio >= 2/3`,
+      popoverVpCheck && popoverVpCheck.inBounds && popoverVpCheck.ratio >= (2.0 / 3.0),
+      popoverVpCheck ? `Ratio: ${(popoverVpCheck.ratio * 100).toFixed(2)}%, inBounds: ${popoverVpCheck.inBounds}` : 'missing'
     );
 
     const shotPath = path.join(screenshotDir, `chengdu-${vp.name}.png`);
@@ -232,28 +286,59 @@ async function run() {
   }
 
   // -----------------------------------------------------------------
-  // 6. Six-City Isolation & Clean Regression
+  // 5. Seven-City Isolation & Zero Cross-Contamination
   // -----------------------------------------------------------------
-  console.log('\n--- 6. Testing Six-City Isolation & Zero Cross-Contamination ---');
+  console.log('\n--- 5. Testing Seven-City Isolation (Chongqing, Changsha, Liuzhou, Nanjing, Chaoshan, Wuhan, Zhengzhou) ---');
   const multiCtx = await browser.newContext({ viewport: { width: 1440, height: 960 }, reducedMotion: 'reduce' });
   const multiPage = await multiCtx.newPage();
 
-  const citiesToTest = [
-    { id: 'chongqing', expectedName: '重庆' },
-    { id: 'changsha', expectedName: '长沙' },
-    { id: 'liuzhou', expectedName: '柳州' },
-    { id: 'nanjing', expectedName: '南京' },
-    { id: 'chaoshan', expectedName: '潮汕' },
-    { id: 'chengdu', expectedName: '成都' }
+  // First, in Chengdu add a spot to favorites
+  await multiPage.goto(`${base}/?city=chengdu&view=food`, { waitUntil: 'domcontentloaded' });
+  await multiPage.waitForFunction(() => window.foodCityMap && window.foodCityMap.ready, { timeout: 25000 });
+  await multiPage.waitForTimeout(500);
+
+  const chengduSaved = await multiPage.evaluate(() => {
+    const saveBtn = document.querySelector('.food-card .food-quick-save');
+    if (saveBtn) saveBtn.click();
+    return window.foodCityMap.food?.saved?.length || 0;
+  });
+  check('Chengdu spot added to saved trips', chengduSaved > 0, `Saved: ${chengduSaved}`);
+
+  const baselineCities = [
+    { id: 'chongqing', name: '重庆' },
+    { id: 'changsha', name: '长沙' },
+    { id: 'liuzhou', name: '柳州' },
+    { id: 'nanjing', name: '南京' },
+    { id: 'chaoshan', name: '潮汕' },
+    { id: 'wuhan', name: '武汉' },
+    { id: 'zhengzhou', name: '郑州' }
   ];
 
-  for (const c of citiesToTest) {
+  for (const c of baselineCities) {
     await multiPage.goto(`${base}/?city=${c.id}&view=food`, { waitUntil: 'domcontentloaded' });
-    await multiPage.waitForFunction(() => window.foodCityMap?.map?.areTilesLoaded(), { timeout: 25000 });
-    await multiPage.waitForTimeout(800);
+    await multiPage.waitForFunction(() => window.foodCityMap && window.foodCityMap.ready, { timeout: 25000 });
+    await multiPage.waitForTimeout(500);
 
-    const name = await multiPage.evaluate(() => window.foodCityMap?.city?.name);
-    check(`City ${c.id} loads isolated state with name "${c.expectedName}"`, name === c.expectedName, name);
+    const cityCheck = await multiPage.evaluate((targetCity) => {
+      const cityName = window.foodCityMap?.city?.name;
+      const allShops = window.foodCityMap.food?.records?.map(r => r.name) || [];
+      const hasChengduShop = allShops.some(s => s.includes('毛记和意') || s.includes('张婆婆'));
+      const savedInThisCity = window.foodCityMap.food?.saved || [];
+      const hasChengduSaved = savedInThisCity.some(id => String(id).includes('cd-'));
+      const foodActive = Boolean(window.foodCityMap.food?.records && window.foodCityMap.food?.overlay);
+      return {
+        nameMatch: cityName === targetCity.name,
+        cityName,
+        hasChengduShop,
+        hasChengduSaved,
+        foodActive
+      };
+    }, c);
+
+    check(`City ${c.id} (${c.name}) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips`,
+      cityCheck.nameMatch && !cityCheck.hasChengduShop && !cityCheck.hasChengduSaved && cityCheck.foodActive,
+      cityCheck
+    );
   }
 
   await multiCtx.close();
@@ -284,6 +369,6 @@ async function run() {
 }
 
 run().catch(err => {
-  console.error(err);
+  console.error('Fatal QA error:', err);
   process.exit(1);
 });

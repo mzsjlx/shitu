@@ -45,14 +45,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:解放西街",
+              "id": 1349232609,
               "name": "解放西街",
-              "nearestNode": 9480,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "url": "https://www.openstreetmap.org/way/1349232609",
+              "nodeId": 10221291920,
+              "coordinates": [
+                104.0812791,
+                30.6908673
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 48.8
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2021年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -94,14 +101,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:三道街",
-              "name": "三道街",
-              "nearestNode": 11240,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 267220328,
+              "name": "西大街",
+              "url": "https://www.openstreetmap.org/way/267220328",
+              "nodeId": 12541939920,
+              "coordinates": [
+                104.0531385,
+                30.6760996
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 102.8
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2020年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -143,14 +157,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:海椒市街",
-              "name": "海椒市街",
-              "nearestNode": 30415,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1024870185,
+              "name": "海椒市横街",
+              "url": "https://www.openstreetmap.org/way/1024870185",
+              "nodeId": 9450048744,
+              "coordinates": [
+                104.1022485,
+                30.6407879
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 135
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-xiaojunmao-maojiheyi",
@@ -177,14 +198,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:解放西街",
+              "id": 1349232609,
               "name": "解放西街",
-              "nearestNode": 9480,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "url": "https://www.openstreetmap.org/way/1349232609",
+              "nodeId": 10221291920,
+              "coordinates": [
+                104.0812791,
+                30.6908673
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 48.8
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-xiaojunmao-zhudazui",
@@ -210,14 +238,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:福字街",
-              "name": "福字街",
-              "nearestNode": 26569,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 653498840,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/653498840",
+              "nodeId": 6124413895,
+              "coordinates": [
+                104.0787631,
+                30.6564167
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 4
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-xiaojunmao-xiaomeitihua",
@@ -243,14 +278,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:崔家店路",
-              "name": "崔家店路",
-              "nearestNode": 19438,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1351749038,
+              "name": "footway",
+              "url": "https://www.openstreetmap.org/way/1351749038",
+              "nodeId": 11329651072,
+              "coordinates": [
+                104.1458201,
+                30.673794
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 2
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -292,14 +334,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:吉祥街",
-              "name": "吉祥街",
-              "nearestNode": 16600,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1436401961,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/1436401961",
+              "nodeId": 13202508537,
+              "coordinates": [
+                104.0582339,
+                30.6697224
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 10.7
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-tiaojie-luodajie",
@@ -325,14 +374,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:肖家河中街",
-              "name": "肖家河中街",
-              "nearestNode": 35238,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 249388334,
+              "name": "科园一路",
+              "url": "https://www.openstreetmap.org/way/249388334",
+              "nodeId": 8463804759,
+              "coordinates": [
+                104.0402307,
+                30.6268286
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 76
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-tiaojie-qiweitbl",
@@ -358,14 +414,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:水碾河路",
-              "name": "水碾河路",
-              "nearestNode": 27278,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 546821222,
+              "name": "unclassified",
+              "url": "https://www.openstreetmap.org/way/546821222",
+              "nodeId": 5283966121,
+              "coordinates": [
+                104.0952048,
+                30.6485693
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 66.3
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -407,14 +470,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:西二道街",
-              "name": "西二道街",
-              "nearestNode": 16381,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 664983841,
+              "name": "东城根中街",
+              "url": "https://www.openstreetmap.org/way/664983841",
+              "nodeId": 6000120310,
+              "coordinates": [
+                104.0578742,
+                30.6674653
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 74.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -456,14 +526,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:水碾河路",
-              "name": "水碾河路",
-              "nearestNode": 30381,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 431694300,
+              "name": "大田坎街",
+              "url": "https://www.openstreetmap.org/way/431694300",
+              "nodeId": 1159155234,
+              "coordinates": [
+                104.0988294,
+                30.6463729
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 136.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-ohyixi-pogaimian",
@@ -489,14 +566,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:一环路北二段",
-              "name": "一环路北二段",
-              "nearestNode": 9479,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 259862183,
+              "name": "顺沙巷",
+              "url": "https://www.openstreetmap.org/way/259862183",
+              "nodeId": 2653288462,
+              "coordinates": [
+                104.0786685,
+                30.6874371
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 106.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-ohyixi-dengshi",
@@ -522,14 +606,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:一环路北二段",
-              "name": "一环路北二段",
-              "nearestNode": 9434,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 184255149,
+              "name": "平福路",
+              "url": "https://www.openstreetmap.org/way/184255149",
+              "nodeId": 1159231411,
+              "coordinates": [
+                104.0824339,
+                30.6876654
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 79.7
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-ohyixi-jinqin",
@@ -555,14 +646,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:金琴路",
-              "name": "金琴路",
-              "nearestNode": 11151,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 267216225,
+              "name": "抚琴西路",
+              "url": "https://www.openstreetmap.org/way/267216225",
+              "nodeId": 14056422018,
+              "coordinates": [
+                104.0373166,
+                30.6792172
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 17.6
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-ohyixi-laohuangji",
@@ -588,14 +686,21 @@
             "reviewedOn": "2026-11-06",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:玉林街",
-              "name": "玉林街",
-              "nearestNode": 32422,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 569688458,
+              "name": "residential",
+              "url": "https://www.openstreetmap.org/way/569688458",
+              "nodeId": 5478294738,
+              "coordinates": [
+                104.062205,
+                30.6298714
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 24.3
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -637,14 +742,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:城隍庙街",
-              "name": "城隍庙街",
-              "nearestNode": 17097,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 576538095,
+              "name": "铜丝街",
+              "url": "https://www.openstreetmap.org/way/576538095",
+              "nodeId": 5529709259,
+              "coordinates": [
+                104.0760289,
+                30.672023
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 32.2
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2022年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -686,14 +798,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:泡桐树街",
-              "name": "泡桐树街",
-              "nearestNode": 21193,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1275918408,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/1275918408",
+              "nodeId": 11846146517,
+              "coordinates": [
+                104.0510726,
+                30.6651187
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 39.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-fengwei-yangesujiaomian",
@@ -719,14 +838,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:金丝街",
-              "name": "金丝街",
-              "nearestNode": 17089,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 576538069,
+              "name": "东玉龙街",
+              "url": "https://www.openstreetmap.org/way/576538069",
+              "nodeId": 1159131856,
+              "coordinates": [
+                104.0774526,
+                30.6674315
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 37.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -755,7 +881,8 @@
           "posterSecond": 20,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-huganpian-maokaoya",
@@ -768,7 +895,8 @@
           "posterSecond": 94,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-huganpian-yezi",
@@ -781,7 +909,8 @@
           "posterSecond": 155,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -823,14 +952,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:汇源北路",
-              "name": "汇源北路",
-              "nearestNode": 30475,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 447844980,
+              "name": "trunk_link",
+              "url": "https://www.openstreetmap.org/way/447844980",
+              "nodeId": 4449099841,
+              "coordinates": [
+                104.1109049,
+                30.6445259
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 57.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -872,14 +1008,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:吉祥街",
-              "name": "吉祥街",
-              "nearestNode": 16790,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 115625961,
+              "name": "东华门街",
+              "url": "https://www.openstreetmap.org/way/115625961",
+              "nodeId": 3633018388,
+              "coordinates": [
+                104.0663241,
+                30.6677904
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 85.8
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -921,14 +1064,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:二仙桥东路",
-              "name": "二仙桥东路",
-              "nearestNode": 9938,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 508550196,
+              "name": "中环路二仙桥西路段",
+              "url": "https://www.openstreetmap.org/way/508550196",
+              "nodeId": 9026224695,
+              "coordinates": [
+                104.1184337,
+                30.6873229
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 181.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -970,14 +1120,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:科华中路",
-              "name": "科华中路",
-              "nearestNode": 39927,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 458883908,
+              "name": "tertiary",
+              "url": "https://www.openstreetmap.org/way/458883908",
+              "nodeId": 4992013274,
+              "coordinates": [
+                104.0748262,
+                30.619393
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 51.7
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -1019,14 +1176,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:莲桂东路",
-              "name": "莲桂东路",
-              "nearestNode": 30258,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 529227598,
+              "name": "莲花中路",
+              "url": "https://www.openstreetmap.org/way/529227598",
+              "nodeId": 5141468658,
+              "coordinates": [
+                104.0971926,
+                30.6393528
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 121.4
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-aji-maojiheyi",
@@ -1053,14 +1217,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:解放西街",
+              "id": 1349232609,
               "name": "解放西街",
-              "nearestNode": 9480,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "url": "https://www.openstreetmap.org/way/1349232609",
+              "nodeId": 10221291920,
+              "coordinates": [
+                104.0812791,
+                30.6908673
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 48.8
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-aji-xiaomeitihua",
@@ -1087,14 +1258,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:十里店路",
-              "name": "十里店路",
-              "nearestNode": 15306,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1351749038,
+              "name": "footway",
+              "url": "https://www.openstreetmap.org/way/1351749038",
+              "nodeId": 11329651072,
+              "coordinates": [
+                104.1458201,
+                30.673794
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 2
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-aji-yongle",
@@ -1120,14 +1298,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:肖家河中街",
-              "name": "肖家河中街",
-              "nearestNode": 31967,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 610837623,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/610837623",
+              "nodeId": 5784542944,
+              "coordinates": [
+                104.0387914,
+                30.6300117
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 4.9
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -1169,14 +1354,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:玉双路",
-              "name": "玉双路",
-              "nearestNode": 22979,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1314660548,
+              "name": "cycleway",
+              "url": "https://www.openstreetmap.org/way/1314660548",
+              "nodeId": 12168292819,
+              "coordinates": [
+                104.0890453,
+                30.6610076
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 22.4
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -1205,7 +1397,8 @@
           "posterSecond": 3,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -1247,14 +1440,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:通盈街",
-              "name": "通盈街",
-              "nearestNode": 30536,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1079223969,
+              "name": "蜀都大道双桂路",
+              "url": "https://www.openstreetmap.org/way/1079223969",
+              "nodeId": 12551143608,
+              "coordinates": [
+                104.1090089,
+                30.6452668
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.8
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -1283,7 +1483,8 @@
           "posterSecond": 12,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -1326,14 +1527,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:肖家河中街",
-              "name": "肖家河中街",
-              "nearestNode": 31967,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 610837623,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/610837623",
+              "nodeId": 5784542944,
+              "coordinates": [
+                104.0387914,
+                30.6300117
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 4.9
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -1375,14 +1583,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:过街楼街",
+              "id": 576684155,
               "name": "过街楼街",
-              "nearestNode": 16464,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "url": "https://www.openstreetmap.org/way/576684155",
+              "nodeId": 5535434841,
+              "coordinates": [
+                104.0566995,
+                30.6722262
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 64.4
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-wasaijizhang-wangtufu",
@@ -1395,7 +1610,8 @@
           "posterSecond": 175,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-wasaijizhang-mawangzi",
@@ -1421,14 +1637,21 @@
             "reviewedOn": "2026-11-07",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:东糠市街",
-              "name": "东糠市街",
-              "nearestNode": 26539,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 653814053,
+              "name": "pedestrian",
+              "url": "https://www.openstreetmap.org/way/653814053",
+              "nodeId": 6127122177,
+              "coordinates": [
+                104.0809558,
+                30.6544644
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 36.6
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -1457,7 +1680,8 @@
           "posterSecond": 28,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -1485,7 +1709,8 @@
           "posterSecond": 3,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2023年原视频 · 营业情况待确认"
         }
       ],
       "sourceSHA256": "3e5b80f186464ebc5e3bacc26a39d8a59df3da5a2dd60c4bea10a7381834f030"
@@ -1526,14 +1751,21 @@
             "reviewedOn": "2026-11-08",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:中纱帽街",
-              "name": "中纱帽街",
-              "nearestNode": 26484,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 837186671,
+              "name": "东里广场",
+              "url": "https://www.openstreetmap.org/way/837186671",
+              "nodeId": 7813478065,
+              "coordinates": [
+                104.0818753,
+                30.6552403
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 8.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ],
       "sourceSHA256": "996de18106b2dd5a09771a59095c52b516eb636772e1830639943d99e4e34b72"
@@ -1562,7 +1794,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ],
       "sourceSHA256": "f46f972107bcef63f439edffaf93fc83047dd083841d04957f86c971ecb1264c"
@@ -1603,14 +1836,21 @@
             "reviewedOn": "2026-11-08",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:马鞍北路",
-              "name": "马鞍北路",
-              "nearestNode": 9592,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 184255149,
+              "name": "平福路",
+              "url": "https://www.openstreetmap.org/way/184255149",
+              "nodeId": 1947583867,
+              "coordinates": [
+                104.0865201,
+                30.685744
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 28.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-shashayouchanle-huishuizhen",
@@ -1636,14 +1876,21 @@
             "reviewedOn": "2026-11-08",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:东大街下东大街段",
-              "name": "东大街下东大街段",
-              "nearestNode": 26640,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 653870396,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/653870396",
+              "nodeId": 6127623169,
+              "coordinates": [
+                104.0822043,
+                30.6536011
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 35.9
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-shashayouchanle-tandouhua",
@@ -1669,14 +1916,21 @@
             "reviewedOn": "2026-11-08",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:太升南路",
-              "name": "太升南路",
-              "nearestNode": 22741,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1453244920,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/1453244920",
+              "nodeId": 13327379966,
+              "coordinates": [
+                104.0782656,
+                30.6626719
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 15.6
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ],
       "sourceSHA256": "4f895c5fe9a9628ac61c4ae63b3f4332ac31ab34ef5809c924153eba59ca9a7e"
@@ -1705,7 +1959,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ],
       "sourceSHA256": "404503f857fca947aff3e131920b10f7466ac56f95a8f919907e465ce7ac2068"
@@ -1747,14 +2002,21 @@
             "reviewedOn": "2026-11-08",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:猛追湾街",
-              "name": "猛追湾街",
-              "nearestNode": 17250,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 185262449,
+              "name": "东较场街",
+              "url": "https://www.openstreetmap.org/way/185262449",
+              "nodeId": 8240098415,
+              "coordinates": [
+                104.0890189,
+                30.6688408
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 27.4
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2021年原视频 · 营业情况待确认"
         }
       ],
       "sourceSHA256": "58ebc003f7f0c2180706723757d2ba84da12b8642caf77c979be3afae0001fa0"
@@ -1795,14 +2057,21 @@
             "reviewedOn": "2026-11-08",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:牛市口路",
-              "name": "牛市口路",
-              "nearestNode": 30415,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1024870185,
+              "name": "海椒市横街",
+              "url": "https://www.openstreetmap.org/way/1024870185",
+              "nodeId": 9450048744,
+              "coordinates": [
+                104.1022485,
+                30.6407879
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 75.7
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-yizhihedapang-heji",
@@ -1828,14 +2097,21 @@
             "reviewedOn": "2026-11-08",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:文庙西街",
-              "name": "文庙西街",
-              "nearestNode": 25777,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1369163288,
+              "name": "footway",
+              "url": "https://www.openstreetmap.org/way/1369163288",
+              "nodeId": 12680866080,
+              "coordinates": [
+                104.0537721,
+                30.6510368
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 22.2
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-yizhihedapang-shuaiji",
@@ -1861,14 +2137,21 @@
             "reviewedOn": "2026-11-08",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:兴禅寺街",
-              "name": "兴禅寺街",
-              "nearestNode": 17732,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1500148456,
+              "name": "footway",
+              "url": "https://www.openstreetmap.org/way/1500148456",
+              "nodeId": 13736794660,
+              "coordinates": [
+                104.0941045,
+                30.6705442
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 99.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ],
       "sourceSHA256": "3270d0d83e8c06997f3c9d43f306891a8dc9422e7ec7d5abcfbfb3184bb6eac1"
@@ -1909,14 +2192,21 @@
             "reviewedOn": "2026-11-08",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:一环路南一段",
-              "name": "一环路南一段",
-              "nearestNode": 29829,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 116428417,
+              "name": "unclassified",
+              "url": "https://www.openstreetmap.org/way/116428417",
+              "nodeId": 7823188846,
+              "coordinates": [
+                104.0801165,
+                30.639921
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 44.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ],
       "sourceSHA256": "5d5d9d069df8fdb8a1e9f2d8315633ca8dff5d1120623928c44c44bf5dc7a012"
@@ -1945,7 +2235,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ],
       "sourceSHA256": "d27bfaf8f385d36dc8440615a04da8ab352e78c15abf2eb776f17a1dcb2440bb"
@@ -1974,7 +2265,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ],
       "sourceSHA256": "5f644b8f2ac1fdbe54f62cbf22c525bb91bf988c74759f6918d63030b96c30d7"
@@ -2017,14 +2309,21 @@
             "reviewedOn": "2026-11-08",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:金丝街",
-              "name": "金丝街",
-              "nearestNode": 17089,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 576538069,
+              "name": "东玉龙街",
+              "url": "https://www.openstreetmap.org/way/576538069",
+              "nodeId": 1159131856,
+              "coordinates": [
+                104.0774526,
+                30.6674315
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 37.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2022年原视频 · 营业情况待确认"
         }
       ],
       "sourceSHA256": "8e9b8ba70374c17c5116e163b010fe7b95e68b2c42c0437443451c6a9ac3b9b5"
@@ -2053,7 +2352,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ],
       "sourceSHA256": "c7073004cb0470408567a92855be2f1143e19b5408527a81967112d661279eb2"
@@ -2096,14 +2396,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:锦绣路",
-              "name": "锦绣路",
-              "nearestNode": 36038,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 100288864,
+              "name": "棕竹街",
+              "url": "https://www.openstreetmap.org/way/100288864",
+              "nodeId": 1159173348,
+              "coordinates": [
+                104.0726317,
+                30.6276025
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 26.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2145,14 +2452,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:双桥路南四街",
-              "name": "双桥路南四街",
-              "nearestNode": 27301,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 576557606,
+              "name": "双桥路南三街",
+              "url": "https://www.openstreetmap.org/way/576557606",
+              "nodeId": 5529818156,
+              "coordinates": [
+                104.1039971,
+                30.6508768
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 21.2
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-danniushi-shuangsaomian",
@@ -2178,14 +2492,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:蜀都大道水碾河路",
+              "id": 132645765,
               "name": "蜀都大道水碾河路",
-              "nearestNode": 27182,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "url": "https://www.openstreetmap.org/way/132645765",
+              "nodeId": 5529818133,
+              "coordinates": [
+                104.1026113,
+                30.6481947
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 39.4
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-danniushi-tiemen",
@@ -2212,14 +2533,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:牛市口路",
-              "name": "牛市口路",
-              "nearestNode": 30415,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1024870185,
+              "name": "海椒市横街",
+              "url": "https://www.openstreetmap.org/way/1024870185",
+              "nodeId": 9450048744,
+              "coordinates": [
+                104.1022485,
+                30.6407879
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 75.7
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-danniushi-zhulouxiangmaocai",
@@ -2245,14 +2573,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:红星路三段",
-              "name": "红星路三段",
-              "nearestNode": 26648,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 654064412,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/654064412",
+              "nodeId": 6129339628,
+              "coordinates": [
+                104.079566,
+                30.6544723
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 35.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-danniushi-shuijindoutang",
@@ -2278,14 +2613,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:水津街",
-              "name": "水津街",
-              "nearestNode": 30217,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 288150150,
+              "name": "residential",
+              "url": "https://www.openstreetmap.org/way/288150150",
+              "nodeId": 2917001738,
+              "coordinates": [
+                104.0885837,
+                30.6463626
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 15.4
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-danniushi-heji",
@@ -2312,14 +2654,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:文庙西街",
-              "name": "文庙西街",
-              "nearestNode": 25777,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1369163288,
+              "name": "footway",
+              "url": "https://www.openstreetmap.org/way/1369163288",
+              "nodeId": 12680866080,
+              "coordinates": [
+                104.0537721,
+                30.6510368
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 22.2
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-danniushi-zhongshuijiao",
@@ -2345,14 +2694,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:祠堂街",
-              "name": "祠堂街",
-              "nearestNode": 25642,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 664983822,
+              "name": "steps",
+              "url": "https://www.openstreetmap.org/way/664983822",
+              "nodeId": 6224262528,
+              "coordinates": [
+                104.0589032,
+                30.6563914
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 53.6
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-danniushi-meitihua",
@@ -2378,14 +2734,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:水碾河路",
-              "name": "水碾河路",
-              "nearestNode": 27196,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 53103848,
+              "name": "一心桥横街",
+              "url": "https://www.openstreetmap.org/way/53103848",
+              "nodeId": 5213238599,
+              "coordinates": [
+                104.0979111,
+                30.6502082
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 140.7
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-danniushi-tangyouguozi",
@@ -2411,14 +2774,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:实业街",
-              "name": "实业街",
-              "nearestNode": 16387,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 576684162,
+              "name": "栅子街",
+              "url": "https://www.openstreetmap.org/way/576684162",
+              "nodeId": 7365692382,
+              "coordinates": [
+                104.0521718,
+                30.6692276
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 103.3
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2461,14 +2831,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:中纱帽街",
-              "name": "中纱帽街",
-              "nearestNode": 26484,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 837186671,
+              "name": "东里广场",
+              "url": "https://www.openstreetmap.org/way/837186671",
+              "nodeId": 7813478065,
+              "coordinates": [
+                104.0818753,
+                30.6552403
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 8.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2510,14 +2887,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:蜀汉路",
+              "id": 919971699,
               "name": "蜀汉路",
-              "nearestNode": 8477,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "url": "https://www.openstreetmap.org/way/919971699",
+              "nodeId": 432442597,
+              "coordinates": [
+                104.0252154,
+                30.686395
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 73.4
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2559,14 +2943,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:棕南西街",
+              "id": 100288857,
               "name": "棕南西街",
-              "nearestNode": 36125,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "url": "https://www.openstreetmap.org/way/100288857",
+              "nodeId": 1159173116,
+              "coordinates": [
+                104.0697696,
+                30.626184
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 71.8
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2608,14 +2999,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:双福二路",
-              "name": "双福二路",
-              "nearestNode": 23470,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 100286745,
+              "name": "tertiary",
+              "url": "https://www.openstreetmap.org/way/100286745",
+              "nodeId": 7944100840,
+              "coordinates": [
+                104.1090706,
+                30.6596477
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 34.9
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2644,7 +3042,8 @@
           "posterSecond": 15,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2687,14 +3086,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:解放西街",
+              "id": 1349232609,
               "name": "解放西街",
-              "nearestNode": 9480,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "url": "https://www.openstreetmap.org/way/1349232609",
+              "nodeId": 10221291920,
+              "coordinates": [
+                104.0812791,
+                30.6908673
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 48.8
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2737,14 +3143,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:一环路西一段",
-              "name": "一环路西一段",
-              "nearestNode": 28585,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 28620972,
+              "name": "七道堰街",
+              "url": "https://www.openstreetmap.org/way/28620972",
+              "nodeId": 5628752492,
+              "coordinates": [
+                104.0387593,
+                30.6456704
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 39.2
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2787,14 +3200,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:科华中路",
-              "name": "科华中路",
-              "nearestNode": 39927,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 458883908,
+              "name": "tertiary",
+              "url": "https://www.openstreetmap.org/way/458883908",
+              "nodeId": 4992013274,
+              "coordinates": [
+                104.0748262,
+                30.619393
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 51.7
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2823,7 +3243,8 @@
           "posterSecond": 25,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2024年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -2865,14 +3286,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:二环路东四段",
-              "name": "二环路东四段",
-              "nearestNode": 30325,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 230073897,
+              "name": "trunk_link",
+              "url": "https://www.openstreetmap.org/way/230073897",
+              "nodeId": 8279158524,
+              "coordinates": [
+                104.1050051,
+                30.6421039
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 36
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -2915,14 +3343,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:玉双路",
-              "name": "玉双路",
-              "nearestNode": 22979,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 1314660548,
+              "name": "cycleway",
+              "url": "https://www.openstreetmap.org/way/1314660548",
+              "nodeId": 12168292819,
+              "coordinates": [
+                104.0890453,
+                30.6610076
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 22.4
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -2965,14 +3400,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:马鞍北路",
-              "name": "马鞍北路",
-              "nearestNode": 9592,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 184255149,
+              "name": "平福路",
+              "url": "https://www.openstreetmap.org/way/184255149",
+              "nodeId": 1947583867,
+              "coordinates": [
+                104.0865201,
+                30.685744
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 28.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -3001,7 +3443,8 @@
           "posterSecond": 18,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3043,14 +3486,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:一环路西一段",
-              "name": "一环路西一段",
-              "nearestNode": 28585,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 28620972,
+              "name": "七道堰街",
+              "url": "https://www.openstreetmap.org/way/28620972",
+              "nodeId": 5628752492,
+              "coordinates": [
+                104.0387593,
+                30.6456704
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 39.2
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3079,7 +3529,8 @@
           "posterSecond": 20,
           "coordinates": null,
           "locationStatus": "unlocated-source",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -3121,14 +3572,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:红星路三段",
-              "name": "红星路三段",
-              "nearestNode": 22871,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 653498840,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/653498840",
+              "nodeId": 6124413896,
+              "coordinates": [
+                104.079136,
+                30.6569681
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 47.7
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3158,7 +3616,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -3201,14 +3660,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:中纱帽街",
-              "name": "中纱帽街",
-              "nearestNode": 26484,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 837186671,
+              "name": "东里广场",
+              "url": "https://www.openstreetmap.org/way/837186671",
+              "nodeId": 7813478065,
+              "coordinates": [
+                104.0818753,
+                30.6552403
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 8.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3250,14 +3716,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:东光北顺街",
-              "name": "东光北顺街",
-              "nearestNode": 40342,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 197866411,
+              "name": "东光街",
+              "url": "https://www.openstreetmap.org/way/197866411",
+              "nodeId": 4874328128,
+              "coordinates": [
+                104.1020512,
+                30.6196941
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 57
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3299,14 +3772,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:奎星楼街",
-              "name": "奎星楼街",
-              "nearestNode": 16393,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 352188738,
+              "name": "商业后街",
+              "url": "https://www.openstreetmap.org/way/352188738",
+              "nodeId": 14245487103,
+              "coordinates": [
+                104.0536542,
+                30.6687024
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 26.5
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-sangesan-maojiaonailiang",
@@ -3332,14 +3812,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:奎星楼街",
-              "name": "奎星楼街",
-              "nearestNode": 16463,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 576684162,
+              "name": "栅子街",
+              "url": "https://www.openstreetmap.org/way/576684162",
+              "nodeId": 3579517905,
+              "coordinates": [
+                104.0532696,
+                30.6687551
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 81.6
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         },
         {
           "id": "cd-sangesan-wumingmaocai",
@@ -3365,14 +3852,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:奎星楼街",
-              "name": "奎星楼街",
-              "nearestNode": 16463,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 576684162,
+              "name": "栅子街",
+              "url": "https://www.openstreetmap.org/way/576684162",
+              "nodeId": 3579517905,
+              "coordinates": [
+                104.0532696,
+                30.6687551
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 42.7
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -3414,14 +3908,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:紫薇东路",
-              "name": "紫薇东路",
-              "nearestNode": 39647,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 476887194,
+              "name": "residential",
+              "url": "https://www.openstreetmap.org/way/476887194",
+              "nodeId": 4703149490,
+              "coordinates": [
+                104.0674101,
+                30.6125572
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 29
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3463,14 +3964,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:解放路一段",
-              "name": "解放路一段",
-              "nearestNode": 9591,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 574533193,
+              "name": "树蓓街",
+              "url": "https://www.openstreetmap.org/way/574533193",
+              "nodeId": 1947583864,
+              "coordinates": [
+                104.0871758,
+                30.6867585
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 89
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -3512,14 +4020,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:抚琴南路",
-              "name": "抚琴南路",
-              "nearestNode": 8705,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 463405570,
+              "name": "营康路",
+              "url": "https://www.openstreetmap.org/way/463405570",
+              "nodeId": 4586722652,
+              "coordinates": [
+                104.0367545,
+                30.6864041
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 34.7
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-tiaojieshuachengdu-heizhu",
@@ -3545,14 +4060,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:抚琴西路",
-              "name": "抚琴西路",
-              "nearestNode": 8696,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 347930335,
+              "name": "residential",
+              "url": "https://www.openstreetmap.org/way/347930335",
+              "nodeId": 3541389072,
+              "coordinates": [
+                104.0355095,
+                30.6874765
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 36
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3566,7 +4088,7 @@
       "publishedOn": "2026-03-10",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 134.07,
-      "sourceSHA256": "329fe81b97319989ba6254058d84a7e9e51dd8c3bb486e926f491c107e05e534",
+      "sourceSHA256": "329fe81b9731b37bcac0fa908798fc46a2212f1fc3daddf90f98cf2bb2283463",
       "acquisitionStatus": "local-source",
       "evidenceNote": "原片实探北门金牛区洞子口路老牌社区九宫格老火锅，素菜2.8元起步，锅底牛油醇厚、麻辣浓郁，招牌手撕鲜毛肚、现切吊龙与非遗老火锅底料，市井性价比爆棚。",
       "segments": [
@@ -3594,14 +4116,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:洞子口路",
-              "name": "洞子口路",
-              "nearestNode": 4304,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 469506109,
+              "name": "赛云台北支路",
+              "url": "https://www.openstreetmap.org/way/469506109",
+              "nodeId": 1815729262,
+              "coordinates": [
+                104.0676995,
+                30.7144187
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 85.9
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3615,7 +4144,7 @@
       "publishedOn": "2026-07-20",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 188.22,
-      "sourceSHA256": "7f0da142852e4610fe586735e5ef07a39ba67356262a632095ba69a5a76e017d",
+      "sourceSHA256": "7f0da142852ee0a9f1e5fd2411ff6151a274906702267ed689bc19ea09e17dbd",
       "acquisitionStatus": "local-source",
       "evidenceNote": "原片实探老北门洞子口棚户级传奇烧烤神店卢大众烧烤，主打炭火原味现烤鲜牛肉、鲜鸡尖、爆浆松板肉与猪鼻筋，拒绝厚重码料，深受老街坊喜爱。",
       "segments": [
@@ -3643,14 +4172,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:中环路洞子口路段",
-              "name": "中环路洞子口路段",
-              "nearestNode": 1518,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 815092910,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/815092910",
+              "nodeId": 7613581891,
+              "coordinates": [
+                104.0662765,
+                30.718064
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3664,7 +4200,7 @@
       "publishedOn": "2026-05-28",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 713.26,
-      "sourceSHA256": "e42d9553df813e8fbff4dd62baefcebb51f71df170e17c093a0ca385cfcf131e",
+      "sourceSHA256": "e42d9553df8166592922b4769cdac2ed9a85d0211917761807d16a7f86adffa5",
       "acquisitionStatus": "local-source",
       "evidenceNote": "原片深度探寻成都经典早餐：北门张婆婆香酥锅盔夹牛肉与凉粉、成都50强食而百面馆酸辣鸡杂面，传承老成都早市地道风味。",
       "segments": [
@@ -3692,14 +4228,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:树德二路",
-              "name": "树德二路",
-              "nearestNode": 9420,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 259862182,
+              "name": "service",
+              "url": "https://www.openstreetmap.org/way/259862182",
+              "nodeId": 2653287868,
+              "coordinates": [
+                104.0778809,
+                30.6859046
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-danniushi-zhangpopoguokui",
@@ -3725,14 +4268,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:一环路北二段",
-              "name": "一环路北二段",
-              "nearestNode": 9484,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 136777277,
+              "name": "互助路",
+              "url": "https://www.openstreetmap.org/way/136777277",
+              "nodeId": 1500638622,
+              "coordinates": [
+                104.080278,
+                30.686871
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3746,7 +4296,7 @@
       "publishedOn": "2026-08-16",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 584.56,
-      "sourceSHA256": "705199629d93eb4cb6e8d2e8aa1c7263544ec4e3c5ecf479d45388c679a95fb3",
+      "sourceSHA256": "705199629d93c897cbde8143e934036ac4a6a0d3bf5b59645a0f1a15829f30e2",
       "acquisitionStatus": "local-source",
       "evidenceNote": "张喜喜居家点单评测成都11家高口碑特色外卖，涵盖多款热门冒菜、特色拌鸡与网红甜品，无单一固定实体门店堂食落点，保留原始探店评测记录。",
       "segments": [
@@ -3762,7 +4312,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3776,7 +4327,7 @@
       "publishedOn": "2026-05-02",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 226.73,
-      "sourceSHA256": "3ad7a784eb51ffeb3f9a7aa76fc939ca6e00b848bb4477c7f42cf05d3763f019",
+      "sourceSHA256": "3ad7a784eb518ddb4be7037cb45fea58678533902cd90b9b9ad64f6b28e9ee57",
       "acquisitionStatus": "local-source",
       "evidenceNote": "原片实探武侯区紫薇东路谢逍遥山城大排档，多博主同店合用锚点；打卡现杀黑豆花沸腾鱼、油焖蟹与拉丝番茄炒蛋，麻辣鲜香、锅气十足。",
       "segments": [
@@ -3805,14 +4356,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:紫薇东路",
-              "name": "紫薇东路",
-              "nearestNode": 39647,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 476887194,
+              "name": "residential",
+              "url": "https://www.openstreetmap.org/way/476887194",
+              "nodeId": 4703149490,
+              "coordinates": [
+                104.0674101,
+                30.6125572
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 29
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3826,7 +4384,7 @@
       "publishedOn": "2026-02-18",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 178.56,
-      "sourceSHA256": "7a7ba4f18792e3ba159dc23bc3620e7e1aa71f9cfd41a310860528e530feecb8",
+      "sourceSHA256": "7a7ba4f18792d2a3e337a41407eadf3c77f60a32f9db1f83542523acad413abc",
       "acquisitionStatus": "local-source",
       "evidenceNote": "刘雨鑫JASON穿行成都老街坊偶遇的市井老火锅摊，荤菜9元均一、现切鲜牛肉，无固定招牌与工商注册门牌，记录地道成都街头烟火气。",
       "segments": [
@@ -3842,7 +4400,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3856,7 +4415,7 @@
       "publishedOn": "2026-07-06",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 776.85,
-      "sourceSHA256": "1cd951ff41279b97771e847c2fb813c9eefb40d4212ecf41d06ca223ea4e1169",
+      "sourceSHA256": "1cd951ff41271db6e22fe47e09e14a60b942eb1deed3ef1eda8e1e2b1549d42a",
       "acquisitionStatus": "local-source",
       "evidenceNote": "丹妮妮妮妮打卡自贡特色江湖菜与炭火烧烤宵师父，爆炒香辣盆盆虾、热辣鲜兔与烤驴肉。因位于郫都区蜀都万达广场，超出中心五城区底图范围，严格遵循真实地理不上图。",
       "segments": [
@@ -3872,7 +4431,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -3886,7 +4446,7 @@
       "publishedOn": "2022-07-06",
       "publishedOnNote": "春熙路探店指南",
       "durationSeconds": 212.53,
-      "sourceSHA256": "8722b6fcddada30e8c454e5672ea5a17684d081f2ba95f4e3c3b03f0b2f5b5b0",
+      "sourceSHA256": "8722b6fcddada1223907bccf190007ccff7c5c9069fb65a9b89aec623520eaee",
       "acquisitionStatus": "local-source",
       "evidenceNote": "刘雨鑫JASON实地巡礼春熙路步行街小吃摊位，实测招牌降龙爪爪、嗨岛兔与各类网红街头小吃，客观评析调味与口感特色。",
       "segments": [
@@ -3914,14 +4474,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:春熙路",
-              "name": "春熙路",
-              "nearestNode": 26498,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 653814055,
+              "name": "pedestrian",
+              "url": "https://www.openstreetmap.org/way/653814055",
+              "nodeId": 6127624898,
+              "coordinates": [
+                104.0815728,
+                30.6559241
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2022年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -3935,7 +4502,7 @@
       "publishedOn": "2025-06-15",
       "publishedOnNote": "特厨探店系列",
       "durationSeconds": 192.73,
-      "sourceSHA256": "718c3a38837f4fe9a6230f2f0a1cbb09249ba9c7e096414777da7a1512db73ee",
+      "sourceSHA256": "718c3a38837f421fce676af67c5e9ac82141731a13861aa4b4b5e432f3c90946",
       "acquisitionStatus": "local-source",
       "evidenceNote": "特厨隋坡探访完全没有外地游客的成都本地老小馆包家兄弟餐馆，连干三碗米饭，实测招牌回锅牛肉、麻婆豆腐，豆瓣酱香浓郁、镬气十足。",
       "segments": [
@@ -3963,14 +4530,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:包家巷",
-              "name": "包家巷",
-              "nearestNode": 21455,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 458891612,
+              "name": "蜀都大道少城路",
+              "url": "https://www.openstreetmap.org/way/458891612",
+              "nodeId": 4548211349,
+              "coordinates": [
+                104.053946,
+                30.6624698
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -3984,7 +4558,7 @@
       "publishedOn": "2025-09-24",
       "publishedOnNote": "王迅逛玉林菜市",
       "durationSeconds": 332.58,
-      "sourceSHA256": "6abcaf3175bb870c58e5ff4e24eb224ff2337d404099d0e2e987c676f2d29402",
+      "sourceSHA256": "6abcaf3175bb6309ed7e2e78e9fc09e605240b56b6429253a076d7f306b81090",
       "acquisitionStatus": "local-source",
       "evidenceNote": "演员王迅每次回成都必逛的玉林综合菜市场，实探风骨兔手撕麻椒鸡、香酥去骨风骨兔，肉质紧实麻辣过瘾，老成都菜市烟火气一览无余。",
       "segments": [
@@ -4012,14 +4586,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:玉林西街",
-              "name": "玉林西街",
-              "nearestNode": 32478,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 37127680,
+              "name": "玉林中路",
+              "url": "https://www.openstreetmap.org/way/37127680",
+              "nodeId": 11799930358,
+              "coordinates": [
+                104.0556992,
+                30.6287793
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -4033,7 +4614,7 @@
       "publishedOn": "2026-06-20",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 674.94,
-      "sourceSHA256": "5979f428c0db168a737d6e87f8976fe7ae992021666cb69bbf5cb3a0d53cbfd5",
+      "sourceSHA256": "ffc199ddd5a55e273221bb850c6c4f84a32e2f6f6a7a32874176d116f04e1b7b",
       "acquisitionStatus": "local-source",
       "evidenceNote": "小紧张的虫虫落地成都打卡连续两年荣获米其林必比登推介的年丰饭店，实测9道招牌川菜：红油浓郁的凉拌鸡、鲜香软嫩的豆瓣鲜鱼与下饭神菜，见证老馆子深厚功底。",
       "segments": [
@@ -4061,14 +4642,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:棕树南街",
-              "name": "棕树南街",
-              "nearestNode": 36607,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 100288846,
+              "name": "航空路",
+              "url": "https://www.openstreetmap.org/way/100288846",
+              "nodeId": 2733352544,
+              "coordinates": [
+                104.0770763,
+                30.6189484
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 10.2
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -4082,7 +4670,7 @@
       "publishedOn": "2026-09-24",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 153.73,
-      "sourceSHA256": "0f57cbe5e686cb00cf34b4fbf349ec6a0a996bcff24c5ee9cefb3f37502474aa",
+      "sourceSHA256": "0f57cbe5e68666559fa878c129184f45f8b902fd8136c3678d4682fd8ea93d06",
       "acquisitionStatus": "local-source",
       "evidenceNote": "小解实探锦江区东门市井内的正南齐北重庆老火锅，主打老重庆九宫格纯牛油锅底、屠场现撕鲜毛肚与爆款竹笋虾滑，本地老饕云集的人气火锅。",
       "segments": [
@@ -4110,14 +4698,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:菱窠西路",
-              "name": "菱窠西路",
-              "nearestNode": 37105,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 926678219,
+              "name": "静沙北路",
+              "url": "https://www.openstreetmap.org/way/926678219",
+              "nodeId": 11066485830,
+              "coordinates": [
+                104.115361,
+                30.6280057
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -4131,7 +4726,7 @@
       "publishedOn": "2026-10-25",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 390.86,
-      "sourceSHA256": "d841fdaf2feaf0c55fe82d56d2e61df3fa65239a9c2d1b7eb7eb76aa8c0570b5",
+      "sourceSHA256": "d841fdaf2fea909b403db151d5165366d27b4962ce50bf3961122b9af0dd49f2",
       "acquisitionStatus": "local-source",
       "evidenceNote": "说唱歌手PSY.P杨队实地探访金牛区人气鲜货烧烤小店，主打炭火原味小串不用撒料便鲜美多汁，现切牛肉、鲜鸭舌与乌鱼片原汁原味，市井氛围浓厚。",
       "segments": [
@@ -4147,7 +4742,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -4161,7 +4757,7 @@
       "publishedOn": "2026-01-04",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 181.84,
-      "sourceSHA256": "6ef0fc1fd49bedd6a62a74c2bc27c62d85ce091d37446bb90c8897c9b36d0e8e",
+      "sourceSHA256": "6ef0fc1fd49b16060b59e0a0a598a808aea1c3e230dd6aa9f93cb385097191e5",
       "acquisitionStatus": "local-source",
       "evidenceNote": "Renyi毅哥专程驱车往返3小时奔赴川西乡镇赶场菜市，打卡排队爆棚的传统老式现烫鲜粉配爆汁节子，纯手工红薯粉与自炼红油，因地处远郊乡镇赶场市集，不上图造点。",
       "segments": [
@@ -4177,7 +4773,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -4191,7 +4788,7 @@
       "publishedOn": "2026-09-11",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 448,
-      "sourceSHA256": "d9384be932717bf5137233aa5a133461298492f2545d13d72ec5c99e7c3e5db7",
+      "sourceSHA256": "d9384be9327172b442bf147932e7f1b4f6dce10f9c4a7121d964691af85daa7b",
       "acquisitionStatus": "local-source",
       "evidenceNote": "队长0527深夜路边小摊独自小酌撸串，百元夜宵烤肉抚慰身心，生活九分努力留下一分犒劳自己，无固定门牌招牌。",
       "segments": [
@@ -4207,7 +4804,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -4221,7 +4819,7 @@
       "publishedOn": "2025-11-26",
       "publishedOnNote": "贵州安顺寻味",
       "durationSeconds": 1082.5,
-      "sourceSHA256": "c0bcfbd2027d142100dc05cf52eb71db1331776953fc9d17d598585e13554098",
+      "sourceSHA256": "c0bcfbd2027d8898bb8be1b1d768dc5b1fcd272a0166e5c1c59ee324b44e87cf",
       "acquisitionStatus": "local-source",
       "evidenceNote": "盗月社食遇记实探贵州省安顺市特色炸猪蹄爆米花、酸辣炖猪蹄与自助烤小肠，展示安顺人极高吃商。因属贵州省安顺市，严格遵循地理真实规范，不上图造点。",
       "segments": [
@@ -4237,7 +4835,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -4251,7 +4850,7 @@
       "publishedOn": "2026-06-30",
       "publishedOnNote": "重庆探店系列",
       "durationSeconds": 246.6,
-      "sourceSHA256": "6a7ddcacd678c187be06992d9bb471e9f19316d3f2ec8da7713d297d02566db9",
+      "sourceSHA256": "6a7ddcacd67878afc5227a89a461f0335b5134a332a13bdc8f2bb3a7ff699f3f",
       "acquisitionStatus": "local-source",
       "evidenceNote": "特厨隋坡实探重庆本地人口碑食堂口未餐家常菜，实尝海带蹄花肚子汤、烧椒皮蛋与肉末土豆泥下饭神器。因地处重庆市，严格遵循地理真实规范，不上图造点。",
       "segments": [
@@ -4267,7 +4866,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -4281,7 +4881,7 @@
       "publishedOn": "2025-04-28",
       "publishedOnNote": "2025年探店视频",
       "durationSeconds": 315.17,
-      "sourceSHA256": "5c057411647573f08146747d7c67428f5228c2e646f9024f0c78a0c202022b7a",
+      "sourceSHA256": "5c05741164759558e7437a727318594dafdf536f2e72a57f9a562874992e28b0",
       "acquisitionStatus": "local-source",
       "evidenceNote": "巨爱吃的周嘉伟居家大碗贡菜肥牛凤爪螺蛳粉配麻辣小龙虾串与黑椒土豆泥炸鸡，居家无店铺堂食门牌。",
       "segments": [
@@ -4297,7 +4897,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -4311,7 +4912,7 @@
       "publishedOn": "2026-05-25",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 875.67,
-      "sourceSHA256": "357e61870d65b16e87f3e1b7473a2164d50937a892705ddaa52c80c2f8d3b841",
+      "sourceSHA256": "357e61870d652aff8811d76b75cfeda5c1e289ef02d1aafdb73ddad8ffcf797a",
       "acquisitionStatus": "local-source",
       "evidenceNote": "小珍来咯打卡重庆市渝中区解放碑较场口天棒老火锅，体验浓郁红油锅底、大苕皮、糖心鱿鱼与特色肥肠炒饭。因地处重庆解放碑较场口，严格遵循地理真实规范，不上图造点。",
       "segments": [
@@ -4327,7 +4928,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -4357,7 +4959,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -4371,7 +4974,7 @@
       "publishedOn": "2026-03-04",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 317.74,
-      "sourceSHA256": "a1429fe7f6f072ca745287f3ca85f403980bcba757656360c7df18f2bb8726ba",
+      "sourceSHA256": "a1429fe7f6f0bf4376ef818e924de2e30f593a64414cdac67761c10a6f983d4a",
       "acquisitionStatus": "local-source",
       "evidenceNote": "千金饱了挑战火爆全网的刘文祥麻辣烫，必点吸汁黄细面、软糯黄粗面与香辣小酥肉，裹满浓郁麻酱与特调辣椒油，黏糊咸香、回味无穷。",
       "segments": [
@@ -4399,14 +5002,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:大慈寺路",
-              "name": "大慈寺路",
-              "nearestNode": 26433,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 498978535,
+              "name": "东顺城南街",
+              "url": "https://www.openstreetmap.org/way/498978535",
+              "nodeId": 5530209139,
+              "coordinates": [
+                104.0836482,
+                30.6556164
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -4420,7 +5030,7 @@
       "publishedOn": "2026-04-18",
       "publishedOnNote": "2026年探店视频",
       "durationSeconds": 325.91,
-      "sourceSHA256": "a1ecad2cea16f2c3bf88a6d7bb9dd18bf5d48c0800e9989bce256e30b62e49c7",
+      "sourceSHA256": "a1ecad2cea1641debe6a53043307134135e74461d9de8d3d0b722aa7c112af59",
       "acquisitionStatus": "local-source",
       "evidenceNote": "太古里常住博主叫我Finn无广实测锦江区与太古里周边高分外卖名店：太升南路老字号黄嬢甜不辣、东门大桥桃香源火锅鸡。",
       "segments": [
@@ -4448,14 +5058,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:天仙桥南路",
-              "name": "天仙桥南路",
-              "nearestNode": 26970,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 288172904,
+              "name": "牛王庙巷",
+              "url": "https://www.openstreetmap.org/way/288172904",
+              "nodeId": 5529897029,
+              "coordinates": [
+                104.0886457,
+                30.651366
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.1
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         },
         {
           "id": "cd-finn-huangniang",
@@ -4481,14 +5098,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:太升南路",
+              "id": 576538100,
               "name": "太升南路",
-              "nearestNode": 17019,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "url": "https://www.openstreetmap.org/way/576538100",
+              "nodeId": 5529709282,
+              "coordinates": [
+                104.0743759,
+                30.6662048
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 10.9
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2026年原视频 · 出发前请核实营业状态"
         }
       ]
     },
@@ -4502,7 +5126,7 @@
       "publishedOn": "2024-06-18",
       "publishedOnNote": "2024年探店视频",
       "durationSeconds": 630.65,
-      "sourceSHA256": "53878a16aed2591bfeaeefcefc52aeb0498a9c2d1b72a0889c25dafc0534267e",
+      "sourceSHA256": "53878a16aed2b6eacb074e0725a7ef5f3a1ff081792f4ae0ee7898a777d352b7",
       "acquisitionStatus": "local-source",
       "evidenceNote": "小笼人极限8小时逛吃成都街头，实尝酸辣豆花、手撕兔肉、火锅底料辣条与现蒸蒸饺，体验老成都街头小吃风味。",
       "segments": [
@@ -4518,7 +5142,8 @@
           "coordinates": null,
           "locationStatus": "unlocated-source",
           "coordinateSystem": "WGS84",
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2024年原视频 · 营业情况待确认"
         }
       ]
     },
@@ -4532,7 +5157,7 @@
       "publishedOn": "2025-04-28",
       "publishedOnNote": "成都避坑指南",
       "durationSeconds": 313.3,
-      "sourceSHA256": "2b81176fe0fa48f80bb1e17d98be77fa643884ea21c29b6264ffdfcb8eb865fe",
+      "sourceSHA256": "2b81176fe0faa22800d22b1108bdbadf9c6d12e17a165f25a72f19fc5dfe21ed",
       "acquisitionStatus": "local-source",
       "evidenceNote": "淦诗岐成都避坑指南力荐的老字号社区火锅天星正源火锅，成华区地勘路二仙桥老店，手工炒制底料无添加，招牌极品鲜腰片大且脆嫩、鲜毛肚与鲜鸭血越煮越香。",
       "segments": [
@@ -4560,14 +5185,21 @@
             "reviewedOn": "2026-11-09",
             "anchor": {
               "kind": "osm-way",
-              "id": "road:地勘路",
-              "name": "地勘路",
-              "nearestNode": 10129,
-              "sourceDate": "2026-11-05",
-              "method": "road-network-snap"
+              "id": 259894865,
+              "name": "二仙桥北路",
+              "url": "https://www.openstreetmap.org/way/259894865",
+              "nodeId": 12441317918,
+              "coordinates": [
+                104.1285541,
+                30.6871231
+              ],
+              "sourceDate": "2026-11-10",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 44.2
             }
           },
-          "routeEligible": false
+          "routeEligible": false,
+          "footageNote": "2025年原视频 · 营业情况待确认"
         }
       ]
     }

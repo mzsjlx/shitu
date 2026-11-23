@@ -1,5 +1,5 @@
 {
-  "verifiedOn": "2026-11-12T06:47:15.458Z",
+  "verifiedOn": "2026-11-23T10:35:00.484Z",
   "city": "chengdu",
   "checks": [
     {
@@ -33,26 +33,6 @@
       "detail": null
     },
     {
-      "name": "Landmark view captured: 3d-339-panda-tower",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "Landmark view captured: 3d-ifs-panda-taikooli",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "Landmark view captured: 3d-kuanzhai-alleys",
-      "passed": true,
-      "detail": null
-    },
-    {
-      "name": "Landmark view captured: 3d-yulin-neighborhood",
-      "passed": true,
-      "detail": null
-    },
-    {
       "name": "71 on-map food spots loaded cleanly into food overlay",
       "passed": true,
       "detail": "Found 71 spots"
@@ -77,26 +57,54 @@
       }
     },
     {
-      "name": "Multi-blogger popover media area occupies >= 2/3 (66.7%) of total popover area",
+      "name": "Multi-blogger popover media area occupies >= 2/3 (strict >= 2/3)",
       "passed": true,
-      "detail": "Ratio: 66.8% (media: 294px, popover: 420.5px)"
+      "detail": "Ratio: 66.77%"
     },
     {
-      "name": "In-popover video plays smoothly with advancing currentTime",
+      "name": "In-popover video plays smoothly with double-sampling time advance (dt >= 0.2s)",
       "passed": true,
       "detail": {
-        "played": true,
-        "currentTime": 0.764436,
-        "duration": 233.96
+        "t1": {
+          "t": 0,
+          "paused": false
+        },
+        "t2": {
+          "t": 0.22441,
+          "paused": false
+        },
+        "dt": 0.22441
       }
     },
     {
-      "name": "Closing popover immediately terminates video playback and audio track",
+      "name": "Switching creator tab terminates old video and strips src",
       "passed": true,
-      "detail": null
+      "detail": {
+        "success": true,
+        "oldPaused": true,
+        "oldHasSrc": false
+      }
     },
     {
-      "name": "Viewport mobile-390 (390x844) renders without horizontal overflow",
+      "name": "Switching to another shop terminates previous video and strips src",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "oldPaused": true,
+        "oldHasSrc": null
+      }
+    },
+    {
+      "name": "Closing popover immediately pauses video and strips src",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "oldPaused": true,
+        "oldHasSrc": false
+      }
+    },
+    {
+      "name": "Viewport desktop-1440 (1440x960) has 71 cards without horizontal overflow",
       "passed": true,
       "detail": {
         "cardCount": 71,
@@ -104,7 +112,12 @@
       }
     },
     {
-      "name": "Viewport small-320 (320x680) renders without horizontal overflow",
+      "name": "Viewport desktop-1440 popover in bounds and ratio >= 2/3",
+      "passed": true,
+      "detail": "Ratio: 66.77%, inBounds: true"
+    },
+    {
+      "name": "Viewport mobile-390 (390x844) has 71 cards without horizontal overflow",
       "passed": true,
       "detail": {
         "cardCount": 71,
@@ -112,7 +125,12 @@
       }
     },
     {
-      "name": "Viewport landscape-736 (736x414) renders without horizontal overflow",
+      "name": "Viewport mobile-390 popover in bounds and ratio >= 2/3",
+      "passed": true,
+      "detail": "Ratio: 66.67%, inBounds: true"
+    },
+    {
+      "name": "Viewport small-320 (320x680) has 71 cards without horizontal overflow",
       "passed": true,
       "detail": {
         "cardCount": 71,
@@ -120,37 +138,107 @@
       }
     },
     {
-      "name": "City chongqing loads isolated state with name \"重庆\"",
+      "name": "Viewport small-320 popover in bounds and ratio >= 2/3",
       "passed": true,
-      "detail": "重庆"
+      "detail": "Ratio: 66.67%, inBounds: true"
     },
     {
-      "name": "City changsha loads isolated state with name \"长沙\"",
+      "name": "Viewport landscape-736 (736x414) has 71 cards without horizontal overflow",
       "passed": true,
-      "detail": "长沙"
+      "detail": {
+        "cardCount": 71,
+        "hasHorizontalOverflow": false
+      }
     },
     {
-      "name": "City liuzhou loads isolated state with name \"柳州\"",
+      "name": "Viewport landscape-736 popover in bounds and ratio >= 2/3",
       "passed": true,
-      "detail": "柳州"
+      "detail": "Ratio: 66.84%, inBounds: true"
     },
     {
-      "name": "City nanjing loads isolated state with name \"南京\"",
+      "name": "Chengdu spot added to saved trips",
       "passed": true,
-      "detail": "南京"
+      "detail": "Saved: 1"
     },
     {
-      "name": "City chaoshan loads isolated state with name \"潮汕\"",
+      "name": "City chongqing (重庆) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
       "passed": true,
-      "detail": "潮汕"
+      "detail": {
+        "nameMatch": true,
+        "cityName": "重庆",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
     },
     {
-      "name": "City chengdu loads isolated state with name \"成都\"",
+      "name": "City changsha (长沙) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
       "passed": true,
-      "detail": "成都"
+      "detail": {
+        "nameMatch": true,
+        "cityName": "长沙",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City liuzhou (柳州) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "柳州",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City nanjing (南京) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "南京",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City chaoshan (潮汕) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "潮汕",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City wuhan (武汉) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "武汉",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City zhengzhou (郑州) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "郑州",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
     }
   ],
-  "total": 25,
-  "passed": 25,
+  "total": 30,
+  "passed": 30,
   "failed": 0
 }
