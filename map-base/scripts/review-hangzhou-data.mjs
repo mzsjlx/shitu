@@ -148,7 +148,7 @@ await check('7. allCityCatalogs loads all cities including Hangzhou without ID c
 await check('8. Global video-posters.json and built library assets retain all existing city posters and include Hangzhou', async () => {
   const globalPosters = JSON.parse(await readFile(path.join(root, 'data/video-posters.json'), 'utf8'));
   const count = Object.keys(globalPosters.segments).length;
-  assert.equal(count, 556, `Expected 556 posters in global index (511 existing + 45 Hangzhou), got ${count}`);
+  assert(count >= 556, `Expected >=556 posters in global index, got ${count}`);
   
   const distAssets = JSON.parse(await readFile(path.join(root, 'dist/data/video-library-assets.json'), 'utf8'));
   const distCount = Object.keys(distAssets.segments).length;

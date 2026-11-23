@@ -46,7 +46,7 @@
       <p id="food-load-note" class="food-load-note" role="status" hidden></p>
       <p id="walk-load-note" class="food-load-note" role="status" hidden>道路样板暂未展开。<button id="walk-retry">点击重试</button></p>
       <div id="loading" class="loading" role="status"><span></span>正在展开重庆…</div>
-      <div id="map-error" class="error-card" role="alert" hidden><strong>地图暂时没有展开</strong><p id="map-error-text">请确认本地地图文件已准备完成。</p><p id="local-file-hint" hidden>直接打开 HTML 可能受到浏览器限制。请双击 map-base 文件夹里的“打开地图.cmd”，通过本地预览打开。</p><button onclick="location.reload()">重新加载</button><details><summary>查看加载详情</summary><pre id="map-error-detail"></pre></details></div>
+      <div id="map-error" class="error-card" role="alert" hidden><strong>地图暂时没有展开</strong><p id="map-error-text">请确认本地地图文件已准备完成。</p><p id="local-file-hint" hidden>直接打开 HTML 可能受到浏览器限制。请双击 map-base 文件夹里的“打开地图.cmd”，通过本地预览打开。</p><div style="display:flex;gap:10px;align-items:center;margin-top:8px;"><button onclick="location.reload()">重新加载</button><a id="fast-entry-link" href="./?view=food&city=hangzhou" style="font-size:13px;color:#c25324;text-decoration:underline;">或者进入流式美食入口 →</a></div><details><summary>查看加载详情</summary><pre id="map-error-detail"></pre></details></div>
       <section id="layers-panel" class="layers-panel paper" aria-label="地图图层" hidden>
         <div class="panel-head"><strong>让地图刚刚好</strong><button id="layers-close" class="close" aria-label="关闭图层设置">×</button></div>
         <button id="landmark-entry" class="landmark-entry" type="button"><span>看看洪崖洞<small>沿江木楼与层叠屋檐</small></span><span aria-hidden="true">↗</span></button>
@@ -184,6 +184,11 @@
         }
       };
       const timer=setTimeout(()=>boot.fail('地图加载超时。请重新加载；若是直接打开 HTML，请使用“打开地图.cmd”。','60 秒内未能渲染真实道路。'),60000);
+      document.addEventListener('visibilitychange',()=>{
+        if(!document.hidden&&window.__FOOD_MAP_CHECK_READY__){
+          window.__FOOD_MAP_CHECK_READY__();
+        }
+      });
       addEventListener('error',event=>{
         const detail=event.message||('资源加载失败：'+(event.target?.src||event.target?.href||'未知资源'));
         if(event.target===window||event.target?.tagName==='SCRIPT')boot.fail('地图程序未能启动，请查看加载详情或使用本地预览。',detail);

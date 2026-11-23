@@ -9,7 +9,9 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const cityOption=process.argv.indexOf('--city'),cityId=cityOption>=0?process.argv[cityOption+1]:null;
 const context=await loadCityCatalog(root,cityId||'chongqing'),catalogPath=path.join(root,context.relative);
 const data=context.catalog;
-const ffmpeg=process.env.FOODCITY_FFMPEG||'ffmpeg',ffprobe=process.env.FOODCITY_FFPROBE||'ffprobe';
+const defaultFfmpeg='D:\\Python\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe';
+const defaultFfprobe=path.join(root,'scripts/ffprobe.cmd');
+const ffmpeg=process.env.FOODCITY_FFMPEG||defaultFfmpeg,ffprobe=process.env.FOODCITY_FFPROBE||defaultFfprobe;
 function run(command,args){return new Promise((resolve,reject)=>{const child=spawn(command,args,{windowsHide:true,stdio:['ignore','pipe','pipe'],shell:/\.(?:cmd|bat)$/i.test(command)});let out='',err='';child.stdout.on('data',b=>out+=b);child.stderr.on('data',b=>err+=b);child.once('error',reject);child.once('close',code=>code===0?resolve(out):reject(new Error(`${command} exited ${code}: ${err.slice(-2500)}`)));});}
 const option=process.argv.indexOf('--source'),sourceId=option>=0?process.argv[option+1]:null;
 if(option>=0&&!data.sources.some(s=>s.id===sourceId))throw new Error('未找到这个来源ID');

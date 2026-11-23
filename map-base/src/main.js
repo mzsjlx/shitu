@@ -450,7 +450,7 @@ async function init() {
   }
   const tileURL=new URL(city.tiles,location.href).href;
   boot.stage('准备地图数据与后台绘图程序');
-  if(bundle){
+  if(bundle && location.protocol === 'file:'){
     const raw=atob(bundle.archive),bytes=new Uint8Array(raw.length);
     for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);
     protocol.add(new PMTiles({getKey:()=>tileURL,getBytes:async(offset,length)=>({data:bytes.slice(offset,offset+length).buffer})}));
@@ -619,6 +619,7 @@ async function init() {
     }
   }
   readyInterval = setInterval(checkReady, 200);
+  window.__FOOD_MAP_CHECK_READY__ = checkReady;
   map.on('render',checkReady);
   map.on('idle',checkReady);
   map.on('sourcedata',checkReady);
