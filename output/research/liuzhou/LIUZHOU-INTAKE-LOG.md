@@ -10,7 +10,7 @@
 - **素材 Release 网页创建入口**：https://github.com/mzsjlx/shitu/releases/new?tag=media-2026-11-10-liuzhou-batch5&target=codex/city-liuzhou-batch5-expansion
 - **PR 正式发起链接**：https://github.com/mzsjlx/shitu/compare/main...codex/city-liuzhou-batch5-expansion?expand=1
 - **核心数据汇总**：
-  - **视频来源**：32 个（首批 7 个 + 本轮扩充 25 个）
+  - **视频来源**：32 部作品 / 29 位作者（首批 7 部 + 本轮扩充 25 部）
   - **视频切片**：64 段（首批 9 段 + 本轮扩充 55 段）
   - **地图打卡点**：52 处（核心城区实际上图 **51 处**；**1 处**待扩图保留视频库）
   - **多博主同店合并**：**10 处**（张记玉米汁 3 博主、卓和记 2 博主、杨记阿柠檬 2 博主、高家螺蛳粉 2 博主、北雀路车库麻辣烫 2 博主、青云杨姐卤粉 2 博主、华记肠粉 2 博主、新实惠 2 博主、蒙记豆浆 3 博主、文惠桥头大华干捞粉 2 博主）
