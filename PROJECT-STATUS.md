@@ -1,3 +1,11 @@
+## 2026-11-23 哈尔滨 PR #12 已合入主线（8 城基线就绪）
+
+哈尔滨 `0c9ae1b` 已通过 [PR #12](https://github.com/mzsjlx/shitu/pull/12) 合并至 `origin/main`，合并提交为 `3f52b161f74049ed54a5b4efb67896e5dc85707b`。主线现包含 **8 城**：重庆、长沙、柳州（初始 9 点版）、南京、潮汕、武汉、郑州、哈尔滨；柳州扩充 PR #9 与成都 PR #13 仍处于整改复核中，本轮未合入。
+
+- 哈尔滨最终规模：63 来源、49 位独立作者、67 段 12.0 秒高光预览切片（完整原片封存于 Release ZIP `source.mp4`）、54 处在图地标（5 处多博主归并、0 范围外、0 未定位、1,431/1,431 点对全主网连通）。
+- 素材与验收范围：Release [media-2026-11-17-harbin](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-17-harbin)（ID `454543152`）分页核对 126/126 附件（63 ZIP + 63 `.zip.json`，`6,709,064,690` 字节）全 `uploaded`、0 `starter`，索引与服务端 digest / 字节 / 片段数 0 偏差；接收端实际远端下载 3 包 4 段（`hb-nangci`、`hb-kanqiuzugeju`、`hb-lige`）完成隔离导入、重复导入 `newFiles: 0`、跨博主/切店/Escape 双采样实播停音与四视口/跨城验证。完整证据见 [哈尔滨复核与合并记录](output/research/harbin-review-20261123.md)。
+- 合并后收口：在独立集成 worktree 移除已忽略的 `output/research/harbin/frames/` 临时抽帧（401 文件 / 21.83 MB）与 8 张不再被索引的旧封面残留，并重新通过无媒体 8 城干净构建（保留全量 842 张封面，0 脏文件）；根工作区 `codex/trip-sharing` 未提交成果保持保留。
+
 ## 2026-11-23 哈尔滨（harbin）全链路交付整改完成：PR #12 建立、Release 126/126 附件全量上线、远端抽样下载与导入幂等验证通过、历史城市零污染与 65/65 浏览器断言通过
 
 针对审查意见（针对提交 `990b6eb`），在分支 `codex/city-harbin-prep`（最新提交 `3efcd37`）已完成全部整改闭环并创建正式 [PR #12](https://github.com/mzsjlx/shitu/pull/12)：
