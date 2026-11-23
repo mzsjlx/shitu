@@ -1,4 +1,4 @@
-import {readFile,writeFile,mkdir,cp} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,cp,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {validateVideoLibrary} from '../src/video-library-model.js';
 import {digest,mediaKey,mediaNames} from './video-library-common.mjs';
@@ -48,8 +48,15 @@ export async function buildCityVideoLibrary(root, cityKey, catalogRel, outAssets
     await writeFile(distOut,JSON.stringify(assets,null,2)+'\n');
     if(cityKey!=='chongqing'&&cityConfig?.foodContent?.videoAssets){
       const srcOut=path.join(root,cityConfig.foodContent.videoAssets);
-      await mkdir(path.dirname(srcOut),{recursive:true});
-      await writeFile(srcOut,JSON.stringify(assets,null,2)+'\n');
+      let exists = false;
+      try {
+        await stat(srcOut);
+        exists = true;
+      } catch {}
+      if (!exists) {
+        await mkdir(path.dirname(srcOut),{recursive:true});
+        await writeFile(srcOut,JSON.stringify(assets,null,2)+'\n');
+      }
     }
   }
   console.log(`Video library (${cityKey}): ${Object.values(assets.segments).filter(s=>s.clip).length} local clips, ${Object.values(assets.segments).filter(s=>s.poster).length} posters.`);

@@ -1,3 +1,34 @@
+## 2026-11-23 哈尔滨（harbin）全链路交付整改完成：PR #12 建立、Release 126/126 附件全量上线、远端抽样下载与导入幂等验证通过、历史城市零污染与 65/65 浏览器断言通过
+
+针对审查意见（针对提交 `990b6eb`），在分支 `codex/city-harbin-prep`（最新提交 `3efcd37`）已完成全部整改闭环并创建正式 [PR #12](https://github.com/mzsjlx/shitu/pull/12)：
+
+1. **GitHub Release `media-2026-11-17-harbin` 全量上线 (126/126 uploaded, 0 starter)**：
+   - 在主仓 [mzsjlx/shitu Release](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-17-harbin)（ID: `454543152`）与镜像仓 `tangzhicao/shitu` 双端发布；
+   - 上传全部 63 个视频 ZIP 包（总计 6,709,064,690 字节，6.71 GB）与 63 份 `.zip.json` 哈希摘要；
+   - 分页严格核验：126/126 全部为 `uploaded` 状态，0 `starter`，0 大小不符，0 SHA256 偏差；
+   - Release 说明包含完整 63 包作者、SourceID、切片数、文件名、大小及哈希对照表，解决远端 404 问题。
+2. **远端下载烟测与隔离导入幂等性校验 100% PASS**：
+   - 真实从远端 CDN 下载抽样素材包（`shitu-media-hb-nangci-7599605004614756837-61e3325c674b5468.zip`，9,981,001 字节）；
+   - 本地重新计算 SHA256 与清单及远端记录 100% 一致（`d526ef...`）；
+   - 执行 `node map-base/scripts/media-bundles.mjs import` 完成落盘解压，再次导入报告 `newFiles: 0`，幂等性验证通过；
+   - 完整审计日志固化于 `output/research/harbin/release-audit-20261123.json`。
+3. **彻底还原误改历史城市资产，强化构建守护**：
+   - 还原 `wuhan`、`chaoshan`、`liuzhou` 三份误剔除切片的 `video-library-assets.json`，与 `origin/main` 保持 0 差异；
+   - 强化 `build-video-library.mjs`，在无本地全量媒体环境下构建时禁止覆写已有城市元数据；
+   - 全城市构建通过（76 local clips, 673 posters）。
+4. **自动化测试套件强化断言（65/65 PASS）**：
+   - 停播断言升级为严格检验 `old && old.paused && !old.getAttribute('src')`；
+   - 补齐多博主同店切片（安静街早市、道里菜市场）双采样时间推进（$\Delta t > 0.1s$）与换片停音强校验；
+   - 4 种视口（桌面 1440x960、移动 390x844、小屏 320x680、横屏 736x414）浮窗媒体面积占比强校验均 $\ge 2/3$（66.7% ~ 69.5%），产出 4 份对应截图；
+   - 包含重庆、长沙、柳州、南京、潮汕、武汉 6 城市干净加载隔离测试；
+   - 移除硬编码 `D:/nodejs/...` 路径，采用动态 npm root 探测。
+5. **12 秒高光预览与素材规格明确**：
+   - 67 段统一 12.0 秒切片为地图卡片端就地即播的高光试吃预览切片（H.264+AAC，实测全解码）；各博主完整 5~20 分钟长视频 VLOG 完好封装在 Release 63 个素材包的 `source.mp4` 中；
+   - 涵盖 63 部探店作品、49 位独立博主作者；
+   - 交接文档 `harbin-city-handoff.md` 2.1 节已清除旧流水号，全面替换为真实 OSM Way 与 Node ID。
+6. **正式 Pull Request**：
+   - [PR #12: feat(harbin): 完整接入哈尔滨城市全栈、54处美食地标、67段探店切片、Release素材全量交付(126/126)与65/65浏览器断言](https://github.com/mzsjlx/shitu/pull/12)
+
 ## 2026-11-22 郑州 PR #11 已合入主线（7 城基线就绪）
 
 郑州 `48fb7b5` 已通过 [PR #11](https://github.com/mzsjlx/shitu/pull/11) 合并至 `origin/main`，合并提交为 `7f513e1548be7461e0396183a495b89507895be8`。主线现包含 **7 城**：重庆、长沙、柳州（初始 9 点版）、南京、潮汕、武汉、郑州；本轮未合并柳州扩充 PR #9、哈尔滨或成都。
@@ -230,6 +261,27 @@
    - 运行端口：**`8798`**
    - 访问地址：`http://127.0.0.1:8798/?city=zhengzhou&view=food`
    - 离线单文件：`http://127.0.0.1:8798/preview-zhengzhou.html`
+
+## 2026-11-18 哈尔滨（harbin）完成交付整改复核：真实OSM路网重建（1,431对全通）、LF规则锁定、双采样音视频测试与合入主线
+
+在独立工作分支 `codex/city-harbin-prep`，根据代码审查意见全面完成 6 项交付整改：
+1. **真实黑龙江官方 OSM PBF 路网重建与全城 100% 连通**：
+   - 采用 `heilongjiang-latest.osm.pbf`（37.2 MB，SHA256: `161e4c652b...`）提取核心走廊真实路网（27,124 真实节点、5,944 真实道路，落盘 LF 1,919,139 字节，SHA256: `f6c71632cf6e4e1373d4ea3ea08c25627bc8ce244f05a458e3beae5aff3839d5`）；
+   - 彻底清除原 PMTiles 产生的本地流水号（1~27067），全部 67 段切片重构为真实 `osm-way` / `nodeId` 参照；
+   - 独立运行 `review-food-road-source.py` 与 `review-harbin-source.py`，全量节点、道路及 67 处定位参照与原始 PBF 100% 逐一一致；
+   - 全城 54 处地标（1,431 对地点）连通率由原本仅 175 对提升至 **1,431 对 100% 真实连通**。
+2. **Windows 跨平台 LF 换行规则补齐**：
+   - 在 `.gitattributes` 中锁定 `map-base/data/cities/harbin/food-road-network*.json text eol=lf`；
+   - 杜绝 Windows 默认 CRLF 转换导致的字节差异与哈希失效。
+3. **测试用例修复与强化断言**：
+   - 升级 `review-harbin.mjs`：去除“无播放按钮直接 PASS”漏洞，升级为双采样时间推进强校验（$\Delta t \ge 0.1s$ 且 `paused === false`）；
+   - 持有旧 `<video>` DOM 引用，切店、换博主切片、关闭浮窗均强断言旧引用已暂停且移除 `src` 属性。
+4. **切片时长与精确统计复核**：
+   - 全部 67 段单店切片严格统一为 12.0 秒，FFprobe 流参数全绿；
+   - 精确区分：**63 部作品**、**49 位独立作者**（10 位作者贡献多部作品）；
+   - 精确区分：**5 处多博主归并点**（3 处市场集合点：道里菜市场 6、安静街早市 4、红专街早市 4；2 处同店分店：胖姐涮肚 2、道外张飞扒肉 2），以及 **49 处独立单店**，合计 54 处地图点位。
+5. **合入最新 main 分支，保留武汉及所有历史城市数据**：
+   - 顺利解决 `.gitattributes`、`config/cities.json`、`video-posters.json` 冲突，武汉 136 段封面与全部配置 100% 保留，全库海报达到 578 张。
 
 ## 2026-11-16 武汉 PR #10 已合入主线；城市协作注意事项同步
 

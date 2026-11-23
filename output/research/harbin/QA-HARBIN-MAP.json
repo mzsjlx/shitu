@@ -1,0 +1,415 @@
+{
+  "verifiedOn": "2026-11-23T04:57:21.071Z",
+  "city": "harbin",
+  "checks": [
+    {
+      "name": "Harbin is registered in config/cities.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Harbin name is \"哈尔滨\"",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Harbin regionLabel is \"江南核心 · 沿江走廊\"",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Harbin amapCityCode is 230100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Harbin bounds match agreed corridor [126.57, 45.72, 126.71, 45.81]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Harbin camera center is [126.625, 45.768]",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "harbin.pmtiles exists with valid size (>3MB)",
+      "passed": true,
+      "detail": 3404113
+    },
+    {
+      "name": "source-manifest.json records correct pmtiles SHA256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "food-road-network.json has valid nodes (>20000)",
+      "passed": true,
+      "detail": 27124
+    },
+    {
+      "name": "food-road-network.json has valid ways (>5000)",
+      "passed": true,
+      "detail": 5944
+    },
+    {
+      "name": "buildFoodRoadRouter builds successfully for Harbin",
+      "passed": true,
+      "detail": {
+        "nodes": 23210,
+        "ways": 5256,
+        "segments": 27267,
+        "excluded": {
+          "unsupported-highway": 655,
+          "access-restricted": 4,
+          "indoor-or-area": 28,
+          "foot-not-permitted": 1
+        },
+        "components": 132
+      }
+    },
+    {
+      "name": "roads-index.json has >1000 named road groups",
+      "passed": true,
+      "detail": 1051
+    },
+    {
+      "name": "Central Avenue (中央大街) indexed in roads-index.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Hongzhuan Street (红专街) indexed in roads-index.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Jingyu Street (靖宇街) indexed in roads-index.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "harbin-buildings-detail.geojson has >=35 distinct architectural components",
+      "passed": true,
+      "detail": 38
+    },
+    {
+      "name": "Saint Sophia Cathedral includes drum, onion dome, golden cross and belfry",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "Flood Control Monument includes colonnade, base, tower shaft and statue",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "Modern Hotel and Central Avenue cobblestones modeled",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "Daowai Chinese Baroque courtyards modeled",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "name": "Harbin Railway Station with clock tower modeled",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "Qiulin Building with green corner rotunda modeled",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "terrain-manifest.json records 61 Terrarium DEM tiles",
+      "passed": true,
+      "detail": 61
+    },
+    {
+      "name": "Terrarium DEM tile exists on disk as valid PNG",
+      "passed": true,
+      "detail": 21247
+    },
+    {
+      "name": "preview-harbin.html generated with embedded bundle (>10MB)",
+      "passed": true,
+      "detail": 12058029
+    },
+    {
+      "name": "Map runtime loaded Harbin with name \"哈尔滨\"",
+      "passed": true,
+      "detail": "哈尔滨"
+    },
+    {
+      "name": "Map runtime amapCityCode is \"230100\"",
+      "passed": true,
+      "detail": "230100"
+    },
+    {
+      "name": "buildings-detail-3d layer loaded into MapLibre GL style",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "buildings-3d extruded base layer loaded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hill-shade DEM terrain layer loaded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Overview screenshot captured (1440x960)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 圣索菲亚大教堂（拜占庭洋葱头绿穹顶与红砖圣殿）",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 哈尔滨市人民防洪胜利纪念塔与沿江古罗马列柱回廊",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 中央大街步行街与马迭尔宾馆新艺术建筑",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 道外中华巴洛克历史街区连片中西合璧合院",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 哈尔滨火车站新艺术复古钟楼与拱券站房",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "3D Landmark screenshot captured: 东大直街秋林公司转角绿圆顶主楼",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Map renders all 54 Harbin authentic food spots",
+      "passed": true,
+      "detail": 54
+    },
+    {
+      "name": "Level 1: Unselected food spots remain collapsed circle avatars (is-collapsed)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Level 1: Hovering over collapsed circle does NOT trigger video popover",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Level 2: Clicking food spot expands to rectangular 190px food card (is-selected)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Level 2: Food card displays authentic photo, title and creator credit",
+      "passed": true,
+      "detail": {
+        "name": "奋斗副食品商场（东北副食）",
+        "hasPhoto": true,
+        "hasQuickSave": true,
+        "credit": "来源：抖音 · 小珍来咯… · 2026年视频"
+      }
+    },
+    {
+      "name": "Level 3: Hovering or clicking expanded card opens smooth video popover",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Level 3: Native H.264+AAC video plays in-place within popover (dual-sampled)",
+      "passed": true,
+      "detail": {
+        "sample1": {
+          "t": 0,
+          "paused": false,
+          "readyState": 4
+        },
+        "sample2": {
+          "t": 0.219713,
+          "paused": false,
+          "src": "http://127.0.0.1:8796/media/videos/hb-xiaozhen-7592037940180569380/hb-xiaozhen-fendoufushi-7b14dcb0c8606922.mp4"
+        }
+      }
+    },
+    {
+      "name": "Level 3: Switching food shop stops and releases old media track (old && old.paused && !old.getAttribute(\"src\"))",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Multi-blogger: Clip 1 plays and advances (dual-sampled)",
+      "passed": true,
+      "detail": {
+        "c1_s1": 0,
+        "c1_s2": 0.357233,
+        "c1_adv": 0.357233
+      }
+    },
+    {
+      "name": "Multi-blogger: Switching to Clip 2 stops and releases Clip 1 track",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Multi-blogger: Clip 2 plays and advances (dual-sampled)",
+      "passed": true,
+      "detail": {
+        "c2_s1": 0,
+        "c2_s2": 0.480403,
+        "c2_adv": 0.480403
+      }
+    },
+    {
+      "name": "Multi-blogger: Closing popover stops and releases Clip 2 track",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Switching to 2D view correctly hides 3D extrusion layers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Switching back to 3D view restores 3D extrusion layers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Viewport Desktop (1440x960): Floating window media area >= 2/3 (ratio: 69.5%)",
+      "passed": true,
+      "detail": {
+        "popoverArea": 106485,
+        "mediaArea": 74000,
+        "ratio": 0.6949335587171902
+      }
+    },
+    {
+      "name": "Viewport Desktop (1440x960) screenshot captured: harbin-desktop-1440.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Viewport Mobile (390x844): Floating window media area >= 2/3 (ratio: 66.7%)",
+      "passed": true,
+      "detail": {
+        "popoverArea": 98800,
+        "mediaArea": 65928,
+        "ratio": 0.6672874493927126
+      }
+    },
+    {
+      "name": "Viewport Mobile (390x844) screenshot captured: harbin-mobile-390.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Viewport Small Screen (320x680): Floating window media area >= 2/3 (ratio: 66.7%)",
+      "passed": true,
+      "detail": {
+        "popoverArea": 98800,
+        "mediaArea": 65928,
+        "ratio": 0.6672874493927126
+      }
+    },
+    {
+      "name": "Viewport Small Screen (320x680) screenshot captured: harbin-small-320.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Viewport Short Landscape (736x414): Floating window media area >= 2/3 (ratio: 66.8%)",
+      "passed": true,
+      "detail": {
+        "popoverArea": 102300,
+        "mediaArea": 68376,
+        "ratio": 0.6683870967741935
+      }
+    },
+    {
+      "name": "Viewport Short Landscape (736x414) screenshot captured: harbin-landscape-736.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "City chongqing loads cleanly as \"重庆\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "重庆",
+        "expected": "重庆",
+        "hasHarbinInterference": false,
+        "cardsCount": 81
+      }
+    },
+    {
+      "name": "City changsha loads cleanly as \"长沙\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "长沙",
+        "expected": "长沙",
+        "hasHarbinInterference": false,
+        "cardsCount": 71
+      }
+    },
+    {
+      "name": "City liuzhou loads cleanly as \"柳州\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "柳州",
+        "expected": "柳州",
+        "hasHarbinInterference": false,
+        "cardsCount": 9
+      }
+    },
+    {
+      "name": "City nanjing loads cleanly as \"南京\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "南京",
+        "expected": "南京",
+        "hasHarbinInterference": false,
+        "cardsCount": 104
+      }
+    },
+    {
+      "name": "City chaoshan loads cleanly as \"潮汕\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "潮汕",
+        "expected": "潮汕",
+        "hasHarbinInterference": false,
+        "cardsCount": 46
+      }
+    },
+    {
+      "name": "City wuhan loads cleanly as \"武汉\" without Harbin data interference",
+      "passed": true,
+      "detail": {
+        "cName": "武汉",
+        "expected": "武汉",
+        "hasHarbinInterference": false,
+        "cardsCount": 104
+      }
+    }
+  ],
+  "total": 65,
+  "passed": 65,
+  "failed": 0
+}
