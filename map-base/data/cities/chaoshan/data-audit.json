@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "city": "chaoshan",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "潮汕美食核心区（涵盖汕头小公园、龙湖区、潮州古城牌坊街及周边商圈）",
+  "bounds": [
+    116.55,
+    23.3,
+    116.85,
+    23.72
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 6676551,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      116.55,
+      23.3,
+      116.85,
+      23.72
+    ]
+  },
+  "osmReplicationTime": "2026-11-08T04:00:00Z",
+  "counters": {
+    "requestedTiles": 1204,
+    "presentTiles": 1204,
+    "roadLineFragments": 8818,
+    "namedRoadLineFragments": 3649,
+    "unnamedRoadLineFragments": 5169,
+    "nonRoadTransportFragmentsExcluded": 356,
+    "buildingPolygonFragments": 36533,
+    "buildingFragmentsWithPositiveHeight": 262,
+    "buildingFragmentsWithoutPositiveHeight": 36271,
+    "namedRoadGroups": 1066
+  },
+  "roadClassCounts": {
+    "highway": 375,
+    "minor_road": 3301,
+    "major_road": 4402,
+    "path": 740
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    "-": {
+      "exact": {
+        "id": "road:-",
+        "class": "path",
+        "detail": "path",
+        "name": "-",
+        "bounds": [
+          116.612151,
+          23.421912,
+          116.6124943,
+          23.4223501
+        ],
+        "center": [
+          116.6122355,
+          23.4221839
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 1
+      },
+      "related": [
+        "-",
+        "径中-内庵线"
+      ]
+    },
+    "299乡道": {
+      "exact": {
+        "id": "road:299乡道",
+        "class": "major_road",
+        "detail": "tertiary",
+        "name": "299乡道",
+        "bounds": [
+          116.5762416,
+          23.5258372,
+          116.6446111,
+          23.570925
+        ],
+        "center": [
+          116.610783,
+          23.5499296
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 9
+      },
+      "related": [
+        "299乡道"
+      ]
+    },
+    "319乡道": {
+      "exact": {
+        "id": "road:319乡道",
+        "class": "major_road",
+        "detail": "tertiary",
+        "name": "319乡道",
+        "bounds": [
+          116.6290087,
+          23.5845587,
+          116.65122,
+          23.6334179
+        ],
+        "center": [
+          116.6430098,
+          23.6128098
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 8
+      },
+      "related": [
+        "319乡道"
+      ]
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}

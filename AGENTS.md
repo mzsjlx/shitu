@@ -4,6 +4,10 @@
 
 ## 开始工作
 
+- **新同学 / 新城市快速入口（阅读止损）**：先读本文 + [CITY-AGENT-STARTER.md](CITY-AGENT-STARTER.md) 顶部（含城市/前缀防撞表与最新提示词）+ [PR-CHECKLIST.md](PR-CHECKLIST.md)（10 条 PR 准入红线）+ [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md) 顶部；标杆验证脚本直接参考 `map-base/scripts/review-zhengzhou-data.mjs` 与 `review-zhengzhou-browser.py`。不要通读 350 KB 的 `PROJECT-STATUS.md` 全文或套用 2026-10 月旧单城文档。
+- 2026-11-22 郑州 `48fb7b5` / PR #11 已完成接收端独立复核，并以 `7f513e1` 合入 `main`（主线现含重庆、长沙、柳州初始版、南京、潮汕、武汉、郑州 7 城；柳州扩充 PR #9、哈尔滨与成都仍待整改复核），证据见 `output/research/zhengzhou-review-20261122.md`。后续开工与合并务必基于最新 `origin/main`。
+- 2026-11-16 武汉交付问题已完成接收端复核；新城市先读手册和素材说明中的同日补充，证据见 `output/research/wuhan-followup-20261116.md` 顶部最终记录。`488079f` / PR #10 已通过复核，并以 `6019700` 合入main。后续开工仍要同步最新上游。
+
 - 主工程是 `map-base/`。先读根目录 `README.md`、`PROJECT-STATUS.md` 顶部最新章节。
 - 做新城市或交接时，完整阅读 `CITY-AGENT-HANDBOOK.md` 与 [城市整合注意事项](CITY-INTEGRATION-NOTES.md)；通用指令在 `CITY-AGENT-STARTER.md`，长沙续做/南京开工文字在 [CITY-AGENT-MESSAGES.md](CITY-AGENT-MESSAGES.md)。
 - 做视频和素材时，再读 `MEDIA-COLLABORATION.md`；做距离/道路时读 `map-base/FOOD-ROAD-DISTANCE.md`。
@@ -37,3 +41,7 @@
 - 构建不能代替视频和地理检查。使用与本次改动相关的模型/浏览器检查，真实播放对应片段，查看桌面/手机截图；新城市还需验证状态、搜索、页面和道路不串城以及重庆兼容。
 - 旧QA脚本有固定重庆样本、端口及全量媒体前置条件，先读再运行，不改报告冒充执行。测试用隔离浏览器/目录，不清空用户真实收藏或素材。
 - 按真实日期更新城市交接和最新项目状态，说明已完成、待接入、缺素材与实际验证范围。原片未取得、网页能开、剪辑存在、地图落点和已上线是不同状态。
+- 冻结路网及清单在 `.gitattributes` 固定 LF，并在新检出中检查字节数、SHA256和构建；原工作树通过不能代替跨电脑验证。
+- 播放用两次采样检查时间推进；持有旧 video 引用检查切片/关闭后的暂停及 src 移除。采集到的关键状态必须纳入最终断言，不能只写进报告。
+- Release 分页逐项核对 ZIP 与摘要，只有 `uploaded` 算完成，`starter` 不算。区分全量服务端 digest 比对与实际下载后重新计算哈希；说明抽样导入范围，不把索引齐全、重复导入或新目录成功等同于全量下载、旧版本升级成功。
+- 重打包 ZIP 会改变头部时间戳与包体 SHA256，`media-bundles.json` 的 `sha256`、`bytes` 与 `clips` 必须以实际上传到 Release 的附件为准；OSM 定位锚点需核对整型 `way`/`nodeId` 归属（`way.nodes.includes(nodeId)`）、与门店坐标合理距离及主连通分量路由。

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "chaoshan",
+  "bounds": [
+    116.55,
+    23.3,
+    116.85,
+    23.72
+  ],
+  "source": {
+    "date": "2026-11-08",
+    "sha256": "b67bb095ba1371087e5e8033ec333743d6788f56bc7d7daa3f385eacc14fcfa3",
+    "url": "https://download.geofabrik.de/asia/china/guangdong-261108.osm.pbf",
+    "fileName": "guangdong-261108.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "networkSHA256": "9c1ff1ab302200d9b9d0dcf6b15170a1f3173d0d268e29f27aee8573618c2a43",
+  "bytes": 7222593,
+  "nodes": 108578,
+  "ways": 19312,
+  "footRestrictionWays": 0,
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
+}

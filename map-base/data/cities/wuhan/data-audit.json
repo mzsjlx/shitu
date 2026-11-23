@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "city": "wuhan",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "武汉核心城区（涵盖汉口江汉路、吉庆街、万松园，武昌粮道街、户部巷、楚河汉街，汉阳归元古镇周边商圈，含长江大桥与两江交汇）",
+  "bounds": [
+    114.18,
+    30.48,
+    114.42,
+    30.64
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 7047532,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      114.18,
+      30.48,
+      114.42,
+      30.64
+    ]
+  },
+  "osmReplicationTime": "2026-11-13T04:00:00Z",
+  "counters": {
+    "requestedTiles": 414,
+    "presentTiles": 414,
+    "roadLineFragments": 8261,
+    "namedRoadLineFragments": 4961,
+    "unnamedRoadLineFragments": 3300,
+    "nonRoadTransportFragmentsExcluded": 1062,
+    "buildingPolygonFragments": 24071,
+    "buildingFragmentsWithPositiveHeight": 5410,
+    "buildingFragmentsWithoutPositiveHeight": 18661,
+    "namedRoadGroups": 1726
+  },
+  "roadClassCounts": {
+    "major_road": 3885,
+    "minor_road": 3076,
+    "path": 1273,
+    "highway": 27
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    "安邦路": {
+      "exact": {
+        "id": "road:安邦路",
+        "class": "minor_road",
+        "detail": "residential",
+        "name": "安邦路",
+        "bounds": [
+          114.3413767,
+          30.5603347,
+          114.3465212,
+          30.5660255
+        ],
+        "center": [
+          114.3444304,
+          30.5637079
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 3
+      },
+      "related": [
+        "安邦路"
+      ]
+    },
+    "安静后街": {
+      "exact": {
+        "id": "road:安静后街",
+        "class": "minor_road",
+        "detail": "residential",
+        "name": "安静后街",
+        "bounds": [
+          114.2842081,
+          30.5917915,
+          114.2859247,
+          30.5933592
+        ],
+        "center": [
+          114.2851107,
+          30.5926192
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 1
+      },
+      "related": [
+        "安静后街"
+      ]
+    },
+    "安静街": {
+      "exact": {
+        "id": "road:安静街",
+        "class": "minor_road",
+        "detail": "residential",
+        "name": "安静街",
+        "bounds": [
+          114.2835242,
+          30.5911935,
+          114.2852408,
+          30.5926227
+        ],
+        "center": [
+          114.2847754,
+          30.5915721
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 1
+      },
+      "related": [
+        "安静街"
+      ]
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}

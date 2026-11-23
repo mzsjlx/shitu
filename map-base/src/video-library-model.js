@@ -15,6 +15,7 @@ export function validateVideoLibrary(data, expectedCity = null){
       if(!idPattern.test(segment.id)||ids.has(segment.id))throw new Error('片段ID无效或重复');
       ids.add(segment.id);
       segmentsById.set(segment.id,segment);
+      if(segment.amapCityCode!==undefined&&!/^\d{6}$/.test(segment.amapCityCode))throw new Error('地图搜索城市代码无效');
       if(segment.placeId!==undefined&&!idPattern.test(segment.placeId))throw new Error('门店归并ID无效');
       if(typeof segment.name!=='string'||!segment.name.trim()||typeof segment.category!=='string'||typeof segment.summary!=='string'||(segment.addressText!==null&&typeof segment.addressText!=='string'))throw new Error('门店片段缺少信息');
       if(![segment.start,segment.end,segment.posterSecond].every(Number.isFinite)||segment.start<previous||segment.end<=segment.start||segment.end>source.durationSeconds||segment.posterSecond<segment.start||segment.posterSecond>=segment.end)throw new Error('视频分段时间无效或重叠');

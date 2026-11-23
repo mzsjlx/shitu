@@ -1,0 +1,1169 @@
+{
+  "reviewedOn": "2026-11-10",
+  "source": {
+    "date": "2026-11-08",
+    "sha256": "b67bb095ba1371087e5e8033ec333743d6788f56bc7d7daa3f385eacc14fcfa3",
+    "url": "https://download.geofabrik.de/asia/china/guangdong-261108.osm.pbf",
+    "fileName": "guangdong-261108.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "scope": "Nearest original OSM road references for existing video-address block estimates; coordinates unchanged; not independent shop/address verification.",
+  "anchors": [
+    {
+      "segmentId": "chaoshan-miaojiang-yibaichaoche",
+      "coordinates": [
+        116.6785,
+        23.3598
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147133477,
+        "name": "民生路",
+        "url": "https://www.openstreetmap.org/way/147133477",
+        "nodeId": 1603408910,
+        "coordinates": [
+          116.6782103,
+          23.3597087
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 7.3
+      }
+    },
+    {
+      "segmentId": "chaoshan-miaojiang-chunmeili",
+      "coordinates": [
+        116.6869,
+        23.3589
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147133447,
+        "name": "大华路",
+        "url": "https://www.openstreetmap.org/way/147133447",
+        "nodeId": 5048947681,
+        "coordinates": [
+          116.6872015,
+          23.3583614
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 2.4
+      }
+    },
+    {
+      "segmentId": "chaoshan-miaojiang-laoshiquguozhi",
+      "coordinates": [
+        116.666,
+        23.3538
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147133457,
+        "name": "镇邦路",
+        "url": "https://www.openstreetmap.org/way/147133457",
+        "nodeId": 1603408821,
+        "coordinates": [
+          116.6659182,
+          23.3537349
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 1.5
+      }
+    },
+    {
+      "segmentId": "chaoshan-miaojiang-abomeizhi",
+      "coordinates": [
+        116.6845,
+        23.3575
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147149262,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/147149262",
+        "nodeId": 5501480959,
+        "coordinates": [
+          116.6843573,
+          23.3573421
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 16.3
+      }
+    },
+    {
+      "segmentId": "chaoshan-zhizhi-abomeizhi",
+      "coordinates": [
+        116.6845,
+        23.3575
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147149262,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/147149262",
+        "nodeId": 5501480959,
+        "coordinates": [
+          116.6843573,
+          23.3573421
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 16.3
+      }
+    },
+    {
+      "segmentId": "chaoshan-zhizhi-sunanlue",
+      "coordinates": [
+        116.671,
+        23.3685
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 573828532,
+        "name": "北堤旁路",
+        "url": "https://www.openstreetmap.org/way/573828532",
+        "nodeId": 5510065051,
+        "coordinates": [
+          116.6706442,
+          23.3686072
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 22.3
+      }
+    },
+    {
+      "segmentId": "chaoshan-zhizhi-tongjichangfen",
+      "coordinates": [
+        116.6725,
+        23.371
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 573800175,
+        "name": "厦岭路",
+        "url": "https://www.openstreetmap.org/way/573800175",
+        "nodeId": 13423706700,
+        "coordinates": [
+          116.6719208,
+          23.3702862
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 95.8
+      }
+    },
+    {
+      "segmentId": "chaoshan-zhizhi-guangchanglaoziniang",
+      "coordinates": [
+        116.683,
+        23.354
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 581594169,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/581594169",
+        "nodeId": 5564390159,
+        "coordinates": [
+          116.6825169,
+          23.3539595
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 3.5
+      }
+    },
+    {
+      "segmentId": "chaoshan-xiaolu-chaozhouchangfen",
+      "coordinates": [
+        116.643,
+        23.666
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 622284462,
+        "name": "开元路",
+        "url": "https://www.openstreetmap.org/way/622284462",
+        "nodeId": 2711799814,
+        "coordinates": [
+          116.6423327,
+          23.6657365
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 47.6
+      }
+    },
+    {
+      "segmentId": "chaoshan-xiaolu-wujinpingchunbing",
+      "coordinates": [
+        116.6455,
+        23.6678
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1029205378,
+        "name": "柳衙巷",
+        "url": "https://www.openstreetmap.org/way/1029205378",
+        "nodeId": 3548337163,
+        "coordinates": [
+          116.6459871,
+          23.6676307
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 10.2
+      }
+    },
+    {
+      "segmentId": "chaoshan-xiaolu-laochenyusheng",
+      "coordinates": [
+        116.648,
+        23.6645
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 632212399,
+        "name": "天水路",
+        "url": "https://www.openstreetmap.org/way/632212399",
+        "nodeId": 5878054286,
+        "coordinates": [
+          116.6480181,
+          23.6645157
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 1.6
+      }
+    },
+    {
+      "segmentId": "chaoshan-xiaozhen-xiefeiji",
+      "coordinates": [
+        116.79,
+        23.415
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 383093290,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/383093290",
+        "nodeId": 5579595749,
+        "coordinates": [
+          116.7894911,
+          23.416255
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 148.9
+      }
+    },
+    {
+      "segmentId": "chaoshan-taojie-azhongshimochangfen",
+      "coordinates": [
+        116.6435,
+        23.655
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1462056940,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/1462056940",
+        "nodeId": 13410621038,
+        "coordinates": [
+          116.6431604,
+          23.6555303
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 68.2
+      }
+    },
+    {
+      "segmentId": "chaoshan-taojie-kaiyuanshangxipingxianshuiguo",
+      "coordinates": [
+        116.642,
+        23.6658
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 383071850,
+        "name": "上西平路",
+        "url": "https://www.openstreetmap.org/way/383071850",
+        "nodeId": 3862714494,
+        "coordinates": [
+          116.6420018,
+          23.665751
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0
+      }
+    },
+    {
+      "segmentId": "chaoshan-taojie-xiehuailiangzhimacha",
+      "coordinates": [
+        116.645,
+        23.664
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 348772730,
+        "name": "太平路",
+        "url": "https://www.openstreetmap.org/way/348772730",
+        "nodeId": 5878138765,
+        "coordinates": [
+          116.645046,
+          23.6638596
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 8.5
+      }
+    },
+    {
+      "segmentId": "chaoshan-taojie-zhenqianjiefurujichi",
+      "coordinates": [
+        116.6475,
+        23.667
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1029205377,
+        "name": "图训巷",
+        "url": "https://www.openstreetmap.org/way/1029205377",
+        "nodeId": 5878138748,
+        "coordinates": [
+          116.6472365,
+          23.6669638
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 9.2
+      }
+    },
+    {
+      "segmentId": "chaoshan-lezai-fuhechengniurouwan",
+      "coordinates": [
+        116.672,
+        23.3618
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 532956310,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/532956310",
+        "nodeId": 5171343036,
+        "coordinates": [
+          116.6720601,
+          23.3617381
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 8.1
+      }
+    },
+    {
+      "segmentId": "chaoshan-lezai-aixiganmian",
+      "coordinates": [
+        116.679,
+        23.3592
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 573434697,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/573434697",
+        "nodeId": 5507445806,
+        "coordinates": [
+          116.6789346,
+          23.3593555
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 17
+      }
+    },
+    {
+      "segmentId": "chaoshan-lezai-yuejinhouguo",
+      "coordinates": [
+        116.6715,
+        23.361
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 116810633,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/116810633",
+        "nodeId": 5048947392,
+        "coordinates": [
+          116.6718162,
+          23.3608584
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 35.9
+      }
+    },
+    {
+      "segmentId": "chaoshan-yuwei-xieshishengxingwandian",
+      "coordinates": [
+        116.7062,
+        23.372
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 281876859,
+        "name": "龙眼北路",
+        "url": "https://www.openstreetmap.org/way/281876859",
+        "nodeId": 5549724937,
+        "coordinates": [
+          116.7061518,
+          23.3717539
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 4.9
+      }
+    },
+    {
+      "segmentId": "chaoshan-yuwei-chunmeili",
+      "coordinates": [
+        116.6869,
+        23.3589
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147133447,
+        "name": "大华路",
+        "url": "https://www.openstreetmap.org/way/147133447",
+        "nodeId": 5048947681,
+        "coordinates": [
+          116.6872015,
+          23.3583614
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 2.4
+      }
+    },
+    {
+      "segmentId": "chaoshan-ashen-wujinpingchunbing",
+      "coordinates": [
+        116.6455,
+        23.6678
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1029205378,
+        "name": "柳衙巷",
+        "url": "https://www.openstreetmap.org/way/1029205378",
+        "nodeId": 3548337163,
+        "coordinates": [
+          116.6459871,
+          23.6676307
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 10.2
+      }
+    },
+    {
+      "segmentId": "chaoshan-ashen-kaiyuanshangxipingxianshuiguo",
+      "coordinates": [
+        116.642,
+        23.6658
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 383071850,
+        "name": "上西平路",
+        "url": "https://www.openstreetmap.org/way/383071850",
+        "nodeId": 3862714494,
+        "coordinates": [
+          116.6420018,
+          23.665751
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0
+      }
+    },
+    {
+      "segmentId": "chaoshan-ashen-xiehuailiangzhimacha",
+      "coordinates": [
+        116.645,
+        23.664
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 348772730,
+        "name": "太平路",
+        "url": "https://www.openstreetmap.org/way/348772730",
+        "nodeId": 5878138765,
+        "coordinates": [
+          116.645046,
+          23.6638596
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 8.5
+      }
+    },
+    {
+      "segmentId": "chaoshan-mengmengyu-hongjizhudutang",
+      "coordinates": [
+        116.7065,
+        23.365
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 281876853,
+        "name": "龙眼南路",
+        "url": "https://www.openstreetmap.org/way/281876853",
+        "nodeId": 1603438118,
+        "coordinates": [
+          116.7061607,
+          23.3645995
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 34.6
+      }
+    },
+    {
+      "segmentId": "chaoshan-mengmengyu-chunmeili",
+      "coordinates": [
+        116.6869,
+        23.3589
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147133447,
+        "name": "大华路",
+        "url": "https://www.openstreetmap.org/way/147133447",
+        "nodeId": 5048947681,
+        "coordinates": [
+          116.6872015,
+          23.3583614
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 2.4
+      }
+    },
+    {
+      "segmentId": "chaoshan-mengmengyu-changpingchangfen",
+      "coordinates": [
+        116.7062,
+        23.3635
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 614508914,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/614508914",
+        "nodeId": 5812697388,
+        "coordinates": [
+          116.7062145,
+          23.3625503
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 2
+      }
+    },
+    {
+      "segmentId": "chaoshan-beizeng-xieshishengxingwandian",
+      "coordinates": [
+        116.7062,
+        23.372
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 281876859,
+        "name": "龙眼北路",
+        "url": "https://www.openstreetmap.org/way/281876859",
+        "nodeId": 5549724937,
+        "coordinates": [
+          116.7061518,
+          23.3717539
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 4.9
+      }
+    },
+    {
+      "segmentId": "chaoshan-xiaolin-huashengjiangchangfen",
+      "coordinates": [
+        116.643,
+        23.666
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 622284462,
+        "name": "开元路",
+        "url": "https://www.openstreetmap.org/way/622284462",
+        "nodeId": 2711799814,
+        "coordinates": [
+          116.6423327,
+          23.6657365
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 47.6
+      }
+    },
+    {
+      "segmentId": "chaoshan-zhizhi-laotaoganmian",
+      "coordinates": [
+        116.68,
+        23.356
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147133467,
+        "name": "跃进路",
+        "url": "https://www.openstreetmap.org/way/147133467",
+        "nodeId": 5126338533,
+        "coordinates": [
+          116.6799446,
+          23.3559459
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 6.1
+      }
+    },
+    {
+      "segmentId": "chaoshan-xiaozhen-cuoweihuoguo",
+      "coordinates": [
+        116.7842,
+        23.3855
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 551514216,
+        "name": "金新路",
+        "url": "https://www.openstreetmap.org/way/551514216",
+        "nodeId": 5326236610,
+        "coordinates": [
+          116.784341,
+          23.385874
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 40.7
+      }
+    },
+    {
+      "segmentId": "chaoshan-dage-gaojiaoqiaokaoniurou",
+      "coordinates": [
+        116.735,
+        23.385
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1310896860,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/1310896860",
+        "nodeId": 8178679031,
+        "coordinates": [
+          116.7354613,
+          23.3852148
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 3.9
+      }
+    },
+    {
+      "segmentId": "chaoshan-dongmai-huawuhongxing",
+      "coordinates": [
+        116.6912,
+        23.3685
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 573387865,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/573387865",
+        "nodeId": 5507164272,
+        "coordinates": [
+          116.6921908,
+          23.368793
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 32
+      }
+    },
+    {
+      "segmentId": "chaoshan-yige-zhenwudongpin",
+      "coordinates": [
+        116.6665,
+        23.3682
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147553197,
+        "name": "光华路",
+        "url": "https://www.openstreetmap.org/way/147553197",
+        "nodeId": 1607599993,
+        "coordinates": [
+          116.6666878,
+          23.3679178
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 24.1
+      }
+    },
+    {
+      "segmentId": "chaoshan-zhizhi-linsanman",
+      "coordinates": [
+        116.7145,
+        23.3646
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 532264612,
+        "name": "长平东路",
+        "url": "https://www.openstreetmap.org/way/532264612",
+        "nodeId": 5165391821,
+        "coordinates": [
+          116.7147948,
+          23.3645701
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 3.8
+      }
+    },
+    {
+      "segmentId": "chaoshan-dongmai-huangjidapaidang",
+      "coordinates": [
+        116.7167,
+        23.3638
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 581788123,
+        "name": "华山南路",
+        "url": "https://www.openstreetmap.org/way/581788123",
+        "nodeId": 5504686187,
+        "coordinates": [
+          116.7166799,
+          23.3643317
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 1.7
+      }
+    },
+    {
+      "segmentId": "chaoshan-tiedan-chaoshanshengyan",
+      "coordinates": [
+        116.678,
+        23.355
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 581594140,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/581594140",
+        "nodeId": 5125842508,
+        "coordinates": [
+          116.6780817,
+          23.3548209
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 6.1
+      }
+    },
+    {
+      "segmentId": "chaoshan-dongmai-chenghaidapaidang",
+      "coordinates": [
+        116.762,
+        23.468
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 265634768,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/265634768",
+        "nodeId": 11098888245,
+        "coordinates": [
+          116.7610489,
+          23.4679455
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 69.5
+      }
+    },
+    {
+      "segmentId": "chaoshan-wangdingyi-azhoujibao",
+      "coordinates": [
+        116.672,
+        23.376
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 578295847,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/578295847",
+        "nodeId": 5541660553,
+        "coordinates": [
+          116.6719729,
+          23.3755225
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 37.6
+      }
+    },
+    {
+      "segmentId": "chaoshan-xili-tiepengdapaidang",
+      "coordinates": [
+        116.621,
+        23.662
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1029300302,
+        "name": "新洋路",
+        "url": "https://www.openstreetmap.org/way/1029300302",
+        "nodeId": 9489712347,
+        "coordinates": [
+          116.6217876,
+          23.6612112
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 63.3
+      }
+    },
+    {
+      "segmentId": "chaoshan-dongmai-guzaoweishaokao",
+      "coordinates": [
+        116.698,
+        23.364
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147135593,
+        "name": "长厦大路",
+        "url": "https://www.openstreetmap.org/way/147135593",
+        "nodeId": 1603438091,
+        "coordinates": [
+          116.6976231,
+          23.3641441
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 21.5
+      }
+    },
+    {
+      "segmentId": "chaoshan-dameng-linsanman",
+      "coordinates": [
+        116.7145,
+        23.3646
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 532264612,
+        "name": "长平东路",
+        "url": "https://www.openstreetmap.org/way/532264612",
+        "nodeId": 5165391821,
+        "coordinates": [
+          116.7147948,
+          23.3645701
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 3.8
+      }
+    },
+    {
+      "segmentId": "chaoshan-hexiaowan-juhuataniniurou",
+      "coordinates": [
+        116.782,
+        23.412
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 475411876,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/475411876",
+        "nodeId": 4691577419,
+        "coordinates": [
+          116.7818034,
+          23.4113668
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 62.8
+      }
+    },
+    {
+      "segmentId": "chaoshan-wulala-caijieniurou",
+      "coordinates": [
+        116.783,
+        23.3894
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1464008535,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/1464008535",
+        "nodeId": 13429376776,
+        "coordinates": [
+          116.7819839,
+          23.3881561
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 18.1
+      }
+    },
+    {
+      "segmentId": "chaoshan-anywei-zhanjihewei",
+      "coordinates": [
+        116.681,
+        23.372
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 116810625,
+        "name": "护堤路",
+        "url": "https://www.openstreetmap.org/way/116810625",
+        "nodeId": 14052090151,
+        "coordinates": [
+          116.6814276,
+          23.3708431
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 90
+      }
+    },
+    {
+      "segmentId": "chaoshan-maomao-chuangxintujihuoguo",
+      "coordinates": [
+        116.7265,
+        23.3712
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1346001228,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/1346001228",
+        "nodeId": 12449536390,
+        "coordinates": [
+          116.7264812,
+          23.3709961
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.4
+      }
+    },
+    {
+      "segmentId": "chaoshan-dongmai-xidilaosanyuzai",
+      "coordinates": [
+        116.6775,
+        23.3568
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 527264701,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/527264701",
+        "nodeId": 5126338519,
+        "coordinates": [
+          116.6772707,
+          23.3563592
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 27.6
+      }
+    },
+    {
+      "segmentId": "chaoshan-shaofeng-huachengye",
+      "coordinates": [
+        116.7195,
+        23.398
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147147306,
+        "name": "春江路",
+        "url": "https://www.openstreetmap.org/way/147147306",
+        "nodeId": 11193298009,
+        "coordinates": [
+          116.7190619,
+          23.3993854
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 122.7
+      }
+    },
+    {
+      "segmentId": "chaoshan-jiajun-haoweidao",
+      "coordinates": [
+        116.7135,
+        23.3665
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1365468417,
+        "name": "润街",
+        "url": "https://www.openstreetmap.org/way/1365468417",
+        "nodeId": 12644778963,
+        "coordinates": [
+          116.7146227,
+          23.3661386
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 40.8
+      }
+    },
+    {
+      "segmentId": "chaoshan-dongmai-linsanman",
+      "coordinates": [
+        116.7145,
+        23.3646
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 532264612,
+        "name": "长平东路",
+        "url": "https://www.openstreetmap.org/way/532264612",
+        "nodeId": 5165391821,
+        "coordinates": [
+          116.7147948,
+          23.3645701
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 3.8
+      }
+    },
+    {
+      "segmentId": "chaoshan-qiqiba-xinzizi",
+      "coordinates": [
+        116.7062,
+        23.368
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 281876853,
+        "name": "龙眼南路",
+        "url": "https://www.openstreetmap.org/way/281876853",
+        "nodeId": 1603573879,
+        "coordinates": [
+          116.7061538,
+          23.3677644
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 4.8
+      }
+    },
+    {
+      "segmentId": "chaoshan-qiqiba-xikaobaxi",
+      "coordinates": [
+        116.7075,
+        23.3615
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 531976536,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/531976536",
+        "nodeId": 5163161350,
+        "coordinates": [
+          116.707256,
+          23.3616006
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 10.9
+      }
+    },
+    {
+      "segmentId": "chaoshan-qiqiba-laizhiwa",
+      "coordinates": [
+        116.715,
+        23.3785
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 147222981,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/147222981",
+        "nodeId": 1604372704,
+        "coordinates": [
+          116.7153617,
+          23.3785418
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 5
+      }
+    },
+    {
+      "segmentId": "chaoshan-daya-huaju",
+      "coordinates": [
+        116.7085,
+        23.3625
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 527196942,
+        "name": "公信路",
+        "url": "https://www.openstreetmap.org/way/527196942",
+        "nodeId": 5163161360,
+        "coordinates": [
+          116.70839,
+          23.3625344
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 11.2
+      }
+    },
+    {
+      "segmentId": "chaoshan-qiqiba-yuanjiangshouxishao",
+      "coordinates": [
+        116.7112,
+        23.363
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 527006743,
+        "name": "未命名开放道路",
+        "url": "https://www.openstreetmap.org/way/527006743",
+        "nodeId": 5124068553,
+        "coordinates": [
+          116.7116104,
+          23.3629507
+        ],
+        "sourceDate": "2026-11-08",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 42.3
+      }
+    }
+  ]
+}

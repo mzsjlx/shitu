@@ -1,0 +1,3435 @@
+{
+  "schemaVersion": 1,
+  "city": "chaoshan",
+  "preparedOn": "2026-11-09",
+  "rights": {
+    "status": "user-confirmed",
+    "confirmedOn": "2026-11-09",
+    "scope": "前七批共57条抖音探店链接经用户在会话中明确提供；视频剪辑与画面使用按用户提供范围记录，原片保留在.local，小封面与公开元数据纳入仓库。五支外地视频（广州养牛邓、大连海之乡、佛山吃货码头、杭州洪阿福、深圳满柜寿喜烧）已如实审查并剔除。",
+    "evidence": "本项目会话中用户提供的原帖链接与分享文本；未独立审查纸质授权文件。"
+  },
+  "sources": [
+    {
+      "id": "chaoshan-miaojiang-7661157240087097061",
+      "author": "喵酱饿了",
+      "title": "潮汕太好吃了！4天3晚吃了38顿选出的精髓，特色又好吃！",
+      "url": "https://www.douyin.com/video/7661157240087097061",
+      "shareURL": "https://v.douyin.com/-XV6cMe-S20/",
+      "publishedOn": "2026-07-11",
+      "durationSeconds": 265,
+      "sourceSHA256": "8b31fceed9b5d7bfd0c2753a7902d46f1471fd35d7a8e6b12c1bedf9228899fd",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍金平区小公园中山纪念亭、安平路、中山路老店及老市区镇邦路，实拍招牌与特色美食。",
+      "segments": [
+        {
+          "id": "chaoshan-miaojiang-yibaichaoche",
+          "name": "一杯潮茶（小公园店）",
+          "category": "茶饮 / 鸭屎香单丛",
+          "addressText": "汕头市金平区安平路（小公园中山纪念亭旁）",
+          "start": 60,
+          "end": 71.6,
+          "posterSecond": 64,
+          "summary": "位于汕头小公园骑楼“汕頭”打卡墙旁，招牌鸭屎香咸鲜奶茶搭配潮汕特色清心丸，清心解腻软糯香醇。",
+          "coordinates": [
+            116.6785,
+            23.3598
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "小公园历史文化街区（安平路口）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频背景金平区小公园中山纪念亭及安平路实景定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147133477,
+              "name": "民生路",
+              "url": "https://www.openstreetmap.org/way/147133477",
+              "nodeId": 1603408910,
+              "coordinates": [
+                116.6782103,
+                23.3597087
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 7.3
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-miaojiang-chunmeili",
+          "name": "春梅里卤鹅馆（中山路总店）",
+          "category": "潮汕卤味 / 狮头鹅全拼",
+          "addressText": "汕头市金平区中山路71号",
+          "start": 71.6,
+          "end": 84,
+          "posterSecond": 80,
+          "summary": "近50年老字号潮式卤鹅，大竹簸箕盛装澄海狮头鹅全拼，鹅肝粉糯如冰淇淋，鹅肠脆嫩卤香浓郁。",
+          "coordinates": [
+            116.6869,
+            23.3589
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中山路老城区商业街",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据门头实拍与中山路71号历史门牌大致定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147133447,
+              "name": "大华路",
+              "url": "https://www.openstreetmap.org/way/147133447",
+              "nodeId": 5048947681,
+              "coordinates": [
+                116.6872015,
+                23.3583614
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 2.4
+            }
+          },
+          "placeId": "chaoshan-miaojiang-chunmeili",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-miaojiang-laoshiquguozhi",
+          "name": "老市区老字号粿汁",
+          "category": "潮汕传统小吃 / 老式粿汁",
+          "addressText": "汕头市金平区镇邦路美食街",
+          "start": 107.5,
+          "end": 117,
+          "posterSecond": 114,
+          "summary": "金平老市区镇邦路几十年老字号，老卤汁大铁锅热滚，现浇米浆粿角配卤大肠、卤肉卤蛋炸蒜油，浓稠鲜甜。",
+          "coordinates": [
+            116.666,
+            23.3538
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "老市区镇邦路美食街",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍金平区老市区镇邦路老店招牌定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147133457,
+              "name": "镇邦路",
+              "url": "https://www.openstreetmap.org/way/147133457",
+              "nodeId": 1603408821,
+              "coordinates": [
+                116.6659182,
+                23.3537349
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 1.5
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-miaojiang-abomeizhi",
+          "name": "阿伯梅汁水果（小公园店）",
+          "category": "潮汕甘草水果 / 梅汁水果",
+          "addressText": "汕头市金平区跃进路3号（小公园东南街区）",
+          "start": 185,
+          "end": 192,
+          "posterSecond": 188,
+          "summary": "金平老城区知名阿伯梅汁水果，满满一大盆时令鲜果只要20元，莲雾、翠芒、红心芭乐淋酸甜老梅汁清爽解腻。",
+          "coordinates": [
+            116.6845,
+            23.3575
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区跃进路街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频背景老城区跃进路店面与招牌实录大致定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147149262,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/147149262",
+              "nodeId": 5501480959,
+              "coordinates": [
+                116.6843573,
+                23.3573421
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 16.3
+            }
+          },
+          "placeId": "chaoshan-miaojiang-abomeizhi",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-zhizhi-7556966907678084409",
+      "author": "汁汁冰激凌",
+      "title": "汕头美食攻略极速版第一弹～",
+      "url": "https://www.douyin.com/video/7556966907678084409",
+      "shareURL": "https://v.douyin.com/OVNiAI8NWIw/",
+      "publishedOn": "2025-10-03",
+      "durationSeconds": 603.2,
+      "sourceSHA256": "fdfd5d12b00db2c713374cd08c4cc96bdf3547a142100d079f186b73c077cb25",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头金平区老城区阿伯梅汁水果、苏南卤鹅、同济肠粉、广场老姿娘米粉等本土老店。",
+      "segments": [
+        {
+          "id": "chaoshan-zhizhi-abomeizhi",
+          "name": "阿伯梅汁水果（小公园店）",
+          "category": "潮汕甘草水果 / 梅汁水果",
+          "addressText": "汕头市金平区跃进路3号（小公园东南街区）",
+          "start": 47,
+          "end": 72,
+          "posterSecond": 52,
+          "summary": "金平老字号阿伯梅汁水果，实拍十二种高级时令水果大拼盘，阳光玫瑰、莲雾、红心芭乐淋上酸甜解腻的特制老梅汁。",
+          "coordinates": [
+            116.6845,
+            23.3575
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区跃进路街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍金平区跃进路阿伯梅汁水果老店与多博主打卡交叉核实大致定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147149262,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/147149262",
+              "nodeId": 5501480959,
+              "coordinates": [
+                116.6843573,
+                23.3573421
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 16.3
+            }
+          },
+          "placeId": "chaoshan-miaojiang-abomeizhi",
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-zhizhi-sunanlue",
+          "name": "苏南特产卤鹅（金平店）",
+          "category": "潮汕卤味 / 澄海卤鹅",
+          "addressText": "汕头市金平区光华路/同济路老街附近",
+          "start": 156.9,
+          "end": 192,
+          "posterSecond": 178,
+          "summary": "澄海苏南特产卤鹅老字号，师傅刀工精湛，粉肝入口即化软糯甘甜，卤鹅肠嫩脆爆汁，配卤鹅汁拌饭一绝。",
+          "coordinates": [
+            116.671,
+            23.3685
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区光华同济老街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍苏南特产卤鹅金平老店店面与堂食环境大致定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 573828532,
+              "name": "北堤旁路",
+              "url": "https://www.openstreetmap.org/way/573828532",
+              "nodeId": 5510065051,
+              "coordinates": [
+                116.6706442,
+                23.3686072
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 22.3
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-zhizhi-tongjichangfen",
+          "name": "同济肠粉",
+          "category": "潮汕肠粉 / 牛肉肠粉",
+          "addressText": "汕头市金平区同济路老街坊",
+          "start": 380.9,
+          "end": 408,
+          "posterSecond": 395,
+          "summary": "汕头街坊无名厚皮圆盘肠粉，皮糯有韧劲，裹满鲜牛肉与空心菜，配自制辣椒酱与贴心爱心凉茶。",
+          "coordinates": [
+            116.6725,
+            23.371
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区同济路老街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据博主口述与街坊路牌定位金平区同济路无名老肠粉摊位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 573800175,
+              "name": "厦岭路",
+              "url": "https://www.openstreetmap.org/way/573800175",
+              "nodeId": 13423706700,
+              "coordinates": [
+                116.6719208,
+                23.3702862
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 95.8
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-zhizhi-guangchanglaoziniang",
+          "name": "广场老姿娘米粉店",
+          "category": "潮汕汤粉 / 猪杂海鲜米粉",
+          "addressText": "汕头市金平区定安路（人民广场旁）",
+          "start": 534.7,
+          "end": 562.5,
+          "posterSecond": 545,
+          "summary": "人民广场老牌老姿娘米粉，大铁锅滚汤现煮十几种配菜，大虾鱿鱼猪杂满满一大碗，点睛金桔汁酸爽鲜美。",
+          "coordinates": [
+            116.683,
+            23.354
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "人民广场定安路街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据实拍人民广场老姿娘米粉店面与定安路街区定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 581594169,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/581594169",
+              "nodeId": 5564390159,
+              "coordinates": [
+                116.6825169,
+                23.3539595
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 3.5
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaolu-7589618937185756025",
+      "author": "小陆日记",
+      "title": "潮汕潮州一日游！24小时狂吃18家店是什么体验！",
+      "url": "https://www.douyin.com/video/7589618937185756025",
+      "shareURL": "https://v.douyin.com/1OiM58G0deM/",
+      "publishedOn": "2025-12-30",
+      "durationSeconds": 191.1,
+      "sourceSHA256": "d98a57f0ee9ca01e6de6e721d0f2754b369db30cb408e18c907ce54e574a86b8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮州古城牌坊街、西湖街区特色沙茶肠粉、吴敬平炸春饼及官塘老陈鱼生。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaolu-chaozhouchangfen",
+          "name": "潮州老牌沙茶花生酱肠粉",
+          "category": "潮州特色肠粉 / 沙茶肠粉",
+          "addressText": "潮州市湘桥区西湖街区",
+          "start": 11.2,
+          "end": 26.7,
+          "posterSecond": 15,
+          "summary": "潮州特色浓颜系肠粉，沙茶酱与花生酱双重浇汁，薄皮包裹巨量牛肉、生蚝、鲜虾和大朵蔬菜，加面双吃超满足。",
+          "coordinates": [
+            116.643,
+            23.666
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城西湖街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍潮州西湖街区老肠粉摊位与沙茶花生酱特色定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 622284462,
+              "name": "开元路",
+              "url": "https://www.openstreetmap.org/way/622284462",
+              "nodeId": 2711799814,
+              "coordinates": [
+                116.6423327,
+                23.6657365
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 47.6
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        },
+        {
+          "id": "chaoshan-xiaolu-wujinpingchunbing",
+          "name": "吴敬平传统潮州春饼",
+          "category": "潮州传统小吃 / 炸春饼",
+          "addressText": "潮州市湘桥区太平路牌坊街",
+          "start": 57,
+          "end": 63.2,
+          "posterSecond": 58,
+          "summary": "牌坊街老字号吴敬平春饼，金黄酥脆大铁锅现炸，内馅汇集去皮绿豆、猪肉香菇，外酥里嫩层次分明。",
+          "coordinates": [
+            116.6455,
+            23.6678
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城太平路牌坊街",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍牌坊街吴敬平传统春饼门头定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1029205378,
+              "name": "柳衙巷",
+              "url": "https://www.openstreetmap.org/way/1029205378",
+              "nodeId": 3548337163,
+              "coordinates": [
+                116.6459871,
+                23.6676307
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 10.2
+            }
+          },
+          "placeId": "chaoshan-xiaolu-wujinpingchunbing",
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        },
+        {
+          "id": "chaoshan-xiaolu-laochenyusheng",
+          "name": "官塘老陈鱼生",
+          "category": "潮汕生鱼料理 / 官塘鱼生",
+          "addressText": "潮州市湘桥区西新路 / 牌坊街西侧",
+          "start": 143.1,
+          "end": 156,
+          "posterSecond": 146,
+          "summary": "纪录片级官塘鱼生老店，老师傅大刀片鱼薄如蝉翼透光，搭配十数种香辛料、普宁豆酱与香油，脆韧弹牙打太极。",
+          "coordinates": [
+            116.648,
+            23.6645
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城西新街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据实拍老陈鱼生刀工与古城西新路老店招牌定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 632212399,
+              "name": "天水路",
+              "url": "https://www.openstreetmap.org/way/632212399",
+              "nodeId": 5878054286,
+              "coordinates": [
+                116.6480181,
+                23.6645157
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 1.6
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaozhen-7695617424514632994",
+      "author": "小珍来咯…",
+      "title": "潮汕牛肉火锅的魅力在于新鲜的食材 简单锅底碰撞出的美味～",
+      "url": "https://www.douyin.com/video/7695617424514632994",
+      "shareURL": "https://v.douyin.com/30W8GVYm72s/",
+      "publishedOn": "2026-10-12",
+      "durationSeconds": 1002.7,
+      "sourceSHA256": "7e864ca9c1ada8e200c937118ed49f51fdf38cfb7614ca310267ddfc968f5a9d",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙湖区金鸿公路谢肥记鲜牛肉老店，现切会跳动的牛肉与全牛各部位。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaozhen-xiefeiji",
+          "name": "谢肥记牛肉",
+          "category": "潮汕鲜牛肉火锅 / 蒸汽牛肉",
+          "addressText": "汕头市龙湖区金鸿公路（近新溪镇）",
+          "start": 46,
+          "end": 120,
+          "posterSecond": 115,
+          "summary": "汕头金鸿公路爆火鲜牛肉老店，会跳动的现宰鲜牛肉，五花趾、匙柄、吊龙统统30元统一价，配鲜牛骨高汤锅底。",
+          "coordinates": [
+            116.79,
+            23.415
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "龙湖区金鸿公路新溪街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据实拍谢肥记牛肉大红菜单与金鸿公路新溪镇实地位置定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 383093290,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/383093290",
+              "nodeId": 5579595749,
+              "coordinates": [
+                116.7894911,
+                23.416255
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 148.9
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-taojie-7612866882735066377",
+      "author": "桃姐在路上-潮汕纯玩",
+      "title": "潮州美食 超详细攻略 我不理解，潮州美食明明多到炸裂，那些旅游攻略为什么非要让大家都去牌坊街、广济桥周边吃？",
+      "url": "https://www.douyin.com/video/7612866882735066377",
+      "shareURL": "https://v.douyin.com/4OLOeb4ZCeA/",
+      "publishedOn": "2026-03-03",
+      "durationSeconds": 131.6,
+      "sourceSHA256": "fa9dcd4cc20ab16ce585a4bfb8131cbcdcb0f8c6c4c42e501779aaddd198f499",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮州湘桥区开元路、昌黎路镇前街、南郊路、义安路老街区及老社区地道小吃。",
+      "segments": [
+        {
+          "id": "chaoshan-taojie-azhongshimochangfen",
+          "name": "阿中石磨肠粉（南郊路店）",
+          "category": "潮式肠粉 / 石磨现磨现蒸肠粉",
+          "addressText": "潮州市湘桥区南郊路巷子内",
+          "start": 24.4,
+          "end": 39,
+          "posterSecond": 32,
+          "summary": "藏在湘桥区南郊路老巷里的老破店，石磨新鲜米浆现磨现蒸，招牌牛肉肠鲜虾肠皮薄馅足，淋上秘制酱汁咸香不腻。",
+          "coordinates": [
+            116.6435,
+            23.655
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "湘桥区南郊路老居民巷区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频南郊路老巷地名定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1462056940,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/1462056940",
+              "nodeId": 13410621038,
+              "coordinates": [
+                116.6431604,
+                23.6555303
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 68.2
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        },
+        {
+          "id": "chaoshan-taojie-kaiyuanshangxipingxianshuiguo",
+          "name": "开元上西平咸水粿",
+          "category": "潮汕传统小吃 / 咸水粿",
+          "addressText": "潮州市湘桥区开元路街角（开元寺西侧）",
+          "start": 39,
+          "end": 50.8,
+          "posterSecond": 44,
+          "summary": "潮州古城开元路街角几十年老字号，新鲜现蒸软糯米浆粿皮，铺上满满现炒金黄咸香潮汕菜脯粒（萝卜干），咸甜适口。",
+          "coordinates": [
+            116.642,
+            23.6658
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城开元路历史街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍开元路路牌及开元寺街角地标定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 383071850,
+              "name": "上西平路",
+              "url": "https://www.openstreetmap.org/way/383071850",
+              "nodeId": 3862714494,
+              "coordinates": [
+                116.6420018,
+                23.665751
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
+            }
+          },
+          "placeId": "chaoshan-taojie-kaiyuanshangxipingxianshuiguo",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        },
+        {
+          "id": "chaoshan-taojie-xiehuailiangzhimacha",
+          "name": "谢怀亮芝麻茶（潮州总店）",
+          "category": "潮汕甜汤 / 芝麻杏仁茶",
+          "addressText": "潮州市湘桥区太平路义安路老街区",
+          "start": 66.5,
+          "end": 78.5,
+          "posterSecond": 74,
+          "summary": "潮州本地老饕从小吃到大的老字号甜汤铺，招牌芝麻糊与杏仁茶双拼现熬现盛，顺滑浓郁不糊嗓子，标配现炸金黄豆腐串。",
+          "coordinates": [
+            116.645,
+            23.664
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城义安路传统商住街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频背景义安路牌匾及潮州老巷实景定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 348772730,
+              "name": "太平路",
+              "url": "https://www.openstreetmap.org/way/348772730",
+              "nodeId": 5878138765,
+              "coordinates": [
+                116.645046,
+                23.6638596
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 8.5
+            }
+          },
+          "placeId": "chaoshan-taojie-xiehuailiangzhimacha",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        },
+        {
+          "id": "chaoshan-taojie-zhenqianjiefurujichi",
+          "name": "镇前街腐乳鸡翅",
+          "category": "潮汕风味小吃 / 腐乳香酥鸡翅",
+          "addressText": "潮州市湘桥区昌黎路镇前街（近儒学宫）",
+          "start": 91.5,
+          "end": 104,
+          "posterSecond": 97,
+          "summary": "潮州古城镇前街地标小吃，老豆腐乳汁现腌透入味，现炸出锅外皮金黄酥脆掉渣，内里鲜嫩爆汁。",
+          "coordinates": [
+            116.6475,
+            23.667
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州昌黎路海阳县儒学宫镇前街口",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍镇前街地名与学宫红墙外景定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1029205377,
+              "name": "图训巷",
+              "url": "https://www.openstreetmap.org/way/1029205377",
+              "nodeId": 5878138748,
+              "coordinates": [
+                116.6472365,
+                23.6669638
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 9.2
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-lezai-7617868427658718193",
+      "author": "乐仔到处跑",
+      "title": "别再去吃假汕头美食了！ 真正二十六年汕头本地人攻略请收下",
+      "url": "https://www.douyin.com/video/7617868427658718193",
+      "shareURL": "https://v.douyin.com/1ac2K0ymhnw/",
+      "publishedOn": "2026-03-16",
+      "durationSeconds": 350.5,
+      "sourceSHA256": "1d120c5d5a50427745fa01617b501899f609bf47b3dc6612458e44e426156036",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头金平区福平路、国平路小公园、老市区鲎粿店及牛肉老店。",
+      "segments": [
+        {
+          "id": "chaoshan-lezai-fuhechengniurouwan",
+          "name": "福合埕牛肉丸（福平路总店）",
+          "category": "潮汕牛肉火锅 / 现切牛肉与手打牛丸",
+          "addressText": "汕头市金平区福平路（近小公园）",
+          "start": 41,
+          "end": 49.5,
+          "posterSecond": 46,
+          "summary": "汕头市金平区福平路开业66年的牛肉地标老店，鲜牛肉每日分批现宰直送，老师傅刀工现切五花趾、吊龙与匙柄，手打生牛肉丸筋道爆汁。",
+          "coordinates": [
+            116.672,
+            23.3618
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区福平路老城区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍福平路老铺门头定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 532956310,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/532956310",
+              "nodeId": 5171343036,
+              "coordinates": [
+                116.6720601,
+                23.3617381
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 8.1
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-lezai-aixiganmian",
+          "name": "爱西干面（小公园总店）",
+          "category": "潮汕面食 / 中华老字号爱西干面",
+          "addressText": "汕头市金平区国平路（小公园中山纪念亭南侧）",
+          "start": 114.5,
+          "end": 121.5,
+          "posterSecond": 118,
+          "summary": "汕头小公园开业七十余年中华老字号，招牌手作干面碱水香气浓郁筋道，拌特调芝麻沙茶卤汁，配新鲜烫猪肉片与大颗手打肉饼肉丸紫菜汤。",
+          "coordinates": [
+            116.679,
+            23.3592
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "小公园历史文化街区（国平路）",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据小公园中山纪念亭向南国平路实景定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 573434697,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/573434697",
+              "nodeId": 5507445806,
+              "coordinates": [
+                116.6789346,
+                23.3593555
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 17
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-lezai-yuejinhouguo",
+          "name": "跃进鲎粿（小公园店）",
+          "category": "潮汕非遗小吃 / 传统煎鲎粿",
+          "addressText": "汕头市金平区福平路与跃进路交界（近小公园）",
+          "start": 180.7,
+          "end": 205.6,
+          "posterSecond": 194,
+          "summary": "汕头老市区福平路开业三十余年老字号，每天新鲜现蒸现煎，内包鲜虾、干贝、香菇、猪肉与鹌鹑蛋，出锅淋浓郁沙茶酱与独门秘酱，搭配招牌猪肠胀糯米与猪肚汤。",
+          "coordinates": [
+            116.6715,
+            23.361
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区福平路与跃进路街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍福平路小公园老巷定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 116810633,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/116810633",
+              "nodeId": 5048947392,
+              "coordinates": [
+                116.6718162,
+                23.3608584
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 35.9
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-yuwei-7671587236994895138",
+      "author": "鱼尾呀",
+      "title": "📍汕头攻略|如何两天9家美食吃到爽顺路6个景点看日落？",
+      "url": "https://www.douyin.com/video/7671587236994895138",
+      "shareURL": "https://v.douyin.com/RmgNWvyqS2E/",
+      "publishedOn": "2026-08-08",
+      "durationSeconds": 272,
+      "sourceSHA256": "f1a2512d89a496062414a970f2aab5a0b830986482ac20bd180bf9f8b81964db",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙眼北路谢氏盛兴丸店、中山路春梅里卤鹅馆、小公园及西堤公园。",
+      "segments": [
+        {
+          "id": "chaoshan-yuwei-xieshishengxingwandian",
+          "name": "谢氏盛兴丸店（龙眼北路总店）",
+          "category": "潮汕手打丸 / 非遗墨斗丸与手打牛丸",
+          "addressText": "汕头市金平区龙眼北路跃进路附近",
+          "start": 62.1,
+          "end": 72.6,
+          "posterSecond": 67,
+          "summary": "开了近40年的潮汕手工丸店，门口摆放几十种手打生丸，现点现下大锅翻滚，招牌墨斗丸由本港鲜墨鱼手打起胶，Q弹爽脆鲜甜爆汁。",
+          "coordinates": [
+            116.7062,
+            23.372
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "龙眼北路传统商住街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频龙眼北路实景招牌定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 281876859,
+              "name": "龙眼北路",
+              "url": "https://www.openstreetmap.org/way/281876859",
+              "nodeId": 5549724937,
+              "coordinates": [
+                116.7061518,
+                23.3717539
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 4.9
+            }
+          },
+          "placeId": "chaoshan-yuwei-xieshishengxingwandian",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-yuwei-chunmeili",
+          "name": "春梅里卤鹅馆（中山路总店）",
+          "category": "潮汕卤味 / 狮头鹅全拼",
+          "addressText": "汕头市金平区中山路71号",
+          "start": 122.3,
+          "end": 142.5,
+          "posterSecond": 134,
+          "summary": "师傅从老卤大锅里捞出整只澄海大狮头鹅手起刀落现斩，鹅肉纹理清晰多汁，粉肝入口即化如冰淇淋，爆炒鹅肠与鹅血煲香气扑鼻。",
+          "coordinates": [
+            116.6869,
+            23.3589
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区中山路71号春梅里总店",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "多博主同店归并：与喵酱饿了、萌萌鱼共用同店坐标与点位。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147133447,
+              "name": "大华路",
+              "url": "https://www.openstreetmap.org/way/147133447",
+              "nodeId": 5048947681,
+              "coordinates": [
+                116.6872015,
+                23.3583614
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 2.4
+            }
+          },
+          "placeId": "chaoshan-miaojiang-chunmeili",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-ashen-7605899092857903507",
+      "author": "AAA阿珅在干饭",
+      "title": "潮汕潮州两天爽吃11家店不踩雷攻略！",
+      "url": "https://www.douyin.com/video/7605899092857903507",
+      "shareURL": "https://v.douyin.com/3U9m0bcc9lg/",
+      "publishedOn": "2026-02-12",
+      "durationSeconds": 165.4,
+      "sourceSHA256": "9f093c5a7e6d94031913b0ac4d62a912274c3110743c95aa07d439e106ea2003",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮州古城牌坊街吴敬平春饼、开元老牌咸水粿、义安路谢怀亮芝麻茶及海记牛肉火锅。",
+      "segments": [
+        {
+          "id": "chaoshan-ashen-wujinpingchunbing",
+          "name": "吴敬平传统潮州春饼",
+          "category": "潮州传统小吃 / 炸春饼",
+          "addressText": "潮州市湘桥区太平路牌坊街",
+          "start": 107.4,
+          "end": 115.5,
+          "posterSecond": 111,
+          "summary": "古城排坊街排队名店，春饼还没出锅就被预订一空，金黄薄脆外皮极其酥脆，内馅咸香沙沙细腻口感，三元一个超地道。",
+          "coordinates": [
+            116.6455,
+            23.6678
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州牌坊街历史文化街区",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "多博主同店归并：与小陆日记共用同店坐标与点位。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1029205378,
+              "name": "柳衙巷",
+              "url": "https://www.openstreetmap.org/way/1029205378",
+              "nodeId": 3548337163,
+              "coordinates": [
+                116.6459871,
+                23.6676307
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 10.2
+            }
+          },
+          "placeId": "chaoshan-xiaolu-wujinpingchunbing",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        },
+        {
+          "id": "chaoshan-ashen-kaiyuanshangxipingxianshuiguo",
+          "name": "开元上西平咸水粿",
+          "category": "潮汕传统小吃 / 咸水粿",
+          "addressText": "潮州市湘桥区开元路街角（开元寺西侧）",
+          "start": 117.4,
+          "end": 124.4,
+          "posterSecond": 120,
+          "summary": "老远就闻到炒菜脯的浓郁香气，白嫩如小茶杯的米浆粿皮弹牙爽口，满满铺上油炒金黄菜脯粒，咸香微甜经典潮味。",
+          "coordinates": [
+            116.642,
+            23.6658
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城开元路历史街区",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "多博主同店归并：与桃姐在路上共用同店坐标与点位。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 383071850,
+              "name": "上西平路",
+              "url": "https://www.openstreetmap.org/way/383071850",
+              "nodeId": 3862714494,
+              "coordinates": [
+                116.6420018,
+                23.665751
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0
+            }
+          },
+          "placeId": "chaoshan-taojie-kaiyuanshangxipingxianshuiguo",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        },
+        {
+          "id": "chaoshan-ashen-xiehuailiangzhimacha",
+          "name": "谢怀亮芝麻茶（潮州总店）",
+          "category": "潮汕甜汤 / 芝麻杏仁茶",
+          "addressText": "潮州市湘桥区太平路义安路老街区",
+          "start": 144.5,
+          "end": 160.6,
+          "posterSecond": 148,
+          "summary": "黑芝麻糊磨得极其细腻，入口丝滑醇厚不甜腻，奶白杏仁茶香气浓郁，标配灵魂酸甜炸豆腐串两相映衬。",
+          "coordinates": [
+            116.645,
+            23.664
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城义安路传统商住街区",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "多博主同店归并：与桃姐在路上共用同店坐标与点位。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 348772730,
+              "name": "太平路",
+              "url": "https://www.openstreetmap.org/way/348772730",
+              "nodeId": 5878138765,
+              "coordinates": [
+                116.645046,
+                23.6638596
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 8.5
+            }
+          },
+          "placeId": "chaoshan-taojie-xiehuailiangzhimacha",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-mengmengyu-7585886099617991986",
+      "author": "萌萌鱼",
+      "title": "汕头龙眼南路必吃美食攻略！n刷不踩雷！！！",
+      "url": "https://www.douyin.com/video/7585886099617991986",
+      "shareURL": "https://v.douyin.com/jUO6WjaPbvQ/",
+      "publishedOn": "2025-12-20",
+      "durationSeconds": 105.7,
+      "sourceSHA256": "f28973f74260b5ad46fa497a393fbbc1346f0bceea99fa06801c2a73c27d5466",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙眼南路美食街、洪记老牌猪肚、长平肠粉及中山路春梅里卤鹅馆。",
+      "segments": [
+        {
+          "id": "chaoshan-mengmengyu-hongjizhudutang",
+          "name": "洪记老牌猪肚（龙眼南路店）",
+          "category": "潮汕汤品面食 / 老牌鲜猪肚汤",
+          "addressText": "汕头市龙湖区龙眼南路美食街",
+          "start": 5.4,
+          "end": 15.1,
+          "posterSecond": 10,
+          "summary": "龙眼南路本地人推荐的十年老店，明档现选自选新鲜食材，招牌鲜熬猪肚汤浓郁暖胃，搭配特调葱油干面与肉酱干面。",
+          "coordinates": [
+            116.7065,
+            23.365
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "龙眼南路美食街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频龙眼南路实景门头定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 281876853,
+              "name": "龙眼南路",
+              "url": "https://www.openstreetmap.org/way/281876853",
+              "nodeId": 1603438118,
+              "coordinates": [
+                116.7061607,
+                23.3645995
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 34.6
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-mengmengyu-chunmeili",
+          "name": "春梅里卤鹅馆（中山路总店）",
+          "category": "潮汕卤味 / 狮头鹅全拼",
+          "addressText": "汕头市金平区中山路71号",
+          "start": 23.2,
+          "end": 31.3,
+          "posterSecond": 28,
+          "summary": "独特传承老卤风味，鲜咸香甜透亮，大盘狮头鹅肉香而不腻品质在线，鹅肉拼盘卤汁浓郁绝佳配饭。",
+          "coordinates": [
+            116.6869,
+            23.3589
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区中山路71号春梅里总店",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "多博主同店归并：达成喵酱饿了、鱼尾呀、萌萌鱼三位博主同店归并。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147133447,
+              "name": "大华路",
+              "url": "https://www.openstreetmap.org/way/147133447",
+              "nodeId": 5048947681,
+              "coordinates": [
+                116.6872015,
+                23.3583614
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 2.4
+            }
+          },
+          "placeId": "chaoshan-miaojiang-chunmeili",
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        },
+        {
+          "id": "chaoshan-mengmengyu-changpingchangfen",
+          "name": "长平老牌肠粉（龙眼店）",
+          "category": "潮式肠粉 / 老牌晶莹薄皮肠粉",
+          "addressText": "汕头市龙湖区长平路与龙眼南路交界",
+          "start": 69.9,
+          "end": 75.3,
+          "posterSecond": 72,
+          "summary": "汕头老牌特色薄皮肠粉，粉皮晶莹剔透柔韧轻盈，大颗鲜虾、鲜蚝与肉末馅料满满，吃得到的新鲜爽滑。",
+          "coordinates": [
+            116.7062,
+            23.3635
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长平路与龙眼南路交界街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频长平路与龙眼南路交界实景定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 614508914,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/614508914",
+              "nodeId": 5812697388,
+              "coordinates": [
+                116.7062145,
+                23.3625503
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 2
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-beizeng-7551339620382936356",
+      "author": "倍增CD了",
+      "title": "可能是最适合吃货的汕头美食攻略（合集）",
+      "url": "https://www.douyin.com/video/7551339620382936356",
+      "shareURL": "https://v.douyin.com/PmHLxQLAJjY/",
+      "publishedOn": "2025-09-19",
+      "durationSeconds": 193.2,
+      "sourceSHA256": "5d926f6e8eb9479d48bf3fca3fed38d9dc9b519bd84e6d90c77ae2e2bcaa400f",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙眼北路谢氏盛兴丸店本港墨斗鱼丸制作流程及老城夜粥菜市场。",
+      "segments": [
+        {
+          "id": "chaoshan-beizeng-xieshishengxingwandian",
+          "name": "谢氏盛兴丸店（龙眼北路总店）",
+          "category": "潮汕手打丸 / 非遗墨斗丸与手打牛丸",
+          "addressText": "汕头市金平区龙眼北路跃进路附近",
+          "start": 90.9,
+          "end": 128,
+          "posterSecond": 108,
+          "summary": "老汕头人私藏非遗手工丸店，选用新鲜本港墨斗去皮切块手打成泥，真材实料无偷工减料，墨斗丸白嫩爽弹如乒乓球。",
+          "coordinates": [
+            116.7062,
+            23.372
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "龙眼北路传统商住街区",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "多博主同店归并：与鱼尾呀共用同店坐标与点位。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 281876859,
+              "name": "龙眼北路",
+              "url": "https://www.openstreetmap.org/way/281876859",
+              "nodeId": 5549724937,
+              "coordinates": [
+                116.7061518,
+                23.3717539
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 4.9
+            }
+          },
+          "placeId": "chaoshan-yuwei-xieshishengxingwandian",
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaolu-7573258815165689536",
+      "author": "小陆日记",
+      "title": "潮汕揭阳一日游！24小时狂吃15家店是什么体验！",
+      "url": "https://www.douyin.com/video/7573258815165689536",
+      "shareURL": "https://v.douyin.com/OR-mVszZ5Ms/",
+      "publishedOn": "2025-11-16",
+      "durationSeconds": 193.2,
+      "sourceSHA256": "bf7d436366b6442286801162952566e759ae91391329115b5de54ebdd5b0038e",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍揭阳市区老店、卢记牛肉火锅、新惠隆隆江猪脚饭及新兴学校肠粉。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaolu-lujiniurou",
+          "name": "揭阳卢记牛肉火锅",
+          "category": "潮汕牛肉火锅 / 揭阳现宰雪花牛肉",
+          "addressText": "揭阳市榕城区市区老店",
+          "start": 11.8,
+          "end": 25.8,
+          "posterSecond": 18,
+          "summary": "揭阳地标牛肉火锅，雪花、吊龙、匙柄新鲜现切如艺术品纹理，手打牛肉丸Q弹爆汁，锅底自带牛腩牛杂仅十元一人。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        },
+        {
+          "id": "chaoshan-xiaolu-xinhuilongzhujiaofan",
+          "name": "揭阳新惠隆猪脚饭",
+          "category": "潮汕特色米饭 / 正宗隆江猪脚饭",
+          "addressText": "揭阳市龙江发源地老店",
+          "start": 33.5,
+          "end": 47.2,
+          "posterSecond": 41,
+          "summary": "猪脚饭发源地揭阳正宗老味道，二十元堆成肉山，肥肉入口即化卤出诱人胶质感，淋上卤汁拌饭香气直击灵魂。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dage-7675288235698023602",
+      "author": "达哥在上海",
+      "title": "在广东潮汕饶平县欧石村吃鱼排海上餐厅，“游艇”接送宣判封顶！",
+      "url": "https://www.douyin.com/video/7675288235698023602",
+      "shareURL": "https://v.douyin.com/kzzSEnebjQY/",
+      "publishedOn": "2026-08-18",
+      "durationSeconds": 430.7,
+      "sourceSHA256": "3f9820c947eef25b1692808d759a82d9d7dd42843feded6071ae4c38f1075a9a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮州饶平县海山镇欧石村乘接驳游艇登上海上鱼排餐厅现捞海鲜实景。",
+      "segments": [
+        {
+          "id": "chaoshan-dage-oushiyupei",
+          "name": "欧石村海上鱼排餐厅",
+          "category": "潮汕海上餐厅 / 现捞生猛海鲜大排档",
+          "addressText": "潮州市饶平县海山镇欧石村海上鱼排",
+          "start": 10,
+          "end": 32,
+          "posterSecond": 20,
+          "summary": "坐快艇接送登上漂浮在海上的鱼排大排档，直接在海水网箱现捞活蟹、大虾与青口贝现点现炒，海风拂面鲜甜至极。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaolin-7644562295713266043",
+      "author": "我是小林",
+      "title": "三刷潮州美食旅游合集攻略请收好！和朋友带上1TB的胃出发吧！",
+      "url": "https://www.douyin.com/video/7644562295713266043",
+      "shareURL": "https://v.douyin.com/Qo1-PFRDcq8/",
+      "publishedOn": "2026-05-27",
+      "durationSeconds": 93.6,
+      "sourceSHA256": "774d8f75b619ae34589f80d0002128b2485e2513cae6d69aeba673731e13eea8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮州古城花生酱溏心蛋肠粉、牌坊街炸腐乳鸡翅及广济楼夜景英歌舞。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaolin-huashengjiangchangfen",
+          "name": "潮州特色花生酱溏心蛋肠粉",
+          "category": "潮式肠粉 / 浓厚花生酱肠粉",
+          "addressText": "潮州市湘桥区古城西湖街区",
+          "start": 0,
+          "end": 12.4,
+          "posterSecond": 6,
+          "summary": "落地潮州心心念念的花生酱肠粉，一定要加一颗溏心蛋，裹满蛋液与浓郁咸甜花生酱汁，香滑满足。",
+          "coordinates": [
+            116.643,
+            23.666
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "潮州古城西湖肠粉街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频古城西湖肠粉老店实景定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 622284462,
+              "name": "开元路",
+              "url": "https://www.openstreetmap.org/way/622284462",
+              "nodeId": 2711799814,
+              "coordinates": [
+                116.6423327,
+                23.6657365
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 47.6
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dongmai-7670683829091266466",
+      "author": "东麦",
+      "title": "揭阳“21家本土老店”4天3夜 潮汕土著带你吃遍揭阳！",
+      "url": "https://www.douyin.com/video/7670683829091266466",
+      "shareURL": "https://v.douyin.com/VXQx2_5_-MA/",
+      "publishedOn": "2026-08-06",
+      "durationSeconds": 290.1,
+      "sourceSHA256": "4e8679d21d953e6bdff1f6554019a195ff6de255b9e0da3c3a3fbd8d2be1fd58",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍揭阳老城区21家本土老店、手擀面及特色粿汁。",
+      "segments": [
+        {
+          "id": "chaoshan-dongmai-jieyanglaodianguozhi",
+          "name": "揭阳老城传统粿汁与面汤",
+          "category": "潮汕传统小吃 / 揭阳老城风味",
+          "addressText": "揭阳市榕城区中山路老街",
+          "start": 10,
+          "end": 25,
+          "posterSecond": 15,
+          "summary": "揭阳土著私藏老城老店，老卤大肠与手擀面汤，保留原汁原味潮汕老城烟火气。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-zhizhi-7604486952716553381",
+      "author": "汁汁冰激凌",
+      "title": "2025年度总结汕头只有本地人老饕才知道的16家极度宝藏老店！",
+      "url": "https://www.douyin.com/video/7604486952716553381",
+      "shareURL": "https://v.douyin.com/P7nsUBF08DY/",
+      "publishedOn": "2026-02-08",
+      "durationSeconds": 448.2,
+      "sourceSHA256": "47d173ec49f37822cb88fc384c0ab4142358bd1b8bc56dd93fddf8fb981600f2",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头金平区老市区老饕私藏干面、特色粿汁与传统小吃。",
+      "segments": [
+        {
+          "id": "chaoshan-zhizhi-laotaoganmian",
+          "name": "老市区老饕私藏干面",
+          "category": "潮汕面食 / 老市区特色干面",
+          "addressText": "汕头市金平区老城区街巷",
+          "start": 15,
+          "end": 35,
+          "posterSecond": 25,
+          "summary": "汕头本地老饕私藏老店，古早味浓油赤酱拌手作干面，配现烫猪杂鲜肉汤，回味悠长。",
+          "coordinates": [
+            116.68,
+            23.356
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金平区老市区传统街巷",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍金平老城区街巷定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147133467,
+              "name": "跃进路",
+              "url": "https://www.openstreetmap.org/way/147133467",
+              "nodeId": 5126338533,
+              "coordinates": [
+                116.6799446,
+                23.3559459
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 6.1
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaozhen-7698251458919091475",
+      "author": "小珍来咯…",
+      "title": "小众赛道的小众火锅之卤水火锅 涮鞋垫子都好吃",
+      "url": "https://www.douyin.com/video/7698251458919091475",
+      "shareURL": "https://v.douyin.com/wex0lNGb-pk/",
+      "publishedOn": "2026-10-19",
+      "durationSeconds": 797,
+      "sourceSHA256": "2c82858e00d8f378accaf8e02447f09722655cf1c322215290e2f622fb1c5ae1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙湖区十一合村老厝庭院厝味火锅，特色下山虎潮式老厝庭院与特制卤水火锅、鲜牛肉及粉鹅肝。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaozhen-cuoweihuoguo",
+          "name": "厝味火锅（十一合店）",
+          "category": "潮汕火锅 / 卤水火锅",
+          "addressText": "汕头市龙湖区十一合村下山虎老厝庭院",
+          "start": 18,
+          "end": 37,
+          "posterSecond": 25,
+          "summary": "汕头特色卤水火锅，藏在十一合村传统下山虎潮汕老厝庭院中，以秘制浓香中药卤水作锅底，涮鲜牛肉、牛筋与卤水粉鹅肝，咸香醇厚回甘。",
+          "coordinates": [
+            116.7842,
+            23.3855
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "十一合村传统潮汕老厝片区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据原片实拍下山虎庭院与十一合村大体定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 551514216,
+              "name": "金新路",
+              "url": "https://www.openstreetmap.org/way/551514216",
+              "nodeId": 5326236610,
+              "coordinates": [
+                116.784341,
+                23.385874
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 40.7
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dage-7569558745106572019",
+      "author": "达哥在上海",
+      "title": "在潮汕汕头高架桥下的深夜烤牛肉，3块的烤牛筋 2块5毛的烤牛肉",
+      "url": "https://www.douyin.com/video/7569558745106572019",
+      "shareURL": "https://v.douyin.com/u9vncniorhI/",
+      "publishedOn": "2025-11-06",
+      "durationSeconds": 571,
+      "sourceSHA256": "02b506e282c60e14918f171a58e5944ac103e5da1b032a801c0b77ee60095ceb",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙湖区泰山路高架桥下深夜路边摊炭烤牛肉串、烤牛筋与现烤鸡翅。",
+      "segments": [
+        {
+          "id": "chaoshan-dage-gaojiaoqiaokaoniurou",
+          "name": "高架桥下深夜炭烤牛肉",
+          "category": "潮汕烧烤 / 炭烤牛肉牛筋",
+          "addressText": "汕头市龙湖区泰山路高架桥下",
+          "start": 0,
+          "end": 18,
+          "posterSecond": 7,
+          "summary": "深夜汕头高架桥下的市井烟火路边摊，炭火现烤3块钱牛筋与2.5元鲜牛肉串，外焦里嫩肉香四溢，搭配炭烤微甜鲜鸡翅与冰爽啤酒。",
+          "coordinates": [
+            116.735,
+            23.385
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "泰山路高架桥下路段",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍泰山路高架桥周边深夜露天烧烤摊大致定位，非固定铺面。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1310896860,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/1310896860",
+              "nodeId": 8178679031,
+              "coordinates": [
+                116.7354613,
+                23.3852148
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 3.9
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-mizijun-7462282366891937058",
+      "author": "密子君",
+      "title": "7元潮汕夜茶初体验！80种茶点不重样！",
+      "url": "https://www.douyin.com/video/7462282366891937058",
+      "shareURL": "https://v.douyin.com/KFV2aG7ZMck/",
+      "publishedOn": "2025-01-21",
+      "durationSeconds": 476,
+      "sourceSHA256": "f3d5026b33a62550934d9e62fe5277c807b006c8f77f419e67b6b1b4fbb87151",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍揭阳普宁流沙春满园夜茶，大厅蒸笼自取80余种平价粤式点心。",
+      "segments": [
+        {
+          "id": "chaoshan-mizijun-chunmanyuanyeca",
+          "name": "春满园夜茶（普宁流沙店）",
+          "category": "潮汕夜茶 / 平价点心",
+          "addressText": "揭阳市普宁市流沙街道春满园",
+          "start": 7.8,
+          "end": 37,
+          "posterSecond": 16,
+          "summary": "普宁流沙高人气平价潮汕夜茶，均价7到10元，明档自取虾饺、凤爪、金钱肚、红米肠等80多种热气腾腾的现蒸现炸茶点。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaozhen-7665542156819451151",
+      "author": "小珍来咯…",
+      "title": "一家特别温暖的农村大排档 品尝到在外面都没见过的菜",
+      "url": "https://www.douyin.com/video/7665542156819451151",
+      "shareURL": "https://v.douyin.com/UresowjSt7E/",
+      "publishedOn": "2026-07-23",
+      "durationSeconds": 911,
+      "sourceSHA256": "04defaaede6c63dc6afd07b1007cfee2aaec834195003336adc1e5578aa6d2be",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍乡村农家大院特色排档，自搭柴火灶现烤脆皮烧鹅与特色捞汁海鲜家常菜。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaozhen-nongcundapaidang",
+          "name": "乡村特色柴火大排档（特色农家大院）",
+          "category": "潮汕排档 / 柴火土灶烧鹅",
+          "addressText": "潮汕近郊乡村农家大院排档",
+          "start": 20.5,
+          "end": 48.5,
+          "posterSecond": 45,
+          "summary": "深藏乡村农家大院的特色排档，炭火柴火炉现烤脆皮烧鹅外酥里嫩肉汁迸发，配以捞汁鲜海鲜与自家农家菜，质朴美味。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440000"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dongmai-7438037425907174719",
+      "author": "东麦",
+      "title": "《汕头深夜的实在大排档》5个硬菜150 食物是真好",
+      "url": "https://www.douyin.com/video/7438037425907174719",
+      "shareURL": "https://v.douyin.com/ytUSMjZAEuQ/",
+      "publishedOn": "2024-11-17",
+      "durationSeconds": 181,
+      "sourceSHA256": "c6e0c14acdb228ef5784920c9e9b394135eb46e0a6925eca40a37dedb6b0a584",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头金平区华坞路华坞市场宏兴大排档，20年老店猪油大火生炒与传统生腌潮菜。",
+      "segments": [
+        {
+          "id": "chaoshan-dongmai-huawuhongxing",
+          "name": "华坞宏兴大排档（华坞路店）",
+          "category": "潮汕大排档 / 猪油爆炒生腌",
+          "addressText": "汕头市金平区华坞路7号华坞市场111号",
+          "start": 0,
+          "end": 20,
+          "posterSecond": 12,
+          "summary": "汕头金平华坞市场旁开店20多年的深夜老排档，坚持猪油大火猛炒，招牌普宁炸豆干外脆里嫩内如布丁，生炒鲜鹅肠爽脆过瘾，5个硬菜仅150元。",
+          "coordinates": [
+            116.6912,
+            23.3685
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "华坞市场老生活街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍华坞市场宏兴大排档招牌与华坞路街区大致定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 573387865,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/573387865",
+              "nodeId": 5507164272,
+              "coordinates": [
+                116.6921908,
+                23.368793
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 32
+            }
+          },
+          "footageNote": "2024年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-yige-7355328441836752155",
+      "author": "Renyi毅哥",
+      "title": "深陷潮汕街头烟火气！满满一锅超辣烧牛杂，配上纯鲜嫩牛肉",
+      "url": "https://www.douyin.com/video/7355328441836752155",
+      "shareURL": "https://v.douyin.com/Om6IKVn2j8M/",
+      "publishedOn": "2024-04-09",
+      "durationSeconds": 156,
+      "sourceSHA256": "c3c335143c6e62c766489660e04db6da24c9e65699ab8f57a712c6a7b0f0719a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头金平区乌桥二马路正五冻品辣粿条老店，深夜铁锅现烧香辣牛腩牛杂配细粿条。",
+      "segments": [
+        {
+          "id": "chaoshan-yige-zhenwudongpin",
+          "name": "正五冻品辣粿条（乌桥老店）",
+          "category": "潮汕粿条 / 辣汤牛杂粿条",
+          "addressText": "汕头市金平区二马路乌桥街道廻澜市场大门旁",
+          "start": 5,
+          "end": 30,
+          "posterSecond": 16,
+          "summary": "汕头金平老乌桥深夜烟火老店，特色辣味浓汤底，热气腾腾大锅牛腩牛杂软烂入味，搭配鲜烫牛肉片与爽滑细米粿条，香辣过瘾暖胃解馋。",
+          "coordinates": [
+            116.6665,
+            23.3682
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "乌桥老街廻澜市场街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍金平区乌桥二马路招牌与老街景大致定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147553197,
+              "name": "光华路",
+              "url": "https://www.openstreetmap.org/way/147553197",
+              "nodeId": 1607599993,
+              "coordinates": [
+                116.6666878,
+                23.3679178
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 24.1
+            }
+          },
+          "footageNote": "2024年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-zhizhi-7601508904490022821",
+      "author": "汁汁冰激凌",
+      "title": "建议所有来汕头旅游的都来农贸市场吃饭…",
+      "url": "https://www.douyin.com/video/7601508904490022821",
+      "shareURL": "https://v.douyin.com/3IW_S_SbBt0/",
+      "publishedOn": "2026-01-31",
+      "durationSeconds": 115,
+      "sourceSHA256": "c9c090f5b75d8bd989ed9aef8bc77ef8953905e6e65e8e60818a0f78cc9eefde",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙湖区林三满农贸市场沉浸式火锅工厂，两千平菜市档口自选鲜切牛肉与熟食卤水。",
+      "segments": [
+        {
+          "id": "chaoshan-zhizhi-linsanman",
+          "name": "林三满农贸工厂火锅·卤水传承（万象城店）",
+          "category": "潮汕火锅 / 农贸市场沉浸火锅",
+          "addressText": "汕头市龙湖区金砂东路与丹霞西街交叉口",
+          "start": 0,
+          "end": 28,
+          "posterSecond": 12,
+          "summary": "汕头2000平米沉浸式菜市场主题火锅，还原传统农贸市集档口，鲜切牛肉、现捞海鲜、卤水鹅肉按盘自选，热热闹闹烟火气十足。",
+          "coordinates": [
+            116.7145,
+            23.3646
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金砂东路与丹霞西街商圈",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍农贸市场主题店招与金砂东路交叉口大体定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 532264612,
+              "name": "长平东路",
+              "url": "https://www.openstreetmap.org/way/532264612",
+              "nodeId": 5165391821,
+              "coordinates": [
+                116.7147948,
+                23.3645701
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 3.8
+            }
+          },
+          "placeId": "chaoshan-zhizhi-linsanman",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dongmai-7651745837265799019",
+      "author": "东麦",
+      "title": "开在老城区里的潮汕大排档，这就是人间烟火！",
+      "url": "https://www.douyin.com/video/7651745837265799019",
+      "shareURL": "https://v.douyin.com/V5HUgdgqm_A/",
+      "publishedOn": "2026-06-16",
+      "durationSeconds": 145,
+      "sourceSHA256": "029ca3e1725af296b8d08d49a9f6392634280d6458544eddaacab075892bb184",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙湖区丹霞庄黄记饮食店30年家常老菜，生炊海鲜与传统潮式打冷大排档。",
+      "segments": [
+        {
+          "id": "chaoshan-dongmai-huangjidapaidang",
+          "name": "黄记饮食店·潮汕家常菜（丹霞庄店）",
+          "category": "潮汕排档 / 潮汕家常菜海鲜",
+          "addressText": "汕头市龙湖区华山南路丹霞庄中区4栋101号",
+          "start": 0.75,
+          "end": 20,
+          "posterSecond": 10,
+          "summary": "汕头丹霞庄老社区开了32年的平价家常海鲜大排档，招牌杂鱼鼎、生炊海鲜与潮汕卤味，镬气十足价格亲民，地道老街坊深夜食堂。",
+          "coordinates": [
+            116.7167,
+            23.3638
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "丹霞庄中区生活街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍丹霞庄黄记饮食店招牌与街景大致定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 581788123,
+              "name": "华山南路",
+              "url": "https://www.openstreetmap.org/way/581788123",
+              "nodeId": 5504686187,
+              "coordinates": [
+                116.7166799,
+                23.3643317
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 1.7
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dage-7571045085338270154",
+      "author": "达哥在上海",
+      "title": "在潮汕揭阳下架山镇村里喝“普宁早茶”全是个位数的茶点好吃又实惠，吃东西全靠抢！",
+      "url": "https://www.douyin.com/video/7571045085338270154",
+      "shareURL": "https://v.douyin.com/Zbrpjl27mxg/",
+      "publishedOn": "2025-11-10",
+      "durationSeconds": 596,
+      "sourceSHA256": "5c7e2fb53451f1c2dbeb9df059054f2c4b1c6a9a73ea5130df334b885db476e0",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍揭阳普宁下架山镇乡村大棚早茶集市，全是个位数蒸点、凤爪、排骨、干蒸烧卖与肠粉。",
+      "segments": [
+        {
+          "id": "chaoshan-dage-xiajiashanzaocha",
+          "name": "下架山大棚普宁早茶（普宁传统早茶）",
+          "category": "潮汕早茶 / 乡村市集平价茶点",
+          "addressText": "揭阳市普宁市下架山镇乡村集市大棚",
+          "start": 0,
+          "end": 24,
+          "posterSecond": 6,
+          "summary": "揭阳普宁下架山镇乡村大棚早茶，极具市井烟火气，全是个位数蒸点、凤爪、排骨、干蒸烧卖与热腾腾的肠粉，大清早人头攒动座无虚席。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-tiedan-7602104576711429376",
+      "author": "吃货老外铁蛋儿",
+      "title": "潮汕生腌，一口沦陷",
+      "url": "https://www.douyin.com/video/7602104576711429376",
+      "shareURL": "https://v.douyin.com/V1Nd96-WrKg/",
+      "publishedOn": "2026-02-02",
+      "durationSeconds": 279,
+      "sourceSHA256": "f2bf71d2cbce1ed55fc83787d695451d34d583ea33c4797ff50f15981d2520eb",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头金平老城生腌海鲜大排档，膏蟹、小青龙、皮皮虾、三文鱼与生蚝鲍鱼等潮汕海鲜毒药。",
+      "segments": [
+        {
+          "id": "chaoshan-tiedan-chaoshanshengyan",
+          "name": "老牌潮汕生腌大排档（汕头老城店）",
+          "category": "潮汕生腌 / 潮汕海鲜毒药",
+          "addressText": "汕头市金平区海滨路老市区街区",
+          "start": 12,
+          "end": 36,
+          "posterSecond": 28,
+          "summary": "老外铁蛋儿打卡潮汕生腌海鲜排档，冰淇淋口感的膏蟹、小青龙、皮皮虾、鲜三文鱼与生蚝鲍鱼，淋上特制酸辣蒜香生腌汁，鲜甜入魂一口沦陷。",
+          "coordinates": [
+            116.678,
+            23.355
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "海滨路老市区街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍金平老城区海滨路与生腌排档招牌大致定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 581594140,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/581594140",
+              "nodeId": 5125842508,
+              "coordinates": [
+                116.6780817,
+                23.3548209
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 6.1
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dongmai-7574041681944807601",
+      "author": "东麦",
+      "title": "潮汕“居民楼下的平价大排档”做了十几年 本地人的第二食堂！",
+      "url": "https://www.douyin.com/video/7574041681944807601",
+      "shareURL": "https://v.douyin.com/J8MH91mm0QA/",
+      "publishedOn": "2025-11-19",
+      "durationSeconds": 184,
+      "sourceSHA256": "6f720c1bb641e266939e71713fe5f7a6f8d7111fcfdc2e0d0c9c50005a0a65a7",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头澄海区老城区居民楼下平价大排档，半煎炸猪油酥香蚝烙、炒猪肚与酸菜海鲜汤。",
+      "segments": [
+        {
+          "id": "chaoshan-dongmai-chenghaidapaidang",
+          "name": "澄海居民楼平价大排档（澄海老店）",
+          "category": "潮汕排档 / 澄海地道家常菜",
+          "addressText": "汕头市澄海区老城区居民楼下街区",
+          "start": 0,
+          "end": 23,
+          "posterSecond": 10,
+          "summary": "澄海居民楼下开了十几年的本地第二食堂，特色半煎炸猪油酥香蚝烙、荷兰豆炒猪肚、爆炒腰花与酸菜海鲜汤，5个硬菜仅164元，镬气十足街坊最爱。",
+          "coordinates": [
+            116.762,
+            23.468
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "澄海老城区生活街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍澄海老城区居民楼底商大排档实景大致定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 265634768,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/265634768",
+              "nodeId": 11098888245,
+              "coordinates": [
+                116.7610489,
+                23.4679455
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 69.5
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-wangdingyi-7542075948003233033",
+      "author": "王丁亿Dean",
+      "title": "在汕头吃粉丝安利鸡煲+鹅肝猪腰组合！谁懂啊？这是潮汕才敢给的“温柔毒药”",
+      "url": "https://www.douyin.com/video/7542075948003233033",
+      "shareURL": "https://v.douyin.com/Gxio9Orx1SA/",
+      "publishedOn": "2025-08-24",
+      "durationSeconds": 178,
+      "sourceSHA256": "5bf6f38c5c4bf11693978775b3d6ed5eb27e0b53e78c14e11393266ee10c07b2",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头金平光华老街阿洲炭炉鸡煲，生鲜现斩现炒鸡肉配厚切生猪腰与卤水鹅肝。",
+      "segments": [
+        {
+          "id": "chaoshan-wangdingyi-azhoujibao",
+          "name": "阿洲炭炉鸡煲·特色猪腰鹅肝（金平店）",
+          "category": "广式鸡煲 / 潮式炭炉鲜鸡鹅肝猪腰",
+          "addressText": "汕头市金平区金砂西路光华老街区",
+          "start": 13,
+          "end": 38,
+          "posterSecond": 25,
+          "summary": "汕头金平区阿洲炭炉鸡煲，生鲜现点现斩现炒鸡肉，搭配潮汕特色厚切生猪腰与粉糯卤水鹅肝下煲焖煮，浓郁酱汁下饭绝配，炭火热气温润诱人。",
+          "coordinates": [
+            116.672,
+            23.376
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "光华街道老街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍阿洲鸡煲店面与金平光华老街区环境大致定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 578295847,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/578295847",
+              "nodeId": 5541660553,
+              "coordinates": [
+                116.6719729,
+                23.3755225
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 37.6
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xili-7639585049512016882",
+      "author": "犀利广州",
+      "title": "潮汕潮州藏着一家人均30多的大排档，既有锅气又有性价比！",
+      "url": "https://www.douyin.com/video/7639585049512016882",
+      "shareURL": "https://v.douyin.com/tWSoj8PsSGE/",
+      "publishedOn": "2026-05-14",
+      "durationSeconds": 131,
+      "sourceSHA256": "29489da882cc00de42de8abe15b2287a308eb611054f150373902ee71008e0c8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮州枫溪夫妻档铁棚大排档，酸菜牛肉、金不换牛筋、蘑菇鲜虾仁与焖火花甲。",
+      "segments": [
+        {
+          "id": "chaoshan-xili-tiepengdapaidang",
+          "name": "铁棚大排档（潮州枫溪店）",
+          "category": "潮州大排档 / 平价镬气家常小炒",
+          "addressText": "潮州市枫溪区潮枫路与绿榕西路交界",
+          "start": 12,
+          "end": 36,
+          "posterSecond": 25,
+          "summary": "潮州枫溪夫妻档铁棚大排档，人均30元极致性价比与镬气，招牌酸菜牛肉滑嫩多汁、金不换炒牛筋软糯入味、蘑菇鲜虾仁鲜香回甘，五菜一汤仅130元。",
+          "coordinates": [
+            116.621,
+            23.662
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "枫溪区潮枫路生活街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍潮州枫溪铁棚大排档及周边街景大致定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1029300302,
+              "name": "新洋路",
+              "url": "https://www.openstreetmap.org/way/1029300302",
+              "nodeId": 9489712347,
+              "coordinates": [
+                116.6217876,
+                23.6612112
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 63.3
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445100"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dongmai-7695564387985637474",
+      "author": "东麦",
+      "title": "40多年老店 潮汕烧烤千千万 古早味烧烤不到一半",
+      "url": "https://www.douyin.com/video/7695564387985637474",
+      "shareURL": "https://v.douyin.com/idMph6JbI1E/",
+      "publishedOn": "2026-10-12",
+      "durationSeconds": 173,
+      "sourceSHA256": "c3002055b0d9e407bc77f9c76e13bd6289c6b59db4b8b9fd82070d8be06179c9",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头老城区长平路40年古早味炭火干烤，新鲜现穿牛肉串、青椒烤潮式豆干与烤鱼丸。",
+      "segments": [
+        {
+          "id": "chaoshan-dongmai-guzaoweishaokao",
+          "name": "四十载古早味炭火烧烤（汕头老店）",
+          "category": "潮式烧烤 / 炭火古早味干烤",
+          "addressText": "汕头市金平区长平路与金新路老城区街区",
+          "start": 0,
+          "end": 22,
+          "posterSecond": 15,
+          "summary": "汕头老城开了40余年的古早味炭火烧烤，从地摊做到小店，只做炭火干烤，新鲜现穿牛肉串、青椒烤潮式豆干、烤鱼丸与烤茄子配灵魂菜脯碎，怀旧纯正。",
+          "coordinates": [
+            116.698,
+            23.364
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金新路与长平路老街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍汕头老城区40年炭火烧烤门面与街景大致定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147135593,
+              "name": "长厦大路",
+              "url": "https://www.openstreetmap.org/way/147135593",
+              "nodeId": 1603438091,
+              "coordinates": [
+                116.6976231,
+                23.3641441
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 21.5
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dameng-7679854650506155749",
+      "author": "大猛每一餐🍜",
+      "title": "开在汕头市的林三满农贸工厂火锅🎉🎉🎉",
+      "url": "https://www.douyin.com/video/7679854650506155749",
+      "shareURL": "https://v.douyin.com/nuKDWA4Uc6g/",
+      "publishedOn": "2026-08-30",
+      "durationSeconds": 140,
+      "sourceSHA256": "3449011fd93f36d716194c51537de6e6df61405a26439de7e36ccc5dcbc3216c",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头林三满农贸工厂火锅，沉浸式菜市场自选档口、现切鲜牛肉配潮汕卤水锅底。",
+      "segments": [
+        {
+          "id": "chaoshan-dameng-linsanman",
+          "name": "林三满农贸工厂火锅·卤水传承（万象城店）",
+          "category": "潮汕火锅 / 农贸市场沉浸火锅",
+          "addressText": "汕头市龙湖区金砂东路与丹霞西街交叉口",
+          "start": 0,
+          "end": 23,
+          "posterSecond": 7,
+          "summary": "大猛实探汕头林三满农贸工厂火锅，超大沉浸式菜市场自选档口，现切吊龙牛肉配潮汕卤水锅底与九宫格料台，肉质鲜嫩卤味浓郁，夜生活聚餐极具排场。",
+          "coordinates": [
+            116.7145,
+            23.3646
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金砂东路与丹霞西街商圈",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "多博主同店归并：与汁汁冰激凌共用林三满农贸工厂火锅坐标点位。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 532264612,
+              "name": "长平东路",
+              "url": "https://www.openstreetmap.org/way/532264612",
+              "nodeId": 5165391821,
+              "coordinates": [
+                116.7147948,
+                23.3645701
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 3.8
+            }
+          },
+          "placeId": "chaoshan-zhizhi-linsanman",
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-hexiaowan-7615550323881496165",
+      "author": "何小丸",
+      "title": "在汕头村里路边下顿馆子！菊花炭烤鲜牛肉，现切现烤油花在炭火上滋滋冒香！",
+      "url": "https://www.douyin.com/video/7615550323881496165",
+      "shareURL": "https://v.douyin.com/CkRl8CLLGCs/",
+      "publishedOn": "2026-03-10",
+      "durationSeconds": 360,
+      "sourceSHA256": "f9f0913c512a92d79b6b66100d6a4f5bfca602a5e5fe9b0e8eef19d1f45f9b15",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头村落路边菊花炭火烤肉，现切鲜牛肉、吊龙、牛舌、胸口油配金不换与潮汕酸菜。",
+      "segments": [
+        {
+          "id": "chaoshan-hexiaowan-juhuataniniurou",
+          "name": "乡村菊花炭烤鲜牛肉（村头烤肉店）",
+          "category": "潮汕烤肉 / 菊花炭现切鲜牛肉",
+          "addressText": "汕头市龙湖区外砂街道近郊村落",
+          "start": 10,
+          "end": 32,
+          "posterSecond": 25,
+          "summary": "汕头村头路边无招牌平价炭火烤肉，选用高级菊花炭与新鲜现切鲜牛肉，雪花、吊龙、牛舌、胸口油在炭火上滋滋作响，搭配金不换与潮汕自制酸菜香气扑鼻。",
+          "coordinates": [
+            116.782,
+            23.412
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "外砂街道近郊村落",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍汕头村落路边菊花炭烤牛肉现场大致定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 475411876,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/475411876",
+              "nodeId": 4691577419,
+              "coordinates": [
+                116.7818034,
+                23.4113668
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 62.8
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-wulala-7096332711874317575",
+      "author": "特别乌啦啦",
+      "title": "在原产地吃鲜掉眉毛的「潮汕牛肉」～喝苦到尽头的茶",
+      "url": "https://www.douyin.com/video/7096332711874317575",
+      "shareURL": "https://v.douyin.com/ywOE2J8_UXs/",
+      "publishedOn": "2022-05-11",
+      "durationSeconds": 263,
+      "sourceSHA256": "8dfbc5c4050fa75f119585ce3c40633e7ec6e1457f099a8d101e5b33c937f315",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙湖区新海街道蔡杰牛肉店，萝卜玉米清汤锅底现切牛胸口朥、雪花牛肉与三花趾。",
+      "segments": [
+        {
+          "id": "chaoshan-wulala-caijieniurou",
+          "name": "蔡杰牛肉店（新海东升店）",
+          "category": "潮汕牛肉火锅 / 现宰鲜切全牛各部位",
+          "addressText": "汕头市龙湖区新海街道东升村金鸿公路与公园路交界铺面3号",
+          "start": 23.5,
+          "end": 51.5,
+          "posterSecond": 38,
+          "summary": "乌啦啦实探汕头金鸿公路蔡杰牛肉店，萝卜玉米清汤锅底搭配现点现切大盘牛胸口朥、雪花牛肉与三花趾，肉质鲜嫩厚薄均匀，沙茶酱与生抽辣椒蘸料风味浓郁。",
+          "coordinates": [
+            116.783,
+            23.3894
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "新海街道金鸿公路东升路口",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍与高德POI定位新海街道金鸿公路蔡杰牛肉店大致街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1464008535,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/1464008535",
+              "nodeId": 13429376776,
+              "coordinates": [
+                116.7819839,
+                23.3881561
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 18.1
+            }
+          },
+          "footageNote": "2022年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-wangdingyi-7592131556836199718",
+      "author": "王丁亿Dean",
+      "title": "揭阳大排档最终形态！食材巨多xN种搭配x花样做法",
+      "url": "https://www.douyin.com/video/7592131556836199718",
+      "shareURL": "https://v.douyin.com/QffKCM6HcHw/",
+      "publishedOn": "2026-01-06",
+      "durationSeconds": 220,
+      "sourceSHA256": "b330ef7f0153bb87dba5b0b48fa1b3ef6f3378564c1ba44ea63fdd6890019eaa",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍揭阳阿忠大排档食材明档自选，九层塔金不换爆炒海瓜子、海笋与特色鲜炒。",
+      "segments": [
+        {
+          "id": "chaoshan-wangdingyi-azhongdapaidang",
+          "name": "揭阳阿忠大排档（特色潮味小炒）",
+          "category": "潮汕大排档 / 揭阳镬气海鲜小炒",
+          "addressText": "揭阳市榕城区市区大排档老街",
+          "start": 13,
+          "end": 38,
+          "posterSecond": 25,
+          "summary": "揭阳高人气阿忠大排档，食材琳琅满目现点现做，一菜多吃，九层塔金不换爆炒海瓜子鲜香微辣、特色海笋脆嫩爽滑，充满潮汕市井极致镬气。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-anywei-7699057165206500022",
+      "author": "Any味",
+      "title": "汕头随便攻略，老板不想火的那些小店！“家常的气场”最馋人",
+      "url": "https://www.douyin.com/video/7699057165206500022",
+      "shareURL": "https://v.douyin.com/CArodHtBTSc/",
+      "publishedOn": "2026-10-21",
+      "durationSeconds": 255,
+      "sourceSHA256": "e55b59f83b33e0574b32b94632e801e7bd4fb82a426806762b352c6d53e77141",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头金平老街区詹记和味小食排档，酸梅煮车白、辣炒小花甲、香煎鲜鱼与带膏皮皮虾。",
+      "segments": [
+        {
+          "id": "chaoshan-anywei-zhanjihewei",
+          "name": "詹记和味小食·家常潮汕海鲜（金平老店）",
+          "category": "潮汕排档 / 老饕私藏家常海鲜小馆",
+          "addressText": "汕头市金平区大理西路/光华老街区",
+          "start": 15,
+          "end": 39,
+          "posterSecond": 28,
+          "summary": "俩夫妻怕火的纯正家常排档，老板挑货极精，招牌酸梅煮车白酸甜开胃汤汁拌饭绝配，辣炒小花甲、香煎鲜鱼与带膏大皮皮虾鲜甜多汁，纯粹的老汕头家常市井气场。",
+          "coordinates": [
+            116.681,
+            23.372
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "光华老街区生活商圈",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍金平区光华街道老街区家常小店环境大致定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 116810625,
+              "name": "护堤路",
+              "url": "https://www.openstreetmap.org/way/116810625",
+              "nodeId": 14052090151,
+              "coordinates": [
+                116.6814276,
+                23.3708431
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 90
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-maomao-7456427035368426809",
+      "author": "毛毛美食指南",
+      "title": "汕头火了十几年的老牌土鸡火锅，每晚路过都和全村吃席一样热闹！",
+      "url": "https://www.douyin.com/video/7456427035368426809",
+      "shareURL": "https://v.douyin.com/FpCm0lMhsAg/",
+      "publishedOn": "2025-01-05",
+      "durationSeconds": 228,
+      "sourceSHA256": "86b49dcc706e9d871ea44c1dbba150d0a13c27e9cb4c3d876cced7b50b01cc4e",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙湖区创新土鸡火锅总店，传统炭火清汤锅底配手切老母鸡片与椒盐鸡骨。",
+      "segments": [
+        {
+          "id": "chaoshan-maomao-chuangxintujihuoguo",
+          "name": "创新土鸡火锅（汕头总店）",
+          "category": "潮汕鸡煲 / 传统炭炉老母鸡清汤火锅",
+          "addressText": "汕头市龙湖区长平路与衡山路交界",
+          "start": 11,
+          "end": 36,
+          "posterSecond": 20,
+          "summary": "汕头火了十几年全村吃席般热闹的老牌炭炉土鸡火锅，红枣枸杞清透鲜甜鸡汤底，老母鸡肉片均匀紧实带鸡味，搭配香酥椒盐鸡骨与潮汕秘制豆酱，排队盛况蔚为壮观。",
+          "coordinates": [
+            116.7265,
+            23.3712
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长平路与衡山路美食街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍创新土鸡火锅招牌与长平路衡山路口大体定位街区，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1346001228,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/1346001228",
+              "nodeId": 12449536390,
+              "coordinates": [
+                116.7264812,
+                23.3709961
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 0.4
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dongmai-7445459864287022375",
+      "author": "东麦",
+      "title": "《汕头20多年老式大排档》品种是真多 老板厨艺是真好",
+      "url": "https://www.douyin.com/video/7445459864287022375",
+      "shareURL": "https://v.douyin.com/mYNQpcnb_70/",
+      "publishedOn": "2024-12-07",
+      "durationSeconds": 139,
+      "sourceSHA256": "a23e3075995bdec673979c497a8cc46c3fc283955cc376a54f42c2aacb11ecd8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头西堤海滨路老三鱼仔店20多年老式大排档，全猪油现炒海鲜、八爪鱼与白灼虾。",
+      "segments": [
+        {
+          "id": "chaoshan-dongmai-xidilaosanyuzai",
+          "name": "西堤老三鱼仔店（老式海鲜大排档）",
+          "category": "潮汕排档 / 老式海鲜打冷小炒",
+          "addressText": "汕头市金平区海滨路西堤公园旁 / 西堤路老城区",
+          "start": 0,
+          "end": 24,
+          "posterSecond": 10,
+          "summary": "小公园旁近西堤公园开了20多年的老式海鲜排档，保留怀旧老骑楼风貌，全猪油大火猛炒，招牌八爪鱼炒韭菜花、九肚鱼与白灼本港海虾，镬气十足酒楼级口感。",
+          "coordinates": [
+            116.6775,
+            23.3568
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "海滨路西堤公园老街区",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍西堤海滨路老城排档与西堤老三鱼仔店实景大致定位，非店门实测。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 527264701,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/527264701",
+              "nodeId": 5126338519,
+              "coordinates": [
+                116.6772707,
+                23.3563592
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 27.6
+            }
+          },
+          "footageNote": "2024年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-zhuzhanggui-7604509857686119670",
+      "author": "北京一家五口（猪掌柜）",
+      "title": "来潮汕旅游，路边的这种深夜小炒砂锅粥，一定不要错过！",
+      "url": "https://www.douyin.com/video/7604509857686119670",
+      "shareURL": "https://v.douyin.com/a_JidGhHOsA/",
+      "publishedOn": "2026-02-09",
+      "durationSeconds": 217,
+      "sourceSHA256": "7b2e6db04a622ee90f13060669a73411b8d379315211e7db0dc0250bea004ea6",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍揭阳棉湖糖厂路边深夜小炒砂锅粥，现点现滚海鲜粥、现炸香酥生姜丝与炸鸟、鳝鱼。",
+      "segments": [
+        {
+          "id": "chaoshan-zhuzhanggui-mianhushaguozhou",
+          "name": "棉湖糖厂前无招牌砂锅粥（路边深夜小炒）",
+          "category": "潮汕砂锅粥 / 现滚海鲜粥深夜小炒",
+          "addressText": "揭阳市揭西县棉湖镇糖厂路口附近",
+          "start": 0,
+          "end": 25,
+          "posterSecond": 15,
+          "summary": "棉湖糖厂旁无招牌半夜才开的路边摊，每一份都现点现滚，现炸香酥姜丝炸鸟、鲜脆黄鳝、带皮田鸡与酥炸普宁豆干，鲜甜滋味直击味蕾。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-zhuzhanggui-7691153854340382633",
+      "author": "北京一家五口（猪掌柜）",
+      "title": "潮汕揭阳夯爆了的路边烧烤摊！",
+      "url": "https://www.douyin.com/video/7691153854340382633",
+      "shareURL": "https://v.douyin.com/ndgWmkQ2Cyk/",
+      "publishedOn": "2026-09-30",
+      "durationSeconds": 354,
+      "sourceSHA256": "46e7a865989c45dd2b6e47220cbd1dc016972bbd83f08cfe27861eb7b515fb44",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍揭阳马牙路大鹏车炭火烧烤摊，2元现串鲜嫩牛肉、牛筋、菠萝牛肉与沙茶肥牛。",
+      "segments": [
+        {
+          "id": "chaoshan-zhuzhanggui-dapengcheshaokao",
+          "name": "大鹏车烧烤（马牙店）",
+          "category": "潮汕烧烤 / 街头路边摊炭烤",
+          "addressText": "揭阳市榕城区马牙路夜市",
+          "start": 0,
+          "end": 24,
+          "posterSecond": 12,
+          "summary": "揭阳超火爆路边炭火烧烤野摊，2元一串鲜嫩牛肉、牛筋、吊龙、菠萝牛肉、洋葱牛肉与沙茶肥牛，现点现炭火生烤，配免费蒜泡与浓郁沙茶酱，烟火气拉满。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-liuyuxin-7198778156277353787",
+      "author": "刘雨鑫JASON",
+      "title": "潮汕揭阳网红「卢前夜市」，看看高颜值路边摊味道怎么样？",
+      "url": "https://www.douyin.com/video/7198778156277353787",
+      "shareURL": "https://v.douyin.com/DL3qatSiOJQ/",
+      "publishedOn": "2023-02-11",
+      "durationSeconds": 196,
+      "sourceSHA256": "3dff30eb6d0d9148cf02d0eec0a2672f623dc803e9a008cec5010815876f6e7d",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍揭阳卢前夜市高颜值通宵小吃集市，烤粿桃、铁板肥肠配泡面泡菜与泰式柠檬虾滑。",
+      "segments": [
+        {
+          "id": "chaoshan-liuyuxin-luqianyeishi",
+          "name": "卢前夜市高颜值路边摊（卢前美食街）",
+          "category": "潮汕夜市 / 街头小吃集市",
+          "addressText": "揭阳市榕城区卢前夜市美食街 / 2Milk街",
+          "start": 3,
+          "end": 27,
+          "posterSecond": 18,
+          "summary": "揭阳爆火的高颜值通宵小吃集市，烤粿桃四种馅米香油糯刷甜辣灵魂酱汁、韩式铁板肥肠炒泡面年糕、酸辣蒜蓉泰式柠檬虾滑与炭烤牛蛙，年轻人聚会夜宵圣地。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2023年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-zhuzhanggui-7630332590779551003",
+      "author": "北京一家五口（猪掌柜）",
+      "title": "潮汕的炸猪肉太好吃了 酥酥脆脆",
+      "url": "https://www.douyin.com/video/7630332590779551003",
+      "shareURL": "https://v.douyin.com/X4NhshA_t9o/",
+      "publishedOn": "2026-04-19",
+      "durationSeconds": 152,
+      "sourceSHA256": "369ef65ad60a32250f886a57f581a0eeed957a74aca80ae6daf46680e1491c93",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍揭阳新亨镇三角楼路口传统现炸猪肉条老铺，先腌后炸金黄酥脆带酒香与凉拌猪耳。",
+      "segments": [
+        {
+          "id": "chaoshan-zhuzhanggui-sanjiaolouzhurou",
+          "name": "揭阳新亨三角楼炸猪肉条（26年老店）",
+          "category": "潮汕炸物 / 传统现炸酥香猪肉条",
+          "addressText": "揭阳市揭东区新亨镇三角楼路口老街",
+          "start": 13,
+          "end": 36,
+          "posterSecond": 24,
+          "summary": "揭阳新亨开了26年的传统现炸潮汕猪肉条，先腌后炸外酥里嫩，金黄酥脆带白酒甘甜与广式腊肠风味，每天下午出锅即秒空，另有酸甜爽脆凉拌猪耳。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-zhuzhujixingzi-7592890422541625050",
+      "author": "猪猪急性子",
+      "title": "吃不吃潮汕市场里的蒜蓉炸串！香迷糊了🤤",
+      "url": "https://www.douyin.com/video/7592890422541625050",
+      "shareURL": "https://v.douyin.com/uPczzRYuJ58/",
+      "publishedOn": "2026-01-08",
+      "durationSeconds": 15,
+      "sourceSHA256": "3452c7727e8b9d2b09b7731c84a670047bf8675ae934f5ebb2da4caa0e23abae",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮阳谷饶镇大坑村菜市场老字号蒜蓉炸串，现串现炸猪肉里脊与蔬菜刷浓蒜辣酱。",
+      "segments": [
+        {
+          "id": "chaoshan-zhuzhu-dakengzhachuan",
+          "name": "大坑村肉菜市场蒜蓉炸串（谷饶老铺）",
+          "category": "潮式炸串 / 菜市场蒜蓉酱炸串",
+          "addressText": "汕头市潮阳区谷饶镇大坑村菜市场西北侧约50米",
+          "start": 0,
+          "end": 14.5,
+          "posterSecond": 4,
+          "summary": "潮阳谷饶大坑村菜市场老字号蒜蓉炸串，新鲜串炸里脊肉条、肉丸与蔬菜，现出锅刷满灵魂特调蒜蓉辣酱，市井烟火气浓郁香气扑鼻。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-zhuzhanggui-7646828573487025454",
+      "author": "北京一家五口（猪掌柜）",
+      "title": "潮汕这夜市美女好多好多！也好吃也好吃",
+      "url": "https://www.douyin.com/video/7646828573487025454",
+      "shareURL": "https://v.douyin.com/cZ_Az4rT6SY/",
+      "publishedOn": "2026-06-03",
+      "durationSeconds": 336,
+      "sourceSHA256": "e9279847527cabbef023e9fb2512018fe9e69ec2dae6b936103d5035fed36d42",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍揭阳东山二奶街夜市，汇集现炸普宁豆干、手打柠檬茶、传统炒粉与各色夜市小吃。",
+      "segments": [
+        {
+          "id": "chaoshan-zhuzhanggui-ernaijie",
+          "name": "揭阳东山夜市街（二奶街夜市）",
+          "category": "潮汕夜市 / 揭阳市井街头小吃集市",
+          "addressText": "揭阳市榕城区东山二奶街夜市街区",
+          "start": 0,
+          "end": 30,
+          "posterSecond": 15,
+          "summary": "猪掌柜探访揭阳东山二奶街夜市，市井烟火气浓郁，汇集现炸普宁豆干、鲜炒传统粿条炒粉、手打香水柠檬茶与各类生猛特色小吃排档。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-donggua-7688313917848199759",
+      "author": "冬瓜_🍒",
+      "title": "来北环夜市不知道吃什么？ 看这条视频就够啦！！",
+      "url": "https://www.douyin.com/video/7688313917848199759",
+      "shareURL": "https://v.douyin.com/nhuB0MphWsI/",
+      "publishedOn": "2026-09-22",
+      "durationSeconds": 115,
+      "sourceSHA256": "9ef3e8438a9259d92400679e4d0a641211eadb4e77a121df99e24b0f457f593d",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮南峡山北环夜市，金牌蜜汁臭豆腐、酸辣馄饨、单车烤鸡翅与十二冰室爆冰。",
+      "segments": [
+        {
+          "id": "chaoshan-donggua-beihuanye",
+          "name": "潮南峡山北环夜市",
+          "category": "潮汕夜市 / 潮南夜生活美食地标",
+          "addressText": "汕头市潮南区峡山街道北环路夜市",
+          "start": 8,
+          "end": 38,
+          "posterSecond": 20,
+          "summary": "冬瓜实探潮南峡山北环夜市宝藏小摊：外酥里嫩的金牌秘汁臭豆腐、皮薄馅大的带汤鲜肉酸辣馄饨、焦香多汁的单车烤鸡翅以及十二冰室特调爆冰。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-shaofeng-7132683898735119623",
+      "author": "少锋📸",
+      "title": "汕头花城夜市一条街竖屏版本，即使有很多不好的评价，花城夜市依然火爆",
+      "url": "https://www.douyin.com/video/7132683898735119623",
+      "shareURL": "https://v.douyin.com/I7RgynZ7bgI/",
+      "publishedOn": "2022-08-17",
+      "durationSeconds": 11,
+      "sourceSHA256": "955e71283029d223ce0027455c7514ea9fd181cd7d7b6c9270bd461a44a3c540",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙湖区嵩山北路官埭段花城夜市长街全景与市井夜宵排档。",
+      "segments": [
+        {
+          "id": "chaoshan-shaofeng-huachengye",
+          "name": "汕头花城夜市美食街",
+          "category": "潮汕夜市 / 龙湖长街市集小吃聚集地",
+          "addressText": "汕头市龙湖区嵩山北路官埭段11号",
+          "start": 0,
+          "end": 10,
+          "posterSecond": 5,
+          "summary": "少锋实拍汕头龙湖花城夜市长街全景，夜幕降临百摊灯火璀璨，汇集烤生蚝、炸串、海鲜砂锅粥、柠檬茶等丰富市井夜宵排档。",
+          "coordinates": [
+            116.7195,
+            23.398
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "嵩山北路官埭段花城夜市长街",
+            "basis": "poi",
+            "branchMatch": "confirmed",
+            "note": "根据高德POI及视频定位龙湖嵩山北路花城夜市长街点位。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147147306,
+              "name": "春江路",
+              "url": "https://www.openstreetmap.org/way/147147306",
+              "nodeId": 11193298009,
+              "coordinates": [
+                116.7190619,
+                23.3993854
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 122.7
+            }
+          },
+          "footageNote": "2022年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-jiajun-7492356941012831522",
+      "author": "嘉俊和黄斯",
+      "title": "广东汕头的牛肉火锅自助，来看看到底怎么样",
+      "url": "https://www.douyin.com/video/7492356941012831522",
+      "shareURL": "https://v.douyin.com/E7oXoDHnflk/",
+      "publishedOn": "2025-04-12",
+      "durationSeconds": 170,
+      "sourceSHA256": "4289127faf4df5d8a511efc673fb45eebf73b4802164b4627f014110240f88c1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头好味道鲜牛肉火锅自助，119元一口价，红酒啤酒饮料畅饮，现切牛肉丸牛筋丸脚筋毛肚管饱。",
+      "segments": [
+        {
+          "id": "chaoshan-jiajun-haoweidao",
+          "name": "汕头好味道鲜牛肉自助火锅",
+          "category": "潮汕牛肉火锅 / 119元鲜全牛自助",
+          "addressText": "汕头市龙湖区美食街区",
+          "start": 33,
+          "end": 64,
+          "posterSecond": 48,
+          "summary": "嘉俊实探汕头好味道鲜牛肉火锅自助，119元一口价全包无其他附加费，红酒啤酒饮料畅饮，现切鲜牛肉、手打牛肉丸牛筋丸、脚筋、新鲜毛肚与牛杂无限量供应。",
+          "coordinates": [
+            116.7135,
+            23.3665
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "龙湖区核心美食圈好味道牛肉火锅",
+            "basis": "video-address",
+            "branchMatch": "unconfirmed",
+            "note": "根据视频实拍好味道牛肉自助火锅门店及龙湖美食商圈近似定位。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1365468417,
+              "name": "润街",
+              "url": "https://www.openstreetmap.org/way/1365468417",
+              "nodeId": 12644778963,
+              "coordinates": [
+                116.7146227,
+                23.3661386
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 40.8
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dongmai-7464524395424304434",
+      "author": "东麦",
+      "title": "汕头“农贸工厂火锅自助”一家店几乎把潮汕的美食都搬过来了",
+      "url": "https://www.douyin.com/video/7464524395424304434",
+      "shareURL": "https://v.douyin.com/vFv5-ViCWAg/",
+      "publishedOn": "2025-01-27",
+      "durationSeconds": 247,
+      "sourceSHA256": "c203d8809e9fa45b816d5c425d794b72073a7db80e1c763cd68334658ac2ba5b",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头林三满农贸工厂火锅万象城店，自选海鲜盘菜活虾、现切雪花牛肉与正宗卤水火锅。",
+      "segments": [
+        {
+          "id": "chaoshan-dongmai-linsanman",
+          "placeId": "chaoshan-zhizhi-linsanman",
+          "name": "林三满农贸工厂火锅·卤水传承（万象城店）",
+          "category": "潮汕火锅 / 农贸市场沉浸火锅",
+          "addressText": "汕头市龙湖区金砂东路与丹霞庄交汇街区",
+          "start": 30,
+          "end": 64,
+          "posterSecond": 38,
+          "summary": "东麦实拍汕头林三满农贸工厂火锅万象城店，如置身海鲜农贸市场，按盘自选生猛活虾、鲜鱼、现切高品质雪花牛肉与吊龙，搭配正宗卤水与双汤锅底，性价比极高。",
+          "coordinates": [
+            116.7145,
+            23.3646
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金砂东路与丹霞庄商圈",
+            "basis": "video-address",
+            "branchMatch": "confirmed",
+            "note": "多博主同店归并：东麦与汁汁冰激凌、大猛每一餐实探同一林三满农贸工厂火锅点位。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 532264612,
+              "name": "长平东路",
+              "url": "https://www.openstreetmap.org/way/532264612",
+              "nodeId": 5165391821,
+              "coordinates": [
+                116.7147948,
+                23.3645701
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 3.8
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-qiqiba-7650060271294256370",
+      "author": "778潮汕寻食小分队",
+      "title": "汕头居然有活鳗鱼鲜虾烤肉自助，只要不浪费，不限时不限量",
+      "url": "https://www.douyin.com/video/7650060271294256370",
+      "shareURL": "https://v.douyin.com/J49u2u91Iu4/",
+      "publishedOn": "2026-06-11",
+      "durationSeconds": 38,
+      "sourceSHA256": "45e5a6dadd30a45dbfae4a36e7c405905cb8f62cc98708234b0742dfb961ea5c",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍金环路薪滋滋烤肉自助，活鳗鱼现捞、鲜虾活烤、现切鲜牛肉，无合成肉。",
+      "segments": [
+        {
+          "id": "chaoshan-qiqiba-xinzizi",
+          "name": "薪滋滋·潮汕鲜烤牛肉·鳗鱼·活虾自助",
+          "category": "海鲜烤肉自助 / 鲜活鳗鱼鲜虾现烤",
+          "addressText": "汕头市龙湖区金环路东侧万商楼西侧建设大厦南侧二楼201房",
+          "start": 0,
+          "end": 28,
+          "posterSecond": 10,
+          "summary": "778实拍金环路薪滋滋烤肉自助，65元不限时不限量，主打鲜活鳗鱼现捞、鲜虾活烤、现切鲜牛肉，无合成肉，海鲜肉品丰富多样。",
+          "coordinates": [
+            116.7062,
+            23.368
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金环南路建设大厦二楼薪滋滋",
+            "basis": "poi",
+            "branchMatch": "confirmed",
+            "note": "根据高德POI及视频定位金环南路建设大厦二楼薪滋滋烤肉自助。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 281876853,
+              "name": "龙眼南路",
+              "url": "https://www.openstreetmap.org/way/281876853",
+              "nodeId": 1603573879,
+              "coordinates": [
+                116.7061538,
+                23.3677644
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 4.8
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-zhuzhanggui-7506073404165328155",
+      "author": "北京一家五口（猪掌柜）",
+      "title": "从来不拍自助的我超级喜欢这家！菜品种类少但是质量高！ 真心推荐！",
+      "url": "https://www.douyin.com/video/7506073404165328155",
+      "shareURL": "https://v.douyin.com/Suhqt_9_HXM/",
+      "publishedOn": "2025-05-19",
+      "durationSeconds": 571,
+      "sourceSHA256": "89b7c0af1d1602c2cf5ff583c90a40016d53b0a5cf108fb70483c09c62be358a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头和牛寿喜烧自助，188元一位老板亲自手切澳洲M9/M7和牛板腱，寿喜烧锅底配高品质雪糕酒水。",
+      "segments": [
+        {
+          "id": "chaoshan-zhuzhanggui-heniuzizhu",
+          "name": "汕头和牛寿喜烧专门店（品质和牛自助）",
+          "category": "和牛寿喜烧 / 澳洲M9现切和牛畅吃",
+          "addressText": "汕头市区美食商圈（博主未公开店名，依和牛榜单收录）",
+          "start": 10,
+          "end": 40,
+          "posterSecond": 28,
+          "summary": "猪掌柜实探汕头高质和牛自助，188元一位老板亲自手切澳洲M9/M7和牛板腱，肉质如大理石纹理油润甘香，寿喜烧汤底搭配免费甜品酒水，专做高品质回头客。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaozhang-7549096682836626746",
+      "author": "小张一人食",
+      "title": "在汕头体验112/位的潮汕牛肉火锅自助，看看到底有多快乐",
+      "url": "https://www.douyin.com/video/7549096682836626746",
+      "shareURL": "https://v.douyin.com/8GNhbZy7i4k/",
+      "publishedOn": "2025-09-12",
+      "durationSeconds": 417,
+      "sourceSHA256": "0ab8dc012059d3949d014685d6a4ff61a3ddd6c90f3002fce91108f6d0bef2ac",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头市井鲜牛肉火锅自助，112元全包，自选现切全牛、鲜毛肚与手打牛丸牛筋丸。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaozhang-niurouzizhu",
+          "name": "汕头市井牛肉火锅自助（112元品质自助）",
+          "category": "潮汕牛肉火锅 / 112元鲜牛肉自助",
+          "addressText": "汕头市区核心美食圈（博主未公开具体店名）",
+          "start": 9,
+          "end": 38,
+          "posterSecond": 20,
+          "summary": "小张实探汕头112元鲜牛肉火锅自助，自取现切全牛各部位、鲜毛肚、手打牛肉丸牛筋丸，每桌赠送牛舌与胸口油，蘸特调沙茶酱蒜酥，纯鲜原汁原味。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-qiqiba-7635580399539993690",
+      "author": "778潮汕寻食小分队",
+      "title": "普宁能找到比这个更划算的牛排自助吗！来了就当自己家一样～",
+      "url": "https://www.douyin.com/video/7635580399539993690",
+      "shareURL": "https://v.douyin.com/gHK18cepOt0/",
+      "publishedOn": "2026-05-03",
+      "durationSeconds": 42,
+      "sourceSHA256": "b6d6b2438b84db558cd49aab4c82cbc6a0b68100850971f31d6a1b779ad60561",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍普宁广场万泰汇哈根牛牛，现煎原切牛排配丰富热菜熟食、精美寿司与小龙虾甜品。",
+      "segments": [
+        {
+          "id": "chaoshan-qiqiba-hagenniuniu",
+          "name": "哈根牛牛牛排自助（普宁万泰汇店）",
+          "category": "西式牛排自助 / 原切牛排与热菜熟食",
+          "addressText": "揭阳市普宁市流沙北环大道西陇路段普宁广场万泰汇购物中心L6层",
+          "start": 0,
+          "end": 30,
+          "posterSecond": 15,
+          "summary": "778实拍普宁万泰汇哈根牛牛牛排自助，现煎大块原切牛排，搭配上百种熟食热菜、精美寿司、麻辣小龙虾、炸物与蛋糕饮品，人均亲民性价比极高。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "445200"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-dengxuan-7610819549272737979",
+      "author": "邓炫疯疯",
+      "title": "2000元潮汕市场火锅自助！牛肉抡盘生吃？巨无霸青龙盘一整条鱼加巨型虾滑 遭全场打假",
+      "url": "https://www.douyin.com/video/7610819549272737979",
+      "shareURL": "https://v.douyin.com/JPb7C9m9s4U/",
+      "publishedOn": "2026-02-26",
+      "durationSeconds": 401,
+      "sourceSHA256": "8e6e40af7ffcc0014f52b44995c7174881dcdd5dc89a86a15d0034c32c1c3471",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮汕海鲜市场自选火锅大排档，生猛海鱼、小青龙、雪花牛肉与大盘鹅肝现涮。",
+      "segments": [
+        {
+          "id": "chaoshan-dengxuan-shichanghuoguo",
+          "name": "潮汕沉浸式海鲜市场火锅（自选盘菜海鲜火锅）",
+          "category": "潮汕火锅 / 市场自选式海鲜与现切全牛",
+          "addressText": "潮汕地区海鲜市场火锅排档（博主未公开具体店招）",
+          "start": 58,
+          "end": 88,
+          "posterSecond": 75,
+          "summary": "邓炫挑战潮汕沉浸式海鲜市场火锅，按盘自取生猛大鱼、鲜活海虾、手作巨型虾滑、鲜切雪花牛肉与大盘鹅肝，食材新鲜生猛镬气十足。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440000"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-qiqiba-7403338600563084583",
+      "author": "778潮汕寻食小分队",
+      "title": "汕头也有巴西烤肉自助了，不用自己烤，只等投喂也太满足了吧",
+      "url": "https://www.douyin.com/video/7403338600563084583",
+      "shareURL": "https://v.douyin.com/9DybVhD4Xjk/",
+      "publishedOn": "2024-08-15",
+      "durationSeconds": 34,
+      "sourceSHA256": "37fa1383296300e1d847cacbab042eb4ceab11f176a3bc0c9ff3d4e96408dd43",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头龙湖苏宁广场熹烤巴西烤肉，明火大串现烤现切、披萨寿司无限量任吃。",
+      "segments": [
+        {
+          "id": "chaoshan-qiqiba-xikaobaxi",
+          "name": "熹烤·巴西烤肉自助餐厅（苏宁广场店）",
+          "category": "巴西烤肉自助 / 明火炭烤现切大肉串",
+          "addressText": "汕头市龙湖区长平路90号苏宁广场7楼701号",
+          "start": 0,
+          "end": 28,
+          "posterSecond": 10,
+          "summary": "778实拍长平路苏宁广场熹烤巴西烤肉自助，十几款巴西风味大肉串明火炭烤、师傅大签到桌现切，上百种熟食披萨寿司无限量任吃。",
+          "coordinates": [
+            116.7075,
+            23.3615
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "长平路苏宁广场7楼熹烤巴西烤肉",
+            "basis": "poi",
+            "branchMatch": "confirmed",
+            "note": "根据高德POI及视频定位长平路苏宁广场7楼熹烤巴西烤肉。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 531976536,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/531976536",
+              "nodeId": 5163161350,
+              "coordinates": [
+                116.707256,
+                23.3616006
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 10.9
+            }
+          },
+          "footageNote": "2024年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-qiqiba-7679371908013984922",
+      "author": "778潮汕寻食小分队",
+      "title": "汕头居然有活牛蛙，活鱼无限量自助，只要不浪费，老板说随便敞开吃！",
+      "url": "https://www.douyin.com/video/7679371908013984922",
+      "shareURL": "https://v.douyin.com/ROHEFnc8_bI/",
+      "publishedOn": "2026-08-29",
+      "durationSeconds": 43,
+      "sourceSHA256": "a2e1fecbb02957e0934bf483c57eacf6659f184909bf3bc2faaa9a333af4c9d7",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍练江路来只蛙鱼蛙火锅自助，现捞现杀鲜活牛蛙与生猛活鱼，无限畅吃畅喝。",
+      "segments": [
+        {
+          "id": "chaoshan-qiqiba-laizhiwa",
+          "name": "来只蛙·鱼蛙自助火锅（信基华庭店）",
+          "category": "鱼蛙火锅自助 / 现捞现杀生猛牛蛙与活鱼",
+          "addressText": "汕头市龙湖区练江路30号信基华庭南区101号",
+          "start": 0,
+          "end": 26,
+          "posterSecond": 8,
+          "summary": "778实探练江路来只蛙鱼蛙火锅自助，现捞现杀鲜活牛蛙、生猛活鱼现点现切，搭配上百种火锅涮菜、饮品雪糕无限量供应，鲜嫩弹牙。",
+          "coordinates": [
+            116.715,
+            23.3785
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "练江路信基华庭南区来只蛙",
+            "basis": "poi",
+            "branchMatch": "confirmed",
+            "note": "根据高德POI及视频定位练江路信基华庭南区来只蛙鱼蛙自助火锅。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 147222981,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/147222981",
+              "nodeId": 1604372704,
+              "coordinates": [
+                116.7153617,
+                23.3785418
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 5
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-daya-7635515159809306021",
+      "author": "大椰吖",
+      "title": "在汕头，我唯一能吃回本的自助诞生了...",
+      "url": "https://www.douyin.com/video/7635515159809306021",
+      "shareURL": "https://v.douyin.com/5rG8hSe1AG0/",
+      "publishedOn": "2026-05-03",
+      "durationSeconds": 17,
+      "sourceSHA256": "f784323b03af5ff7a32d8edc89a67b3c7cfe36c7d5ec3bd67a9f2a885f75e0ec",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍汕头万象城花菊融合料理铁板烧放题，法式铁板现煎大虾牛排与刺身放题。",
+      "segments": [
+        {
+          "id": "chaoshan-daya-huaju",
+          "name": "花菊融合料理·铁板烧（汕头万象城店）",
+          "category": "日式铁板烧自助 / 精致融合料理放题",
+          "addressText": "汕头市龙湖区金霞街道金环南路华润万象城二楼L254",
+          "start": 0,
+          "end": 16,
+          "posterSecond": 8,
+          "summary": "大椰吖实拍汕头万象城花菊融合料理铁板烧放题，法式铁板现煎大虾牛排、刺身拼盘、鲍鱼、甜品与精酿饮品，高端精致回本之选。",
+          "coordinates": [
+            116.7085,
+            23.3625
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金环南路华润万象城二楼花菊",
+            "basis": "poi",
+            "branchMatch": "confirmed",
+            "note": "根据高德POI及视频定位金环南路华润万象城二楼花菊融合料理。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 527196942,
+              "name": "公信路",
+              "url": "https://www.openstreetmap.org/way/527196942",
+              "nodeId": 5163161360,
+              "coordinates": [
+                116.70839,
+                23.3625344
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 11.2
+            }
+          },
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaozhen-7569124913328442633",
+      "author": "小珍来咯…",
+      "title": "24块8就可以吃顿火锅自助 菜品新鲜锅底太下饭了",
+      "url": "https://www.douyin.com/video/7569124913328442633",
+      "shareURL": "https://v.douyin.com/mpXjt8RbBUc/",
+      "publishedOn": "2025-11-05",
+      "durationSeconds": 484,
+      "sourceSHA256": "d697ce66f1853b019faae48c7e49291009ddc60604c51373525e613aade04da9",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍胖墩墩地摊火锅自助，24.8元券后畅吃，自炒豆豉锅底配鲜切猪瘦肉、板筋、豆腐。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaozhen-pangdunduan",
+          "name": "胖墩墩地摊火锅自助（平价鲜肉地摊火锅）",
+          "category": "地摊火锅自助 / 24元现炒锅底平价火锅",
+          "addressText": "潮汕地区地摊火锅街区（胖墩墩地摊火锅）",
+          "start": 42,
+          "end": 72,
+          "posterSecond": 55,
+          "summary": "小珍实探超划算胖墩墩地摊火锅自助，券后仅需24.8元一位，自己动手现炒豆豉微辣锅底，自取鲜切猪瘦肉、肉丸、长板筋与新鲜蔬菜，香气四溢超级下饭。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440000"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-qiqiba-7492345872357887273",
+      "author": "778潮汕寻食小分队",
+      "title": "和牛爱好者真的要来啊，轻松实现和牛自由",
+      "url": "https://www.douyin.com/video/7492345872357887273",
+      "shareURL": "https://v.douyin.com/UExsEN2v8WU/",
+      "publishedOn": "2025-04-12",
+      "durationSeconds": 37,
+      "sourceSHA256": "dd3f30df63146ba4f793f2c1f4e3475139bee16a4b0bb398e9cc2212f31ef47b",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍龙湖丹霞庄元酱寿喜烧，不到200元畅吃澳洲品质M9/M7和牛放题与精美日料甜品。",
+      "segments": [
+        {
+          "id": "chaoshan-qiqiba-yuanjiangshouxishao",
+          "name": "元酱寿喜烧·和牛放题（丹霞庄店）",
+          "category": "和牛寿喜烧 / 澳洲M9现切和牛放题",
+          "addressText": "汕头市龙湖区丹霞庄西区37栋119 (丹苑南街与华山南路交叉口西60米)",
+          "start": 0,
+          "end": 28,
+          "posterSecond": 13,
+          "summary": "778实拍丹霞庄西区元酱寿喜烧，不到200元畅享澳洲品质M9/M7级和牛放题、精美日式寿司、手工冰激凌与高品质饮品，肉质油润奶香浓郁。",
+          "coordinates": [
+            116.7112,
+            23.363
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "丹霞庄西区元酱寿喜烧",
+            "basis": "poi",
+            "branchMatch": "confirmed",
+            "note": "根据高德POI及视频定位丹霞庄西区元酱寿喜烧和牛自助。 开放道路复核仅记录估算街区附近的真实源道路，不作为店门或分店身份验证。",
+            "reviewedOn": "2026-11-10",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 527006743,
+              "name": "未命名开放道路",
+              "url": "https://www.openstreetmap.org/way/527006743",
+              "nodeId": 5124068553,
+              "coordinates": [
+                116.7116104,
+                23.3629507
+              ],
+              "sourceDate": "2026-11-08",
+              "method": "nearest-road-reference-to-estimated-block",
+              "offsetMetres": 42.3
+            }
+          },
+          "footageNote": "2025年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    },
+    {
+      "id": "chaoshan-xiaolin-7619257133960300197",
+      "author": "小林探",
+      "title": "谁懂潮汕自助鲜烤牛肉有多好卷！无限畅吃",
+      "url": "https://www.douyin.com/video/7619257133960300197",
+      "shareURL": "https://v.douyin.com/QmXGOWKj0XA/",
+      "publishedOn": "2026-03-20",
+      "durationSeconds": 16,
+      "sourceSHA256": "9bd806d72091614c82630b04f8e52ea0d722f54ed513f7f68143535dedf1dcef",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍潮阳金顺优品旁潮汕牛骨馆，大盆新鲜现切牛肉炭火现烤无限畅吃。",
+      "segments": [
+        {
+          "id": "chaoshan-xiaolin-chaoshanniuguguan",
+          "name": "潮汕牛骨馆·鲜烤牛肉自助（潮阳金顺店）",
+          "category": "潮汕烤肉自助 / 现切鲜牛肉炭火烤肉",
+          "addressText": "汕头市潮阳区金顺优品客房隔壁",
+          "start": 0,
+          "end": 15,
+          "posterSecond": 6,
+          "summary": "小林实拍潮阳金顺旁潮汕牛骨馆，大盆现切新鲜牛肉无限量自取炭火现烤，卷生菜蒜片大口炫肉，市井烟火气十足。",
+          "coordinates": null,
+          "locationStatus": "unpositioned-archive",
+          "routeEligible": false,
+          "coordinateSystem": null,
+          "planningLocation": null,
+          "footageNote": "2026年视频 · 价格与营业情况待确认",
+          "amapCityCode": "440500"
+        }
+      ]
+    }
+  ]
+}

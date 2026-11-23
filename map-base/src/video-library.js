@@ -24,7 +24,11 @@ export class VideoLibrary{
     this.preferredClip=requested;
     document.querySelector('.video-library-head .eyebrow').textContent=(this.cityConfig?.name||'重庆')+' · 跟着镜头找好吃的';
     this.opener=opener;if(!this.dialog.open)this.dialog.showModal();
-    if(this.data){const source=this.data.sources.find(s=>s.segments.some(segment=>segment.id===requested));this.renderSource(source?.id||this.sourceId,requested);}else await this.load();
+    if(this.data){
+      const source=this.data.sources.find(s=>s.segments.some(segment=>segment.id===requested));
+      if(source)this.renderSource(source.id,requested);
+      else if(this.data.sources.length)this.renderSource(this.sourceId||this.data.sources[0].id,requested);
+    }else await this.load();
   }
   async load(){
     const generation=++this.generation;this.controller?.abort();this.controller=new AbortController();
@@ -44,6 +48,15 @@ export class VideoLibrary{
       this.status.textContent=count?`${count} 个本地片段 · ${pending?pending+' 段待定位或待扩图':'位置大致'}`:'原片片段未导入本机 · 可查看来源与地址线索';
       this.sources.replaceChildren();
       for(const source of data.sources){const button=el('button','video-source-tab',source.author);button.type='button';button.dataset.source=source.id;button.append(el('span','',String(source.segments.length)));button.addEventListener('click',()=>this.renderSource(source.id));this.sources.append(button);}
+      if(!data.sources.length){
+        this.status.textContent='暂无视频资料';
+        this.sources.replaceChildren();
+        this.grid.replaceChildren();
+        this.player.replaceChildren();
+        this.message.textContent='当前城市暂未收录视频来源。';
+        this.message.hidden=false;
+        return;
+      }
       const source=data.sources.find(s=>s.segments.some(segment=>segment.id===this.preferredClip))||data.sources[0];this.renderSource(source.id,this.preferredClip);
     }catch(error){if(generation!==this.generation)return;this.message.textContent=error.name==='AbortError'?'视频资料读取超时，可以重试。':error.message;document.getElementById('video-library-retry').hidden=false;}
     finally{clearTimeout(timer);}
@@ -54,11 +67,14 @@ export class VideoLibrary{
     for(const button of this.sources.children)button.setAttribute('aria-pressed',String(button.dataset.source===id));
     this.renderCards();
     const source=this.data.sources.find(s=>s.id===id);
+    if(!source)return;
     if(source.segments.length)this.select(source.segments.find(s=>s.id===clipId)||source.segments[0],false);else this.renderMissing(source);
   }
   renderCards(){
     if(!this.data)return;
-    const source=this.data.sources.find(s=>s.id===this.sourceId),term=document.getElementById('video-library-search').value.trim().toLocaleLowerCase();
+    const source=this.data.sources.find(s=>s.id===this.sourceId);
+    if(!source)return;
+    const term=document.getElementById('video-library-search').value.trim().toLocaleLowerCase();
     this.grid.replaceChildren();
     const segments=source.segments.filter(s=>[s.name,s.category,s.addressText||''].join(' ').toLocaleLowerCase().includes(term));
     this.message.hidden=segments.length>0;
@@ -85,7 +101,7 @@ export class VideoLibrary{
       const fallback=el('p','video-player-error','本机片段暂时无法播放，可以查看原视频。');fallback.hidden=true;video.addEventListener('error',()=>{if(video.getAttribute('src'))fallback.hidden=false;});this.player.append(video,fallback);
     }else{if(asset?.poster){const cover=el('img','video-player-media');cover.src=asset.poster;cover.alt=segment.name+' · 原视频画面';this.player.append(cover);}this.player.append(el('p','video-player-empty','视频素材待同步，可先查看封面、地址或原视频。'));}
     const titleRow=el('div','video-place-title-row');titleRow.append(el('h3','',segment.name));
-    const mapLink=el('a','video-map-search','在高德地图搜索 ↗');mapLink.href=amapSearchUrl(segment.name,this.cityConfig?.amapCityCode);mapLink.target='_blank';mapLink.rel='noopener noreferrer';mapLink.setAttribute('aria-label','在高德地图搜索'+segment.name+'，新窗口打开');
+    const mapLink=el('a','video-map-search','在高德地图搜索 ↗');mapLink.href=amapSearchUrl(segment.name,segment.amapCityCode||this.cityConfig?.amapCityCode);mapLink.target='_blank';mapLink.rel='noopener noreferrer';mapLink.setAttribute('aria-label','在高德地图搜索'+segment.name+'，新窗口打开');
     this.player.append(el('small','video-player-category',segment.category),titleRow,mapLink,el('p','video-player-summary',segment.summary));
     const address=el('div','video-player-address');address.append(el('small','',segment.addressOrigin==='name-address-crosscheck'?'店名与地址对照':'原作者地址线索'),el('p','',segment.addressText||'原片未提供详细地址，选择时留意具体分店。'));if(segment.addressNote)address.append(el('p','video-address-note',segment.addressNote));
     this.player.append(address);

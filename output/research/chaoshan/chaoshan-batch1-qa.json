@@ -1,0 +1,34 @@
+[
+  {
+    "name": "1. Catalog schema and rights status: user-confirmed",
+    "passed": true
+  },
+  {
+    "name": "2. Local source.mp4 integrity against sourceSHA256 for all sources",
+    "passed": true
+  },
+  {
+    "name": "3. Single-shop clips match expected media keys and H.264+AAC format",
+    "passed": true
+  },
+  {
+    "name": "4. Video posters in assets/video-posters have matching hashes and paths",
+    "passed": true
+  },
+  {
+    "name": "5. Approximate locations stay within Chaoshan bounds with routeEligible=false",
+    "passed": true
+  },
+  {
+    "name": "6. Cross-city catalog uniqueness via allCityCatalogs",
+    "passed": true
+  },
+  {
+    "name": "7. Generated food pages (places-chaoshan.html and detail pages) contain correct content",
+    "passed": true
+  },
+  {
+    "name": "8. Real OSM walking route between Chaoshan shops resolves to ready status",
+    "passed": true
+  }
+]
