@@ -168,30 +168,48 @@ async function run() {
     if (clipButtons.length < 2) return { success: false, reason: 'fewer than 2 creator tabs' };
     clipButtons[1].click();
     await new Promise(r => setTimeout(r, 400));
-    const oldPaused = oldVideo.paused;
-    const oldHasSrc = oldVideo.hasAttribute('src') && oldVideo.getAttribute('src') !== '';
+    const valid = Boolean(oldVideo);
+    const oldPaused = valid && oldVideo.paused;
+    const oldHasSrc = valid && oldVideo.hasAttribute('src') && oldVideo.getAttribute('src') !== '';
     return {
-      success: oldPaused && !oldHasSrc,
+      success: valid && oldPaused && !oldHasSrc,
+      valid,
       oldPaused,
       oldHasSrc
     };
   });
   check('Switching creator tab terminates old video and strips src', bloggerSwitchOk.success, bloggerSwitchOk);
 
-  // Test shop switch: hold reference to current video, open another shop, assert previous video paused & stripped
+  // After switching to 2nd creator, click .food-popover-play and confirm playback advance
+  await page.evaluate(() => {
+    const playBtn = document.querySelector('.food-popover-play');
+    if (playBtn) playBtn.click();
+  });
+  await page.waitForSelector('video.food-popover-video', { timeout: 10000 });
   await page.evaluate(() => {
     window.__testedVideo2 = document.querySelector('video.food-popover-video');
   });
+
+  const t2_1 = await page.evaluate(() => window.__testedVideo2 ? { t: window.__testedVideo2.currentTime, paused: window.__testedVideo2.paused } : null);
+  await page.waitForTimeout(800);
+  const t2_2 = await page.evaluate(() => window.__testedVideo2 ? { t: window.__testedVideo2.currentTime, paused: window.__testedVideo2.paused } : null);
+  const advancing2 = t2_1 && t2_2 && !t2_2.paused && (t2_2.t - t2_1.t >= 0.2);
+  check('Second creator video plays with double-sampling time advance (dt >= 0.2s)', advancing2, { t2_1, t2_2, dt: t2_2?.t - t2_1?.t });
+
+  // Test shop switch: hold reference to current video, open another shop, assert previous video paused & stripped
   const shopSwitchOk = await page.evaluate(async () => {
     const oldVideo = window.__testedVideo2;
-    const otherItem = window.foodCityMap.food.overlay.items[1]?.item;
+    const currentId = window.foodCityMap.food.experience?.activePopoverItem?.id;
+    const otherItem = window.foodCityMap.food.overlay.items.find(i => i.item.id !== currentId && i.item.localClip)?.item || window.foodCityMap.food.overlay.items[1]?.item;
     if (!otherItem) return { success: false, reason: 'no second shop item' };
     window.foodCityMap.food.overlay.showPopover(otherItem, true);
     await new Promise(r => setTimeout(r, 400));
-    const oldPaused = !oldVideo || oldVideo.paused;
-    const oldHasSrc = oldVideo && oldVideo.hasAttribute('src') && oldVideo.getAttribute('src') !== '';
+    const valid = Boolean(oldVideo);
+    const oldPaused = valid && oldVideo.paused;
+    const oldHasSrc = valid && oldVideo.hasAttribute('src') && oldVideo.getAttribute('src') !== '';
     return {
-      success: oldPaused && !oldHasSrc,
+      success: valid && oldPaused && !oldHasSrc,
+      valid,
       oldPaused,
       oldHasSrc
     };
@@ -213,10 +231,12 @@ async function run() {
     const closeBtn = document.querySelector('.food-popover-close');
     if (closeBtn) closeBtn.click();
     await new Promise(r => setTimeout(r, 400));
-    const oldPaused = !oldVideo || oldVideo.paused;
-    const oldHasSrc = oldVideo && oldVideo.hasAttribute('src') && oldVideo.getAttribute('src') !== '';
+    const valid = Boolean(oldVideo);
+    const oldPaused = valid && oldVideo.paused;
+    const oldHasSrc = valid && oldVideo.hasAttribute('src') && oldVideo.getAttribute('src') !== '';
     return {
-      success: oldPaused && !oldHasSrc,
+      success: valid && oldPaused && !oldHasSrc,
+      valid,
       oldPaused,
       oldHasSrc
     };

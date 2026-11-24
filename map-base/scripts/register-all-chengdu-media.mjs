@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { digest, mediaKey, mediaNames } from './video-library-common.mjs';
 
-const ffprobe = process.env.FOODCITY_FFPROBE || (fs.existsSync('D:\\trae安装程序\\Trae CN\\resources\\app\\bin\\ffprobe.exe') ? 'D:\\trae安装程序\\Trae CN\\resources\\app\\bin\\ffprobe.exe' : 'ffprobe');
+const ffprobe = process.env.FOODCITY_FFPROBE || process.env.FFPROBE_PATH || 'ffprobe';
 
 const scriptsDir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(scriptsDir, '../..');
