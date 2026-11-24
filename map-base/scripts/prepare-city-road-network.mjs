@@ -11,7 +11,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(await readFile(path.join(root, 'config/cities.json'), 'utf8'));
 
 const cityOption = process.argv.indexOf('--city');
-const cityId = cityOption >= 0 ? process.argv[cityOption + 1] : 'chengdu';
+const cityId = cityOption >= 0 ? process.argv[cityOption + 1] : 'harbin';
 
 if (!config.cities[cityId]) throw new Error(`City ${cityId} is not configured.`);
 const city = config.cities[cityId];
@@ -118,7 +118,7 @@ const networkData = {
   coordinateSystem: 'WGS84',
   bounds,
   source: {
-    date: sourceManifest.acquiredAtUTC?.slice(0, 10) || '2026-11-05',
+    date: sourceManifest.acquiredAtUTC?.slice(0, 10) || '2026-11-12',
     sha256: sourceManifest.sha256,
     url: sourceManifest.source,
     fileName: path.basename(city.tiles),
