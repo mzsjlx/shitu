@@ -40,7 +40,12 @@ for(const source of data.sources.filter(source=>!sourceId||source.id===sourceId)
         }catch(error){if(error.code!=='ENOENT')throw error;}
       }
     }
-    await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.start),'-i',input,'-t',String(segment.end-segment.start),'-map','0:v:0','-map','0:a:0','-c:v','libx264','-preset','fast','-crf','21','-pix_fmt','yuv420p','-threads','4','-c:a','aac','-b:a','128k','-map_metadata','-1','-movflags','+faststart',temporary]);
+    const inputProbe=JSON.parse(await run(ffprobe,['-v','error','-show_entries','stream=codec_type','-of','json',input]));
+    const hasAudio=inputProbe.streams.some(s=>s.codec_type==='audio');
+    const encodeArgs=hasAudio
+      ?['-hide_banner','-loglevel','error','-y','-ss',String(segment.start),'-i',input,'-t',String(segment.end-segment.start),'-map','0:v:0','-map','0:a:0','-c:v','libx264','-preset','fast','-crf','21','-pix_fmt','yuv420p','-threads','4','-c:a','aac','-b:a','128k','-map_metadata','-1','-movflags','+faststart',temporary]
+      :['-hide_banner','-loglevel','error','-y','-ss',String(segment.start),'-i',input,'-f','lavfi','-i','anullsrc=channel_layout=stereo:sample_rate=44100','-t',String(segment.end-segment.start),'-map','0:v:0','-map','1:a:0','-c:v','libx264','-preset','fast','-crf','21','-pix_fmt','yuv420p','-threads','4','-c:a','aac','-b:a','128k','-map_metadata','-1','-movflags','+faststart','-shortest',temporary];
+    await run(ffmpeg,encodeArgs);
     await rename(temporary,clip);
     await run(ffmpeg,['-hide_banner','-loglevel','error','-y','-ss',String(segment.posterSecond),'-i',input,'-frames:v','1','-q:v','3',poster]);
     const probe=JSON.parse(await run(ffprobe,['-v','error','-show_entries','format=duration:stream=codec_name,codec_type,width,height,duration','-of','json',clip]));
