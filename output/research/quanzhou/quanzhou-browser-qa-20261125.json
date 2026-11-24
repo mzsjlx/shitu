@@ -1,0 +1,224 @@
+{
+  "verifiedOn": "2026-11-25",
+  "passed": true,
+  "checks": [
+    {
+      "name": "1. Map readiness signal and Quanzhou title",
+      "passed": true,
+      "details": {
+        "statusText": "泉州地图已展开",
+        "title": "食途 · 泉州地图"
+      }
+    },
+    {
+      "name": "2. Exact 66 on-map Quanzhou food cards rendered (B1-B8 59 + 7 B9 Breakfast)",
+      "passed": true,
+      "details": {
+        "cardCount": 66
+      }
+    },
+    {
+      "name": "3. Verified Quanzhou B1-B9 shop names present on map (incl. all 7 new Breakfast stops)",
+      "passed": true,
+      "details": {
+        "totalCards": 66
+      }
+    },
+    {
+      "name": "4. Desktop 1440x960 popover opens on Batch 9 stop (新门街豆浆店) and media area >= 2/3",
+      "passed": true,
+      "details": {
+        "shop": "新门街豆浆店（泉州市豆制品厂）",
+        "popoverWidth": 310,
+        "popoverHeight": 382,
+        "mediaWidth": 296,
+        "mediaHeight": 267,
+        "ratio": 0.6682619540861624
+      }
+    },
+    {
+      "name": "5. Real playback advances across two samples (dt >= 0.3s, playing)",
+      "passed": true,
+      "details": {
+        "shop": "新门街豆浆店（泉州市豆制品厂）",
+        "s1": {
+          "t": 0.149551,
+          "paused": false,
+          "readyState": 4
+        },
+        "s2": {
+          "t": 1.150076,
+          "paused": false,
+          "readyState": 4
+        },
+        "dt": 1.001
+      }
+    },
+    {
+      "name": "6. Shop switch stops & clears old video, plays new video, and Escape cleans up",
+      "passed": true,
+      "details": {
+        "shop2": "张记石磨花生乳（西街菜市场店）",
+        "v1AfterSwitch": {
+          "paused": true,
+          "hasSrc": false
+        },
+        "dt2": 0.993,
+        "v2AfterEsc": {
+          "popoverHidden": true,
+          "paused": true,
+          "hasSrc": false
+        }
+      }
+    },
+    {
+      "name": "7. Multi-creator 3-blogger switch on 泉州油边王烧烤 stops & clears Creator 1, advances Creator 2, and Escape cleans up",
+      "passed": true,
+      "details": {
+        "shop": "泉州油边王烧烤",
+        "clipButtons": [
+          {
+            "id": "qz-yeyebuhuijia-youbianwang",
+            "author": "叶叶不回家",
+            "pressed": "true"
+          },
+          {
+            "id": "qz-kakako-youbianwang",
+            "author": "kakako",
+            "pressed": "false"
+          },
+          {
+            "id": "qz-linlin-youbianwang",
+            "author": "林林。",
+            "pressed": "false"
+          }
+        ],
+        "dtMc1": 1.001,
+        "mc1AfterSwitch": {
+          "paused": true,
+          "hasSrc": false
+        },
+        "btn2Pressed": "true",
+        "dtMc2": 1.001,
+        "mc2AfterEsc": {
+          "popoverHidden": true,
+          "paused": true,
+          "hasSrc": false
+        },
+        "screenshot": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-lidafu-multicreator-1440.png"
+      }
+    },
+    {
+      "name": "8. Direct and real-road routing both compute & isolate localStorage to quanzhou",
+      "passed": true,
+      "details": {
+        "directSummary": "我的想去 5 站想去 直线约 12.1 公里 直线 沿路 1 泉州古早早餐 / 豆制品厂热豆浆·豆花油条 2 泉州古早早餐 / 石磨花生汤冲蛋·满煎糕油条 3 东北烧烤 / 宵夜大排档 4 川渝火锅 / 地摊称重火锅 5 川味火锅 / 自助老火锅 一起看 ↗ 安排顺序",
+        "roadSummary": "我的想去 5 站想去 沿路约 15.1 公里 直线 沿路 1 泉州古早早餐 / 豆制品厂热豆浆·豆花油条 2 泉州古早早餐 / 石磨花生汤冲蛋·满煎糕油条 3 东北烧烤 / 宵夜大排档 4 川渝火锅 / 地摊称重火锅 5 川味火锅 / 自助老火锅 一起看 ↗ 安排顺序",
+        "storage": {
+          "wants": "[\"video-qz-miemie-xinmenjie-doujiang\",\"video-qz-linrichang-zhangji-huashengru\",\"video-qz-yeyebuhuijia-youbianwang\",\"video-qz-yixuan-yuduzhouniangniang\",\"video-qz-wxxin-linqingzuo\"]",
+          "mode": "road",
+          "cqWants": null
+        }
+      }
+    },
+    {
+      "name": "9. Desktop 1440x960 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-desktop-1440.png"
+      }
+    },
+    {
+      "name": "10. Chongqing regression clean (81 stops, zero Quanzhou contamination)",
+      "passed": true,
+      "details": {
+        "cqCardCount": 81
+      }
+    },
+    {
+      "name": "11. Mobile 390x844 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "popoverWidth": 260,
+        "popoverHeight": 451,
+        "mediaWidth": 246,
+        "mediaHeight": 318,
+        "ratio": 0.6671328671328671
+      }
+    },
+    {
+      "name": "12. Mobile 390x844 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-mobile-390.png"
+      }
+    },
+    {
+      "name": "13. Small 320x680 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "popoverWidth": 260,
+        "popoverHeight": 451,
+        "mediaWidth": 246,
+        "mediaHeight": 318,
+        "ratio": 0.6671328671328671
+      }
+    },
+    {
+      "name": "14. Small 320x680 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-small-320.png"
+      }
+    },
+    {
+      "name": "15. Short landscape 736x414 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "popoverWidth": 310,
+        "popoverHeight": 330,
+        "mediaWidth": 296,
+        "mediaHeight": 231,
+        "ratio": 0.6683870967741935
+      }
+    },
+    {
+      "name": "16. Short landscape 736x414 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-landscape-736.png"
+      }
+    },
+    {
+      "name": "17. No-media fallback decodes real Git poster and displays 视频待同步",
+      "passed": true,
+      "details": {
+        "posterLoaded": true,
+        "missingText": "视频待同步"
+      }
+    },
+    {
+      "name": "18. Standalone preview-quanzhou.html renders all 66 Quanzhou stops and base view searches Quanzhou roads",
+      "passed": true,
+      "details": {
+        "cardCount": 66,
+        "roadHitsForXijie": 2
+      }
+    },
+    {
+      "name": "19. HTTP directory pages places-quanzhou.html and videos-quanzhou.html render Quanzhou stops & creators",
+      "passed": true,
+      "details": {
+        "placesHasBatch9Breakfast": true,
+        "videosHasBatch9Creators": true
+      }
+    },
+    {
+      "name": "20. Zero unhandled page errors across all checks",
+      "passed": true,
+      "details": {
+        "errors": []
+      }
+    }
+  ]
+}

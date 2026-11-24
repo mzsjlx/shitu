@@ -1,0 +1,107 @@
+{
+  "verifiedOn": "2026-11-22",
+  "passed": true,
+  "checks": [
+    {
+      "name": "1. config/cities.json includes valid quanzhou entry and retains all 6 prior cities",
+      "passed": true,
+      "details": {
+        "cityCount": 7,
+        "quanzhouBounds": [
+          118.53,
+          24.8,
+          118.69,
+          24.98
+        ],
+        "amapCityCode": "350500"
+      }
+    },
+    {
+      "name": "2. data/cities/quanzhou/quanzhou.pmtiles bytes and SHA256 match source-manifest.json",
+      "passed": true,
+      "details": {
+        "bytes": 2883645,
+        "sha256": "e7f6dcecf1b100023684430aba09c2cc39067dc1a7ddb98c202d93c1c283ae13",
+        "upstreamBuild": "20261122.pmtiles"
+      }
+    },
+    {
+      "name": "3. data-audit.json (304/304 tiles) and terrain-manifest.json (89 DEM PNGs) verified on disk",
+      "passed": true,
+      "details": {
+        "vectorTiles": 304,
+        "terrainTiles": 89
+      }
+    },
+    {
+      "name": "4. roads-index.json has valid Quanzhou road groups within bounds",
+      "passed": true,
+      "details": {
+        "roadGroups": 368
+      }
+    },
+    {
+      "name": "5. food-road-network.json bytes and SHA256 match manifest (LF-stable)",
+      "passed": true,
+      "details": {
+        "bytes": 2526241,
+        "sha256": "f161b01d6b457683a904d373cf969464e2ff6fcc6786587820513568fe5f7dc4",
+        "nodes": 37761,
+        "ways": 6789
+      }
+    },
+    {
+      "name": "6. food-road-router snaps all 19 Quanzhou stops <= 250m and routes across city & Jinjiang bridges",
+      "passed": true,
+      "details": {
+        "locatedStops": 19,
+        "maxSnapMetres": 51.9,
+        "alingToQunzhong": "1719m",
+        "aqiuToYixin": "1813m",
+        "kunjiToAdizai": "4949m",
+        "xijieToWudianshiCrossRiver": "13247m"
+      }
+    },
+    {
+      "name": "7. allCityCatalogs loads 7 cities without collision; Quanzhou posters & anchors match disk hashes",
+      "passed": true,
+      "details": {
+        "totalCities": 7,
+        "sources": 1,
+        "segments": 24,
+        "located": 19,
+        "unlocated": 4,
+        "outOfBounds": 1
+      }
+    },
+    {
+      "name": "8. Global video-posters.json (535) and dist/data/video-library-assets.json (630) preserve all prior cities",
+      "passed": true,
+      "details": {
+        "globalPosters": 535,
+        "distAssetsTotal": 630,
+        "quanzhouClips": 24
+      }
+    },
+    {
+      "name": "9. Built HTML pages, 24 shop pages, and preview-quanzhou.html are valid",
+      "passed": true,
+      "details": {
+        "previewBytes": 13586391,
+        "shopPages": 24
+      }
+    },
+    {
+      "name": "10. Isolated media bundle import (24 clips), repeat idempotency (newFiles=0), and wrong-city rejection",
+      "passed": true,
+      "details": {
+        "bundleName": "shitu-media-qz-nangua-7689786926581370533-a05d64bfca0ef53b.zip",
+        "bundleBytes": 722847263,
+        "bundleSHA256": "9d93b754b309a0d10c394b28d9fbbeebb4ac9f9f7ff74b7f041e83bb0c8ca29d",
+        "firstNewFiles": 49,
+        "repeatNewFiles": 0,
+        "wrongCityRejected": true
+      }
+    }
+  ]
+}

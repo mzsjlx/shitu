@@ -1,0 +1,188 @@
+{
+  "verifiedOn": "2026-11-22",
+  "passed": true,
+  "checks": [
+    {
+      "name": "1. Map readiness signal and Quanzhou title",
+      "passed": true,
+      "details": {
+        "statusText": "泉州地图已展开",
+        "title": "食途 · 泉州地图"
+      }
+    },
+    {
+      "name": "2. Exact 19 on-map Quanzhou food cards rendered",
+      "passed": true,
+      "details": {
+        "cardCount": 19
+      }
+    },
+    {
+      "name": "3. Verified Quanzhou shop names present on map",
+      "passed": true,
+      "details": {
+        "sampleNames": [
+          "阿玲花生汤",
+          "群众牛肉小吃海蛎煎",
+          "泮宫卤面",
+          "阿三泉港浮粿",
+          "阿秋牛排店",
+          "壶见",
+          "坤记芋头饼",
+          "美美阿姨醋肉",
+          "长虎土笋冻",
+          "米斯小庄庄"
+        ]
+      }
+    },
+    {
+      "name": "4. Desktop 1440x960 popover opens and media area >= 2/3",
+      "passed": true,
+      "details": {
+        "shop": "阿玲花生汤",
+        "popoverWidth": 310,
+        "popoverHeight": 382,
+        "mediaWidth": 296,
+        "mediaHeight": 267,
+        "ratio": 0.6682619540861624
+      }
+    },
+    {
+      "name": "5. Real playback advances across two samples (dt >= 0.3s, playing)",
+      "passed": true,
+      "details": {
+        "s1": {
+          "t": 0.059673,
+          "paused": false,
+          "readyState": 4
+        },
+        "s2": {
+          "t": 1.062033,
+          "paused": false,
+          "readyState": 4
+        },
+        "dt": 1.002
+      }
+    },
+    {
+      "name": "6. Shop switch stops & clears old video, plays new video, and Escape cleans up",
+      "passed": true,
+      "details": {
+        "shop2": "群众牛肉小吃海蛎煎",
+        "v1AfterSwitch": {
+          "paused": true,
+          "hasSrc": false
+        },
+        "dt2": 1.014,
+        "v2AfterEsc": {
+          "popoverHidden": true,
+          "paused": true,
+          "hasSrc": false
+        }
+      }
+    },
+    {
+      "name": "7. Direct and real-road routing both compute & isolate localStorage to quanzhou",
+      "passed": true,
+      "details": {
+        "directSummary": "我的想去 2 站想去 直线约 1.5 公里 直线 沿路 1 古早早餐 / 花生汤 2 闽南老字号 / 海蛎煎 一起看 ↗ 安排顺序",
+        "roadSummary": "我的想去 2 站想去 沿路约 1.7 公里 直线 沿路 1 古早早餐 / 花生汤 2 闽南老字号 / 海蛎煎 一起看 ↗ 安排顺序",
+        "storage": {
+          "wants": "[\"video-qz-nangua-aling-huashengtang\",\"video-qz-nangua-qunzhong-niurou\"]",
+          "mode": "road",
+          "cqWants": null
+        }
+      }
+    },
+    {
+      "name": "8. Desktop 1440x960 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-desktop-1440.png"
+      }
+    },
+    {
+      "name": "9. Chongqing regression clean (81 stops, zero Quanzhou contamination)",
+      "passed": true,
+      "details": {
+        "cqCardCount": 81
+      }
+    },
+    {
+      "name": "10. Mobile 390x844 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "popoverWidth": 260,
+        "popoverHeight": 451,
+        "mediaWidth": 246,
+        "mediaHeight": 318,
+        "ratio": 0.6671328671328671
+      }
+    },
+    {
+      "name": "11. Mobile 390x844 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-mobile-390.png"
+      }
+    },
+    {
+      "name": "12. Small 320x680 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "popoverWidth": 260,
+        "popoverHeight": 451,
+        "mediaWidth": 246,
+        "mediaHeight": 318,
+        "ratio": 0.6671328671328671
+      }
+    },
+    {
+      "name": "13. Small 320x680 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-small-320.png"
+      }
+    },
+    {
+      "name": "14. Short landscape 736x414 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "popoverWidth": 310,
+        "popoverHeight": 330,
+        "mediaWidth": 296,
+        "mediaHeight": 231,
+        "ratio": 0.6683870967741935
+      }
+    },
+    {
+      "name": "15. Short landscape 736x414 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-landscape-736.png"
+      }
+    },
+    {
+      "name": "16. No-media fallback decodes real Git poster and displays 视频待同步",
+      "passed": true,
+      "details": {
+        "posterLoaded": true,
+        "missingText": "视频待同步"
+      }
+    },
+    {
+      "name": "17. Standalone preview-quanzhou.html renders all 19 Quanzhou stops",
+      "passed": true,
+      "details": {
+        "cardCount": 19
+      }
+    },
+    {
+      "name": "18. Zero unhandled page errors across all checks",
+      "passed": true,
+      "details": {
+        "errors": []
+      }
+    }
+  ]
+}

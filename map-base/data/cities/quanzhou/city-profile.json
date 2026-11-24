@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "city": "quanzhou",
+  "name": "泉州",
+  "province": "福建省",
+  "amapCityCode": "350500",
+  "regionLabel": "古城核心 · 刺桐两江",
+  "coverageLabel": "泉州核心城区（涵盖鲤城古城西街/开元寺/中山路/涂门街/天后宫，丰泽浦西/领SHOW/东海/蟳埔村，清源山/泉州站/洛阳桥，及晋江桥南/五店市片区）",
+  "bounds": [
+    118.53,
+    24.8,
+    118.69,
+    24.98
+  ],
+  "center": [
+    118.586,
+    24.913
+  ],
+  "zoom": 15.5,
+  "pitch": 52,
+  "bearing": -15,
+  "minZoom": 11.5,
+  "maxZoom": 19,
+  "tiles": "data/cities/quanzhou/quanzhou.pmtiles",
+  "demTiles": "data/cities/quanzhou/terrain/{z}/{x}/{y}.png",
+  "demMinZoom": 11,
+  "demMaxZoom": 13,
+  "landmarks": [],
+  "status": "local-validation-only",
+  "workflow": {
+    "rightsStatus": "user-confirmed",
+    "videoIntake": "strict-user-provided-only",
+    "locationAccuracy": "approximate-planning-first",
+    "multiCreatorSupport": true,
+    "roadNetworkTopology": "osm-node-consecutive"
+  },
+  "foodContent": {
+    "city": "quanzhou",
+    "records": "data/cities/quanzhou/food-records.json",
+    "videoLibrary": "data/cities/quanzhou/video-library.json",
+    "videoAssets": "data/cities/quanzhou/video-library-assets.json",
+    "videoPosters": "data/cities/quanzhou/video-posters.json",
+    "sprite": "assets/food-concepts.jpg",
+    "roadNetwork": "data/cities/quanzhou/food-road-network.json"
+  },
+  "dataFiles": {
+    "profile": "data/cities/quanzhou/city-profile.json",
+    "tiles": "data/cities/quanzhou/quanzhou.pmtiles",
+    "videoLibrary": "data/cities/quanzhou/video-library.json",
+    "videoPosters": "data/cities/quanzhou/video-posters.json",
+    "videoAssets": "data/cities/quanzhou/video-library-assets.json",
+    "foodRecords": "data/cities/quanzhou/food-records.json",
+    "roadNetwork": "data/cities/quanzhou/food-road-network.json",
+    "index": "data/cities/quanzhou/roads-index.json",
+    "audit": "data/cities/quanzhou/data-audit.json",
+    "manifest": "data/cities/quanzhou/source-manifest.json",
+    "tileMetadata": "data/cities/quanzhou/tile-metadata.json",
+    "terrainManifest": "data/cities/quanzhou/terrain-manifest.json"
+  },
+  "notes": [
+    "严格遵守只处理用户实际提供的探店链接，未收到视频链接前不自行添加第三方来源，也不预填或虚构授权确认日期。",
+    "准备态骨架暂不接入 config/cities.json（避免空目录触发构建或授权校验失败），待收到首批用户链接并跑通闭环后正式接入。",
+    "门店位置采用有充分街区依据的大致规划点（approximate-planning，WGS84），无充分依据的片段保留视频库不强行造点。",
+    "同一分店多博主探店共用一个地图点（相同的 placeId），浮窗保留各自博主片段供用户切换。",
+    "大文件隔离：原片与剪辑 MP4 保留在 .local/ 隔离目录，仅小封面海报与 JSON 元数据进 Git。",
+    "沿路距离使用保留原始 OSM 节点拓扑的网络，冻结路网与清单已在 .gitattributes 固定 LF，不采用几何交叉连线或直线乘系数。"
+  ]
+}

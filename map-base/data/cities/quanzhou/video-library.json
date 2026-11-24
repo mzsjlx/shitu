@@ -1,0 +1,3392 @@
+{
+  "schemaVersion": 1,
+  "city": "quanzhou",
+  "preparedOn": "2026-11-26",
+  "rights": {
+    "status": "user-confirmed",
+    "confirmedOn": "2026-11-26",
+    "scope": "首批1条泉州探店视频（2026-11-22）、第二批4条泉州火锅（2026-11-23）、第三批6条泉州烤肉（2026-11-23）、第四批10条泉州大排档（2026-11-24）、第五批7条泉州烧烤（2026-11-25）、第六批7条泉州自助餐与自助快餐（2026-11-25）、第七批7条泉州夜市（2026-11-25）、第八批7条泉州摆摊与路边摊（2026-11-26）及第九批7条泉州早餐视频（2026-11-26用户在抖音搜索页指定选取确认）均获用户确认用于食途本地剪辑、提取原片封面与地图展示，保留原作者署名与原页链接；原片与MP4剪辑留本机.local，小封面与公开元数据进Git。",
+    "evidence": "本项目2026-11-22至2026-11-26用户会话明确提供/选定并确认；未独立审查纸质授权合同。"
+  },
+  "sources": [
+    {
+      "id": "qz-nangua-7689786926581370533",
+      "author": "南瓜小丸子呀🎃",
+      "title": "第1集 | 一条视频带你们吃遍泉州！3天爽吃24家！ #泉州美食 #泉州美食攻略 #宝藏小店分享 #泉州特色小吃",
+      "url": "https://www.douyin.com/video/7689786926581370533",
+      "shareURL": "https://v.douyin.com/FByRkPuG1M8",
+      "publishedOn": "2026-09-26",
+      "durationSeconds": 405.02,
+      "sourceSHA256": "08821aa0948587dbc9accd0001b1d7b5f3fc2fd90f47d99824624b070771b2f3",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-22由用户登录浏览器正常播放观察取得完整音画原片；全片每2秒抽帧结合精确场景切点与高清门头/门牌/杯贴逐店核对，并对照片尾清单纠正平台自动章节错字（三脚虎、长虎土笋冻等）。",
+      "segments": [
+        {
+          "id": "qz-nangua-aling-huashengtang",
+          "name": "阿玲花生汤",
+          "category": "古早早餐 / 花生汤",
+          "addressText": "泉州市鲤城区承天巷62号（近承天寺）",
+          "start": 19.7,
+          "end": 31.8,
+          "posterSecond": 25,
+          "summary": "加蛋版古早味花生汤，花生绵密香甜、蛋花滑嫩，搭配老式千层糕适合早上暖胃。",
+          "coordinates": [
+            118.587513,
+            24.911019
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "承天巷 / 承天寺附近",
+            "basis": "video-storefront-and-public-address",
+            "branchMatch": "candidate",
+            "note": "原片实拍“阿玲花生汤”门头，公开资料指向鲤城区承天巷62号；采用冻结福建OSM承天巷原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 294973999,
+              "name": "承天巷",
+              "url": "https://www.openstreetmap.org/way/294973999",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 3358955101
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中价格、菜品及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-chenshi-xiaochi",
+          "name": "陈氏小吃",
+          "category": "地方小吃 / 牛肉面",
+          "addressText": "泉州南安市水头镇鑫盛街121号（片称坐2小时公交，超出当前中心城区底图范围）",
+          "start": 31.8,
+          "end": 57.8,
+          "posterSecond": 39.5,
+          "summary": "主打纯牛肉锤打制成的特色牛肉面、脆弹福州肉燕，以及蘸醋/辣椒油/花生酱的珍珠小笼包。",
+          "coordinates": null,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "addressNote": "原片实拍“陈氏小吃”门头并口述“特地坐了2个小时公交”；公开资料位于南安市水头镇鑫盛街121号，超出当前中心城区底图[118.53,24.80,118.69,24.98]，标记范围外保留视频库待后续扩图。",
+          "footageNote": "2026年9月原视频 · 位于南安水头镇（当前地图范围外），出发前请核实分店与营业时间。"
+        },
+        {
+          "id": "qz-nangua-suosuoluo",
+          "name": "嗦嗦螺",
+          "category": "街头小吃 / 卤味海鲜",
+          "addressText": "泉州街头摊位（原片偶遇，具体店名与地址待确认）",
+          "start": 57.8,
+          "end": 67,
+          "posterSecond": 63,
+          "summary": "多种酱料现拌的泉州特色嗦嗦螺，花生酱香气浓郁，边逛边嗦很有趣味。",
+          "coordinates": null,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "addressNote": "原片仅展示现拌出餐画面并口述“偶然遇到的很有特色的一种美食”，无门头与街区门牌线索，按规范保留视频库不上图。",
+          "footageNote": "2026年9月原视频 · 原片未提供具体地址，暂不上图。"
+        },
+        {
+          "id": "qz-nangua-qunzhong-niurou",
+          "name": "群众牛肉小吃海蛎煎",
+          "category": "闽南老字号 / 海蛎煎",
+          "addressText": "泉州市鲤城区中山南路441号（原片门牌实拍）",
+          "start": 67,
+          "end": 84.2,
+          "posterSecond": 77,
+          "summary": "70年老字号，现做滑嫩牛肉羹与满满海蛎肉的木薯粉海蛎煎，拌甜辣酱鲜美过瘾。",
+          "coordinates": [
+            118.58383,
+            24.898291
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中山南路441号附近",
+            "basis": "video-door-plaque",
+            "branchMatch": "plaque-verified-approximate-road",
+            "note": "原片清晰实拍蓝色门牌“中山南路441号”及“群众牛肉小吃海蛎煎”门头；采用冻结福建OSM中山南路原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 294706460,
+              "name": "中山南路",
+              "url": "https://www.openstreetmap.org/way/294706460",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 2285727564
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中价格、菜品及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-pangong-lumian",
+          "name": "泮宫卤面",
+          "category": "闽南面食 / 卤面",
+          "addressText": "泉州市鲤城区新门街309号（原片门牌实拍）",
+          "start": 84.2,
+          "end": 96,
+          "posterSecond": 87.5,
+          "summary": "自选配料现煮的传统泉州卤面，可加小瘦肉、鲜虾与八爪鱼，汤底鲜浓挂面。",
+          "coordinates": [
+            118.580419,
+            24.910152
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "新门街309号附近",
+            "basis": "video-door-plaque",
+            "branchMatch": "plaque-verified-approximate-road",
+            "note": "原片清晰实拍门牌“新门街309号”及“原中菜·泮宫卤面”门头；采用冻结福建OSM新门街原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 72233706,
+              "name": "新门街",
+              "url": "https://www.openstreetmap.org/way/72233706",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 858410313
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中价格、菜品及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-sifang-zhawu",
+          "name": "四方炸物",
+          "category": "甜品炸物 / 碱粽冰",
+          "addressText": "泉州市区（原片实拍“四方炸物”门头，具体门牌待确认）",
+          "start": 96,
+          "end": 107,
+          "posterSecond": 103,
+          "summary": "主打闽南炸物与红糖碱水粽冰，碱水粽软糯清甜，搭配红糖冰、多彩阿达子与黑糖粉粿。",
+          "coordinates": null,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "addressNote": "原片实拍“四方炸物”门头与红糖碱粽冰海报，未拍到门牌号与明确街道名，公开地址尚缺独立交叉核实，按规范先保留视频库不上图。",
+          "footageNote": "2026年9月原视频 · 具体分店门牌待核实，暂不上图。"
+        },
+        {
+          "id": "qz-nangua-mingying-shaokao",
+          "name": "明英烧烤店",
+          "category": "夜宵 / 花生酱烧烤",
+          "addressText": "泉州市区1-7号（原片实拍“明英烧烤店”门头，所在路名待确认）",
+          "start": 107,
+          "end": 133,
+          "posterSecond": 113.5,
+          "summary": "本地食客扎堆的泉州特色刷花生酱烧烤，白粿外脆里糯，烤猪颈肉、烤空心菜与烤牛肉香气扑鼻。",
+          "coordinates": null,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "addressNote": "原片实拍“明英烧烤店”门头及1-7号门牌，但夜间光线较暗未能清晰辨认街道名，公开资料亦缺确切门牌交叉核实，按规范暂留视频库不上图。",
+          "footageNote": "2026年9月原视频 · 所在街道名待进一步核实，暂不上图。"
+        },
+        {
+          "id": "qz-nangua-asan-fuguo",
+          "name": "阿三泉港浮粿",
+          "category": "闽南炸物 / 泉港浮粿",
+          "addressText": "泉州市鲤城区美食街7-1号（原片门牌实拍）",
+          "start": 133,
+          "end": 141.5,
+          "posterSecond": 135.5,
+          "summary": "现炸4元一个的招牌泉港浮粿，外皮焦酥、内馅包入猪肉、海蛎与韭菜，口感独特鲜香。",
+          "coordinates": [
+            118.596143,
+            24.906764
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "温陵美食街7-1号附近",
+            "basis": "video-door-plaque",
+            "branchMatch": "plaque-verified-approximate-road",
+            "note": "原片清晰实拍“美食街 7-1”门牌及“阿三泉港浮粿”价目表；采用冻结福建OSM美食街北端原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303418533,
+              "name": "美食街",
+              "url": "https://www.openstreetmap.org/way/303418533",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 3077730342
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中价格（浮粿4元/个）及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-aqiu-niupai",
+          "name": "阿秋牛排店",
+          "category": "闽南正餐 / 中式炖牛排",
+          "addressText": "泉州市丰泽区湖心街500号（原片门牌与米其林标识实拍）",
+          "start": 141.5,
+          "end": 164.1,
+          "posterSecond": 147,
+          "summary": "泉州老字号中式炖牛排，大块牛排软烂脱骨，加沙茶酱的浓汁拌饭一绝，配牛骨萝卜汤与生菜。",
+          "coordinates": [
+            118.600896,
+            24.909305
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "湖心街500号（阿秋牛排）",
+            "basis": "video-door-plaque-and-osm-poi",
+            "branchMatch": "plaque-verified-approximate-poi",
+            "note": "原片清晰实拍蓝色门牌“湖心街500号”与“阿秋牛排店”招牌；直接采用冻结福建OSM同名餐馆节点 node/14177499826。；主路网拓扑锚定冻结OSM道路 way/219409911 节点 2285727362。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 219409911,
+              "name": "湖心街",
+              "url": "https://www.openstreetmap.org/way/219409911",
+              "sourceDate": "2026-11-21",
+              "method": "poi-node-and-adjacent-way-node",
+              "nodeId": 2285727362
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中价格、菜品及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-hujian",
+          "name": "壶见",
+          "category": "福建茶饮 / 鲜果茶",
+          "addressText": "泉州市鲤城区中山路片区（原片杯贴实拍“泉州中山…”）",
+          "start": 164.1,
+          "end": 173.3,
+          "posterSecond": 167,
+          "summary": "福建本土闽式茶饮，原创橄榄油柑野茉莉酸甜回甘清爽解腻，推荐三分糖。",
+          "coordinates": [
+            118.586235,
+            24.914157
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "中山中路 / 钟楼附近",
+            "basis": "video-cup-label",
+            "branchMatch": "candidate",
+            "note": "原片杯贴隐约可见“泉州中山…”字样（外卖单），古城中山路/钟楼一带分店集中；采用冻结福建OSM中山中路原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 294706463,
+              "name": "中山中路",
+              "url": "https://www.openstreetmap.org/way/294706463",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 13269316147
+            }
+          },
+          "footageNote": "2026年9月原视频 · 具体中山路门店号待核，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-kunji-yutoubing",
+          "name": "坤记芋头饼",
+          "category": "街头甜点 / 芋头饼",
+          "addressText": "泉州市鲤城区西街（原片门头实拍“坤记芋头饼 西街店”）",
+          "start": 173.3,
+          "end": 184.3,
+          "posterSecond": 175.5,
+          "summary": "现做现卖的老式芋头饼，4元拉丝麻薯款外层饼干薄脆不油腻，香甜满足。",
+          "coordinates": [
+            118.58501,
+            24.915523
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "西街东段 / 钟楼近开元寺",
+            "basis": "video-storefront",
+            "branchMatch": "branch-sign-verified-approximate-road",
+            "note": "原片实拍“坤记芋头饼 西街店”门头与“泉州西街芋见你”立牌；采用冻结福建OSM西街原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 166164157,
+              "name": "西街",
+              "url": "https://www.openstreetmap.org/way/166164157",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 11031792296
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中价格（3.5~6元/个）及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-meimeiayi-curou",
+          "name": "美美阿姨醋肉",
+          "category": "闽南炸物 / 炸醋肉",
+          "addressText": "泉州市鲤城区东街105号（原片门牌与“东街店”门头实拍）",
+          "start": 184.3,
+          "end": 194.5,
+          "posterSecond": 187.5,
+          "summary": "主打现炸闽南醋肉与香脆炸紫菜，趁刚出锅热吃口感更佳。",
+          "coordinates": [
+            118.593248,
+            24.914421
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "东街105号（东街店）附近",
+            "basis": "video-door-plaque",
+            "branchMatch": "plaque-verified-approximate-road",
+            "note": "原片清晰实拍蓝色门牌“东街105号”及“美美阿姨醋肉 东街店”招牌；采用冻结福建OSM东街原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 472423730,
+              "name": "东街",
+              "url": "https://www.openstreetmap.org/way/472423730",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 2993368433
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中价格及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-changhu-tusundong",
+          "name": "长虎土笋冻",
+          "category": "闽南名小吃 / 土笋冻",
+          "addressText": "泉州市鲤城区西街片区（原片实拍“长虎土笋冻”门头）",
+          "start": 194.5,
+          "end": 202.5,
+          "posterSecond": 197.5,
+          "summary": "安海名小吃长虎土笋冻，配酱油蒜汁与芥末，入口冰凉脆弹像心管，适合路过尝鲜。",
+          "coordinates": [
+            118.582913,
+            24.915839
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "西街中段附近（候选分店）",
+            "basis": "video-storefront-and-public-address",
+            "branchMatch": "candidate",
+            "note": "原片实拍“长虎土笋冻·安海长虎土笋冻批发部”门头（已纠正平台章节仅写“土笋冻”），公开资料在鲤城西街设有分店；采用冻结福建OSM西街原节点作为街区大致规划点，具体门牌待核。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 166164157,
+              "name": "西街",
+              "url": "https://www.openstreetmap.org/way/166164157",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 11031792261
+            }
+          },
+          "footageNote": "2026年9月原视频 · 具体古城分店门牌待核实，出发前请确认。"
+        },
+        {
+          "id": "qz-nangua-misi-xiaozhuangzhuang",
+          "name": "米斯小庄庄",
+          "category": "冰品甜点 / 绵绵冰",
+          "addressText": "泉州市鲤城区南俊北路28号（原片紧邻“泉州·南俊店”门头）",
+          "start": 202.5,
+          "end": 219.5,
+          "posterSecond": 205.5,
+          "summary": "招牌熔岩芝士芒果绵绵冰，醇香牛奶冰化了也好吃，搭配冰淇淋球、芒果丁与脆芋头丝夹层。",
+          "coordinates": [
+            118.591812,
+            24.916618
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "南俊路 / 南俊北路附近",
+            "basis": "video-storefront-and-adjacent-sign",
+            "branchMatch": "candidate",
+            "note": "原片实拍“米斯小庄庄”门头，左侧紧邻店招标注“泉州·南俊店”，与公开资料南俊北路28号吻合；采用冻结福建OSM南俊路原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 294648656,
+              "name": "南俊路",
+              "url": "https://www.openstreetmap.org/way/294648656",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 2982406944
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中营业时间标注11:30起，实际请以到店为准。"
+        },
+        {
+          "id": "qz-nangua-donglai-caitousuan",
+          "name": "东来菜头酸",
+          "category": "古早小吃 / 菜头酸",
+          "addressText": "泉州市鲤城区中山路金鱼巷口（原片实拍“金鱼巷东来”）",
+          "start": 219.5,
+          "end": 229.2,
+          "posterSecond": 223.5,
+          "summary": "古早味腌萝卜片切开夹满碎花生与白砂糖，酸甜爽脆风味独特，还售萝卜汁与杨桃汁。",
+          "coordinates": [
+            118.584012,
+            24.908466
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "金鱼巷口 / 中山路附近",
+            "basis": "video-storefront",
+            "branchMatch": "branch-sign-verified-approximate-road",
+            "note": "原片门头海报清晰印有“金鱼巷东来”及“金鱼巷分销点”；采用冻结福建OSM金鱼巷东口原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 905000223,
+              "name": "金鱼巷",
+              "url": "https://www.openstreetmap.org/way/905000223",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 2986102900
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中标价菜头酸夹花生2.5元/片，实际请以现场为准。"
+        },
+        {
+          "id": "qz-nangua-aia-shihuagao",
+          "name": "爱啊石花膏",
+          "category": "古早甜汤 / 石花膏",
+          "addressText": "泉州市鲤城区濠沟墘3-8号（原片门牌实拍，紧邻3-9号郑府煎包）",
+          "start": 229.2,
+          "end": 245,
+          "posterSecond": 235.5,
+          "summary": "经典老牌海石花膏，可自选三种丰富小料，海石花爽滑、银耳清甜，大颗手作芋圆巨软糯。",
+          "coordinates": [
+            118.583408,
+            24.911382
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "濠沟墘3-8号附近",
+            "basis": "video-door-plaque",
+            "branchMatch": "plaque-verified-approximate-road",
+            "note": "原片清晰实拍蓝色门牌“濠沟墘 3-8号”（隔壁为3-9号郑府煎包）；采用冻结福建OSM濠沟墘原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1194723515,
+              "name": "濠沟墘",
+              "url": "https://www.openstreetmap.org/way/1194723515",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 2986102879
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中价格、小料及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-sanjiaohu",
+          "name": "三脚虎·现炒痛风锅",
+          "category": "海鲜火锅 / 粥底火锅",
+          "addressText": "泉州市鲤城区西街片区（原片实拍“三脚虎·现炒痛风锅”门头）",
+          "start": 245,
+          "end": 277.5,
+          "posterSecond": 253.5,
+          "summary": "活蟹现炒满屋飘香再加粥底熬煮，油条泡满鲜汤必点，现涮脆弹海螺片配酱汁与鹭芳饮品。",
+          "coordinates": [
+            118.58101,
+            24.916103
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "西街片区（候选分店）",
+            "basis": "video-storefront-and-public-address",
+            "branchMatch": "candidate",
+            "note": "原片实拍门头为“三脚虎·现炒痛风锅”（已纠正字幕误写“三角虎”）；泉州设西街店与泉秀店等分店，按古城动线先锚定西街原节点并标候选分店待核。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 166164157,
+              "name": "西街",
+              "url": "https://www.openstreetmap.org/way/166164157",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 8401750884
+            }
+          },
+          "footageNote": "2026年9月原视频 · 市区有多家分店，具体拍摄门店请出发前核对。"
+        },
+        {
+          "id": "qz-nangua-shuimenguozai",
+          "name": "水门国仔面线糊",
+          "category": "闽南早餐 / 面线糊",
+          "addressText": "泉州市鲤城区美食街157号（原片门牌实拍）",
+          "start": 277.5,
+          "end": 293.5,
+          "posterSecond": 283.5,
+          "summary": "配菜极丰富的老牌面线糊，必点大气孔外脆吸汤的油条，搭配醋肉与软烂不呛味的卤肥肠。",
+          "coordinates": [
+            118.594198,
+            24.903267
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "美食街157号附近",
+            "basis": "video-door-plaque",
+            "branchMatch": "plaque-verified-approximate-road",
+            "note": "原片清晰实拍门牌“美食街 157号”与“水门国仔面线糊”古风牌匾；采用冻结福建OSM美食街中段原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303418533,
+              "name": "美食街",
+              "url": "https://www.openstreetmap.org/way/303418533",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 14212415273
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中门贴标注24小时营业，实际请以到店为准。"
+        },
+        {
+          "id": "qz-nangua-chunge-tiebanshao",
+          "name": "春哥铁板烧",
+          "category": "夜宵 / 铁板烧",
+          "addressText": "泉州市鲤城区涂门街（原片门头紧邻“斯丹姜母鸭”）",
+          "start": 293.5,
+          "end": 309.2,
+          "posterSecond": 305.5,
+          "summary": "串类琳琅满目的老牌铁板烧，必点香脆软糯的烤白粿、焦香秋刀鱼与整只铁板大鱿鱼。",
+          "coordinates": [
+            118.584529,
+            24.90735
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "涂门街（紧邻斯丹姜母鸭）",
+            "basis": "video-adjacent-landmark",
+            "branchMatch": "adjacent-landmark-verified",
+            "note": "原片清晰实拍“春哥铁板烧”门头紧邻右侧“斯丹姜母鸭”；采用冻结福建OSM紧邻地标节点 node/8375165309（斯丹姜母鸭，涂门街）作为街区大致规划点。；主路网拓扑锚定冻结OSM道路 way/303607749 节点 3080046336。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303607749,
+              "name": "胭脂巷",
+              "url": "https://www.openstreetmap.org/way/303607749",
+              "sourceDate": "2026-11-21",
+              "method": "adjacent-poi-and-way-node",
+              "nodeId": 3080046336
+            }
+          },
+          "footageNote": "2026年9月原视频 · 门头营业牌标注11:30-2:30，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-yixin-bingpin",
+          "name": "一心冰品",
+          "category": "冰品甜点 / 古早绵绵冰",
+          "addressText": "泉州市丰泽区迎津街122号",
+          "start": 309.2,
+          "end": 330.9,
+          "posterSecond": 317.5,
+          "summary": "开了多年的古早冰店，超级芒果绵绵冰用鲜芒果打冰、配绵密厚实芋泥与Q弹自制芋圆，份量适合两人分享。",
+          "coordinates": [
+            118.594675,
+            24.899133
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "迎津街122号（一心冰品）",
+            "basis": "video-list-and-osm-poi",
+            "branchMatch": "osm-address-matched",
+            "note": "片尾清单明列第20家“一心冰品”，直接匹配冻结福建OSM节点 node/14317437311（带 addr:street=迎津街, addr:housenumber=122 标签）。；主路网拓扑锚定冻结OSM道路 way/229531814 节点 14115865415。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 229531814,
+              "name": "迎津街",
+              "url": "https://www.openstreetmap.org/way/229531814",
+              "sourceDate": "2026-11-21",
+              "method": "poi-node-and-adjacent-way-node",
+              "nodeId": 14115865415
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中价格、配料及营业情况可能已变化，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-jiyue-mianbao",
+          "name": "吉月面包",
+          "category": "烘焙甜点 / 流心面包",
+          "addressText": "泉州市丰泽区东涂街124号（原片门牌实拍）",
+          "start": 330.9,
+          "end": 347.3,
+          "posterSecond": 339.5,
+          "summary": "人气手作面包坊，招牌抹茶黑芝麻流心面包掰开爆浆，抹茶微苦回甘配浓香黑芝麻与松软面包体。",
+          "coordinates": [
+            118.59883,
+            24.901013
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "东涂街124号附近",
+            "basis": "video-door-plaque",
+            "branchMatch": "plaque-verified-approximate-road",
+            "note": "原片清晰实拍蓝色门牌“东涂街124号”及门前立牌营业时间（周三至周日12:00-20:00）；采用冻结福建OSM东涂街原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303418529,
+              "name": "东涂街",
+              "url": "https://www.openstreetmap.org/way/303418529",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 9432172057
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中立牌注明周一二店休、抹茶挞需预约，出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-xiaofuqi-shaguo",
+          "name": "小夫妻云谷8元砂锅",
+          "category": "市井夜宵 / 平价砂锅",
+          "addressText": "泉州市丰泽区云谷小区片区（原片实拍“小夫妻云谷砂锅·云谷8元砂锅”）",
+          "start": 347.3,
+          "end": 371,
+          "posterSecond": 355.5,
+          "summary": "高人气平价市井砂锅，现点现煮配大块丸子、方便面、吸汤油条与现炸流心煎蛋，性价比极高。",
+          "coordinates": [
+            118.611167,
+            24.8997
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "丰泽云谷社区附近",
+            "basis": "video-storefront-neighborhood",
+            "branchMatch": "neighborhood-approximate",
+            "note": "原片实拍“小夫妻云谷砂锅·云谷8元砂锅（泉港老板）”门头；采用冻结福建OSM“云谷社区”节点 node/5470235314 作为街区大致规划点，精确门牌待核。；主路网拓扑锚定冻结OSM道路 way/389824287 节点 6275173901。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 389824287,
+              "name": "云晖路",
+              "url": "https://www.openstreetmap.org/way/389824287",
+              "sourceDate": "2026-11-21",
+              "method": "community-node-and-adjacent-way-node",
+              "nodeId": 6275173901
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中提及排队约40~50分钟，精准门牌与营业时间出发前请核实。"
+        },
+        {
+          "id": "qz-nangua-meichaofeng",
+          "name": "莓超疯",
+          "category": "特色茶饮 / 鲜果冰沙",
+          "addressText": "泉州市区（原片展示“鲤好泉州”城市杯，具体分店待确认）",
+          "start": 371,
+          "end": 382.1,
+          "posterSecond": 373.5,
+          "summary": "高颜值鲜果茶饮，橙满树莓加养乐多酸甜清爽，芭乐莓莓冰沙入口浓香芭乐味。",
+          "coordinates": null,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "addressNote": "原片仅展示外卖袋与“鲤好泉州”城市联名杯身，未拍摄门店外景或杯贴地址，泉州有多家分店，按规范暂留视频库不上图。",
+          "footageNote": "2026年9月原视频 · 未拍摄具体分店线索，暂不上图。"
+        },
+        {
+          "id": "qz-nangua-adizai-yansuji",
+          "name": "阿弟仔盐酥鸡",
+          "category": "台湾炸物 / 盐酥鸡",
+          "addressText": "泉州市丰泽区津淮街千亿大厦30-1号（原片实拍“泉州旗舰店”）",
+          "start": 382.1,
+          "end": 400.3,
+          "posterSecond": 387.5,
+          "summary": "下午三点多营业的台湾盐酥鸡旗舰店，盐酥鸡配甜辣酱油香嫩多汁，甜不辣大份饱满、花菜与墨鱼同样出色。",
+          "coordinates": [
+            118.617117,
+            24.895734
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "千亿社区 / 津淮街千亿大厦附近",
+            "basis": "video-storefront-and-public-address",
+            "branchMatch": "branch-sign-verified-approximate-quarter",
+            "note": "原片清晰实拍“阿弟仔盐酥鸡·泉州旗舰店”门头，公开资料指向丰泽区津淮街千亿大厦30-1号；采用冻结福建OSM“千亿社区”节点 node/14235498082 作为街区大致规划点。；主路网拓扑锚定冻结OSM道路 way/774935932 节点 7229823977。",
+            "reviewedOn": "2026-11-22",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 774935932,
+              "name": "千亿社区支路",
+              "url": "https://www.openstreetmap.org/way/774935932",
+              "sourceDate": "2026-11-21",
+              "method": "community-node-and-adjacent-way-node",
+              "nodeId": 7229823977
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中提及下午三点多才开门，实际营业时间请以到店为准。"
+        }
+      ]
+    },
+    {
+      "id": "qz-yixuan-7699404713825538789",
+      "author": "艺宣要暴富",
+      "title": "感受一下泉州地摊火锅的物价!荤菜6.6一两，素菜1.9一两，凌晨后素菜免费，没装修没环境，但火锅就是好吃#泉州美食 #鲤城美食#鲤城渝都周孃孃地摊火锅#渝都周孃孃地摊火锅",
+      "url": "https://www.douyin.com/video/7699404713825538789",
+      "publishedOn": "2026-10-22",
+      "durationSeconds": 75.13,
+      "sourceSHA256": "2b234ca148c37d5df25b8e8936f13bf8fc521552b2f5aa300732627aba4fd3e9",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-23由用户选定后在已登录浏览器正常播放观察取得音视频流并无损合流；全片每2秒抽帧核实“鲤城渝都周孃孃·菜市火锅·自选称重”门头与菜品价目，作者评论确认鲤城区，同城公开资料指向鲤城区浮桥一带。",
+      "segments": [
+        {
+          "id": "qz-yixuan-yuduzhouniangniang",
+          "name": "鲤城渝都周孃孃地摊火锅",
+          "category": "川渝火锅 / 地摊称重火锅",
+          "addressText": "泉州市鲤城区浮桥街道一带（作者评论确认鲤城区，具体门牌待核实）",
+          "start": 0,
+          "end": 75,
+          "posterSecond": 58.2,
+          "summary": "市井感十足的自选称重川渝地摊火锅，19.9元一次性牛油锅底、荤菜6.6元/两、素菜1.9元/两（凌晨后素菜免费、鲜鸭血全天免费），鲜鸭肠毛肚黄喉与卤鸡爪脆嫩入味。",
+          "coordinates": [
+            118.557222,
+            24.917332
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "鲤城浮桥片区附近",
+            "basis": "video-storefront-and-public-district",
+            "branchMatch": "subdistrict-approximate",
+            "note": "原片实拍“鲤城渝都周孃孃”菜市称重火锅门头，作者评论回复鲤城区，同城公开探店指向鲤城浮桥一带；因新店精确门牌暂未公开，采用冻结福建OSM“浮桥街道”节点 node/8280863250 作为片区大致规划点。；主路网拓扑锚定冻结OSM道路 way/219409915 节点 2565313972。",
+            "reviewedOn": "2026-11-23",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 219409915,
+              "name": "浮桥片区道路",
+              "url": "https://www.openstreetmap.org/way/219409915",
+              "sourceDate": "2026-11-21",
+              "method": "subdistrict-node-and-adjacent-way-node",
+              "nodeId": 2565313972
+            }
+          },
+          "footageNote": "2026年10月原视频 · 新开业店铺具体门牌暂未公开，浮桥片区近似落点，出发前请在高德或抖音核实定位。"
+        }
+      ]
+    },
+    {
+      "id": "qz-wxxin-7668988291496521856",
+      "author": "Wxxin-",
+      "title": "泉州一家从开到现在吃了三四五次的自助火锅 品质一直都很不错！继续保持",
+      "url": "https://www.douyin.com/video/7668988291496521856",
+      "publishedOn": "2026-08-01",
+      "durationSeconds": 47.27,
+      "sourceSHA256": "57c8da2d4680ce8d06d608bb27be2edf1e43b1a0e0f52fdeaff5f07dff2675db",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-23由用户选定后在已登录浏览器正常播放观察取得完整原片；逐秒抽帧并读取片中26.8秒微信支付账单截图，明确显示“林请坐川味自助老火锅 / 泉州市丰泽区奇奇怪怪餐饮店”，对应丰泽区津坂路73号宝兴大厦2楼（六灌路店）。",
+      "segments": [
+        {
+          "id": "qz-wxxin-linqingzuo",
+          "name": "林请坐川味自助老火锅",
+          "category": "川味火锅 / 自助老火锅",
+          "addressText": "泉州市丰泽区津坂路73号宝兴大厦2楼（六灌路商圈附近，原片账单核对丰泽门店）",
+          "start": 0,
+          "end": 47.2,
+          "posterSecond": 18,
+          "summary": "博主多次复购的丰泽六灌路川味自助老火锅，人均百元出头，现切牛肉、捞汁小海鲜、大虾、虾滑以及冰鲜榴莲、榴莲飞饼、绿豆粉品类丰富，配冬瓜茶与柠檬冰奶很解腻。",
+          "coordinates": [
+            118.593999,
+            24.898081
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "津坂路 / 六灌路商圈附近",
+            "basis": "video-receipt-and-public-address",
+            "branchMatch": "receipt-verified-approximate-road",
+            "note": "原片26.8秒实拍付款账单确认商户为“林请坐川味自助老火锅（泉州市丰泽区奇奇怪怪餐饮店）”，公开资料对应丰泽区津坂路73号宝兴大厦2楼（六灌路店）；采用冻结福建OSM“津坂路”原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-23",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 229531816,
+              "name": "津坂路",
+              "url": "https://www.openstreetmap.org/way/229531816",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 14112995229
+            }
+          },
+          "footageNote": "2026年8月原视频 · 原片账单实付113元，具体团购价格与营业时间出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-wxxin-7698276010811119744",
+      "author": "Wxxin-",
+      "title": "泉州近期吃到无敌满意的一人食旋转火锅！！ #火锅 #泉州 #泉州美食",
+      "url": "https://www.douyin.com/video/7698276010811119744",
+      "publishedOn": "2026-10-19",
+      "durationSeconds": 33.03,
+      "sourceSHA256": "07252c709d4182e0dc022a07cbe4ff28dc6338cf9c686f7754f3a6bc71a35a11",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-23由用户选定后在已登录浏览器正常播放观察取得完整原片；逐秒抽帧确认桌牌“李大富旋转小火锅”与6元锅底/按签计价牌，作者评论明确说明位于后坂（丰泽区后坂街），并与同店另一博主视频互证归并。",
+      "segments": [
+        {
+          "id": "qz-wxxin-lidafu",
+          "name": "李大富旋转小火锅",
+          "category": "旋转小火锅 / 一人食火锅",
+          "addressText": "泉州市丰泽区后坂街一带（两位博主评论及门头内装互证同店）",
+          "start": 0,
+          "end": 33,
+          "posterSecond": 11.5,
+          "summary": "性价比出色的一人食旋转小火锅，6元花胶鸡等锅底按签计价（1~8元），虾滑、鲍鱼、罗氏虾、吊龙秋葵与谷饲上脑肉品质新鲜，工作餐约30元可吃饱。",
+          "coordinates": [
+            118.597429,
+            24.899837
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "后坂街附近",
+            "basis": "video-storefront-and-author-comment",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原片桌牌清晰显示“李大富旋转小火锅”，作者评论确认在后坂，且与同店博主“睡不着觉”门头内装一致并互动印证位于后坂街；采用冻结福建OSM“后坂街”原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-23",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303570168,
+              "name": "后坂街",
+              "url": "https://www.openstreetmap.org/way/303570168",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 14379666529
+            }
+          },
+          "footageNote": "2026年10月原视频 · 按签计价，精准门牌与营业时间出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-shuibuzhaojiao-7700212754716979520",
+      "author": "睡不着觉",
+      "title": "今日闲闲 夜宵吃‘李大富旋转小火锅‘#旋转小火锅 #泉州美食  #夜宵吃什么 #泉州探店 #日常vlog",
+      "url": "https://www.douyin.com/video/7700212754716979520",
+      "publishedOn": "2026-10-24",
+      "durationSeconds": 35.5,
+      "sourceSHA256": "dba7adab4e0454caecb020b8f56c0b1768efca1c3c88687f6afd80339f5f6a0c",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-23由用户选定后在已登录浏览器正常播放观察取得完整原片；实拍“李大富旋转小火锅”夜间门头与店内一排传送带/“半城烟火半城仙”字画/6元锅底木牌，作者评论确认后坂街与营业时间，并与Wxxin-视频归并同一地图点。",
+      "segments": [
+        {
+          "id": "qz-shuibuzhaojiao-lidafu",
+          "placeId": "qz-wxxin-lidafu",
+          "name": "李大富旋转小火锅",
+          "category": "旋转小火锅 / 一人食火锅",
+          "addressText": "泉州市丰泽区后坂街一带（作者评论确认后坂街，与Wxxin-同店归并）",
+          "start": 0,
+          "end": 35.4,
+          "posterSecond": 15.2,
+          "summary": "适合夜宵独食的温馨旋转小火锅，六种锅底可选、串串随传送带自取，搭配单点鲜切牛肉、大生蚝、鲍鱼、卤小肠结及免费水果，对i人十分友好。",
+          "coordinates": [
+            118.597429,
+            24.899837
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "后坂街附近",
+            "basis": "video-storefront-and-author-comment",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原片实拍“李大富旋转小火锅”门头及后坂街夜市街景，作者评论确认位于后坂街，内装与Wxxin-原片完全一致并归并至同一地图点；采用冻结福建OSM“后坂街”原节点作为街区大致规划点。",
+            "reviewedOn": "2026-11-23",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303570168,
+              "name": "后坂街",
+              "url": "https://www.openstreetmap.org/way/303570168",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 14379666529
+            }
+          },
+          "footageNote": "2026年10月原视频 · 作者评论参考营业时间10:00-14:00、16:30-22:00，出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-mingtianjian-7681883838449393627",
+      "author": "明天见",
+      "title": "锐评泉州超火的南山塔烤肉！#锐评 #南山塔烤肉 #泉州美食 #流量扶持 #烤肉",
+      "url": "https://www.douyin.com/video/7681883838449393627",
+      "publishedOn": "2026-09-05",
+      "durationSeconds": 112.18,
+      "sourceSHA256": "73c47b45c90fa745b70d8497c30e14e3dfe6a415488c193fce798773fe7b58a1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-23由用户选定后在已登录浏览器正常播放观察取得音视频流并无损合流；抽帧核实杯身“韩味南山塔”与门头“南山塔 烤肉自助”，片中展示14店通用团购与多款肥牛、火鸡面、烤鳗鱼及吸油烟机细节；泉州多家分店（南益广场/开元盛世/泰禾/中骏等），按代表门店南益广场作候选落点。",
+      "segments": [
+        {
+          "id": "qz-mingtianjian-nanshanta",
+          "name": "韩味南山塔烤肉自助",
+          "category": "韩式烤肉 / 自助烤肉",
+          "addressText": "泉州市丰泽区南益广场（连锁多店：南益/开元盛世/泰禾/中骏等，分店待核）",
+          "start": 0,
+          "end": 112,
+          "posterSecond": 48,
+          "summary": "泉州人气很高的韩式自助烤肉，主打多款老式肥牛、烤鳗鱼、韩式小料与不错排烟环境；片中提醒晚间排队较久且下单限时90分钟，建议错峰前往。",
+          "coordinates": [
+            118.602739,
+            24.905927
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "南益广场附近（连锁多店候选）",
+            "basis": "video-brand-and-candidate-branch",
+            "branchMatch": "candidate",
+            "note": "原片杯身实拍“韩味南山塔”及门头“南山塔 烤肉自助”，泉州拥有南益广场、开元盛世、泰禾、中骏等多家分店；选用核心商圈代表门店南益广场的冻结福建OSM节点 node/8410578146 作为候选规划点，具体分店请出发前选择。；主路网拓扑锚定冻结OSM道路 way/472370860 节点 9432172051。",
+            "reviewedOn": "2026-11-23",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 472370860,
+              "name": "丰泽街",
+              "url": "https://www.openstreetmap.org/way/472370860",
+              "sourceDate": "2026-11-21",
+              "method": "mall-node-and-adjacent-way-node",
+              "nodeId": 9432172051
+            }
+          },
+          "footageNote": "2026年9月原视频 · 连锁多店（南益/开元盛世/泰禾等），晚间排队较久，出发前请核实具体分店与取号规则。"
+        }
+      ]
+    },
+    {
+      "id": "qz-yeyebuhuijia-7688685626526548721",
+      "author": "叶叶不回家",
+      "title": "泉州油边王 这家烧烤挺好吃的 但是说实话，老板酒量确实一般#东北大油边 #喝酒主理人 #酒蒙子先享受世界 #宵夜啤酒烧烤",
+      "url": "https://www.douyin.com/video/7688685626526548721",
+      "publishedOn": "2026-09-23",
+      "durationSeconds": 237.54,
+      "sourceSHA256": "17b2069ea3a8018f93a0b2a5953b6346447b35235ae7f0309cbee25aab12e416",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-23由用户选定后在已登录浏览器正常播放观察取得音视频流并无损合流；原片标题与实拍展示“泉州油边王”夜宵露天烧烤，包含风干大油边、胸口油、炭烤生蚝与各类东北烤串；评论区本地食客明确指路“崇德小学对面”，对应丰泽区崇德实验小学周边。",
+      "segments": [
+        {
+          "id": "qz-yeyebuhuijia-youbianwang",
+          "name": "泉州油边王烧烤",
+          "category": "东北烧烤 / 宵夜大排档",
+          "addressText": "泉州市丰泽区崇德实验小学对面一带（评论区食客指路，具体门牌待核）",
+          "start": 0,
+          "end": 237.4,
+          "posterSecond": 130,
+          "summary": "烟火气十足的东北夜宵大排档烧烤，招牌风干大油边外酥里嫩爆汁、胸口油香而不腻，还有蒜蓉生蚝、鸡胗、烤串配冰啤酒，氛围轻松适合宵夜小聚。",
+          "coordinates": [
+            118.586243,
+            24.889757
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "崇德实验小学对面附近",
+            "basis": "video-and-comment-landmark",
+            "branchMatch": "landmark-approximate",
+            "note": "原片实拍东北炭火烧烤夜宵摊，热评食客确认位置在“崇德小学对面”；采用冻结福建OSM“丰泽区崇德实验小学” way/1557897482 原节点 node/14170112223 作为街区大致规划点，精准门牌出发前请核实。；主路网拓扑锚定冻结OSM道路 way/303570154 节点 5295808183。",
+            "reviewedOn": "2026-11-23",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303570154,
+              "name": "崇德实验小学门前道路",
+              "url": "https://www.openstreetmap.org/way/303570154",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-way-and-adjacent-road-node",
+              "nodeId": 5295808183
+            }
+          },
+          "footageNote": "2026年9月原视频 · 夜宵大排档，精确门牌与出摊时间出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-laohuchibaobao-7684156577612497910",
+      "author": "老胡吃饱饱",
+      "title": "泉州巴西烤肉自助，有点小贵 福建巴西烤肉自助很少，泉州有一家，尝尝呗！#泉州 #美食 #自助餐 #巴西烤肉",
+      "url": "https://www.douyin.com/video/7684156577612497910",
+      "publishedOn": "2026-09-11",
+      "durationSeconds": 312.22,
+      "sourceSHA256": "353e6c00fbe903520c23ce18f12d246f3d2643b5f565c405f90d576dc31bf54e",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-23由用户选定后在已登录浏览器正常播放观察取得音视频流并无损合流；原片餐垫实拍绿色“Kaká”标志，作者评论回复“kaka巴西烤肉 搜一下就有位置”，公开资料指向丰泽区圣湖小区/圣湖路片区。",
+      "segments": [
+        {
+          "id": "qz-laohuchibaobao-kaka-baxikaorou",
+          "name": "Kaka巴西烤肉自助",
+          "category": "巴西烤肉 / 自助餐",
+          "addressText": "泉州市丰泽区圣湖小区 / 圣湖路片区（作者评论确认kaka巴西烤肉）",
+          "start": 0,
+          "end": 312,
+          "posterSecond": 42.5,
+          "summary": "福建少见的现切串烤巴西烤肉自助（片中人均188元、用餐3小时），桌边现片牛三角、松板肉、羊排、大虾与焦糖烤菠萝，主打原味碳烤肉香。",
+          "coordinates": [
+            118.609629,
+            24.905193
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "圣湖路 / 圣湖社区附近",
+            "basis": "video-brand-comment-and-public-area",
+            "branchMatch": "quarter-approximate",
+            "note": "原片餐垫印有“Kaká”标志且作者回复店名为“kaka巴西烤肉”，公开商户信息指向丰泽区圣湖小区片区；采用冻结福建OSM“圣湖路” way/303502190 原节点 node/5470235277 作为街区大致规划点。",
+            "reviewedOn": "2026-11-23",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303502190,
+              "name": "圣湖路",
+              "url": "https://www.openstreetmap.org/way/303502190",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 5470235277
+            }
+          },
+          "footageNote": "2026年9月原视频 · 片中价格188元/位，具体门牌与最新价位出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-hesyyy-7708768110043647714",
+      "author": "Hesyyy-",
+      "title": "泉州！近期吃到很夯的一顿。。。。 #泉州美食 #泉州烤肉",
+      "url": "https://www.douyin.com/video/7708768110043647714",
+      "publishedOn": "2026-11-16",
+      "durationSeconds": 48.03,
+      "sourceSHA256": "66e9a6cef1f237c28512ba9e8c34cf4f9c261adb1d9c2334dd3464bad95ba9ac",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-23由用户选定后在已登录浏览器正常播放观察取得完整原片；作者评论区两次明确回复门店为“霓大爷～宝龙对面”，公开资料对应晋江市长兴路宝龙广场附近，位于当前泉州底图范围[118.53,24.80,118.69,24.98]内。",
+      "segments": [
+        {
+          "id": "qz-hesyyy-nidaye-kaorou",
+          "name": "霓大爷烤肉",
+          "category": "融合烤肉 / 炭火烤肉",
+          "addressText": "泉州市晋江市长兴路宝龙广场对面一带（作者评论确认宝龙对面店）",
+          "start": 0,
+          "end": 48,
+          "posterSecond": 31.5,
+          "summary": "晋江宝龙附近高人气融合烤肉店，焦香牛舌配贡菜酱、炭烤猪颈肉、软糯入味的火辣鸡爪锅、芝士烤扇贝、咖喱鸡肉串与海鲜嫩豆腐汤口碑出色。",
+          "coordinates": [
+            118.562807,
+            24.805131
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "晋江宝龙广场附近",
+            "basis": "author-comment-and-public-address",
+            "branchMatch": "branch-comment-verified-approximate",
+            "note": "作者在评论区明确回复“霓大爷～宝龙对面”，公开资料指向晋江市长兴路宝龙广场周边；采用冻结福建OSM“晋江宝龙广场”节点 node/10101645967 作为商圈大致规划点。；主路网拓扑锚定冻结OSM道路 way/663474572 节点 6210170848。",
+            "reviewedOn": "2026-11-23",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 663474572,
+              "name": "晋江宝龙广场北侧道路",
+              "url": "https://www.openstreetmap.org/way/663474572",
+              "sourceDate": "2026-11-21",
+              "method": "mall-node-and-adjacent-way-node",
+              "nodeId": 6210170848
+            }
+          },
+          "footageNote": "2026年11月原视频 · 作者提及无需预约但饭点可能排队，出发前请核实导航与营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-lanseshutiao-7697581648510058431",
+      "author": "蓝色薯条",
+      "title": "泉州吃到了很有意思的烤肉！！！ #泉州美食 #烤肉",
+      "url": "https://www.douyin.com/video/7697581648510058431",
+      "publishedOn": "2026-10-17",
+      "durationSeconds": 36.5,
+      "sourceSHA256": "6398cad477b1adc038eb7ab30393cbd522cb736d7b4003a329a0f264ab7c4626",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-23由用户选定后在已登录浏览器正常播放观察取得完整原片；店员服装可见绿色“漫火”标志，作者评论明确回复“漫火山葵烤肉”且人均约60元，泉州市区代表门店位于迎津街174-176号（津头埔/六灌路片区）。",
+      "segments": [
+        {
+          "id": "qz-lanseshutiao-manhuo-kaorou",
+          "name": "漫火山葵烤肉",
+          "category": "山葵烤肉 / 创意烤肉",
+          "addressText": "泉州市迎津街174-176号（津头埔 / 六灌路片区，候选市区门店）",
+          "start": 0,
+          "end": 36.4,
+          "posterSecond": 3.5,
+          "summary": "每桌配现磨山葵且全程免费帮烤的创意烤肉店，招牌苹果夹吊龙、雪花牛肉配山葵、黑蒜牛五花与秋葵酿虾滑清爽解腻，作者提及人均约60元。",
+          "coordinates": [
+            118.593406,
+            24.899744
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "迎津街 / 六灌路片区附近",
+            "basis": "video-brand-comment-and-public-address",
+            "branchMatch": "candidate",
+            "note": "原片店员工装印有“漫火”标志且作者评论确认店名为“漫火山葵烤肉”，公开资料泉州市区门店位于迎津街174-176号（津头埔/六灌路片区）；采用冻结福建OSM“迎津街” way/229531814 原节点 node/14317437184 作为街区大致规划点。",
+            "reviewedOn": "2026-11-23",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 229531814,
+              "name": "迎津街",
+              "url": "https://www.openstreetmap.org/way/229531814",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 14317437184
+            }
+          },
+          "footageNote": "2026年10月原视频 · 作者评论4人约300元（人均约60+），出发前请核实具体分店与排队情况。"
+        }
+      ]
+    },
+    {
+      "id": "qz-qilunshi-7665357406939587240",
+      "author": "七轮诗",
+      "title": "泉州人今天都在这！！（柳真真烤肉真实测评#柳真真烤肉#柳真真冰淇凌",
+      "url": "https://www.douyin.com/video/7665357406939587240",
+      "publishedOn": "2026-07-22",
+      "durationSeconds": 37.97,
+      "sourceSHA256": "26cba71d601abb74368ce3e3e841c549323582aaea18cc91e288d67ddc4d9b32",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-23由用户选定后在已登录浏览器正常播放观察取得完整原片；原片杯身清晰显示“柳真真 云贵山岭烤肉”并记录泉州首店开业排队盛况，公开资料指向丰泽区宝洲路泉州浦西万达广场。",
+      "segments": [
+        {
+          "id": "qz-qilunshi-liuzhenzhen-kaorou",
+          "name": "柳真真·云贵山岭烤肉",
+          "category": "云贵烤肉 / 自助烤肉",
+          "addressText": "泉州市丰泽区宝洲路泉州浦西万达广场（浦西万达店）",
+          "start": 0,
+          "end": 37.8,
+          "posterSecond": 5,
+          "summary": "云贵山野风味铜盘自助烤肉，片中实测开业首日火爆排队，开心果冰淇淋与伯牙绝弦风味奶茶评价很高，同时客观提醒部分肉类偏油、建议合理拿取。",
+          "coordinates": [
+            118.59602,
+            24.885258
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "浦西万达广场附近",
+            "basis": "video-cup-brand-and-public-address",
+            "branchMatch": "mall-verified-approximate",
+            "note": "原片饮品杯身实拍“柳真真 云贵山岭烤肉”，公开资料确认泉州门店位于丰泽区宝洲路泉州浦西万达广场；采用冻结福建OSM“泉州万达百货” way/329420563 原节点 node/3363005237 作为商圈大致规划点。；主路网拓扑锚定冻结OSM道路 way/219409104 节点 4644436812。",
+            "reviewedOn": "2026-11-23",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 219409104,
+              "name": "宝洲街",
+              "url": "https://www.openstreetmap.org/way/219409104",
+              "sourceDate": "2026-11-21",
+              "method": "mall-way-and-adjacent-road-node",
+              "nodeId": 4644436812
+            }
+          },
+          "footageNote": "2026年7月原视频 · 开业期饭点排队极长，出发前请核实浦西万达楼层铺位与取号状态。"
+        }
+      ]
+    },
+    {
+      "id": "qz-kebanchihuo-7689047792405248677",
+      "author": "科班吃货",
+      "title": "福建泉州海鲜大排档，3天来了2次，值得特意来#海鲜大排档 #第一批美食判官已出发 #长长长假美食判官",
+      "url": "https://www.douyin.com/video/7689047792405248677",
+      "publishedOn": "2026-09-25",
+      "durationSeconds": 258.1,
+      "sourceSHA256": "95433e53dc6c3cdcaa80127e04525b874ade3363a706ebc23c568b6bfe4806dd",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-24从用户打开的抖音“泉州大排档”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；抽帧核实背景招牌“王吉螺仔摊”及字幕“泉州的石狮”，位于泉州石狮市新华路78-88号，超出当前市区底图南界（24.80），按规范标记范围外保留视频库。",
+      "segments": [
+        {
+          "id": "qz-kebanchihuo-wangji-luozaitan",
+          "name": "王吉螺仔摊海鲜",
+          "category": "海鲜排档 / 炒螺夜宵",
+          "addressText": "泉州石狮市新华路78-88号（近石狮二小，超出当前中心城区底图南界）",
+          "start": 0,
+          "end": 258,
+          "posterSecond": 153.2,
+          "summary": "石狮老牌人气海鲜螺肉排档，现点满桌贝类螺鲜，主打花生酱拌螺、炒彩椒螺片、豉油白灼海鲜与酱爆鱼肚，适合夜宵尝鲜。",
+          "coordinates": null,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "addressNote": "原片实拍“王吉螺仔摊”招牌与门牌“新华路88号”并口述位于泉州石狮；公开地址位于石狮市新华路78-88号（约24.73°N），超出当前泉州中心城区底图[118.53,24.80,118.69,24.98]，标记范围外保留视频库待后续扩图。",
+          "footageNote": "2026年9月原视频 · 位于石狮市（当前地图范围外），出发前请核实营业时间与海鲜时价。"
+        }
+      ]
+    },
+    {
+      "id": "qz-nini-7703890744968811876",
+      "author": "泥泥_",
+      "title": "近期在泉州吃到最好吃的一家大排档！！",
+      "url": "https://www.douyin.com/video/7703890744968811876",
+      "publishedOn": "2026-11-03",
+      "durationSeconds": 65.5,
+      "sourceSHA256": "86095185008631652e4f8698467194154bfcf0aca0d4f8a41a2f8b7352e1b951",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-24从用户打开的抖音“泉州大排档”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；食客评论指出“在泉秀街星光不夜城旁边，叫塘角边的破店烧烤”并获作者本人回复“是的”，公开资料对应丰泽区泉秀街419号星光不夜城旁。",
+      "segments": [
+        {
+          "id": "qz-nini-tangjiaobian-podian",
+          "name": "塘角边的破店烧烤",
+          "category": "东北大排档 / 江湖菜烧烤",
+          "addressText": "泉州市丰泽区泉秀街419号（星光不夜城旁，作者评论确认）",
+          "start": 0,
+          "end": 65.4,
+          "posterSecond": 30.7,
+          "summary": "开在星光不夜城旁的人气东北风味夜宵大排档，推荐干香酥脆炸小鱼、柠檬叶白灼大花蛤、大盘剁椒鱼头、酸爽泡椒田鸡及脆皮烤大油边配烤面包片。",
+          "coordinates": [
+            118.605225,
+            24.888349
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "泉秀街 / 星光不夜城附近",
+            "basis": "author-comment-and-public-address",
+            "branchMatch": "branch-comment-verified-approximate",
+            "note": "作者在评论区确认门店为泉秀街星光不夜城旁“塘角边的破店烧烤”（公开地址泉秀街419号，紧邻泉秀街中闽百汇商场 way/1554554642）；主路网拓扑锚定冻结福建OSM道路“泉秀街” way/564542398 节点 858410380。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 564542398,
+              "name": "泉秀街",
+              "url": "https://www.openstreetmap.org/way/564542398",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 858410380
+            }
+          },
+          "footageNote": "2026年11月原视频 · 夜宵时段人气旺，具体铺位与营业时间出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-muyouchuan-7702417700118678847",
+      "author": "木有川",
+      "title": "开了40年的泉州老字号大排档！！！食客都是本地人，主打海鲜营业到深夜，烟火气十足！#海鲜 #泉州老字号 #夜宵 #木有川 #烟火气",
+      "url": "https://www.douyin.com/video/7702417700118678847",
+      "publishedOn": "2026-10-30",
+      "durationSeconds": 365.25,
+      "sourceSHA256": "6b1965dddad4e98ee45e09fb79cdab824dd0aa5fd844393f5ffa04d8a30f81dc",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-24从用户打开的抖音“泉州大排档”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；原片实拍老字号冰鲜台与门廊隔壁“百源酒水批发”，作者评论明确回复位置在涂门街“百汇对面”，对应鲤城区奎峰路/涂门街百汇对面“培玉海鲜馆”。",
+      "segments": [
+        {
+          "id": "qz-muyouchuan-peiyu-haixian",
+          "name": "培玉海鲜馆",
+          "category": "老字号海鲜排档 / 闽南夜宵",
+          "addressText": "泉州市鲤城区奎峰路 / 涂门街中闽百汇对面（作者评论确认百汇对面）",
+          "start": 0,
+          "end": 365,
+          "posterSecond": 175,
+          "summary": "传承四十余年的老泉州深夜海鲜大排档，看冰鲜柜现点现做，招牌大海蚌炖蛋、鲜甜海鲜米粉汤、膏满红鲟与酱油水杂鱼地道鲜美；海鲜单价偏高建议点单前问清时价。",
+          "coordinates": [
+            118.586477,
+            24.907063
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "涂门街百汇 / 奎峰路附近",
+            "basis": "video-adjacent-sign-and-author-comment",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原片实拍门廊相邻“百源酒水批发”且作者评论回复位于涂门街“百汇对面”（紧邻中闽百汇 way/585711288 与百源路 node/14157131016，公开资料登记鲤城区奎峰路）；主路网拓扑锚定冻结福建OSM道路“南俊路” way/1225962732 节点 8404550082。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1225962732,
+              "name": "南俊路",
+              "url": "https://www.openstreetmap.org/way/1225962732",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 8404550082
+            }
+          },
+          "footageNote": "2026年10月原视频 · 片中本餐海鲜消费465元，时令海鲜按称计价，点菜前建议确认价格。"
+        }
+      ]
+    },
+    {
+      "id": "qz-chaoneng77-7614832475969630835",
+      "author": "超能77🍎",
+      "title": "第33集 | 无广‼️老小区楼下的大排档！本地人都在吃！ #大排档 #泉州 #本地人爱吃的店 #上天入地我最爱吃 #城市里的烟火气",
+      "url": "https://www.douyin.com/video/7614832475969630835",
+      "publishedOn": "2026-03-08",
+      "durationSeconds": 51.57,
+      "sourceSHA256": "8a2486b0ab366c5cfc649253ab83c84335fc58b46fa1540c090bb764448c0914",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-24从用户打开的抖音“泉州大排档”搜索页选定，在已登录浏览器正常播放取得完整H.264+AAC原片；店内白砖墙面、蓝色告示牌与冷柜布局与叶soso-及木有川实拍的“阿超小排档”完全一致，关联搜索与评论共同印证为丰泽区福田路156号（泉州九中/东霞新村旁）阿超小排档，作为三博主同店归并主片段。",
+      "segments": [
+        {
+          "id": "qz-chaoneng77-achao",
+          "name": "阿超小排档",
+          "category": "市井小排档 / 现炒海鲜",
+          "addressText": "泉州市丰泽区福田路156号（泉州九中 / 东霞新村水沟旁）",
+          "start": 0,
+          "end": 51.4,
+          "posterSecond": 17.7,
+          "summary": "藏在九中与东霞新村老小区楼下的本地老饕小排档，看着冷柜鲜货点菜，招牌胸口油炒牛肉又嫩又脆、花蛤干贝香菇海鲜豆腐煲极下饭，还有大片爽脆凉拌牛百叶。",
+          "coordinates": [
+            118.5998,
+            24.8976
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "福田路 / 泉州九中附近",
+            "basis": "multi-creator-storefront-and-public-address",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "综合超能77🍎、叶soso-（实拍门头“阿超小排档”及“九中附近水沟旁”）与木有川三位博主实拍互证，公开地址位于丰泽区福田路156号（紧邻泉州九中 way/568606503 与东霞新村 node/13002070287）；主路网拓扑锚定冻结福建OSM道路“津淮街” way/1568580750 节点 4663769926。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1568580750,
+              "name": "津淮街",
+              "url": "https://www.openstreetmap.org/way/1568580750",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-and-adjacent-way-node",
+              "nodeId": 4663769926
+            }
+          },
+          "footageNote": "2026年3月原视频 · 按实价点菜现炒，晚间出餐偏慢，出发前请核实营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-yesoso-7596667113801677413",
+      "author": "叶soso-",
+      "title": "分享三家泉州好吃的大排档 #泉州美食 #泉州大排档 #人间美味有想吃的吗 #美食vlog日常",
+      "url": "https://www.douyin.com/video/7596667113801677413",
+      "publishedOn": "2026-01-18",
+      "durationSeconds": 64.17,
+      "sourceSHA256": "0de49693ea4db313a2d2e028eadbb1e1e11674de42ec152648c6b2732f8ccdcf",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-24从用户打开的抖音“泉州大排档”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；逐秒抽帧核实片中依次探访三家门店：60号实惠小炒（中远名城下）、阿超小排档（九中附近，与超能77🍎及木有川归并同一点）与钟楼阿臭排档（钟楼旁），精准按店切分为3段。",
+      "segments": [
+        {
+          "id": "qz-yesoso-60hao-xiaochao",
+          "name": "60号实惠小炒",
+          "category": "社区大排档 / 平价现炒",
+          "addressText": "泉州市丰泽区泉秀街东段中远名城楼下（近坪山路交界）",
+          "start": 4.2,
+          "end": 21.2,
+          "posterSecond": 11,
+          "summary": "开在中远名城楼下的平价社区现炒小馆，一二十元一道家常猛火小炒，推荐香辣下饭的青椒小炒肉与大份水煮系列（片中四菜实付72元），手工现炒高峰期需耐心等餐。",
+          "coordinates": [
+            118.607597,
+            24.88754
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "泉秀街东段 / 坪山路中远名城附近",
+            "basis": "video-storefront-and-residential-landmark",
+            "branchMatch": "quarter-approximate",
+            "note": "原片实拍红底招牌“60号实惠小炒”并口述位于“中远名城下面”，公开资料中远名城位于丰泽区泉秀街东段与坪山路交界处；主路网拓扑锚定冻结福建OSM道路“坪山路” way/329288646 节点 4663431385。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 329288646,
+              "name": "坪山路",
+              "url": "https://www.openstreetmap.org/way/329288646",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 4663431385
+            }
+          },
+          "footageNote": "2026年1月原视频 · 手工现炒饭点等位较久，出发前请核实营业时间。"
+        },
+        {
+          "id": "qz-yesoso-achao",
+          "placeId": "qz-chaoneng77-achao",
+          "name": "阿超小排档",
+          "category": "市井小排档 / 现炒海鲜",
+          "addressText": "泉州市丰泽区福田路156号（原片实拍九中附近水沟旁，与超能77🍎同店归并）",
+          "start": 21.2,
+          "end": 41.2,
+          "posterSecond": 30,
+          "summary": "九中水沟旁本地食客云集的老牌小排档，主打鲜脆大盆油淋沙虫、酥香炸牛肉、炸鸡翅与各式砂锅煲类，用料扎实有锅气。",
+          "coordinates": [
+            118.5998,
+            24.8976
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "福田路 / 泉州九中附近",
+            "basis": "video-storefront-and-multi-creator-merge",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原片实拍“阿超小排档”黑底黄字门头并口述“在九中附近水沟旁边”，与超能77🍎、木有川同店归并共用一点；主路网拓扑锚定冻结福建OSM道路“津淮街” way/1568580750 节点 4663769926。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1568580750,
+              "name": "津淮街",
+              "url": "https://www.openstreetmap.org/way/1568580750",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-and-adjacent-way-node",
+              "nodeId": 4663769926
+            }
+          },
+          "footageNote": "2026年1月原视频 · 油淋沙虫等海鲜单价较高（片中两菜加米饭135元），丰俭由人。"
+        },
+        {
+          "id": "qz-yesoso-zhonglou-achou",
+          "name": "钟楼阿臭排档",
+          "category": "古早排档 / 卤面小炒",
+          "addressText": "泉州市鲤城区钟楼旁（东街 / 中山北路交界一带）",
+          "start": 41.2,
+          "end": 61.2,
+          "posterSecond": 55.5,
+          "summary": "九十年代从泉州钟楼路边摊起家的老牌夜宵排档，招牌古早味卤面与炒米粉清甜不腻，搭配外酥里嫩的炸鸡翅和独创椒盐苦瓜，两人三菜不到百元。",
+          "coordinates": [
+            118.588085,
+            24.914922
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "泉州钟楼 / 东街口附近",
+            "basis": "video-storefront-and-osm-landmark",
+            "branchMatch": "landmark-approximate",
+            "note": "原片实拍红色招牌“钟楼阿臭排档”并介绍九十年代起在钟楼旁摆摊（紧邻泉州钟楼地标 node/8566824318）；主路网拓扑锚定冻结福建OSM道路“东街” way/1568580743 节点 14287527299。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1568580743,
+              "name": "东街",
+              "url": "https://www.openstreetmap.org/way/1568580743",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-and-adjacent-way-node",
+              "nodeId": 14287527299
+            }
+          },
+          "footageNote": "2026年1月原视频 · 古城钟楼周边夜宵老店，出发前请核实具体巷口位置与营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-muyouchuan-7690174243337751842",
+      "author": "木有川",
+      "title": "在泉州吃藏在巷子里的阿超小排档，现炒小海鲜真的好吃，菜够我们喝3个小时了！！！#泉州美食 #海鲜排挡 #深夜 #夜宵 #木有川",
+      "url": "https://www.douyin.com/video/7690174243337751842",
+      "publishedOn": "2026-09-27",
+      "durationSeconds": 215.67,
+      "sourceSHA256": "ca1ff611ad962536c6c9ff6ba5aca9c80c077f10f58557704c712f27847a7e52",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-24从用户打开的抖音“泉州大排档”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；标题直指“阿超小排档”，冷柜与店内布置与超能77🍎、叶soso-完全一致，归并至同一地图点（三博主共点）。",
+      "segments": [
+        {
+          "id": "qz-muyouchuan-achao",
+          "placeId": "qz-chaoneng77-achao",
+          "name": "阿超小排档",
+          "category": "市井小排档 / 现炒海鲜",
+          "addressText": "泉州市丰泽区福田路156号（与超能77🍎、叶soso-三博主同店归并）",
+          "start": 0,
+          "end": 215.5,
+          "posterSecond": 101.1,
+          "summary": "下班夜宵氛围拉满的巷弄现炒排档，推荐热气腾腾的鱿鱼啫啫煲（85元）、满铺葱花的大份铁板海蛎煎（75元）与清甜肉丸汤，下酒又下饭。",
+          "coordinates": [
+            118.5998,
+            24.8976
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "福田路 / 泉州九中附近",
+            "basis": "video-title-and-multi-creator-merge",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原片标题与实拍明确为巷子里的“阿超小排档”，与超能77🍎、叶soso-归并共用一点；主路网拓扑锚定冻结福建OSM道路“津淮街” way/1568580750 节点 4663769926。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1568580750,
+              "name": "津淮街",
+              "url": "https://www.openstreetmap.org/way/1568580750",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-and-adjacent-way-node",
+              "nodeId": 4663769926
+            }
+          },
+          "footageNote": "2026年9月原视频 · 作者回复参考营业至晚11点左右且单厨现炒较慢，出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-mishijun-7707587199064371619",
+      "author": "闽南密食君",
+      "title": "晋江梅岭阿坡小拍档，从2018年一个店面 9年开了9个店面，很有烟火气的一家拍档#本地宝藏美食 #泉州美食#泉州 #大排档 #烟火榜夯吃挑战",
+      "url": "https://www.douyin.com/video/7707587199064371619",
+      "publishedOn": "2026-11-13",
+      "durationSeconds": 96.13,
+      "sourceSHA256": "73b0d875ae4410bb4ce4537c04651be4a685dfee1de92786ecc1d0865bf920fd",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-24从用户打开的抖音“泉州大排档”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；标题与作者评论明确位于晋江梅岭“阿坡小排档”（公开地址晋江市梅岭街道塘岸街362号一带），落在当前底图南翼晋江范围内。",
+      "segments": [
+        {
+          "id": "qz-mishijun-apo-xiaopaidang",
+          "name": "阿坡小排档",
+          "category": "闽南大排档 / 姜母鸭羊肉锅",
+          "addressText": "泉州市晋江市梅岭街道塘岸街362号一带（作者评论确认梅岭）",
+          "start": 0,
+          "end": 96,
+          "posterSecond": 9,
+          "summary": "晋江梅岭连开9间店面的超旺烟火气大排档，必点麻油老姜慢煲的整只鲜番鸭姜母鸭、带皮黑山羊拼鲜涮羊肉子母锅，以及脆爽开胃的德化雷笋炒酸菜。",
+          "coordinates": [
+            118.566385,
+            24.823477
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "晋江梅岭街道附近",
+            "basis": "video-title-author-comment-and-public-address",
+            "branchMatch": "quarter-approximate",
+            "note": "原片标题与作者评论确认位于晋江梅岭“阿坡小排档”（公开地址梅岭街道塘岸街362号，紧邻梅岭街道地标 node/5099803735）；主路网拓扑锚定冻结福建OSM梅岭片区道路 way/219500322 节点 7177159353。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 219500322,
+              "name": "梅岭片区道路",
+              "url": "https://www.openstreetmap.org/way/219500322",
+              "sourceDate": "2026-11-21",
+              "method": "subdistrict-and-adjacent-way-node",
+              "nodeId": 7177159353
+            }
+          },
+          "footageNote": "2026年11月原视频 · 晚市连排9间店面常满座，出发前请核实具体导航与等位情况。"
+        }
+      ]
+    },
+    {
+      "id": "qz-wenyoulala-7669373111078260031",
+      "author": "温油辣辣U",
+      "title": "第1集 | 泉州唯一米其林海鲜大排档，海鲜食材顶，鱼露溏心富贵虾很惊艳 #心动打卡指南#温油辣辣u",
+      "url": "https://www.douyin.com/video/7669373111078260031",
+      "publishedOn": "2026-08-02",
+      "durationSeconds": 551.36,
+      "sourceSHA256": "810c4647d0d80b8998c0c30d93d826915633a6da7b9c3f9d7a64b7627f1c38e4",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-24从用户打开的抖音“泉州大排档”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；原片标题“泉州唯一米其林海鲜大排档”及片中招牌菜榜单（鱼露溏心富贵虾、招牌冻花蟹等）结合评论区与米其林指南公开名录，对应丰泽区淮福街535号（浦西央街店）米其林一星餐厅“庆有余”。",
+      "segments": [
+        {
+          "id": "qz-wenyoulala-qingyouyu",
+          "name": "庆有余海鲜",
+          "category": "米其林闽南海鲜 / 精品排档",
+          "addressText": "泉州市丰泽区淮福街535号2楼（浦西央街店）",
+          "start": 0,
+          "end": 551.2,
+          "posterSecond": 396.3,
+          "summary": "获评泉州米其林一星的高端海鲜排档餐厅，门口海鲜池看货点菜，招牌鱼露溏心富贵虾膏香绵密，另有招牌冻花蟹、野生石头鱼猪皮汤、蒜蓉粉丝竹蛏与闽南卤味煲。",
+          "coordinates": [
+            118.596197,
+            24.888575
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "淮福街 / 浦西央街附近",
+            "basis": "video-menu-comment-and-michelin-address",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原片展示米其林招牌菜榜（鱼露溏心富贵虾、冻花蟹）且评论互证为“庆有余”，米其林指南登记地址为丰泽区淮福路/淮福街535号2楼（浦西央街店）；主路网拓扑锚定冻结福建OSM道路“淮福街” way/303503887 节点 14317590648。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303503887,
+              "name": "淮福街",
+              "url": "https://www.openstreetmap.org/way/303503887",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 14317590648
+            }
+          },
+          "footageNote": "2026年8月原视频 · 高端鲜活海鲜客单价较高，建议提前预订并现场确认海鲜时价。"
+        }
+      ]
+    },
+    {
+      "id": "qz-jizai-7697993333676032625",
+      "author": "唧仔🥕",
+      "title": "在泉州开了30几年的小炒店 #泉州大排档 #泉州私房菜 #下饭神菜推荐 #泉州平价美食",
+      "url": "https://www.douyin.com/video/7697993333676032625",
+      "publishedOn": "2026-10-18",
+      "durationSeconds": 74.07,
+      "sourceSHA256": "aec3f42813e8ecbc9e319afa47047d20efd3d27d70e60fb08d6f3664beb6899a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-24从用户打开的抖音“泉州大排档”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；作者在评论区多次明确回复店名为“六罐路的好再来”，并在冻结福建OSM数据中直接匹配同名实体 node/14209748848（好再来火锅川湘菜）。",
+      "segments": [
+        {
+          "id": "qz-jizai-haozailai-xiaochao",
+          "name": "好再来小炒店",
+          "category": "老牌川湘小炒 / 社区排档",
+          "addressText": "泉州市丰泽区六灌路 / 津坂路片区（作者评论确认六灌路好再来）",
+          "start": 0,
+          "end": 73.9,
+          "posterSecond": 34.7,
+          "summary": "在六灌路片区开了三十多年的老牌川味家常小炒馆，推荐58元大盆椒麻泼油水煮鱼、嫩滑香菜红椒炒牛肉、酸甜鱼香肉丝与每桌必点的爽脆折耳根凉拌菜。",
+          "coordinates": [
+            118.594218,
+            24.898028
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "六灌路 / 津坂路附近",
+            "basis": "author-comment-and-osm-poi",
+            "branchMatch": "verified-osm-poi-and-adjacent-road",
+            "note": "作者评论明确回复“六罐路的好再来”，坐标直接取自冻结福建OSM餐饮实体 node/14209748848（好再来火锅川湘菜）；主路网拓扑锚定相邻道路“津坂路” way/229531816 节点 14112995229。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 229531816,
+              "name": "津坂路",
+              "url": "https://www.openstreetmap.org/way/229531816",
+              "sourceDate": "2026-11-21",
+              "method": "poi-node-and-adjacent-way-node",
+              "nodeId": 14112995229
+            }
+          },
+          "footageNote": "2026年10月原视频 · 老社区口碑小炒店，出发前请核实六灌路具体门牌与营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-xiaodixiansen-7709422301876179850",
+      "author": "小迪先森",
+      "title": "泉本地人喜欢的一家大排档，烟火气满满，三五好友聚一聚很赞！ #泉州大排档 #市井美食分享 #本地海鲜大排档 #本地宝藏小店打卡 #平价美食大排档",
+      "url": "https://www.douyin.com/video/7709422301876179850",
+      "publishedOn": "2026-11-18",
+      "durationSeconds": 69.97,
+      "sourceSHA256": "788947f52b707d9b1c010babab263d0df51672379201e9fcf0c0170c9682b90c",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-24从用户打开的抖音“泉州大排档”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；原片开场字幕实拍“丰祥美食 · 泉州口碑大排档”，公开资料对应丰泽区祥远路“丰祥美食”。",
+      "segments": [
+        {
+          "id": "qz-xiaodixiansen-fengxiang-meishi",
+          "name": "丰祥美食大排档",
+          "category": "本港海鲜大排档 / 闽南烧酒菜",
+          "addressText": "泉州市丰泽区祥远路一带（原片片头实拍“丰祥美食”）",
+          "start": 0,
+          "end": 69.8,
+          "posterSecond": 45.9,
+          "summary": "开了近十年的社区口碑闽南海鲜烧酒排档，下午现收内港小海鲜，招牌秘制酱汁冻花虾、大火嫩炒猪肝、砂锅葱烧鱼头与家常煎杂鱼烟火气十足。",
+          "coordinates": [
+            118.609084,
+            24.903956
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "祥远路附近",
+            "basis": "video-title-card-and-public-address",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原片片头字幕明确标注“丰祥美食”，公开商户信息位于丰泽区祥远路；主路网拓扑锚定冻结福建OSM道路“祥远路” way/303503870 节点 1776440142。",
+            "reviewedOn": "2026-11-24",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303503870,
+              "name": "祥远路",
+              "url": "https://www.openstreetmap.org/way/303503870",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 1776440142
+            }
+          },
+          "footageNote": "2026年11月原视频 · 社区海鲜烧酒菜排档，出发前请核实祥远路具体门牌与营业时段。"
+        }
+      ]
+    },
+    {
+      "id": "qz-kakako-7707196439441686457",
+      "author": "kakako",
+      "title": "泉州 你的烧烤怎么这么好吃 #烧烤夜宵 #油边王 #沉浸式吃播体验 #泉州美食 #这口烧烤我画地为牢",
+      "url": "https://www.douyin.com/video/7707196439441686457",
+      "publishedOn": "2026-11-12",
+      "durationSeconds": 162.27,
+      "sourceSHA256": "7834d041f6b61dc2e7b7af6f13449583511059bf788893f40dbf9e5d81d4d339",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从用户打开的抖音“泉州烧烤”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；作者在评论区多次明确回复“泉州油边王-呆瓜(崇德华庭店)”并定位崇德华庭（紧邻崇德实验小学），露天棚帐、红桌布与两款招牌烤油边同“叶叶不回家”实拍完全一致，按同分店多博主规则归并。",
+      "segments": [
+        {
+          "id": "qz-kakako-youbianwang",
+          "placeId": "qz-yeyebuhuijia-youbianwang",
+          "name": "泉州油边王烧烤",
+          "category": "东北烧烤 / 宵夜大排档",
+          "addressText": "泉州市丰泽区崇德华庭 / 崇德实验小学对面（作者回复崇德华庭店，与叶叶不回家同店归并）",
+          "start": 0,
+          "end": 162.1,
+          "posterSecond": 26,
+          "summary": "开在崇德华庭树下的超人气东北烧烤夜宵摊，主打外酥里嫩的风干油边与大串烤油边两款招牌，搭配枪蛋炮、蒜蓉烤生蚝与特色烤香蕉配冰啤十分过瘾。",
+          "coordinates": [
+            118.586243,
+            24.889757
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "崇德华庭 / 崇德实验小学附近",
+            "basis": "author-comment-and-osm-residential-landmark",
+            "branchMatch": "branch-comment-verified-approximate",
+            "note": "作者评论明确回复“泉州油边王-呆瓜(崇德华庭店)”，冻结福建OSM“崇德华庭” way/588258294 与“丰泽区崇德实验小学” way/1557897482 隔路相邻，与叶叶不回家同店归并；主路网拓扑锚定冻结OSM道路 way/303570154 节点 5295808183。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303570154,
+              "name": "崇德实验小学门前道路",
+              "url": "https://www.openstreetmap.org/way/303570154",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-way-and-adjacent-road-node",
+              "nodeId": 5295808183
+            }
+          },
+          "footageNote": "2026年11月原视频 · 晚间露天摊位人气极旺，出发前请核实出摊时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-linlin-7681664420015096393",
+      "author": "林林。",
+      "title": "泉州街边的这家油边好好吃！ 就很喜欢这种街边小店的味道！#泉州美食 #泉州 #烟火气美食 #街边的烟火气 #油边",
+      "url": "https://www.douyin.com/video/7681664420015096393",
+      "publishedOn": "2026-09-04",
+      "durationSeconds": 58.87,
+      "sourceSHA256": "dc286d273581d18760e69553827d8d4c156dfcc9f76ca321ca0ce55ffd2f52c0",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从用户打开的抖音“泉州烧烤”搜索页选定，在已登录浏览器正常播放观察取得完整原片；原视频官方POI定位标注“泉州油边王”，实拍自选冰柜、木柄铁签、剪刀现剪风干油边及露天红桌布环境，与叶叶不回家、kakako确认同一门店并归并。",
+      "segments": [
+        {
+          "id": "qz-linlin-youbianwang",
+          "placeId": "qz-yeyebuhuijia-youbianwang",
+          "name": "泉州油边王烧烤",
+          "category": "东北烧烤 / 宵夜大排档",
+          "addressText": "泉州市丰泽区崇德华庭 / 崇德实验小学对面（原片POI“泉州油边王”，三位博主同店归并）",
+          "start": 0,
+          "end": 58.7,
+          "posterSecond": 5.5,
+          "summary": "冰柜自选现烤的街头烟火烧烤摊，焦脆咸香的整条风干大油边与厚切大油边肉感扎实，还有沙拉酱鱼饼包蟹柳与鲜甜锡纸花蛤、蛏子。",
+          "coordinates": [
+            118.586243,
+            24.889757
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "崇德华庭 / 崇德实验小学附近",
+            "basis": "video-poi-and-store-visual-match",
+            "branchMatch": "branch-comment-verified-approximate",
+            "note": "原视频官方POI挂载“泉州油边王”，摊位冰柜、木托盘与烤油边出品同叶叶不回家、kakako完全一致，归并同一地图点；主路网拓扑锚定冻结OSM道路 way/303570154 节点 5295808183。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303570154,
+              "name": "崇德实验小学门前道路",
+              "url": "https://www.openstreetmap.org/way/303570154",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-way-and-adjacent-road-node",
+              "nodeId": 5295808183
+            }
+          },
+          "footageNote": "2026年9月原视频 · 作者提及周边可找车位，具体出摊时段请以现场为准。"
+        }
+      ]
+    },
+    {
+      "id": "qz-guanguan-7676788256063945915",
+      "author": "观观超爱吃",
+      "title": "泉州开了二十几年的老牌烧烤大吃好几口！！！烧烤好吃 烤鱼也好好吃啊～～#泉州美食 #泉州烧烤 #在浙喝酒最轻松",
+      "url": "https://www.douyin.com/video/7676788256063945915",
+      "publishedOn": "2026-08-22",
+      "durationSeconds": 53.73,
+      "sourceSHA256": "5fe11ee0fdb016d21eab3aea4b349aa84c2c1bd110d1c20c6e5e9b217e07efbd",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从用户打开的抖音“泉州烧烤”搜索页选定，在已登录浏览器正常播放观察取得完整原片；片中第11秒清晰实拍墙面蓝色价目表“共享烧烤”，作者评论明确回复“湖心街 共享烧烤”，公开商户地址对应丰泽区东湖街道湖心街609号。",
+      "segments": [
+        {
+          "id": "qz-guanguan-gongxiang-shaokao",
+          "name": "共享烧烤",
+          "category": "老牌烧烤 / 烤鱼夜宵",
+          "addressText": "泉州市丰泽区湖心街609号一带（原片实拍“共享烧烤”价目表，作者回复湖心街）",
+          "start": 0,
+          "end": 53.6,
+          "posterSecond": 38.5,
+          "summary": "在泉州开了二十余年的湖心街老牌烧烤店，三冰柜自选明码标价，强推原味鲜嫩烤牛肉串、入味烤鱼牛蛙双拼、蒜蓉烤茄子与自家调味烤鸡翅。",
+          "coordinates": [
+            118.598593,
+            24.909629
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "湖心街西段（东湖街道）附近",
+            "basis": "video-menu-sign-and-author-comment",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原片实拍店内“共享烧烤”蓝色明码标价牌，作者评论回复“湖心街 共享烧烤”，公开地址位于丰泽区东湖街道湖心街609号（邻近泉州厦航酒店 way/1490426947）；主路网拓扑锚定冻结福建OSM道路“湖心街” way/966401728 节点 8940888537。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 966401728,
+              "name": "湖心街",
+              "url": "https://www.openstreetmap.org/way/966401728",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 8940888537
+            }
+          },
+          "footageNote": "2026年8月原视频 · 作者提及含烤鱼牛蛙双拼一桌约300元出头，出发前请核实营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-xunweizhongguo-7684233675394895131",
+      "author": "寻味中国录",
+      "title": "第63集 | 这是全国只有在泉州才能吃到的美食 #抖音精选App美食录 #福建美食 #泉州美食 #地方特色美食 #牛肉串",
+      "url": "https://www.douyin.com/video/7684233675394895131",
+      "publishedOn": "2026-09-11",
+      "durationSeconds": 126.08,
+      "sourceSHA256": "284434a86ff8ae5d29b088fdd09c9dfcf166a6496c27a0baeef23fb1125de511",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从用户打开的抖音“泉州烧烤”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；高赞福建食客评论一致确认为“晋江安海老同学烧烤”（公开地址晋江市安海镇腾达大厦西侧），冻结OSM安海镇（约118.47°E, 24.72°N）超出当前中心城区底图西南界，按规范标记范围外保留视频库。",
+      "segments": [
+        {
+          "id": "qz-xunweizhongguo-laotongxue-shaokao",
+          "name": "安海老同学烧烤",
+          "category": "闽南特色烧烤 / 生烫烤牛肉串",
+          "addressText": "泉州晋江市安海镇腾达大厦西侧（超出当前中心城区底图西南界）",
+          "start": 0,
+          "end": 125.9,
+          "posterSecond": 82.7,
+          "summary": "泉州晋江安海极具代表性的特色烤牛肉串，鲜切黄瓜条牛肉加牛奶、黑胡椒反复揉捏半小时，炭火快翻三五次锁住半熟鲜嫩肉汁，蘸浓烈芥末酱油风味独特。",
+          "coordinates": null,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "addressNote": "多位本地高赞食客确认门店为晋江市安海镇“老同学烧烤”（腾达大厦西侧）；冻结福建OSM“安海镇” node/2635501145 位于[118.4708, 24.7196]，超出当前泉州中心城区底图[118.53,24.80,118.69,24.98]，标记范围外保留视频库待后续扩图。",
+          "footageNote": "2026年9月原视频 · 牛肉串为微熟鲜嫩做法配重芥末蘸料，位于晋江安海镇，出发前请核实营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-zhouqiling-7652198276645134321",
+      "author": "粥七零",
+      "title": "开车200公里和好姐妹吃上了泉州蕞好吃的神级烧烤！！！ 排队一小时吃上了 😭 点豆干/五花肉/鸡翅/鸡爪牛肉还有炒泡面儿都是绝杀！！把我吃美了家人们#深夜的串 #泉州美食#晋江烧烤#泉州吃喝玩乐#晋江老字号",
+      "url": "https://www.douyin.com/video/7652198276645134321",
+      "publishedOn": "2026-06-17",
+      "durationSeconds": 41.27,
+      "sourceSHA256": "5ecbc283893b700c5efbb2deead6aad4e7899b36878942d3a3bfd47b4b61b075",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从用户打开的抖音“泉州烧烤”搜索页选定，在已登录浏览器正常播放观察取得完整原片；视频挂载“泉州市·晋江市”并带#晋江老字号，评论区食客指认为“深沟小陈烧烤”（公开方位仅登记晋江市城隍公宫西北侧村道，开放地图无对应道路/村落坐标），遵循“没线索不造点”原则暂不落点，保留资料页。",
+      "segments": [
+        {
+          "id": "qz-zhouqiling-shengou-xiaochen",
+          "name": "深沟小陈烧烤",
+          "category": "晋江老牌烧烤 / 甜辣酱烤串",
+          "addressText": "泉州晋江市城隍公宫西北侧村道（深沟片区具体街道门牌与底图内外归属待核）",
+          "start": 0,
+          "end": 41.1,
+          "posterSecond": 27,
+          "summary": "人气极旺的晋江铁棚烟火气老牌烧烤摊，必点刷满秘制甜辣蒜蓉酱的烤豆干、焦香烤鸡翅、软糯烤鸡爪、五花肉牛肉串与锅气十足的炒泡面。",
+          "coordinates": null,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "addressNote": "原片未拍门头门牌，食客评论指认为晋江“深沟小陈烧烤”，公开地图摘要仅写“晋江市城隍公宫西北侧”无标准路名，冻结福建OSM未收录“深沟”村落或同名POI，无法确认精确位置及是否在中心底图北界内，暂保留于资料页待人工核实。",
+          "footageNote": "2026年6月原视频 · 原片提及晚间需排队约一小时，出发前请通过导航软件核实最新位置与出摊状态。"
+        }
+      ]
+    },
+    {
+      "id": "qz-bozai-7709092243994911963",
+      "author": "波仔的澳洲日记",
+      "title": "今年最好吃的鸡腿有点多了 | 波仔在泉州体验鲜货烧烤，这个烤鸡腿真的香极了#烧烤 #泉州美食 #深夜放毒",
+      "url": "https://www.douyin.com/video/7709092243994911963",
+      "publishedOn": "2026-11-17",
+      "durationSeconds": 222.38,
+      "sourceSHA256": "153a428ea660bd50950e6df2fd59947172f7f850d7ca7f312310f25cc4917bc5",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从用户打开的抖音“泉州烧烤”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；抽帧核实店内宽扁钢签鲜货冰柜与“鸿运当头”书法壁纸，但原片全程未拍门头且未挂POI，评论区大量福建食客追问店名与地址未获明确公开回复，按“没线索不造点”暂标未定位保留视频库。",
+      "segments": [
+        {
+          "id": "qz-bozai-xianhuo-shaokao",
+          "name": "波仔探店泉州鲜货烤鸡腿烧烤店",
+          "category": "鲜货炭火烧烤 / 烤鸡腿夜宵",
+          "addressText": "泉州市区（原片未公开店名与门牌，待补充街区线索）",
+          "start": 0,
+          "end": 222.2,
+          "posterSecond": 36.5,
+          "summary": "主打现穿鲜货大串的泉州夜宵烧烤店，推荐外皮焦脆爆汁的烤鸡腿、鲜嫩现穿牛肉串、牛肋条、公后夹肉、大油边与蒜蓉生蚝，搭配泉州炒面线和砂锅泡面。",
+          "coordinates": null,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "addressNote": "原片展示宽扁铁签冰柜自选与“鸿运当头”壁纸堂食环境，未出现招牌门牌且作者未公开具体店址（评论区亦有食客提及重装后价格偏高），遵循“没线索不造点、不套用搜索联想词”原则暂不落点。",
+          "footageNote": "2026年11月原视频 · 店名与具体街区待核实，保留完整探店视频与菜品封面供参考。"
+        }
+      ]
+    },
+    {
+      "id": "qz-daweidewei-7648196370935408234",
+      "author": "大魏的胃",
+      "title": "在泉州晚上来这么一顿烧烤简直太爽了 #泉州美食 #烧烤",
+      "url": "https://www.douyin.com/video/7648196370935408234",
+      "publishedOn": "2026-06-06",
+      "durationSeconds": 217.53,
+      "sourceSHA256": "e2b5f3f0d3bb48c0ef5883ae4ed0e2bfb47756f785b0780b6fc218165cfdbf93",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从用户打开的抖音“泉州烧烤”搜索页选定，在已登录浏览器正常播放观察取得音视频流并无损合流；抽帧可见店内现穿牛肉串、烤芭乐、大肠包小肠与小龙虾鸡爪泡面煲，但进店镜头剪去门头且未挂POI，评论区食客询问店名地址均无实锤回复，按“没线索不造点”暂标未定位保留视频库。",
+      "segments": [
+        {
+          "id": "qz-daweidewei-yexiao-shaokao",
+          "name": "大魏探店泉州夜宵大串烧烤店",
+          "category": "大串炭火烧烤 / 小龙虾夜宵",
+          "addressText": "泉州市区（原片未公开店名与门牌，待补充街区线索）",
+          "start": 0,
+          "end": 217.4,
+          "posterSecond": 12.5,
+          "summary": "分量豪迈的泉州融合风味夜宵烧烤店，既有现穿牛肉串、甜口微酸大宫后与软糯烤大猪蹄，也有闽南特色烤红心芭乐、爆汁大肠包小肠与麻辣小龙虾鸡爪泡面锅。",
+          "coordinates": null,
+          "coordinateSystem": "WGS84",
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "addressNote": "原片25-29秒街头进店画面剪去了招牌与门牌，作者及评论区均未披露确切店名（不采信无依据的平台搜索词），按规范标记未定位保留于资料页。",
+          "footageNote": "2026年6月原视频 · 店名与具体街区待核实，保留完整探店视频与菜品封面供参考。"
+        }
+      ]
+    },
+    {
+      "id": "qz-ada-7622260433139462754",
+      "author": "阿达超能吃",
+      "title": "藏在六灌路的自助快餐！19.8一位吃40来种菜品很值~#自助餐 #比会吃更惠吃 #寻味烟火气 #心动榜餐厅 #泉州美食",
+      "url": "https://www.douyin.com/video/7622260433139462754",
+      "publishedOn": "2026-03-28",
+      "durationSeconds": 45.97,
+      "sourceSHA256": "833a5b08eb8653df602e5fd0981a593d1798209d054a9bbdb2b96810b66e93a5",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州自助快餐推荐”搜索页按不重名且主城可落点标准选定；原片实拍“点妹儿大食堂”招牌且官方POI挂载“点妹儿大食堂·现炒快餐自助畅吃(六灌路店)”，锚定冻结OSM津坂路/六灌路片区节点。",
+      "segments": [
+        {
+          "id": "qz-ada-dianmeier-dashitang",
+          "name": "点妹儿大食堂·现炒快餐自助",
+          "category": "自助快餐 / 现炒家常菜",
+          "addressText": "泉州市丰泽区六灌路一带（原片实拍招牌及POI“点妹儿大食堂·六灌路店”）",
+          "start": 0,
+          "end": 45.8,
+          "posterSecond": 24.4,
+          "summary": "丰泽六灌路高性价比现炒自助快餐，单人19.8元畅吃四十余种家常现炒菜（红烧肉、酸菜粉条、番茄炒蛋等），含米饭与饮品，适合日常干饭。",
+          "coordinates": [
+            118.594266,
+            24.898975
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "六灌路 / 津坂路片区附近",
+            "basis": "video-storefront-and-poi",
+            "branchMatch": "branch-poi-verified-approximate",
+            "note": "原片实拍“点妹儿大食堂”门头且官方POI标注“点妹儿大食堂·现炒快餐自助畅吃(六灌路店)”；主路网拓扑锚定冻结福建OSM道路“津坂路”（六灌路商圈）way/229531816 节点 14189571121。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 229531816,
+              "name": "津坂路",
+              "url": "https://www.openstreetmap.org/way/229531816",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 14189571121
+            }
+          },
+          "footageNote": "2026年3月原视频 · 片中单人价19.8元，具体价位与营业时段出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-ayin-7689002223888506533",
+      "author": "阿音喊你干饭",
+      "title": "浮桥兴贤路新开一家八0八自助小炒 单人自助17.8畅吃各种现炒菜品！#八0八自助小炒 #好吃不贵 #自助快餐 #快餐店 #泉州快餐店",
+      "url": "https://www.douyin.com/video/7689002223888506533",
+      "publishedOn": "2026-09-24",
+      "durationSeconds": 52.1,
+      "sourceSHA256": "227d0edd247c4be075fea37c185c586b27b6f2fe12b886f5432ce55b5b128793",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州自助快餐推荐”搜索页选定；原视频官方POI挂载“八O八自助小炒食堂”，口播与字幕明确位于鲤城区浮桥兴贤路，锚定冻结OSM兴贤路原节点。",
+      "segments": [
+        {
+          "id": "qz-ayin-ba0ba-shitang",
+          "name": "八O八自助小炒食堂",
+          "category": "自助快餐 / 现炒小炒食堂",
+          "addressText": "泉州市鲤城区浮桥兴贤路一带（原片字幕及POI确认浮桥兴贤路）",
+          "start": 0,
+          "end": 52,
+          "posterSecond": 17.9,
+          "summary": "浮桥兴贤路明档现炒自助小炒食堂，单人17.8元畅吃二十余道锅气现炒菜（辣椒炒肉、爆炒猪肝、蘑菇炖鸡等），自助打饭配粥汤，后厨随时现炒补菜。",
+          "coordinates": [
+            118.562407,
+            24.899779
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "浮桥兴贤路附近",
+            "basis": "video-poi-and-subtitle-street",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原视频官方POI挂载“八O八自助小炒食堂”且片头字幕明确写明“浮桥兴贤路”；主路网拓扑锚定冻结福建OSM道路“兴贤路” way/250003915 节点 3079622737。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 250003915,
+              "name": "兴贤路",
+              "url": "https://www.openstreetmap.org/way/250003915",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 3079622737
+            }
+          },
+          "footageNote": "2026年9月原视频 · 含团购推广标签，单人价17.8元仅供参考，出发前请核实门牌与价位。"
+        }
+      ]
+    },
+    {
+      "id": "qz-wangyaomei-7541284270716325177",
+      "author": "王幺妹",
+      "title": "泉州市鲤城区常兴路365号，龙哥自助快餐店，每人15元，管吃管饱",
+      "url": "https://www.douyin.com/video/7541284270716325177",
+      "publishedOn": "2025-08-22",
+      "durationSeconds": 180.06,
+      "sourceSHA256": "16b461e0d65ffffd1e6d3d2dc6693b903db575788f3ff37421dce0cae4c86712",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州自助快餐推荐”搜索页选定；作者标题直给完整地址“泉州市鲤城区常兴路365号，龙哥自助快餐店”，实拍长排二十余格平价自选快餐热菜，锚定冻结OSM常兴路原节点。",
+      "segments": [
+        {
+          "id": "qz-wangyaomei-longge-kuaican",
+          "name": "龙哥自助快餐店",
+          "category": "平价自助快餐 / 打工人食堂",
+          "addressText": "泉州市鲤城区常兴路365号（作者正文直给完整门牌）",
+          "start": 0,
+          "end": 179.9,
+          "posterSecond": 5,
+          "summary": "鲤城江南常兴路实惠平价15元自助快餐店，长排二十余道荤素热菜自选打餐、管吃管饱，饭点人气旺，适合周边简餐饱腹。",
+          "coordinates": [
+            118.558152,
+            24.897524
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "常兴路365号附近",
+            "basis": "author-caption-exact-address",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原视频标题直接给出完整店名与地址“泉州市鲤城区常兴路365号，龙哥自助快餐店”；主路网拓扑锚定冻结福建OSM道路“常兴路” way/303573405 节点 3079617442。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 303573405,
+              "name": "常兴路",
+              "url": "https://www.openstreetmap.org/way/303573405",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 3079617442
+            }
+          },
+          "footageNote": "2025年8月原视频 · 片称15元/人，当前价格与营业情况出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-kuangchi-7710135218028749670",
+      "author": "哐哧哐哧",
+      "title": "泉州的火锅脑袋们赶紧冲#朋友聚餐好去处 #海鲜自助火锅烤肉 #川骄海鲜自助 #泉州浦西万达 #泉州自助餐",
+      "url": "https://www.douyin.com/video/7710135218028749670",
+      "publishedOn": "2026-11-20",
+      "durationSeconds": 59.5,
+      "sourceSHA256": "493b8c3184cae98ac008df16677b8d7c2a1ff94d43b3a6e1ec98c6dea001e24a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州自助餐”搜索页选定；原片实拍“川骄自助火锅”门头及浦西万达店口播，官方POI挂载“川骄海鲜自助火锅(泉州万达店)”，锚定冻结OSM浦西万达北侧宝洲街节点。",
+      "segments": [
+        {
+          "id": "qz-kuangchi-chuanjiao-zizhu",
+          "name": "川骄海鲜自助火锅",
+          "category": "海鲜自助火锅 / 烤肉自助",
+          "addressText": "泉州市丰泽区宝洲街浦西万达广场（原片实拍门头及POI“泉州万达店”）",
+          "start": 0,
+          "end": 59.4,
+          "posterSecond": 13,
+          "summary": "浦西万达老牌湖景海鲜自助火锅烤肉，鲜活海蟹、鲍鱼、皮皮虾现捞，搭配现切牛肉、刺身区、铁板煎档与水果甜品台，适合朋友聚餐。",
+          "coordinates": [
+            118.596346,
+            24.885699
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "浦西万达广场 / 宝洲街附近",
+            "basis": "video-storefront-and-poi",
+            "branchMatch": "mall-verified-approximate",
+            "note": "原片实拍“川骄自助火锅”门头且官方POI标注“川骄海鲜自助火锅(泉州万达店)”（邻近冻结OSM泉州万达百货 way/329420563）；主路网拓扑锚定冻结福建OSM道路“宝洲街” way/472370846 节点 4665798112。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 472370846,
+              "name": "宝洲街",
+              "url": "https://www.openstreetmap.org/way/472370846",
+              "sourceDate": "2026-11-21",
+              "method": "mall-way-and-adjacent-road-node",
+              "nodeId": 4665798112
+            }
+          },
+          "footageNote": "2026年11月原视频 · 含团购推广标签，具体价位及楼层铺位出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-ada-7701949199965749224",
+      "author": "阿达超能吃",
+      "title": "在泉州迎宾馆自助餐居然只花100多！就能解锁小火锅加近百种海鲜刺身熟食无限畅吃~#自助餐 #特色美食 #本地人爱吃的店 #泉州美食",
+      "url": "https://www.douyin.com/video/7701949199965749224",
+      "publishedOn": "2026-10-29",
+      "durationSeconds": 70.53,
+      "sourceSHA256": "31d26b908f6ffb81864d67386d04307ada8f1e83b01aaf01d99bafc051878f34",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州自助餐”搜索页选定；原视频官方POI挂载“泉州迎宾馆”（公开地址丰泽区通港东街168号，冻结OSM实体 node/9958672227），锚定紧邻主网道路节点。",
+      "segments": [
+        {
+          "id": "qz-ada-quanzhou-yingbinguan",
+          "name": "泉州迎宾馆自助餐",
+          "category": "酒店海鲜自助 / 小火锅自助",
+          "addressText": "泉州市丰泽区通港东街168号泉州迎宾馆（官方POI及OSM实名节点）",
+          "start": 0,
+          "end": 70.4,
+          "posterSecond": 46.3,
+          "summary": "百元档星级宾馆海鲜小火锅自助，提供鲜活皮皮虾与螃蟹、整盘厚切三文鱼及八爪鱼刺身、烤羊排、熟食热菜与水果甜点，环境宽敞。",
+          "coordinates": [
+            118.650448,
+            24.888136
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "泉州迎宾馆（通港东街）附近",
+            "basis": "video-poi-and-osm-entity",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频官方POI明确挂载“泉州迎宾馆”，对应冻结福建OSM实体“泉州迎宾馆” node/9958672227（[118.650948, 24.888144]）；主路网拓扑锚定门前连通道路 way/538404743 节点 5211523295（距实体50.4米）。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 538404743,
+              "name": "泉州迎宾馆门前道路",
+              "url": "https://www.openstreetmap.org/way/538404743",
+              "sourceDate": "2026-11-21",
+              "method": "poi-node-and-adjacent-way-node",
+              "nodeId": 5211523295
+            }
+          },
+          "footageNote": "2026年10月原视频 · 酒店自助餐通常分午晚场并需提前预约，出发前请核实团购与开餐时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-qzchitou-7695871608675071931",
+      "author": "泉州吃透透",
+      "title": "湖美大酒店自助餐 一镜到底自助熟食区，漏拍了蒸笼和火锅区#泉州美食",
+      "url": "https://www.douyin.com/video/7695871608675071931",
+      "publishedOn": "2026-10-13",
+      "durationSeconds": 84,
+      "sourceSHA256": "d6ef1868119b3fb1b06f546c4b8033c87c32a7ac920e641b13483b6470029504",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州自助餐”搜索页选定；原片标题明确“湖美大酒店自助餐”且POI标注“刺桐路”，作者评论确认18:00晚场约57-59元/位，公开地址为丰泽区刺桐北路788号，锚定冻结OSM刺桐北路原节点。",
+      "segments": [
+        {
+          "id": "qz-qzchitou-humei-hotel",
+          "name": "湖美大酒店自助餐",
+          "category": "酒店自助餐 / 平价熟食火锅",
+          "addressText": "泉州市丰泽区刺桐北路788号（刺桐北路与东湖街交汇附近）",
+          "start": 0,
+          "end": 83.9,
+          "posterSecond": 49.9,
+          "summary": "泉州老牌酒店高性价比自助餐（作者实测晚场约57-59元/位），一镜到底展示热菜保温档、海螺脆肠、煎小鱼、水果蛋糕与蒸笼小火锅区。",
+          "coordinates": [
+            118.610694,
+            24.914909
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "刺桐北路788号（湖美大酒店）附近",
+            "basis": "video-title-poi-and-public-address",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原视频标题为“湖美大酒店自助餐”并挂载“刺桐路”POI，公开酒店地址位于丰泽区刺桐北路788号（刺桐北路与东湖街交叉口附近）；主路网拓扑锚定冻结福建OSM道路“刺桐北路” way/943490663 节点 14251726016。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 943490663,
+              "name": "刺桐北路",
+              "url": "https://www.openstreetmap.org/way/943490663",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 14251726016
+            }
+          },
+          "footageNote": "2026年10月原视频 · 作者评论称晚场57-59元，菜品随餐段变化，出发前请核实开餐时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-xiugou-7704856716151672083",
+      "author": "不懂事的修勾",
+      "title": "第21集 | 原来泉州的自助已经next level了 #不懂事的修勾 #匠和风精致料理 #泉州自助餐",
+      "url": "https://www.douyin.com/video/7704856716151672083",
+      "publishedOn": "2026-11-06",
+      "durationSeconds": 128.03,
+      "sourceSHA256": "d6f4493a38725d75524686805556fcedacdfeff30653048ce067fa9307af76b1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州自助餐”搜索页选定；原片实拍“匠和风精致料理”门头且官方POI挂载“匠和风精致料理(泉州复悦·尚柏奥莱店)”，对应丰泽区城东安吉南路970号原星光耀广场（冻结OSM way/538349892），锚定紧邻主网道路节点。",
+      "segments": [
+        {
+          "id": "qz-xiugou-jianghefeng-liaoli",
+          "name": "匠和风精致料理自助",
+          "category": "日料放题 / 精致料理自助",
+          "addressText": "泉州市丰泽区城东街道安吉南路970号（泉州复悦·尚柏奥莱店）",
+          "start": 0,
+          "end": 127.9,
+          "posterSecond": 124,
+          "summary": "城东尚柏奥莱高口碑精致日料自助放题，推荐现开冰醋拌生蚝、甜咖喱焗生蚝、苦柚吉列炸生蚝、甜虾三文鱼刺身拼盘及寿喜锅。",
+          "coordinates": [
+            118.655495,
+            24.918313
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "城东尚柏奥莱（安吉南路）附近",
+            "basis": "video-storefront-and-poi",
+            "branchMatch": "mall-verified-approximate",
+            "note": "原片实拍“匠和风精致料理”门头且官方POI标注“泉州复悦·尚柏奥莱店”（原星光耀广场，冻结福建OSM way/538349892）；主路网拓扑锚定紧邻连通道路 way/911524171 节点 8463640348。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 911524171,
+              "name": "城东尚柏奥莱旁道路",
+              "url": "https://www.openstreetmap.org/way/911524171",
+              "sourceDate": "2026-11-21",
+              "method": "mall-way-and-adjacent-road-node",
+              "nodeId": 8463640348
+            }
+          },
+          "footageNote": "2026年11月原视频 · 日料放题建议错峰或提前订位，具体团购档位与营业时间出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-yougushi-7706844501822892645",
+      "author": "有故事的人",
+      "title": "本地人一百块三个人带你们逛吃晚上十点过后的泉州钟楼西街美食#泉州 #泉州美食 #没有烟火气怎么能叫夜市 #美食 #人间烟火",
+      "url": "https://www.douyin.com/video/7706844501822892645",
+      "publishedOn": "2026-11-11",
+      "durationSeconds": 135.37,
+      "sourceSHA256": "e0258dd8e173d864d97dcb5b3e3d0e24872133ec083a87d328a7ca294466a030",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州夜市”搜索页按不重名且主城可落点标准选定；原片标题与实拍画面明确为泉州鲤城钟楼西街晚十点后夜市摊位，锚定冻结OSM西街主网节点（邻近泉州钟楼 node/8566824318）。",
+      "segments": [
+        {
+          "id": "qz-yougushi-zhonglou-xijie-yeshi",
+          "name": "泉州钟楼西街夜市",
+          "category": "古城夜市 / 深夜小吃街",
+          "addressText": "泉州市鲤城区西街钟楼一带（原片实拍钟楼与西街夜宵摊）",
+          "start": 0,
+          "end": 135.2,
+          "posterSecond": 29.6,
+          "summary": "泉州古城西街钟楼晚十点后的深夜夜市烟火气，本地人百元三人逛吃路边烧烤、卤味炸物、现煮丸子汤与古早小吃摊，老城夜游好去处。",
+          "coordinates": [
+            118.586484,
+            24.915315
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "西街钟楼夜市片区附近",
+            "basis": "video-landmark-and-title",
+            "branchMatch": "landmark-verified-approximate-road",
+            "note": "原片标题与画面均实拍泉州鲤城钟楼与西街夜间小吃摊（邻近冻结福建OSM地标“泉州钟楼” node/8566824318）；主路网拓扑锚定冻结福建OSM道路“西街” way/166164157 节点 14287527285。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 166164157,
+              "name": "西街",
+              "url": "https://www.openstreetmap.org/way/166164157",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-node-and-adjacent-way-node",
+              "nodeId": 14287527285
+            }
+          },
+          "footageNote": "2026年11月原视频 · 古城西街晚间十点后出摊，摊位流动且受街区管理影响，出发前请核实出摊情况。"
+        }
+      ]
+    },
+    {
+      "id": "qz-youzhi-7488749484051139874",
+      "author": "友志",
+      "title": "第15集 | 晋江阳光夜市美食攻略来了！ #夜市里的烟火气 #泉州美食 #泉州探店 #夜市美食 #夜市小吃",
+      "url": "https://www.douyin.com/video/7488749484051139874",
+      "publishedOn": "2025-04-03",
+      "durationSeconds": 52.22,
+      "sourceSHA256": "76347e5f24101c583f449b43965dddddca04aefe17cfa2dbb0be5bd895167542",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州夜市”搜索页选定；原片标题与评论明确位于晋江青阳阳光广场阳光夜市（和平中路与江声路交汇一带），锚定冻结OSM和平中路原节点。",
+      "segments": [
+        {
+          "id": "qz-youzhi-jinjiang-yangguang-yeshi",
+          "name": "晋江阳光夜市",
+          "category": "人气夜市 / 街头小吃集市",
+          "addressText": "晋江市青阳街道阳光广场（和平中路与江声路交汇一带）",
+          "start": 0,
+          "end": 52.1,
+          "posterSecond": 11.4,
+          "summary": "晋江青阳阳光广场人气老牌夜市，集中臭豆腐、贵阳糯米饭、烤冷面、铁板烧与现做甜品糖水等数十家街头摊位，烟火气浓厚。",
+          "coordinates": [
+            118.58234,
+            24.802974
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "青阳阳光广场 / 和平中路附近",
+            "basis": "video-title-and-comment-landmark",
+            "branchMatch": "landmark-verified-approximate-road",
+            "note": "原片标题明确为“晋江阳光夜市”且评论区确认位于青阳阳光广场（和平中路与江声路交汇处）；主路网拓扑锚定冻结福建OSM道路“和平中路” way/359882449 节点 3358894598。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 359882449,
+              "name": "和平中路",
+              "url": "https://www.openstreetmap.org/way/359882449",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 3358894598
+            }
+          },
+          "footageNote": "2025年4月原视频 · 夜市摊位及营业时间随季节变动，建议晚间前往并出发前核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-tudou-7686443456713727908",
+      "author": "土豆土逗",
+      "title": "泉州夜市哪家强，那必须是浦西万达夜市了！ 总结出4家我最爱的小摊！！#泉州美食 #夜市里的烟火气 #小摊美食 #夜市美食 #流量扶持计划",
+      "url": "https://www.douyin.com/video/7686443456713727908",
+      "publishedOn": "2026-09-17",
+      "durationSeconds": 57,
+      "sourceSHA256": "a29b117599e920fdbb59b0977acead2a42693684e7c0f905582c9215342d65ed",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州夜市”搜索页选定；原片标题与实拍明确为丰泽区浦西万达金街南侧夜市摊位，锚定冻结OSM浦西万达金街步道原节点。",
+      "segments": [
+        {
+          "id": "qz-tudou-puxi-wanda-yeshi",
+          "name": "浦西万达夜市",
+          "category": "商圈夜市 / 网红小吃摊",
+          "addressText": "泉州市丰泽区浦西万达金街南侧一带",
+          "start": 0,
+          "end": 56.9,
+          "posterSecond": 26.7,
+          "summary": "丰泽浦西万达商圈人气夜间小吃集聚区，博主实测推荐金街周边必吃小摊，涵盖锅包肉、臭豆腐、现烤舒芙蕾及烧烤夜宵，适合晚间连逛。",
+          "coordinates": [
+            118.595565,
+            24.884206
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "浦西万达金街南侧附近",
+            "basis": "video-title-and-mall-landmark",
+            "branchMatch": "mall-verified-approximate",
+            "note": "原视频明确聚焦丰泽浦西万达夜市小摊（邻近冻结福建OSM浦西万达广场商圈）；主路网拓扑锚定冻结福建OSM道路“浦西万达金街步道” way/470245065 节点 4644436813。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 470245065,
+              "name": "浦西万达金街步道",
+              "url": "https://www.openstreetmap.org/way/470245065",
+              "sourceDate": "2026-11-21",
+              "method": "mall-way-and-adjacent-road-node",
+              "nodeId": 4644436813
+            }
+          },
+          "footageNote": "2026年9月原视频 · 商圈夜市摊位多在傍晚后出摊，具体摊位位置出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-youdiane-7628544576790528179",
+      "author": "今天有点鹅",
+      "title": "本东海资深打工人给大家分享几家泰禾夜市好吃的宝藏小摊～#东海泰禾夜市 #夜市里的烟火气 #泉州夜市 #泉州美食",
+      "url": "https://www.douyin.com/video/7628544576790528179",
+      "publishedOn": "2026-04-14",
+      "durationSeconds": 55.61,
+      "sourceSHA256": "74ed2d04c4d6a4702215d750eb0a431eae9e7657f1ce29122170de62af4333f1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州夜市”搜索页选定；原视频官方POI直挂“泰禾海丝蟳风夜市(泰禾广场店)”，邻近冻结OSM东海泰禾摩天轮 node/8951123742，锚定泰禾路主网节点。",
+      "segments": [
+        {
+          "id": "qz-youdiane-donghai-taihe-yeshi",
+          "name": "东海泰禾夜市",
+          "category": "摩天轮夜市 / 特色宝藏小摊",
+          "addressText": "泉州市丰泽区东海泰禾广场·泰禾海丝蟳风夜市（官方POI直挂）",
+          "start": 0,
+          "end": 55.5,
+          "posterSecond": 40,
+          "summary": "东海泰禾广场摩天轮下的泰禾海丝蟳风夜市，本地打工人推荐多家人气宝藏摊位（银川风味烤串、福鼎肉片、铁板小吃与饮品），夜游拍照两不误。",
+          "coordinates": [
+            118.635549,
+            24.873636
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "东海泰禾广场 / 泰禾路附近",
+            "basis": "video-poi-and-osm-landmark",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频官方POI挂载“泰禾海丝蟳风夜市(泰禾广场店)”，邻近冻结福建OSM东海泰禾摩天轮地标 node/8951123742；主路网拓扑锚定紧邻道路“泰禾路” way/934078240 节点 8657208659。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 934078240,
+              "name": "泰禾路",
+              "url": "https://www.openstreetmap.org/way/934078240",
+              "sourceDate": "2026-11-21",
+              "method": "poi-node-and-adjacent-way-node",
+              "nodeId": 8657208659
+            }
+          },
+          "footageNote": "2026年4月原视频 · 夜市摊位布局与营业时段可能调整，出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-xinxin-7698777070483343994",
+      "author": "欣欣🔅",
+      "title": "勇闯泉州北峰夜市这里真不愧是世界美食之都，偶遇个老外闽南话都流利的像泉州土著～#泉州 #泉州美食 #泉州旅游攻略 #人间烟火 #夜市美食",
+      "url": "https://www.douyin.com/video/7698777070483343994",
+      "publishedOn": "2026-10-20",
+      "durationSeconds": 78.8,
+      "sourceSHA256": "7e46fa34f3430abc6491d385e0ff0fff5a445bfea9930bdd36ffcae78e574dc9",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州夜市”搜索页选定；原片标题与实拍明确为丰泽区北峰街道北峰工业区夜市（邻近冻结OSM node/14155389120），锚定北清东路原节点。",
+      "segments": [
+        {
+          "id": "qz-xinxin-beifeng-yeshi",
+          "name": "泉州北峰夜市",
+          "category": "工业区夜市 / 烟火气长街",
+          "addressText": "泉州市丰泽区北峰街道北清东路（北峰工业区夜市街区一带）",
+          "start": 0,
+          "end": 78.7,
+          "posterSecond": 27.1,
+          "summary": "丰泽北峰工业区高人气本地夜市一条街，摊位绵延、平价实在，汇集闽南特色炸物、海鲜炒粉、铁板烧烤与宵夜小酒摊，极具市井烟火气。",
+          "coordinates": [
+            118.571071,
+            24.938825
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "北峰工业区 / 北清东路附近",
+            "basis": "video-title-and-osm-entity",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频标题与实拍画面明确为泉州北峰夜市（对应冻结福建OSM北峰片区实体 node/14155389120）；主路网拓扑锚定冻结福建OSM道路“北清东路” way/329244411 节点 2669063306。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 329244411,
+              "name": "北清东路",
+              "url": "https://www.openstreetmap.org/way/329244411",
+              "sourceDate": "2026-11-21",
+              "method": "poi-node-and-adjacent-way-node",
+              "nodeId": 2669063306
+            }
+          },
+          "footageNote": "2026年10月原视频 · 北峰夜市以晚间至深夜为主，摊位变动较快，出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-hanbao-7710148063436134627",
+      "author": "汉堡爱甲虾米",
+      "title": "第20集 | 在高阳夜市又发现两家宝藏小摊，在晋江第一次见到爆炒螺狮粉，料给的很足。这家拌青芒最近超火，搭配口感很丰富#泉州美食 #泉州美食探店 #泉州吃虾米 #泉州夜市 #爆炒螺狮粉",
+      "url": "https://www.douyin.com/video/7710148063436134627",
+      "publishedOn": "2026-11-20",
+      "durationSeconds": 62.32,
+      "sourceSHA256": "6d78eb3a21fa0e80da8939ec5cf66d7cfb8702474ddcb074bc822396ad31b2e1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州夜市”搜索页选定；原片标题明确为晋江高阳夜市（梅岭宝龙广场旁高阳路与世纪大道交汇一带），锚定冻结OSM世纪大道原节点。",
+      "segments": [
+        {
+          "id": "qz-hanbao-gaoyang-yeshi",
+          "name": "晋江高阳夜市",
+          "category": "人气夜市 / 特色风味小摊",
+          "addressText": "晋江市梅岭街道宝龙广场旁高阳路（世纪大道交汇一带）",
+          "start": 0,
+          "end": 62.2,
+          "posterSecond": 25.4,
+          "summary": "晋江宝龙广场旁高阳路人气夜市，博主重点打卡足料爆炒螺蛳粉与人气现拌青芒水果摊，摊位品类多元且价格亲民。",
+          "coordinates": [
+            118.560593,
+            24.804563
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "宝龙广场 / 世纪大道高阳路附近",
+            "basis": "video-title-and-district-landmark",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原视频明确探访晋江高阳夜市（晋江梅岭宝龙广场旁高阳路一带）；主路网拓扑锚定冻结福建OSM主干道“世纪大道” way/219395917 节点 2285579075。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 219395917,
+              "name": "世纪大道",
+              "url": "https://www.openstreetmap.org/way/219395917",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 2285579075
+            }
+          },
+          "footageNote": "2026年11月原视频 · 小摊多在晚间出摊，具体摊位位置出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-qzxiaochi-7509902800634088704",
+      "author": "泉州小吃美食",
+      "title": "第29集 | 泉州夜市一东区野滩广场。吃烧烤喝啤酒、喝饮料等谈天说地的好地方。#泉州夜市  #泉州夜市摆摊 #泉州夜市美食 #泉州夜市推荐 #泉州晋江大桥",
+      "url": "https://www.douyin.com/video/7509902800634088704",
+      "publishedOn": "2025-05-30",
+      "durationSeconds": 46.73,
+      "sourceSHA256": "2c4a47c1b6100cfc577098c5b627da40d7cdd5f6f49c002bdff5791ebf6a4ba1",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-25从抖音“泉州夜市”搜索页选定；原视频官方POI直挂“东区野滩广场”且标签明确位于泉州晋江大桥江畔，锚定冻结OSM丰海路主网节点。",
+      "segments": [
+        {
+          "id": "qz-qzxiaochi-dongqu-yetan",
+          "name": "东区野滩广场夜市",
+          "category": "江畔夜市 / 露营风烧烤市集",
+          "addressText": "泉州市丰泽区丰海路晋江大桥下江畔（官方POI直挂“东区野滩广场”）",
+          "start": 0,
+          "end": 46.6,
+          "posterSecond": 42.3,
+          "summary": "丰海路晋江大桥江畔的露营风露天夜市市集，沿江摆放天幕帐篷与灯光摊位，可吹江风吃炭烤烧烤、喝柠檬茶和冰啤酒，氛围松弛惬意。",
+          "coordinates": [
+            118.638984,
+            24.870656
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "丰海路晋江大桥下（东区野滩广场）附近",
+            "basis": "video-poi-and-bridge-landmark",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频官方POI挂载“东区野滩广场”且标签注明泉州晋江大桥旁；主路网拓扑锚定冻结福建OSM沿江主干道“丰海路” way/304027288 节点 8410606048。",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 304027288,
+              "name": "丰海路",
+              "url": "https://www.openstreetmap.org/way/304027288",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 8410606048
+            }
+          },
+          "footageNote": "2025年5月原视频 · 江畔露天市集受天气及江滨管理影响较大，出发前请核实当晚开放情况。"
+        }
+      ]
+    },
+    {
+      "id": "qz-mading-7710326151310728569",
+      "author": "马丁好困也要起床",
+      "title": "找到一家很想安利给大家的小摊 泉州的路边摊真的超多，但是这家“回头炒饭”，是我一直以来最坚定的选择！！！#泉州美食 #路边摊美味 #城东青莲夜市",
+      "url": "https://www.douyin.com/video/7710326151310728569",
+      "publishedOn": "2026-11-21",
+      "durationSeconds": 246.6,
+      "sourceSHA256": "8160bc2057b1d452024ee7ac5928ad4dd0f0ba13cd0132b8b081d9793628667b",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州摆摊”搜索页按不重名且主城可落点标准选定；原片明确探访丰泽区城东青年夜市（标签“城东青莲夜市”、评论互证城东青年夜市）的“回头炒饭”小摊，锚定冻结OSM城东青莲寺/浔美片区主网节点。",
+      "segments": [
+        {
+          "id": "qz-mading-huitou-chaofan",
+          "name": "回头炒饭（城东青年夜市）",
+          "category": "夜市摆摊 / 铁板炒饭",
+          "addressText": "泉州市丰泽区城东街道城东青年夜市（浔美/青莲片区一带）",
+          "start": 0,
+          "end": 246.5,
+          "posterSecond": 45,
+          "summary": "城东青年夜市高人气“回头炒饭”大叔小摊，铁板现炒米饭粒粒分明、香肠鸡蛋配料实在，旁摊还能搭一碗大份福鼎肉片，烟火气拉满。",
+          "coordinates": [
+            118.651623,
+            24.921598
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "城东青年夜市 / 青莲片区附近",
+            "basis": "video-title-and-comment-landmark",
+            "branchMatch": "landmark-verified-approximate-road",
+            "note": "原片标题标明“城东青莲夜市”，评论区本地网友互证为丰泽区城东青年夜市（浔美社区青莲寺/通源街片区，邻近冻结福建OSM青莲寺 node/10243562393）；主路网拓扑锚定紧邻连通道路 way/538427162 节点 5211643682。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 538427162,
+              "name": "未命名开放道路（城东青莲寺/青年夜市片区）",
+              "url": "https://www.openstreetmap.org/way/538427162",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-node-and-adjacent-way-node",
+              "nodeId": 5211643682
+            }
+          },
+          "footageNote": "2026年11月原视频 · 夜市流动小摊晚间出摊，具体摊位与出摊时间出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-mochanan-7705724087276414632",
+      "author": "抹茶脑袋",
+      "title": "吃到一家超好吃的路边水煮摊#泉州 #水煮 #美食 #vlog #路边摊",
+      "url": "https://www.douyin.com/video/7705724087276414632",
+      "publishedOn": "2026-11-08",
+      "durationSeconds": 51.8,
+      "sourceSHA256": "fcee3331c4a781e14c2793f81112815944541a2ad6cfba37e94cf728063928d8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州摆摊”搜索页选定；原片实拍菜单招牌“小盆水煮点菜（水煮小天地）”且作者字幕与评论回复均确认在宝洲路泉州东海大酒店右手边拐角、天黑出摊，锚定冻结OSM宝洲街原节点（邻近泉州东海大酒店 way/1490427748）。",
+      "segments": [
+        {
+          "id": "qz-mochanan-xiaopen-shuizhu",
+          "name": "小盆水煮点菜（东海大酒店拐角摊）",
+          "category": "路边水煮摊 / 麻辣水煮鱼田鸡",
+          "addressText": "泉州市丰泽区宝洲街泉州东海大酒店右手边拐角（天黑出摊）",
+          "start": 0,
+          "end": 51.7,
+          "posterSecond": 16.6,
+          "summary": "宝洲街东海大酒店拐角人气夜宵水煮摊，主打现煮小盆水煮草鱼、水煮田鸡、水煮鸭胗及双拼三拼（小份30-40元，可加泡面与玉米配菜），香辣入味。",
+          "coordinates": [
+            118.591384,
+            24.887826
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "宝洲街·泉州东海大酒店拐角附近",
+            "basis": "video-signboard-and-author-reply",
+            "branchMatch": "landmark-verified-approximate-road",
+            "note": "原片实拍招牌“小盆水煮点菜”，作者字幕及评论均明确位于宝洲路泉州东海大酒店右手边拐角（邻近冻结福建OSM实体“泉州东海大酒店” way/1490427748）；主路网拓扑锚定门前主干道“宝洲街” way/219409104 节点 13282741983。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 219409104,
+              "name": "宝洲街",
+              "url": "https://www.openstreetmap.org/way/219409104",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-way-and-adjacent-road-node",
+              "nodeId": 13282741983
+            }
+          },
+          "footageNote": "2026年11月原视频 · 路边摊天黑约18:00后出摊，饭点需排队，出发前请核实出摊情况。"
+        }
+      ]
+    },
+    {
+      "id": "qz-yetanshaokao-7685360079986850555",
+      "author": "野摊鲜肉烧烤（拒绝半成品）",
+      "title": "开摊就排队的烧烤#泉州#泉州烧烤#西街#同城美食#牛肋条",
+      "url": "https://www.douyin.com/video/7685360079986850555",
+      "publishedOn": "2026-09-14",
+      "durationSeconds": 110.93,
+      "sourceSHA256": "52ec0fbfe43b732139b0ff2077ebaced7818fcf96671bc9d13549cc5910e6b3c",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州摆摊”搜索页选定；摊主自拍摆摊实况，官方POI直挂“赵一鸣省钱超市(福建泉州西郊店)”且邻近鲤城西街西郊片区，锚定冻结OSM西贤路原节点（距西郊 node/14170119657 约26米）。",
+      "segments": [
+        {
+          "id": "qz-yetanshaokao-xijiao",
+          "name": "野摊鲜肉烧烤（西郊）",
+          "category": "路边烧烤摊 / 现串鲜肉牛双筋",
+          "addressText": "泉州市鲤城区西郊片区西贤路一带（官方POI“福建泉州西郊店”）",
+          "start": 0,
+          "end": 110.8,
+          "posterSecond": 82,
+          "summary": "鲤城西郊开摊即排队的现串鲜肉路边烧烤摊，坚持拒绝半成品，主打1元鲜猪肉小串、炭烤牛肋条、牛双筋、鸡翅油边与红肠，现烤现撒芝麻孜然。",
+          "coordinates": [
+            118.574775,
+            24.925468
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "鲤城西郊 / 西贤路附近",
+            "basis": "video-poi-and-osm-entity",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "摊主原视频官方POI挂载“赵一鸣省钱超市(福建泉州西郊店)”并标注鲤城西街周边，对应冻结福建OSM“西郊”实体 node/14170119657；主路网拓扑锚定紧邻道路“西贤路” way/294972299 节点 10029024811。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 294972299,
+              "name": "西贤路",
+              "url": "https://www.openstreetmap.org/way/294972299",
+              "sourceDate": "2026-11-21",
+              "method": "poi-node-and-adjacent-way-node",
+              "nodeId": 10029024811
+            }
+          },
+          "footageNote": "2026年9月原视频 · 路边炭烤摊位位置及出摊时间可能调整，出发前请核实摊主动态。"
+        }
+      ]
+    },
+    {
+      "id": "qz-youzhi-7600033493808662179",
+      "author": "友志",
+      "title": "泉州街头偶遇深夜豆浆油条 #泉州美食 #那些尝一口就忘不掉的美食 #吃货的世界唯有美食不可辜负 #深夜偷吃",
+      "url": "https://www.douyin.com/video/7600033493808662179",
+      "publishedOn": "2026-01-27",
+      "durationSeconds": 50.38,
+      "sourceSHA256": "90f1c208aba5d293b51d7676e1b736dca7f0a94e42a388f478e31644afce9d08",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州摆摊/路边摊美食”搜索页选定；原视频官方POI直挂“呱小白肥肠蛙(星光不夜城店)”，实拍23:00街头炭炉现煮豆浆油条及卤肥肠鸡爪蛙锅，锚定冻结OSM泉秀街星光不夜城片区原节点。",
+      "segments": [
+        {
+          "id": "qz-youzhi-xingguang-doujiang",
+          "name": "深夜碳炉豆浆油条·肥肠蛙（星光不夜城）",
+          "category": "深夜夜宵摊 / 碳炉豆浆油条·肥肠蛙",
+          "addressText": "泉州市丰泽区泉秀街星光不夜城一带（官方POI“呱小白肥肠蛙·星光不夜城店”）",
+          "start": 0,
+          "end": 50.2,
+          "posterSecond": 5,
+          "summary": "丰泽星光不夜城营业至凌晨两三点的深夜夜宵档，街头红泥小炭炉现煮鸡蛋热豆浆泡脆油条，还能搭配现卤肥肠鸡爪蛙锅与灵魂泡面。",
+          "coordinates": [
+            118.607235,
+            24.887484
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "泉秀街·星光不夜城附近",
+            "basis": "video-poi-and-street-landmark",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频官方POI直挂“呱小白肥肠蛙(星光不夜城店)”，对应丰泽区泉秀街星光不夜城商圈；主路网拓扑锚定冻结福建OSM道路“泉秀街” way/564542398 节点 3361570624。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 564542398,
+              "name": "泉秀街",
+              "url": "https://www.openstreetmap.org/way/564542398",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 3361570624
+            }
+          },
+          "footageNote": "2026年1月原视频 · 作者回复营业至凌晨两三点，具体档口位置及营业时间出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-aqi-7707218798051388515",
+      "author": "阿棋这一口",
+      "title": "泉州街头3块钱一碗的咸饭炒面，真的是记忆中的老味道 #上热门 #泉州美食 #一口超满足 #路边摊美味 #咸饭",
+      "url": "https://www.douyin.com/video/7707218798051388515",
+      "publishedOn": "2026-11-12",
+      "durationSeconds": 125.57,
+      "sourceSHA256": "8cd213b2efe52bd689c5199de08c51504c372b175df7fd006ddcc5a4d1a2a212",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州路边摊美食”搜索页选定；原视频官方POI挂载“总站商贸城管理中心”且作者两次评论回复“在泉州以前旧车站对面”、中午起开卖，锚定冻结OSM原泉州汽车站/温陵南路片区主网节点。",
+      "segments": [
+        {
+          "id": "qz-aqi-jiuchezhan-xianfan",
+          "name": "旧车站对面3元咸饭古早味小吃摊",
+          "category": "古早味路边摊 / 3元咸饭·卤味丸子汤",
+          "addressText": "泉州市丰泽区温陵南路原泉州汽车总站（总站商贸城）对面一带",
+          "start": 0,
+          "end": 125.4,
+          "posterSecond": 9,
+          "summary": "原泉州旧车站对面的无名古早味街边小吃摊，3元一碗香喷喷闽南咸饭/炒面，配大锅现卤五花肉与清鲜丸子紫菜汤，中午起即出摊、分量扎实。",
+          "coordinates": [
+            118.589728,
+            24.895978
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "温陵南路·原泉州汽车总站对面附近",
+            "basis": "video-poi-and-author-reply",
+            "branchMatch": "landmark-verified-approximate-road",
+            "note": "原视频官方POI挂载“总站商贸城管理中心”且作者在评论区两次明确回复“在泉州以前旧车站对面”（邻近冻结福建OSM“泉州汽车站” way/666232725）；主路网拓扑锚定门前连通道路 way/1561752325 节点 14209701394。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1561752325,
+              "name": "未命名开放道路（温陵南路原泉州汽车总站/商贸城）",
+              "url": "https://www.openstreetmap.org/way/1561752325",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-way-and-adjacent-road-node",
+              "nodeId": 14209701394
+            }
+          },
+          "footageNote": "2026年11月原视频 · 作者回复为无名路边摊、中午起出摊，具体位置出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-yangxiaojie-7694951193809903016",
+      "author": "杨小姐花式水果切糕",
+      "title": "今日份出摊2小时清空，汇报营业额了@DOU+小助手  #摆摊创业日常 #泉州摆摊#糯叽叽水果切糕 #我的假期生活图鉴",
+      "url": "https://www.douyin.com/video/7694951193809903016",
+      "publishedOn": "2026-10-10",
+      "durationSeconds": 29.63,
+      "sourceSHA256": "8b2b98d7a134c47ff36ad6b912497a87e36f82f37f530c5d0a2d908248ae3d74",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州摆摊”搜索页选定；摊主自拍校园门口摆摊实况，官方POI直挂“泉州经贸职业技术学院”且作者回复周一至周四16:30出摊，锚定冻结OSM南环路原节点（距泉州经贸学院 node/14156933180 约20米）。",
+      "segments": [
+        {
+          "id": "qz-yangxiaojie-shuiguo-qiegao",
+          "name": "杨小姐花式水果切糕摊",
+          "category": "校园甜品摊 / 糯叽叽水果奶酪切糕",
+          "addressText": "泉州市鲤城区江南南环路·泉州经贸职业技术学院门口（周一至周四16:30出摊）",
+          "start": 0,
+          "end": 29.5,
+          "posterSecond": 1.2,
+          "summary": "泉州经贸学院门口高人气手工甜品小摊，主打芒果、青提、抹茶奶酪糯叽叽水果切糕，支持随心切分丰俭由人，下午四点半出摊常两小时售罄。",
+          "coordinates": [
+            118.536477,
+            24.909327
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "南环路·泉州经贸学院门口附近",
+            "basis": "video-poi-and-osm-entity",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "摊主原视频官方POI挂载“泉州经贸职业技术学院”，对应冻结福建OSM实体“泉州经贸学院” way/1556515187 与 node/14156933180；主路网拓扑锚定门前道路“南环路” way/1501124034 节点 13743051005。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1501124034,
+              "name": "南环路",
+              "url": "https://www.openstreetmap.org/way/1501124034",
+              "sourceDate": "2026-11-21",
+              "method": "poi-node-and-adjacent-way-node",
+              "nodeId": 13743051005
+            }
+          },
+          "footageNote": "2026年10月原视频 · 作者回复周一至周四约16:30出摊、约18:00前售罄，出发前请核实出摊日。"
+        }
+      ]
+    },
+    {
+      "id": "qz-mading-7709741589816998321",
+      "author": "马丁好困也要起床",
+      "title": "凌晨一点肚子饿，随机翻牌路边摊 竟然吃到一家“不烧心”的12元炒面？#街头炒面 #泉州 #路边摊美味",
+      "url": "https://www.douyin.com/video/7709741589816998321",
+      "publishedOn": "2026-11-19",
+      "durationSeconds": 161.7,
+      "sourceSHA256": "a7127798ca94b963e7cf266c9ddc51675c3aee1b3bdddf7d84f9dab82b368d20",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州路边摊美食”搜索页选定；原视频官方POI直挂“闽侨大厦(荷乡街)”且作者回复就在定位附近晚间至凌晨出摊，锚定冻结OSM田安北路/闽侨站原节点（距闽侨站 node/14170119626 约9.8米）。",
+      "segments": [
+        {
+          "id": "qz-mading-minqiao-chaomian",
+          "name": "闽侨大厦深夜12元路边摊炒面",
+          "category": "深夜路边摊 / 猛火炒面",
+          "addressText": "泉州市丰泽区荷乡街/田安北路·闽侨大厦附近（官方POI“闽侨大厦(荷乡街)”）",
+          "start": 0,
+          "end": 161.6,
+          "posterSecond": 133.8,
+          "summary": "丰泽荷乡街闽侨大厦旁的深夜烟火气小摊，12元一份大火猛炒油面，配菜自选、油润不腻口且锅气十足，凌晨一点仍能吃到热乎现炒夜宵。",
+          "coordinates": [
+            118.603821,
+            24.909664
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "荷乡街·闽侨大厦附近",
+            "basis": "video-poi-and-osm-entity",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频官方POI直挂“闽侨大厦(荷乡街)”且作者评论确认就在定位附近晚间出摊，对应冻结福建OSM实体“闽侨站” node/14170119626；主路网拓扑锚定紧邻主干道“田安北路” way/472370852 节点 14170119619。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 472370852,
+              "name": "田安北路",
+              "url": "https://www.openstreetmap.org/way/472370852",
+              "sourceDate": "2026-11-21",
+              "method": "poi-node-and-adjacent-way-node",
+              "nodeId": 14170119619
+            }
+          },
+          "footageNote": "2026年11月原视频 · 深夜流动炒面摊位，出摊时间与具体点位出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-shuibuzhaojiao-7706533947442519714",
+      "author": "睡不着觉",
+      "title": "今日闲闲 早起吃‘金陵灌汤包’#市井美食打卡 #泉州美食 #泉州探店 #日常vlog #日常分享",
+      "url": "https://www.douyin.com/video/7706533947442519714",
+      "publishedOn": "2026-11-10",
+      "durationSeconds": 35.5,
+      "sourceSHA256": "1f82de7bd6521bd21fa4ccbf58ac05dc971f79ee9409a76b70e16b8021d60fc9",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州早餐”搜索页按不重名且主城可落点标准选定；原片实拍“金陵灌汤包·南京鸭血粉丝汤”门头与西湖公园湖景，评论回复“西湖那/西湖金陵灌汤包”且公开位置为新华小区宝龙花园一期北门/西湖街片区，锚定冻结OSM道路“西湖街”原节点。",
+      "segments": [
+        {
+          "id": "qz-shuibuzhaojiao-jinling-guantangbao",
+          "name": "金陵灌汤包（西湖店）",
+          "category": "泉州早餐 / 灌汤包·鸭血粉丝汤·撒汤",
+          "addressText": "泉州市丰泽区西湖街 / 宝龙花园一期北门（西湖片区一带）",
+          "start": 0,
+          "end": 35.4,
+          "posterSecond": 13.5,
+          "summary": "清晨六点开蒸的人气街边灌汤包早点店，老板手速极快现包现蒸，招牌灌汤包皮薄汁足微甜鲜香，搭配现盛撒汤、腌制小菜与南京鸭血粉丝汤。",
+          "coordinates": [
+            118.582345,
+            24.92824
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "西湖街 / 西湖片区附近",
+            "basis": "video-signboard-comment-and-landmark",
+            "branchMatch": "landmark-verified-approximate-road",
+            "note": "原片实拍“金陵灌汤包”招牌与西湖公园晨景，评论区互证为西湖片区金陵灌汤包（公开位置丰泽区宝龙花园一期北门/西湖街一带）；主路网拓扑锚定冻结福建OSM道路“西湖街” way/295690208 节点 13282741913。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 295690208,
+              "name": "西湖街",
+              "url": "https://www.openstreetmap.org/way/295690208",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 13282741913
+            }
+          },
+          "footageNote": "2026年11月原视频 · 原片提示清晨6:00起营业，具体门牌与营业时间出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-shuibuzhaojiao-7699101807771754728",
+      "author": "睡不着觉",
+      "title": "今日闲闲 早起吃‘桥头簸箕肠粉’#市井美食打卡 #泉州美食 #泉州探店 #肠粉爱好者集合 #日常vlog",
+      "url": "https://www.douyin.com/video/7699101807771754728",
+      "publishedOn": "2026-10-21",
+      "durationSeconds": 35.47,
+      "sourceSHA256": "996d1b8f0214b54a4e41734d0a605cc59d9534164c48813dc8ace517a5eb7ffe",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州早餐”搜索页选定；原片实拍竹编圆簸箕刷油倒米浆现蒸卷肠粉与生滚粥招牌，评论区询问位置获回复“田安路”，锚定冻结OSM主干道“田安北路”原节点。",
+      "segments": [
+        {
+          "id": "qz-shuibuzhaojiao-qiaotou-changfen",
+          "name": "桥头簸箕肠粉（田安路店）",
+          "category": "泉州早餐 / 竹簸箕现蒸肠粉·生滚粥",
+          "addressText": "泉州市丰泽区田安路一带（评论确认田安路）",
+          "start": 0,
+          "end": 35.3,
+          "posterSecond": 23,
+          "summary": "早起骑行打卡的田安路手工竹簸箕肠粉店，现刷油摊浆蒸两三分钟刮卷成盘，粉皮薄嫩软滑、豆芽爽脆，淋浓稠咸香酱汁配秘制剁椒与现煮皮蛋瘦肉生滚粥。",
+          "coordinates": [
+            118.600717,
+            24.904466
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "丰泽区田安路附近",
+            "basis": "video-title-and-comment-street",
+            "branchMatch": "street-verified-approximate-road",
+            "note": "原片标题明示“桥头簸箕肠粉”，评论区问答明确在泉州丰泽区田安路；主路网拓扑锚定冻结福建OSM道路“田安北路” way/176115620 节点 1866832187。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 176115620,
+              "name": "田安北路",
+              "url": "https://www.openstreetmap.org/way/176115620",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 1866832187
+            }
+          },
+          "footageNote": "2026年10月原视频 · 田安路沿线近似街区落点，具体门牌出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-miemie-7490086283604233499",
+      "author": "咩咩酱",
+      "title": "泉州古城本地人都来吃的早餐店｜老泉州都知道的豆制品厂，闽南话叫“豆干社”独属于泉州的烟火气就是藏在这样不起眼的小店里物美价廉种类多多 本地人超爱去#泉州美食 #美食vlog #同城美食 #春日好食光  #泉州旅游攻略",
+      "url": "https://www.douyin.com/video/7490086283604233499",
+      "publishedOn": "2025-04-06",
+      "durationSeconds": 46.69,
+      "sourceSHA256": "b46e4ad43ce59ee41bac2fc2ae6c64cab7fe9e4b09aa20260b6824b1d0323782",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州早餐”搜索页选定；原视频官方POI直挂“新门街豆浆店”且实拍厂牌“福建省泉州市豆制品厂 新门街豆浆店，厂址：泉州市鲤城区新门街693号（南19幢后）”，锚定冻结OSM道路“新门街”西段原节点。",
+      "segments": [
+        {
+          "id": "qz-miemie-xinmenjie-doujiang",
+          "name": "新门街豆浆店（泉州市豆制品厂）",
+          "category": "泉州古早早餐 / 豆制品厂热豆浆·豆花油条",
+          "addressText": "泉州市鲤城区新门街693号（南19幢后·泉州市豆制品厂“豆干社”）",
+          "start": 0,
+          "end": 46.5,
+          "posterSecond": 38.5,
+          "summary": "老泉州人口中的“豆干社”老牌豆制品厂早餐部，2元一碗自助现打浓醇热豆浆、童年蜜水嫩豆花，搭配油条、萝卜饼、韭菜饼与马蹄酥，九点多常售罄。",
+          "coordinates": [
+            118.572723,
+            24.914855
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "鲤城区新门街693号附近",
+            "basis": "video-poi-and-signboard-address",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频官方POI直挂“新门街豆浆店”并清晰拍到厂牌门址“泉州市鲤城区新门街693号（南19幢后）”；主路网拓扑锚定冻结福建OSM道路“新门街” way/176115653 节点 1866832260。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 176115653,
+              "name": "新门街",
+              "url": "https://www.openstreetmap.org/way/176115653",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 1866832260
+            }
+          },
+          "footageNote": "2025年4月原视频 · 原片提示九点多部分早点即售罄，建议早起前往并核实营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-hunjun-7692829670509854315",
+      "author": "吃货界的荤君",
+      "title": "泉州本地人的早餐还得是大肠醋肉面线糊#吃喝玩乐分享计划 #面线糊 #泉州美食 #同城美食 #美食vlog",
+      "url": "https://www.douyin.com/video/7692829670509854315",
+      "publishedOn": "2026-10-04",
+      "durationSeconds": 30.33,
+      "sourceSHA256": "0aec599876d3829ccaf3eb9e0cd231b98c344f27b103d27623777605e6c33a4a",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州早餐”搜索页选定；原视频官方POI直挂“献啊仕公岭面线糊店”，对应丰泽区仕公岭社区老店（邻近冻结福建OSM实体“仕公岭” way/1565388803），锚定紧邻连通道路 way/1457226076 节点 13746426694。",
+      "segments": [
+        {
+          "id": "qz-hunjun-xiana-mianxianhu",
+          "name": "献啊仕公岭面线糊店",
+          "category": "泉州古早早餐 / 大肠醋肉面线糊",
+          "addressText": "泉州市丰泽区仕公岭片区（官方POI“献啊仕公岭面线糊店”）",
+          "start": 0,
+          "end": 30.2,
+          "posterSecond": 18,
+          "summary": "丰泽仕公岭本地人私藏的社区人气面线糊老店，汤底较稠顺滑、卤味配料台琳琅满目，现剪软糯卤大肠、微甜脆香醋肉、卤蛋与现炸油条泡进面线糊超满足。",
+          "coordinates": [
+            118.623681,
+            24.910188
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "丰泽区仕公岭片区附近",
+            "basis": "video-poi-and-osm-entity",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频官方POI直挂“献啊仕公岭面线糊店”，对应冻结福建OSM“仕公岭”实体 way/1565388803（距约77米）；主路网拓扑锚定紧邻连通道路 way/1457226076 节点 13746426694。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1457226076,
+              "name": "未命名开放道路（丰泽仕公岭片区）",
+              "url": "https://www.openstreetmap.org/way/1457226076",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-way-and-adjacent-road-node",
+              "nodeId": 13746426694
+            }
+          },
+          "footageNote": "2026年10月原视频 · 早市与节假日人气高，具体店址与营业时间出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-dianxinlaosheng-7670324725776444078",
+      "author": "点心老生",
+      "title": "一碗面线糊的泉州烟火 泉州古城的清晨，总由一碗温热的面线糊缓缓掀开序幕。藏身于县后街、中山北路一带的文啊面线糊，扎根老巷多年，靠着地道古早滋味，成为本地人私藏的街边老店",
+      "url": "https://www.douyin.com/video/7670324725776444078",
+      "publishedOn": "2026-08-05",
+      "durationSeconds": 28.47,
+      "sourceSHA256": "bfcd7b77640655cfe8bb0a22a6c20cd423be95e69bdfbd1c7a51d30c602476e8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州早餐”搜索页选定；原视频官方POI直挂“文啊咸饭(县后路店)”，门头实拍“文啊面线糊·猪血汤·咸饭”且文案明确位于鲤城区县后街、中山北路二院旧居民区一带，锚定冻结OSM道路“县后街”原节点。",
+      "segments": [
+        {
+          "id": "qz-dianxinlaosheng-wena-mianxianhu",
+          "name": "文啊面线糊（县后路店）",
+          "category": "泉州古城早餐 / 面线糊·猪血汤·咸饭",
+          "addressText": "泉州市鲤城区县后街 / 中山北路二院旧居民区一带（官方POI“文啊咸饭·县后路店”）",
+          "start": 0,
+          "end": 28.3,
+          "posterSecond": 16.5,
+          "summary": "藏身县后街红砖老居民区里的古早味街坊小店，清晨六点多起熬煮鱼骨海鲜清甜高汤面线糊，糊而不浑，可自由搭配炒蛋、猪腰、卤大肠、醋肉与现剪脆油条，兼售猪血汤与咸饭。",
+          "coordinates": [
+            118.58865,
+            24.916453
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "鲤城区县后街附近",
+            "basis": "video-poi-signboard-and-street",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频官方POI直挂“文啊咸饭(县后路店)”，实拍门头“文啊面线糊·猪血汤·咸饭”且正文详述位于县后街、中山北路一带；主路网拓扑锚定冻结福建OSM道路“县后街” way/294840483 节点 2984622381。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 294840483,
+              "name": "县后街",
+              "url": "https://www.openstreetmap.org/way/294840483",
+              "sourceDate": "2026-11-21",
+              "method": "original-way-node",
+              "nodeId": 2984622381
+            }
+          },
+          "footageNote": "2026年8月原视频 · 原片提示清晨6点多出锅，具体门牌与营业时段出发前请核实。"
+        }
+      ]
+    },
+    {
+      "id": "qz-linrichang-7705656523754134266",
+      "author": "淋的日常分享",
+      "title": "第15集 | 泉州鲤城西街-菜市场古早味花生汤 #地道早点 #特色早餐推荐 #古早味 #泉州美食 #闽南美食",
+      "url": "https://www.douyin.com/video/7705656523754134266",
+      "publishedOn": "2026-11-08",
+      "durationSeconds": 42.89,
+      "sourceSHA256": "ef3467ac78ed53a373d0c1d45a279793f1aef14f047646e44b9fc44acf524c6f",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州早餐”搜索页选定；原视频官方POI直挂“西街菜市场”，实拍招牌“张记石磨花生乳（老浮桥古早味 四代传承 始于1947年）”，邻近冻结福建OSM实体“西街菜市场” way/1558895243，锚定紧邻连通道路 way/1194043339 节点 11083911008。",
+      "segments": [
+        {
+          "id": "qz-linrichang-zhangji-huashengru",
+          "name": "张记石磨花生乳（西街菜市场店）",
+          "category": "泉州古早早餐 / 石磨花生汤冲蛋·满煎糕油条",
+          "addressText": "泉州市鲤城区西街菜市场门口（招牌“张记石磨花生乳·始于1947年”）",
+          "start": 0,
+          "end": 42.7,
+          "posterSecond": 24,
+          "summary": "开在西街菜市场门口的古早味花生汤老店（招牌“张记石磨花生乳”），滚烫浓稠石磨花生汤现冲鸡蛋，甜而不腻，绝配金黄大油条与吸满红糖花生碎的松软蜂窝满煎糕。",
+          "coordinates": [
+            118.57815,
+            24.915872
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "鲤城区西街菜市场门口附近",
+            "basis": "video-poi-signboard-and-osm-entity",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频官方POI直挂“西街菜市场”并实拍“张记石磨花生乳”门头，对应冻结福建OSM实体“西街菜市场” way/1558895243（距约23米）；主路网拓扑锚定门前连通道路 way/1194043339 节点 11083911008。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1194043339,
+              "name": "未命名开放道路（西街菜市场旁）",
+              "url": "https://www.openstreetmap.org/way/1194043339",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-way-and-adjacent-road-node",
+              "nodeId": 11083911008
+            }
+          },
+          "footageNote": "2026年11月原视频 · 菜市场门口古早早餐铺，出发前请核实实时营业时间。"
+        }
+      ]
+    },
+    {
+      "id": "qz-manggexiaoge-7596142235843033713",
+      "author": "茫个肖咯",
+      "title": "第196集 | 晋江美食｜藏在晋江青阳敏月公园附近的一家古早味早餐店！！真味道饮食店的花生仁汤喝过吗？#巷子里的美食 #晋江美食 #美好生活来去晋江 #晋江旅游 #泉州美食",
+      "url": "https://www.douyin.com/video/7596142235843033713",
+      "publishedOn": "2026-01-17",
+      "durationSeconds": 18.06,
+      "sourceSHA256": "8835fff8200e3aaa4078a10259f564eef9f74a5fd9ac9c154b53c1e2afc18ce8",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "2026-11-26从抖音“泉州早餐”搜索页选定；原视频官方POI直挂“真味道饮食店”，标题指明晋江青阳敏月公园附近且原片实拍门头红牌“南山路125号 / 40多年古早味”，邻近冻结福建OSM实体“晉江市敏月公園” way/601594425，锚定紧邻连通道路 way/306824141 节点 3118303215。",
+      "segments": [
+        {
+          "id": "qz-manggexiaoge-zhenweidao-zaocan",
+          "name": "真味道饮食店（青阳黑煤灶古早早餐）",
+          "category": "晋江古早早餐 / 黑煤灶花生仁汤·菜粿满煎糕",
+          "addressText": "泉州市晋江市梅岭街道南山路125号（青阳敏月公园斜坡拐角·官方POI“真味道饮食店”）",
+          "start": 0,
+          "end": 17.9,
+          "posterSecond": 3.2,
+          "summary": "晋江青阳敏月公园旁坚守四十余年的古早味黑煤灶早餐铺，老铁桶黑煤灶慢火熬制绵密花生仁汤，搭配现炸油条、菜粿、满煎糕、炸枣与咸煎，每天仅卖到上午十点多。",
+          "coordinates": [
+            118.569808,
+            24.814337
+          ],
+          "coordinateSystem": "WGS84",
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "晋江青阳敏月公园 / 南山路125号附近",
+            "basis": "video-poi-signboard-and-osm-entity",
+            "branchMatch": "poi-verified-approximate-road",
+            "note": "原视频官方POI直挂“真味道饮食店”，标题明示晋江青阳敏月公园附近且门头红牌与公开信息均指向梅岭街道南山路125号，邻近冻结福建OSM实体“晉江市敏月公園” way/601594425；主路网拓扑锚定公园旁连通道路 way/306824141 节点 3118303215。",
+            "reviewedOn": "2026-11-26",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 306824141,
+              "name": "未命名开放道路（晋江青阳敏月公园/南山路片区）",
+              "url": "https://www.openstreetmap.org/way/306824141",
+              "sourceDate": "2026-11-21",
+              "method": "landmark-way-and-adjacent-road-node",
+              "nodeId": 3118303215
+            }
+          },
+          "footageNote": "2026年1月原视频 · 原片提示上午十点多即售罄收摊，建议早起前往。"
+        }
+      ]
+    }
+  ]
+}

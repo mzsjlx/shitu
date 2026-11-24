@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "quanzhou",
+  "bounds": [
+    118.53,
+    24.8,
+    118.69,
+    24.98
+  ],
+  "source": {
+    "date": "2026-11-21",
+    "sha256": "19d4d090e6c101ff885f4c21b299aa6d5c27f0aa8a03f3abe6562443141c2478",
+    "url": "https://download.geofabrik.de/asia/china/fujian/fujian-261121.osm.pbf",
+    "fileName": "fujian-261121.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "networkSHA256": "f161b01d6b457683a904d373cf969464e2ff6fcc6786587820513568fe5f7dc4",
+  "bytes": 2526241,
+  "nodes": 37761,
+  "ways": 6789,
+  "footRestrictionWays": 0,
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
+}

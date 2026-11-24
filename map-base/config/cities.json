@@ -399,7 +399,7 @@
       "zoom": 15.5,
       "pitch": 54,
       "bearing": -18,
-      "minZoom": 12.0,
+      "minZoom": 12,
       "maxZoom": 19,
       "tiles": "data/cities/harbin/harbin.pmtiles",
       "demTiles": "data/cities/harbin/terrain/{z}/{x}/{y}.png",
@@ -423,6 +423,49 @@
         "manifest": "data/cities/harbin/source-manifest.json",
         "tileMetadata": "data/cities/harbin/tile-metadata.json",
         "terrainManifest": "data/cities/harbin/terrain-manifest.json"
+      },
+      "status": "local-validation-only"
+    },
+    "quanzhou": {
+      "name": "泉州",
+      "regionLabel": "古城核心 · 刺桐两江",
+      "coverageLabel": "泉州核心城区（涵盖鲤城古城西街/开元寺/中山路/涂门街/天后宫，丰泽浦西/领SHOW/东海/蟳埔村，清源山/泉州站/洛阳桥，及晋江桥南/五店市片区）",
+      "bounds": [
+        118.53,
+        24.8,
+        118.69,
+        24.98
+      ],
+      "center": [
+        118.586,
+        24.913
+      ],
+      "zoom": 15.5,
+      "pitch": 52,
+      "bearing": -15,
+      "minZoom": 11.5,
+      "maxZoom": 19,
+      "tiles": "data/cities/quanzhou/quanzhou.pmtiles",
+      "demTiles": "data/cities/quanzhou/terrain/{z}/{x}/{y}.png",
+      "demMinZoom": 11,
+      "demMaxZoom": 13,
+      "amapCityCode": "350500",
+      "landmarks": [],
+      "foodContent": {
+        "city": "quanzhou",
+        "records": "data/cities/quanzhou/food-records.json",
+        "videoLibrary": "data/cities/quanzhou/video-library.json",
+        "videoAssets": "data/cities/quanzhou/video-library-assets.json",
+        "videoPosters": "data/cities/quanzhou/video-posters.json",
+        "sprite": "assets/food-concepts.jpg",
+        "roadNetwork": "data/cities/quanzhou/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/quanzhou/roads-index.json",
+        "audit": "data/cities/quanzhou/data-audit.json",
+        "manifest": "data/cities/quanzhou/source-manifest.json",
+        "tileMetadata": "data/cities/quanzhou/tile-metadata.json",
+        "terrainManifest": "data/cities/quanzhou/terrain-manifest.json"
       },
       "status": "local-validation-only"
     }

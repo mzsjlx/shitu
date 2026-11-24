@@ -1,0 +1,135 @@
+{
+  "verifiedOn": "2026-11-23",
+  "passed": true,
+  "checks": [
+    {
+      "name": "1. config/cities.json includes valid quanzhou entry and retains all 6 prior cities",
+      "passed": true,
+      "details": {
+        "cityCount": 7,
+        "quanzhouBounds": [
+          118.53,
+          24.8,
+          118.69,
+          24.98
+        ],
+        "amapCityCode": "350500"
+      }
+    },
+    {
+      "name": "2. data/cities/quanzhou/quanzhou.pmtiles bytes and SHA256 match source-manifest.json",
+      "passed": true,
+      "details": {
+        "bytes": 2883645,
+        "sha256": "e7f6dcecf1b100023684430aba09c2cc39067dc1a7ddb98c202d93c1c283ae13",
+        "upstreamBuild": "20261122.pmtiles"
+      }
+    },
+    {
+      "name": "3. data-audit.json (304/304 tiles) and terrain-manifest.json (89 DEM PNGs) verified on disk",
+      "passed": true,
+      "details": {
+        "vectorTiles": 304,
+        "terrainTiles": 89
+      }
+    },
+    {
+      "name": "4. roads-index.json has valid Quanzhou road groups within bounds",
+      "passed": true,
+      "details": {
+        "roadGroups": 368
+      }
+    },
+    {
+      "name": "5. food-road-network.json bytes and SHA256 match manifest (LF-stable)",
+      "passed": true,
+      "details": {
+        "bytes": 2526241,
+        "sha256": "f161b01d6b457683a904d373cf969464e2ff6fcc6786587820513568fe5f7dc4",
+        "nodes": 37761,
+        "ways": 6789
+      }
+    },
+    {
+      "name": "6. food-road-router snaps all 23 located segments (22 places) <= 250m and routes across city & Jinjiang bridges",
+      "passed": true,
+      "details": {
+        "locatedSegments": 23,
+        "maxSnapMetres": 90.8,
+        "alingToQunzhong": "1719m",
+        "zhouniangniangToLinqingzuo": "5188m",
+        "linqingzuoToLidafu": "574m",
+        "xijieToWudianshiCrossRiver": "13247m"
+      }
+    },
+    {
+      "name": "7. allCityCatalogs loads 7 cities without collision; Quanzhou 5 sources / 28 segments / 1 merged place / posters & anchors match disk hashes",
+      "passed": true,
+      "details": {
+        "totalCities": 7,
+        "sources": 5,
+        "segments": 28,
+        "locatedSegments": 23,
+        "onMapPlaces": 22,
+        "mergedPlaces": 1,
+        "unlocated": 4,
+        "outOfBounds": 1
+      }
+    },
+    {
+      "name": "8. Global video-posters.json (539) and dist/data/video-library-assets.json (634) preserve all prior cities",
+      "passed": true,
+      "details": {
+        "globalPosters": 539,
+        "distAssetsTotal": 634,
+        "quanzhouClips": 28
+      }
+    },
+    {
+      "name": "9. Built HTML pages, 28 shop pages (with merged cross-links), and preview-quanzhou.html are valid",
+      "passed": true,
+      "details": {
+        "previewBytes": 13597170,
+        "shopPages": 28
+      }
+    },
+    {
+      "name": "10. Isolated media bundle import (5 sources / 28 clips), repeat idempotency (newFiles=0), and wrong-city rejection",
+      "passed": true,
+      "details": {
+        "bundleCount": 5,
+        "totalClips": 28,
+        "totalFirstNewFiles": 61,
+        "totalRepeatNewFiles": 0,
+        "wrongCityRejected": true,
+        "bundles": [
+          {
+            "name": "shitu-media-qz-nangua-7689786926581370533-a05d64bfca0ef53b.zip",
+            "bytes": 722847263,
+            "sha256": "9d93b754b309a0d10c394b28d9fbbeebb4ac9f9f7ff74b7f041e83bb0c8ca29d"
+          },
+          {
+            "name": "shitu-media-qz-yixuan-7699404713825538789-b44b099c92e52534.zip",
+            "bytes": 34702132,
+            "sha256": "9b10bf9255a750a97d3d20ef4f270d309fad0f36829ac020f23f8514679abe06"
+          },
+          {
+            "name": "shitu-media-qz-wxxin-7668988291496521856-c9aae71f122ac037.zip",
+            "bytes": 49453027,
+            "sha256": "f61e6c04e106271ac41f2fd6d7b9ccc47d5947351be178c3cc1f90e60385cb30"
+          },
+          {
+            "name": "shitu-media-qz-wxxin-7698276010811119744-db786f50888bdafa.zip",
+            "bytes": 42024652,
+            "sha256": "4cbe086038ca24f18fee7205ee53b7821905160ad5ffe3c8fa9dfb264958157d"
+          },
+          {
+            "name": "shitu-media-qz-shuibuzhaojiao-7700212754716979520-da8ad1c79dce3e0b.zip",
+            "bytes": 8174249,
+            "sha256": "170ab110c89efaa834125aa8d7bb99c9f29a8b51dc17296f926ce50941c6c9fa"
+          }
+        ]
+      }
+    }
+  ]
+}
