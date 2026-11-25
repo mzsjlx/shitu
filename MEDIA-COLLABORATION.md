@@ -1,5 +1,12 @@
 # 两台电脑共用地图与视频素材
 
+## 2026-11-22 补充：Fork 协作者发布规则与重打包 SHA256 防坑
+
+结合郑州 PR #11（[复核记录](output/research/zhengzhou-review-20261122.md)）及多城并行协作实测，新增两条硬约束：
+
+1. **Fork 协作者发布 Release 规则**：没有 `mzsjlx/shitu` 主仓库 Release 写权限的同学，直接将本城全部来源 ZIP 与 `.zip.json` 发布在自己**公开 Fork 仓库**的独立 Release 下，并在 `map-base/data/media-bundles.json` 填入该公开 Fork Release 的真实可下载 URL。**严禁**在尚未创建主仓 Release 时先把 404 的主仓下载链接写入索引。
+2. **重打包会改变 ZIP SHA256，必须以远端实际附件为准**：`npm run media:pack` 每次生成 ZIP 会写入当前文件时间戳，即使内容与字节数完全一致，ZIP 包体的 SHA256 也会变化；而 `media:import`（`media-bundles.mjs:38`）会强校验 `media-bundles.json` 中的 `sha256` 与 `bytes`，任何不一致都会导致接收端直接报错拒绝导入。因此写入或更新 `media-bundles.json` 后，务必与 Release 实际 `uploaded` 附件的服务端 digest 及 `video-library.json` 的 `clips` 数逐条核对，并用实际从 Release 下载的 ZIP 在隔离目录跑通 `media:import`。
+
 ## 2026-11-16 补充：武汉素材交付的核验方法
 
 武汉最终复核提交为 `488079f`，PR #10现已通过 `6019700` 合入主线。[正式Release](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-16-wuhan)于19:42核实为83个ZIP、83份摘要全部uploaded，共13,675,829,098字节；完整过程见 [复核记录](output/research/wuhan-followup-20261116.md)。以下作为后续城市的通用交付要求。

@@ -1,3 +1,5 @@
+> **2026-11-22 阅读止损导览：** 主线现已包含 7 城（重庆、长沙、柳州、南京、潮汕、武汉、郑州），最新城市开工与审核红线已浓缩至 [CITY-AGENT-STARTER.md](CITY-AGENT-STARTER.md) 顶部与 [PR-CHECKLIST.md](PR-CHECKLIST.md)（标杆验收脚本见 `map-base/scripts/review-zhengzhou-data.mjs` 与 `review-zhengzhou-browser.py`）。本文后半部分（2026-10-28 基线与第 6 节旧单城硬编码清单）仅作历史背景参考，不要被旧限制误导。
+
 ## 2026-11-16 补充：武汉接收端复核后的通用要求
 
 武汉 `488079f` / PR #10 已通过复核，并以 `6019700` 合入主线；后续城市仍须分别核对发布状态与合并状态。具体证据见 [最终复核](output/research/wuhan-followup-20261116.md)。以下适用于郑州及后续城市，用户当前明确要求优先，不新增人工批准流程。

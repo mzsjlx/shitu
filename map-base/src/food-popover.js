@@ -93,7 +93,7 @@ export class FoodPopover{
     if(originalURL){
       const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);
       const amapLink=el('a','food-popover-amap','高德搜索 ↗');
-      amapLink.href=amapSearchUrl(item.name,item.amapCityCode||this.cityCode||'330100');
+      amapLink.href=amapSearchUrl(item.name,item.amapCityCode||this.cityCode||'500000');
       amapLink.target='_blank';amapLink.rel='noopener noreferrer';
       amapLink.setAttribute('aria-label','在高德地图搜索'+item.name+'，新窗口打开');
       links.append(amapLink);

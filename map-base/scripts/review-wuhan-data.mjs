@@ -171,11 +171,11 @@ await check('6. food-road-router calculates genuine Wuhan routes (bridges, shops
 });
 
 // 7. Multi-city catalog loading & non-collision
-await check('7. allCityCatalogs loads all cities including Wuhan without ID collision', async () => {
+await check('7. allCityCatalogs loads all 6 cities without ID collision', async () => {
   const catalogs = await allCityCatalogs(root);
-  assert(catalogs.length >= 6, `Expected at least 6 cities, got ${catalogs.length}`);
+  assert.equal(catalogs.length, 6, `Expected 6 cities, got ${catalogs.length}`);
   const cities = catalogs.map(c => c.cityId);
-  assert(cities.includes('wuhan'), 'Wuhan included in cities');
+  assert.deepEqual(cities.sort(), ['changsha', 'chaoshan', 'chongqing', 'liuzhou', 'nanjing', 'wuhan'].sort());
   const wuhanCat = catalogs.find(c => c.cityId === 'wuhan');
   assert(wuhanCat, 'Wuhan catalog loaded successfully');
   assert.equal(wuhanCat.catalog.sources.length, 83);

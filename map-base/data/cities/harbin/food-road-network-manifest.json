@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "harbin",
+  "bounds": [
+    126.57,
+    45.72,
+    126.71,
+    45.81
+  ],
+  "source": {
+    "date": "2026-11-17",
+    "sha256": "161e4c652b253c81ae867ef446aea0cf5f05ae7dabe204feec33b7dac1da8b1b",
+    "url": "https://download.geofabrik.de/asia/china/heilongjiang.html",
+    "fileName": "heilongjiang-latest.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "networkSHA256": "f6c71632cf6e4e1373d4ea3ea08c25627bc8ce244f05a458e3beae5aff3839d5",
+  "bytes": 1919139,
+  "nodes": 27124,
+  "ways": 5944,
+  "footRestrictionWays": 0,
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
+}
