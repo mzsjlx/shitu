@@ -1,3 +1,23 @@
+## 2026-11-24 成都 PR #13 已通过独立复核并合入主线（9 城基线就绪）
+
+成都 `3555178` 已通过接收端独立复核，并在合入最新 8 城 `origin/main`（`b174b19`）后通过 [PR #13](https://github.com/mzsjlx/shitu/pull/13) 以 Squash 方式合入 `main`（避免早期历史中的抽帧临时对象进入主线包体积）。主线现包含 **9 城**：重庆、长沙、柳州（51 点版）、南京、潮汕、武汉、郑州、哈尔滨、成都。
+
+- 成都规模与地理连通：82 来源、50 位独立作者、116 段切片、101 处去重地点（**71 处在图美食点**、0 范围外、30 段无详细店址或跨城诚实标 `coordinates: null` 留库，12 处多博主归并）；冻结路网 `food-road-network.json` 严格保持原始 `sichuan-261110.osm.pbf` 提取版（`3,886,307` 字节，LF，SHA256 `12c1391a...`），86/86 在图片段真实 OSM 锚点全过，**71/71 在图点 100% 落入同一主连通分量 `4779165773`**（2,485/2,485 对连通）。
+- 素材与验收范围（按方案 B 首期收口）：Release [media-2026-11-12-chengdu](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-12-chengdu)（ID `455246557`）已上传全量 83 份 `.zip.json` 摘要与首期 **6 个真实视频 ZIP**（`cd-bozai`、`cd-chiyou`、`cd-suipo-7516`、`cd-suipo-7657`、`cd-wangxun`、`cd-xixichibupang`，共 `241.42 MB`，89/89 附件全部 `uploaded`、0 `starter`）；`media-bundles.json` 严格对齐仅登记此 6 包（0 个 404 URL 留库），剩余 76 个大包待后续分批补传。接收端已将此 6 包 **6/6 全量远端下载、重算本地 SHA256、执行隔离导入与二次幂等导入（`newFiles: 0`）**，并完成连续 3 店双采样实播停音、直线↔沿路切换、四视口（`>= 2/3`）及跨城零串台验证（11/11 PASS）。完整证据见 [成都复核与合并记录](output/research/chengdu-review-20261124.md)。
+- 无 `.local` 媒体的 9 城干净构建通过，保留全站 **560 个来源 / 1,013 张封面**（0 丢失、0 ID 冲突、0 脏文件）。
+
+## 2026-11-24 成都复核整改全量收口与 PR #13 交付（82 作品、50 作者名称、116 段、71 在图点，另有 30 段未上图）
+
+在工作分支 `codex/city-chengdu-prep` 下，响应接收端 2026-11-22 复核与 2026-11-24 阻塞/收口意见完成全量 5 项闭环整改：
+1. **主线合并冲突解决与公共源码 100% 还原**：合入包含武汉（PR #10）、郑州（PR #11）7 城基线的最新 `origin/main`，严格按城市/ID 保留全部既有 7 城增量，全局封面库达 891 张（既有 7 城封面 0 丢失）。彻底从 `origin/main` 还原柳州 `map-base/data/cities/liuzhou/video-library-assets.json` 及公共代码 `map-base/src/main.js`、`map-base/scripts/serve.mjs`、`map-base/src/index.html`，0 引入无关改动。
+2. **.gitattributes 补齐 LF 规则**：在 `.gitattributes` 中补齐成都冻结路网与清单的 LF 规则，确保跨平台检出哈希与字节绝对稳定（`food-road-network.json` 为 3,886,307 字节，SHA256: `12c1391a3d950f6020e0a12e603b86db98d703f59e8a748b20bbe3a698aac477`）。
+3. **公开 Release 与素材包库严密收口（方案 B）**：公开 Release `media-2026-11-12-chengdu`（ID `455246557`）全量 82 个作品 `.zip.json` 摘要均已 100% `uploaded`；已上传并实测可下载的 6 个真实视频 ZIP（`cd-bozai`、`cd-chiyou`、`cd-suipo-7516`、`cd-suipo-7657`、`cd-wangxun`、`cd-xixichibupang`，全部为 `uploaded`，0 `starter`），`map-base/data/media-bundles.json` 严格对齐仅保留此 6 包真实可下载条目（0 个 404 URL 留库），远端下载与导入测试通过（`newFiles: 0`），剩余 76 个大包待后续分批补传。
+4. **真实媒体探测与脚本清理**：`register-all-chengdu-media.mjs` 移除本机私有路径改用标准环境变量与真实 FFprobe 探测；清理 `map-base/scripts/` 中全部一次性临时脚本。
+5. **真实 OSM 锚点同步与往年视频标注**：`location-anchors.json` 真实 OSM 节点同步回 `video-library.json`，清理全部 86 处旧 `road:*` 与虚构 `nearestNode` 字段；为全部 116 段切片规范补齐 `footageNote`。
+6. **自动化评审脚本升级与强断言**：`review-chengdu.mjs` 消除固定端口与路径依赖，面积比采用严格 `>= (2 / 3)`；切至第 2 位博主先点击播放推进时间（双采样），切店与关窗停音采用 `Boolean(oldVideo) && oldVideo.paused && !oldHasSrc` 强断言；四视口与 7 城隔离测试全量通过（31/31 PASS）。
+7. **过程抽帧深度瘦身**：使用 `git rm -rf` 清理 `output/research/chengdu/` 中 335 MB（3,400+ 文件）抽帧与过程图，保留台账、审计与标准四视口截图，体积控制至 3.71 MB（远低于 10 MB 红线）。
+8. **正式编号 PR 交付**：已向 `mzsjlx/shitu` 提交正式 [PR #13](https://github.com/mzsjlx/shitu/pull/13)，按交付规范完整记录 82 作品、50 作者名称、116 段、71 在图点、30 段未上图及测试报告。
+
 ## 2026-11-24 柳州扩充 PR #9 已合入主线（8 城基线升级：柳州 51 在图点 / 64 切片）
 
 柳州扩充 `91a0370` 已通过 [PR #9](https://github.com/mzsjlx/shitu/pull/9) 合并至 `origin/main`，合并提交为 `f35fbf4102e899e40094f89463eab558edaf280d`。主线现包含 **8 城**：重庆、长沙、柳州（正式由初始 9 点版升级为 **51 在图点 / 64 切片完整版**）、南京、潮汕、武汉、郑州、哈尔滨；成都 PR #13 仍待补齐 Release 真实素材包与清理抽帧后复核。
