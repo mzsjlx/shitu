@@ -36,13 +36,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖滨长生路街区"
+            "label": "湖滨长生路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 429911041,
+              "name": "吴山路",
+              "url": "https://www.openstreetmap.org/way/429911041",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5290741675
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于湖滨长生路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-shiyi-chuanwei-paocaiyu",
@@ -59,13 +70,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "文三路黄姑山路街区"
+            "label": "文三路黄姑山路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 418290589,
+              "name": "文三路",
+              "url": "https://www.openstreetmap.org/way/418290589",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 12703248860
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于文三路黄姑山路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-shiyi-juemeijia-huntun",
@@ -82,13 +104,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "武林广场万寿亭街区"
+            "label": "武林广场万寿亭街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 4365305,
+              "name": "百井坊巷",
+              "url": "https://www.openstreetmap.org/way/4365305",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 343604508
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于武林广场万寿亭街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-shiyi-jinzhongbang-sifangcai",
@@ -105,13 +138,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "八卦新村虎玉路街区"
+            "label": "八卦新村虎玉路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1566536104,
+              "name": "凤凰山登山道（万松岭西-玉皇山）",
+              "url": "https://www.openstreetmap.org/way/1566536104",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 11292629574
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于八卦新村虎玉路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-shiyi-baijia-jiweiguan",
@@ -128,13 +172,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "清泰街定安路街区"
+            "label": "清泰街定安路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 6268119,
+              "name": "梅花碑",
+              "url": "https://www.openstreetmap.org/way/6268119",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 52571820
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于清泰街定安路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -165,13 +220,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "西湖植物园桃源岭街区"
+            "label": "西湖植物园桃源岭街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 583612115,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/583612115",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5579589275
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于西湖植物园桃源岭街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -202,13 +268,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "灵隐路西子湖四季街区"
+            "label": "灵隐路西子湖四季街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 229406121,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/229406121",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 2380102068
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于灵隐路西子湖四季街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         }
       ]
     },
@@ -239,13 +316,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖滨邮电路延安路街区"
+            "label": "湖滨邮电路延安路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 547542657,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/547542657",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5290741649
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于湖滨邮电路延安路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2021年原视频实拍 · 营业情况待到店确认。"
         }
       ]
     },
@@ -276,13 +364,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "黄龙保俶路曙光路街区"
+            "label": "黄龙保俶路曙光路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1552911433,
+              "name": "宝石一路",
+              "url": "https://www.openstreetmap.org/way/1552911433",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 14128751292
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于黄龙保俶路曙光路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2022年原视频实拍 · 营业情况待到店确认。"
         }
       ]
     },
@@ -313,13 +412,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "凤起路刀茅巷农贸市场街区"
+            "label": "凤起路刀茅巷农贸市场街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 614086829,
+              "name": "珠碧一弄",
+              "url": "https://www.openstreetmap.org/way/614086829",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5809183604
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于凤起路刀茅巷农贸市场街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -350,13 +460,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "文二西路竞舟路街区"
+            "label": "文二西路竞舟路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 578410811,
+              "name": "高技街",
+              "url": "https://www.openstreetmap.org/way/578410811",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 33992579
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于文二西路竞舟路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -387,13 +508,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "城东新塘路彭悦商务街区"
+            "label": "城东新塘路彭悦商务街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1372032728,
+              "name": "环站东路",
+              "url": "https://www.openstreetmap.org/way/1372032728",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5052668554
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于城东新塘路彭悦商务街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -424,13 +556,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "运河LOFT49吉如路街区"
+            "label": "运河LOFT49吉如路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1364767114,
+              "name": "小河路",
+              "url": "https://www.openstreetmap.org/way/1364767114",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 304206931
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于运河LOFT49吉如路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -461,13 +604,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "文三路黄姑山路街区"
+            "label": "文三路黄姑山路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 28977979,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/28977979",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 318635802
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于文三路黄姑山路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -498,13 +652,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "文三西路竞舟路街区"
+            "label": "文三西路竞舟路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 636803529,
+              "name": "嘉苑弄",
+              "url": "https://www.openstreetmap.org/way/636803529",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 12842382494
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于文三西路竞舟路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -535,13 +700,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "清泰街定安路街区"
+            "label": "清泰街定安路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 6268119,
+              "name": "梅花碑",
+              "url": "https://www.openstreetmap.org/way/6268119",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 52571820
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于清泰街定安路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。",
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。",
           "placeId": "hz-shiyi-baijia-jiweiguan"
         }
       ]
@@ -568,18 +744,29 @@
           "posterSecond": 520,
           "summary": "米其林指南入选餐厅，做面40年阿炳师傅主理，招牌半汤儿虾爆鳝面，鳝段外酥里嫩镬气十足。",
           "coordinates": [
-            120.1738,
-            30.2405
+            120.1735,
+            30.2407
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "吴山河坊街中河中路街区"
+            "label": "吴山河坊街中河中路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1528173420,
+              "name": "江城路",
+              "url": "https://www.openstreetmap.org/way/1528173420",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13926296273
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于吴山河坊街中河中路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         }
       ]
     },
@@ -610,13 +797,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "解放路建国中路街区"
+            "label": "解放路建国中路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 571374303,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/571374303",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5491465851
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于解放路建国中路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-heihei-minchu",
@@ -633,13 +831,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "朝晖河东路美食街区"
+            "label": "朝晖河东路美食街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1388134014,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/1388134014",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 12850019819
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于朝晖河东路美食街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -670,13 +879,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "教工路文一路街区"
+            "label": "教工路文一路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 22895928,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/22895928",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 246481639
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于教工路文一路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-wasabeibei-didao-hangbangcai",
@@ -693,9 +913,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "建国南路断河头小区街区"
+            "label": "建国南路断河头小区街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 513971947,
+              "name": "江城路",
+              "url": "https://www.openstreetmap.org/way/513971947",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13926364315
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于建国南路断河头老小区，经度纬度吸附杭州开放道路网络。",
@@ -716,9 +947,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "鼓楼十五奎巷大井巷街区"
+            "label": "鼓楼十五奎巷大井巷街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 514240058,
+              "name": "牛羊司巷",
+              "url": "https://www.openstreetmap.org/way/514240058",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 4813551887
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于鼓楼历史街区，经度纬度吸附杭州开放道路网络。",
@@ -739,9 +981,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "朝晖新市街163号街区"
+            "label": "朝晖新市街163号街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 518850535,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/518850535",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5060379643
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，蓝底门牌新市街163号清晰可见，经度纬度吸附杭州开放道路网络。",
@@ -776,13 +1029,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "城西古墩路新安华庭街区"
+            "label": "城西古墩路新安华庭街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1363398022,
+              "name": "塘萍路",
+              "url": "https://www.openstreetmap.org/way/1363398022",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 12623923144
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于城西古墩路新安华庭街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         }
       ]
     },
@@ -813,13 +1077,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "运河走廊储运路好运街街区"
+            "label": "运河走廊储运路好运街街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 568128213,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/568128213",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5466534964
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于运河走廊储运路好运街街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -850,13 +1125,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "滨江江汉路天街商业街区"
+            "label": "滨江江汉路天街商业街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 522150716,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/522150716",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5086262319
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于滨江江汉路天街商业街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -887,13 +1173,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "莫干山路潮王路街区"
+            "label": "莫干山路潮王路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 643034550,
+              "name": "新河坝巷",
+              "url": "https://www.openstreetmap.org/way/643034550",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5629941832
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于莫干山路潮王路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -924,13 +1221,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "滨江滨盛路无限公园街区"
+            "label": "滨江滨盛路无限公园街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 374232815,
+              "name": "物联网街",
+              "url": "https://www.openstreetmap.org/way/374232815",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 3776044521
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于滨江滨盛路无限公园街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -961,13 +1269,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "康桥平安桥世纪田园街区"
+            "label": "康桥平安桥世纪田园街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 187246059,
+              "name": "石祥路",
+              "url": "https://www.openstreetmap.org/way/187246059",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5299311881
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于康桥平安桥世纪田园街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -998,13 +1317,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "中山北路西湖文化广场街区"
+            "label": "中山北路西湖文化广场街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 377972101,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/377972101",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 3813795703
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于中山北路西湖文化广场街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1035,13 +1365,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "城西古墩路文一西路街区"
+            "label": "城西古墩路文一西路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 414671995,
+              "name": "毛家桥路",
+              "url": "https://www.openstreetmap.org/way/414671995",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 4157872985
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于城西古墩路文一西路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         }
       ]
     },
@@ -1072,13 +1413,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "运河湖墅南路霞湾巷街区"
+            "label": "运河湖墅南路霞湾巷街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 653506295,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/653506295",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 6124466246
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于运河湖墅南路霞湾巷街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         }
       ]
     },
@@ -1109,13 +1461,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖滨光复路日新桥弄街区"
+            "label": "湖滨光复路日新桥弄街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 536924374,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/536924374",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5200235408
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于湖滨光复路日新桥弄街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1146,13 +1509,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "龙翔桥吴山路学士路街区"
+            "label": "龙翔桥吴山路学士路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 973021513,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/973021513",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 9006000083
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于龙翔桥吴山路学士路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-yikou-nanfang-dabao",
@@ -1169,13 +1543,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "龙翔桥延安路工联商圈"
+            "label": "龙翔桥延安路工联商圈",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 14248434,
+              "name": "东坡路",
+              "url": "https://www.openstreetmap.org/way/14248434",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 26304814
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于龙翔桥延安路工联商圈，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-yikou-wumingshi-mianguan",
@@ -1192,13 +1577,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖滨青年路开元路街区"
+            "label": "湖滨青年路开元路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1395672055,
+              "name": "惠兴路",
+              "url": "https://www.openstreetmap.org/way/1395672055",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 26592198
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于湖滨青年路开元路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1229,13 +1625,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "紫阳大马弄太庙街区"
+            "label": "紫阳大马弄太庙街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1059460028,
+              "name": "水门南弄",
+              "url": "https://www.openstreetmap.org/way/1059460028",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5043949808
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于紫阳大马弄太庙街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-youyou-jinzhongbang",
@@ -1253,13 +1660,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "八卦新村虎玉路街区"
+            "label": "八卦新村虎玉路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1566536104,
+              "name": "凤凰山登山道（万松岭西-玉皇山）",
+              "url": "https://www.openstreetmap.org/way/1566536104",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 11292629574
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于八卦新村虎玉路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1290,13 +1708,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "拱墅大关苑路西四苑街区"
+            "label": "拱墅大关苑路西四苑街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 533157756,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/533157756",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5172921692
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于拱墅大关苑路西四苑街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1324,10 +1753,21 @@
           "footageNote": "羊桑打卡天目里提前两月预约的柿野餐厅实况",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "柿野（天目里店）"
+            "label": "柿野（天目里店）",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1483343631,
+              "name": "飞达巷",
+              "url": "https://www.openstreetmap.org/way/1483343631",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13602197032
+            }
           },
           "addressNote": "真实探店实拍，经度纬度吸附杭州开放道路网络。"
         }
@@ -1358,10 +1798,21 @@
           "footageNote": "牛牛很挑食实测莫干山路正宗泰北土菜与盐烤鱼",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "PICATHAM Thai Cuisine & Wine"
+            "label": "PICATHAM Thai Cuisine & Wine",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 572780592,
+              "name": "环城西路",
+              "url": "https://www.openstreetmap.org/way/572780592",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13441789030
+            }
           },
           "addressNote": "真实探店实拍，经度纬度吸附杭州开放道路网络。"
         }
@@ -1392,10 +1843,21 @@
           "footageNote": "杰欧探访对照馆子招牌热出白切鸡",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "对照馆子（蔡马店）"
+            "label": "对照馆子（蔡马店）",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 539765575,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/539765575",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13640153906
+            }
           },
           "addressNote": "真实探店实拍，经度纬度吸附杭州开放道路网络。"
         },
@@ -1415,10 +1877,21 @@
           "footageNote": "杰欧品评大井巷常顺茶食慢炖羊肉锅",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "常顺茶食（大井巷店）"
+            "label": "常顺茶食（大井巷店）",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 331645751,
+              "name": "望江路",
+              "url": "https://www.openstreetmap.org/way/331645751",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 770713092
+            }
           },
           "addressNote": "真实探店实拍，经度纬度吸附杭州开放道路网络。"
         },
@@ -1438,10 +1911,21 @@
           "footageNote": "杰欧实测鼓楼旁水墨徽山野土菜大桌丰盛硬菜",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "水墨徽·山野土菜（鼓楼店）"
+            "label": "水墨徽·山野土菜（鼓楼店）",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 513977463,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/513977463",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5022563267
+            }
           },
           "addressNote": "真实探店实拍，经度纬度吸附杭州开放道路网络。"
         }
@@ -1472,10 +1956,21 @@
           "footageNote": "jiding探访滨江天街鸡汤关东煮与名古屋鸡翅",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "柑杯·鸡汤关东煮（ODEN & BEER）"
+            "label": "柑杯·鸡汤关东煮（ODEN & BEER）",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 522150715,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/522150715",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5086262299
+            }
           },
           "addressNote": "真实探店实拍，经度纬度吸附杭州开放道路网络。"
         },
@@ -1495,10 +1990,21 @@
           "footageNote": "jiding推荐滨江天街寿司正传与炭烤鳗鱼",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "寿司正传（滨江天街店）"
+            "label": "寿司正传（滨江天街店）",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 522150716,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/522150716",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5086262319
+            }
           },
           "addressNote": "真实探店实拍，经度纬度吸附杭州开放道路网络。"
         },
@@ -1518,10 +2024,21 @@
           "footageNote": "jiding打卡延安路影子岛招牌杏仁炸鸡",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "影子岛韩国料理（武林店）"
+            "label": "影子岛韩国料理（武林店）",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 518356742,
+              "name": "孩儿巷",
+              "url": "https://www.openstreetmap.org/way/518356742",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 26870176
+            }
           },
           "addressNote": "真实探店实拍，经度纬度吸附杭州开放道路网络。"
         },
@@ -1541,10 +2058,21 @@
           "footageNote": "jiding推荐星光大道MiangMiang泰馆咖喱罗氏虾",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "Miang·Miang泰馆（星光大道店）"
+            "label": "Miang·Miang泰馆（星光大道店）",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 587814425,
+              "name": "江陵路",
+              "url": "https://www.openstreetmap.org/way/587814425",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 12710226225
+            }
           },
           "addressNote": "真实探店实拍，经度纬度吸附杭州开放道路网络。"
         }
@@ -1578,13 +2106,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "紫金港虾龙圩街区"
+            "label": "紫金港虾龙圩街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 572774522,
+              "name": "丰潭路",
+              "url": "https://www.openstreetmap.org/way/572774522",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5502483637
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于浙大紫金港虾龙圩美食街，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 夜市出摊时间以现场为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1615,13 +2154,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "望江门莫邪塘街区"
+            "label": "望江门莫邪塘街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 345741891,
+              "name": "东霞巷",
+              "url": "https://www.openstreetmap.org/way/345741891",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5017560322
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于望江门莫邪塘南村街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-xietumu-wener-caishi",
@@ -1638,13 +2188,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "文二路学院路街区"
+            "label": "文二路学院路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 571884273,
+              "name": "保俶北路",
+              "url": "https://www.openstreetmap.org/way/571884273",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 26882520
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于文二菜市街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-xietumu-quanshi-niurou",
@@ -1661,13 +2222,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "绍兴路德胜立交街区"
+            "label": "绍兴路德胜立交街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1363645705,
+              "name": "绍兴路",
+              "url": "https://www.openstreetmap.org/way/1363645705",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13533546659
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于绍兴路德胜立交街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-xietumu-feiyue-maocai",
@@ -1684,13 +2256,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "文三路万塘路街区"
+            "label": "文三路万塘路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 594458441,
+              "name": "学院路",
+              "url": "https://www.openstreetmap.org/way/594458441",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13674051018
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于万塘路文三路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1721,13 +2304,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "西溪路古荡街区"
+            "label": "西溪路古荡街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1363790577,
+              "name": "曙光路",
+              "url": "https://www.openstreetmap.org/way/1363790577",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 76568037
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于西溪路古荡街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1758,13 +2352,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "解放路官巷口街区"
+            "label": "解放路官巷口街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 383405871,
+              "name": "西湖大道",
+              "url": "https://www.openstreetmap.org/way/383405871",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 330039852
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于解放路官巷口街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-luxiaojun-xinzhouji-goulou",
@@ -1781,13 +2386,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "吴山鼓楼十五奎巷街区"
+            "label": "吴山鼓楼十五奎巷街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 813062936,
+              "name": "永昌坝弄",
+              "url": "https://www.openstreetmap.org/way/813062936",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13754103021
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于鼓楼十五奎巷街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-luxiaojun-panfangchun-jianjiao",
@@ -1804,13 +2420,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖滨延安路工联街区"
+            "label": "湖滨延安路工联街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 547542644,
+              "name": "浣沙路（公交专用道）",
+              "url": "https://www.openstreetmap.org/way/547542644",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 12627942897
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于延安路工联街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1841,13 +2468,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "江城路候潮门街区"
+            "label": "江城路候潮门街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 546242689,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/546242689",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5278890847
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于江城路候潮门街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-yizhikaizi-liji-suyu",
@@ -1864,13 +2502,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "大马弄察院前街区"
+            "label": "大马弄察院前街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 420546413,
+              "name": "水门南弄",
+              "url": "https://www.openstreetmap.org/way/420546413",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 4204918940
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于大马弄老街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 现炸现捞，趁热食用风味最佳。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-yizhikaizi-sunnainai-congbaohui",
@@ -1887,13 +2536,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "中山南路鼓楼街区"
+            "label": "中山南路鼓楼街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 513971947,
+              "name": "江城路",
+              "url": "https://www.openstreetmap.org/way/513971947",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13926364331
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于中山南路鼓楼街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-yizhikaizi-youbu-doujiang",
@@ -1910,13 +2570,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "中山南路大马弄街区"
+            "label": "中山南路大马弄街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 516639243,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/516639243",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5043146312
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于中山南路大马弄街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 建议清晨早市到店品尝。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-yizhikaizi-baomei-dianxin",
@@ -1933,13 +2604,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "城头巷清泰街区"
+            "label": "城头巷清泰街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 576784124,
+              "name": "江城路",
+              "url": "https://www.openstreetmap.org/way/576784124",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13926364304
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于城头巷清泰街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 每日限量现包现煎。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1970,13 +2652,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "孤山路街区"
+            "label": "孤山路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1470146569,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/1470146569",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13482813349
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于孤山路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -1986,7 +2679,7 @@
       "title": "在杭州，吃过一次就念念不忘的山楂排骨锅…… 在西湖",
       "url": "https://www.douyin.com/video/7625923894314093833",
       "shareURL": "https://v.douyin.com/WNI3S7Zh2Y0/",
-      "publishedOn": "2026-12-12",
+      "publishedOn": "2026-04-07",
       "durationSeconds": 108,
       "sourceSHA256": "52edd93f220c002056d531e206ed146bc5993c79fedf597e1ec5323cc67e8f71",
       "acquisitionStatus": "acquired",
@@ -2007,13 +2700,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖滨商圈街区"
+            "label": "湖滨商圈街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 4362907,
+              "name": "邮电路",
+              "url": "https://www.openstreetmap.org/way/4362907",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 8086729611
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于湖滨商圈街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2044,13 +2748,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "钱江世纪城奥体街区"
+            "label": "钱江世纪城奥体街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 582090772,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/582090772",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5565479291
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于奥体钱江世纪城街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2060,7 +2775,7 @@
       "title": "萧山这家每天爆满的蒸菜馆真的太好吃了！任何时候来都...",
       "url": "https://www.douyin.com/video/7608491980360158662",
       "shareURL": "https://v.douyin.com/Dfj_rrV-fyw/",
-      "publishedOn": "2026-12-14",
+      "publishedOn": "2026-02-19",
       "durationSeconds": 162,
       "sourceSHA256": "772a52f2cabb2eb8b3efdc0817922fb6842541ef1a5e58641670eab274cda99c",
       "acquisitionStatus": "acquired",
@@ -2081,13 +2796,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "钱塘江南岸市心路街区"
+            "label": "钱塘江南岸市心路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 519323443,
+              "name": "建设三路",
+              "url": "https://www.openstreetmap.org/way/519323443",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 7541705637
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于钱塘江南岸市心中路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2118,13 +2844,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "滨江高教园区街区"
+            "label": "滨江高教园区街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 113467381,
+              "name": "安业路",
+              "url": "https://www.openstreetmap.org/way/113467381",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 1286462976
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于滨江高教园区街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-laozhou-117-mianguan",
@@ -2141,13 +2878,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "望江门海潮街区"
+            "label": "望江门海潮街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 529856789,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/529856789",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5146592637
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于望江门海潮街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2178,13 +2926,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "转塘象山艺术公社街区"
+            "label": "转塘象山艺术公社街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 544073033,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/544073033",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13519888460
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于转塘象山艺术公社街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2215,13 +2974,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "舟山东路美食街区"
+            "label": "舟山东路美食街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 524380056,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/524380056",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5103090114
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于舟山东路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2247,18 +3017,29 @@
           "posterSecond": 12,
           "summary": "西湖湖滨排队王厚切三明治，十多块钱超高性价比，食材层层厚堆、断层饱满诱人，咸口肉蛋扎实顶饱，甜口芋泥奶冻浓郁治愈。",
           "coordinates": [
-            120.1607,
-            30.2521
+            120.1605,
+            30.2524
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "西湖邮电路商圈"
+            "label": "西湖邮电路商圈",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 4558301,
+              "name": "吴山路",
+              "url": "https://www.openstreetmap.org/way/4558301",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5034020830
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于邮电路延安路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2289,13 +3070,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "胜利河美食街区"
+            "label": "胜利河美食街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 501970164,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/501970164",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 4925964646
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于霞湾巷胜利河美食街，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2326,13 +3118,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "中河南路侯潮门街区"
+            "label": "中河南路侯潮门街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 529713471,
+              "name": "吟潮路",
+              "url": "https://www.openstreetmap.org/way/529713471",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13531436146
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于中河南路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2363,13 +3166,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "中山中路南宋御街商圈"
+            "label": "中山中路南宋御街商圈",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 4375948,
+              "name": "金钗袋巷",
+              "url": "https://www.openstreetmap.org/way/4375948",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 4204918928
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于中山中路街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         },
         {
           "id": "hz-xiaolitongxue-longxiang-choudoufu",
@@ -2386,13 +3200,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "龙翔桥长生路商圈"
+            "label": "龙翔桥长生路商圈",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 429911041,
+              "name": "吴山路",
+              "url": "https://www.openstreetmap.org/way/429911041",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5290741675
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于长生路龙翔桥街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2423,13 +3248,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "乐堤港运河街区"
+            "label": "乐堤港运河街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 577190889,
+              "name": "上塘路",
+              "url": "https://www.openstreetmap.org/way/577190889",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5103230299
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于乐堤港运河商务街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2460,13 +3296,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "滨江闻涛路沿江街区"
+            "label": "滨江闻涛路沿江街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 519650757,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/519650757",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5066666114
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于滨江闻涛路沿江街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年原视频实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
         }
       ]
     },
@@ -2492,9 +3339,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖滨银泰in77街区"
+            "label": "湖滨银泰in77街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1395672053,
+              "name": "邮电路",
+              "url": "https://www.openstreetmap.org/way/1395672053",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 12918837350
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于延安路湖滨商圈核心，经度纬度吸附杭州开放道路网络。",
@@ -2515,9 +3373,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "龙翔桥工联CC街区"
+            "label": "龙翔桥工联CC街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1395672055,
+              "name": "惠兴路",
+              "url": "https://www.openstreetmap.org/way/1395672055",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 28583713
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于工联CC延安路街区，经度纬度吸附杭州开放道路网络。",
@@ -2550,9 +3419,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "庆春路浙一医院街区"
+            "label": "庆春路浙一医院街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 519348618,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/519348618",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5064309534
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于庆春路大学路口街区，经度纬度吸附杭州开放道路网络。",
@@ -2573,9 +3453,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "定安路后市街街区"
+            "label": "定安路后市街街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 4880743,
+              "name": "中河中路",
+              "url": "https://www.openstreetmap.org/way/4880743",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 52572010
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于定安路吴山街区，经度纬度吸附杭州开放道路网络。",
@@ -2596,9 +3487,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "武林广场体育场路街区"
+            "label": "武林广场体育场路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 625903206,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/625903206",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 31913678
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于武林广场核心街区，经度纬度吸附杭州开放道路网络。",
@@ -2631,9 +3533,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "滨江中赢国际生活广场街区"
+            "label": "滨江中赢国际生活广场街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 293805578,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/293805578",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5086262294
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于滨江区江汉路中赢国际，经度纬度吸附杭州开放道路网络。",
@@ -2666,9 +3579,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "钱塘江南岸市心中路万象汇街区"
+            "label": "钱塘江南岸市心中路万象汇街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 970321804,
+              "name": "建设三路",
+              "url": "https://www.openstreetmap.org/way/970321804",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 8979505913
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，经度纬度吸附钱塘江南岸路网节点。",
@@ -2701,13 +3625,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖墅南路仓基新村街区"
+            "label": "湖墅南路仓基新村街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 515378522,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/515378522",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5033360543
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于湖墅南路仓基新村街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2025年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         }
       ],
       "sourceSHA256": "90a16a063a8b1843fce0ca8aee5dd0ca2b4dd68073c45127c7c37ef3ec61a46f",
@@ -2735,9 +3670,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "新塘路火车东站街区"
+            "label": "新塘路火车东站街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1453056066,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/1453056066",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13325855743
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于新塘路东站商圈，经度纬度吸附杭州开放道路网络。",
@@ -2769,9 +3715,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "东站万象汇商业街区"
+            "label": "东站万象汇商业街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 587820086,
+              "name": "东宁路",
+              "url": "https://www.openstreetmap.org/way/587820086",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5577761043
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于东站万象汇商圈，经度纬度吸附杭州开放道路网络。",
@@ -2803,9 +3760,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "京杭大运河拱宸桥街区"
+            "label": "京杭大运河拱宸桥街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 539636869,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/539636869",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5221448910
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于京杭大运河拱宸桥运河上街，经度纬度吸附杭州开放道路网络。",
@@ -2826,9 +3794,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "中山北路武林商业街区"
+            "label": "中山北路武林商业街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 579074524,
+              "name": "长宁街",
+              "url": "https://www.openstreetmap.org/way/579074524",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 60167980
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于中山北路武林商圈，经度纬度吸附杭州开放道路网络。",
@@ -2860,9 +3839,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "建设三路博奥路商业街区"
+            "label": "建设三路博奥路商业街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 154646651,
+              "name": "博奥路",
+              "url": "https://www.openstreetmap.org/way/154646651",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13341989611
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于萧山建设三路商圈，经度纬度吸附杭州开放道路网络。",
@@ -2894,9 +3884,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "中山北路二圣庙前商业街区"
+            "label": "中山北路二圣庙前商业街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 491920827,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/491920827",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 4840044323
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于中山北路二圣庙前停车场内，经度纬度吸附杭州开放道路网络。",
@@ -2928,9 +3929,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "钱江世纪城奥体博览中心街区"
+            "label": "钱江世纪城奥体博览中心街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1573390053,
+              "name": "书音路",
+              "url": "https://www.openstreetmap.org/way/1573390053",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 14331280940
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于钱江世纪城利丰路商圈，经度纬度吸附杭州开放道路网络。",
@@ -2962,13 +3974,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "滨江滨盛路中南银座街区"
+            "label": "滨江滨盛路中南银座街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1374971796,
+              "name": "江南大道",
+              "url": "https://www.openstreetmap.org/way/1374971796",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 8997356683
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于滨江区滨盛路潮上中南银座，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2025年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         }
       ],
       "sourceSHA256": "a87e84f0b4ac2df3383e0b08931bda4d1ab523d68c467673536fcccf52152b47",
@@ -2996,9 +4019,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "紫阳街道大马弄城隍牌楼街区"
+            "label": "紫阳街道大马弄城隍牌楼街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 513977494,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/513977494",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5022563294
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于大马弄市井早市核心段，经度纬度吸附杭州开放道路网络。",
@@ -3030,9 +4064,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "复兴南街复兴南苑商住街区"
+            "label": "复兴南街复兴南苑商住街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 522939240,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/522939240",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5092046620
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于复兴南街复兴南苑底商，经度纬度吸附杭州开放道路网络。",
@@ -3064,9 +4109,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "笕桥街道克拉天玺商务街区"
+            "label": "笕桥街道克拉天玺商务街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 328903393,
+              "name": "天城路",
+              "url": "https://www.openstreetmap.org/way/328903393",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 3357256016
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于笕桥克拉天玺商圈，经度纬度吸附杭州开放道路网络。",
@@ -3098,9 +4154,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "武林广场万寿亭商业街区"
+            "label": "武林广场万寿亭商业街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 5041736,
+              "name": "直戒坛寺巷",
+              "url": "https://www.openstreetmap.org/way/5041736",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 35674107
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于万寿亭街国大商圈巷内，经度纬度吸附杭州开放道路网络。",
@@ -3132,9 +4199,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "清河坊高银街历史街区"
+            "label": "清河坊高银街历史街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1482749198,
+              "name": "中河中路辅道",
+              "url": "https://www.openstreetmap.org/way/1482749198",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 3771391596
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，镜头正对高银街皇饭儿对面露天伞座，经度纬度吸附杭州开放道路网络。",
@@ -3166,9 +4244,20 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "武林广场杭州中心商圈"
+            "label": "武林广场杭州中心商圈",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 4898012,
+              "name": "天水巷",
+              "url": "https://www.openstreetmap.org/way/4898012",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 3387246579
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于武林广场杭州中心商圈，经度纬度吸附杭州开放道路网络。",
@@ -3188,7 +4277,7 @@
         {
           "id": "hz-dadadawanzi-guihe-xiaoguan",
           "name": "归禾小馆（西湖湖滨店）",
-          "category": "创意杭帮菜 · 湖滨小巷馆子",
+          "category": "西湖融合私房菜 / 暖锅创意小馆",
           "addressText": "杭州市上城区吴山路湖滨银泰in77旁小巷（近西湖湖滨）",
           "start": 0,
           "end": 75,
@@ -3200,13 +4289,25 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖滨银泰吴山路街区"
+            "label": "湖滨银泰吴山路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 4362907,
+              "name": "邮电路",
+              "url": "https://www.openstreetmap.org/way/4362907",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 8086729611
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "多博主合用同一点位，位于湖滨in77旁吴山路小巷，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2026年探店实拍 · 具体营业时间以到店为准。",
+          "placeId": "hz-gmnini-guihe-xiaoguan"
         }
       ],
       "sourceSHA256": "22c62f504d68c0aea89702dae1c8965303d67799d02c23e9d0502c434287b6c6",
@@ -3234,13 +4335,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "濮家新村社区街区"
+            "label": "濮家新村社区街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1373129688,
+              "name": "景昙路",
+              "url": "https://www.openstreetmap.org/way/1373129688",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 26685020
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于濮家社区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2025年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         },
         {
           "id": "hz-ppchaonengxuan-xiaolin-naicha",
@@ -3257,13 +4369,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖滨商圈延安路街区"
+            "label": "湖滨商圈延安路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 566000825,
+              "name": "平海路",
+              "url": "https://www.openstreetmap.org/way/566000825",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5290737081
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于湖滨商圈，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2025年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         },
         {
           "id": "hz-ppchaonengxuan-silimei-tianpin",
@@ -3280,13 +4403,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "湖滨商圈延安路街区"
+            "label": "湖滨商圈延安路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 589384027,
+              "name": "平海路",
+              "url": "https://www.openstreetmap.org/way/589384027",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 5290737082
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于湖滨商圈，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2025年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         },
         {
           "id": "hz-ppchaonengxuan-wangshi-shaobing",
@@ -3303,13 +4437,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "西溪路古荡益乐路街区"
+            "label": "西溪路古荡益乐路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1449381668,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/1449381668",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 13294484681
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于西溪路万枫酒店对面，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2025年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         },
         {
           "id": "hz-ppchaonengxuan-hangge-youbaoxia",
@@ -3326,13 +4471,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "中山中路解放路街区"
+            "label": "中山中路解放路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 517062668,
+              "name": "光复路",
+              "url": "https://www.openstreetmap.org/way/517062668",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 10935497887
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于市中心杭帮菜街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2025年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         },
         {
           "id": "hz-ppchaonengxuan-caihe-guangtou",
@@ -3349,13 +4505,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "采荷街道双菱路街区"
+            "label": "采荷街道双菱路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 572777357,
+              "name": "庆春东路",
+              "url": "https://www.openstreetmap.org/way/572777357",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 12703248820
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于采荷街道，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2025年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         },
         {
           "id": "hz-ppchaonengxuan-zhonger-mianguan",
@@ -3372,13 +4539,24 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "保俶路宝石山脚街区"
+            "label": "保俶路宝石山脚街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 32078513,
+              "name": "开放道路",
+              "url": "https://www.openstreetmap.org/way/32078513",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 6642989194
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于保俶路总店街区，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2025年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         },
         {
           "id": "hz-ppchaonengxuan-zhujia-sanjiemei",
@@ -3395,17 +4573,29 @@
           ],
           "planningLocation": {
             "accuracy": "approximate",
-            "label": "清泰街建国南路街区"
+            "label": "清泰街建国南路街区",
+            "basis": "video-address",
+            "reviewedOn": "2026-11-25",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 1302798051,
+              "name": "东河绿道",
+              "url": "https://www.openstreetmap.org/way/1302798051",
+              "sourceDate": "2026-11-20",
+              "method": "original-way-node",
+              "nodeId": 12065691869
+            }
           },
-          "locationStatus": "approximate",
+          "locationStatus": "approximate-planning",
           "routeEligible": false,
           "coordinateSystem": "WGS84",
           "addressNote": "真实探店实拍，位于老城区巷弄，经度纬度吸附杭州开放道路网络。",
-          "footageNote": "2025年探店实拍 · 具体营业时间以到店为准。"
+          "footageNote": "2025年原视频实拍 · 营业情况待到店确认。"
         }
       ],
       "sourceSHA256": "0bef5437e60beae4d42889929f022112dc0f428e8c21db6e4bbe0565d80fdbe9",
       "durationSeconds": 633.9
     }
-  ]
+  ],
+  "updatedAt": "2026-11-25"
 }
