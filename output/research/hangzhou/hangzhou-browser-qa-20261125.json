@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://127.0.0.1:55787",
+  "baseUrl": "http://127.0.0.1:62706",
   "distDir": "D:\\Antigravity\\地图\\.local\\worktrees\\hangzhou-prep\\map-base\\dist",
   "expectLocalVideos": true,
   "checks": {
@@ -14,8 +14,8 @@
       "matched": true
     },
     "videoPlayback": {
-      "multiCreatorAdvance1": 0.871,
-      "multiCreatorAdvance2": 0.864,
+      "multiCreatorAdvance1": 0.874,
+      "multiCreatorAdvance2": 0.869,
       "creatorSwitchCleanup": {
         "exists": true,
         "paused": true,
@@ -56,18 +56,18 @@
         "vw": 1440,
         "vh": 960,
         "pop": {
-          "left": 827,
-          "top": 318.15625,
-          "right": 1137,
-          "bottom": 820.65625,
-          "width": 310,
-          "height": 502.5
+          "left": 302.99005126953125,
+          "top": 261.0417175292969,
+          "right": 613.039794921875,
+          "bottom": 820.6314392089844,
+          "width": 310.04974365234375,
+          "height": 559.5897216796875
         },
         "media": {
-          "width": 296,
-          "height": 350
+          "width": 296.0474548339844,
+          "height": 391.06268310546875
         },
-        "mediaRatio": 0.6650617878350185,
+        "mediaRatio": 0.667277685564227,
         "inViewport": true,
         "screenshot": "D:\\Antigravity\\地图\\.local\\worktrees\\hangzhou-prep\\map-base\\.local\\reviews\\hangzhou\\qa-desktop-1440.png"
       },
@@ -75,18 +75,18 @@
         "vw": 390,
         "vh": 844,
         "pop": {
-          "left": 117.99858093261719,
-          "top": 326.9817199707031,
-          "right": 378.0056610107422,
-          "bottom": 831.9954833984375,
-          "width": 260.007080078125,
-          "height": 505.0137634277344
+          "left": 118,
+          "top": 270,
+          "right": 378,
+          "bottom": 832,
+          "width": 260,
+          "height": 562
         },
         "media": {
-          "width": 246.0067138671875,
-          "height": 355.0096740722656
+          "width": 246,
+          "height": 396
         },
-        "mediaRatio": 0.6651180886220619,
+        "mediaRatio": 0.6666849165069806,
         "inViewport": true,
         "screenshot": "D:\\Antigravity\\地图\\.local\\worktrees\\hangzhou-prep\\map-base\\.local\\reviews\\hangzhou\\qa-mobile-390.png"
       },
@@ -95,17 +95,17 @@
         "vh": 680,
         "pop": {
           "left": 12,
-          "top": 163,
+          "top": 106,
           "right": 272,
           "bottom": 668,
           "width": 260,
-          "height": 505
+          "height": 562
         },
         "media": {
           "width": 246,
-          "height": 355
+          "height": 396
         },
-        "mediaRatio": 0.6651180502665651,
+        "mediaRatio": 0.6666849165069806,
         "inViewport": true,
         "screenshot": "D:\\Antigravity\\地图\\.local\\worktrees\\hangzhou-prep\\map-base\\.local\\reviews\\hangzhou\\qa-compact-320.png"
       },
@@ -113,18 +113,18 @@
         "vw": 736,
         "vh": 414,
         "pop": {
-          "left": 413.99578857421875,
-          "top": 71.9639892578125,
-          "right": 724.016845703125,
-          "bottom": 401.9863586425781,
-          "width": 310.02105712890625,
-          "height": 330.0223693847656
+          "left": 413.994140625,
+          "top": 71.9498291015625,
+          "right": 724.0234375,
+          "bottom": 401.98101806640625,
+          "width": 310.029296875,
+          "height": 330.03118896484375
         },
         "media": {
-          "width": 296.02008056640625,
-          "height": 232.01573181152344
+          "width": 296.02801513671875,
+          "height": 231.02182006835938
         },
-        "mediaRatio": 0.6712805051533812,
+        "mediaRatio": 0.6683871548110917,
         "inViewport": true,
         "screenshot": "D:\\Antigravity\\地图\\.local\\worktrees\\hangzhou-prep\\map-base\\.local\\reviews\\hangzhou\\qa-landscape-736.png"
       }

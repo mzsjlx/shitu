@@ -203,7 +203,7 @@ await check('8. video-library.json passes schema, merges, integer OSM anchors, m
   const bundles = JSON.parse(await readFile(path.join(root, 'data/media-bundles.json'), 'utf8'));
   const hzSourceIds = new Set(validated.sources.map(s => s.id));
   const nonHzBundles = bundles.sources.filter(item => !hzSourceIds.has(item.sourceId) && item.city !== 'hangzhou');
-  assert.equal(nonHzBundles.length, 341, 'Must preserve all 341 existing non-Hangzhou bundles');
+  assert.equal(nonHzBundles.length, 347, 'Must preserve all 347 existing non-Hangzhou bundles');
   for (const src of validated.sources) {
     const b = bundles.sources.find(item => item.city === 'hangzhou' && item.sourceId === src.id);
     assert(b && b.clips === src.segments.length, `Bundle clips parity for ${src.id}`);
