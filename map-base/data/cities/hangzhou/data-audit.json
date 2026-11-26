@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "city": "hangzhou",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "杭州核心城区（涵盖西湖景区东岸、湖滨步行街、清河坊/吴山广场、延安路商圈、武林广场至运河大关桥西）",
+  "bounds": [
+    120.1,
+    30.2,
+    120.24,
+    30.34
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 7047532,
+  "counters": {
+    "requestedTiles": 414,
+    "presentTiles": 414,
+    "namedRoadGroups": 1479
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true
+  }
+}

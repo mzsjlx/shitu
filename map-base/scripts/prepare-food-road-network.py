@@ -25,7 +25,9 @@ default_urls = {
     'nanjing': 'https://download.geofabrik.de/asia/china/jiangsu.html',
     'chaoshan': 'https://download.geofabrik.de/asia/china/guangdong.html',
     'wuhan': 'https://download.geofabrik.de/asia/china/hubei.html',
-    'zhengzhou': 'https://download.geofabrik.de/asia/china/henan.html'
+    'zhengzhou': 'https://download.geofabrik.de/asia/china/henan.html',
+    'harbin': 'https://download.geofabrik.de/asia/china/heilongjiang.html',
+    'hangzhou': 'https://download.geofabrik.de/asia/china/zhejiang.html'
 }
 source_url = args.url or default_urls.get(city_id)
 if not source_url:

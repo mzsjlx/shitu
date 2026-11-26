@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "city": "hangzhou",
+  "name": "杭州",
+  "province": "浙江省",
+  "amapCityCode": "330100",
+  "regionLabel": "西湖主城 · 运河走廊",
+  "coverageLabel": "杭州核心城区（涵盖西湖景区东岸、湖滨步行街、清河坊/吴山广场、延安路商圈、武林广场至运河大关桥西）",
+  "bounds": [
+    120.1,
+    30.2,
+    120.24,
+    30.34
+  ],
+  "center": [
+    120.165,
+    30.26
+  ],
+  "zoom": 15.5,
+  "pitch": 52,
+  "bearing": -15,
+  "minZoom": 11.5,
+  "maxZoom": 19,
+  "tiles": "data/cities/hangzhou/hangzhou.pmtiles",
+  "landmarks": [],
+  "status": "local-validation-only",
+  "workflow": {
+    "rightsStatus": "user-confirmed",
+    "videoIntake": "strict-user-provided-only",
+    "locationAccuracy": "approximate-planning-first",
+    "multiCreatorSupport": true,
+    "roadNetworkTopology": "osm-node-consecutive"
+  },
+  "dataFiles": {
+    "profile": "data/cities/hangzhou/city-profile.json",
+    "tiles": "data/cities/hangzhou/hangzhou.pmtiles",
+    "videoLibrary": "data/cities/hangzhou/video-library.json",
+    "videoPosters": "data/cities/hangzhou/video-posters.json",
+    "videoAssets": "data/cities/hangzhou/video-library-assets.json",
+    "foodRecords": "data/cities/hangzhou/food-records.json",
+    "roadNetwork": "data/cities/hangzhou/food-road-network.json",
+    "index": "data/cities/hangzhou/roads-index.json",
+    "audit": "data/cities/hangzhou/data-audit.json",
+    "manifest": "data/cities/hangzhou/source-manifest.json",
+    "tileMetadata": "data/cities/hangzhou/tile-metadata.json"
+  },
+  "notes": [
+    "严格遵守只处理用户实际提供的探店链接，不自行到外站搜集凑数。",
+    "门店位置采用有充分街区依据的大致规划点（approximate-planning），无充分依据的片段保留视频库不强行造点。",
+    "同一分店多博主探店共用一个地图点（相同的 placeId），浮窗保留各自博主片段供用户切换。",
+    "大文件隔离：原片与剪辑 MP4 保留在 .local/ 隔离目录，仅小封面海报与 JSON 元数据进 Git。",
+    "沿路距离使用保留原始 OSM 节点拓扑的网络，桥梁、隧道真实区分层级，不采用几何交叉连线或直线乘系数。"
+  ]
+}
