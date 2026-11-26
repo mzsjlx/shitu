@@ -1,3 +1,9 @@
+## 2026-11-27 泉州（quanzhou）56 份素材包独立 Release 发布与远端复验完成（分支 `origin/codex/city-quanzhou-prep` 已推送，待创建/合入 PR）
+
+- **代码分支与 Release**：泉州分支 `codex/city-quanzhou-prep` 已推送至远端 `origin`（代码基线提交 `ca99167`，尚未合入 `main`），并在主仓库发布独立预发布 Release：[media-2026-11-26-quanzhou](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-26-quanzhou)，同时已向 [media-bundles.json](map-base/data/media-bundles.json) 追加登记该 Release 与全部 56 条泉州来源索引（保留既往 10 个 Release 与 341 条他城记录）。
+- **全量服务端分页核验（2026-11-27 00:39）**：通过 GitHub Releases API 分页拉取全部附件，确认 **56 个 ZIP + 56 份 `.zip.json` 校验摘要 = 112/112 全部 `state=uploaded`**，ZIP 总计 **`5,271,243,667` 字节（`4.91 GiB`）**，文件名、精确字节数、公开下载 URL 及服务端 `sha256` digest **`56/56` 逐项匹配**，无 `starter` 残留。
+- **远端真实下载与隔离导入抽样**：从公开 Release 链接实际下载 3 个代表性 ZIP（`qz-shuibuzhaojiao-7699101807771754728` 1 段 / `8.45 MiB`、`qz-miemie-7490086283604233499` 1 段 / `14.80 MiB`、`qz-yesoso-7596667113801677413` 3 段 / `17.42 MiB`），重新计算字节数与 SHA256 均与索引一致；在独立空目录实测 `media:import` 首次新增文件 `3/3/7`、重复导入幂等 `newFiles=0`、错误城市 `--city chongqing` 被拒绝。**核验边界**：以上代表全量服务端 digest 核验 + 3 包远端真实下载导入，不等同于重新下载全部 `4.91 GiB` 或验证旧包自动升级。详见 [quanzhou-release-audit-20261126.json](output/research/quanzhou/quanzhou-release-audit-20261126.json) 与 [泉州交接记录](output/research/quanzhou/quanzhou-city-handoff.md)。
+
 ## 2026-11-26 泉州（quanzhou）第九批 7 条早餐视频接入完成：累计 56 作品 / 49 作者 / 81 片段 / 66 在图点（7/7 早餐店全部主城上图）
 
 在本地分支 `codex/city-quanzhou-prep`（基于最新 8 城 `origin/main` `b174b19`）按「店名零重复 + 主城明确落点」标准继续接入抖音搜索「泉州早餐」的第九批 **7 条真实早餐探店视频（7 家全新主城早餐门店，7/7 全部成功上图）**：
