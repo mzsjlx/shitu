@@ -1,12 +1,12 @@
 # 可转发给城市 Agent 的开工指令
 
-## 2026-11-24 最新通用开工指南（9 城主线基线就绪）
+## 2026-11-26 最新通用开工指南（10 城主线基线就绪）
 
-> **新同学阅读止损提示**：本仓库历史记录较长，新城市 Agent **只需要读** `AGENTS.md` + 本文顶部 + [PR-CHECKLIST.md](PR-CHECKLIST.md) + [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md) 顶部 + 标杆复核 [zhengzhou-review-20261122.md](output/research/zhengzhou-review-20261122.md) / [harbin-review-20261123.md](output/research/harbin-review-20261123.md) / [liuzhou-review-20261124.md](output/research/liuzhou-review-20261124.md) / [chengdu-review-20261124.md](output/research/chengdu-review-20261124.md) 即可开工；不要通读 350 KB 的 `PROJECT-STATUS.md` 全文，也不要照搬 2026-10 月的旧单城硬编码限制。
+> **新同学阅读止损提示**：本仓库历史记录较长，新城市 Agent **只需要读** `AGENTS.md` + 本文顶部 + [PR-CHECKLIST.md](PR-CHECKLIST.md) + [MEDIA-COLLABORATION.md](MEDIA-COLLABORATION.md) 顶部 + 标杆复核 [zhengzhou-review-20261122.md](output/research/zhengzhou-review-20261122.md) / [harbin-review-20261123.md](output/research/harbin-review-20261123.md) / [liuzhou-review-20261124.md](output/research/liuzhou-review-20261124.md) / [chengdu-review-20261124.md](output/research/chengdu-review-20261124.md) / [hangzhou-review-20261126.md](output/research/hangzhou-review-20261126.md) 即可开工；不要通读 350 KB 的 `PROJECT-STATUS.md` 全文，也不要照搬 2026-10 月的旧单城硬编码限制。
 
 ### 城市认领与 ID / 前缀防撞表（开工前先核对）
 
-| 城市 | `cityId` | `sourceId` 前缀 | 当前状态（2026-11-24） |
+| 城市 | `cityId` | `sourceId` 前缀 | 当前状态（2026-11-26） |
 | --- | --- | --- | --- |
 | 重庆 | `chongqing` | `cq-`（及首批旧 ID） | 已合入 `main` |
 | 长沙 | `changsha` | `cs-` / `changsha-` | 已合入 `main` |
@@ -16,7 +16,9 @@
 | 武汉 | `wuhan` | `wh-` | 已合入 `main`（PR #10，`6019700`） |
 | 郑州 | `zhengzhou` | `zz-` | 已合入 `main`（PR #11，`7f513e1`） |
 | 哈尔滨 | `harbin` | `hb-` | 已合入 `main`（PR #12，`3f52b16`） |
-| 成都 | `chengdu` | `cd-` | 已通过复核合入 `main`（PR #13，首期 6/82 包已实装） |
+| 成都 | `chengdu` | `cd-` | 已合入 `main`（PR #13，`a13549f`，首期 6/82 包已实装） |
+| 杭州 | `hangzhou` | `hz-` | 已合入 `main`（PR #14，`b98269c`，全量 70/70 包已上线） |
+| 大同 | `datong` | `dt-` | 制作中（`codex/city-datong-prep`） |
 
 新同学开工前请先与仓库维护者确认未占用的 `cityId` 与 `sourceId` 前缀，避免撞城或撞 ID。
 
@@ -28,7 +30,7 @@
 我们一起协作开发“食途”美食旅行地图网站，主仓库是 https://github.com/mzsjlx/shitu 。
 你现在负责【城市中文名】，城市 ID 约定为 `【cityId】`（来源 ID 统一用 `<城市前缀>-<作者拼音>-<作品数字ID>`，仅限小写字母/数字/连字符，全局唯一）。
 
-1. 先同步并基于最新 `origin/main`（已含重庆、长沙、柳州、南京、潮汕、武汉、郑州、哈尔滨、成都 9 城）建立工作分支 `codex/city-【cityId】-prep`；同机并行请在独立 worktree 开发，绝不重置或覆盖他人工作区。
+1. 先同步并基于最新 `origin/main`（已含重庆、长沙、柳州、南京、潮汕、武汉、郑州、哈尔滨、成都、杭州 10 城）建立工作分支 `codex/city-【cityId】-prep`；同机并行请在独立 worktree 开发，绝不重置或覆盖他人工作区。
 2. 开工先读 `AGENTS.md`、`CITY-AGENT-STARTER.md` 顶部、`PR-CHECKLIST.md`、`MEDIA-COLLABORATION.md` 顶部及 `output/research/zhengzhou-review-20261122.md`（标杆测试模板为 `map-base/scripts/review-zhengzhou-data.mjs` 和 `review-zhengzhou-browser.py`）。不要通读旧历史文档，也不要按 10 月旧单城限制工作。
 3. 推荐两阶段交付：阶段 1 先完成城市配置、开放底图、地形、原始 OSM PBF 路网（`prepare-food-road-network.py --city 【cityId】`）、`.gitattributes` 本城 LF 规则，并用我提供的 1~3 个探店链接跑通剪辑、封面、定位锚点、公开 Release、隔离导入与浏览器 QA，先发 Draft PR 预检结构；确认无误后再批量扩充。未收到链接前先准备地图与路网，不自行找外站视频凑数。
 4. 严守目录隔离：本城文件放 `map-base/data/cities/【cityId】/`、`map-base/assets/video-posters/<sourceId>/`、`output/research/【cityId】/`；原片/MP4/ZIP/临时文件留 `.local/`。共享索引按 ID 追加合并，保持 `activeCity` 为 `chongqing`；提交前检查 `git diff --name-only origin/main`，严禁提交无媒体构建改动其他城市的 `video-library-assets.json`。
