@@ -114,12 +114,13 @@ export class FoodPopover{
     this.element.classList.remove('is-height-limited');
     const media=this.element.querySelector('.food-popover-media');
     media.style.height='';
-    // Include border and padding when targeting two-thirds of the total area.
+    // Include border, padding, and subpixel tolerance when targeting >= 2/3 of total area.
     // Details scroll when the viewport limits the available height.
-    const detailsHeight=this.element.offsetHeight-media.offsetHeight;
-    const widthRatio=media.offsetWidth/this.element.offsetWidth;
-    const targetRatio=(2/3)/widthRatio;
-    const mediaHeight=Math.max(media.offsetHeight,Math.ceil(detailsHeight*targetRatio/(1-targetRatio)));
+    const elemRect=this.element.getBoundingClientRect(),mediaRect=media.getBoundingClientRect();
+    const detailsHeight=elemRect.height-mediaRect.height;
+    const widthRatio=mediaRect.width/elemRect.width;
+    const targetRatio=Math.min(.9,(2/3+.004)/widthRatio);
+    const mediaHeight=Math.max(mediaRect.height,Math.ceil(detailsHeight*targetRatio/(1-targetRatio)));
     this.element.style.setProperty('--food-popover-available-height',availableHeight+'px');
     this.element.style.setProperty('--food-popover-media-height',Math.ceil(availableHeight*targetRatio)+'px');
     const limited=mediaHeight+detailsHeight>availableHeight;

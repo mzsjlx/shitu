@@ -1,3 +1,23 @@
+## 2026-11-26 杭州全量交付与 PR 提交（70 作品、56 作者、108 片段、82 在图点、21 真实城郊界外点）
+
+在工作分支 `codex/city-hangzhou-prep` 下，严格遵循 `PR-CHECKLIST.md` 10 条红线与标杆审查标准完成全量接入：
+1. **真实道路与拓扑路网**：
+   - 提取原始省份 Geofabrik OSM PBF，生成 `data/cities/hangzhou/food-road-network.json`（7,243,708 字节，SHA256: `b46bc7b76dedba95f6bbac77e9da780617033ebf8b73d779390317a49067b0bf`）；
+   - 在 `.gitattributes` 中锁定 LF 规则；全量 82 个在图去重点（86 个在图片段）严格吸附至主连通分量（吸附距离 ≤ 250m，使用有效整型 OSM way/nodeId），双向主连通路由 100% 畅通，0 孤立断路。
+2. **严谨边界表达（82 在图点 / 21 真实城郊界外点）**：
+   - 21 处城郊及萧山/余杭/西湖外围门店（22 个片段，如萧山王记利华路店、西溪八方城郑阿公顺德菜等）如实保留真实 WGS84 经纬度，标记 `routeEligible: false` 与 `locationStatus: "approximate-planning"`，绝不强行内缩或挂靠虚假内城锚点；
+   - 门店资料页与全览列表如实呈现真实分店名称与郊区地址。
+3. **真实视频剪辑与 FFprobe 音视频探测**：
+   - 70 个抖音原视频、56 位美食创作者（大专厨子、特别乌啦啦、麦乐金、富贵不想上班等）；
+   - 精准剪辑 108 个探店片段（含跨博主同店归并 5 处），全部重新以 `libx264 -crf 21 -c:a aac -b:a 128k` 编码生成高质量 MP4；
+   - 真实提取 108 张实拍菜品与门头海报，同步至全局与单城 `video-posters.json`，无任何伪造探测。
+4. **公开 Release 附件严格对齐（140/140 uploaded，0 starter）**：
+   - GitHub Release `media-2026-11-25-hangzhou`（ID: `457697401`）全量 70 个 ZIP 与 70 个 `.zip.json` 均为 `uploaded` 状态；
+   - `map-base/data/media-bundles.json` 严格对齐 70 项条目，SHA256、bytes、clips 100% 一致；远端抽样下载与导入测试幂等性 `newFiles: 0` 验证通过。
+5. **端到端自动化测试与浏览器断言（100% PASS）**：
+   - `scripts/review-hangzhou-data.mjs`：10/10 PASS；
+   - `scripts/review-hangzhou-browser.py`：端到端覆盖 82 个初始圆点（48px）、选中展开 190px 卡片、卡片浮窗媒体比例 ≥ 2/3、多博主音轨切片/关闭暂停断言、延安路道路搜索、3 站沿路路线试算（2.8 公里）、探店视频库按作者/分类动态检索，以及重庆默认入口兼容性（81 张卡片）。
+
 ## 2026-11-24 柳州扩充 PR #9 已合入主线（8 城基线升级：柳州 51 在图点 / 64 切片）
 
 柳州扩充 `91a0370` 已通过 [PR #9](https://github.com/mzsjlx/shitu/pull/9) 合并至 `origin/main`，合并提交为 `f35fbf4102e899e40094f89463eab558edaf280d`。主线现包含 **8 城**：重庆、长沙、柳州（正式由初始 9 点版升级为 **51 在图点 / 64 切片完整版**）、南京、潮汕、武汉、郑州、哈尔滨；成都 PR #13 仍待补齐 Release 真实素材包与清理抽帧后复核。
