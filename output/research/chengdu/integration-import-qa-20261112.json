@@ -1,0 +1,23 @@
+{
+  "verifiedOn": "2026-11-12",
+  "scope": "Isolated receiver import verification for Chengdu bundle cd-rourou-7016962567180389640.",
+  "checks": [
+    {
+      "name": "Chengdu bundle imports into isolated target with correct hashes",
+      "passed": true
+    },
+    {
+      "name": "Repeat import of identical bundle skips redundant writes",
+      "passed": true
+    },
+    {
+      "name": "Wrong city import rejected before any file write",
+      "passed": true
+    },
+    {
+      "name": "Ledger report.json correctly updated with clip metadata",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

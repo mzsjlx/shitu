@@ -1,0 +1,244 @@
+{
+  "verifiedOn": "2026-11-23T10:35:00.484Z",
+  "city": "chengdu",
+  "checks": [
+    {
+      "name": "Chengdu city identified correctly with name \"成都\"",
+      "passed": true,
+      "detail": "成都"
+    },
+    {
+      "name": "Chengdu amapCityCode is 510100",
+      "passed": true,
+      "detail": "510100"
+    },
+    {
+      "name": "Chengdu bounds configured around central 5 districts",
+      "passed": true,
+      "detail": [
+        104.01,
+        30.6,
+        104.15,
+        30.72
+      ]
+    },
+    {
+      "name": "buildings-detail-3d layer loaded into map style",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "buildings-3d generic height inference layer present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "71 on-map food spots loaded cleanly into food overlay",
+      "passed": true,
+      "detail": "Found 71 spots"
+    },
+    {
+      "name": "Food card found and clicked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Clicking circular spot badge smoothly expands into card with close button",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Multi-blogger spot identified and popover opened",
+      "passed": true,
+      "detail": {
+        "found": true,
+        "name": "毛记和意冒菜（解放西街店）",
+        "clipCount": 4
+      }
+    },
+    {
+      "name": "Multi-blogger popover media area occupies >= 2/3 (strict >= 2/3)",
+      "passed": true,
+      "detail": "Ratio: 66.77%"
+    },
+    {
+      "name": "In-popover video plays smoothly with double-sampling time advance (dt >= 0.2s)",
+      "passed": true,
+      "detail": {
+        "t1": {
+          "t": 0,
+          "paused": false
+        },
+        "t2": {
+          "t": 0.22441,
+          "paused": false
+        },
+        "dt": 0.22441
+      }
+    },
+    {
+      "name": "Switching creator tab terminates old video and strips src",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "oldPaused": true,
+        "oldHasSrc": false
+      }
+    },
+    {
+      "name": "Switching to another shop terminates previous video and strips src",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "oldPaused": true,
+        "oldHasSrc": null
+      }
+    },
+    {
+      "name": "Closing popover immediately pauses video and strips src",
+      "passed": true,
+      "detail": {
+        "success": true,
+        "oldPaused": true,
+        "oldHasSrc": false
+      }
+    },
+    {
+      "name": "Viewport desktop-1440 (1440x960) has 71 cards without horizontal overflow",
+      "passed": true,
+      "detail": {
+        "cardCount": 71,
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Viewport desktop-1440 popover in bounds and ratio >= 2/3",
+      "passed": true,
+      "detail": "Ratio: 66.77%, inBounds: true"
+    },
+    {
+      "name": "Viewport mobile-390 (390x844) has 71 cards without horizontal overflow",
+      "passed": true,
+      "detail": {
+        "cardCount": 71,
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Viewport mobile-390 popover in bounds and ratio >= 2/3",
+      "passed": true,
+      "detail": "Ratio: 66.67%, inBounds: true"
+    },
+    {
+      "name": "Viewport small-320 (320x680) has 71 cards without horizontal overflow",
+      "passed": true,
+      "detail": {
+        "cardCount": 71,
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Viewport small-320 popover in bounds and ratio >= 2/3",
+      "passed": true,
+      "detail": "Ratio: 66.67%, inBounds: true"
+    },
+    {
+      "name": "Viewport landscape-736 (736x414) has 71 cards without horizontal overflow",
+      "passed": true,
+      "detail": {
+        "cardCount": 71,
+        "hasHorizontalOverflow": false
+      }
+    },
+    {
+      "name": "Viewport landscape-736 popover in bounds and ratio >= 2/3",
+      "passed": true,
+      "detail": "Ratio: 66.84%, inBounds: true"
+    },
+    {
+      "name": "Chengdu spot added to saved trips",
+      "passed": true,
+      "detail": "Saved: 1"
+    },
+    {
+      "name": "City chongqing (重庆) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "重庆",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City changsha (长沙) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "长沙",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City liuzhou (柳州) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "柳州",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City nanjing (南京) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "南京",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City chaoshan (潮汕) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "潮汕",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City wuhan (武汉) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "武汉",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    },
+    {
+      "name": "City zhengzhou (郑州) isolation: correct name, 0 Chengdu spots, 0 cross-city saved trips",
+      "passed": true,
+      "detail": {
+        "nameMatch": true,
+        "cityName": "郑州",
+        "hasChengduShop": false,
+        "hasChengduSaved": false,
+        "foodActive": true
+      }
+    }
+  ],
+  "total": 30,
+  "passed": 30,
+  "failed": 0
+}

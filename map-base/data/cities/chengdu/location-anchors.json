@@ -1,0 +1,1906 @@
+{
+  "reviewedOn": "2026-11-12",
+  "source": {
+    "date": "2026-11-10",
+    "sha256": "0573a18ffcaec74a8bbee324e6304d1a5d8a2dd83bed8cde22097b9edb046c87",
+    "url": "https://download.geofabrik.de/asia/china/sichuan.html",
+    "fileName": "sichuan-261110.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "scope": "Nearest original OSM road references for existing Chengdu video-address block estimates; coordinates unchanged; not independent shop/address verification.",
+  "anchors": [
+    {
+      "segmentId": "cd-rourou-maojiheyi",
+      "shopName": "毛记和意冒菜（解放西街店）",
+      "coordinates": [
+        104.081,
+        30.6905
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1349232609,
+        "name": "解放西街",
+        "url": "https://www.openstreetmap.org/way/1349232609",
+        "nodeId": 10221291920,
+        "coordinates": [
+          104.0812791,
+          30.6908673
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 48.8
+      }
+    },
+    {
+      "segmentId": "cd-chiyou-feichangyu",
+      "shopName": "三道街老宅子肥肠鱼",
+      "coordinates": [
+        104.0526,
+        30.6769
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 267220328,
+        "name": "西大街",
+        "url": "https://www.openstreetmap.org/way/267220328",
+        "nodeId": 12541939920,
+        "coordinates": [
+          104.0531385,
+          30.6760996
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 102.8
+      }
+    },
+    {
+      "segmentId": "cd-xiaojunmao-shuijiao",
+      "shopName": "私房水饺（海椒市店）",
+      "coordinates": [
+        104.1012,
+        30.6416
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1024870185,
+        "name": "海椒市横街",
+        "url": "https://www.openstreetmap.org/way/1024870185",
+        "nodeId": 9450048744,
+        "coordinates": [
+          104.1022485,
+          30.6407879
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 135.0
+      }
+    },
+    {
+      "segmentId": "cd-xiaojunmao-maojiheyi",
+      "shopName": "毛记和意冒菜（解放西街店）",
+      "coordinates": [
+        104.081,
+        30.6905
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1349232609,
+        "name": "解放西街",
+        "url": "https://www.openstreetmap.org/way/1349232609",
+        "nodeId": 10221291920,
+        "coordinates": [
+          104.0812791,
+          30.6908673
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 48.8
+      }
+    },
+    {
+      "segmentId": "cd-xiaojunmao-zhudazui",
+      "shopName": "朱大嘴肥肠豆汤（福字街总店）",
+      "coordinates": [
+        104.0788,
+        30.6564
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 653498840,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/653498840",
+        "nodeId": 6124413895,
+        "coordinates": [
+          104.0787631,
+          30.6564167
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 4.0
+      }
+    },
+    {
+      "segmentId": "cd-xiaojunmao-xiaomeitihua",
+      "shopName": "小妹滋补蹄花（理工大学总店）",
+      "coordinates": [
+        104.1458,
+        30.6738
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1351749038,
+        "name": "footway",
+        "url": "https://www.openstreetmap.org/way/1351749038",
+        "nodeId": 11329651072,
+        "coordinates": [
+          104.1458201,
+          30.673794
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 2.0
+      }
+    },
+    {
+      "segmentId": "cd-tiaojie-chunyangguan",
+      "shopName": "纯阳馆鱼香排骨面（吉祥街店）",
+      "coordinates": [
+        104.0583,
+        30.6698
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1436401961,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/1436401961",
+        "nodeId": 13202508537,
+        "coordinates": [
+          104.0582339,
+          30.6697224
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 10.7
+      }
+    },
+    {
+      "segmentId": "cd-tiaojie-luodajie",
+      "shopName": "罗大姐餐厅（肖家河店）",
+      "coordinates": [
+        104.041,
+        30.627
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 249388334,
+        "name": "科园一路",
+        "url": "https://www.openstreetmap.org/way/249388334",
+        "nodeId": 8463804759,
+        "coordinates": [
+          104.0402307,
+          30.6268286
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 76.0
+      }
+    },
+    {
+      "segmentId": "cd-tiaojie-qiweitbl",
+      "shopName": "奇味甜不辣（水碾河老店）",
+      "coordinates": [
+        104.095,
+        30.648
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 546821222,
+        "name": "unclassified",
+        "url": "https://www.openstreetmap.org/way/546821222",
+        "nodeId": 5283966121,
+        "coordinates": [
+          104.0952048,
+          30.6485693
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 66.3
+      }
+    },
+    {
+      "segmentId": "cd-pangshi-wumingmaocai",
+      "shopName": "蓉城西二道无名冒菜",
+      "coordinates": [
+        104.0572,
+        30.6678
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 664983841,
+        "name": "东城根中街",
+        "url": "https://www.openstreetmap.org/way/664983841",
+        "nodeId": 6000120310,
+        "coordinates": [
+          104.0578742,
+          30.6674653
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 74.5
+      }
+    },
+    {
+      "segmentId": "cd-ohyixi-liulaoda",
+      "shopName": "水碾河刘老大串串香",
+      "coordinates": [
+        104.0988,
+        30.6476
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 431694300,
+        "name": "大田坎街",
+        "url": "https://www.openstreetmap.org/way/431694300",
+        "nodeId": 1159155234,
+        "coordinates": [
+          104.0988294,
+          30.6463729
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 136.5
+      }
+    },
+    {
+      "segmentId": "cd-ohyixi-pogaimian",
+      "shopName": "蓉荣北大铺盖面（梁家巷总店）",
+      "coordinates": [
+        104.0789,
+        30.6865
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 259862183,
+        "name": "顺沙巷",
+        "url": "https://www.openstreetmap.org/way/259862183",
+        "nodeId": 2653288462,
+        "coordinates": [
+          104.0786685,
+          30.6874371
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 106.5
+      }
+    },
+    {
+      "segmentId": "cd-ohyixi-dengshi",
+      "shopName": "邓氏兔头（一环路北二段店）",
+      "coordinates": [
+        104.0818,
+        30.6872
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 184255149,
+        "name": "平福路",
+        "url": "https://www.openstreetmap.org/way/184255149",
+        "nodeId": 1159231411,
+        "coordinates": [
+          104.0824339,
+          30.6876654
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 79.7
+      }
+    },
+    {
+      "segmentId": "cd-ohyixi-jinqin",
+      "shopName": "金琴老茶铺（金琴路老茶馆）",
+      "coordinates": [
+        104.0375,
+        30.6792
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 267216225,
+        "name": "抚琴西路",
+        "url": "https://www.openstreetmap.org/way/267216225",
+        "nodeId": 14056422018,
+        "coordinates": [
+          104.0373166,
+          30.6792172
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 17.6
+      }
+    },
+    {
+      "segmentId": "cd-ohyixi-laohuangji",
+      "shopName": "老黄记手撕烤兔（玉林街店）",
+      "coordinates": [
+        104.062,
+        30.63
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 569688458,
+        "name": "residential",
+        "url": "https://www.openstreetmap.org/way/569688458",
+        "nodeId": 5478294738,
+        "coordinates": [
+          104.062205,
+          30.6298714
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 24.3
+      }
+    },
+    {
+      "segmentId": "cd-rourou-didizizhucan",
+      "shopName": "滴滴自助餐（城隍庙店）",
+      "coordinates": [
+        104.076033,
+        30.671733
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 576538095,
+        "name": "铜丝街",
+        "url": "https://www.openstreetmap.org/way/576538095",
+        "nodeId": 5529709259,
+        "coordinates": [
+          104.0760289,
+          30.672023
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 32.2
+      }
+    },
+    {
+      "segmentId": "cd-fengwei-wangjiguokui",
+      "shopName": "王记特色锅魁（泡桐树街店）",
+      "coordinates": [
+        104.05072,
+        30.664941
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1275918408,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/1275918408",
+        "nodeId": 11846146517,
+        "coordinates": [
+          104.0510726,
+          30.6651187
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 39.1
+      }
+    },
+    {
+      "segmentId": "cd-fengwei-yangesujiaomian",
+      "shopName": "眼哥素椒面（文殊院店）",
+      "coordinates": [
+        104.077609,
+        30.667122
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 576538069,
+        "name": "东玉龙街",
+        "url": "https://www.openstreetmap.org/way/576538069",
+        "nodeId": 1159131856,
+        "coordinates": [
+          104.0774526,
+          30.6674315
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 37.5
+      }
+    },
+    {
+      "segmentId": "cd-danninini-yanglaotou-zhongliang",
+      "shopName": "杨老头鲜货烧烤（中粮鸿云店）",
+      "coordinates": [
+        104.111429,
+        30.644779
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 447844980,
+        "name": "trunk_link",
+        "url": "https://www.openstreetmap.org/way/447844980",
+        "nodeId": 4449099841,
+        "coordinates": [
+          104.1109049,
+          30.6445259
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 57.5
+      }
+    },
+    {
+      "segmentId": "cd-renyi-furongbaochao",
+      "shopName": "芙蓉爆炒烧烤香辣蟹（吉祥街店）",
+      "coordinates": [
+        104.066596,
+        30.668526
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 115625961,
+        "name": "东华门街",
+        "url": "https://www.openstreetmap.org/way/115625961",
+        "nodeId": 3633018388,
+        "coordinates": [
+          104.0663241,
+          30.6677904
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 85.8
+      }
+    },
+    {
+      "segmentId": "cd-mizijun-huafenghuoguo",
+      "shopName": "华丰火锅（二仙桥老店）",
+      "coordinates": [
+        104.117254,
+        30.686049
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 508550196,
+        "name": "中环路二仙桥西路段",
+        "url": "https://www.openstreetmap.org/way/508550196",
+        "nodeId": 9026224695,
+        "coordinates": [
+          104.1184337,
+          30.6873229
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 181.1
+      }
+    },
+    {
+      "segmentId": "cd-xiaojie-kaojianghu",
+      "shopName": "烤江湖（泛悦国际店）",
+      "coordinates": [
+        104.075298,
+        30.619167
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 458883908,
+        "name": "tertiary",
+        "url": "https://www.openstreetmap.org/way/458883908",
+        "nodeId": 4992013274,
+        "coordinates": [
+          104.0748262,
+          30.619393
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 51.7
+      }
+    },
+    {
+      "segmentId": "cd-aji-zuopiezimian",
+      "shopName": "左撇子私房面（莲桂东路店）",
+      "coordinates": [
+        104.095959,
+        30.639607
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 529227598,
+        "name": "莲花中路",
+        "url": "https://www.openstreetmap.org/way/529227598",
+        "nodeId": 5141468658,
+        "coordinates": [
+          104.0971926,
+          30.6393528
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 121.4
+      }
+    },
+    {
+      "segmentId": "cd-aji-maojiheyi",
+      "shopName": "毛记和意冒菜（解放西街店）",
+      "coordinates": [
+        104.081,
+        30.6905
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1349232609,
+        "name": "解放西街",
+        "url": "https://www.openstreetmap.org/way/1349232609",
+        "nodeId": 10221291920,
+        "coordinates": [
+          104.0812791,
+          30.6908673
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 48.8
+      }
+    },
+    {
+      "segmentId": "cd-aji-xiaomeitihua",
+      "shopName": "小妹滋补蹄花（理工大学总店）",
+      "coordinates": [
+        104.1458,
+        30.6738
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1351749038,
+        "name": "footway",
+        "url": "https://www.openstreetmap.org/way/1351749038",
+        "nodeId": 11329651072,
+        "coordinates": [
+          104.1458201,
+          30.673794
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 2.0
+      }
+    },
+    {
+      "segmentId": "cd-aji-yongle",
+      "shopName": "永乐饭店（肖家河中街店）",
+      "coordinates": [
+        104.038753,
+        30.629982
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 610837623,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/610837623",
+        "nodeId": 5784542944,
+        "coordinates": [
+          104.0387914,
+          30.6300117
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 4.9
+      }
+    },
+    {
+      "segmentId": "cd-wangxun-yanglaotou-yushuang",
+      "shopName": "杨老头鲜货烧烤（玉双路店）",
+      "coordinates": [
+        104.088813,
+        30.661035
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1314660548,
+        "name": "cycleway",
+        "url": "https://www.openstreetmap.org/way/1314660548",
+        "nodeId": 12168292819,
+        "coordinates": [
+          104.0890453,
+          30.6610076
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 22.4
+      }
+    },
+    {
+      "segmentId": "cd-danninini-wujinghe",
+      "shopName": "五井合火锅店（通盈街店）",
+      "coordinates": [
+        104.109017,
+        30.645266
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1079223969,
+        "name": "蜀都大道双桂路",
+        "url": "https://www.openstreetmap.org/way/1079223969",
+        "nodeId": 12551143608,
+        "coordinates": [
+          104.1090089,
+          30.6452668
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.8
+      }
+    },
+    {
+      "segmentId": "cd-suipo-yongle",
+      "shopName": "永乐饭店（肖家河中街店）",
+      "coordinates": [
+        104.038753,
+        30.629982
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 610837623,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/610837623",
+        "nodeId": 5784542944,
+        "coordinates": [
+          104.0387914,
+          30.6300117
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 4.9
+      }
+    },
+    {
+      "segmentId": "cd-wasaijizhang-sanyangmian",
+      "shopName": "老成都三样面（过街楼街店）",
+      "coordinates": [
+        104.056104,
+        30.672497
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 576684155,
+        "name": "过街楼街",
+        "url": "https://www.openstreetmap.org/way/576684155",
+        "nodeId": 5535434841,
+        "coordinates": [
+          104.0566995,
+          30.6722262
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 64.4
+      }
+    },
+    {
+      "segmentId": "cd-wasaijizhang-mawangzi",
+      "shopName": "马旺子·川小馆（太古里店）",
+      "coordinates": [
+        104.080693,
+        30.654225
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 653814053,
+        "name": "pedestrian",
+        "url": "https://www.openstreetmap.org/way/653814053",
+        "nodeId": 6127122177,
+        "coordinates": [
+          104.0809558,
+          30.6544644
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 36.6
+      }
+    },
+    {
+      "segmentId": "cd-mizijun-yanglaotou-taikooli",
+      "shopName": "杨老头鲜货烧烤（太古里店）",
+      "coordinates": [
+        104.0818,
+        30.6552
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 837186671,
+        "name": "东里广场",
+        "url": "https://www.openstreetmap.org/way/837186671",
+        "nodeId": 7813478065,
+        "coordinates": [
+          104.0818753,
+          30.6552403
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 8.5
+      }
+    },
+    {
+      "segmentId": "cd-shashayouchanle-ganji",
+      "shopName": "甘记肥肠粉（马鞍北路总店）",
+      "coordinates": [
+        104.0865,
+        30.686
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 184255149,
+        "name": "平福路",
+        "url": "https://www.openstreetmap.org/way/184255149",
+        "nodeId": 1947583867,
+        "coordinates": [
+          104.0865201,
+          30.685744
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 28.5
+      }
+    },
+    {
+      "segmentId": "cd-shashayouchanle-huishuizhen",
+      "shopName": "回水镇·江湖川菜（太古里店）",
+      "coordinates": [
+        104.0825,
+        30.6538
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 653870396,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/653870396",
+        "nodeId": 6127623169,
+        "coordinates": [
+          104.0822043,
+          30.6536011
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 35.9
+      }
+    },
+    {
+      "segmentId": "cd-shashayouchanle-tandouhua",
+      "shopName": "西月城谭豆花（太升南路总店）",
+      "coordinates": [
+        104.0782,
+        30.6628
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1453244920,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/1453244920",
+        "nodeId": 13327379966,
+        "coordinates": [
+          104.0782656,
+          30.6626719
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 15.6
+      }
+    },
+    {
+      "segmentId": "cd-rourou-xiaoweimaocai",
+      "shopName": "晓薇冒菜（猛追湾店）",
+      "coordinates": [
+        104.0888,
+        30.669
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 185262449,
+        "name": "东较场街",
+        "url": "https://www.openstreetmap.org/way/185262449",
+        "nodeId": 8240098415,
+        "coordinates": [
+          104.0890189,
+          30.6688408
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 27.4
+      }
+    },
+    {
+      "segmentId": "cd-yizhihedapang-tiemen",
+      "shopName": "铁门杂酱面（牛市口店）",
+      "coordinates": [
+        104.103,
+        30.641
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1024870185,
+        "name": "海椒市横街",
+        "url": "https://www.openstreetmap.org/way/1024870185",
+        "nodeId": 9450048744,
+        "coordinates": [
+          104.1022485,
+          30.6407879
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 75.7
+      }
+    },
+    {
+      "segmentId": "cd-yizhihedapang-heji",
+      "shopName": "贺记蛋烘糕（文庙西街总店）",
+      "coordinates": [
+        104.054,
+        30.651
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1369163288,
+        "name": "footway",
+        "url": "https://www.openstreetmap.org/way/1369163288",
+        "nodeId": 12680866080,
+        "coordinates": [
+          104.0537721,
+          30.6510368
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 22.2
+      }
+    },
+    {
+      "segmentId": "cd-yizhihedapang-shuaiji",
+      "shopName": "甩记小吃店（兴禅寺街店）",
+      "coordinates": [
+        104.095,
+        30.671
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1500148456,
+        "name": "footway",
+        "url": "https://www.openstreetmap.org/way/1500148456",
+        "nodeId": 13736794660,
+        "coordinates": [
+          104.0941045,
+          30.6705442
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 99.5
+      }
+    },
+    {
+      "segmentId": "cd-renyi-tangbanhu",
+      "shopName": "唐拌虎脑花·肥肠（一环路店）",
+      "coordinates": [
+        104.0797,
+        30.6401
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 116428417,
+        "name": "unclassified",
+        "url": "https://www.openstreetmap.org/way/116428417",
+        "nodeId": 7823188846,
+        "coordinates": [
+          104.0801165,
+          30.639921
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 44.5
+      }
+    },
+    {
+      "segmentId": "cd-wulala-yangesujiaomian",
+      "shopName": "眼哥素椒面（文殊院店）",
+      "coordinates": [
+        104.077609,
+        30.667122
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 576538069,
+        "name": "东玉龙街",
+        "url": "https://www.openstreetmap.org/way/576538069",
+        "nodeId": 1159131856,
+        "coordinates": [
+          104.0774526,
+          30.6674315
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 37.5
+      }
+    },
+    {
+      "segmentId": "cd-wangxun-fanjiganlaoniuroumian",
+      "shopName": "樊记干捞牛肉面（科华店）",
+      "coordinates": [
+        104.072721,
+        30.627824
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 100288864,
+        "name": "棕竹街",
+        "url": "https://www.openstreetmap.org/way/100288864",
+        "nodeId": 1159173348,
+        "coordinates": [
+          104.0726317,
+          30.6276025
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 26.1
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-shuangqiaofeichangfen",
+      "shopName": "双桥美味肥肠粉（双桥路店）",
+      "coordinates": [
+        104.1042,
+        30.6508
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 576557606,
+        "name": "双桥路南三街",
+        "url": "https://www.openstreetmap.org/way/576557606",
+        "nodeId": 5529818156,
+        "coordinates": [
+          104.1039971,
+          30.6508768
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 21.2
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-shuangsaomian",
+      "shopName": "特色双哨面（水碾河店）",
+      "coordinates": [
+        104.1022,
+        30.6482
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 132645765,
+        "name": "蜀都大道水碾河路",
+        "url": "https://www.openstreetmap.org/way/132645765",
+        "nodeId": 5529818133,
+        "coordinates": [
+          104.1026113,
+          30.6481947
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 39.4
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-tiemen",
+      "shopName": "铁门杂酱面（牛市口店）",
+      "coordinates": [
+        104.103,
+        30.641
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1024870185,
+        "name": "海椒市横街",
+        "url": "https://www.openstreetmap.org/way/1024870185",
+        "nodeId": 9450048744,
+        "coordinates": [
+          104.1022485,
+          30.6407879
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 75.7
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-zhulouxiangmaocai",
+      "shopName": "竹篓香冒菜（春熙商圈店）",
+      "coordinates": [
+        104.0792,
+        30.6545
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 654064412,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/654064412",
+        "nodeId": 6129339628,
+        "coordinates": [
+          104.079566,
+          30.6544723
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 35.1
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-shuijindoutang",
+      "shopName": "水津豆汤（水井坊店）",
+      "coordinates": [
+        104.0886,
+        30.6465
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 288150150,
+        "name": "residential",
+        "url": "https://www.openstreetmap.org/way/288150150",
+        "nodeId": 2917001738,
+        "coordinates": [
+          104.0885837,
+          30.6463626
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 15.4
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-heji",
+      "shopName": "贺记蛋烘糕（文庙西街总店）",
+      "coordinates": [
+        104.054,
+        30.651
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1369163288,
+        "name": "footway",
+        "url": "https://www.openstreetmap.org/way/1369163288",
+        "nodeId": 12680866080,
+        "coordinates": [
+          104.0537721,
+          30.6510368
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 22.2
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-zhongshuijiao",
+      "shopName": "钟水饺（祠堂街总店）",
+      "coordinates": [
+        104.0592,
+        30.6568
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 664983822,
+        "name": "steps",
+        "url": "https://www.openstreetmap.org/way/664983822",
+        "nodeId": 6224262528,
+        "coordinates": [
+          104.0589032,
+          30.6563914
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 53.6
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-meitihua",
+      "shopName": "美蹄花（水碾河路店）",
+      "coordinates": [
+        104.0988,
+        30.6492
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 53103848,
+        "name": "一心桥横街",
+        "url": "https://www.openstreetmap.org/way/53103848",
+        "nodeId": 5213238599,
+        "coordinates": [
+          104.0979111,
+          30.6502082
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 140.7
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-tangyouguozi",
+      "shopName": "老成都名小吃糖油果子（奎星楼街店）",
+      "coordinates": [
+        104.0515,
+        30.6685
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 576684162,
+        "name": "栅子街",
+        "url": "https://www.openstreetmap.org/way/576684162",
+        "nodeId": 7365692382,
+        "coordinates": [
+          104.0521718,
+          30.6692276
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 103.3
+      }
+    },
+    {
+      "segmentId": "cd-mizijun-yanglaotou-taikooli-2",
+      "shopName": "杨老头鲜货烧烤（太古里店）",
+      "coordinates": [
+        104.0818,
+        30.6552
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 837186671,
+        "name": "东里广场",
+        "url": "https://www.openstreetmap.org/way/837186671",
+        "nodeId": 7813478065,
+        "coordinates": [
+          104.0818753,
+          30.6552403
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 8.5
+      }
+    },
+    {
+      "segmentId": "cd-danninini-fuguihuoguo",
+      "shopName": "富贵原味火锅（蜀通街店）",
+      "coordinates": [
+        104.025981,
+        30.686437
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 919971699,
+        "name": "蜀汉路",
+        "url": "https://www.openstreetmap.org/way/919971699",
+        "nodeId": 432442597,
+        "coordinates": [
+          104.0252154,
+          30.686395
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 73.4
+      }
+    },
+    {
+      "segmentId": "cd-wangxun-sanmeixiaochi",
+      "shopName": "三妹小吃（馨兰苑店）",
+      "coordinates": [
+        104.070316,
+        30.625741
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 100288857,
+        "name": "棕南西街",
+        "url": "https://www.openstreetmap.org/way/100288857",
+        "nodeId": 1159173116,
+        "coordinates": [
+          104.0697696,
+          30.626184
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 71.8
+      }
+    },
+    {
+      "segmentId": "cd-danninini-shangyijianghucai",
+      "shopName": "上亿海鲜烧烤自贡江湖菜（双福二路店）",
+      "coordinates": [
+        104.109414,
+        30.659755
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 100286745,
+        "name": "tertiary",
+        "url": "https://www.openstreetmap.org/way/100286745",
+        "nodeId": 7944100840,
+        "coordinates": [
+          104.1090706,
+          30.6596477
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 34.9
+      }
+    },
+    {
+      "segmentId": "cd-zhouboling-maojiheyi",
+      "shopName": "毛记和意冒菜（解放西街店）",
+      "coordinates": [
+        104.081,
+        30.6905
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1349232609,
+        "name": "解放西街",
+        "url": "https://www.openstreetmap.org/way/1349232609",
+        "nodeId": 10221291920,
+        "coordinates": [
+          104.0812791,
+          30.6908673
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 48.8
+      }
+    },
+    {
+      "segmentId": "cd-renyi-haoshihuimaocai",
+      "shopName": "张记好实惠冒菜（燃灯寺东街店）",
+      "coordinates": [
+        104.0384,
+        30.6455
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 28620972,
+        "name": "七道堰街",
+        "url": "https://www.openstreetmap.org/way/28620972",
+        "nodeId": 5628752492,
+        "coordinates": [
+          104.0387593,
+          30.6456704
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 39.2
+      }
+    },
+    {
+      "segmentId": "cd-yituoxiaocaomei-kaojianghu",
+      "shopName": "烤江湖（泛悦国际店）",
+      "coordinates": [
+        104.075298,
+        30.619167
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 458883908,
+        "name": "tertiary",
+        "url": "https://www.openstreetmap.org/way/458883908",
+        "nodeId": 4992013274,
+        "coordinates": [
+          104.0748262,
+          30.619393
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 51.7
+      }
+    },
+    {
+      "segmentId": "cd-danninini-achengkaoyupian",
+      "shopName": "阿城烤鱼片（牛市口店）",
+      "coordinates": [
+        104.104659,
+        30.642232
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 230073897,
+        "name": "trunk_link",
+        "url": "https://www.openstreetmap.org/way/230073897",
+        "nodeId": 8279158524,
+        "coordinates": [
+          104.1050051,
+          30.6421039
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 36.0
+      }
+    },
+    {
+      "segmentId": "cd-jigelebuqide-yanglaotou-yushuang",
+      "shopName": "杨老头鲜货烧烤（玉双路店）",
+      "coordinates": [
+        104.088813,
+        30.661035
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 1314660548,
+        "name": "cycleway",
+        "url": "https://www.openstreetmap.org/way/1314660548",
+        "nodeId": 12168292819,
+        "coordinates": [
+          104.0890453,
+          30.6610076
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 22.4
+      }
+    },
+    {
+      "segmentId": "cd-ppchaonengxuan-ganjifeichangfen",
+      "shopName": "甘记肥肠粉（马鞍北路总店）",
+      "coordinates": [
+        104.0865,
+        30.686
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 184255149,
+        "name": "平福路",
+        "url": "https://www.openstreetmap.org/way/184255149",
+        "nodeId": 1947583867,
+        "coordinates": [
+          104.0865201,
+          30.685744
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 28.5
+      }
+    },
+    {
+      "segmentId": "cd-xiaozhen-haoshihuimaocai",
+      "shopName": "张记好实惠冒菜（燃灯寺东街店）",
+      "coordinates": [
+        104.0384,
+        30.6455
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 28620972,
+        "name": "七道堰街",
+        "url": "https://www.openstreetmap.org/way/28620972",
+        "nodeId": 5628752492,
+        "coordinates": [
+          104.0387593,
+          30.6456704
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 39.2
+      }
+    },
+    {
+      "segmentId": "cd-wasaijizhang-nantangguan",
+      "shopName": "南堂馆·非遗传承人餐厅（IFS国金店）",
+      "coordinates": [
+        104.078731,
+        30.657219
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 653498840,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/653498840",
+        "nodeId": 6124413896,
+        "coordinates": [
+          104.079136,
+          30.6569681
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 47.7
+      }
+    },
+    {
+      "segmentId": "cd-wowxingge-yanglaotou-taikooli",
+      "shopName": "杨老头鲜货烧烤（太古里店）",
+      "coordinates": [
+        104.0818,
+        30.6552
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 837186671,
+        "name": "东里广场",
+        "url": "https://www.openstreetmap.org/way/837186671",
+        "nodeId": 7813478065,
+        "coordinates": [
+          104.0818753,
+          30.6552403
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 8.5
+      }
+    },
+    {
+      "segmentId": "cd-airousi-dongguangshaokao",
+      "shopName": "鲜霞烧烤（东光小区店）",
+      "coordinates": [
+        104.1015,
+        30.6195
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 197866411,
+        "name": "东光街",
+        "url": "https://www.openstreetmap.org/way/197866411",
+        "nodeId": 4874328128,
+        "coordinates": [
+          104.1020512,
+          30.6196941
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 57.0
+      }
+    },
+    {
+      "segmentId": "cd-sangesan-xinlintiaoshuitu",
+      "shopName": "馨林跳水蛙（奎星楼店）",
+      "coordinates": [
+        104.0538,
+        30.6685
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 352188738,
+        "name": "商业后街",
+        "url": "https://www.openstreetmap.org/way/352188738",
+        "nodeId": 14245487103,
+        "coordinates": [
+          104.0536542,
+          30.6687024
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 26.5
+      }
+    },
+    {
+      "segmentId": "cd-sangesan-maojiaonailiang",
+      "shopName": "冒椒乃亮·成都老味道（奎星楼总店）",
+      "coordinates": [
+        104.0526,
+        30.6683
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 576684162,
+        "name": "栅子街",
+        "url": "https://www.openstreetmap.org/way/576684162",
+        "nodeId": 3579517905,
+        "coordinates": [
+          104.0532696,
+          30.6687551
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 81.6
+      }
+    },
+    {
+      "segmentId": "cd-sangesan-wumingmaocai",
+      "shopName": "无名冒菜（奎星楼店）",
+      "coordinates": [
+        104.0531,
+        30.6684
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 576684162,
+        "name": "栅子街",
+        "url": "https://www.openstreetmap.org/way/576684162",
+        "nodeId": 3579517905,
+        "coordinates": [
+          104.0532696,
+          30.6687551
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 42.7
+      }
+    },
+    {
+      "segmentId": "cd-xulaosihebeijiang-xiexiaoyao",
+      "shopName": "谢逍遥山城大排档（成都总店）",
+      "coordinates": [
+        104.0673,
+        30.6128
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 476887194,
+        "name": "residential",
+        "url": "https://www.openstreetmap.org/way/476887194",
+        "nodeId": 4703149490,
+        "coordinates": [
+          104.0674101,
+          30.6125572
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 29.0
+      }
+    },
+    {
+      "segmentId": "cd-xiaobeiele-damingjiachangcai",
+      "shopName": "大明家常菜（驷马桥店）",
+      "coordinates": [
+        104.0864,
+        30.6872
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 574533193,
+        "name": "树蓓街",
+        "url": "https://www.openstreetmap.org/way/574533193",
+        "nodeId": 1947583864,
+        "coordinates": [
+          104.0871758,
+          30.6867585
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 89.0
+      }
+    },
+    {
+      "segmentId": "cd-tiaojieshuachengdu-zhubiqiong",
+      "shopName": "朱碧琼肥肠粉（抚琴总店）",
+      "coordinates": [
+        104.0371,
+        30.6865
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 463405570,
+        "name": "营康路",
+        "url": "https://www.openstreetmap.org/way/463405570",
+        "nodeId": 4586722652,
+        "coordinates": [
+          104.0367545,
+          30.6864041
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 34.7
+      }
+    },
+    {
+      "segmentId": "cd-tiaojieshuachengdu-heizhu",
+      "shopName": "黑竹香鸡（营门口抚琴店）",
+      "coordinates": [
+        104.0355,
+        30.6878
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 347930335,
+        "name": "residential",
+        "url": "https://www.openstreetmap.org/way/347930335",
+        "nodeId": 3541389072,
+        "coordinates": [
+          104.0355095,
+          30.6874765
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 36.0
+      }
+    },
+    {
+      "segmentId": "cd-xiaojie-mingyu",
+      "shopName": "重庆明玉九宫格老火锅（洞子口路店）",
+      "coordinates": [
+        104.067588,
+        30.713652
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 469506109,
+        "name": "赛云台北支路",
+        "url": "https://www.openstreetmap.org/way/469506109",
+        "nodeId": 1815729262,
+        "coordinates": [
+          104.0676995,
+          30.7144187
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 85.9
+      }
+    },
+    {
+      "segmentId": "cd-xulaosi-ludazhong",
+      "shopName": "卢大众烧烤（洞子口总店）",
+      "coordinates": [
+        104.066277,
+        30.718065
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 815092910,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/815092910",
+        "nodeId": 7613581891,
+        "coordinates": [
+          104.0662765,
+          30.718064
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.1
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-shierbaimian",
+      "shopName": "食而百面馆（北门店）",
+      "coordinates": [
+        104.07788,
+        30.685904
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 259862182,
+        "name": "service",
+        "url": "https://www.openstreetmap.org/way/259862182",
+        "nodeId": 2653287868,
+        "coordinates": [
+          104.0778809,
+          30.6859046
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.1
+      }
+    },
+    {
+      "segmentId": "cd-danniushi-zhangpopoguokui",
+      "shopName": "张婆婆香酥锅盔（北门店）",
+      "coordinates": [
+        104.080278,
+        30.686871
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 136777277,
+        "name": "互助路",
+        "url": "https://www.openstreetmap.org/way/136777277",
+        "nodeId": 1500638622,
+        "coordinates": [
+          104.080278,
+          30.686871
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.0
+      }
+    },
+    {
+      "segmentId": "cd-xiaozhou-xiexiaoyao",
+      "shopName": "谢逍遥山城大排档（成都总店）",
+      "coordinates": [
+        104.0673,
+        30.6128
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 476887194,
+        "name": "residential",
+        "url": "https://www.openstreetmap.org/way/476887194",
+        "nodeId": 4703149490,
+        "coordinates": [
+          104.0674101,
+          30.6125572
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 29.0
+      }
+    },
+    {
+      "segmentId": "cd-liuyuxin-jianglongzhuazhua",
+      "shopName": "降龙爪爪（春熙路总店）",
+      "coordinates": [
+        104.081573,
+        30.655925
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 653814055,
+        "name": "pedestrian",
+        "url": "https://www.openstreetmap.org/way/653814055",
+        "nodeId": 6127624898,
+        "coordinates": [
+          104.0815728,
+          30.6559241
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.1
+      }
+    },
+    {
+      "segmentId": "cd-suipo-baojia",
+      "shopName": "包家兄弟餐馆（包家巷店）",
+      "coordinates": [
+        104.053946,
+        30.662471
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 458891612,
+        "name": "蜀都大道少城路",
+        "url": "https://www.openstreetmap.org/way/458891612",
+        "nodeId": 4548211349,
+        "coordinates": [
+          104.053946,
+          30.6624698
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.1
+      }
+    },
+    {
+      "segmentId": "cd-wangxun-fenggutu",
+      "shopName": "风骨兔（玉林菜市店）",
+      "coordinates": [
+        104.055698,
+        30.62878
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 37127680,
+        "name": "玉林中路",
+        "url": "https://www.openstreetmap.org/way/37127680",
+        "nodeId": 11799930358,
+        "coordinates": [
+          104.0556992,
+          30.6287793
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.1
+      }
+    },
+    {
+      "segmentId": "cd-xiaojinzhang-nianfeng",
+      "shopName": "年丰饭店（米其林必比登推介）",
+      "coordinates": [
+        104.077081,
+        30.618857
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 100288846,
+        "name": "航空路",
+        "url": "https://www.openstreetmap.org/way/100288846",
+        "nodeId": 2733352544,
+        "coordinates": [
+          104.0770763,
+          30.6189484
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 10.2
+      }
+    },
+    {
+      "segmentId": "cd-xiaojie-zhengnanqibei",
+      "shopName": "正南齐北重庆老火锅（东门市井店）",
+      "coordinates": [
+        104.115361,
+        30.628007
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 926678219,
+        "name": "静沙北路",
+        "url": "https://www.openstreetmap.org/way/926678219",
+        "nodeId": 11066485830,
+        "coordinates": [
+          104.115361,
+          30.6280057
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.1
+      }
+    },
+    {
+      "segmentId": "cd-qianjin-liuwenxiang",
+      "shopName": "刘文祥大盘麻辣烫（春熙太古里店）",
+      "coordinates": [
+        104.083649,
+        30.655616
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 498978535,
+        "name": "东顺城南街",
+        "url": "https://www.openstreetmap.org/way/498978535",
+        "nodeId": 5530209139,
+        "coordinates": [
+          104.0836482,
+          30.6556164
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.1
+      }
+    },
+    {
+      "segmentId": "cd-finn-taoxiangyuan",
+      "shopName": "桃香源火锅鸡（东门大桥店）",
+      "coordinates": [
+        104.088646,
+        30.651365
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 288172904,
+        "name": "牛王庙巷",
+        "url": "https://www.openstreetmap.org/way/288172904",
+        "nodeId": 5529897029,
+        "coordinates": [
+          104.0886457,
+          30.651366
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 0.1
+      }
+    },
+    {
+      "segmentId": "cd-finn-huangniang",
+      "shopName": "黄嬢甜不辣（太升南路店）",
+      "coordinates": [
+        104.074323,
+        30.666118
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 576538100,
+        "name": "太升南路",
+        "url": "https://www.openstreetmap.org/way/576538100",
+        "nodeId": 5529709282,
+        "coordinates": [
+          104.0743759,
+          30.6662048
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 10.9
+      }
+    },
+    {
+      "segmentId": "cd-ganshiqi-tianxingzhengyuan",
+      "shopName": "天星正源火锅（地勘路总店）",
+      "coordinates": [
+        104.128246,
+        30.686827
+      ],
+      "anchor": {
+        "kind": "osm-way",
+        "id": 259894865,
+        "name": "二仙桥北路",
+        "url": "https://www.openstreetmap.org/way/259894865",
+        "nodeId": 12441317918,
+        "coordinates": [
+          104.1285541,
+          30.6871231
+        ],
+        "sourceDate": "2026-11-10",
+        "method": "nearest-road-reference-to-estimated-block",
+        "offsetMetres": 44.2
+      }
+    }
+  ]
+}

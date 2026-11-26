@@ -23,7 +23,7 @@ async function check(name, fn) {
 }
 
 // 1. Config check
-await check('1. config/cities.json includes valid hangzhou entry preserving all 8 existing cities', async () => {
+await check('1. config/cities.json includes valid hangzhou entry preserving all 9 existing cities', async () => {
   const content = JSON.parse(await readFile(path.join(root, 'config/cities.json'), 'utf8'));
   const hz = content.cities.hangzhou;
   assert(hz, 'hangzhou key exists');
@@ -33,7 +33,7 @@ await check('1. config/cities.json includes valid hangzhou entry preserving all 
   assert.deepEqual(hz.center, [120.165, 30.26]);
   assert.equal(hz.tiles, 'data/cities/hangzhou/hangzhou.pmtiles');
   assert.equal(content.activeCity, 'chongqing', 'activeCity preserved as chongqing');
-  for (const existing of ['chongqing', 'changsha', 'liuzhou', 'nanjing', 'chaoshan', 'wuhan', 'zhengzhou', 'harbin']) {
+  for (const existing of ['chongqing', 'changsha', 'liuzhou', 'nanjing', 'chaoshan', 'wuhan', 'zhengzhou', 'harbin', 'chengdu']) {
     assert(content.cities[existing], `${existing} preserved`);
   }
   return { hangzhouConfig: hz };
@@ -235,7 +235,7 @@ await check('9. video-posters.json & dist assets retain all 108 Hangzhou posters
   }
 
   const globalPosters = JSON.parse(await readFile(path.join(root, 'data/video-posters.json'), 'utf8'));
-  assert.equal(Object.keys(globalPosters.segments).length, 910, 'Global video-posters.json retains exact 910 posters (802 existing + 108 hangzhou)');
+  assert.equal(Object.keys(globalPosters.segments).length, 1121, 'Global video-posters.json retains exact 1121 posters (1013 existing + 108 hangzhou)');
 
   const distAssets = JSON.parse(await readFile(path.join(root, 'dist/data/video-library-assets.json'), 'utf8'));
   for (const [segId] of entries) {
@@ -246,11 +246,11 @@ await check('9. video-posters.json & dist assets retain all 108 Hangzhou posters
 });
 
 // 10. All city catalogs check
-await check('10. allCityCatalogs passes without duplicate source or segment IDs across all 9 cities', async () => {
+await check('10. allCityCatalogs passes without duplicate source or segment IDs across all 10 cities', async () => {
   const catalogs = await allCityCatalogs(root);
   const hz = catalogs.find(c => c.cityId === 'hangzhou');
   assert(hz, 'hangzhou catalog loaded');
-  assert.equal(catalogs.length, 9, `Expected 9 cities, got ${catalogs.length}`);
+  assert.equal(catalogs.length, 10, `Expected 10 cities, got ${catalogs.length}`);
   return { cities: catalogs.map(c => c.cityId) };
 });
 

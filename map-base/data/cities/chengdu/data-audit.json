@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "city": "chengdu",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "春熙路、太古里、大慈寺、望平街天府熊猫塔、宽窄巷子、建设路至玉林街区",
+  "bounds": [
+    104.01,
+    30.6,
+    104.15,
+    30.72
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 6920600,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      104.01,
+      30.6,
+      104.15,
+      30.72
+    ]
+  },
+  "osmReplicationTime": "2026-11-05T04:00:00Z",
+  "counters": {
+    "requestedTiles": 182,
+    "presentTiles": 182,
+    "roadLineFragments": 6258,
+    "namedRoadLineFragments": 4280,
+    "unnamedRoadLineFragments": 1978,
+    "nonRoadTransportFragmentsExcluded": 697,
+    "buildingPolygonFragments": 49792,
+    "buildingFragmentsWithPositiveHeight": 3368,
+    "buildingFragmentsWithoutPositiveHeight": 46424,
+    "namedRoadGroups": 1972
+  },
+  "roadClassCounts": {
+    "major_road": 2608,
+    "minor_road": 2816,
+    "path": 785,
+    "highway": 49
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    "春熙路": {
+      "exact": {
+        "id": "road:春熙路",
+        "class": "path",
+        "detail": "pedestrian",
+        "name": "春熙路",
+        "bounds": [
+          104.0740228,
+          30.6572378,
+          104.0760666,
+          30.6603365
+        ],
+        "center": [
+          104.0752995,
+          30.6591875
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 1
+      },
+      "related": [
+        "春熙路",
+        "春熙路东段",
+        "春熙路南段",
+        "春熙路西段"
+      ]
+    },
+    "望平街": {
+      "exact": {
+        "id": "road:望平街",
+        "class": "minor_road",
+        "detail": "residential",
+        "name": "望平街",
+        "bounds": [
+          104.0872648,
+          30.6553227,
+          104.089298,
+          30.659469
+        ],
+        "center": [
+          104.0888514,
+          30.6588437
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 2
+      },
+      "related": [
+        "望平街"
+      ]
+    },
+    "玉林西路": {
+      "exact": {
+        "id": "road:玉林西路",
+        "class": "major_road",
+        "detail": "tertiary",
+        "name": "玉林西路",
+        "bounds": [
+          104.0510416,
+          30.6318031,
+          104.064053,
+          30.6320616
+        ],
+        "center": [
+          104.0593685,
+          30.6319543
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 4
+      },
+      "related": [
+        "玉林西路"
+      ]
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}
