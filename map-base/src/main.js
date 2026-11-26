@@ -450,7 +450,7 @@ async function init() {
   }
   const tileURL=new URL(city.tiles,location.href).href;
   boot.stage('准备地图数据与后台绘图程序');
-  if(bundle && location.protocol === 'file:'){
+  if(bundle){
     const raw=atob(bundle.archive),bytes=new Uint8Array(raw.length);
     for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);
     protocol.add(new PMTiles({getKey:()=>tileURL,getBytes:async(offset,length)=>({data:bytes.slice(offset,offset+length).buffer})}));
@@ -606,8 +606,8 @@ async function init() {
     const availableRoadLayers = roadHitLayers.filter(id => map.getLayer(id));
     if(availableRoadLayers.length === 0)return;
     const renderedRoadCount = map.queryRenderedFeatures({layers: availableRoadLayers}).length;
-    // Road rendering is the base readiness signal. Once road features or vector tiles are loaded, map is ready.
-    if(renderedRoadCount > 0 || map.isSourceLoaded('city') || (map.loaded() && map.queryRenderedFeatures().length > 0)){
+    // Road rendering is the base readiness signal. Once road features are rendered on screen, map is ready.
+    if(renderedRoadCount > 0 || (map.isSourceLoaded('city') && map.queryRenderedFeatures().length > 0)){
       state.ready=true;
       if (readyInterval) clearInterval(readyInterval);
       boot.ready();$('status').textContent=city.name+'地图已展开';
@@ -619,12 +619,10 @@ async function init() {
     }
   }
   readyInterval = setInterval(checkReady, 200);
-  window.__FOOD_MAP_CHECK_READY__ = checkReady;
   map.on('render',checkReady);
   map.on('idle',checkReady);
   map.on('sourcedata',checkReady);
-  const buildKey = manifest.upstreamBuild?.key || (manifest.acquiredAtUTC ? manifest.acquiredAtUTC.slice(0, 10).replace(/-/g, '') : '20261120');
-  $('source-date').textContent=buildKey.replace('.pmtiles','').replace(/^(\d{4})(\d{2})(\d{2})$/,'$1-$2-$3');
+  $('source-date').textContent=manifest.upstreamBuild.key.replace('.pmtiles','').replace(/^(\d{4})(\d{2})(\d{2})$/,'$1-$2-$3');
   $('source-stats').textContent='当前可搜索 '+roads.length.toLocaleString()+' 组源道路名称。按源名称合并的道路可能包含多段路面、桥梁或隧道。';
   videoLibrary=new VideoLibrary({cityId:cityKey,cityConfig:city,onMapPlace:async segment=>{
     if(!state.ready||!food)throw new Error('地图还在展开，稍后再试。');

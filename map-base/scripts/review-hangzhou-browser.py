@@ -334,7 +334,7 @@ def run_qa(dist_dir: Path, expect_local_videos: bool = True):
                   };
                 }''')
                 assert metrics['inViewport'], f'Popover overflows viewport at {label}: {metrics}'
-                assert metrics['mediaRatio'] >= 0.665, f'Media ratio < 2/3 at {label}: {metrics["mediaRatio"]}'
+                assert metrics['mediaRatio'] >= (2 / 3), f'Media ratio < 2/3 at {label}: {metrics["mediaRatio"]}'
                 shot_path = SHOT_DIR / f'qa-{label}.png'
                 page.screenshot(path=str(shot_path))
                 metrics['screenshot'] = str(shot_path)

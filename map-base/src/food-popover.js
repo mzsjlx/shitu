@@ -1,5 +1,4 @@
 import {foodVideoCredit} from './food-video-credit.js';
-import {amapSearchUrl} from './video-library-model.js';
 import './food-popover.css';
 const el=(tag,className,text)=>{const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;};
 
@@ -90,16 +89,7 @@ export class FoodPopover{
       button.addEventListener('click',()=>{this.show(item,entry,{pinned:true,clipId:clip.id});this.element.querySelector('[data-clip-id="'+clip.id+'"]')?.focus({preventScroll:true});});choices.append(button);
     }
     const originalURL=official?.original||item.originalVideoURL;
-    if(originalURL){
-      const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);
-      const amapLink=el('a','food-popover-amap','高德搜索 ↗');
-      amapLink.href=amapSearchUrl(item.name,item.amapCityCode||this.cityCode||'500000');
-      amapLink.target='_blank';amapLink.rel='noopener noreferrer';
-      amapLink.setAttribute('aria-label','在高德地图搜索'+item.name+'，新窗口打开');
-      links.append(amapLink);
-      if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));
-      if(item.verificationStatus==='video-location'){const note=el('small','food-popover-branch-note','位置大致 · 分店待核');note.title=item.planningLocation?.note||'按地址街区估计';links.append(note);}
-    }
+    if(originalURL){const link=el('a','','原视频 ↗');link.href=originalURL;link.target='_blank';link.rel='noopener noreferrer';links.append(link);if(official)links.append(el('small','food-popover-branch-note','相关视频 · 分店待核'));if(item.verificationStatus==='video-location'){const note=el('small','food-popover-branch-note','位置大致 · 分店待核');note.title=item.planningLocation?.note||'按地址街区估计';links.append(note);}}
     if(item.clipFootageNote){const note=el('small','food-popover-branch-note',item.clipFootageNote);links.append(note);}
     this.element.classList.toggle('has-clip-choices',choices.childElementCount>0);this.element.classList.toggle('has-footage-note',!!item.clipFootageNote);
     const details=el('div','food-popover-details');details.append(copy,choices,this.errorNote,links);
@@ -114,13 +104,12 @@ export class FoodPopover{
     this.element.classList.remove('is-height-limited');
     const media=this.element.querySelector('.food-popover-media');
     media.style.height='';
-    // Include border, padding, and subpixel tolerance when targeting >= 2/3 of total area.
+    // Include border and padding when targeting two-thirds of the total area.
     // Details scroll when the viewport limits the available height.
-    const elemRect=this.element.getBoundingClientRect(),mediaRect=media.getBoundingClientRect();
-    const detailsHeight=elemRect.height-mediaRect.height;
-    const widthRatio=mediaRect.width/elemRect.width;
-    const targetRatio=Math.min(.9,(2/3+.004)/widthRatio);
-    const mediaHeight=Math.max(mediaRect.height,Math.ceil(detailsHeight*targetRatio/(1-targetRatio)));
+    const detailsHeight=this.element.offsetHeight-media.offsetHeight;
+    const widthRatio=media.offsetWidth/this.element.offsetWidth;
+    const targetRatio=(2/3)/widthRatio;
+    const mediaHeight=Math.max(media.offsetHeight,Math.ceil(detailsHeight*targetRatio/(1-targetRatio)));
     this.element.style.setProperty('--food-popover-available-height',availableHeight+'px');
     this.element.style.setProperty('--food-popover-media-height',Math.ceil(availableHeight*targetRatio)+'px');
     const limited=mediaHeight+detailsHeight>availableHeight;
