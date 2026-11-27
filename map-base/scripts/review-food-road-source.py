@@ -1,5 +1,5 @@
 """Independently compare retained road IDs/coordinates/order/tags to the frozen PBF."""
-import argparse, hashlib, json, shutil, tempfile
+import argparse, hashlib, json, os, shutil, tempfile
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import osmium
@@ -15,7 +15,15 @@ report_path = (root / args.report).resolve()
 if not report_path.is_relative_to(root):
     parser.error('Report must stay within the project.')
 config = json.loads((root / 'config/cities.json').read_text(encoding='utf8'))
-network = config['cities'][args.city]['foodContent']['roadNetwork']
+if args.city in config['cities']:
+    city_conf = config['cities'][args.city]
+else:
+    profile_path = root / f'data/cities/{args.city}/city-profile.json'
+    if profile_path.exists():
+        city_conf = json.loads(profile_path.read_text(encoding='utf8'))
+    else:
+        raise ValueError(f'City {args.city} is not configured.')
+network = city_conf['foodContent']['roadNetwork']
 data = json.loads((root / network).read_text(encoding='utf8'))
 with args.pbf.open('rb') as file:
     assert hashlib.file_digest(file, 'sha256').hexdigest() == data['source']['sha256']
@@ -23,14 +31,23 @@ nodes = {n[0]:n for n in data['nodes']}
 ways = {w['id']:w for w in data['ways']}
 found_nodes = set(); found_ways = set()
 with tempfile.TemporaryDirectory(prefix='shitu-road-audit-') as temp:
-    pbf = Path(temp) / 'original.osm.pbf'; shutil.copyfile(args.pbf, pbf)
-    for node in osmium.FileProcessor(str(pbf), osmium.osm.NODE):
+    source_resolved = args.pbf.resolve()
+    try:
+        rel = os.path.relpath(source_resolved, Path.cwd())
+    except ValueError:
+        rel = str(source_resolved)
+    if rel.isascii():
+        pbf = rel
+    else:
+        pbf_path = Path(temp) / 'original.osm.pbf'; shutil.copyfile(args.pbf, pbf_path)
+        pbf = str(pbf_path)
+    for node in osmium.FileProcessor(pbf, osmium.osm.NODE):
         if node.id not in nodes: continue
         saved = nodes[node.id]; found_nodes.add(node.id)
         assert saved[1:3] == [node.location.lon, node.location.lat], f'Coordinate mutation: {node.id}'
         original = dict((t.k,t.v) for t in node.tags)
         assert all(original.get(k) == v for k,v in saved[3].items()), f'Node tag mutation: {node.id}'
-    for way in osmium.FileProcessor(str(pbf), osmium.osm.WAY):
+    for way in osmium.FileProcessor(pbf, osmium.osm.WAY):
         if way.id not in ways: continue
         saved = ways[way.id]; found_ways.add(way.id)
         assert saved['nodes'] == [n.ref for n in way.nodes], f'Node order mutation: {way.id}'

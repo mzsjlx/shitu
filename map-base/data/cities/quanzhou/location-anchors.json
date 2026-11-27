@@ -1,0 +1,1080 @@
+{
+  "schemaVersion": 1,
+  "city": "quanzhou",
+  "reviewedOn": "2026-11-26",
+  "sourcePbf": {
+    "fileName": "fujian-261121.osm.pbf",
+    "sourceDate": "2026-11-21",
+    "url": "https://download.geofabrik.de/asia/china/fujian/fujian-261121.osm.pbf",
+    "sha256": "19d4d090e6c101ff885f4c21b299aa6d5c27f0aa8a03f3abe6562443141c2478",
+    "license": "ODbL 1.0",
+    "attribution": "© OpenStreetMap contributors"
+  },
+  "anchors": [
+    {
+      "segmentId": "qz-nangua-aling-huashengtang",
+      "name": "阿玲花生汤",
+      "kind": "osm-way",
+      "id": 294973999,
+      "nodeId": 3358955101,
+      "anchorName": "承天巷",
+      "url": "https://www.openstreetmap.org/way/294973999",
+      "coordinates": [
+        118.587513,
+        24.911019
+      ],
+      "method": "original-way-node",
+      "basis": "video-storefront-and-public-address"
+    },
+    {
+      "segmentId": "qz-nangua-qunzhong-niurou",
+      "name": "群众牛肉小吃海蛎煎",
+      "kind": "osm-way",
+      "id": 294706460,
+      "nodeId": 2285727564,
+      "anchorName": "中山南路",
+      "url": "https://www.openstreetmap.org/way/294706460",
+      "coordinates": [
+        118.58383,
+        24.898291
+      ],
+      "method": "original-way-node",
+      "basis": "video-door-plaque"
+    },
+    {
+      "segmentId": "qz-nangua-pangong-lumian",
+      "name": "泮宫卤面",
+      "kind": "osm-way",
+      "id": 72233706,
+      "nodeId": 858410313,
+      "anchorName": "新门街",
+      "url": "https://www.openstreetmap.org/way/72233706",
+      "coordinates": [
+        118.580419,
+        24.910152
+      ],
+      "method": "original-way-node",
+      "basis": "video-door-plaque"
+    },
+    {
+      "segmentId": "qz-nangua-asan-fuguo",
+      "name": "阿三泉港浮粿",
+      "kind": "osm-way",
+      "id": 303418533,
+      "nodeId": 3077730342,
+      "anchorName": "美食街",
+      "url": "https://www.openstreetmap.org/way/303418533",
+      "coordinates": [
+        118.596143,
+        24.906764
+      ],
+      "method": "original-way-node",
+      "basis": "video-door-plaque"
+    },
+    {
+      "segmentId": "qz-nangua-aqiu-niupai",
+      "name": "阿秋牛排店",
+      "kind": "osm-way",
+      "id": 219409911,
+      "nodeId": 2285727362,
+      "anchorName": "湖心街",
+      "url": "https://www.openstreetmap.org/way/219409911",
+      "coordinates": [
+        118.600896,
+        24.909305
+      ],
+      "method": "poi-node-and-adjacent-way-node",
+      "basis": "video-door-plaque-and-osm-poi"
+    },
+    {
+      "segmentId": "qz-nangua-hujian",
+      "name": "壶见",
+      "kind": "osm-way",
+      "id": 294706463,
+      "nodeId": 13269316147,
+      "anchorName": "中山中路",
+      "url": "https://www.openstreetmap.org/way/294706463",
+      "coordinates": [
+        118.586235,
+        24.914157
+      ],
+      "method": "original-way-node",
+      "basis": "video-cup-label"
+    },
+    {
+      "segmentId": "qz-nangua-kunji-yutoubing",
+      "name": "坤记芋头饼",
+      "kind": "osm-way",
+      "id": 166164157,
+      "nodeId": 11031792296,
+      "anchorName": "西街",
+      "url": "https://www.openstreetmap.org/way/166164157",
+      "coordinates": [
+        118.58501,
+        24.915523
+      ],
+      "method": "original-way-node",
+      "basis": "video-storefront"
+    },
+    {
+      "segmentId": "qz-nangua-meimeiayi-curou",
+      "name": "美美阿姨醋肉",
+      "kind": "osm-way",
+      "id": 472423730,
+      "nodeId": 2993368433,
+      "anchorName": "东街",
+      "url": "https://www.openstreetmap.org/way/472423730",
+      "coordinates": [
+        118.593248,
+        24.914421
+      ],
+      "method": "original-way-node",
+      "basis": "video-door-plaque"
+    },
+    {
+      "segmentId": "qz-nangua-changhu-tusundong",
+      "name": "长虎土笋冻",
+      "kind": "osm-way",
+      "id": 166164157,
+      "nodeId": 11031792261,
+      "anchorName": "西街",
+      "url": "https://www.openstreetmap.org/way/166164157",
+      "coordinates": [
+        118.582913,
+        24.915839
+      ],
+      "method": "original-way-node",
+      "basis": "video-storefront-and-public-address"
+    },
+    {
+      "segmentId": "qz-nangua-misi-xiaozhuangzhuang",
+      "name": "米斯小庄庄",
+      "kind": "osm-way",
+      "id": 294648656,
+      "nodeId": 2982406944,
+      "anchorName": "南俊路",
+      "url": "https://www.openstreetmap.org/way/294648656",
+      "coordinates": [
+        118.591812,
+        24.916618
+      ],
+      "method": "original-way-node",
+      "basis": "video-storefront-and-adjacent-sign"
+    },
+    {
+      "segmentId": "qz-nangua-donglai-caitousuan",
+      "name": "东来菜头酸",
+      "kind": "osm-way",
+      "id": 905000223,
+      "nodeId": 2986102900,
+      "anchorName": "金鱼巷",
+      "url": "https://www.openstreetmap.org/way/905000223",
+      "coordinates": [
+        118.584012,
+        24.908466
+      ],
+      "method": "original-way-node",
+      "basis": "video-storefront"
+    },
+    {
+      "segmentId": "qz-nangua-aia-shihuagao",
+      "name": "爱啊石花膏",
+      "kind": "osm-way",
+      "id": 1194723515,
+      "nodeId": 2986102879,
+      "anchorName": "濠沟墘",
+      "url": "https://www.openstreetmap.org/way/1194723515",
+      "coordinates": [
+        118.583408,
+        24.911382
+      ],
+      "method": "original-way-node",
+      "basis": "video-door-plaque"
+    },
+    {
+      "segmentId": "qz-nangua-sanjiaohu",
+      "name": "三脚虎·现炒痛风锅",
+      "kind": "osm-way",
+      "id": 166164157,
+      "nodeId": 8401750884,
+      "anchorName": "西街",
+      "url": "https://www.openstreetmap.org/way/166164157",
+      "coordinates": [
+        118.58101,
+        24.916103
+      ],
+      "method": "original-way-node",
+      "basis": "video-storefront-and-public-address"
+    },
+    {
+      "segmentId": "qz-nangua-shuimenguozai",
+      "name": "水门国仔面线糊",
+      "kind": "osm-way",
+      "id": 303418533,
+      "nodeId": 14212415273,
+      "anchorName": "美食街",
+      "url": "https://www.openstreetmap.org/way/303418533",
+      "coordinates": [
+        118.594198,
+        24.903267
+      ],
+      "method": "original-way-node",
+      "basis": "video-door-plaque"
+    },
+    {
+      "segmentId": "qz-nangua-chunge-tiebanshao",
+      "name": "春哥铁板烧",
+      "kind": "osm-way",
+      "id": 303607749,
+      "nodeId": 3080046336,
+      "anchorName": "胭脂巷",
+      "url": "https://www.openstreetmap.org/way/303607749",
+      "coordinates": [
+        118.584529,
+        24.90735
+      ],
+      "method": "adjacent-poi-and-way-node",
+      "basis": "video-adjacent-landmark"
+    },
+    {
+      "segmentId": "qz-nangua-yixin-bingpin",
+      "name": "一心冰品",
+      "kind": "osm-way",
+      "id": 229531814,
+      "nodeId": 14115865415,
+      "anchorName": "迎津街",
+      "url": "https://www.openstreetmap.org/way/229531814",
+      "coordinates": [
+        118.594675,
+        24.899133
+      ],
+      "method": "poi-node-and-adjacent-way-node",
+      "basis": "video-list-and-osm-poi"
+    },
+    {
+      "segmentId": "qz-nangua-jiyue-mianbao",
+      "name": "吉月面包",
+      "kind": "osm-way",
+      "id": 303418529,
+      "nodeId": 9432172057,
+      "anchorName": "东涂街",
+      "url": "https://www.openstreetmap.org/way/303418529",
+      "coordinates": [
+        118.59883,
+        24.901013
+      ],
+      "method": "original-way-node",
+      "basis": "video-door-plaque"
+    },
+    {
+      "segmentId": "qz-nangua-xiaofuqi-shaguo",
+      "name": "小夫妻云谷8元砂锅",
+      "kind": "osm-way",
+      "id": 389824287,
+      "nodeId": 6275173901,
+      "anchorName": "云晖路",
+      "url": "https://www.openstreetmap.org/way/389824287",
+      "coordinates": [
+        118.611167,
+        24.8997
+      ],
+      "method": "community-node-and-adjacent-way-node",
+      "basis": "video-storefront-neighborhood"
+    },
+    {
+      "segmentId": "qz-nangua-adizai-yansuji",
+      "name": "阿弟仔盐酥鸡",
+      "kind": "osm-way",
+      "id": 774935932,
+      "nodeId": 7229823977,
+      "anchorName": "千亿社区支路",
+      "url": "https://www.openstreetmap.org/way/774935932",
+      "coordinates": [
+        118.617117,
+        24.895734
+      ],
+      "method": "community-node-and-adjacent-way-node",
+      "basis": "video-storefront-and-public-address"
+    },
+    {
+      "segmentId": "qz-yixuan-yuduzhouniangniang",
+      "name": "鲤城渝都周孃孃地摊火锅",
+      "kind": "osm-way",
+      "id": 219409915,
+      "nodeId": 2565313972,
+      "anchorName": "浮桥片区道路",
+      "url": "https://www.openstreetmap.org/way/219409915",
+      "coordinates": [
+        118.557222,
+        24.917332
+      ],
+      "method": "subdistrict-node-and-adjacent-way-node",
+      "basis": "video-storefront-and-public-district"
+    },
+    {
+      "segmentId": "qz-wxxin-linqingzuo",
+      "name": "林请坐川味自助老火锅",
+      "kind": "osm-way",
+      "id": 229531816,
+      "nodeId": 14112995229,
+      "anchorName": "津坂路",
+      "url": "https://www.openstreetmap.org/way/229531816",
+      "coordinates": [
+        118.593999,
+        24.898081
+      ],
+      "method": "original-way-node",
+      "basis": "video-receipt-and-public-address"
+    },
+    {
+      "segmentId": "qz-wxxin-lidafu",
+      "name": "李大富旋转小火锅",
+      "kind": "osm-way",
+      "id": 303570168,
+      "nodeId": 14379666529,
+      "anchorName": "后坂街",
+      "url": "https://www.openstreetmap.org/way/303570168",
+      "coordinates": [
+        118.597429,
+        24.899837
+      ],
+      "method": "original-way-node",
+      "basis": "video-storefront-and-author-comment"
+    },
+    {
+      "segmentId": "qz-shuibuzhaojiao-lidafu",
+      "name": "李大富旋转小火锅",
+      "kind": "osm-way",
+      "id": 303570168,
+      "nodeId": 14379666529,
+      "anchorName": "后坂街",
+      "url": "https://www.openstreetmap.org/way/303570168",
+      "coordinates": [
+        118.597429,
+        24.899837
+      ],
+      "method": "original-way-node",
+      "basis": "video-storefront-and-author-comment"
+    },
+    {
+      "segmentId": "qz-mingtianjian-nanshanta",
+      "name": "韩味南山塔烤肉自助",
+      "kind": "osm-way",
+      "id": 472370860,
+      "nodeId": 9432172051,
+      "anchorName": "丰泽街",
+      "url": "https://www.openstreetmap.org/way/472370860",
+      "coordinates": [
+        118.602739,
+        24.905927
+      ],
+      "method": "mall-node-and-adjacent-way-node",
+      "basis": "video-brand-and-candidate-branch"
+    },
+    {
+      "segmentId": "qz-yeyebuhuijia-youbianwang",
+      "name": "泉州油边王烧烤",
+      "kind": "osm-way",
+      "id": 303570154,
+      "nodeId": 5295808183,
+      "anchorName": "崇德实验小学门前道路",
+      "url": "https://www.openstreetmap.org/way/303570154",
+      "coordinates": [
+        118.586243,
+        24.889757
+      ],
+      "method": "landmark-way-and-adjacent-road-node",
+      "basis": "video-and-comment-landmark"
+    },
+    {
+      "segmentId": "qz-laohuchibaobao-kaka-baxikaorou",
+      "name": "Kaka巴西烤肉自助",
+      "kind": "osm-way",
+      "id": 303502190,
+      "nodeId": 5470235277,
+      "anchorName": "圣湖路",
+      "url": "https://www.openstreetmap.org/way/303502190",
+      "coordinates": [
+        118.609629,
+        24.905193
+      ],
+      "method": "original-way-node",
+      "basis": "video-brand-comment-and-public-area"
+    },
+    {
+      "segmentId": "qz-hesyyy-nidaye-kaorou",
+      "name": "霓大爷烤肉",
+      "kind": "osm-way",
+      "id": 663474572,
+      "nodeId": 6210170848,
+      "anchorName": "晋江宝龙广场北侧道路",
+      "url": "https://www.openstreetmap.org/way/663474572",
+      "coordinates": [
+        118.562807,
+        24.805131
+      ],
+      "method": "mall-node-and-adjacent-way-node",
+      "basis": "author-comment-and-public-address"
+    },
+    {
+      "segmentId": "qz-lanseshutiao-manhuo-kaorou",
+      "name": "漫火山葵烤肉",
+      "kind": "osm-way",
+      "id": 229531814,
+      "nodeId": 14317437184,
+      "anchorName": "迎津街",
+      "url": "https://www.openstreetmap.org/way/229531814",
+      "coordinates": [
+        118.593406,
+        24.899744
+      ],
+      "method": "original-way-node",
+      "basis": "video-brand-comment-and-public-address"
+    },
+    {
+      "segmentId": "qz-qilunshi-liuzhenzhen-kaorou",
+      "name": "柳真真·云贵山岭烤肉",
+      "kind": "osm-way",
+      "id": 219409104,
+      "nodeId": 4644436812,
+      "anchorName": "宝洲街",
+      "url": "https://www.openstreetmap.org/way/219409104",
+      "coordinates": [
+        118.59602,
+        24.885258
+      ],
+      "method": "mall-way-and-adjacent-road-node",
+      "basis": "video-cup-brand-and-public-address"
+    },
+    {
+      "segmentId": "qz-nini-tangjiaobian-podian",
+      "name": "塘角边的破店烧烤",
+      "kind": "osm-way",
+      "id": 564542398,
+      "nodeId": 858410380,
+      "anchorName": "泉秀街",
+      "url": "https://www.openstreetmap.org/way/564542398",
+      "coordinates": [
+        118.605225,
+        24.888349
+      ],
+      "method": "original-way-node",
+      "basis": "author-comment-and-public-address"
+    },
+    {
+      "segmentId": "qz-muyouchuan-peiyu-haixian",
+      "name": "培玉海鲜馆",
+      "kind": "osm-way",
+      "id": 1225962732,
+      "nodeId": 8404550082,
+      "anchorName": "南俊路",
+      "url": "https://www.openstreetmap.org/way/1225962732",
+      "coordinates": [
+        118.586477,
+        24.907063
+      ],
+      "method": "original-way-node",
+      "basis": "video-adjacent-sign-and-author-comment"
+    },
+    {
+      "segmentId": "qz-chaoneng77-achao",
+      "name": "阿超小排档",
+      "kind": "osm-way",
+      "id": 1568580750,
+      "nodeId": 4663769926,
+      "anchorName": "津淮街",
+      "url": "https://www.openstreetmap.org/way/1568580750",
+      "coordinates": [
+        118.5998,
+        24.8976
+      ],
+      "method": "landmark-and-adjacent-way-node",
+      "basis": "multi-creator-storefront-and-public-address"
+    },
+    {
+      "segmentId": "qz-yesoso-60hao-xiaochao",
+      "name": "60号实惠小炒",
+      "kind": "osm-way",
+      "id": 329288646,
+      "nodeId": 4663431385,
+      "anchorName": "坪山路",
+      "url": "https://www.openstreetmap.org/way/329288646",
+      "coordinates": [
+        118.607597,
+        24.88754
+      ],
+      "method": "original-way-node",
+      "basis": "video-storefront-and-residential-landmark"
+    },
+    {
+      "segmentId": "qz-yesoso-achao",
+      "name": "阿超小排档",
+      "kind": "osm-way",
+      "id": 1568580750,
+      "nodeId": 4663769926,
+      "anchorName": "津淮街",
+      "url": "https://www.openstreetmap.org/way/1568580750",
+      "coordinates": [
+        118.5998,
+        24.8976
+      ],
+      "method": "landmark-and-adjacent-way-node",
+      "basis": "video-storefront-and-multi-creator-merge"
+    },
+    {
+      "segmentId": "qz-yesoso-zhonglou-achou",
+      "name": "钟楼阿臭排档",
+      "kind": "osm-way",
+      "id": 1568580743,
+      "nodeId": 14287527299,
+      "anchorName": "东街",
+      "url": "https://www.openstreetmap.org/way/1568580743",
+      "coordinates": [
+        118.588085,
+        24.914922
+      ],
+      "method": "landmark-and-adjacent-way-node",
+      "basis": "video-storefront-and-osm-landmark"
+    },
+    {
+      "segmentId": "qz-muyouchuan-achao",
+      "name": "阿超小排档",
+      "kind": "osm-way",
+      "id": 1568580750,
+      "nodeId": 4663769926,
+      "anchorName": "津淮街",
+      "url": "https://www.openstreetmap.org/way/1568580750",
+      "coordinates": [
+        118.5998,
+        24.8976
+      ],
+      "method": "landmark-and-adjacent-way-node",
+      "basis": "video-title-and-multi-creator-merge"
+    },
+    {
+      "segmentId": "qz-mishijun-apo-xiaopaidang",
+      "name": "阿坡小排档",
+      "kind": "osm-way",
+      "id": 219500322,
+      "nodeId": 7177159353,
+      "anchorName": "梅岭片区道路",
+      "url": "https://www.openstreetmap.org/way/219500322",
+      "coordinates": [
+        118.566385,
+        24.823477
+      ],
+      "method": "subdistrict-and-adjacent-way-node",
+      "basis": "video-title-author-comment-and-public-address"
+    },
+    {
+      "segmentId": "qz-wenyoulala-qingyouyu",
+      "name": "庆有余海鲜",
+      "kind": "osm-way",
+      "id": 303503887,
+      "nodeId": 14317590648,
+      "anchorName": "淮福街",
+      "url": "https://www.openstreetmap.org/way/303503887",
+      "coordinates": [
+        118.596197,
+        24.888575
+      ],
+      "method": "original-way-node",
+      "basis": "video-menu-comment-and-michelin-address"
+    },
+    {
+      "segmentId": "qz-jizai-haozailai-xiaochao",
+      "name": "好再来小炒店",
+      "kind": "osm-way",
+      "id": 229531816,
+      "nodeId": 14112995229,
+      "anchorName": "津坂路",
+      "url": "https://www.openstreetmap.org/way/229531816",
+      "coordinates": [
+        118.594218,
+        24.898028
+      ],
+      "method": "poi-node-and-adjacent-way-node",
+      "basis": "author-comment-and-osm-poi"
+    },
+    {
+      "segmentId": "qz-xiaodixiansen-fengxiang-meishi",
+      "name": "丰祥美食大排档",
+      "kind": "osm-way",
+      "id": 303503870,
+      "nodeId": 1776440142,
+      "anchorName": "祥远路",
+      "url": "https://www.openstreetmap.org/way/303503870",
+      "coordinates": [
+        118.609084,
+        24.903956
+      ],
+      "method": "original-way-node",
+      "basis": "video-title-card-and-public-address"
+    },
+    {
+      "segmentId": "qz-kakako-youbianwang",
+      "name": "泉州油边王烧烤",
+      "kind": "osm-way",
+      "id": 303570154,
+      "nodeId": 5295808183,
+      "anchorName": "崇德实验小学门前道路",
+      "url": "https://www.openstreetmap.org/way/303570154",
+      "coordinates": [
+        118.586243,
+        24.889757
+      ],
+      "method": "landmark-way-and-adjacent-road-node",
+      "basis": "author-comment-and-osm-residential-landmark"
+    },
+    {
+      "segmentId": "qz-linlin-youbianwang",
+      "name": "泉州油边王烧烤",
+      "kind": "osm-way",
+      "id": 303570154,
+      "nodeId": 5295808183,
+      "anchorName": "崇德实验小学门前道路",
+      "url": "https://www.openstreetmap.org/way/303570154",
+      "coordinates": [
+        118.586243,
+        24.889757
+      ],
+      "method": "landmark-way-and-adjacent-road-node",
+      "basis": "video-poi-and-store-visual-match"
+    },
+    {
+      "segmentId": "qz-guanguan-gongxiang-shaokao",
+      "name": "共享烧烤",
+      "kind": "osm-way",
+      "id": 966401728,
+      "nodeId": 8940888537,
+      "anchorName": "湖心街",
+      "url": "https://www.openstreetmap.org/way/966401728",
+      "coordinates": [
+        118.598593,
+        24.909629
+      ],
+      "method": "original-way-node",
+      "basis": "video-menu-sign-and-author-comment"
+    },
+    {
+      "segmentId": "qz-ada-dianmeier-dashitang",
+      "name": "点妹儿大食堂·现炒快餐自助",
+      "kind": "osm-way",
+      "id": 229531816,
+      "nodeId": 14189571121,
+      "anchorName": "津坂路",
+      "url": "https://www.openstreetmap.org/way/229531816",
+      "coordinates": [
+        118.594266,
+        24.898975
+      ],
+      "method": "original-way-node",
+      "basis": "video-storefront-and-poi"
+    },
+    {
+      "segmentId": "qz-ayin-ba0ba-shitang",
+      "name": "八O八自助小炒食堂",
+      "kind": "osm-way",
+      "id": 250003915,
+      "nodeId": 3079622737,
+      "anchorName": "兴贤路",
+      "url": "https://www.openstreetmap.org/way/250003915",
+      "coordinates": [
+        118.562407,
+        24.899779
+      ],
+      "method": "original-way-node",
+      "basis": "video-poi-and-subtitle-street"
+    },
+    {
+      "segmentId": "qz-wangyaomei-longge-kuaican",
+      "name": "龙哥自助快餐店",
+      "kind": "osm-way",
+      "id": 303573405,
+      "nodeId": 3079617442,
+      "anchorName": "常兴路",
+      "url": "https://www.openstreetmap.org/way/303573405",
+      "coordinates": [
+        118.558152,
+        24.897524
+      ],
+      "method": "original-way-node",
+      "basis": "author-caption-exact-address"
+    },
+    {
+      "segmentId": "qz-kuangchi-chuanjiao-zizhu",
+      "name": "川骄海鲜自助火锅",
+      "kind": "osm-way",
+      "id": 472370846,
+      "nodeId": 4665798112,
+      "anchorName": "宝洲街",
+      "url": "https://www.openstreetmap.org/way/472370846",
+      "coordinates": [
+        118.596346,
+        24.885699
+      ],
+      "method": "mall-way-and-adjacent-road-node",
+      "basis": "video-storefront-and-poi"
+    },
+    {
+      "segmentId": "qz-ada-quanzhou-yingbinguan",
+      "name": "泉州迎宾馆自助餐",
+      "kind": "osm-way",
+      "id": 538404743,
+      "nodeId": 5211523295,
+      "anchorName": "泉州迎宾馆门前道路",
+      "url": "https://www.openstreetmap.org/way/538404743",
+      "coordinates": [
+        118.650448,
+        24.888136
+      ],
+      "method": "poi-node-and-adjacent-way-node",
+      "basis": "video-poi-and-osm-entity"
+    },
+    {
+      "segmentId": "qz-qzchitou-humei-hotel",
+      "name": "湖美大酒店自助餐",
+      "kind": "osm-way",
+      "id": 943490663,
+      "nodeId": 14251726016,
+      "anchorName": "刺桐北路",
+      "url": "https://www.openstreetmap.org/way/943490663",
+      "coordinates": [
+        118.610694,
+        24.914909
+      ],
+      "method": "original-way-node",
+      "basis": "video-title-poi-and-public-address"
+    },
+    {
+      "segmentId": "qz-xiugou-jianghefeng-liaoli",
+      "name": "匠和风精致料理自助",
+      "kind": "osm-way",
+      "id": 911524171,
+      "nodeId": 8463640348,
+      "anchorName": "城东尚柏奥莱旁道路",
+      "url": "https://www.openstreetmap.org/way/911524171",
+      "coordinates": [
+        118.655495,
+        24.918313
+      ],
+      "method": "mall-way-and-adjacent-road-node",
+      "basis": "video-storefront-and-poi"
+    },
+    {
+      "segmentId": "qz-yougushi-zhonglou-xijie-yeshi",
+      "name": "泉州钟楼西街夜市",
+      "kind": "osm-way",
+      "id": 166164157,
+      "nodeId": 14287527285,
+      "anchorName": "西街",
+      "url": "https://www.openstreetmap.org/way/166164157",
+      "coordinates": [
+        118.586484,
+        24.915315
+      ],
+      "method": "landmark-node-and-adjacent-way-node",
+      "basis": "video-landmark-and-title"
+    },
+    {
+      "segmentId": "qz-youzhi-jinjiang-yangguang-yeshi",
+      "name": "晋江阳光夜市",
+      "kind": "osm-way",
+      "id": 359882449,
+      "nodeId": 3358894598,
+      "anchorName": "和平中路",
+      "url": "https://www.openstreetmap.org/way/359882449",
+      "coordinates": [
+        118.58234,
+        24.802974
+      ],
+      "method": "original-way-node",
+      "basis": "video-title-and-comment-landmark"
+    },
+    {
+      "segmentId": "qz-tudou-puxi-wanda-yeshi",
+      "name": "浦西万达夜市",
+      "kind": "osm-way",
+      "id": 470245065,
+      "nodeId": 4644436813,
+      "anchorName": "浦西万达金街步道",
+      "url": "https://www.openstreetmap.org/way/470245065",
+      "coordinates": [
+        118.595565,
+        24.884206
+      ],
+      "method": "mall-way-and-adjacent-road-node",
+      "basis": "video-title-and-mall-landmark"
+    },
+    {
+      "segmentId": "qz-youdiane-donghai-taihe-yeshi",
+      "name": "东海泰禾夜市",
+      "kind": "osm-way",
+      "id": 934078240,
+      "nodeId": 8657208659,
+      "anchorName": "泰禾路",
+      "url": "https://www.openstreetmap.org/way/934078240",
+      "coordinates": [
+        118.635549,
+        24.873636
+      ],
+      "method": "poi-node-and-adjacent-way-node",
+      "basis": "video-poi-and-osm-landmark"
+    },
+    {
+      "segmentId": "qz-xinxin-beifeng-yeshi",
+      "name": "泉州北峰夜市",
+      "kind": "osm-way",
+      "id": 329244411,
+      "nodeId": 2669063306,
+      "anchorName": "北清东路",
+      "url": "https://www.openstreetmap.org/way/329244411",
+      "coordinates": [
+        118.571071,
+        24.938825
+      ],
+      "method": "poi-node-and-adjacent-way-node",
+      "basis": "video-title-and-osm-entity"
+    },
+    {
+      "segmentId": "qz-hanbao-gaoyang-yeshi",
+      "name": "晋江高阳夜市",
+      "kind": "osm-way",
+      "id": 219395917,
+      "nodeId": 2285579075,
+      "anchorName": "世纪大道",
+      "url": "https://www.openstreetmap.org/way/219395917",
+      "coordinates": [
+        118.560593,
+        24.804563
+      ],
+      "method": "original-way-node",
+      "basis": "video-title-and-district-landmark"
+    },
+    {
+      "segmentId": "qz-qzxiaochi-dongqu-yetan",
+      "name": "东区野滩广场夜市",
+      "kind": "osm-way",
+      "id": 304027288,
+      "nodeId": 8410606048,
+      "anchorName": "丰海路",
+      "url": "https://www.openstreetmap.org/way/304027288",
+      "coordinates": [
+        118.638984,
+        24.870656
+      ],
+      "method": "original-way-node",
+      "basis": "video-poi-and-bridge-landmark"
+    },
+    {
+      "segmentId": "qz-mading-huitou-chaofan",
+      "name": "回头炒饭（城东青年夜市）",
+      "kind": "osm-way",
+      "id": 538427162,
+      "nodeId": 5211643682,
+      "anchorName": "未命名开放道路（城东青莲寺/青年夜市片区）",
+      "url": "https://www.openstreetmap.org/way/538427162",
+      "coordinates": [
+        118.651623,
+        24.921598
+      ],
+      "method": "landmark-node-and-adjacent-way-node",
+      "basis": "video-title-and-comment-landmark"
+    },
+    {
+      "segmentId": "qz-mochanan-xiaopen-shuizhu",
+      "name": "小盆水煮点菜（东海大酒店拐角摊）",
+      "kind": "osm-way",
+      "id": 219409104,
+      "nodeId": 13282741983,
+      "anchorName": "宝洲街",
+      "url": "https://www.openstreetmap.org/way/219409104",
+      "coordinates": [
+        118.591384,
+        24.887826
+      ],
+      "method": "landmark-way-and-adjacent-road-node",
+      "basis": "video-signboard-and-author-reply"
+    },
+    {
+      "segmentId": "qz-yetanshaokao-xijiao",
+      "name": "野摊鲜肉烧烤（西郊）",
+      "kind": "osm-way",
+      "id": 294972299,
+      "nodeId": 10029024811,
+      "anchorName": "西贤路",
+      "url": "https://www.openstreetmap.org/way/294972299",
+      "coordinates": [
+        118.574775,
+        24.925468
+      ],
+      "method": "poi-node-and-adjacent-way-node",
+      "basis": "video-poi-and-osm-entity"
+    },
+    {
+      "segmentId": "qz-youzhi-xingguang-doujiang",
+      "name": "深夜碳炉豆浆油条·肥肠蛙（星光不夜城）",
+      "kind": "osm-way",
+      "id": 564542398,
+      "nodeId": 3361570624,
+      "anchorName": "泉秀街",
+      "url": "https://www.openstreetmap.org/way/564542398",
+      "coordinates": [
+        118.607235,
+        24.887484
+      ],
+      "method": "original-way-node",
+      "basis": "video-poi-and-street-landmark"
+    },
+    {
+      "segmentId": "qz-aqi-jiuchezhan-xianfan",
+      "name": "旧车站对面3元咸饭古早味小吃摊",
+      "kind": "osm-way",
+      "id": 1561752325,
+      "nodeId": 14209701394,
+      "anchorName": "未命名开放道路（温陵南路原泉州汽车总站/商贸城）",
+      "url": "https://www.openstreetmap.org/way/1561752325",
+      "coordinates": [
+        118.589728,
+        24.895978
+      ],
+      "method": "landmark-way-and-adjacent-road-node",
+      "basis": "video-poi-and-author-reply"
+    },
+    {
+      "segmentId": "qz-yangxiaojie-shuiguo-qiegao",
+      "name": "杨小姐花式水果切糕摊",
+      "kind": "osm-way",
+      "id": 1501124034,
+      "nodeId": 13743051005,
+      "anchorName": "南环路",
+      "url": "https://www.openstreetmap.org/way/1501124034",
+      "coordinates": [
+        118.536477,
+        24.909327
+      ],
+      "method": "poi-node-and-adjacent-way-node",
+      "basis": "video-poi-and-osm-entity"
+    },
+    {
+      "segmentId": "qz-mading-minqiao-chaomian",
+      "name": "闽侨大厦深夜12元路边摊炒面",
+      "kind": "osm-way",
+      "id": 472370852,
+      "nodeId": 14170119619,
+      "anchorName": "田安北路",
+      "url": "https://www.openstreetmap.org/way/472370852",
+      "coordinates": [
+        118.603821,
+        24.909664
+      ],
+      "method": "poi-node-and-adjacent-way-node",
+      "basis": "video-poi-and-osm-entity"
+    },
+    {
+      "segmentId": "qz-shuibuzhaojiao-jinling-guantangbao",
+      "name": "金陵灌汤包（西湖店）",
+      "kind": "osm-way",
+      "id": 295690208,
+      "nodeId": 13282741913,
+      "anchorName": "西湖街",
+      "url": "https://www.openstreetmap.org/way/295690208",
+      "coordinates": [
+        118.582345,
+        24.92824
+      ],
+      "method": "original-way-node",
+      "basis": "video-signboard-comment-and-landmark"
+    },
+    {
+      "segmentId": "qz-shuibuzhaojiao-qiaotou-changfen",
+      "name": "桥头簸箕肠粉（田安路店）",
+      "kind": "osm-way",
+      "id": 176115620,
+      "nodeId": 1866832187,
+      "anchorName": "田安北路",
+      "url": "https://www.openstreetmap.org/way/176115620",
+      "coordinates": [
+        118.600717,
+        24.904466
+      ],
+      "method": "original-way-node",
+      "basis": "video-title-and-comment-street"
+    },
+    {
+      "segmentId": "qz-miemie-xinmenjie-doujiang",
+      "name": "新门街豆浆店（泉州市豆制品厂）",
+      "kind": "osm-way",
+      "id": 176115653,
+      "nodeId": 1866832260,
+      "anchorName": "新门街",
+      "url": "https://www.openstreetmap.org/way/176115653",
+      "coordinates": [
+        118.572723,
+        24.914855
+      ],
+      "method": "original-way-node",
+      "basis": "video-poi-and-signboard-address"
+    },
+    {
+      "segmentId": "qz-hunjun-xiana-mianxianhu",
+      "name": "献啊仕公岭面线糊店",
+      "kind": "osm-way",
+      "id": 1457226076,
+      "nodeId": 13746426694,
+      "anchorName": "未命名开放道路（丰泽仕公岭片区）",
+      "url": "https://www.openstreetmap.org/way/1457226076",
+      "coordinates": [
+        118.623681,
+        24.910188
+      ],
+      "method": "landmark-way-and-adjacent-road-node",
+      "basis": "video-poi-and-osm-entity"
+    },
+    {
+      "segmentId": "qz-dianxinlaosheng-wena-mianxianhu",
+      "name": "文啊面线糊（县后路店）",
+      "kind": "osm-way",
+      "id": 294840483,
+      "nodeId": 2984622381,
+      "anchorName": "县后街",
+      "url": "https://www.openstreetmap.org/way/294840483",
+      "coordinates": [
+        118.58865,
+        24.916453
+      ],
+      "method": "original-way-node",
+      "basis": "video-poi-signboard-and-street"
+    },
+    {
+      "segmentId": "qz-linrichang-zhangji-huashengru",
+      "name": "张记石磨花生乳（西街菜市场店）",
+      "kind": "osm-way",
+      "id": 1194043339,
+      "nodeId": 11083911008,
+      "anchorName": "未命名开放道路（西街菜市场旁）",
+      "url": "https://www.openstreetmap.org/way/1194043339",
+      "coordinates": [
+        118.57815,
+        24.915872
+      ],
+      "method": "landmark-way-and-adjacent-road-node",
+      "basis": "video-poi-signboard-and-osm-entity"
+    },
+    {
+      "segmentId": "qz-manggexiaoge-zhenweidao-zaocan",
+      "name": "真味道饮食店（青阳黑煤灶古早早餐）",
+      "kind": "osm-way",
+      "id": 306824141,
+      "nodeId": 3118303215,
+      "anchorName": "未命名开放道路（晋江青阳敏月公园/南山路片区）",
+      "url": "https://www.openstreetmap.org/way/306824141",
+      "coordinates": [
+        118.569808,
+        24.814337
+      ],
+      "method": "landmark-way-and-adjacent-road-node",
+      "basis": "video-poi-signboard-and-osm-entity"
+    }
+  ]
+}

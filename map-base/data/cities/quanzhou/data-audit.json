@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "city": "quanzhou",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "泉州核心城区（涵盖鲤城古城西街/开元寺/中山路/涂门街/天后宫，丰泽浦西/领SHOW/东海/蟳埔村，清源山/泉州站/洛阳桥，及晋江桥南/五店市片区）",
+  "bounds": [
+    118.53,
+    24.8,
+    118.69,
+    24.98
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 2883645,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      118.53,
+      24.8,
+      118.69,
+      24.98
+    ]
+  },
+  "osmReplicationTime": "2026-11-22T04:00:00Z",
+  "counters": {
+    "requestedTiles": 304,
+    "presentTiles": 304,
+    "roadLineFragments": 3122,
+    "namedRoadLineFragments": 1312,
+    "unnamedRoadLineFragments": 1810,
+    "nonRoadTransportFragmentsExcluded": 189,
+    "buildingPolygonFragments": 3278,
+    "buildingFragmentsWithPositiveHeight": 83,
+    "buildingFragmentsWithoutPositiveHeight": 3195,
+    "namedRoadGroups": 368
+  },
+  "roadClassCounts": {
+    "highway": 147,
+    "major_road": 1539,
+    "minor_road": 1125,
+    "path": 311
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    "爱国路": {
+      "exact": {
+        "id": "road:爱国路",
+        "class": "minor_road",
+        "detail": "residential",
+        "name": "爱国路",
+        "bounds": [
+          118.5799858,
+          24.9194815,
+          118.5878608,
+          24.9206297
+        ],
+        "center": [
+          118.585479,
+          24.9205445
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 3
+      },
+      "related": [
+        "爱国路"
+      ]
+    },
+    "安吉路": {
+      "exact": {
+        "id": "road:安吉路",
+        "class": "major_road",
+        "detail": "primary",
+        "name": "安吉路",
+        "bounds": [
+          118.6290434,
+          24.8997402,
+          118.6540684,
+          24.9211551
+        ],
+        "center": [
+          118.6457603,
+          24.913709
+        ],
+        "bridge": true,
+        "tunnel": false,
+        "bridgeFragments": 1,
+        "tunnelFragments": 0,
+        "segments": 7
+      },
+      "related": [
+        "安吉路"
+      ]
+    },
+    "枊新路": {
+      "exact": {
+        "id": "road:枊新路",
+        "class": "minor_road",
+        "detail": "residential",
+        "name": "枊新路",
+        "bounds": [
+          118.5481104,
+          24.9511267,
+          118.548266,
+          24.9519146
+        ],
+        "center": [
+          118.5481882,
+          24.9515207
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 1
+      },
+      "related": [
+        "枊新路"
+      ]
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}

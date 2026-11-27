@@ -1,0 +1,226 @@
+{
+  "verifiedOn": "2026-11-23",
+  "passed": true,
+  "checks": [
+    {
+      "name": "1. Map readiness signal and Quanzhou title",
+      "passed": true,
+      "details": {
+        "statusText": "泉州地图已展开",
+        "title": "食途 · 泉州地图"
+      }
+    },
+    {
+      "name": "2. Exact 22 on-map Quanzhou food cards rendered (19 Batch 1 + 3 Batch 2 hotpot shops)",
+      "passed": true,
+      "details": {
+        "cardCount": 22
+      }
+    },
+    {
+      "name": "3. Verified Quanzhou Batch 1 & Batch 2 hotpot shop names present on map",
+      "passed": true,
+      "details": {
+        "sampleNames": [
+          "阿玲花生汤",
+          "群众牛肉小吃海蛎煎",
+          "泮宫卤面",
+          "阿三泉港浮粿",
+          "阿秋牛排店",
+          "壶见",
+          "坤记芋头饼",
+          "美美阿姨醋肉",
+          "长虎土笋冻",
+          "米斯小庄庄"
+        ],
+        "hotpotMatches": [
+          "鲤城渝都周孃孃地摊火锅",
+          "林请坐川味自助老火锅",
+          "李大富旋转小火锅"
+        ]
+      }
+    },
+    {
+      "name": "4. Desktop 1440x960 popover opens and media area >= 2/3",
+      "passed": true,
+      "details": {
+        "shop": "鲤城渝都周孃孃地摊火锅",
+        "popoverWidth": 310,
+        "popoverHeight": 451,
+        "mediaWidth": 296,
+        "mediaHeight": 315,
+        "ratio": 0.6676452686978626
+      }
+    },
+    {
+      "name": "5. Real playback advances across two samples (dt >= 0.3s, playing)",
+      "passed": true,
+      "details": {
+        "shop": "鲤城渝都周孃孃地摊火锅",
+        "s1": {
+          "t": 0.072854,
+          "paused": false,
+          "readyState": 4
+        },
+        "s2": {
+          "t": 1.077808,
+          "paused": false,
+          "readyState": 4
+        },
+        "dt": 1.005
+      }
+    },
+    {
+      "name": "6. Shop switch stops & clears old video, plays new video, and Escape cleans up",
+      "passed": true,
+      "details": {
+        "shop2": "林请坐川味自助老火锅",
+        "v1AfterSwitch": {
+          "paused": true,
+          "hasSrc": false
+        },
+        "dt2": 1.013,
+        "v2AfterEsc": {
+          "popoverHidden": true,
+          "paused": true,
+          "hasSrc": false
+        }
+      }
+    },
+    {
+      "name": "7. Multi-creator switch on 李大富旋转小火锅 stops & clears Creator 1, advances Creator 2, and Escape cleans up",
+      "passed": true,
+      "details": {
+        "shop": "李大富旋转小火锅",
+        "clipButtons": [
+          {
+            "id": "qz-wxxin-lidafu",
+            "author": "Wxxin-",
+            "pressed": "true"
+          },
+          {
+            "id": "qz-shuibuzhaojiao-lidafu",
+            "author": "睡不着觉",
+            "pressed": "false"
+          }
+        ],
+        "dtMc1": 1.013,
+        "mc1AfterSwitch": {
+          "paused": true,
+          "hasSrc": false
+        },
+        "btn2Pressed": "true",
+        "dtMc2": 1.001,
+        "mc2AfterEsc": {
+          "popoverHidden": true,
+          "paused": true,
+          "hasSrc": false
+        },
+        "screenshot": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-lidafu-multicreator-1440.png"
+      }
+    },
+    {
+      "name": "8. Direct and real-road routing both compute & isolate localStorage to quanzhou",
+      "passed": true,
+      "details": {
+        "directSummary": "我的想去 3 站想去 直线约 4.7 公里 直线 沿路 1 川渝火锅 / 地摊称重火锅 2 川味火锅 / 自助老火锅 3 旋转小火锅 / 一人食火锅 一起看 ↗ 安排顺序",
+        "roadSummary": "我的想去 3 站想去 沿路约 5.8 公里 直线 沿路 1 川渝火锅 / 地摊称重火锅 2 川味火锅 / 自助老火锅 3 旋转小火锅 / 一人食火锅 一起看 ↗ 安排顺序",
+        "storage": {
+          "wants": "[\"video-qz-yixuan-yuduzhouniangniang\",\"video-qz-wxxin-linqingzuo\",\"video-qz-wxxin-lidafu\"]",
+          "mode": "road",
+          "cqWants": null
+        }
+      }
+    },
+    {
+      "name": "9. Desktop 1440x960 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-desktop-1440.png"
+      }
+    },
+    {
+      "name": "10. Chongqing regression clean (81 stops, zero Quanzhou contamination)",
+      "passed": true,
+      "details": {
+        "cqCardCount": 81
+      }
+    },
+    {
+      "name": "11. Mobile 390x844 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "popoverWidth": 260,
+        "popoverHeight": 491,
+        "mediaWidth": 246,
+        "mediaHeight": 346,
+        "ratio": 0.6667397775340749
+      }
+    },
+    {
+      "name": "12. Mobile 390x844 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-mobile-390.png"
+      }
+    },
+    {
+      "name": "13. Small 320x680 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "popoverWidth": 260,
+        "popoverHeight": 491,
+        "mediaWidth": 246,
+        "mediaHeight": 346,
+        "ratio": 0.6667397775340749
+      }
+    },
+    {
+      "name": "14. Small 320x680 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-small-320.png"
+      }
+    },
+    {
+      "name": "15. Short landscape 736x414 popover media area >= 2/3",
+      "passed": true,
+      "details": {
+        "popoverWidth": 310,
+        "popoverHeight": 330,
+        "mediaWidth": 296,
+        "mediaHeight": 231,
+        "ratio": 0.6683870967741935
+      }
+    },
+    {
+      "name": "16. Short landscape 736x414 screenshot saved",
+      "passed": true,
+      "details": {
+        "file": "D:\\美食地图\\map-base\\..\\output\\research\\quanzhou\\screenshots\\quanzhou-landscape-736.png"
+      }
+    },
+    {
+      "name": "17. No-media fallback decodes real Git poster and displays 视频待同步",
+      "passed": true,
+      "details": {
+        "posterLoaded": true,
+        "missingText": "视频待同步"
+      }
+    },
+    {
+      "name": "18. Standalone preview-quanzhou.html renders all 22 Quanzhou stops",
+      "passed": true,
+      "details": {
+        "cardCount": 22
+      }
+    },
+    {
+      "name": "19. Zero unhandled page errors across all checks",
+      "passed": true,
+      "details": {
+        "errors": []
+      }
+    }
+  ]
+}

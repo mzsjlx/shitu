@@ -1,5 +1,5 @@
 """Retain OSM road topology for approximate food-trip distances; no provider API."""
-import argparse, hashlib, json, shutil, tempfile
+import argparse, hashlib, json, os, shutil, tempfile
 from pathlib import Path
 import osmium
 
@@ -27,7 +27,8 @@ default_urls = {
     'wuhan': 'https://download.geofabrik.de/asia/china/hubei.html',
     'zhengzhou': 'https://download.geofabrik.de/asia/china/henan.html',
     'harbin': 'https://download.geofabrik.de/asia/china/heilongjiang.html',
-    'hangzhou': 'https://download.geofabrik.de/asia/china/zhejiang.html'
+    'hangzhou': 'https://download.geofabrik.de/asia/china/zhejiang.html',
+    'quanzhou': 'https://download.geofabrik.de/asia/china/fujian.html'
 }
 source_url = args.url or default_urls.get(city_id)
 if not source_url:
@@ -57,24 +58,32 @@ keys = {'highway','name','foot','access','bridge','tunnel','layer','area','indoo
 def tags_of(obj):
     return {t.k:t.v for t in obj.tags if t.k in keys or ('conditional' in t.k and t.k.startswith(('access','foot','oneway')))}
 
-# libosmium on Windows needs an ASCII filename; this temporary copy is verified above.
+# libosmium on Windows needs an ASCII path; prefer an ASCII relative path when available.
 with tempfile.TemporaryDirectory(prefix='shitu-road-') as temp:
-    pbf = Path(temp) / 'source.osm.pbf'; shutil.copyfile(source_path, pbf)
+    try:
+        rel = os.path.relpath(source_path, Path.cwd())
+    except ValueError:
+        rel = str(source_path)
+    if rel.isascii():
+        pbf = rel
+    else:
+        pbf_path = Path(temp) / 'source.osm.pbf'; shutil.copyfile(source_path, pbf_path)
+        pbf = str(pbf_path)
     nodes = {}
-    for node in osmium.FileProcessor(str(pbf), osmium.osm.NODE):
+    for node in osmium.FileProcessor(pbf, osmium.osm.NODE):
         if not node.location.valid(): continue
         lon, lat = node.location.lon, node.location.lat
         if west <= lon <= east and south <= lat <= north:
             nodes[node.id] = [node.id, lon, lat, tags_of(node)]
     ways = []; used = set()
-    for way in osmium.FileProcessor(str(pbf), osmium.osm.WAY):
+    for way in osmium.FileProcessor(pbf, osmium.osm.WAY):
         if not way.tags.get('highway'): continue
         refs = [n.ref for n in way.nodes]
         if not any(n in nodes for n in refs): continue
         ways.append({'id':way.id, 'nodes':refs, 'tags':tags_of(way)})
         used.update(n for n in refs if n in nodes)
     way_ids = {w['id'] for w in ways}; excluded = set()
-    for rel in osmium.FileProcessor(str(pbf), osmium.osm.RELATION):
+    for rel in osmium.FileProcessor(pbf, osmium.osm.RELATION):
         t = dict((t.k,t.v) for t in rel.tags)
         if t.get('restriction:foot') or (t.get('type') == 'restriction' and t.get('restriction:conditional') and 'foot' not in t.get('except','').split(';')):
             excluded.update(m.ref for m in rel.members if m.type == 'w' and m.ref in way_ids)

@@ -1,0 +1,399 @@
+{
+  "verifiedOn": "2026-11-25",
+  "passed": true,
+  "checks": [
+    {
+      "name": "1. config/cities.json includes valid quanzhou entry and retains all 10 prior cities",
+      "passed": true,
+      "details": {
+        "cityCount": 11,
+        "quanzhouBounds": [
+          118.53,
+          24.8,
+          118.69,
+          24.98
+        ],
+        "amapCityCode": "350500"
+      }
+    },
+    {
+      "name": "2. data/cities/quanzhou/quanzhou.pmtiles bytes and SHA256 match source-manifest.json",
+      "passed": true,
+      "details": {
+        "bytes": 2883645,
+        "sha256": "e7f6dcecf1b100023684430aba09c2cc39067dc1a7ddb98c202d93c1c283ae13",
+        "upstreamBuild": "20261122.pmtiles"
+      }
+    },
+    {
+      "name": "3. data-audit.json (304/304 tiles) and terrain-manifest.json (89 DEM PNGs) verified on disk",
+      "passed": true,
+      "details": {
+        "vectorTiles": 304,
+        "terrainTiles": 89
+      }
+    },
+    {
+      "name": "4. roads-index.json has valid Quanzhou road groups within bounds",
+      "passed": true,
+      "details": {
+        "roadGroups": 368
+      }
+    },
+    {
+      "name": "5. food-road-network.json bytes and SHA256 match manifest (LF-stable)",
+      "passed": true,
+      "details": {
+        "bytes": 2526241,
+        "sha256": "f161b01d6b457683a904d373cf969464e2ff6fcc6786587820513568fe5f7dc4",
+        "nodes": 37761,
+        "ways": 6789
+      }
+    },
+    {
+      "name": "6. food-road-router snaps all 71 located segments (66 places) <= 250m and routes all 2145 pairs across city & Jinjiang bridges",
+      "passed": true,
+      "details": {
+        "locatedSegments": 71,
+        "onMapPlaces": 66,
+        "connectedPairs": 2145,
+        "maxSnapMetres": 90.8,
+        "maxAnchorDistMetres": 102.6,
+        "alingToQunzhong": "1719m",
+        "jinlingToZhenweidaoCrossRiver": "15059m",
+        "qingyouyuToJinjiangApoCrossRiver": "10585m",
+        "liuzhenzhenToNidayeCrossRiver": "12446m",
+        "zhonglouToYangguangCrossRiver": "14591m"
+      }
+    },
+    {
+      "name": "7. allCityCatalogs loads 11 cities without collision; Quanzhou 56 sources / 81 segments / 66 places / posters & anchors match disk hashes",
+      "passed": true,
+      "details": {
+        "totalCities": 11,
+        "sources": 56,
+        "segments": 81,
+        "locatedSegments": 71,
+        "onMapPlaces": 66,
+        "mergedSecondarySegments": 5,
+        "mergedPlaces": 3,
+        "unlocated": 7,
+        "outOfBounds": 3
+      }
+    },
+    {
+      "name": "8. Global video-posters.json (1202) and dist/data/video-library-assets.json (1202) preserve all prior cities",
+      "passed": true,
+      "details": {
+        "mode": "local-media-present",
+        "globalPosters": 1202,
+        "distAssetsTotal": 1202,
+        "quanzhouPosters": 81,
+        "quanzhouClips": 81
+      }
+    },
+    {
+      "name": "9. Built HTML pages, 81 shop pages (with 2-video and 3-video merged cross-links), and preview-quanzhou.html are valid",
+      "passed": true,
+      "details": {
+        "previewBytes": 13827267,
+        "shopPages": 81
+      }
+    },
+    {
+      "name": "10. Media bundle integrity (56 sources / 81 clips): isolated import when .local present, index/poster audit in clean checkout",
+      "passed": true,
+      "details": {
+        "mode": "local-bundles-isolated-import",
+        "bundleCount": 56,
+        "publishedIndexEntries": 56,
+        "totalClips": 81,
+        "totalFirstNewFiles": 218,
+        "totalRepeatNewFiles": 0,
+        "wrongCityRejected": true,
+        "bundles": [
+          {
+            "name": "shitu-media-qz-nangua-7689786926581370533-a05d64bfca0ef53b.zip",
+            "bytes": 722847263,
+            "sha256": "9d93b754b309a0d10c394b28d9fbbeebb4ac9f9f7ff74b7f041e83bb0c8ca29d"
+          },
+          {
+            "name": "shitu-media-qz-yixuan-7699404713825538789-b44b099c92e52534.zip",
+            "bytes": 34702132,
+            "sha256": "9b10bf9255a750a97d3d20ef4f270d309fad0f36829ac020f23f8514679abe06"
+          },
+          {
+            "name": "shitu-media-qz-wxxin-7668988291496521856-c9aae71f122ac037.zip",
+            "bytes": 49453027,
+            "sha256": "f61e6c04e106271ac41f2fd6d7b9ccc47d5947351be178c3cc1f90e60385cb30"
+          },
+          {
+            "name": "shitu-media-qz-wxxin-7698276010811119744-db786f50888bdafa.zip",
+            "bytes": 42024652,
+            "sha256": "4cbe086038ca24f18fee7205ee53b7821905160ad5ffe3c8fa9dfb264958157d"
+          },
+          {
+            "name": "shitu-media-qz-shuibuzhaojiao-7700212754716979520-da8ad1c79dce3e0b.zip",
+            "bytes": 8174249,
+            "sha256": "170ab110c89efaa834125aa8d7bb99c9f29a8b51dc17296f926ce50941c6c9fa"
+          },
+          {
+            "name": "shitu-media-qz-mingtianjian-7681883838449393627-4459cdd6a23d447b.zip",
+            "bytes": 22000656,
+            "sha256": "d6d23824c2178334d646c9ae8246272dc6a371004bac961a6ed900ce9801181a"
+          },
+          {
+            "name": "shitu-media-qz-yeyebuhuijia-7688685626526548721-308e5832b5875b6d.zip",
+            "bytes": 846983112,
+            "sha256": "ae833d4fbad2d6e91ff62a8c4c86c6d0316f9ea4796232bfeacad1b68a3faee3"
+          },
+          {
+            "name": "shitu-media-qz-laohuchibaobao-7684156577612497910-a9a7e3d038d744e9.zip",
+            "bytes": 91300731,
+            "sha256": "772eae32ed762fba40107b0bbc5f1c3a19483481b6f27c1be0058221ba540144"
+          },
+          {
+            "name": "shitu-media-qz-hesyyy-7708768110043647714-772433a41f389e5e.zip",
+            "bytes": 59859613,
+            "sha256": "f47671dea4a8e3ceed2fe8c362f4c5e0ab64ebc5d409bc15ca6fa762bffa6285"
+          },
+          {
+            "name": "shitu-media-qz-lanseshutiao-7697581648510058431-f5964fa8cd8973b7.zip",
+            "bytes": 22934163,
+            "sha256": "482f534fa98b4a14f3262c268eef2443a5c78b5504911db65f24fa0303be7fd9"
+          },
+          {
+            "name": "shitu-media-qz-qilunshi-7665357406939587240-eb2b4ff92a3e9c75.zip",
+            "bytes": 19186328,
+            "sha256": "364967a42b0483fa2bc9e88414a6b3c9f516da2d4dee64b84a0c52a887842bd2"
+          },
+          {
+            "name": "shitu-media-qz-kebanchihuo-7689047792405248677-a7db3c13ed6c12a3.zip",
+            "bytes": 155429413,
+            "sha256": "cb8e5c84cf2698ee5b2773630d3c33e347463e2814e9b686802b6f28a3f4d161"
+          },
+          {
+            "name": "shitu-media-qz-nini-7703890744968811876-445a98a1ba79d63a.zip",
+            "bytes": 30638491,
+            "sha256": "437b95cd3c2f035671f2b65d0e16881e1c5ed6c8302ae2777343ba7b9fb1f246"
+          },
+          {
+            "name": "shitu-media-qz-muyouchuan-7702417700118678847-c6fff35a3555bbf4.zip",
+            "bytes": 219721216,
+            "sha256": "7bb785860d30e0b0865be974a79c6698ad8116bdadfccb4ef40b5685f55787c7"
+          },
+          {
+            "name": "shitu-media-qz-chaoneng77-7614832475969630835-a15ce2f8ce546c5a.zip",
+            "bytes": 70082766,
+            "sha256": "9e1c36300f8e99d9465d4f4299a4623635bd62c17aadf149f8fc7d4a1b9d265d"
+          },
+          {
+            "name": "shitu-media-qz-yesoso-7596667113801677413-e7d52be6a8ffef96.zip",
+            "bytes": 18267512,
+            "sha256": "66a8ac455965f8e5647ad1b7262d009d2c7c95ecdf78fea69a8f5720e3429318"
+          },
+          {
+            "name": "shitu-media-qz-muyouchuan-7690174243337751842-6bca871b5afa3c61.zip",
+            "bytes": 288338314,
+            "sha256": "28a02d545f312b018894b50a21185b413dad6cb671537d7e0f6f422e71d16f46"
+          },
+          {
+            "name": "shitu-media-qz-mishijun-7707587199064371619-007e030cdde58fda.zip",
+            "bytes": 185598989,
+            "sha256": "28e8ee570c5a64ce64fc80e8df5d529bda6282997bdf5ba8a30fa5e8d52fa783"
+          },
+          {
+            "name": "shitu-media-qz-wenyoulala-7669373111078260031-9bc017b498478258.zip",
+            "bytes": 151861565,
+            "sha256": "918655189431033e013d3d4d8bb8f1a18998f4ec3b72faac737162b455684c32"
+          },
+          {
+            "name": "shitu-media-qz-jizai-7697993333676032625-b575662f21e27290.zip",
+            "bytes": 15970126,
+            "sha256": "f80f991b89610fab29905f0c7af185f09483b2f91c3fe9d132a7cb64671d7ae5"
+          },
+          {
+            "name": "shitu-media-qz-xiaodixiansen-7709422301876179850-2a02b3c43d00f123.zip",
+            "bytes": 17274043,
+            "sha256": "ca0d36f4b2ccce8406c973b57acece31c517d828f243fa5ba3fbb108cef68b72"
+          },
+          {
+            "name": "shitu-media-qz-kakako-7707196439441686457-a4b6f86d22eb2e76.zip",
+            "bytes": 39939878,
+            "sha256": "e2e200712310bec2c5159c31781c3ff8167b2895b176a6a3133bdcbbad80d0d7"
+          },
+          {
+            "name": "shitu-media-qz-linlin-7681664420015096393-145cda9af2dc4870.zip",
+            "bytes": 16579144,
+            "sha256": "420fa2711b4ed4f9000b66eb4fe99562f2407c1608f92887fad554d5e9e0ccd5"
+          },
+          {
+            "name": "shitu-media-qz-guanguan-7676788256063945915-fce053e3ac886289.zip",
+            "bytes": 47648508,
+            "sha256": "58f0a2abe1160082327b0e58ddbadb8aeeda72d57114475c8d239f53b3265274"
+          },
+          {
+            "name": "shitu-media-qz-xunweizhongguo-7684233675394895131-61ba320f1bf0ba6c.zip",
+            "bytes": 46905131,
+            "sha256": "619e78d583b15277f1c85d53858e81ee4eaf74fffc2a7340b24c1596be953c44"
+          },
+          {
+            "name": "shitu-media-qz-zhouqiling-7652198276645134321-ff02e59df649e731.zip",
+            "bytes": 40075698,
+            "sha256": "e6016fc50f443b42325f1aef244e476b9630042cc9076b7428d1c1b0664bdd08"
+          },
+          {
+            "name": "shitu-media-qz-bozai-7709092243994911963-ee67a5307f9e7d99.zip",
+            "bytes": 238597252,
+            "sha256": "12b2dec8308b0a04e73075e978d4d1f766ceb148eb25cb90d7e2a67dd37ec4bc"
+          },
+          {
+            "name": "shitu-media-qz-daweidewei-7648196370935408234-1d2b9c3e36e128ce.zip",
+            "bytes": 249771707,
+            "sha256": "2cb58ab39c3e3659a61a48755cde3afa28730c58cb81d37d83a4c7a7cf03ef05"
+          },
+          {
+            "name": "shitu-media-qz-ada-7622260433139462754-e2fa76bdb78d8071.zip",
+            "bytes": 62851597,
+            "sha256": "19b4c94bad7df0fb2ed35782093ca337e164478ffd5ebef985a5fe931872fed7"
+          },
+          {
+            "name": "shitu-media-qz-ayin-7689002223888506533-c550866834faf2f5.zip",
+            "bytes": 16266676,
+            "sha256": "90260aa88124bc37df4f1af2c24efb8a7391c93aecfb7d1761719f9b7f3077cb"
+          },
+          {
+            "name": "shitu-media-qz-wangyaomei-7541284270716325177-9faa68d6f30f646a.zip",
+            "bytes": 25120201,
+            "sha256": "a4deae706c7f47f02e59890389536fc99ba60ae63fbaab17ed0c6b0add062b1c"
+          },
+          {
+            "name": "shitu-media-qz-kuangchi-7710135218028749670-5bee8117440df870.zip",
+            "bytes": 21190157,
+            "sha256": "79d5106b7575a78c953b9864ddd1a88f31d7f4bb37b0f100fde0a150f84a4002"
+          },
+          {
+            "name": "shitu-media-qz-ada-7701949199965749224-159529d18608c8a6.zip",
+            "bytes": 99374003,
+            "sha256": "9bc2dc4eae3e89b913e5e8ce062de5182691bf076138a88060e5b2759c2dc0de"
+          },
+          {
+            "name": "shitu-media-qz-qzchitou-7695871608675071931-9fff868998ab2e2f.zip",
+            "bytes": 20588058,
+            "sha256": "22a221756fef356e70b161e9028272fe9bb852e5db0f76b46ceb5d9529cf77ff"
+          },
+          {
+            "name": "shitu-media-qz-xiugou-7704856716151672083-c7dc0d0340132a34.zip",
+            "bytes": 98693333,
+            "sha256": "5ea554356b83afc0172ae13a6a09c2740bad5aa12a4b96514faa8716e6fc488b"
+          },
+          {
+            "name": "shitu-media-qz-yougushi-7706844501822892645-69a9a56ab8c369f6.zip",
+            "bytes": 67431740,
+            "sha256": "4bdb9601286e9942ee1b4551b6830812adba5cc515b1d9d133913af4bdb3da91"
+          },
+          {
+            "name": "shitu-media-qz-youzhi-7488749484051139874-62c307423fa336a0.zip",
+            "bytes": 65694633,
+            "sha256": "4e152c9a8cfe4833f646149dc87f7e1d5e6de96b1e8098319c63974f34774e4f"
+          },
+          {
+            "name": "shitu-media-qz-tudou-7686443456713727908-c0aaaa5697243fcd.zip",
+            "bytes": 21601103,
+            "sha256": "36a72a36942b9e9e23891117393108170bd5a14571e8f9ad2fc0f910054f8935"
+          },
+          {
+            "name": "shitu-media-qz-youdiane-7628544576790528179-076140325527c3b8.zip",
+            "bytes": 60110670,
+            "sha256": "1b31bfed54512aef5ddce5da7093855fe8fb3df8cb73c0750d4bfb9c21deaa1c"
+          },
+          {
+            "name": "shitu-media-qz-xinxin-7698777070483343994-1a71ba68790a30a6.zip",
+            "bytes": 117218996,
+            "sha256": "52f943dc01f3e6d7533938187bdf74a1b9c517d6d6b490164e32e5aa20b00db2"
+          },
+          {
+            "name": "shitu-media-qz-hanbao-7710148063436134627-1dc52e0fa91a15e0.zip",
+            "bytes": 84545532,
+            "sha256": "400cfcd02f6ef9fc97eeb435a4f813f66d7cd0d21984bfb75970b23073d27977"
+          },
+          {
+            "name": "shitu-media-qz-qzxiaochi-7509902800634088704-3fc5646fa844b00e.zip",
+            "bytes": 12259919,
+            "sha256": "ef2df214506b2b0f4db601f1110ce713759e284d0befdd521d7ea3b0e953e889"
+          },
+          {
+            "name": "shitu-media-qz-mading-7710326151310728569-993107ec9f218d40.zip",
+            "bytes": 245489730,
+            "sha256": "2c9372d46b88a74b2af92290f7084f795d840358fbdb3e4bb3a68901125370e3"
+          },
+          {
+            "name": "shitu-media-qz-mochanan-7705724087276414632-980f3b764d917ed1.zip",
+            "bytes": 17807314,
+            "sha256": "60485e82c6e3379dad30241cfa3b3236b0be864311267e3d64dc1e03876f25b9"
+          },
+          {
+            "name": "shitu-media-qz-yetanshaokao-7685360079986850555-287600eca8b45d51.zip",
+            "bytes": 106952237,
+            "sha256": "9f4e964773d1b417e159e65c855f4f473b0bc5aa0826888db1be00d0a80610b4"
+          },
+          {
+            "name": "shitu-media-qz-youzhi-7600033493808662179-7b00810243d89304.zip",
+            "bytes": 77493357,
+            "sha256": "45f077e91156d8a727c186239224f6919a4f1d2a96df8639ef35f1e5abefd25d"
+          },
+          {
+            "name": "shitu-media-qz-aqi-7707218798051388515-2ea00c958f46cc90.zip",
+            "bytes": 32999922,
+            "sha256": "0928685150f4613b87ec37a0299c25f683550e685a86d94ed8682f52085fad86"
+          },
+          {
+            "name": "shitu-media-qz-yangxiaojie-7694951193809903016-eeaaf4a4442ce05c.zip",
+            "bytes": 11463690,
+            "sha256": "8cae1cf5b6eb5612c1cc4c42b281a9b556b4c4d2f81cfbf7c3075c5fd05a70c7"
+          },
+          {
+            "name": "shitu-media-qz-mading-7709741589816998321-92f3789efa5ac717.zip",
+            "bytes": 179252543,
+            "sha256": "acaf703353f4b396cb04ff47dcd146c5fb5f5681b8509cc2aea62c54cc1b6003"
+          },
+          {
+            "name": "shitu-media-qz-shuibuzhaojiao-7706533947442519714-7f285db4e5f4b8be.zip",
+            "bytes": 10451401,
+            "sha256": "06b93485a21981c407b9e0f7fc55d7ee4b36a3510af3921fdc8845c8602b5b73"
+          },
+          {
+            "name": "shitu-media-qz-shuibuzhaojiao-7699101807771754728-6e80bb4d7fd86c2c.zip",
+            "bytes": 8860383,
+            "sha256": "582592aefc7ef7a62803420ee72b4bef237a39720e735fdb5e3f20331c3b8781"
+          },
+          {
+            "name": "shitu-media-qz-miemie-7490086283604233499-98c08bd455983d0e.zip",
+            "bytes": 15515871,
+            "sha256": "b6516130642ac72b25c20f846923d80ff7cb4594a76af657cf02a071acc64ae4"
+          },
+          {
+            "name": "shitu-media-qz-hunjun-7692829670509854315-2821e7f013ab95f2.zip",
+            "bytes": 9069391,
+            "sha256": "ab48ad192d8f7522a4406072b4a094845da379baf78e894481426aca9e86a498"
+          },
+          {
+            "name": "shitu-media-qz-dianxinlaosheng-7670324725776444078-7ef380cc60118740.zip",
+            "bytes": 6149770,
+            "sha256": "2e5fba29c833a919cf751d708d676644bd9ab5573d986ec400a5f905fc0bddb1"
+          },
+          {
+            "name": "shitu-media-qz-linrichang-7705656523754134266-f784b825ba672c1d.zip",
+            "bytes": 8476872,
+            "sha256": "a0602a68424a71b57c744fc83403e5ae68696f10834f9ae66fa49d911ad8ef3e"
+          },
+          {
+            "name": "shitu-media-qz-manggexiaoge-7596142235843033713-ff6d825107905718.zip",
+            "bytes": 16148889,
+            "sha256": "97e0aa5c0a6ea96678b98028ec12c9409f48e718222d8451dd98d3a6b44ed14a"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "verifiedAt": "2026-11-26T16:41:17.599Z",
+  "tag": "media-2026-11-26-quanzhou",
+  "releaseUrl": "https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-26-quanzhou",
+  "targetCommit": "ca99167e0de796f94e1ca8d6606feb03e37161a3",
+  "scopeNote": "全量 56 个 ZIP + 56 份 .zip.json 均已通过 GitHub Releases API 分页核对 state=uploaded、精确字节数、下载 URL 与服务端 sha256 digest（56/56 匹配）；以下 3 个代表性样本已从公开 Release 链接实际下载重算 SHA256 并在独立隔离目录通过首次与重复导入验证，不等同于全量重下 4.91 GiB。",
+  "fullServerPaginatedAudit": {
+    "totalAssetsOnRelease": 112,
+    "uploadedZips": 56,
+    "uploadedJsons": 56,
+    "totalZipBytes": 5271243667,
+    "digestMatchedZips": 56,
+    "digestMissingZips": 0
+  },
+  "remoteDownloadAndIsolatedImportSamples": [
+    {
+      "sourceId": "qz-shuibuzhaojiao-7699101807771754728",
+      "name": "shitu-media-qz-shuibuzhaojiao-7699101807771754728-6e80bb4d7fd86c2c.zip",
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-11-26-quanzhou/shitu-media-qz-shuibuzhaojiao-7699101807771754728-6e80bb4d7fd86c2c.zip",
+      "bytes": 8860383,
+      "sha256": "582592aefc7ef7a62803420ee72b4bef237a39720e735fdb5e3f20331c3b8781",
+      "clips": 1,
+      "firstImportNewFiles": 3,
+      "repeatImportNewFiles": 0,
+      "wrongCityRejected": true,
+      "downloadSeconds": 16.2
+    },
+    {
+      "sourceId": "qz-miemie-7490086283604233499",
+      "name": "shitu-media-qz-miemie-7490086283604233499-98c08bd455983d0e.zip",
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-11-26-quanzhou/shitu-media-qz-miemie-7490086283604233499-98c08bd455983d0e.zip",
+      "bytes": 15515871,
+      "sha256": "b6516130642ac72b25c20f846923d80ff7cb4594a76af657cf02a071acc64ae4",
+      "clips": 1,
+      "firstImportNewFiles": 3,
+      "repeatImportNewFiles": 0,
+      "wrongCityRejected": true,
+      "downloadSeconds": 25.2
+    },
+    {
+      "sourceId": "qz-yesoso-7596667113801677413",
+      "name": "shitu-media-qz-yesoso-7596667113801677413-e7d52be6a8ffef96.zip",
+      "url": "https://github.com/mzsjlx/shitu/releases/download/media-2026-11-26-quanzhou/shitu-media-qz-yesoso-7596667113801677413-e7d52be6a8ffef96.zip",
+      "bytes": 18267512,
+      "sha256": "66a8ac455965f8e5647ad1b7262d009d2c7c95ecdf78fea69a8f5720e3429318",
+      "clips": 3,
+      "firstImportNewFiles": 7,
+      "repeatImportNewFiles": 0,
+      "wrongCityRejected": true,
+      "downloadSeconds": 38
+    }
+  ]
+}
