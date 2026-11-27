@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "city": "nanchang",
+  "bounds": [
+    115.77,
+    28.58,
+    116.01,
+    28.76
+  ],
+  "source": {
+    "date": "2026-11-25",
+    "sha256": "e48e9f86a54e2c937c1f60233587e1a76b5f41ec30639cd8700a3afec64ad8cd",
+    "url": "https://download.geofabrik.de/asia/china/jiangxi.html",
+    "fileName": "jiangxi-latest.osm.pbf",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0"
+  },
+  "networkSHA256": "53f64576bcc2a709a22c17cfacbabdcf408067e3f31067b4a8f9c0ce4707852d",
+  "bytes": 8882983,
+  "nodes": 128151,
+  "ways": 25276,
+  "footRestrictionWays": 0,
+  "topology": "Only consecutive original OSM node IDs connect; missing nodes break ways. No links are invented at geometric crossings.",
+  "profile": "Approximate walking reference: no motorways or known foot/access restrictions; source bridges and tunnels may connect only at their original nodes."
+}

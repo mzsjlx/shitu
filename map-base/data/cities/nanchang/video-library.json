@@ -1,0 +1,989 @@
+{
+  "schemaVersion": 1,
+  "city": "nanchang",
+  "updatedAt": "2026-11-27",
+  "rights": {
+    "status": "user-confirmed",
+    "note": "首期4条南昌探店视频由用户在当前会话（2026-11-27）提供抖音分享链接，仅整理所给作品，保留原作者、原页及发布日期，原片与切分MP4留.local，封面及公开索引随库提交。"
+  },
+  "sources": [
+    {
+      "id": "nc-fanqiejiangjiang-7620293280337585536",
+      "author": "番茄酱酱.",
+      "title": "南昌48h极限逛吃17家😋纯吃攻略版！！ #vlog十亿流量扶持计划 #南昌旅游攻略 #南昌美食 #寻味街头美食小吃 #旅游vlog",
+      "url": "https://www.douyin.com/video/7620293280337585536",
+      "shareURL": "https://v.douyin.com/F6n4D6w8QE4/",
+      "publishedOn": "2026-03-23",
+      "durationSeconds": 193.37,
+      "sourceSHA256": "a7227008ada8e9639bd639011f94a94679670cfdf2c9eec4930aa6bb2e8859ae",
+      "acquisitionStatus": "local-source",
+      "evidenceNote": "原片实拍大士院老街地图标注、各店门头/包装袋及文末48h图文路线清单，涵盖大士院、民德路、珠宝街、万寿宫及羊子巷片区。",
+      "segments": [
+        {
+          "id": "nc-fanqiejiangjiang-xiaoluozi",
+          "name": "小罗子汤店（大士院总店）",
+          "category": "拌粉 / 瓦罐汤",
+          "addressText": "江西省南昌市东湖区叠山路大士院菜场南区",
+          "start": 24.5,
+          "end": 35.8,
+          "posterSecond": 32.0,
+          "summary": "大士院招牌老牌汤店，3.5元拌粉劲道入味，5元皮蛋肉饼汤清鲜不腻。",
+          "coordinates": [
+            115.8805,
+            28.6879
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大士院南区 / 叠山路北侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片20s地图截图明确标出“小罗子汤店(大士院总店)”位于大士院南区，26s实拍门店招牌。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 170998926,
+              "name": "大士院街",
+              "url": "https://www.openstreetmap.org/way/170998926",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 13036773164
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-baitanggao",
+          "name": "老南昌白糖糕（大士院）",
+          "category": "街头小吃 / 白糖糕",
+          "addressText": "江西省南昌市东湖区大士院街",
+          "start": 35.8,
+          "end": 43.2,
+          "posterSecond": 38.0,
+          "summary": "大士院街口现炸白糖糕，一块钱一个，外皮酥脆、内里软糯，裹满白糖粉趁热吃。",
+          "coordinates": [
+            115.8798,
+            28.6884
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大士院街西段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片36s实拍“老南昌白糖糕”转角门头，对应开放地图大士院老南昌白糖糕节点附近。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 170998926,
+              "name": "大士院街",
+              "url": "https://www.openstreetmap.org/way/170998926",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 13036773170
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-anan",
+          "name": "安安酥油烧饼（大士院）",
+          "category": "烧饼 / 街头小吃",
+          "addressText": "江西省南昌市东湖区大士院街",
+          "start": 43.2,
+          "end": 47.6,
+          "posterSecond": 46.0,
+          "summary": "大士院现烤酥油烧饼，2.5元一个梅干菜酥饼，饼皮薄脆掉渣。",
+          "coordinates": [
+            115.8803,
+            28.6885
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大士院街中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片45s实拍炭炉现烤梅干菜酥油烧饼摊位，文末路线清单记为大士院“安安酥油烧饼”。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 170998926,
+              "name": "大士院街",
+              "url": "https://www.openstreetmap.org/way/170998926",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 12778098222
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-fushunji",
+          "name": "福顺记油条包麻糍（大士院）",
+          "category": "麻糍 / 街头小吃",
+          "addressText": "江西省南昌市东湖区大士院街",
+          "start": 47.6,
+          "end": 51.6,
+          "posterSecond": 48.0,
+          "summary": "现炸油条包裹软糯麻糍，滚满黑芝麻白糖粉，口感香甜软糯。",
+          "coordinates": [
+            115.8809,
+            28.6885
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大士院街中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片48s实拍现包现做油条包麻糍档口，文末路线清单记为“福顺记油条包麻糍”。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 170998926,
+              "name": "大士院街",
+              "url": "https://www.openstreetmap.org/way/170998926",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 12778098215
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-wufan",
+          "name": "无矾鸡蛋油条（大士院）",
+          "category": "早点 / 油条豆浆",
+          "addressText": "江西省南昌市东湖区大士院住宅区旁",
+          "start": 51.6,
+          "end": 54.6,
+          "posterSecond": 54.0,
+          "summary": "现炸糖果配袋装豆浆，20s地图截图与54s豆浆袋印有“无矾鸡蛋油条”。",
+          "coordinates": [
+            115.8801,
+            28.6883
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大士院街住宅区旁",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片20s地图标出“无矾鸡蛋油条(大士院住宅...)”，54s实拍印字豆浆袋。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 170998926,
+              "name": "大士院街",
+              "url": "https://www.openstreetmap.org/way/170998926",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 13036773166
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-jiangying",
+          "name": "江鹰包行（大士院店）",
+          "category": "包子 / 早点",
+          "addressText": "江西省南昌市东湖区叠山路大士院四区",
+          "start": 54.6,
+          "end": 58.6,
+          "posterSecond": 55.0,
+          "summary": "三元一个皮蛋肉包，肉馅扎实多汁，大士院街区人气早点老店。",
+          "coordinates": [
+            115.8815,
+            28.6885
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大士院街东段近叠山路",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片55s实拍皮蛋肉包切面，文末路线清单记为“江鹰包行”。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 170998926,
+              "name": "大士院街",
+              "url": "https://www.openstreetmap.org/way/170998926",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 13049705843
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-laoqingtang",
+          "name": "江西老清汤（大士院）",
+          "category": "馄饨 / 小吃",
+          "addressText": "江西省南昌市东湖区大士院街周边",
+          "start": 58.6,
+          "end": 67.6,
+          "posterSecond": 60.0,
+          "summary": "街角偶然发现的江西老清汤，猪油清汤底配薄皮晶莹泡泡馄饨，小份也足量。",
+          "coordinates": [
+            115.8812,
+            28.6886
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "大士院街东段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片59s实拍街角红色“江西老清汤”门头及60s手捧泡泡馄饨实拍。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 170998926,
+              "name": "大士院街",
+              "url": "https://www.openstreetmap.org/way/170998926",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 13036773131
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-mindelu",
+          "name": "民德路茶馆",
+          "category": "茶馆 / 点心",
+          "addressText": "江西省南昌市东湖区民德路411号",
+          "start": 67.6,
+          "end": 75.6,
+          "posterSecond": 72.0,
+          "summary": "老礼堂改造的复古市井茶馆，竹椅方桌配大竹编暖水瓶自取茶水与四格小点心。",
+          "coordinates": [
+            115.8818,
+            28.6823
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "民德路中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片68s实拍门口门牌及70s老礼堂茶馆内景，对应开放地图“民德路茶馆”节点参照。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 226955378,
+              "name": "民德路",
+              "url": "https://www.openstreetmap.org/way/226955378",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 13586483319
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-datouke",
+          "name": "大头壳烧烤（船山路/万寿宫店）",
+          "category": "烧烤 / 夜宵",
+          "addressText": "江西省南昌市西湖区船山路573号附2号（近万寿宫）",
+          "start": 75.6,
+          "end": 97.6,
+          "posterSecond": 88.0,
+          "summary": "开了二十年的纯炭火老烧烤，招牌手工小肉串、刷酱豆泡、烤茄子、酱牛肉丁与锅气炒粉。",
+          "coordinates": [
+            115.8836,
+            28.6745
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "船山路 / 万寿宫南侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片78-96s实拍夜间巷弄碳烤店与招牌菜品，文末路线清单记为“大头壳烧烤”。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 833723093,
+              "name": "船山路",
+              "url": "https://www.openstreetmap.org/way/833723093",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 2362600048
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-yangdaniang",
+          "name": "杨大娘粽子（带子街店）",
+          "category": "传统小吃 / 粽子",
+          "addressText": "江西省南昌市西湖区带子街（近珠宝街）",
+          "start": 97.6,
+          "end": 107.6,
+          "posterSecond": 100.0,
+          "summary": "珠宝街片区老牌粽子铺，6元一个原味皮蛋肉粽，内含一整颗皮蛋配辣椒油。",
+          "coordinates": [
+            115.8846,
+            28.6769
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "带子街 / 珠宝街路口西侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片100s实拍“杨大娘”围裙阿婆包粽与104s整颗皮蛋肉粽。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 172659233,
+              "name": "带子街",
+              "url": "https://www.openstreetmap.org/way/172659233",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 4005165815
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-zhangji",
+          "name": "章记夫妻煎饼（珠宝街）",
+          "category": "煎饼 / 街头小吃",
+          "addressText": "江西省南昌市西湖区珠宝街",
+          "start": 107.6,
+          "end": 115.6,
+          "posterSecond": 112.0,
+          "summary": "10元一个超大现炸酥脆煎饼，韭菜肉与梅干菜肉馅可选，外皮酥香。",
+          "coordinates": [
+            115.8851,
+            28.6779
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "珠宝街北段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片110s实拍10元价目表与112s印有“章记夫妻煎饼 地址：南昌市珠...”字样纸袋。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 172659227,
+              "name": "珠宝街",
+              "url": "https://www.openstreetmap.org/way/172659227",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 13755567744
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-jiangxiaoya",
+          "name": "江小丫卤味（珠宝街）",
+          "category": "辣卤 / 鸭货",
+          "addressText": "江西省南昌市西湖区珠宝街",
+          "start": 115.6,
+          "end": 123.6,
+          "posterSecond": 118.0,
+          "summary": "珠宝街旁现拌辣卤摊，鸭下巴与手撕鸭香辣入味、后劲十足。",
+          "coordinates": [
+            115.8852,
+            28.6775
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "珠宝街中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片116-122s实拍红油辣卤鸭货柜台与手撕鸭包装，文末清单记为“江小丫”。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 172659227,
+              "name": "珠宝街",
+              "url": "https://www.openstreetmap.org/way/172659227",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 1835415584
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-xushijiemei",
+          "name": "徐氏姐妹老糊羹（带子街珠宝路口）",
+          "category": "老糊羹 / 传统小吃",
+          "addressText": "江西省南昌市西湖区带子街与珠宝街交叉口",
+          "start": 123.6,
+          "end": 131.6,
+          "posterSecond": 128.0,
+          "summary": "5元一碗现盛老糊羹，内有菌菇、豆皮等配料，鲜滑温润无怪味。",
+          "coordinates": [
+            115.8853,
+            28.677
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "珠宝街 / 带子街路口",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片124-130s实拍街头大锅现盛糊羹，文末清单记为“徐氏姐妹老糊羹”。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 172659227,
+              "name": "珠宝街",
+              "url": "https://www.openstreetmap.org/way/172659227",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 1835415585
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-tangwali",
+          "name": "堂瓦里·传统赣菜（建德观店）",
+          "category": "赣菜 / 江西小炒",
+          "addressText": "江西省南昌市东湖区建德观街149号（近万寿宫商圈）",
+          "start": 131.6,
+          "end": 145.6,
+          "posterSecond": 144.0,
+          "summary": "高人气本土赣菜馆，招牌油浸鱼、软糯鸡爪加光面拌酱，以及地道瓦罐汤与辣藕片。",
+          "coordinates": [
+            115.8869,
+            28.6856
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "建德观街中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片132-145s实拍堂瓦里店内菜品并标注“堂瓦里”，取万寿宫周边建德观门店参照。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 268561259,
+              "name": "建德观街",
+              "url": "https://www.openstreetmap.org/way/268561259",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 1831942203
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-hongdenglong",
+          "name": "虹灯笼水煮（羊子巷老店）",
+          "category": "水煮 / 老字号",
+          "addressText": "江西省南昌市西湖区羊子巷38号",
+          "start": 145.6,
+          "end": 173.6,
+          "posterSecond": 146.0,
+          "summary": "居民巷里开了32年的老水煮，炸香蕉撒绵糖、炸脚板酥脆、豆泡吸满辣汤汁，麻球泡汤也一绝；片尾顺带提及美康饮品薄荷水。",
+          "coordinates": [
+            115.8936,
+            28.6776
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "羊子街西段巷内",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片146-172s实拍“虹灯笼水煮”大碗与居民楼巷内老店厨房，对应羊子巷38号老店。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 894446042,
+              "name": "羊子街",
+              "url": "https://www.openstreetmap.org/way/894446042",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 2266678183
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-yangzixiang199",
+          "name": "羊子巷199号咖啡",
+          "category": "咖啡 / 甜品",
+          "addressText": "江西省南昌市西湖区羊子巷199号",
+          "start": 173.6,
+          "end": 181.6,
+          "posterSecond": 178.0,
+          "summary": "藏在羊子巷的平价街头咖啡小店，话梅美式10.9元默认不加糖，杯套配牛轧糖豆子卡。",
+          "coordinates": [
+            115.8944,
+            28.6774
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "羊子街东段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片176-180s实拍价格牌与印有“羊子巷199号 Yangzi Lane No. 199”字样的咖啡杯。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 894446042,
+              "name": "羊子街",
+              "url": "https://www.openstreetmap.org/way/894446042",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 11918532184
+            }
+          }
+        },
+        {
+          "id": "nc-fanqiejiangjiang-jidanbao",
+          "name": "羊子巷鸡蛋汉堡",
+          "category": "街头小吃 / 鸡蛋汉堡",
+          "addressText": "江西省南昌市西湖区羊子巷199号旁",
+          "start": 181.6,
+          "end": 187.8,
+          "posterSecond": 186.0,
+          "summary": "羊子巷199号隔壁人气鸡蛋汉堡摊，现煎鲜肉鸡蛋汉堡刷秘制辣酱后外脆里香。",
+          "coordinates": [
+            115.8945,
+            28.6773
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "羊子街199号隔壁",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片182-186s实拍“隔壁鸡蛋汉堡”铁盘现煎肉馅与刷辣酱切面。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 217396038,
+              "name": "羊子街",
+              "url": "https://www.openstreetmap.org/way/217396038",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 2266678185
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nc-yituoxiaocaomei-7370304732994342181",
+      "author": "一坨小草莓",
+      "title": "来了南昌能让你体验到成为有钱人 随便花的快乐 #南昌 #旅游 #南昌美食 #小吃 #江西",
+      "url": "https://www.douyin.com/video/7370304732994342181",
+      "shareURL": "https://v.douyin.com/__Rm-KLC5Gs/",
+      "publishedOn": "2024-05-18",
+      "durationSeconds": 293.8,
+      "sourceSHA256": "7373e9aec7cecbd8650cc5c890788aa8aee419cf05165b58b006d775b4d7ad8a",
+      "evidenceNote": "2024年原片实拍门店价目表、收款码、红记云外墙桃苑社区铭牌及作者完整口播店名，覆盖老城多区及莲塘1处范围外门店、地铁A口1处未定位小吃。",
+      "segments": [
+        {
+          "id": "nc-yituoxiaocaomei-hengmao",
+          "name": "恒茂汤店（广场东路店）",
+          "category": "拌粉 / 瓦罐汤",
+          "addressText": "江西省南昌市西湖区广场东路119号",
+          "start": 8.0,
+          "end": 47.6,
+          "posterSecond": 16.0,
+          "summary": "三人份三碗汤加一大一小拌粉拌面仅21元，现搓大肉丸皮蛋肉饼汤配萝卜排骨汤、红豆红枣汤。",
+          "coordinates": [
+            115.9016,
+            28.6754
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "广场东路中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片10s实拍4元拌粉/4.5元肉饼汤价目表，口播明确店名“恒茂汤店”。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 218688907,
+              "name": "广场东路",
+              "url": "https://www.openstreetmap.org/way/218688907",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 2279157303
+            }
+          },
+          "footageNote": "2024年原视频 · 营业情况、搬迁及价格变动请出发前确认。"
+        },
+        {
+          "id": "nc-yituoxiaocaomei-tuji",
+          "name": "坝口巷涂记小吃",
+          "category": "拌粉 / 瓦罐汤",
+          "addressText": "江西省南昌市西湖区坝口巷（近永叔路）",
+          "start": 47.6,
+          "end": 66.6,
+          "posterSecond": 50.0,
+          "summary": "仅营业上午的老巷子早餐摊，拌粉拌面3元（小碗2.5元）、瓦罐肉饼汤3元，味道淡可免费加汤汁。",
+          "coordinates": [
+            115.8943,
+            28.6677
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "坝口路 / 永叔路南侧",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片52-54s实拍门前路面及手写价目表，字幕与口播明确为“坝口巷涂记小吃”。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 217610953,
+              "name": "坝口路",
+              "url": "https://www.openstreetmap.org/way/217610953",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 12799599757
+            }
+          },
+          "footageNote": "2024年原视频 · 营业情况、搬迁及价格变动请出发前确认。"
+        },
+        {
+          "id": "nc-yituoxiaocaomei-xiongqingbin",
+          "name": "熊庆彬小锅小灶（莲塘力高总店）",
+          "category": "赣菜 / 小炒",
+          "addressText": "江西省南昌市南昌县莲塘镇莲富路398号力高君御华府11栋111室",
+          "start": 66.6,
+          "end": 99.8,
+          "posterSecond": 74.0,
+          "summary": "现点现炒的江湖小锅小灶，招牌鸭三样刚入口酱香浓郁后劲极辣，黑椒牛仔骨粉蒸肉、无垫菜全荤粉蒸肉配颗粒炒饭一共187元。",
+          "coordinates": [
+            115.929,
+            28.5407
+          ],
+          "locationStatus": "out-of-bounds",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "addressNote": "位于南昌县莲塘镇莲富路398号，超出当前主城核心底图南界（28.58°N），保留真实WGS84坐标暂不上图。",
+          "footageNote": "2024年原视频 · 营业情况、搬迁及价格变动请出发前确认。"
+        },
+        {
+          "id": "nc-yituoxiaocaomei-jinjin",
+          "name": "金金猪血粉面（谌家巷店）",
+          "category": "猪血粉 / 街头小吃",
+          "addressText": "江西省南昌市西湖区中山路谌家巷29号",
+          "start": 103.5,
+          "end": 111.6,
+          "posterSecond": 104.0,
+          "summary": "老城区巷内猪血粉老店，猪血汤鲜爽滑嫩，肥肠猪血拌粉料足实惠。",
+          "coordinates": [
+            115.8949,
+            28.6785
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "谌家巷中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片104s实拍红色“金金猪血粉面”门头及门口小桌。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 900710646,
+              "name": "谌家巷",
+              "url": "https://www.openstreetmap.org/way/900710646",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 2356924393
+            }
+          },
+          "footageNote": "2024年原视频 · 营业情况、搬迁及价格变动请出发前确认。"
+        },
+        {
+          "id": "nc-yituoxiaocaomei-xiaowu",
+          "name": "小吴水煮（羊子巷店）",
+          "category": "水煮 / 小吃",
+          "addressText": "江西省南昌市西湖区羊子街（羊子巷）",
+          "start": 111.6,
+          "end": 133.6,
+          "posterSecond": 122.0,
+          "summary": "从金金猪血粉步行即达的人气水煮店，千层肚配高菜梗脆嫩，莲藕片、油条、虎皮鸡爪与肉丸饱吸浓香红汤。",
+          "coordinates": [
+            115.8939,
+            28.6775
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "羊子街中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片120s实拍店员围裙印有“小吴水煮”字样，明确位于金金猪血粉步行可达的羊子巷。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 894446042,
+              "name": "羊子街",
+              "url": "https://www.openstreetmap.org/way/894446042",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 2266678183
+            }
+          },
+          "footageNote": "2024年原视频 · 营业情况、搬迁及价格变动请出发前确认。"
+        },
+        {
+          "id": "nc-yituoxiaocaomei-hongdudamuzhi",
+          "name": "洪都大拇指奶茶厂（羊子巷周边）",
+          "category": "奶茶 / 饮品",
+          "addressText": "江西省南昌市西湖区羊子巷/中山路商圈附近",
+          "start": 133.6,
+          "end": 141.6,
+          "posterSecond": 136.0,
+          "summary": "小吴水煮附近现做雪顶奶茶，下单后可直接送到水煮店边喝边解辣。",
+          "coordinates": [
+            115.8942,
+            28.6777
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "羊子街中段附近",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片134-140s实拍“洪都大拇指奶茶厂”杯身并说明可步行下单送至水煮店。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 894446042,
+              "name": "羊子街",
+              "url": "https://www.openstreetmap.org/way/894446042",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 11918532184
+            }
+          },
+          "footageNote": "2024年原视频 · 营业情况、搬迁及价格变动请出发前确认。"
+        },
+        {
+          "id": "nc-yituoxiaocaomei-jidanbao",
+          "name": "地铁A口鸡蛋汉堡",
+          "category": "街头小吃 / 鸡蛋汉堡",
+          "addressText": null,
+          "start": 141.6,
+          "end": 159.8,
+          "posterSecond": 142.0,
+          "summary": "铁盘现浇面糊打整颗鸡蛋铺满厚肉馅，按付款顺序排队出锅，刷酱撒葱花外焦里嫩。",
+          "coordinates": null,
+          "locationStatus": "unlocated",
+          "routeEligible": false,
+          "addressNote": "原片仅提及“在地铁A口那个电动踏车旁边”，未拍到地铁站名或道路名，暂留视频库不造点。",
+          "footageNote": "2024年原视频 · 营业情况、搬迁及价格变动请出发前确认。"
+        },
+        {
+          "id": "nc-yituoxiaocaomei-xiajianglao",
+          "name": "峡江佬烧烤（系马桩店）",
+          "category": "烧烤 / 夜宵",
+          "addressText": "江西省南昌市西湖区系马桩街",
+          "start": 215.6,
+          "end": 239.8,
+          "posterSecond": 226.0,
+          "summary": "碳烤小肉12元20串、牛油25元10串奶香四溢，烤鸡爪、小黄鱼、基尾虾样样扎实。",
+          "coordinates": [
+            115.8941,
+            28.6712
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "系马桩街中段",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片222s实拍“峡江佬烧烤价目表”，底部收款码明确印有“峡江佬烧烤(系马桩店)”。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 173880880,
+              "name": "系马桩街",
+              "url": "https://www.openstreetmap.org/way/173880880",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 13045307824
+            }
+          },
+          "footageNote": "2024年原视频 · 营业情况、搬迁及价格变动请出发前确认。"
+        },
+        {
+          "id": "nc-yituoxiaocaomei-hongjiyun",
+          "name": "红记云赣南菜馆（桃苑社区）",
+          "category": "赣南菜 / 江西菜",
+          "addressText": "江西省南昌市西湖区桃苑街道桃苑社区",
+          "start": 241.5,
+          "end": 287.8,
+          "posterSecond": 272.0,
+          "summary": "开在社区旁不用排队的地道小馆，三杯鸡甜香滑嫩、赣南小炒鱼鲜嫩无刺、芋头块焖牛肉拌米饭极下饭，结账140多元。",
+          "coordinates": [
+            115.8868,
+            28.6633
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "桃苑社区 / 桃苑中路",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片242.5s门店旁红底公告栏实拍“桃源/桃苑街道桃苑社区”，口播店名“红记云赣南菜馆”。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 222299304,
+              "name": "桃苑中路",
+              "url": "https://www.openstreetmap.org/way/222299304",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 13208918744
+            }
+          },
+          "footageNote": "2024年原视频 · 营业情况、搬迁及价格变动请出发前确认。"
+        }
+      ]
+    },
+    {
+      "id": "nc-wangxun-7672572030960536875",
+      "author": "演员王迅",
+      "title": "地道南昌 微光虽小，也能照亮行路。致敬公益路上的每一个普通人，平凡烟火里，自有滚烫善意。#忙忙碌碌迅宝藏 #心动打卡指南 #遇见城市 #心动南昌",
+      "url": "https://www.douyin.com/video/7672572030960536875",
+      "shareURL": "https://v.douyin.com/SLsd9Waz5GY/",
+      "publishedOn": "2026-08-11",
+      "durationSeconds": 330.19,
+      "sourceSHA256": "3a642376d3b33e2a4105a3d9f4eec58076bf6217084900527079c8fe468dbccd",
+      "evidenceNote": "原片71.5s清晰拍摄“南昌里·老街南昌味（来南昌里恰南昌菜）”门头及相邻益丰大药房，210s瓷盘印有“南昌里·老街南昌味”标识。",
+      "segments": [
+        {
+          "id": "nc-wangxun-nanchangli",
+          "name": "南昌里·老街南昌味（万寿宫店）",
+          "category": "赣菜 / 南昌菜",
+          "addressText": "江西省南昌市西湖区船山路657号（万寿宫广润门旁）",
+          "start": 71.0,
+          "end": 330.18,
+          "posterSecond": 210.0,
+          "summary": "王迅与“南昌清障哥”李运华同框聚餐的复古市井赣菜馆，实测油浸鱼、黄豆烧鸡脚泡饭、红烧甲鱼与蟹脚拌粉，鲜辣入味。",
+          "coordinates": [
+            115.8835,
+            28.6766
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "船山路北段 / 万寿宫旁",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片54s显示珠宝街周边路牌，71.5s实拍万寿宫旁“南昌里·老街南昌味”与益丰大药房相邻门头。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 833723093,
+              "name": "船山路",
+              "url": "https://www.openstreetmap.org/way/833723093",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 1833839940
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nc-tczhongguo-7662692018056957234",
+      "author": "TC在中国",
+      "title": "家人们，江西小炒为什么不算中国八大菜系？这么香！   #了不起的中国菜 #美食判官已上线 #南昌美食 #招牌菜   #椿椒江西风味",
+      "url": "https://www.douyin.com/video/7662692018056957234",
+      "shareURL": "https://v.douyin.com/ignVXQdEUw8/",
+      "publishedOn": "2026-07-15",
+      "durationSeconds": 298.83,
+      "sourceSHA256": "d3897386cde10eef99bff9febf39e11ce1e93898fefdd0d6e8e89faee56dae00",
+      "evidenceNote": "原片52s出租车对话点名“万象...”，74-86s进入红谷滩万象天地商场并实拍“椿椒·江西风味”门头招牌，全程品尝江西小炒。",
+      "segments": [
+        {
+          "id": "nc-tczhongguo-chunjiao",
+          "name": "椿椒·江西风味（南昌万象天地店）",
+          "category": "赣菜 / 江西小炒",
+          "addressText": "江西省南昌市红谷滩区金融大街969号南昌万象天地4F",
+          "start": 0.0,
+          "end": 298.83,
+          "posterSecond": 146.0,
+          "summary": "从南昌西站乘车直奔红谷滩万象天地排队一小时的网红江西小炒，招牌鸭脚筋、现炸小吃拼盘、啤酒鸭与江西特色豆腐拌米饭香辣过瘾，饭后配景德镇瓷杯甜品。",
+          "coordinates": [
+            115.8468,
+            28.6895
+          ],
+          "locationStatus": "approximate-planning",
+          "routeEligible": false,
+          "coordinateSystem": "WGS84",
+          "planningLocation": {
+            "accuracy": "approximate",
+            "label": "红谷滩金融大街 / 万象天地",
+            "basis": "video-address",
+            "branchMatch": "exact",
+            "note": "原片82-86s实拍商场内“椿椒·江西风味”门头与等位台，位于红谷滩金融大街南昌万象天地4F。",
+            "reviewedOn": "2026-11-27",
+            "anchor": {
+              "kind": "osm-way",
+              "id": 206695789,
+              "name": "金融大街",
+              "url": "https://www.openstreetmap.org/way/206695789",
+              "sourceDate": "2026-11-25",
+              "method": "original-way-node",
+              "nodeId": 12140212119
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

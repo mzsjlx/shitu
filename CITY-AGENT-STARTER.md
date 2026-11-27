@@ -17,6 +17,7 @@
 | 郑州 | `zhengzhou` | `zz-` | 已合入 `main`（PR #11，`7f513e1`） |
 | 哈尔滨 | `harbin` | `hb-` | 已合入 `main`（PR #12，`3f52b16`） |
 | 成都 | `chengdu` | `cd-` | 已通过复核合入 `main`（PR #13，首期 6/82 包已实装） |
+| 南昌 | `nanchang` | `nc-` | 首期 4 来源 / 28 片段 / 26 在图点开发中（`codex/city-nanchang-prep`） |
 
 新同学开工前请先与仓库维护者确认未占用的 `cityId` 与 `sourceId` 前缀，避免撞城或撞 ID。
 

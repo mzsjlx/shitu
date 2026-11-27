@@ -464,6 +464,45 @@
         "tileMetadata": "data/cities/chengdu/tile-metadata.json"
       },
       "status": "local-validation-only"
+    },
+    "nanchang": {
+      "name": "南昌",
+      "regionLabel": "赣江两岸 · 英雄城核心",
+      "coverageLabel": "南昌主城核心区（涵盖东湖/西湖老城万寿宫、大士院、珠宝街、绳金塔、八一广场、红谷滩秋水广场及紫荆夜市、朝阳新城、青山湖周边）",
+      "bounds": [
+        115.77,
+        28.58,
+        116.01,
+        28.76
+      ],
+      "center": [
+        115.89,
+        28.68
+      ],
+      "zoom": 15.5,
+      "pitch": 52,
+      "bearing": -15,
+      "minZoom": 11.5,
+      "maxZoom": 19,
+      "tiles": "data/cities/nanchang/nanchang.pmtiles",
+      "amapCityCode": "360100",
+      "landmarks": [],
+      "foodContent": {
+        "city": "nanchang",
+        "records": "data/cities/nanchang/food-records.json",
+        "videoLibrary": "data/cities/nanchang/video-library.json",
+        "videoAssets": "data/cities/nanchang/video-library-assets.json",
+        "videoPosters": "data/cities/nanchang/video-posters.json",
+        "sprite": "assets/food-concepts.jpg",
+        "roadNetwork": "data/cities/nanchang/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/nanchang/roads-index.json",
+        "audit": "data/cities/nanchang/data-audit.json",
+        "manifest": "data/cities/nanchang/source-manifest.json",
+        "tileMetadata": "data/cities/nanchang/tile-metadata.json"
+      },
+      "status": "local-validation-only"
     }
   }
 }

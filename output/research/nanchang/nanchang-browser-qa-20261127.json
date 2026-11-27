@@ -1,0 +1,257 @@
+{
+  "city": "nanchang",
+  "verifiedAt": "2026-11-28 00:28:34",
+  "previewUrl": "http://127.0.0.1:8799",
+  "total": 18,
+  "passed": 18,
+  "checks": [
+    {
+      "name": "1. Map readiness signal and Nanchang title",
+      "passed": true,
+      "details": {
+        "title": "食途 · 南昌地图",
+        "statusText": "南昌地图已展开"
+      }
+    },
+    {
+      "name": "2. Nanchang renders 26 on-map food cards",
+      "passed": true,
+      "details": {
+        "cardCount": 26
+      }
+    },
+    {
+      "name": "3. Authentic Nanchang shop names visible",
+      "passed": true,
+      "details": {
+        "sample": [
+          "小罗子汤店（大士院总店）",
+          "老南昌白糖糕（大士院）",
+          "安安酥油烧饼（大士院）",
+          "福顺记油条包麻糍（大士院）",
+          "无矾鸡蛋油条（大士院）",
+          "江鹰包行（大士院店）",
+          "江西老清汤（大士院）",
+          "民德路茶馆"
+        ]
+      }
+    },
+    {
+      "name": "4. Desktop 1440x960 popover visible, in viewport, and media ratio >= 2/3",
+      "passed": true,
+      "details": {
+        "inViewport": true,
+        "pRect": {
+          "left": 931,
+          "top": 162.8125,
+          "right": 1241,
+          "bottom": 474.3125,
+          "width": 310,
+          "height": 311.5
+        },
+        "viewport": {
+          "width": 1440,
+          "height": 960
+        },
+        "ratio": 0.6682338321337958
+      }
+    },
+    {
+      "name": "5. Double-sample playback advances (dt >= 0.3s && !paused)",
+      "passed": true,
+      "details": {
+        "t1": {
+          "t": 0.007681,
+          "paused": false
+        },
+        "t2": {
+          "t": 0.780015,
+          "paused": false
+        },
+        "dt": 0.772334
+      }
+    },
+    {
+      "name": "6. Switching shop pauses old video, removes src, and new video advances (&& assertion)",
+      "passed": true,
+      "details": {
+        "old1": {
+          "paused": true,
+          "src": null
+        },
+        "dt2": 0.804308,
+        "s2": {
+          "t": 1.142703,
+          "paused": false
+        }
+      }
+    },
+    {
+      "name": "7. Escape hides popover, pauses retained video, and removes src",
+      "passed": true,
+      "details": {
+        "hidden": true,
+        "paused": true,
+        "src": null
+      }
+    },
+    {
+      "name": "8. 3-stop straight vs road toggle computes real cross-Ganjiang road legs",
+      "passed": true,
+      "details": {
+        "direct": {
+          "mode": "direct",
+          "phase": "ready",
+          "total": 5146.894685433445,
+          "count": 2,
+          "missing": 0
+        },
+        "road": {
+          "mode": "road",
+          "phase": "ready",
+          "total": 6344.881886042607,
+          "count": 2,
+          "missing": 0
+        },
+        "badges": [
+          "沿路约 1.5 公里",
+          "沿路约 4.9 公里"
+        ]
+      }
+    },
+    {
+      "name": "9. Desktop 1440x960 screenshot saved",
+      "passed": true
+    },
+    {
+      "name": "10. Video library displays all 4 creator tabs (28 clips total) and filters out-of-bounds 熊庆彬",
+      "passed": true,
+      "details": {
+        "tabCounts": {
+          "番茄酱酱.17": 17,
+          "一坨小草莓9": 9,
+          "演员王迅1": 1,
+          "TC在中国1": 1
+        },
+        "filtered": [
+          "熊庆彬小锅小灶（莲塘力高总店）"
+        ]
+      }
+    },
+    {
+      "name": "11. Cross-city switches isolate city names and card counts with 0 contamination",
+      "passed": true,
+      "details": {
+        "chongqing": {
+          "name": "重庆",
+          "cards": 81
+        },
+        "wuhan": {
+          "name": "武汉",
+          "cards": 104
+        },
+        "zhengzhou": {
+          "name": "郑州",
+          "cards": 140
+        },
+        "nanchang": {
+          "name": "南昌",
+          "cards": 26
+        }
+      }
+    },
+    {
+      "name": "12. Street mode road search returns Nanchang roads containing 八一大道",
+      "passed": true,
+      "details": {
+        "results": [
+          "八一大道",
+          "八一大道辅路"
+        ]
+      }
+    },
+    {
+      "name": "13. Viewport 390x844 popover in viewport & media ratio >= 2/3",
+      "passed": true,
+      "details": {
+        "inViewport": true,
+        "pRect": {
+          "left": 12,
+          "top": 76,
+          "right": 272,
+          "bottom": 385,
+          "width": 260,
+          "height": 309
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "ratio": 0.667513069454817
+      }
+    },
+    {
+      "name": "14. Viewport 320x680 popover in viewport & media ratio >= 2/3",
+      "passed": true,
+      "details": {
+        "inViewport": true,
+        "pRect": {
+          "left": 12,
+          "top": 76,
+          "right": 272,
+          "bottom": 385,
+          "width": 260,
+          "height": 309
+        },
+        "viewport": {
+          "width": 320,
+          "height": 680
+        },
+        "ratio": 0.667513069454817
+      }
+    },
+    {
+      "name": "15. Viewport 736x414 popover in viewport & media ratio >= 2/3",
+      "passed": true,
+      "details": {
+        "inViewport": true,
+        "pRect": {
+          "left": 12,
+          "top": 90,
+          "right": 322,
+          "bottom": 401.5,
+          "width": 310,
+          "height": 311.5
+        },
+        "viewport": {
+          "width": 736,
+          "height": 414
+        },
+        "ratio": 0.6682338321337958
+      }
+    },
+    {
+      "name": "16. Standalone preview-nanchang.html renders 26 food cards",
+      "passed": true,
+      "details": {
+        "offCards": 26
+      }
+    },
+    {
+      "name": "17. videos-nanchang.html, places-nanchang.html (28 cards) and detail page render cleanly",
+      "passed": true,
+      "details": {
+        "vidCards": 28,
+        "placeCards": 28,
+        "hasVideo": true
+      }
+    },
+    {
+      "name": "18. Zero unhandled page errors",
+      "passed": true,
+      "details": {
+        "errors": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "city": "nanchang",
+  "source": "Protomaps / OpenStreetMap",
+  "scope": "南昌主城核心区（涵盖东湖/西湖老城万寿宫、大士院、珠宝街、绳金塔、八一广场、红谷滩秋水广场及紫荆夜市、朝阳新城、青山湖周边）",
+  "bounds": [
+    115.77,
+    28.58,
+    116.01,
+    28.76
+  ],
+  "sourceZoom": 15,
+  "archiveBytes": 7251348,
+  "archiveHeader": {
+    "minZoom": 0,
+    "maxZoom": 15,
+    "bounds": [
+      115.77,
+      28.58,
+      116.01,
+      28.76
+    ]
+  },
+  "osmReplicationTime": "2026-11-26T04:00:00Z",
+  "counters": {
+    "requestedTiles": 460,
+    "presentTiles": 460,
+    "roadLineFragments": 9610,
+    "namedRoadLineFragments": 6176,
+    "unnamedRoadLineFragments": 3434,
+    "nonRoadTransportFragmentsExcluded": 608,
+    "buildingPolygonFragments": 21379,
+    "buildingFragmentsWithPositiveHeight": 571,
+    "buildingFragmentsWithoutPositiveHeight": 20808,
+    "namedRoadGroups": 2449
+  },
+  "roadClassCounts": {
+    "path": 1352,
+    "minor_road": 3994,
+    "major_road": 4251,
+    "highway": 13
+  },
+  "checks": {
+    "finiteAndClippedSearchBoundsAndAnchors": true,
+    "everyRequestedTilePresent": true,
+    "roadFragmentsHaveNamedOrUnnamedCounts": true,
+    "buildingHeightCountsBalance": true
+  },
+  "samples": {
+    "？航路": {
+      "exact": {
+        "id": "road:？航路",
+        "class": "minor_road",
+        "detail": "service",
+        "name": "？航路",
+        "bounds": [
+          115.9383345,
+          28.65932,
+          115.9415504,
+          28.6608663
+        ],
+        "center": [
+          115.9394141,
+          28.6608063
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 2
+      },
+      "related": [
+        "？航路"
+      ]
+    },
+    "35WM": {
+      "exact": {
+        "id": "road:35WM",
+        "class": "minor_road",
+        "detail": "residential",
+        "name": "35WM",
+        "bounds": [
+          115.9862629,
+          28.6471111,
+          115.9887573,
+          28.6491072
+        ],
+        "center": [
+          115.9877367,
+          28.648607
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 1
+      },
+      "related": [
+        "35WM"
+      ]
+    },
+    "3号门岗路": {
+      "exact": {
+        "id": "road:3号门岗路",
+        "class": "minor_road",
+        "detail": "residential",
+        "name": "3号门岗路",
+        "bounds": [
+          115.9897336,
+          28.6509738,
+          115.9897444,
+          28.6520236
+        ],
+        "center": [
+          115.989739,
+          28.6514987
+        ],
+        "bridge": false,
+        "tunnel": false,
+        "bridgeFragments": 0,
+        "tunnelFragments": 0,
+        "segments": 2
+      },
+      "related": [
+        "3号门岗路"
+      ]
+    }
+  },
+  "limitations": [
+    "All counts are z15 vector-tile fragments except namedRoadGroups; clipped duplicates are not deduplicated physical assets.",
+    "A positive source height is a supplied basemap height, not a claim of survey accuracy or explicit OSM height provenance.",
+    "Road intersection coordinates, bridge/tunnel/floor connectivity, access and turn restrictions are not validated by this index."
+  ]
+}
