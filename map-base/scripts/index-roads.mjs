@@ -151,7 +151,14 @@ const roads = [...named.values()].map(entry => ({
 const validEntries = roads.every(road => [...road.bounds, ...road.center].every(Number.isFinite) && road.bounds[0] >= bounds[0] - 1e-7 && road.bounds[1] >= bounds[1] - 1e-7 && road.bounds[2] <= bounds[2] + 1e-7 && road.bounds[3] <= bounds[3] + 1e-7 && road.center[0] >= road.bounds[0] && road.center[0] <= road.bounds[2] && road.center[1] >= road.bounds[1] && road.center[1] <= road.bounds[3]);
 if (!validEntries || !roads.length) throw new Error('Road index is empty or has out-of-bounds anchors.');
 const index = { schemaVersion: 1, city: cityId, coordinateSystem: 'WGS84', bounds, source: 'Protomaps / OSM', sourceArchive: city.tiles, sourceZoom: z, osmReplicationTime: metadata['planetiler:osm:osmosisreplicationtime'], attribution: '© OpenStreetMap contributors · Protomaps', license: 'ODbL 1.0', notes: ['Names group vector-tile fragments for local search; they are not unique physical road identifiers.', 'Bounds are clipped to the configured city cutout. Center is a point on the longest retained straight segment, not an address or entrance.', 'Bridge/tunnel flags mean at least one grouped fragment has the corresponding source flag.', 'This is a display/search index, not a routing graph. Tile fragments can repeat across tile boundaries.'], roads };
-const requestedSamples = city.roadAuditSamples || (cityId === 'chongqing'
+const citySamples = {
+  chongqing: ['嘉滨路', '沧白路', '千厮门大桥'],
+  changsha: ['五一大道', '黄兴中路', '坡子街'],
+  liuzhou: ['五星街', '青云路', '文惠路'],
+  nanjing: ['中山东路', '汉中路', '建康路'],
+  chengdu: ['春熙路', '望平街', '玉林西路']
+};
+const requestedSamples = city.roadAuditSamples || citySamples[cityId] || (cityId === 'chongqing'
   ? ['嘉滨路', '沧白路', '千厮门大桥']
   : roads.slice(0, 3).map(road => road.name));
 const samples = Object.fromEntries(requestedSamples.map(name => [name, { exact: roads.find(road => road.name === name) || null, related: roads.filter(road => cityId === 'chongqing' && name === '嘉滨路' ? /嘉滨|嘉陵江滨江/.test(road.name) : road.name.includes(name)).map(road => road.name) }]));

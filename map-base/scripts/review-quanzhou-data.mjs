@@ -26,10 +26,10 @@ async function check(name, fn) {
 }
 
 // 1. Config check
-await check('1. config/cities.json includes valid quanzhou entry and retains all 8 prior cities', async () => {
+await check('1. config/cities.json includes valid quanzhou entry and retains all 10 prior cities', async () => {
   const content = JSON.parse(await readFile(p('config/cities.json'), 'utf8'));
   const keys = Object.keys(content.cities).sort();
-  assert.deepEqual(keys, ['changsha', 'chaoshan', 'chongqing', 'harbin', 'liuzhou', 'nanjing', 'quanzhou', 'wuhan', 'zhengzhou']);
+  assert.deepEqual(keys, ['changsha', 'chaoshan', 'chengdu', 'chongqing', 'hangzhou', 'harbin', 'liuzhou', 'nanjing', 'quanzhou', 'wuhan', 'zhengzhou']);
   assert.equal(content.activeCity, 'chongqing');
   const qz = content.cities.quanzhou;
   assert.equal(qz.name, '泉州');
@@ -164,9 +164,9 @@ await check('6. food-road-router snaps all 71 located segments (66 places) <= 25
 });
 
 // 7. Multi-city catalog & anchor consistency + real file SHA256 verification
-await check('7. allCityCatalogs loads 9 cities without collision; Quanzhou 56 sources / 81 segments / 66 places / posters & anchors match disk hashes', async () => {
+await check('7. allCityCatalogs loads 11 cities without collision; Quanzhou 56 sources / 81 segments / 66 places / posters & anchors match disk hashes', async () => {
   const catalogs = await allCityCatalogs(root);
-  assert.equal(catalogs.length, 9);
+  assert.equal(catalogs.length, 11);
   const qzCat = catalogs.find(c => c.cityId === 'quanzhou').catalog;
   assert.equal(qzCat.sources.length, 56);
   const segs = qzCat.sources.flatMap(s => s.segments);
@@ -202,13 +202,13 @@ await check('7. allCityCatalogs loads 9 cities without collision; Quanzhou 56 so
 });
 
 // 8. Global posters & dist assets preservation (both with .local media and in code-only clean checkout)
-await check('8. Global video-posters.json (883) and dist/data/video-library-assets.json (978) preserve all prior cities', async () => {
+await check('8. Global video-posters.json (1202) and dist/data/video-library-assets.json (1202) preserve all prior cities', async () => {
   const globalPosters = JSON.parse(await readFile(p('data/video-posters.json'), 'utf8'));
   const gCount = Object.keys(globalPosters.segments).length;
-  assert.equal(gCount, 883, `Expected 883 (802 existing + 81 Quanzhou), got ${gCount}`);
+  assert.equal(gCount, 1202, `Expected 1202 (1121 existing + 81 Quanzhou), got ${gCount}`);
   const distAssets = JSON.parse(await readFile(p('dist/data/video-library-assets.json'), 'utf8'));
   const dCount = Object.keys(distAssets.segments).length;
-  assert.equal(dCount, 978, `Expected 978 (897 existing + 81 Quanzhou), got ${dCount}`);
+  assert.equal(dCount, 1202, `Expected 1202 (1121 existing + 81 Quanzhou), got ${dCount}`);
   const qzPosters = Object.entries(distAssets.segments).filter(([id, v]) => id.startsWith('qz-') && v.poster).length;
   assert.equal(qzPosters, 81, `Expected 81 compiled Quanzhou posters, got ${qzPosters}`);
   let hasLocalReport = false;

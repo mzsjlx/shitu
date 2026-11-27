@@ -1,0 +1,568 @@
+import fs from 'node:fs';
+import { validateVideoLibrary } from '../../../map-base/src/video-library-model.js';
+
+const library = {
+  schemaVersion: 1,
+  city: "chengdu",
+  preparedOn: "2026-11-06",
+  rights: {
+    status: "user-confirmed",
+    note: "用户在会话中确认整理成都探店视频来源，授权范围：非商业旅行美食规划网站展示"
+  },
+  sources: [
+    {
+      id: "cd-rourou-7016962567180389640",
+      author: "肉肉大搜索",
+      title: "成都嫩到爆辣冒菜，毛肚鸭肠嫩出水，桌桌都是一大盆",
+      url: "https://www.douyin.com/video/7016962567180389640",
+      shareURL: "https://v.douyin.com/1xCCd9CuqDk/",
+      platform: "douyin",
+      publishedOn: "2021-10-09",
+      publishedOnNote: "2021年探店视频 · 营业情况待核实",
+      durationSeconds: 233.96,
+      sourceSHA256: "3b354cd6e75e902530dd3be2e6a7916b8d6e9873ce6e847d707e65a97ec14b2e",
+      acquisitionStatus: "local-source",
+      evidenceNote: "原片门头与POI核定：成都市金牛区解放西街毛记和意冒菜，桌桌一大不锈钢脸盆，毛肚、鸭肠与嫩牛肉，现浇红油热辣入味。",
+      segments: [
+        {
+          id: "cd-rourou-maojiheyi",
+          name: "毛记和意冒菜（解放西街店）",
+          category: "冒菜 / 川味小吃",
+          summary: "成都北站解放西街居民楼下的市井冒菜馆，以爆辣红油和极嫩现滑牛肉、水汪汪毛肚、生脆鸭肠闻名，不锈钢大脸盆分量十足，辣香醇厚极度下饭。",
+          addressText: "成都市金牛区解放西街9号1楼附2号",
+          start: 0.0,
+          end: 233.96,
+          posterSecond: 2.0,
+          coordinates: [104.081, 30.6905],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "金牛区 · 解放西街街区",
+            basis: "video-address-and-osm-road",
+            branchMatch: "exact-match",
+            note: "原片POI明确为毛记和意(解放西街店)，地址解放西街9号附2号，锚定解放西街中心路段",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:解放西街",
+              name: "解放西街",
+              nearestNode: 9480,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        }
+      ]
+    },
+    {
+      id: "cd-chiyou-6839997190845287692",
+      author: "吃游小分队木木酱",
+      title: "成都苍蝇馆子十强，老板太实在了# 周末的花式浪法",
+      url: "https://www.douyin.com/video/6839997190845287692",
+      shareURL: "https://v.douyin.com/HxrTbY2Bqtg/",
+      platform: "douyin",
+      publishedOn: "2020-06-19",
+      publishedOnNote: "2020年探店视频 · 营业情况待核实",
+      durationSeconds: 17.88,
+      sourceSHA256: "ec0ed2a0d924e3642e927ecc106083e8e987fb9558449d4cfaa666bf98c52b23",
+      acquisitionStatus: "local-source",
+      evidenceNote: "原片POI核定：成都市青羊区三道街41号附1号，老宅子肥肠鱼，铜锅老油，鲜鱼配肥肠。",
+      segments: [
+        {
+          id: "cd-chiyou-feichangyu",
+          name: "三道街老宅子肥肠鱼",
+          category: "鱼火锅 / 肥肠鱼",
+          summary: "开在老成都青羊区三道街老院子里的苍蝇馆子，铜锅沸腾红油翻滚，现杀鲜鱼肉质滑嫩入味，肥肠软糯弹牙，原汤香浓回味悠长。",
+          addressText: "成都市青羊区三道街41号附1号",
+          start: 0.0,
+          end: 17.88,
+          posterSecond: 7.0,
+          coordinates: [104.0526, 30.6769],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "青羊区 · 三道街片区",
+            basis: "video-poi-and-osm-road",
+            branchMatch: "exact-match",
+            note: "原片POI明确为三道街老宅子肥肠鱼，地址三道街41号附1号，锚定三道街路段",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:三道街",
+              name: "三道街",
+              nearestNode: 11240,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        }
+      ]
+    },
+    {
+      id: "cd-xiaojunmao-7553603939585903882",
+      author: "小君毛吃东西",
+      title: "国庆爽吃成都懒人攻略：早饭到夜宵全土著认证老店",
+      url: "https://www.douyin.com/video/7553603939585903882",
+      shareURL: "https://v.douyin.com/CJu5PtLuR60/",
+      platform: "douyin",
+      publishedOn: "2025-09-25",
+      publishedOnNote: "2025年探店视频 · 市区土著认证老店",
+      durationSeconds: 186.43,
+      sourceSHA256: "e0b6e1dbd1b297b341625b80114b0824a5179899cb3f4b40650adfaf407f5af8",
+      acquisitionStatus: "local-source",
+      evidenceNote: "原片涵盖海椒市老居民楼私房水饺、梁家巷解放西街毛记和意冒菜、福字街朱大嘴肥肠豆汤、理工大学小妹滋补蹄花。",
+      segments: [
+        {
+          id: "cd-xiaojunmao-shuijiao",
+          name: "私房水饺（海椒市店）",
+          category: "水饺 / 甜水面 / 传统小吃",
+          summary: "藏在海椒市老居民楼里的十三年水饺小店，原钟水饺老师傅手艺。红油纯肉水饺油香甜香浓郁，一口一个紧实多汁；电线般粗壮韧劲的甜水面裹满芝麻酱与酸辣红油，搭配解辣冰凉的醪糟醉豆花，唤醒地道老成都早餐记忆。",
+          addressText: "成都市锦江区海椒市东街盛华苑2栋3单元3号",
+          start: 23.0,
+          end: 57.0,
+          posterSecond: 28.0,
+          coordinates: [104.1012, 30.6416],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "锦江区 · 海椒市街区",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "牛市口/海椒市老居民楼盛华苑内13年老号水饺，锚定海椒市东街",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:海椒市街",
+              name: "海椒市街",
+              nearestNode: 30415,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        },
+        {
+          id: "cd-xiaojunmao-maojiheyi",
+          placeId: "cd-rourou-maojiheyi",
+          name: "毛记和意冒菜（解放西街店）",
+          category: "冒菜 / 川味小吃",
+          summary: "小君毛吃东西午餐探访解放西街开了17年的老牌冒菜，现点现称，经典红油底料香浓不燥，牛肉大厚片腌制入味，鹅肠脆嫩挂油，市井街坊老味道。",
+          addressText: "成都市金牛区解放西街9号1楼附2号",
+          start: 58.0,
+          end: 95.0,
+          posterSecond: 66.0,
+          coordinates: [104.081, 30.6905],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "金牛区 · 解放西街街区",
+            basis: "video-address-and-osm-road",
+            branchMatch: "exact-match",
+            note: "多博主同店合并：解放西街毛记和意冒菜",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:解放西街",
+              name: "解放西街",
+              nearestNode: 9480,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        },
+        {
+          id: "cd-xiaojunmao-zhudazui",
+          name: "朱大嘴肥肠豆汤（福字街总店）",
+          category: "川菜 / 肥肠豆汤 / 苍蝇馆子",
+          summary: "大慈寺与市二医院附近的市井老店，以传承25年的老卤水和极致软嫩的肥肠血旺闻名，鸭血滑如冰块，豌豆煮至快化开的豆汤浓郁温润，搭配糊辣鲜香的蒜泥白肉与爽脆竹笋，极度下饭。",
+          addressText: "成都市锦江区福字街2号",
+          start: 96.0,
+          end: 137.0,
+          posterSecond: 104.0,
+          coordinates: [104.0788, 30.6564],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "锦江区 · 福字街/市二医院",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "锦江区福字街2号朱大嘴肥肠豆汤总店，近市二医院站与大慈寺",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:福字街",
+              name: "福字街",
+              nearestNode: 26569,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        },
+        {
+          id: "cd-xiaojunmao-xiaomeitihua",
+          name: "小妹滋补蹄花（理工大学总店）",
+          category: "蹄花 / 夜宵炖品",
+          summary: "成华区理工大学与东郊记忆旁的深夜食堂老店，整只白汤蹄花慢火煨至极致软烂一抿即化脱骨，汤底融合海带、雪豆与干山药片，胶质浓稠鲜甜如粥，配上招牌秘制酸辣红油蘸水，夜宵治愈感十足。",
+          addressText: "成都市成华区崔家店路理工大学站D口",
+          start: 138.0,
+          end: 180.0,
+          posterSecond: 144.0,
+          coordinates: [104.1458, 30.6738],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "成华区 · 理工大学/崔家店",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "理工大学地铁站D口旁开了11年的小妹滋补蹄花",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:崔家店路",
+              name: "崔家店路",
+              nearestNode: 19438,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        }
+      ]
+    },
+    {
+      id: "cd-tiaojie-7546207360981749033",
+      author: "挑姐耍成都",
+      title: "来成都怎么吃才算不白来！史上坠全的成都必吃美食来啦",
+      url: "https://www.douyin.com/video/7546207360981749033",
+      shareURL: "https://v.douyin.com/KCV7S3bX5Xk/",
+      platform: "douyin",
+      publishedOn: "2025-08-30",
+      publishedOnNote: "2025年探店视频 · 必吃美食攻略",
+      durationSeconds: 276.10,
+      sourceSHA256: "087b8a07c8ec43c06e0ed836d94f0041143474206384551a906c1f8bdfd63117",
+      acquisitionStatus: "local-source",
+      evidenceNote: "原片精选吉祥街纯阳馆鱼香排骨面/抄手、肖家河罗大姐餐厅芋儿鸡、水碾河奇味甜不辣。",
+      segments: [
+        {
+          id: "cd-tiaojie-chunyangguan",
+          name: "纯阳馆鱼香排骨面（吉祥街店）",
+          category: "面馆 / 抄手",
+          summary: "青羊区吉祥街老街坊的宝藏老面馆，红油抄手皮薄肉满，颗颗紧实油润，配上招牌鱼香排骨面与泡菜，是老成都心目中的市井抄手天花板。",
+          addressText: "成都市青羊区吉祥街6号附6号",
+          start: 60.0,
+          end: 70.0,
+          posterSecond: 63.0,
+          coordinates: [104.0583, 30.6698],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "青羊区 · 吉祥街街区",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "吉祥街纯阳馆鱼香排骨面抄手老店，近奎星楼街",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:吉祥街",
+              name: "吉祥街",
+              nearestNode: 16600,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        },
+        {
+          id: "cd-tiaojie-luodajie",
+          name: "罗大姐餐厅（肖家河店）",
+          category: "川味家常菜 / 芋儿鸡",
+          summary: "武侯区肖家河片区开了二十余年的老馆子，现炒现烧的红烧干锅竹笋芋儿鸡、香辣美蛙与干锅中翅，锅气蒸腾，芋儿软糯入味，蛙肉鲜嫩滑爽。",
+          addressText: "成都市武侯区肖家河中街42号",
+          start: 81.0,
+          end: 91.0,
+          posterSecond: 86.0,
+          coordinates: [104.0410, 30.6270],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "武侯区 · 肖家河街区",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "肖家河中街罗大姐餐厅，20年老店",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:肖家河中街",
+              name: "肖家河中街",
+              nearestNode: 35238,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        },
+        {
+          id: "cd-tiaojie-qiweitbl",
+          name: "奇味甜不辣（水碾河老店）",
+          category: "传统小吃 / 油炸甜不辣",
+          summary: "水碾河老居民区里成都人从小吃到大的炸串名摊，金黄酥脆的油炸小串裹上秘制浓厚甜辣酱汁，咸甜微辣外焦里嫩，老水碾河的经典街头烟火。",
+          addressText: "成都市锦江区水碾河北三街",
+          start: 120.0,
+          end: 130.0,
+          posterSecond: 124.0,
+          coordinates: [104.0950, 30.6480],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "锦江区 · 水碾河街区",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "水碾河北三街奇味甜不辣老店",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:水碾河路",
+              name: "水碾河路",
+              nearestNode: 27278,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        }
+      ]
+    },
+    {
+      id: "cd-pangshi-7645208472996950386",
+      author: "庞师不是师",
+      title: "本地人深挖成都“头牌”苍蝇馆子，家家都是夯爆的民间米其林",
+      url: "https://www.douyin.com/video/7645208472996950386",
+      shareURL: "https://v.douyin.com/ZcEhKguCj3Y/",
+      platform: "douyin",
+      publishedOn: "2025-09-20",
+      publishedOnNote: "2025年探店视频 · 苍蝇馆子头牌",
+      durationSeconds: 433.80,
+      sourceSHA256: "38ff7590c71a6966a8c332ce377716c95ecf12c36f5629be6430f80f33c14a4a",
+      acquisitionStatus: "local-source",
+      evidenceNote: "原片收录青羊区西二道街传奇无名冒菜，清汤烫熟现浇红油豆豉，两点打烊扑克牌排号。",
+      segments: [
+        {
+          id: "cd-pangshi-wumingmaocai",
+          name: "蓉城西二道无名冒菜",
+          category: "冒菜 / 苍蝇馆子",
+          summary: "青羊区西二道街传奇苍蝇馆子，每天上午十点开门、下午两点准时打烊，用扑克牌排号。白汤烫熟食材后现浇秘制复合红油、豆豉、香油与熟芝麻，千层肚每根纤维吸满红油，脆嫩弹牙，香得温婉内敛。",
+          addressText: "成都市青羊区西二道街19号附1号",
+          start: 312.0,
+          end: 432.0,
+          posterSecond: 348.0,
+          coordinates: [104.0572, 30.6678],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "青羊区 · 西二道街街区",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "青羊区西二道街19号附1号蓉城西二道无名冒菜，近骡马市与宽窄巷子",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:西二道街",
+              name: "西二道街",
+              nearestNode: 16381,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        }
+      ]
+    },
+    {
+      id: "cd-ohyixi-7697573355297230080",
+      author: "哦一西cc",
+      title: "在四川成都48小时极限打卡22家店和3个景点",
+      url: "https://www.douyin.com/video/7697573355297230080",
+      shareURL: "https://v.douyin.com/Y5jw7v5rpsE/",
+      platform: "douyin",
+      publishedOn: "2026-04-11",
+      publishedOnNote: "2026年探店视频 · 48小时打卡清单",
+      durationSeconds: 461.80,
+      sourceSHA256: "100706b2fb75910ca7bc4b94f277f37cff224339148f17baffc79927ec53a9d8",
+      acquisitionStatus: "local-source",
+      evidenceNote: "原片实拍水碾河刘老大串串香、梁家巷北大铺盖面、一环路邓氏兔头、金琴老茶铺、玉林街老黄记手撕烤兔。",
+      segments: [
+        {
+          id: "cd-ohyixi-liulaoda",
+          name: "水碾河刘老大串串香",
+          category: "串串香 / 火锅",
+          summary: "水碾河大院开了多年的老字号串串香，晚上十点依然座无虚席。经典微辣红油鸳鸯锅香气扑鼻，小郡肝脆嫩入味，肥肠结子爆汁，搭配原汤干碟与蛋炒饭，老水碾河的深夜沸腾。",
+          addressText: "成都市锦江区水碾河路26号大院",
+          start: 58.0,
+          end: 83.0,
+          posterSecond: 66.0,
+          coordinates: [104.0988, 30.6476],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "锦江区 · 水碾河街区",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "水碾河路26号大院内刘老大串串香老店",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:水碾河路",
+              name: "水碾河路",
+              nearestNode: 30381,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        },
+        {
+          id: "cd-ohyixi-pogaimian",
+          name: "蓉荣北大铺盖面（梁家巷总店）",
+          category: "面食 / 铺盖面",
+          summary: "金牛区一环路北二段梁家巷名店，手工现扯如小被子般宽大的薄面，口感筋道滑爽，杂酱咸香浓郁，牛肉大坨软烂微辣，老字号实惠又饱腹。",
+          addressText: "成都市金牛区一环路北二段100号",
+          start: 84.0,
+          end: 103.0,
+          posterSecond: 88.0,
+          coordinates: [104.0789, 30.6865],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "金牛区 · 梁家巷街区",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "一环路北二段梁家巷蓉荣北大铺盖面总店",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:一环路北二段",
+              name: "一环路北二段",
+              nearestNode: 9479,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        },
+        {
+          id: "cd-ohyixi-dengshi",
+          name: "邓氏兔头（一环路北二段店）",
+          category: "兔头 / 熟食卤味",
+          summary: "北门一环路二十余年老字号，招牌麻辣兔头肉质紧实丝丝入味，红油芝麻辣椒浸润透彻，鲜辣过瘾，地道老成都追剧夜宵首选熟食。",
+          addressText: "成都市金牛区一环路北二段102号",
+          start: 124.0,
+          end: 135.0,
+          posterSecond: 126.0,
+          coordinates: [104.0818, 30.6872],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "金牛区 · 梁家巷街区",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "一环路北二段梁家巷邓氏兔头老店",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:一环路北二段",
+              name: "一环路北二段",
+              nearestNode: 9434,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        },
+        {
+          id: "cd-ohyixi-jinqin",
+          name: "金琴老茶铺（金琴路老茶馆）",
+          category: "老茶馆 / 盖碗茶 / 休闲生活",
+          summary: "金牛区金琴路市井社区老茶馆，老竹椅、盖碗茶、象棋与慢悠悠的生活节奏，铜壶沸水冲开碧潭飘雪与素毛峰，偷得浮生半日闲的老成都烟火日常。",
+          addressText: "成都市金牛区金琴路17号",
+          start: 228.0,
+          end: 241.0,
+          posterSecond: 230.0,
+          coordinates: [104.0375, 30.6792],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "金牛区 · 金琴路街区",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "金牛区金琴路17号金琴老茶铺",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:金琴路",
+              name: "金琴路",
+              nearestNode: 11151,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        },
+        {
+          id: "cd-ohyixi-laohuangji",
+          name: "老黄记手撕烤兔（玉林街店）",
+          category: "烤兔 / 川味熟食",
+          summary: "玉林老街坊排队老字号，碳烤入味的手撕烤兔金黄干香，肉质紧实越嚼越香，拌入大颗熟花生米与秘制辣椒面，老玉林人宵夜下酒绝配。",
+          addressText: "成都市武侯区玉林街26号附26-27号",
+          start: 408.0,
+          end: 423.0,
+          posterSecond: 414.0,
+          coordinates: [104.0620, 30.6300],
+          locationStatus: "approximate-planning",
+          coordinateSystem: "WGS84",
+          planningLocation: {
+            accuracy: "approximate",
+            label: "武侯区 · 玉林街区",
+            basis: "video-dialogue-and-osm-road",
+            branchMatch: "exact-match",
+            note: "武侯区玉林街26号附26-27号老黄记手撕烤兔，近玉林综合市场",
+            reviewedOn: "2026-11-06",
+            anchor: {
+              kind: "osm-way",
+              id: "road:玉林街",
+              name: "玉林街",
+              nearestNode: 32422,
+              sourceDate: "2026-11-05",
+              method: "road-network-snap"
+            }
+          },
+          routeEligible: false
+        }
+      ]
+    }
+  ]
+};
+
+// Validate!
+validateVideoLibrary(library, 'chengdu');
+console.log('Validation SUCCESS: 6 sources, ' + library.sources.reduce((sum, s) => sum + s.segments.length, 0) + ' segments!');
+
+fs.writeFileSync('map-base/data/cities/chengdu/video-library.json', JSON.stringify(library, null, 2) + '\n', 'utf8');
+console.log('Saved to map-base/data/cities/chengdu/video-library.json');

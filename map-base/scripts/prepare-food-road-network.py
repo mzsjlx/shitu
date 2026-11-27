@@ -26,6 +26,8 @@ default_urls = {
     'chaoshan': 'https://download.geofabrik.de/asia/china/guangdong.html',
     'wuhan': 'https://download.geofabrik.de/asia/china/hubei.html',
     'zhengzhou': 'https://download.geofabrik.de/asia/china/henan.html',
+    'harbin': 'https://download.geofabrik.de/asia/china/heilongjiang.html',
+    'hangzhou': 'https://download.geofabrik.de/asia/china/zhejiang.html',
     'quanzhou': 'https://download.geofabrik.de/asia/china/fujian.html'
 }
 source_url = args.url or default_urls.get(city_id)
@@ -58,7 +60,10 @@ def tags_of(obj):
 
 # libosmium on Windows needs an ASCII path; prefer an ASCII relative path when available.
 with tempfile.TemporaryDirectory(prefix='shitu-road-') as temp:
-    rel = os.path.relpath(source_path, Path.cwd())
+    try:
+        rel = os.path.relpath(source_path, Path.cwd())
+    except ValueError:
+        rel = str(source_path)
     if rel.isascii():
         pbf = rel
     else:

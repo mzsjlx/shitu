@@ -3,10 +3,10 @@
   "passed": true,
   "checks": [
     {
-      "name": "1. config/cities.json includes valid quanzhou entry and retains all 8 prior cities",
+      "name": "1. config/cities.json includes valid quanzhou entry and retains all 10 prior cities",
       "passed": true,
       "details": {
-        "cityCount": 9,
+        "cityCount": 11,
         "quanzhouBounds": [
           118.53,
           24.8,
@@ -67,10 +67,10 @@
       }
     },
     {
-      "name": "7. allCityCatalogs loads 9 cities without collision; Quanzhou 56 sources / 81 segments / 66 places / posters & anchors match disk hashes",
+      "name": "7. allCityCatalogs loads 11 cities without collision; Quanzhou 56 sources / 81 segments / 66 places / posters & anchors match disk hashes",
       "passed": true,
       "details": {
-        "totalCities": 9,
+        "totalCities": 11,
         "sources": 56,
         "segments": 81,
         "locatedSegments": 71,
@@ -82,12 +82,12 @@
       }
     },
     {
-      "name": "8. Global video-posters.json (883) and dist/data/video-library-assets.json (978) preserve all prior cities",
+      "name": "8. Global video-posters.json (1202) and dist/data/video-library-assets.json (1202) preserve all prior cities",
       "passed": true,
       "details": {
         "mode": "local-media-present",
-        "globalPosters": 883,
-        "distAssetsTotal": 978,
+        "globalPosters": 1202,
+        "distAssetsTotal": 1202,
         "quanzhouPosters": 81,
         "quanzhouClips": 81
       }
@@ -96,7 +96,7 @@
       "name": "9. Built HTML pages, 81 shop pages (with 2-video and 3-video merged cross-links), and preview-quanzhou.html are valid",
       "passed": true,
       "details": {
-        "previewBytes": 13787516,
+        "previewBytes": 13827267,
         "shopPages": 81
       }
     },

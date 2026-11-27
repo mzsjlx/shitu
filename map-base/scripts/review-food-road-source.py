@@ -31,7 +31,11 @@ nodes = {n[0]:n for n in data['nodes']}
 ways = {w['id']:w for w in data['ways']}
 found_nodes = set(); found_ways = set()
 with tempfile.TemporaryDirectory(prefix='shitu-road-audit-') as temp:
-    rel = os.path.relpath(args.pbf.resolve(), Path.cwd())
+    source_resolved = args.pbf.resolve()
+    try:
+        rel = os.path.relpath(source_resolved, Path.cwd())
+    except ValueError:
+        rel = str(source_resolved)
     if rel.isascii():
         pbf = rel
     else:

@@ -1,6 +1,7 @@
-## 2026-11-27 泉州（quanzhou）56 份素材包独立 Release 发布与远端复验完成（分支 `origin/codex/city-quanzhou-prep` 已推送，待创建/合入 PR）
+## 2026-11-27 泉州（quanzhou）完成 10 城主线（`536f346`）合并收口与 56 份素材包独立 Release 发布（待 PR 合入主线）
 
-- **代码分支与 Release**：泉州分支 `codex/city-quanzhou-prep` 已推送至远端 `origin`（代码基线提交 `ca99167`，尚未合入 `main`），并在主仓库发布独立预发布 Release：[media-2026-11-26-quanzhou](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-26-quanzhou)，同时已向 [media-bundles.json](map-base/data/media-bundles.json) 追加登记该 Release 与全部 56 条泉州来源索引（保留既往 10 个 Release 与 341 条他城记录）。
+- **代码分支与 11 城收口**：泉州工作分支 `codex/city-quanzhou-prep` 已合入最新 10 城 `origin/main`（`536f346`，含成都 PR #13 与杭州 PR #14），按城市/ID 无损合并 6 处多城共享文件（保留 `activeCity: "chongqing"`、既往 10 城数据与源码 0 污染，补齐 `prepare-food-road-network.py` 跨盘符 `os.path.relpath` `try/except ValueError` 兜底），完成 11 城无 `.local` 干净构建与全项验收，准备通过正式 PR 合入 `main`。
+- **独立 Release 与公开索引**：已在主仓库发布独立预发布 Release：[media-2026-11-26-quanzhou](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-26-quanzhou)（基线提交 `ca99167`），并在 [media-bundles.json](map-base/data/media-bundles.json) 追加登记该 Release 与全部 56 条泉州来源索引（保留既往 12 个 Release 与 417 条他城记录，全库共 13 套 Release / 473 条来源）。
 - **全量服务端分页核验（2026-11-27 00:39）**：通过 GitHub Releases API 分页拉取全部附件，确认 **56 个 ZIP + 56 份 `.zip.json` 校验摘要 = 112/112 全部 `state=uploaded`**，ZIP 总计 **`5,271,243,667` 字节（`4.91 GiB`）**，文件名、精确字节数、公开下载 URL 及服务端 `sha256` digest **`56/56` 逐项匹配**，无 `starter` 残留。
 - **远端真实下载与隔离导入抽样**：从公开 Release 链接实际下载 3 个代表性 ZIP（`qz-shuibuzhaojiao-7699101807771754728` 1 段 / `8.45 MiB`、`qz-miemie-7490086283604233499` 1 段 / `14.80 MiB`、`qz-yesoso-7596667113801677413` 3 段 / `17.42 MiB`），重新计算字节数与 SHA256 均与索引一致；在独立空目录实测 `media:import` 首次新增文件 `3/3/7`、重复导入幂等 `newFiles=0`、错误城市 `--city chongqing` 被拒绝。**核验边界**：以上代表全量服务端 digest 核验 + 3 包远端真实下载导入，不等同于重新下载全部 `4.91 GiB` 或验证旧包自动升级。详见 [quanzhou-release-audit-20261126.json](output/research/quanzhou/quanzhou-release-audit-20261126.json) 与 [泉州交接记录](output/research/quanzhou/quanzhou-city-handoff.md)。
 
@@ -87,6 +88,54 @@
   - 含本机 `.local` 媒体的 21 个素材包（46 段）完成首次隔离导入（`newFiles=113`）、重复导入幂等（`newFiles=0`）与错误城市拒绝校验（[quanzhou-data-qa-20261124.json](output/research/quanzhou/quanzhou-data-qa-20261124.json)，`10/10 PASS`）；
   - 无头 Chrome 端到端回归 **`20/20 PASS`**（[quanzhou-browser-qa-20261124.json](output/research/quanzhou/quanzhou-browser-qa-20261124.json)，四视口浮窗媒体占比均 `>= 2/3`，新大排档双采样实播切店停播、「阿超小排档」三博主切集停音清 `src` 强断言、直线/沿路切换、无媒体降级、`preview-quanzhou.html` 37 店、泉州道路搜索、`places-quanzhou.html` `3条同店视频` 徽标及重庆 81 店零串城）。
 - **当前远端状态**：本机尚未配置 GitHub 凭据（`cmdkey` / `.ssh` 为空），**分支尚未推送远端、21 个素材包尚未上传 GitHub Release、正式 PR 尚未创建**；待本机完成 GitHub 授权登录后即可一键推送发布。详见 [泉州交接记录](output/research/quanzhou/quanzhou-city-handoff.md)。
+
+## 2026-11-26 杭州 PR #14 已通过独立复核并合入主线（10 城基线就绪）
+
+杭州 `52c9023` 已通过接收端两轮独立复核，并以 `b98269c`（[PR #14](https://github.com/mzsjlx/shitu/pull/14)）合入 `origin/main`。主线现包含 **10 城**：重庆、长沙、柳州（51 点版）、南京、潮汕、武汉、郑州、哈尔滨、成都、杭州。
+
+- 杭州规模与地理连通：70 来源、56 位独立作者、108 段切片、103 处去重门店（**82 处在图美食点** + **21 处萧山/余杭/西溪外围真实界外点**，5 处多博主同店归并）；冻结路网 `food-road-network.json`（`7,243,708` 字节，LF，SHA256 `b46bc7b7...`）86/86 在图片段绑定有效整型 OSM `way`/`nodeId`，**82/82 在图点 100% 处于同一主连通分量 `26202712`**（3,321/3,321 对连通），21 处界外点诚实保留真实 WGS84 坐标与 `routeEligible: false`。
+- 素材与验收边界：公开 Release [media-2026-11-25-hangzhou](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-25-hangzhou)（ID `457697401`）分页核对 **140/140** 附件（70 ZIP + 70 `.zip.json`，`7,372,519,822` 字节）全部 `uploaded`、0 `starter`，与 `media-bundles.json` 70/70 条目字节、服务端 SHA256、片段数 0 偏差；接收端实际远端下载 6 个代表性 ZIP（7 段切片）完成本地哈希/FFprobe 复核、隔离导入与重复导入（`newFiles: 0`），并完成跨博主/切店/Escape 强停音断言、延安路搜索、3 站直线↔沿路切换、四视口严格 `>= 2/3` 及跨城零串台验证（12/12 PASS）。完整证据见 [杭州复核与合并记录](output/research/hangzhou-review-20261126.md)。
+- 公共源码 `map-base/src/*` 保持与合入前主线 0 差异；无 `.local` 媒体的 10 城干净构建通过，保留全站 **630 个来源 / 1,121 张封面**（`media-bundles.json` 共 417 条有效包 / 12 套 Release，全局 ID 0 冲突，构建后工作区 0 脏文件）；根工作区 `codex/trip-sharing` 与并行城市工作树保持保留。
+
+## 2026-11-26 杭州全量交付与 PR 提交（70 作品、56 作者、108 片段、82 在图点、21 真实城郊界外点）
+
+在工作分支 `codex/city-hangzhou-prep` 下，严格遵循 `PR-CHECKLIST.md` 10 条红线与标杆审查标准完成全量接入：
+1. **真实道路与拓扑路网**：
+   - 提取原始省份 Geofabrik OSM PBF，生成 `data/cities/hangzhou/food-road-network.json`（7,243,708 字节，SHA256: `b46bc7b76dedba95f6bbac77e9da780617033ebf8b73d779390317a49067b0bf`）；
+   - 在 `.gitattributes` 中锁定 LF 规则；全量 82 个在图去重点（86 个在图片段）严格吸附至主连通分量（吸附距离 ≤ 250m，使用有效整型 OSM way/nodeId），双向主连通路由 100% 畅通，0 孤立断路。
+2. **严谨边界表达（82 在图点 / 21 真实城郊界外点）**：
+   - 21 处城郊及萧山/余杭/西湖外围门店（22 个片段，如萧山王记利华路店、西溪八方城郑阿公顺德菜等）如实保留真实 WGS84 经纬度，标记 `routeEligible: false` 与 `locationStatus: "approximate-planning"`，绝不强行内缩或挂靠虚假内城锚点；
+   - 门店资料页与全览列表如实呈现真实分店名称与郊区地址。
+3. **真实视频剪辑与 FFprobe 音视频探测**：
+   - 70 个抖音原视频、56 位美食创作者（大专厨子、特别乌啦啦、麦乐金、富贵不想上班等）；
+   - 精准剪辑 108 个探店片段（含跨博主同店归并 5 处），全部重新以 `libx264 -crf 21 -c:a aac -b:a 128k` 编码生成高质量 MP4；
+   - 真实提取 108 张实拍菜品与门头海报，同步至全局与单城 `video-posters.json`，无任何伪造探测。
+4. **公开 Release 附件严格对齐（140/140 uploaded，0 starter）**：
+   - GitHub Release `media-2026-11-25-hangzhou`（ID: `457697401`）全量 70 个 ZIP 与 70 个 `.zip.json` 均为 `uploaded` 状态；
+   - `map-base/data/media-bundles.json` 严格对齐 70 项条目，SHA256、bytes、clips 100% 一致；远端抽样下载与导入测试幂等性 `newFiles: 0` 验证通过。
+5. **端到端自动化测试与浏览器断言（100% PASS）**：
+   - `scripts/review-hangzhou-data.mjs`：10/10 PASS；
+   - `scripts/review-hangzhou-browser.py`：端到端覆盖 82 个初始圆点（48px）、选中展开 190px 卡片、卡片浮窗媒体比例 ≥ 2/3、多博主音轨切片/关闭暂停断言、延安路道路搜索、3 站沿路路线试算（2.8 公里）、探店视频库按作者/分类动态检索，以及重庆默认入口兼容性（81 张卡片）。
+
+## 2026-11-24 成都 PR #13 已通过独立复核并合入主线（9 城基线就绪）
+
+成都 `3555178` 已通过接收端独立复核，并在合入最新 8 城 `origin/main`（`b174b19`）后通过 [PR #13](https://github.com/mzsjlx/shitu/pull/13) 以 Squash 方式合入 `main`（避免早期历史中的抽帧临时对象进入主线包体积）。主线现包含 **9 城**：重庆、长沙、柳州（51 点版）、南京、潮汕、武汉、郑州、哈尔滨、成都。
+
+- 成都规模与地理连通：82 来源、50 位独立作者、116 段切片、101 处去重地点（**71 处在图美食点**、0 范围外、30 段无详细店址或跨城诚实标 `coordinates: null` 留库，12 处多博主归并）；冻结路网 `food-road-network.json` 严格保持原始 `sichuan-261110.osm.pbf` 提取版（`3,886,307` 字节，LF，SHA256 `12c1391a...`），86/86 在图片段真实 OSM 锚点全过，**71/71 在图点 100% 落入同一主连通分量 `4779165773`**（2,485/2,485 对连通）。
+- 素材与验收范围（按方案 B 首期收口）：Release [media-2026-11-12-chengdu](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-12-chengdu)（ID `455246557`）已上传全量 83 份 `.zip.json` 摘要与首期 **6 个真实视频 ZIP**（`cd-bozai`、`cd-chiyou`、`cd-suipo-7516`、`cd-suipo-7657`、`cd-wangxun`、`cd-xixichibupang`，共 `241.42 MB`，89/89 附件全部 `uploaded`、0 `starter`）；`media-bundles.json` 严格对齐仅登记此 6 包（0 个 404 URL 留库），剩余 76 个大包待后续分批补传。接收端已将此 6 包 **6/6 全量远端下载、重算本地 SHA256、执行隔离导入与二次幂等导入（`newFiles: 0`）**，并完成连续 3 店双采样实播停音、直线↔沿路切换、四视口（`>= 2/3`）及跨城零串台验证（11/11 PASS）。完整证据见 [成都复核与合并记录](output/research/chengdu-review-20261124.md)。
+- 无 `.local` 媒体的 9 城干净构建通过，保留全站 **560 个来源 / 1,013 张封面**（0 丢失、0 ID 冲突、0 脏文件）。
+
+## 2026-11-24 成都复核整改全量收口与 PR #13 交付（82 作品、50 作者名称、116 段、71 在图点，另有 30 段未上图）
+
+在工作分支 `codex/city-chengdu-prep` 下，响应接收端 2026-11-22 复核与 2026-11-24 阻塞/收口意见完成全量 5 项闭环整改：
+1. **主线合并冲突解决与公共源码 100% 还原**：合入包含武汉（PR #10）、郑州（PR #11）7 城基线的最新 `origin/main`，严格按城市/ID 保留全部既有 7 城增量，全局封面库达 891 张（既有 7 城封面 0 丢失）。彻底从 `origin/main` 还原柳州 `map-base/data/cities/liuzhou/video-library-assets.json` 及公共代码 `map-base/src/main.js`、`map-base/scripts/serve.mjs`、`map-base/src/index.html`，0 引入无关改动。
+2. **.gitattributes 补齐 LF 规则**：在 `.gitattributes` 中补齐成都冻结路网与清单的 LF 规则，确保跨平台检出哈希与字节绝对稳定（`food-road-network.json` 为 3,886,307 字节，SHA256: `12c1391a3d950f6020e0a12e603b86db98d703f59e8a748b20bbe3a698aac477`）。
+3. **公开 Release 与素材包库严密收口（方案 B）**：公开 Release `media-2026-11-12-chengdu`（ID `455246557`）全量 82 个作品 `.zip.json` 摘要均已 100% `uploaded`；已上传并实测可下载的 6 个真实视频 ZIP（`cd-bozai`、`cd-chiyou`、`cd-suipo-7516`、`cd-suipo-7657`、`cd-wangxun`、`cd-xixichibupang`，全部为 `uploaded`，0 `starter`），`map-base/data/media-bundles.json` 严格对齐仅保留此 6 包真实可下载条目（0 个 404 URL 留库），远端下载与导入测试通过（`newFiles: 0`），剩余 76 个大包待后续分批补传。
+4. **真实媒体探测与脚本清理**：`register-all-chengdu-media.mjs` 移除本机私有路径改用标准环境变量与真实 FFprobe 探测；清理 `map-base/scripts/` 中全部一次性临时脚本。
+5. **真实 OSM 锚点同步与往年视频标注**：`location-anchors.json` 真实 OSM 节点同步回 `video-library.json`，清理全部 86 处旧 `road:*` 与虚构 `nearestNode` 字段；为全部 116 段切片规范补齐 `footageNote`。
+6. **自动化评审脚本升级与强断言**：`review-chengdu.mjs` 消除固定端口与路径依赖，面积比采用严格 `>= (2 / 3)`；切至第 2 位博主先点击播放推进时间（双采样），切店与关窗停音采用 `Boolean(oldVideo) && oldVideo.paused && !oldHasSrc` 强断言；四视口与 7 城隔离测试全量通过（31/31 PASS）。
+7. **过程抽帧深度瘦身**：使用 `git rm -rf` 清理 `output/research/chengdu/` 中 335 MB（3,400+ 文件）抽帧与过程图，保留台账、审计与标准四视口截图，体积控制至 3.71 MB（远低于 10 MB 红线）。
+8. **正式编号 PR 交付**：已向 `mzsjlx/shitu` 提交正式 [PR #13](https://github.com/mzsjlx/shitu/pull/13)，按交付规范完整记录 82 作品、50 作者名称、116 段、71 在图点、30 段未上图及测试报告。
 
 ## 2026-11-24 柳州扩充 PR #9 已合入主线（8 城基线升级：柳州 51 在图点 / 64 切片）
 

@@ -1,0 +1,150 @@
+{
+  "baseUrl": "http://127.0.0.1:62706",
+  "distDir": "D:\\Antigravity\\地图\\.local\\worktrees\\hangzhou-prep\\map-base\\dist",
+  "expectLocalVideos": true,
+  "checks": {
+    "mapCards": {
+      "totalInBounds": 82,
+      "collapsedDefaultDots": 82,
+      "expandedSelectedWidth": 190,
+      "noHoverTriggerWhileCollapsed": true
+    },
+    "roadSearch": {
+      "query": "延安路",
+      "matched": true
+    },
+    "videoPlayback": {
+      "multiCreatorAdvance1": 0.874,
+      "multiCreatorAdvance2": 0.869,
+      "creatorSwitchCleanup": {
+        "exists": true,
+        "paused": true,
+        "hasSrc": false
+      },
+      "escapeCleanup": {
+        "popoverHidden": true,
+        "paused": true,
+        "hasSrc": false
+      },
+      "stopSwitchCleanup": {
+        "paused": true,
+        "hasSrc": false
+      }
+    },
+    "routeSwitching": {
+      "stopsAdded": 3,
+      "directCaption": "直线约 2.2 公里",
+      "directBadges": [
+        "直线约 790 米",
+        "直线约 1.4 公里"
+      ],
+      "roadCaption": "沿路约 2.8 公里",
+      "roadBadges": [
+        "沿路约 1.0 公里",
+        "沿路约 1.8 公里"
+      ],
+      "routeStats": {
+        "mode": "road",
+        "phase": "ready",
+        "total": 2838.6825094423484,
+        "count": 2,
+        "missing": 0
+      }
+    },
+    "viewports": {
+      "desktop-1440": {
+        "vw": 1440,
+        "vh": 960,
+        "pop": {
+          "left": 302.99005126953125,
+          "top": 261.0417175292969,
+          "right": 613.039794921875,
+          "bottom": 820.6314392089844,
+          "width": 310.04974365234375,
+          "height": 559.5897216796875
+        },
+        "media": {
+          "width": 296.0474548339844,
+          "height": 391.06268310546875
+        },
+        "mediaRatio": 0.667277685564227,
+        "inViewport": true,
+        "screenshot": "D:\\Antigravity\\地图\\.local\\worktrees\\hangzhou-prep\\map-base\\.local\\reviews\\hangzhou\\qa-desktop-1440.png"
+      },
+      "mobile-390": {
+        "vw": 390,
+        "vh": 844,
+        "pop": {
+          "left": 118,
+          "top": 270,
+          "right": 378,
+          "bottom": 832,
+          "width": 260,
+          "height": 562
+        },
+        "media": {
+          "width": 246,
+          "height": 396
+        },
+        "mediaRatio": 0.6666849165069806,
+        "inViewport": true,
+        "screenshot": "D:\\Antigravity\\地图\\.local\\worktrees\\hangzhou-prep\\map-base\\.local\\reviews\\hangzhou\\qa-mobile-390.png"
+      },
+      "compact-320": {
+        "vw": 320,
+        "vh": 680,
+        "pop": {
+          "left": 12,
+          "top": 106,
+          "right": 272,
+          "bottom": 668,
+          "width": 260,
+          "height": 562
+        },
+        "media": {
+          "width": 246,
+          "height": 396
+        },
+        "mediaRatio": 0.6666849165069806,
+        "inViewport": true,
+        "screenshot": "D:\\Antigravity\\地图\\.local\\worktrees\\hangzhou-prep\\map-base\\.local\\reviews\\hangzhou\\qa-compact-320.png"
+      },
+      "landscape-736": {
+        "vw": 736,
+        "vh": 414,
+        "pop": {
+          "left": 413.994140625,
+          "top": 71.9498291015625,
+          "right": 724.0234375,
+          "bottom": 401.98101806640625,
+          "width": 310.029296875,
+          "height": 330.03118896484375
+        },
+        "media": {
+          "width": 296.02801513671875,
+          "height": 231.02182006835938
+        },
+        "mediaRatio": 0.6683871548110917,
+        "inViewport": true,
+        "screenshot": "D:\\Antigravity\\地图\\.local\\worktrees\\hangzhou-prep\\map-base\\.local\\reviews\\hangzhou\\qa-landscape-736.png"
+      }
+    },
+    "videosPage": {
+      "segmentCards": 108,
+      "sourceLinks": 70,
+      "dialogSearchFilter": true
+    },
+    "placesPage": {
+      "placeCards": 103,
+      "inBoundsSummary": 82,
+      "oobVisible": true
+    },
+    "chongqingCompat": {
+      "defaultCity": "重庆",
+      "chongqingCards": 81
+    }
+  },
+  "pageErrors": [],
+  "failedRequests": [],
+  "status": "PASS"
+}

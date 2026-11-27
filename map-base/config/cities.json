@@ -426,6 +426,84 @@
       },
       "status": "local-validation-only"
     },
+    "chengdu": {
+      "name": "成都",
+      "regionLabel": "中心城区 · 核心五城区",
+      "coverageLabel": "春熙路、太古里、大慈寺、望平街天府熊猫塔、宽窄巷子、建设路至玉林街区",
+      "bounds": [
+        104.01,
+        30.6,
+        104.15,
+        30.72
+      ],
+      "center": [
+        104.0815,
+        30.655
+      ],
+      "zoom": 15.6,
+      "pitch": 52,
+      "bearing": -18,
+      "minZoom": 12,
+      "maxZoom": 19,
+      "tiles": "data/cities/chengdu/chengdu.pmtiles",
+      "amapCityCode": "510100",
+      "landmarks": [],
+      "buildingsDetail": "data/cities/chengdu/chengdu-buildings-detail.geojson",
+      "foodContent": {
+        "city": "chengdu",
+        "records": "data/cities/chengdu/food-records.json",
+        "sprite": "assets/food-concepts.jpg",
+        "videoLibrary": "data/cities/chengdu/video-library.json",
+        "videoAssets": "data/cities/chengdu/video-library-assets.json",
+        "roadNetwork": "data/cities/chengdu/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/chengdu/roads-index.json",
+        "audit": "data/cities/chengdu/data-audit.json",
+        "manifest": "data/cities/chengdu/source-manifest.json",
+        "tileMetadata": "data/cities/chengdu/tile-metadata.json"
+      },
+      "status": "local-validation-only"
+    },
+    "hangzhou": {
+      "name": "杭州",
+      "regionLabel": "西湖主城 · 运河走廊",
+      "coverageLabel": "杭州核心城区（涵盖西湖景区东岸、湖滨步行街、清河坊/吴山广场、延安路商圈、武林广场至运河大关桥西）",
+      "bounds": [
+        120.1,
+        30.2,
+        120.24,
+        30.34
+      ],
+      "center": [
+        120.165,
+        30.26
+      ],
+      "zoom": 15.5,
+      "pitch": 52,
+      "bearing": -15,
+      "minZoom": 11.5,
+      "maxZoom": 19,
+      "tiles": "data/cities/hangzhou/hangzhou.pmtiles",
+      "amapCityCode": "330100",
+      "landmarks": [],
+      "foodContent": {
+        "city": "hangzhou",
+        "records": "data/cities/hangzhou/food-records.json",
+        "videoLibrary": "data/cities/hangzhou/video-library.json",
+        "videoAssets": "data/cities/hangzhou/video-library-assets.json",
+        "videoPosters": "data/cities/hangzhou/video-posters.json",
+        "sprite": "assets/food-concepts.jpg",
+        "roadNetwork": "data/cities/hangzhou/food-road-network.json"
+      },
+      "dataFiles": {
+        "index": "data/cities/hangzhou/roads-index.json",
+        "audit": "data/cities/hangzhou/data-audit.json",
+        "manifest": "data/cities/hangzhou/source-manifest.json",
+        "tileMetadata": "data/cities/hangzhou/tile-metadata.json"
+      },
+      "status": "local-validation-only"
+    },
     "quanzhou": {
       "name": "泉州",
       "regionLabel": "古城核心 · 刺桐两江",
