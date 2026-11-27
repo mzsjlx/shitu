@@ -1,3 +1,11 @@
+## 2026-11-27 泉州 PR #15 已通过独立复核并合入主线（11 城基线就绪）
+
+泉州 `f8b107f` 已通过接收端独立复核与 11 城无损合并终检，并以 `37445fb`（[PR #15](https://github.com/mzsjlx/shitu/pull/15)）合入 `origin/main`。主线现包含 **11 城**：重庆、长沙、柳州（51 点版）、南京、潮汕、武汉、郑州、哈尔滨、成都、杭州、泉州。
+
+- 泉州规模与地理连通：56 来源、49 位独立作者、81 段切片、76 处去重地点（**66 处在图美食点**、7 段未定位与 3 段范围外诚实留库，含 `李大富旋转小火锅`、`阿超小排档`、`泉州油边王烧烤` 3 处多博主同店归并）；冻结路网 `food-road-network.json`（`2,526,241` 字节，LF，SHA256 `f161b01d...`）71/71 已定位片段绑定有效整型 OSM `way`/`nodeId`（最大锚点偏距仅 `102.6m`），**66/66 在图点 100% 落入同一主连通分量 `666649067`**（跨晋江大桥 `2,145/2,145` 对全通）。
+- 素材与验收边界：公开 Release [media-2026-11-26-quanzhou](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-26-quanzhou)（ID `459633772`）分页核对 **112/112** 附件（56 ZIP + 56 `.zip.json`，`5,271,243,667` 字节）全部 `uploaded`、0 `starter`，与 `media-bundles.json` 56/56 条目字节、服务端 SHA256、片段数 0 偏差；接收端实际远端下载 4 个代表性 ZIP（6 段切片）完成本地哈希与 FFprobe 流复核、隔离导入与重复导入（`newFiles: 0`）、错城拒绝，并完成双博主切换/切店/Escape 强停音断言、跨晋江 3 站直线↔沿路切换、四视口严格 `>= 2/3` 及 11 城跨城回归验证（11/11 + 11 城烟测 PASS）。完整证据见 [泉州复核与合并记录](output/research/quanzhou-review-20261127.md)。
+- 公共源码 `map-base/src/*` 保持与合入前主线 0 差异（公共路网脚本 `prepare-food-road-network.py` / `review-food-road-source.py` 保留 Windows ASCII 相对路径优化与跨盘符 `ValueError` 兜底）；无 `.local` 媒体的 11 城干净构建通过，保留全站 **686 个来源 / 1,202 张封面**（`media-bundles.json` 共 473 条有效包 / 13 套 Release，全局 ID 0 冲突，构建后工作区 0 脏文件）；根工作区 `codex/trip-sharing` 与并行城市工作树保持保留。
+
 ## 2026-11-27 泉州（quanzhou）完成 10 城主线（`536f346`）合并收口与 56 份素材包独立 Release 发布（待 PR 合入主线）
 
 - **代码分支与 11 城收口**：泉州工作分支 `codex/city-quanzhou-prep` 已合入最新 10 城 `origin/main`（`536f346`，含成都 PR #13 与杭州 PR #14），按城市/ID 无损合并 6 处多城共享文件（保留 `activeCity: "chongqing"`、既往 10 城数据与源码 0 污染，补齐 `prepare-food-road-network.py` 跨盘符 `os.path.relpath` `try/except ValueError` 兜底），完成 11 城无 `.local` 干净构建与全项验收，准备通过正式 PR 合入 `main`。
