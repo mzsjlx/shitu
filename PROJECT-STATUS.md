@@ -1,4 +1,11 @@
-## 2026-11-28 南昌（`nanchang`）首期 4 来源 / 28 片段 / 26 在图点与 Release 全链路就绪（待 PR 复核合并）
+## 2026-11-28 南昌（`nanchang`）二期扩充完成（8 来源 / 60 片段 / 40 在图点 / 9 跨博主归并，更新 PR #16）
+
+在 `codex/city-nanchang-prep` 首期基础上完成二期 4 条抖音探店视频扩充（`一支凯子`、`Renyi毅哥`、`小魔鱼`、`椰子Ryan`），全库现含 **8 作品 / 8 独立作者 / 60 段 H.264+AAC 切片 / 51 处去重地点 / 40 处在图美食点（49 段在图切片，9 处跨博主归并）/ 1 处范围外（`熊庆彬小锅小灶`）/ 10 段无明确门店街巷线索诚实标 `coordinates: null` / `unlocated`**（100% 绑定 `jiangxi-latest.osm.pbf` 真实整型 `way` 与 `nodeId`，`<= 174.3m` 连通主分量）。
+
+- **公开 Release 与远端导入核验**：新增 [media-2026-11-28-nanchang-batch2](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-28-nanchang-batch2)（ID `461638914`），分页核实二期 **8/8 附件（4 ZIP + 4 `.zip.json`，共 `811,183,783` 字节）全部 `uploaded`**、0 `starter`，服务端 `sha256` digest 与 `map-base/data/media-bundles.json`（全库 `355` 条 / 南昌 `8` 条）100% 一致；从二期 Release 实际远端下载 `nc-yizhikaizi`（`145,939,809` 字节，10 片段）在空 `.local` 隔离目录实测首轮 `media:import`（`newFiles: 21`）与重复导入（`newFiles: 0`）。
+- **验证与构建范围**：无 `.local` 媒体干净构建通过（10 城 `1,073` 张封面 0 丢失）；`review-nanchang-data.mjs --require-bundles` **8/8 PASS**；`review-nanchang-browser.py` **19/19 PASS**（含 `老南昌白糖糕（大士院）` 多博主切换播放与停音强断言、`1440/390/320/736` 四视口及跨城零串台）。详见 [南昌交付记录](output/research/nanchang/nanchang-delivery-20261128.md) 与 [PR #16](https://github.com/mzsjlx/shitu/pull/16)。
+
+## 2026-11-28 南昌（`nanchang`）首期 4 来源 / 28 片段 / 26 在图点与 Release 全链路就绪（已由二期续扩）
 
 在最新 `origin/main`（9 城基线 `a13549f`）基础上于独立分支 `codex/city-nanchang-prep` 完成南昌（`cityId: "nanchang"`，`sourceId` 前缀 `nc-`）全栈交付：
 
