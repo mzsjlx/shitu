@@ -1,3 +1,12 @@
+## 2026-11-28 南昌（`nanchang`）首期 4 来源 / 28 片段 / 26 在图点与 Release 全链路就绪（待 PR 复核合并）
+
+在最新 `origin/main`（9 城基线 `a13549f`）基础上于独立分支 `codex/city-nanchang-prep` 完成南昌（`cityId: "nanchang"`，`sourceId` 前缀 `nc-`）全栈交付：
+
+- **规模与定位口径**：**4 作品 / 4 独立作者 / 28 段 H.264+AAC 切片 / 28 处去重地点 / 26 处在图美食点**（覆盖东湖区大士院、民德路、建德观，西湖区万寿宫/珠宝街/船山路/羊子巷/系马桩/桃苑/广场东路及红谷滩区万象天地，跨赣江直通；**1 处范围外段** `熊庆彬小锅小灶（莲塘力高总店）` 保留真实 WGS84 坐标 `[115.929, 28.5407]` 标 `out-of-bounds` 留库；**1 处未定位段** `地铁A口鸡蛋汉堡` 诚实标 `coordinates: null` / `unlocated` 留库；**0 处跨博主归并**；2024 年旧片 `一坨小草莓` 全量 9 段已补 `footageNote`）。
+- **开放底图与冻结路网**：`nanchang.pmtiles`（`7,251,348` 字节，z15 全 `460/460` 瓦片齐备）；`food-road-network.json` 提取自 Geofabrik 江西省原始切片 `jiangxi-latest.osm.pbf`（快照 `2026-11-25`，`8,882,983` 字节，LF，SHA256 `53f64576bcc2a709a22c17cfacbabdcf408067e3f31067b4a8f9c0ce4707852d`，`128,151` 节点 / `25,276` way），`.gitattributes` 已锁定 LF；`26/26` 在图点均绑定真实整型 OSM `way` 与所属 `nodeId`（`<= 174.3m`），100% 连通主分量（`126,050` 节点）。
+- **公开 Release 与远端导入核验**：[media-2026-11-27-nanchang](https://github.com/mzsjlx/shitu/releases/tag/media-2026-11-27-nanchang)（ID `460853689`）分页核实 **8/8 附件（4 ZIP + 4 `.zip.json`，共 `1,186,760,911` 字节）全部 `uploaded`**、0 `starter`，服务端 SHA256 与 `media-bundles.json`（总 `351` 条 / 南昌 `4` 条）100% 一致。实际从远端下载 `nc-fanqiejiangjiang`（`215,007,666` 字节，17 片段）在隔离空目录完成首轮 `media:import`（`newFiles: 35`）与重复导入（`newFiles: 0`）。
+- **验证与构建范围**：无 `.local` 媒体干净新检出构建通过（10 城 `1,041` 张封面 0 丢失、0 脏文件）；`review-nanchang-data.mjs --require-bundles` **8/8 PASS**；`review-nanchang-browser.py` **18/18 PASS**（双采样播放 `dt >= 0.3s`、切店与 Escape 保留旧 `<video>` 引用 `&&` 强断言、1440/390/320/736 四视口在屏内且媒体占比 `>= 2/3`、跨赣江 3 站直线↔沿路切换、离线单页包 `preview-nanchang.html`、静态页及 4 城防串城）。证据见 [南昌交付记录](output/research/nanchang/nanchang-delivery-20261127.md)。
+
 ## 2026-11-24 成都 PR #13 已通过独立复核并合入主线（9 城基线就绪）
 
 成都 `3555178` 已通过接收端独立复核，并在合入最新 8 城 `origin/main`（`b174b19`）后通过 [PR #13](https://github.com/mzsjlx/shitu/pull/13) 以 Squash 方式合入 `main`（避免早期历史中的抽帧临时对象进入主线包体积）。主线现包含 **9 城**：重庆、长沙、柳州（51 点版）、南京、潮汕、武汉、郑州、哈尔滨、成都。
