@@ -92,14 +92,14 @@ await check('5. food-road-network.json and manifest have strict LF line endings,
   return { nodes: net.nodes.length, ways: net.ways.length, crossRiverMetres: Math.round(routeCrossRiver.distanceMetres) };
 });
 
-await check('6. video-library.json validates 4 sources, 28 segments, 26 in-bounds anchors (100% connected), 1 out-of-bounds, 1 unlocated', async () => {
+await check('6. video-library.json validates 8 sources, 60 segments, 49 in-bounds anchors (40 unique places, 100% connected), 1 out-of-bounds, 10 unlocated', async () => {
   const catalog = JSON.parse(await readFile(path.join(root, 'data/cities/nanchang/video-library.json'), 'utf8'));
   const validated = validateVideoLibrary(catalog, 'nanchang');
-  assert.equal(validated.sources.length, 4, 'Must have 4 sources');
+  assert.equal(validated.sources.length, 8, 'Must have 8 sources');
   const allSegments = validated.sources.flatMap(s => s.segments);
-  assert.equal(allSegments.length, 28, 'Must have 28 segments');
+  assert.equal(allSegments.length, 60, 'Must have 60 segments');
   const authors = new Set(validated.sources.map(s => s.author));
-  assert.equal(authors.size, 4, 'Must have 4 distinct authors');
+  assert.equal(authors.size, 8, 'Must have 8 distinct authors');
 
   // Verify 2024 video has footageNote
   const straw = validated.sources.find(s => s.id === 'nc-yituoxiaocaomei-7370304732994342181');
@@ -107,13 +107,15 @@ await check('6. video-library.json validates 4 sources, 28 segments, 26 in-bound
 
   const bounds = [115.77, 28.58, 116.01, 28.76];
   const groups = groupVideoPlaces(catalog);
-  assert.equal(groups.length, 28, '28 distinct places');
+  assert.equal(groups.length, 51, '51 distinct places (40 in-bounds + 1 out-of-bounds + 10 unlocated)');
+  const multiCreator = groups.filter(g => g.clips.length > 1);
+  assert.equal(multiCreator.length, 9, 'Must have 9 cross-creator merged places');
   const inBounds = allSegments.filter(s => withinMapBounds(s, bounds));
-  assert.equal(inBounds.length, 26, 'Must have 26 in-bounds stops');
+  assert.equal(inBounds.length, 49, 'Must have 49 in-bounds stops across 40 unique places');
   const outOrNull = allSegments.filter(s => !withinMapBounds(s, bounds));
-  assert.equal(outOrNull.length, 2, 'Must have 1 out-of-bounds + 1 unlocated segment');
-  assert(outOrNull.some(s => s.locationStatus === 'out-of-bounds' && Array.isArray(s.coordinates) && s.coordinates[1] < 28.58));
-  assert(outOrNull.some(s => s.locationStatus === 'unlocated' && s.coordinates === null));
+  assert.equal(outOrNull.length, 11, 'Must have 1 out-of-bounds + 10 unlocated segments');
+  assert.equal(outOrNull.filter(s => s.locationStatus === 'out-of-bounds' && Array.isArray(s.coordinates) && s.coordinates[1] < 28.58).length, 1);
+  assert.equal(outOrNull.filter(s => s.locationStatus === 'unlocated' && s.coordinates === null).length, 10);
 
   const net = JSON.parse(await readFile(path.join(root, 'data/cities/nanchang/food-road-network.json'), 'utf8'));
   const router = buildFoodRoadRouter(net);
@@ -147,10 +149,10 @@ await check('6. video-library.json validates 4 sources, 28 segments, 26 in-bound
   return { sources: validated.sources.length, segments: allSegments.length, inBounds: inBounds.length, outOrNull: outOrNull.length };
 });
 
-await check('7. video-posters.json records all 28 posters matching disk SHA256 and bytes', async () => {
+await check('7. video-posters.json records all 60 posters matching disk SHA256 and bytes', async () => {
   const postersData = JSON.parse(await readFile(path.join(root, 'data/cities/nanchang/video-posters.json'), 'utf8'));
   const entries = Object.entries(postersData.segments);
-  assert.equal(entries.length, 28, 'Must have 28 poster entries');
+  assert.equal(entries.length, 60, 'Must have 60 poster entries');
   for (const [segId, entry] of entries) {
     const bytes = await readFile(path.join(root, entry.path));
     assert.equal(bytes.length, entry.bytes, `Poster size mismatch for ${segId}`);

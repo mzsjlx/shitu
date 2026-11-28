@@ -6,7 +6,7 @@ from playwright.sync_api import sync_playwright
 root = Path(__file__).resolve().parents[1]
 output_dir = root / '../output/playwright/nanchang'
 output_dir.mkdir(parents=True, exist_ok=True)
-report_path = root / '../output/research/nanchang/nanchang-browser-qa-20261127.json'
+report_path = root / '../output/research/nanchang/nanchang-browser-qa-20261128.json'
 report_path.parent.mkdir(parents=True, exist_ok=True)
 
 base_url = os.environ.get('PREVIEW_URL', 'http://127.0.0.1:8799').rstrip('/')
@@ -74,12 +74,12 @@ with sync_playwright() as pw:
 
     page.wait_for_selector('.food-card', timeout=10000)
     card_count = page.locator('.food-card').count()
-    check('2. Nanchang renders 26 on-map food cards', card_count == 26, {'cardCount': card_count})
+    check('2. Nanchang renders 40 on-map food cards', card_count == 40, {'cardCount': card_count})
 
     card_names = page.evaluate("() => Array.from(document.querySelectorAll('.food-card strong')).map(el => el.textContent)")
-    check('3. Authentic Nanchang shop names visible',
-          any('小罗子' in n for n in card_names) and any('南昌里' in n for n in card_names) and any('椿椒' in n for n in card_names),
-          {'sample': card_names[:8]})
+    check('3. Authentic Nanchang shop names visible across Batch 1 and Batch 2',
+          any('小罗子' in n for n in card_names) and any('南昌里' in n for n in card_names) and any('春字号' in n for n in card_names) and any('胖子水煮' in n for n in card_names),
+          {'sample': card_names[:10]})
 
     # Popover open + >= 2/3 ratio + in viewport
     open_visible_card(page, '小罗子')
@@ -131,10 +131,45 @@ with sync_playwright() as pw:
           bool(old2['hidden'] and old2['paused'] and not old2['src']),
           old2)
 
+    # 7b. Multi-creator switcher on merged shop (老南昌白糖糕（大士院）)
+    open_visible_card(page, '老南昌白糖糕')
+    clip_authors = page.evaluate("() => Array.from(document.querySelectorAll('.food-popover-clip')).map(b => b.textContent.trim())")
+    page.locator('.food-popover-play').click()
+    page.wait_for_selector('video.food-popover-video', timeout=8000)
+    page.evaluate("() => { window.__vm1 = document.querySelector('video.food-popover-video'); }")
+    time.sleep(0.4)
+    m1_a = page.evaluate("() => ({ t: window.__vm1.currentTime, paused: window.__vm1.paused })")
+    time.sleep(0.8)
+    m1_b = page.evaluate("() => ({ t: window.__vm1.currentTime, paused: window.__vm1.paused })")
+    dt_m1 = m1_b['t'] - m1_a['t']
+    page.locator('.food-popover-clip', has_text='小魔鱼').click()
+    time.sleep(0.3)
+    old_m1 = page.evaluate("() => ({ paused: window.__vm1 ? window.__vm1.paused : false, src: window.__vm1 ? window.__vm1.getAttribute('src') : 'missing' })")
+    page.locator('.food-popover-play').click()
+    page.wait_for_selector('video.food-popover-video', timeout=8000)
+    page.evaluate("() => { window.__vm2 = document.querySelector('video.food-popover-video'); }")
+    time.sleep(0.4)
+    m2_a = page.evaluate("() => ({ t: window.__vm2.currentTime, paused: window.__vm2.paused })")
+    time.sleep(0.8)
+    m2_b = page.evaluate("() => ({ t: window.__vm2.currentTime, paused: window.__vm2.paused })")
+    dt_m2 = m2_b['t'] - m2_a['t']
+    page.keyboard.press('Escape')
+    time.sleep(0.3)
+    old_m2 = page.evaluate("() => ({ paused: window.__vm2 ? window.__vm2.paused : false, src: window.__vm2 ? window.__vm2.getAttribute('src') : 'missing' })")
+    check('7b. Multi-creator switcher plays, stops previous clip on switch, plays 2nd creator, and stops on Escape',
+          len(clip_authors) == 2 and '小魔鱼' in clip_authors and dt_m1 >= 0.3 and not m1_b['paused'] and
+          bool(old_m1['paused'] and not old_m1['src']) and dt_m2 >= 0.3 and not m2_b['paused'] and
+          bool(old_m2['paused'] and not old_m2['src']),
+          {'authors': clip_authors, 'dt1': dt_m1, 'old1': old_m1, 'dt2': dt_m2, 'old2': old_m2})
+
     # 8. 3-stop straight vs road route switching across Ganjiang
     page.evaluate("""() => {
         const f = window.foodCityMap.food;
-        for (const id of ['video-nc-fanqiejiangjiang-xiaoluozi', 'video-nc-wangxun-nanchangli', 'video-nc-tczhongguo-chunjiao']) {
+        const targets = ['video-nc-fanqiejiangjiang-xiaoluozi', 'video-nc-wangxun-nanchangli', 'video-nc-tczhongguo-chunjiao'];
+        for (const id of [...f.saved]) {
+            if (!targets.includes(id)) f.toggleSave(id);
+        }
+        for (const id of targets) {
             if (!f.saved.includes(id)) f.toggleSave(id);
         }
     }""")
@@ -175,8 +210,8 @@ with sync_playwright() as pw:
     page.fill('#video-library-search', '熊庆彬')
     time.sleep(0.3)
     filtered_names = page.evaluate("() => Array.from(document.querySelectorAll('#video-library-grid .video-clip-card strong')).map(e => e.textContent.trim())")
-    check('10. Video library displays all 4 creator tabs (28 clips total) and filters out-of-bounds 熊庆彬',
-          len(tab_counts) == 4 and sum(tab_counts.values()) == 28 and any('熊庆彬' in n for n in filtered_names),
+    check('10. Video library displays all 8 creator tabs (60 clips total) and filters out-of-bounds 熊庆彬',
+          len(tab_counts) == 8 and sum(tab_counts.values()) == 60 and any('熊庆彬' in n for n in filtered_names),
           {'tabCounts': tab_counts, 'filtered': filtered_names})
     page.click('#video-library-close')
     page.evaluate("() => { const d = document.getElementById('food-pick-dialog'); if (d?.open) d.close(); }")
@@ -189,7 +224,7 @@ with sync_playwright() as pw:
         time.sleep(0.5)
         switched[cid] = page.evaluate("() => ({ name: window.foodCityMap.city.name, cards: document.querySelectorAll('.food-card').length })")
     check('11. Cross-city switches isolate city names and card counts with 0 contamination',
-          switched['chongqing']['name'] == '重庆' and switched['wuhan']['name'] == '武汉' and switched['zhengzhou']['name'] == '郑州' and switched['nanchang']['name'] == '南昌' and switched['nanchang']['cards'] == 26,
+          switched['chongqing']['name'] == '重庆' and switched['wuhan']['name'] == '武汉' and switched['zhengzhou']['name'] == '郑州' and switched['nanchang']['name'] == '南昌' and switched['nanchang']['cards'] == 40,
           switched)
     ctx.close()
 
@@ -232,7 +267,7 @@ with sync_playwright() as pw:
     p_off.wait_for_function("() => window.foodCityMap && window.foodCityMap.ready", timeout=30000)
     p_off.wait_for_selector('.food-card', timeout=5000)
     off_cards = p_off.locator('.food-card').count()
-    check('16. Standalone preview-nanchang.html renders 26 food cards', off_cards == 26, {'offCards': off_cards})
+    check('16. Standalone preview-nanchang.html renders 40 food cards', off_cards == 40, {'offCards': off_cards})
     c_off.close()
 
     # 17. videos-nanchang.html & places-nanchang.html pages
@@ -244,8 +279,8 @@ with sync_playwright() as pw:
     place_cards = p_pg.locator('.card').count()
     p_pg.goto(f"{base_url}/places/video-nc-tczhongguo-chunjiao.html", wait_until='networkidle', timeout=20000)
     has_video = p_pg.locator('video').count() == 1
-    check('17. videos-nanchang.html, places-nanchang.html (28 cards) and detail page render cleanly',
-          vid_cards == 28 and place_cards == 28 and has_video,
+    check('17. videos-nanchang.html (60 clip cards), places-nanchang.html (51 place cards) and detail page render cleanly',
+          vid_cards == 60 and place_cards == 51 and has_video,
           {'vidCards': vid_cards, 'placeCards': place_cards, 'hasVideo': has_video})
     c_pg.close()
 
